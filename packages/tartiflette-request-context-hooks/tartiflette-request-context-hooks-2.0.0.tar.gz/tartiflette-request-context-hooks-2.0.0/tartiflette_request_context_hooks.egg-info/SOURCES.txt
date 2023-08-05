@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tartiflette_request_context_hooks/__init__.py
+tartiflette_request_context_hooks/base_request_context_hooks.py
+tartiflette_request_context_hooks/request_context_hooks.py
+tartiflette_request_context_hooks.egg-info/PKG-INFO
+tartiflette_request_context_hooks.egg-info/SOURCES.txt
+tartiflette_request_context_hooks.egg-info/dependency_links.txt
+tartiflette_request_context_hooks.egg-info/requires.txt
+tartiflette_request_context_hooks.egg-info/top_level.txt
