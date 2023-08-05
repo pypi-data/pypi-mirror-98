@@ -1,0 +1,10 @@
+colorama
+requests
+regex
+funcy
+pascal-voc-writer
+future
+deprecated
+loguru
+pyquaternion
+lxml
