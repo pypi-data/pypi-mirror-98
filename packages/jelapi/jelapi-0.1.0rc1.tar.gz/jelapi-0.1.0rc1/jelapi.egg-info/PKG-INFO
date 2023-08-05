@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: jelapi
+Version: 0.1.0rc1
+Summary: jelapi: A Jelastic API Python library
+Home-page: https://github.com/liip/jelapi
+Author: Didier Raboud
+Author-email: didier.raboud@liip.ch
+License: GPLv3+
+Description: ![Lint and Tests](https://github.com/liip/jelapi/workflows/Lint%20and%20Tests/badge.svg)
+        [![codecov](https://codecov.io/gh/liip/jelapi/branch/main/graph/badge.svg?token=ZjQDtiXWwO)](https://codecov.io/gh/liip/jelapi)
+        
+        # jelapi
+        
+        A Jelastic API Python library
+        
+        ## Installation
+        
+            pip3 install jelapi
+            
+        ## Usage
+        
+        ```
+        import jelapi
+        
+        jelapi.api_url = "https://app.jpc.infomaniak.com/1.0/"
+        jelapi.api_token = "your-long-token"
+        
+        jelenvs = jelapi.JelasticEnvironment.list()
+        
+        jelenv = next(
+            env
+            for _, env in jelenvs.items()
+            if all(eg in env.envGroups for eg in ["clients/envgroup", "prod"])
+        )
+        
+        for n in jelenv.nodes:
+            n.fixedCloudlets = 2
+        
+        cpnode = jelenv.node_by_node_group("cp")
+        cpnode.fixedCloudlets = 2
+        cpnode.envVars["AN_ENV_VARIABLE"] = "Content"
+        
+        jelenv.save()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: test
