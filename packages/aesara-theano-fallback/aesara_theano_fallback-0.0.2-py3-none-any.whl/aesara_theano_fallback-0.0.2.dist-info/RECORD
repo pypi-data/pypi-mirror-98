@@ -1,0 +1,11 @@
+aesara_theano_fallback/__init__.py,sha256=v5poOMRKhmkQl7N6U7rbUqNdD27XwLtibJPA6sB9cUU,649
+aesara_theano_fallback/aesara_theano_fallback_version.py,sha256=xLbQKBBOC9bGEPY9Aiawn9-v1vurkPsddqQLibGw2OE,142
+aesara_theano_fallback/compat.py,sha256=ksQSxEgeL7QW_94CMii9N_eYON1ONvOqTfzxwHbOkOQ,863
+aesara_theano_fallback/graph.py,sha256=_6pXiRD6OFyahi2zCVeA1TW_QFHvg5oQ_tuknc--p_M,298
+aesara_theano_fallback/tensor.py,sha256=mcG5BHsvpDJuw_q-ep_BqPQpBySkPKfh8K7414BLGvQ,222
+aesara_theano_fallback-0.0.2.dist-info/LICENSE,sha256=4c0D1aq4nrOHJitprWecutXCjTuTWKp4lCgJ_NxZMJc,1075
+aesara_theano_fallback-0.0.2.dist-info/METADATA,sha256=JcZDH4Iru9ofd2o0Hq5E7vAg7393MUTvaysiAth3b4c,2508
+aesara_theano_fallback-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aesara_theano_fallback-0.0.2.dist-info/top_level.txt,sha256=w0t7Zg4bE5lrtmcaXXr3-kXgFo8M9Pmv4UGFt0tszdk,23
+aesara_theano_fallback-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aesara_theano_fallback-0.0.2.dist-info/RECORD,,
