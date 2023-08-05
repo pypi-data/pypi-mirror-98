@@ -1,0 +1,10 @@
+productivity/__init__.py,sha256=T7GbTFka9fMnsPNQFUQtp83bWXdSEeGQpSKtKz-iR1Q,1183
+productivity/driver.py,sha256=SnZjEiQLyzy-I0ygK0mL8f14ON-uJQRH8PgRUghaN7Q,14951
+productivity/mock.py,sha256=zfjehJFFvjioi971vxneq1YarK1k8u9PX3qjqFrv1io,3308
+productivity/util.py,sha256=4Tk8xTOzRrubAEtoNU8MDcVZuV1v4yhgw51ODZLpsSw,5487
+productivity-0.4.4b1.dist-info/LICENSE,sha256=pF0LtXLteS7TRienJiGDSzupKqtuLMTgQwHe56co11M,18027
+productivity-0.4.4b1.dist-info/METADATA,sha256=5EMfyFyr2B_nq55OCK-ggD8AXBroBBHEnJe-IbgWMF8,3277
+productivity-0.4.4b1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+productivity-0.4.4b1.dist-info/entry_points.txt,sha256=PINWomfWf2nvnckHaeHYArLeu_pRMgHVP_zbDe_Xeag,60
+productivity-0.4.4b1.dist-info/top_level.txt,sha256=YnKNmNjDEIoANjNuhoxzYoBgh3m7-JS0uNfUq3K_Idk,13
+productivity-0.4.4b1.dist-info/RECORD,,
