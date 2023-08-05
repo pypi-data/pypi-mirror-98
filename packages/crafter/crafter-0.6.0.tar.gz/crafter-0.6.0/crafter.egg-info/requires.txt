@@ -1,0 +1,8 @@
+numpy
+imageio
+gym
+scikit-image
+opensimplex
+
+[gui]
+pygame
