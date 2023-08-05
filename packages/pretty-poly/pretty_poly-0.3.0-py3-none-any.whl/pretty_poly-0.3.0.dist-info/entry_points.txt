@@ -1,0 +1,5 @@
+[console_scripts]
+doctest=run_tests:run_doctest
+examples=examples.make:write_examples
+test=run_tests:test
+
