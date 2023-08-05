@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+FINANCEPP.egg-info/PKG-INFO
+FINANCEPP.egg-info/SOURCES.txt
+FINANCEPP.egg-info/dependency_links.txt
+FINANCEPP.egg-info/entry_points.txt
+FINANCEPP.egg-info/requires.txt
+FINANCEPP.egg-info/top_level.txt
+finance/__init__.py
+finance/covidresilient.py
+finance/equityindex.py
