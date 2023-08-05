@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: bluesearch
+Version: 0.1.0
+Summary: Blue Brain text mining toolbox for semantic search and information extraction
+Home-page: https://github.com/BlueBrain/Search
+Author: Blue Brain Project, EPFL
+License: -
+Project-URL: Source, https://github.com/BlueBrain/Search
+Project-URL: Documentation, https://bbpteam.epfl.ch/documentation
+Project-URL: Tracker, https://bbpteam.epfl.ch/project/issues/projects/BBS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: General
+Requires-Python: >=3.7
+Requires-Dist: Flask
+Requires-Dist: PyYAML
+Requires-Dist: SQLAlchemy
+Requires-Dist: dvc[ssh]
+Requires-Dist: h5py
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: joblib
+Requires-Dist: langdetect
+Requires-Dist: matplotlib
+Requires-Dist: mysqlclient
+Requires-Dist: nltk
+Requires-Dist: numpy (>=1.20.1)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: pdfkit
+Requires-Dist: pymysql
+Requires-Dist: python-dotenv
+Requires-Dist: requests
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: scispacy
+Requires-Dist: sentence-transformers
+Requires-Dist: spacy (<3)
+Requires-Dist: torch
+Requires-Dist: tqdm
+Requires-Dist: transformers
+Provides-Extra: dev
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: docker ; extra == 'dev'
+Requires-Dist: pytest-benchmark ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest (>=4.6) ; extra == 'dev'
+Requires-Dist: responses ; extra == 'dev'
+Requires-Dist: sphinx-bluebrain-theme ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+
+
+Blue Brain Search is a text mining toolbox to perform semantic literature search 
+and structured information extraction from text sources.
+
+This project originated from the Blue Brain Project efforts on exploring and 
+mining the CORD-19 dataset.
+
