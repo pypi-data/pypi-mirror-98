@@ -1,0 +1,9 @@
+mypy
+pip-tools
+pygenstub
+sphinx
+sphinx_rtd_theme
+sphinx-click
+sphinxcontrib-confluencebuilder
+sphinxcontrib-napoleon
+watchdog
