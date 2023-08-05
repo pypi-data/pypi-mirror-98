@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+chromatose/__init__.py
+chromatose/heat.py
+chromatose/interpolate.py
+chromatose/palettes.py
+chromatose/utils.py
+chromatose/viz.py
+chromatose/volcanoes.csv
+chromatose.egg-info/PKG-INFO
+chromatose.egg-info/SOURCES.txt
+chromatose.egg-info/dependency_links.txt
+chromatose.egg-info/requires.txt
+chromatose.egg-info/top_level.txt
