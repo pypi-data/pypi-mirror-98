@@ -1,0 +1,17 @@
+celltypist/__init__.py,sha256=4ElIOQEas43i64ZCuwfWlvIDXDjauzR6hG9nad1SX24,102
+celltypist/annotate.py,sha256=PpbiCjvXJ6FEj1O4ujizrBdyRM4NojoMHdnJph6IOSA,3356
+celltypist/classifier.py,sha256=9QFuSoupBTgC-zUVXkEEuw2e2MhQ1RwquxRXPXaPRsk,10110
+celltypist/command_line.py,sha256=KQwf3SVyjpCpUQ2GgUuzJ6vzq5M5NUPzsDHbyMIXkWM,5739
+celltypist/logger.py,sha256=YHwi6JruMUdYhsqMc4KHutLGkX2zuJ7W2H3VEm3xIrU,226
+celltypist/models.py,sha256=dXc1v6i9wdkvaYE4Jh1qkEks2TwNBMl0297iaT3c3h0,6839
+celltypist/samples.py,sha256=5cuNcaYkiwUYBgnMgq7jRLP7r2VUi-xq3am3NLnwuOY,566
+celltypist/data/models/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+celltypist/data/samples/sample_cell_by_gene.csv,sha256=DXKb16nk2PWozMFn8iJTD07OjTNLk50ht5a9d9r5Z_I,53473636
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests.py,sha256=n0XqaFRtiQLUpnpb2roCaTAE1SI45ErZ4jl1GRsomgc,2939
+celltypist_dev-0.1.12b0.dist-info/LICENSE,sha256=xBYmaB7vJHvQnOILFpCKMdPWciFK32ep6r-0ogfaoAE,1103
+celltypist_dev-0.1.12b0.dist-info/METADATA,sha256=msTe4o7LxMIjMlTPXbKNqf9IdT7bGsCRXwjdohe5lLc,9873
+celltypist_dev-0.1.12b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+celltypist_dev-0.1.12b0.dist-info/entry_points.txt,sha256=murf4ibbFYZ0w-4eRff1w0wKQtK-dRTqSmgAxyAtRNs,61
+celltypist_dev-0.1.12b0.dist-info/top_level.txt,sha256=OuM_vCGdvVwNCfSv_ZXIBau9rdh6YZh8VNMvv69wFCM,17
+celltypist_dev-0.1.12b0.dist-info/RECORD,,
