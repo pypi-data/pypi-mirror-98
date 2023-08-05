@@ -1,0 +1,16 @@
+kodb/__init__.py,sha256=wnpUeQUoJx2pFK_C8YfY-Dv-DlP90gAMfZGCaFeI7_8,3377
+kodb/add_and_remove.py,sha256=KV8i9gDWhPa_NMwJ-SeaDIyik_501d24gBTE7RaER3w,3649
+kodb/build.py,sha256=xmrY9fA-zdFsbBTNbXmw3r_HgazS9dOBO6bLAH_BEL0,2387
+kodb/download.py,sha256=6Zl5zAzqSzHYL-wvXKd5faE1MUlwkTHgsqSeFSr1PjQ,372
+kodb/edit_and_list.py,sha256=BiGXhdREuJeoYvj7tGMiZo-d8hPm_47dtbGrltRsBJY,1951
+kodb/log.py,sha256=QBo_kMnQOwPbpmgXIsCOc7DTwaKWe3Eo-og3C2bQ928,1898
+kodb/make_project.py,sha256=peA_FnoCJPVlhamkMbc-cicgvPf9aAOAAVRtvx7N1Wc,1054
+kodb/references.py,sha256=X-Cw5p6IwRlo1vW7hWtiI5qq2zTFXtMDmXw1DWhyr-E,2228
+kodb/switch_and_move.py,sha256=WInFOwPhdLn3ngUKp0DuD2fSME14mY5zNDjAbJuigg4,1067
+kodb/utils.py,sha256=U7R3O0ldNsghlOYsKnz4hi1ADktP9O2NbDG5qartg2U,2541
+kodb-0.1.5.dist-info/LICENSE,sha256=BqSt6s6BZnPBZN-MarA0HQ-M7NCWnRRoYZGcxhQiBr4,1075
+kodb-0.1.5.dist-info/METADATA,sha256=xhDHVeD88V5SQHC3zkjQ2bB_X1Z8A167iO3moq5jnLw,2050
+kodb-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kodb-0.1.5.dist-info/entry_points.txt,sha256=5iR1nymKJxVPeNHDiWE0ABnbYErde6UpPa7UMv0GpzE,36
+kodb-0.1.5.dist-info/top_level.txt,sha256=gzYMkGdH9wIyJXhyPT2_mNyTiuHSafu21vrcoeZBx6w,5
+kodb-0.1.5.dist-info/RECORD,,
