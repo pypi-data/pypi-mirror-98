@@ -1,0 +1,6 @@
+argcomplete
+cerberus
+pyyaml
+sanic
+sanic_cors
+termcolor
