@@ -1,0 +1,8 @@
+cryptography
+cbor2
+ecdsa
+attrs
+certvalidator
+Sphinx>=3.3.1
+sphinx_rtd_theme>=0.5.0
+sphinxemoji
