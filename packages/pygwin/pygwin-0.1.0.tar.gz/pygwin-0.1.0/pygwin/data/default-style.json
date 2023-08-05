@@ -1,0 +1,137 @@
+{
+    "Node": {
+        "selected": {
+            "background": "color",
+            "color-background": [70, 130, 180],
+            "corner": 8
+        }
+    },
+    "Window": {
+        "base": {
+            "padding": 10,
+            "border": "color",
+            "border-width": 4,
+            "background": "color",
+            "corner": 12,
+            "color-border": [0, 30, 60],
+            "color-background": [0, 2, 30]
+        }
+    },
+    "Frame": {
+        "base": {
+            "padding": 10,
+            "border": "color",
+            "border-width": 4,
+            "corner": 12,
+            "color-border": [0, 30, 60],
+            "color-frame-bar": [0, 60, 120, 150],
+            "color-frame-bar-container": [0, 30, 60, 150],
+            "frame-bar-width": 12,
+            "frame-bar-corner": 6
+        }
+    },
+    "Button": {
+        "base": {
+            "corner": 6,
+            "background": "color",
+            "border": "color",
+            "border-width": 4,
+            "size": [200, 50],
+            "color-border": [0, 60, 120],
+            "color-background": [70, 130, 180]
+        },
+        "overed": {
+            "color-background": [0, 0, 128]
+        },
+        "clicked": {
+            "color-background": [0, 50, 100]
+        },
+        "focus": {
+            "color-background": [0, 120, 240]
+        },
+        "disabled": {
+            "color": [100, 100, 100],
+            "color-border": [100, 100, 100],
+            "color-background": [50, 50, 50]
+        }
+    },
+    "InputText": {
+        "base": {
+            "padding": 4,
+            "border": "color",
+            "border-width": 4,
+            "color-border": [0, 30, 60],
+            "size": [200, null],
+            "corner": 6
+        },
+        "focus": {
+            "color": [0, 120, 240],
+            "color-border": [0, 120, 240]
+        },
+        "overed": {
+            "color": [70, 130, 180],
+            "color-border": [70, 130, 180]
+        },
+        "disabled": {
+            "color": [100, 100, 100],
+            "color-border": [100, 100, 100]
+        }
+    },
+    "Checkbox": {
+        "base": {
+            "padding": 2,
+            "border": "color",
+            "border-width": 4,
+            "color": [0, 30, 60],
+            "color-border": [0, 30, 60],
+            "size": [24, 24],
+            "corner": 4
+        },
+        "focus": {
+            "color-border": [0, 120, 240],
+            "color": [0, 120, 240]
+        },
+        "overed": {
+            "color": [70, 130, 180],
+            "color-border": [70, 130, 180]
+        },
+        "disabled": {
+            "color": [100, 100, 100],
+            "color-border": [100, 100, 100]
+        }
+    },
+    "Gauge": {
+        "base": {
+            "corner": 8,
+            "border": "color",
+            "border-width": 3,
+            "size": [200, 30],
+            "background": "color",
+            "color": [0, 100, 0],
+            "color-background": [200, 50, 50],
+            "color-border": [255, 255, 255]
+        }
+    },
+    "Rule": {
+        "base": {
+            "width": 4,
+            "color": [0, 30, 60],
+            "orientation": "horizontal"
+        }
+    },
+    "link:Label": {
+        "base": {
+            "color": [70, 130, 180]
+        },
+        "focus": {
+            "color": [0, 120, 240]
+        },
+        "overed": {
+            "color": [120, 180, 230]
+        },
+        "disabled": {
+            "color": [100, 100, 100],
+            "color-border": [100, 100, 100]
+        }
+    }
+}
