@@ -1,0 +1,8 @@
+CHANGELOG.md,sha256=D9hdAEpaxlHXU1auZtG2SSNwfilhQKoVl3ITDdcaU58,637
+sane_out/__init__.py,sha256=kZBLt0n2yQ2knD1IibjATEhXTN2Guyt08QavhUIixyc,87
+sane_out/colour.py,sha256=PPE7Vi7tYcps9zeAvQr_LZ-jaWUhtd5Y00x8_WkmCx4,1001
+sane_out/printer.py,sha256=Cyo4J0IZ3z0LUrh8G0PWgilQWsYoECJPO6C6duOUsZg,4583
+sane_out-0.1.0.dist-info/LICENSE,sha256=ktipdCXGvTaLBQ6AUejn96A60bN8d6ztaYdwgteaRO0,1071
+sane_out-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sane_out-0.1.0.dist-info/METADATA,sha256=E2mq5WSMJ8W8eBKdDnesC7YP5LTBL2FkoeWd0uJJ5M8,2312
+sane_out-0.1.0.dist-info/RECORD,,
