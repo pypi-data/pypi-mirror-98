@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+seethrufeeds.egg-info/PKG-INFO
+seethrufeeds.egg-info/SOURCES.txt
+seethrufeeds.egg-info/dependency_links.txt
+seethrufeeds.egg-info/entry_points.txt
+seethrufeeds.egg-info/requires.txt
+seethrufeeds.egg-info/top_level.txt
