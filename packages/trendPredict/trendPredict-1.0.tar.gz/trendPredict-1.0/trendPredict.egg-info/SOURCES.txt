@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+trendPredict.egg-info/PKG-INFO
+trendPredict.egg-info/SOURCES.txt
+trendPredict.egg-info/dependency_links.txt
+trendPredict.egg-info/top_level.txt
+trendPredict_zhaozl/__init__.py
+trendPredict_zhaozl/__version__.py
+trendPredict_zhaozl/core.py
