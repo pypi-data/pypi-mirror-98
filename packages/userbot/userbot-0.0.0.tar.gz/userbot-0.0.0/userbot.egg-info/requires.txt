@@ -1,0 +1,14 @@
+telethon
+telegraph
+sqlalchemy
+urbandict
+pySmartDL
+cryptg
+python-dotenv
+fontTools
+requests
+Pillow
+validators
+wand
+colour
+lottie
