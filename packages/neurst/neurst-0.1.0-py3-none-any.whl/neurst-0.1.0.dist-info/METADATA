@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: neurst
+Version: 0.1.0
+Summary: Neural Speech Translation Toolkit
+Home-page: UNKNOWN
+Author: ZhaoChengqi
+Author-email: zhaochengqi.d@bytedance.com
+License: UNKNOWN
+Keywords: neurst
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: six (<2.0.0,>=1.11.0)
+Requires-Dist: pyyaml (>=3.13)
+Requires-Dist: sacrebleu (>=1.4.0)
+Requires-Dist: regex (>=2019.1.24)
+Requires-Dist: sacremoses (>=0.0.38)
+Requires-Dist: tqdm (>=0.46)
+Provides-Extra: dev
+Requires-Dist: flake8 (<4.0.0,>=3.5.0) ; extra == 'dev'
+Requires-Dist: tox (<4.0.0,>=3.0.0) ; extra == 'dev'
+Requires-Dist: isort (<5.0.0,>=4.0.0) ; extra == 'dev'
+Requires-Dist: pytest (<5.0.0,>=4.0.0) ; extra == 'dev'
+Requires-Dist: six (<2.0.0,>=1.11.0) ; extra == 'dev'
+Requires-Dist: pyyaml (>=3.13) ; extra == 'dev'
+Requires-Dist: sacrebleu (>=1.4.0) ; extra == 'dev'
+Requires-Dist: regex (>=2019.1.24) ; extra == 'dev'
+Requires-Dist: sacremoses (>=0.0.38) ; extra == 'dev'
+Requires-Dist: tqdm (>=0.46) ; extra == 'dev'
+Requires-Dist: jieba (>=0.42.1) ; extra == 'dev'
+Requires-Dist: subword-nmt (>=0.3.7) ; extra == 'dev'
+Requires-Dist: thai-segmenter (>=0.4.1) ; extra == 'dev'
+Requires-Dist: soundfile (>=0.10) ; extra == 'dev'
+Requires-Dist: python-speech-features (>=0.6) ; extra == 'dev'
+Requires-Dist: transformers (>=3.4.0) ; extra == 'dev'
+Requires-Dist: sentencepiece (>=0.1.7) ; extra == 'dev'
+Requires-Dist: mecab-python3 (>=1.0.3) ; extra == 'dev'
+Requires-Dist: ipadic (>=1.0.0) ; extra == 'dev'
+Requires-Dist: torch (>=1.7.0) ; extra == 'dev'
+Requires-Dist: fairseq (>=0.10.1) ; extra == 'dev'
+Requires-Dist: tensorflow-addons (>=0.11.2) ; extra == 'dev'
+Requires-Dist: mypy (>=0.620) ; (python_version >= "3.6") and extra == 'dev'
+
+
+# NeurST: Neural Speech Translation Toolkit
+NeurST aims at easily building and training end-to-end speech translation, which has the careful design for extensibility and scalability. We believe this design can make it easier for NLP researchers to get started. In addition, NeurST allows researchers to train custom models for translation, summarization and so on.
+
+> NeurST is based on TensorFlow2 and we are working on the pytorch version.
+
+## Features
+
+### Models
+NeurST provides reference implementations of various models, including:
+
+- Transformer (self-attention) networks
+    - [Attention Is All You Need (Vaswani et al., 2017)](https://arxiv.org/pdf/1706.03762.pdf)
+    - [Pay Less Attention With Lightweight and Dynamic Convolutions (Wu et al., 2019)](https://arxiv.org/pdf/1901.10430.pdf)
+
+- comming soon...
+
+### Recipes and Benchmarks
+NeurST provides several **strong and reproducible benchmarks** for various tasks:
+
+- Translation
+    - coming soon...
+
+- Speech-to-Text
+    - [Augmented Librispeech](/examples/speech_to_text/augmented_librispeech)
+    - [MuST-C](/examples/speech_to_text/must-c)
+
+
+### Additionally
+
+- multi-GPU (distributed) training on one machine or across multiple machines
+    - `MirroredStrategy` / `MultiWorkerMirroredStrategy`
+    - [`Byteps`](https://github.com/bytedance/byteps) / [`Horovod`](https://github.com/horovod/horovod)
+- mixed precision training (trains faster with less GPU memory)
+- multiple search algorithms implemented:
+    - beam search
+    - sampling (unconstrained, top-k and top-p)
+- large mini-batch training even on a single GPU via delayed updates (gradient accumulation)
+- TensorFlow savedmodel for TensorFlow-serving
+- TensorFlow XLA support for speeding up training
+- extensible: easily register new datasets, models, criterions, tasks, optimizers and learning rate schedulers
+
+## Requirements and Installation
+
+- Python version >= 3.6
+- TensorFlow >= 2.3.0
+
+Install NeurST from source:
+```
+git clone https://github.com/bytedance/neurst.git
+cd neurst/
+pip3 install -e .
+```
+If there exists ImportError during running, manually install the required packages at that time.
+
+## Citation
+```
+@misc{zhao2020neurst,
+      title={NeurST: Neural Speech Translation Toolkit}, 
+      author={Chengqi Zhao and Mingxuan Wang and Lei Li},
+      year={2020},
+      eprint={2012.10018},
+      archivePrefix={arXiv},
+}
+```
+
+## Contact
+Any questions or suggestions, please feel free to contact us: [zhaochengqi.d@bytedance.com](mailto:zhaochengqi.d@bytedance.com), [wangmingxuan.89@bytedance.com](mailto:wangmingxuan.89@bytedance.com).
+
+
