@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "censusviz"
+version = "0.1.12"
+description = "A Python package to make it easier to visualize Census data."
+authors = ["Elliott <eat2153@columbia.edu>"]
+license = "MIT"
+readme = "README.md"
+documentation = 'https://github.com/elliotttrio/censusviz/blob/main/README.md'
+homepage = "https://github.com/elliotttrio/censusviz"
+repository = "https://github.com/elliotttrio/censusviz"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+geopandas = "*"
+pandas = "*"
+requests = "*"
+matplotlib = "*"
+lxml = "*"
+descartes = "*"
+
+[tool.poetry.dev-dependencies]
+sphinx = "^3.4.0"
+sphinxcontrib-napoleon = "^0.7"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
