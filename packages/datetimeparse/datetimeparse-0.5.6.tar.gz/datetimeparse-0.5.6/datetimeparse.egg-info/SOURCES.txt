@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+VERSION.txt
+pyproject.toml
+setup.py
+clib/datetimeparselib.c
+clib/datetimeparselib.h
+cythonlib/datetimeparse.c
+cythonlib/datetimeparse.pyx
+cythonlib/datetimeparselib.pxd
+datetimeparse.egg-info/PKG-INFO
+datetimeparse.egg-info/SOURCES.txt
+datetimeparse.egg-info/dependency_links.txt
+datetimeparse.egg-info/requires.txt
+datetimeparse.egg-info/top_level.txt

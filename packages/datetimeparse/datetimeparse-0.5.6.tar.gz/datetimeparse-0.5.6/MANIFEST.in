@@ -1,0 +1,4 @@
+include cythonlib/datetimeparselib.pxd
+include cythonlib/datetimeparse.pyx
+include clib/datetimeparselib.h
+include VERSION.txt
