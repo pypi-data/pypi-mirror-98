@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pySldWrap/__init__.py
+pySldWrap/sw_tools.py
+pySldWrap.egg-info/PKG-INFO
+pySldWrap.egg-info/SOURCES.txt
+pySldWrap.egg-info/dependency_links.txt
+pySldWrap.egg-info/requires.txt
+pySldWrap.egg-info/top_level.txt
