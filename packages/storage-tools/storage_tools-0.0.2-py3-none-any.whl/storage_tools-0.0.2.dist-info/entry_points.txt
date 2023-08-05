@@ -1,0 +1,4 @@
+[console_scripts]
+download_dataset = storage_tools.cli:download_dataset
+upload_dataset = storage_tools.cli:upload_dataset
+

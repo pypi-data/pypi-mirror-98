@@ -1,0 +1,10 @@
+storage_tools/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+storage_tools/_nbdev.py,sha256=X3QaTUk_XaiP9FGduL2R5ehZ3kHJwtSMsUN8PU1AwQI,1106
+storage_tools/cli.py,sha256=1QIAak9Y4PoShhRNvwp_lY3gsqAWbcJLN5RhSjqnP_g,1305
+storage_tools/core.py,sha256=9SWnGiozS_28JVxrkdHr5hmG5kg8NeRtv-2KrAfs5XU,15065
+storage_tools-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+storage_tools-0.0.2.dist-info/METADATA,sha256=g1EoIQMqkoboprmY3sgn8IS0EQi33Yxuhjyqwwrdwsw,4704
+storage_tools-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+storage_tools-0.0.2.dist-info/entry_points.txt,sha256=_D34tI8Eer3rsszHRatFft4surMZCheVmtUCyQKHcy0,123
+storage_tools-0.0.2.dist-info/top_level.txt,sha256=v60R4tHjTnaB9OgIOO7VqZ6QkdQUcZiVfOY6McGNwXA,14
+storage_tools-0.0.2.dist-info/RECORD,,
