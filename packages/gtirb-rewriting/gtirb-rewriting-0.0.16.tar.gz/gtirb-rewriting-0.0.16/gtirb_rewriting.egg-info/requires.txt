@@ -1,0 +1,16 @@
+gtirb-capstone
+gtirb-functions
+gtirb
+mcasm
+
+[:python_version < "3.7.0"]
+dataclasses
+
+[test]
+flake8
+isort
+pytest
+pytest-cov
+tox
+tox-wheel
+pre-commit
