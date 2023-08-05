@@ -1,0 +1,10 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+    path('{{name | lower}}', {{name}}ListView.as_view(), name='{{name | lower}}_list'),
+    path('{{name | lower}}/create', {{name}}CreateView.as_view(), name='{{name | lower}}_create'),
+    path('{{name | lower}}/<{{identifier.name}}:{{identifier.type}}>', {{name}}DetailView.as_view(), name='{{name | lower}}_detail'),
+    path('{{name | lower}}/update/<{{identifier.name}}:{{identifier.type}}>', {{name}}UpdateView.as_view(), name='{{name | lower}}_update'),
+    path('{{name | lower}}/delete/<{{identifier.name}}:{{identifier.type}}>', {{name}}DeleteView.as_view(), name='{{name | lower}}_delete'),
+]

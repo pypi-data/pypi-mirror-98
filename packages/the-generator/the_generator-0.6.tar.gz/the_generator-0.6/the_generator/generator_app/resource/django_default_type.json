@@ -1,0 +1,98 @@
+[
+  {
+    "type": "models.CharField",
+    "type_value": [
+      {
+        "name": "max_length",
+        "value": 100
+      },
+      {
+        "name": "null",
+        "value": false
+      },
+      {
+        "name": "blank",
+        "value": true
+      }
+    ]
+  },
+  {
+    "type": "models.TextField",
+    "type_value": [
+      {
+        "name": "max_length",
+        "value": 255
+      },
+      {
+        "name": "null",
+        "value": false
+      },
+      {
+        "name": "blank",
+        "value": true
+      }
+    ]
+  },
+  {
+    "type": "models.DateField",
+    "type_value": []
+  },
+  {
+    "type": "models.ImageField",
+    "type_value": [
+      {
+        "name": "upload_to",
+        "value": "media/%Y-%m-%d/"
+      },
+      {
+        "name": "null",
+        "value": false
+      },
+      {
+        "name": "blank",
+        "value": true
+      }
+    ]
+  },
+  {
+    "type": "models.ManyToManyField",
+    "required_fields": [
+      "to"
+    ],
+    "type_value": [
+
+    ]
+  },
+  {
+    "type": "models.ForeignKey",
+    "required_fields": [
+      "to"
+    ],
+    "type_value": [
+      {
+        "name": "on_delete",
+        "value": "models.CASCADE"
+      }
+    ]
+  },
+  {
+    "type": "models.OneToOneField",
+    "required_fields": [
+      "to"
+    ],
+    "type_value": [
+      {
+        "name": "on_delete",
+        "value": "models.CASCADE"
+      },
+       {
+        "name": "primary_key",
+        "value": true
+      }
+    ]
+  },
+  {
+    "type": ""
+
+  }
+]
