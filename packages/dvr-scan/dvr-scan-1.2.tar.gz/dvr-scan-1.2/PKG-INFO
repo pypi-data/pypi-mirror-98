@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: dvr-scan
+Version: 1.2
+Summary: Tool for finding and extracting motion events in video files(e.g. security camera footage).
+Home-page: https://github.com/Breakthrough/DVR-Scan
+Author: Brandon Castellano
+Author-email: brandon248@gmail.com
+License: BSD 2-Clause
+Description: 
+        DVR-Scan
+        ==========================================================
+        Video Motion Event Detection and Extraction Tool
+        ----------------------------------------------------------
+        
+        Documentation: http://dvr-scan.readthedocs.org/
+        
+        Github Repo: https://github.com/Breakthrough/DVR-Scan/
+        
+        
+        DVR-Scan is a command-line tool that finds motion events in video files (e.g. security camera footage), finding the location and duration of movement in static scenes.  Motion events can be saved as individual videos, or together in a single video, effectively "extracting" only scenes/frames from the input video that contain motion.  Motion event sensitivity can be configured with the `-t` / `--threshold` flag, where lower values are more sensitivity to movement (e.g. requires less motion to trigger an event).
+        
+        For help or other issues, feel free to submit any bugs or feature requests to Github: https://github.com/Breakthrough/DVR-Scan/issues
+        
+        ----------------------------------------------------------
+        
+        Licensed under BSD 2-Clause (see the `LICENSE` file for details).
+        
+        Copyright (C) 2016-2021 Brandon Castellano.
+        All rights reserved.
+        
+        
+Keywords: video computer-vision analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia :: Video :: Conversion
+Classifier: Topic :: Multimedia :: Video :: Non-Linear Editor
+Classifier: Topic :: Utilities
+Provides-Extra: opencv
+Provides-Extra: opencv-headless
