@@ -1,0 +1,22 @@
+# mailman-web.toml
+
+BASE_DIR = '.'
+
+SECRET_KEY = 'This a very secrety key that should be changed.'
+
+ADMINS = [
+['Mailman Suite Admin', 'root@localhost'],
+]
+
+# Application definition
+DJANGO_SOCIAL_AUTH_PROVIDERS = [
+    'allauth.socialaccount.providers.openid',
+    'django_mailman3.lib.auth.fedora',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.gitlab',
+]
+
+
+[DATABASES.default]
+ENGINE = 'django.db.backends.sqlite3'
+NAME = 'mailmanweb.db'
