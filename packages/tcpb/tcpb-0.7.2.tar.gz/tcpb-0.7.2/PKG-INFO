@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: tcpb
+Version: 0.7.2
+Summary: Protobuf client for TeraChem server mode
+Home-page: https://github.com/mtzgroup/tcpb-client
+Author: Colton Hicks
+Author-email: mtzgroupadmin@gmail.com
