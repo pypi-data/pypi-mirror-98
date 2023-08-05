@@ -1,0 +1,153 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "铛铛铛-铛铛，注意啦，开始新的一课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天与我们一起学生比赛的是【四川水煮鱼大学】认真学习，超越他们"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "近20年的开源运动产生了深植于各信息技术领域的大量可重用资源，支撑了信息技术形成了\"计算生态\"。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "首先先了解 NumPy 在数据分析学科中生态体系的位置"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/d195592-1751b6bd4d2/d195592-1751b6bd4d2.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：SciPy",
+                    "获得「知识卡」：matplotlib",
+                    "获得「知识卡」：pandas",
+                    "获得「知识卡」：CPython"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：Jupyter",
+                    "获得「知识卡」：IPython",
+                    "获得「知识卡」：SymPy",
+                    "获得「知识卡」：Scikit-learn"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "可以说 NumPy 是数据分析方向的基础库，学好 NumPy 库是学习数据分析的第一步,加油~✊"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "NumPy以外的数据分析方向第三方库，如pandas、Matplotlib我们会在以后的课程中讲解到。"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "我们开始做题吧！"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "四川水煮鱼大学",
+                "image": "https://python123.io/iclass/images/numpy/1.2.jpg",
+                "cookbook": "水煮鱼选新鲜生猛活鱼，又充分发挥辣椒、椒麻益气养血功效，做出来的鱼肉一点也不会变韧，口感滑嫩，油而不腻。既去除了鱼的腥味，又保持了鱼的鲜嫩。满目的辣椒红亮养眼，辣而不燥，麻而不苦。“麻上头，辣过瘾”，让水煮鱼在全国流行得一塌糊涂，变成了人人都热爱的一道名菜。水煮鱼是麻辣美味的关键取决于麻椒、辣椒等原料的质量。地道的水煮鱼用的是一种俗称为“子弹头”的干红辣椒，辣椒肉厚、色鲜、籽少，辣味正并带甜，质量最佳，煮在高温的红油之中也不会变黑发焦。而与之搭配的麻椒则更为讲究，只有好的麻椒才能熬出那种特殊的麻味，优质麻椒的果皮具有特殊的香气和强烈持久的麻味。当然还有其它因素，比如鲜活的鱼、新鲜的配菜、煮鱼的火候，总之每个环节都加分，才能做出吃到嘴里是香中带麻，麻中有辣，滑嫩热烫回味无穷的水煮鱼。",
+                "winNoty": "解锁积木「菜谱」：四川水煮鱼大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1013,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96943
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "通过一个实际例子来体验 NumPy 的强大之处！看使用 NumPy 和 Python 内置函数分别需要多长时间"
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Code",
+            "data": {
+                "desc": "百看不如一练，请修改视频中提到的代码，亲自试一试",
+                "code": "import time\nimport numpy as np\n\n# 生成数据\nls = []\nfor i in range(1000000):\n    ls.append(i)\n\nstar = time.time()\nsum(ls)  # 使用Python内置函数求和\nend = time.time()\nprint(\"列表计算用时{}\".format(end - star))\n\na = np.array(ls, dtype=np.int64)  # 创建nd.array数组\nstar = time.time()\nnp.sum(a)  # 使用numpy内置函数求和\nend = time.time()\nprint(\"数组计算用时{}\".format(end - star))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "并不需要关注如何编码，在处理同样的计算 NumPy 比 Python 快的多"
+            }
+        },
+        {
+            "id": 1017,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 10,
+                "choices": [
+                    95969
+                ]
+            }
+        }
+    ]
+}

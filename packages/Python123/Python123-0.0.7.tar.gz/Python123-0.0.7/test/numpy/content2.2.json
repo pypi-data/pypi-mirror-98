@@ -1,0 +1,108 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "咣咣咣，注意了，我们开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "长话短说，今天的对手是..."
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "西安肉夹馍大学",
+                "image": "https://python123.io/iclass/images/numpy/2.2.jpg",
+                "cookbook": "肉夹馍是古汉语“肉夹于馍”的简称，中国陕西省传统特色食物之一。可明明是馍夹肉，怎么骗人说是肉夹馍呢？陕西地区有使用白吉馍的“腊汁肉夹馍”、宝鸡西府的肉臊子夹馍(肉臊子中放食醋)、潼关的潼关肉夹馍（与白吉馍不同，其馍外观焦黄，条纹清晰，内部呈层状，饼体发胀，皮酥里嫩，火功到家，食用时温度以烫手为佳，且老潼关肉夹馍是热馍夹凉肉，饼酥肉香，爽而不腻）。肉夹馍真的的及其的好吃。",
+                "winNoty": "解锁积木「菜谱」：西安肉夹馍大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "我们知道 Python 中有整数、浮点数和复数，但 NumPy 却定义了繁多的数据类型，为什么会这样呢？我们来了解下吧~"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/5b61c076-1751b6bd4fa/5b61c076-1751b6bd4fa.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：数组类型",
+                    "获得「知识卡」：数据类型",
+                    "获得「知识卡」：ndarray.dtype"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96945
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "百看不如一练，动手试试查看不同数组的 dtype",
+                "code": "import numpy as np\n\na = np.array([1, 2, 3, 4, 5, 7, 8])\nprint(\">>> \", a.dtype)\nb = np.array([1.0, 2.0, 3.0, 4.0, 5.0, 6.0])\nprint(\">>> \", b.dtype)\nc = np.array([1, 2, 3, 4, 5, 7, 8], dtype=np.int8)\nprint(\">>> \", c.dtype)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这么多数据类型是不是眼花缭乱，我们需要根据处理的数据的特征，来选择合适的类型。下面就来测验一下吧！"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 25,
+                "choices": [
+                    95965,
+                    95968,
+                    95979
+                ]
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Programming",
+            "data": {
+                "problem": 95980
+            }
+        }
+    ]
+}

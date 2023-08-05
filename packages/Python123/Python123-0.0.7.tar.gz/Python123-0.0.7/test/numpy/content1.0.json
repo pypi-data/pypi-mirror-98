@@ -1,0 +1,133 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这位同学醒一醒~~ ，口水流到键盘上了！快醒醒~ "
+            }
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "你在参加高考，马上到交卷时间了，快答题吧~！ "
+            }
+        },
+        {
+            "id": 1003,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 45,
+                "choices": [
+                    104807,
+                    104808,
+                    104809
+                ]
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Programming",
+            "data": {
+                "problem": 105724
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "考试结束!下面开始填报志愿环节"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "根据你的考试成绩，你可以填报的学校是......"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 5,
+                "choices": [
+                    104933
+                ]
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "恭喜你，被北京烤鸭大学录取了！"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Image",
+            "data": {
+                "src": "https://python123.io/images/4f/93/e6e4b6e69fb12631b7379edf2262.jpg"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「菜谱」：北京烤鸭"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "考入我们北京烤鸭大学，你就是我们的“烤鸭人”了，烤鸭烤鸭，就是“考呀考呀”天天考呀！"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "我们的每一堂课，都是要以烤鸭为主。抱歉，说错了，是考试为主"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "每一次考试，我们都要打败一个对手大学，放心，不是名牌大学，而是美食大学"
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "我们进入下一章，开始学习“北京考呀”之路"
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Code",
+            "data": {
+                "desc": "下面是温度转换的代码，请认真阅读并理解每一行的作用",
+                "code": "import numpy as np\nimport sys\n\nls = list(range(100000))\na = np.array(ls)\nprint(\">>> \", a.dtype)\nprint(\">>> \", a.ndim)\nprint(\">>> \", a.shape)\nprint(\">>> \", a.size)\nprint(\">>> \", len(a))\nprint(\">>> \", a.itemsize)\nprint(\">>> \", a.itemsize * a.size)\nprint(\">>> \", sys.getsizeof(a))\nprint(\">>> \", sys.getsizeof(ls))\n",
+                "type": "browser",
+                "image": "https://python123.io/images/c2/9a/859e812576c4212c80a20c391178.png",
+                "fill": ""
+            }
+        }
+    ]
+}

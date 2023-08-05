@@ -1,0 +1,132 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "叮叮叮，同学们大家好！"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本节课，我们的对手是【麻辣小龙虾大学】，超过他们。开始上课"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天我们会来认识 NumPy 中的数组。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": 5,
+                "text": "大家都知道什么是数组吗？知道的请举手"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "在计算机科学中，数组是由相同类型的元素的集合所组成的数据结构，通常会分配一块连续的内存来存储。"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "Python 的 list 就是一种数组结构， 在 NumPy 中，最重要的对象是被称为 ndarray 的数组。"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/3687d1d7-1751b6bd4e9/3687d1d7-1751b6bd4e9.mp4"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：数组",
+                    "获得「知识卡」：ndarray对象",
+                    "获得「知识卡」：np.array"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "在 Python 中如果我们要使用 NumPy 数组,需要将列表转换为 ndarray 类型"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "麻辣小龙虾大学",
+                "image": "https://python123.io/iclass/images/numpy/2.1.jpg",
+                "cookbook": "麻辣小龙虾又名口味虾、长沙口味虾、香辣小龙虾，是湖南著名的地方小吃。以小龙虾为主材，配以辣椒、花椒和其他香辛料制成。成菜后，色泽红亮，口味辣并鲜香。改革开放以来，随着湖南人遍布全国推广湘菜，特别是湖南卫视的传播，麻辣小龙虾（口味虾）风靡一时，众多演艺明星来湖南做节目时必然忘不了吃麻辣小龙虾。20世纪末起，麻辣小龙虾开始传遍全国，成为人们夏夜街边啤酒摊的经典小吃，味道极其的鲜香美味",
+                "winNoty": "解锁积木「菜谱」：麻辣小龙虾大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1012,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96944
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Code",
+            "data": {
+                "desc": "百看不如一练，请修改视频中提到的代码，亲自试一试",
+                "code": "import numpy as np\n\nls = [1, 3, 4, 5, 7, 8, 9]\na = np.array(ls)\nprint(\">>> \", a)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1014,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 25,
+                "choices": [
+                    95973,
+                    95974,
+                    95975
+                ]
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Programming",
+            "data": {
+                "problem": 95976
+            }
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "滴滴滴，滴滴滴，开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天前来踢馆的是【煎饼卷大葱大学】！"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "前面的课程算是开胃小菜，这堂课我们终于要进入 NumPy 核心知识点的学习了。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "NumPy 的强大之处在于它为我们提供了丰富且快速的元素运算函数。学会这些方法，可以大大简化我们的数据分析编码难度。"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/23b1307-1751b6be836/23b1307-1751b6be836.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.abs",
+                    "获得「知识卡」：np.sqrt",
+                    "获得「知识卡」：np.floor",
+                    "获得「知识卡」：np.rint",
+                    "获得「知识卡」np.cos"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.max",
+                    "获得「知识卡」：np.add",
+                    "获得「知识卡」：np.subtract",
+                    "获得「知识卡」：np.divide",
+                    "获得「知识卡」np.greater"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96950
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "一元通用函数的练习",
+                "code": "import numpy as np\n\na = np.arange(-10, 10)\nprint(\">>> \", a)\nprint(\">>> \", np.abs(a))\n\nprint(\"------------------------------------------------------------------------------------------\")\na = np.arange(10)\nprint(\">>> \", a)\nprint(\">>> \", np.sqrt(a))\n\nprint(\"------------------------------------------------------------------------------------------\")\na = np.random.randint(0, 100, 15)\nprint(\">>> \", a)\nprint(\">>> \", np.max(a))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "二元通用函数的练习",
+                "code": "import numpy as np\n\n\na = np.arange(10)\nb = np.arange(10)\nprint(\">>> \", a, b)\nc = np.ones(10)\nd = np.add(a, b, out=c)\nprint(\">>> \", c)\nprint(\">>> \", id(c), id(d))\n\nprint(\"------------------------------------------------------------------------------------------\")\na = np.array([3, 5, 2, 5, 7, 4, 7, 0])\nb = np.array([0, 9, 0, 9, 0, 9, 0, 9])\nprint(\">>> \", np.maximum(a, b))\n\nprint(\"------------------------------------------------------------------------------------------\")\na = np.array([3, 5, 2, 5, 7, 4, 7, 0])\nb = np.array([0, 9, 0, 9, 0, 9, 0, 9])\nc = np.greater(a, b)\nprint(\">>> \", c)\nprint(\">>> \", a[c])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "对战考试，马上开始"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "煎饼卷大葱大学",
+                "image": "https://python123.io/iclass/images/numpy/3.2.jpg",
+                "cookbook": "煎饼卷大葱是用玉米面、小麦面粉、土鸡蛋及大葱制成的一种食品，是山东省的地方传统名吃。食用方法是将大葱洗净蘸上甜酱黄豆酱，再用刚烙好的煎饼卷着吃，辛香辣伴着甜酱的味道，好吃又开胃。不同的烙制工具，不同的原料，做出的不同的煎饼，味道也各不相同。卷上大葱后各有各的味道，各有各的嚼头。",
+                "winNoty": "解锁积木「菜谱」：煎饼卷大葱大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1014,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 60,
+                "choices": [
+                    104196,
+                    104796,
+                    104797
+                ]
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Programming",
+            "data": {
+                "problem": 104195
+            }
+        }
+    ]
+}

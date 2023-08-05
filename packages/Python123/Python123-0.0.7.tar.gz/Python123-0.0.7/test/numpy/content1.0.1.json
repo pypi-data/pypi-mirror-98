@@ -1,0 +1,130 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "{name}您好，欢迎体验【Python 数据与可视化成长路线】互动课程 "
+            }
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本课程由Python123出品，由北京理工大学嵩天老师，全程监制。 "
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Image",
+            "data": {
+                "src": "https://python123.io/images/fe/24/afccadbb9e3290fe4c188dfd3c29.png"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "嵩天，就是他啦~！我们的老师 "
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "认识他的同学，请点击下面的表情，举一下你的小手"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "好的，好的， 可以了，话不多说，正式开始"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "首先讲解一家，学习这门课程的需要哪些基础"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "首先，你要具备一定的Python的基础知识，并且用到的时候能够想起来"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "推荐你能把嵩老师的<a href=\"https://www.icourse163.org/course/BIT-268001\" target=\"_blank\" >慕课视频</a>学完"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Image",
+            "data": {
+                "src": "https://python123.io/images/3a/e7/d7b9c2b26bad1227684cc7615166.png"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "学过这门课程的同学，请发一个表情告诉我，你学的怎么样"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "有个这个基础课程的支撑，你就可以继续学习【Python 数据与可视化】的互动课程了"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "我就是互动课程的讲解，出题，制作人，也是Python123平台的一员"
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "互动课程采用了，看视频，练视频代码，与其他学生PK考试的模式进行学习。"
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "希望你能喜欢上这个全新的学习模式，祝学习愉快"
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "下面，请点击左侧的【1.1 开始之前】进行学习"
+            }
+        }
+    ]
+}

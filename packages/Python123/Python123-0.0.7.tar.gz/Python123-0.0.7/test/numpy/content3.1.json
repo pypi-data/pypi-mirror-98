@@ -1,0 +1,149 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "叮叮铛，叮叮当，同学们开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天前来和我们一起学习的是【西湖醋鱼大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这堂课我们学习使用 NumPy 库的一些函数和方法用于对一维数据进行处理"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "一维数据的索引切片，ndarray 数组与 Python 列表只有一点点的区别"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "我们来一起看一下"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/42b6c03-1751b6be787/42b6c03-1751b6be787.mp4"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：数组索引",
+                    "获得「知识卡」：布尔索引",
+                    "获得「知识卡」：数组切片"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96949
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "索引取值练习",
+                "code": "import numpy as np\n\na = np.arange(10)\nprint(\">>> \", a)\nprint(\">>> \", a[-1])\nprint(\">>> \", a[9])\nprint(\">>> \", a[1])\nprint(\">>> \", a[[1, 5, 2]])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "布尔索引练习",
+                "code": "import numpy as np\n\na = np.arange(10)\nprint(\">>> \", a)\nb = [True, True, False, False, False, True, True, False, False, False]\nprint(\">>> \", a[b])\nprint(\"------------------------------------------------------------------------------------------\")\na = np.arange(10)\nprint(\">>> \", a)\nprint(\">>> \", a[1:4])\nprint(\">>> \", a[0:6:2])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Code",
+            "data": {
+                "desc": "尝试修改切片值，观察原数组是否发生变化",
+                "code": "import numpy as np\n\na = np.arange(10)\nb = a[0:6]\nprint(\">>> \", a)\nprint(\">>> \", b)\nb[1] = 1000\nprint(\">>> \", a)\nprint(\">>> \", b)\nprint(\"------------------------------------------------------------------------------------------\")\na = list(range(10))\nb = a[0:6]\nprint(\">>> \", a)\nprint(\">>> \", b)\nb[1] = 1000\nprint(\">>> \", a)\nprint(\">>> \", b)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "学习结束，开始考试"
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "西湖醋鱼大学",
+                "image": "https://python123.io/iclass/images/numpy/3.1.jpg",
+                "cookbook": "西湖醋鱼选材精细，通常选用一斤半左右的草鱼。烹制时，火候要求严，仅用三四分钟就能烧得恰到好处。盛菜时，浇上一层糖醋酱。成菜色泽红亮，吃起来，鱼肉嫩美，带有蟹味，酸甜可口，别具特色。宋五嫂，南宋著名民间女厨师，高宗赵构乘龙舟西湖，曾尝其鱼羹，赞美不已，于是名声大振，奉为脍鱼之“师祖”。后来有人吃了这个菜，诗兴大发，在菜馆墙壁上写了一首诗：“裙屐联翩买醉来，绿阳影里上楼台；门前多少游湖艇，半自三潭印月回。何必归寻张翰鲈（誉西湖醋鱼胜过味美适口的松江鲈鱼），鱼美风味说西湖；亏君有此调和手，识得当年宋嫂无。”诗的最后一句，指的就是“西湖醋鱼”。从此，宋嫂鱼羹，遂扬名于世。其后又经名手整治，乃成西湖醋鱼与宋嫂鱼羹两道名菜，流传至今。",
+                "winNoty": "解锁积木「菜谱」：西湖醋鱼大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1015,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 90,
+                "choices": [
+                    104789,
+                    104792,
+                    104794
+                ]
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Programming",
+            "data": {
+                "problem": 101091
+            }
+        },
+        {
+            "id": 1017,
+            "type": "Programming",
+            "data": {
+                "problem": 101092
+            }
+        }
+    ]
+}

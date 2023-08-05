@@ -1,0 +1,130 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "哐啷哐啷，哐啷哐啷，同学们上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本节课对手【九转大肠大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这堂课我们来学习多维数组的统计方法，基本上是与一维类似的，不过在进行集合运算时有一些需要注意的事项。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "话不多说，来看视频吧！"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/4847b49f-1751b6c1e4a/4847b49f-1751b6c1e4a.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.sum",
+                    "获得「知识卡」：np.mean",
+                    "获得「知识卡」：np.std",
+                    "获得「知识卡」：np.average",
+                    "获得「知识卡」：np.cumsum"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.cumprod",
+                    "获得「知识卡」：np.unique",
+                    "获得「知识卡」：np.in1d",
+                    "获得「知识卡」：np.setdiff1d",
+                    "获得「知识卡」：np.setxor1d"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96959
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "练一练基本的统计方法在多维数据上的应用",
+                "code": "import numpy as np\n\nt = np.array([\n    [1, 2, 3, 4, 5, 6, 7, 8, 9],\n    [10, 11, 12, 13, 14, 15, 16, 17, 18],\n    [19, 20, 21, 22, 23, 24, 25, 26, 27], ])\nprint(\">>> \", np.mean(t))\nprint(\">>> \", np.mean(t, axis=0))\navg = np.sum(t, axis=1)\nprint(\">>> \", np.max(avg), np.min(avg))\na = np.array([[8, 1, 1], [2, 0, 2], [2, 0, 2]])\nprint(\">>> \", np.unique(a))\nprint(\">>> \", np.unique(a, axis=1))\nprint(\">>> \", np.unique(a, axis=0))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "下面开始 PK！九转大肠是山东第一美味菜，今晚一定吃掉它"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "九转大肠大学",
+                "image": "https://python123.io/iclass/images/numpy/4.4.jpg",
+                "cookbook": "清朝时，有一个富商杜老板在山东济南开了一家九华楼餐馆，说来也怪，这杜老板凡事都爱九字，所以给他手下的生意都取名有九字，这九华楼就是其中的一个带九字的场所。杜姓老板是个巨商，生意几乎涉猎九个行业之多，家门兴旺阔绰。说到这九华楼，请的也都是当时济南最好的厨师，烹饪的菜肴是一等一的美味！其中最出名的要属各种猪下水为主的菜色。一天，杜老板宴请济南当地的贵客来九华楼吃饭，其中有一道红烧大肠，贵客中的一个文人尝了后，立刻赞不绝口，说什么也要给杜老板的红烧大肠取个响亮的名字。杜老板连忙称好，只听这文人说：“这红烧大肠吃起来犹如古时炼丹术士所炼仙丹，仙丹的美味一般都用九转仙丹来形容，而且杜老板又喜欢九字，何不将这红烧大肠改名为九转大肠呢？”众人一听，齐声叫好，都赞不绝口，于是这九转大肠的美名就传了下来了！",
+                "winNoty": "解锁积木「菜谱」：九转大肠大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1013,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 15,
+                "choices": [
+                    104764
+                ]
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Programming",
+            "data": {
+                "problem": 101131
+            }
+        }
+    ]
+}

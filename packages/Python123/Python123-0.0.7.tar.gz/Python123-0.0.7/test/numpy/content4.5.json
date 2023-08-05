@@ -1,0 +1,97 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "叮叮咚咚，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本节课对手【爆炒腰花大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这一堂课，我们将学习 NumPy 多维运算中最为抽象的概念——广播，理解广播机制能够帮助我们编写更简化的代码。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/2f629aa0-1751b6c2148/2f629aa0-1751b6c2148.mp4"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：广播"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96960
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Code",
+            "data": {
+                "desc": "矢量运算练一练",
+                "code": "import numpy as np\n\na = np.arange(0, 10).reshape(2, 5)\nb = np.arange(10, 20).reshape(2, 5)\nprint(\">>> \", a.shape, b.shape)\nprint(\">>> \", a, b)\nprint(\"------------------------------------------------------------------------------------------\")\nprint(\">>> \", a + b)\nprint(\">>> \", a - b)\nprint(\">>> \", a * b)\nprint(\">>> \", a / b)\nprint(\"------------------------------------------------------------------------------------------\")\nprint(\">>> \", a & b)\nprint(\">>> \", a | b)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "下面开始今天的学习对战！"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "爆炒腰花大学",
+                "image": "https://python123.io/iclass/images/numpy/4.5.jpg",
+                "cookbook": "爆炒腰花，家常菜，是鲁菜特色传统名菜。制作时以猪腰、荸荠等为主料。其特点是鲜嫩，味道醇厚，滑润不腻。具有较高的营养价值。爆炒腰花制作的难度主要在臊味是否去除干净、口感是否鲜嫩带脆。配菜和佐料因地而异，口味也随之有偏甜、酸、咸、辣之分。",
+                "winNoty": "解锁积木「菜谱」：爆炒腰花大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1011,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 20,
+                "choices": [
+                    101066
+                ]
+            }
+        }
+    ]
+}

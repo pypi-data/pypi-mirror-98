@@ -1,0 +1,226 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "嘎嘎嘎嘎，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天我们要挑战的是：【葱烧海参大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "首先恭喜大家，NumPy 的大多数知识点我们都已经学完啦！"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "从本堂课开始，我们将以图片处理为例，帮助大家熟悉 NumPy 的使用。下面开始吧！"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/1dbc0ded-1751b6c29c0/1dbc0ded-1751b6c29c0.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：打开图片",
+                    "获得「知识卡」：查看图片形状",
+                    "获得「知识卡」：图片上下翻转",
+                    "获得「知识卡」：图片左右翻转",
+                    "获得「知识卡」：图片高度剪切"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：图片宽度剪切",
+                    "获得「知识卡」：图片指定区间剪切",
+                    "获得「知识卡」：图片色值修改",
+                    "获得「知识卡」：图片保存"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96962
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "打开图片、显示图片、查看图片属性",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nplt.imshow(img)\nplt.show()\nprint(img.shape, img.dtype)\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "图片翻转 - 1",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\nimg2 = img[::-1, :, :]\nplt.imshow(img2)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Code",
+            "data": {
+                "desc": "图片翻转 - 2",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\nimg3 = img[:, ::-1, :]\nplt.imshow(img3)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Code",
+            "data": {
+                "desc": "图片裁剪 - 1",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nheight, width, _ = img.shape\nimg4 = img[:height // 2, :, :]\nplt.imshow(img4)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Code",
+            "data": {
+                "desc": "图片裁剪 - 2",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nheight, width, _ = img.shape\nimg5 = img[:, width//3:, :]\nplt.imshow(img5)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Code",
+            "data": {
+                "desc": "图片裁剪 - 3",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nimg6 = img[150:600, 150:320,:]\nplt.imshow(img6)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Code",
+            "data": {
+                "desc": "试一试给图片加边框",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nimg7 = np.copy(img)\nheight, width, _ = img.shape\nimg7[:30, :, :] = 0\nimg7[height-30:, :, :] = 0\n\nplt.imshow(img7)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1017,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "是不是很简单，我们来实际动手操作下，用海参来补补身体"
+            }
+        },
+        {
+            "id": 1018,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "葱烧海参大学",
+                "image": "https://python123.io/iclass/images/numpy/4.6.jpg",
+                "cookbook": "葱烧海参的由来，得说一个地方：北京丰泽园饭店，直至今日这个饭店依然还在。这个饭店在很早之前有一位名厨王世珍，此菜便是出自他手！王世珍当厨后特别喜欢研究另类菜肴，对那些别人不敢轻易尝试地食材特别感兴趣。他当时在处理海参时发现此食材味重难处理，经过大量书籍的研究、参考、学习，加上自己的经验，采用了“以浓攻浓”的做法，加入盐、料酒、蚝油、生抽、冰糖、上汤，盖上锅盖焖至汁收，加入爆香的葱段，翻炒后埋入稀芡。这样烧出海参色暗汁宽，味美多汁，让人食之不忘！以浓汁、浓味为味道之根本，浓色表其外，达到色香味俱全！便成就了今天的葱烧海参。",
+                "winNoty": "解锁积木「菜谱」：葱烧海参大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1019,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 20,
+                "choices": [
+                    105270,
+                    105265
+                ]
+            }
+        },
+        {
+            "id": 1020,
+            "type": "Programming",
+            "data": {
+                "problem": 101133
+            }
+        }
+    ]
+}

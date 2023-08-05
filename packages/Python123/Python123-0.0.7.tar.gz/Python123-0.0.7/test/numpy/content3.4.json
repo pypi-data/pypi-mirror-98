@@ -1,0 +1,141 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "呼啦啦，呼啦啦，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天前来和我们一起学习的是【驴肉火烧大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "在 NumPy 中如何进行数组的排序？怎么插入新的元素？如何去搜索数组中的元素？怎么统计数组中的元素？"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "带着这些问题我们来一起观看视频吧~"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/2e867947-1751b6bfecb/2e867947-1751b6bfecb.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.sort",
+                    "获得「知识卡」：np.searchsorted",
+                    "获得「知识卡」：np.where"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96952
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "练习生成并展示一组随机数据",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\n\na = np.random.randint(0, 100, 200)\nplt.scatter(range(200), a)\nplt.show()\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "对数据排序并展示 - 1",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\na = np.random.randint(0,100,200)\nnp.sort(a)\nplt.scatter(range(200), a)\nplt.show()",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "对数据排序并展示 - 2",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\n\na = np.random.randint(0, 100, 200)\na.sort()\nplt.scatter(range(200), a)\nplt.show()\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Code",
+            "data": {
+                "desc": "排序统计和搜索数组",
+                "code": "import numpy as np\n\na = np.random.randint(0, 100, 10)\n\na.sort()\nprint(\">>> \", a)\nprint(\">>> \", np.searchsorted(a, 5))\nprint(\">>> \", np.insert(a, np.searchsorted(a, 5), 5))\nprint(\">>> \", np.append(a, 100))\nprint(\"------------------------------------------------------------------------------------------\")\na = np.array([1, 2, 3, 1, 1, 1, 2, 3, 4])\nprint(\">>> \", np.where(a == 1))\na = np.array([0, 1, 0, 2, 0, 2, 0, 3, 0, 4])\nprint(\">>> \", np.count_nonzero(a))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "一起来考试，让我们干掉这份驴肉火烧"
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "驴肉火烧大学",
+                "image": "https://python123.io/iclass/images/numpy/3.4.jpg",
+                "cookbook": "驴肉火烧是华北地区极为流行的传统小吃，起源于保定、河间一带，广泛流传于冀中平原，卤好的驴肉伴着老汤汁加入酥脆的火烧里面。驴肉火烧经过了不断地发展和推广，最终闻名大江南北。在华北地区的大街小巷随处可见驴肉火烧的店铺，完全融入了当地居民的生活之中。河间驴肉火烧和保定驴肉火烧最直观的区别在于保定的驴肉火烧是圆的，而河间的驴肉火烧是长方形的。据史书记载，驴肉火烧源于明建文二年(公元1400年）。驴肉先以大火后以温火炖，配以近20种调料，烹煮时间长，熟度透彻，色泽鲜嫩，肉香而不柴，香味绵长，酥软适口。医书中记载驴肉补血、补气、补虚，可见驴肉不仅味道鲜美，还有保健功能。近代医学研究显示，驴肉是低脂肪、高蛋白食品，且钙、磷、铁含量也较高。驴肉火烧在北京、天津和河北等华北地区餐饮市场享有盛名。",
+                "winNoty": "解锁积木「菜谱」：驴肉火烧大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1015,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 10,
+                "choices": [
+                    104197
+                ]
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Programming",
+            "data": {
+                "problem": 101120
+            }
+        }
+    ]
+}

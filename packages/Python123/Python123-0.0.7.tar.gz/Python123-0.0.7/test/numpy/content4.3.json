@@ -1,0 +1,114 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "咚咚咚咚咚，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天的对手是【重庆辣子鸡大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "在 3.4 课中我们介绍过一维数组的排序和搜索，那么在二维数据中有那些不同呢？"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/37148dd8-1751b6c1b36/37148dd8-1751b6c1b36.mp4"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：排序",
+                    "获得「知识卡」：np.where"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96958
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Code",
+            "data": {
+                "desc": "试一试沿不同轴排序的结果",
+                "code": "import numpy as np\n\na = np.random.randint(0, 10, 10)\na = a.reshape(2, 5)\nprint(\">>> \", a)\nprint(\">>> \", np.sort(a))\nprint(\">>> \", np.sort(a, axis=0))\nprint(\">>> \", np.sort(a, axis=1))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "试一试 where 方法",
+                "code": "import numpy as np\n\nt = np.array([\n    [1, 2, 3, 4, 5, 6, 7, 8, 9],\n    [10, 11, 12, 13, 14, 15, 16, 17, 18],\n    [19, 20, 21, 22, 23, 24, 25, 26, 27], ])\nprint(\">>> \", np.sort(t))\nprint(\">>> \", np.sort(t, axis=0))\nprint(\">>> \", np.sort(t, axis=None))\nprint(\">>> \", np.where(t == 10))\nprint(\">>> \", t[1, 6], t[2, 6])\nprint(\">>> \", t[np.where(t > 10)])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "下面开始 PK！今晚我们就来吃——重庆辣子鸡"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "重庆辣子鸡大学",
+                "image": "https://python123.io/iclass/images/numpy/4.3.jpg",
+                "cookbook": "重庆歌乐山镇因“歌乐山辣子鸡”闻名遐迩，但很少有人知道它的创始人名叫朱天才。退休后才开始创业的朱天才，用了3年时间才琢磨出辣子鸡的最佳做法。餐馆名叫\"林中乐辣子鸡\"，该店位于重庆市的森林公园歌乐山，靠近著名的蒋介石在重庆的官坻--林园。辣子鸡1990年开始风行，后来很快名声远扬，引来了诸多餐馆的竞相模仿。众多以重庆辣子鸡为招牌菜的饭馆在林中乐周围出现，形成了赫赫有名的“辣子鸡一条街”。这种新菜的崛起，甚至带动了重庆市土鸡价格的整体上涨。当年火爆的时候，打的士上山吃鸡的盛况蔚为壮观。辣子鸡是最早出名的菜肴之一，可以说是重庆菜中的大哥大。辣子鸡的问世，也带动了一大批菜肴，形成的辣子系列菜如：辣子田螺、辣子肥肠、辣子蹄花、辣子鱼丁、辣子竹虾等。",
+                "winNoty": "解锁积木「菜谱」：重庆辣子鸡大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1012,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 30,
+                "choices": [
+                    104753
+                ]
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Programming",
+            "data": {
+                "problem": 101130
+            }
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "{name}您好，感谢您体验【Python 数据与可视化成长路线】互动课程 "
+            }
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "试学课程只开放了2节的部分内容，到这里就结束了 "
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "如果您感觉这门课程不错，请在平台首页购买正式版 "
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "对于学习这件事，除了要有合适的资料，也要有足够的毅力"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "而数据分析课程是 简单实用，在工作中需求最多的一门“手艺”"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "希望你能在 学习这门手艺的同时，多多思考，多多交流，成为行业佼佼者"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "返回<a href=\"https://python123.io/index/courses/numpy\" target=\"_blank\" >课程主页</a>"
+            }
+        }
+    ]
+}

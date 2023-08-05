@@ -1,0 +1,141 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "呼噜噜，呼噜噜，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天前来和我们一起学习的是【重庆鸳鸯火锅大学】，加油！"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这堂课我们开始学习 NumPy 的数组统计方法。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "相信同学们都听过 MapReduce，简单的说就是将数组进行多步映射计算（Map），最终整合为一个统计结果（Reduce），而统计方法，面向的就是 Reduce 过程。"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "MapReduce 是数据分析中的核心理念，理解这一过程，能帮助我们编写更灵活的的代码。"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/450870ed-1751b6c0649/450870ed-1751b6c0649.mp4"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.sum",
+                    "获得「知识卡」：np.mean",
+                    "获得「知识卡」：np.std",
+                    "获得「知识卡」：np.average",
+                    "获得「知识卡」：np.cumsum"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.cumprod",
+                    "获得「知识卡」：np.unique",
+                    "获得「知识卡」：np.intersect1d",
+                    "获得「知识卡」：np.in1d",
+                    "获得「知识卡」：np.setxor1d"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96953
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "常用统计方法练习 - 1",
+                "code": "import numpy as np\n\na = np.arange(101)\nprint(\">>> \", a)\nprint(\">>> \", np.sum(a))\nprint(\">>> \", np.mean(a))\nprint(\">>> \", np.std(a))\nprint(\"------------------------------------------------------------------------------------------\")\na = np.array([80, 67, 61])\nprint(\">>> \", np.average(a))\nprint(\">>> \", np.mean(a))\nweight = [60, 20, 20]\nprint(\">>> \", np.average(a, weights=weight))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Code",
+            "data": {
+                "desc": "常用统计方法练习 - 2",
+                "code": "import numpy as np\n\na = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \", a)\nprint(\">>> \", np.cumsum(a))\nprint(\">>> \", np.cumprod(a))\nprint(\"------------------------------------------------------------------------------------------\")\na = np.random.randint(0, 10, 100)\nprint(\">>> \", np.unique(a))\nprint(\"------------------------------------------------------------------------------------------\")\na = np.random.randint(0, 10, 10)\nb = np.random.randint(5, 15, 10)\nprint(\">>> \", a, b)\nprint(\">>> \", np.intersect1d(a, b))\nprint(\">>> \", np.union1d(a, b))\nprint(\">>> \", np.in1d(a, b))\nprint(\">>> \", np.setdiff1d(a, b))\nprint(\">>> \", np.setxor1d(a, b))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "重庆鸳鸯火锅大学",
+                "image": "https://python123.io/iclass/images/numpy/3.5.jpg",
+                "cookbook": "鸳鸯火锅，是一道美味可口的名吃，属于渝派川菜系。成菜风味别致，麻辣鲜香，鲜醇浓厚，各有特色。鸳鸯火锅，是以传统毛肚火锅的红汤卤和宴席菊花火锅的清汤卤，两者合并改制而成的重庆创新火锅。此品原名“双味火锅”。为1983年重庆队参加全国第一届烹饪大赛的参赛菜品，由阎文俊取名设计、特级厨师陈志刚制作。这种火锅用铜片隔成两半，造成一个太极图形，一边放清汤卤，一边放红汤卤，入锅烫涮的原料可随人意。1985年，熊四智将“双味火锅”改名为“鸳鸯火锅”，更富有文化韵味和饮食情趣。爱新觉罗·溥杰作为1983年全国烹饪大赛的评委顾问，曾对此评价说：“这个菜很好，好就好在有发展。它巧妙地将重庆传统的红汤火锅和清汤火锅汇于一锅，风味别致，颇有特色。更可取的是这个菜的容器，这种太极图锅耐人寻味。",
+                "winNoty": "解锁积木「菜谱」：重庆鸳鸯火锅大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1014,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 25,
+                "choices": [
+                    101062,
+                    101063,
+                    101064
+                ]
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Programming",
+            "data": {
+                "problem": 104198
+            }
+        }
+    ]
+}

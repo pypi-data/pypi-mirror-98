@@ -1,0 +1,176 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "轰隆隆，轰隆隆，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天前来和我们一起学习的是【红焖羊肉大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天我们来学习使用 NumPy 读写文件。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "除了 Python 的 open，NumPy 还为我们提供了一些专门用于保存数组的函数，一起来学习下吧~"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/1e4f154e-1751b6c0645/1e4f154e-1751b6c0645.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.cos",
+                    "获得「知识卡」：np.save",
+                    "获得「知识卡」：np.savez",
+                    "获得「知识卡」：np.savetxt",
+                    "获得「知识卡」：np.load"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.loadtxt",
+                    "获得「知识卡」：np.copy",
+                    "获得「知识卡」：np.tile",
+                    "获得「知识卡」：ndarray.view"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1009,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96954
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "试一试保存和读取 npy 文件",
+                "code": "import numpy as np\n\na = np.arange(101)\nprint(\">>> \",a)\nnp.save(\"save_a\", a)\nb = np.load(\"save_a.npy\")\nprint(\">>> \",b)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "试一试保存和读取 npz 文件",
+                "code": "import numpy as np\n\na = np.array(11)\nb = np.ones(11)\nprint(\">>> \",a, b)\nnp.savez(\"save_ab\", a, b)\nsave_ab_npz = np.load(\"save_ab.npz\")\nprint(\">>> \",save_ab_npz)\nprint(\">>> \",save_ab_npz[\"arr_0\"])\nprint(\">>> \",save_ab_npz[\"arr_1\"])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Code",
+            "data": {
+                "desc": "试一试手动指定保存数组的名称",
+                "code": "import numpy as np\n\nc = np.zeros(11)\nd = np.ones(11)\nprint(\">>> \",c, d)\n\nnp.savez(\"save_cd\", int_c=c, float_d=d)\nsave_cd_npz = np.load(\"save_cd.npz\")\nprint(\">>> \",save_cd_npz)\nprint(\">>> \",save_cd_npz[\"int_c\"], save_cd_npz[\"float_d\"])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Code",
+            "data": {
+                "desc": "尝试保存和读取 csv 文件",
+                "code": "import numpy as np\n\na = np.arange(100).reshape(10, 10)\nnp.savetxt(\"arange.csv\", a)\nnp.savetxt(\"arange1.csv\", a, fmt=\"%d\")\nnp.savetxt(\"arange2.csv\", a, fmt=\"%d\", delimiter=\",\")\nnp.savetxt(\"arange3.csv\", a, fmt=\"%d\", delimiter=\",\", newline=\"===\\n\")\nprint(\">>> \",np.loadtxt(\"arange2.csv\", delimiter=\",\"))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Code",
+            "data": {
+                "desc": "复制数组的各种方式",
+                "code": "import numpy as np\n\na = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \",np.repeat(a, 1))\na = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \",np.repeat(a, 2))\na = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \",np.repeat(a, 3))\nprint(\"------------------------------------------------------------------------------------------\")\na = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \",np.tile(a, 1))\na = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \",np.tile(a, 2))\na = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])\nprint(\">>> \",np.tile(a, 3))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Code",
+            "data": {
+                "desc": "尝试创建和修改数组视图",
+                "code": "import numpy as np\n\na = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])\nb = a.view()\nb = b.reshape(3, 3)\nprint(\">>> \", a)\nprint(\">>> \", b)\nprint(\"------------------------------------------------------------------------------------------\")\nb[1] = 99\nprint(\">>> \", a)\nprint(\">>> \", b)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "学好了吗？今晚一起吃红焖羊肉"
+            }
+        },
+        {
+            "id": 1017,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "红焖羊肉大学",
+                "image": "https://python123.io/iclass/images/numpy/3.6.jpg",
+                "cookbook": "红焖羊肉起源于河南新乡，由李武卿先生创制，65岁的李武卿参加抗美援朝到过朝鲜，在西藏当过边防军。老先生说当年在四川时就遍尝蜀中火锅美味，后来又北上京城，经常到东来顺涮羊肉以饱口福。爱吃也爱琢磨的他就寻思着将这南北两大火锅的美味合到一块儿，更适合咱这中原人的口味。时间一长，他还真琢磨出了充分体现中原人气质性格的红焖羊肉火锅。红焖羊肉，以肉嫩、味鲜、汤醇、价廉深受各路食客的好评，很快便风靡牧野。一些头脑精明者也抓住这一商机，由食客变成了老板。红焖羊肉很快便红遍中原，闯进京都，成了名闻遐迩的一道豫菜新品。在最鼎盛的1995年到2007年间，新乡、郑州等地出现了“红焖炊烟浩荡处，今日早市没有羊”的奇特景观。",
+                "winNoty": "解锁积木「菜谱」：红焖羊肉大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1018,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 25,
+                "choices": [
+                    104238,
+                    104243,
+                    104247
+                ]
+            }
+        },
+        {
+            "id": 1019,
+            "type": "Programming",
+            "data": {
+                "problem": 101127
+            }
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "呱呱呱 呱呱呱，同学们上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本次对手【德州扒鸡大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "经过这么多的练习，是不是对于图片数组的处理能力更上一层楼了😃😃😃"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "最后这堂课我们来用 NumPy 给图片加！滤！镜！"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/3320cd81-1751b6c368d/3320cd81-1751b6c368d.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：图片故障效果",
+                    "获得「知识卡」：图片马赛克",
+                    "获得「知识卡」：淡化效果处理"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96965
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "图片故障效果",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\n\nfor i in range(50):\n    h = np.random.randint(10, 100)\n    w = np.random.randint(10, 100)\n    x = np.random.randint(0, img.shape[1] - w)\n    y = np.random.randint(0, img.shape[0] - h)\n    if i % 2 == 0:\n        img[y:y+h, x:x+w, :1] = 255\n    else:\n        img[y:y+h, x:x+w, 1:2] = 200\nimg = Image.fromarray(img)\nplt.imshow(img)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "图片像素化滤镜",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom PIL import Image\nimport math\n\nimg = np.array(Image.open('lighthouse.jpg'))\nbs = block_size = 50\nfor i in range(math.ceil(img.shape[0] / bs)):\n    for j in range(math.ceil(img.shape[1] / bs)):\n        s = [slice(i*bs,(i+1)*bs), slice(j*bs,(j+1)*bs)]\n        img[s] = np.median(img[s], axis=(0,1))\nplt.imshow(img.astype('uint8'))\nimg = Image.fromarray(img)\nplt.imshow(img)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "图片淡出滤镜",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nh, w = img.shape[:2]\nm = np.linspace(1, 0, h).reshape(h, 1, 1)\nimg = img * m\nplt.imshow(img.astype('uint8'))\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "烤鸭战扒鸡，大吉大利，今夜吃鸡！就看你的了！~"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "德州扒鸡大学",
+                "image": "https://python123.io/iclass/images/numpy/5.4.jpg",
+                "cookbook": "康熙三十一年（公元1692年），在德州城西门外大街，有一个叫贾建才的烧鸡制作艺人，他经营一间烧鸡铺。因这条街通往运河码头，小买卖还不错。有一天，贾掌柜有急事外出，便嘱咐小二压好火。哪知道贾掌柜前脚走，小伙计不一会儿就在锅灶前睡着了，醒来发现煮过了火。正在束手无策时，贾掌柜就回来了，只能把鸡捞出来试着去卖。却没想是鸡香异常诱人，吸引了很多过路行人纷纷购买。客人尝后，啧啧称赞：“不只是肉烂味香，就连骨头一嚼也是又酥又香，真可谓穿香透骨了”。事后贾掌柜潜心研究，改进技艺。",
+                "winNoty": "解锁积木「菜谱」：德州扒鸡大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Programming",
+            "data": {
+                "problem": 105882
+            }
+        }
+    ]
+}

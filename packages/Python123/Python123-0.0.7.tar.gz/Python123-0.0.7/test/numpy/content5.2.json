@@ -1,0 +1,188 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "滴滴答答，开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天对手【油爆双脆大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这堂课我们继续学习两个新的 NumPy 方法，也非常常用。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "当然同时也要继续练习 NumPy 其它方法的使用。"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/2c5d56cf-1751b6c3307/2c5d56cf-1751b6c3307.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：图片旋转",
+                    "获得「知识卡」：图片平移"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96963
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "首先打开并查看图片",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\nplt.imshow(img)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "将图片旋转 90 度",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\nimg1 = np.rot90(img, 1, axes=(0,1))\nplt.imshow(img1)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Code",
+            "data": {
+                "desc": "将图片旋转 270 度",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\nimg2 = np.rot90(img, 3, axes=(0,1))\nplt.imshow(img2)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Code",
+            "data": {
+                "desc": "「滚动」图片",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\nimg = np.array(Image.open('lighthouse.jpg'))\nimg3 = np.roll(img.copy(), 100, axis=1)\nplt.imshow(img3)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Code",
+            "data": {
+                "desc": "平移图片 - 1",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nimg3 = np.roll(img.copy(), 100, axis=1)\nimg3[:, :100, :] = 255\nplt.imshow(img3)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1014,
+            "type": "Code",
+            "data": {
+                "desc": "平移图片 - 2",
+                "code": "import numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nimg = np.array(Image.open('lighthouse.jpg'))\nimg4 = np.roll(img.copy(), -100, axis=0)\nimg4[-100:, :, :] = 255\nplt.imshow(img4)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "下面开始 PK！别问我油爆双脆是啥，赢了就知道！"
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "油爆双脆大学",
+                "image": "https://python123.io/iclass/images/numpy/5.2.jpg",
+                "cookbook": "“油爆双脆”原名“爆双片”，从创出之日起便一鸣惊人，吸引了众多的达官贵人先品为快。因厨师将猪肚和鸡肫切成薄片，入旺油即熟，口感既脆又嫩，所以人们便习惯称它为“油爆双脆”了。后来，南来北往的客商、美食家们将其传到了京师重地，很快在北京也上市了。如今，东北和江浙一带的著名餐厅、宾馆均有这道极为著名的鲁菜风味菜供应，使“油爆双脆”成为名噪海内外的中国鲁菜代表之一。",
+                "winNoty": "解锁积木「菜谱」：油爆双脆大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1017,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 25,
+                "choices": [
+                    101067,
+                    101068
+                ]
+            }
+        }
+    ]
+}

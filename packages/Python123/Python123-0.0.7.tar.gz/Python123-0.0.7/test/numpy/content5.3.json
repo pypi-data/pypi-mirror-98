@@ -1,0 +1,136 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "嗡嗡嗡 嗡嗡嗡，开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本堂课程对手【四喜丸子大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这一堂课，我们来学习处理图片数组的颜色维度，下面开始吧！"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/18805408-1751b6c3520/18805408-1751b6c3520.mp4"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：灰度图处理",
+                    "获得「知识卡」：对比度增强",
+                    "获得「知识卡」：图片变红"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96964
+            }
+        },
+        {
+            "id": 1008,
+            "type": "Code",
+            "data": {
+                "desc": "灰度图处理",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom PIL import Image\n\nimg = np.array(Image.open('lighthouse2.jpg'))\n\ngrey = np.average(img, weights=(0.3, 0.59, 0.11), axis=2).astype(np.uint8)\nprint(grey.shape)\ngrey = grey[:, :, np.newaxis]\ngrey = np.repeat(grey, 3, axis=2)\nplt.imshow(grey)\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse2.jpg",
+                        "path": "/data/files/numpy/lighthouse2.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "对比度增强",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom PIL import Image\nimg = np.array(Image.open('lighthouse2.jpg'))\ngrey = np.average(img, weights=(0.3,0.59,0.11), axis=2).astype(np.uint8)\ngrey = grey.reshape(grey.shape + (1,))\ngrey = np.repeat(grey, 3, axis=2)\nminval = np.min(grey)\nmaxval = np.max(grey)\nprint(minval, maxval)\ngrey = (grey - minval) / (maxval - minval) * 255\nplt.imshow(grey.astype(np.uint8))\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse2.jpg",
+                        "path": "/data/files/numpy/lighthouse2.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "图片变红",
+                "code": "import numpy as np\nimport matplotlib.pyplot as plt\nfrom PIL import Image\n\nimg = np.array(Image.open('lighthouse.jpg'))\nimg = img.astype(np.uint16)\nimg[:, :, 0] += 100\nimg = img.clip(0, 255)\nplt.imshow(img.astype(np.uint8))\nplt.show()\n",
+                "type": "oj",
+                "attachments": [
+                    {
+                        "name": "lighthouse.jpg",
+                        "path": "/data/files/numpy/lighthouse.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "下面开始 PK，四喜丸子，非常好吃， 大丸子有拳头大"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "四喜丸子大学",
+                "image": "https://python123.io/iclass/images/numpy/5.3.jpg",
+                "cookbook": "1901年，清朝和八国联军签订了“辛丑条约”，其丧权辱国的一系列事不提也罢。而这时候的慈禧太后早已慌张出逃已久，但逃到西安的慈禧太后在局势稳定之后决定折返回北京。在归途中，路过了河南，当地的官员便让厨师制作了一道“四季丸子”，意思是一年四季都团圆美满。慈禧太后当时对这道菜大为称赞。当时做“四季丸子”的厨师非常憎恨慈禧，烹饪中就说：“炸死这个祸国殃民的慈禧！”还有个人接过话茬“慈禧心狠手辣，就应该叫她完止！”，但在当时别说是咒骂一国太后了，普通人就是顶撞皇族都是灭族之罪。于是人们就取了慈禧这两个字的谐音，把炸慈禧叫做了“炸四喜”，把“慈禧完止”则叫做了“四喜丸子”，这便就是四喜丸子和慈禧之间的故事了。",
+                "winNoty": "解锁积木「菜谱」：四喜丸子大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1013,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 25,
+                "choices": [
+                    101069,
+                    101070
+                ]
+            }
+        }
+    ]
+}

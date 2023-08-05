@@ -1,0 +1,115 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "啦啦啦啦啦啦，同学们开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天挑战的是【糖醋鲤鱼大学】开始上课"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "这一章的末尾，我们来了解 NumPy 中的矩阵运算。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "如果我们在数据处理时需要用到复杂的矩阵运算方法，别忘了 NumPy 中还有线性代数库 linalg 函数库供我们使用。下面就来了解一下。"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/204e7fed-1751b6c242b/204e7fed-1751b6c242b.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.dot",
+                    "获得「知识卡」：np.transpose"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96961
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "试一试矩阵乘法和转置操作",
+                "code": "import numpy as np\n\na = np.array([[1, 2], [3, 4]])\nb = np.array([[5, 6], [7, 8]])\nprint(\">>> \", np.dot(a, b))\nc = np.arange(6).reshape((2, 3))\nprint(\">>> \", c, c.T)\nprint(\">>> \", np.transpose(c))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "糖醋鲤鱼不吃不知道， 一吃忘不掉，今晚就战它"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "糖醋鲤鱼大学",
+                "image": "https://python123.io/iclass/images/numpy/4.6.jpg",
+                "cookbook": "据说此菜最早起源于济南泺口，后逐渐流传至山西、河南等地。在河南时，形成了糖醋熘鱼、鲤鱼焙面等菜品。据《东京梦华录》记载“北宋时期，鲤鱼焙面在市场上已流行。鱼肉色泽枣红，软嫩鲜香；焙面细如发丝，蓬松酥脆”、《诗经》记载“岂食其鱼，必河之鲤”，《济南府志》上也早有“黄河之鲤，南阳之蟹，且入食谱”的记载。据这些史料推测，说明早在3000多年以前，黄河鲤鱼就已经成为脍炙人口的名食了。",
+                "winNoty": "解锁积木「菜谱」：糖醋鲤鱼大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1012,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 30,
+                "choices": [
+                    104745,
+                    104748,
+                    104749
+                ]
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Programming",
+            "data": {
+                "problem": 101132
+            }
+        }
+    ]
+}

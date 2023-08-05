@@ -1,0 +1,103 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "乒乒乓乓，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "本节课对战的学校是【四川麻婆豆腐大学】，加油！"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "前面的课程中我们知道，数组中只能保存一种类型的数据。但事实上，NumPy 支持把多种类型的数据整合为一个「结构」类型，并指定数组的类型为这个「结构」。"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "如何进行操作呢？下面我们开始学习吧！"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/575eedea-1751b6c066d/575eedea-1751b6c066d.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：类型代码",
+                    "获得「知识卡」：结构化阵列"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96955
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "创建复合类型的练习",
+                "code": "import numpy as np\n\na = np.array([\n    ('小明', 28, 65.0), ('小王', 24, 74.0)],\n    dtype=[('name', 'U10'), ('age', 'i4'), ('weight', 'f4')])\nprint(\">>> \", a.dtype)\nprint(\">>> \", a)\nprint(\">>> \", a[0])\nprint(\">>> \", a[\"age\"])\nprint(\">>> \", a[\"name\"])\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "课程结束， 开始对战！"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "四川麻婆豆腐大学",
+                "image": "https://python123.io/iclass/images/numpy/3.7.jpg",
+                "cookbook": "麻婆豆腐始创于清朝同治元年，在成都万福桥边，有一家原名陈兴盛饭铺的店面。店主陈春富早殁，小饭店便由老板娘经营，女老板面上微麻，人称陈麻婆。光顾饭铺的主要是挑油的脚夫。陈氏对烹制豆腐有一套独特的烹饪技巧，烹制出的豆腐色香味俱全，深得人们喜爱，她创制的烧豆腐，则被称为陈麻婆豆腐。如今，麻婆豆腐已远渡重洋，在美国、加拿大、英国、法国、越南、新加坡、马来西亚、日本、澳大利亚等国安家落户，从一味家常小菜一跃而登上大雅之堂，成了国际名菜。",
+                "winNoty": "解锁积木「菜谱」：四川麻婆豆腐大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Programming",
+            "data": {
+                "problem": 101128
+            }
+        }
+    ]
+}

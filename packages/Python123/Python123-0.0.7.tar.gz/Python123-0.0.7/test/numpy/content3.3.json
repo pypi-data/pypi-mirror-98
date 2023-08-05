@@ -1,0 +1,152 @@
+{
+    "content": [
+        {
+            "id": 1001,
+            "type": "MatchUser",
+            "data": {}
+        },
+        {
+            "id": 1002,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "叮咚，叮咚，同学们注意了开始上课了。"
+            }
+        },
+        {
+            "id": 1003,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天前来和我们一起学习的是【红烧肉大学】"
+            }
+        },
+        {
+            "id": 1004,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "在 Python 中如果我们想要迭代计算多个列表中的元素的值，需要使用 for 循环来遍历列表进行操作"
+            }
+        },
+        {
+            "id": 1005,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "有了 NumPy，我们可以使用一种更简洁的方法来进行数组间元素的运算，一起来看学习吧！😇"
+            }
+        },
+        {
+            "id": 1006,
+            "type": "Video",
+            "data": {
+                "src": "https://video.python123.io/sv/46f8fca5-1751b6be982/46f8fca5-1751b6be982.mp4"
+            }
+        },
+        {
+            "id": 1007,
+            "type": "Notice",
+            "data": {
+                "text": [
+                    "获得「知识卡」：np.logical_and",
+                    "获得「知识卡」：np.where"
+                ],
+                "type": "info"
+            }
+        },
+        {
+            "id": 1008,
+            "type": "QuickSelect",
+            "data": {
+                "limit": 20,
+                "choice": 96951
+            }
+        },
+        {
+            "id": 1009,
+            "type": "Code",
+            "data": {
+                "desc": "尝试对数组进行四则运算",
+                "code": "import numpy as np\n\nx = np.array([4, 3, 6, 7, 4, 2, 5, 6])\ny = np.array([1, 1, 0, 0, 1, 1, 0, 0])\nprint(\">>> \", x * 2)\nprint(\">>> \", x + y, x - y, x * y, x / y)\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1010,
+            "type": "Code",
+            "data": {
+                "desc": "尝试更复杂的逻辑运算和多远运算",
+                "code": "import numpy as np\n\nx = np.array([4, 3, 6, 7, 4, 2, 5, 6])\ny = np.array([1, 1, 0, 0, 1, 1, 0, 0])\n\nprint(\">>> \", x > 2)\nprint(\">>> \", x == 2)\nprint(\">>> \", x < 2)\nprint(\">>> \", x > y, x == y)\nprint(\">>> \", np.logical_and(x, y))\nprint(\"------------------------------------------------------------------------------------------\")\nprint(\">>> \", x[x > 5])\nx[x == 4] = 99\nprint(\">>> \", x)\nx[y == 0] = 0\nprint(\">>> \", x)\nprint(\"------------------------------------------------------------------------------------------\")\nx = np.array([-4, -3, 6, -7, 4, -2, 5, -6])\nprint(\">>> \", np.where(x > 0, 1, -1))\n",
+                "type": "oj"
+            }
+        },
+        {
+            "id": 1011,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "NumPy 库将数组间的元素运算，变的像加减乘除一样简单"
+            }
+        },
+        {
+            "id": 1012,
+            "type": "Text",
+            "data": {
+                "time": -1,
+                "text": "今天是一场友谊赛，友谊赛我们也要获胜"
+            }
+        },
+        {
+            "id": 1013,
+            "type": "Pk",
+            "data": {
+                "type": "set",
+                "name": "红烧肉大学",
+                "image": "https://python123.io/iclass/images/numpy/3.3.jpg",
+                "cookbook": "红烧肉是中华的一道经典名菜，口感肥而不腻、软糯香甜，是老少皆宜的美食。同时，红烧肉还富含胶原蛋白，是美容养颜保持肌肤弹性的好菜。当然，红烧肉味数甜，不可多吃，高血糖和高血脂的患者慎吃。红烧肉的烹饪技巧以砂锅为主，肥瘦相间，香甜松软，入口即化。红烧肉在中国各地流传甚广，是一道著名的大众菜肴。红烧肉为什么是褐色的？公元1912年法国化学家L.C. Maillard发现氨基酸或蛋白质与葡萄糖混合加热时形成褐色的物质，这类反应称为美拉徳反应。只要温度不高，烧红烧肉时，产生的褐色物质不仅无毒，且香气扑鼻，色泽诱人，是红烧肉成为美食的功臣。",
+                "winNoty": "解锁积木「菜谱」：红烧肉大学",
+                "failNoty": ""
+            }
+        },
+        {
+            "id": 1014,
+            "type": "QuickChoices",
+            "data": {
+                "limit": 40,
+                "choices": [
+                    104800,
+                    104801
+                ]
+            }
+        },
+        {
+            "id": 1015,
+            "type": "Programming",
+            "data": {
+                "problem": 101094
+            }
+        },
+        {
+            "id": 1016,
+            "type": "Programming",
+            "data": {
+                "problem": 101095
+            }
+        },
+        {
+            "id": 1017,
+            "type": "Programming",
+            "data": {
+                "problem": 101114
+            }
+        },
+        {
+            "id": 1018,
+            "type": "Programming",
+            "data": {
+                "problem": 101115
+            }
+        }
+    ]
+}
