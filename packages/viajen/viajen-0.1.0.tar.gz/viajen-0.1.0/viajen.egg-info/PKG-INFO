@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: viajen
+Version: 0.1.0
+Summary: View Images as Animation in Jupyter and Equivalent Notebooks
+Home-page: https://github.com/brunomsantiago/viajen
+Author: Bruno Santiago
+Author-email: not_a_real_email_4523fd786fs5@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
