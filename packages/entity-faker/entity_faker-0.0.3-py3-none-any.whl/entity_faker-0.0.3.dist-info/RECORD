@@ -1,0 +1,13 @@
+entityfaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+entityfaker/datasets.py,sha256=y2bOSvewyXNDHIA64E333GxdQQrZu5VUUiTczlp7pj8,8732
+entityfaker/entities..py,sha256=_T776KATbIuY4pHnyGSiwLd9EWeBg9lSOHwa4G3UjOY,137090
+entityfaker/entitykeywordgenerator.py,sha256=DKuEfAjc2nskk7nKoLxboaSpqGPjmicohCwNlbEGx3U,149082
+entityfaker/formatgenerator.py,sha256=jGFO9ttBAbvKUjgnRAL7ehIenOvVkoG-cENmRxhePVg,12392
+entityfaker/formatprovider.py,sha256=y22HpsRe04QOQfEx19Fz2k-7jl9BELqfNcuexnmKz_k,3290
+entityfaker/insertlocations.py,sha256=kZybE-9F1oN_lXvLHN7rd8YprH7HJo3PR5N5xX5yVuY,217
+entityfaker/keywords.py,sha256=r9qxx8L6tejgubtJGiJFeRPYnBBWh2cVmQwqc-a82zs,125
+entity_faker-0.0.3.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+entity_faker-0.0.3.dist-info/METADATA,sha256=D2OVWm-E_t5oVemWpaBmybZ6gGj__64bUyNbtVJ1ZwY,671
+entity_faker-0.0.3.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+entity_faker-0.0.3.dist-info/top_level.txt,sha256=TgdwJdGfvK3AGOCXUGBSFhDdC1m2TOEXrPN-yfk7X70,12
+entity_faker-0.0.3.dist-info/RECORD,,
