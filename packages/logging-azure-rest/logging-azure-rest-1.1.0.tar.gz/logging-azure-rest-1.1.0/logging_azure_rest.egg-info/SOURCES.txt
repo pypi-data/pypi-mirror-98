@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+logging_azure/__init__.py
+logging_azure/configuration.py
+logging_azure/handler.py
+logging_azure/log_record.py
+logging_azure/log_service.py
+logging_azure/service_provider.py
+logging_azure_rest.egg-info/PKG-INFO
+logging_azure_rest.egg-info/SOURCES.txt
+logging_azure_rest.egg-info/dependency_links.txt
+logging_azure_rest.egg-info/requires.txt
+logging_azure_rest.egg-info/top_level.txt
