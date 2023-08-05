@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+/Users/alex/drive/icns/libraries/event_stream/source/event_stream.cpp
+event_stream.egg-info/PKG-INFO
+event_stream.egg-info/SOURCES.txt
+event_stream.egg-info/dependency_links.txt
+event_stream.egg-info/requires.txt
+event_stream.egg-info/top_level.txt
+source/event_stream.cpp
+source/sepia.hpp
