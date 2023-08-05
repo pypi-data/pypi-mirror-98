@@ -1,0 +1,5 @@
+[console_scripts]
+qp=quickpython.cli:start
+qpython=quickpython.cli:start
+quickpython=quickpython.cli:start
+
