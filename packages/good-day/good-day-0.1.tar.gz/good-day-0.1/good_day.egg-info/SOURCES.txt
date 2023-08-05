@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+good_day/__init__.py
+good_day/__main__.py
+good_day/good_day.py
+good_day.egg-info/PKG-INFO
+good_day.egg-info/SOURCES.txt
+good_day.egg-info/dependency_links.txt
+good_day.egg-info/top_level.txt
