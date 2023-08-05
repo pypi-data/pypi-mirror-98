@@ -1,0 +1,8 @@
+PyQt5/Qt5/lib/libQt5Purchasing.so.5,sha256=k_-Z86KeExVZN2K3htu8oEMTHQQQkE01DmZpY2bZOn0,55000
+PyQt5/Qt5/qml/QtPurchasing/libdeclarative_purchasing.so,sha256=8RDJguSJO-Hj4CIpE2klEunmhaZjI51VHrNhrANigyo,63264
+PyQt5/Qt5/qml/QtPurchasing/plugins.qmltypes,sha256=UkWe1FzbB5zJmSU7hIKIK1aK6Re3zj1Be6cyTZS7sB4,3519
+PyQt5/Qt5/qml/QtPurchasing/qmldir,sha256=ntjFmOOCqv51GITTl-wzfqtsgxVrSJRLAD-zEyLU9zI,107
+PyQtPurchasing_Qt5-5.15.2.dist-info/LICENSE,sha256=IATuPvgoKoX329A136z2PPA9VpU3vAhlX_6xQOo2ccU,44738
+PyQtPurchasing_Qt5-5.15.2.dist-info/METADATA,sha256=Ziobkn9cHmbs9qR0mIG-UUgruXM8Ld0ueoac2X2HuYs,571
+PyQtPurchasing_Qt5-5.15.2.dist-info/WHEEL,sha256=ChtcMXlpx7jE-Dy0VZ-HevAKYS3kxH9ymOw1pec3aFM,102
+PyQtPurchasing_Qt5-5.15.2.dist-info/RECORD,,
