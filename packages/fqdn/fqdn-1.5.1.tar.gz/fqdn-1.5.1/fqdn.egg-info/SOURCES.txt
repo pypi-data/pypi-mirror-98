@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+fqdn/__init__.py
+fqdn/_compat.py
+fqdn.egg-info/PKG-INFO
+fqdn.egg-info/SOURCES.txt
+fqdn.egg-info/dependency_links.txt
+fqdn.egg-info/requires.txt
+fqdn.egg-info/top_level.txt
+fqdn.egg-info/zip-safe
