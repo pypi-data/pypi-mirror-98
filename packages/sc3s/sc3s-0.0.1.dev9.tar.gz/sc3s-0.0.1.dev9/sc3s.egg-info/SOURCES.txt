@@ -1,0 +1,13 @@
+README.md
+setup.py
+sc3s/__init__.py
+sc3s/_cluster.py
+sc3s/_consensus.py
+sc3s/_legacy.py
+sc3s/_misc.py
+sc3s/tools.py
+sc3s.egg-info/PKG-INFO
+sc3s.egg-info/SOURCES.txt
+sc3s.egg-info/dependency_links.txt
+sc3s.egg-info/requires.txt
+sc3s.egg-info/top_level.txt
