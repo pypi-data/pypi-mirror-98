@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "jrpyefficient"
+description = "Jumping Rivers: Efficient Data Science in Python"
+version = "0.0.0"
+authors = ["Jamie <jamie@jumpingrivers.com>", "Jack <jack@jumpingrivers.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pandas = ">=1"
+numpy = ">=1.19"
+matplotlib = ">=3.0"
+openpyxl = ">=3.0"
+
+[tool.poetry.dev-dependencies]
