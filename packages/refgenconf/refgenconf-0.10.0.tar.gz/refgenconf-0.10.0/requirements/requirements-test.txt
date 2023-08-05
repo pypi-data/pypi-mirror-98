@@ -1,0 +1,7 @@
+pytest-cov
+pytest
+pytest-remotedata
+mock
+veracitools
+tqdm
+git+git://github.com/databio/refgenie_myplugin@master#egg=refgenie_myplugin
