@@ -1,0 +1,13 @@
+v6.0.3 4th March 2021
+  - Packaging bug fixes.
+
+v6.0.2 23rd February 2021
+  - Added PYQT_NETWORKAUTH_VERSION and PYQT_NETWORKAUTH_VERSION_STR.
+  - Bug fixes.
+
+v6.0.1 5th February 2021
+  - Wheels now assume that the corresponding Qt libraries are in an external
+    wheel rather than being bundled.
+
+v6.0.0 4th January 2021
+  - The first release of PyQt6-NetworkAuth.
