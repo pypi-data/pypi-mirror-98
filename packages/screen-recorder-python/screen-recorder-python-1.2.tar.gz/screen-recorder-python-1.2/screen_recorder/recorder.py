@@ -1,0 +1,39 @@
+from .audio import Audio
+from .video import Video
+from uuid import uuid1
+from os import mkdir,listdir,getcwd
+from threading import Thread
+from ._ffmpeg import FFMPEG
+class Recorder(Video,Audio):
+    def __init__(self,time=None):
+        unique_id = uuid1()
+        self.unique_id = unique_id
+        directory = listdir(".")
+        if "tmp" not in directory:
+            mkdir("tmp")
+        Video.__init__(self,self.unique_id)
+        Audio.__init__(self,self.unique_id)
+        
+    
+    def record_screen(self):
+        video_thread = Thread(target=self._record_video)
+        audio_thread = Thread(target=self._record_audio)
+        video_thread.start()
+        audio_thread.start()
+
+    def _combine_audio_and_video(self,path):
+        out = FFMPEG(getcwd() + '/tmp/{}.avi'.format(self.unique_id),getcwd() + '/tmp/{}.wav'.format(self.unique_id),path)
+        out.run()
+        
+
+    def stop(self):
+        self.record=False
+        
+        
+    def save(self,path):
+        print("Saving....")
+        self._combine_audio_and_video(path)
+        print("FILE SAVED")
+
+        
+

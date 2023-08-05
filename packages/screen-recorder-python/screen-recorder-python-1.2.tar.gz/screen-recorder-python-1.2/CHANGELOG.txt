@@ -1,0 +1,12 @@
+Change Log
+==========
+
+1.2 (09/03/2021)
+-------------------
+- Second Release
+
+- Modified some files 
+- Fixed some errors
+
+
+
