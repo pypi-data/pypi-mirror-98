@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: file-reader
+Version: 0.1.0
+Summary: A tool for reading file from different sources with a single interface
+Home-page: https://github.com/mrijken/file_reader
+License: MIT
+Author: Marc Rijken
+Author-email: marc@rijken.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: hdfs
+Provides-Extra: s3
+Provides-Extra: sftp
+Provides-Extra: smb
+Provides-Extra: ssh
+Requires-Dist: boto3 (>=1.16.0,<2.0.0); extra == "s3" or extra == "all"
+Requires-Dist: paramiko (>=2.7.2,<3.0.0); extra == "sftp" or extra == "ssh" or extra == "all"
+Requires-Dist: pyarrow (>=2.0.0,<3.0.0); extra == "hdfs" or extra == "all"
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Requires-Dist: smbprotocol (>=1.2.0,<2.0.0); extra == "smb" or extra == "all"
+Project-URL: Repository, https://github.com/mrijken/file_reader
