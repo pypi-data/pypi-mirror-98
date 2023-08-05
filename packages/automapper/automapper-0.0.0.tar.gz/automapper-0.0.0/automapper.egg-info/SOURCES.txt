@@ -1,0 +1,6 @@
+setup.py
+automapper/__init__.py
+automapper.egg-info/PKG-INFO
+automapper.egg-info/SOURCES.txt
+automapper.egg-info/dependency_links.txt
+automapper.egg-info/top_level.txt
