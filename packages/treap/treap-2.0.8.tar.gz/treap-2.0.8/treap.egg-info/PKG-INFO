@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: treap
+Version: 2.0.8
+Summary: Python implementation of treaps
+Home-page: http://stromberg.dnsalias.org/~dstromberg/treap/
+Author: Daniel Richard Stromberg
+Author-email: strombrg@gmail.com
+License: Apache v2
+Description: 
+        A set of python modules implementing treaps in pure python is provided.
+        
+        See also my pyx_treap module, which implements treaps in Cython.
+        
+        Treaps perform most operations in O(log2(n)) time, and are innately sorted.
+        They're very nice for keeping a collection of values that needs to
+        always be sorted, or for optimization problems in which you need to find
+        the p best values out of q, when p is much smaller than q.
+        
+        A module is provided for treaps that enforce uniqueness.
+        
+        Example use:
+        .. code-block:: python
+        
+            >>> import treap
+            >>> t = treap.treap()
+            >>> for i in range(6):
+            ...     t[i] = 2**i
+            ...
+            >>> list(t)
+            [0, 1, 2, 3, 4, 5]
+            >>> print(t)
+            0                                                         5/319487918/32_
+            1                         2/861020069/4__                                                 _______________
+            2         1/1135044777/2_                 3/1142319761/8_                 _______________                 _______________
+            3 0/1473918015/1_ _______________ _______________ 4/2019165697/16 _______________ _______________ _______________ _______________
+            >>> list(t.items())
+            [(0, 1), (1, 2), (2, 4), (3, 8), (4, 16), (5, 32)]
+            >>>
+        
+        
+Platform: Cross platform
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
