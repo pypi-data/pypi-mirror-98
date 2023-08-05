@@ -1,0 +1,12 @@
+README.md
+setup.py
+scrapy_accessory/__init__.py
+scrapy_accessory/feedexporter.py
+scrapy_accessory/middlewares.py
+scrapy_accessory/pipelines.py
+scrapy_accessory.egg-info/PKG-INFO
+scrapy_accessory.egg-info/SOURCES.txt
+scrapy_accessory.egg-info/dependency_links.txt
+scrapy_accessory.egg-info/not-zip-safe
+scrapy_accessory.egg-info/requires.txt
+scrapy_accessory.egg-info/top_level.txt
