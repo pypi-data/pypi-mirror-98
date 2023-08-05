@@ -1,0 +1,14 @@
+bigquery_sql_parser/__init__.py,sha256=yyLtGsBhynC-sSHdax-rRGvHNjH-gdWxIY68WnPVfDw,22
+bigquery_sql_parser/column.py,sha256=JsxQc9PIWkwILelIj---p5yFqmck7SxwPnpN5nfVkO0,948
+bigquery_sql_parser/line.py,sha256=1bcYRPpkMuu9FpkBiG-aG0lU4_-ZQfV7jZn1xf8lQaA,693
+bigquery_sql_parser/multiline.py,sha256=BrTlx4dhm6mxt8SOLlsUwUf0lrGza5oDW2oRh66WNNU,490
+bigquery_sql_parser/query.py,sha256=mZl4QrucfMNnhQTPMSb_9p00gfItI6ZpdyoZtGDBbbg,1497
+bigquery_sql_parser/tokenizer.py,sha256=cD0vAls4u6CaOXpfVxVxRQBFYZpvy52iC8WRn5b4zPs,2182
+bigquery_sql_parser/utils.py,sha256=42ENn3-MpzUAeHtM0usHQpc5eBBnXDxd247G1BoUgGc,99
+bigquery_sql_parser-0.0.3.dist-info/AUTHORS.rst,sha256=vWcDHNxCDFC4Kpx0Dnf4VJsR__gJOAiSS_Uts1wiEzY,45
+bigquery_sql_parser-0.0.3.dist-info/LICENSE,sha256=xCHFdK1pWWnCykVW8sQIMNhZ3H_ct0t-VeNeAQfkPNU,1101
+bigquery_sql_parser-0.0.3.dist-info/METADATA,sha256=yzmmdKb4Da_7_8WJQFut3TxUU8zZ8cz7rFf097kTfwQ,2297
+bigquery_sql_parser-0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bigquery_sql_parser-0.0.3.dist-info/entry_points.txt,sha256=0N7C2GEnifKcdrtw0WURA5PmR6afnMjcLa0P0NuL-wE,70
+bigquery_sql_parser-0.0.3.dist-info/top_level.txt,sha256=JkORD2C6lQRxhIW_FtzKHCAqpwWEjzOcTnW8GhgKfww,20
+bigquery_sql_parser-0.0.3.dist-info/RECORD,,
