@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: py-mysql-client
+Version: 0.0.0.1
+Summary: 基于mysql-python-connector库改写的python mysql driver
+Home-page: https://github.com/stellaye
+Author: lindaye
+Author-email: 454784911@qq.com
+License: UNKNOWN
+Description: py-mysql-client是mysql-python-connector库的简易版，基于mysql官方开源库mysql-python-connector实现;
+        无cursor,执行query后立即获取数据,模拟mysql命令行客户端执行query的过程;
+        支持prepare stmt;
+        支持设置自动提交事务;
+        支持debug模式:日志输出与mysql server从建联到执行query的整个过程step及mysql报文
+Platform: UNKNOWN
