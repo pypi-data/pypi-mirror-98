@@ -1,0 +1,17 @@
+odoo/addons/stock_picking_completion_info/README.rst,sha256=kl2tMbFmXPX56eHCkA5mmF1EBo2zhdCNr9q3GH7IAQ0,3559
+odoo/addons/stock_picking_completion_info/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/stock_picking_completion_info/__manifest__.py,sha256=x5RIzPgUN_LOkKkhqFI85pxZevp5ExpxLu2SCYSk43g,666
+odoo/addons/stock_picking_completion_info/i18n/stock_picking_completion_info.pot,sha256=FhdeaAC0S9YZFRwdiHZorQTgaPmPunzW2p38rLZt0E0,1963
+odoo/addons/stock_picking_completion_info/models/__init__.py,sha256=4KFk_msDhkBW-mEo4xByYxOerTYuVKjeaNN8_WcH6y8,28
+odoo/addons/stock_picking_completion_info/models/stock_picking.py,sha256=U0aVuQZUyFobF0zuALOTKSJac5upwFZrLCD-DoiiCBU,2802
+odoo/addons/stock_picking_completion_info/readme/CONTRIBUTORS.rst,sha256=iXQ__uyKS8cl9pwtvMxtAhu2HMbvg68-9itXDkY-rII,49
+odoo/addons/stock_picking_completion_info/readme/DESCRIPTION.rst,sha256=dyv-VueG0gGhSjh6TqkXYo0QPDPXnz8gY-ZijvCqeNU,494
+odoo/addons/stock_picking_completion_info/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/stock_picking_completion_info/static/description/index.html,sha256=D5HXSqMAw1FipHlW374sbrwlPRRFa-BhWVFIwUPj2x8,12811
+odoo/addons/stock_picking_completion_info/tests/__init__.py,sha256=PKzTttb42A3LMq4_dvkhuO-7BB5LZHEw-rUnFHBMc90,49
+odoo/addons/stock_picking_completion_info/tests/test_stock_picking_completion_info.py,sha256=L-cg65cLbHP70qDa2e05gZA9ZZI1aoFxD7dM29MZ6iQ,11550
+odoo/addons/stock_picking_completion_info/views/stock_picking.xml,sha256=pFB-Qn237rKQ2H2edidgzoofTDjUYPTMYx-8LMdQW_w,1623
+odoo12_addon_stock_picking_completion_info-12.0.1.0.0.99.dev6.dist-info/METADATA,sha256=pDsST8f1Xzekju9ckS0X8MQ2vg-xrMP5veEder2TBzA,4193
+odoo12_addon_stock_picking_completion_info-12.0.1.0.0.99.dev6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo12_addon_stock_picking_completion_info-12.0.1.0.0.99.dev6.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_stock_picking_completion_info-12.0.1.0.0.99.dev6.dist-info/RECORD,,
