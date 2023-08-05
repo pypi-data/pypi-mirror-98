@@ -1,0 +1,56 @@
+[
+  {
+    "name": "checker",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [],
+    "tests": [
+      "DBC",
+      "EFG"
+    ]
+  },
+  {
+    "name": "maintenance",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [],
+    "tests": []
+  },
+  {
+    "name": "production",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [
+      "smoke_test_HW0_PR_Die1_production_TheTest"
+    ],
+    "tests": []
+  },
+  {
+    "name": "engineering",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [],
+    "tests": []
+  },
+  {
+    "name": "validation",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [],
+    "tests": []
+  },
+  {
+    "name": "quality",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [],
+    "tests": []
+  },
+  {
+    "name": "qualification",
+    "is_selected": true,
+    "is_standard": true,
+    "programs": [],
+    "tests": []
+  }
+]
