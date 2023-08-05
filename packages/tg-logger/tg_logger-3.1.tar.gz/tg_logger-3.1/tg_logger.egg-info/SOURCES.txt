@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tg_logger/__init__.py
+tg_logger/files.py
+tg_logger/handler.py
+tg_logger.egg-info/PKG-INFO
+tg_logger.egg-info/SOURCES.txt
+tg_logger.egg-info/dependency_links.txt
+tg_logger.egg-info/requires.txt
+tg_logger.egg-info/top_level.txt
