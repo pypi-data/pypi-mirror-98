@@ -1,0 +1,12 @@
+include README.rst
+include LICENSE
+include CHANGES.*
+include tox.ini
+include .coveragerc
+include .pre-commit-config.yaml
+include .pylintrc
+include .travis.yml
+include .yamllint
+include tools/ansitest
+recursive-include src *.py *.css
+recursive-include doc *.rst *.py

@@ -1,0 +1,6 @@
+Sphinx>=1.7.0
+
+[test]
+coverage>=5.3.1
+mock
+pytest
