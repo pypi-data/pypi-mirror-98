@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: oython
+Version: 1.0.0
+Summary: oython库，作者:李承泽（正常线路下载失败时，请切换为python原版路线)。
+Home-page: https://github.com/
+Author: Chengze Li
+Author-email: gyms1111@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

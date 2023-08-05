@@ -1,0 +1,10 @@
+setup.py
+oython/__init__.py
+oython/copyright.py
+oython/func.py
+oython/prints.py
+oython/spider.py
+oython.egg-info/PKG-INFO
+oython.egg-info/SOURCES.txt
+oython.egg-info/dependency_links.txt
+oython.egg-info/top_level.txt
