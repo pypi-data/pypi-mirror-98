@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+wagtailadminfontawesome/__init__.py
+wagtailadminfontawesome/apps.py
+wagtailadminfontawesome/wagtail_hooks.py
+wagtailadminfontawesome.egg-info/PKG-INFO
+wagtailadminfontawesome.egg-info/SOURCES.txt
+wagtailadminfontawesome.egg-info/dependency_links.txt
+wagtailadminfontawesome.egg-info/not-zip-safe
+wagtailadminfontawesome.egg-info/requires.txt
+wagtailadminfontawesome.egg-info/top_level.txt
+wagtailadminfontawesome/static/wagtailadminfontawesome/wagtail-admin-fontawesome.scss
+wagtailadminfontawesome/static/wagtailadminfontawesome/css/wagtail-admin-fontawesome.min.css
+wagtailadminfontawesome/static/wagtailadminfontawesome/css/.maps/main.min.css.map
+wagtailadminfontawesome/static/wagtailadminfontawesome/css/.maps/wagtail-admin-fontawesome.min.css.map

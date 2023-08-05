@@ -1,0 +1,2 @@
+Django>=3.1.7
+Wagtail>=2.12.2
