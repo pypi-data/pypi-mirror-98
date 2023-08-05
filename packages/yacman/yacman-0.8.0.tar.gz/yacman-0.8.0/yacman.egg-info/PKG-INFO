@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: yacman
+Version: 0.8.0
+Summary: A standardized configuration object for reference genome assemblies
+Home-page: https://github.com/databio/yacman
+Author: Nathan Sheffield
+Author-email: nathan@code.databio.org
+License: BSD2
+Description: <img src="https://raw.githubusercontent.com/databio/yacman/master/docs/img/yacman_logo.svg?sanitize=true" alt="yacman" height="70"/><br>
+        ![Run pytests](https://github.com/databio/yacman/workflows/Run%20pytests/badge.svg)
+        ![Test locking parallel](https://github.com/databio/yacman/workflows/Test%20locking%20parallel/badge.svg)
+        [![codecov](https://codecov.io/gh/databio/yacman/branch/master/graph/badge.svg)](https://codecov.io/gh/databio/yacman)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+        
+        
+        Yacman is a YAML configuration manager. It provides some convenience tools for dealing with YAML configuration files. 
+        
+        Please see [this](docs/usage.md) Python notebook for features and usage instructions and [this](docs/api_docs.md) document for API documentation. 
+        
+Keywords: bioinformatics,sequencing,ngs
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
