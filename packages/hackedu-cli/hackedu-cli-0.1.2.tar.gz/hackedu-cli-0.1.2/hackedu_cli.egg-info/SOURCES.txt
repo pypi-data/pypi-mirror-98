@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/hackedu
+hackedu_cli.egg-info/PKG-INFO
+hackedu_cli.egg-info/SOURCES.txt
+hackedu_cli.egg-info/dependency_links.txt
+hackedu_cli.egg-info/requires.txt
+hackedu_cli.egg-info/top_level.txt
+integrations/__init__.py
+integrations/sonarqube.py
