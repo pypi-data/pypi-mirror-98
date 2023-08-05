@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+__init__.py
+fruit.py
+requirements.txt
+setup.py
+fruity.egg-info/PKG-INFO
+fruity.egg-info/SOURCES.txt
+fruity.egg-info/dependency_links.txt
+fruity.egg-info/requires.txt
+fruity.egg-info/top_level.txt
