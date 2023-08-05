@@ -1,0 +1,10 @@
+README.md
+setup.py
+PyAutoDI/Container.py
+PyAutoDI/PyAutoDI.py
+PyAutoDI/__init__.py
+PyAutoDI/registry_utils.py
+py_auto_di.egg-info/PKG-INFO
+py_auto_di.egg-info/SOURCES.txt
+py_auto_di.egg-info/dependency_links.txt
+py_auto_di.egg-info/top_level.txt
