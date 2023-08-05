@@ -1,0 +1,9 @@
+pyyaml
+paramiko
+cwltool
+
+[dev]
+pre-commit
+pydocstyle
+pytest
+tox

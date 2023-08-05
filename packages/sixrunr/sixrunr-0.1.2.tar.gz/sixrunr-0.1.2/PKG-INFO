@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: sixrunr
+Version: 0.1.2
+Summary: python library for sixoclock's softwares to run
+Home-page: https://github.com/6-oclock/sixrunr
+Author: sixoclock
+Author-email: r_d@sixoclock.net
+Maintainer: sixoclock
+Maintainer-email: r_d@sixoclock.net
+License: Apache-2.0 License
+Project-URL: Documentation, https://aaronluna.dev/series/flask-api-tutorial/
+Project-URL: Bug Tracker, https://github.com/a-luna/flask-api-tutorial/issues
+Project-URL: Source Code, https://github.com/a-luna/flask-api-tutorial
+Description: # sixrunr [![Version][version-badge]][version-link] ![MIT License][license-badge]
+        
+        
+        Run cwl piplines downloaded from sixoclock(www.sixoclock.net)
+        
+        
+        `sixrunr` 是一个本地运行cwl流程的python库
+        
+        
+        ### 示例
+        
+        
+        
+        
+        ### 使用方式
+        
+        ```
+        usage: sixrunr bwa.cwl bwa.yml
+        
+        ```
+        
+        
+        ### 安装
+        
+        ```
+        $ pip install sixrunr
+        ```
+        
+        
+        ### License
+        
+        [Apache-2.0 License](https://github.com/6-oclock/sixrunr/blob/master/LICENSE)
+        
+        
+        [version-badge]:   https://img.shields.io/badge/version-0.1-brightgreen.svg
+        [version-link]:    https://pypi.python.org/pypi/sixrunr/
+        [license-badge]:   https://img.shields.io/github/license/pythonml/douyin_image.svg
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev

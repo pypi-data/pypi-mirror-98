@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/sixrunr/__init__.py
+src/sixrunr/cwlrunr.py
+src/sixrunr/utils.py
+src/sixrunr.egg-info/PKG-INFO
+src/sixrunr.egg-info/SOURCES.txt
+src/sixrunr.egg-info/dependency_links.txt
+src/sixrunr.egg-info/entry_points.txt
+src/sixrunr.egg-info/requires.txt
+src/sixrunr.egg-info/top_level.txt

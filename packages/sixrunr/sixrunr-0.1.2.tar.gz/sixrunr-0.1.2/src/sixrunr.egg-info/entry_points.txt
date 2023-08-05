@@ -1,0 +1,3 @@
+[console_scripts]
+sixrunr = cwltool.main:main
+
