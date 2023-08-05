@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: z0bug-odoo
+Version: 1.0.1
+Summary: Odoo testing framework
+Home-page: http://wiki.zeroincombenze.org/en/Zerobug
+Author: Antonio Maria Vigliotti
+Author-email: antoniomaria.vigliotti@gmail.com
+License: Affero GPL
+Description: 
+        Zeroincombenze(R) continuous testing framework for Odoo modules.
+        
+        Make avaiable test functions indipendent by Odoo version.
+        
+Keywords: unit test
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
