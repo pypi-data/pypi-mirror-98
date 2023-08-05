@@ -1,0 +1,3 @@
+[console_scripts]
+garmin-ical-export = garminicalexport.cmd:main
+
