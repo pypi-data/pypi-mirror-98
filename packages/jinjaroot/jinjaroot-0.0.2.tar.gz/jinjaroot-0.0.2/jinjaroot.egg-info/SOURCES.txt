@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+bin/jinjaroot
+jinjaroot/__init__.py
+jinjaroot/generate.py
+jinjaroot.egg-info/PKG-INFO
+jinjaroot.egg-info/SOURCES.txt
+jinjaroot.egg-info/dependency_links.txt
+jinjaroot.egg-info/requires.txt
+jinjaroot.egg-info/top_level.txt
