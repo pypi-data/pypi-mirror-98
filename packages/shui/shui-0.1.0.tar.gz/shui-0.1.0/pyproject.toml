@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "shui"
+version = "0.1.0"
+description = "Spark-Hadoop Installer For Linux"
+authors = ["James Robinson <james.em.robinson@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+bs4 = "^0.0.1"
+cleo = "^0.8.1"
+packaging = "^20.9"
+requests = "^2.25.1"
+url-normalize = "^1.4.3"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^20.8b1", allow-prereleases = true}
+pylint = "^2.7.2"
+
+[tool.poetry.scripts]
+shui = "shui.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
