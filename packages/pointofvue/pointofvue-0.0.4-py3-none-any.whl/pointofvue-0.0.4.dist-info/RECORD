@@ -1,0 +1,9 @@
+pointofvue/__init__.py,sha256=LBM2jbIsrOUa9BjphdQ35rJsXqU4KV45ZG6ay01tRz8,55
+pointofvue/context.py,sha256=en34MxFJFZ8kkVtJyuV8M_SCwy89-sSjVHPThqq25Ac,966
+pointofvue/templates/script.html,sha256=ovKsfsceCuG7zxiT7w49YJ0abpHGhyCLPq3ce2acj08,1228
+pointofvue/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pointofvue/templatetags/pointofvue.py,sha256=Nckbb0pcyEzR8cnPTMBM9oZ__SvHhekCkOgQf-PpAdc,315
+pointofvue-0.0.4.dist-info/METADATA,sha256=7qYjBEe5xihJrTErTlugmGFiz2V2jSYMR-w-ZT2Xc3A,3109
+pointofvue-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pointofvue-0.0.4.dist-info/top_level.txt,sha256=ub8sKmQmyyqA6lVenpoccfFiNPZfy7VwqRmwK9u0fWs,11
+pointofvue-0.0.4.dist-info/RECORD,,
