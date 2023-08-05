@@ -1,0 +1,13 @@
+data_collection/__init__.py,sha256=4RQt1JUitik43u9YFayW34f68TqDcXvLyMw0UngOk_4,387
+data_collection/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_collection/cli.py,sha256=XZ13nxqxSY_JVdvPVoP_zCngUB17z4ZKHYwwVpXxaVQ,1022
+data_collection/face_recognition/__init__.py,sha256=5xOKjyNw7IBARcv01nDx5Ae1YjomZw_gtL7qNiTCBtM,5393
+data_collection/face_recognition/api.py,sha256=onGpZl_TNKuCE3h4SzJgHuQMsnlde1QFntQhb2td9sg,11092
+data_collection/scripts/cull_unrecognized_faces.py,sha256=U8YSZPZYjfKAcdrlf75SCt0YMvABN6dgRaPcb1who-M,149
+data_collection/scripts/download_youtube.py,sha256=YsrFilDTlNIAbnJD1xbA-l89ynhg5X1lkTkIVXYbH7Y,371
+data_collection/scripts/extract_faces.py,sha256=9kJRYfB_ZHEOl3x7A-VIMcz-3WBuDoNm4r5jMS2ZRcE,402
+data_collection/scripts/extract_frames.py,sha256=fke0z2A0RysdiGgNMDgQVYJb1H7C1pRyl5jXxQJA1g8,426
+data_collection-0.1.0.dist-info/entry_points.txt,sha256=tieso7IfhU_KviHsPct5jiM6isVey_uClNyXQpCL2jU,65
+data_collection-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+data_collection-0.1.0.dist-info/METADATA,sha256=AK4lNqIvSpftxND0f9_qnRcewC-5M06y4UmuLTFT-iU,677
+data_collection-0.1.0.dist-info/RECORD,,
