@@ -1,0 +1,508 @@
+# NOTE(gmann): This file includes all integrated jobs definition which
+# are supposed to be run by Tempest and other projects as
+# integrated testing.
+- job:
+    name: tempest-all
+    parent: devstack-tempest
+    description: |
+      Integration test that runs all tests.
+      Former name for this job was:
+        * legacy-periodic-tempest-dsvm-all-master
+    vars:
+      tox_envlist: all
+      tempest_test_regex: tempest
+      # TODO(gmann): Enable File injection tests once nova bug is fixed
+      # https://bugs.launchpad.net/nova/+bug/1882421
+      # devstack_localrc:
+      #   ENABLE_FILE_INJECTION: true
+
+- job:
+    name: tempest-ipv6-only
+    parent: devstack-tempest-ipv6
+    # This currently works from stable/pike on.
+    branches: ^(?!stable/ocata).*$
+    description: |
+      Integration test of IPv6-only deployments. This job runs
+      smoke and IPv6 relates tests only. Basic idea is to test
+      whether OpenStack Services listen on IPv6 addrress or not.
+    timeout: 10800
+    vars:
+      tox_envlist: ipv6-only
+
+- job:
+    name: tempest-full
+    parent: devstack-tempest
+    # This currently works from stable/pike on.
+    # Before stable/pike, legacy version of tempest-full
+    # 'legacy-tempest-dsvm-neutron-full' run.
+    branches: ^(?!stable/ocata).*$
+    description: |
+      Base integration test with Neutron networking and py27.
+      This job is supposed to run until stable/train setup only.
+      If you are running it on stable/ussuri gate onwards for python2.7
+      coverage then you need to do override-checkout with any stable
+      branch less than or equal to stable/train.
+      Former names for this job where:
+        * legacy-tempest-dsvm-neutron-full
+        * gate-tempest-dsvm-neutron-full-ubuntu-xenial
+    vars:
+      tox_envlist: full
+      devstack_localrc:
+        ENABLE_FILE_INJECTION: true
+        ENABLE_VOLUME_MULTIATTACH: true
+        USE_PYTHON3: False
+      devstack_services:
+        # NOTE(mriedem): Disable the cinder-backup service from tempest-full
+        # since tempest-full is in the integrated-gate project template but
+        # the backup tests do not really involve other services so they should
+        # be run in some more cinder-specific job, especially because the
+        # tests fail at a high rate (see bugs 1483434, 1813217, 1745168)
+        c-bak: false
+
+- job:
+    name: tempest-full-py3
+    parent: devstack-tempest
+    # This job version is with swift disabled on py3
+    # as swift was not ready on py3 until stable/train.
+    branches:
+      - stable/pike
+      - stable/queens
+      - stable/rocky
+      - stable/stein
+      - stable/train
+    description: |
+      Base integration test with Neutron networking, swift disabled, and py3.
+      Former names for this job where:
+        * legacy-tempest-dsvm-py35
+        * gate-tempest-dsvm-py35
+    required-projects:
+      - openstack/horizon
+    vars:
+      tox_envlist: full
+      devstack_localrc:
+        USE_PYTHON3: true
+        FORCE_CONFIG_DRIVE: true
+        ENABLE_VOLUME_MULTIATTACH: true
+        GLANCE_USE_IMPORT_WORKFLOW: True
+      devstack_plugins:
+        neutron: https://opendev.org/openstack/neutron
+      devstack_local_conf:
+        post-config:
+          "/$NEUTRON_CORE_PLUGIN_CONF":
+            ovs:
+              bridge_mappings: public:br-ex
+              resource_provider_bandwidths: br-ex:1000000:1000000
+        test-config:
+          $TEMPEST_CONFIG:
+            network-feature-enabled:
+              qos_placement_physnet: public
+      devstack_services:
+        # Enbale horizon so that we can run horizon test.
+        horizon: true
+        s-account: false
+        s-container: false
+        s-object: false
+        s-proxy: false
+        # without Swift, c-bak cannot run (in the Gate at least)
+        # NOTE(mriedem): Disable the cinder-backup service from
+        # tempest-full-py3 since tempest-full-py3 is in the integrated-gate-py3
+        # project template but the backup tests do not really involve other
+        # services so they should be run in some more cinder-specific job,
+        # especially because the tests fail at a high rate (see bugs 1483434,
+        # 1813217, 1745168)
+        c-bak: false
+        neutron-placement: true
+        neutron-qos: true
+
+- job:
+    name: tempest-full-py3
+    parent: devstack-tempest
+    # This job version is with swift enabled on py3
+    # as swift is ready on py3 from stable/ussuri onwards.
+    branches: ^(?!stable/(ocata|pike|queens|rocky|stein|train)).*$
+    description: |
+      Base integration test with Neutron networking, swift enable, and py3.
+      Former names for this job where:
+        * legacy-tempest-dsvm-py35
+        * gate-tempest-dsvm-py35
+    vars:
+      tox_envlist: full
+      devstack_localrc:
+        USE_PYTHON3: true
+        FORCE_CONFIG_DRIVE: true
+        ENABLE_VOLUME_MULTIATTACH: true
+        GLANCE_USE_IMPORT_WORKFLOW: True
+
+- job:
+    name: tempest-integrated-networking
+    parent: devstack-tempest
+    branches: ^(?!stable/ocata).*$
+    description: |
+      This  job runs integration tests for networking. This is subset of
+      'tempest-full-py3' job and run only Neutron and Nova related tests.
+      This is meant to be run on neutron gate only.
+    vars:
+      tox_envlist: integrated-network
+      devstack_localrc:
+        USE_PYTHON3: true
+        FORCE_CONFIG_DRIVE: true
+      devstack_services:
+        s-account: false
+        s-container: false
+        s-object: false
+        s-proxy: false
+        c-bak: false
+
+- job:
+    name: tempest-integrated-compute
+    parent: devstack-tempest
+    branches: ^(?!stable/ocata).*$
+    description: |
+      This job runs integration tests for compute. This is
+      subset of 'tempest-full-py3' job and run Nova, Neutron, Cinder (except backup tests)
+      and Glance related tests. This is meant to be run on Nova gate only.
+    vars:
+      tox_envlist: integrated-compute
+      tempest_black_regex: ""
+      devstack_localrc:
+        USE_PYTHON3: true
+        FORCE_CONFIG_DRIVE: true
+        ENABLE_VOLUME_MULTIATTACH: true
+      devstack_services:
+        s-account: false
+        s-container: false
+        s-object: false
+        s-proxy: false
+        c-bak: false
+
+- job:
+    name: tempest-integrated-placement
+    parent: devstack-tempest
+    branches: ^(?!stable/ocata).*$
+    description: |
+      This job runs integration tests for placement. This is
+      subset of 'tempest-full-py3' job and run Nova and Neutron
+      related tests. This is meant to be run on Placement gate only.
+    vars:
+      tox_envlist: integrated-placement
+      devstack_localrc:
+        USE_PYTHON3: true
+        FORCE_CONFIG_DRIVE: true
+        ENABLE_VOLUME_MULTIATTACH: true
+      devstack_services:
+        s-account: false
+        s-container: false
+        s-object: false
+        s-proxy: false
+        c-bak: false
+
+- job:
+    name: tempest-integrated-storage
+    parent: devstack-tempest
+    branches: ^(?!stable/ocata).*$
+    description: |
+      This job runs integration tests for image & block storage. This is
+      subset of 'tempest-full-py3' job and run Cinder, Glance, Swift and Nova
+      related tests. This is meant to be run on Cinder and Glance gate only.
+    vars:
+      tox_envlist: integrated-storage
+      devstack_localrc:
+        USE_PYTHON3: true
+        FORCE_CONFIG_DRIVE: true
+        ENABLE_VOLUME_MULTIATTACH: true
+        GLANCE_USE_IMPORT_WORKFLOW: True
+
+- job:
+    name: tempest-integrated-object-storage
+    parent: devstack-tempest
+    branches: ^(?!stable/ocata).*$
+    description: |
+      This job runs integration tests for object storage. This is
+      subset of 'tempest-full-py3' job and run Swift, Cinder and Glance
+      related tests. This is meant to be run on Swift gate only.
+    vars:
+      tox_envlist: integrated-object-storage
+      devstack_localrc:
+        # NOTE(gmann): swift is not ready on python3 yet and devstack
+        # install it on python2.7 only. But settting the USE_PYTHON3
+        # for future once swift is ready on py3.
+        USE_PYTHON3: true
+
+- job:
+    name: tempest-multinode-full
+    parent: tempest-multinode-full-base
+    nodeset: openstack-two-node-focal
+    # This job runs on Focal from stable/victoria on.
+    branches: ^(?!stable/(ocata|pike|queens|rocky|stein|train|ussuri)).*$
+    vars:
+      devstack_localrc:
+        USE_PYTHON3: False
+    group-vars:
+      subnode:
+        devstack_localrc:
+          USE_PYTHON3: False
+
+- job:
+    name: tempest-multinode-full
+    parent: tempest-multinode-full-base
+    nodeset: openstack-two-node-bionic
+    # This job runs on Bionic and on python2. This is for stable/stein and stable/train.
+    # This job is prepared to make sure all stable branches from stable/stein till stable/train
+    # will keep running on bionic. This can be removed once stable/train is EOL.
+    branches:
+      - stable/stein
+      - stable/train
+      - stable/ussuri
+    vars:
+      devstack_localrc:
+        USE_PYTHON3: False
+    group-vars:
+      subnode:
+        devstack_localrc:
+          USE_PYTHON3: False
+
+- job:
+    name: tempest-multinode-full
+    parent: tempest-multinode-full-base
+    nodeset: openstack-two-node-xenial
+    # This job runs on Xenial and this is for stable/pike, stable/queens
+    # and stable/rocky. This job is prepared to make sure all stable branches
+    # before stable/stein will keep running on xenial. This job can be
+    # removed once stable/rocky is EOL.
+    branches:
+      - stable/pike
+      - stable/queens
+      - stable/rocky
+    vars:
+      devstack_localrc:
+        USE_PYTHON3: False
+    group-vars:
+      subnode:
+        devstack_localrc:
+          USE_PYTHON3: False
+
+- job:
+    name: tempest-multinode-full-py3
+    parent: tempest-multinode-full
+    vars:
+      devstack_localrc:
+        USE_PYTHON3: true
+      devstack_plugins:
+        neutron: https://opendev.org/openstack/neutron
+      devstack_local_conf:
+        post-config:
+          "/$NEUTRON_CORE_PLUGIN_CONF":
+            ovs:
+              bridge_mappings: public:br-ex
+              resource_provider_bandwidths: br-ex:1000000:1000000
+        test-config:
+          $TEMPEST_CONFIG:
+            network-feature-enabled:
+              qos_placement_physnet: public
+      devstack_services:
+        neutron-placement: true
+        neutron-qos: true
+    group-vars:
+      subnode:
+        devstack_localrc:
+          USE_PYTHON3: true
+        devstack_local_conf:
+          post-config:
+            "/$NEUTRON_CORE_PLUGIN_CONF":
+              ovs:
+                bridge_mappings: public:br-ex
+                resource_provider_bandwidths: br-ex:1000000:1000000
+
+- job:
+    name: tempest-slow
+    parent: tempest-multinode-full
+    description: |
+      This multinode integration job will run all the tests tagged as slow.
+      It enables the lvm multibackend setup to cover few scenario tests.
+      This job will run only slow tests (API or Scenario) serially.
+
+      Former names for this job were:
+        * legacy-tempest-dsvm-neutron-scenario-multinode-lvm-multibackend
+        * tempest-scenario-multinode-lvm-multibackend
+    timeout: 10800
+    # This job runs on stable/stein onwards.
+    branches: ^(?!stable/(ocata|pike|queens|rocky)).*$
+    vars:
+      tox_envlist: slow-serial
+      devstack_localrc:
+        CINDER_ENABLED_BACKENDS: lvm:lvmdriver-1,lvm:lvmdriver-2
+        ENABLE_VOLUME_MULTIATTACH: true
+      devstack_plugins:
+        neutron: https://opendev.org/openstack/neutron
+      devstack_services:
+        neutron-placement: true
+        neutron-qos: true
+      tempest_concurrency: 2
+    group-vars:
+      # NOTE(mriedem): The ENABLE_VOLUME_MULTIATTACH variable is used on both
+      # the controller and subnode prior to Rocky so we have to make sure the
+      # variable is set in both locations.
+      subnode:
+        devstack_localrc:
+          ENABLE_VOLUME_MULTIATTACH: true
+
+- job:
+    name: tempest-slow
+    parent: tempest-multinode-full
+    description: |
+      This multinode integration job will run all the tests tagged as slow.
+      It enables the lvm multibackend setup to cover few scenario tests.
+      This job will run only slow tests (API or Scenario) serially.
+
+      Former names for this job were:
+        * legacy-tempest-dsvm-neutron-scenario-multinode-lvm-multibackend
+        * tempest-scenario-multinode-lvm-multibackend
+    timeout: 10800
+    branches:
+      - stable/pike
+      - stable/queens
+      - stable/rocky
+    vars:
+      tox_envlist: slow-serial
+      devstack_localrc:
+        CINDER_ENABLED_BACKENDS: lvm:lvmdriver-1,lvm:lvmdriver-2
+        ENABLE_VOLUME_MULTIATTACH: true
+        # to avoid https://bugs.launchpad.net/neutron/+bug/1914037
+        # as we couldn't backport the fix to rocky and older releases
+        IPV6_PUBLIC_RANGE: 2001:db8:0:10::/64
+        IPV6_PUBLIC_NETWORK_GATEWAY: 2001:db8:0:10::2
+        IPV6_ROUTER_GW_IP: 2001:db8:0:10::1
+      devstack_plugins:
+        neutron: https://opendev.org/openstack/neutron
+      devstack_services:
+        neutron-placement: true
+        neutron-qos: true
+      tempest_concurrency: 2
+    group-vars:
+      # NOTE(mriedem): The ENABLE_VOLUME_MULTIATTACH variable is used on both
+      # the controller and subnode prior to Rocky so we have to make sure the
+      # variable is set in both locations.
+      subnode:
+        devstack_localrc:
+          ENABLE_VOLUME_MULTIATTACH: true
+
+- job:
+    name: tempest-slow-py3
+    parent: tempest-slow
+    vars:
+      devstack_localrc:
+        USE_PYTHON3: true
+      devstack_services:
+        s-account: false
+        s-container: false
+        s-object: false
+        s-proxy: false
+        # without Swift, c-bak cannot run (in the Gate at least)
+        c-bak: false
+    group-vars:
+      subnode:
+        devstack_localrc:
+          USE_PYTHON3: true
+
+- job:
+    name: tempest-cinder-v2-api
+    parent: devstack-tempest
+    branches:
+      - master
+    description: |
+      This job runs the cinder API test against v2 endpoint.
+    vars:
+      tox_envlist: all
+      tempest_test_regex: api.*volume
+      devstack_localrc:
+        TEMPEST_VOLUME_TYPE: volumev2
+
+- job:
+    name: tempest-pg-full
+    parent: tempest-full-py3
+    description: |
+      Base integration test with Neutron networking and PostgreSQL.
+      Former name for this job was legacy-tempest-dsvm-neutron-pg-full.
+    vars:
+      devstack_localrc:
+        # TODO(gmann): Enable File injection tests once nova bug is fixed
+        # https://bugs.launchpad.net/nova/+bug/1882421
+        # ENABLE_FILE_INJECTION: true
+        DATABASE_TYPE: postgresql
+
+- project-template:
+    name: integrated-gate-networking
+    description: |
+      Run the python3 Tempest network integration tests (Nova and Neutron related)
+      in check and gate for the neutron integrated gate. This is meant to be
+      run on neutron gate only.
+    check:
+      jobs:
+        - grenade
+        - tempest-integrated-networking
+    gate:
+      jobs:
+        - grenade
+        - tempest-integrated-networking
+
+- project-template:
+    name: integrated-gate-compute
+    description: |
+      Run the python3 Tempest compute integration tests
+      (Nova, Neutron, Cinder and Glance related) in check and gate
+      for the Nova integrated gate. This is meant to be
+      run on Nova gate only.
+    check:
+      jobs:
+        - tempest-integrated-compute
+    gate:
+      jobs:
+        - tempest-integrated-compute
+
+- project-template:
+    name: integrated-gate-placement
+    description: |
+      Run the python3 Tempest placement integration tests
+      (Nova and Neutron related) in check and gate
+      for the Placement integrated gate. This is meant to be
+      run on Placement gate only.
+    check:
+      jobs:
+        - grenade
+        - tempest-integrated-placement
+    gate:
+      jobs:
+        - grenade
+        - tempest-integrated-placement
+
+- project-template:
+    name: integrated-gate-storage
+    description: |
+      Run the python3 Tempest image & block storage integration tests
+      (Cinder, Glance, Swift and Nova related) in check and gate
+      for the neutron integrated gate. This is meant to be
+      run on Cinder and Glance gate only.
+    check:
+      jobs:
+        - grenade
+        - tempest-integrated-storage
+    gate:
+      jobs:
+        - grenade
+        - tempest-integrated-storage
+
+- project-template:
+    name: integrated-gate-object-storage
+    description: |
+      Run the python3 Tempest object storage integration tests
+      (Swift, Cinder and Glance related) in check and gate
+      for the swift integrated gate. This is meant to be
+      run on swift gate only.
+    check:
+      jobs:
+        - grenade
+        - tempest-integrated-object-storage
+    gate:
+      jobs:
+        - grenade
+        - tempest-integrated-object-storage
