@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aicli
+Version: 99.0
+Summary: Assisted installer assistant
+Home-page: http://github.com/karmab/assisted-installer-cli
+Author: Karim Boumedhel
+Author-email: karimboumedhel@gmail.com
+License: ASL
+Description: Assisted installer assistant
+Platform: UNKNOWN
