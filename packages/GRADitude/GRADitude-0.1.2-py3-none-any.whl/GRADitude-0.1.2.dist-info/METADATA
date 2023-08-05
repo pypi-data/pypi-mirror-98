@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: GRADitude
+Version: 0.1.2
+Summary: A tool for the analysis of GRAD-seq data
+Home-page: https://github.com/foerstner-lab/GRADitude.git
+Author: Silvia Di Giorgio, Konrad U. Förstner
+Author-email: UNKNOWN
+License: ISC License (ISCL)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: matplotlib (==3.1.1)
+Requires-Dist: scipy (==1.6.1)
+Requires-Dist: bokeh (==2.3.0)
+Requires-Dist: Jinja2 (==2.10.3)
+Requires-Dist: numpy (==1.17.2)
+Requires-Dist: umap-learn (==0.3.10)
+Requires-Dist: pytest (==5.2.1)
+Requires-Dist: holoviews (==1.14.2)
+Requires-Dist: pandas (==0.25.1)
+Requires-Dist: networkx (==2.3)
+Requires-Dist: seaborn (==0.9.0)
+Requires-Dist: scikit-learn (==0.21.3)
+
+UNKNOWN
+
+
