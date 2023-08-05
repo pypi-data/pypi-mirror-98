@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "jrpyprogramming"
+version = "0.1.15"
+description = "Jumping Rivers: Programming with Python"
+authors = ["Jamie <jamie@jumpingrivers.com>", "Jack <jack@jumpingrivers.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+pandas = ">=1"
+numpy = ">=1.19"
+matplotlib = ">=3.0"
+
+[tool.poetry.dev-dependencies]
