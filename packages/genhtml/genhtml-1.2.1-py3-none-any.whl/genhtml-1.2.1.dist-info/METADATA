@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: genhtml
+Version: 1.2.1
+Summary: Html5 generator
+Home-page: UNKNOWN
+Author: Vadim Simakin
+Author-email: sima.vad@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
+Requires-Dist: bs4
+Requires-Dist: lxml
+
+
+Generate HTML. Usage:
+	import genhtml
+	html=genhtml.HTML()
+	p=html.open('p')
+	p.attrs['style']='color:red;'
+	p.write('Hello!')
+	html.commit(p)
+	tags=html.get_tags()
+	tags[0].write('Using genhtml')
+	html.set_tags(tags)
+	html.open_in_browser()
+	print(genhtml.formated(html.output()))
+
+
