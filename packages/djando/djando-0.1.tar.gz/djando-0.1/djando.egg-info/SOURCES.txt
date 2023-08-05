@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+bin/djando
+djando/__init__.py
+djando/command_line.py
+djando.egg-info/PKG-INFO
+djando.egg-info/SOURCES.txt
+djando.egg-info/dependency_links.txt
+djando.egg-info/entry_points.txt
+djando.egg-info/not-zip-safe
+djando.egg-info/top_level.txt
