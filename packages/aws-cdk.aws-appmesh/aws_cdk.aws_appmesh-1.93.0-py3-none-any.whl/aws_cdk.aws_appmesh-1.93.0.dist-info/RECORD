@@ -1,0 +1,10 @@
+aws_cdk/aws_appmesh/__init__.py,sha256=AwBcGoUmnpJTcmzOux8ZES1QC13OQbta2B-WHb8uQN8,673081
+aws_cdk/aws_appmesh/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_appmesh/_jsii/__init__.py,sha256=VSbAYMpTvbtzqPyY0LjDsq0gdKhFctTdlsna1zJVorU,547
+aws_cdk/aws_appmesh/_jsii/aws-appmesh@1.93.0.jsii.tgz,sha256=Zz3xT-H6hZ-IS-8jSzfDmOZclNVeygiz23k3BwqfOIU,219929
+aws_cdk.aws_appmesh-1.93.0.dist-info/LICENSE,sha256=PPdRlpoLCV1CRrCV1eKpp3m0lNjchFAP4a9zfc8tRLo,11391
+aws_cdk.aws_appmesh-1.93.0.dist-info/METADATA,sha256=OTQBxNa24W542_c4vKqu2o-jcerFQrz6EuBmdumuMyc,22473
+aws_cdk.aws_appmesh-1.93.0.dist-info/NOTICE,sha256=xo56krus2e5ShfXqz_B7vuvGcMn_D0F7TjjpfTz8YMw,113
+aws_cdk.aws_appmesh-1.93.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_appmesh-1.93.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_appmesh-1.93.0.dist-info/RECORD,,
