@@ -1,0 +1,46 @@
+#!python
+
+from models.student import *
+from models.room import *
+from models.assign import *
+from models.parser import *
+from models.fsave import *
+from models.eval import *
+from models.gui import *
+import random
+import sys
+
+def main():
+    # Setup
+    args = parse_args()
+    if len(sys.argv) == 1:
+        args.gui = True
+    if args.gui:
+        args = start_gui(args)
+    random.seed(args.seed)
+
+    # Read from files
+    stdts = Student.parse_stdt(args.student)
+    stdts = Student.parse_stdt_partners(args.partner, stdts)
+    rm = Room.create_room(args.seats)
+
+    # Assign seats
+    alg = Algorithm.choose_algorithm(args.algorithm)
+    alg.assign_empty_seats(rm, stdts)
+    alg.iterative_assign_seats_rand(rm, stdts)
+
+    if args.eval:
+        # Eval
+        eval_chunk_size(rm)
+
+    if not args.nosave:
+        # Save output
+        save_chart(rm, args.out, stdts, args.fmt, args.seed, args.sort_by)
+        save_gchart(rm, args.g_chart, args.g_chart_size, stdts, args.fmt, args.seed, args.sort_by)
+        save_groom(rm, args.g_room, args.g_room_size)
+
+    if args.gui:
+        done_gui()
+
+if __name__ == "__main__":
+    main()
