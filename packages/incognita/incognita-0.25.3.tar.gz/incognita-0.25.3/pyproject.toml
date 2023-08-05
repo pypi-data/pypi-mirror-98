@@ -1,0 +1,23 @@
+# Build system requirements.
+[build-system]
+requires = ["setuptools>=41.0", "wheel"]  #"setuptools-scm",
+build-backend = "setuptools.build_meta"
+
+# Black configuration
+[tool.black]
+line-length = 180
+target-version = ["py38"]  # Remember to change this if we change pins from Python 3.9!  TODO black does not yet support 3.9 (13-01-2021)
+
+# isort configuration
+[tool.isort]
+line_length = 180
+profile = "google"
+py_version = "39"
+skip_gitignore = true
+
+# pytest configuration
+[tool.pytest.ini_options]
+minversion = "6.2"
+testpaths = [
+    "tests",
+]

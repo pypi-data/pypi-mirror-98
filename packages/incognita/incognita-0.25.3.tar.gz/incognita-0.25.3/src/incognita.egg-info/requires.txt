@@ -1,0 +1,9 @@
+pandas
+numpy
+folium
+branca
+geopandas>=0.8
+shapely
+dash
+pyarrow
+pygeos
