@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: replkeepalive
+Version: 0.1.1
+Summary: Keep repls alive.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Keep a repl.it (Soon to be replit.com) repl online 24/7.
+        Useful for discord.py bots.
+Platform: UNKNOWN
