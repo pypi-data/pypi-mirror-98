@@ -1,0 +1,3 @@
+[console_scripts]
+identinum = identinum.cli:main
+

@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+identinum/__about__.py
+identinum/__init__.py
+identinum/cli.py
+identinum/main.py
+identinum.egg-info/PKG-INFO
+identinum.egg-info/SOURCES.txt
+identinum.egg-info/dependency_links.txt
+identinum.egg-info/entry_points.txt
+identinum.egg-info/requires.txt
+identinum.egg-info/top_level.txt
+test/test_cli.py
+test/test_identinum.py
