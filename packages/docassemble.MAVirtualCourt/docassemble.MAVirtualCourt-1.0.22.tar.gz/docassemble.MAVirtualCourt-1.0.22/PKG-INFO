@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: docassemble.MAVirtualCourt
+Version: 1.0.22
+Summary: UNKNOWN
+Home-page: https://docassemble.org
+Author: Quinten Steenhuis
+Author-email: qsteenhuis@suffolk.edu
+License: MIT
+Description: # docassemble.MAVirtualCourt
+        
+        This package supported version 1 of CourtFormsOnline interviews (forms authored March 2020-January 2021) and is 
+        now superseded by https://github.com/SuffolkLITLab/docassemble-AssemblyLine
+        
+        Many existing production forms still rely on this but may get migrated over time.
+        
+        ## Author
+        
+        Quinten Steenhuis
+        Caroline Robinson
+        Kate Barry
+        Plocket
+        Lily Yang
+        Matthew Brooks
+        Lance Godard
+        Maeve MacGlinchey
+        Kendall Garner
+        David Colarusso
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
