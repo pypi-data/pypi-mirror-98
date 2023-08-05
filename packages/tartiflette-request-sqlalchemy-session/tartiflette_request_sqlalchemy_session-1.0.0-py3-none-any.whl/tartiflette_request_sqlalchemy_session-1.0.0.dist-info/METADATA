@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: tartiflette-request-sqlalchemy-session
+Version: 1.0.0
+Summary: Middleware for the [tartiflette](https://tartiflette.io/) GraphQL server implementation to have a SQLAlchemy Session generated on each server request which is then injected into the resolver context.
+Home-page: https://github.com/daveoconnor/tartiflette-request-sqlalchemy-session
+Author: Dave O'Connor
+Author-email: github@dead-pixels.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: tartiflette-middleware (>=1.0)
+Requires-Dist: SQLAlchemy (>=1.3)
+Provides-Extra: psycopg
+Requires-Dist: psycopg2-binary (>=2.8) ; extra == 'psycopg'
+
+# Tartiflette Request SQLAlchemy Session
+
+Middleware for the [tartiflette](https://tartiflette.io/) GraphQL
+server implementation to have a SQLAlchemy Session generated on each server
+request which is then injected into the resolver context.
+
+1. A provided session is unique to the request.
+1. A provided session is shared across queries on a request. 
+1. Must work for queries, mutations, and subscriptions.
+
+## Installation
+
+```bash
+pip install tartiflette-request-sqlalchemy-session[psycopg2]
+```
+
+Currently only supports PostgreSQL through psycopg. Pull requests for other
+adaptors are welcome. 
+
+## Configuration
+
+Note: If you have a working project you won't need to change the Alembic 
+configuration. This is mainly useful for a new project.
+
+### Alembic configuration
+
+In ```env.py``` add:
+
+```python
+from tartiflette_request_sa_session import Database
+
+db_config = Database(
+    db='db_name',
+    engine='db_engine', # e.g. postgres+psycopg2
+    host='db_host',
+    password='db_password',
+    port='db_port',
+    user='db_username',
+)
+database = Database(**db_config)
+```
+
+Update ```env.py``` to use:
+
+```python
+config = context.config
+config.set_main_option('sqlalchemy.url', database.connection_string)
+```
+
+### App.py configuration
+
+This configuration will not usually provide an out of the box working example
+of a tartiflette aiohttp setup. This should be used as guidance to fit into
+your configuration.
+
+```python
+from tartiflette_middleware import Middleware, server
+from tartiflette_request_sa_session import Database, SQLAlchemySessionMiddleware
+
+
+def run():
+   # As with Alembic add:
+   db_manager = Database(
+      db='db_name',
+      engine='db_engine',  # e.g. postgres+psycopg2
+      host='db_host',
+      password='db_password',
+      port='db_port',
+      user='db_username',
+   )
+
+   # database request-based middleware setup
+   sa_middleware = Middleware(
+      context_manager=SQLAlchemySessionMiddleware(db_manager=db_manager),
+      server_middleware=server.aiohttp,
+   )
+   # configure app - tweak to fit own configuration
+   app = web.Application(middlewares=[
+      sa_middleware.middleware,
+   ])
+   engine = create_engine(
+      sdl=os.path.dirname(os.path.abspath(__file__)) + '/sdl',
+      modules=[
+         # configure as necessary
+      ],
+   )
+
+   ctx = {
+      'db_session_service': sa_middleware.service,
+   }
+   web.run_app(
+      register_graphql_handlers(
+         # ... your other settings ...
+         executor_context=ctx,
+      )
+   )
+```
+
+## Use
+
+In your resolver you can now access a new session for each request.
+
+Resolver example: ```query_resolvers.py```
+
+```python
+async def resolve_new_request(parent, args, ctx, info):
+    session = await ctx['db_session_service']()
+    u = session.query(YourModel).filter_by(uuid=args['uuid']).first()
+    return u
+```
+
+# Notes
+
+1. Currently works using "Tartiflette Middleware" which only supports aiohttp. 
+   Other servers supporting tartiflette could be supported via pull requests on
+   that project.
+
+

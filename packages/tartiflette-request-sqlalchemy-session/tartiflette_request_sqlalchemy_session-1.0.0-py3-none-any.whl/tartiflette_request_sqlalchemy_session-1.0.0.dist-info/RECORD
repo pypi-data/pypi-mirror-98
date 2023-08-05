@@ -1,0 +1,9 @@
+tartiflette_request_sa_session/__init__.py,sha256=Q7LN-anMFTcKUgTNVGhxIrdlXs7bD-d1L5i4ZJDPTzs,83
+tartiflette_request_sa_session/database.py,sha256=7YqVjYDeSs-Vksi0OltD7VCp5Stuevi3n5wPhMLJD8c,1456
+tartiflette_request_sa_session/middleware.py,sha256=w37gehGlaqEuROaStkXOpqzpXRNB6RLD7EX-GeS3Gss,522
+tartiflette_request_sa_session/request_context_hooks.py,sha256=ywll943sQ6OjVn5QI0oyBdmDVQf_SmR095rAntgsANQ,562
+tartiflette_request_sqlalchemy_session-1.0.0.dist-info/LICENSE,sha256=an7T5ewmruUqGdYhUExt2LkA3NeihmTkYz5p_dsWKFo,1070
+tartiflette_request_sqlalchemy_session-1.0.0.dist-info/METADATA,sha256=lpqPv-jpfGh3jQg6xphp1MsRFL4nDMmnoVKgGqGF03I,3843
+tartiflette_request_sqlalchemy_session-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tartiflette_request_sqlalchemy_session-1.0.0.dist-info/top_level.txt,sha256=fhF7keh9kmvL9ay5jA7ZyaqC9SMRaSyQ21hPp45SjLU,31
+tartiflette_request_sqlalchemy_session-1.0.0.dist-info/RECORD,,
