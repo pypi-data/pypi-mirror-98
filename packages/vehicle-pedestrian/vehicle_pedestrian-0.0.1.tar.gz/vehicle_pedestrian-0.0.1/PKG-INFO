@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vehicle_pedestrian
+Version: 0.0.1
+Summary: Vehicle and pedestrian interaction
+Home-page: https://github.com/ga74kud/vehicle_pedestrian
+Author: Michael Hartmann
+Author-email: michael.hartmann@v2c2.at
+License: GNU GENERAL PUBLIC LICENSE
+Description: # Vehicle and Pedestrian Interaction
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
