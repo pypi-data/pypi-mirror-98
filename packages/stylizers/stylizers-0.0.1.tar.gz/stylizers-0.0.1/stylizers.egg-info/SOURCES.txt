@@ -1,0 +1,8 @@
+README.md
+setup.py
+stylizers/__init__.py
+stylizers/textStyle.py
+stylizers.egg-info/PKG-INFO
+stylizers.egg-info/SOURCES.txt
+stylizers.egg-info/dependency_links.txt
+stylizers.egg-info/top_level.txt
