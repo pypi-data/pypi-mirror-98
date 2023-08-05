@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: opp-net
+Version: 0.1.0
+Summary: Open Peer Power cloud integration
+Home-page: https://www.openpeerpower.com/
+Author: Open Peer Power
+Author-email: opensource@openpeerpower.com
+License: GPL v3
+Download-URL: https://github.com/OpenPeerPower/opp-net/tarball/0.1.0
+Description: UNKNOWN
+Keywords: openpeerpower,cloud
+Platform: any
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
