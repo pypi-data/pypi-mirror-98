@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cropmetapop
+Version: 1.1.2
+Summary: The crop metapopulation modelisation software
+Home-page: https://sourcesup.renater.fr/www/cmp/
+Author: Equipe DEAP
+Author-email: baptiste.rouger@inra.fr
+License: GNU GPL v3
+Description: Please refer to the official website : https://sourcesup.renater.fr/www/cmp/
+Platform: UNKNOWN

@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import sys
+
+from cropmetapop.CropMetaPop import CropMetaPop
+
+pathToSettingsFile = sys.argv[1]
+
+i = CropMetaPop(pathToSettingsFile)
