@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pytest_adf/__init__.py
+src/pytest_adf/pytest_adf.py
+src/pytest_adf.egg-info/PKG-INFO
+src/pytest_adf.egg-info/SOURCES.txt
+src/pytest_adf.egg-info/dependency_links.txt
+src/pytest_adf.egg-info/entry_points.txt
+src/pytest_adf.egg-info/requires.txt
+src/pytest_adf.egg-info/top_level.txt
