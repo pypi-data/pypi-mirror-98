@@ -1,0 +1,11 @@
+numpy==1.19.3
+matplotlib
+scipy
+torch
+torchvision
+Pillow
+opencv-python
+imutils
+PyWavelets
+wget
+imageio
