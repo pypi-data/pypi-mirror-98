@@ -1,0 +1,9 @@
+commonmarkslack/__init__.py,sha256=siGHhjehlDxNqUSbQCWl9WFjvtBiQMT5mRsg42T4ppM,1016
+commonmarkslack/render/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commonmarkslack/render/plaintext.py,sha256=6yMPduK-jKhGZ3Y5fFomisXNpbeC43hk04lJBFSaN-s,3467
+commonmarkslack/render/slack.py,sha256=S8uTfKRiJD48j9POcqhFBOTcS8-8cVAINvIVlIEEB0E,4040
+commonmark_slack-1.0.0.dist-info/LICENSE,sha256=_hzNtINWoYMi7X-V1_l8SgEtISc4ImVeFX99LXPhkZ8,1065
+commonmark_slack-1.0.0.dist-info/METADATA,sha256=2P21eV7WyYl8-NgCOSxQUD46eXy5EldtVTq2tEPdq3M,1699
+commonmark_slack-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+commonmark_slack-1.0.0.dist-info/top_level.txt,sha256=69P-gqOgSJAwXeLNOOx8cjlGlfva4AHEeucDA33MEvM,16
+commonmark_slack-1.0.0.dist-info/RECORD,,
