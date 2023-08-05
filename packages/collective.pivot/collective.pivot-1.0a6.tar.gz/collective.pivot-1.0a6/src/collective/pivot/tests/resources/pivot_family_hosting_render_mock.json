@@ -1,0 +1,264 @@
+{
+    "items_total": 20,
+    "items": [{
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-02YR-0060"
+        },
+        "locality": "Durnal",
+        "title": "Le Bordon",
+        "latitude": 50.33778,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.96473
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 5,
+            "offerTypeLabel": "Camping",
+            "offerID": "CGT_0005_00000175"
+        },
+        "locality": "Durnal",
+        "title": "Camping: Le Pommier Rustique",
+        "latitude": 50.30479,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.97656
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CGT_0003_00000255"
+        },
+        "locality": "Dorinne",
+        "title": "LE MARRONNIER : CHAMBRE JAUNE",
+        "latitude": 50.3174,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.9706
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 4,
+            "offerTypeLabel": "Meubl\u00e9",
+            "offerID": "MBL-01-09VV-012B"
+        },
+        "locality": "Godinne",
+        "title": "Endigo",
+        "latitude": 50.34565,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.8746
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CGT_0003_00000ABB"
+        },
+        "locality": "Yvoir",
+        "title": "LA FERME DE L'AIRBOIS",
+        "latitude": 50.33461,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.8779
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 2,
+            "offerTypeLabel": "G\u00eete",
+            "offerID": "GIT-01-0008P8"
+        },
+        "locality": "Yvoir",
+        "title": "FERME DE L'AIRBOIS: GITE DU LOGIS",
+        "latitude": 50.33205,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.88836
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-0A8I-01QW"
+        },
+        "locality": "Mont",
+        "title": "Au Mas de Mont 1",
+        "latitude": 50.35278,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.89132
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CGT_0003_00000AE8"
+        },
+        "locality": "Dorinne",
+        "title": "LE MARRONNIER : CHAMBRE BLEUE",
+        "latitude": 50.3174,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.9706
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 2,
+            "offerTypeLabel": "G\u00eete",
+            "offerID": "GIT-01-0008P9"
+        },
+        "locality": "Yvoir",
+        "title": "FERME DE L'AIRBOIS: GITE LES ECURIES",
+        "latitude": 50.33205,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.88836
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-0A8I-01ZV"
+        },
+        "locality": "Mont",
+        "title": "Au Mas de Mont 2",
+        "latitude": 50.35278,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.89132
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 2,
+            "offerTypeLabel": "G\u00eete",
+            "offerID": "CGT_0002_00000C26"
+        },
+        "locality": "Durnal",
+        "title": "LA TURBINE",
+        "latitude": 50.3273,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.97826
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-000BBK"
+        },
+        "locality": "Yvoir",
+        "title": "LE BOUCHAT OREILLE - BAMBOU",
+        "latitude": 50.31978,
+        "cp": "5530",
+        "email": null,
+        "longitude": 5.00702
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-0A8I-0277"
+        },
+        "locality": "Mont",
+        "title": "Au Mas de Mont 3",
+        "latitude": 50.35278,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.89132
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 2,
+            "offerTypeLabel": "G\u00eete",
+            "offerID": "CGT_0002_00000D8E"
+        },
+        "locality": "Evrehailles",
+        "title": "LA FERME CROQUETTE - ANCIENNE ECOLE",
+        "latitude": 50.31876,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.91538
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-000BBL"
+        },
+        "locality": "Yvoir",
+        "title": "LE BOUCHAT OREILLE - PROMENADE DE ST-CLOUD",
+        "latitude": 50.31978,
+        "cp": "5530",
+        "email": null,
+        "longitude": 5.00702
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 2,
+            "offerTypeLabel": "G\u00eete",
+            "offerID": "CGT_0002_00000116"
+        },
+        "locality": "Purnode",
+        "title": "CHANTEGRILLET",
+        "latitude": 50.31307,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.94898
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-000BBM"
+        },
+        "locality": "Yvoir",
+        "title": "LE BOUCHAT OREILLE - L'OLIVERAIE",
+        "latitude": 50.31978,
+        "cp": "5530",
+        "email": null,
+        "longitude": 5.00702
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 5,
+            "offerTypeLabel": "Camping",
+            "offerID": "CGT_0005_00000174"
+        },
+        "locality": "Purnode",
+        "title": "Camping du Bocq",
+        "latitude": 50.32057,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.94527
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 3,
+            "offerTypeLabel": "Chambre d\u2019h\u00f4tes",
+            "offerID": "CHB-01-000OMF"
+        },
+        "locality": "Yvoir",
+        "title": "LE BOUCHAT OREILLE - LE 4",
+        "latitude": 50.31978,
+        "cp": "5530",
+        "email": null,
+        "longitude": 5.00702
+    }, {
+        "phone": null,
+        "offer": {
+            "offerTypeId": 2,
+            "offerTypeLabel": "G\u00eete",
+            "offerID": "GIT-01-000OOG"
+        },
+        "locality": "Evrehailles",
+        "title": "LA FERME CROQUETTE : LE CORPS DE LOGIS",
+        "latitude": 50.31876,
+        "cp": "5530",
+        "email": null,
+        "longitude": 4.91538
+    }]
+}
