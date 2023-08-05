@@ -1,0 +1,11 @@
+.DS_Store,sha256=ECaY-5Auuov7xcC-_dnLCQPV940jdUqfMkLkDddhBE8,6148
+handypy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handypy/_utils.py,sha256=rXIPYgzGNdscTEayjKEKZ_RUw_eEmZk1feIz8ZlN990,1575
+handypy/hcv2.py,sha256=jmZbdulkwkpLDShFXfMcfEyQP-obm3jQD6bCcuuxSy0,3012
+handypy/parallel.py,sha256=6cF1amFQmWHPYEiRfqkipwD0WDOB_t4ag9cE3BC0eTo,1701
+handypy/utils.py,sha256=HYe_WM-UeV8962szUl-AmEpd5JDixw4rty6lr8eJeek,1211
+handypy-0.2.2.dist-info/LICENSE,sha256=CeNrJv7vtb4QVop0GZJRPfp9sPI8piu6vO4_XP-d5W0,1074
+handypy-0.2.2.dist-info/METADATA,sha256=OgKO96atkODT7A_MzKPOZfLpygSyWq6r-XP4DQtJG_w,582
+handypy-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+handypy-0.2.2.dist-info/top_level.txt,sha256=2bNFFycC3zy4qB8UrjkJWjfRpVz7wLMA-uZyxVbOTVc,8
+handypy-0.2.2.dist-info/RECORD,,
