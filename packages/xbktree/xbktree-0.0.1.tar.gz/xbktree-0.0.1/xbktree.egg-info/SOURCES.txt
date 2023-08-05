@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+xbktree.egg-info/PKG-INFO
+xbktree.egg-info/SOURCES.txt
+xbktree.egg-info/dependency_links.txt
+xbktree.egg-info/requires.txt
+xbktree.egg-info/top_level.txt
