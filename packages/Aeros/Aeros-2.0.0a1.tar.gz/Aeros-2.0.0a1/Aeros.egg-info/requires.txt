@@ -1,0 +1,6 @@
+asgiref~=3.3.1
+uvicorn~=0.13.4
+quart~=0.14.1
+quart_compress~=0.2.1
+flask_caching~=1.10.0
+colorama~=0.4.4
