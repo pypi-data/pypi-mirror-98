@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aerodynamics
+Version: 0.0.1.dev1
+Summary: Aerodynamics Functions for Engineers and Scientists
+Home-page: UNKNOWN
+Author: Skyworks (Dilara Ozev, Ethem Yılmaz)
+Author-email: <dilarassdh@hotmail.com>,<ethemymz54@gmail.com>
+License: UNKNOWN
+Keywords: python,numerical_methods,aerodynamics,aircrafts,rockets,mathematical_functions,aerospace,aeronautics,reinforcement learning
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+A package for Aerodynamics Engineers and Scientists that enables them to use various numerical methods, unit conversions, useful functions and needed constants
+
+
