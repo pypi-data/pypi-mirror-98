@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "hotpot_km"
+author = "Vidar Tonaas Fauske"
+author-email = "vidartf@gmail.com"
+home-page = "https://github.com/voila-dashboards/hotpot_km"
+requires = [
+    "async_generator",
+    "jupyter_client",
+    "nbclient",
+    "nbformat",
+    "traitlets",
+]
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+    "jupyter_server",
+    "jupyter_client[test]",
+]
