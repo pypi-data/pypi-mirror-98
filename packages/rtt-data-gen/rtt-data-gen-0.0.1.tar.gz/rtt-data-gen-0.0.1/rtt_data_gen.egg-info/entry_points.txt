@@ -1,0 +1,3 @@
+[console_scripts]
+rtt-data-gen = rtt_data_gen.main:main
+
