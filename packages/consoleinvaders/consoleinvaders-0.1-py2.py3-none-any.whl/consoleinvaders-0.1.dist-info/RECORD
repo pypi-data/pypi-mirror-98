@@ -1,0 +1,10 @@
+consoleinvaders/__init__.py,sha256=LLhaSyqmrKLGI227lHxrinwPQrlz4DakOnzJ2YVdRuw,58
+consoleinvaders/app.py,sha256=1PX-Va7qQB2zqMmU62kF1UARVyTuyIM_3RY6V7SVqQc,249
+consoleinvaders/console.py,sha256=BKbWkQjfXqI1dbUGPxIT3BfsvcxQAYawNIs945WChEI,1369
+consoleinvaders/game.py,sha256=9be6xLKOgqTBeX06Sl33WFGLTgCJGLRmeyRboRAi35U,5903
+consoleinvaders/keyboard.py,sha256=ymPIGUkLXDysgDBRkcmbj295CeCmhoYoIFbZWet2Fd0,1037
+consoleinvaders-0.1.dist-info/entry_points.txt,sha256=Ujt1BpjDTasRK2rWMhBDiFfjgjrlmi34LnZhisfmgO4,60
+consoleinvaders-0.1.dist-info/LICENSE,sha256=UP12RGMhFf2ETzp5ldqhEOCxWCv5erjalEt3wYZl43I,1067
+consoleinvaders-0.1.dist-info/WHEEL,sha256=EJXMfr9EmYk-U6pyWqa2B2QLIwRQV9ltzVJo4MsFY2s,99
+consoleinvaders-0.1.dist-info/METADATA,sha256=SQLH9MADxBs4FFcb9X31f8t-qRWVWAj_TBnIBqCZHHs,1876
+consoleinvaders-0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+consoleinvaders=consoleinvaders.app:main
+
