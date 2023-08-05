@@ -1,0 +1,8 @@
+README.rst
+setup.py
+avinit/__init__.py
+avinit.egg-info/PKG-INFO
+avinit.egg-info/SOURCES.txt
+avinit.egg-info/dependency_links.txt
+avinit.egg-info/requires.txt
+avinit.egg-info/top_level.txt
