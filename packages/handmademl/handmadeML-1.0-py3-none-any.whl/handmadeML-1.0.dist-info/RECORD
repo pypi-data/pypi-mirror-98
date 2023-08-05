@@ -1,0 +1,17 @@
+handmadeML/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handmadeML/common/utils.py,sha256=iy4cx5C_KoPlA_Z0YzVTuTLkkkYMs4HkosqEn4qgZeU,2660
+handmadeML/data/.keep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handmadeML/linearmodels/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handmadeML/linearmodels/models.py,sha256=Fa1Ib6DHqH83PeZc674k4m--YeyMQ7Vyl-FrQG7JG2Q,7370
+handmadeML/linearmodels/utils.py,sha256=U-eBUic0pUekREgiikQx9soFSTJWE5gHPUF2nLP4H5I,3867
+handmadeML/neuralnets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handmadeML/neuralnets/models.py,sha256=6R27HCa3L8HHNmevg1ODJX7gwlPGvvUyR459F3fWR2g,10619
+handmadeML/neuralnets/utils.py,sha256=vZrNREdYIolb36CiUt_dshB0BcLecPPmoeSewstUDE8,1990
+handmadeML/optimizers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+handmadeML/optimizers/adam.py,sha256=LYCTGBKRRrP1Y_vRUmACzo_JbKf34uvgjKv5HIrVPbc,3674
+handmadeML-1.0.data/scripts/handmadeML-run,sha256=_5JNOjhS70e8AZ9BbfR0DTTfvTNbrWg4VgowB1RtonE,33
+handmadeML-1.0.dist-info/LICENCE,sha256=HGnY7TbnjJA97h79tm2umFlpOilHCzk0OZp7EJq7x0U,1071
+handmadeML-1.0.dist-info/METADATA,sha256=7L0RlfB9rc92v23bfgVOQEN0hfYZGZ8syo74VQ2FLPc,4233
+handmadeML-1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+handmadeML-1.0.dist-info/top_level.txt,sha256=ENkDaMcyaBSeArfB9-WUrtIuYk-AmHKRjVDlpWi0D8Y,11
+handmadeML-1.0.dist-info/RECORD,,
