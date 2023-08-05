@@ -1,0 +1,6 @@
+include LICENSE
+include MANIFEST.in
+include *.rst
+graft seethrufeeds
+global-exclude __pycache__
+global-exclude *.py[co]
