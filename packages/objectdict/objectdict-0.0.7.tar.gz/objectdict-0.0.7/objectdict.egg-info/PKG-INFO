@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: objectdict
+Version: 0.0.7
+Summary: objectdict
+Home-page: https://github.com/xzregg/pyobjectdict
+Author: xzregg
+Author-email: xzregg@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
