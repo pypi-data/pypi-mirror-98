@@ -1,0 +1,11 @@
+numpy
+openpyxl
+chardet
+requests
+certifi
+
+[dev]
+check-manifest
+
+[test]
+coverage

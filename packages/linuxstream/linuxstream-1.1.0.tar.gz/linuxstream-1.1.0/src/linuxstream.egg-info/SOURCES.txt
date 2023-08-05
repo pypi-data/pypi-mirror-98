@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/linuxstream.egg-info/PKG-INFO
+src/linuxstream.egg-info/SOURCES.txt
+src/linuxstream.egg-info/dependency_links.txt
+src/linuxstream.egg-info/entry_points.txt
+src/linuxstream.egg-info/requires.txt
+src/linuxstream.egg-info/top_level.txt
+src/sample/__init__.py
