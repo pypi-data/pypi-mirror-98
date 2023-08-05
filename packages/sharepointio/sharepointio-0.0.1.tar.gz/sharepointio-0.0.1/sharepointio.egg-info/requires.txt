@@ -1,0 +1,3 @@
+Office365-REST-Python-Client
+temp
+pathlib2
