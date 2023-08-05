@@ -1,0 +1,4 @@
+Copyright (c) {% now 'local', '%Y' %}, {{ cookiecutter.copyright_holder }} - All Rights Reserved
+Unauthorized copying and/or distribution of this source-code, via any medium is strictly prohibited
+without the express permission of {{ cookiecutter.copyright_holder }}.
+Proprietary and confidential

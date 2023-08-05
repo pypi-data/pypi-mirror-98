@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cosapp_lab
+Version: 0.15.0
+Summary: Jupyter Widgets for CoSApp
+Home-page: https://gitlab.safrantech.safran/cosapp/jupyterlab/cosapp_jupyter.git
+Author: CoSApp Team
+Author-email: duc-trung.le@safrangroup.com
+License: Proprietary License
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,CoSApp
+Platform: Linux
+Platform: Windows
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Framework :: Jupyter
+Provides-Extra: tests
