@@ -1,0 +1,3 @@
+[console_scripts]
+refgenieserver = refgenieserver.__main__:main
+
