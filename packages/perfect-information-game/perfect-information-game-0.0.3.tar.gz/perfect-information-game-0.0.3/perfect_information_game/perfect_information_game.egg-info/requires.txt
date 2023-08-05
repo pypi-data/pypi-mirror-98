@@ -1,0 +1,13 @@
+numpy
+tensorflow
+tensorflowjs
+keras
+pygame
+easygui
+
+[dev]
+chess
+memory_profiler
+matplotlib
+check-manifest
+twine
