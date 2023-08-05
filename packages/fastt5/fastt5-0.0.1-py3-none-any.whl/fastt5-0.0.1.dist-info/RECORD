@@ -1,0 +1,13 @@
+fastT5/__init__.py,sha256=ADY3ox22IM1Lr8t7DpW3S9xG0GOa8eohPWh8s2XT34w,194
+fastT5/model_testing_tools.py,sha256=Rici3dCkERaGSJMU8Y-NRUgxXJkhw2_80boBftgApQI,6284
+fastT5/onnx_exporter.py,sha256=OkiQU3t8FMSp0oCsMFfvzjlSGjFbCPcmonyKGpaLA-o,10280
+fastT5/onnx_models.py,sha256=WrBbfS8Wo2fej_SaPZiQDUNrWgc4JeRpXQSNEXsy_xc,7759
+fastT5/onnx_models_structure.py,sha256=vBOoHPfTeo2AeEkcVDN-Jn0v9tTsVnNzhtZuBWz53wE,2169
+fastT5/ort_settings.py,sha256=yup9TYVuMmR3JO4p6_v4Jw5PkW0AauJrwmjrVf8zSKA,3425
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models_test.py,sha256=0lafRD9uGxIcIc2kIzBTI9O9OK0vQjT4yt-XjViMuRM,912
+fastt5-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+fastt5-0.0.1.dist-info/METADATA,sha256=Av-h1hUJomBwq6w7c9zVv7Mv4-G6tM93qjDpPH8jLkM,8830
+fastt5-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastt5-0.0.1.dist-info/top_level.txt,sha256=8GU816Wbx9z57cPY_OtYCOyQTvGL91KBj7tHDdUPwgo,13
+fastt5-0.0.1.dist-info/RECORD,,
