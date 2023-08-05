@@ -1,0 +1,11 @@
+idservice/__init__.py,sha256=QMN9lV2JK5wwiS_gnpZ-oNRc-F0XI5ynUAyMW4LXqGg,30
+idservice/__main__.py,sha256=rUsNB8fB6a4RMwA21Dl9pqf74-_Vq2u2OSbVp42vAnc,270
+idservice/api.py,sha256=xrrAZeRmxDrlTwIp-c2-F3HgyNjfqbnDUsominLmqKc,486
+idservice/config.py,sha256=Iw4Ec66h6mRQiVw6e8rEpVV7wgZOz2pXjE0f21_QccA,364
+idservice/service.py,sha256=mGdxuq4Mp53STNsY4ecGsDwSpcN72QTunwk1VMWCIiQ,1064
+idservice-0.1.0.data/scripts/idservice-start,sha256=aSLV29plOxCfZN26eWzteWJ_0WlISvjxTKcLsqf2oqA,71
+idservice-0.1.0.dist-info/LICENSE,sha256=ppiuGSOe-05OU8BjPNtnRoDNtwJTvBtqNMyfrPrU4x4,1065
+idservice-0.1.0.dist-info/METADATA,sha256=cCxPJhJVL_goLiH5b8y_Wc_lSfHp6UG06C1ugPQJkKM,2360
+idservice-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+idservice-0.1.0.dist-info/top_level.txt,sha256=uB2BB3KnAL_pmdQQihlXzbLXdAAyaKz32e4Y6ob-pCU,10
+idservice-0.1.0.dist-info/RECORD,,
