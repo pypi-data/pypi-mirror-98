@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyngclient/__init__.py
+pyngclient/generic_ping_client.py
+pyngclient.egg-info/PKG-INFO
+pyngclient.egg-info/SOURCES.txt
+pyngclient.egg-info/dependency_links.txt
+pyngclient.egg-info/requires.txt
+pyngclient.egg-info/top_level.txt
