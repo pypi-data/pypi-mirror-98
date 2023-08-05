@@ -1,0 +1,11 @@
+LICENSE
+README.md
+no_string_hints.py
+setup.cfg
+setup.py
+no_string_hints.egg-info/PKG-INFO
+no_string_hints.egg-info/SOURCES.txt
+no_string_hints.egg-info/dependency_links.txt
+no_string_hints.egg-info/entry_points.txt
+no_string_hints.egg-info/requires.txt
+no_string_hints.egg-info/top_level.txt
