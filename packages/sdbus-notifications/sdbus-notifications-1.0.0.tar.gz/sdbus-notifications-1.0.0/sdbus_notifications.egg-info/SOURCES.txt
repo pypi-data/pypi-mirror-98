@@ -1,0 +1,11 @@
+README.md
+setup.py
+sdbus_async/notifications/__init__.py
+sdbus_async/notifications/py.typed
+sdbus_block/notifications/__init__.py
+sdbus_block/notifications/py.typed
+sdbus_notifications.egg-info/PKG-INFO
+sdbus_notifications.egg-info/SOURCES.txt
+sdbus_notifications.egg-info/dependency_links.txt
+sdbus_notifications.egg-info/requires.txt
+sdbus_notifications.egg-info/top_level.txt
