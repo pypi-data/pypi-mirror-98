@@ -1,0 +1,7 @@
+pip
+pyodbc
+dill
+pkginfo
+requirements-parser
+pandas
+wheel<0.35.0
