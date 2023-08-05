@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+  input[type="submit"] {
+    height: 30px;
+    background: #5eb9d7;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    margin-top: 1px;
+    font-weight: 400;
+    border: 1px solid #5eb9d7;
+    transition: all .3s ease-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: white;
+  color: #5eb9d7;
+}
+#res_table{
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+</style>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Pivoting Results</h2>
+            <table class="table table-striped" id='res_table'>
+              <tr>
+                <th>entity</th>
+                <th>column1</th>
+                <th>column2</th>
+                <th>reference</th>
+                <th>ref_type</th>
+                <th>Delete</th>
+              </tr>
+              {% for table in tables %}
+                <form class="form-inline" action="{{url_for('pivotings_deletetable')}}">
+                  <tr>
+                    <td height="30">{{table.entity}}</td>
+                    <td height="30">{{table.column1}}</td>
+                    <td height="30">{{table.column2}}</td>
+                    <td height="30">{{table.reference}}</td>
+                    <td height="30">{{table.ref_type}}</td>
+                    <td height="30"><input type="submit" value="Delete" class="form-control"></td>
+                    <input type="text" name="tableid" value="{{table._id}}" hidden>
+                  </tr>
+                </form>
+              {% endfor %}
+            </table>
+            <h2>Select</h2>
+            <form method="POST">
+                {{ pvt_form.entity.label }}
+                {{ pvt_form.entity }}
+                {{ pvt_form.column1.label }}
+                {{ pvt_form.column1 }}
+                {{ pvt_form.column2.label }}
+                {{ pvt_form.column2 }}
+                {{ pvt_form.reference.label }}
+                {{ pvt_form.reference }}
+                {{ pvt_form.ref_type.label }}
+                {{ pvt_form.ref_type }}
+                {{ pvt_form.submit }}
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        let entity_select = document.getElementById('entity');
+        let col1_select = document.getElementById('column1');
+        let col2_select = document.getElementById('column2');
+
+        entity_select.onchange = function(){
+          entity = entity_select.value;
+          fetch('/col/'+entity).then(function(response){
+            response.json().then(function(data){
+              let col1_optionHTML = "";
+              let col2_optionHTML = "";
+
+              for (let k of data.cols){
+                col1_optionHTML+='<option value="'+k+'">'+k+'</option>';
+                col2_optionHTML+='<option value="'+k+'">'+k+'</option>';
+              }
+              col1_select.innerHTML=col1_optionHTML;
+              col2_select.innerHTML=col2_optionHTML;
+
+            });
+          });
+        }
+
+      </script>
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+  input[type="submit"] {
+    height: 30px;
+    background: #5eb9d7;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    margin-top: 1px;
+    font-weight: 400;
+    border: 1px solid #5eb9d7;
+    transition: all .3s ease-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: white;
+  color: #5eb9d7;
+}
+#res_table{
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 15px;
+</style>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Entity Results</h2>
+            <table class="table table-striped" id='res_table'>
+              <tr>
+                <th>entity</th>
+                <th>index</th>
+                <th>time_index</th>
+                <th>cutoff</th>
+                <th>if_target</th>
+                <th>alias</th>
+                <th>Delete</th>
+              </tr>
+              {% for table in tables %}
+                <form class="form-inline" action="{{url_for('entities_deletetable')}}">
+                  <tr>
+                    <td>{{table.entity}}</td>
+                    <td>{{table.idx}}</td>
+                    <td>{{table.time_idx}}</td>
+                    <td>{{table.cutoff}}</td>
+                    <td>{{table.if_target}}</td>
+                    <td>{{table.alias}}</td>
+                    <td><input type="submit" value="Delete" class="form-control"></td>
+                    <input type="text" name="tableid" value="{{table._id}}" hidden>
+                  </tr>
+                </form>
+              {% endfor %}
+            </table>
+            <h2>Select</h2>
+            <form method="POST">
+                {{ ent_form.entity.label }}
+                {{ ent_form.entity }}
+                {{ ent_form.idx.label }}
+                {{ ent_form.idx }}
+                {{ ent_form.time_idx.label }}
+                {{ ent_form.time_idx }}
+                {{ ent_form.cutoff.label }}
+                {{ ent_form.cutoff }}
+                {{ ent_form.if_target.label }}
+                {{ ent_form.if_target }}
+                {{ ent_form.alias.label }}
+                {{ ent_form.alias }}
+                {{ ent_form.submit }}
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        let entity_select = document.getElementById('entity');
+        let idxs_select = document.getElementById('idx');
+        let times_select = document.getElementById('time_idx');
+        let cutoff_select = document.getElementById('cutoff');
+        entity_select.onchange = function(){
+          entity = entity_select.value;
+          fetch('/col/'+entity).then(function(response){
+            response.json().then(function(data){
+              let idx_optionHTML = "";
+              let times_optionHTML = "";
+              let cutoff_optionHTML = "";
+              for (let k of data.cols){
+                idx_optionHTML+='<option value="'+k+'">'+k+'</option>';
+                times_optionHTML+='<option value="'+k+'">'+k+'</option>';
+                cutoff_optionHTML+='<option value="'+k+'">'+k+'</option>';
+              }
+              idxs_select.innerHTML=idx_optionHTML;
+              times_select.innerHTML=times_optionHTML;
+              cutoff_select.innerHTML=cutoff_optionHTML;
+            });
+          });
+        }
+
+      </script>
+{% endblock %}

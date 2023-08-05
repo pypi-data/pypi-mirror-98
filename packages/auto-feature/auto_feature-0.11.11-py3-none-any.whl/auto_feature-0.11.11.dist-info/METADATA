@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: auto-feature
+Version: 0.11.11
+Summary: use featuretools for feature engineering
+Home-page: UNKNOWN
+Author: Travis Li
+Author-email: weixing.li@verisk.com
+License: GNU General Public License v3
+Platform: any
+Requires-Dist: flask
+Requires-Dist: featuretools
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: click
+Requires-Dist: boto3
+Requires-Dist: s3fs
+Requires-Dist: xlsxwriter
+Requires-Dist: v-ft
+Requires-Dist: smart-open
+Requires-Dist: xlrd
+
+UNKNOWN
+
+

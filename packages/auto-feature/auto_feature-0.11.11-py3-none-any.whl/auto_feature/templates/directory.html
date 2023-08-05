@@ -1,0 +1,148 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+* {
+box-sizing: border-box;
+}
+
+*:focus {
+outline: none;
+}
+body {
+font-family: Arial;
+padding: 50px;
+}
+
+.login {
+margin: 90px auto;
+width: 300px;
+}
+.login-screen {
+background-color: #FFF;
+padding: 20px;
+border-radius: 5px
+}
+
+.app-title {
+text-align: center;
+color: #777;
+}
+
+.login-form {
+text-align: center;
+}
+.control-group {
+margin-bottom: 10px;
+}
+.configure{
+  margin-bottom: 10px;
+
+}
+.login-field{
+  width: 250px;
+  margin-bottom: 10px;
+  inline-height:100px;
+background-color: #ECF0F1;
+}
+input {
+text-align: center;
+background-color: #ECF0F1;
+border: 2px solid transparent;
+border-radius: 3px;
+font-size: 15px;
+font-weight: 200;
+padding: 5px 0;
+width: 250px;
+transition: border .5s;
+}
+
+input:focus {
+border: 2px solid #3498DB;
+box-shadow: none;
+}
+
+.btn {
+border: 2px solid transparent;
+background: #3498DB;
+color: #ffffff;
+font-size: 16px;
+line-height: 10px;
+padding: 10px 0;
+text-decoration: none;
+text-shadow: none;
+border-radius: 3px;
+box-shadow: none;
+transition: 0.25s;
+display: block;
+width: 250px;
+margin: 0 auto;
+}
+
+.btn:hover {
+background-color: #2980B9;
+}
+
+.login-link {
+font-size: 12px;
+color: #444;
+display: block;
+margin-top: 12px;
+}
+
+</style>
+
+<form action="/directory" method="POST">
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+<h3>Data Folder</h3>
+</div>
+<div class="login-form">
+<div class="control-group">
+  {{ p_form.configuration(placeholder="config-file-name") }}
+
+  <!--<input type="text" class="login-field" value="" placeholder="s3-bucket-name" name="username">-->
+<!--<label class="login-field-icon fui-user" for="login-name"></label>-->
+</div>
+<div class='configure'>
+  {{ p_form.schema_name(placeholder="schema-name") }}
+
+  <!--<input type="text" class="login-field" value="" placeholder="s3-bucket-name" name="username">-->
+<!--<label class="login-field-icon fui-user" for="login-name"></label>-->
+</div>
+<div class='configure'>
+  {{ p_form.bucket(placeholder="s3-bucket-name") }}
+
+  </div>
+<div class="control-group">
+ {{ p_form.folder(placeholder="i-number/project_name") }}
+ </div>
+<!--   <input type="password" class="login-field" value="" placeholder="password" name="password">-->
+<!--<label class="login-field-icon fui-lock" for="login-pass"></label></div>-->
+<input type="submit" value="Go!" class="btn btn-primary btn-large btn-block">
+
+</div>
+</div>
+</div>
+</form>
+<!--
+<script>
+  let bucket_select = document.getElementById('bucket');
+  let folder_select = document.getElementById('folder');
+
+  bucket_select.onchange = function(){
+    bucket = bucket_select.value;
+    fetch('/directory/'+bucket).then(function(response){
+      response.json().then(function(data){
+        let folder_optionHTML = "";
+        for (let k of data.folders){
+          folder_optionHTML+='<option value="'+k+'">'+k+'</option>';
+        }
+        folder_select.innerHTML=folder_optionHTML;
+      });
+    });
+  }
+
+</script>
+-->
+{% endblock %}

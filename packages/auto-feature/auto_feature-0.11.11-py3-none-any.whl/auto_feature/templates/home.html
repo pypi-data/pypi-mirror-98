@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Begin page content -->
+<div class="container">
+    <div class="page-header">
+      <h1>Feature Assistant</h1>
+    </div>
+    <p class="lead">1. <a style="color:red" href="/re_directory"><b>Reset:</b></a> We are in <b>{{path}}</b>, you might change it;</p>
+    <p class="lead">2. <a style="color:red" href="/entities"><b>Entities:</b></a> Follow the sequence in the navigation panel above to do the config; Head to entities first;</p>
+    <p class="lead">3. <a style="color:red" href="{{url_for('save_wait')}}" target="_blank"><b>Save:</b></a> After all have been done, save the configure with the name <b>{{config_name}}.pickle</b>;</p>
+    <p class="lead">4. <a style="color:red" href="{{ url_for('preview_wait') }}" target="_blank" onclick="return confirm('The current schema will be raplaced by the new one')"><b>Preview:</b></a> Now you could preview and modify the features generated;</p>
+    <p class="lead">5. <a style="color:red" href="{{ url_for('preview') }}" target="_blank"><b>Check:</b></a> Or you could check the current schema if you already created it;</p>
+    <p class="lead">6. <a style="color:red" href="{{ url_for('save_schema_wait') }}" target="_blank" onclick="return confirm('Are you sure you want to save the schema?')"><b>Persist</b></a> the schema as <b>{{schema_name}}.json</b>;</p>
+    <p class="lead">7. <a style="color:red" href="{{ url_for('remove_all') }}" target="_blank" onclick="return confirm('Are you sure you want to clear everything up?')"><b>Clear</b></a> all the configure;</p>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block body %}
+<style>
+  input[type="submit"] {
+    height: 30px;
+    background: #5eb9d7;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    margin-top: 1px;
+    font-weight: 400;
+    border: 1px solid #5eb9d7;
+    transition: all .3s ease-out;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: white;
+  color: #5eb9d7;
+}
+#res_table{
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 15px;
+</style>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Relations Results</h2>
+            <table class="table table-striped" id='res_table'>
+              <tr>
+                <th>One</th>
+                <th>Many</th>
+                <th>Foreign</th>
+                <th>Delete</th>
+              </tr>
+              {% for table in tables %}
+                <form class="form-inline" action="{{url_for('relations_deletetable')}}">
+                  <tr>
+                    <td>{{table.one}}</td>
+                    <td>{{table.many}}</td>
+                    <td>{{table.foreign_key}}</td>
+                    <td><input type="submit" value="Delete" class="form-control"></td>
+                    <input type="text" name="tableid" value="{{table._id}}" hidden>
+                  </tr>
+                </form>
+              {% endfor %}
+            </table>
+            <h2>Select</h2>
+            <form method="POST">
+                {{ rel_form.one.label }}
+                {{ rel_form.one }}
+                {{ rel_form.many.label }}
+                {{ rel_form.many }}
+                {{ rel_form.foreign_key.label }}
+                {{ rel_form.foreign_key }}
+                {{ rel_form.submit }}
+            </form>
+          </div>
+        </div>
+      </div>
+      <script>
+        let one_select = document.getElementById('one');
+        let many_select = document.getElementById('many');
+        let frn_select = document.getElementById('foreign_key');
+        many_select.onchange = function(){
+          many = many_select.value;
+          fetch('/col/'+many).then(function(response){
+            response.json().then(function(data){
+              let frn_optionHTML = "";
+              for (let k of data.cols){
+                frn_optionHTML+='<option value="'+k+'">'+k+'</option>';
+              }
+              frn_select.innerHTML=frn_optionHTML;
+            });
+          });
+        }
+
+
+      </script>
+{% endblock %}

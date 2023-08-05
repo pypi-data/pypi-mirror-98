@@ -1,0 +1,247 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+<script type="text/javascript">
+$(document).ready(function($)
+{
+	//ajax row data
+
+  var jsonz = {{ ajax_df|tojson }};
+  var ajax_data = JSON.parse(jsonz);
+  var indx = {{indx|tojson}};
+  var df_name = {{file_name|tojson}};
+  var edit_col = {{edit_col|tojson}};
+  var edit_col = JSON.parse(edit_col);
+  var jsoncol = {{ all_used_cols|tojson }};
+  var ajax_cols = JSON.parse(jsoncol);
+
+//--->	[
+//--->		{fname:"Code", lname:"With Mark", email:"mark@codewithmark.com"},
+//--->		{fname:"Mary", lname:"Moe", email:"mary@gmail.com"},
+//--->		{fname:"John", lname:"Doe", email:"john@yahoo.com"},
+//--->		{fname:"Julie", lname:"Dooley", email:"julie@gmail.com"},
+//--->	]
+
+
+
+  function create_res(cols,data,edit_col,id){
+    //--->create data table > start
+  	var tbl = '';
+    //var tbl_res = '';
+    //--->var allall_used_colsvar jsonz = {{ ajax_df|tojson }};
+    //--->var ajax_data = JSON.parse(jsonz);
+
+  	tbl +='<table id="'+id+'" class="table table-hover table-striped" rules="all">'
+  		//--->create table header > start
+  		//--->tbl +='<thead>';
+  			tbl +='<tr>';
+        $.each( cols, function( index, value ){
+            tbl += '<th>'+value+'</th>';
+        });
+  			//--->tbl +='<th>First Name</th>';
+  			//--->tbl +='<th>Last Name</th>';
+  			//--->tbl +='<th>Email</th>';
+  			//--->tbl +='<th>Options</th>';
+  			tbl +='</tr>';
+  		//--->tbl +='</thead>';
+  		//--->create table header > end
+
+
+  		//--->create table body > start
+  		//--->tbl +='<tbody>';
+
+  			//--->create table body rows > start
+  			$.each(data, function(index, val) //for each row of the data
+  			{
+  				//you can replace with your database row id
+  				//var row_id = random_id();
+
+  				//loop through ajax row data
+  				tbl +='<tr row_id="'+val[indx]+'">';
+            $.each( cols, function( index, value ){  //for each col of the data
+              if (edit_col.includes(value)){
+              //console.log("PRINTEDIT",value)
+              tbl +='<td ><div class="row_data" edit_type="click" col_name="'+value+'">'+val[value]+'</div></td>';
+            } else {
+              //console.log("PRINTNOTEDIT",value)
+              //set id for those tfm and agg backup in order to update them
+              var td_id = val[indx].concat(value.slice(0,3)); //"coveragetfm"
+              tbl +='<td id="'+td_id+'"><div class="not_edit" col_name="'+value+'" contentEditable="false" readonly>'+val[value]+'</div></td>';
+            }
+              	//--->  tbl += '<th>'+value+'</th>';
+            });
+  						//--->tbl +='<td ><div class="row_data" edit_type="click" col_name="fname">'+val['ID']+'</div></td>';
+  						//--->tbl +='<td ><div class="row_data" edit_type="click" col_name="lname">'+val['category']+'</div></td>';
+  						//--->tbl +='<td ><div class="row_data" edit_type="click" col_name="email">'+val['year']+'</div></td>';
+
+  					//--->edit options > start
+
+  					//--->edit options > end
+
+  				tbl +='</tr>';
+  			});
+
+  			//--->create table body rows > end
+
+  		//--->tbl +='</tbody>';
+  		//--->create table body > end
+
+  	tbl +='</table>'
+  	//--->create data table > end
+
+
+
+    return tbl
+  }
+
+
+  var tbl_user = create_res(ajax_cols,ajax_data,edit_col,df_name)
+  //deep copy the original vars
+  //var copied_user = JSON.parse(JSON.stringify(tbl));
+  //var copied_res = JSON.parse(JSON.stringify(tbl_res));
+
+
+	//out put table data
+	$(document).find('.tbl_user_data').html(tbl_user);
+
+
+	//--->make div editable > start
+	$(document).on('click', '.row_data', function(event)
+	{
+		event.preventDefault();
+
+		if($(this).attr('edit_type') == 'button')
+		{
+			return false;
+		}
+
+		//make div editable
+		$(this).closest('div').attr('contenteditable', 'true');
+		//add bg css
+		$(this).addClass('bg-warning').css('padding','5px');
+
+		$(this).focus();
+	})
+	//--->make div editable > end
+
+	//--->save single field data > start
+	$(document).on('focusout', '.row_data', function(event)
+	{
+		event.preventDefault();
+
+		if($(this).attr('edit_type') == 'button')
+		{
+			return false;
+		}
+
+		var row_id = $(this).closest('tr').attr('row_id'); //row_id is set to indx
+    var df_name = $(this).closest('table').attr('id'); //row_id is set to indx
+		var row_div = $(this)
+		.removeClass('bg-warning') //add bg css
+		.css('padding','')
+
+		var col_name = row_div.attr('col_name');
+		var col_val = row_div.html();
+    var to_change = row_id.concat(col_name.slice(0,3))
+		var arr = {};
+    arr['col']=col_name;
+		arr["edit"] = col_val;
+    arr['df_name'] = df_name
+		//use the "arr"	object for your ajax call
+		$.extend(arr, {row_id:row_id});
+
+    console.log('PRINTLOG',arr, row_id)
+
+   $.ajax({
+   type: 'POST',
+   url: '/update',
+   data: JSON.stringify(arr),
+   contentType: 'application/json; charset=UTF-8',
+   dataType: 'json',
+   success: function(data){
+     console.log("print return",data);
+     document.getElementById(to_change).innerHTML=JSON.parse(data['edit_cur_val_backup']);
+    //$( ".sortable" ).sortable( "refresh" );
+   },
+   error: function(err) {
+       console.log("lose");
+   }
+});
+
+	})
+	//--->save single field data > end
+
+
+    $('#resetBtn').on('click', function(e) {
+      e.preventDefault()
+      $.getJSON('/reset',
+          function(data) {
+        //do nothing
+      });
+      $(document).find('.tbl_user_data').html(tbl_user);
+      return false;
+    });
+
+
+
+
+  //});
+
+
+});
+</script>
+<style>
+  #scrolldiv.tbl_user_data {
+    rules="all";
+  height: 300px;
+  width: 100%;
+  overflow: scroll;
+  border: 1px solid #666;
+  padding: 8px;
+  }
+  #scrolldiv1 {
+  border-collapse: collapse;
+  height: 400px;
+  overflow:scroll;
+  width: 100%;
+  border: 2px solid #ddd;
+  font-size: 15px;
+}
+  table th {
+    position: sticky; top: 0; background:#eee;
+    border: 1px solid #ddd;
+}
+  table td {
+      padding: 0.5rem;
+      border: 1px solid #ddd;
+  }
+</style>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    <h2>Primitives Table</h2>
+	   <div class="tbl_user_data" id="scrolldiv1"></div>
+
+  <h2>Select Entity</h2>
+  <form method="POST">
+      {{ prim_form.datasets.label }}
+      {{ prim_form.datasets }}
+      {{ prim_form.submit }}
+
+
+  </form>
+  <h2>Reset</h2>
+    <input type="button" value=" RESET " id="resetBtn">
+
+
+  </div>
+</div>
+</div>
+
+{% endblock %}

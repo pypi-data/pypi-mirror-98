@@ -1,0 +1,12 @@
+web:
+  build: .
+  command: python -u views.py
+  ports:
+    - "5000:5000"
+  volumes:
+    - .:/app
+    - ~/.aws/:/root/.aws:ro
+  links:
+    - db
+db:
+  image: mongo:3.6.1

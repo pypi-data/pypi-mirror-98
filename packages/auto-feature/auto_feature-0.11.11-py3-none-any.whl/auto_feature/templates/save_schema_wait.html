@@ -1,0 +1,13 @@
+
+{% extends "layout.html"%}
+{% block metarefresh %} <meta http-equiv="refresh" content="5"> {% endblock %}
+{% block body %}
+<div class="container">
+    <div class="page-header">
+      <h3>Normally Wait for 5 second to 2 minutes, enjoy the fun facts:</h3>
+      <h2>{{fact}}</h2>
+    </div>
+</div>
+<script> window.location.replace('/save_schema'); </script>
+
+{% endblock %}
