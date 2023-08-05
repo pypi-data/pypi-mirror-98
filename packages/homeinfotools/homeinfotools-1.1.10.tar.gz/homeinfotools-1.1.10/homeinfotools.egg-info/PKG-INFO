@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: homeinfotools
+Version: 1.1.10
+Summary: Tools to manage HOMEINFO digital signge systems.
+Home-page: https://github.com/homeinfogmbh/homeinfotools
+Author: HOMEINFO - Digitale Informationssysteme GmbH
+Author-email: info@homeinfo.de
+Maintainer: Richard Neumann
+Maintainer-email: r.neumann@homeinfo.de
+License: GPLv3
+Description: # homeinfotools
+        Client tools to manage HOMEINFO's digital sigange systems and accesss database information. 
+        
+Keywords: python HOMEINFO systems client
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
