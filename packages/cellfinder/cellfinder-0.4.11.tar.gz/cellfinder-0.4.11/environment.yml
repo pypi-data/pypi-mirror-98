@@ -1,0 +1,7 @@
+name: cellfinder
+dependencies:
+  - python=3.8
+  - cudatoolkit=10.1
+  - cudnn
+  - pip:
+      - cellfinder
