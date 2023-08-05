@@ -1,0 +1,7 @@
+pyyaml
+mistune
+sphinx
+sphinx_bootstrap_theme
+
+[tests]
+pytest
