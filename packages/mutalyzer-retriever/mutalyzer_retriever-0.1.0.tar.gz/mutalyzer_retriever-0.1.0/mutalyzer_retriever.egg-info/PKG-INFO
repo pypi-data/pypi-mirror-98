@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mutalyzer-retriever
+Version: 0.1.0
+Summary: Mutalyzer genomic reference retriever.
+Home-page: https://github.com/mutalyzer/retriever
+Author: Mihai Lefter
+Author-email: M.Lefter@lumc.nl
+License: MIT
+Description: # Mutalyzer Retriever
+        
+        ![GitHub last commit](https://img.shields.io/github/last-commit/mutalyzer/retriever)
+        ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mutalyzer/retriever/Python%20package%20CI)
+        ![Read the Docs](https://img.shields.io/readthedocs/mutalyzer-retriever)
+        ![GitHub release (latest by date)](https://img.shields.io/github/v/release/mutalyzer/retriever)
+        ![GitHub Release Date](https://img.shields.io/github/release-date/mutalyzer/retriever)
+        ![PyPI](https://img.shields.io/pypi/v/mutalyzer_retriever)
+        ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mutalyzer/retriever)
+        ![GitHub language count](https://img.shields.io/github/languages/count/mutalyzer/retriever)
+        ![GitHub top language](https://img.shields.io/github/languages/top/mutalyzer/retriever)
+        ![GitHub](https://img.shields.io/github/license/mutalyzer/retriever)
+        
+        ---
+        
+        Retrieve and parse genomic reference files.
+        
+        Please see [ReadTheDocs][RTD] for the latest documentation.
+        
+        [RTD]: https://mutalyzer-retriever.readthedocs.io/en/latest/
+Keywords: Mutalyzer,HGVS,reference,retriever,genomic
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
