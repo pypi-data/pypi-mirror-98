@@ -1,0 +1,8 @@
+setuptools
+numpy
+pandas
+bokeh
+requests
+appdirs
+rocketlogger
+pyelftools
