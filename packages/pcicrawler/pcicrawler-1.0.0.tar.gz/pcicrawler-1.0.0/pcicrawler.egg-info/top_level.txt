@@ -1,0 +1,3 @@
+pci_lib
+pci_vpd_lib
+pcicrawler

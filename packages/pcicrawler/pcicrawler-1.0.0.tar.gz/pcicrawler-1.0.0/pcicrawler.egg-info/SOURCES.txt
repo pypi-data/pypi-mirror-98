@@ -1,0 +1,15 @@
+README.md
+setup.py
+pci_lib/__init__.py
+pci_lib/pci_lib.py
+pci_vpd_lib/__init__.py
+pci_vpd_lib/pci_vpd_lib.py
+pcicrawler/__init__.py
+pcicrawler/__version__.py
+pcicrawler/cli.py
+pcicrawler.egg-info/PKG-INFO
+pcicrawler.egg-info/SOURCES.txt
+pcicrawler.egg-info/dependency_links.txt
+pcicrawler.egg-info/entry_points.txt
+pcicrawler.egg-info/requires.txt
+pcicrawler.egg-info/top_level.txt
