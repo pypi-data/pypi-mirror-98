@@ -1,0 +1,12 @@
+calculation/__init__.py,sha256=WCIs2C6YnkpH_rr9Vbk2i7UarExYYOmhuF3Eqje7u8U,487
+calculation/area.py,sha256=o2Ghyge2BbWU7qL4v6Yv500m9CcxU9fW3fLM6ilWriU,257
+calculation/distance.py,sha256=F1IQndZSe3Br9EM_Fkp5BWfgDdrdOWNfyiQzO7XAXLg,6557
+calculation/intersection.py,sha256=JYCFfI89b3DjLEvGScD7hNiIYFDlmuK9myc35h0ZecQ,8184
+calculation/iterator.py,sha256=Muzg5FN4iRtWl0Eqi_A6ZmJ2-IGWqmJmI13b1DlgRXU,949
+calculation/pixel.py,sha256=gzQUInYaEWk5PI7OYnLybpNAZPFYz_VROIJzmvwIhXQ,2797
+calculation/units.py,sha256=9Y0YyfEVXtLdfQhIpd5zkQKQhTk98WCp2ffWd1EeW7Q,2842
+calculation/util.py,sha256=5cEyFFmRQwcm7Q7hemmal2uTJA9dkirQkrq3QS3Xrvk,220
+calculation_mapilio-0.1.8.dist-info/METADATA,sha256=-Sb4dbLxtIPXz07Fc9pv5aSdUWyJz1llgNJiAvlOKCY,582
+calculation_mapilio-0.1.8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+calculation_mapilio-0.1.8.dist-info/top_level.txt,sha256=tkKcnQNZbvIWpTQLSsHFoXdq-My4k4u74z6NTk1R9K4,12
+calculation_mapilio-0.1.8.dist-info/RECORD,,
