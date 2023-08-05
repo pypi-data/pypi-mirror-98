@@ -1,0 +1,6 @@
+README.md
+setup.py
+rickle.egg-info/PKG-INFO
+rickle.egg-info/SOURCES.txt
+rickle.egg-info/dependency_links.txt
+rickle.egg-info/top_level.txt
