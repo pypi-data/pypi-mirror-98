@@ -1,0 +1,3 @@
+[firex.bundles]
+firex-bundle-ci = firex_bundle_ci
+
