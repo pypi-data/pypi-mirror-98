@@ -1,0 +1,12 @@
+README.md
+setup.py
+handypy/__init__.py
+handypy/_utils.py
+handypy/hcv2.py
+handypy/parallel.py
+handypy/utils.py
+handypy.egg-info/PKG-INFO
+handypy.egg-info/SOURCES.txt
+handypy.egg-info/dependency_links.txt
+handypy.egg-info/not-zip-safe
+handypy.egg-info/top_level.txt
