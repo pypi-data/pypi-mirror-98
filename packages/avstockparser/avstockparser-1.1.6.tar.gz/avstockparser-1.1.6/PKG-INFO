@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: avstockparser
+Version: 1.1.6
+Summary: Get time series with stock history data in .json-format from www.alphavantage.co and convert into pandas dataframe or .csv file with OHLCV-candlestick in every strings. Also you can draw an interactive chart.
+Home-page: https://github.com/Tim55667757/AVStockParser/
+Author: Timur Gilmullin
+Author-email: tim55667757@gmail.com
+License: MIT
+Download-URL: https://github.com/Tim55667757/AVStockParser.git
+Description: GitHub Pages: https://tim55667757.github.io/AVStockParser
+Keywords: broker,history,csv,stock,trade,candlestick,chart,parser,alphavantage
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3

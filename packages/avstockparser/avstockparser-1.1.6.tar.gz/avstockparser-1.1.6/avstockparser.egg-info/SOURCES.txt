@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+avstockparser/AVStockParser.py
+avstockparser/UniLogger.py
+avstockparser/__init__.py
+avstockparser/__main__.py
+avstockparser.egg-info/PKG-INFO
+avstockparser.egg-info/SOURCES.txt
+avstockparser.egg-info/dependency_links.txt
+avstockparser.egg-info/entry_points.txt
+avstockparser.egg-info/requires.txt
+avstockparser.egg-info/top_level.txt
+avstockparser.egg-info/zip-safe
