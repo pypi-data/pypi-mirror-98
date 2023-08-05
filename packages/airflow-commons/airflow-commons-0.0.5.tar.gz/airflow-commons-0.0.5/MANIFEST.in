@@ -1,0 +1,2 @@
+include README.md
+include airflow_commons/sql_resources/bigquery/*/*.sql
