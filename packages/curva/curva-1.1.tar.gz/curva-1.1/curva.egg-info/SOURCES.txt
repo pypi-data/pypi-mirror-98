@@ -1,0 +1,11 @@
+README.md
+setup.py
+curva/__init__.py
+curva/aes.py
+curva/key.py
+curva/test.py
+curva.egg-info/PKG-INFO
+curva.egg-info/SOURCES.txt
+curva.egg-info/dependency_links.txt
+curva.egg-info/requires.txt
+curva.egg-info/top_level.txt
