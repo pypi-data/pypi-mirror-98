@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: json-grep
+Version: 1.1.0
+Summary: Filtering JSON dict keys from STDOUT
+Home-page: https://gitlab.com/alda78/json-grep
+Author: Ales Adamek
+Author-email: alda78@seznam.cz
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# installation
+```bash
+wget https://gitlab.com/alda78/json-grep/-/archive/master/json-grep-master.tar && \
+tar -xf json-grep-master.tar && \
+cd json-grep-master/ && \
+sudo python3 setup.py install && \
+cd ../ &&  \
+sudo rm -rf json-grep-master
+```
+
