@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: SilverBotFNPack
+Version: 1.0.0
+Summary: Package For SilverBot
+Home-page: UNKNOWN
+Author: mxnty
+Author-email: silverbotbusiness@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# SilverBot
+SilverBot Is A Unbranded Lobby Bot That Is Awesome For Trolling
+
+# Info
+
+For The Default Skin You Can [Join Our Discord](discord.gg/hmXa5cQCJH) Server And Do The Command ?item item name to get the ID of that cosmetic and put in the Settings.json where it goes
+
+# Support
+
+For Any More Support [Join Our Discord](discord.gg/hmXa5cQCJH)
+
