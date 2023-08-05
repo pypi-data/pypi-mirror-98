@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mutalyzer_mutator/__init__.py
+mutalyzer_mutator/mutator.py
+mutalyzer_mutator/util.py
+mutalyzer_mutator.egg-info/PKG-INFO
+mutalyzer_mutator.egg-info/SOURCES.txt
+mutalyzer_mutator.egg-info/dependency_links.txt
+mutalyzer_mutator.egg-info/requires.txt
+mutalyzer_mutator.egg-info/top_level.txt
