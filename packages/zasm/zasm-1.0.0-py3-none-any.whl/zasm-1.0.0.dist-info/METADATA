@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: zasm
+Version: 1.0.0
+Summary: An assembler for z80 CPU
+Home-page: https://github.com/amirgeva/zasm
+Author: Amir Geva
+Author-email: amirgeva@gmail.com
+License: GPLv3
+
+Assembler for z80 CPU
+
+
