@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+dorymodule.c
+setup.py
+sort.h
+sort2.h
+sort3.h
+sort4.h
+sort5.h
+sort6.h
+pydory.egg-info/PKG-INFO
+pydory.egg-info/SOURCES.txt
+pydory.egg-info/dependency_links.txt
+pydory.egg-info/top_level.txt
