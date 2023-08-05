@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: crafter
+Version: 0.2.0
+Summary: Open world survival game for reinforcement learning.
+Home-page: http://github.com/danijar/crafter
+License: UNKNOWN
+Description: # Crafter
+        
+        Open world survival environment for reinforcement learning research.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Provides-Extra: gui
