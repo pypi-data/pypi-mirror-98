@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+fractal_network/NetworkGenerator.py
+fractal_network/__init__.py
+fractal_network.egg-info/PKG-INFO
+fractal_network.egg-info/SOURCES.txt
+fractal_network.egg-info/dependency_links.txt
+fractal_network.egg-info/top_level.txt
