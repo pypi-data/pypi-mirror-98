@@ -1,0 +1,3 @@
+[console_scripts]
+prevent-submodule-regression=prevent_submodule_regression.cli:main
+
