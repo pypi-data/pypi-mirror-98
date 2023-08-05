@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pystoxx
+Version: 0.0.6
+Summary: Search and retrieve current data and historical information for publicly traded companies
+Home-page: https://github.com/recursivllc/pystoxx
+Author: Saleh Alkhalifa
+Author-email: alkhalifas@recursiv.tech
+License: UNKNOWN
+Description: # PyStoxx:
+        
+        PyStoxx is a Python library of [Stoxx by Recursiv](https://recursiv.tech/) that allows users to retrieve current data and historical information for publicly traded companies with our JSON API.
+        
+        #### Features Include:
+        - Current & Historical Sentiment
+        - News Articles
+        - Pricing History
+        - Price Quotes
+        - Company Data
+        - Company Competition
+        
+        #### Quick Start Guide
+        
+        1. Install Stoxx using Pip
+        
+                pip install pystoxx
+        
+        2. Import Stoxx
+        
+                from pystoxx import Stoxx
+        
+        3. Add your API Token using the RapidAPI extension. Sign up for a free plan without a credit card by visiting [Stoxx By Recursiv hosted at RapidAPI.](https://rapidapi.com/recursivllc/api/stoxx-by-recursiv)
+        
+                stoxx = Stoxx()
+                stoxx.RapidAPI("add-your-token-here")
+        
+        4. Query pricing data, historical news, and much more!
+        
+        
+                # Get historical pricing data
+                stoxx.get_historical_prices(ticker="msft", months="1m")
+        
+                # Get historical pricing data
+                stoxx.get_historical_news(ticker="msft", months=2)
+        
+                # Get historical pricing data
+                stoxx.get_company_data("msft")
+        
+                # Get price quote
+                stoxx.get_price_quote("msft")
+        
+        
+        
+        
+Keywords: stock,prices,sentiment,historical,news,dataset,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
