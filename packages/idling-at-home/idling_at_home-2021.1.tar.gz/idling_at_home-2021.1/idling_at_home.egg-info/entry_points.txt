@@ -1,0 +1,3 @@
+[console_scripts]
+idling-at-home = idling_at_home.main:main
+
