@@ -1,0 +1,16 @@
+mdpdf/__init__.py,sha256=xY-8E82hm6h23nZq086erjWIIH1emdQGboidxAny5MU,211
+mdpdf/cli.py,sha256=CEj8n-xdSciXo1mx3ZDCqYF19JDlAWwZe14SwMKdRW0,3137
+mdpdf/converter.py,sha256=Zp_cbR4XbWmygT1BdWQow5H-d97ZwvA4tGLgAtgEL7g,555
+mdpdf/font.py,sha256=dvI7zjH_mRhEx22PkEWQDOXB3g8yhXkTPftvHP6yVfw,1805
+mdpdf/headfoot.py,sha256=cZBrDfPyD6pt-0kA2_gQX_Mt7CzhjulfTuRbLTRP5qQ,986
+mdpdf/image.py,sha256=3_c0i9sk5AqTPKe6yz1kiqWuycCmwJDSGvCFzIBhWg0,1549
+mdpdf/log.py,sha256=D0CnzY2tR8wJPzVS9tGZU0bzQO7ehueb8JQTm0mLdGE,876
+mdpdf/pdf_renderer.py,sha256=kZS2sD9_pQvlTF9GjofIYSwvcZaz6Jn9gDbXjX8hr6k,21613
+mdpdf/properties.py,sha256=KFLDNthpWEFHJi8sBFOgWwdhuSoCog53IZOjOnMqY2w,1184
+mdpdf/style.py,sha256=Zjn1aQyU1TuNpCaXjNdatLWyZz57YLd9674b7zGikwo,1411
+mdpdf-0.0.15.dist-info/LICENSE,sha256=ptcHhnL1uqbLOPUpxGD8pHPuRcrSbYxRVRg8IPvXnUA,1091
+mdpdf-0.0.15.dist-info/METADATA,sha256=9se9-TUjOyad1vMvzAI8B_K3Zi_vg8JSicErz4hs3Qc,3033
+mdpdf-0.0.15.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mdpdf-0.0.15.dist-info/entry_points.txt,sha256=HUTVNa_rUoSa_dAN9AiY8rroH25a_MBFDazQLJBexNo,41
+mdpdf-0.0.15.dist-info/top_level.txt,sha256=KklqtFQouYHtfcyN1H_NSNcMc8FWWf0f2DpJqYfmpEw,6
+mdpdf-0.0.15.dist-info/RECORD,,
