@@ -1,0 +1,15 @@
+deepmerge/__init__.py,sha256=hx6G47ILMRMQu_g6D4GgeJRK7xNB3e1Lzzbg2iJJJpI,970
+deepmerge/compat.py,sha256=cjnj5PDSy4VvBR0qjTOlsDRkkgTQgsURr1cTdW4BZYI,64
+deepmerge/exception.py,sha256=s42_KfkS8T-p91hhfV4_JeO4jEWdKzIyJwzJ7WmsyZo,499
+deepmerge/merger.py,sha256=xRZ6LQBhpZuT3lqiVdCmnBL2SiKYa6AvYoepWOnUAV0,1728
+deepmerge/strategy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepmerge/strategy/core.py,sha256=LVRThQXDPKqiKlwOYMCt5G-CB4qvNigVvGSCf5JcYck,1205
+deepmerge/strategy/dict.py,sha256=JCAIOFxXdT0aeuR5iJuZuiOFUUW6SUnBuuBSA1yH-Vk,772
+deepmerge/strategy/fallback.py,sha256=plzHYrNaoc3a8VyDz7V8vR9DGue5fIpYxQKm0RCLqr0,435
+deepmerge/strategy/list.py,sha256=GJPFS3Iglub12QEQ_ApPrOzgsnYwsvdfG7HLDbq3mr0,540
+deepmerge/strategy/type_conflict.py,sha256=QGfNHADWbxd-3kAIKYxozn0C97DH02xs8L5CYamR-ls,703
+deepmerge-0.2.1.dist-info/LICENSE,sha256=5PU5q1T4709DMH5WraMoYSxY5vnv3XC_M2KIUIRwJy4,1072
+deepmerge-0.2.1.dist-info/METADATA,sha256=OgO_nrWW8nnCZIIZIilu0sUom88MrWTa8yFE0LbfaSc,2219
+deepmerge-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+deepmerge-0.2.1.dist-info/top_level.txt,sha256=yscF_uvoSQCmSc-eEHTLZluiPbPzKCFlKfeAJ3z7xiw,10
+deepmerge-0.2.1.dist-info/RECORD,,
