@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jfwEncoderDecoder
+Version: 0.2.2
+Summary: Binary encoding/decoding package
+Home-page: https://github.com/heezes/jfw-encoding-decoding
+Author: Altamash Abdul Rahim
+Author-email: altamash.ar96@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cstruct
+Requires-Dist: pyclibrary
+
+Binary Encoding/Decoding Package
+
+
