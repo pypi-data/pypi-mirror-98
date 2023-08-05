@@ -1,0 +1,10 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/main.py,sha256=pFhrN8PcU0PGrkQG7ArZ1wVB5cmwXTHjHl5md6DTOlY,1672
+cli/run_sagemaker_std_libs.py,sha256=Rd8_Ha0xX5HVBvn_KhXJh5JcifAnZFuQzkpuRF29-js,14644
+fgit/__init__.py,sha256=p7iRw3TgviXBbJ-VKINj0C3CZIuxZew3A4qDwepsfdA,363
+fgit/utils.py,sha256=CEbBAlVRw6ArGRfcHpBhwHzMEReyhoC3tnBTBHfvGag,362
+fgit-0.0.1b1.dist-info/METADATA,sha256=1JGKUqdryE-thRqSBRYtQmTCSa_dlBBX9e4_-DuuNzA,705
+fgit-0.0.1b1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fgit-0.0.1b1.dist-info/entry_points.txt,sha256=NyXgwlmNg9GFJXSPcnGOD7c0M6KKOUhALUORW4VCQFA,40
+fgit-0.0.1b1.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+fgit-0.0.1b1.dist-info/RECORD,,
