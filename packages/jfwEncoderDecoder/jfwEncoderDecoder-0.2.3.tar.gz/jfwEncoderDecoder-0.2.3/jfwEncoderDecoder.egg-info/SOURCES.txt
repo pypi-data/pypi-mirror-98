@@ -1,0 +1,10 @@
+README.md
+setup.py
+jfwEncoderDecoder/__init__.py
+jfwEncoderDecoder/jfw_deserializer.py
+jfwEncoderDecoder/jfw_generator.py
+jfwEncoderDecoder.egg-info/PKG-INFO
+jfwEncoderDecoder.egg-info/SOURCES.txt
+jfwEncoderDecoder.egg-info/dependency_links.txt
+jfwEncoderDecoder.egg-info/requires.txt
+jfwEncoderDecoder.egg-info/top_level.txt
