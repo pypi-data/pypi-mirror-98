@@ -1,0 +1,280 @@
+package_label: "Time Series"
+package_desc: "Time Series"
+
+common:
+  time_series: "Time series"
+  time_series_model: "Time series model"
+  forecast: "Forecast"
+  fit_value: "Fitted values"
+  residual: "Residuals"
+  exogenous_data: "Exogenous data"
+  interpolated_time_series: "Interpolated time series"
+  data: "Data"
+  subset: "Subset"
+  features: "Features"
+
+common_btn:
+  apply: "&Apply"
+
+owmodel:
+  msg:
+    target_var_type: "Time series' target variable should be continuous, not discrete."
+    missing_target_var: "Input time series doesn't contain a target variable. Edit the domain and make one variable target."
+    err: "Error {}: {}: {}"
+  report:
+    name: "Name"
+    model_type: "Model type"
+    forecast_step: "Forecast steps"
+    confidence_interval: "Confidence interval"
+    time_series: "Time series"
+  box:
+    name: "Name"
+    name_tip: "The name will identify this model in other widgets"
+    forecast: "Forecast"
+  label:
+    forecast_steps_ahead: "Forecast steps ahead:"
+    confidence_intervals: "Confidence intervals:"
+
+owaggregate:
+  name: "Aggregate"
+  desc: "Aggregate data in bins by second, minute, hour, day, week, month, or year."
+  aggregation_time_var: "Aggregation currently requires a time series with a time variable."
+  label:
+    aggregate_by: "Aggregate by:"
+    attribute: "Attribute"
+    aggregation_function: "Aggregation function"
+  gbox:
+    second: "second"
+    minute: "minute"
+    hour: "hour"
+    day: "day"
+    week: "week"
+    month: "month"
+    year: "year"
+
+owarimamodel:
+  name: "ARIMA Model"
+  desc: "Model the time series using ARMA, ARIMA, or ARIMAX."
+  checkbox_use_exogenous_var: "Use exogenous (independent) variables (ARMAX)"
+  box_parameters: "Parameters"
+  warn:
+    arima: "ARIMA(0,1,0) equals to a random walk model, which is an AR(1) model with the auto-regression coefficient equal to 1, and the constant term (i.e. the period-to-period change) equal to the series' long-term drift."
+  label:
+    auto-regression_order: "Auto-regression order (p):"
+    difference_degree: "Differencing degree (d):"
+    move_average_order: "Moving average order (q):"
+
+owcorrelogram:
+  name: "Correlogram"
+  desc: "Visualize variables' auto-correlation."
+  box_option: "Options"
+  box_all_attrs: "Auto-correlated attribute(s)"
+  label:
+    pacf: "Compute partial auto-correlation (PACF)"
+  msg:
+    no_instances: "At least 2 data instances are required"
+    use_confint: "Plot 95% significance interval"
+    correlation_at_period: "Correlation at period: {}<br/>"
+
+owdifference:
+  name: "Difference"
+  desc: "Make the time series stationary by replacing it with 1st or 2nd order discrete difference along its values."
+  msg_series_order: "Series can be differentiated up to the 2nd order. However, if the series is shifted by other than 1 step, a differencing order of 1 is always assumed."
+  box_difference: "Differencing"
+  checkbox_invert_direction: "Invert differencing direction"
+  checkbox_invert_direction_tip: "Influences where the series is padded with nan values — at the beginning or at the end."
+  label:
+    compute: "Compute:"
+    difference_order: "Differencing order:"
+    difference_order_tip: "The value corresponds to n-th order numerical derivative of the series. \nThe order is fixed to 1 if the shift period is other than 1."
+    shift: "Shift:"
+    shift_tip: "Set this to other than 1 if you don't want to compute differences for subsequent values but for values shifted number of spaces apart. \n If this value is different from 1, differencing "
+  gbox:
+    difference: "Difference"
+    quotient: "Quotient"
+    percentage_change: "Percentage change"
+
+owgrangercausality:
+  name: "Granger Causality"
+  desc: "Test if one time series Granger-causes (i.e. can be an indicator of) another."
+  box_granger_test: "Granger Test"
+  btn_test: "&Test"
+  msg_unexpect_error: "Unexpected error: {}"
+  user_advice_messages: "We say <i>X</i> Granger-causes <i>Y</i> if predictions of values of <i>Y</i> based on its own past values and on the past values of <i>X</i> are better than predictions of <i>Y</i> based on its past values alone.<br><br> It does NOT mean <i>X</i> causes <i>Y</i>!"
+  label:
+    confidence: "Confidence:"
+    max_lag: "Max lag:"
+
+owinterpolate:
+  name: "Interpolate"
+  desc: "Induce missing values (nan) in the time series by interpolation."
+  box_interpolation_parameters: "Interpolation Parameters"
+  btn_apply: "Apply"
+  msg_interpolation_method: "While you can freely choose the interpolation method for continuous variables, discrete variables can only be interpolated with the <i>nearest</i> method or their mode (i.e. the most frequent value)."
+  label:
+    interpolation_missing_values: "Interpolation of missing values:"
+    multi-variate_interpolation: "Multi-variate interpolation"
+  gbox:
+    linear: "linear"
+    cubic: "cubic"
+    nearest: "nearest"
+    mean: "mean"
+
+owlinechart:
+  name: "Line Chart"
+  desc: "Visualize time series' sequence and progression."
+  label_type: "Type:"
+  checkbox_logarithmic_axis: "Logarithmic axis"
+  btn_add_plot: " &Add plot"
+  gbox:
+    line: "line"
+    step_line: "step line"
+    column: "column"
+    area: "area"
+    spline: "spline"
+
+owmodelevaluation:
+  name: "Model Evaluation"
+  desc: |-
+    Evaluate different time series' models by comparing the
+    errors they make in terms of:
+    root mean squared error (RMSE),
+    median absolute error (MAE),
+    mean absolute percent error (MAPE),
+    prediction of change in direction (POCID),
+    coefficient of determination (R²),
+    Akaike information criterion (AIC), and
+    Bayesian information criterion (BIC).
+  box_evaluation_parameters: "Evaluation Parameters"
+  label_number_folds: "Number of folds:"
+  forecast_steps: "Forecast steps:"
+  btn_apply: "&Apply"
+  msg:
+    error: "Unexpected error: {}"
+    model_setting_err: "Model or its settings are not appropriate for this type of data."
+
+owmovingtransform:
+  name: "Moving Transform"
+  desc: "Apply rolling window functions to the time series."
+  box_move_transform: "Moving Transform"
+  tooltip_non_overlapping: "If this is checked, instead of rolling windows through the series, they are applied side-to-side, so the resulting output series will be some length-of-fixed-window-times shorter."
+  label:
+    fix_window_width: "Fixed window width:"
+    series: "Series"
+    window_width: "Window width"
+    aggregation_function: "Aggregation function"
+  btn:
+    non-overlap_windows: "Non-overlapping windows"
+    transform: "Transform"
+    add: "Add "
+    delete_selected: "&Delete Selected"
+    apply: "&Apply"
+  msg:
+    get_sma: "Get the simple moving average (SMA) of a series by setting the aggregation function to '{}'."
+    non-overlapping: "If '{}' is checked, the rolling windows don't overlap. Instead, they run through the series side-to-side, so the resulting transformed series is fixed-window-length-times shorter.'"
+    add_transform: "At least one transform should be added."
+
+owperiodogram:
+  name: "Periodogram"
+  desc: "Visualize time series' cycles, seasonality, periodicity, and most significant frequencies."
+  tooltip_period: "period: {}<br/>"
+  box:
+    periodogram_attribute: "Periodogram attribute(s)"
+
+owseasonaladjustment:
+  name: "Seasonal Adjustment"
+  desc: "Remove the seasonal component of a time series that exhibits a seasonal pattern."
+  box_seasonal_adjustment: "Seasonal Adjustment"
+  row_season_period: "Season period:"
+  row_season_period_tip: "The expected length of full cycle. E.g., if you have monthly data and the apparent season repeats every year, you put in 12."
+  msg:
+    usage_method: "An additive model is appropriate if the magnitude of seasonal fluctuations doesn't vary with level. Otherwise, a multiplicative model is appropriate. Taking logarithms of series turns a multiplicative relationship into an additive one. Multiplicative decomposition is more prevalent with economic time series."
+    season_period: "Season period is the length of the whole season cycle. E.g., if you have hourly electricity use data, and the series apparently makes a cycle every day, the appropriate period is 24. The value should likely correspond to one of the most significant periods in periodogram."
+    not_enough_instances: "Time series has to have at least 3 instances."
+  btn:
+    additive: "additive"
+    multiplicative: "multiplicative"
+    decomposition_model: "Decomposition model:"
+    apply: "&Apply"
+
+owspiralogram:
+  name: "Spiralogram"
+  desc: "Visualize time series' periodicity in a spiral heatmap."
+  checkbox_invert_order: "Invert Y axis order"
+  msg_no_time_variable: "Spiralogram requires time series with a time variable."
+  box:
+    axes: "Axes"
+    y_axis: "Y axis:"
+    radial: "Radial:"
+    aggregation: "Aggregation"
+    unction: "Function:"
+
+owtabletotimeseries:
+  name: "As Timeseries"
+  desc: "Reinterpret data table as a time series object."
+  msg_omit_null: "Some values of chosen sequential attribute '{}' are NaN, and have been omitted"
+  box_sequence: "Sequence"
+  btn:
+    sequential_attribute: "Sequential attribute:"
+    sequence_instance_order: "Sequence is implied by instance order"
+    apply: "&Apply"
+
+owtimeslice:
+  name: "Time Slice"
+  desc: "Select a slice of measurements on a time interval."
+  label_delay: "Delay:"
+  sec: '%.2g sec'
+  msg:
+    miss_time_var: "Data contains no time variable"
+    no_time_delta: "Data contains only one time point"
+  btn:
+    loop_playback: "Loop playback"
+    custom_step_size: "Custom step size:"
+    custom_step_size_tip: "If not chosen, the active interval moves forward (backward), stepping in increments of its own size."
+  box:
+    time_slice: "Select a Time Range"
+    play_through: "Step / Play Through"
+    track_interval: "Playback/Tracking interval"
+    track_interval_tip: "In milliseconds, set the delay for playback and for sending data upon manually moving the interval."
+
+owvarmodel:
+  name: "VAR Model"
+  desc: "Model the time series using vector auto-regression (VAR)."
+  msg_series_stationary: "Note, VAR model requires the series to be stationary."
+  box:
+    parameter: "Parameters"
+    information_criterion: "Information criterion"
+    trend: "Trend"
+  label:
+    maxlags: "Maximum auto-regression order:"
+    optimize_ar_order: "Optimize AR order by:"
+    add_trend_vector: "Add trend vector(s):"
+  btn:
+    none: "None"
+    aic: "Akaike's information criterion (AIC)"
+    bic: "Bayesian information criterion (BIC)"
+    hannan–quinn: "Hannan–Quinn"
+    fpe: "Final prediction error (FPE)"
+    average_of_the_above: "Average of the above"
+    constant: "Constant"
+    constant_linear: "Constant and linear"
+    constant_linear_quadratic: "Constant, linear and quadratic"
+
+owyahoofinance:
+  name: "Yahoo Finance"
+  desc: "Generate time series from Yahoo Finance stock market data."
+  msg_download_fail: "Failed to download data (HTTP Error {}). Wrong stock symbol?"
+  box_yahoo_finance_stock_data: "Yahoo Finance Stock Data"
+  btn_download: "Download"
+  label:
+    ticker: "Ticker:"
+    from: "From:"
+    to: "To:"
+  gbox:
+    amzn: "AMZN"
+    aapl: "AAPL"
+    goog: "GOOG"
+    fb: "FB"
+    spy: "SPY"
+    dji: "^DJI"
+    tnx: "^TNX"

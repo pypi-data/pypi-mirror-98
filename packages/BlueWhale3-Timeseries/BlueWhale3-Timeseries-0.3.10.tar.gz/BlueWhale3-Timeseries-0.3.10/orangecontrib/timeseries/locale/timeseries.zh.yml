@@ -1,0 +1,279 @@
+package_label: "时间序列"
+package_desc: "时间序列"
+
+common:
+  time_series: "时间序列"
+  time_series_model: "时间序列模型"
+  forecast: "预测"
+  fit_value: "拟合值"
+  residual: "残差"
+  exogenous_data: "外生数据"
+  interpolated_time_series: "内插时间序列"
+  data: "数据"
+  subset: "子集"
+  features: "特征"
+
+common_btn:
+  apply: "&应用"
+
+owmodel:
+  msg:
+    target_var_type: "时间序列的目标变量应该是连续的，而不是离散的。"
+    missing_target_var: "目标不包含时间序列。编辑域并创建一个变量目标。"
+    err: "错误 {}： {}： {}"
+  report:
+    name: "名称"
+    model_type: "模型类型"
+    forecast_step: "预测步骤"
+    confidence_interval: "置信区间"
+    time_series: "时间序列"
+  box:
+    name: "名称"
+    name_tip: "该名称将在其他组件中标识此模型"
+    forecast: "预测"
+  label:
+    forecast_steps_ahead: "预测步骤："
+    confidence_intervals: "置信区间："
+
+owaggregate:
+  name: "聚合"
+  desc: "按秒、分钟、小时、日、周、月或年在容器中聚合数据。"
+  aggregation_time_var: "当前聚合需要具有时间变量的时间序列。"
+  label:
+    aggregate_by: "聚合条件："
+    attribute: "属性"
+    aggregation_function: "聚合函数"
+  gbox:
+    second: "秒"
+    minute: "分钟"
+    hour: "小时"
+    day: "日"
+    week: "周"
+    month: "月"
+    year: "年"
+
+owarimamodel:
+  name: "ARIMA模型"
+  desc: "使用ARMA、ARIMA或ARIMAX构建时间序列模型。"
+  checkbox_use_exogenous_var: "使用外部（独立）变量（ARMAX）"
+  box_parameters: "参数"
+  warn:
+    arima: "ARIMA（0,1,0）等于一个随机游走模型，自回归系数等于1，常数项（即周期变化）等于序列的长期漂移。"
+  label:
+    auto-regression_order: "自回归阶数（p）："
+    difference_degree: "差异度（d）："
+    move_average_order: "移动平均顺序（q）："
+
+owcorrelogram:
+  name: "相关图"
+  desc: "可视化变量的自相关。"
+  box_option: "选项"
+  box_all_attrs: "自相关属性"
+  label:
+    pacf: "计算部分自相关（PACF）"
+  msg:
+    no_instances: "至少需要2个数据实例"
+    use_confint: "标绘95%显著性区间"
+    correlation_at_period: "期间相关性：{}<br/>"
+
+owdifference:
+  name: "差异"
+  desc: "将时间序列替换为沿其值的一阶或二阶离散差分，使其保持平稳。"
+  msg_series_order: "系列可以区分到第二阶。但是，如果一个序列的阶数总是被1的差分所转移，那么另一个序列的阶数总是被假定为1。"
+  box_difference: "差分"
+  checkbox_invert_direction: "反转差分方向"
+  checkbox_invert_direction_tip: "影响序列在开始或结尾填充nan值的位置。"
+  label:
+    compute: "计算："
+    difference_order: "差分顺序："
+    difference_order_tip: "该值对应于级数的n阶数值导数。\n如果转换周期不是1，则顺序固定为1。"
+    shift: "转换："
+    shift_tip: "如果不想计算后续值的差异，但不希望计算偏移间距数的值，请将此值设置为1以外的值。\n如果此值与1不同，则差分"
+  gbox:
+    difference: "差异"
+    quotient: "熵"
+    percentage_change: "百分比变化"
+
+owgrangercausality:
+  name: "格兰杰因果关系"
+  desc: "测试一个时间序列Granger是否会导致另一个时间序列。"
+  box_granger_test: "格兰杰因果检验"
+  btn_test: "&检验"
+  msg_unexpect_error: "意外错误：{}"
+  user_advice_messages: "我们说<i>X</i>格兰杰因果<i>Y</i>如果预测值<i>Y</i>基于其自身过去的值<i>X</i>比预测的要好<i>Y</i>仅仅基于它过去的值。<br><br>这并不意味着<i>X</i>导致<i>Y</i>!"
+  label:
+    confidence: "信任："
+    max_lag: "最大滞后："
+
+owinterpolate:
+  name: "插补"
+  desc: "通过插补在时间序列中插入缺失值（nan）。"
+  box_interpolation_parameters: "插补参数"
+  btn_apply: "应用"
+  msg_interpolation_method: "离散变量只能用最近的方法或其模式(即最频繁值)进行插补。"
+  label:
+    interpolation_missing_values: "缺失值插补："
+    multi-variate_interpolation: "多元插补"
+  gbox:
+    linear: "线性"
+    cubic: "立方"
+    nearest: "最近的"
+    mean: "均值"
+
+owlinechart:
+  name: "时序图"
+  desc: "可视化时间序列的顺序和进程。"
+  label_type: "类型："
+  checkbox_logarithmic_axis: "对数轴"
+  btn_add_plot: " &添加绘图"
+  gbox:
+    line: "线"
+    step_line: "阶梯线"
+    column: "行"
+    area: "地区"
+    spline: "样条"
+
+owmodelevaluation:
+  name: "模型评估"
+  desc: |-
+    通过比较不同时间序列模型在以下方面所犯的错误，评估不同的时间序列模型：
+    均方根误差（RMSE），
+    中值绝对误差（MAE），
+    均值绝对百分比误差（MAPE），
+    方向变化预测（POCID），
+    可决系数（R²），
+    Akaike信息准则（AIC），以及
+    贝叶斯信息准则（BIC）。
+  box_evaluation_parameters: "评价参数"
+  label_number_folds: "折叠次数："
+  forecast_steps: "预测步骤："
+  btn_apply: "&应用"
+  msg:
+    error: "意外错误：{}"
+    model_setting_err: "模型或其设置不适用于此类型的数据。"
+
+owmovingtransform:
+  name: "移动变换"
+  desc: "对时间序列应用滚动窗口函数。"
+  box_move_transform: "移动变换"
+  tooltip_non_overlapping: "如果选中此选项，则不会在序列中滚动窗口，而是将它们并排应用，因此生成的输出序列的固定窗口时间将缩短一些。"
+  label:
+    fix_window_width: "固定窗口宽度："
+    series: "序列"
+    window_width: "窗口宽度"
+    aggregation_function: "聚合函数"
+  btn:
+    non-overlap_windows: "非重叠窗口"
+    transform: "转换"
+    add: "添加 "
+    delete_selected: "&删除所选项"
+    apply: "&应用"
+  msg:
+    get_sma: "通过将聚合函数设置为“{}”，得到序列的简单移动平均值（SMA）。"
+    non-overlapping: "如果选中{}，滚动窗口不会重叠。相反，它们会从一个序列到另一个序列，因此转换后的序列是固定窗口长度乘以更短的时间。"
+    add_transform: "至少应添加一个变换。"
+
+owperiodogram:
+  name: "周期图"
+  desc: "可视化时间序列的周期、季节性、周期性和最显著的频率。"
+  tooltip_period: "周期：{}<br/>"
+  box:
+    periodogram_attribute: "周期图属性"
+
+owseasonaladjustment:
+  name: "季节性调整"
+  desc: "去掉显示季节性模式的时间序列的季节性成分。"
+  box_seasonal_adjustment: "季节性调整"
+  row_season_period: "季节周期："
+  row_season_period_tip: "整个周期的预期长度。例如：如果有每月的数据，而且每年都有明显的季节重复，则输入12。"
+  msg:
+    usage_method: "如果季节性波动的幅度不随水平变化，则可采用加性模型。否则，应采用乘法模型。取级数的对数可以把乘法关系变成加法关系。乘性分解在经济时间序列中更为普遍。"
+    season_period: "季节周期是整个季节周期的长度。例如：如果有每小时的用电量数据，而且这个系列每天都有一个明显周期，那么合适的周期是24。该值可能对应于周期图中最重要的周期之一。"
+    not_enough_instances: "时间序列必须至少有3个实例。"
+  btn:
+    additive: "加性模型"
+    multiplicative: "乘法模型"
+    decomposition_model: "分解模型："
+    apply: "&应用"
+
+owspiralogram:
+  name: "螺旋图"
+  desc: "在螺旋图中将时间序列的周期性可视化。"
+  checkbox_invert_order: "反转Y轴顺序"
+  msg_no_time_variable: "螺旋图要求时间序列具有时间变量。"
+  box:
+    axes: "轴"
+    y_axis: "Y轴："
+    radial: "放射："
+    aggregation: "聚合"
+    unction: "函数："
+
+owtabletotimeseries:
+  name: "选择时间序列"
+  desc: "将数据表重新解释为时间序列对象。"
+  msg_omit_null: "所选序列属性“{}”的一些值是NaN，并且被省略了"
+  box_sequence: "序列"
+  btn:
+    sequential_attribute: "顺序属性："
+    sequence_instance_order: "实例顺序隐含序列"
+    apply: "&应用"
+
+owtimeslice:
+  name: "时间切片"
+  desc: "选择时间间隔上的测量切片。"
+  label_delay: "延迟："
+  sec: '%.2g sec'
+  msg:
+    miss_time_var: "数据不包含时间变量"
+    no_time_delta: "数据只包含一个时间点"
+  btn:
+    loop_playback: "循环播放"
+    custom_step_size: "自定义步长："
+    custom_step_size_tip: "如果未选中，则活动间隔向前（向后）移动，以其自身大小的增量递增。"
+  box:
+    time_slice: "选择一个时间段"
+    play_through: "步骤/连续"
+    track_interval: "回放/跟踪间隔"
+    track_interval_tip: "以毫秒为单位，设置手动移动间隔时播放和发送数据的延迟。"
+
+owvarmodel:
+  name: "VAR模型"
+  desc: "使用向量自回归（VAR）对时间序列进行建模。"
+  msg_series_stationary: "注意：VAR模型要求序列是平稳的。"
+  box:
+    parameter: "参数"
+    information_criterion: "信息准则"
+    trend: "趋势"
+  label:
+    maxlags: "最大自回归阶数："
+    optimize_ar_order: "通过以下方式优化AR顺序："
+    add_trend_vector: "添加趋势向量："
+  btn:
+    none: "无"
+    aic: "Akaike信息准则（AIC）"
+    bic: "贝叶斯信息准则（BIC）"
+    hannan–quinn: "Hannan–Quinn"
+    fpe: "最终预测误差（FPE）"
+    average_of_the_above: "以上平均值"
+    constant: "常数"
+    constant_linear: "常数和线性"
+    constant_linear_quadratic: "常数、线性和二次型"
+
+owyahoofinance:
+  name: "雅虎财经"
+  desc: "从雅虎财经股票市场数据生成时间序列。"
+  msg_download_fail: "下载数据失败（HTTP错误{}）。请检查股票代号是否正确？"
+  box_yahoo_finance_stock_data: "雅虎财经股票数据"
+  btn_download: "下载"
+  label:
+    ticker: "股票代码："
+    from: "从："
+    to: "到："
+  gbox:
+    amzn: "AMZN"
+    aapl: "AAPL"
+    goog: "GOOG"
+    fb: "FB"
+    spy: "SPY"
+    dji: "^DJI"
+    tnx: "^TNX"
