@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+spookyhash.egg-info/PKG-INFO
+spookyhash.egg-info/SOURCES.txt
+spookyhash.egg-info/dependency_links.txt
+spookyhash.egg-info/top_level.txt
+src/SpookyV2.cpp
+src/SpookyV2.h
+src/SpookyV2.pxd
+src/spookyhash.cpp
+src/spookyhash.pyx
+tests/__init__.py
+tests/test_spooky_hash.py
