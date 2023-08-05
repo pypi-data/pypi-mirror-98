@@ -1,0 +1,8 @@
+setup.py
+pyheapfile/__init__.py
+pyheapfile/heap.py
+pyheapfile/hexdump.py
+pyheapfile.egg-info/PKG-INFO
+pyheapfile.egg-info/SOURCES.txt
+pyheapfile.egg-info/dependency_links.txt
+pyheapfile.egg-info/top_level.txt
