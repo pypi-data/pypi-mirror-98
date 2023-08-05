@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: aloha
+Version: 2021.311.1030
+Summary: Aloha.
+Home-page: https://github.com/QPod/aloha
+Author: QPod
+Author-email: 45032326+QPod0@users.noreply.github.com
+License: BSD
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyhocon
+Provides-Extra: build
+Requires-Dist: Cython ; extra == 'build'
+Provides-Extra: data
+Requires-Dist: pandas ; extra == 'data'
+Provides-Extra: db
+Requires-Dist: sqlalchemy ; extra == 'db'
+Requires-Dist: psycopg2-binary ; extra == 'db'
+Requires-Dist: pymysql ; extra == 'db'
+Requires-Dist: elasticsearch ; extra == 'db'
+Requires-Dist: pymongo ; extra == 'db'
+Provides-Extra: report
+Requires-Dist: openpyxl ; extra == 'report'
+Provides-Extra: service
+Requires-Dist: tornado ; extra == 'service'
+
+# aloha
+A versatile Python utility package for building services
+
+
