@@ -1,0 +1,4 @@
+os-brick>=3.0.1
+oslo.concurrency>=3.26.0
+pbr!=2.1.0,>=2.0.0
+python-cinderclient>=7.0.0
