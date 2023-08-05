@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+tests/__init__.py
+tests/test_yafwi.py
+yafwi/__init__.py
+yafwi.egg-info/PKG-INFO
+yafwi.egg-info/SOURCES.txt
+yafwi.egg-info/dependency_links.txt
+yafwi.egg-info/top_level.txt
