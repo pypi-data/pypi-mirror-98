@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: flask-FCMAdmin
+Version: 0.0.9
+Summary: fcm admin with flask
+Home-page: UNKNOWN
+Author: chienaeae
+Author-email: chienaeae@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: firebase-admin (==4.5.0)
+
+
+# ALPHA version
+
+fcm admin with flask
+
+
