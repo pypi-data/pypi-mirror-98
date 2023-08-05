@@ -1,0 +1,9 @@
+ecdsa<0.17.0,>=0.14.0
+bech32~=1.1.0
+mnemonic<0.20,>=0.19
+hdwallets~=0.1.0
+
+[test]
+pytest
+pytest-cov
+pytest-randomly
