@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: sc3s
+Version: 0.0.1.dev6
+Summary: Python Single Cell Consensus Clustering
+Home-page: https://github.com/pittachalk/sc3s
+Author: Fu Xiang Quah
+Author-email: fxq20@cam.ac.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
