@@ -1,0 +1,11 @@
+README.md
+setup.py
+python_1inch/__init__.py
+python_1inch/main.py
+python_1inch.egg-info/PKG-INFO
+python_1inch.egg-info/SOURCES.txt
+python_1inch.egg-info/dependency_links.txt
+python_1inch.egg-info/requires.txt
+python_1inch.egg-info/top_level.txt
+tests/__init__.py
+tests/test_python_1inch.py
