@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: cadCAD_tweaked
+Version: 0.4.23
+Summary: cadCAD: tweaked version
+Home-page: https://github.com/danlessa/cadCAD-tweaked
+Author: Danilo Lessa Bernardineli
+Author-email: danilo.lessa@gmail.com
+License: LICENSE.txt
+Description: 
+        This is a tweaked version of cadCAD, use at your own peril.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.8
