@@ -1,0 +1,9 @@
+matplotlib
+Pillow
+scikit-build
+opencv-python
+scipy==1.4.1
+scikit-image
+tensorflow==2.3.1
+keras==2.2.4
+pydrive
