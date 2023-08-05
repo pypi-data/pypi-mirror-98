@@ -1,0 +1,6 @@
+setup.py
+mapdict/__init__.py
+mapdict.egg-info/PKG-INFO
+mapdict.egg-info/SOURCES.txt
+mapdict.egg-info/dependency_links.txt
+mapdict.egg-info/top_level.txt
