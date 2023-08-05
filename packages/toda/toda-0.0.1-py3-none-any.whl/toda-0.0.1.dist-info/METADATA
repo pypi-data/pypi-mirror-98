@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: toda
+Version: 0.0.1
+Summary: Toda gives you the power to safely deploy files using symlinks on any operating system with Python installed.
+Home-page: https://github.com/ypcrts/toda
+Author: ypcrts
+Author-email: ypcrts@users.noreply.github.com
+License: MPL 2.0
+Keywords: dotfiles,symlink,environment
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+
+UNKNOWN
+
+

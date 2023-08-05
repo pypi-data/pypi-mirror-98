@@ -1,0 +1,3 @@
+[console_scripts]
+toda = toda.__main__:main
+
