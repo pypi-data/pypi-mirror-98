@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rickle
+Version: 0.0.0
+Summary: A stack-based concatenative programming language
+Home-page: UNKNOWN
+Author: Takk
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+TBA
+
+
