@@ -1,0 +1,3 @@
+[console_scripts]
+maze-run = maze.maze_cli:maze_run
+

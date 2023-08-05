@@ -1,0 +1,45 @@
+# Default configuration for policy training.
+
+defaults:
+  - runner: local
+  - env: gym_env
+  - wrappers: no_wrappers
+  - algorithm: es
+  - model: flatten_concat
+  - critic: ~
+  - launcher: ~
+  - configuration: ~
+
+  # Algorithm runner specialization
+  - algorithm_runner: ${algorithm}-${runner}
+
+  # Launcher specializations for Kubernetes runs
+  - optional algorithm_launcher: ${algorithm}-${launcher}
+  - optional runner_launcher: ${runner}-${launcher}
+
+  # Configuration specializations (mainly for test scenarios, to keep tests simple and fast)
+  - optional env_configuration: ${env}-${configuration}
+  - optional algorithm_configuration: ${algorithm}-${configuration}
+
+project:
+  name: ???
+
+# --- Hydra output directory specifications ---
+
+# Base directory where to output logs
+log_base_dir: outputs
+
+# Hydra is by default configured to create a fresh output directory for each run.
+# However, to ensure model states, normalization stats and else are loaded from expected
+# locations, we will change the dir back to the original working dir for the initialization
+# (and then change it back so that all later script output lands in the hydra output dir as expected)
+input_dir: ""
+
+# Configuration for Hydra
+hydra:
+  # Local trainings
+  run:
+    dir: ${log_base_dir}/${hydra:choices.env}-${hydra:choices.model}-${hydra:choices.algorithm}-${hydra:choices.runner}/${now:%Y-%m-%d_%H-%M-%S}
+  # Training launched through launchers (i.e. kubernetes-based)
+  sweep:
+    dir: ${log_base_dir}/${hydra:choices.launcher}/${now:%Y-%m-%d_%H-%M-%S}
