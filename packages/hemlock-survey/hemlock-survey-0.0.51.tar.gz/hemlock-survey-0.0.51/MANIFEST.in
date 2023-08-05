@@ -1,0 +1,3 @@
+include hemlock/app/templates/hemlock/*
+include hemlock/models/*.html
+include hemlock/tools/*.html
