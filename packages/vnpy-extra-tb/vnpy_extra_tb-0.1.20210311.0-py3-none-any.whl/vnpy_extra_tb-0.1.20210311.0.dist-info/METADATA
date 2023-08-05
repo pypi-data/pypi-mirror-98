@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: vnpy-extra-tb
+Version: 0.1.20210311.0
+Summary: 该项目主要用于在vnpy框架下扩展部分 Trade Blazer (TB) 的函数包，以方便部分TB程序的迁移使用。
+Home-page: https://github.com/IBATS/vnpy_extra_tb
+Author: MG
+Author-email: mmmaaaggg@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Software Development
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: vnpy-extra (>=0.6.0.0)
+
+# vnpy_extra_tb
+该项目主要用于在vnpy框架下扩展部分 Trade Blazer (TB) 的函数包，以方便部分TB程序的迁移使用。
+
+
