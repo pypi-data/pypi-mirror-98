@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: odoo_wsgi
+Version: 1.0.0
+Summary: IPython Kernel for Odoo web
+Home-page: UNKNOWN
+Author: camera
+Author-email: 941642558@qq.com
+License: BSD
+Description: IPython Kernel for Odoo web
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Requires-Python: >=3.6

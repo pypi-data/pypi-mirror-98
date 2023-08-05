@@ -1,0 +1,9 @@
+click
+eventlet
+gevent
+gevent-websocket
+greenlet
+ipython>=7.21.0
+jupyter>=1.0.0
+python-socketio
+python-dotenv

@@ -1,0 +1,3 @@
+odoo_kernel_launcher
+odoo_wsgi
+odoo_wsgi_cli

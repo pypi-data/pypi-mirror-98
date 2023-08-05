@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        odoo-wsgi-bin=odoo_wsgi_cli:cli
+    
