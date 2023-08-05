@@ -1,0 +1,9 @@
+httpx
+nest_asyncio>=1.5.1
+datetime
+pandas>=1.0.0
+numpy>=1.11.0
+appdirs>=1.4.3
+python-dateutil
+websocket-client
+deprecation
