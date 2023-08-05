@@ -1,0 +1,10 @@
+pyridl/__init__.py,sha256=VYDm_k850ZU-9HRd5NSE57XwNNl34GWDqtDm9YwMnas,297
+pyridl/dataset.py,sha256=9ctlgHMB4C3CvghhUXLO9Dk9TU39WGv6TcfyZhd2Ais,3474
+pyridl/iridl_utils.py,sha256=dt6usYyjnBSJFmPsw3TWhUvpXaLfjjZz7VBerHlgjBI,986
+pyridl/source.py,sha256=b_8Emyfv78KTixAocgyP3fgCfRUW6mSkvgEULUTNhvA,13675
+pyridl/sourcetree.py,sha256=B4r00iWE3j-3YFh3G0bnxAK3IQIeU72-1OS33pRKpRE,120948088
+pyridl-0.1.0.dist-info/LICENSE,sha256=_j7qbFmeI6AMCMX1yyMgwwrcj4aH21_OybeaZixT_2s,35120
+pyridl-0.1.0.dist-info/METADATA,sha256=zgyszPc0yFe_TB2R-xFTnisiQ5ql4ZsrwTVFP3HONN4,4924
+pyridl-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyridl-0.1.0.dist-info/top_level.txt,sha256=GQ4ZBhDszyZD5pKbq2H_VMWWqBTGIwQ8FRt8SSyUHBs,7
+pyridl-0.1.0.dist-info/RECORD,,
