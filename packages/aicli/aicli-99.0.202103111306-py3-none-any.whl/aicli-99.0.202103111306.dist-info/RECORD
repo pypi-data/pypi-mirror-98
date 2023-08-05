@@ -1,0 +1,8 @@
+ailib/__init__.py,sha256=RANgnbrG8aCVBtHbSBdst5mWFNeq96w-PimJLX37aNE,18280
+ailib/cli.py,sha256=0JRHbzJSxx1QPRaDK0mjSjkRMu7RhUiW6DR3kICORXc,23414
+ailib/common/__init__.py,sha256=IPR7QFxmwb2iC0AeghfMdTHjyvTHvhIWOQLBL_gyf5I,3266
+aicli-99.0.202103111306.dist-info/METADATA,sha256=2Yb3qWb9u9ah2jbLCAMx2UeASfJ4O_7EliwnbmiVTFM,372
+aicli-99.0.202103111306.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aicli-99.0.202103111306.dist-info/entry_points.txt,sha256=fxbM0zpCMtyyr5DtHLO8eMB8oUVL_4BAjCdiJrOVnV4,59
+aicli-99.0.202103111306.dist-info/top_level.txt,sha256=uCyBeu-We3_G6jzv4SY05Rg3VHcZ2_Dr7dcFduB8Wsw,6
+aicli-99.0.202103111306.dist-info/RECORD,,
