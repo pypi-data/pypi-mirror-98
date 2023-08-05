@@ -1,0 +1,11 @@
+conduitlib/__init__.py,sha256=Y_sPt2SoLvB46oeWoFKd22UqCMtcrDf_nQqHVxPHvLk,57
+conduitlib/auth.py,sha256=vLO2MnsrQXeaMsWGz8sGkNm8kCCE2VsWU-WBxdq8C_k,4004
+conduitlib/plugin.py,sha256=crHEwcyTfoKeQSuvFKtGddtU7gzbW9cLtYy4ZQ3dnoI,2921
+conduitlib/util.py,sha256=VJZJa5ok41LgfmUr4em506-J8_KRYr0rSHix7qJGDO0,354
+unittests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unittests/test_plugin.py,sha256=iLCD9Utc8zBNFevXf9pVdCZwXZa9SgsXeEryZz3eVU0,1504
+unittests/test_util.py,sha256=QV5F7XWEbtOuB5pAjq4tnGdvCpjk8X-BwEaumifMbzc,312
+conduitlib-2.0.0.dist-info/METADATA,sha256=T-A9boBPNlZ5oJUubWT_HJcnLXdy7muOmtMEMmMFt_U,786
+conduitlib-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+conduitlib-2.0.0.dist-info/top_level.txt,sha256=1RrqlSe8sc3Bn4bCiJ5FxRqL5FQQ0Lb4xxWUGQiQvn8,21
+conduitlib-2.0.0.dist-info/RECORD,,
