@@ -1,0 +1,3 @@
+cellfinder_core
+dist
+tests
