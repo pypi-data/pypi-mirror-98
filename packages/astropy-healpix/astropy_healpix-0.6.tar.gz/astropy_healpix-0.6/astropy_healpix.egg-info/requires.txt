@@ -1,0 +1,10 @@
+numpy
+astropy
+
+[docs]
+sphinx-astropy
+matplotlib
+
+[test]
+pytest-astropy
+hypothesis<4.42
