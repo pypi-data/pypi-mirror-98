@@ -1,0 +1,9 @@
+README.md
+setup.py
+regrsn/__init__.py
+regrsn/lnregrsn.py
+regrsn/test.py
+regrsn.egg-info/PKG-INFO
+regrsn.egg-info/SOURCES.txt
+regrsn.egg-info/dependency_links.txt
+regrsn.egg-info/top_level.txt
