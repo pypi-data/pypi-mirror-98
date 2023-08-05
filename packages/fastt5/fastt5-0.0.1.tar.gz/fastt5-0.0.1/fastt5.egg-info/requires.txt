@@ -1,0 +1,9 @@
+onnxruntime>=1.6.0
+torch==1.7.0
+onnx==1.8.1
+onnxruntime==1.7.0
+transformers==4.2.2
+progress==1.5
+numpy==1.15.2
+tqdm==4.48.2
+sentencepiece
