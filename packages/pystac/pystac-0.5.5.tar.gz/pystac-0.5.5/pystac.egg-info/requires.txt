@@ -1,0 +1,4 @@
+python-dateutil>=2.7.0
+
+[validation]
+jsonschema==3.2.0
