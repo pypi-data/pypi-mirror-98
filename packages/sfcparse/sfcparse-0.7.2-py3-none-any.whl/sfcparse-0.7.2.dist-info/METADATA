@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sfcparse
+Version: 0.7.2
+Summary: Simple File Configuration Parse. Python alternative to creating custom save/config files!
+Home-page: UNKNOWN
+Author: aaronater10
+Author-email: <admin@dunnts.com>
+License: MIT
+Keywords: python,ini file,config,text file,cfg,conf,save file,config file,sfcparse,aaronater10,db,database,simple,configuration,alternative,data,import
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+Simple File Configuration Parse. Export or Import data easily. Python alternative to creating custom save/config files, and export any data to disk quickly and smoothly!
+
+
