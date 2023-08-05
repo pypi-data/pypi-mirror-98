@@ -1,0 +1,131 @@
+# Copula and Tail Dependence
+
+Install with
+```
+pip install pycop
+```
+
+## Simple Usage
+
+Import a sample
+```python
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv("data/msci1.csv")
+df.index = pd.to_datetime(df["Date"], format='%m/%d/%Y')
+df = df.drop(['Date'], axis=1)
+
+for col in df.columns.values:
+    df[col] = np.log(df[col]) - np.log(df[col].shift(1))
+
+df = df.dropna()
+
+```
+
+## Empirical Copula
+
+```python
+from pycop.bivariate.copula import empirical
+
+cop = Empirical(df[["US","UK"]])
+
+```
+### Non-parametric Tail Dependence Coefficient
+For a given threshold
+
+```python
+cop.LTDC_(0.01) # i/n = 1%
+cop.UTDC_(0.99) # i/n = 99%
+```
+
+## Optimal Empirical Tail Dependence coefficient (TDC)
+Returns optimal Empirical Tail Dependence coefficient (TDC)
+Based on the heuristic plateau-finding algorithm from Frahm et al (2005) "Estimating the tail-dependence coefficient: properties and pitfalls"
+
+```python
+cop.optimal_tdc("upper") 
+cop.optimal_tdc("lower")
+
+```
+
+## Plot Copula density
+### Empirical
+data = df[["Japan","US"]]
+cop = copula.Empirical(data)
+cop.plot_pdf(Nsplit=50)
+
+
+# Archimedean Copula 
+
+cop = copula.Archimedean(family='joe')
+param_, cmle = estimation.fit_cmle(cop, data)
+print(param_)
+
+family1 = ['clayton', 'rgumbel','rjoe','rgalambos']
+family2 = ['rclayton', 'gumbel','joe','galambos']
+
+cop = copula.Mix2Copula(family1="clayton",family2="gumbel")
+
+
+param_, cmle = estimation.fit_cmle(cop, data)
+
+# getting parameters
+print(param_)
+
+ltd = cop.LTD(w1=param_[0], theta1=param_[1])
+utd = cop.UTD(w1=param_[0], theta2=param_[2])
+
+print(ltd, utd)
+
+
+
+
+# Simulation
+import matplotlib.pyplot as plt
+from bivariate import simulation
+
+## Gaussian Copula
+u1, u2 = simulation.simu_gaussian(num=2000, rho=0.5)
+plt.scatter(u1, u2, color="black", alpha=0.8)
+plt.show()
+
+## Gaussian Copula with gaussian marginals
+from scipy.stats import norm
+
+u1, u2 = simulation.simu_gaussian(num=2000, rho=0.5)
+#apply distribution.ppf to transform uniform margin to the desired distribution in scipy.stats
+u1 = norm.ppf(u1)
+u2 = norm.ppf(u2)
+plt.scatter(u1, u2, color="black", alpha=0.8)
+plt.show()
+
+
+
+### Clayton
+cop = copula.Archimedean(family='clayton')
+cop.plot_pdf(theta=1.5, Nsplit=25)
+cop.plot_cdf(theta=1.5, Nsplit=25)
+
+### Student Copula
+u1, u2 = simulation.simu_tstudent(num=3000, nu=1, rho=0.5)
+plt.scatter(u1, u2, color="black", alpha=0.8)
+plt.show()
+
+### Clayton Copula
+u1, u2 = simulation.simu_clayton(num=2000, theta=5)
+plt.scatter(u1, u2, color="black", alpha=0.8)
+plt.show()
+
+### Frank Copula
+u1, u2 = simulation.simu_frank(num=2000, theta=5)
+plt.scatter(u1, u2, color="black", alpha=0.8)
+plt.show()
+
+### Gumbel Copula
+u1, u2 = simulation.simu_gumbel(num=2000, theta=5)
+plt.scatter(u1, u2, color="black", alpha=0.8)
+plt.show()
+
+
+```
