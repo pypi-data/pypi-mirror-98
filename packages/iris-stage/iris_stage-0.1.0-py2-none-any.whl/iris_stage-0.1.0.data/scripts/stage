@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# service vars
+export SERVICE_NAME="iris-stage"
+export PID_DIR="/tmp"
+# aws client vars
+export SNAP_NAME="iris-incuvers"
+export S3_BUCKET='snapbuilds'
+export S3_OBJECT="$SNAP_NAME.snap"
+export SNAP_FP="/tmp/$S3_OBJECT"
+# snap secrets
+export SNAP_SECRETS="/home/ubuntu/.secrets"
+export SNAP_COMMON="/var/snap/$SNAP_NAME/common/certs"
+# aws secrets
+export AWS_CONFIG_FILE="/home/ubuntu/.aws/config"
+export AWS_SHARED_CREDENTIALS_FILE="/home/ubuntu/.aws/credentials"
+
+python3 -m iris_stage start
