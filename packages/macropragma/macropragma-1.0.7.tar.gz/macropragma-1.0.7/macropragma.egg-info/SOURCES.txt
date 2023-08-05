@@ -1,0 +1,11 @@
+README.md
+setup.py
+macropragma/__init__.py
+macropragma/__main__.py
+macropragma/_metadata.py
+macropragma/macropragma.py
+macropragma.egg-info/PKG-INFO
+macropragma.egg-info/SOURCES.txt
+macropragma.egg-info/dependency_links.txt
+macropragma.egg-info/requires.txt
+macropragma.egg-info/top_level.txt
