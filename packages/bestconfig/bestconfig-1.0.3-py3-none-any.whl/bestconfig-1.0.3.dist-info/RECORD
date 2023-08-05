@@ -1,0 +1,10 @@
+bestconfig/__init__.py,sha256=MxTYtotNRWPFlhTkRb1bfmZfYmGXnhap1VG_iHH-ALM,83
+bestconfig/adapters.py,sha256=g70sc2n5_0R3--ZP6b44ZmFSlCHxkxfMGLFqw9d-7-0,2336
+bestconfig/config.py,sha256=Ai46DXKTBqruq9xMql8A0gHK3-xDzqdRcGDGxEBHJB8,7470
+bestconfig/config_provider.py,sha256=e6aXqxNN672bA4aLfZg1exYAebDHM6NIQbr1GGkQ44I,2715
+bestconfig/file_parsers.py,sha256=t5sxCcoqVSPaf_Fobt_NFX_V-icwDpJqh6aOhavWwmQ,3070
+bestconfig/source.py,sha256=dRUUf7Kurzx1EP5R_cg5ERnapJWob9-wFV4J7qzDvio,1717
+bestconfig-1.0.3.dist-info/METADATA,sha256=HGZkl_1v4cV2v6vnoRjz6AB3bE0oSYEeWvh69Oyuchg,3291
+bestconfig-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bestconfig-1.0.3.dist-info/top_level.txt,sha256=4xBz1bVZ6pSKtsfDwd0zA5SEBLgTOP7uVYNhI22yROI,11
+bestconfig-1.0.3.dist-info/RECORD,,
