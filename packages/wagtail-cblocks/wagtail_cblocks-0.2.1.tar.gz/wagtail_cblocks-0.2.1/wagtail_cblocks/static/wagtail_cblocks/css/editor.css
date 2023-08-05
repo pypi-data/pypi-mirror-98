@@ -1,0 +1,34 @@
+/**
+ * LinkBlock
+ *
+ * 1. Hide the label of the 'target' field.
+ * 2. Hide the close button of the 'target' field and move up and down buttons
+ *    when it is selected.
+ */
+
+.link-block > .field > label:first-child {
+  display: none; /* 1 */
+}
+
+.link-block > .field > label:first-child ~ .link-target-block {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.link-target-block .c-sf-add-button--close,
+.link-target-block .c-sf-block__actions__single.disabled {
+  display: none; /* 2 */
+}
+
+/**
+ * ColumnsBlock
+ *
+ * 1. Add a background color to each column to improve readability.
+ */
+
+.columns-block-list .c-sf-block {
+  background-color: #f5f5f5; /* 1 */
+}
+.columns-block-list .c-sf-block .c-sf-block {
+  background-color: #fff;
+}

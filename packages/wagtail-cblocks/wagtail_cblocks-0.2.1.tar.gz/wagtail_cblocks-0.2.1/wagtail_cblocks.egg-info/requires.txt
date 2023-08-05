@@ -1,0 +1,17 @@
+wagtail>=2.11
+
+[factories]
+factory-boy<3.2,>=3.1
+wagtail-factories>=2.0.1
+
+[test]
+black
+factory-boy<3.2,>=3.1
+flake8-black
+flake8-isort
+flake8>=3.5
+isort>=5.0
+pytest
+pytest-cov
+pytest-django
+wagtail-factories>=2.0.1
