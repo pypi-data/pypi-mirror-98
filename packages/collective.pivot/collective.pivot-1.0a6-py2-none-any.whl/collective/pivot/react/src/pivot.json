@@ -1,0 +1,355 @@
+{
+    "items": [
+        {
+            "cp": "5000",
+            "email": "gite.lesavoie@gmail.com",
+            "latitude": 50.4614,
+            "locality": "Namur",
+            "longitude": 4.85978,
+            "offer": {
+                "offerID": null,
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": "+3271394110",
+            "title": "Le Savoie"
+        },
+        {
+            "cp": "5000",
+            "email": "creanamur@hotmail.com",
+            "latitude": 50.4521,
+            "locality": "Namur",
+            "longitude": 4.84565,
+            "offer": {
+                "offerID": "ANX-1E-024L-003B",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281743399",
+            "title": "LE PETIT ATELIER DU 44B"
+        },
+        {
+            "cp": "5020",
+            "email": "gite@o29.be",
+            "latitude": 50.44192,
+            "locality": "Malonne",
+            "longitude": 4.79462,
+            "offer": {
+                "offerID": "ANX-01-0950-00OC",
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": null,
+            "title": "Ô 29"
+        },
+        {
+            "cp": "5000",
+            "email": "info@avenuerops.be",
+            "latitude": 50.44708,
+            "locality": "Namur",
+            "longitude": 4.85934,
+            "offer": {
+                "offerID": "OTH-A0-003Y-0ZS8",
+                "offerTypeId": 4,
+                "offerTypeLabel": "Meublé"
+            },
+            "phone": null,
+            "title": "Avenue Rops"
+        },
+        {
+            "cp": "5020",
+            "email": "boudacools@gmail.com",
+            "latitude": 50.42654,
+            "locality": "Malonne",
+            "longitude": 4.80171,
+            "offer": {
+                "offerID": "ANX-01-0ACD-005C",
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": "+3281446912",
+            "title": "Le Relais du Malpas"
+        },
+        {
+            "cp": "5000",
+            "email": "info@aufildespages.be",
+            "latitude": 50.47112,
+            "locality": "Namur",
+            "longitude": 4.87063,
+            "offer": {
+                "offerID": "ANX-1E-06L7-0001",
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": null,
+            "title": "Au Fil des Pages"
+        },
+        {
+            "cp": "5000",
+            "email": "info@chateaudenamur.com",
+            "latitude": 50.4545,
+            "locality": "Namur",
+            "longitude": 4.85397,
+            "offer": {
+                "offerID": "ANX-01-000H7V",
+                "offerTypeId": 1,
+                "offerTypeLabel": "Hôtel"
+            },
+            "phone": "+3281729900",
+            "title": "CHATEAU DE NAMUR"
+        },
+        {
+            "cp": "5020",
+            "email": "dt@librairie.be",
+            "latitude": 50.42671,
+            "locality": "Malonne",
+            "longitude": 4.81273,
+            "offer": {
+                "offerID": "ANX-01-0ACD-013Y",
+                "offerTypeId": 4,
+                "offerTypeLabel": "Meublé"
+            },
+            "phone": null,
+            "title": "La Huche"
+        },
+        {
+            "cp": "5000",
+            "email": "info@le-jardin-des-secrets.be",
+            "latitude": 50.26078,
+            "locality": "Namur",
+            "longitude": 4.90981,
+            "offer": {
+                "offerID": "ANX-0B-01MV-000R",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281434495",
+            "title": "Le jardin des secrets : \"Chambre printemps\""
+        },
+        {
+            "cp": "5000",
+            "email": "h3151@accor.com",
+            "latitude": 50.4664,
+            "locality": "Namur",
+            "longitude": 4.87079,
+            "offer": {
+                "offerID": "ANX-1E-05EV-004B",
+                "offerTypeId": 1,
+                "offerTypeLabel": "Hôtel"
+            },
+            "phone": "+3281257540",
+            "title": "HOTEL IBIS NAMUR"
+        },
+        {
+            "cp": "5020",
+            "email": "camping.les.trieux@skynet.be",
+            "latitude": 50.44203,
+            "locality": "Malonne",
+            "longitude": 4.80202,
+            "offer": {
+                "offerID": "ANX-01-000H9G",
+                "offerTypeId": 5,
+                "offerTypeLabel": "Camping"
+            },
+            "phone": "+3281445583",
+            "title": "Camping: Les Trieux"
+        },
+        {
+            "cp": "5000",
+            "email": "info@le-jardin-des-secrets.be",
+            "latitude": 50.26078,
+            "locality": "Namur",
+            "longitude": 4.90981,
+            "offer": {
+                "offerID": "ANX-0B-01MV-00HW",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281434495",
+            "title": "Le jardin des secrets : \"Chambre été\""
+        },
+        {
+            "cp": "5000",
+            "email": "info@hotelflandre.be",
+            "latitude": 50.46808,
+            "locality": "Namur",
+            "longitude": 4.86276,
+            "offer": {
+                "offerID": "ANX-1E-060N-009O",
+                "offerTypeId": 1,
+                "offerTypeLabel": "Hôtel"
+            },
+            "phone": "+3281231868",
+            "title": "GRAND HOTEL DE FLANDRE"
+        },
+        {
+            "cp": "5020",
+            "email": "neverlest@lanoiseraie.be",
+            "latitude": 50.48639,
+            "locality": "Temploux",
+            "longitude": 4.80109,
+            "offer": {
+                "offerID": "ANX-1E-05EA-00NM",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281253222",
+            "title": "LA NOISERAIE - ELOISE"
+        },
+        {
+            "cp": "5000",
+            "email": "info@le-jardin-des-secrets.be",
+            "latitude": 50.26078,
+            "locality": "Namur",
+            "longitude": 4.90981,
+            "offer": {
+                "offerID": "ANX-0B-01MV-00R9",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281434495",
+            "title": "Le jardin des secrets : \"Chambre automne\""
+        },
+        {
+            "cp": "5000",
+            "email": "namurenergite@sudepervier.be",
+            "latitude": 50.46704,
+            "locality": "Namur",
+            "longitude": 4.88227,
+            "offer": {
+                "offerID": "ANX-0T-00W0-00A9",
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": "+3281223741",
+            "title": "Namur - ENERGÎTE"
+        },
+        {
+            "cp": "5020",
+            "email": "neverlest@lanoiseraie.be",
+            "latitude": 50.48639,
+            "locality": "Temploux",
+            "longitude": 4.80109,
+            "offer": {
+                "offerID": "ANX-1E-05EA-00M8",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281253222",
+            "title": "LA NOISERAIE - ADRIEN"
+        },
+        {
+            "cp": "5000",
+            "email": "citabelair@gmail.com",
+            "latitude": 50.4562,
+            "locality": "Namur",
+            "longitude": 4.85011,
+            "offer": {
+                "offerID": "ANX-0T-00OS-009L",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": null,
+            "title": "CITABEL'AIR"
+        },
+        {
+            "cp": "5000",
+            "email": "info@theroyalsnail.com",
+            "latitude": 50.4558,
+            "locality": "Namur",
+            "longitude": 4.86211,
+            "offer": {
+                "offerID": "ANX-1E-05EI-00A5",
+                "offerTypeId": 1,
+                "offerTypeLabel": "Hôtel"
+            },
+            "phone": "+3281570023",
+            "title": "THE ROYAL SNAIL HOTEL"
+        },
+        {
+            "cp": "5000",
+            "email": "valerie.leleux@hotmail.com",
+            "latitude": 50.45948,
+            "locality": "Namur",
+            "longitude": 4.85671,
+            "offer": {
+                "offerID": null,
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": null,
+            "title": "P'ti Canon"
+        },
+        {
+            "cp": "5020",
+            "email": "neverlest@lanoiseraie.be",
+            "latitude": 50.48639,
+            "locality": "Temploux",
+            "longitude": 4.80109,
+            "offer": {
+                "offerID": "ANX-1E-02J1-00KJ",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281253222",
+            "title": "LA NOISERAIE - ELADOR"
+        },
+        {
+            "cp": "5000",
+            "email": "gite.lesavoie@gmail.com",
+            "latitude": 50.4614,
+            "locality": "Namur",
+            "longitude": 4.85978,
+            "offer": {
+                "offerID": null,
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": "+3271394110",
+            "title": "Le Savoie 2"
+        },
+        {
+            "cp": "5020",
+            "email": "lescardamines@hotmail.com",
+            "latitude": 50.473,
+            "locality": "Temploux",
+            "longitude": 4.75795,
+            "offer": {
+                "offerID": "ANX-0T-00UY-001W",
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": "+3281451850",
+            "title": "LES CARDAMINES"
+        },
+        {
+            "cp": "5020",
+            "email": "neverlest@lanoiseraie.be",
+            "latitude": 50.48639,
+            "locality": "Temploux",
+            "longitude": 4.80109,
+            "offer": {
+                "offerID": "ANX-1E-05EA-00MX",
+                "offerTypeId": 3,
+                "offerTypeLabel": "Chambre d’hôtes"
+            },
+            "phone": "+3281253222",
+            "title": "LA NOISERAIE - DORSAN"
+        },
+        {
+            "cp": "5020",
+            "email": "info@gitecurnolo.com",
+            "latitude": 50.42014,
+            "locality": "Malonne",
+            "longitude": 4.79737,
+            "offer": {
+                "offerID": "ANX-0T-00RJ-008F",
+                "offerTypeId": 2,
+                "offerTypeLabel": "Gîte"
+            },
+            "phone": "+3281446444",
+            "title": "GITE DU CURNOLO"
+        }
+    ],
+    "items_total": 25
+}

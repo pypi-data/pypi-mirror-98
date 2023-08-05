@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    name="collective.pivot.Family"
+    meta_type="Dexterity FTI"
+    i18n:domain="collective.pivot">
+
+  <!-- Basic properties -->
+  <property
+      i18n:translate=""
+      name="title">Pivot family</property>
+  <property
+      i18n:translate=""
+      name="description">Add new CGT Pivot family folder</property>
+
+  <property name="icon_expr">string:${portal_url}/document_icon.png</property>
+
+  <!-- Hierarchy control -->
+  <property name="global_allow">True</property>
+  <property name="filter_content_types">True</property>
+  <property name="allowed_content_types">
+  </property>
+  <!-- Schema, class and security -->
+  <property name="add_permission">collective.pivot.AddFamily</property>
+  <property name="klass">collective.pivot.contents.Family</property>
+  <property name="schema">collective.pivot.contents.IFamily</property>
+
+  <!-- Enabled behaviors -->
+  <property name="behaviors" purge="false">
+    <element value="plone.app.content.interfaces.INameFromTitle"/>
+    <element value="plone.app.dexterity.behaviors.exclfromnav.IExcludeFromNavigation"/>
+    <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
+    <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
+    <!-- element value="plone.app.referenceablebehavior.referenceable.IReferenceable" /-->
+  </property>
+
+</object>

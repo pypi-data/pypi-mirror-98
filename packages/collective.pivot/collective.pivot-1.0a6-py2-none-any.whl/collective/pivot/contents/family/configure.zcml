@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.pivot">
+
+  <browser:page
+      name="view"
+      for="collective.pivot.contents.family.content.IFamily"
+      class=".view.ViewView"
+      template="view.pt"
+      permission="zope2.View"
+      layer="collective.pivot.interfaces.ICollectivePivotLayer"
+      />
+
+  <plone:service
+      name="@pivot"
+      method="GET"
+      accept="application/json"
+      for="collective.pivot.contents.family.content.IFamily"
+      factory=".endpoint.PivotEndpointGet"
+      permission="zope2.View"
+      layer="collective.pivot.interfaces.ICollectivePivotLayer"
+    />
+
+</configure>

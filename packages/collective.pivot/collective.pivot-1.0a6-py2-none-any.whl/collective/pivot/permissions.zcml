@@ -1,0 +1,10 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  i18n_domain="collective.pivot">
+
+  <permission
+        id="collective.pivot.AddFamily"
+        title="collective.pivot: Add Family"
+    />
+
+</configure>
