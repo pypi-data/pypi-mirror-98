@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: userbot
+Version: 0.0.4
+Summary: A Powerful Python-Telethon Based Library For Javes 4.0 Userbot.
+Home-page: https://github.com/Sh1vam/Javes-4.0
+Author: Sh1vam
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: telethon
+Requires-Dist: telegraph
+Requires-Dist: sqlalchemy
+Requires-Dist: urbandict
+Requires-Dist: pySmartDL
+Requires-Dist: cryptg
+Requires-Dist: python-dotenv
+Requires-Dist: fontTools
+Requires-Dist: requests
+Requires-Dist: Pillow
+Requires-Dist: validators
+Requires-Dist: wand
+Requires-Dist: colour
+Requires-Dist: lottie
+
+# Userbot Library
+A stable userbot base library, based on Telethon.
+
+## Installation
+`pip install ub`
+
+=> Run `python -m ub` to start the bot.<br/>
+
+### Creating plugins
+To work everywhere
+
+
+        # Credits
+        * Lonami For Telethon
+		* Catuserbot For Helpers
+		* rekcah-pavi For Javes
+
+
