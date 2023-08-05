@@ -1,0 +1,11 @@
+swifttools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swifttools/xrt_prods/__init__.py,sha256=MrJAERdGK7CxxMJ-vU7RPSfmqxSgUU-JruugmRP4adM,1870
+swifttools/xrt_prods/prod_base.py,sha256=PzIRQOxNlisaeeAKUPo_lzUVHnl-hLksPUAwNmCk3tQ,22047
+swifttools/xrt_prods/prod_common.py,sha256=HqtWEUNs3suDx-TpJcCY-v3wRRkrtU0GJTdXBxp2W3I,1502
+swifttools/xrt_prods/prod_request.py,sha256=utgyceXftXFDwPR3vxf2lVF09asyrN8XbpaIakII4pA,109933
+swifttools/xrt_prods/productVars.py,sha256=DUvt3BwqDn38Seul6V1kn6az8ZOSNnHNMItlYlVUcaU,8680
+swifttools-1.8.dist-info/LICENSE,sha256=VapJDw1KfAuHt_f8p0-Gh5kD8g8HD1ZLuhMTtKx9wY8,1123
+swifttools-1.8.dist-info/METADATA,sha256=mOHwYz9a8YE8xOjgZEyhUcGCGCpiAmybKXWtnMi4MSo,911
+swifttools-1.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+swifttools-1.8.dist-info/top_level.txt,sha256=TatHG_QuSeDHf1m21bJSUyyieZpnC0iAhyiuOtBlF1k,11
+swifttools-1.8.dist-info/RECORD,,
