@@ -1,0 +1,8 @@
+datasette_ripgrep/__init__.py,sha256=EW3-hLIIIUfFJmbqdW2aHT6t361jfNEMCw58IKMwoAI,5444
+datasette_ripgrep/templates/ripgrep.html,sha256=DdTl7gZxXm-zZ6-dJhYEh4tdEvr3H6LtUuYyYGkSpgE,3406
+datasette_ripgrep/templates/ripgrep_view_file.html,sha256=OdoZ1EsZ48PQduM1zCAQTcg4AAXp7wyuVcDN-ZC87M0,813
+datasette_ripgrep-0.7.dist-info/METADATA,sha256=sWOKDjI-hgJ2LHNefUKpHnhT9go7YFxBOQH7Bo5QyjQ,4083
+datasette_ripgrep-0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_ripgrep-0.7.dist-info/entry_points.txt,sha256=nTNrp09U4Fkd357HeVE4NxhkTtpQ_hUOrFWbAP0PT7s,41
+datasette_ripgrep-0.7.dist-info/top_level.txt,sha256=oqcdO7YJy4TWqZHjhEmCVOcrLtAoIcxNg_8AawHAghU,18
+datasette_ripgrep-0.7.dist-info/RECORD,,
