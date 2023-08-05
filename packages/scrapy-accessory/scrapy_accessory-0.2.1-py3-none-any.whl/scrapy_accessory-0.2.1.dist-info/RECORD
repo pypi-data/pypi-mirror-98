@@ -1,0 +1,9 @@
+middlewares.py,sha256=TSNnximFsZXBLOcQ2O4JQAXInTG-QmYuzhqsZWLhLtQ,5606
+scrapy_accessory/__init__.py,sha256=WbNIRMuNiF2fjtWppH3zuG7ykVaSLnIinuU3qK0hAqA,18
+scrapy_accessory/feedexporter.py,sha256=QT43wz5fAVbmtk3tWz_lV8OrXI7S9P_cJIAyeN_04sQ,3584
+scrapy_accessory/middlewares.py,sha256=pvhZFAraq09FThdWqUgUHWUm5yjhMdPtt-36p1RBeS4,5599
+scrapy_accessory/pipelines.py,sha256=2ubdYxkxAuxXNLMu6Xa5Z_zE-jLT6rjH_s4ZwJx1f30,1505
+scrapy_accessory-0.2.1.dist-info/METADATA,sha256=cF31JlurHiWc_i6dmh9l60unimMOm6aLkMx76rAwITI,4384
+scrapy_accessory-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+scrapy_accessory-0.2.1.dist-info/top_level.txt,sha256=QNQhi9mxvwjOEQddT9_wQatN6m864wnhyunatLSCieU,17
+scrapy_accessory-0.2.1.dist-info/RECORD,,
