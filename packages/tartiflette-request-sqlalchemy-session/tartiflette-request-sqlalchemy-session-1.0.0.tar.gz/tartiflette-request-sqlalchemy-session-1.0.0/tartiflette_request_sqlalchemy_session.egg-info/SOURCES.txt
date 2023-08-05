@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+tartiflette_request_sa_session/__init__.py
+tartiflette_request_sa_session/database.py
+tartiflette_request_sa_session/middleware.py
+tartiflette_request_sqlalchemy_session.egg-info/PKG-INFO
+tartiflette_request_sqlalchemy_session.egg-info/SOURCES.txt
+tartiflette_request_sqlalchemy_session.egg-info/dependency_links.txt
+tartiflette_request_sqlalchemy_session.egg-info/requires.txt
+tartiflette_request_sqlalchemy_session.egg-info/top_level.txt
