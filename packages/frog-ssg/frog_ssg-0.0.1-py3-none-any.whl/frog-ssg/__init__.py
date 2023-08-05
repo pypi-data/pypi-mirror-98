@@ -1,0 +1,1 @@
+from frog.__main__ import build
