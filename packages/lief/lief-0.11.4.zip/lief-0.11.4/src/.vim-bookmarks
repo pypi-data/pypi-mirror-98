@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/romain/dev/LIEF/branches/master/src/utils.cpp': [{'sign_idx': 9506, 'line_nr': 94, 'content': '         return a.empty() ? fmt::format("{:02x}", b) : a + sep + fmt::format("{:02x}", b);'},],'/home/romain/dev/LIEF/branches/master/src/hash_stream.cpp': [{'sign_idx': 9500, 'line_nr': 91, 'content': '    LIEF_WARN("mbedtls_md_update(0x{}, 0x{:x}) failed with retcode: 0x{:x}", reinterpret_cast<uintptr_t>(s), n, ret);'},],}}
+let l:bm_current_session = 'default'

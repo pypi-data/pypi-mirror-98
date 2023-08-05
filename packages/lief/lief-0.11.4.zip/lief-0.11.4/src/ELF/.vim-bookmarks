@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/romain/dev/LIEF/branches/master/src/ELF/Layout.hpp': [{'sign_idx': 9501, 'line_nr': 204, 'content': '  size_t section_shstr_size() {'},{'sign_idx': 9500, 'line_nr': 749, 'content': '      section.offset(this->binary_->virtual_address_to_offset(va_r_base));'},],}}
+let l:bm_current_session = 'default'

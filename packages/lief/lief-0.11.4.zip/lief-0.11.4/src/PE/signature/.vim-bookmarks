@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/romain/dev/LIEF/branches/master/src/PE/signature/SignatureParser.cpp': [{'sign_idx': 9500, 'line_nr': 728, 'content': '      else if (oid_str == /* SpcSpOpusInfo */ "1.3.6.1.4.1.311.2.1.12") {'},],}}
+let l:bm_current_session = 'default'
