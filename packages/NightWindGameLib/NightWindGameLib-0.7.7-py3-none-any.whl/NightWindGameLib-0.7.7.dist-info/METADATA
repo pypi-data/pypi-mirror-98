@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: NightWindGameLib
+Version: 0.7.7
+Summary: Some little games
+Home-page: https://github.com/
+Author: Nova_NightWind0311
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: arcade (>=2.5.5)
+Requires-Dist: pygame (>=2.0.1)
+Requires-Dist: PySide2 (>=5.14)
+
+UNKNOWN
+
+
