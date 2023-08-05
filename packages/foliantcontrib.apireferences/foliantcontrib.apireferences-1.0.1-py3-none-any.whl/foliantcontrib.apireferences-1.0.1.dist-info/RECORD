@@ -1,0 +1,9 @@
+foliant/preprocessors/apireferences/__init__.py,sha256=PHv4LgguWcROrtequemY3racgOXaP6UL0G1F3YSVrgE,40
+foliant/preprocessors/apireferences/apireferences.py,sha256=2ISE_6hb3YJRLHhy94M1S4YS9A8mCfCjC6Zf1mDNcGY,10444
+foliant/preprocessors/apireferences/classes.py,sha256=kxdUSD0NrfDVaKAqO3vJxVWhHHRYHT2_qXN4Le0SA1Q,28464
+foliant/preprocessors/apireferences/tools.py,sha256=cPPBiBXXcd2SB-CXyQqtx7dVt2-8Iz7buAiPFNRjXP8,810
+foliantcontrib.apireferences-1.0.1.dist-info/LICENSE,sha256=PcpIEXOcZ-oV3M2SNR9hp93rNJiGp6IPAElRlkoQs0g,1069
+foliantcontrib.apireferences-1.0.1.dist-info/METADATA,sha256=tzHu3Ps2XKDxokV-zbZJEl3iclluShnmpxE2SxC_bx4,42533
+foliantcontrib.apireferences-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+foliantcontrib.apireferences-1.0.1.dist-info/top_level.txt,sha256=5uvI8ZIgBWKY09Z8Xs4ESLGD7yAEGbiLvIrdHdaC9mE,8
+foliantcontrib.apireferences-1.0.1.dist-info/RECORD,,
