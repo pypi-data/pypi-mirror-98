@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: spatter
+Version: 0.0.0
+Summary: Spatter
+Home-page: https://github.com/jriddy/spatter
+License: MIT
+Author: Josh Reed
+Author-email: jriddy@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.0,<8.0)
+Project-URL: Changelog, https://github.com/jriddy/spatter/releases
+Project-URL: Documentation, https://spatter.readthedocs.io
+Project-URL: Repository, https://github.com/jriddy/spatter
+Description-Content-Type: text/x-rst
+
+Spatter
+=======
+
+|PyPI| |Python Version| |License|
+
+|Read the Docs| |Tests| |Codecov|
+
+|pre-commit| |Black|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/spatter.svg
+   :target: https://pypi.org/project/spatter/
+   :alt: PyPI
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/spatter
+   :target: https://pypi.org/project/spatter
+   :alt: Python Version
+.. |License| image:: https://img.shields.io/pypi/l/spatter
+   :target: https://opensource.org/licenses/MIT
+   :alt: License
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/spatter/latest.svg?label=Read%20the%20Docs
+   :target: https://spatter.readthedocs.io/
+   :alt: Read the documentation at https://spatter.readthedocs.io/
+.. |Tests| image:: https://github.com/jriddy/spatter/workflows/Tests/badge.svg
+   :target: https://github.com/jriddy/spatter/actions?workflow=Tests
+   :alt: Tests
+.. |Codecov| image:: https://codecov.io/gh/jriddy/spatter/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/jriddy/spatter
+   :alt: Codecov
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Black
+
+
+Features
+--------
+
+* TODO
+
+
+Requirements
+------------
+
+* TODO
+
+
+Installation
+------------
+
+You can install *Spatter* via pip_ from PyPI_:
+
+.. code:: console
+
+   $ pip install spatter
+
+
+Usage
+-----
+
+Please see the `Command-line Reference <Usage_>`_ for details.
+
+
+Contributing
+------------
+
+Contributions are very welcome.
+To learn more, see the `Contributor Guide`_.
+
+
+License
+-------
+
+Distributed under the terms of the MIT_ license,
+*Spatter* is free and open source software.
+
+
+Issues
+------
+
+If you encounter any problems,
+please `file an issue`_ along with a detailed description.
+
+
+Credits
+-------
+
+This project was generated from `@cjolowicz`_'s `Hypermodern Python Cookiecutter`_ template.
+
+
+.. _@cjolowicz: https://github.com/cjolowicz
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _MIT: http://opensource.org/licenses/MIT
+.. _PyPI: https://pypi.org/
+.. _Hypermodern Python Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+.. _file an issue: https://github.com/jriddy/spatter/issues
+.. _pip: https://pip.pypa.io/
+.. github-only
+.. _Contributor Guide: CONTRIBUTING.rst
+.. _Usage: https://spatter.readthedocs.io/en/latest/usage.html
+
