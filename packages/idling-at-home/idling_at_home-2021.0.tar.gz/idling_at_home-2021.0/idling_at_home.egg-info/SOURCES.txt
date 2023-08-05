@@ -1,0 +1,11 @@
+README.md
+setup.py
+idling_at_home/__init__.py
+idling_at_home/idle.py
+idling_at_home/main.py
+idling_at_home.egg-info/PKG-INFO
+idling_at_home.egg-info/SOURCES.txt
+idling_at_home.egg-info/dependency_links.txt
+idling_at_home.egg-info/entry_points.txt
+idling_at_home.egg-info/requires.txt
+idling_at_home.egg-info/top_level.txt
