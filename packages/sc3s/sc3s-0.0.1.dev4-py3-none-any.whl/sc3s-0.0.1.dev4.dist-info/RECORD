@@ -1,0 +1,11 @@
+sc3s/__init__.py,sha256=T9UJU8a6d6vuyU4i7wnpK7C9h9GlSSXHI36w8N3XS5M,25
+sc3s/_cluster.py,sha256=lSfmwkBQ7CYXHG0px_FkUG5UuUOaFZ504QgBxP_1bc8,6448
+sc3s/_consensus.py,sha256=iNoAdGqdsXd0ZqmQrQWEVRuNh_Oejo4dKebTz5tpG6U,3812
+sc3s/_legacy.py,sha256=VCbqefTz2cq3TZXu2XmCg3XCHEQw405E5u4DcIi4ObM,2672
+sc3s/_misc.py,sha256=sDLHpuMJ8YjLCZJUoZTJ9_Or1IZPEwhxPJDOe_LbqIQ,4154
+sc3s/tools.py,sha256=kMwALhpfGcJ-ghh-TezCQyIiG6Cl282DkJMt_HL89OI,33
+sc3s-0.0.1.dev4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sc3s-0.0.1.dev4.dist-info/METADATA,sha256=yJfulsZDpGkE1g3BrWkM7KmV9w5kc0AXAy0BiEQFSFM,797
+sc3s-0.0.1.dev4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sc3s-0.0.1.dev4.dist-info/top_level.txt,sha256=50IEKTTTztGTFSs2jxlGVezvbgtWERzWhEAnmrTf5I4,5
+sc3s-0.0.1.dev4.dist-info/RECORD,,
