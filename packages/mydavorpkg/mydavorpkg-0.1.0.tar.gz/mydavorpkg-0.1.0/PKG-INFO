@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mydavorpkg
+Version: 0.1.0
+Summary: 
+Author: Jorge Lara
+Author-email: larajorge11@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
