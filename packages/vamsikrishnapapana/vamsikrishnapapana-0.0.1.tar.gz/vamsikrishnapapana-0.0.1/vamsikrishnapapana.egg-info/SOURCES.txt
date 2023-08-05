@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+vamsikrishnapapana/__init__.py
+vamsikrishnapapana.egg-info/PKG-INFO
+vamsikrishnapapana.egg-info/SOURCES.txt
+vamsikrishnapapana.egg-info/dependency_links.txt
+vamsikrishnapapana.egg-info/top_level.txt

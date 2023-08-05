@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: vamsikrishnapapana
+Version: 0.0.1
+Summary: A simple library that contains my details
+Home-page: UNKNOWN
+Author: Vamsi Krishna Papana
+Author-email: vamsikrishnapapana@gmail.com
+License: MIT
+Description: This is my self intro library contains my own details..
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+        
+Keywords: vamsi
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
