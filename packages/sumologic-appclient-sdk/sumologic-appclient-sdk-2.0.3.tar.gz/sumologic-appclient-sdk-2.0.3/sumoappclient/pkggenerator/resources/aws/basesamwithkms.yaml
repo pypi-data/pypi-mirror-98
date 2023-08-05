@@ -1,0 +1,158 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'This solution consists of a lambda functions which is used to fetch
+  logs from ${APPNAME} and ingest to Sumo Logic.
+
+  '
+Outputs:
+  ${APPNAME_SINGLE}Function:
+    Description: ${APPNAME_SINGLE}Scheduler Function ARN
+    Value:
+      Fn::GetAtt:
+        - ${APPNAME_SINGLE}Function
+        - Arn
+
+Parameters:
+  CreateSecret:
+    Type: String
+    Description: "Yes -> Encrypt the Provided Environment variables ${ENCRYPT_KEYS} using KMS and Secret Manager.
+                  No -> No encryption."
+    AllowedValues:
+      - "Yes"
+      - "No"
+    Default: "No"
+  AwsKmsKeyARN:
+    Type: String
+    Description: "Please provide an existing KMS Key ARN to encrypt the Environment variables ${ENCRYPT_KEYS}. If kept empty, a new KMS Key ID will be created."
+    Default: ""
+
+Conditions:
+  create_secret:
+    Fn::Equals: [Ref: CreateSecret, "Yes"]
+  create_kms_key:
+    Fn::And:
+      - Fn::Equals: [Ref: AwsKmsKeyARN, ""]
+      - Condition: create_secret
+
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: ${PACKAGENAME}
+    Description: "This solution consists of a lambda functions which is used to fetch logs from ${APPNAME} and ingest to Sumo Logic."
+    Author: Sumo Logic
+    SpdxLicenseId: Apache-2.0
+    LicenseUrl: ./LICENSE
+    ReadmeUrl: ./README.md
+    Labels: ["lambda", "sumologic", "serverless", ${APPNAME_SINGLE}]
+    HomePageUrl: https://github.com/SumoLogic/${PACKAGENAME}
+    SemanticVersion: 1.0.0
+    SourceCodeUrl: https://github.com/SumoLogic/${PACKAGENAME}
+
+Resources:
+
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Path: /
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess
+
+  SecretPolicy:
+    Type: 'AWS::IAM::Policy'
+    Condition: create_secret
+    Properties:
+      PolicyName: SecretManager-Policy
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action:
+              - secretsmanager:GetSecretValue
+            Resource:
+              Ref: SumoLogicSecret
+          - Effect: Allow
+            Action:
+              - kms:Decrypt
+            Resource:
+              Fn::If: [create_kms_key, Fn::GetAtt: [SumoLogicKMSKey, Arn], Ref: AwsKmsKeyARN]
+      Roles:
+        - Ref: LambdaRole
+
+  SumoLogicKMSKey:
+    Type: AWS::KMS::Key
+    Condition: create_kms_key
+    Properties:
+      Description:
+        Fn::Sub: "This is KMS Key Id used to encrypt and decrypt the Secret SumoLogic-Secret-${AWS::StackName} for CloudFormation Stack ${AWS::StackName}."
+      EnableKeyRotation: true
+      KeyPolicy:
+        Version: '2012-10-17'
+        Id: key-default-1
+        Statement:
+          - Sid: Enable IAM User Permissions
+            Effect: Allow
+            Principal:
+              AWS:
+                Fn::Join:
+                  - ''
+                  - - 'arn:aws:iam::'
+                    - Ref: AWS::AccountId
+                    - :root
+            Action: kms:*
+            Resource: '*'
+
+  SumoLogicKMSAlias:
+    Type: AWS::KMS::Alias
+    Condition: create_kms_key
+    Properties:
+      AliasName:
+        Fn::Sub: "alias/SumoLogic-Secret-${AWS::StackName}"
+      TargetKeyId:
+        Ref: SumoLogicKMSKey
+
+  SumoLogicSecret:
+    Type: AWS::SecretsManager::Secret
+    Condition: create_secret
+    Properties:
+      Name:
+        Fn::Sub: "SumoLogic-Secret-${AWS::StackName}"
+      Description:
+        Fn::Sub: "This is Secret Manager to Store Environment variables ${ENCRYPT_KEYS} for CloudFormation Stack ${AWS::StackName}."
+      SecretString:
+        Fn::Sub: '${SECRET_STRING}'
+      KmsKeyId:
+        Fn::If:
+          - create_kms_key
+          - Fn::GetAtt: [SumoLogicKMSKey, Arn]
+          - Ref: AwsKmsKeyARN
+
+  ${APPNAME_SINGLE}Function:
+    Properties:
+      Description: "This function gets triggered perodically via CloudWatchEvents and fetches logs from ${APPNAME} and ingest to SumoLogic"
+      CodeUri: ./target/aws/build/
+      Environment:
+        Variables:
+          ENVIRONMENT: "aws"
+          ENABLE_CONSOLE_LOG: "false"
+      Events:
+        ScheduleRule:
+          Properties:
+            Schedule: rate(5 minutes)
+          Type: Schedule
+      Handler: main.main
+      MemorySize: 256
+      Policies:
+        - AmazonDynamoDBFullAccess
+      Runtime: python3.7
+      Role:
+        Fn::GetAtt: [LambdaRole, Arn]
+      Timeout: 300
+    Type: AWS::Serverless::Function
+
+Transform: AWS::Serverless-2016-10-31
