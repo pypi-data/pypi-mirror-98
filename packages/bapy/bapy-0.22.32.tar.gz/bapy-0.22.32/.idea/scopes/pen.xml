@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="pen" pattern="file[pen]:pen//*" />
+</component>
