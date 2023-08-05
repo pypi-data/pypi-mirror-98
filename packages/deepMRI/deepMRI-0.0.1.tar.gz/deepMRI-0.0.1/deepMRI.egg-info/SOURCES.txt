@@ -1,0 +1,7 @@
+README.md
+setup.py
+deepMRI.egg-info/PKG-INFO
+deepMRI.egg-info/SOURCES.txt
+deepMRI.egg-info/dependency_links.txt
+deepMRI.egg-info/requires.txt
+deepMRI.egg-info/top_level.txt
