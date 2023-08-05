@@ -1,0 +1,3 @@
+[console_scripts]
+pdb_eda = pdb_eda.__main__:main
+

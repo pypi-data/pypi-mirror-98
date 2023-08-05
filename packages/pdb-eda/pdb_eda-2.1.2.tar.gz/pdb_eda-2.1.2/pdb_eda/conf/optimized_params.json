@@ -1,0 +1,2813 @@
+{
+  "bonded_atoms": {
+    "ALA_C": [
+      "ALA_CA",
+      "ALA_O",
+      "ALA_OXT"
+    ],
+    "ALA_CA": [
+      "ALA_N",
+      "ALA_C",
+      "ALA_CB"
+    ],
+    "ALA_CB": [
+      "ALA_CA"
+    ],
+    "ALA_N": [
+      "ALA_CA"
+    ],
+    "ALA_O": [
+      "ALA_C"
+    ],
+    "ALA_OXT": [
+      "ALA_C"
+    ],
+    "ARG_C": [
+      "ARG_CA",
+      "ARG_O",
+      "ARG_OXT"
+    ],
+    "ARG_CA": [
+      "ARG_N",
+      "ARG_C",
+      "ARG_CB"
+    ],
+    "ARG_CB": [
+      "ARG_CA",
+      "ARG_CG"
+    ],
+    "ARG_CD": [
+      "ARG_CG",
+      "ARG_NE"
+    ],
+    "ARG_CG": [
+      "ARG_CB",
+      "ARG_CD"
+    ],
+    "ARG_CZ": [
+      "ARG_NE",
+      "ARG_NH1",
+      "ARG_NH2"
+    ],
+    "ARG_N": [
+      "ARG_CA"
+    ],
+    "ARG_NE": [
+      "ARG_CD",
+      "ARG_CZ"
+    ],
+    "ARG_NH1": [
+      "ARG_CZ"
+    ],
+    "ARG_NH2": [
+      "ARG_CZ"
+    ],
+    "ARG_O": [
+      "ARG_C"
+    ],
+    "ARG_OXT": [
+      "ARG_C"
+    ],
+    "ASN_C": [
+      "ASN_CA",
+      "ASN_O",
+      "ASN_OXT"
+    ],
+    "ASN_CA": [
+      "ASN_N",
+      "ASN_C",
+      "ASN_CB"
+    ],
+    "ASN_CB": [
+      "ASN_CA",
+      "ASN_CG"
+    ],
+    "ASN_CG": [
+      "ASN_CB",
+      "ASN_OD1",
+      "ASN_ND2"
+    ],
+    "ASN_N": [
+      "ASN_CA"
+    ],
+    "ASN_ND2": [
+      "ASN_CG"
+    ],
+    "ASN_O": [
+      "ASN_C"
+    ],
+    "ASN_OD1": [
+      "ASN_CG"
+    ],
+    "ASN_OXT": [
+      "ASN_C"
+    ],
+    "ASP_C": [
+      "ASP_CA",
+      "ASP_O",
+      "ASP_OXT"
+    ],
+    "ASP_CA": [
+      "ASP_N",
+      "ASP_C",
+      "ASP_CB"
+    ],
+    "ASP_CB": [
+      "ASP_CA",
+      "ASP_CG"
+    ],
+    "ASP_CG": [
+      "ASP_CB",
+      "ASP_OD1",
+      "ASP_OD2"
+    ],
+    "ASP_N": [
+      "ASP_CA"
+    ],
+    "ASP_O": [
+      "ASP_C"
+    ],
+    "ASP_OD1": [
+      "ASP_CG"
+    ],
+    "ASP_OD2": [
+      "ASP_CG"
+    ],
+    "ASP_OXT": [
+      "ASP_C"
+    ],
+    "A_C1'": [
+      "A_O4'",
+      "A_C2'",
+      "A_N9"
+    ],
+    "A_C2": [
+      "A_N1",
+      "A_N3"
+    ],
+    "A_C2'": [
+      "A_C3'",
+      "A_O2'",
+      "A_C1'"
+    ],
+    "A_C3'": [
+      "A_C4'",
+      "A_O3'",
+      "A_C2'"
+    ],
+    "A_C4": [
+      "A_N9",
+      "A_C5",
+      "A_N3"
+    ],
+    "A_C4'": [
+      "A_C5'",
+      "A_O4'",
+      "A_C3'"
+    ],
+    "A_C5": [
+      "A_N7",
+      "A_C6",
+      "A_C4"
+    ],
+    "A_C5'": [
+      "A_O5'",
+      "A_C4'"
+    ],
+    "A_C6": [
+      "A_C5",
+      "A_N6",
+      "A_N1"
+    ],
+    "A_C8": [
+      "A_N9",
+      "A_N7"
+    ],
+    "A_N1": [
+      "A_C6",
+      "A_C2"
+    ],
+    "A_N3": [
+      "A_C2",
+      "A_C4"
+    ],
+    "A_N6": [
+      "A_C6"
+    ],
+    "A_N7": [
+      "A_C8",
+      "A_C5"
+    ],
+    "A_N9": [
+      "A_C1'",
+      "A_C8",
+      "A_C4"
+    ],
+    "A_O2'": [
+      "A_C2'"
+    ],
+    "A_O3'": [
+      "A_C3'"
+    ],
+    "A_O4'": [
+      "A_C4'",
+      "A_C1'"
+    ],
+    "A_O5'": [
+      "A_P",
+      "A_C5'"
+    ],
+    "A_OP1": [
+      "A_P"
+    ],
+    "A_OP2": [
+      "A_P"
+    ],
+    "A_OP3": [
+      "A_P"
+    ],
+    "A_P": [
+      "A_OP3",
+      "A_OP1",
+      "A_OP2",
+      "A_O5'"
+    ],
+    "CYS_C": [
+      "CYS_CA",
+      "CYS_O",
+      "CYS_OXT"
+    ],
+    "CYS_CA": [
+      "CYS_N",
+      "CYS_C",
+      "CYS_CB"
+    ],
+    "CYS_CB": [
+      "CYS_CA",
+      "CYS_SG"
+    ],
+    "CYS_N": [
+      "CYS_CA"
+    ],
+    "CYS_O": [
+      "CYS_C"
+    ],
+    "CYS_OXT": [
+      "CYS_C"
+    ],
+    "CYS_SG": [
+      "CYS_CB"
+    ],
+    "C_C1'": [
+      "C_O4'",
+      "C_C2'",
+      "C_N1"
+    ],
+    "C_C2": [
+      "C_N1",
+      "C_O2",
+      "C_N3"
+    ],
+    "C_C2'": [
+      "C_C3'",
+      "C_O2'",
+      "C_C1'"
+    ],
+    "C_C3'": [
+      "C_C4'",
+      "C_O3'",
+      "C_C2'"
+    ],
+    "C_C4": [
+      "C_N3",
+      "C_N4",
+      "C_C5"
+    ],
+    "C_C4'": [
+      "C_C5'",
+      "C_O4'",
+      "C_C3'"
+    ],
+    "C_C5": [
+      "C_C4",
+      "C_C6"
+    ],
+    "C_C5'": [
+      "C_O5'",
+      "C_C4'"
+    ],
+    "C_C6": [
+      "C_N1",
+      "C_C5"
+    ],
+    "C_N1": [
+      "C_C1'",
+      "C_C2",
+      "C_C6"
+    ],
+    "C_N3": [
+      "C_C2",
+      "C_C4"
+    ],
+    "C_N4": [
+      "C_C4"
+    ],
+    "C_O2": [
+      "C_C2"
+    ],
+    "C_O2'": [
+      "C_C2'"
+    ],
+    "C_O3'": [
+      "C_C3'"
+    ],
+    "C_O4'": [
+      "C_C4'",
+      "C_C1'"
+    ],
+    "C_O5'": [
+      "C_P",
+      "C_C5'"
+    ],
+    "C_OP1": [
+      "C_P"
+    ],
+    "C_OP2": [
+      "C_P"
+    ],
+    "C_OP3": [
+      "C_P"
+    ],
+    "C_P": [
+      "C_OP3",
+      "C_OP1",
+      "C_OP2",
+      "C_O5'"
+    ],
+    "DA_C1'": [
+      "DA_O4'",
+      "DA_C2'",
+      "DA_N9"
+    ],
+    "DA_C2": [
+      "DA_N1",
+      "DA_N3"
+    ],
+    "DA_C2'": [
+      "DA_C3'",
+      "DA_C1'"
+    ],
+    "DA_C3'": [
+      "DA_C4'",
+      "DA_O3'",
+      "DA_C2'"
+    ],
+    "DA_C4": [
+      "DA_N9",
+      "DA_C5",
+      "DA_N3"
+    ],
+    "DA_C4'": [
+      "DA_C5'",
+      "DA_O4'",
+      "DA_C3'"
+    ],
+    "DA_C5": [
+      "DA_N7",
+      "DA_C6",
+      "DA_C4"
+    ],
+    "DA_C5'": [
+      "DA_O5'",
+      "DA_C4'"
+    ],
+    "DA_C6": [
+      "DA_C5",
+      "DA_N6",
+      "DA_N1"
+    ],
+    "DA_C8": [
+      "DA_N9",
+      "DA_N7"
+    ],
+    "DA_N1": [
+      "DA_C6",
+      "DA_C2"
+    ],
+    "DA_N3": [
+      "DA_C2",
+      "DA_C4"
+    ],
+    "DA_N6": [
+      "DA_C6"
+    ],
+    "DA_N7": [
+      "DA_C8",
+      "DA_C5"
+    ],
+    "DA_N9": [
+      "DA_C1'",
+      "DA_C8",
+      "DA_C4"
+    ],
+    "DA_O3'": [
+      "DA_C3'"
+    ],
+    "DA_O4'": [
+      "DA_C4'",
+      "DA_C1'"
+    ],
+    "DA_O5'": [
+      "DA_P",
+      "DA_C5'"
+    ],
+    "DA_OP1": [
+      "DA_P"
+    ],
+    "DA_OP2": [
+      "DA_P"
+    ],
+    "DA_OP3": [
+      "DA_P"
+    ],
+    "DA_P": [
+      "DA_OP3",
+      "DA_OP1",
+      "DA_OP2",
+      "DA_O5'"
+    ],
+    "DC_C1'": [
+      "DC_O4'",
+      "DC_C2'",
+      "DC_N1"
+    ],
+    "DC_C2": [
+      "DC_N1",
+      "DC_O2",
+      "DC_N3"
+    ],
+    "DC_C2'": [
+      "DC_C3'",
+      "DC_C1'"
+    ],
+    "DC_C3'": [
+      "DC_C4'",
+      "DC_O3'",
+      "DC_C2'"
+    ],
+    "DC_C4": [
+      "DC_N3",
+      "DC_N4",
+      "DC_C5"
+    ],
+    "DC_C4'": [
+      "DC_C5'",
+      "DC_O4'",
+      "DC_C3'"
+    ],
+    "DC_C5": [
+      "DC_C4",
+      "DC_C6"
+    ],
+    "DC_C5'": [
+      "DC_O5'",
+      "DC_C4'"
+    ],
+    "DC_C6": [
+      "DC_N1",
+      "DC_C5"
+    ],
+    "DC_N1": [
+      "DC_C1'",
+      "DC_C2",
+      "DC_C6"
+    ],
+    "DC_N3": [
+      "DC_C2",
+      "DC_C4"
+    ],
+    "DC_N4": [
+      "DC_C4"
+    ],
+    "DC_O2": [
+      "DC_C2"
+    ],
+    "DC_O3'": [
+      "DC_C3'"
+    ],
+    "DC_O4'": [
+      "DC_C4'",
+      "DC_C1'"
+    ],
+    "DC_O5'": [
+      "DC_P",
+      "DC_C5'"
+    ],
+    "DC_OP1": [
+      "DC_P"
+    ],
+    "DC_OP2": [
+      "DC_P"
+    ],
+    "DC_OP3": [
+      "DC_P"
+    ],
+    "DC_P": [
+      "DC_OP3",
+      "DC_OP1",
+      "DC_OP2",
+      "DC_O5'"
+    ],
+    "DG_C1'": [
+      "DG_O4'",
+      "DG_C2'",
+      "DG_N9"
+    ],
+    "DG_C2": [
+      "DG_N1",
+      "DG_N2",
+      "DG_N3"
+    ],
+    "DG_C2'": [
+      "DG_C3'",
+      "DG_C1'"
+    ],
+    "DG_C3'": [
+      "DG_C4'",
+      "DG_O3'",
+      "DG_C2'"
+    ],
+    "DG_C4": [
+      "DG_N9",
+      "DG_C5",
+      "DG_N3"
+    ],
+    "DG_C4'": [
+      "DG_C5'",
+      "DG_O4'",
+      "DG_C3'"
+    ],
+    "DG_C5": [
+      "DG_N7",
+      "DG_C6",
+      "DG_C4"
+    ],
+    "DG_C5'": [
+      "DG_O5'",
+      "DG_C4'"
+    ],
+    "DG_C6": [
+      "DG_C5",
+      "DG_O6",
+      "DG_N1"
+    ],
+    "DG_C8": [
+      "DG_N9",
+      "DG_N7"
+    ],
+    "DG_N1": [
+      "DG_C6",
+      "DG_C2"
+    ],
+    "DG_N2": [
+      "DG_C2"
+    ],
+    "DG_N3": [
+      "DG_C2",
+      "DG_C4"
+    ],
+    "DG_N7": [
+      "DG_C8",
+      "DG_C5"
+    ],
+    "DG_N9": [
+      "DG_C1'",
+      "DG_C8",
+      "DG_C4"
+    ],
+    "DG_O3'": [
+      "DG_C3'"
+    ],
+    "DG_O4'": [
+      "DG_C4'",
+      "DG_C1'"
+    ],
+    "DG_O5'": [
+      "DG_P",
+      "DG_C5'"
+    ],
+    "DG_O6": [
+      "DG_C6"
+    ],
+    "DG_OP1": [
+      "DG_P"
+    ],
+    "DG_OP2": [
+      "DG_P"
+    ],
+    "DG_OP3": [
+      "DG_P"
+    ],
+    "DG_P": [
+      "DG_OP3",
+      "DG_OP1",
+      "DG_OP2",
+      "DG_O5'"
+    ],
+    "DI_C1'": [
+      "DI_O4'",
+      "DI_C2'",
+      "DI_N9"
+    ],
+    "DI_C2": [
+      "DI_N1",
+      "DI_N3"
+    ],
+    "DI_C2'": [
+      "DI_C3'",
+      "DI_C1'"
+    ],
+    "DI_C3'": [
+      "DI_C4'",
+      "DI_O3'",
+      "DI_C2'"
+    ],
+    "DI_C4": [
+      "DI_N9",
+      "DI_C5",
+      "DI_N3"
+    ],
+    "DI_C4'": [
+      "DI_C5'",
+      "DI_O4'",
+      "DI_C3'"
+    ],
+    "DI_C5": [
+      "DI_N7",
+      "DI_C6",
+      "DI_C4"
+    ],
+    "DI_C5'": [
+      "DI_O5'",
+      "DI_C4'"
+    ],
+    "DI_C6": [
+      "DI_C5",
+      "DI_O6",
+      "DI_N1"
+    ],
+    "DI_C8": [
+      "DI_N9",
+      "DI_N7"
+    ],
+    "DI_N1": [
+      "DI_C6",
+      "DI_C2"
+    ],
+    "DI_N3": [
+      "DI_C2",
+      "DI_C4"
+    ],
+    "DI_N7": [
+      "DI_C8",
+      "DI_C5"
+    ],
+    "DI_N9": [
+      "DI_C1'",
+      "DI_C8",
+      "DI_C4"
+    ],
+    "DI_O3'": [
+      "DI_C3'"
+    ],
+    "DI_O4'": [
+      "DI_C4'",
+      "DI_C1'"
+    ],
+    "DI_O5'": [
+      "DI_P",
+      "DI_C5'"
+    ],
+    "DI_O6": [
+      "DI_C6"
+    ],
+    "DI_OP1": [
+      "DI_P"
+    ],
+    "DI_OP2": [
+      "DI_P"
+    ],
+    "DI_OP3": [
+      "DI_P"
+    ],
+    "DI_P": [
+      "DI_OP3",
+      "DI_OP1",
+      "DI_OP2",
+      "DI_O5'"
+    ],
+    "DT_C1'": [
+      "DT_O4'",
+      "DT_C2'",
+      "DT_N1"
+    ],
+    "DT_C2": [
+      "DT_N1",
+      "DT_O2",
+      "DT_N3"
+    ],
+    "DT_C2'": [
+      "DT_C3'",
+      "DT_C1'"
+    ],
+    "DT_C3'": [
+      "DT_C4'",
+      "DT_O3'",
+      "DT_C2'"
+    ],
+    "DT_C4": [
+      "DT_N3",
+      "DT_O4",
+      "DT_C5"
+    ],
+    "DT_C4'": [
+      "DT_C5'",
+      "DT_O4'",
+      "DT_C3'"
+    ],
+    "DT_C5": [
+      "DT_C4",
+      "DT_C7",
+      "DT_C6"
+    ],
+    "DT_C5'": [
+      "DT_O5'",
+      "DT_C4'"
+    ],
+    "DT_C6": [
+      "DT_N1",
+      "DT_C5"
+    ],
+    "DT_C7": [
+      "DT_C5"
+    ],
+    "DT_N1": [
+      "DT_C1'",
+      "DT_C2",
+      "DT_C6"
+    ],
+    "DT_N3": [
+      "DT_C2",
+      "DT_C4"
+    ],
+    "DT_O2": [
+      "DT_C2"
+    ],
+    "DT_O3'": [
+      "DT_C3'"
+    ],
+    "DT_O4": [
+      "DT_C4"
+    ],
+    "DT_O4'": [
+      "DT_C4'",
+      "DT_C1'"
+    ],
+    "DT_O5'": [
+      "DT_P",
+      "DT_C5'"
+    ],
+    "DT_OP1": [
+      "DT_P"
+    ],
+    "DT_OP2": [
+      "DT_P"
+    ],
+    "DT_OP3": [
+      "DT_P"
+    ],
+    "DT_P": [
+      "DT_OP3",
+      "DT_OP1",
+      "DT_OP2",
+      "DT_O5'"
+    ],
+    "DU_C1'": [
+      "DU_O4'",
+      "DU_C2'",
+      "DU_N1"
+    ],
+    "DU_C2": [
+      "DU_N1",
+      "DU_O2",
+      "DU_N3"
+    ],
+    "DU_C2'": [
+      "DU_C3'",
+      "DU_C1'"
+    ],
+    "DU_C3'": [
+      "DU_C4'",
+      "DU_O3'",
+      "DU_C2'"
+    ],
+    "DU_C4": [
+      "DU_N3",
+      "DU_O4",
+      "DU_C5"
+    ],
+    "DU_C4'": [
+      "DU_C5'",
+      "DU_O4'",
+      "DU_C3'"
+    ],
+    "DU_C5": [
+      "DU_C4",
+      "DU_C6"
+    ],
+    "DU_C5'": [
+      "DU_O5'",
+      "DU_C4'"
+    ],
+    "DU_C6": [
+      "DU_N1",
+      "DU_C5"
+    ],
+    "DU_N1": [
+      "DU_C1'",
+      "DU_C2",
+      "DU_C6"
+    ],
+    "DU_N3": [
+      "DU_C2",
+      "DU_C4"
+    ],
+    "DU_O2": [
+      "DU_C2"
+    ],
+    "DU_O3'": [
+      "DU_C3'"
+    ],
+    "DU_O4": [
+      "DU_C4"
+    ],
+    "DU_O4'": [
+      "DU_C4'",
+      "DU_C1'"
+    ],
+    "DU_O5'": [
+      "DU_P",
+      "DU_C5'"
+    ],
+    "DU_OP1": [
+      "DU_P"
+    ],
+    "DU_OP2": [
+      "DU_P"
+    ],
+    "DU_OP3": [
+      "DU_P"
+    ],
+    "DU_P": [
+      "DU_OP3",
+      "DU_OP1",
+      "DU_OP2",
+      "DU_O5'"
+    ],
+    "GLN_C": [
+      "GLN_CA",
+      "GLN_O",
+      "GLN_OXT"
+    ],
+    "GLN_CA": [
+      "GLN_N",
+      "GLN_C",
+      "GLN_CB"
+    ],
+    "GLN_CB": [
+      "GLN_CA",
+      "GLN_CG"
+    ],
+    "GLN_CD": [
+      "GLN_CG",
+      "GLN_OE1",
+      "GLN_NE2"
+    ],
+    "GLN_CG": [
+      "GLN_CB",
+      "GLN_CD"
+    ],
+    "GLN_N": [
+      "GLN_CA"
+    ],
+    "GLN_NE2": [
+      "GLN_CD"
+    ],
+    "GLN_O": [
+      "GLN_C"
+    ],
+    "GLN_OE1": [
+      "GLN_CD"
+    ],
+    "GLN_OXT": [
+      "GLN_C"
+    ],
+    "GLU_C": [
+      "GLU_CA",
+      "GLU_O",
+      "GLU_OXT"
+    ],
+    "GLU_CA": [
+      "GLU_N",
+      "GLU_C",
+      "GLU_CB"
+    ],
+    "GLU_CB": [
+      "GLU_CA",
+      "GLU_CG"
+    ],
+    "GLU_CD": [
+      "GLU_CG",
+      "GLU_OE1",
+      "GLU_OE2"
+    ],
+    "GLU_CG": [
+      "GLU_CB",
+      "GLU_CD"
+    ],
+    "GLU_N": [
+      "GLU_CA"
+    ],
+    "GLU_O": [
+      "GLU_C"
+    ],
+    "GLU_OE1": [
+      "GLU_CD"
+    ],
+    "GLU_OE2": [
+      "GLU_CD"
+    ],
+    "GLU_OXT": [
+      "GLU_C"
+    ],
+    "GLY_C": [
+      "GLY_CA",
+      "GLY_O",
+      "GLY_OXT"
+    ],
+    "GLY_CA": [
+      "GLY_N",
+      "GLY_C"
+    ],
+    "GLY_N": [
+      "GLY_CA"
+    ],
+    "GLY_O": [
+      "GLY_C"
+    ],
+    "GLY_OXT": [
+      "GLY_C"
+    ],
+    "G_C1'": [
+      "G_O4'",
+      "G_C2'",
+      "G_N9"
+    ],
+    "G_C2": [
+      "G_N1",
+      "G_N2",
+      "G_N3"
+    ],
+    "G_C2'": [
+      "G_C3'",
+      "G_O2'",
+      "G_C1'"
+    ],
+    "G_C3'": [
+      "G_C4'",
+      "G_O3'",
+      "G_C2'"
+    ],
+    "G_C4": [
+      "G_N9",
+      "G_C5",
+      "G_N3"
+    ],
+    "G_C4'": [
+      "G_C5'",
+      "G_O4'",
+      "G_C3'"
+    ],
+    "G_C5": [
+      "G_N7",
+      "G_C6",
+      "G_C4"
+    ],
+    "G_C5'": [
+      "G_O5'",
+      "G_C4'"
+    ],
+    "G_C6": [
+      "G_C5",
+      "G_O6",
+      "G_N1"
+    ],
+    "G_C8": [
+      "G_N9",
+      "G_N7"
+    ],
+    "G_N1": [
+      "G_C6",
+      "G_C2"
+    ],
+    "G_N2": [
+      "G_C2"
+    ],
+    "G_N3": [
+      "G_C2",
+      "G_C4"
+    ],
+    "G_N7": [
+      "G_C8",
+      "G_C5"
+    ],
+    "G_N9": [
+      "G_C1'",
+      "G_C8",
+      "G_C4"
+    ],
+    "G_O2'": [
+      "G_C2'"
+    ],
+    "G_O3'": [
+      "G_C3'"
+    ],
+    "G_O4'": [
+      "G_C4'",
+      "G_C1'"
+    ],
+    "G_O5'": [
+      "G_P",
+      "G_C5'"
+    ],
+    "G_O6": [
+      "G_C6"
+    ],
+    "G_OP1": [
+      "G_P"
+    ],
+    "G_OP2": [
+      "G_P"
+    ],
+    "G_OP3": [
+      "G_P"
+    ],
+    "G_P": [
+      "G_OP3",
+      "G_OP1",
+      "G_OP2",
+      "G_O5'"
+    ],
+    "HIS_C": [
+      "HIS_CA",
+      "HIS_O",
+      "HIS_OXT"
+    ],
+    "HIS_CA": [
+      "HIS_N",
+      "HIS_C",
+      "HIS_CB"
+    ],
+    "HIS_CB": [
+      "HIS_CA",
+      "HIS_CG"
+    ],
+    "HIS_CD2": [
+      "HIS_CG",
+      "HIS_NE2"
+    ],
+    "HIS_CE1": [
+      "HIS_ND1",
+      "HIS_NE2"
+    ],
+    "HIS_CG": [
+      "HIS_CB",
+      "HIS_ND1",
+      "HIS_CD2"
+    ],
+    "HIS_N": [
+      "HIS_CA"
+    ],
+    "HIS_ND1": [
+      "HIS_CG",
+      "HIS_CE1"
+    ],
+    "HIS_NE2": [
+      "HIS_CD2",
+      "HIS_CE1"
+    ],
+    "HIS_O": [
+      "HIS_C"
+    ],
+    "HIS_OXT": [
+      "HIS_C"
+    ],
+    "ILE_C": [
+      "ILE_CA",
+      "ILE_O",
+      "ILE_OXT"
+    ],
+    "ILE_CA": [
+      "ILE_N",
+      "ILE_C",
+      "ILE_CB"
+    ],
+    "ILE_CB": [
+      "ILE_CA",
+      "ILE_CG1",
+      "ILE_CG2"
+    ],
+    "ILE_CD1": [
+      "ILE_CG1"
+    ],
+    "ILE_CG1": [
+      "ILE_CB",
+      "ILE_CD1"
+    ],
+    "ILE_CG2": [
+      "ILE_CB"
+    ],
+    "ILE_N": [
+      "ILE_CA"
+    ],
+    "ILE_O": [
+      "ILE_C"
+    ],
+    "ILE_OXT": [
+      "ILE_C"
+    ],
+    "I_C1'": [
+      "I_O4'",
+      "I_C2'",
+      "I_N9"
+    ],
+    "I_C2": [
+      "I_N1",
+      "I_N3"
+    ],
+    "I_C2'": [
+      "I_C3'",
+      "I_O2'",
+      "I_C1'"
+    ],
+    "I_C3'": [
+      "I_C4'",
+      "I_O3'",
+      "I_C2'"
+    ],
+    "I_C4": [
+      "I_N9",
+      "I_C5",
+      "I_N3"
+    ],
+    "I_C4'": [
+      "I_C5'",
+      "I_O4'",
+      "I_C3'"
+    ],
+    "I_C5": [
+      "I_N7",
+      "I_C6",
+      "I_C4"
+    ],
+    "I_C5'": [
+      "I_O5'",
+      "I_C4'"
+    ],
+    "I_C6": [
+      "I_C5",
+      "I_O6",
+      "I_N1"
+    ],
+    "I_C8": [
+      "I_N9",
+      "I_N7"
+    ],
+    "I_N1": [
+      "I_C6",
+      "I_C2"
+    ],
+    "I_N3": [
+      "I_C2",
+      "I_C4"
+    ],
+    "I_N7": [
+      "I_C8",
+      "I_C5"
+    ],
+    "I_N9": [
+      "I_C1'",
+      "I_C8",
+      "I_C4"
+    ],
+    "I_O2'": [
+      "I_C2'"
+    ],
+    "I_O3'": [
+      "I_C3'"
+    ],
+    "I_O4'": [
+      "I_C4'",
+      "I_C1'"
+    ],
+    "I_O5'": [
+      "I_P",
+      "I_C5'"
+    ],
+    "I_O6": [
+      "I_C6"
+    ],
+    "I_OP1": [
+      "I_P"
+    ],
+    "I_OP2": [
+      "I_P"
+    ],
+    "I_OP3": [
+      "I_P"
+    ],
+    "I_P": [
+      "I_OP3",
+      "I_OP1",
+      "I_OP2",
+      "I_O5'"
+    ],
+    "LEU_C": [
+      "LEU_CA",
+      "LEU_O",
+      "LEU_OXT"
+    ],
+    "LEU_CA": [
+      "LEU_N",
+      "LEU_C",
+      "LEU_CB"
+    ],
+    "LEU_CB": [
+      "LEU_CA",
+      "LEU_CG"
+    ],
+    "LEU_CD1": [
+      "LEU_CG"
+    ],
+    "LEU_CD2": [
+      "LEU_CG"
+    ],
+    "LEU_CG": [
+      "LEU_CB",
+      "LEU_CD1",
+      "LEU_CD2"
+    ],
+    "LEU_N": [
+      "LEU_CA"
+    ],
+    "LEU_O": [
+      "LEU_C"
+    ],
+    "LEU_OXT": [
+      "LEU_C"
+    ],
+    "LYS_C": [
+      "LYS_CA",
+      "LYS_O",
+      "LYS_OXT"
+    ],
+    "LYS_CA": [
+      "LYS_N",
+      "LYS_C",
+      "LYS_CB"
+    ],
+    "LYS_CB": [
+      "LYS_CA",
+      "LYS_CG"
+    ],
+    "LYS_CD": [
+      "LYS_CG",
+      "LYS_CE"
+    ],
+    "LYS_CE": [
+      "LYS_CD",
+      "LYS_NZ"
+    ],
+    "LYS_CG": [
+      "LYS_CB",
+      "LYS_CD"
+    ],
+    "LYS_N": [
+      "LYS_CA"
+    ],
+    "LYS_NZ": [
+      "LYS_CE"
+    ],
+    "LYS_O": [
+      "LYS_C"
+    ],
+    "LYS_OXT": [
+      "LYS_C"
+    ],
+    "MET_C": [
+      "MET_CA",
+      "MET_O",
+      "MET_OXT"
+    ],
+    "MET_CA": [
+      "MET_N",
+      "MET_C",
+      "MET_CB"
+    ],
+    "MET_CB": [
+      "MET_CA",
+      "MET_CG"
+    ],
+    "MET_CE": [
+      "MET_SD"
+    ],
+    "MET_CG": [
+      "MET_CB",
+      "MET_SD"
+    ],
+    "MET_N": [
+      "MET_CA"
+    ],
+    "MET_O": [
+      "MET_C"
+    ],
+    "MET_OXT": [
+      "MET_C"
+    ],
+    "MET_SD": [
+      "MET_CG",
+      "MET_CE"
+    ],
+    "PHE_C": [
+      "PHE_CA",
+      "PHE_O",
+      "PHE_OXT"
+    ],
+    "PHE_CA": [
+      "PHE_N",
+      "PHE_C",
+      "PHE_CB"
+    ],
+    "PHE_CB": [
+      "PHE_CA",
+      "PHE_CG"
+    ],
+    "PHE_CD1": [
+      "PHE_CG",
+      "PHE_CE1"
+    ],
+    "PHE_CD2": [
+      "PHE_CG",
+      "PHE_CE2"
+    ],
+    "PHE_CE1": [
+      "PHE_CD1",
+      "PHE_CZ"
+    ],
+    "PHE_CE2": [
+      "PHE_CD2",
+      "PHE_CZ"
+    ],
+    "PHE_CG": [
+      "PHE_CB",
+      "PHE_CD1",
+      "PHE_CD2"
+    ],
+    "PHE_CZ": [
+      "PHE_CE1",
+      "PHE_CE2"
+    ],
+    "PHE_N": [
+      "PHE_CA"
+    ],
+    "PHE_O": [
+      "PHE_C"
+    ],
+    "PHE_OXT": [
+      "PHE_C"
+    ],
+    "PRO_C": [
+      "PRO_CA",
+      "PRO_O",
+      "PRO_OXT"
+    ],
+    "PRO_CA": [
+      "PRO_N",
+      "PRO_C",
+      "PRO_CB"
+    ],
+    "PRO_CB": [
+      "PRO_CA",
+      "PRO_CG"
+    ],
+    "PRO_CD": [
+      "PRO_N",
+      "PRO_CG"
+    ],
+    "PRO_CG": [
+      "PRO_CB",
+      "PRO_CD"
+    ],
+    "PRO_N": [
+      "PRO_CA",
+      "PRO_CD"
+    ],
+    "PRO_O": [
+      "PRO_C"
+    ],
+    "PRO_OXT": [
+      "PRO_C"
+    ],
+    "SER_C": [
+      "SER_CA",
+      "SER_O",
+      "SER_OXT"
+    ],
+    "SER_CA": [
+      "SER_N",
+      "SER_C",
+      "SER_CB"
+    ],
+    "SER_CB": [
+      "SER_CA",
+      "SER_OG"
+    ],
+    "SER_N": [
+      "SER_CA"
+    ],
+    "SER_O": [
+      "SER_C"
+    ],
+    "SER_OG": [
+      "SER_CB"
+    ],
+    "SER_OXT": [
+      "SER_C"
+    ],
+    "THR_C": [
+      "THR_CA",
+      "THR_O",
+      "THR_OXT"
+    ],
+    "THR_CA": [
+      "THR_N",
+      "THR_C",
+      "THR_CB"
+    ],
+    "THR_CB": [
+      "THR_CA",
+      "THR_OG1",
+      "THR_CG2"
+    ],
+    "THR_CG2": [
+      "THR_CB"
+    ],
+    "THR_N": [
+      "THR_CA"
+    ],
+    "THR_O": [
+      "THR_C"
+    ],
+    "THR_OG1": [
+      "THR_CB"
+    ],
+    "THR_OXT": [
+      "THR_C"
+    ],
+    "TRP_C": [
+      "TRP_CA",
+      "TRP_O",
+      "TRP_OXT"
+    ],
+    "TRP_CA": [
+      "TRP_N",
+      "TRP_C",
+      "TRP_CB"
+    ],
+    "TRP_CB": [
+      "TRP_CA",
+      "TRP_CG"
+    ],
+    "TRP_CD1": [
+      "TRP_CG",
+      "TRP_NE1"
+    ],
+    "TRP_CD2": [
+      "TRP_CG",
+      "TRP_CE2",
+      "TRP_CE3"
+    ],
+    "TRP_CE2": [
+      "TRP_CD2",
+      "TRP_NE1",
+      "TRP_CZ2"
+    ],
+    "TRP_CE3": [
+      "TRP_CD2",
+      "TRP_CZ3"
+    ],
+    "TRP_CG": [
+      "TRP_CB",
+      "TRP_CD1",
+      "TRP_CD2"
+    ],
+    "TRP_CH2": [
+      "TRP_CZ2",
+      "TRP_CZ3"
+    ],
+    "TRP_CZ2": [
+      "TRP_CE2",
+      "TRP_CH2"
+    ],
+    "TRP_CZ3": [
+      "TRP_CE3",
+      "TRP_CH2"
+    ],
+    "TRP_N": [
+      "TRP_CA"
+    ],
+    "TRP_NE1": [
+      "TRP_CD1",
+      "TRP_CE2"
+    ],
+    "TRP_O": [
+      "TRP_C"
+    ],
+    "TRP_OXT": [
+      "TRP_C"
+    ],
+    "TYR_C": [
+      "TYR_CA",
+      "TYR_O",
+      "TYR_OXT"
+    ],
+    "TYR_CA": [
+      "TYR_N",
+      "TYR_C",
+      "TYR_CB"
+    ],
+    "TYR_CB": [
+      "TYR_CA",
+      "TYR_CG"
+    ],
+    "TYR_CD1": [
+      "TYR_CG",
+      "TYR_CE1"
+    ],
+    "TYR_CD2": [
+      "TYR_CG",
+      "TYR_CE2"
+    ],
+    "TYR_CE1": [
+      "TYR_CD1",
+      "TYR_CZ"
+    ],
+    "TYR_CE2": [
+      "TYR_CD2",
+      "TYR_CZ"
+    ],
+    "TYR_CG": [
+      "TYR_CB",
+      "TYR_CD1",
+      "TYR_CD2"
+    ],
+    "TYR_CZ": [
+      "TYR_CE1",
+      "TYR_CE2",
+      "TYR_OH"
+    ],
+    "TYR_N": [
+      "TYR_CA"
+    ],
+    "TYR_O": [
+      "TYR_C"
+    ],
+    "TYR_OH": [
+      "TYR_CZ"
+    ],
+    "TYR_OXT": [
+      "TYR_C"
+    ],
+    "U_C1'": [
+      "U_O4'",
+      "U_C2'",
+      "U_N1"
+    ],
+    "U_C2": [
+      "U_N1",
+      "U_O2",
+      "U_N3"
+    ],
+    "U_C2'": [
+      "U_C3'",
+      "U_O2'",
+      "U_C1'"
+    ],
+    "U_C3'": [
+      "U_C4'",
+      "U_O3'",
+      "U_C2'"
+    ],
+    "U_C4": [
+      "U_N3",
+      "U_O4",
+      "U_C5"
+    ],
+    "U_C4'": [
+      "U_C5'",
+      "U_O4'",
+      "U_C3'"
+    ],
+    "U_C5": [
+      "U_C4",
+      "U_C6"
+    ],
+    "U_C5'": [
+      "U_O5'",
+      "U_C4'"
+    ],
+    "U_C6": [
+      "U_N1",
+      "U_C5"
+    ],
+    "U_N1": [
+      "U_C1'",
+      "U_C2",
+      "U_C6"
+    ],
+    "U_N3": [
+      "U_C2",
+      "U_C4"
+    ],
+    "U_O2": [
+      "U_C2"
+    ],
+    "U_O2'": [
+      "U_C2'"
+    ],
+    "U_O3'": [
+      "U_C3'"
+    ],
+    "U_O4": [
+      "U_C4"
+    ],
+    "U_O4'": [
+      "U_C4'",
+      "U_C1'"
+    ],
+    "U_O5'": [
+      "U_P",
+      "U_C5'"
+    ],
+    "U_OP1": [
+      "U_P"
+    ],
+    "U_OP2": [
+      "U_P"
+    ],
+    "U_OP3": [
+      "U_P"
+    ],
+    "U_P": [
+      "U_OP3",
+      "U_OP1",
+      "U_OP2",
+      "U_O5'"
+    ],
+    "VAL_C": [
+      "VAL_CA",
+      "VAL_O",
+      "VAL_OXT"
+    ],
+    "VAL_CA": [
+      "VAL_N",
+      "VAL_C",
+      "VAL_CB"
+    ],
+    "VAL_CB": [
+      "VAL_CA",
+      "VAL_CG1",
+      "VAL_CG2"
+    ],
+    "VAL_CG1": [
+      "VAL_CB"
+    ],
+    "VAL_CG2": [
+      "VAL_CB"
+    ],
+    "VAL_N": [
+      "VAL_CA"
+    ],
+    "VAL_O": [
+      "VAL_C"
+    ],
+    "VAL_OXT": [
+      "VAL_C"
+    ]
+  },
+  "full_atom_name_map_atom_type": {
+    "ALA_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "ALA_CA": "C.N.7#C.N.6.SING_C.N.9.SING_H.N.1.SING_N.N.8.SING",
+    "ALA_CB": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "ALA_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "ALA_O": "O.N.8#C.N.6.DOUB",
+    "ALA_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "ARG_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "ARG_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "ARG_CB": "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "ARG_CD": "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.8.SING",
+    "ARG_CG": "C.N.8#C.N.8.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "ARG_CZ": "C.N.6#N.N.8.DOUB_N.N.8.SING_N.N.9.SING",
+    "ARG_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "ARG_NE": "N.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING",
+    "ARG_NH1": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "ARG_NH2": "N.N.8#C.N.6.DOUB_H.N.1.SING_H.N.1.SING",
+    "ARG_O": "O.N.8#C.N.6.DOUB",
+    "ARG_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "ASN_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "ASN_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "ASN_CB": "C.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "ASN_CG": "C.N.6#C.N.8.SING_N.N.9.SING_O.N.8.DOUB",
+    "ASN_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "ASN_ND2": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "ASN_O": "O.N.8#C.N.6.DOUB",
+    "ASN_OD1": "O.N.8#C.N.6.DOUB",
+    "ASN_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "ASP_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "ASP_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "ASP_CB": "C.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "ASP_CG": "C.N.6#C.N.8.SING_O.N.8.DOUB_O.N.9.SING",
+    "ASP_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "ASP_O": "O.N.8#C.N.6.DOUB",
+    "ASP_OD1": "O.N.8.5#C.N.6.RESON_H.N.1.RESON",
+    "ASP_OD2": "O.N.8.5#C.N.6.RESON_H.N.1.RESON",
+    "ASP_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "A_C1'": "C.N.7#C.N.7.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING",
+    "A_C2": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "A_C2'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING",
+    "A_C3'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING",
+    "A_C4": "C.Y.6#C.Y.6.AROM_N.Y.7.AROM_N.Y.7.AROM",
+    "A_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "A_C5": "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_N.Y.7.AROM",
+    "A_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "A_C6": "C.Y.6#C.Y.6.AROM_N.N.9.SING_N.Y.7.AROM",
+    "A_C8": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "A_N1": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "A_N3": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "A_N6": "N.N.9#C.Y.6.SING_H.N.1.SING_H.N.1.SING",
+    "A_N7": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "A_N9": "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "A_O2'": "O.N.9#C.N.7.SING_H.N.1.SING",
+    "A_O3'": "O.N.8#C.N.7.SING",
+    "A_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "A_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "A_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "A_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "A_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "A_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "CYS_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "CYS_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "CYS_CB": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_S.N.17.SING",
+    "CYS_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "CYS_O": "O.N.8#C.N.6.DOUB",
+    "CYS_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "CYS_SG": "S.N.17#C.N.8.SING_H.N.1.SING",
+    "C_C1'": "C.N.7#C.N.7.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING",
+    "C_C2": "C.N.6#N.N.7.SING_N.N.7.SING_O.N.8.DOUB",
+    "C_C2'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING",
+    "C_C3'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING",
+    "C_C4": "C.N.6#C.N.7.SING_N.N.7.DOUB_N.N.9.SING",
+    "C_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "C_C5": "C.N.7#C.N.6.SING_C.N.7.DOUB_H.N.1.SING",
+    "C_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "C_C6": "C.N.7#C.N.7.DOUB_H.N.1.SING_N.N.7.SING",
+    "C_N1": "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING",
+    "C_N3": "N.N.7#C.N.6.DOUB_C.N.6.SING",
+    "C_N4": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "C_O2": "O.N.8#C.N.6.DOUB",
+    "C_O2'": "O.N.9#C.N.7.SING_H.N.1.SING",
+    "C_O3'": "O.N.8#C.N.7.SING",
+    "C_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "C_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "C_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "C_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "C_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "C_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "DA_C1'": "C.N.7#C.N.8.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING",
+    "DA_C2": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "DA_C2'": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "DA_C3'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DA_C4": "C.Y.6#C.Y.6.AROM_N.Y.7.AROM_N.Y.7.AROM",
+    "DA_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DA_C5": "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_N.Y.7.AROM",
+    "DA_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "DA_C6": "C.Y.6#C.Y.6.AROM_N.N.9.SING_N.Y.7.AROM",
+    "DA_C8": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "DA_N1": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "DA_N3": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "DA_N6": "N.N.9#C.Y.6.SING_H.N.1.SING_H.N.1.SING",
+    "DA_N7": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "DA_N9": "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "DA_O3'": "O.N.8#C.N.7.SING",
+    "DA_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "DA_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "DA_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DA_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DA_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "DA_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "DC_C1'": "C.N.7#C.N.8.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING",
+    "DC_C2": "C.N.6#N.N.7.SING_N.N.7.SING_O.N.8.DOUB",
+    "DC_C2'": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "DC_C3'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DC_C4": "C.N.6#C.N.7.SING_N.N.7.DOUB_N.N.9.SING",
+    "DC_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DC_C5": "C.N.7#C.N.6.SING_C.N.7.DOUB_H.N.1.SING",
+    "DC_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "DC_C6": "C.N.7#C.N.7.DOUB_H.N.1.SING_N.N.7.SING",
+    "DC_N1": "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING",
+    "DC_N3": "N.N.7#C.N.6.DOUB_C.N.6.SING",
+    "DC_N4": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "DC_O2": "O.N.8#C.N.6.DOUB",
+    "DC_O3'": "O.N.8#C.N.7.SING",
+    "DC_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "DC_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "DC_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DC_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DC_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "DC_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "DG_C1'": "C.N.7#C.N.8.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING",
+    "DG_C2": "C.N.6#N.N.7.DOUB_N.N.8.SING_N.N.9.SING",
+    "DG_C2'": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "DG_C3'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DG_C4": "C.Y.6#C.Y.6.AROM_N.N.7.SING_N.Y.7.AROM",
+    "DG_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DG_C5": "C.Y.6#C.N.6.SING_C.Y.6.AROM_N.Y.7.AROM",
+    "DG_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "DG_C6": "C.N.6#C.Y.6.SING_N.N.8.SING_O.N.8.DOUB",
+    "DG_C8": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "DG_N1": "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING",
+    "DG_N2": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "DG_N3": "N.N.7#C.N.6.DOUB_C.Y.6.SING",
+    "DG_N7": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "DG_N9": "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "DG_O3'": "O.N.8#C.N.7.SING",
+    "DG_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "DG_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "DG_O6": "O.N.8#C.N.6.DOUB",
+    "DG_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DG_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DG_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "DG_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "DI_C1'": "C.N.7#C.N.8.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING",
+    "DI_C2": "C.N.7#H.N.1.SING_N.N.7.DOUB_N.N.8.SING",
+    "DI_C2'": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "DI_C3'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DI_C4": "C.Y.6#C.Y.6.AROM_N.N.7.SING_N.Y.7.AROM",
+    "DI_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DI_C5": "C.Y.6#C.N.6.SING_C.Y.6.AROM_N.Y.7.AROM",
+    "DI_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "DI_C6": "C.N.6#C.Y.6.SING_N.N.8.SING_O.N.8.DOUB",
+    "DI_C8": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "DI_N1": "N.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING",
+    "DI_N3": "N.N.7#C.N.7.DOUB_C.Y.6.SING",
+    "DI_N7": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "DI_N9": "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "DI_O3'": "O.N.8#C.N.7.SING",
+    "DI_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "DI_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "DI_O6": "O.N.8#C.N.6.DOUB",
+    "DI_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DI_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DI_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "DI_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "DT_C1'": "C.N.7#C.N.8.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING",
+    "DT_C2": "C.N.6#N.N.7.SING_N.N.8.SING_O.N.8.DOUB",
+    "DT_C2'": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "DT_C3'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DT_C4": "C.N.6#C.N.6.SING_N.N.8.SING_O.N.8.DOUB",
+    "DT_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DT_C5": "C.N.6#C.N.6.SING_C.N.7.DOUB_C.N.9.SING",
+    "DT_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "DT_C6": "C.N.7#C.N.6.DOUB_H.N.1.SING_N.N.7.SING",
+    "DT_C7": "C.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "DT_N1": "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING",
+    "DT_N3": "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING",
+    "DT_O2": "O.N.8#C.N.6.DOUB",
+    "DT_O3'": "O.N.8#C.N.7.SING",
+    "DT_O4": "O.N.8#C.N.6.DOUB",
+    "DT_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "DT_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "DT_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DT_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DT_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "DT_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "DU_C1'": "C.N.7#C.N.8.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING",
+    "DU_C2": "C.N.6#N.N.7.SING_N.N.8.SING_O.N.8.DOUB",
+    "DU_C2'": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "DU_C3'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DU_C4": "C.N.6#C.N.7.SING_N.N.8.SING_O.N.8.DOUB",
+    "DU_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "DU_C5": "C.N.7#C.N.6.SING_C.N.7.DOUB_H.N.1.SING",
+    "DU_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "DU_C6": "C.N.7#C.N.7.DOUB_H.N.1.SING_N.N.7.SING",
+    "DU_N1": "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING",
+    "DU_N3": "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING",
+    "DU_O2": "O.N.8#C.N.6.DOUB",
+    "DU_O3'": "O.N.8#C.N.7.SING",
+    "DU_O4": "O.N.8#C.N.6.DOUB",
+    "DU_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "DU_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "DU_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DU_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "DU_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "DU_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "GLN_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "GLN_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "GLN_CB": "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "GLN_CD": "C.N.6#C.N.8.SING_N.N.9.SING_O.N.8.DOUB",
+    "GLN_CG": "C.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "GLN_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "GLN_NE2": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "GLN_O": "O.N.8#C.N.6.DOUB",
+    "GLN_OE1": "O.N.8#C.N.6.DOUB",
+    "GLN_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "GLU_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "GLU_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "GLU_CB": "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "GLU_CD": "C.N.6#C.N.8.SING_O.N.8.DOUB_O.N.9.SING",
+    "GLU_CG": "C.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "GLU_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "GLU_O": "O.N.8#C.N.6.DOUB",
+    "GLU_OE1": "O.N.8.5#C.N.6.RESON_H.N.1.RESON",
+    "GLU_OE2": "O.N.8.5#C.N.6.RESON_H.N.1.RESON",
+    "GLU_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "GLY_C": "C.N.6#C.N.8.SING_O.N.8.DOUB",
+    "GLY_CA": "C.N.8#C.N.6.SING_H.N.1.SING_H.N.1.SING_N.N.8.SING",
+    "GLY_N": "N.N.8#C.N.8.SING_H.N.1.SING",
+    "GLY_O": "O.N.8#C.N.6.DOUB",
+    "GLY_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "G_C1'": "C.N.7#C.N.7.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING",
+    "G_C2": "C.N.6#N.N.7.DOUB_N.N.8.SING_N.N.9.SING",
+    "G_C2'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING",
+    "G_C3'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING",
+    "G_C4": "C.Y.6#C.Y.6.AROM_N.N.7.SING_N.Y.7.AROM",
+    "G_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "G_C5": "C.Y.6#C.N.6.SING_C.Y.6.AROM_N.Y.7.AROM",
+    "G_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "G_C6": "C.N.6#C.Y.6.SING_N.N.8.SING_O.N.8.DOUB",
+    "G_C8": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "G_N1": "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING",
+    "G_N2": "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING",
+    "G_N3": "N.N.7#C.N.6.DOUB_C.Y.6.SING",
+    "G_N7": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "G_N9": "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "G_O2'": "O.N.9#C.N.7.SING_H.N.1.SING",
+    "G_O3'": "O.N.8#C.N.7.SING",
+    "G_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "G_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "G_O6": "O.N.8#C.N.6.DOUB",
+    "G_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "G_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "G_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "G_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "HIS_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "HIS_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "HIS_CB": "C.N.8#C.N.7.SING_C.Y.6.SING_H.N.1.SING_H.N.1.SING",
+    "HIS_CD2": "C.Y.7#C.Y.6.AROM_H.N.1.SING_N.Y.8.AROM",
+    "HIS_CE1": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.8.AROM",
+    "HIS_CG": "C.Y.6#C.N.8.SING_C.Y.7.AROM_N.Y.7.AROM",
+    "HIS_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "HIS_ND1": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "HIS_NE2": "N.Y.8#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING",
+    "HIS_O": "O.N.8#C.N.6.DOUB",
+    "HIS_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "ILE_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "ILE_CA": "C.N.7#C.N.6.SING_C.N.7.SING_H.N.1.SING_N.N.8.SING",
+    "ILE_CB": "C.N.7#C.N.7.SING_C.N.8.SING_C.N.9.SING_H.N.1.SING",
+    "ILE_CD1": "C.N.9#C.N.8.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "ILE_CG1": "C.N.8#C.N.7.SING_C.N.9.SING_H.N.1.SING_H.N.1.SING",
+    "ILE_CG2": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "ILE_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "ILE_O": "O.N.8#C.N.6.DOUB",
+    "ILE_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "I_C1'": "C.N.7#C.N.7.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING",
+    "I_C2": "C.N.7#H.N.1.SING_N.N.7.DOUB_N.N.8.SING",
+    "I_C2'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING",
+    "I_C3'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING",
+    "I_C4": "C.Y.6#C.Y.6.AROM_N.N.7.SING_N.Y.7.AROM",
+    "I_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "I_C5": "C.Y.6#C.N.6.SING_C.Y.6.AROM_N.Y.7.AROM",
+    "I_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "I_C6": "C.N.6#C.Y.6.SING_N.N.8.SING_O.N.8.DOUB",
+    "I_C8": "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM",
+    "I_N1": "N.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING",
+    "I_N3": "N.N.7#C.N.7.DOUB_C.Y.6.SING",
+    "I_N7": "N.Y.7#C.Y.6.AROM_C.Y.7.AROM",
+    "I_N9": "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "I_O2'": "O.N.9#C.N.7.SING_H.N.1.SING",
+    "I_O3'": "O.N.8#C.N.7.SING",
+    "I_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "I_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "I_O6": "O.N.8#C.N.6.DOUB",
+    "I_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "I_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "I_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "I_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "LEU_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "LEU_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "LEU_CB": "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING",
+    "LEU_CD1": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "LEU_CD2": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "LEU_CG": "C.N.7#C.N.8.SING_C.N.9.SING_C.N.9.SING_H.N.1.SING",
+    "LEU_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "LEU_O": "O.N.8#C.N.6.DOUB",
+    "LEU_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "LYS_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "LYS_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "LYS_CB": "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "LYS_CD": "C.N.8#C.N.8.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "LYS_CE": "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.9.SING",
+    "LYS_CG": "C.N.8#C.N.8.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "LYS_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "LYS_NZ": "N.N.9#C.N.8.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "LYS_O": "O.N.8#C.N.6.DOUB",
+    "LYS_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "MET_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "MET_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "MET_CB": "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "MET_CE": "C.N.9#H.N.1.SING_H.N.1.SING_H.N.1.SING_S.N.16.SING",
+    "MET_CG": "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_S.N.16.SING",
+    "MET_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "MET_O": "O.N.8#C.N.6.DOUB",
+    "MET_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "MET_SD": "S.N.16#C.N.8.SING_C.N.9.SING",
+    "PHE_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "PHE_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "PHE_CB": "C.N.8#C.N.7.SING_C.Y.6.SING_H.N.1.SING_H.N.1.SING",
+    "PHE_CD1": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "PHE_CD2": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "PHE_CE1": "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING",
+    "PHE_CE2": "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING",
+    "PHE_CG": "C.Y.6#C.N.8.SING_C.Y.7.AROM_C.Y.7.AROM",
+    "PHE_CZ": "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING",
+    "PHE_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "PHE_O": "O.N.8#C.N.6.DOUB",
+    "PHE_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "PRO_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "PRO_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.7.SING",
+    "PRO_CB": "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "PRO_CD": "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.7.SING",
+    "PRO_CG": "C.N.8#C.N.8.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING",
+    "PRO_N": "N.N.7#C.N.7.SING_C.N.8.SING",
+    "PRO_O": "O.N.8#C.N.6.DOUB",
+    "PRO_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "SER_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "SER_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "SER_CB": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.9.SING",
+    "SER_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "SER_O": "O.N.8#C.N.6.DOUB",
+    "SER_OG": "O.N.9#C.N.8.SING_H.N.1.SING",
+    "SER_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "THR_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "THR_CA": "C.N.7#C.N.6.SING_C.N.7.SING_H.N.1.SING_N.N.8.SING",
+    "THR_CB": "C.N.7#C.N.7.SING_C.N.9.SING_H.N.1.SING_O.N.9.SING",
+    "THR_CG2": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "THR_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "THR_O": "O.N.8#C.N.6.DOUB",
+    "THR_OG1": "O.N.9#C.N.7.SING_H.N.1.SING",
+    "THR_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "TRP_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "TRP_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "TRP_CB": "C.N.8#C.N.7.SING_C.Y.6.SING_H.N.1.SING_H.N.1.SING",
+    "TRP_CD1": "C.Y.7#C.Y.6.AROM_H.N.1.SING_N.Y.8.AROM",
+    "TRP_CD2": "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_C.Y.7.AROM",
+    "TRP_CE2": "C.Y.6#C.Y.6.AROM_C.Y.7.AROM_N.Y.8.AROM",
+    "TRP_CE3": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TRP_CG": "C.Y.6#C.N.8.SING_C.Y.6.AROM_C.Y.7.AROM",
+    "TRP_CH2": "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TRP_CZ2": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TRP_CZ3": "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TRP_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "TRP_NE1": "N.Y.8#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TRP_O": "O.N.8#C.N.6.DOUB",
+    "TRP_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "TYR_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "TYR_CA": "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING",
+    "TYR_CB": "C.N.8#C.N.7.SING_C.Y.6.SING_H.N.1.SING_H.N.1.SING",
+    "TYR_CD1": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TYR_CD2": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TYR_CE1": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TYR_CE2": "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING",
+    "TYR_CG": "C.Y.6#C.N.8.SING_C.Y.7.AROM_C.Y.7.AROM",
+    "TYR_CZ": "C.Y.6#C.Y.7.AROM_C.Y.7.AROM_O.N.9.SING",
+    "TYR_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "TYR_O": "O.N.8#C.N.6.DOUB",
+    "TYR_OH": "O.N.9#C.Y.6.SING_H.N.1.SING",
+    "TYR_OXT": "O.N.9#C.N.6.SING_H.N.1.SING",
+    "U_C1'": "C.N.7#C.N.7.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING",
+    "U_C2": "C.N.6#N.N.7.SING_N.N.8.SING_O.N.8.DOUB",
+    "U_C2'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING",
+    "U_C3'": "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING",
+    "U_C4": "C.N.6#C.N.7.SING_N.N.8.SING_O.N.8.DOUB",
+    "U_C4'": "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING",
+    "U_C5": "C.N.7#C.N.6.SING_C.N.7.DOUB_H.N.1.SING",
+    "U_C5'": "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING",
+    "U_C6": "C.N.7#C.N.7.DOUB_H.N.1.SING_N.N.7.SING",
+    "U_N1": "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING",
+    "U_N3": "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING",
+    "U_O2": "O.N.8#C.N.6.DOUB",
+    "U_O2'": "O.N.9#C.N.7.SING_H.N.1.SING",
+    "U_O3'": "O.N.8#C.N.7.SING",
+    "U_O4": "O.N.8#C.N.6.DOUB",
+    "U_O4'": "O.N.8#C.N.7.SING_C.N.7.SING",
+    "U_O5'": "O.N.8#C.N.8.SING_P.N.15.SING",
+    "U_OP1": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "U_OP2": "O.N.8.5#H.N.1.RESON_P.N.15.RESON",
+    "U_OP3": "O.N.8#H.N.1.SING_P.N.15.SING",
+    "U_P": "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING",
+    "VAL_C": "C.N.6#C.N.7.SING_O.N.8.DOUB",
+    "VAL_CA": "C.N.7#C.N.6.SING_C.N.7.SING_H.N.1.SING_N.N.8.SING",
+    "VAL_CB": "C.N.7#C.N.7.SING_C.N.9.SING_C.N.9.SING_H.N.1.SING",
+    "VAL_CG1": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "VAL_CG2": "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING",
+    "VAL_N": "N.N.8#C.N.7.SING_H.N.1.SING",
+    "VAL_O": "O.N.8#C.N.6.DOUB",
+    "VAL_OXT": "O.N.9#C.N.6.SING_H.N.1.SING"
+  },
+  "full_atom_name_map_electrons": {
+    "ALA_C": 6.0,
+    "ALA_CA": 7.0,
+    "ALA_CB": 9.0,
+    "ALA_N": 8.0,
+    "ALA_O": 8.0,
+    "ALA_OXT": 9.0,
+    "ARG_C": 6.0,
+    "ARG_CA": 7.0,
+    "ARG_CB": 8.0,
+    "ARG_CD": 8.0,
+    "ARG_CG": 8.0,
+    "ARG_CZ": 6.0,
+    "ARG_N": 8.0,
+    "ARG_NE": 8.0,
+    "ARG_NH1": 9.0,
+    "ARG_NH2": 8.0,
+    "ARG_O": 8.0,
+    "ARG_OXT": 9.0,
+    "ASN_C": 6.0,
+    "ASN_CA": 7.0,
+    "ASN_CB": 8.0,
+    "ASN_CG": 6.0,
+    "ASN_N": 8.0,
+    "ASN_ND2": 9.0,
+    "ASN_O": 8.0,
+    "ASN_OD1": 8.0,
+    "ASN_OXT": 9.0,
+    "ASP_C": 6.0,
+    "ASP_CA": 7.0,
+    "ASP_CB": 8.0,
+    "ASP_CG": 6.0,
+    "ASP_N": 8.0,
+    "ASP_O": 8.0,
+    "ASP_OD1": 8.5,
+    "ASP_OD2": 8.5,
+    "ASP_OXT": 9.0,
+    "A_C1'": 7.0,
+    "A_C2": 7.0,
+    "A_C2'": 7.0,
+    "A_C3'": 7.0,
+    "A_C4": 6.0,
+    "A_C4'": 7.0,
+    "A_C5": 6.0,
+    "A_C5'": 8.0,
+    "A_C6": 6.0,
+    "A_C8": 7.0,
+    "A_N1": 7.0,
+    "A_N3": 7.0,
+    "A_N6": 9.0,
+    "A_N7": 7.0,
+    "A_N9": 7.0,
+    "A_O2'": 9.0,
+    "A_O3'": 8.0,
+    "A_O4'": 8.0,
+    "A_O5'": 8.0,
+    "A_OP1": 8.5,
+    "A_OP2": 8.5,
+    "A_OP3": 8.0,
+    "A_P": 15.0,
+    "CYS_C": 6.0,
+    "CYS_CA": 7.0,
+    "CYS_CB": 8.0,
+    "CYS_N": 8.0,
+    "CYS_O": 8.0,
+    "CYS_OXT": 9.0,
+    "CYS_SG": 17.0,
+    "C_C1'": 7.0,
+    "C_C2": 6.0,
+    "C_C2'": 7.0,
+    "C_C3'": 7.0,
+    "C_C4": 6.0,
+    "C_C4'": 7.0,
+    "C_C5": 7.0,
+    "C_C5'": 8.0,
+    "C_C6": 7.0,
+    "C_N1": 7.0,
+    "C_N3": 7.0,
+    "C_N4": 9.0,
+    "C_O2": 8.0,
+    "C_O2'": 9.0,
+    "C_O3'": 8.0,
+    "C_O4'": 8.0,
+    "C_O5'": 8.0,
+    "C_OP1": 8.5,
+    "C_OP2": 8.5,
+    "C_OP3": 8.0,
+    "C_P": 15.0,
+    "DA_C1'": 7.0,
+    "DA_C2": 7.0,
+    "DA_C2'": 8.0,
+    "DA_C3'": 7.0,
+    "DA_C4": 6.0,
+    "DA_C4'": 7.0,
+    "DA_C5": 6.0,
+    "DA_C5'": 8.0,
+    "DA_C6": 6.0,
+    "DA_C8": 7.0,
+    "DA_N1": 7.0,
+    "DA_N3": 7.0,
+    "DA_N6": 9.0,
+    "DA_N7": 7.0,
+    "DA_N9": 7.0,
+    "DA_O3'": 8.0,
+    "DA_O4'": 8.0,
+    "DA_O5'": 8.0,
+    "DA_OP1": 8.5,
+    "DA_OP2": 8.5,
+    "DA_OP3": 8.0,
+    "DA_P": 15.0,
+    "DC_C1'": 7.0,
+    "DC_C2": 6.0,
+    "DC_C2'": 8.0,
+    "DC_C3'": 7.0,
+    "DC_C4": 6.0,
+    "DC_C4'": 7.0,
+    "DC_C5": 7.0,
+    "DC_C5'": 8.0,
+    "DC_C6": 7.0,
+    "DC_N1": 7.0,
+    "DC_N3": 7.0,
+    "DC_N4": 9.0,
+    "DC_O2": 8.0,
+    "DC_O3'": 8.0,
+    "DC_O4'": 8.0,
+    "DC_O5'": 8.0,
+    "DC_OP1": 8.5,
+    "DC_OP2": 8.5,
+    "DC_OP3": 8.0,
+    "DC_P": 15.0,
+    "DG_C1'": 7.0,
+    "DG_C2": 6.0,
+    "DG_C2'": 8.0,
+    "DG_C3'": 7.0,
+    "DG_C4": 6.0,
+    "DG_C4'": 7.0,
+    "DG_C5": 6.0,
+    "DG_C5'": 8.0,
+    "DG_C6": 6.0,
+    "DG_C8": 7.0,
+    "DG_N1": 8.0,
+    "DG_N2": 9.0,
+    "DG_N3": 7.0,
+    "DG_N7": 7.0,
+    "DG_N9": 7.0,
+    "DG_O3'": 8.0,
+    "DG_O4'": 8.0,
+    "DG_O5'": 8.0,
+    "DG_O6": 8.0,
+    "DG_OP1": 8.5,
+    "DG_OP2": 8.5,
+    "DG_OP3": 8.0,
+    "DG_P": 15.0,
+    "DI_C1'": 7.0,
+    "DI_C2": 7.0,
+    "DI_C2'": 8.0,
+    "DI_C3'": 7.0,
+    "DI_C4": 6.0,
+    "DI_C4'": 7.0,
+    "DI_C5": 6.0,
+    "DI_C5'": 8.0,
+    "DI_C6": 6.0,
+    "DI_C8": 7.0,
+    "DI_N1": 8.0,
+    "DI_N3": 7.0,
+    "DI_N7": 7.0,
+    "DI_N9": 7.0,
+    "DI_O3'": 8.0,
+    "DI_O4'": 8.0,
+    "DI_O5'": 8.0,
+    "DI_O6": 8.0,
+    "DI_OP1": 8.5,
+    "DI_OP2": 8.5,
+    "DI_OP3": 8.0,
+    "DI_P": 15.0,
+    "DT_C1'": 7.0,
+    "DT_C2": 6.0,
+    "DT_C2'": 8.0,
+    "DT_C3'": 7.0,
+    "DT_C4": 6.0,
+    "DT_C4'": 7.0,
+    "DT_C5": 6.0,
+    "DT_C5'": 8.0,
+    "DT_C6": 7.0,
+    "DT_C7": 9.0,
+    "DT_N1": 7.0,
+    "DT_N3": 8.0,
+    "DT_O2": 8.0,
+    "DT_O3'": 8.0,
+    "DT_O4": 8.0,
+    "DT_O4'": 8.0,
+    "DT_O5'": 8.0,
+    "DT_OP1": 8.5,
+    "DT_OP2": 8.5,
+    "DT_OP3": 8.0,
+    "DT_P": 15.0,
+    "DU_C1'": 7.0,
+    "DU_C2": 6.0,
+    "DU_C2'": 8.0,
+    "DU_C3'": 7.0,
+    "DU_C4": 6.0,
+    "DU_C4'": 7.0,
+    "DU_C5": 7.0,
+    "DU_C5'": 8.0,
+    "DU_C6": 7.0,
+    "DU_N1": 7.0,
+    "DU_N3": 8.0,
+    "DU_O2": 8.0,
+    "DU_O3'": 8.0,
+    "DU_O4": 8.0,
+    "DU_O4'": 8.0,
+    "DU_O5'": 8.0,
+    "DU_OP1": 8.5,
+    "DU_OP2": 8.5,
+    "DU_OP3": 8.0,
+    "DU_P": 15.0,
+    "GLN_C": 6.0,
+    "GLN_CA": 7.0,
+    "GLN_CB": 8.0,
+    "GLN_CD": 6.0,
+    "GLN_CG": 8.0,
+    "GLN_N": 8.0,
+    "GLN_NE2": 9.0,
+    "GLN_O": 8.0,
+    "GLN_OE1": 8.0,
+    "GLN_OXT": 9.0,
+    "GLU_C": 6.0,
+    "GLU_CA": 7.0,
+    "GLU_CB": 8.0,
+    "GLU_CD": 6.0,
+    "GLU_CG": 8.0,
+    "GLU_N": 8.0,
+    "GLU_O": 8.0,
+    "GLU_OE1": 8.5,
+    "GLU_OE2": 8.5,
+    "GLU_OXT": 9.0,
+    "GLY_C": 6.0,
+    "GLY_CA": 8.0,
+    "GLY_N": 8.0,
+    "GLY_O": 8.0,
+    "GLY_OXT": 9.0,
+    "G_C1'": 7.0,
+    "G_C2": 6.0,
+    "G_C2'": 7.0,
+    "G_C3'": 7.0,
+    "G_C4": 6.0,
+    "G_C4'": 7.0,
+    "G_C5": 6.0,
+    "G_C5'": 8.0,
+    "G_C6": 6.0,
+    "G_C8": 7.0,
+    "G_N1": 8.0,
+    "G_N2": 9.0,
+    "G_N3": 7.0,
+    "G_N7": 7.0,
+    "G_N9": 7.0,
+    "G_O2'": 9.0,
+    "G_O3'": 8.0,
+    "G_O4'": 8.0,
+    "G_O5'": 8.0,
+    "G_O6": 8.0,
+    "G_OP1": 8.5,
+    "G_OP2": 8.5,
+    "G_OP3": 8.0,
+    "G_P": 15.0,
+    "HIS_C": 6.0,
+    "HIS_CA": 7.0,
+    "HIS_CB": 8.0,
+    "HIS_CD2": 7.0,
+    "HIS_CE1": 7.0,
+    "HIS_CG": 6.0,
+    "HIS_N": 8.0,
+    "HIS_ND1": 7.0,
+    "HIS_NE2": 8.0,
+    "HIS_O": 8.0,
+    "HIS_OXT": 9.0,
+    "ILE_C": 6.0,
+    "ILE_CA": 7.0,
+    "ILE_CB": 7.0,
+    "ILE_CD1": 9.0,
+    "ILE_CG1": 8.0,
+    "ILE_CG2": 9.0,
+    "ILE_N": 8.0,
+    "ILE_O": 8.0,
+    "ILE_OXT": 9.0,
+    "I_C1'": 7.0,
+    "I_C2": 7.0,
+    "I_C2'": 7.0,
+    "I_C3'": 7.0,
+    "I_C4": 6.0,
+    "I_C4'": 7.0,
+    "I_C5": 6.0,
+    "I_C5'": 8.0,
+    "I_C6": 6.0,
+    "I_C8": 7.0,
+    "I_N1": 8.0,
+    "I_N3": 7.0,
+    "I_N7": 7.0,
+    "I_N9": 7.0,
+    "I_O2'": 9.0,
+    "I_O3'": 8.0,
+    "I_O4'": 8.0,
+    "I_O5'": 8.0,
+    "I_O6": 8.0,
+    "I_OP1": 8.5,
+    "I_OP2": 8.5,
+    "I_OP3": 8.0,
+    "I_P": 15.0,
+    "LEU_C": 6.0,
+    "LEU_CA": 7.0,
+    "LEU_CB": 8.0,
+    "LEU_CD1": 9.0,
+    "LEU_CD2": 9.0,
+    "LEU_CG": 7.0,
+    "LEU_N": 8.0,
+    "LEU_O": 8.0,
+    "LEU_OXT": 9.0,
+    "LYS_C": 6.0,
+    "LYS_CA": 7.0,
+    "LYS_CB": 8.0,
+    "LYS_CD": 8.0,
+    "LYS_CE": 8.0,
+    "LYS_CG": 8.0,
+    "LYS_N": 8.0,
+    "LYS_NZ": 9.0,
+    "LYS_O": 8.0,
+    "LYS_OXT": 9.0,
+    "MET_C": 6.0,
+    "MET_CA": 7.0,
+    "MET_CB": 8.0,
+    "MET_CE": 9.0,
+    "MET_CG": 8.0,
+    "MET_N": 8.0,
+    "MET_O": 8.0,
+    "MET_OXT": 9.0,
+    "MET_SD": 16.0,
+    "PHE_C": 6.0,
+    "PHE_CA": 7.0,
+    "PHE_CB": 8.0,
+    "PHE_CD1": 7.0,
+    "PHE_CD2": 7.0,
+    "PHE_CE1": 7.0,
+    "PHE_CE2": 7.0,
+    "PHE_CG": 6.0,
+    "PHE_CZ": 7.0,
+    "PHE_N": 8.0,
+    "PHE_O": 8.0,
+    "PHE_OXT": 9.0,
+    "PRO_C": 6.0,
+    "PRO_CA": 7.0,
+    "PRO_CB": 8.0,
+    "PRO_CD": 8.0,
+    "PRO_CG": 8.0,
+    "PRO_N": 7.0,
+    "PRO_O": 8.0,
+    "PRO_OXT": 9.0,
+    "SER_C": 6.0,
+    "SER_CA": 7.0,
+    "SER_CB": 8.0,
+    "SER_N": 8.0,
+    "SER_O": 8.0,
+    "SER_OG": 9.0,
+    "SER_OXT": 9.0,
+    "THR_C": 6.0,
+    "THR_CA": 7.0,
+    "THR_CB": 7.0,
+    "THR_CG2": 9.0,
+    "THR_N": 8.0,
+    "THR_O": 8.0,
+    "THR_OG1": 9.0,
+    "THR_OXT": 9.0,
+    "TRP_C": 6.0,
+    "TRP_CA": 7.0,
+    "TRP_CB": 8.0,
+    "TRP_CD1": 7.0,
+    "TRP_CD2": 6.0,
+    "TRP_CE2": 6.0,
+    "TRP_CE3": 7.0,
+    "TRP_CG": 6.0,
+    "TRP_CH2": 7.0,
+    "TRP_CZ2": 7.0,
+    "TRP_CZ3": 7.0,
+    "TRP_N": 8.0,
+    "TRP_NE1": 8.0,
+    "TRP_O": 8.0,
+    "TRP_OXT": 9.0,
+    "TYR_C": 6.0,
+    "TYR_CA": 7.0,
+    "TYR_CB": 8.0,
+    "TYR_CD1": 7.0,
+    "TYR_CD2": 7.0,
+    "TYR_CE1": 7.0,
+    "TYR_CE2": 7.0,
+    "TYR_CG": 6.0,
+    "TYR_CZ": 6.0,
+    "TYR_N": 8.0,
+    "TYR_O": 8.0,
+    "TYR_OH": 9.0,
+    "TYR_OXT": 9.0,
+    "U_C1'": 7.0,
+    "U_C2": 6.0,
+    "U_C2'": 7.0,
+    "U_C3'": 7.0,
+    "U_C4": 6.0,
+    "U_C4'": 7.0,
+    "U_C5": 7.0,
+    "U_C5'": 8.0,
+    "U_C6": 7.0,
+    "U_N1": 7.0,
+    "U_N3": 8.0,
+    "U_O2": 8.0,
+    "U_O2'": 9.0,
+    "U_O3'": 8.0,
+    "U_O4": 8.0,
+    "U_O4'": 8.0,
+    "U_O5'": 8.0,
+    "U_OP1": 8.5,
+    "U_OP2": 8.5,
+    "U_OP3": 8.0,
+    "U_P": 15.0,
+    "VAL_C": 6.0,
+    "VAL_CA": 7.0,
+    "VAL_CB": 7.0,
+    "VAL_CG1": 9.0,
+    "VAL_CG2": 9.0,
+    "VAL_N": 8.0,
+    "VAL_O": 8.0,
+    "VAL_OXT": 9.0
+  },
+  "leaving_atoms": [
+    "DU_OP3",
+    "U_OP3",
+    "THR_OXT",
+    "DT_OP3",
+    "ARG_OXT",
+    "ASP_OXT",
+    "ILE_OXT",
+    "C_OP3",
+    "TRP_OXT",
+    "ALA_OXT",
+    "GLN_OXT",
+    "LYS_OXT",
+    "TYR_OXT",
+    "MET_OXT",
+    "SER_OXT",
+    "A_OP3",
+    "DC_OP3",
+    "PHE_OXT",
+    "DI_OP3",
+    "GLU_OXT",
+    "HIS_OXT",
+    "CYS_OXT",
+    "GLY_OXT",
+    "G_OP3",
+    "PRO_OXT",
+    "ASN_OXT",
+    "DG_OP3",
+    "I_OP3",
+    "VAL_OXT",
+    "LEU_OXT",
+    "DA_OP3"
+  ],
+  "radii": {
+    "C.N.6#C.N.6.SING_C.N.7.DOUB_C.N.9.SING": 0.6830425035573872,
+    "C.N.6#C.N.6.SING_N.N.8.SING_O.N.8.DOUB": 0.6319810404589454,
+    "C.N.6#C.N.7.SING_N.N.7.DOUB_N.N.9.SING": 0.6494989199850355,
+    "C.N.6#C.N.7.SING_N.N.8.SING_O.N.8.DOUB": 0.6513749695097312,
+    "C.N.6#C.N.7.SING_O.N.8.DOUB": 0.6144411445749595,
+    "C.N.6#C.N.8.SING_N.N.9.SING_O.N.8.DOUB": 0.6552748419489729,
+    "C.N.6#C.N.8.SING_O.N.8.DOUB": 0.6138134518142228,
+    "C.N.6#C.N.8.SING_O.N.8.DOUB_O.N.9.SING": 0.6756709491418856,
+    "C.N.6#C.Y.6.SING_N.N.8.SING_O.N.8.DOUB": 0.6379050962473687,
+    "C.N.6#N.N.7.DOUB_N.N.8.SING_N.N.9.SING": 0.6354612841498676,
+    "C.N.6#N.N.7.SING_N.N.7.SING_O.N.8.DOUB": 0.6296953501523729,
+    "C.N.6#N.N.7.SING_N.N.8.SING_O.N.8.DOUB": 0.6295881852742646,
+    "C.N.6#N.N.8.DOUB_N.N.8.SING_N.N.9.SING": 0.6599114067457192,
+    "C.N.7#C.N.6.DOUB_H.N.1.SING_N.N.7.SING": 0.7592732393660931,
+    "C.N.7#C.N.6.SING_C.N.7.DOUB_H.N.1.SING": 0.8499007876629702,
+    "C.N.7#C.N.6.SING_C.N.7.SING_H.N.1.SING_N.N.8.SING": 0.7151608148325749,
+    "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.7.SING": 0.728623552050198,
+    "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING": 0.7158048711936327,
+    "C.N.7#C.N.6.SING_C.N.9.SING_H.N.1.SING_N.N.8.SING": 0.7066234239022211,
+    "C.N.7#C.N.7.DOUB_H.N.1.SING_N.N.7.SING": 0.8050652761818473,
+    "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING": 0.7345150106306333,
+    "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING": 0.7545950207818931,
+    "C.N.7#C.N.7.SING_C.N.8.SING_C.N.9.SING_H.N.1.SING": 0.7094712569862895,
+    "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING": 0.7424137111716707,
+    "C.N.7#C.N.7.SING_C.N.9.SING_C.N.9.SING_H.N.1.SING": 0.7168199600513276,
+    "C.N.7#C.N.7.SING_C.N.9.SING_H.N.1.SING_O.N.9.SING": 0.7038077649212104,
+    "C.N.7#C.N.7.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING": 0.715469307893059,
+    "C.N.7#C.N.7.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING": 0.716792169078763,
+    "C.N.7#C.N.8.SING_C.N.9.SING_C.N.9.SING_H.N.1.SING": 0.728461028357923,
+    "C.N.7#C.N.8.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING": 0.7125250599885522,
+    "C.N.7#C.N.8.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING": 0.7252335468631665,
+    "C.N.7#H.N.1.SING_N.N.7.DOUB_N.N.8.SING": 0.8048731351154949,
+    "C.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING": 0.8691718572634932,
+    "C.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING": 0.9277561752769047,
+    "C.N.8#C.N.6.SING_H.N.1.SING_H.N.1.SING_N.N.8.SING": 0.8080633812192916,
+    "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING": 0.8146957429942373,
+    "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING": 0.8561613959781066,
+    "C.N.8#C.N.7.SING_C.N.9.SING_H.N.1.SING_H.N.1.SING": 0.8334847996723633,
+    "C.N.8#C.N.7.SING_C.Y.6.SING_H.N.1.SING_H.N.1.SING": 0.8077460668867504,
+    "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING": 0.8719790967687688,
+    "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.9.SING": 0.7935231434676151,
+    "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_S.N.17.SING": 0.8134747088167845,
+    "C.N.8#C.N.8.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING": 0.907929753245298,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.7.SING": 0.8270338680375654,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.8.SING": 0.8551034565732629,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.9.SING": 0.9646042238443939,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_S.N.16.SING": 0.8423611723302221,
+    "C.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": 1.2386175978182168,
+    "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": 1.0446173312512343,
+    "C.N.9#C.N.8.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": 1.0777091460742079,
+    "C.N.9#H.N.1.SING_H.N.1.SING_H.N.1.SING_S.N.16.SING": 1.0079983542120223,
+    "C.Y.6#C.N.6.SING_C.Y.6.AROM_N.Y.7.AROM": 0.6496598731629141,
+    "C.Y.6#C.N.8.SING_C.Y.6.AROM_C.Y.7.AROM": 0.6519851529692573,
+    "C.Y.6#C.N.8.SING_C.Y.7.AROM_C.Y.7.AROM": 0.6546861960039297,
+    "C.Y.6#C.N.8.SING_C.Y.7.AROM_N.Y.7.AROM": 0.6531384813842577,
+    "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_C.Y.7.AROM": 0.6499912963683147,
+    "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_N.Y.7.AROM": 0.6407120109863123,
+    "C.Y.6#C.Y.6.AROM_C.Y.7.AROM_N.Y.8.AROM": 0.6360747479595177,
+    "C.Y.6#C.Y.6.AROM_N.N.7.SING_N.Y.7.AROM": 0.633736388170347,
+    "C.Y.6#C.Y.6.AROM_N.N.9.SING_N.Y.7.AROM": 0.6478129847303764,
+    "C.Y.6#C.Y.6.AROM_N.Y.7.AROM_N.Y.7.AROM": 0.6346582969118914,
+    "C.Y.6#C.Y.7.AROM_C.Y.7.AROM_O.N.9.SING": 0.6392775345144991,
+    "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING": 0.7510077582151675,
+    "C.Y.7#C.Y.6.AROM_H.N.1.SING_N.Y.8.AROM": 0.721206843406768,
+    "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING": 0.7546924855928935,
+    "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM": 0.7633198390776279,
+    "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.8.AROM": 0.7201116451662679,
+    "N.N.7#C.N.6.DOUB_C.N.6.SING": 0.7216914065306346,
+    "N.N.7#C.N.6.DOUB_C.Y.6.SING": 0.7404181636334188,
+    "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING": 0.6784999741969931,
+    "N.N.7#C.N.7.DOUB_C.Y.6.SING": 0.693734375,
+    "N.N.7#C.N.7.SING_C.N.8.SING": 0.6551175271892482,
+    "N.N.8#C.N.6.DOUB_H.N.1.SING_H.N.1.SING": 0.8702253451180201,
+    "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING": 0.7564411478975025,
+    "N.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING": 0.7400000000000001,
+    "N.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING": 0.7761015274239997,
+    "N.N.8#C.N.7.SING_H.N.1.SING": 0.7015588169140818,
+    "N.N.8#C.N.8.SING_H.N.1.SING": 0.7153931799235816,
+    "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING": 0.9160202300054229,
+    "N.N.9#C.N.8.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": 1.143556817928552,
+    "N.N.9#C.Y.6.SING_H.N.1.SING_H.N.1.SING": 1.0594478514189858,
+    "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM": 0.6698433041540385,
+    "N.Y.7#C.Y.6.AROM_C.Y.7.AROM": 0.757999181443011,
+    "N.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING": 0.6931356895091315,
+    "N.Y.8#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING": 0.702902409738307,
+    "N.Y.8#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING": 0.7351538875046331,
+    "O.N.8#C.N.6.DOUB": 0.7316290756175965,
+    "O.N.8#C.N.7.SING": 0.7263300307883411,
+    "O.N.8#C.N.7.SING_C.N.7.SING": 0.7829745914532418,
+    "O.N.8#C.N.8.SING_P.N.15.SING": 0.7207420639922811,
+    "O.N.8#H.N.1.SING_P.N.15.SING": 0.8672078942530014,
+    "O.N.8.5#C.N.6.RESON_H.N.1.RESON": 0.8680493418981715,
+    "O.N.8.5#H.N.1.RESON_P.N.15.RESON": 0.7994441621457434,
+    "O.N.9#C.N.6.SING_H.N.1.SING": 1.0311478503583436,
+    "O.N.9#C.N.7.SING_H.N.1.SING": 0.8258865606642436,
+    "O.N.9#C.N.8.SING_H.N.1.SING": 0.8464018246379538,
+    "O.N.9#C.Y.6.SING_H.N.1.SING": 0.8177205309699227,
+    "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING": 0.7246504872736103,
+    "S.N.16#C.N.8.SING_C.N.9.SING": 0.7770781445242577,
+    "S.N.17#C.N.8.SING_H.N.1.SING": 0.7848173524061332
+  },
+  "slopes": {
+    "C.N.6#C.N.6.SING_C.N.7.DOUB_C.N.9.SING": -0.6602131163010763,
+    "C.N.6#C.N.6.SING_N.N.8.SING_O.N.8.DOUB": -0.7816774867733208,
+    "C.N.6#C.N.7.SING_N.N.7.DOUB_N.N.9.SING": -0.8187672638954682,
+    "C.N.6#C.N.7.SING_N.N.8.SING_O.N.8.DOUB": -0.7801464996332973,
+    "C.N.6#C.N.7.SING_O.N.8.DOUB": -0.7360156061974883,
+    "C.N.6#C.N.8.SING_N.N.9.SING_O.N.8.DOUB": -0.9001988978205983,
+    "C.N.6#C.N.8.SING_O.N.8.DOUB": -0.6607154614356807,
+    "C.N.6#C.N.8.SING_O.N.8.DOUB_O.N.9.SING": -0.970378097853412,
+    "C.N.6#C.Y.6.SING_N.N.8.SING_O.N.8.DOUB": -0.8192740793119151,
+    "C.N.6#N.N.7.DOUB_N.N.8.SING_N.N.9.SING": -0.8249611678326797,
+    "C.N.6#N.N.7.SING_N.N.7.SING_O.N.8.DOUB": -0.8349578756119114,
+    "C.N.6#N.N.7.SING_N.N.8.SING_O.N.8.DOUB": -0.9063955059505671,
+    "C.N.6#N.N.8.DOUB_N.N.8.SING_N.N.9.SING": -0.9460124137719139,
+    "C.N.7#C.N.6.DOUB_H.N.1.SING_N.N.7.SING": -0.5,
+    "C.N.7#C.N.6.SING_C.N.7.DOUB_H.N.1.SING": -0.5,
+    "C.N.7#C.N.6.SING_C.N.7.SING_H.N.1.SING_N.N.8.SING": -0.5338928615203049,
+    "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.7.SING": -0.5046672330877091,
+    "C.N.7#C.N.6.SING_C.N.8.SING_H.N.1.SING_N.N.8.SING": -0.5830469161521488,
+    "C.N.7#C.N.6.SING_C.N.9.SING_H.N.1.SING_N.N.8.SING": -0.5311223068021572,
+    "C.N.7#C.N.7.DOUB_H.N.1.SING_N.N.7.SING": -0.5,
+    "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.8.SING": -0.5250167917830364,
+    "C.N.7#C.N.7.SING_C.N.7.SING_H.N.1.SING_O.N.9.SING": -0.5262609011509177,
+    "C.N.7#C.N.7.SING_C.N.8.SING_C.N.9.SING_H.N.1.SING": -0.5579795389244779,
+    "C.N.7#C.N.7.SING_C.N.8.SING_H.N.1.SING_O.N.8.SING": -0.5510512239556917,
+    "C.N.7#C.N.7.SING_C.N.9.SING_C.N.9.SING_H.N.1.SING": -0.544081991018839,
+    "C.N.7#C.N.7.SING_C.N.9.SING_H.N.1.SING_O.N.9.SING": -0.6092887343439577,
+    "C.N.7#C.N.7.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING": -0.6052685927403343,
+    "C.N.7#C.N.7.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING": -0.5885362315737995,
+    "C.N.7#C.N.8.SING_C.N.9.SING_C.N.9.SING_H.N.1.SING": -0.6126891425651371,
+    "C.N.7#C.N.8.SING_H.N.1.SING_N.N.7.SING_O.N.8.SING": -0.7594719037748321,
+    "C.N.7#C.N.8.SING_H.N.1.SING_N.Y.7.SING_O.N.8.SING": -0.7163261540749605,
+    "C.N.7#H.N.1.SING_N.N.7.DOUB_N.N.8.SING": -0.5,
+    "C.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING": -0.42779249347618714,
+    "C.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING": -0.4753550414218476,
+    "C.N.8#C.N.6.SING_H.N.1.SING_H.N.1.SING_N.N.8.SING": -0.4803332938948004,
+    "C.N.8#C.N.7.SING_C.N.7.SING_H.N.1.SING_H.N.1.SING": -0.40503515589551153,
+    "C.N.8#C.N.7.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING": -0.40361449166463637,
+    "C.N.8#C.N.7.SING_C.N.9.SING_H.N.1.SING_H.N.1.SING": -0.4813387684372093,
+    "C.N.8#C.N.7.SING_C.Y.6.SING_H.N.1.SING_H.N.1.SING": -0.446275387319402,
+    "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.8.SING": -0.38188298673893717,
+    "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_O.N.9.SING": -0.5626936857109794,
+    "C.N.8#C.N.7.SING_H.N.1.SING_H.N.1.SING_S.N.17.SING": -0.5,
+    "C.N.8#C.N.8.SING_C.N.8.SING_H.N.1.SING_H.N.1.SING": -0.5043522495521857,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.7.SING": -0.49308925298990813,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.8.SING": -0.5443858142545714,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_N.N.9.SING": -0.5540698706675052,
+    "C.N.8#C.N.8.SING_H.N.1.SING_H.N.1.SING_S.N.16.SING": -0.5,
+    "C.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": -0.5,
+    "C.N.9#C.N.7.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": -0.36159869643359405,
+    "C.N.9#C.N.8.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": -0.4505143604678971,
+    "C.N.9#H.N.1.SING_H.N.1.SING_H.N.1.SING_S.N.16.SING": -0.5,
+    "C.Y.6#C.N.6.SING_C.Y.6.AROM_N.Y.7.AROM": -0.7331003489712032,
+    "C.Y.6#C.N.8.SING_C.Y.6.AROM_C.Y.7.AROM": -0.7353516963003324,
+    "C.Y.6#C.N.8.SING_C.Y.7.AROM_C.Y.7.AROM": -0.5608576926777777,
+    "C.Y.6#C.N.8.SING_C.Y.7.AROM_N.Y.7.AROM": -0.6751929446631579,
+    "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_C.Y.7.AROM": -0.670546146946184,
+    "C.Y.6#C.Y.6.AROM_C.Y.6.AROM_N.Y.7.AROM": -0.7928007812608393,
+    "C.Y.6#C.Y.6.AROM_C.Y.7.AROM_N.Y.8.AROM": -0.6893671383659179,
+    "C.Y.6#C.Y.6.AROM_N.N.7.SING_N.Y.7.AROM": -0.7305032177832386,
+    "C.Y.6#C.Y.6.AROM_N.N.9.SING_N.Y.7.AROM": -0.8145288765986576,
+    "C.Y.6#C.Y.6.AROM_N.Y.7.AROM_N.Y.7.AROM": -0.8163318980450364,
+    "C.Y.6#C.Y.7.AROM_C.Y.7.AROM_O.N.9.SING": -0.7067094058566469,
+    "C.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING": -0.5386721332563886,
+    "C.Y.7#C.Y.6.AROM_H.N.1.SING_N.Y.8.AROM": -0.5834535048602933,
+    "C.Y.7#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING": -0.543442477166866,
+    "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.7.AROM": -0.4982606958932174,
+    "C.Y.7#H.N.1.SING_N.Y.7.AROM_N.Y.8.AROM": -0.7094082508498393,
+    "N.N.7#C.N.6.DOUB_C.N.6.SING": -0.5,
+    "N.N.7#C.N.6.DOUB_C.Y.6.SING": -0.5,
+    "N.N.7#C.N.6.SING_C.N.7.SING_C.N.7.SING": -0.6061328721476222,
+    "N.N.7#C.N.7.DOUB_C.Y.6.SING": -0.5,
+    "N.N.7#C.N.7.SING_C.N.8.SING": -0.5987064362070613,
+    "N.N.8#C.N.6.DOUB_H.N.1.SING_H.N.1.SING": -0.5692888984199396,
+    "N.N.8#C.N.6.SING_C.N.6.SING_H.N.1.SING": -0.4763231744923899,
+    "N.N.8#C.N.6.SING_C.N.7.SING_H.N.1.SING": -0.5,
+    "N.N.8#C.N.6.SING_C.N.8.SING_H.N.1.SING": -0.7170054812458821,
+    "N.N.8#C.N.7.SING_H.N.1.SING": -0.4963101256868657,
+    "N.N.8#C.N.8.SING_H.N.1.SING": -0.6038717230325298,
+    "N.N.9#C.N.6.SING_H.N.1.SING_H.N.1.SING": -0.5424445116948153,
+    "N.N.9#C.N.8.SING_H.N.1.SING_H.N.1.SING_H.N.1.SING": -0.5,
+    "N.N.9#C.Y.6.SING_H.N.1.SING_H.N.1.SING": -0.5,
+    "N.Y.7#C.N.7.SING_C.Y.6.AROM_C.Y.7.AROM": -0.6042623036790084,
+    "N.Y.7#C.Y.6.AROM_C.Y.7.AROM": -0.4693209864957616,
+    "N.Y.7#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING": -0.7149895289717934,
+    "N.Y.8#C.Y.6.AROM_C.Y.7.AROM_H.N.1.SING": -0.6328310057699761,
+    "N.Y.8#C.Y.7.AROM_C.Y.7.AROM_H.N.1.SING": -0.6856324894663703,
+    "O.N.8#C.N.6.DOUB": -0.4237965476401407,
+    "O.N.8#C.N.7.SING": -0.6821911857821981,
+    "O.N.8#C.N.7.SING_C.N.7.SING": -0.5710665686068969,
+    "O.N.8#C.N.8.SING_P.N.15.SING": -0.6316938373151285,
+    "O.N.8#H.N.1.SING_P.N.15.SING": -0.5,
+    "O.N.8.5#C.N.6.RESON_H.N.1.RESON": -0.6485064438883703,
+    "O.N.8.5#H.N.1.RESON_P.N.15.RESON": -0.5853789483929401,
+    "O.N.9#C.N.6.SING_H.N.1.SING": -0.5,
+    "O.N.9#C.N.7.SING_H.N.1.SING": -0.6613532073769137,
+    "O.N.9#C.N.8.SING_H.N.1.SING": -0.7013754013560829,
+    "O.N.9#C.Y.6.SING_H.N.1.SING": -0.7133866494955874,
+    "P.N.15#O.N.8.DOUB_O.N.8.SING_O.N.9.SING": -0.929707561457062,
+    "S.N.16#C.N.8.SING_C.N.9.SING": -0.9598144104363,
+    "S.N.17#C.N.8.SING_H.N.1.SING": -0.9179736055200366
+  }
+}

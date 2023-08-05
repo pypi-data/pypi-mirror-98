@@ -1,0 +1,7 @@
+include README.rst LICENSE
+include requirements.txt
+include docs/Makefile
+recursive-include docs *.rst *.txt *.py *.png
+recursive-include pdb_eda *.py *.pyx
+exclude pdb_eda/test*.py
+exclude pdb_eda/pdb_eda/cutils_setup.py
