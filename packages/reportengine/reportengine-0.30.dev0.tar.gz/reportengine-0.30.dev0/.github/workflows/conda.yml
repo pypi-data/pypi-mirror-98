@@ -1,0 +1,37 @@
+name: Build
+
+on: [push]
+
+jobs:
+    build:
+
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: Install SSH key
+            uses: shimataro/ssh-key-action@v2
+            with:
+                key: ${{ secrets.SSH_KEY }}
+                known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+          - uses: actions/checkout@v2
+            with:
+                fetch-depth: 0
+
+          - uses: conda-incubator/setup-miniconda@v2
+            with:
+              auto-update-conda: true
+              python-version: "3.9"
+
+          - name: Do Build
+            shell: bash -l {0}
+            run: |
+                conda install conda-build --yes
+                conda build conda-recipe
+
+          - name: Upload
+            if: github.ref == 'refs/heads/master'
+            shell: bash -l {0}
+            run: |
+                scp ${CONDA_PREFIX}/conda-bld/noarch/*.tar.bz2 dummy@packages.nnpdf.science:~/packages/conda/noarch/
+
