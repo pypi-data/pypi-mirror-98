@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: crazyinvite
+Version: 0.0.1
+Summary: A very crazy invite app
+Home-page: UNKNOWN
+Author: Wissam crazy
+Author-email: geathwissam@gmail.com
+License: MIT
+Description: crazy amino invite app.
+        
+        Change Log
+        ==========
+        
+        0.0.1 (11/03/2021)
+        -------------------
+        - First Release
+Keywords: aminoapps,amino-py,amino,amino-bot,narvii,api,python,python3,python3.x,Crazy,official
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
