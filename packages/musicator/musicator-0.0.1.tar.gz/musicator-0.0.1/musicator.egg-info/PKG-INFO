@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: musicator
+Version: 0.0.1
+Summary: Music generator
+Home-page: UNKNOWN
+Author: Vadim Simakin
+Author-email: sima.vad@yandex.com
+License: UNKNOWN
+Description: 
+        Generate Music. Usage:
+        ```
+        >>> import musicator
+        >>> composer = musicator.Composer()
+        >>> composer.tone(hz=400, duration=1)
+        >>> composer.tone(hz=500, duration=1)
+        >>> composer.save('output.wav', rate=44100)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

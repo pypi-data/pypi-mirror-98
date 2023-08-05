@@ -1,0 +1,8 @@
+setup.py
+musicator/__init__.py
+musicator/tone.py
+musicator.egg-info/PKG-INFO
+musicator.egg-info/SOURCES.txt
+musicator.egg-info/dependency_links.txt
+musicator.egg-info/requires.txt
+musicator.egg-info/top_level.txt
