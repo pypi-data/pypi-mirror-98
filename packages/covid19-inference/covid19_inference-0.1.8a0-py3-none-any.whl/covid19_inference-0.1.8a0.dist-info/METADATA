@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: covid19-inference
+Version: 0.1.8a0
+Summary: Toolbox for inference and forecast of the spread of the Coronavirus.
+Home-page: https://github.com/Priesemann-Group/covid19_inference
+Author: Jonas Dehning, Johannes Zierenberg, F. Paul Spitzner, Michael Wibral, Joao Pinheiro Neto, Michael Wilczek, Viola Priesemann
+Author-email: jonas.dehning@ds.mpg.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: pymc3
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: theano
+
+# Bayesian inference and forecast of COVID-19, code repository
+
+[![Documentation Status](https://readthedocs.org/projects/covid19-inference/badge/?version=latest)](https://covid19-inference.readthedocs.io/en/latest/doc/gettingstarted.html)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+This is a Bayesian python toolbox for inference and forecast of the spread of the Coronavirus.
+
+- [**Documentation**](https://covid19-inference.readthedocs.io/en/latest/index.html)
+- [**Getting started**](https://covid19-inference.readthedocs.io/en/latest/doc/gettingstarted.html)
+- [**Examples**](https://covid19-inference.readthedocs.io/en/latest/doc/examples.html)
+- [**Contributing**](https://covid19-inference.readthedocs.io/en/latest/doc/contributing.html)
+- [**Source code**](https://github.com/Priesemann-Group/covid19_inference)
+
+
+The latest stable version is [v0.1.8](https://github.com/Priesemann-Group/covid19_inference/tree/v0.1.8)!
+
+
+The research article [is available on arXiv](https://arxiv.org/abs/2004.01105) (**updated on April 13**).
+The code used to produce the figures is available in the other repository [here](https://github.com/Priesemann-Group/covid19_inference_forecast)
+
+
+**We are looking for support** to help us with analyzing other countries and to extend to an hierarchical regional model. We have received additional funding to do so and are recruiting PostDocs, PhD candidates and research assistants:
+
+https://www.ds.mpg.de/3568943/job_full_offer_14729553
+
+https://www.ds.mpg.de/3568926/job_full_offer_14729572
+
+https://www.ds.mpg.de/3568909/job_full_offer_14729591
+
+### Please take notice of our [disclaimer](DISCLAIMER.md).
+
+
+
+
