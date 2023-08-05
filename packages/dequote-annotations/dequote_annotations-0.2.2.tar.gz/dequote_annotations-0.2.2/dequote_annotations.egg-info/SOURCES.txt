@@ -1,0 +1,11 @@
+LICENSE
+README.md
+dequote_annotations.py
+setup.cfg
+setup.py
+dequote_annotations.egg-info/PKG-INFO
+dequote_annotations.egg-info/SOURCES.txt
+dequote_annotations.egg-info/dependency_links.txt
+dequote_annotations.egg-info/entry_points.txt
+dequote_annotations.egg-info/requires.txt
+dequote_annotations.egg-info/top_level.txt
