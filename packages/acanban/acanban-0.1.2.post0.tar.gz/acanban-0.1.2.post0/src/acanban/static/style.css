@@ -1,0 +1,316 @@
+/*
+ * Global stylesheet
+ * Copyright (C) 2020  Đào Dương Hoàng Long
+ * Copyright (C) 2020  Nguyễn Gia Phong
+ *
+ * This file is part of Acanban.
+ *
+ * Acanban is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Acanban is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Acanban.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+:root {
+    --color-bg: #ffffff;
+    --color-fg: #171c24;
+    --color-fg-alt: #2e3436;
+    --color-bg-alt: #eeeeec;
+    --color-primary-dark: #0088ff;
+    --color-primary-medium: #40a6ff;
+    --color-primary-bright: #22d1ee;
+    --color-header-search: #eb4034;
+
+    --color-link: #0645AD;
+    --color-visited: #663366;
+    --color-hover: #3366BB;
+
+    --color-error-bg: #FFD2D2;
+    --color-error-fg: #D8000C;
+    --color-info-bg: #BDE5F8;
+    --color-info-fg: #00529B;
+    --color-success-bg: #DFF2BF;
+    --color-success-fg: #4F8A10;
+    --color-warning-bg: #FEEFB3;
+    --color-warning-fg: #9F6000;
+}
+
+/* body spacing */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+/* common elements */
+h1, h2 {
+    margin: 1rem;
+    text-align: center;
+}
+p {
+    hyphens: auto;
+    text-align: justify;
+}
+
+a { text-decoration: none }
+a:link { color: var(--color-link) }
+a:visited { color: var(--color-visited) }
+a:hover {
+    color: var(--color-hover);
+    cursor: pointer;
+}
+img {
+    width: 100%;
+    display: block;
+}
+
+/* form */
+button, select, textarea,
+input[type=text], input[type=password], input[type=email], input[type=date] {
+    background-color: var(--color-bg);
+    border: 0.1rem solid var(--color-fg);
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    color: var(--color-fg);
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 100%;
+}
+textarea {
+    height: 11rem;
+    overflow-y: scroll;
+    resize: vertical;
+    scrollbar-color: var(--color-bg-alt) transparent;
+}
+select {
+    appearance: none;
+    background: url(/static/dropdown-icon.svg) right center no-repeat;
+}
+input:focus, select:focus, textarea:focus {
+    border-color: var(--color-primary-dark);
+    box-shadow: 0 0 0.5rem var(--color-primary-bright);
+}
+button {
+    background-color: var(--color-primary-dark);
+    color: var(--color-bg);
+    cursor: pointer;
+    display: inline-block;
+    height: 2.5rem;
+    text-align: center;
+}
+button:hover {
+    background-color: var(--color-primary-medium);
+}
+dl {
+  display: flex;
+  flex-wrap: wrap;
+  border: .1rem solid var(--color-fg);
+  border-radius: .3rem;
+  word-wrap: break-word;
+}
+
+dt, dd {
+  margin: 0;
+  width: 50%;
+  border-bottom: .1rem solid var(--color-fg);
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+dt { 
+  border-right: .1rem solid var(--color-fg);
+  font-weight: bold;
+}
+
+dt:last-of-type,
+dd:last-of-type {
+  border-bottom: none;
+}
+
+/* messages */
+.error, .info, .success, .warning {
+    margin: 1rem 0;
+    padding: 0.8rem;
+}
+.error {
+    background-color: var(--color-error-bg);
+    color: var(--color-error-fg);
+}
+.info {
+    background-color: var(--color-info-bg);
+    color: var(--color-info-fg);
+}
+.success {
+    background-color: var(--color-success-bg);
+    color: var(--color-success-fg);
+}
+.warning {
+    background-color: var(--color-warning-bg);
+    color: var(--color-warning-fg);
+}
+
+/* specialized containers */
+.col-narrow, .col-wide {
+    margin: auto;
+    padding: 0 1rem;
+    width: calc(100% - 2rem);
+}
+.col-narrow { max-width: 25rem }
+.col-wide { max-width: 40rem }
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.columns > .col-narrow, .columns > .col-wide { margin: unset }
+
+.block { 
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 0 var(--color-bg-alt);
+}
+.kanban > div { text-align: center }
+.kanban a { color: inherit }
+.replies {
+    border-left: 0.2rem solid var(--color-bg-alt);
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+.reply-label { color: var(--color-link) }
+.reply-label:hover {
+    color: var(--color-hover);
+    cursor: pointer;
+}
+.reply-toggle { display: none }
+.reply-toggle ~ form { display: none }
+.reply-toggle:checked ~ form { display: block }
+
+/* tabs */
+#tabs {
+    border-bottom: 0.2rem solid var(--color-bg-alt);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.tab {
+    display: inline-block;
+    color: var(--color-fg-alt);
+    padding: 0 1rem;
+}
+.tab:hover, #tab-active {
+    background-color: var(--color-bg-alt);
+    color: var(--color-fg);
+}
+@media screen and (max-width: 36rem) {
+    .tab {
+        display: block;
+        text-align: left;
+    }
+}
+
+/* header */
+nav {
+    background-color: var(--color-fg);
+    padding: 0.5rem 1rem;
+}
+#nav-icons {
+    float: left;
+    padding: 0.2rem 0;
+}
+#hambutton, #hamburger { display: none }
+#logo, #nav-entries > a {
+    color: var(--color-bg);
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 1rem;
+}
+#logo::selection, #hambutton::selection, #nav-entries > a::selection {
+    background-color: var(--color-fg);
+}
+#nav-entries > a:hover, #hambutton:hover {
+    color: var(--color-primary-bright);
+}
+#logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+#nav-entries {
+    display: flex;
+    padding: 0 0.5rem;
+}
+.expand { margin-left: auto }
+#search {
+    margin: auto 0.5rem auto;
+    display: flex;
+}
+#search > input {
+    color: var(--color-bg);
+    height: 2.5rem;
+    margin: auto 0 auto 0;
+    padding: 0.5rem;
+}
+#search > input[type=search] {
+    border: 0.1rem solid var(--color-fg-alt);
+    background: var(--color-fg-alt);
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+#search > input[type=submit] {
+    border: 0.1rem solid var(--color-header-search);
+    background: var(--color-header-search);
+    border-radius: 0 0.3rem 0.3rem 0;
+    width: 2.5rem;
+}
+#search > input:focus {
+    border: 0.1rem solid var(--color-header-search);
+    box-shadow: none;
+    outline: none;
+}
+
+/* hamburger menu */
+@media screen and (max-width: 54rem) {
+    nav {
+        padding: 0;
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+    #nav-icons {
+        display: flex;
+        float: none;
+        padding: 0;
+    }
+    #logo, #hambutton {
+        color: var(--color-bg);
+        display: inline-block;
+        padding: 0.5rem 1rem;
+    }
+    #logo { font-size: 1rem }
+    #hambutton {
+        margin-left: auto;
+        font-size: 1.4rem;
+    }
+    #nav-entries { display: none }
+    #hamburger:checked ~ #nav-entries {
+        display: block;
+        padding: 0;
+    }
+    #nav-entries > a {
+        border-top: 0.1rem solid var(--color-fg-alt);
+        padding: 0.5rem 1rem;
+        display: block;
+        width: 100%;
+    }
+    #search { padding: 0 0 1rem 0.5rem }
+    #search > input[type=search] { width: 80% }
+}
