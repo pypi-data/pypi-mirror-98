@@ -1,0 +1,11 @@
+featurewiz/__init__.py,sha256=q1qM4W4QuYk80G_mO73Qxr_ZX6hiZBBKvqzXmJ7ZuIY,2001
+featurewiz/__version__.py,sha256=gZ3u7MIobIKtpKBBk5p-hc-3zYZ647ZFFDev5qxvFgk,381
+featurewiz/databunch.py,sha256=i_kpQA8b068CfcqMo-NlLXNMzwVpZSc1lEarNLJtChg,28316
+featurewiz/encoders.py,sha256=OHioCWR2lT6GbFQ_N07_28HrhZKFj9cnB8VidRYVqFY,4289
+featurewiz/featurewiz.py,sha256=nC_ZkjXYO_4-U883hZtXEeZL06f9trpkdAAoWvjO3Ak,123705
+featurewiz/settings.py,sha256=uY-na-qXTJUloJtzZbf3oceEmUWXJyyOkJOLpp-lhfM,2547
+featurewiz-0.0.23.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+featurewiz-0.0.23.dist-info/METADATA,sha256=kUGtXGyV0_4ih-MPICJpVh88MLB0AZTsOaJ804kie1w,17300
+featurewiz-0.0.23.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+featurewiz-0.0.23.dist-info/top_level.txt,sha256=FcRhE0BUEj9Lo8fEz3eCou16gvHoGmRch57t3s4806c,11
+featurewiz-0.0.23.dist-info/RECORD,,
