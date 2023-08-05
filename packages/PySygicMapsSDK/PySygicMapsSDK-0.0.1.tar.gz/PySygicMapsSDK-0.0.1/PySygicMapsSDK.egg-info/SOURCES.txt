@@ -1,0 +1,7 @@
+README.md
+setup.py
+PySygicMapsSDK.egg-info/PKG-INFO
+PySygicMapsSDK.egg-info/SOURCES.txt
+PySygicMapsSDK.egg-info/dependency_links.txt
+PySygicMapsSDK.egg-info/not-zip-safe
+PySygicMapsSDK.egg-info/top_level.txt
