@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: Sourcewolf
+Version: 1.10
+Summary: Amazingly fast response crawler
+Home-page: https://github.com/micha3lb3n/Sourcewolf
+Author: micha3lb3n
+Author-email: michaelben7781+sourcewolf@gmail.com
+License: MIT
+Download-URL: https://github.com/micha3lb3n/Sourcewolf-package/archive/1.9.tar.gz
+Description: UNKNOWN
+Keywords: crawler,response,bug bounty
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
