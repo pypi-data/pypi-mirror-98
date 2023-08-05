@@ -1,0 +1,6 @@
+
+[dev]
+pytest==6.2.1
+pytest-cov==2.10.1
+codecov==2.1.11
+pylint==2.6.0
