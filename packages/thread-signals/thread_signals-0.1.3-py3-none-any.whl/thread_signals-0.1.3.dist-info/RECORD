@@ -1,0 +1,9 @@
+thread_signals/__init__.py,sha256=7oztsSUP9IG8SAbd7ejpGZW7WJSlQp9GRxWtoFK0EFE,188
+thread_signals/late_start_thread.py,sha256=FmNaGua8wGzxspNKeitilv1O16ElVrDCXfb16K4di3Y,347
+thread_signals/patcher.py,sha256=B71kcHxAJnwDN-Itssy-IM8c-iUakVQqxqAMjOtfqp8,1978
+thread_signals/task.py,sha256=yy0Iml-IifgKO3W8QG77fFaoH02JdD3P2dSJ6waIZZY,3926
+thread_signals/task_broker.py,sha256=6CN_oTPWyvbS84D7Exb6lx7me1C3h8D9PJgl0Ggq67c,3255
+thread_signals-0.1.3.dist-info/METADATA,sha256=bnYNkm3_mhLFAZmQRIqutk4cWm3k7P0L_ewfvw2WYSc,207
+thread_signals-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thread_signals-0.1.3.dist-info/top_level.txt,sha256=-ufq0j10771NcS9Pr39MSKBuDfhtyXSpIdVmuCdCiH4,15
+thread_signals-0.1.3.dist-info/RECORD,,
