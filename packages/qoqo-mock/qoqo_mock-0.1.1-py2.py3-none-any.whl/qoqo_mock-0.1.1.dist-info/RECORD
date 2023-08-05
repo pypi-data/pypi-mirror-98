@@ -1,0 +1,11 @@
+qoqo_mock/__init__.py,sha256=d-W4KKdGiE1rOsUdQRm0QbdlcFRUEzqIm6eOMzDgRoY,1086
+qoqo_mock/__version__.py,sha256=cYbc_DfVPSoC-Iow4aHk0E-ARLXX7Z1Tmv4feAU5B4o,677
+qoqo_mock/backend/__init__.py,sha256=aywB3rtOd1hI1nVeCrvEwyFQELyhYvtab4BNKph5Flg,782
+qoqo_mock/backend/mocked_backend.py,sha256=ZzpcG0RCJbPpA0P22QfZRIXw85ceNbHO2pN19d0xOUY,7847
+qoqo_mock/interface/__init__.py,sha256=amtdt5K9eWQru__Inl0uS7y_CcxKWWBh9PtkMOViurY,776
+qoqo_mock/interface/mocked_interface.py,sha256=OvpV8GtpH7wRLSwuoTDMftoKxvKOQPN5thxeg0lxgio,6750
+qoqo_mock-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+qoqo_mock-0.1.1.dist-info/METADATA,sha256=qPNa6N24Bx9hjYwgJicnsXZ0ErEfR9WQOEoFlZauLwE,1264
+qoqo_mock-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+qoqo_mock-0.1.1.dist-info/top_level.txt,sha256=obDhLaOZRRby53myIRLyGGqCuiQqXbyPybV90Ljw_h4,10
+qoqo_mock-0.1.1.dist-info/RECORD,,
