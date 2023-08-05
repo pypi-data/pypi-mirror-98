@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "esModuleInterop":true,
+    "lib": ["es2015", "dom"],
+    "module": "amd",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noUnusedLocals": false,
+    "outDir": "buildjs",
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "es2015",
+    "types": ["node", "jest"],
+    "jsx" : "react",
+    "extendedDiagnostics": false,
+    "diagnostics" : true
+  },
+  "include": ["src/*", "src/cosapp_app/*"],
+  "exclude": ["node_modules"]
+}

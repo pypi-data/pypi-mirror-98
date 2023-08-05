@@ -1,0 +1,15 @@
+cosapp>=0.11
+ipywidgets>=7.6.3
+jinja2
+cookiecutter
+click
+requests
+jupyter-client>=6.1
+jupyter-server>=1.2
+tornado>=6.1.0
+markdown
+
+[tests]
+ipykernel
+nbconvert
+pytest
