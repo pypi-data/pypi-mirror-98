@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sqlmlutils
+Version: 1.1.0
+Summary: A client side package for working with SQL Server
+Home-page: https://github.com/Microsoft/sqlmlutils/Python
+Author: Microsoft
+Author-email: joz@microsoft.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Requires-Dist: pip
+Requires-Dist: pyodbc
+Requires-Dist: dill
+Requires-Dist: pkginfo
+Requires-Dist: requirements-parser
+Requires-Dist: pandas
+Requires-Dist: wheel (<0.35.0)
+
+A client side package for working with SQL Server Machine Learning Python Services. sqlmlutils enables easy package installation and remote code execution on your SQL Server machine.
+
+
