@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pythonate
+Version: 0.0.2
+Summary: General purpose helper functions and classes for Python3 projects
+Home-page: https://github.com/nwithan8/pythonate
+Author: Nate Harris
+Author-email: n8gr8gbln@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/nwithan8/pythonate/archive/0.0.2.tar.gz
+Description: # pythonate
+        Various Helper Python functions and classes for reuse
+        
+        Download from PyPi: https://pypi.org/project/pythonate/
+        
+Keywords: Python,Python3,requests,SQL,Dropbox,helper,Google Analytics,sorting,unit conversion,imperial,metric,storage,temperature,enum,random,uuid
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
