@@ -1,0 +1,10 @@
+HOST_NAME = "https://sb-api.logicplum.com/"
+
+PROJECT_CREATE = "api/v2/external/project"
+MODEL_TRAIN = "api/v2/external/data/training"
+MODEL_TRAIN_STATUS = "api/v2/external/data/training"
+MODEL_LIST = "api/v2/external/model/list"
+DEPLOY = "api/v2/external/deployment"
+DEPLOY_LIST = "api/v2/external/deployment/list"
+MODEL_SCORE = "api/v2/external/data/scoring"
+MODEL_BLUEPRINT = "api/v2/external/blueprint"
