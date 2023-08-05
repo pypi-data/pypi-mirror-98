@@ -1,0 +1,99 @@
+parameters:
+  datalakebundle:
+    notebook:
+      moduleTemplate: '%bricksflow.rootModule.name%.{dbIdentifier}.{tableIdentifier}.{tableIdentifier}'
+      display:
+        enabled: True
+      duplicateColumnsCheck:
+        enabled: True
+    table:
+      nameTemplate: '%kernel.environment%_{identifier}'
+      schema:
+        loaderTemplate: '{notebookParentModule}.schema:getSchema'
+      defaults:
+        notebookModule:
+          resolverClass: 'datalakebundle.notebook.NotebookModuleResolver'
+          resolverArguments:
+            - '%datalakebundle.notebook.moduleTemplate%'
+        schemaLoader:
+          resolverClass: 'datalakebundle.table.schema.SchemaLoaderResolver'
+          resolverArguments:
+            - '%datalakebundle.table.schema.loaderTemplate%'
+    tables:
+
+services:
+  datalakebundle.hdfs.HdfsExists:
+
+  datalakebundle.logger: "@databricksbundle.logger"
+
+  datalakebundle.notebook.decorator.DuplicateColumnsChecker:
+    arguments:
+      - '@datalakebundle.logger'
+
+  datalakebundle.table.config.TableConfigParser:
+    arguments:
+      - '%datalakebundle.table.nameTemplate%'
+
+  datalakebundle.table.config.TableConfigManager:
+    arguments:
+      - '%datalakebundle.tables%'
+      - '%datalakebundle.table.defaults%'
+
+  datalakebundle.table.create.TableCreator:
+
+  datalakebundle.table.create.TableCreatorCommand:
+    arguments:
+      - '@datalakebundle.logger'
+    tags:
+      - 'console.command'
+
+  datalakebundle.table.create.TableRecreator:
+    arguments:
+      - '@datalakebundle.logger'
+
+  datalakebundle.table.create.TableRecreatorCommand:
+    arguments:
+      - '@datalakebundle.logger'
+    tags:
+      - 'console.command'
+
+  datalakebundle.table.create.MissingTablesCreatorCommand:
+    arguments:
+      - '@datalakebundle.logger'
+    tags:
+      - 'console.command'
+
+  datalakebundle.table.delete.TableDeleter:
+    arguments:
+      - '@datalakebundle.logger'
+
+  datalakebundle.table.delete.TableDeleterCommand:
+    arguments:
+      - '@datalakebundle.logger'
+    tags:
+      - 'console.command'
+
+  datalakebundle.table.optimize.TableOptimizerCommand:
+    arguments:
+      - '@datalakebundle.logger'
+    tags:
+      - 'console.command'
+
+  datalakebundle.table.optimize.TablesOptimizerCommand:
+    arguments:
+      - '@datalakebundle.logger'
+    tags:
+      - 'console.command'
+
+  datalakebundle.table.TableExistenceChecker:
+
+  datalakebundle.table.TableManager:
+    arguments:
+      - '%datalakebundle.table.nameTemplate%'
+      - '@datalakebundle.logger'
+
+  datalakebundle.table.TableWriter:
+    arguments:
+      - '@datalakebundle.logger'
+
+  datalakebundle.table.identifier.IdentifierParser:
