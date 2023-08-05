@@ -1,0 +1,141 @@
+.. module:: eletter
+
+===================================
+eletter — Simple e-mail composition
+===================================
+
+`GitHub <https://github.com/jwodder/eletter>`_
+| `PyPI <https://pypi.org/project/eletter/>`_
+| `Documentation <https://eletter.readthedocs.io>`_
+| `Issues <https://github.com/jwodder/eletter/issues>`_
+| :doc:`Changelog <changelog>`
+
+.. toctree::
+    :hidden:
+
+    tutorial
+    api
+    changelog
+
+``eletter`` provides a basic function for constructing an
+`email.message.EmailMessage` instance without having to touch the needlessly
+complicated `~email.message.EmailMessage` class itself.  E-mails with text
+bodies and/or HTML bodies plus attachments are supported.  Classes are also
+provided for composing more complex multipart e-mails.
+
+
+Installation
+============
+``eletter`` requires Python 3.6 or higher.  Just use `pip
+<https://pip.pypa.io>`_ for Python 3 (You have pip, right?) to install
+``eletter`` and its dependencies::
+
+    python3 -m pip install eletter
+
+
+Examples
+========
+
+Constructing an e-mail with the `compose()` function:
+
+.. code:: python
+
+    import eletter
+
+    TEXT = (
+        "Oh my beloved!\n"
+        "\n"
+        "Wilt thou dine with me on the morrow?\n"
+        "\n"
+        "We're having hot pockets.\n"
+        "\n"
+        "Love, Me\n"
+    )
+
+    HTML = (
+        "<p>Oh my beloved!</p>\n"
+        "<p>Wilt thou dine with me on the morrow?</p>\n"
+        "<p>We're having <strong>hot pockets</strong>.<p>\n"
+        "<p><em>Love</em>, Me</p>\n"
+    )
+
+    with open("hot-pocket.png", "rb") as fp:
+        picture = eletter.BytesAttachment(
+            content=fp.read(),
+            filename="enticement.png",
+            content_type="image/png",
+        )
+
+    msg = eletter.compose(
+        subject="Meet Me",
+        from_="me@here.qq",
+        to=[eletter.Address("My Dear", "my.beloved@love.love")],
+        text=TEXT,
+        html=HTML,
+        attachments=[picture],
+    )
+
+``msg`` can then be sent like any other ``EmailMessage``, say, by using
+outgoing_.
+
+.. _outgoing: https://github/jwodder/outgoing
+
+For more complex e-mails, a set of classes is provided.  Here is the equivalent
+of the HTML-with-image e-mail with alternative plain text version from the
+``email`` `examples page`__ in the Python docs:
+
+__ https://docs.python.org/3/library/email.examples.html
+
+.. code:: python
+
+    from email.utils import make_msgid
+    import eletter
+
+    text = eletter.TextBody(
+        "Salut!\n"
+        "\n"
+        "Cela ressemble à un excellent recipie[1] déjeuner.\n"
+        "\n"
+        "[1] http://www.yummly.com/recipe/Roasted-Asparagus-Epicurious-203718\n"
+        "\n"
+        "--Pepé\n"
+    )
+
+    asparagus_cid = make_msgid()
+
+    html = eletter.HTMLBody(
+        "<html>\n"
+        "  <head></head>\n"
+        "  <body>\n"
+        "    <p>Salut!</p>\n"
+        "    <p>Cela ressemble à un excellent\n"
+        '        <a href="http://www.yummly.com/recipe/Roasted-Asparagus-'
+        'Epicurious-203718">\n'
+        "            recipie\n"
+        "        </a> déjeuner.\n"
+        "    </p>\n"
+        f'    <img src="cid:{asparagus_cid[1:-1]}" />\n'
+        "  </body>\n"
+        "</html>\n"
+    )
+
+    image = eletter.BytesAttachment.from_file(
+        "roasted-asparagus.jpg",
+        inline=True,
+        content_id=asparagus_cid,
+    )
+
+    msg = (text | (html ^ image)).compose(
+        subject="Ayons asperges pour le déjeuner",
+        from_=eletter.Address("Pepé Le Pew", "pepe@example.com"),
+        to=[
+            eletter.Address("Penelope Pussycat", "penelope@example.com"),
+            eletter.Address("Fabrette Pussycat", "fabrette@example.com"),
+        ],
+    )
+
+
+Indices and tables
+==================
+* :ref:`genindex`
+* :ref:`search`
