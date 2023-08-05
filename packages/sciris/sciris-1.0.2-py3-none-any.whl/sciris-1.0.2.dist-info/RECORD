@@ -1,0 +1,15 @@
+sciris/__init__.py,sha256=zePFp0e-UHJ-np37l6ZXfBHM-loddMRCgw-8h757NnI,492
+sciris/sc_asd.py,sha256=FNuHlShTx9tc2eigfB0xUl1N3CSR6DKqBz7oAf_iGtI,13102
+sciris/sc_dataframe.py,sha256=hq1J8REVv2Cr36a5l31XDkHx8_rJYLhsc3lCRsm8VmA,28359
+sciris/sc_fileio.py,sha256=E_vWNARDP3u7oI4TsLx1ghQBnZpAcqFLr00enCIhpx4,56967
+sciris/sc_math.py,sha256=2RPrBT9RHrgr39Bs27vdRBhuxs-7UmrKNHDX9tJqVdM,24336
+sciris/sc_odict.py,sha256=Z1EDCVYFY0s0okxEWO0Rccm6nGC8C5ol3bnTa7DR8is,41039
+sciris/sc_parallel.py,sha256=FAU4YcLh8L9fJTMUlFbdkU3j3gphK3FZ83Tb5uhn4I8,18627
+sciris/sc_plotting.py,sha256=ZgGE2orMTcxaGhnuvDjMdWMfZPB1HR3VUH0fpxKOYEk,68721
+sciris/sc_utils.py,sha256=-FM5hkQ5b2g4WZVyPFjcv7pUecFzUQM0E_QZnatSVaM,110679
+sciris/sc_version.py,sha256=y3UO109i2kYvfEBLHpltrX9uNTmmkEvkV7_SonSM85Y,249
+sciris-1.0.2.dist-info/LICENSE,sha256=YhD40k26csj0zLVi3WxlwhCQMJ5SyLy_2j-RhhlTvls,1087
+sciris-1.0.2.dist-info/METADATA,sha256=9o82anjTbnM478ChJA9R4xDXOpudwbXp8N3K0gZ6ezk,19430
+sciris-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sciris-1.0.2.dist-info/top_level.txt,sha256=YkD2Y0ncvyCPaBytvY4Cdm_JtRiuiUAMJzKZVYBlC94,7
+sciris-1.0.2.dist-info/RECORD,,
