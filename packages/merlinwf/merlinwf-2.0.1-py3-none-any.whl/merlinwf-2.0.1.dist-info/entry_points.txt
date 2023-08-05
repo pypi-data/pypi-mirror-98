@@ -1,0 +1,3 @@
+[console_scripts]
+merlinwf = merlinwf.main:main
+
