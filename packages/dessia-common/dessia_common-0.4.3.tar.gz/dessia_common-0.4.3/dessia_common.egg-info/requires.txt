@@ -1,0 +1,7 @@
+typeguard
+networkx
+numpy
+pandas
+mypy_extensions
+scipy
+pyDOE
