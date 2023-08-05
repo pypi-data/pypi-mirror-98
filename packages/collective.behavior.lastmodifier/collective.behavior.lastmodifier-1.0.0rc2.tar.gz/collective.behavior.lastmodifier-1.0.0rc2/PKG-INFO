@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: collective.behavior.lastmodifier
+Version: 1.0.0rc2
+Summary: Adds a behavior that tracks down the last user that modified an object
+Home-page: https://github.com/collective/collective.behavior.lastmodifier
+Author: ale-rt
+Author-email: pisa@syslab.com
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        .. image:: https://github.com/collective/collective.behavior.lastmodifier/actions/workflows/tests.yml/badge.svg
+            :target: https://github.com/collective/collective.behavior.lastmodifier/actions/workflows/tests.yml
+        
+        ================================
+        collective.behavior.lastmodifier
+        ================================
+        
+        Adds a behavior that tracks down the last user that modified an object.
+        
+        The ``plone.last_modifier`` behavior that can be added to any dexterity content.
+        
+        Objects with that behavior will update the ``last_modifier`` attribute of the object
+        with the currently authenticated user id:
+        
+        - when an object is created
+        - every time an ``ObjectModifiedEvent`` is fired.
+        
+        There is a ``tracking_disabled`` context manager that can be used to disable tracking.
+        This might come handy, for example during migrations::
+        
+            from collective.behavior.lastmodifier.behavior import tracking_disabled
+        
+            with tracking_disabled():
+                ...
+        
+        Installation
+        ------------
+        
+        Install collective.behavior.lastmodifier by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                collective.behavior.lastmodifier
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/collective/collective.behavior.lastmodifier/issues
+        - Source Code: https://github.com/collective/collective.behavior.lastmodifier
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - ale-rt
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0.0rc2 (2021-03-11)
+        ---------------------
+        
+        - Added a ``tracking_disabled`` context manager to disable tracking the last modifier
+          [ale-rt]
+        
+        1.0.0rc1 (2021-02-18)
+        ---------------------
+        
+        - Initial release.
+          [ale-rt]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: Addon
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Requires-Python: >=3.6
+Provides-Extra: test
