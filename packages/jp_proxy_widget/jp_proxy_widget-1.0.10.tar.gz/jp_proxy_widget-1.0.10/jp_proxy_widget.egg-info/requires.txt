@@ -1,0 +1,4 @@
+ipywidgets>=7.0.0
+requests
+numpy
+jupyter-ui-poll
