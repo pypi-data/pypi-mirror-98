@@ -1,0 +1,9 @@
+README.md
+setup.py
+transformer_in_transformer_flax/__init__.py
+transformer_in_transformer_flax/tnt.py
+transformer_in_transformer_flax.egg-info/PKG-INFO
+transformer_in_transformer_flax.egg-info/SOURCES.txt
+transformer_in_transformer_flax.egg-info/dependency_links.txt
+transformer_in_transformer_flax.egg-info/requires.txt
+transformer_in_transformer_flax.egg-info/top_level.txt
