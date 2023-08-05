@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: disapi
+Version: 0.0.2
+Summary: Basic Discord API module, built with Python. For docs see github (https://github.com/filipporomani/disapi).
+Home-page: https://github.com/filipporomani/disapi
+Author: Filippo Romani
+Author-email: filipporomanionline@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/filipporomani/disapi/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
