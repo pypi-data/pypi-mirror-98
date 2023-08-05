@@ -1,0 +1,16 @@
+appsync_router/__init__.py,sha256=aOkbaR2mrhtaIXpNEcx7z9iLpzQIxPZQIAaZQzSwAtY,47
+appsync_router/exceptions.py,sha256=a7946JSHbx3z4AxZiapUwSS0yXOtsKjGlYSiBl3n5f8,840
+appsync_router/resolver.py,sha256=PN2CK9TW1TrFUL1RXenD-_z1oYQySKB5dGJsQmsDEhQ,205
+appsync_router/router.py,sha256=6rg9AWA6LUnlC347U0FUXcydux9Gu38Tv6lfkAm4tHA,14912
+appsync_router/types.py,sha256=yZ3S0KemJnnXn4Iy-pE5W93ngXM7Fi7y_DLtN-MhhHg,4666
+appsync_router/scripts/appsync-router,sha256=L1W-_4QwCcU0STI_Rzy_CQXWrGWQV5n6Zp-qz_JRlYU,2440
+appsync_router/templates/resolver_template.py,sha256=0RokxnkQ6jIdfek6rW13dVk0Tym8Gh-J4FFTG7cQeUA,111
+appsync_router/templates/resolver/__init__.py,sha256=kBarsKIZW1Xm7Rmc_rXPA6QCoGloOotisadTyiy5Sko,262
+appsync_router/templates/resolver/example.json,sha256=eJ-xkfNgBXtfr8HolegkOFoVO68apYRz2n7IhyvYzX4,88
+appsync_router/templates/resolver/example.py,sha256=A78lSLZMlPDGlkQ99fdcQ08PgczXhIVx0BRiJZv9uU8,158
+appsync_router-0.0.2.data/scripts/appsync-router,sha256=obAEWYoFl5L-6qBco1zwSFymiq6pH0ZQ5vpYObyBvNM,2424
+appsync_router-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+appsync_router-0.0.2.dist-info/METADATA,sha256=fTNFz_7GA0XHmVYRDWv8DhzaHJZnFcH8BVpWRuoPEcw,7873
+appsync_router-0.0.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+appsync_router-0.0.2.dist-info/top_level.txt,sha256=iIVGAPrcDwSoYZFUFqTj7Xj873kYC4LzwqOWuro95LE,15
+appsync_router-0.0.2.dist-info/RECORD,,

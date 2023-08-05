@@ -1,0 +1,99 @@
+#!python
+import argh
+from json import load, loads, dumps
+from os import path, getcwd, listdir
+from sys import path as syspath
+from shutil import copytree, copy, move
+import appsync_router
+
+
+mod_path = path.abspath(appsync_router.__file__)
+mod_dir = path.dirname(mod_path)
+APP_DIR = f"{mod_dir}/templates/resolver"
+
+
+def make_app(app_dir="."):
+    dest = f"{app_dir}/resolvers"
+
+    if path.exists(dest):
+        print(f"Path {dest} already exists")
+        exit()
+
+    copytree(APP_DIR, dest)
+
+    try:
+        move(f"{dest}/example.json", f"{dest}/..")
+    except Exception:
+        print("example.json already exists. Skipping....")
+
+    print("""
+        App created. You can test your app by running:
+            appsync-router execute-resolver --event-file example.json --pprint
+        Or add a new resolver with:
+            appsync-router add-resolver --name <new name>
+    """)
+
+
+def add_resolver(name=None):
+    if "resolvers" not in listdir("."):
+        print("Not in a directory that contains an app")
+        exit()
+
+    if name is None:
+        raise argh.exceptions.CommandError("Missing argument '--name'")
+
+    if name.endswith(".py"):
+        name = name.replace(".py", "").replace("-", "_")
+
+    file_path = f"resolvers/{name}.py"
+
+    if path.isfile(file_path):
+        print("Resolver {name} already exists.")
+        exit()
+
+    copy(f"{APP_DIR}/../resolver_template.py", file_path)
+
+
+def execute_resolver(event=None, event_file=None, pprint=False):
+    if not path.isdir("resolvers"):
+        print("Not in an app directory")
+        exit()
+
+    syspath.append(getcwd())
+    from resolvers import router
+
+    if (event and event_file) or (event is None and event_file is None):
+        raise argh.exceptions.CommandError("Specify one of '--event' or '--event-file'")
+
+    if event:
+        event = loads(event)
+    else:
+        with open(event_file, "r") as f:
+            event = load(f)
+
+    res = router.resolve(event)
+
+    results = []
+    for item in res.results:
+        route = item.route.to_dict
+        route["callable"] = route["callable"].__name__
+        value = item.value
+        results.append({
+            "route": route,
+            "value": value
+        })
+
+    if pprint:
+        print(dumps(results, indent=4))
+    else:
+        print(dumps(results))
+
+
+parser = argh.ArghParser()
+parser.add_commands([
+    make_app,
+    add_resolver,
+    execute_resolver
+])
+
+parser.dispatch()
