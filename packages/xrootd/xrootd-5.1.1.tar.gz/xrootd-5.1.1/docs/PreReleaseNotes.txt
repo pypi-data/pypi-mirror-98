@@ -1,0 +1,16 @@
+======
+XRootD
+======
+
+Prerelease Notes
+================
+
++ **New Features**
+
++ **Major bug fixes**
+
++ **Major bug fixes**
+
++ **Minor bug fixes**
+
++ **Miscellaneous**
