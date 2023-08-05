@@ -1,0 +1,7 @@
+darglint
+mypy
+pytest
+pytest-asyncio
+pytest-cases
+pytest-pycharm
+tox
