@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: naipyext
+Version: 0.7.0
+Summary: Nasy IPython Extensions.
+License: UNKNOWN
+Author-email: Nasy <nasyxx+python@gmail.com>
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: be
+Provides-Extra: ns
+Provides-Extra: other
+Project-URL: homepage, https://github.com/nasyxx/naipyext
