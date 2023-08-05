@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+pySpam/__init__.py
+pySpam.egg-info/PKG-INFO
+pySpam.egg-info/SOURCES.txt
+pySpam.egg-info/dependency_links.txt
+pySpam.egg-info/requires.txt
+pySpam.egg-info/top_level.txt
