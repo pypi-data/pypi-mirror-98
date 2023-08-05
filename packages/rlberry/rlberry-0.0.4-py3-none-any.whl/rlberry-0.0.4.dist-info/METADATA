@@ -1,0 +1,178 @@
+Metadata-Version: 2.1
+Name: rlberry
+Version: 0.0.4
+Summary: An easy-to-use reinforcement learning library for research and education
+Home-page: https://github.com/rlberry-py
+Author: Omar Darwiche Domingues, Yannis Flet-Berliac, Edouard Leurent, Pierre Menard, Xuedong Shang
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.17)
+Requires-Dist: pygame
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: pandas
+Requires-Dist: gym
+Requires-Dist: dill
+Requires-Dist: docopt
+Provides-Extra: deploy
+Requires-Dist: sphinx ; extra == 'deploy'
+Requires-Dist: sphinx-rtd-theme ; extra == 'deploy'
+Provides-Extra: full
+Requires-Dist: numba ; extra == 'full'
+Requires-Dist: torch (>=1.6.0) ; extra == 'full'
+Requires-Dist: tensorboard ; extra == 'full'
+Requires-Dist: optuna ; extra == 'full'
+Requires-Dist: ffmpeg-python ; extra == 'full'
+Requires-Dist: PyOpenGL ; extra == 'full'
+Requires-Dist: PyOpenGL-accelerate ; extra == 'full'
+Requires-Dist: pyvirtualdisplay ; extra == 'full'
+Provides-Extra: hyperparam_optimization
+Requires-Dist: optuna ; extra == 'hyperparam_optimization'
+Provides-Extra: opengl_rendering
+Requires-Dist: PyOpenGL ; extra == 'opengl_rendering'
+Requires-Dist: PyOpenGL-accelerate ; extra == 'opengl_rendering'
+Provides-Extra: save_video
+Requires-Dist: ffmpeg-python ; extra == 'save_video'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: numpy (>=1.17) ; extra == 'test'
+Requires-Dist: numba ; extra == 'test'
+Requires-Dist: joblib ; extra == 'test'
+Requires-Dist: matplotlib ; extra == 'test'
+Requires-Dist: pandas ; extra == 'test'
+Requires-Dist: seaborn ; extra == 'test'
+Requires-Dist: optuna ; extra == 'test'
+Requires-Dist: pyvirtualdisplay ; extra == 'test'
+Requires-Dist: gym ; extra == 'test'
+Provides-Extra: torch_agents
+Requires-Dist: torch (>=1.6.0) ; extra == 'torch_agents'
+Requires-Dist: tensorboard ; extra == 'torch_agents'
+
+<!-- Logo -->
+<p align="center">
+   <img src="https://raw.githubusercontent.com/rlberry-py/rlberry/main/assets/logo_wide.svg" width="50%">
+</p>
+
+<!-- Short description -->
+<p align="center">
+   A Reinforcement Learning Library for Research and Education
+</p>
+
+<!-- The badges -->
+<p align="center">
+   <a href="https://github.com/rlberry-py/rlberry/workflows/test/badge.svg">
+      <img alt="pytest" src="https://github.com/rlberry-py/rlberry/workflows/test/badge.svg">
+   </a>
+   <a href='https://rlberry.readthedocs.io/en/latest/?badge=latest'>
+      <img alt="Documentation Status" src="https://readthedocs.org/projects/rlberry/badge/?version=latest">
+   </a>
+   <a href="https://img.shields.io/github/contributors/rlberry-py/rlberry">
+      <img alt="contributors" src="https://img.shields.io/github/contributors/rlberry-py/rlberry">
+   </a>
+   <a href="https://app.codacy.com/gh/rlberry-py/rlberry?utm_source=github.com&utm_medium=referral&utm_content=rlberry-py/rlberry&utm_campaign=Badge_Grade">
+      <img alt="Codacy" src="https://api.codacy.com/project/badge/Grade/27e91674d18a4ac49edf91c339af1502">
+   </a>
+   <a href="https://codecov.io/gh/rlberry-py/rlberry">
+      <img alt="codecov" src="https://codecov.io/gh/rlberry-py/rlberry/branch/main/graph/badge.svg?token=TIFP7RUD75">
+   </a>
+</p>
+
+<p align="center">
+   <a href="https://pypi.org/project/rlberry/">
+      <img alt="PyPI" src="https://img.shields.io/pypi/v/rlberry">
+   </a>
+   <a href="https://img.shields.io/pypi/pyversions/rlberry">
+      <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/rlberry">
+   </a>
+   <a href="https://img.shields.io/pypi/wheel/rlberry">
+      <img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/rlberry">
+   </a>
+   <a href="https://img.shields.io/pypi/status/rlberry">
+      <img alt="PyPI - Status" src="https://img.shields.io/pypi/status/rlberry">
+   </a>
+   <a href="https://img.shields.io/pypi/dm/rlberry">
+      <img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/rlberry">
+   </a>
+</p>
+
+<p align="center">
+   <a href="https://colab.research.google.com/github/rlberry-py/rlberry/blob/main/notebooks/introduction_to_rlberry.ipynb">
+      <b>Try it on Google Colab!</b>
+      <img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
+   </a>
+</p>
+
+<!-- Horizontal rule -->
+<hr>
+
+<!-- Table of content -->
+
+
+
+## What is `rlberry`? 
+
+**Writing reinforcement learning algorithms is fun!** *But after the fun, we have lots of boring things to implement*: run our agents in parallel, average and plot results, optimize hyperparameters, compare to baselines, create tricky environments etc etc!
+
+`rlberry` **is a Python library that makes your life easier** by doing all these things with a few lines of code, so that you can spend most of your time developing agents.
+`rlberry` also provides implementations of several RL agents, benchmark environments and many other useful tools.
+
+Check our [getting started section](#getting-started)!
+
+
+## Getting started
+
+In our [documentation](https://rlberry.readthedocs.io/en/latest/), you will find a **quick tutorial** to the library.
+
+Also, we provide a handful of notebooks on [Google colab](https://colab.research.google.com/) as examples to show you how to use `rlberry`:
+
+| Content | Description | Link |
+|-|-|-|
+| Introduction to `rlberry` | How to create an agent, optimize its hyperparameters and compare to a baseline. | <a href="https://colab.research.google.com/github/rlberry-py/rlberry/blob/main/notebooks/introduction_to_rlberry.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a> |
+| Evaluating and optimizing agents  | Train a REINFORCE agent and optimize its hyperparameters |  <a href="https://colab.research.google.com/github/rlberry-py/rlberry/blob/main/notebooks/rlberry_evaluate_and_optimize_agent.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"></a>
+
+
+
+
+## Citing rlberry
+
+If you use `rlberry` in scientific publications, we would appreciate citations using the following Bibtex entry:
+
+```bibtex
+@misc{rlberry,
+author = {Domingues, Omar Darwiche and Flet-Berliac, Yannis and Leurent, Edouard and M{\'e}nard, Pierre and Shang, Xuedong and Valko, Michal},
+title = {{rlberry - A Reinforcement Learning Library for Research and Education}},
+year = {2021},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/rlberry-py/rlberry}}
+}
+```
+
+## Tests
+
+To run tests, install test dependencies with `pip install -e .[test]` and run `pytest`. 
+
+To check coverage, install test dependencies and run 
+
+```bash 
+$ cd scripts
+$ bash run_testscov.sh
+```
+and coverage report in `cov_html/index.html`.
+
+## Contributing
+
+Want to contribute to `rlberry`? Please check [our contribution guidelines](CONTRIBUTING.md). A list of interesting TODO's will be available soon. **If you want to add any new agents or environments, do not hesitate to [open an issue](https://github.com/rlberry-py/rlberry/issues/new/choose)!**
+
+
