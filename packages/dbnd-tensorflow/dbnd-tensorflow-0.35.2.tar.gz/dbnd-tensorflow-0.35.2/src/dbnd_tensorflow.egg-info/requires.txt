@@ -1,0 +1,5 @@
+dbnd==0.35.2
+tensorflow
+h5py==2.10.0
+
+[tests]
