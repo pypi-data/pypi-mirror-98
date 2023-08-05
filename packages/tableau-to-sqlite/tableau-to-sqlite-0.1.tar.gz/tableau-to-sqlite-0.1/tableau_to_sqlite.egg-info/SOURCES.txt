@@ -1,0 +1,10 @@
+README.md
+setup.py
+tableau_to_sqlite/__init__.py
+tableau_to_sqlite/cli.py
+tableau_to_sqlite.egg-info/PKG-INFO
+tableau_to_sqlite.egg-info/SOURCES.txt
+tableau_to_sqlite.egg-info/dependency_links.txt
+tableau_to_sqlite.egg-info/entry_points.txt
+tableau_to_sqlite.egg-info/requires.txt
+tableau_to_sqlite.egg-info/top_level.txt
