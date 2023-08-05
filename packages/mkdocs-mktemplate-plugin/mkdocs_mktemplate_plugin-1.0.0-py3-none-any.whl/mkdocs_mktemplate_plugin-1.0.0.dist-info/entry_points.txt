@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+mktemplate = mktemplate:MkTemplate
+
