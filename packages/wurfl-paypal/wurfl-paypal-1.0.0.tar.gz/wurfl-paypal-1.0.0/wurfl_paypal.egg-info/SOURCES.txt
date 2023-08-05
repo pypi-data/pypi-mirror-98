@@ -1,0 +1,10 @@
+README.md
+setup.py
+wurfl/__init__.py
+wurfl/user.py
+wurfl_paypal.egg-info/PKG-INFO
+wurfl_paypal.egg-info/SOURCES.txt
+wurfl_paypal.egg-info/dependency_links.txt
+wurfl_paypal.egg-info/entry_points.txt
+wurfl_paypal.egg-info/not-zip-safe
+wurfl_paypal.egg-info/top_level.txt

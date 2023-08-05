@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wurfl-paypal
+Version: 1.0.0
+Summary: Demo Package for GfG Article.
+Home-page: https://github.com/Vibhu-Agarwal/vibhu4gfg
+Author: developer
+Author-email: developer.john@gmail.com
+License: MIT
+Description: Sample Package made for a demo \ 
+        	of its making for the GeeksforGeeks Article.
+Keywords: geeksforgeeks gfg article python package vibhu4agarwal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

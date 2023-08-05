@@ -1,0 +1,3 @@
+[console_scripts]
+gfg = wurfl.user:main
+
