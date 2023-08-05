@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: frog-ssg
+Version: 0.0.5
+Summary: A Python static site generator
+Home-page: UNKNOWN
+Author: Leo Peltola
+Author-email: leopeltola@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: python,static site generator,ssg
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
