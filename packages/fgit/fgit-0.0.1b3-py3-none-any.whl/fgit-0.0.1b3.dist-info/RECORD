@@ -1,0 +1,10 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/main.py,sha256=t36Jbyz_f7SMBxa5ywCUjPaFF9Q7o9_jWGkzp7UKW0A,1676
+fgit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgit/utils/git.py,sha256=ABTzznXOnj5Gx4Ajx_i4cyIgqGeWVzTGmbqJZ0zrpq0,389
+fgit-0.0.1b3.dist-info/METADATA,sha256=5xyvqdKnnTuM7BykbsRYn8CYKyzhgkKCO3zVCJoYAAU,705
+fgit-0.0.1b3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fgit-0.0.1b3.dist-info/entry_points.txt,sha256=NyXgwlmNg9GFJXSPcnGOD7c0M6KKOUhALUORW4VCQFA,40
+fgit-0.0.1b3.dist-info/top_level.txt,sha256=GkONHpSpYhNIZnywu_TUkjiBiNdHVOJ2rpyxUEyHWnQ,9
+fgit-0.0.1b3.dist-info/RECORD,,
