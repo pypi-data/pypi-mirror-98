@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: BenchML
+Version: 0.1.0
+Summary: Chemical ML workbench
+Home-page: https://github.com/capoe/benchml
+License: Apache License 2.0
+Description: Benchmarking and pipelining for chemical machine learning
+Keywords: chemical machine learning pipelining benchmarking
+Platform: UNKNOWN
+Requires-Python: >=3.7
