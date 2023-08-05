@@ -1,0 +1,92 @@
+[
+  {
+    "owner_name": "HW0_PR_Die1_production",
+    "prog_name": "smoke_test_HW0_PR_Die1_production_TheTest",
+    "test": "DBC",
+    "test_order": 0,
+    "definition": {
+      "is_selected": true,
+      "input_parameters": {
+        "Temperature": {
+          "value": "25",
+          "type": "static",
+          "Min": -40.0,
+          "Max": 170.0,
+          "fmt": ".0f",
+          "Unit": "\u00b0C",
+          "10\u1d61": 0,
+          "Default": "25",
+          "content": "25"
+        }
+      },
+      "output_parameters": {
+        "new_parameter1": {
+          "UTL": NaN,
+          "LTL": NaN,
+          "LSL": -Infinity,
+          "USL": Infinity,
+          "Binning": {
+            "bin": "1",
+            "result": 1,
+            "name": "bin_1",
+            "group": "abc",
+            "description": ""
+          },
+          "fmt": ".3f",
+          "Unit": "\u02fd",
+          "10\u1d61": 0,
+          "test_num": 101
+        }
+      },
+      "description": "DBC_1",
+      "name": "DBC",
+      "sbin": "60000",
+      "test_num": 100
+    }
+  },
+  {
+    "owner_name": "HW0_PR_Die1_production",
+    "prog_name": "smoke_test_HW0_PR_Die1_production_TheTest",
+    "test": "DBC",
+    "test_order": 1,
+    "definition": {
+      "is_selected": true,
+      "input_parameters": {
+        "Temperature": {
+          "value": "25",
+          "type": "static",
+          "Min": -40.0,
+          "Max": 170.0,
+          "fmt": ".0f",
+          "Unit": "\u00b0C",
+          "10\u1d61": 0,
+          "Default": "25",
+          "content": "25"
+        }
+      },
+      "output_parameters": {
+        "new_parameter1": {
+          "UTL": NaN,
+          "LTL": NaN,
+          "LSL": -Infinity,
+          "USL": Infinity,
+          "Binning": {
+            "bin": "1",
+            "result": 1,
+            "name": "bin_1",
+            "group": "abc",
+            "description": ""
+          },
+          "fmt": ".3f",
+          "Unit": "\u02fd",
+          "10\u1d61": 0,
+          "test_num": 201
+        }
+      },
+      "description": "DBC_2",
+      "name": "DBC",
+      "sbin": "60001",
+      "test_num": 200
+    }
+  }
+]

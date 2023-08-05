@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+.footer {
+  padding-left: 10px;
+  height: $footerHeight;
+  min-width: 1550px;
+}
+
+#fixedFooter {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: $colorFooter;
+  overflow-x: auto;
+}
