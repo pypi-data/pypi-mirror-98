@@ -1,0 +1,17 @@
+molmag_ac_gui/__init__.py,sha256=m0QAXyqvncqJ4jBpeGq1qjCt-Q5OoumTrzqxoyWvEpc,223
+molmag_ac_gui/__main__.py,sha256=avypXJyXhgTPmLr-6aGXOtNoAUyjvx2iF3y_JRU3Pao,397
+molmag_ac_gui/ac_gui.py,sha256=ABXm_9-p2YBKwtju9d5rBIYtJEA_Rnx9aSgIQ4rcrvM,59094
+molmag_ac_gui/dialogs.py,sha256=Z2FQwZAjpuk55Zw-sSuO_6bZGdLRPTkkeZT0k05nTJ8,20143
+molmag_ac_gui/exceptions.py,sha256=NRRDhdhPSF3rgM83-sVKAVjpVFQzC771uXQkFYEzZLA,878
+molmag_ac_gui/process_ac.py,sha256=G3d2yXcqGxAyTJztTzO78gOYdnsaw3QbkBlEjBbNdKg,15301
+molmag_ac_gui/utility.py,sha256=-16Gh8vFPy7PXEtsWIS1k7RgzHtWOCLzGsBDbC8uijY,1777
+molmag_ac_gui/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+molmag_ac_gui/data/default_colormap.json,sha256=4OjcmDaVwVuCgnmm82R4BscB6z-evVZWe8yGe4A1xyc,255
+molmag_ac_gui/data/diamag_constants.json,sha256=04QAp5u9md8zKSlJCEMt1OxLaorqzX1ObaAJLnn3BA0,53
+molmag_ac_gui/data/read_options.json,sha256=rGBfiT7obprXkU7kDEUPQlqUSaUDTrHPP1VG3rfeURU,312
+molmag_ac_gui/data/tooltips.json,sha256=zs5-D9vmFNXPFEKS0kf4aQ9HCfEUVaBodL63RYPI_Qs,598
+molmag_ac_gui-0.2.4.dist-info/LICENSE,sha256=QHb1lhGArw7K6bek_mpFEdvvjElz_qRKllv7VWGcSV0,1065
+molmag_ac_gui-0.2.4.dist-info/METADATA,sha256=t7_gB6GdNk9S6QGjtvfWg0w3yE2DfXYXzedmQ23_oIU,2717
+molmag_ac_gui-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+molmag_ac_gui-0.2.4.dist-info/top_level.txt,sha256=IkKbnIyaR_82tT1-4j6mXzzIkjhdPgXSJfQltyAqWSs,14
+molmag_ac_gui-0.2.4.dist-info/RECORD,,
