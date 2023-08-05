@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: c302
+Version: 0.7.8
+Summary: c302 is a framework for generating models of the worm C. elegans
+Home-page: http://github.com/openworm/c302
+Author: Padraig Gleeson and OpenWorm contributors
+Author-email: p.gleeson@gmail.com
+License: MIT
+Download-URL: https://github.com/openworm/c302/archive/master.zip
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Requires-Dist: xlrd
+Requires-Dist: xlwt
+Requires-Dist: libNeuroML (>=0.2.39)
+Requires-Dist: pyNeuroML (>=0.3.11)
+Requires-Dist: owmeta-core (>=0.13.0)
+Requires-Dist: owmeta
+
+
+c302 is a framework for generating network models in NeuroML 2 based on C elegans connectivity data. Part of the OpenWorm project
+
+
