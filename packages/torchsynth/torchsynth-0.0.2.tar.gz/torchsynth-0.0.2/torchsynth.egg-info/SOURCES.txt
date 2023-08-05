@@ -1,0 +1,17 @@
+README.md
+setup.py
+torchsynth/__init__.py
+torchsynth/default.py
+torchsynth/deprecated.py
+torchsynth/filter.py
+torchsynth/globals.py
+torchsynth/module.py
+torchsynth/parameter.py
+torchsynth/signal.py
+torchsynth/synth.py
+torchsynth/util.py
+torchsynth.egg-info/PKG-INFO
+torchsynth.egg-info/SOURCES.txt
+torchsynth.egg-info/dependency_links.txt
+torchsynth.egg-info/requires.txt
+torchsynth.egg-info/top_level.txt
