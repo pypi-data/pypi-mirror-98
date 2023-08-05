@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: beancount_balexpr
+Version: 0.1.0
+Summary: Check balances against simple expressions combining multiple accounts in beancount
+Home-page: https://github.com/w1ndy/beancount_balexpr
+Author: Di Weng
+Author-email: mystery.wd@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: beancount
+Platform: UNKNOWN
