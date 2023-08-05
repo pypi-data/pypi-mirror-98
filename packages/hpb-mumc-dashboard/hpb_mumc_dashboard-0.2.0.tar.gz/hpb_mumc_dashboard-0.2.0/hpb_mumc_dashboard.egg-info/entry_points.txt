@@ -1,0 +1,3 @@
+[console_scripts]
+hmd.etl = hpb_mumc_dashboard.etl.script_runner:main
+
