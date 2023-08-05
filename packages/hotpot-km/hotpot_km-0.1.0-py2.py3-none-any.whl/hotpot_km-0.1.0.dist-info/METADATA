@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hotpot_km
+Version: 0.1.0
+Summary: Hotpot - Jupyter kernel manager helpers
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Vidar Tonaas Fauske
+Author-email: vidartf@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: async_generator
+Requires-Dist: jupyter_client
+Requires-Dist: nbclient
+Requires-Dist: nbformat
+Requires-Dist: traitlets
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: jupyter_server ; extra == "test"
+Requires-Dist: jupyter_client[test] ; extra == "test"
+Provides-Extra: test
+
+# hotpot_km
+ A library for a pooling hotloaded Jupyter kernels 
+
