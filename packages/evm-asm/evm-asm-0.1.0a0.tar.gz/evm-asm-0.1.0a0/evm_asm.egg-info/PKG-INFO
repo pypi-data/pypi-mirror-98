@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: evm-asm
+Version: 0.1.0a0
+Summary: UNKNOWN
+Home-page: https://github.com/ApeWorX/evm-asm
+Author: Shade Undertree
+Author-email: shadeundertree@gmail.com
+License: Apache-2.0
+Description: # EVM Assembly Utilities
+        
+        Utility classes and functions for working with EVM (Ethereum Virual Machine) forks and their opcodes.
+        
+        ## Installation
+        
+        ```bash
+        pip install evm-asm
+        ```
+        
+        ## Contributiing
+        
+        ```bash
+        $ pip install -e .[dev]
+        ```
+        
+        ```bash
+        $ pytest
+        ```
+Keywords: ethereum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: lint
+Provides-Extra: doc
+Provides-Extra: ethervm
+Provides-Extra: release
+Provides-Extra: dev
