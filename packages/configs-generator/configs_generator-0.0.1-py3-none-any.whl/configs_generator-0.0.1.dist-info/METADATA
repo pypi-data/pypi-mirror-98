@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: configs-generator
+Version: 0.0.1
+Summary: Configuration generation from Excel Facts File
+Home-page: https://github.com/aliasgar1978/configs_generator
+Author: ALIASGAR - ALI
+Author-email: aholo2000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+Configuration Generation Tool
+
+==========================
+Mandatory Required modules
+==========================
+pandas, nettoolkit
+
+
+
+update below variable in confGen.py if column names are different in database (excel)
+VAR_DB_FIND_COLUMN = 'FIND'
+VAR_DB_REPL_COLUMN = 'REPLACE'
+
+update below variable in confGen.py if section identifiers are different in template
+SECTION_STARTER = ("GOAHEAD FOR", "REPEAT EACH")
+SECTION_STOPPER = ("GOAHEAD END", "REPEAT STOP")
+
+
+
