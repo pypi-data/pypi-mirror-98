@@ -1,0 +1,13 @@
+AUTHORS.md,sha256=ZsqHu1Sf2djEhUFmO1iyAUgRKaDbSNuNws8OBkEZVIg,1105
+LICENSE.md,sha256=BXcjBFYzsNFyYzwRZWDmm3vOpMiEFuWB-QDoTp3OlXs,1604
+sqlalchemy_paradox/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+sqlalchemy_paradox/__init__.py,sha256=OFbxe3BGbSAjqi1bcBEtHlJRn1T2ZkUZCaPdyEOGPi8,881
+sqlalchemy_paradox/base.py,sha256=oNn-5W8AMFMMUSe5NRbhj8wU8o5P2GKvISg2orch-Vo,68406
+sqlalchemy_paradox/provision.py,sha256=m49CLtrphj_3m4asrLnj7MXwQ9tgtN4GhHoIrC3jFl0,3256
+sqlalchemy_paradox/pyodbc.py,sha256=l243P1WWrhbPpzYBgTscenrjL-AM_Hb3piMNhN1Lfo4,11864
+sqlalchemy_paradox/requirements.py,sha256=LAJJad_xHWYJG3ksyAMBau4wepLbohh8ouiUEwxz2oI,33641
+sqlalchemy_paradox-0.2.0.dist-info/entry_points.txt,sha256=PkCOpHH-wD3ZFAvXxvNYmnAbos0o6_jZPCNNKl9pC48,142
+sqlalchemy_paradox-0.2.0.dist-info/LICENSE.md,sha256=BXcjBFYzsNFyYzwRZWDmm3vOpMiEFuWB-QDoTp3OlXs,1604
+sqlalchemy_paradox-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sqlalchemy_paradox-0.2.0.dist-info/METADATA,sha256=H_Z1DfsLvBW59R2PHT_hrHl67h50hRPhj4owdTrTTfg,4827
+sqlalchemy_paradox-0.2.0.dist-info/RECORD,,
