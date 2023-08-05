@@ -1,0 +1,10 @@
+chess_heatmap_qxf2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chess_heatmap_qxf2/chess_control_heatmap.py,sha256=xAIjfgRlRsuQFB7DWviAq0uV0GqhLQvRyaydx_MIakU,621
+chess_heatmap_qxf2/chess_dask_cluster.py,sha256=FkJlqfJiwOXA_FNwrNums6sO5PEA4zJVknE_duumWVU,7623
+chess_heatmap_qxf2/chess_image_generator.py,sha256=6NDM0tMeKCRagGlXqknmaCz6t61JAtM1J8uTzZEmmBY,2338
+chess_heatmap_qxf2/chess_util.py,sha256=TGQGdCv31SIrGmZf6I4ko4CCs8MfhdgZGSUFL0rxqew,3482
+chess_heatmap_qxf2-0.0.0.19.dist-info/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+chess_heatmap_qxf2-0.0.0.19.dist-info/METADATA,sha256=1lnanyI7j7Rxz-GAh45DazEUTZvEjSEXte3BwKlzJs0,841
+chess_heatmap_qxf2-0.0.0.19.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+chess_heatmap_qxf2-0.0.0.19.dist-info/top_level.txt,sha256=7cFVfEob_YDdNJUF1I20wygL1BoXRzlauSitsYKAiPw,19
+chess_heatmap_qxf2-0.0.0.19.dist-info/RECORD,,
