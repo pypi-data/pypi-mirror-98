@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        tableau-to-sqlite=tableau_to_sqlite.cli:cli
+    
