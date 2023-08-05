@@ -1,0 +1,8 @@
+README.md
+setup.py
+orbis_plugin_aggregation_weblyzard_harvest/__init__.py
+orbis_plugin_aggregation_weblyzard_harvest/main.py
+orbis_plugin_aggregation_weblyzard_harvest.egg-info/PKG-INFO
+orbis_plugin_aggregation_weblyzard_harvest.egg-info/SOURCES.txt
+orbis_plugin_aggregation_weblyzard_harvest.egg-info/dependency_links.txt
+orbis_plugin_aggregation_weblyzard_harvest.egg-info/top_level.txt
