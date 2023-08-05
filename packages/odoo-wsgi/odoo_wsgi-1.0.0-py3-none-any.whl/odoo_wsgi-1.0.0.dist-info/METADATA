@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: odoo-wsgi
+Version: 1.0.0
+Summary: IPython Kernel for Odoo web
+Home-page: UNKNOWN
+Author: camera
+Author-email: 941642558@qq.com
+License: BSD
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: eventlet
+Requires-Dist: gevent
+Requires-Dist: gevent-websocket
+Requires-Dist: greenlet
+Requires-Dist: ipython (>=7.21.0)
+Requires-Dist: jupyter (>=1.0.0)
+Requires-Dist: python-socketio
+Requires-Dist: python-dotenv
+
+IPython Kernel for Odoo web
+
+
