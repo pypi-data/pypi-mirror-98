@@ -1,0 +1,4 @@
+SQLAlchemy
+flask
+pydantic
+requests
