@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cropmetapop
+Version: 1.1.2
+Summary: The crop metapopulation modelisation software
+Home-page: https://sourcesup.renater.fr/www/cmp/
+Author: Equipe DEAP
+Author-email: baptiste.rouger@inra.fr
+License: GNU GPL v3
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: python-igraph
+Requires-Dist: simuPOP
+
+Please refer to the official website : https://sourcesup.renater.fr/www/cmp/
+
+
