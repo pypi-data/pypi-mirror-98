@@ -1,0 +1,7 @@
+setup.py
+fewsio.egg-info/PKG-INFO
+fewsio.egg-info/SOURCES.txt
+fewsio.egg-info/dependency_links.txt
+fewsio.egg-info/not-zip-safe
+fewsio.egg-info/requires.txt
+fewsio.egg-info/top_level.txt
