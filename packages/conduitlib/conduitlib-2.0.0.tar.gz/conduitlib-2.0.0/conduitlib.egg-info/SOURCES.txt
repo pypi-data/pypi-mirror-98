@@ -1,0 +1,15 @@
+README.md
+setup.py
+conduitlib/__init__.py
+conduitlib/auth.py
+conduitlib/plugin.py
+conduitlib/util.py
+conduitlib.egg-info/PKG-INFO
+conduitlib.egg-info/SOURCES.txt
+conduitlib.egg-info/dependency_links.txt
+conduitlib.egg-info/not-zip-safe
+conduitlib.egg-info/requires.txt
+conduitlib.egg-info/top_level.txt
+unittests/__init__.py
+unittests/test_plugin.py
+unittests/test_util.py
