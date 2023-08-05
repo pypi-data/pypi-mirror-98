@@ -1,0 +1,10 @@
+ampel/ztf/archive/ArchiveDB.py,sha256=54PMiW23cNVNb50bt0vPt5AUY-ESBRMsuV0G-WZt3Q0,25169
+ampel/ztf/archive/ArchiveDBClient.py,sha256=LouxVc_GpSvujHHJ2VLwu4JCylW2jXe08cqwFdNAaTI,1737
+ampel/ztf/archive/ZUDSArchiveDB.py,sha256=odmpc495qeJS4oD7H66iZsJ2e9VJiFChwTQlHvWUcLA,3091
+ampel/ztf/t0/ArchiveUpdater.py,sha256=b206ZYGrtlexfdk3JrKDbC3VXMPbsDiMr3kVbXDU-ps,4571
+ampel/ztf/t0/ZUDSArchiveUpdater.py,sha256=ax2W86iorjrJ2esZfs5NMRpEpbT0ex2wvXA81ifw6ag,3393
+ampel_ztf_archive-0.7.0a0.dist-info/entry_points.txt,sha256=vhwqtju4ISV1xrX9m8PbURav-U2-J7sOW5VBQbe6Eiw,105
+ampel_ztf_archive-0.7.0a0.dist-info/LICENSE,sha256=szcwmYNnRi478DkQ_O2OBCW_3hZ5Yy2rzUzeDqgAnIY,1517
+ampel_ztf_archive-0.7.0a0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+ampel_ztf_archive-0.7.0a0.dist-info/METADATA,sha256=CzqcJYr2ZqukggVE9ts0FreIK1CQRUDWEslu7Aoe7OY,1411
+ampel_ztf_archive-0.7.0a0.dist-info/RECORD,,
