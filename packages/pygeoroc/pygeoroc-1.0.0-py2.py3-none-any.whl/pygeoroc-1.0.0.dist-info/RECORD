@@ -1,0 +1,16 @@
+pygeoroc/__init__.py,sha256=ZvCFL6cRbS5lglSGaWUYzR22wG1x8WmuKejVDys5dlk,69
+pygeoroc/__main__.py,sha256=TbFwO4_914JpWMBt-ArgOFRXRUkwMZXhuarTLSpzG-Y,1311
+pygeoroc/api.py,sha256=-13B71BcuAXllTdIqP02cb320WvFWgfEHrOrtwxl6_s,5589
+pygeoroc/db.py,sha256=B1y-TcjniV_ZjLFGxMp7v92eZjpaqDjtXwOdsh6afM0,4158
+pygeoroc/errata.py,sha256=VhH9yrKf9aw3n7ncVsTZ83QUlO14Iqoi4qnBCjqm5sk,4286
+pygeoroc/commands/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+pygeoroc/commands/check.py,sha256=525E0jQ72eTKs4RX77Wy2aDOnzINrcZxNTPQ-jPxEMY,173
+pygeoroc/commands/createdb.py,sha256=IvKb9CiTflqwazRYDgS22b20r7vLCZHv3UeTf8Gv6GU,892
+pygeoroc/commands/download.py,sha256=FKNNPgmDTE_6F3pzmISKuQ8tkvbTBIIrRS-sNe-iG1E,2350
+pygeoroc/commands/ls.py,sha256=x5A3W4DH2dH8aP_BBbdc1g_Q_B8vzu3LJH0gTo-h-og,1976
+pygeoroc-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pygeoroc-1.0.0.dist-info/METADATA,sha256=H54e80cQk1eb2tSzNtv1FUnRTQwvoc9Nu34LbX8thBE,10815
+pygeoroc-1.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pygeoroc-1.0.0.dist-info/entry_points.txt,sha256=Tb4xMwJ3sLp7MLqOyeH-arnFIE4vgnQBZx1N7w4dDVY,51
+pygeoroc-1.0.0.dist-info/top_level.txt,sha256=HybVj1ftWAB8geG_Si5oPOED8MpcUK2wsCQjHyTUAjE,9
+pygeoroc-1.0.0.dist-info/RECORD,,
