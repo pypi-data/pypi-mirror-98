@@ -1,0 +1,16 @@
+upguard/Account.py,sha256=fZdijZsWKgfoC9AFYX9UwLknhHtUDTaZ_4G5r6bBep0,2385
+upguard/BaseObject.py,sha256=zx-N9m9-1KPv06OWBKFFEPUnXKa9T0ptKBLmvo8tPEU,1044
+upguard/BreachedIdentity.py,sha256=flDBlfVHQt1j_-b__8VdRherZj6vNyrqksGF46hsvRA,230
+upguard/Questionnaire.py,sha256=HI3AYij9ULxTorKlstvc_gOe_6iTrIWk8s5mAqXmB4I,1595
+upguard/QuestionnaireAttachment.py,sha256=1cDYbjAPGj-9tqgSTUQJSqy2IDDl1Io1tLB9IBDr4-c,1040
+upguard/QuestionnaireAttachmentList.py,sha256=LkqBOuCgNAh13MFK4G8gGU4wL-zY8oD0qjpCzJxvVyY,1313
+upguard/QuestionnaireList.py,sha256=iFRV7WqAmmWBzhnzCpyivxJY6-bUdbDAd1DKx4SCPlc,1253
+upguard/Vendor.py,sha256=mZSD32IAzJpUJbKdL2ByvBifzF27X7g6ZCg1m3ACN_s,3133
+upguard/VendorDocumentList.py,sha256=l857UrRd7zq_FghenqL39LVpnD0fiwINReYYif8BqWc,237
+upguard/VendorList.py,sha256=JPmmKSZSBn9isI5zxyjOR-VniG-9qNM_1QGbWyjLxcc,1211
+upguard/Version.py,sha256=eBBo2o5J62qn-6jJ-ql5NeMgaY7o2eAMJqIV8_l9jNM,136
+upguard/__init__.py,sha256=hEXkJ1g4DEPTjv2YN82BBrgQEQ7n7X27x1ncjry8NPs,375
+upguard-0.0.20.dist-info/METADATA,sha256=hiVnIvodE-Vyovle4OURoWszUdx-VuDtcVCB-YrpNEM,589
+upguard-0.0.20.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+upguard-0.0.20.dist-info/top_level.txt,sha256=Uw3o0Z1FQqivqvZf4qj8umjdfzmydseoN23BF9IIVUM,8
+upguard-0.0.20.dist-info/RECORD,,
