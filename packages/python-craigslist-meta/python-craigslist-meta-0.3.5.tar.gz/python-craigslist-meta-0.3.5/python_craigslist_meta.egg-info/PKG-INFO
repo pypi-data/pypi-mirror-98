@@ -1,0 +1,128 @@
+Metadata-Version: 1.1
+Name: python-craigslist-meta
+Version: 0.3.5
+Summary: A simple API to traverse Craigslist endpoints
+Home-page: https://github.com/irahorecka/python-craigslist-meta
+Author: Ira Horecka
+Author-email: ira89@icloud.com
+License: MIT
+Description: python-craigslist-meta
+        ======================
+        
+        Streamline your Craigslist queries with an API that traverses url endpoints. This library goes hand-in-hand with `python-craigslist <https://github.com/juliomalegria/python-craigslist>`__.
+        
+        Installation
+        ------------
+        
+        ::
+        
+            pip install python-craigslist-meta
+        
+        Examples
+        --------
+        
+        Let's find every car and truck for sale around the world. ``python-craigslist`` is required for this example.
+        
+        .. code:: python
+        
+            from craigslist import CraigslistForSale
+            from craigslist_meta import Site
+        
+            for site in Site.all():
+                if site.has_area():
+                    for area in site:
+                        auto = CraigslistForSale(site=site.key, area=area.key, category='cta')
+                        # fetch posts from auto
+                else:
+                    auto = CraigslistForSale(site=site.key, category='cta')
+                    # fetch posts from auto
+        
+        Let's get Craigslist urls of areas in the San Francisco Bay Area.
+        
+        .. code-block:: python
+        
+            from craigslist_meta import Site
+        
+            sfbay = Site("sfbay")
+            for area in sfbay:
+                print(area.url)
+        
+        
+            # https://sfbay.craigslist.org/eby/
+            # https://sfbay.craigslist.org/nby/
+            # https://sfbay.craigslist.org/pen/
+            # https://sfbay.craigslist.org/sby/
+            # ...
+        
+        
+        We can also work with countries. Let's get site keys in Germany.
+        
+        .. code:: python
+        
+            from craigslist_meta import Country
+        
+            germany = Country("germany")
+            for site in germany:
+                print(site.key)
+        
+        
+            # berlin
+            # bremen
+            # cologne
+            # dresden
+            # ...
+        
+        Let's get titles of sites in Japan.
+        
+        .. code:: python
+        
+            from craigslist_meta import Country
+        
+            japan = Country("japan")
+            for site in japan:
+                print(site.title)
+        
+        
+            # 福岡
+            # 広島
+            # 名古屋
+            # 沖縄
+            # ...
+        
+        Finally, we can go a step further and work with regions. Let's get subdomains of countries in Africa.
+        
+        .. code:: python
+        
+            from craigslist_meta import Region
+        
+            africa = Region("africa")
+            print(africa.children)
+        
+        
+            # ['egypt', 'ethiopia', 'ghana', ... ]
+        
+        Contribute
+        ----------
+        
+        - `Issue Tracker <https://github.com/irahorecka/python-craigslist-meta/issues>`__
+        - `Source Code <https://github.com/irahorecka/python-craigslist-meta/tree/master/craigslist_meta>`__
+        
+        Support
+        -------
+        
+        If you are having issues or would like to propose a new feature, please use the `issues tracker <https://github.com/irahorecka/python-craigslist-meta/issues>`__.
+        
+        License
+        -------
+        
+        The project is licensed under the MIT license.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
