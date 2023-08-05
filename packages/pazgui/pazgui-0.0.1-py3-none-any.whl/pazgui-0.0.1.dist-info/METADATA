@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pazgui
+Version: 0.0.1
+Summary: Python terminal GUI toolkit
+Home-page: https://github.com/dmrokan/pazgui
+Author: Okan Demir
+Author-email: okndemir@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: blessed
+Requires-Dist: schedule
+
+# Terminal GUI toolkit in Python
+
+It is based on [blessed](https://github.com/jquast/blessed) and
+provides core GUI functionality;
+
+* Event system
+  * Keyboard events
+  * Scheduled events (by [schedule](https://github.com/dbader/schedule))
+  * Custom events
+* Vertical and horizontal auto alignment
+* Input widgets
+  * Textarea
+  * Button
+  * Checkbox
+  * Password
+* Panels
+* Progress bar
+
+Check chat interface example in (examples/chat/main.py) .
+
+
+
