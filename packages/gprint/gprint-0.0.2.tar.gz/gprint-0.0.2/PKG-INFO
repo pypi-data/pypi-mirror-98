@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: gprint
+Version: 0.0.2
+Summary: A faster and cool way to rpint in colors
+Home-page: https://github.com/guillerpsanchez/gprint
+Author: Guillermo Peñarando Sánchez
+Author-email: guillermo@guillerpsanchez.dev
+License: MIT
+Description: # gprint
+        
+        gprint is a Python module that allows to print color on almost any terminal.
+        
+        
+        ## How to import
+        
+        ```python
+        from gprint import *
+        ```
+        
+        ## Errors and contact
+        
+        > guillermo@guillerpsanchez.dev
+        
+        Feel free to contact me at any time.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
