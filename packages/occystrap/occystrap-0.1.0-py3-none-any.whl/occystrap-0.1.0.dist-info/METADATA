@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: occystrap
+Version: 0.1.0
+Summary: occystrap: docker and OCI container tools
+Home-page: https://shakenfist.com/occystrap
+Author: Michael Still
+Author-email: mikal@stillhq.com
+License: Apache2
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.1.1)
+
+Occy Strap
+==========
+
+Occy Strap is a simple set of Docker and OCI container tools, which can be used either for container forensics or for implementing an OCI orchestrator, depending on your needs. This is a very early implementation, so be braced for impact.
+
+
+
