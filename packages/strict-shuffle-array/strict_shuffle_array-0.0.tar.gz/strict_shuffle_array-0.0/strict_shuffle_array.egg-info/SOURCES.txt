@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+strict_shuffle_array/__init__.py
+strict_shuffle_array.egg-info/PKG-INFO
+strict_shuffle_array.egg-info/SOURCES.txt
+strict_shuffle_array.egg-info/dependency_links.txt
+strict_shuffle_array.egg-info/not-zip-safe
+strict_shuffle_array.egg-info/top_level.txt
