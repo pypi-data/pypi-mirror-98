@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: flare-pp
+Version: 0.0.21
+Summary: Many-body extension of the flare code
+Home-page: https://github.com/mir-group/flare_pp
+Author: Materials Intelligence Research
+Author-email: mir@g.harvard.edu
+License: MIT
+Description: ![build](https://github.com/mir-group/flare_pp/actions/workflows/main.yml/badge.svg)
+        
+        # flare++
+        Documentation can be accessed [here](https://mir-group.github.io/flare_pp/).
+        
+        ## Installation
+        
+        ```
+        pip install flare_pp
+        ```
+        
+        If you're installing on Harvard's compute cluster, load the following modules first:
+        ```
+        module load cmake/3.17.3-fasrc01 python/3.6.3-fasrc01 gcc/9.3.0-fasrc01
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
