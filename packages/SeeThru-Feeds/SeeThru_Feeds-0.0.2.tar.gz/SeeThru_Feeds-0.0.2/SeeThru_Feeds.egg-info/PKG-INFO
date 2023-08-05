@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: SeeThru-Feeds
+Version: 0.0.2
+Summary: This is the seethrunetworks open source feed creation project
+Home-page: https://www.seethrunetworks.com/
+Author: SeeThru Networks
+Author-email: aidan@seethrunetworks.com
+License: MIT
+Project-URL: Website, https://www.seethrunetworks.com
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
