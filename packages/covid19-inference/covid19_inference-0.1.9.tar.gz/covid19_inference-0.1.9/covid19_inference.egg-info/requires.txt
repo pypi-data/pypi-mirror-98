@@ -1,0 +1,5 @@
+pymc3
+matplotlib
+numpy
+pandas
+requests
