@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+pycimvp/__init__.py
+pycimvp/__version__.py
+pycimvp/main.py
+pycimvp.egg-info/PKG-INFO
+pycimvp.egg-info/SOURCES.txt
+pycimvp.egg-info/dependency_links.txt
+pycimvp.egg-info/top_level.txt
