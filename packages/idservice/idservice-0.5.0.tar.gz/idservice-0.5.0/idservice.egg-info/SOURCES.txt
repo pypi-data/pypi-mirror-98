@@ -1,0 +1,13 @@
+README.md
+setup.py
+bin/idservice-start
+idservice/__init__.py
+idservice/__main__.py
+idservice/api.py
+idservice/config.py
+idservice/service.py
+idservice.egg-info/PKG-INFO
+idservice.egg-info/SOURCES.txt
+idservice.egg-info/dependency_links.txt
+idservice.egg-info/requires.txt
+idservice.egg-info/top_level.txt
