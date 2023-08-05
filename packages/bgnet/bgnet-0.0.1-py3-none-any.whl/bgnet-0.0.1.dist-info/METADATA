@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: bgnet
+Version: 0.0.1
+Summary: bgnet
+Home-page: https://github.com/boliqq07/cam3d
+Author: wangchangxin
+Author-email: 986798607@qq.com
+Maintainer: wangchangxin
+License: UNKNOWN
+Keywords: bgnet
+Platform: Windows
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Requires-Dist: torch
+Requires-Dist: pymatgen
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: six
+
+kpeuni
+----------------------
+Welcome to kpeuni.
+
+kpeuni is a open cpp library for python extension to get the kpoint quickly.
+
+Quick Install
+----------------------
+```bash
+pip install kpcpu
+```
+
+License
+----------------------
+GNU LGPL-3.0 License
+
