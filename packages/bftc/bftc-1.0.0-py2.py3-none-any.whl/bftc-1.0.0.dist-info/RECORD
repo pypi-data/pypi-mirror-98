@@ -1,0 +1,9 @@
+bftc/__init__.py,sha256=kR4RaXxFBpYNqOko35T4_Ys6gQWPprNvXHo7unxRiZM,210
+bftc/code_generator.py,sha256=9Bg2VJPBhN77-aPdlbGgYjrkNOgftiDLpN_vxR6Jxz4,356
+bftc/tokenizer.py,sha256=DBktULe9ce3flqw1rptCj3l4Ps-31dH5UQTn__JJOnk,687
+bftc/tokens.py,sha256=W_c2zHY35GXIy76-iFFONjSzZzj0yEIEZChqhWWbs-o,1724
+bftc/transpiler.py,sha256=I_spydu8kQT5btX5fZDOyNAlRGdre6F0zgjBKxZt2Ro,704
+bftc-1.0.0.dist-info/LICENSE,sha256=7SR5bQmKyOU-v9Ewvlh_VR3dRNw045dBOt4fSyDqyq8,1079
+bftc-1.0.0.dist-info/WHEEL,sha256=EJXMfr9EmYk-U6pyWqa2B2QLIwRQV9ltzVJo4MsFY2s,99
+bftc-1.0.0.dist-info/METADATA,sha256=YJ9Qj6xCknC5TWq8jPH1tc3_NdmtIpatSZ-11XWuxZM,787
+bftc-1.0.0.dist-info/RECORD,,
