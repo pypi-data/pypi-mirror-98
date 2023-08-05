@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+terraform-monorepo = mkdocs_terraform_monorepo_plugin.plugin:TerraformMonorepoPlugin
+
