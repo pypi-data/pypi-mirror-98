@@ -1,0 +1,5 @@
+[console_scripts]
+sysquery = homeinfotools.query.main:main
+sysrpc = homeinfotools.rpc.main:main
+sysvpn = homeinfotools.vpn.main:main
+
