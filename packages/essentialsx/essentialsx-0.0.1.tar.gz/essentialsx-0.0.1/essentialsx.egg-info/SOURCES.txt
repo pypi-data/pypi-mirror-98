@@ -1,0 +1,9 @@
+README.md
+setup.py
+essentialsx/__init__.py
+essentialsx/essentials.py
+essentialsx.egg-info/PKG-INFO
+essentialsx.egg-info/SOURCES.txt
+essentialsx.egg-info/dependency_links.txt
+essentialsx.egg-info/requires.txt
+essentialsx.egg-info/top_level.txt
