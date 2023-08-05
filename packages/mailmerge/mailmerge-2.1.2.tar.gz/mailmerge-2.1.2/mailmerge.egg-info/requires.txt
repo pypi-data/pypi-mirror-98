@@ -1,0 +1,25 @@
+click
+future>0.18.0
+jinja2
+markdown
+sh
+
+[:python_version < "3.0"]
+backports.csv
+mock
+
+[:python_version < "3.6"]
+configparser
+pathlib2
+
+[dev]
+check-manifest
+codecov>=1.4.0
+pdbpp
+pycodestyle
+pydocstyle
+pylint
+pytest
+pytest-cov
+tox
+twine
