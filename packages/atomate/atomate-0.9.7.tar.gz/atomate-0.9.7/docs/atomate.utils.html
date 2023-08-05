@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>atomate.utils package &#8212; atomate 0.9.6 documentation</title>
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+ 
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">atomate 0.9.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">atomate.utils package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="atomate-utils-package">
+<h1>atomate.utils package<a class="headerlink" href="#atomate-utils-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="atomate.utils.tests.html">atomate.utils.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="atomate.utils.tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atomate.utils.tests.html#atomate-utils-tests-test-database-module">atomate.utils.tests.test_database module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atomate.utils.tests.html#atomate-utils-tests-test-loaders-module">atomate.utils.tests.test_loaders module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atomate.utils.tests.html#atomate-utils-tests-test-utils-module">atomate.utils.tests.test_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atomate.utils.tests.html#module-atomate.utils.tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="atomate-utils-database-module">
+<h2>atomate.utils.database module<a class="headerlink" href="#atomate-utils-database-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-atomate.utils.fileio">
+<span id="atomate-utils-fileio-module"></span><h2>atomate.utils.fileio module<a class="headerlink" href="#module-atomate.utils.fileio" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="atomate.utils.fileio.FileClient">
+<em class="property">class </em><code class="sig-prename descclassname">atomate.utils.fileio.</code><code class="sig-name descname">FileClient</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filesystem</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">private_key</span><span class="o">=</span><span class="default_value">'~/.ssh/id_rsa'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A client for performing many file operations while being agnostic
+of whether those operations are happening locally or via SSH</p>
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filesystem</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">private_key</span><span class="o">=</span><span class="default_value">'~/.ssh/id_rsa'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Args:</dt><dd><dl class="simple">
+<dt>filesystem (str): remote filesystem, e.g. <a class="reference external" href="mailto:username&#37;&#52;&#48;remote_host">username<span>&#64;</span>remote_host</a>.</dt><dd><p>If None, use local</p>
+</dd>
+<dt>private_key (str): path to the private key file (for remote</dt><dd><p>connections only). Note: passwordless ssh login must be setup</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.abspath">
+<code class="sig-name descname">abspath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.abspath" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the absolute path</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path (str): path to get absolute string of</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">src</span></em>, <em class="sig-param"><span class="n">dest</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy from source to destination.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>src (str): source full path
+dest (str): destination file full path</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.exists">
+<em class="property">static </em><code class="sig-name descname">exists</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sftp</span></em>, <em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>os.path.exists() for paramiko’s SCP object</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>sftp (SFTPClient):
+path (str): path to check existence of</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.get_ssh_connection">
+<em class="property">static </em><code class="sig-name descname">get_ssh_connection</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">username</span></em>, <em class="sig-param"><span class="n">host</span></em>, <em class="sig-param"><span class="n">private_key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.get_ssh_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to the remote host via paramiko using the private key.
+If the host key is not present it will be added automatically.</p>
+<dl>
+<dt>Args:</dt><dd><p>username (str):
+host (str):</p>
+<p>private_key (str):  path to private key file</p>
+</dd>
+<dt>Returns:</dt><dd><p>SSHClient</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.glob">
+<code class="sig-name descname">glob</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.glob" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the glob</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>path (str): path to glob</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="atomate.utils.fileio.FileClient.listdir">
+<code class="sig-name descname">listdir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ldir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#atomate.utils.fileio.FileClient.listdir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the directory listing from either the local or remote filesystem.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ldir (str): full path to the directory</p>
+</dd>
+<dt>Returns:</dt><dd><p>iterator of filenames</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="atomate-utils-testing-module">
+<h2>atomate.utils.testing module<a class="headerlink" href="#atomate-utils-testing-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="atomate-utils-utils-module">
+<h2>atomate.utils.utils module<a class="headerlink" href="#atomate-utils-utils-module" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-atomate.utils">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atomate.utils" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">atomate.utils package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#atomate-utils-database-module">atomate.utils.database module</a></li>
+<li><a class="reference internal" href="#module-atomate.utils.fileio">atomate.utils.fileio module</a></li>
+<li><a class="reference internal" href="#atomate-utils-testing-module">atomate.utils.testing module</a></li>
+<li><a class="reference internal" href="#atomate-utils-utils-module">atomate.utils.utils module</a></li>
+<li><a class="reference internal" href="#module-atomate.utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/atomate.utils.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">atomate 0.9.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">atomate.utils package</a></li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2015, Anubhav Jain.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+
+  </body>
+</html>
