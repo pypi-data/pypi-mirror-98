@@ -1,0 +1,73 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone.z3cform"
+      metal:use-macro="context/main_template/macros/master">
+
+<div metal:fill-slot="main">
+    <tal:main-macro metal:define-macro="main">
+
+      <h1 class="documentFirstHeading">Import Content</h1>
+
+      <p class="documentDescription">Here you can upload a json-file.</p>
+
+        <form action="." tal:attributes="action request/URL" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" name="jsonfile"/><br/>
+            </div>
+
+            <div class="field">
+              <label>
+                <input
+                    type="checkbox"
+                    name="import_to_current_folder:boolean"
+                    id="import_to_current_folder"
+                    value="1"
+                    />
+                Import all items into the current folder
+              </label>
+            </div>
+
+            <div class="formControls" class="form-group">
+                <input type="hidden" name="form.submitted" value="1"/>
+                <button class="btn btn-primary submit-widget button-field context"
+                        type="submit" name="submit" value="Import">Import
+                </button>
+            </div>
+
+        </form>
+
+        <div class="formControls" class="form-group">
+
+            <h2>Additional imports</h2>
+            <a class="btn btn-primary submit-widget button-field context"
+               tal:attributes="href python: portal_url + '/@@import_relations'">Import relations
+            </a>
+
+            <a class="btn btn-primary submit-widget button-field context"
+               tal:attributes="href python: portal_url + '/@@import_translations'">Import translations
+            </a>
+
+            <a class="btn btn-primary submit-widget button-field context"
+               tal:attributes="href python: portal_url + '/@@import_members'">Import members
+            </a>
+
+            <a class="btn btn-primary submit-widget button-field context"
+               tal:attributes="href python: portal_url + '/@@import_localroles'">Import local roles
+            </a>
+
+            <a class="btn btn-primary submit-widget button-field context"
+               tal:attributes="href python: portal_url + '/@@import_ordering'">Import Object Positions in Parent
+            </a>
+
+            <a class="btn btn-primary submit-widget button-field context"
+               tal:attributes="href python: portal_url + '/@@reset_modified_date'">Reset modified date
+            </a>
+
+        </div>
+
+    </tal:main-macro>
+</div>
+
+</html>
