@@ -1,0 +1,7 @@
+numpy
+ginga
+astropy
+pillow
+configobj
+scipy
+hcam_widgets
