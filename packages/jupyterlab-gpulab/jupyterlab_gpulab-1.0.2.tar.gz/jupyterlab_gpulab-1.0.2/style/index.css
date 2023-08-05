@@ -1,0 +1,19 @@
+#jp-MainLogo {
+    visibility: hidden;
+    display: none;
+}
+
+.jp-gpulab-header {
+}
+
+.jp-gpulab-msg-button {
+    margin-right: 5px;
+}
+
+.jp-gpulab-logo {
+    width: 140px;
+    background-image: url('logo_110x20.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 6px;
+}
