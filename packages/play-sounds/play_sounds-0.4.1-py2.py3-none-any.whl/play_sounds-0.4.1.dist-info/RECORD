@@ -1,0 +1,12 @@
+play_sounds/__init__.py,sha256=W6afucif-oyxlKTjb5dPDuoxqYzJycsJSZfMOyi0bTs,330
+play_sounds/base.py,sha256=y-qAF57FHeuI4HJwWuiepTFhmchvUBKkdZX4JQgpPFs,3668
+play_sounds/bell.py,sha256=mE7YMVBvbsTREm0gBPVwz-yCgZ5kioTeJiHr0lz4YUc,292
+play_sounds/proc.py,sha256=LYml3b-4cssW16PqNoMAtr3cqsLSIVze_SYPYvvukdg,1630
+play_sounds/wrap.py,sha256=KHzl-3uW5zHpuhrfcqvk7oT0oYauClxWBh8JlecVZSo,1276
+play_sounds/assets/ding.mp3,sha256=NdQj3GTEchgOCYRKfQnY9Zps1rp3kPVVb3DV82E0dYM,17901
+play_sounds/assets/song.mp3,sha256=QqWEs9klnKktsL5_E5vxrqQjGlFYym7L4I2n9UhzALI,7526722
+play_sounds-0.4.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+play_sounds-0.4.1.dist-info/METADATA,sha256=CfdH8-0LeX1yej0MeydlOWgH4tkSKwrRiu9_KRHxJ2c,3616
+play_sounds-0.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+play_sounds-0.4.1.dist-info/top_level.txt,sha256=WshQIoAZKq_QmQhtpgbKaSNOjZtZp5fcZoa1jM4dOnQ,12
+play_sounds-0.4.1.dist-info/RECORD,,
