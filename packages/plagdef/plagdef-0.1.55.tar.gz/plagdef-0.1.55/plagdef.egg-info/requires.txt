@@ -1,0 +1,4 @@
+pystemmer~=2.0
+nltk~=3.5
+lxml~=4.6
+click~=7.0
