@@ -1,0 +1,13 @@
+
+[:python_version < "3.7"]
+dataclasses==0.7
+
+[examples]
+graphql-core>=3.1.2
+pytest>=6.2.2
+pydantic>=1.7.3
+attrs>=20.3.0
+sqlalchemy>=1.3.23
+
+[graphql]
+graphql-core>=3.1.2
