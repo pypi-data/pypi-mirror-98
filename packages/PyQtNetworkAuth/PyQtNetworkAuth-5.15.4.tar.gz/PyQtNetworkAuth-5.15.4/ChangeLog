@@ -1,0 +1,50 @@
+2021-03-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Released as v5.15.4.
+	[4d0bf82e6287] [5.15.4] <5.15-maint>
+
+	* rb-product.toml:
+	Fixed the PyQt dependency.
+	[01522cc5235f] <5.15-maint>
+
+2021-03-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Updated the NEWS file.
+	[85a32ec50aff] <5.15-maint>
+
+2021-02-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyproject.toml:
+	Fixed the project dependencies.
+	[53c1974c7e1f] <5.15-maint>
+
+	* rb-product, rb-product.toml:
+	Updated the product file.
+	[3678fed24589] <5.15-maint>
+
+2021-02-23  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 5.15.3 for changeset 4a5299c77aab
+	[e98bec8deb12] <5.15-maint>
+
+	* NEWS:
+	Released as v5.15.3.
+	[4a5299c77aab] [5.15.3] <5.15-maint>
+
+	* pyproject.toml:
+	Fixed the Qt wheel dependency.
+	[8b0fcc4744e8] <5.15-maint>
+
+2021-02-09  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyproject.toml:
+	Added the dependency on the Qt wheel.
+	[da99aaec1f8c] <5.15-maint>
+
+	* .hgignore, METADATA.in, NEWS, PyQtNetworkAuth.msp, README,
+	configure.py, pyproject.toml, rb-product:
+	Added the initial project extracted from PyQt5.
+	[c33843b39076] <5.15-maint>
