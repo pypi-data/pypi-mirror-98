@@ -1,0 +1,13 @@
+isoplot/__init__.py,sha256=b5N4IkT-KnD8rj_ckxbQx6O12OtODXGR-03_fpxOa5A,78
+isoplot/dataprep.py,sha256=kHhRPQu-yIKarYTN6hIXY1xXtuCHXfylhW3QP-4csqg,6489
+isoplot/isoplot_notebook.py,sha256=yxEO5bpsoXZK7hWKnQnn2Wfwk5hX6ktcPZN1YuP37QE,7134
+isoplot/isoplotcli.py,sha256=7vJG4cLJ2HIqnWnt_iz8Ey_TCuKNHQspnT9Td8NLmuI,5102
+isoplot/object_notebook.py,sha256=BMz0_NLf6iMqGfp-Xqskeh3J2_1DQweoGWqfVLrB5Hg,3366
+isoplot/plots.py,sha256=TbNTPlkX5ll2Ufx86RVGex0f4MV7JMa4WBTgJkY5w74,39959
+isoplot/utilities.py,sha256=wmn-Wny-AltjPl8ydhMV83UPOMYTiHprmF0vraLxizs,10132
+isoplot-1.0.4.dist-info/LICENSE.txt,sha256=U-70kKrQCEWkynLKsWVdSMDfQXVT9y3KMQEqLatd8uw,35793
+isoplot-1.0.4.dist-info/METADATA,sha256=dBVuJgaaNd50FuzF5kbWmmc5OjYs64FAryj9TEK8IvU,2341
+isoplot-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+isoplot-1.0.4.dist-info/entry_points.txt,sha256=9ZEIu_iwkNypDXG276MuRwCq_zeRRAP2T6rXamxzzew,63
+isoplot-1.0.4.dist-info/top_level.txt,sha256=cIMROrHUK9POZWPZpd3lzdPnf2UgXHe70l5bofI7kR8,8
+isoplot-1.0.4.dist-info/RECORD,,
