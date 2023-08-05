@@ -1,0 +1,4 @@
+[console_scripts]
+olxsearch = olxsearch.__main__:main
+olxsearch2psql = olxsearch.__main__:main
+
