@@ -1,0 +1,13 @@
+
+[dev]
+black
+flake8
+mypy
+pylint
+rope
+
+[test]
+flaky
+micro-ci
+pytest
+pytest-cov
