@@ -1,0 +1,6 @@
+#!python
+
+from getref import cli
+import sys
+
+cli.main()
