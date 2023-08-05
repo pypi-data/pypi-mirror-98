@@ -1,0 +1,60 @@
+Metadata-Version: 1.2
+Name: menten-gcn
+Version: 0.3.0
+Summary: This package decorates graph tensors with data from protein models
+Home-page: https://github.com/MentenAI/menten_gcn
+Author: Menten AI, Inc.
+Author-email: info@menten.ai
+License: MIT
+Project-URL: Documentation, https://menten_gcn.readthedocs.io/
+Project-URL: Changelog, https://menten_gcn.readthedocs.io/en/latest/changelog.html
+Project-URL: Issue Tracker, https://github.com/MentenAI/menten_gcn/issues
+Description: ==================
+        Technical Overview
+        ==================
+        
+        
+        
+        Documentation
+        =============
+        
+        
+        https://menten-gcn.readthedocs.io/
+        
+        
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install menten-gcn
+        
+        You can also install the in-development version with::
+        
+            pip install https://github.com/MentenAI/menten_gcn/archive/main.zip
+        
+        
+        
+        Development
+        ===========
+        
+        To run all the tests locally run::
+        
+            tox
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6.0
