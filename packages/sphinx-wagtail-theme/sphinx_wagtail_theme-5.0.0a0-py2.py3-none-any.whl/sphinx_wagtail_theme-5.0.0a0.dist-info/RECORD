@@ -1,0 +1,10 @@
+sphinx_wagtail_theme/__init__.py,sha256=wS6XdosRWRtMIc4VCsA6eeCIK0bg7jslrHRGK2YlRn8,1810
+sphinx_wagtail_theme/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=uGoPDJmmC0i5Ai0VcAL7mGcAnxd-MZZAIo6x660MfTQ,50
+tests/test_python_sphinx_wagtail_theme.py,sha256=UGoqmi9xXvNdvBWyt2YpyKRUs3_iSPzCeHIkadFjmpQ,267
+sphinx_wagtail_theme-5.0.0a0.dist-info/AUTHORS.rst,sha256=ZvlCqaFnEO0e74iVIcgKt0DrKPw4I3b259ZOG7BAqas,415
+sphinx_wagtail_theme-5.0.0a0.dist-info/LICENSE,sha256=mDu3xb2jRSDgUdJ_m9X-rMIsFZe4PvYc7EF7BYf-XXw,1079
+sphinx_wagtail_theme-5.0.0a0.dist-info/METADATA,sha256=D1TBV5vUdFkq21E2sdKAW-HPlkpuwKUyQ6Ag8Gz1-CA,2080
+sphinx_wagtail_theme-5.0.0a0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sphinx_wagtail_theme-5.0.0a0.dist-info/top_level.txt,sha256=bQSHnGQ_cUM_wjP4hOhwGfzs3kP5cprBXTvqi3m_W9w,27
+sphinx_wagtail_theme-5.0.0a0.dist-info/RECORD,,
