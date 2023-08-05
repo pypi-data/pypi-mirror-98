@@ -1,0 +1,3 @@
+[console_scripts]
+yw-start = youwol.main:main
+

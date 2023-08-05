@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Assets Browser</title><base href="/ui/assets-browser-ui/"><meta name="viewport" content="width=device-width,initial-scale=1"><script src="/api/assets-gateway/raw/package/QHlvdXdvbC9jZG4=/libraries/youwol/cdn/0.0.0/dist/@youwol/cdn.js"></script><script>let cdn = window['@youwol/cdn']
+    let [linkBA, linkYW, linfFA,_] = cdn.fetchStyleSheets([
+            "bootstrap#4.4.1~bootstrap.min.css",
+            "fontawesome#5.12.1~css/all.min.css",
+            "@youwol/fv-widgets#0.0.3~dist/assets/styles/style.youwol.css",
+            "grapes#0.16.2~css/grapes.min.css"
+        ])
+
+    window['assets-browser-ui-bundles'] = cdn.fetchBundles(
+          { d3:'5.15.0',
+            lodash:'4.17.15',
+            '@youwol/flux-view':'0.0.5',
+            '@youwol/flux-lib-core': {
+                version: '1.7.2',
+                sideEffects: (window) =>  cdn.copyTarget(window['youwol']['flux-lib-core'], window['@youwol/flux-lib-core'] )
+            },
+            "@youwol/fv-group":"0.0.3",
+            "@youwol/fv-input":"0.0.2",
+            "@youwol/fv-button":"0.0.3",
+            "@youwol/fv-tree":"0.0.3",
+            "@youwol/fv-tabs":"0.0.2",
+            rxjs: {
+                version: '6.5.5',
+                sideEffects: (window) =>  cdn.copyTarget(window['rxjs']['operators'], window['rxjs/operators'] )
+            },
+          }, 
+          window
+        )
+    window['rxjs/operators'] = {}</script><script defer="defer" src="main.15923700152a5214e8a0.js"></script><link href="style.779b03091008ff1103f6.css" rel="stylesheet"></head><body class="vh-100"><div class="d-flex h-100 flex-column w-100 h-100"><div id="header" class="w-100 fv-bg-background-alt"></div><div id="content" class="d-flex w-100 flex-grow-1 fv-bg-background" style="height: calc(100% - 80px)"><div id="form-content" class="flex-grow-1 w-75 d-flex p-2 h-100 overflow-auto"></div></div></div></body></html>
