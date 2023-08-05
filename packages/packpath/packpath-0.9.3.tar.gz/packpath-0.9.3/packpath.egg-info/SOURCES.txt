@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+packpath/__init__.py
+packpath/__main__.py
+packpath/test.py
+packpath.egg-info/PKG-INFO
+packpath.egg-info/SOURCES.txt
+packpath.egg-info/dependency_links.txt
+packpath.egg-info/entry_points.txt
+packpath.egg-info/requires.txt
+packpath.egg-info/top_level.txt
