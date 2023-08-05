@@ -1,0 +1,11 @@
+opencv-python
+pymsgbox
+pypylon
+pyntcloud
+i3drsgm
+
+[:python_version == "3.5"]
+numpy
+
+[:python_version > "3.5"]
+numpy==1.19.3
