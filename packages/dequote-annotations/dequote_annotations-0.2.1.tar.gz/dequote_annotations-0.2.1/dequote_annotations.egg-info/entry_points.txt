@@ -1,0 +1,3 @@
+[console_scripts]
+dequote_annotations = dequote_annotations:main
+
