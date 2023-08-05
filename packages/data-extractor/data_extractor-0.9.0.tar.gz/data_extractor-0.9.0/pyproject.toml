@@ -1,0 +1,96 @@
+[tool.poetry]
+name = "data_extractor"
+version = "0.9.0"
+license = "MIT"
+description = "Combine XPath, CSS Selectors and JSONPath for Web data extracting."
+authors = ["linw1995 <linw1995@icloud.com>"]
+readme = "README.rst"
+homepage = "https://github.com/linw1995/data_extractor"
+repository = "https://github.com/linw1995/data_extractor"
+documentation = "https://data-extractor.readthedocs.io/en/latest/"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Development Status :: 4 - Beta",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+]
+include = ["LICENSE"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+# XPath extractor backend
+lxml = {version = "^4.3.0", optional = true}
+# CSS-Selector extractor backend
+cssselect = {version = "^1.0.3", optional = true}
+
+# JSON extractor backend
+jsonpath-rw = {version = "^1.4.0", optional = true}
+jsonpath-rw-ext = {version = "^1.2", optional = true}
+jsonpath-extractor = {version = ">=0.5.0, <0.8", optional = true}
+
+# Optional Development
+black = {version = "^20.8b1", optional = true}
+flake8 = {version = "^3.8.4", optional = true}
+flake8-bugbear = {version = "^20.11.1", optional = true}
+isort = {version = "^5.6.4", optional = true}
+mypy = {version = "^0.812", optional = true}
+
+pytest = {version = "^5.2.0", optional = true}
+pytest-cov = {version = "^2.7.1", optional = true}
+sphinx = {version = "^2.2", optional = true}
+doc8 = {version = "^0.8.0", optional = true}
+pygments = {version = "^2.4", optional = true}
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.8.2"
+nox = {version = "^2019.11.9"}
+coverage = "^5.0.1"
+
+[tool.poetry.extras]
+lint = [
+  "black",
+  "cssselect",
+  "doc8",
+  "flake8",
+  "flake8-bugbear",
+  "isort",
+  "jsonpath-extractor",
+  "jsonpath-rw",
+  "jsonpath-rw-ext",
+  "lxml",
+  "mypy",
+  "nox",
+  "pygments",
+  "pytest"
+]
+test = ["pytest", "pytest-cov"]
+docs = [
+  "cssselect",
+  "jsonpath-extractor",
+  "jsonpath-rw",
+  "jsonpath-rw-ext",
+  "lxml",
+  "sphinx"
+]
+cssselect = ["cssselect", "lxml"]
+lxml = ["lxml"]
+jsonpath-extractor = ["jsonpath-extractor"]
+jsonpath-rw = ["jsonpath-rw"]
+jsonpath-rw-ext = ["jsonpath-rw", "jsonpath-rw-ext"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "0.9.0"
+version_files = ["pyproject.toml:version"]
+tag_format = "v$version"
+
+[build-system]
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"
