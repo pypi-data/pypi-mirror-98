@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: kaaengine
+Version: 0.11
+Summary: Pythonic game engine for humans.
+Home-page: https://github.com/kaaengine/kaa
+Author: labuzm, maniek2332
+Author-email: labuzm@gmail.com, maniek2332@gmail.com
+License: MIT
+Project-URL: Documentation, https://kaa.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/kaaengine/kaa/
+Provides-Extra: stats_graph
+Requires-Dist: matplotlib (>=3.1.1) ; extra == 'stats_graph'
+
+# kaa
+
+
