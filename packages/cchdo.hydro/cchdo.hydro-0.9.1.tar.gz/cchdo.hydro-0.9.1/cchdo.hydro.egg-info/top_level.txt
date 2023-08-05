@@ -1,0 +1,6 @@
+build
+cchdo
+dist
+docs
+examples
+htmlcov
