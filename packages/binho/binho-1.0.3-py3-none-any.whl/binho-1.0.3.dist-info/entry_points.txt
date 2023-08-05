@@ -1,0 +1,19 @@
+[console_scripts]
+binho = binho.commands.binho:main
+binhoHostAdapter = binho.commands.binho:main
+binho_1wire = binho.commands.binho_1wire:main
+binho_adc = binho.commands.binho_adc:main
+binho_dac = binho.commands.binho_dac:main
+binho_daplink = binho.commands.binho_daplink:main
+binho_dfu = binho.commands.binho_dfu:main
+binho_eeprom = binho.commands.binho_eeprom:main
+binho_flasher = binho.commands.binho_flasher:main
+binho_gpio = binho.commands.binho_gpio:main
+binho_i2c = binho.commands.binho_i2c:main
+binho_info = binho.commands.binho_info:main
+binho_oneWire = binho.commands.binho_1wire:main
+binho_pwm = binho.commands.binho_pwm:main
+binho_shell = binho.commands.binho_shell:main
+binho_spi = binho.commands.binho_spi:main
+binho_spiflash = binho.commands.binho_spiflash:main
+
