@@ -1,0 +1,14 @@
+mygtu/__init__.py,sha256=TcmB4aomyqXsLMnREFXT69rhFs8beBIlvJ5Wg4wFP6o,59
+mygtu/dl.py,sha256=c0kFaKGC7d2HAyLGbG4gOnXzr0X-nPVY45gEDxBGK3k,1124
+mygtu/gtu.py,sha256=3MPoR4JwJFYeJMIzuqOYkf86ZXnYOyqrihMrsNE0nKc,1487
+mygtu/database/subject_code.json,sha256=iWuvf4ycNzlNtCqzxNcNz1FvTdXp3lIyzhuq0C3Xep8,168
+mygtu/utils/__init__.py,sha256=j-zOB9gyD1G5gph_D0_AuMoJx1In3TTiqvFLI_Oyg34,200
+mygtu/utils/constants.py,sha256=mEWSX0lKpjd0Rqp75LwbijvbcW5-dGVWFVyFS8rUujc,24
+mygtu/utils/profile.py,sha256=5JVchzX9UMS2Wez9YugStPwiI27JfBcHDohS5gm_GLY,262
+mygtu/utils/time.py,sha256=H4fH4Z7DgM55sa3OuEFWVm8gdDoJi9vLfEKmiY1vid0,290
+mygtu/utils/year_list.py,sha256=0GcVdHtikHw7rn8-CCYsU5dztTHSDEw0aIqLL1rMk2M,194
+mygtu-0.1.5.dist-info/LICENSE,sha256=nFsJ9qqZrNqCcq-D2qB6GKdY4L5vIM487uoPudthHGc,1062
+mygtu-0.1.5.dist-info/METADATA,sha256=TntJZcW2DzeFrv5RB8ZSm0Y8-85TMe2csgUC9m1zNJI,1871
+mygtu-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mygtu-0.1.5.dist-info/top_level.txt,sha256=GR_WhM2iQWkn8gooYH10mI_T7ubz1YwyIgWnSR-t_f4,6
+mygtu-0.1.5.dist-info/RECORD,,
