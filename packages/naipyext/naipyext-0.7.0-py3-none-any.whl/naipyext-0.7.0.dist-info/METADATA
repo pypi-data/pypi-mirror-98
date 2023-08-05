@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: naipyext
+Version: 0.7.0
+Summary: Nasy IPython Extensions.
+License: UNKNOWN
+Author-email: Nasy <nasyxx+python@gmail.com>
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipython
+Provides-Extra: all
+Requires-Dist: better-exceptions; extra == "all"
+Requires-Dist: httpx; extra == "all"
+Requires-Dist: jupyter-qtconsole-colorschemes; extra == "all"
+Requires-Dist: numpy; extra == "all"
+Requires-Dist: pandas; extra == "all"
+Requires-Dist: pdir2; extra == "all"
+Requires-Dist: pendulum; extra == "all"
+Requires-Dist: ptpython; extra == "all"
+Requires-Dist: rich; extra == "all"
+Requires-Dist: sympy; extra == "all"
+Requires-Dist: tqdm; extra == "all"
+Provides-Extra: be
+Requires-Dist: better-exceptions; extra == "be"
+Provides-Extra: ns
+Requires-Dist: httpx; extra == "ns"
+Requires-Dist: numpy; extra == "ns"
+Requires-Dist: pandas; extra == "ns"
+Requires-Dist: pdir2; extra == "ns"
+Requires-Dist: tqdm; extra == "ns"
+Provides-Extra: other
+Requires-Dist: httpx; extra == "other"
+Requires-Dist: jupyter-qtconsole-colorschemes; extra == "other"
+Requires-Dist: pendulum; extra == "other"
+Requires-Dist: ptpython; extra == "other"
+Requires-Dist: rich; extra == "other"
+Requires-Dist: sympy; extra == "other"
+Project-URL: homepage, https://github.com/nasyxx/naipyext
