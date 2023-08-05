@@ -1,0 +1,2 @@
+dpt-module-loader>=1,<2
+dpt-logging>=1,<2
