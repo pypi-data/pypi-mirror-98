@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+python_markdown_nofollow/__init__.py
+python_markdown_nofollow/nofollow.py
+python_markdown_nofollow.egg-info/PKG-INFO
+python_markdown_nofollow.egg-info/SOURCES.txt
+python_markdown_nofollow.egg-info/dependency_links.txt
+python_markdown_nofollow.egg-info/top_level.txt

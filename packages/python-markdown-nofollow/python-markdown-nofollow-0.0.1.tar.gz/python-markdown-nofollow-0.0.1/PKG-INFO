@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-markdown-nofollow
+Version: 0.0.1
+Summary: a Python Markdown plugin used to add rel='external nofollow' and target='_blank' attribute to all <a> tags
+Home-page: https://stdworkflow.com
+Author: stdworkflow
+Author-email: gsyipingliu@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/stdworkflow/python_markdown_nofollow
+Description: # python_markdown_nofollow
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
