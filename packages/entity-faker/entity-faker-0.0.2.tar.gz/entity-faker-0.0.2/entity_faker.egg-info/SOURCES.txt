@@ -1,0 +1,15 @@
+README.md
+setup.py
+entity_faker.egg-info/PKG-INFO
+entity_faker.egg-info/SOURCES.txt
+entity_faker.egg-info/dependency_links.txt
+entity_faker.egg-info/requires.txt
+entity_faker.egg-info/top_level.txt
+entityfaker/__init__.py
+entityfaker/datasets.py
+entityfaker/entities..py
+entityfaker/entitykeywordgenerator.py
+entityfaker/formatgenerator.py
+entityfaker/formatprovider.py
+entityfaker/insertlocations.py
+entityfaker/keywords.py
