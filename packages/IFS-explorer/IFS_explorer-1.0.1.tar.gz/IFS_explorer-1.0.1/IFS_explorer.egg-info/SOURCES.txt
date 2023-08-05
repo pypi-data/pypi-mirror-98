@@ -1,0 +1,31 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.txt
+setup.cfg
+setup.py
+IFS_explorer/IFS_explorer.py
+IFS_explorer/__init__.py
+IFS_explorer/ifs_widget.py
+IFS_explorer.egg-info/PKG-INFO
+IFS_explorer.egg-info/SOURCES.txt
+IFS_explorer.egg-info/dependency_links.txt
+IFS_explorer.egg-info/requires.txt
+IFS_explorer.egg-info/top_level.txt
+IFS_explorer/Filters/B-Bessell (1990).txt
+IFS_explorer/Filters/B-Johnson (1965).txt
+IFS_explorer/Filters/B-KPN0-Harris.txt
+IFS_explorer/Filters/HALPHA-CTI0 6586-20A.txt
+IFS_explorer/Filters/Halpha-KPN0 6547-80A.txt
+IFS_explorer/Filters/R-Bessell.txt
+IFS_explorer/Filters/R-KPN0-Harris.txt
+IFS_explorer/Filters/V-Bessell.txt
+IFS_explorer/Filters/V-Johnson.txt
+IFS_explorer/Filters/V-KPN0-Harris.txt
+IFS_explorer/Filters/g-SDSS-III.txt
+IFS_explorer/Filters/i-SDSS-III.txt
+IFS_explorer/Filters/r-SDSS-III.txt
+IFS_explorer/Filters/u-SDSS-III.txt
+IFS_explorer/Img/logoIFSexplorer.ico
+IFS_explorer/Img/logoIFSexplorer.png
+IFS_explorer/Img/logotipo.png
