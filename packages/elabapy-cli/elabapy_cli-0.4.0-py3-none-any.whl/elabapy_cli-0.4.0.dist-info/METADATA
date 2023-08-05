@@ -1,0 +1,131 @@
+Metadata-Version: 2.1
+Name: elabapy-cli
+Version: 0.4.0
+Summary: eLabFTW CLI library.
+Home-page: https://gitlab.com/iam-cms/workflows/extra-nodes/elabapy-cli
+Author: Karlsruhe Institute of Technology
+License: GNU GPL-3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (<8.0.0,>=7.1.1)
+Requires-Dist: click-completion (>=0.5.2)
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: xmlhelpy (>=0.2.0)
+Requires-Dist: elabapy (>=0.7.0)
+Provides-Extra: dev
+Requires-Dist: black (==20.8b1) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.7.0) ; extra == 'dev'
+Requires-Dist: pylint (<2.5.0,>=2.4.4) ; extra == 'dev'
+Requires-Dist: tox (>=3.15.0) ; extra == 'dev'
+
+# Elabapy-CLI
+
+**elabapy-cli** is a library for use in tandem with
+[elabFTW](https://github.com/elabftw/ "elabFTW"). It uses the official
+[elabapy](https://github.com/elabftw/elabapy "elabapy") and adds a user-friendly
+command line interface (CLI). The library is written in Python 3 and works under both
+Linux and Windows. The functionality and parts of the code are adapted from the
+[Kadi-APY](https://gitlab.com/iam-cms/kadi-apy "Kadi-APY").
+
+## Installation
+The library can be installed using `pip3` (or `pip`, if there is no dedicated
+version of `pip` for Python 3 installed), which generally comes bundled with
+Python installations. Python version >= 3.6 is required.
+
+`pip3 install elabapy-cli`
+
+When installing the library from source for development, it is
+recommended to install the library in editable mode, which simply creates a
+link to the sources so all changes are reflected in the installed package
+immediately. The command will also install some additional development
+dependencies as defined in  `setup.py`.
+
+`pip3 install -e .[dev]`
+
+Running the installations inside a virtual environment is recommended, see
+[Virtualenv](https://virtualenv.pypa.io/en/latest/ "Virtualenv") for more
+information.
+
+Make sure the `elabapy` command is runnable from anywhere.
+Depending on the type of installation and if a virtual environment is
+used or not, the `PATH` system variable may need to be adapted accordingly to
+include the path the executable resides in. For example, the following command
+can be used on Linux, assuming the executable resides in `~/.local/bin`:
+
+`export PATH=${HOME}/.local/bin:${PATH}`
+
+This line can also be added to `.bashrc` so it will be executed each time a new
+terminal is opened:
+
+`echo 'export PATH=${HOME}/.local/bin:${PATH}' >> ${HOME}/.bashrc`
+
+On Windows, the `PATH` can be modified permanently by editing the respective
+environment variable in the advanced system settings of the control panel.
+
+
+## Usage
+
+The CLI can be used directly in the terminal. The first entry point to the CLI is
+given by running:
+
+`elabapy`
+
+All commands concerning different resources are available as various
+subcommands. For example, all subcommands to work with experiments can be listed by
+running:
+
+`elabapy experiments`
+
+The information on how to create an experiment can be accessed via:
+
+`elabapy experiments create --help`
+
+Autocomplete can be activated via
+
+`elabapy config activate-autocompletion`
+
+for fish, Zsh, Bash and PowerShell.
+
+## Connecting an elabFTW instance
+
+To connect an instance of elabFTW to a local installation of this library, the
+host of the elabFTW instance as well as a personal access token (PAT) are
+required.
+
+The host is the fully qualified domain name of the elabFTW instance with the ending
+`/api/v1/`.
+
+A PAT (API key) can be created via the web interface of an elabFTW instance in the menu
+found in *User panel > API KEYS* and will operate with the same permissions
+as the user that created the token.
+
+You can run
+
+`elabapy config create`
+
+which creates the file `.elabconfig` in you home directory. Open the file to fill in the
+host and PAT information. E.g.:
+
+```
+[global]
+verify = True
+default = my_instance
+
+[my_instance]
+host = https://example.com/api/v1/
+pat = <your PAT>
+
+[my_second_instance]
+host = https://example2.com/api/v1/
+pat = <your second PAT>
+```
+
+When using the CLI, you can choose the instance to use. The default is defined by the
+key `default` in the section `[global]`.
+
+

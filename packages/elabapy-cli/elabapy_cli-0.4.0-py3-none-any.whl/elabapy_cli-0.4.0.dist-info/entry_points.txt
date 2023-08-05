@@ -1,0 +1,3 @@
+[console_scripts]
+elabapy = elabapy_cli.main:elabapy
+
