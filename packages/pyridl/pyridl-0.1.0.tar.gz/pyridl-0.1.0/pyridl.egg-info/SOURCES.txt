@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyridl.egg-info/PKG-INFO
+pyridl.egg-info/SOURCES.txt
+pyridl.egg-info/dependency_links.txt
+pyridl.egg-info/top_level.txt
+src/__init__.py
+src/dataset.py
+src/iridl_utils.py
+src/source.py
+src/sourcetree.py
