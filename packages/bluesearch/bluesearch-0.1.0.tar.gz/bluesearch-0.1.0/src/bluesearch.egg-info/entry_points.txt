@@ -1,0 +1,8 @@
+[console_scripts]
+compute_embeddings = bluesearch.entrypoint:run_compute_embeddings
+create_database = bluesearch.entrypoint:run_create_database
+create_mining_cache = bluesearch.entrypoint:run_create_mining_cache
+embedding_server = bluesearch.entrypoint:run_embedding_server
+mining_server = bluesearch.entrypoint:run_mining_server
+search_server = bluesearch.entrypoint:run_search_server
+

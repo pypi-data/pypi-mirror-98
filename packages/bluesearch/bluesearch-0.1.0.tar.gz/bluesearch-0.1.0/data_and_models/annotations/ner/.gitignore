@@ -1,0 +1,33 @@
+# Blue Brain Search is a text mining toolbox focused on scientific use cases.
+#
+# Copyright (C) 2020  Blue Brain Project, EPFL.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+/annotations10_EmmanuelleLogette_2020-08-28_raw1_raw5_10EntityTypes.jsonl
+/annotations11_CharlotteLorin_2020-08-28_raw1_10EntityTypes.jsonl
+/annotations12_EmmanuelleLogette_2020-08-28_raw7_10EntityTypes.jsonl
+/annotations13_CharlotteLorin_2020-09-02_raw7_10EntityTypes.jsonl
+/annotations1_EmmanuelleLogette_2020-06-19_raw1_8FirstLabels.jsonl
+/annotations2_CharlotteLorin_2020-06-19_8FirstLabels.jsonl
+/annotations3_EmmanuelleLogette_2020-07-06_raw1_8FirstLabels.jsonl
+/annotations4_CharlotteLorin_2020-07-02_raw1_8FirstLabels.jsonl
+/annotations5_EmmanuelleLogette_2020-06-30_raw2_Disease.jsonl
+/annotations6_EmmanuelleLogette_2020-07-07_raw4_TaxonChebi.jsonl
+/annotations7_EmmanuelleLogette_2020-07-06_raw1_9EntityTypes.jsonl
+/annotations8_EmmanuelleLogette_2020-07-08_raw5_9EntityTypes.jsonl
+/annotations9_EmmanuelleLogette_2020-07-08_raw6_CelltypeProtein.jsonl
+/annotations14_EmmanuelleLogette_2020-09-02_raw8_CellCompartmentDrugOrgan.jsonl
+/annotations15_EmmanuelleLogette_2020-09-22_raw9_Pathway.jsonl
+/rule_based_patterns.jsonl
