@@ -1,0 +1,11 @@
+pyproject.toml
+setup.cfg
+setup.py
+src/signicat_api/__init__.py
+src/signicat_api/api.py
+src/signicat_api/request_types.py
+src/signicat_api.egg-info/PKG-INFO
+src/signicat_api.egg-info/SOURCES.txt
+src/signicat_api.egg-info/dependency_links.txt
+src/signicat_api.egg-info/requires.txt
+src/signicat_api.egg-info/top_level.txt
