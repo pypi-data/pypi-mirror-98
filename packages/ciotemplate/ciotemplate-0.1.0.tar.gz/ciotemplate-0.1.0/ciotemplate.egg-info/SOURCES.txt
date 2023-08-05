@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+VERSION
+setup.py
+./ciotemplate/__init__.py
+./ciotemplate/expander.py
+ciotemplate.egg-info/PKG-INFO
+ciotemplate.egg-info/SOURCES.txt
+ciotemplate.egg-info/dependency_links.txt
+ciotemplate.egg-info/not-zip-safe
+ciotemplate.egg-info/requires.txt
+ciotemplate.egg-info/top_level.txt
