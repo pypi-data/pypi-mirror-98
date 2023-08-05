@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: norby
+Version: 0.0.1.dev0
+Summary: Communication via telegram bot when bash command finishes executing
+Home-page: https://github.com/Jimmy2027/NORBY
+Author: Hendrik Klug
+Author-email: klugh@ethz.ch
+License: GNUv3
+Description: UNKNOWN
+Keywords: python-telegram-bot,job-utilities,automatic-notification
+Platform: UNKNOWN
+Provides: mimic
+Requires-Python: >=3.7
+Provides-Extra: docs
+Provides-Extra: testing

@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/norby/__init__.py
+src/norby/__main__.py
+src/norby/utils.py
+src/norby/version.py
+src/norby.egg-info/PKG-INFO
+src/norby.egg-info/SOURCES.txt
+src/norby.egg-info/dependency_links.txt
+src/norby.egg-info/entry_points.txt
+src/norby.egg-info/requires.txt
+src/norby.egg-info/top_level.txt

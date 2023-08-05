@@ -1,0 +1,12 @@
+requests
+subprocess-tee
+click
+
+[docs]
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+sphinx-click
+
+[testing]
+pytest
