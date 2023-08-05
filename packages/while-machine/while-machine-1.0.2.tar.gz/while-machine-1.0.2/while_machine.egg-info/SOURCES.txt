@@ -1,0 +1,7 @@
+README.md
+setup.py
+while_machine.py
+while_machine.egg-info/PKG-INFO
+while_machine.egg-info/SOURCES.txt
+while_machine.egg-info/dependency_links.txt
+while_machine.egg-info/top_level.txt
