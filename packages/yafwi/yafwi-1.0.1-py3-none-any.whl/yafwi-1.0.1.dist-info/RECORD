@@ -1,0 +1,8 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_yafwi.py,sha256=X7RGhKaGOSZ_5gxjBq2UkXmoKymtKpy80JR1QflQY0A,4484
+yafwi/__init__.py,sha256=FANMoECo_y3KXkQnudbGoBZv95Rr6WmNvoK6zac32I0,8408
+yafwi-1.0.1.dist-info/LICENSE,sha256=hmatr4iBM71AEJHWPmW22kB7NGDfbGS-tQ7UbnWBBec,1061
+yafwi-1.0.1.dist-info/METADATA,sha256=CgV9SOaqnLHtt7tCI6PIiOSHM_2vbVXU6XZtZAD76lc,3224
+yafwi-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+yafwi-1.0.1.dist-info/top_level.txt,sha256=hlK8sgoBl9-D1L2DvY_qo9aoPySaoOIMyaO2shVY36o,12
+yafwi-1.0.1.dist-info/RECORD,,
