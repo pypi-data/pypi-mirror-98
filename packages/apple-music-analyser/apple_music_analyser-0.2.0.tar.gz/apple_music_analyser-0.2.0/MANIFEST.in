@@ -1,0 +1,1 @@
+recursive-include apple_music_analyser/tests *.zip
