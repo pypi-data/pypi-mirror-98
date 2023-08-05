@@ -1,0 +1,5 @@
+[console_scripts]
+neurst-run = neurst.cli.run_exp:cli_main
+neurst-view = neurst.cli.view_registry:cli_main
+neurst-vocab = neurst.cli.generate_vocab:cli_main
+
