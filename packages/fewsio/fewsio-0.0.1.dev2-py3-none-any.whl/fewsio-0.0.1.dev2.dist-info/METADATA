@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fewsio
+Version: 0.0.1.dev2
+Summary: Typo fallback for FEWS-IO
+Home-page: https://pypi.python.org/pypi/fews-io/
+Author: Jack Vreeken
+Author-email: UNKNOWN
+License: LGPLv3
+Platform: all
+Requires-Dist: fews-io
+
+Use `fews-io <https://pypi.python.org/pypi/fews-io/>`_ instead
+
+
