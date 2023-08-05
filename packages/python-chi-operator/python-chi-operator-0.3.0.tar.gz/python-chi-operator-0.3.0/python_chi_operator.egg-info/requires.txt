@@ -1,0 +1,11 @@
+click
+click-spinner
+crudini
+python-blazarclient
+python-dateutil
+python-dracclient
+python-ironicclient
+python-neutronclient
+python-chi>=0.7.2
+PyYAML
+tabulate
