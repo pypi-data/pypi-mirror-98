@@ -1,0 +1,14 @@
+simple_http_server/__init__.py,sha256=kMd-lx1OjkVwZ4_hsNBDGjfQU_zyyigxSywzaLawfuI,21370
+simple_http_server/__utils.py,sha256=kqlIoFPNM_SBnmtL2OysB-lHxT7jvIwT9gpjCjgzJ3E,1273
+simple_http_server/_http_session_local_impl.py,sha256=sbGPwI9rs6fVN_omhn7lJbNF7JNe4oshTtAr8dpAdyM,5287
+simple_http_server/base_http_request_handler.py,sha256=Hcju3w4rwbxW0mfxCtdJrrXVAzcB3O8reOx7PA8JL_4,14575
+simple_http_server/http_request_handler.py,sha256=-7pnZkov7uhGpry8xKnJNLjeDIDFHf9MX55mwnKBNzQ,27038
+simple_http_server/http_server.py,sha256=jkVtekrPSbHnsDFqxJ6vJrPxmH9qVfNib8Ub_rmRWw8,15011
+simple_http_server/logger.py,sha256=Mwr_8PS7w3pczCF1wN1168zx5M0HYe4L5o8XmY3sRGo,3197
+simple_http_server/server.py,sha256=F0k3WCZe0bh1aTwQNhZPRMbUkxIzp67SqV51sc616J8,5428
+simple_http_server/websocket_request_handler.py,sha256=_PrAQKx2w5iDCPZ6YoIMa_tseooo4WamxDU8ylE5u7k,12646
+simple_http_server-0.10.0.dist-info/LICENSE,sha256=5Ua2aqkB4IebZSVVRv8QnMwWrcZwDg95sH5XUjR1eVc,1066
+simple_http_server-0.10.0.dist-info/METADATA,sha256=yG87iWWxUqxyqKU1MCJvlIqBTHsd8pu_tPopqOicqEE,16521
+simple_http_server-0.10.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+simple_http_server-0.10.0.dist-info/top_level.txt,sha256=xE-tlNk4me1UexHeorhyWK9E7zJqM0MfYOqPRzuXk2w,19
+simple_http_server-0.10.0.dist-info/RECORD,,
