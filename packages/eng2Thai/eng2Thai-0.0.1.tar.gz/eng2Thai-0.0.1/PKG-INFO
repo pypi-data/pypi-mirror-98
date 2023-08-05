@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: eng2Thai
+Version: 0.0.1
+Summary: Covert eng to thai
+Home-page: https://github.com/miracleexotic/eng2Thai
+Author: miracleexotic
+Author-email: mai.nutthawat@gmail.com
+License: MIT
+Description: plese read in: https://github.com/miracleexotic/eng2Thai
+Keywords: eng2Thai
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
