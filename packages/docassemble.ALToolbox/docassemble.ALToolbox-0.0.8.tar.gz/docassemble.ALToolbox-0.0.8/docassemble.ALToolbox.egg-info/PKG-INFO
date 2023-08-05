@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: docassemble.ALToolbox
+Version: 0.0.8
+Summary: A docassemble extension.
+Home-page: https://docassemble.org
+Author: AssemblyLine
+Author-email: 52798256+plocket@users.noreply.github.com
+License: The MIT License (MIT)
+Description: This project is used to host custom-built modules, js files etc. The purpose is to provide a toolbox so that other coders can call these code in their interview.
+        
+        If you want to add a small fuction to this project, consider adding it to the existing misc.py to avoid creating too many module files.
+        
+        ***** This package is superseded by docassemble.ALToolBox ******
+        
+        --------------------------
+        Contributors:  
+        * @plocket  
+        * @nonprofittechy
+        * @purplesky2016
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
