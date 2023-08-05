@@ -1,0 +1,7 @@
+README.md
+oci_image.py
+setup.py
+oci_image.egg-info/PKG-INFO
+oci_image.egg-info/SOURCES.txt
+oci_image.egg-info/dependency_links.txt
+oci_image.egg-info/top_level.txt
