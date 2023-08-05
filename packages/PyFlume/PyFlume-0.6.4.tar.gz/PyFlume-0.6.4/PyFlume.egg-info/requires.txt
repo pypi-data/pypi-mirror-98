@@ -1,0 +1,4 @@
+pyjwt==2.0.1
+ratelimit==2.2.1
+pytz==2019.2
+requests==2.24.0
