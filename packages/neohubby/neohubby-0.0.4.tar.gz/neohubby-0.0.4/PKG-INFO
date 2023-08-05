@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: neohubby
+Version: 0.0.4
+Summary: Python API for Neohub heating controllers from Heatmiser.
+Home-page: https://gitlab.com/afshar-oss/neohubby
+Author: Ali Afshar
+Author-email: aafshar@gmail.com
+License: MIT
+Description: Python API for Neohub heating controllers from Heatmiser.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
