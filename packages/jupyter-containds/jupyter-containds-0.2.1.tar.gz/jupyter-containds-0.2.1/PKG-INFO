@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: jupyter-containds
+Version: 0.2.1
+Summary: Companion Jupyter extension for ContainDS
+Home-page: https://github.com/ideonate/jupyter-containds
+Author: Ideonate
+Author-email: dan@containds.com
+License: BSD
+Description: UNKNOWN
+Keywords: Jupyter,Widgets,IPython,JupyterHub,Dashboard
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Jupyter
+Provides-Extra: test
+Provides-Extra: examples
+Provides-Extra: docs
