@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: datafold
+Version: 1.1.3
+Summary: A package providing manifold parametrization in the Diffusion Maps framework and identification of dynamical systems in the Koopman operator view with the Extended Dynamic Mode Decomposition.
+Home-page: https://datafold-dev.gitlab.io/datafold
+Author: datafold development team
+Author-email: daniel.lehmberg@hm.edu
+License: MIT
+Keywords: machine learning, dynamical system, data-driven, time series, time series regression, time series forecasting, manifold learning, koopman operator
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Requires-Dist: numpy (<1.21.0,>=1.18.0)
+Requires-Dist: scikit-learn (<0.25.0,>=0.24.1)
+Requires-Dist: scipy (<1.7,>=1.4.0)
+Requires-Dist: pandas (<1.3.0,>=1.2.0)
+Requires-Dist: numexpr (<3.0.0,>=2.7.1)
+Requires-Dist: matplotlib (>=3.2.0)
+Requires-Dist: findiff (==0.8.9)
+
+
+The package provides:
+
+* (Extended-) Dynamic Mode Decomposition (EDMD) to approximate the Koopman operator for 
+  system identification. 
+* Diffusion Maps to find meaningful geometric descriptions in point clouds, such as the 
+  eigenfunctions of the Laplace-Beltrami operator. 
+* Data structure for time series collections (TSCDataFrame) and dedicated 
+  transformations, such as time-delay embeddings (TSCTakensEmbedding). The data 
+  structures operate with both EDMD and DMAP.  
+
+
