@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: xontrib-termcolors
+Version: 0.2.0
+Summary: Set terminal colors based on selected xonsh theme.
+Home-page: https://github.com/dyuri/xontrib-termcolors
+Author: Gyuri Horak
+Author-email: dyuri@horak.hu
+License: MIT
+Project-URL: Documentation, https://github.com/dyuri/xontrib-termcolors/blob/master/README.md
+Project-URL: Code, https://github.com/dyuri/xontrib-termcolors
+Project-URL: Issue tracker, https://github.com/dyuri/xontrib-termcolors/issues
+Description: <p align="center">
+        Set terminal colors based on selected xonsh theme.
+        </p>
+        
+        <p align="center">  
+        If you like the idea click ⭐ on the repo and <a href="https://twitter.com/intent/tweet?text=Nice%20xontrib%20for%20the%20xonsh%20shell!&url=https://github.com/dyuri/xontrib-termcolors" target="_blank">tweet</a>.
+        </p>
+        
+        
+        ## Installation
+        
+        To install use pip:
+        
+        ```bash
+        xpip install xontrib-termcolors
+        # or: xpip install -U git+https://github.com/dyuri/xontrib-termcolors
+        ```
+        
+        ## Usage
+        
+        This xontrib sets the colors of your (xterm compatible) terminal based on your xonsh theme.
+        
+        ```bash
+        $ xontrib load termcolors
+        ```
+        
+        If you change your theme and want to update the terminal colors use the `termcolors` command:
+        
+        ```bash
+        $ $XONSH_COLOR_STYLE="monokai"
+        $ termcolors
+        ```
+        
+        ## Colors
+        
+        The main 16 colors will be used directly from the pygments/ptk theme. The following special colors can be set by adding the tokens to your theme:
+        
+        - `Token.Terminal.Foreground` - foreground color
+        - `Token.Terminal.Background` - background color
+        - `Token.Terminal.Curson` - cursor color
+        
+        ## Example
+        
+        To replace all colors in xonsh and terminal to green add this to your `.xonshrc`:
+        ```python
+        from xonsh.tools import register_custom_style
+        from xonsh import style_tools
+        from pygments.token import Token
+        
+        mystyle = {k: '#00ff00' for k,c in style_tools.DEFAULT_STYLE_DICT.items()}
+        mystyle[Token.Terminal.Foreground] = '#00ff00'
+        mystyle[Token.Terminal.Curson] = '#00ff00'
+        mystyle[Token.Terminal.Background] = '#000000'
+        
+        register_custom_style("green", mystyle, base=__xonsh__.env['XONSH_COLOR_STYLE'])
+        $XONSH_COLOR_STYLE="green"
+        
+        xontrib load termcolors
+        ```
+        
+        ## Credits
+        
+        This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
+        
+        
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Terminals
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
