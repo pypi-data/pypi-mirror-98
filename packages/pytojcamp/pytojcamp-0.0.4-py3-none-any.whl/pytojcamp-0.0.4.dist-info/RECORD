@@ -1,0 +1,15 @@
+pytojcamp/__init__.py,sha256=G8UHhZNUdrvhorsfyCDT7MwE8kRhUvDckjEue4S_TLk,236
+pytojcamp/_version.py,sha256=H2fPu9myjKdKhQ0Pz0QYCefGQDbRi7wR_3y7l5fTS54,498
+pytojcamp/constants.py,sha256=LACILOVZR9hQuZ4kqtbcYmJuflgb42JWRuH412b8DkM,717
+pytojcamp/from_dict.py,sha256=heCG0QCdA0_GZ3ILnuyJU3qJq8ZDZjqbURyJrmnW3M0,4069
+pytojcamp/from_xy.py,sha256=WLTKsadWhrzQ1pVgtlcVRJPit_95UCCw-IqEn0JixNI,2138
+pytojcamp/utils.py,sha256=witNze_6PfDsmGN7rb5UGaYHvXomxQV2FvkQbR6QX-s,798
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=iXrMpB_Ff12rZQe61lFxb2cFlSr6W4-4fxJQqGx1fRY,529
+tests/test_from_dict.py,sha256=1Lhke7yKqmlNh6-o8cCrX7j6ghUUOvin_1QRAdnXD34,634
+tests/test_from_xy.py,sha256=2GFhfDltHyXSEw361-AdMGM6vcSZrGpKO5cAM3qO_YQ,1080
+pytojcamp-0.0.4.dist-info/LICENSE,sha256=lrNNLLg5U6nk8SdJxb7LX2sqjrT5PFx81xhb3MWibI0,1107
+pytojcamp-0.0.4.dist-info/METADATA,sha256=duwzMXEppKam1EGTHPHRAS6Rt2P2gg_jmz6YlpNwtQo,3592
+pytojcamp-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytojcamp-0.0.4.dist-info/top_level.txt,sha256=Yu4_rZpi1oBZyRaMzgNd7j9cqpLOLGvsejkUpvMi8F0,16
+pytojcamp-0.0.4.dist-info/RECORD,,
