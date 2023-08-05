@@ -1,0 +1,28 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "bftc"
+author = "Ilxomidin Bakhoraliev"
+author-email = "itilhomidin@yandex.com"
+home-page = "https://github.com/ilhomidin/bftc"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+description-file = "README.md"
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
