@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+hagerstrand/__init__.py
+hagerstrand/hagerstrand.py
+hagerstrand.egg-info/PKG-INFO
+hagerstrand.egg-info/SOURCES.txt
+hagerstrand.egg-info/dependency_links.txt
+hagerstrand.egg-info/not-zip-safe
+hagerstrand.egg-info/requires.txt
+hagerstrand.egg-info/top_level.txt
