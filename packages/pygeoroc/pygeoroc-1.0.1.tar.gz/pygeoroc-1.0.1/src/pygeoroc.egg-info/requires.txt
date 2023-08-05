@@ -1,0 +1,17 @@
+attrs>=19.3
+bs4
+clldutils>=3.5
+csvw
+requests
+tqdm
+
+[dev]
+flake8
+twine
+wheel
+
+[test]
+coverage>=4.2
+pytest-cov
+pytest-mock
+pytest>=4.3
