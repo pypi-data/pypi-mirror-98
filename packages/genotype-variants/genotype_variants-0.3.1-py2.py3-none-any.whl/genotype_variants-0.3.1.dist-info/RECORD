@@ -1,0 +1,16 @@
+genotype_variants/__init__.py,sha256=K7s9iAn0jRH_4TqlO9DNwqfs_ywu2wxSzas7g3PYrQ4,134
+genotype_variants/cli.py,sha256=DP9OdsLj-U3R7QTvWOmaPBIFjSeA2yynIjYuL9gij_I,2000
+genotype_variants/create_all_maf_dataframe.py,sha256=MdzrIoVkQDbL5oftAMwmPi6sfbsRI2lpqitZOUav-GU,16224
+genotype_variants/create_duplex_simplex_dataframe.py,sha256=TekL0RwWTU9g2GQ9-cf4Z2smpf2Mj81JqId9UUZpf38,13472
+genotype_variants/generate_summary_field.py,sha256=OahfmH_da45eBl90ySWcDCslDl_dRQmWM8grgr8puW0,947
+genotype_variants/genotype_variants.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+genotype_variants/run_cmd.py,sha256=3KThb0J0YimgSJFfQA7ovK6KhS7X2KtwbgTDoMmVzKQ,875
+genotype_variants/commands/__init__.py,sha256=j7QJQEKM-HZsfLzjfNq6PP20SbhfCj1JWUZHScR5g8Y,125
+genotype_variants/commands/small_variants.py,sha256=mk85VdXNg-MxFrjIRaUDh54b2U0K4nm-qJqRuXdNNoQ,28626
+genotype_variants-0.3.1.dist-info/AUTHORS.rst,sha256=o7MdL5jVXEV1BVqtsE6YIjYaT608F5hGYX6C3UVcCFg,155
+genotype_variants-0.3.1.dist-info/LICENSE,sha256=Lu1YWWqcCp6xcwWc0vLlXB27XSgDa-66LmjoirLX0mw,582
+genotype_variants-0.3.1.dist-info/METADATA,sha256=84rfBm4z7sGwp74y8bc8EAnX3AzLVh1MAdKuCVCxkfQ,3164
+genotype_variants-0.3.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+genotype_variants-0.3.1.dist-info/entry_points.txt,sha256=7mFcNkA9UDdzmc_UjMokqqrzJuK8ePHnzsJ5-FKCbaM,66
+genotype_variants-0.3.1.dist-info/top_level.txt,sha256=WJJS19oJkUzAj-13CZ39_jXk-2XZgPrd-mhDA8AlIlQ,18
+genotype_variants-0.3.1.dist-info/RECORD,,
