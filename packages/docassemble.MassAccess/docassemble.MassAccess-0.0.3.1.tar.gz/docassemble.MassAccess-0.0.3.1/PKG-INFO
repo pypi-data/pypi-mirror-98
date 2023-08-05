@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: docassemble.MassAccess
+Version: 0.0.3.1
+Summary: A docassemble project using the AssemblyLine package in combination with the ALMassachusetts package.
+Home-page: https://docassemble.org
+Author: MassAccess
+Author-email: MassAccess@example.com
+License: The MIT License (MIT)
+Description: # docassemble.MassAccess
+        
+        A docassemble project using the AssemblyLine package in combination with the ALMassachusetts package.
+        
+        ## Author
+        
+        mb.restless.tech@gmail.com
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

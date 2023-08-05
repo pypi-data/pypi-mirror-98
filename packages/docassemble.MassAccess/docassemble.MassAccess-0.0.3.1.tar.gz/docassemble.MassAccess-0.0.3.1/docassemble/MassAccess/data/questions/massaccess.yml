@@ -1,0 +1,21 @@
+---
+include:
+  - docassemble.ALMassachusetts:al_massachusetts.yml
+---  
+metadata:
+  title: |
+    CourtFormsOnline: MassAccess
+  short title: |
+    MassAccess
+  title url: https://courtformsonline.org
+  logo: |
+    <img src="/packagestatic/docassemble.MassAccess/mass_icon.png" class="ma_icon" alt="MA State Icon"><div class="title">CourtFormsOnline : MassAccess</div>
+  exit url: |
+    https://courtformsonline.org
+---
+features:
+  question help button: True
+  question back button: True
+  progress bar: True
+  css: colors.css
+  
