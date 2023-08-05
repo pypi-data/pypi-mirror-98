@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: fw-gear-testing
+Version: 0.1.0
+Summary: Testing suite for Flywheel Gears
+License: MIT
+Author: Flywheel Exchange
+Author-email: support@flywheel.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: flywheel-sdk (>=15.3.1,<16.0.0)
+Requires-Dist: pydicom (>=2.1.2,<3.0.0)
