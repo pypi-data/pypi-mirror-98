@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyepoet/__init__.py
+pyepoet/pyepoet.py
+pyepoet.egg-info/PKG-INFO
+pyepoet.egg-info/SOURCES.txt
+pyepoet.egg-info/dependency_links.txt
+pyepoet.egg-info/top_level.txt
