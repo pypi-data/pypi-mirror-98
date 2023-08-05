@@ -1,0 +1,12 @@
+cioseq/LICENSE,sha256=eSiIxE5S7RlI78VJUCpgrHNe5ZkosDjX4mPy6IDuo1c,1079
+cioseq/README.md,sha256=qjRjdM0vzdVGTRMc-1FDur9KU7bm4sfoGUvQ8lc71DA,3970
+cioseq/VERSION,sha256=r-jqHzm6w_RJgmQoGTVXOd9UOJB6qtVWF_tPmBSRxi8,6
+cioseq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cioseq/sequence.py,sha256=PqocJXq1TVKJlF1WU-yJ-BwUulnXa6kqAdcc7mZhJYo,19699
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_sequence.py,sha256=HDgUHK-3XWxqxM1u_lZDBnB-_jWWaHAmdxHGUCLLEUo,23943
+cioseq-0.1.11.dist-info/LICENSE,sha256=eSiIxE5S7RlI78VJUCpgrHNe5ZkosDjX4mPy6IDuo1c,1079
+cioseq-0.1.11.dist-info/METADATA,sha256=ukFSTipRteRYozXypZjv1G5eHQ0QF8M0Zd3rjTglv_U,5576
+cioseq-0.1.11.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+cioseq-0.1.11.dist-info/top_level.txt,sha256=oGyuKelxko4m3F-O4HRyV2wKuX2uomz71qKmgKgjCy8,13
+cioseq-0.1.11.dist-info/RECORD,,
