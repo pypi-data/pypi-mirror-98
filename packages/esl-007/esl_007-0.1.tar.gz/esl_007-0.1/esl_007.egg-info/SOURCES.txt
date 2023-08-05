@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+esl_007.egg-info/PKG-INFO
+esl_007.egg-info/SOURCES.txt
+esl_007.egg-info/dependency_links.txt
+esl_007.egg-info/top_level.txt
+foam_007/__init__.py
