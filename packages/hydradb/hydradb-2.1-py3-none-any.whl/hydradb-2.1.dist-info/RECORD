@@ -1,0 +1,12 @@
+hydra/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydra/column.py,sha256=350HbsFprwvS2DeosBTHAorISHc3xi0BojzgUn5LESc,4152
+hydra/connection.py,sha256=kJS18zSZ0-D168p5pFXYOXo5B413_sPyCMzP0Us6Z_E,2881
+hydra/database.py,sha256=dtFMLwmCzyrbfJD7k0rZrleh_TpSYGkCcCWhXLt_nh0,4050
+hydra/file.py,sha256=mz69EHG5EPro5QzeyIlyy8iRTLw0bG3pWxGkqnCeMKw,1991
+hydra/row.py,sha256=koK_SuIa3dwEu56DbcOKgWvHmP2QVvo-gCwLHFVyI1o,4740
+hydra/table.py,sha256=cMwz1Yoko0fLAoRcB11P705Tuniks62Jnk1Wela2qm4,6386
+hydradb-2.1.dist-info/LICENCE.txt,sha256=xGbi8E5vc72b4kOLPmy_3J5j7bWK7Uq5Uu4scZOW9jo,1056
+hydradb-2.1.dist-info/METADATA,sha256=tNfOB7jcYjK8CSA_PHcCXpOaKCQPqWJ8lYjY-nccgzY,885
+hydradb-2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hydradb-2.1.dist-info/top_level.txt,sha256=izgzyEMiRL3xiwDnTKYJY7UL0mWcGbI7tqJ9o3FMbQI,6
+hydradb-2.1.dist-info/RECORD,,
