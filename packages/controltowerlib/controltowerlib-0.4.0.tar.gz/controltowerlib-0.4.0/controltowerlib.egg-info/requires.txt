@@ -1,0 +1,5 @@
+boto3>=1.17.25
+opnieuw>=1.1.0
+requests>=2.25.1
+beautifulsoup4>=4.9.3
+awsauthenticationlib>=0.4.0
