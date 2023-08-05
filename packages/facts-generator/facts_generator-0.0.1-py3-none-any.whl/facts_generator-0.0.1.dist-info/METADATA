@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: facts-generator
+Version: 0.0.1
+Summary: Excel Facts File Generate from Networking Device Output|Config
+Home-page: https://github.com/aliasgar1978/facts_generator
+Author: ALIASGAR - ALI
+Author-email: aholo2000@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+use Execute_Read_Only_Mode function to read the output and generate facts
+mandatory command output requires : 
+# Cisco 
+'sh run'
+'sh lldp nei'
+'sh int status'
+
+# Juniper 
+'show configuration | no-more'
+'show lldp neighbors | no-more'
+'show interfaces descriptions | no-more'
+
+
