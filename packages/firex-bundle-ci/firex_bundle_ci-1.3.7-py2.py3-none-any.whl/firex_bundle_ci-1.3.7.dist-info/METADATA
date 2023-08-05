@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: firex-bundle-ci
+Version: 1.3.7
+Summary: FireX CI services
+Home-page: https://github.com/FireXStuff/firex-bundle-ci.git
+Author: Core FireX Team
+Author-email: firex-dev@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Dist: firexapp
+Requires-Dist: firex-keeper
+Requires-Dist: firex-flame
+Requires-Dist: lxml
+Requires-Dist: xunitmerge
+Requires-Dist: unittest-xml-reporting
+
+UNKNOWN
+
+
