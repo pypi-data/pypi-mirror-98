@@ -1,0 +1,4 @@
+eliot
+kubernetes
+pyjwt
+requests<3,>=2
