@@ -1,0 +1,1 @@
+from fitfeats.feature_selection.association_methods._regression import regression_association_methods
