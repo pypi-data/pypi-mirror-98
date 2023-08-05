@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: conduitlib
+Version: 2.0.0rc2
+Summary: A library containing common elements to Conduit and Conduit plugins.
+Home-page: UNKNOWN
+Author: Eric Frechette
+Author-email: eric@softwarefactorylabs.com
+License: UNKNOWN
+Description: # conduitlib
+        
+        A library containing common elements to Conduit and Conduit plugins.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8,<3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
