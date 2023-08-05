@@ -1,0 +1,9 @@
+sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdk/sdk.py,sha256=Xio1sJ64loZeauxl3B1Z6rRgRpMTMqWTxckirer4SGQ,1911
+tg_bot/__init__.py,sha256=6cqHLNlY7l62_5Xjw6FQRxGILK0X_x5vRJZacjhZQJw,27
+tg_bot/sdk.py,sha256=Xio1sJ64loZeauxl3B1Z6rRgRpMTMqWTxckirer4SGQ,1911
+tgbot_py-0.2.dist-info/LICENSE,sha256=kHLKffcbh0HEE4CRrdfqmnZA78SkE1iTuR1_17WlRo4,1065
+tgbot_py-0.2.dist-info/METADATA,sha256=pL_GiAq7T7rWfUWtxBrsNM9i5sieme3zWUbmPo4UUBI,482
+tgbot_py-0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tgbot_py-0.2.dist-info/top_level.txt,sha256=D6sTDrZpnG3_wUkFi3jHF25Pr4NTE9fR8iHbJcCbZxo,7
+tgbot_py-0.2.dist-info/RECORD,,
