@@ -1,0 +1,9 @@
+README.md
+setup.py
+gameturtle/__init__.py
+gameturtle.egg-info/PKG-INFO
+gameturtle.egg-info/SOURCES.txt
+gameturtle.egg-info/dependency_links.txt
+gameturtle.egg-info/not-zip-safe
+gameturtle.egg-info/requires.txt
+gameturtle.egg-info/top_level.txt
