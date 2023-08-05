@@ -1,0 +1,8 @@
+README.md
+setup.py
+codeanalyst/__init__.py
+codeanalyst/codeanalyst.py
+codeanalyst.egg-info/PKG-INFO
+codeanalyst.egg-info/SOURCES.txt
+codeanalyst.egg-info/dependency_links.txt
+codeanalyst.egg-info/top_level.txt
