@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Die1_production_TheTest",
+    "prog_name": "smoke_test_HW0_PR_Die1_production_TheTest",
+    "hardware": "HW0",
+    "base": "PR",
+    "test": "DBC",
+    "is_default": true,
+    "is_enabled": false,
+    "is_changed": false
+  }
+]
