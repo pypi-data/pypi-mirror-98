@@ -1,0 +1,8 @@
+README.md
+setup.py
+linkedtuple/__init__.py
+linkedtuple/linkedtuple.py
+linkedtuple.egg-info/PKG-INFO
+linkedtuple.egg-info/SOURCES.txt
+linkedtuple.egg-info/dependency_links.txt
+linkedtuple.egg-info/top_level.txt
