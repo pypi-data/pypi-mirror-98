@@ -1,0 +1,11 @@
+datamechanics_airflow_plugin/__init__.py,sha256=lZoKOOsd6BlSqiDqRsuakDvTg2avEYO_MUGVePPI83Q,176
+datamechanics_airflow_plugin/application_state.py,sha256=bjdOE2qYc_CE9pvneqlamXEz38pze9RnuK7O4W3YCa4,1982
+datamechanics_airflow_plugin/hook.py,sha256=qi15Jl9NlBSjW7cvbvxuaz4jTXfjjg-DIfcqmzeAkAs,4264
+datamechanics_airflow_plugin/operator.py,sha256=bfRQJ3Jic0IZKFk_dsLx9RIOKHRTPesv6G0LfrHS2Fs,4862
+datamechanics_airflow_plugin/plugin.py,sha256=1ZV16JKSa2wRFqBopQekyMR01_f2yym9sSLwBQQ07sU,669
+datamechanics_airflow_plugin-1.1.0.dist-info/LICENSE,sha256=fW0WelFrm7RipqocfHO_iwfjT9YwDHoF8aVpdkx7qd4,603
+datamechanics_airflow_plugin-1.1.0.dist-info/METADATA,sha256=QaH9g7H7Bp6fr9V4FHDve9zXfLrA04Ec1f_XUdEOJS0,2954
+datamechanics_airflow_plugin-1.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+datamechanics_airflow_plugin-1.1.0.dist-info/entry_points.txt,sha256=PqsssRcD8zV0wWg8T8LZkpKZRhrlvmtpZtXZ15sqTSs,91
+datamechanics_airflow_plugin-1.1.0.dist-info/top_level.txt,sha256=Dlmm5Auu2K-tOgR2qZWx9Ds16OGmTyz4lzqRr0iVy0w,29
+datamechanics_airflow_plugin-1.1.0.dist-info/RECORD,,
