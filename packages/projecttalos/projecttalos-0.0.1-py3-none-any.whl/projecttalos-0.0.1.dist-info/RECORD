@@ -1,0 +1,13 @@
+projecttalos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projecttalos/data_preprocessing.py,sha256=MXcHo2q2OuGR9ZbEoG2mw-0lcO5X0BxWcyLR9J0NrR4,1544
+projecttalos/models.py,sha256=bNudEb1L-HzQT4z8plTRJTvcJnVg1QdemgWfTqEuBP4,1874
+projecttalos/nn_funcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+projecttalos/nn_funcs/activation_functions.py,sha256=jrozfg9xpX-AViEch9CC6p8HZ-6g9SYfkdh0sQCGP0Y,908
+projecttalos/nn_funcs/backward_prop.py,sha256=H3ghmf4Vdk2fcB3pv90vC-PTVXXPF_huzHxt5yKVCXI,2034
+projecttalos/nn_funcs/forward_prop.py,sha256=rpu1gWZwXASC0RZIt9wQ9h5VQqh8z2IIfrbeKSkx9bY,1383
+projecttalos/nn_funcs/test.py,sha256=aeD9Vh5Hm9jwrW17z_ophzBzIhdS4sVvqdaFRvXfYe0,260
+projecttalos-0.0.1.dist-info/LICENSE,sha256=zq8JOqKvFX0uQgN19Cb_JUZJO1ugxfOoDY8P4NFARwE,1084
+projecttalos-0.0.1.dist-info/METADATA,sha256=olmzid4edzySJijNnV-Xqtn48532urnHam21ylKupec,459
+projecttalos-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+projecttalos-0.0.1.dist-info/top_level.txt,sha256=_U8z3S-wv3Yr6nXPbUswSDtxPg-GsYOVv5uuNo7MvFo,13
+projecttalos-0.0.1.dist-info/RECORD,,
