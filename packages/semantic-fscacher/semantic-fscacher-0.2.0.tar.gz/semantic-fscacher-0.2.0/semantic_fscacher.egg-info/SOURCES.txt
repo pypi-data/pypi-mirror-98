@@ -1,0 +1,10 @@
+LICENSE
+README.md
+fscacher.py
+pyproject.toml
+setup.cfg
+setup.py
+semantic_fscacher.egg-info/PKG-INFO
+semantic_fscacher.egg-info/SOURCES.txt
+semantic_fscacher.egg-info/dependency_links.txt
+semantic_fscacher.egg-info/top_level.txt
