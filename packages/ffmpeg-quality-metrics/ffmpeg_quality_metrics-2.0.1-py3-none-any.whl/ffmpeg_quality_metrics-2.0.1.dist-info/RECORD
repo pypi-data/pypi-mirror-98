@@ -1,0 +1,12 @@
+ffmpeg_quality_metrics/__init__.py,sha256=gnFT1muw32HFkHh9c11_xs02befjncm_sxyVLP4vbO0,186
+ffmpeg_quality_metrics/__main__.py,sha256=rJ8rS2unTXYUIb2nHPUufHoEP--ySB6WmPsDQuh3YdI,4256
+ffmpeg_quality_metrics/ffmpeg_quality_metrics.py,sha256=oNvFqlt9JiguiMjSBViXapxwihW7EvNHYZ3f-w17-nw,24115
+ffmpeg_quality_metrics/utils.py,sha256=XQ-ZzafIVdu6IR1p3vK0dex4G05RrlJ8KOajoTOWYsU,1854
+ffmpeg_quality_metrics/vmaf_models/vmaf_4k_v0.6.1.json,sha256=c7GHABMJcDyJ1Xz1i6qwFmC9EeTqb6xivAZMX12m2sg,22910
+ffmpeg_quality_metrics/vmaf_models/vmaf_v0.6.1.json,sha256=WVDWH6H4Yb1F2BSdgFOe2fM3bPwklbjw-o6fV8sTHuM,19101
+ffmpeg_quality_metrics/vmaf_models/vmaf_v0.6.1neg.json,sha256=H82hk6qioxNkcbdRazxdw0RUbAX83i1YYJ-MYKI4c5I,19519
+ffmpeg_quality_metrics-2.0.1.dist-info/METADATA,sha256=K4GwP_MyYRO6ghv8j_jOYWinDYs1NCgnNNEDbq5qoTQ,14210
+ffmpeg_quality_metrics-2.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ffmpeg_quality_metrics-2.0.1.dist-info/entry_points.txt,sha256=Qtgv78tGk6FLUA-4aBazJaF61HJc1xJts_f1Tk0HPGQ,81
+ffmpeg_quality_metrics-2.0.1.dist-info/top_level.txt,sha256=Wc4qrUouiM91dqlWkPArhgQ3VTbKHltngvdzth2jnHA,23
+ffmpeg_quality_metrics-2.0.1.dist-info/RECORD,,
