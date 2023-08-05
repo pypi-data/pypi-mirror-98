@@ -1,0 +1,13 @@
+README.txt
+setup.py
+bin/mago
+bin/pymago
+pymago/__init__.py
+pymago/cli.py
+pymago/process.py
+pymago.egg-info/PKG-INFO
+pymago.egg-info/SOURCES.txt
+pymago.egg-info/dependency_links.txt
+pymago.egg-info/top_level.txt
+pymago/programs/__init__.py
+pymago/programs/convert.py
