@@ -1,0 +1,8 @@
+product_category/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+product_category/pc_model.py,sha256=729VVt6qSeF2lbHFt3Qh9JfO4jmxOB6ADfXBBvULank,6578
+product_category/predict.py,sha256=HxsdYq19W-eTuvVGQfVcyWZCJm7r3XzPyT-7RjpRkjk,1805
+product_category/train.py,sha256=9CgfXpQdZ8UKZJvEeC2mr70Cbor6ExqyGYcH1yRxamk,4217
+product_category-0.0.2.dist-info/METADATA,sha256=X2dbsqyZydEFJk5sTUJCMRLUyFA4d-tQm8QEkZyF2VE,8796
+product_category-0.0.2.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+product_category-0.0.2.dist-info/top_level.txt,sha256=pH430a57JtJ9cKXTuZxzpy9XLe_WTwp11ztsmSJj38g,17
+product_category-0.0.2.dist-info/RECORD,,
