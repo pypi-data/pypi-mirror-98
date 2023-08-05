@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "linechart"
+version = "1.6.1"
+description = "Backtest performance analysis and charting for MoonLine."
+authors = ["Tim Wedde <timwedde@icloud.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+matplotlib = "^3.3.4"
+pandas = "^1.2.3"
+seaborn = "^0.11.1"
+empyrical = "^0.5.5"
+scipy = "^1.6.1"
+quantrocket-client = "^2.5.0"
+arrow = "^1.0.3"
+linefolio = "^1.4.1"
+
+[tool.poetry.dev-dependencies]
+pdoc3 = "^0.8.4"
+flake8 = "^3.8.3"
+pytest = "^6.0.1"
+ipython = "^7.17.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
