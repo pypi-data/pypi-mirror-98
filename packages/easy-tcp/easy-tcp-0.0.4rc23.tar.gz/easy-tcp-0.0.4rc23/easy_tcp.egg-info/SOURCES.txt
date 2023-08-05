@@ -1,0 +1,12 @@
+README.md
+easy_tcp
+setup.py
+easy_tcp/__init__.py
+easy_tcp.egg-info/PKG-INFO
+easy_tcp.egg-info/SOURCES.txt
+easy_tcp.egg-info/dependency_links.txt
+easy_tcp.egg-info/not-zip-safe
+easy_tcp.egg-info/requires.txt
+easy_tcp.egg-info/top_level.txt
+easy_tcp/cython_src/__init__.py
+easy_tcp/cython_src/server.c
