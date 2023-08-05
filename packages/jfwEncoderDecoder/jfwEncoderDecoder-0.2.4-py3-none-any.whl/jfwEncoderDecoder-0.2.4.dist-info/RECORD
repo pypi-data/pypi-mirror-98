@@ -1,0 +1,11 @@
+jfwEncoderDecoder/__init__.py,sha256=D_cidDfa75iwsDibMngDN9VW20viSebUugepXOTTl4g,300
+jfwEncoderDecoder/jfw_common.py,sha256=d9ivfD9VUCDfGwYS2O_eYD3XrUu_INZNnra7CJkawZI,1778
+jfwEncoderDecoder/jfw_deserializer.py,sha256=K-Of959VllGFpaPxaKHTbA8OyK5WwsUybYJ1YzIjjMM,4940
+jfwEncoderDecoder/jfw_generator.py,sha256=d6C4dC0p2ZQpxUTWel79FyFwKGZ3a48yqPhaAete22A,3156
+jfwEncoderDecoder/jfw_serializer.py,sha256=dUQ-B-CaaWapP5N1e-xun6mDIQAcxyulMzHw4xi9b3Y,2150
+jfwEncoderDecoder/jfw_structs.py,sha256=4XYIFuOr6GV9bS7H5pnmjWQIsJPpLAPTvJk1YyEsdcM,5607
+jfwEncoderDecoder-0.2.4.dist-info/LICENSE,sha256=sbDkfR1V4W6sWHXmlil5s2iKEVTpojZ9tIdxe_tCC_o,802
+jfwEncoderDecoder-0.2.4.dist-info/METADATA,sha256=W9nCiUDd5GrKs6WkdZCnojT3KiRD8c9tRs_4_SWs9m0,4315
+jfwEncoderDecoder-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jfwEncoderDecoder-0.2.4.dist-info/top_level.txt,sha256=GZQGOHf8KOwHPktJAn9xXh5R1DzuvFDEE-ATHnniW4U,18
+jfwEncoderDecoder-0.2.4.dist-info/RECORD,,
