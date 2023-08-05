@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: chromatose
+Version: 0.0.4
+Summary: Personal palette collection, mini-palette visualizer & interpolator
+Home-page: https://github.com/atisor73/chromatose
+Author: Rosita Fu
+Author-email: rosita.fu99@gmail.com
+License: MIT
+Download-URL: https://github.com/atisor73/chromatose/archive/v0.0.4.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: bokeh
+
+Chromatose is a package for storing and visualizing palettes and constructing new ones via interpolation.
+
+The stored palettes are typically diverging, and mostly for personal record.
+Visualizations include swatches, pies, points, lines, scatters, and heatmaps.
+There are a multitude of beautiful gradients in packages like bokeh and colorcet that are,  for the most part, static. The interpolation scheme here can be used to create entirely new ones given only a few endpoints. This part is still in development, but currently uses linear or polynomial fits in color space metrics RGB, HSL, or HSV. Heatmaps are a great way to visualize the results.
+
