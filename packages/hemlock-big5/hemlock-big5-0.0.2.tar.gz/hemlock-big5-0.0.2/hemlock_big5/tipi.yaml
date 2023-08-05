@@ -1,0 +1,40 @@
+Extraverted:
+  - E
+  - I am extraverted and enthusiastic
+  - true
+Critical:
+  - A
+  - I am critical and quarrelsome
+  - false
+Dependable:
+  - C
+  - I am dependable and self-disciplined
+  - true
+Anxious:
+  - "N"
+  - I am anxious and easily upset
+  - true
+Open:
+  - O
+  - I am complex and open to new experiences
+  - true
+Reserved:
+  - E
+  - I am reserved and quiet
+  - false
+Sympathetic:
+  - A
+  - I am sympathetic and warm
+  - true
+Disorganized:
+  - C
+  - I am disorganized and careless
+  - false
+Calm:
+  - "N"
+  - I am calm and emotionally stable
+  - false
+Conventional:
+  - O
+  - I am conventional and uncreative
+  - false

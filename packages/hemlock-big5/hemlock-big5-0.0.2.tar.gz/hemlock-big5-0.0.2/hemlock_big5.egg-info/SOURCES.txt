@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hemlock_big5/__init__.py
+hemlock_big5/bfi10.yaml
+hemlock_big5/ipip50.yaml
+hemlock_big5/tipi.yaml
+hemlock_big5.egg-info/PKG-INFO
+hemlock_big5.egg-info/SOURCES.txt
+hemlock_big5.egg-info/dependency_links.txt
+hemlock_big5.egg-info/requires.txt
+hemlock_big5.egg-info/top_level.txt

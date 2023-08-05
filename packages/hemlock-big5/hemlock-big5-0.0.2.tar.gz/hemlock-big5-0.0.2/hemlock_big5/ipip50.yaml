@@ -1,0 +1,201 @@
+# https://ipip.ori.org/new_ipip-50-item-scale.htm
+LifeOfParty:
+  - E
+  - I am the life of the party
+  - true
+ConcernForOthers:
+  - A
+  - I feel little concern for others
+  - false
+Prepared:
+  - C
+  - I am always prepared
+  - true
+Stressed:
+  - "N"
+  - I am easily stressed
+  - true
+Vocab:
+  - O
+  - I have a rich vocabulary
+  - true
+NotTalkative:
+  - E
+  - I don't talk a lot
+  - false
+InterestedInPeople:
+  - A
+  - I am interested in people
+  - true
+Disorganized:
+  - C
+  - I leave my belongings around
+  - false
+Relaxed:
+  - "N"
+  - I am relaxed most of the time
+  - false
+AbstractionDifficult:
+  - O
+  - I have difficulty understanding abstraction
+  - false
+ComfortableAroundPeople:
+  - E
+  - I feel comfortable around people
+  - true
+Insulting:
+  - A
+  - I insult people
+  - false
+DetailOriented:
+  - C
+  - I pay attention to detail
+  - true
+Worry:
+  - "N"
+  - I worry about things
+  - true
+VividImagination:
+  - O
+  - I have a vivid imagination
+  - true
+Background:
+  - E
+  - I keep in the background
+  - false
+Sympathetic:
+  - A
+  - I sympathize with others' feelings
+  - true
+Messy:
+  - C
+  - I make a mess of things
+  - false
+SeldomBlue:
+  - "N"
+  - I seldom feel blue
+  - false
+AbstractionUninteresting:
+  - O
+  - I am not interested in abstract ideas
+  - false
+StartConversations:
+  - E
+  - I start conversations
+  - true
+UninterestedInOthersProblems:
+  - A
+  - I am not interested in other people's problems
+  - false
+Timely:
+  - C
+  - I get chores done right away
+  - true
+Disturbed:
+  - "N"
+  - I am easily disturbed
+  - true
+ExellentIdeas:
+  - O
+  - I have excellent ideas
+  - true
+Laconic:
+  - E
+  - I have little to say
+  - false
+SoftHeart:
+  - A
+  - I have a soft heart
+  - true
+Forgetful:
+  - C
+  - I often forget to put things back in their proper place
+  - false
+Upset:
+  - "N"
+  - I get upset easily
+  - true
+Unimaginative:
+  - O
+  - I don't have a good imagination
+  - false
+TalkToManyPeople:
+  - E
+  - I talk to a lot of different people at parties
+  - true
+UninterestedInOthers:
+  - A
+  - I am not really interested in others
+  - false
+Orderly:
+  - C
+  - I like order
+  - true
+Moody:
+  - "N"
+  - I change my mood a lot
+  - true
+Quick:
+  - O
+  - I am quick at understand things
+  - true
+DislikeAttention:
+  - E
+  - I don't like to draw attention to myself
+  - false
+TimeForOthers:
+  - A
+  - I take time out for others
+  - true
+Shirk:
+  - C
+  - I shirk my duties
+  - false
+MoodSwings:
+  - "N"
+  - I have frequent mood swings
+  - true
+DifficultWords:
+  - O
+  - I use difficult words
+  - true
+CenterOfAttention:
+  - E
+  - I don't mind being the center of attention
+  - true
+FeelOthersEmotions:
+  - A
+  - I feel others' emotions
+  - true
+Schedule:
+  - C
+  - I follow a schedule
+  - true
+Irritable:
+  - "N"
+  - I get irritated easily
+  - true
+Reflective:
+  - O
+  - I spent time reflecting on things
+  - true
+Quiet:
+  - E
+  - I am quiet around strangers
+  - false
+FeelAtEase:
+  - A
+  - I make people feel at ease
+  - true
+Exacting:
+  - C
+  - I am exacting in my work
+  - true
+OftenBlue:
+  - "N"
+  - I often feel blue
+  - true
+Creative:
+  - O
+  - I am full of ideas
+  - true
