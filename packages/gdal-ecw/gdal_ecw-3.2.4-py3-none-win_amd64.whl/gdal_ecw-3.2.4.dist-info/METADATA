@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gdal-ecw
+Version: 3.2.4
+Summary: UNKNOWN
+Home-page: https://github.com/talos-gis/gdal-ecw
+Maintainer: Idan Miara
+Maintainer-email: idan@miara.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gdal (<3.3,>=3.2)
+
+# gdal-ecw
+GDAL ecw plugin as a python wheel for easy installation.
+* DLL and LICENSE files were copied from [gisinternals](https://www.gisinternals.com/sdk.php) 
+* SDK version: MSVC 2017	x64	release-1911-x64-dev	2021-02-09 01:21:44
+* SDK version: MSVC 2017	win32	release-1911-dev	2021-01-16 00:44:33
+
