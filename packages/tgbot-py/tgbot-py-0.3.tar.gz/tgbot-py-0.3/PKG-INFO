@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tgbot-py
+Version: 0.3
+Summary: Python SDK for telegram bot microservice
+Home-page: https://github.com/rtsoftSG/tgbot-py
+Author: Alexander Teplov
+Author-email: teplov_aa@rtsoft.ru
+License: MIT
+Description: # tgbot-py
+        Python SDK for telegram bot microservice
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
