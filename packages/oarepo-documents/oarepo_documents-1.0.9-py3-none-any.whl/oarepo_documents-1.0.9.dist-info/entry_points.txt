@@ -1,0 +1,9 @@
+[invenio_base.apps]
+oarepo_actions = oarepo_actions:Actions
+
+[invenio_jsonschemas.schemas]
+oarepo_documents = oarepo_documents.jsonschemas
+
+[oarepo_mapping_includes]
+oarepo_documents = oarepo_documents.included_mappings
+
