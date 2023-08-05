@@ -1,0 +1,17 @@
+_icepyx_version.py,sha256=nlGXcobmeAmNzRkhqDLZxGFLcidRwZSZPlWcdlVyxvw,18
+icepyx/__init__.py,sha256=sNESqK9ykuRU7W4WFrpkJt7i-8mbBmhm6Y3kh7RRBDc,88
+icepyx/core/APIformatting.py,sha256=WBsP6VP7iqrKYPC3QNdDEgMONDsqgOPgZlgmI44O_rk,15517
+icepyx/core/Earthdata.py,sha256=zQrqgZTS6tVY_B4ABL-ahWhE4wYs5xFLXEkAcqh_Zpw,4848
+icepyx/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icepyx/core/geospatial.py,sha256=rK8FuMJxqiivv_wlaeUbBOWMpDYtb6qxZHk7utp5DfI,3734
+icepyx/core/granules.py,sha256=Hz_qOZLLmoa8NsAS-tp-XMXlDJ0xXE5624mtscSMzWE,19981
+icepyx/core/icesat2data.py,sha256=zMKLaIxdBd-E8wWOGlyrOBjZ5UkLwsDJ1ymUpxa10lU,292
+icepyx/core/is2ref.py,sha256=Ff_NazBClyyHdsbtM5fwr73mScUcAbtb_EfkA5EWED8,7149
+icepyx/core/query.py,sha256=57arTEoz3klJpIABWeDb14FI8enuDLgt_-_2iB48nT0,36681
+icepyx/core/validate_inputs.py,sha256=EGJS-SxP98e-jZoCVrYxbGy3J-AoMz5vJDo6yYUvcmg,10259
+icepyx/core/variables.py,sha256=SFq6q3rackLO-nnoI55m4pOLWegE3_oDsUAtmFQG_xg,24756
+icepyx-0.3.3.dist-info/LICENSE,sha256=jQa8UpoBtEpaa8-H8G2_2n6bIOmHO78BnrnEYaWbXuI,1551
+icepyx-0.3.3.dist-info/METADATA,sha256=7-eQSoohuAbY19LfIjHQwwFaWRIqFKe63-44Nh7JHwk,6000
+icepyx-0.3.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+icepyx-0.3.3.dist-info/top_level.txt,sha256=GTfGWm6Yh3LR_2c5Dk22JzRE8KIw39tV9lgbXvk52bI,23
+icepyx-0.3.3.dist-info/RECORD,,
