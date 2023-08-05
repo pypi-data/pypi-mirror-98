@@ -1,0 +1,41 @@
+# https://socialwork.buffalo.edu/content/dam/socialwork/home/self-care-kit/brief-big-five-personality-inventory.pdf
+Reserved:
+  - E
+  - I am reserved
+  - false
+Trusting:
+  - A
+  - I am generally trusting
+  - true
+Lazy:
+  - C
+  - I tend to by lazy
+  - false
+Relaxed:
+  - "N"
+  - I am relaxed and handle stress well
+  - false
+NotArtistic:
+  - O
+  - I have few artistic interests
+  - false
+Outgoing:
+  - E
+  - I am outgoing and sociable
+  - true
+Judgmental:
+  - A
+  - I tend to find fault with others
+  - false
+Thorough:
+  - O
+  - I do a thorough job
+  - true
+Nervous:
+  - "N"
+  - I get nervous easily
+  - true
+Imaginative:
+  - O
+  - I have an active imagination
+  - true
