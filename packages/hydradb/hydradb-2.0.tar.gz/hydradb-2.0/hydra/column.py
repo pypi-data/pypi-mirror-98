@@ -1,0 +1,136 @@
+class Column:
+    def __init__(self, connection):
+        """
+        Add, drop, modify, or retrieve a column.
+
+        Note:
+            Aggregate or use composition while using this
+            class in another object. Also, make sure to
+            pass the connection object as a parameter.
+
+        Examples:
+            >>> self.col = Column('pass the connection obj')
+
+        Args:
+            connection (:obj:`Connection`): Connect to the database.
+
+        Attributes:
+            self.__con (:obj:`Connection`): Use composition for connection.
+        """
+
+        self.__con = connection
+
+    def __str__(self):
+        """
+        String representation of the Column class.
+
+        Note:
+            Use this in a print statement to print the
+            documentation of the constructor.
+
+        Returns:
+            Returns the constructor documentation as string.
+        """
+
+        return self.__init__.__doc__
+
+    def add(self, table, **columns):
+        """
+        Add a column in a table.
+
+        Note:
+            Pass the table name in the first parameter
+            and pass the columns and data types in the
+            second parameter. Also, pass as many columns
+            as you want.
+
+        Examples:
+            >>> self.add('tbl', col1='text', col2='integer')
+
+        Args:
+            table (str): Add columns to this table.
+            **columns (:obj:`kwargs`): Add columns with data types.
+
+        Keyword Args:
+            **columns (:obj:`kwargs`): Create the given columns.
+                First part in key='val' represents column name
+                and the next part represents data type.
+
+        Returns:
+            Returns the fetch result after executing the query.
+        """
+
+        # iterate through **columns and execute the query
+        for column, data_type in columns.items():
+            # query for adding column(s) in a table
+            query = f'''
+                ALTER TABLE {table}
+                ADD COLUMN {column} {data_type}
+            ;'''
+
+            # execute the query
+            self.__con.execute(query)
+
+    def add_fk(self, table, column, reference, reference_id):
+
+        """
+        Add a column and set it as a foreign key.
+
+        Note:
+            This can only set a new column as foreign key.
+            To avoid problems, first create other columns
+            and then add a foreign key column using this function.
+
+        Examples:
+            >>> self.add_fk('origin_tbl', 'fk_col', 'ref_tbl', 1)
+
+        Args:
+            table (str): Add foreign key column in this table.
+            column (str): Column name for the foreign key.
+            reference (str): Reference the foreign key in this table.
+            reference_id (int): Reference the foreign key in this column.
+
+        Returns:
+            Returns the fetch result after executing the query.
+        """
+
+        # query for adding a foreign key column
+        query = f'''
+            ALTER TABLE {table}
+            ADD COLUMN {column} INTEGER
+            REFERENCES {reference}({reference_id})
+        ;'''
+
+        # execute the query
+        self.__con.execute(query)
+
+    def rename(self, tbl, current_name, new_name):
+        """
+        Rename a column in a table.
+
+        Note:
+            This function only works on non primary key
+            columns because SQLite currently do not support
+            renaming a primary key.
+
+        Examples:
+            >>> self.rename('tbl', 'col_name', 'new_col')
+
+        Args:
+            tbl (str): Rename a column from this table.
+            current_name (str): Rename this column.
+            new_name (str): New name for the column.
+
+        Returns:
+            Returns the fetch result after executing the query.
+        """
+
+        # query for renaming a column
+        query = f'''
+            ALTER TABLE {tbl}
+            RENAME COLUMN {current_name}
+            TO {new_name}
+        ;'''
+
+        # execute the query
+        self.__con.execute(query)
