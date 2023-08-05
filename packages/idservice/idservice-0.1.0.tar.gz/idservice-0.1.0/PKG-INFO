@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: idservice
+Version: 0.1.0
+Summary: Distributed ID Service based on FastAPI
+Home-page: https://github.com/pypa/sampleproject
+Author: The Python Packaging Authority
+Author-email: pypa-dev@googlegroups.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/tommyxu/idservice/issues
+Project-URL: Source, https://github.com/tommyxu/idservice
+Description: # idservice
+        
+        `ID-Service` is a distributed ID generator microservice based on FastAPI.
+        
+        ## Installation
+        
+        ```sh
+        pip3 install idservice
+        ```
+        
+        ## Start Service
+        
+        ```sh
+        idservice-start
+        ```
+        
+        > List all available `Gunicorn` options by `idservice-start --help`
+        
+        ## API Endpoint
+        
+        Several endpoints:
+        
+        -   `/id/snowflake`
+        -   `/id/random/64`
+        -   `/id/uuid`
+        
+        Browse `/docs` (http://localhost:8000/docs) to read all APIs.
+        
+        ## Configuration
+        
+        Environment variable:
+        
+        | Environment Vars        | Usage                                  | Default        |
+        | ----------------------- | -------------------------------------- | -------------- |
+        | `ID_SERVICE_MACHINE_ID` | Snowflake Machine ID (10 bits integer) | Random (0-255) |
+        
+Keywords: distributed id service setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
