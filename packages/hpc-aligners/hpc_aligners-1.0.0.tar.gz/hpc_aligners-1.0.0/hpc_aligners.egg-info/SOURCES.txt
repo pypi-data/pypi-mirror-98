@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+hpc_aligners/__init__.py
+hpc_aligners/hpc_aligners.py
+hpc_aligners.egg-info/PKG-INFO
+hpc_aligners.egg-info/SOURCES.txt
+hpc_aligners.egg-info/dependency_links.txt
+hpc_aligners.egg-info/top_level.txt
