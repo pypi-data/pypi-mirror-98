@@ -1,0 +1,15 @@
+pandas>=0.25
+numpy>=1.13.3
+scipy
+pywin32
+pypiwin32
+networkx
+
+[doc]
+sphinx
+tabulate
+
+[test]
+networkx
+coverage
+matplotlib
