@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: misty2py
+Version: 0.0.2
+Summary: Misty II REST API wrapper
+License: MIT
+Author: Chris 'Scar(R)ed' Vajdik
+Author-email: scarred.chris@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: websocket-client (>=0.58.0,<0.59.0)
