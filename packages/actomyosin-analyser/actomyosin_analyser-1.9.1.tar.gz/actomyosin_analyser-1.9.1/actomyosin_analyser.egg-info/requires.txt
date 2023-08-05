@@ -1,0 +1,9 @@
+numpy
+matplotlib
+h5py
+numba
+pandas
+scipy
+
+[:python_version < "3.8"]
+importlib-metadata
