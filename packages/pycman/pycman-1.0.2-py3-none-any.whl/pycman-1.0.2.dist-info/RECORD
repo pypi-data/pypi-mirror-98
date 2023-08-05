@@ -1,0 +1,15 @@
+pycman/__init__.py,sha256=Y0xIqR-lLzIEUJclA9tGKBlFw_q3X4bfCjZ-M0aFwo4,111
+pycman/__main__.py,sha256=-LpjzJ_xlQtpsZhUMaHmkOItz7IzcC-q_YOOIX6WA5U,55
+pycman/cli.py,sha256=RskvU0al4VI1nhifqBlOsXE4TMw577ZRh2uzr363pCY,2465
+pycman/initializer.py,sha256=dzoZCTdA11coJaoA8LfttWLkEGXcRqC4TKUix6J2w54,4335
+pycman/utils/__init__.py,sha256=Z8KDrF1tyjbpMD-Ox7kqjBl8Uu8Vxp_WIVXm95euVXc,381
+pycman/utils/common.py,sha256=PGN4k8GzmHQTvIEYwHsuFaFMhJXCApiDuy8RQetEpog,1790
+pycman/utils/logo.py,sha256=GLFL4728NQLx_XO1mvrby5EFjUmZcJPbdqM1mZQ8Mfs,286
+pycman/utils/version.py,sha256=XmV-BKaFYKhHTBMnHQHo6QjKgiPRMWBtIL7rac7ZyeY,1771
+pycman-1.0.2.dist-info/AUTHORS,sha256=H08orHmbvr4bBTS8lCv9YPmx1xsJVjT6cdTtODqNmq4,30
+pycman-1.0.2.dist-info/METADATA,sha256=JFLTrcjEQRRUwAUBylqkyEnk6ysSrcXiISD3qz5zUZA,8149
+pycman-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pycman-1.0.2.dist-info/entry_points.txt,sha256=aeKbR1VPS6jr8lrt-bJJaY92lBbVVG6-2aqD_3Iemo4,48
+pycman-1.0.2.dist-info/pbr.json,sha256=eXZ6FB-cLhdvr9DxpuGpIfkwmjT0a7_iVb5nuH_QrcM,47
+pycman-1.0.2.dist-info/top_level.txt,sha256=pHwAQBnBob9wgXsMu_SL2LSVZimM5mRpPvvd9_QPvzM,7
+pycman-1.0.2.dist-info/RECORD,,
