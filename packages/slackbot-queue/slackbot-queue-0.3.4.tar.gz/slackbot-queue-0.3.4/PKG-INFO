@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: slackbot-queue
+Version: 0.3.4
+Summary: Slackbot with a celery queue for long running tasks
+Home-page: https://github.com/xtream1101/slackbot-queue
+Author: Eddy Hintze
+Author-email: eddy@hintze.co
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
