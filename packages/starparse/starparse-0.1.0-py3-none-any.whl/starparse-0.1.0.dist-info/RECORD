@@ -1,0 +1,14 @@
+starparse/__init__.py,sha256=h2xCUGn_C-tsMorNqJkRhKjrmNlvVhWDj-deP1pA5Rw,95
+starparse/config.py,sha256=VQ-FiuGeKnOcgqnlxcoDaFKdq461RVnF-PLPbUfBln8,328
+starparse/pack.py,sha256=s4WwH5AOb9ZU8wgZp3xSIfMUM5wjngJlE6rbx4aHEvw,5073
+starparse/unpack.py,sha256=-c3jISYG3H86Vp_FeZTDrcmXSJc0MRiiiJUxJKhdsxI,6283
+starparse/util.py,sha256=_nyEY7KtJM7hD6BaLm1jpvoD39oHmaU5WgDdkgVvlhc,1804
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_e2e.py,sha256=K-Cu_xjWTJ8BochEdgHdFaHpBEcwGNa6bxHFc8t7Mxw,1160
+tests/test_pack_unpack.py,sha256=Rbu_Dm6gj7uOSzbv3yVgqK4YcfcUSmkSnSvdFU5FGVQ,4399
+tests/ci_players/__init__.py,sha256=9uujJK3SXv271uU4VyLpPL5daoIicaeKUqm9cLz919s,88
+starparse-0.1.0.dist-info/LICENSE,sha256=ilPGgFgDj4WwI5gFVEa7t_ZLxBZGslN2JeJpknh-d0M,1081
+starparse-0.1.0.dist-info/METADATA,sha256=B_kdGZTKh1O_GCU75HkcYCLxEfHPvfhIiC55KoHfQxM,1487
+starparse-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+starparse-0.1.0.dist-info/top_level.txt,sha256=hN4SuAj0SkWkwgZukDG7M6Lp2jBTzj6azTY3qao_nlU,16
+starparse-0.1.0.dist-info/RECORD,,
