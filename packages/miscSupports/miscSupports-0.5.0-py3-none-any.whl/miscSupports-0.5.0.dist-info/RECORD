@@ -1,0 +1,11 @@
+miscSupports/__init__.py,sha256=BLx5GzKzEwPeS6Z8g_GtDagbBQtY_URzKrje1b042po,201
+miscSupports/alter_array.py,sha256=bC91deP7UVIMEQpXPBc4HbUM_3B2Ntg1arZEoEO1Ty8,10168
+miscSupports/dates_and_time.py,sha256=FQrxm3VkNb87Zv9LRbnfUFCWbW-8o6jXnirn7WBPUjY,1844
+miscSupports/file_support.py,sha256=gBq_nd3dtteSPqAOot55rFh1b9TeELT8qcPUEHqoiT8,3580
+miscSupports/misc.py,sha256=pX5dtBle_hjJFCze0hhJeCJ6q36ej3VNolWcJT9CtLU,1521
+miscSupports/shapely_support.py,sha256=mpYJF9USdfDhmFMAcZZfOckpVd0a2ads9buJTkySp-0,1210
+miscSupports-0.5.0.dist-info/LICENSE,sha256=m6Hmim3NNA-_y97X6yarvaf6IUerwLQFF3hlCXsc0KI,1090
+miscSupports-0.5.0.dist-info/METADATA,sha256=BXK9y_t8QjlnXNfTN11y7w7Xj8LN1F5wKjuMUEPQ9zU,795
+miscSupports-0.5.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+miscSupports-0.5.0.dist-info/top_level.txt,sha256=SkyJWNczNshZ7W_O7QO7jvaUJbnBhaN-P0HeWOkl7ts,13
+miscSupports-0.5.0.dist-info/RECORD,,
