@@ -1,0 +1,15 @@
+Click
+python-dotenv
+rich>=9.10.0
+pyyaml>=5.4.0
+
+[all]
+Click
+python-dotenv
+rich>=9.10.0
+pyyaml>=5.4.0
+mkdocs-material
+mkdocs-macros-plugin
+pytest
+pytest-cov
+pyflakes
