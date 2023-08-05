@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: guangmutools
+Version: 0.2
+Summary: collection of some tools
+Home-page: https://gitlab.xsjcs.cn/kefu/guangmu/commonutils.git
+Author: caimiao
+Author-email: caimiao@kingsoft.com
+License: MIT Licence
+Description: collection of tools
+Keywords: helpers,tools,widgets
+Platform: any
