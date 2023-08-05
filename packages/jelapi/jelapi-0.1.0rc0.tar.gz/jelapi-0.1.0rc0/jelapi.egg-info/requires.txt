@@ -1,0 +1,5 @@
+httpx[http2]
+
+[test]
+pytest-cov
+respx
