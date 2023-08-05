@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: ad_ci_tools
+Version: 0.1.2
+Summary: Ci library with miscellaneous utils
+Home-page: https://github.com/arenadata/ci_tools
+Author: Rotaru Sergey
+Author-email: rsv@arenadata.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
