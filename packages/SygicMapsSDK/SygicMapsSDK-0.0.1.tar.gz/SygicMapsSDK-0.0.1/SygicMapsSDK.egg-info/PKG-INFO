@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: SygicMapsSDK
+Version: 0.0.1
+Summary: Placeholder package - Python Bindings for Sygic Maps SDK
+Home-page: https://www.sygic.com/enterprise/maps-navigation-sdk-developers
+Author: Sygic a. s.
+Author-email: info@sygic.com
+License: Commercial
+Description: # SygicMapsSDK on Pypi
+        
+        This dummy project is not installable.
+        
+        You probably want to install the package
+        from private repository instead.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
