@@ -1,0 +1,15 @@
+requests
+pandas
+beautifulsoup4
+fuzzywuzzy==0.18.0
+MyQR==2.3.1
+pyforest==1.0.3
+urllib3
+progressbar==2.5
+tqdm
+pyttsx3
+baostock
+parsel
+pretty_errors
+fake_useragent
+lunar_python
