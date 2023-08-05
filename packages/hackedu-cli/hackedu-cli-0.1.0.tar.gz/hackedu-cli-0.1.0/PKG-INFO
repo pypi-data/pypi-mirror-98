@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hackedu-cli
+Version: 0.1.0
+Summary: HackEDU's command line interface allows customer's to interact directly with HackEDU resources from the command line.
+Home-page: https://github.com/hack-edu/hackedu-cli
+Author: HackEDU
+Author-email: matt@hackedu.com
+License: Copyright HackEDU
+Description: # HackEDU Command Line Interface
+        
+        HackEDU's command line interface allows customer's to interact directly with HackEDU resources
+        from the command line.
+        
+        # Installing
+        
+            python setup.py develop
+        
+        # Use from command line
+        
+            hackedu --help
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
