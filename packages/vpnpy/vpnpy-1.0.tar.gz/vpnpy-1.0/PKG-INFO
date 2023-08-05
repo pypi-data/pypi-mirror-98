@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vpnpy
+Version: 1.0
+Summary: My first Python package
+Home-page: https://github.com/BhavishyaMaheshwari/vpn
+Author: Bhavishya Maheshwari
+Author-email: <maheshwaribhavishya19@gmail.com>
+License: Apache License 2.0
+Description: My first Python package with a slightly longer description
+Keywords: python,vpn
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
