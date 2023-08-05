@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: python-parameter-guard
+Version: 0.1.0
+Summary: Guard is a fluent argument validation library that is intuitive, fast and extensible.
+Home-page: https://github.com/joaoteixeira88/python-guard
+Author: Joao Teixeira
+Author-email: ervilhaman@hotmail.com
+License: MIT
+Download-URL: https://github.com/joaoteixeira88/python-guard/archive/0.1.0.tar.gz
+Description: # Python Guard
+        
+        Guard is a fluent argument validation library that is intuitive, fast and extensible.
+        
+        
+        ### Installing
+        
+        To run this project, I advise to user virtualenv. The project requires python == 3.6.
+        
+        ```
+        mkvirtualenv -p $(which python3) pyguard
+        ```
+        
+        And
+        
+        ```
+        python setup.py install
+        ```
+        
+        ### Usage
+        
+        Here's some examples how to use this package:
+        
+        ```
+        from guard import Guard
+        
+        Guard.NotNull(None) # Not Null Guard without parameter name and message
+        Guard.NotLessThan(-1, 0, "age") # Not Less Than Guard with parameter name and without custom message
+        Guard.NotAny([], "ags_lst", "This list must be at least one element.") # Not Any Guard with custom message
+        ```
+        
+        
+        ## Running the tests
+        
+        ```
+        pytest -v tests
+        ```
+        
+        
+        ## Authors
+        
+        * **Joao Teixeira** - [joaoteixeira88](https://github.com/joaoteixeira88)
+        
+        
+Keywords: python,guard,parameters,exceptions
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >3.0
+Description-Content-Type: text/markdown
