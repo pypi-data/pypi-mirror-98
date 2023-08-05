@@ -1,0 +1,3 @@
+hqsbase>=0.7.0
+qoqo>=0.2.4
+numpy
