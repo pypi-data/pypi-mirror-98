@@ -1,0 +1,12 @@
+LICENSE
+setup.cfg
+setup.py
+src/pydentic/__init__.py
+src/pydentic/exceptions.py
+src/pydentic.egg-info/PKG-INFO
+src/pydentic.egg-info/SOURCES.txt
+src/pydentic.egg-info/dependency_links.txt
+src/pydentic.egg-info/not-zip-safe
+src/pydentic.egg-info/requires.txt
+src/pydentic.egg-info/top_level.txt
+src/pydentic/strings/__init__.py

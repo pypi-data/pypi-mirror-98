@@ -1,0 +1,11 @@
+python-stdnum>=1.16
+
+[:python_version < "3.8"]
+typing-extensions>=3.7.4.3
+
+[dev]
+flake8
+
+[test]
+pytest
+pydantic
