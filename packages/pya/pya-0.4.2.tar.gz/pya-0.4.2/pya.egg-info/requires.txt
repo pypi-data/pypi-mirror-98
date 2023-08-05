@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+pyaudio>=0.2.11
+
+[remote]
+notebook
+sanic
+ipywidgets
