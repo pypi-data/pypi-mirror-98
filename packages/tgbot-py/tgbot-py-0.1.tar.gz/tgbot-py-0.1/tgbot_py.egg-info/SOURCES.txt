@@ -1,0 +1,8 @@
+README.md
+setup.py
+sdk/__init__.py
+sdk/sdk.py
+tgbot_py.egg-info/PKG-INFO
+tgbot_py.egg-info/SOURCES.txt
+tgbot_py.egg-info/dependency_links.txt
+tgbot_py.egg-info/top_level.txt
