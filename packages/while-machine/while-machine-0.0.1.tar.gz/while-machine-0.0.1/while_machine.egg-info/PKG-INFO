@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: while-machine
+Version: 0.0.1
+Summary: While Abstract Machine implemented in python.
+Home-page: https://github.com/GabrieleMaurina/while-machine
+Author: Gabriele Maurina
+Author-email: gabrielemaurina95@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
