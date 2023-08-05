@@ -1,0 +1,7 @@
+setup.py
+caoruixu.egg-info/PKG-INFO
+caoruixu.egg-info/SOURCES.txt
+caoruixu.egg-info/dependency_links.txt
+caoruixu.egg-info/top_level.txt
+mypkg/__init__.py
+mypkg/test.py
