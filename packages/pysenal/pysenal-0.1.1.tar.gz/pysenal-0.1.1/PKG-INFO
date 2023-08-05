@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pysenal
+Version: 0.1.1
+Summary: Python useful utilities methods, only for Python3
+Home-page: https://github.com/supercoderhawk/pysenal
+Author: xiayubin
+Author-email: supercoderhawk@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
