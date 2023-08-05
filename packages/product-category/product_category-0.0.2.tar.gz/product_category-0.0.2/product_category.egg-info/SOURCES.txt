@@ -1,0 +1,11 @@
+README.md
+setup.py
+product_category/__init__.py
+product_category/pc_model.py
+product_category/predict.py
+product_category/train.py
+product_category.egg-info/PKG-INFO
+product_category.egg-info/SOURCES.txt
+product_category.egg-info/dependency_links.txt
+product_category.egg-info/requires.txt
+product_category.egg-info/top_level.txt
