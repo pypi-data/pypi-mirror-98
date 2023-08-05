@@ -1,0 +1,13 @@
+pyqrcode
+websockets
+numpy
+typing_extensions
+
+[PIL]
+Pillow
+
+[matplotlib]
+matplotlib
+
+[opencv]
+opencv-python
