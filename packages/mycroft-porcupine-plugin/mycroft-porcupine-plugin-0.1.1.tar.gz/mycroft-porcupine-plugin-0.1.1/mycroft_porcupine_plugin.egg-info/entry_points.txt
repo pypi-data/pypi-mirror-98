@@ -1,0 +1,3 @@
+[mycroft.plugin.wake_word]
+porcupine_wakeword_plug = mycroft_porcupine_plugin:PorcupineWakeword
+
