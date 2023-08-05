@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "string_templates"
+version = "0.1.1"
+description = "simple string template library"
+repository = "https://github.com/JulianSobott/string_templates"
+authors = ["JulianSobott <julian.sobott@gmail.com>"]
+readme = "README.md"
+keywords = ["template"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
