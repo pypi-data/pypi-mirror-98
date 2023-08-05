@@ -1,0 +1,4 @@
+include src/validr/*.pyx
+include src/validr/*.pyi
+include README*
+include LICENSE
