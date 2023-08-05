@@ -1,0 +1,11 @@
+README.md
+setup.py
+grade50/__init__.py
+grade50/main.py
+grade50.egg-info/PKG-INFO
+grade50.egg-info/SOURCES.txt
+grade50.egg-info/dependency_links.txt
+grade50.egg-info/entry_points.txt
+grade50.egg-info/requires.txt
+grade50.egg-info/top_level.txt
+grade50/templates/default.jinja2
