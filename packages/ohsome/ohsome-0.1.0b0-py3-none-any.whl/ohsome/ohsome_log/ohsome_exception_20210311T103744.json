@@ -1,0 +1,11 @@
+{
+    "timestamp": "2021-03-11T10:37:44.338956",
+    "status": null,
+    "message": "Connection Error: Query could not be sent. Make sure there are no network problems and that the ohsome API URL http://localhost:8080/elements/count is valid.",
+    "requestUrl": "http://localhost:8080/elements/count",
+    "parameters": {
+        "filter": "amenity=restaurant and type:node",
+        "time": "2018-01-01",
+        "bcircles": "8.695,49.41,200|8.696,49.41,200"
+    }
+}

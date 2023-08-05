@@ -1,0 +1,11 @@
+{
+    "timestamp": "2021-03-11T10:40:59.083553",
+    "status": null,
+    "message": "Connection Error: Query could not be sent. Make sure there are no network problems and that the ohsome API URL http://localhost:8080/elements/count is valid.",
+    "requestUrl": "http://localhost:8080/elements/count",
+    "parameters": {
+        "filter": "amenity=restaurant and type:node",
+        "time": "2018-01-01",
+        "bpolys": "{\"type\": \"FeatureCollection\", \"features\": [{\"id\": \"0\", \"type\": \"Feature\", \"properties\": {}, \"geometry\": {\"type\": \"Polygon\", \"coordinates\": [[[8.695077896118164, 49.408711468953854], [8.699712753295898, 49.408711468953854], [8.699712753295898, 49.41155955732304], [8.695077896118164, 49.41155955732304], [8.695077896118164, 49.408711468953854]]]}}, {\"id\": \"1\", \"type\": \"Feature\", \"properties\": {}, \"geometry\": {\"type\": \"Polygon\", \"coordinates\": [[[8.677010536193848, 49.41370947536709], [8.682074546813965, 49.41370947536709], [8.682074546813965, 49.416641030041134], [8.677010536193848, 49.416641030041134], [8.677010536193848, 49.41370947536709]]]}}]}"
+    }
+}
