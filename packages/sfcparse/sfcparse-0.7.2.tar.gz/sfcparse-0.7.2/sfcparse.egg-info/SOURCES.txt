@@ -1,0 +1,8 @@
+README.md
+setup.py
+libname/__init__.py
+libname/sfcparse.py
+sfcparse.egg-info/PKG-INFO
+sfcparse.egg-info/SOURCES.txt
+sfcparse.egg-info/dependency_links.txt
+sfcparse.egg-info/top_level.txt
