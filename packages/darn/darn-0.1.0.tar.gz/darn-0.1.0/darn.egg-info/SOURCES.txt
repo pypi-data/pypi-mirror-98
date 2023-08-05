@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+app/__init__.py
+app/local.py
+darn.egg-info/PKG-INFO
+darn.egg-info/SOURCES.txt
+darn.egg-info/dependency_links.txt
+darn.egg-info/top_level.txt
