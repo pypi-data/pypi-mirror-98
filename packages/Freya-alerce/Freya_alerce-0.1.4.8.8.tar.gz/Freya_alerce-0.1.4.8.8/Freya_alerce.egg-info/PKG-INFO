@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: Freya-alerce
+Version: 0.1.4.8.8
+Summary: Freya is a Python framework that quick development queries in astronomical catalogs and use local or creating easy new API called FreyaAPI
+Home-page: UNKNOWN
+Author: Jonimott de Malpais
+Author-email: 
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Requires-Python: >=3.9
