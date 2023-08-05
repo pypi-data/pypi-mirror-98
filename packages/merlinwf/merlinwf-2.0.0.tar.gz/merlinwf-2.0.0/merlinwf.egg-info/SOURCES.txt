@@ -1,0 +1,7 @@
+setup.py
+merlinwf.egg-info/PKG-INFO
+merlinwf.egg-info/SOURCES.txt
+merlinwf.egg-info/dependency_links.txt
+merlinwf.egg-info/entry_points.txt
+merlinwf.egg-info/not-zip-safe
+merlinwf.egg-info/top_level.txt
