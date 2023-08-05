@@ -1,0 +1,9 @@
+README.md
+setup.py
+moviestory/__init__.py
+moviestory/main.py
+moviestory.egg-info/PKG-INFO
+moviestory.egg-info/SOURCES.txt
+moviestory.egg-info/dependency_links.txt
+moviestory.egg-info/top_level.txt
+moviestory.egg-info/zip-safe

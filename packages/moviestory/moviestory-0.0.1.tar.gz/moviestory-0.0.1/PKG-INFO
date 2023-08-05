@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: moviestory
+Version: 0.0.1
+Summary: A war against with humans and demons
+Home-page: UNKNOWN
+Author: TravisRaney69
+Author-email: trraney328@oxboe.com
+License: GNU General Public License v3 (GPLv3)
+Description: NOT YET
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
