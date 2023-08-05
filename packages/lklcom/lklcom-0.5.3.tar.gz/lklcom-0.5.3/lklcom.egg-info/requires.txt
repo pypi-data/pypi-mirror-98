@@ -1,0 +1,7 @@
+matplotlib
+numpy>=1.15.0
+scipy
+jupyter
+pandas
+pyyaml
+tables

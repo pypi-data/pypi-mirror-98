@@ -1,0 +1,2 @@
+recursive-include likelihood_combiner/resources/GeringerSameth/ *.txt
+recursive-include likelihood_combiner/resources/Bonnivard/ *.output

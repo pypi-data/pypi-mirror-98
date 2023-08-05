@@ -1,0 +1,8 @@
+[console_scripts]
+gLikeLimits_to_lklcomLimits = likelihood_combiner.io:_gLikeLimits_to_lklcomLimits
+gLike_to_lklcom = likelihood_combiner.io:_gLike_to_lklcom
+lklcom-cluster = likelihood_combiner.cluster:main
+lklcom-local = likelihood_combiner.local:main
+lklcom_to_gLike = likelihood_combiner.io:_lklcom_to_gLike
+merge_to_lklcom = likelihood_combiner.io:_merge_to_lklcom
+
