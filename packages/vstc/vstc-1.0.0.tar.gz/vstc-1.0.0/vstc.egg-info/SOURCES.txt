@@ -1,0 +1,16 @@
+README.md
+setup.py
+test/test_chassis.py
+test/test_device.py
+test/test_mcgroup.py
+test/test_port.py
+test/test_stream.py
+test/test_util.py
+vstc/__init__.py
+vstc/testcenter.py
+vstc/util.py
+vstc.egg-info/PKG-INFO
+vstc.egg-info/SOURCES.txt
+vstc.egg-info/dependency_links.txt
+vstc.egg-info/requires.txt
+vstc.egg-info/top_level.txt
