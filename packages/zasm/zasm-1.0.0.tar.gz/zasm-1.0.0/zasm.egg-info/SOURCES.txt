@@ -1,0 +1,12 @@
+README.md
+__init__.py
+defs.py
+instructions.py
+setup.cfg
+setup.py
+zasm.py
+zasm.egg-info/PKG-INFO
+zasm.egg-info/SOURCES.txt
+zasm.egg-info/dependency_links.txt
+zasm.egg-info/entry_points.txt
+zasm.egg-info/top_level.txt

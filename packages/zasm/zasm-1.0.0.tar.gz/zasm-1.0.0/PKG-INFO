@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: zasm
+Version: 1.0.0
+Summary: An assembler for z80 CPU
+Home-page: https://github.com/amirgeva/zasm
+Author: Amir Geva
+Author-email: amirgeva@gmail.com
+License: GPLv3
+Description: Assembler for z80 CPU
+        
+        This is a simple assembler for the z80 architecture.  
+        It parses .asm files are creates a binary file to be 
+        loaded into z80 memory, as well as a LST file for reference.
+        
+        Usage
+        
+        zasm filename.asm offset fill_size
+        
+        The offset should be 0 if this is supposed to be loaded at the start of 
+        memory.  If, on the other hand, this is a program to be loaded at some other location in memory,
+        specify the offset of this start.   Code will be generated from address 0,
+        but only code starting at offset will be written to the binary output.
+        
+        fill_size is used to specify the image file size.  If the memory size is
+        64k, using fill_size of 65536 will create exactly 64k image.
+        
+        
+        
+        
+Keywords: z80 assembler
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Assemblers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
