@@ -1,0 +1,7 @@
+bareasgi_static/__init__.py,sha256=20uyL1lX8VIvul5zqQUKGFcbPSJ2ALP1_zWZrpffTeE,289
+bareasgi_static/file_streaming.py,sha256=0SQhXEZRm0CUyC8Nm8lmnnVDRidoBaKOmsfwaNyzFt0,4706
+bareasgi_static/static_files_provider.py,sha256=h_99cCdWWxr1wc6eONBJR9zk7ZNyQhj8onkbcBpK_bg,4697
+bareasgi_static-3.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bareasgi_static-3.0.1.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+bareasgi_static-3.0.1.dist-info/METADATA,sha256=hQJ03rO3RMNx0S5tqyCi2MeuV5_oNU8i39EL-RHw7a4,1879
+bareasgi_static-3.0.1.dist-info/RECORD,,
