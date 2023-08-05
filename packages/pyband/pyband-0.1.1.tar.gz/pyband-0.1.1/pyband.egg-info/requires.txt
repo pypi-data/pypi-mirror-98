@@ -1,0 +1,6 @@
+requests
+dacite
+bech32
+bip32
+ecdsa
+mnemonic
