@@ -1,0 +1,9 @@
+README.md
+setup.py
+aerodynamics/__init__.py
+aerodynamics/aero.py
+aerodynamics.egg-info/PKG-INFO
+aerodynamics.egg-info/SOURCES.txt
+aerodynamics.egg-info/dependency_links.txt
+aerodynamics.egg-info/requires.txt
+aerodynamics.egg-info/top_level.txt
