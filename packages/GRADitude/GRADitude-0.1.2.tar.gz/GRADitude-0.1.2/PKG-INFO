@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: GRADitude
+Version: 0.1.2
+Summary: A tool for the analysis of GRAD-seq data
+Home-page: https://github.com/foerstner-lab/GRADitude.git
+Author: Silvia Di Giorgio, Konrad U. Förstner
+Author-email: UNKNOWN
+License: ISC License (ISCL)
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
