@@ -1,0 +1,3 @@
+[console_scripts]
+aalto-prep=aalto_asr_preprocessor.__main__:main
+

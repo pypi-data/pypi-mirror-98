@@ -1,0 +1,13 @@
+aalto_asr_preprocessor/__init__.py,sha256=7t4GXzN9dTiFWMu9Ju9wmnYismA5Y5C3EtwWqMghB2w,43
+aalto_asr_preprocessor/__main__.py,sha256=t_Iq5nGLD6pUIT2FpJovXPT70oByq9SeSzeJnq-NOGo,1573
+aalto_asr_preprocessor/fi/__init__.py,sha256=EMlDYKv_i_1IsIYewmJao54BPeK2IQeY44WdN9iazJA,46
+aalto_asr_preprocessor/fi/numbers/__init__.py,sha256=JNi4OhxLgcSP6Z4_TiBpIzyjn7xvB7ZQWcNckf2F_io,11847
+aalto_asr_preprocessor/fi/numbers/expansion.py,sha256=gy1VqXC8qMDM3TpiRTTkp1gHlteAsOrv91EKM43_-_k,2835
+aalto_asr_preprocessor/fi/parl_to_kaldi_text.py,sha256=G0MnAr5JH4iwA4j60S-7maXXe_hdfYqM7Q3-Q0rkli8,18638
+aalto_asr_preprocessor/fi/words_elative.txt,sha256=hoJpJ39gy1XT1j2chy03TQLm8SRVJgr4Pnqjq5KBtMw,3365
+aalto_asr_preprocessor/preprocessor.py,sha256=fz2MMmrD2uM9gWgUghT7_6_Leng8Dd0aJLJNJbBmDF4,1758
+aalto_asr_preprocessor-2021.3.10.dist-info/entry_points.txt,sha256=qBvzlyJD1FTOF-IqSmAmPQ6GBKXPmD68yvHE8Nfr3iE,67
+aalto_asr_preprocessor-2021.3.10.dist-info/LICENSE.rst,sha256=fNIoEhSjqDdNyOPLB2FLBzRFQuAlawycJ0TUyzRvMdo,1106
+aalto_asr_preprocessor-2021.3.10.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aalto_asr_preprocessor-2021.3.10.dist-info/METADATA,sha256=cvwH8HhCgZxTc2RwlwhyCq5sUfP3Kvef7uXivlaZDB8,2775
+aalto_asr_preprocessor-2021.3.10.dist-info/RECORD,,
