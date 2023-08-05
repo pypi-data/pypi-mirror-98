@@ -1,0 +1,9 @@
+CHANGE LOG
+==========
+0.0.1 (10/03/2021)
+------------------
+- First Release
+
+0.0.2 (10/03/2021)
+------------------
+- Changed dns python modules query ( it causes error in some machines )
