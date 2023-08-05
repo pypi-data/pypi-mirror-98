@@ -1,0 +1,14 @@
+abstcal/__init__.py,sha256=DeBGcY_MF0vPQGH3Bm5-l_YYfqfyPpEyPtfzH8qwFQY,204
+abstcal/abstcal_utils.py,sha256=Bkx4dRF6iCjPCLhyMSC3ZhUhsV9CcXP8FyOaWdmfbqQ,6998
+abstcal/abstinence_calculator.py,sha256=_3tct0uumbUOOBI9xD-q_RPXQScq9qtX49VY8KA4jjY,18850
+abstcal/calculator_data.py,sha256=ktkatFOiHKMFRpSp61HVGZe2XorIjgQBJaNcqFA2BXk,3534
+abstcal/calculator_error.py,sha256=dqLcIYA23XsAmnMPvqOLciPBiUjZn5btvOVaB8Vvnac,625
+abstcal/calculator_web_app.py,sha256=Iv4ql_xEF1GufrvmfAFO-dlbDBKIk_IDQAwbsr5p0i8,52707
+abstcal/calculator_web_utils.py,sha256=9BVPtgCqC3hG-48dgNT4SZReaWlo0qNoMaAXusjfl4E,1657
+abstcal/tlfb_data.py,sha256=B7miC6utMm312Q1au6TfH3Scutn19mKEspVqxGnIERg,19310
+abstcal/visit_data.py,sha256=tBNW0VKpe4U1Yh5Dins0-gbYHagLMNFt_AmqlW232jU,22246
+abstcal-0.7.7.2.dist-info/LICENSE.txt,sha256=TNMxQ-9ffwR4gM6PfMaJCFhGA7-r9qUqfIAoSYdlqTI,1063
+abstcal-0.7.7.2.dist-info/METADATA,sha256=aXVqnVrIzWUfzHJ06R0cOizFQ6TALviFwZAroH4gMD8,33169
+abstcal-0.7.7.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+abstcal-0.7.7.2.dist-info/top_level.txt,sha256=AYEbYqltXdkxaH3o5yeGrZ6XdRSd_wJdoMLETE2fACQ,8
+abstcal-0.7.7.2.dist-info/RECORD,,
