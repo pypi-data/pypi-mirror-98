@@ -1,0 +1,7 @@
+README.txt
+pandaSearch.py
+setup.py
+pandaSearch.egg-info/PKG-INFO
+pandaSearch.egg-info/SOURCES.txt
+pandaSearch.egg-info/dependency_links.txt
+pandaSearch.egg-info/top_level.txt
