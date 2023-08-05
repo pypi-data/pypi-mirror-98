@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: grunnur
+Version: 0.2.0
+Summary: Uniform API for PyOpenCL and PyCUDA.
+Home-page: https://github.com/fjarri/grunnur
+Author: Bogdan Opanchuk
+Author-email: bogdan@opanchuk.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Pytest
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.6.0)
+Requires-Dist: mako (>=1.0.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=4) ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: sphinx (>=2) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Provides-Extra: pycuda
+Requires-Dist: pycuda (>=2019.1.1) ; extra == 'pycuda'
+Provides-Extra: pyopencl
+Requires-Dist: pyopencl (>=2019.1.1) ; extra == 'pyopencl'
+
+Uniform API for PyOpenCL and PyCUDA.
+
+
