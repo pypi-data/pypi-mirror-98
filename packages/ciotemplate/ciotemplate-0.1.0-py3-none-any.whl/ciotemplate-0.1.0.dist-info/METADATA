@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: ciotemplate
+Version: 0.1.0
+Summary: Angle bracket template expansion
+Home-page: https://github.com/AtomicConductor/ciotemplate
+Author: conductor
+Author-email: info@conductortech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Graphics :: 3D Rendering
+Description-Content-Type: text/markdown
+Requires-Dist: future (>=0.18.2)
+
+
+
+## Changelog
+
+### Version:0.1.0 -- 10 Mar 2021
+
+* Adds license file. [0fcbb61]
+* Adds config. [bd5d677]
+* Add .circleci/config.yml. [06c3f90]
+* Python 3 [f04669c]
+* Adds basename modifiers to expander. Example, use `<basename scenefile>` instead of `<scenename>`  [daf1af3]
+* Adds expression resolution to expander class. [cbeb64e]
+* Expander context made public to indicate to other objects that they may retrieve the context. [a457aa1]
+
