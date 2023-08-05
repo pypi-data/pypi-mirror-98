@@ -1,0 +1,17 @@
+reader_rbv/__init__.py,sha256=ycHqyxUoPZsAdpFIrvhNk6xi2lo12zv8gHPDqG_l744,454
+reader_rbv/book.py,sha256=kG4eLidfLjheAusz5_UgSpGqu87R0I3Gdr8bIsRwUFI,2768
+reader_rbv/book_cache.py,sha256=-XWBicwfhx9xl-Joa6ZtCaMxCRNejuPobVTTv8M6sMA,206
+reader_rbv/book_section.py,sha256=XQL77F8ka7EJZdq8X_cBtLaqTOn34lMOwpGtNw_bk4k,3839
+reader_rbv/constants.py,sha256=H2MqZ8arE-q8gQauKeFVa5ps05E3ZKkUOo0-Fn1qQvk,113
+reader_rbv/exception.py,sha256=fkk_fkRNm8zmrVmXQ9QbmCxe-Zgx54dj1jbj2DxGK00,177
+reader_rbv/font.py,sha256=0qmJ-iQwY6e8J-sEh3MbqLXoNwMkKMPN-CeAkdIDY9c,117
+reader_rbv/page.py,sha256=3ZkdGx2mPxy4qQKZ1W_aDJ60PS0pQh95QX9oPM-F17g,1319
+reader_rbv/page_cache.py,sha256=hQx2ys7o9Da1EkYS3K0oV3RVeM3Akrdc_Xc5kMCfASw,531
+reader_rbv/reader.py,sha256=PWF0eHMcxy-mqpOTpDe52I4tnyiKq6hgTb4LuMBF_40,2066
+reader_rbv/text.py,sha256=g75FuDVS7yPfWuYUWTB6zMm2NQx04s5VYVJaOVKQr7o,819
+reader_rbv/utils.py,sha256=c9EeJFZLoYxZwW14v8GbK9XDplBJSp3XU6QXzwLBEz0,4561
+reader_rbv/version.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+reader_rbv-0.4.0.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+reader_rbv-0.4.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+reader_rbv-0.4.0.dist-info/METADATA,sha256=pefjM9fSSsmP4zAOpSJrHDlIr75GZ0gmhxJ7i90Z8Ns,2240
+reader_rbv-0.4.0.dist-info/RECORD,,
