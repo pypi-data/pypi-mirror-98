@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+uncanny/__init__.py
+uncanny.egg-info/PKG-INFO
+uncanny.egg-info/SOURCES.txt
+uncanny.egg-info/dependency_links.txt
+uncanny.egg-info/requires.txt
+uncanny.egg-info/top_level.txt
