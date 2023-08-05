@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+flasksaml/__init__.py
+flasksaml/blueprint.py
+flasksaml/helper.py
+flasksaml/index.py
+flasksaml.egg-info/PKG-INFO
+flasksaml.egg-info/SOURCES.txt
+flasksaml.egg-info/dependency_links.txt
+flasksaml.egg-info/requires.txt
+flasksaml.egg-info/top_level.txt
