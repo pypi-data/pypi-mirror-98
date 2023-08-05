@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+starparse/__init__.py
+starparse/config.py
+starparse/pack.py
+starparse/unpack.py
+starparse/util.py
+starparse.egg-info/PKG-INFO
+starparse.egg-info/SOURCES.txt
+starparse.egg-info/dependency_links.txt
+starparse.egg-info/top_level.txt
+tests/__init__.py
+tests/test_e2e.py
+tests/test_pack_unpack.py
+tests/ci_players/__init__.py
