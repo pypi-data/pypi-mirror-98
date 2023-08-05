@@ -1,0 +1,11 @@
+oarepo_whitenoise/__init__.py,sha256=EfdpT-fBHAIomZI7SIMEHwlis0_xIJiY0oig2RQrla0,28
+oarepo_whitenoise/version.py,sha256=wzYBRFYKafnkk5rtohlWtqeSfwsBUw4iE02_h7EfMxg,62
+oarepo_whitenoise/wsgi.py,sha256=Q_-7FPa_LwPqCqrE1JWepT2vLgCQ3v_FMCsZebGjMQg,1301
+tests/__init__.py,sha256=gTFQuK2pESOtjH1-QMQErxzRZBsw9bxUEG0CF3IXl9M,35
+tests/test_empty.py,sha256=4DYwHfbmEEyJw5dsr8SDeSCSN1qWWTfUZJx_7ABRDIM,88
+oarepo_whitenoise-2.0.1.dist-info/AUTHORS.rst,sha256=XAk0AHJ4QsfQ4ocB6XazQcHmDPPfF2yrka82wwLuRbE,346
+oarepo_whitenoise-2.0.1.dist-info/LICENSE,sha256=vzCEsYfHZLGGE2nuHwKRMWzB7zNLzWXEON65Yot9leM,1084
+oarepo_whitenoise-2.0.1.dist-info/METADATA,sha256=zqY2zBfXpgrMssUvYWE8xS_lxnuklnjTMbHShlhi7eo,2017
+oarepo_whitenoise-2.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+oarepo_whitenoise-2.0.1.dist-info/top_level.txt,sha256=yAknGMAdNAhquMwBXf7cjc8Y45r_KiJDIXmulsdhyDc,24
+oarepo_whitenoise-2.0.1.dist-info/RECORD,,
