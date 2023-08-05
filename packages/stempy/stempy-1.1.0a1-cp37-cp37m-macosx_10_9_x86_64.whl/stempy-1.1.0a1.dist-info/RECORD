@@ -1,0 +1,14 @@
+stempy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stempy/_image.cpython-37m-darwin.so,sha256=7tDAfVRIbd1CM8BgMZ3P2cZhoX6EWDTa17gofF8bCWU,373928
+stempy/libstem.dylib,sha256=gyaVodWhaLW20V5EyeSmsNgiykSHdaLFZnKAnN2w4OQ,1003888
+stempy/_io.cpython-37m-darwin.so,sha256=T3svAxovyZoU6ICWpRoU86y_QR4O2RdHw4A_40fi_9k,237984
+stempy/pipeline/__init__.py,sha256=hpGc5LPXKB5aUiBIOYxMnZeAlWay0m1QptJULIbxVu4,1436
+stempy/io/__init__.py,sha256=uC0lZ6o0ViEtOCD4z-a3vmFtVWb6-hVA2NZ4gx3bdKs,8400
+stempy/image/__init__.py,sha256=AfhyhYMlRhizgs7YWHwpa6iBj2tkVL5SyVyLCQ3lXF0,28643
+stempy/.dylibs/libsz.2.dylib,sha256=k7xd99MB_RtOuQUV2uJJjf87Hn2G9TK_L67NZsQYhb4,52448
+stempy/.dylibs/libhdf5.103.dylib,sha256=DKjzKQZ2y4LQKWHNFatRAsQWsATrWPncAVO1iMBvZ9U,3484808
+stempy-1.1.0a1.dist-info/RECORD,,
+stempy-1.1.0a1.dist-info/LICENSE,sha256=QJBgecdAep_HzSB0K-kXJseqvy6SF5uH8CVPnhHUi0M,1504
+stempy-1.1.0a1.dist-info/WHEEL,sha256=YNbYuQQsAZNDzCi7jPYmA7NCtqYSO06rd_mp6h8k6uQ,104
+stempy-1.1.0a1.dist-info/top_level.txt,sha256=y781UigXVGwQbPQglCuxXrzVV_KW3zCDzfYZg-Fk_wE,7
+stempy-1.1.0a1.dist-info/METADATA,sha256=kYcBMI8jsTBMH1YmEJ_o85hkwYRP28xWAtCnN4UhnNE,498
