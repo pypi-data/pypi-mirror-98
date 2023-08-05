@@ -1,0 +1,12 @@
+wagtailadminfontawesome/__init__.py,sha256=QsEZxC_SOsMNwWsAA0tNlTocHwWXE2EeiljEmLF6EAE,62
+wagtailadminfontawesome/apps.py,sha256=bcPgiSrlKK4pLFSX0RJOiJh3LE7xNKDdUmk5c2zDqEQ,121
+wagtailadminfontawesome/wagtail_hooks.py,sha256=X-zsvgxnDlcUDEDdsang4A4NJDpN3VJUu7FMEHlzfRE,953
+wagtailadminfontawesome/static/wagtailadminfontawesome/wagtail-admin-fontawesome.scss,sha256=r0XTZZ6yZr7vDBkh3yiOVBkgOQpTwOZQAzhJA3ZzL9c,572
+wagtailadminfontawesome/static/wagtailadminfontawesome/css/wagtail-admin-fontawesome.min.css,sha256=F9he6H3yXGXCO4vaZ0TK3MJ-n4XS-d15pnYd39f8EPE,66796
+wagtailadminfontawesome/static/wagtailadminfontawesome/css/.maps/main.min.css.map,sha256=N1DMqJAwzqViavGLruMxMGGqE1QDY-kWEHCBIs1RUBw,275344
+wagtailadminfontawesome/static/wagtailadminfontawesome/css/.maps/wagtail-admin-fontawesome.min.css.map,sha256=YV7R-619ankoAZgWHUgajatiGl-T_7wP1G5IQbGm_fU,277675
+wagtailadminfontawesome-0.0.1.dist-info/LICENSE,sha256=MMN7aF02iN_z8l4NiofWTW-FBMos2BkMKd8iTXiHvlE,1072
+wagtailadminfontawesome-0.0.1.dist-info/METADATA,sha256=4zm1z2k0adV0gUqV4IA04qw8sVoIdnd_f7qIpHaIL1Y,1046
+wagtailadminfontawesome-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wagtailadminfontawesome-0.0.1.dist-info/top_level.txt,sha256=hFFCOVlBbxzd4HCzYobr-Vbn0Toq8F7IBhVkB6JbGdM,24
+wagtailadminfontawesome-0.0.1.dist-info/RECORD,,
