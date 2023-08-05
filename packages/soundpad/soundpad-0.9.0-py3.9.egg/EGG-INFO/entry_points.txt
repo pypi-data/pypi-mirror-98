@@ -1,0 +1,3 @@
+[console_scripts]
+soundpad = soundpad.soundpad:main
+

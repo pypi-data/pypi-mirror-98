@@ -1,0 +1,10 @@
+README.md
+setup.py
+soundpad/__init__.py
+soundpad/_version.py
+soundpad/soundpad.py
+soundpad.egg-info/PKG-INFO
+soundpad.egg-info/SOURCES.txt
+soundpad.egg-info/dependency_links.txt
+soundpad.egg-info/entry_points.txt
+soundpad.egg-info/top_level.txt
