@@ -1,0 +1,4 @@
+lark-parser==0.11.1
+
+[test]
+pytest==6.1.2
