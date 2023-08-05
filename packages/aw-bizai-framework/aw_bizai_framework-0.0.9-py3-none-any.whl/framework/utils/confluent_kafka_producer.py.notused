@@ -1,0 +1,67 @@
+import sys
+import json
+from confluent_kafka import Producer
+
+
+def get_producer(conf):
+    producer = Producer(**conf)
+    return producer
+
+
+def acked(err, msg):
+    if err:
+        print("err ::", err)
+        sys.stderr.write('%% Message failed delivery: %s\n' % err)
+    else:
+        print("msg offset ::", msg.offset())
+        sys.stderr.write('%% Message delivered to %s [%d] @ %d\n' %
+                         (msg.topic(), msg.partition(), msg.offset()))
+
+
+def send_message(producer, topic, message):    
+    producer.produce(topic, value=message, callback=acked)  
+    producer.poll(0)  
+    # producer.flush()  
+    
+
+
+if __name__ == "__main__":
+
+    # python -m bizai.faas.fn_to_image.to_image
+
+    kafka_brokers_sasl = "broker-2-ck8slw11c506v01p.kafka.svc04.us-south.eventstreams.cloud.ibm.com:9093,broker-4-ck8slw11c506v01p.kafka.svc04.us-south.eventstreams.cloud.ibm.com:9093,broker-1-ck8slw11c506v01p.kafka.svc04.us-south.eventstreams.cloud.ibm.com:9093,broker-3-ck8slw11c506v01p.kafka.svc04.us-south.eventstreams.cloud.ibm.com:9093,broker-0-ck8slw11c506v01p.kafka.svc04.us-south.eventstreams.cloud.ibm.com:9093,broker-5-ck8slw11c506v01p.kafka.svc04.us-south.eventstreams.cloud.ibm.com:9093"
+    sasl_username = 'token'
+    api_key = "RCwZdROnvoPoBDVD5bb3xJm51v0GEHXb2j-LxFnkTy8X"
+    rest_endpoint = "https://ck8slw11c506v01p.svc04.us-south.eventstreams.cloud.ibm.com"
+    ssl_cert_loc = ""
+    security_protocol = "SASL_SSL"
+    sasl_mechanism = 'PLAIN'
+    client_id = "kafka-python-console-sample-producer"
+
+    message = {
+        "title": "Some string",
+        "amount": 5,
+        "isAwesome": True
+    }
+
+    topic = "bizai_request_processing_topic"
+    
+    # 'ssl.ca.location': ssl_cert_loc,
+    conf = {
+        "bootstrap.servers": kafka_brokers_sasl,
+        "security.protocol": security_protocol,
+        'sasl.mechanisms': sasl_mechanism,
+        'sasl.username': sasl_username,
+        'sasl.password': api_key,
+        'api.version.request': True,
+        'broker.version.fallback': '0.10.2.1',
+        'log.connection.close': False,
+        'client.id': 'kafka-python-console-sample-producer'
+
+    }
+    p = get_producer(conf)
+    print(p)
+    s=json.dumps(message)
+    send_message(p, topic, s)
+
+
