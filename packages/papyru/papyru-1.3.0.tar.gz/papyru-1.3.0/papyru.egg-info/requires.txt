@@ -1,0 +1,5 @@
+Cerberus
+Django
+jsonschema
+pyyaml
+requests
