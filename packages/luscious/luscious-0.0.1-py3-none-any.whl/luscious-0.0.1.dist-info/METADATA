@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: luscious
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: pyporn-san
+Author-email: pypornsan@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: Faker (==6.6.0)
+Requires-Dist: pathvalidate (==2.3.2)
+Requires-Dist: urllib3 (==1.26.3)
+
+# TODO
+
+
