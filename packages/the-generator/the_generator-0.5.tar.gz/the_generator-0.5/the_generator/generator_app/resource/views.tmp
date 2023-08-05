@@ -1,0 +1,37 @@
+from django.shortcuts import render
+from django.views.generic import View, TemplateView, CreateView, DetailView, ListView, UpdateView, DeleteView
+from .forms import *
+from .tables import *
+from django_tables2 import SingleTableView
+from django.urls import reverse
+# Create your views here.
+
+class {{name}}ListView(SingleTableView):
+    model = {{name}}
+    paginate_by = 10
+    table_class = {{name}}Table
+
+    def get_queryset(self):
+        return {{name}}.objects.all()
+
+
+class {{name}}CreateView(CreateView):
+    model = {{name}}
+    form_class = {{name}}Form
+
+
+class {{name}}DetailView(DetailView):
+    model = {{name}}
+    template_name = "{{name | lower}}/{{name | lower}}_detail.html"
+
+
+class {{name}}UpdateView(UpdateView):
+    model = {{name}}
+    form_class = {{name}}Form
+
+
+class {{name}}DeleteView(DeleteView):
+    model = {{name}}
+
+    def get_success_url(self):
+        return reverse('{{name | lower}}_list')
