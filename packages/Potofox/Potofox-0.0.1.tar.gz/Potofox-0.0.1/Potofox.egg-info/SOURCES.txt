@@ -1,0 +1,7 @@
+README.txt
+setup.py
+Potofox.egg-info/PKG-INFO
+Potofox.egg-info/SOURCES.txt
+Potofox.egg-info/dependency_links.txt
+Potofox.egg-info/requires.txt
+Potofox.egg-info/top_level.txt

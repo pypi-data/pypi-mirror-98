@@ -1,0 +1,3 @@
+pandas>=1.1.3
+numpy>=1.18.0
+Potosnail>=0.2.3
