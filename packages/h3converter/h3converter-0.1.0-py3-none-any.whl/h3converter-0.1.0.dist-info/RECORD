@@ -1,0 +1,13 @@
+h3converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+h3converter/h3converter.py,sha256=gRvD40iLw0JIrOnfbIMXTeZoHjEphn5Ukn_HEHVmViY,25369
+h3converter/libh3.1.dylib,sha256=W315f7GccrProEh-iY8YwQTvo9Kg1UlbO-r0vSZh7eQ,89452
+h3converter/libh3.dylib,sha256=W315f7GccrProEh-iY8YwQTvo9Kg1UlbO-r0vSZh7eQ,89452
+h3converter/libh3.so,sha256=6fX-UrdFY6ZCEU9CfLvwnFz99xkB1KjENFoRaJieXP8,105056
+h3converter/libh3.so.1,sha256=6fX-UrdFY6ZCEU9CfLvwnFz99xkB1KjENFoRaJieXP8,105056
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/testh3converter.py,sha256=gRvD40iLw0JIrOnfbIMXTeZoHjEphn5Ukn_HEHVmViY,25369
+h3converter-0.1.0.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+h3converter-0.1.0.dist-info/METADATA,sha256=7eIo5wAVpJly-o-Go-1XbRr-E6v5apnaGUJ1pISZKy4,1205
+h3converter-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+h3converter-0.1.0.dist-info/top_level.txt,sha256=nEKl208eqNyASIN_DdG6S3ATvmthIMZ91X7xo7_MloI,18
+h3converter-0.1.0.dist-info/RECORD,,
