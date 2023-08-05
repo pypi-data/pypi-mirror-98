@@ -1,0 +1,15 @@
+README.md
+setup.py
+pazgui/__init__.py
+pazgui/accessories.py
+pazgui/behavior.py
+pazgui/gui.py
+pazgui/keycodes.py
+pazgui.egg-info/PKG-INFO
+pazgui.egg-info/SOURCES.txt
+pazgui.egg-info/dependency_links.txt
+pazgui.egg-info/requires.txt
+pazgui.egg-info/top_level.txt
+tests/__init__.py
+tests/basic_guis.py
+tests/test_auto.py
