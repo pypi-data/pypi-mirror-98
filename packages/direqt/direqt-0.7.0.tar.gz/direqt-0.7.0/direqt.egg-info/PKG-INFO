@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: direqt
+Version: 0.7.0
+Summary: Client library for Direqt Ads API
+Home-page: https://github.com/direqt/direqt-sdk-python
+Author: Myk Willis
+Author-email: myk@direqt.io
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2
