@@ -1,0 +1,11 @@
+README.md
+setup.py
+get_twitter_shortened_url.egg-info/PKG-INFO
+get_twitter_shortened_url.egg-info/SOURCES.txt
+get_twitter_shortened_url.egg-info/dependency_links.txt
+get_twitter_shortened_url.egg-info/entry_points.txt
+get_twitter_shortened_url.egg-info/requires.txt
+get_twitter_shortened_url.egg-info/top_level.txt
+t_co/__init__.py
+t_co/main.py
+t_co/shortener.py
