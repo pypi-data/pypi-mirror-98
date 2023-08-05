@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Twitter-Sentimet-65
+Version: 0.0.1
+Summary: First Iteration of sentiment analysis on 6005 tweets
+Home-page: https://github.com/dipashreepatil/Twitter-Sentiment-65/tree/1.0
+Author: Dipashree Patil
+Author-email: dipashree.patil@cumminscollege.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Twitter-Sentiment-65
+
+
