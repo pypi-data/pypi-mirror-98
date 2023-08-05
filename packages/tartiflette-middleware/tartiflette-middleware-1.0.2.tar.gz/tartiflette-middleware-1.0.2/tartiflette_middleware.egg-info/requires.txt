@@ -1,0 +1,1 @@
+tartiflette>=1.2
