@@ -1,0 +1,15 @@
+README.md
+setup.py
+sawpit/__init__.py
+sawpit/rest_request.py
+sawpit/utils.py
+sawpit/ws_message.py
+sawpit/ws_response.py
+sawpit/ws_test.py
+sawpit/ws_timeout_error.py
+sawpit.egg-info/PKG-INFO
+sawpit.egg-info/SOURCES.txt
+sawpit.egg-info/dependency_links.txt
+sawpit.egg-info/not-zip-safe
+sawpit.egg-info/requires.txt
+sawpit.egg-info/top_level.txt
