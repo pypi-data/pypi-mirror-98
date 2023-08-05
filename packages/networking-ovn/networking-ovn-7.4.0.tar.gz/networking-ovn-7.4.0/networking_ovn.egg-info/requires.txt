@@ -1,0 +1,16 @@
+Babel!=2.4.0,>=2.3.4
+SQLAlchemy>=1.2.0
+futurist>=1.2.0
+netaddr>=0.7.18
+neutron-lib>=1.28.0
+neutron>=13.0.0.0b2
+octavia-lib>=1.3.1
+oslo.config>=5.2.0
+ovs>=2.8.0
+ovsdbapp>=0.17.0
+pbr!=2.1.0,>=2.0.0
+pyOpenSSL>=17.1.0
+requests>=2.14.2
+six>=1.12.0
+tenacity>=5.0.2
+tooz>=1.58.0
