@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gctf/__init__.py
+gctf/centralized_gradients.py
+gctf/optimizers.py
+gctf/version.py
+gradient_centralization_tf.egg-info/PKG-INFO
+gradient_centralization_tf.egg-info/SOURCES.txt
+gradient_centralization_tf.egg-info/dependency_links.txt
+gradient_centralization_tf.egg-info/requires.txt
+gradient_centralization_tf.egg-info/top_level.txt
