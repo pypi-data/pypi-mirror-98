@@ -1,0 +1,7 @@
+requests
+six
+pytz
+python-jose
+
+[:python_version < "3.4"]
+enum34
