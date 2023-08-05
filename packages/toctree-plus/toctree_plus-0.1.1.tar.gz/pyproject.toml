@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "whey",]
+build-backend = "whey"
+
+[project]
+name = "toctree_plus"
+version = "0.1.1"
+description = "Enhanced Sphinx TocTree that shows classes and functions as if they were sections."
+readme = "README.rst"
+keywords = [ "sphinx", "documentation", "sphinx-extension",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+[[project.authors]]
+email = "dominic@davis-foster.co.uk"
+name = "Dominic Davis-Foster"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/sphinx-toolbox/toctree_plus"
+"Issue Tracker" = "https://github.com/sphinx-toolbox/toctree_plus/issues"
+"Source Code" = "https://github.com/sphinx-toolbox/toctree_plus"
+Documentation = "https://toctree_plus.readthedocs.io/en/latest"
+
+[tool.whey]
+base-classifiers = [ "Development Status :: 4 - Beta", "Framework :: Sphinx :: Extension", "Intended Audience :: Developers", "Programming Language :: Python", "Topic :: Documentation", "Topic :: Documentation :: Sphinx", "Topic :: Software Development :: Documentation", "Typing :: Typed",]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "BSD-3-Clause"
+package = "sphinxcontrib"
