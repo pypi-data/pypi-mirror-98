@@ -1,0 +1,4 @@
+simple-term-menu==0.10.5
+Pygments==2.8.1
+requests==2.25.1
+multiprocess==0.70.11.1
