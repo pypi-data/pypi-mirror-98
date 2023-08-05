@@ -1,0 +1,12 @@
+mailmerge/__init__.py,sha256=TNW9Sw1Nbk001dYNYwDz24VHHtJMDQIeL3REmNFtViY,209
+mailmerge/__main__.py,sha256=j5hZHnUD7xiLGKkdi0Ed10rJYeorHEqiHcB0aZzNcys,11790
+mailmerge/exceptions.py,sha256=sQg_YUwDnPaX0FIVnfvuWhY1Q4X6RazVhUeQ_t1_mds,130
+mailmerge/sendmail_client.py,sha256=Zd--kAzmAxRNmcPuY6grC7xtyoX4dcR0IZHOc6aUMD4,4072
+mailmerge/template_message.py,sha256=XMBXdSy5bkm9mVlbUhSBCrO76PhF2UsXfQJ19MU3Qn0,10688
+mailmerge/utils.py,sha256=uea166e_aqOJbd9nrgylzcEAoz-ym8qQ_hOH3B-UIRE,2070
+mailmerge-2.1.2.dist-info/LICENSE,sha256=Y3ESzU5c5J5N61UJms1MwppdF0D558rAlU2HwjQKYic,1080
+mailmerge-2.1.2.dist-info/METADATA,sha256=8TrJBynkbFoe2y1k0XyxlNFKhNh1lj5N0NkTy4dUyRQ,13318
+mailmerge-2.1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+mailmerge-2.1.2.dist-info/entry_points.txt,sha256=C6x0BzgHkyPUIUr7sscn-H0eD6033Tby_lpKDpGaXcM,55
+mailmerge-2.1.2.dist-info/top_level.txt,sha256=DmVzyhW3SDBJ_r9RyP1LL8tGmeGKXCbwe_u5yDzHdlA,10
+mailmerge-2.1.2.dist-info/RECORD,,
