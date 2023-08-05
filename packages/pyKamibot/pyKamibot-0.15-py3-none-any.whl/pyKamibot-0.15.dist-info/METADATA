@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: pyKamibot
+Version: 0.15
+Summary: A Python Library For Kamibot
+Home-page: UNKNOWN
+Author: moyalab
+Author-email: iammoyalab@gmail.com
+License: UNKNOWN
+Keywords: Kamibot,Robot
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyserial (==3.5)
+
+## Package for Kamibot
+
+### install
+```
+pip install pyserial==3.5
+```
+
+### check version
+```
+import pyKamibot as kamibot
+
+# check version
+print(kamibot.__version__)
+
+```
+
+### exmaple
+1. LED  
+
+```
+from pyKamibot import Kamibot
+
+kamibot = Kamibot('COM3', 57600)
+
+# LED (r, g, b)
+kamibot.turn_led(200, 0, 0)
+
+# ---------------------------------------------------
+# Move on mapboard
+# ---------------------------------------------------
+for i in range(0, 100):
+    kamibot.turn_led(200, 0, 0)
+    kamibot.delay(1)
+    kamibot.turn_led(0, 200, 0)
+    kamibot.delay(1)
+```  
+
+2. Mapboard
+```
+kamibot.move_forward(1)
+
+while True:
+    kamibot.move_forward(1)
+    kamibot.turn_left()
+```
+
+- turn_right()
+- turn_back()
+
+3. Control Mode
+
+-  go_forward_with_speed(right=100, left=100)
+```
+kamibot.go_forward_with_speed(right=0, left=100)
+kamibot.delay(1)
+kamibot.stop()
+```
+
+-  go_backward_with_speed(right=0, left=100)
+```
+kamibot.go_backward_with_speed(right=100, left=100)
+kamibot.delay(1)
+kamibot.stop()
+```
+
+-  go_with_speed(right=100, left=100, r_dir=0, l_dir=0)
+0 : forward, 1: backward, 2: stop
+```
+kamibot.go_with_speed(right=100, left=100, r_dir=0x00, l_dir=0x00)
+kamibot.delay(1)
+kamibot.stop()
+```
+
+-  set_server_motor(pos=90)
+pos : degree
+```
+for i in range(0, 10):
+    kamibot.set_server_motor(0)
+    kamibot.delay(1)
+    kamibot.set_server_motor(90)
+    kamibot.delay(1)
+```
+
+-  ultrasonic()
+unit is cm
+```
+while True:
+    val = kamibot.ultrasonic()
+    print('distance :', val)
+    kamibot.delay(1)
+
+```
+
+-  ir()
+```
+while True:
+    val = kamibot.ir()
+    print('ir :', val)
+    kamibot.delay(1)
+
+```
+
+## Contact
+Part of the MoyaLab project - http://moyalab.com
+Copyright (C) 2019 Moyalab (immoyalab@gmail.com)
+
+
