@@ -1,0 +1,13 @@
+include README.md
+include README.rst
+
+recursive-include bapy *
+recursive-include scripts *
+recursive-include tests *
+
+recursive-exclude * backup
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude * venv
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
