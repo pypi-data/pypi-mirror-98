@@ -1,0 +1,13 @@
+typeguard>=2.10
+
+[iso3166]
+iso3166>=1.0.1
+
+[phonenumbers]
+phonenumbers>=8.12.11
+
+[test]
+mypy
+pytest
+pytest-mypy-plugins
+coverage
