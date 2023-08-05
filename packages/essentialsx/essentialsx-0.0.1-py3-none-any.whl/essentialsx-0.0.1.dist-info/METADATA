@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: essentialsx
+Version: 0.0.1
+Summary: Reusable essentials to be used across Python projects.
+Home-page: https://github.com/mistergates/essentialsx
+Author: Mitch Gates
+Author-email: gates55434@gmail.com
+License: MIT
+Keywords: core utilities,logging,hotkeys
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pynput
+Requires-Dist: rich
+
+# Python Essentials
+
+This project has reusable essentials for python projects, such as:
+
+* Logger (enhanced with [rich](https://pypi.org/project/rich/) logging)
+* Non-blocking hotkey monitoring via [pynput](https://pypi.org/project/pynput/) (e.g. enable debug logging on the fly)
+
+## Example Usage
+
+```python
+from essentialsx import Essentials
+
+
+def foo():
+    print('bar')
+
+
+if __name__ == '__main__':
+    essentials = Essentials()
+
+    # Create a logger easily
+    log = essentials.get_logger()
+
+    # Or create a logger with a logfile
+    log = essentials.get_logger(logfile='/tmp/mylogfile.log')
+
+    # Register custom hotkeys
+    essentials.register_hotkeys({'<ctrl>+<alt>+c': foo})
+
+    # Get all registered hotkeys
+    print(essentials.get_hotkeys())
+
+    # Enable hotkey monitoring
+    essentials.enable_hotkeys()
+
+    # Disable hotkey monitoring
+    essentials.disable_hotkeys()
+```
+
+
