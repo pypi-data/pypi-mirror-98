@@ -1,0 +1,8 @@
+azure_ad_verify_token/__init__.py,sha256=cuwQQgwL8r2ppTJoDfcQ2lTLyjQb_cVDW9x5VUGMGYI,30
+azure_ad_verify_token/crypto.py,sha256=ncp4hY94-gLbM_bpMPyU95JmEWBa8zl5xKx05USLfl8,729
+azure_ad_verify_token/verify.py,sha256=SJjOG_hWy_4CrKHhLYj9aYEyZQZbLA7j5tGL6lLjCVc,1769
+azure_ad_verify_token-0.1.3.dist-info/LICENSE.md,sha256=THVSg22Ssnfbf-mAJq63hxLLx24fKYIgeZ6wmVcEHX4,17507
+azure_ad_verify_token-0.1.3.dist-info/METADATA,sha256=UZGv1w6SRrfdW6wKp1adr-4yrEiQMKcn57nuW7Ez_kE,4747
+azure_ad_verify_token-0.1.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+azure_ad_verify_token-0.1.3.dist-info/top_level.txt,sha256=HnW1_SyDsyPZaLoBMDnc02EcTCaMC9pfY_zyWNBf_UE,22
+azure_ad_verify_token-0.1.3.dist-info/RECORD,,
