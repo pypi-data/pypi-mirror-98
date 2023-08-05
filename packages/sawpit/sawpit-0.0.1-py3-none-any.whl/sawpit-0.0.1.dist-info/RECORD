@@ -1,0 +1,12 @@
+sawpit/__init__.py,sha256=QsK93DYmeo6S9LYhWk4tpvCc9Fbz5JgIZwznayyrE_k,263
+sawpit/rest_request.py,sha256=pTJ1Ami24GNsbUpCLCHmDYPHdfE9MUGI9Jm9S1qCBLQ,3037
+sawpit/utils.py,sha256=DIktrKsRuw3dXTEInLXg-YsY7YLmAlMhx7jX3S7Ab_w,1946
+sawpit/ws_message.py,sha256=_dT3agYEZO4SP-pUT2iCWL2OYVCV2OHDCc9ytZTXJn4,2328
+sawpit/ws_response.py,sha256=HIx2RcMADWmCjNnIym9DR2DZuB-Pt6N6aqAtCTU8rHI,2619
+sawpit/ws_test.py,sha256=ybbyqi7x4wQTJ-eYEaPfyzayVi_ToLZftxb0_hsJBzU,12407
+sawpit/ws_timeout_error.py,sha256=_o46JZNV2PZyR0Mx7VD8i2GPdXTlhIJLd7-Nv81yeqQ,85
+sawpit-0.0.1.dist-info/LICENSE,sha256=r3tCrhG4N7TiPYis4qXg0UK3huJCCHR54Z4WDF8Wmrc,1131
+sawpit-0.0.1.dist-info/METADATA,sha256=Bp838kmh2-c0ootIwnEaKXeTUzJ-GBeoc7Ow3LHaTbk,8809
+sawpit-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sawpit-0.0.1.dist-info/top_level.txt,sha256=JtQFu6ZR22MjJieHs3l9yu8fUThnF0CWptb_7ip-yK8,7
+sawpit-0.0.1.dist-info/RECORD,,
