@@ -1,0 +1,3 @@
+numpy
+scipy
+labbox==0.1.22
