@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+frog-ssg/__init__.py
+frog-ssg/__main__.py
+frog_ssg.egg-info/PKG-INFO
+frog_ssg.egg-info/SOURCES.txt
+frog_ssg.egg-info/dependency_links.txt
+frog_ssg.egg-info/entry_points.txt
+frog_ssg.egg-info/top_level.txt
