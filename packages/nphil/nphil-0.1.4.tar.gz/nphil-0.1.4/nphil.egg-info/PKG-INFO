@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: nphil
+Version: 0.1.4
+Summary: NPHIL
+Home-page: https://github.com/capoe/nphil
+Author: capoe
+Author-email: carl.poelking@floatlab.io
+License: GNU General Public License (Version 2)
+Description: Non-parametric non-linear feature network filtering and feature generation for sparse data modelling
+Keywords: 3d convolutional descriptors chemical machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.0
