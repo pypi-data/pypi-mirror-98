@@ -1,0 +1,16 @@
+PyQt5/Qt/qsci/api/python/PyQtNetworkAuth.api,sha256=rU4LnFZTDNilw95XAVXs2k7rKBWPr-jXfybC02uPCM0,15267
+PyQt5/QtNetworkAuth.abi3.so,sha256=rsTImZRqe1mnmE7cup0tG0oe-9YsrcKxDRzgHlYZpuk,185040
+PyQt5/QtNetworkAuth.pyi,sha256=_cT9XSJfSFdUjUWoouU-zRm5w6Z-Ex_OxOeh-Qv6xA8,17953
+PyQt5/bindings/QtNetworkAuth/QtNetworkAuth.toml,sha256=HmXPvG30iEJ4h-hPs12In6iRJ6Q4YZVEriE2RVq4r9M,243
+PyQt5/bindings/QtNetworkAuth/QtNetworkAuthmod.sip,sha256=XxM5NbbudbQ2qqLMy2TSg9TeCHaLGfOjWHEC9xRq_Es,2554
+PyQt5/bindings/QtNetworkAuth/qabstractoauth.sip,sha256=zRN2QBVNTL-a-0dSS9CDQWjBbV4XjYmzoaAGAeplTu8,8220
+PyQt5/bindings/QtNetworkAuth/qabstractoauth2.sip,sha256=a9_Sa8XKbKt_FgMs7CJr_Y1GROXs1wKWuSFueT4ALQU,3528
+PyQt5/bindings/QtNetworkAuth/qabstractoauthreplyhandler.sip,sha256=MifvQrndJ2xy596ZRDoXregkkftY87-whdo3b47TgKs,1601
+PyQt5/bindings/QtNetworkAuth/qoauth1.sip,sha256=oIlKH4gk6N8V0d84YeAWpLnxR1JXxk2F3HcnICD54Mw,4096
+PyQt5/bindings/QtNetworkAuth/qoauth1signature.sip,sha256=FT4CPIeL4smp2RX-rzlzoTADlzySVV7xfdSvUeYnivY,2885
+PyQt5/bindings/QtNetworkAuth/qoauth2authorizationcodeflow.sip,sha256=LYGXXvc4bXWZHHfu-BbOu_9Zwr3PiGrFz8ZYkbkGLa4,2408
+PyQt5/bindings/QtNetworkAuth/qoauthhttpserverreplyhandler.sip,sha256=QBaswzOHcffTofF82a90vaAOr-QGGql3AfILQOIb18M,1851
+PyQt5/bindings/QtNetworkAuth/qoauthoobreplyhandler.sip,sha256=PuDGnxOt3qC3F7HiFgL4_5fkl56nKFZ4JYICyDl1Ohc,1323
+PyQtNetworkAuth-5.15.4.dist-info/WHEEL,sha256=xW_Bv4cCLg4VZnA7x5hvCjs6kSiiN4r56Y11y4kPQlk,118
+PyQtNetworkAuth-5.15.4.dist-info/METADATA,sha256=piBkhzrNYqJdKY26NZ3AChgukhwzr7-Q-aef30hPSbQ,1808
+PyQtNetworkAuth-5.15.4.dist-info/RECORD,,
