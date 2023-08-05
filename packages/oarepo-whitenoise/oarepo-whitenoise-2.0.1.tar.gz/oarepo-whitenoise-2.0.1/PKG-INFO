@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: oarepo-whitenoise
+Version: 2.0.1
+Summary: OArepo module for tracking and updating references in Invenio records
+Home-page: https://github.com/oarepo/oarepo-whitenoise
+Author: Miroslav Šimek, VŠCHT Praha
+Author-email: simeki@vscht.cz
+License: MIT
+Description: # OArepo whitenoise
+        
+        This library serves static resources and index.html at runtime
+        using the whitenoise package. This greatly simplifies the deployment
+        as only one image needs to be deployed.
+        
+        ## Installation
+        
+        ```bash
+        pip install oarepo-micro-api oarepo-whitenoise
+        ```
+        
+        ## Configuration
+        
+        This library expects the static files in ``/whitenoise``
+        folder. If they are located elsewhere, set environment
+        variable ``WHITENOISE_ROOT`` to the correct location.
+        
+        ## Usage
+        
+        In your wsgi configuration, specify:
+        
+        ```ini
+        [uwsgi]
+        module = oarepo_whitenoise.wsgi:application
+        ...
+        ```
+        
+        as your wsgi entry point.
+        
+        
+        ..
+            Copyright (C) 2021 Mirek Šimek, VŠCHT Praha.
+        
+            oarepo-whitenoise is free software; you can redistribute it and/or
+            modify it under the terms of the MIT License; see LICENSE file for more
+            details.
+        
+        Changes
+        =======
+        
+        Version 0.1.0 (released TBD)
+        
+        - Initial public release.
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: validate
