@@ -1,0 +1,8 @@
+pypmca
+scipy
+numpy
+ipywidgets
+texttable
+matplotlib
+requests
+pandas
