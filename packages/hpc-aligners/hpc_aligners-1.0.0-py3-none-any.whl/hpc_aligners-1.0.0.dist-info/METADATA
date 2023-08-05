@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hpc-aligners
+Version: 1.0.0
+Summary: Using aligners in IUCT HPC solution.
+Home-page: http://srvhpccode.icr.local/njeanne/python-package-hpc-aligner
+Author: Nicolas Jeanne
+Author-email: jeanne.n@chu-toulouse.fr
+License: GNU General Public License
+Keywords: aligner hpc
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+
+# IUCT cluster aligners 
+
+Python package providing utilities functions to use aligners on IUCT cluster.
+
+
