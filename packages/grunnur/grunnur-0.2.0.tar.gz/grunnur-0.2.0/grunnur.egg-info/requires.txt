@@ -1,0 +1,14 @@
+numpy>=1.6.0
+mako>=1.0.0
+
+[dev]
+pytest>=4
+pytest-cov
+sphinx>=2
+sphinx_autodoc_typehints
+
+[pycuda]
+pycuda>=2019.1.1
+
+[pyopencl]
+pyopencl>=2019.1.1
