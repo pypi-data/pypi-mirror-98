@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fermipy
+Version: 1.0.1
+Summary: A Python package for analysis of Fermi-LAT data
+Home-page: https://github.com/fermiPy/fermipy
+Author: The Fermipy developers
+Author-email: fermipy.developers@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: numpy (>=1.16)
+Requires-Dist: pyyaml
+Requires-Dist: scipy
+Requires-Dist: astropy (<4)
+Requires-Dist: matplotlib
+Requires-Dist: healpy
+
+UNKNOWN
+
+
