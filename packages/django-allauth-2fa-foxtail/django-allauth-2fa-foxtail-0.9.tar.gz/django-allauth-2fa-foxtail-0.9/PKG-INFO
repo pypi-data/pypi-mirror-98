@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: django-allauth-2fa-foxtail
+Version: 0.9
+Summary: Adds two factor authentication to django-allauth
+Home-page: https://github.com/percipient/django-allauth-2fa
+Author: Víðir Valberg Guðmundsson
+Author-email: valberg@orn.li
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: otp,auth,two factor authentication,allauth,django,2fa
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.5
