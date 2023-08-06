@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bme280spi
+Version: 0.1.0
+Summary: Library for BME280 sensor through spidev
+Home-page: https://github.com/Kuzj/bme280spi
+License: MIT
+Keywords: bme280,spi,spidev,linux
+Author: Kuzj
+Author-email: kuzj99@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: spidev (>=3.5,<4.0)
+Project-URL: Repository, https://github.com/Kuzj/bme280spi
+Description-Content-Type: text/markdown
+
+# bme280spi
+Library for BME280 sensor through spidev
+

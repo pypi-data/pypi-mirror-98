@@ -1,0 +1,10 @@
+bme280spi/__init__.py,sha256=l6-QwleTdOrxSTDcIA1qwXNNB7p7sTSHCJKfrIaTFEQ,48
+bme280spi/__main__.py,sha256=ey2pvLQKr6yOK2PAOzjNdeqgHzvcHCotXC94mUTX1nM,810
+bme280spi/helpers.py,sha256=6OysOsuMYEUMhDe3p8Q1dF7YNrni-Z3aNPpfNnlNioA,575
+bme280spi/main.py,sha256=kzoaah1cJHMknBdQpYd7e7UIq7KE5zgSjlY74gM2ubM,14826
+bme280spi/spibyteio.py,sha256=ptvYt_5Ffh8VRVNgJhqWLm9SZErH50Jg2cdNFjoCmkg,6244
+bme280spi-0.1.0.dist-info/entry_points.txt,sha256=N8MEQ0-LNTEL0Z0OXYBEeekPl1SbuxpjWumO8h4AHpw,53
+bme280spi-0.1.0.dist-info/LICENSE,sha256=_Zw223eAowy-yGEI_pxIZhj81TgX4wgAEJ-7h9iw4Oc,1061
+bme280spi-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+bme280spi-0.1.0.dist-info/METADATA,sha256=ORpKH_nNupED-npy5UfZc_zeD6oFedms90k_mlp0-xk,898
+bme280spi-0.1.0.dist-info/RECORD,,

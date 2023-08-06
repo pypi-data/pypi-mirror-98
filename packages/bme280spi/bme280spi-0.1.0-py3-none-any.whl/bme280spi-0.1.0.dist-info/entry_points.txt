@@ -1,0 +1,3 @@
+[console_scripts]
+bme280spi=bme280spi.__main__:main
+
