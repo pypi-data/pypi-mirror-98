@@ -1,0 +1,15 @@
+sphinx_ncs_theme/__init__.py,sha256=mMjY4Qx-wPl5RwFYEDxPu_Y2HvYGMxTPZhLxpoEjbM8,245
+sphinx_ncs_theme/footer.html,sha256=86XSq24flv-b3NSFcTgj8l-kmwOwQ2FNuQtkr1vaCZU,2157
+sphinx_ncs_theme/searchbox.html,sha256=fiay_2725dOMuD0bnJ1gvycwQUxxo4VyMeDAGHBmAvE,475
+sphinx_ncs_theme/theme.conf,sha256=1-GRjgssvOdvREUtvx2E2piBT5BigqdrIs9IQ46XZ5c,368
+sphinx_ncs_theme/versions.html,sha256=v7eN8jo06ZHkCX8h6kLApO4z0iNKe7pTdxzFASOOLMo,788
+sphinx_ncs_theme/static/css/nordic.css,sha256=WJEymrMq3R0_QFJasR6RWGNp4gGhZhrzyr6HqMsXSaA,5625
+sphinx_ncs_theme/static/images/dropdown.svg,sha256=2uvWgNHZ0NKqRTcVy2hVeUGP_q0TZb0fC6axJ6PRth4,1745
+sphinx_ncs_theme/static/images/favicon.ico,sha256=eduV8URj2YtXdNHO3GEo627ckF9eoo2XWANSH79xfmU,4560
+sphinx_ncs_theme/static/images/nordic.svg,sha256=nqXEJZ_LJnC8311tUyI8Ggjqp69IgFGIzE7NiC_EMO8,787262
+sphinx_ncs_theme/static/js/ncs.js,sha256=NmxkQo-eOzbpuJKUotJiDVeP0oRmygpvTttp8nSPw7A,7875
+sphinx_ncs_theme-0.3.0.dist-info/METADATA,sha256=l0mWAemi5ef0VADePbTNrR_tSouMBR_z67jegJkZsAw,1225
+sphinx_ncs_theme-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sphinx_ncs_theme-0.3.0.dist-info/entry_points.txt,sha256=HfmR7bhMoEvsW26zBrxz1sLPyTeyh0WwrH7osMBWJ4k,58
+sphinx_ncs_theme-0.3.0.dist-info/top_level.txt,sha256=JyT8c8ZkS2qD3iXzW2qYNfbaIWn4vApSePe_f7xoe5k,17
+sphinx_ncs_theme-0.3.0.dist-info/RECORD,,
