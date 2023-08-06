@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: socatlord
+Version: 0.3
+Summary: A utility to manage all socats of yours
+Home-page: UNKNOWN
+Author: Piotr Maślanka
+Author-email: pmaslanka@smok.co
+License: UNKNOWN
+Keywords: socat,systemd,utility
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: satella
+
+# socatlord
+
+socatlord is a tool to manage multiple socats
+
+You feed it with a config file placed at
+`/etc/socatlord` that has the syntax like:
+
+```
+# this is a comment
+
+9.9.9.9:80 -> 123.23.4.3.:81
+80 -> 192.168.224.20:80
+udp 0.0.0.0:23 -> 192.168.224.20:23
+```
+
+TCP is the default protocol.
+Socatlord will spawn as many socats as necessary.
+
+
+
