@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bamboo4py
+Version: 0.1.0
+Summary: PyBamboo (python-bamboo) is original bamboo implementation in python
+Author: thisLight
+Author-email: l1589002388@gmail.com
+Requires-Python: >=3.7,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Deprecated (>=1.2.11,<2.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: netaddr (>=0.8.0,<0.9.0)
+Requires-Dist: pyyaml (>=5.4.1,<6.0.0)
+Requires-Dist: validobj (>=0.3.11,<0.4.0)

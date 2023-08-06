@@ -1,0 +1,3 @@
+[console_scripts]
+bamboo4py=bamboo.main
+
