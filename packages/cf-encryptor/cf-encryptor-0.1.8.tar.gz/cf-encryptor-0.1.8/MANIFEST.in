@@ -1,0 +1,2 @@
+include cfe/drive_api/client_secret.json
+include cfe/drive_api/settings.yaml
