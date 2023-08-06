@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: movidesk-client
+Version: 1.0.0
+Summary: A simple client to access API of the Movidesk
+Home-page: https://github.com/daniellbastos/movidesk-client/
+Author: Daniel Bastos
+Author-email: contato@daniellbastos.com.br
+License: UNKNOWN
+Keywords: client,movidesk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/x-rst
+
+===============
+movedesk-client
+===============
+
+Requirements
+~~~~~~~~~~~~
+
+    * Python >= 3.x
+
+
+How to install
+~~~~~~~~~~~~~~
+
+    pip install movedesk-client
+
+
+How to use
+~~~~~~~~~~
+
+>>> from move_client import MovedeskClient
+>>> client = MovedeskClient('super-token')
+>>>
+>>> client.person_create({'foo': 'bar'})
+>>> ...
+>>> client.ticket_create({'foo': 'bar'})
+
+
+TODO
+~~~~
+
+Add access to all resource.
+
+
