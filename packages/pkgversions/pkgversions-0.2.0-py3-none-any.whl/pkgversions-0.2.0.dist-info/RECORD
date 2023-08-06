@@ -1,0 +1,10 @@
+pkgversions/PkgVersions.py,sha256=OUlD9k3BGyQVAjzKvUTfb9XN4J7HZABq8EMe6Rg_JbY,4349
+pkgversions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkgversions/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkgversions/resources/loggingConfiguration.json,sha256=8kieYAuV2ag9eGxq4cb2zc4KDUAajSZAPLo0Wvs8jrw,913
+pkgversions-0.2.0.dist-info/LICENSE,sha256=TfuqhJ-JW9Wfgtqls4DVvkBedgoxUgtpXORcZiH55oc,1078
+pkgversions-0.2.0.dist-info/METADATA,sha256=FgNtyepbLdHJv1CFvNn-ILqJ099ZKNFNnE8-5pHvKrU,473
+pkgversions-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pkgversions-0.2.0.dist-info/entry_points.txt,sha256=yMkiXCeEEa7RVax9k99aYeYMOZbIAUfSRstdS37sbtM,72
+pkgversions-0.2.0.dist-info/top_level.txt,sha256=KQIhLcoM7Sfgdj6cG8xw4lAR48W3ChYbCdBPjhrH0hg,12
+pkgversions-0.2.0.dist-info/RECORD,,

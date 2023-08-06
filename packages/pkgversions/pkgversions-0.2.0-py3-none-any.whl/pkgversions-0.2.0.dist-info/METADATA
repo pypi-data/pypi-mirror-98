@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pkgversions
+Version: 0.2.0
+Summary: A build help tool
+Home-page: https://github.com/hasii2011/pkgversions
+Author-email: Humberto.A.Sanchez.II@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click
+
+This is a simple CLI for me to update package versions during development.
+This command has to be run solely during development and in the virtual environment of the 
+target py2app application.
+
+
