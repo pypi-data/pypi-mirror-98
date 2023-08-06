@@ -1,0 +1,7 @@
+mysql_tools.py
+setup.py
+mysql_tools.egg-info/PKG-INFO
+mysql_tools.egg-info/SOURCES.txt
+mysql_tools.egg-info/dependency_links.txt
+mysql_tools.egg-info/requires.txt
+mysql_tools.egg-info/top_level.txt
