@@ -1,0 +1,31 @@
+{% if hide_form %} </div> {% endif %}
+<div class="form-block {{ form_display }} inline-form {% if hide_form %}hide{% endif %} " data-inline-form>
+{% for field in form %}
+    {% if field.is_hidden %}
+        {{ field }}
+    {% else %}
+        <div class="row {% if field.errors %} invalid-form-field{% endif %}">
+            {% include 'arctic/partials/form_field.html' %}
+        </div>
+        {% block errors %}
+            {% for error in form.non_field_errors %}
+                <span class="invalid-feedback">
+                    {{ error }}
+                </span>
+            {% endfor %}
+        {% endblock %}
+    {% endif %}
+{% endfor %}
+    {% if formset.sorting_field %}
+        <div class="inline-helper-pane inline-helper-pane--left"></div>
+        <div class="inline-form-grab">
+            <i class="fa fa-bars"></i>
+        </div>
+    {% endif %}
+    {% if formset.can_delete is not False %}
+        <div class="inline-helper-pane inline-helper-pane--right"></div>
+        <div class="btn btn-secondary btn-sm inline-form-delete" js-inline-delete>
+            <i class="fa fa-trash fa-lg"></i>
+        </div>
+    {% endif %}
+</div>
