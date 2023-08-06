@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+backtest/main.py
+backtest/webapp.py
+webappPP.egg-info/PKG-INFO
+webappPP.egg-info/SOURCES.txt
+webappPP.egg-info/dependency_links.txt
+webappPP.egg-info/entry_points.txt
+webappPP.egg-info/requires.txt
+webappPP.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+pandas
+numpy
+datetime
+pandas_datareader
+os
+scipy
+pathlib
+Flask
+base64
+seaborn
+threading
+webbrowser
