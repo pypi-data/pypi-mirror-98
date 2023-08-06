@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: atudomain-git
+Version: 3.0.2
+Summary: Convenience library for working with Git on Linux.
+Home-page: https://github.com/atudomain/atudomain-git
+Author: Adrian Tuzimek
+Author-email: tuziomek@gmail.com
+License: UNKNOWN
+Keywords: api,git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Simple Python GIT Library for Linux
+[![pipeline](https://gitlab.com/atudomain/atudomain-git/badges/master/pipeline.svg)](https://gitlab.com/atudomain/atudomain-git/-/tree/master)
+[![Documentation Status](https://readthedocs.org/projects/atudomain-git/badge/?version=latest)](https://atudomain-git.readthedocs.io/en/latest/?badge=latest)
+
+Provides access to Commit objects and easy branch listing.
+
+- License: 3-Clause BSD
+- Python: Python 3.6+
+- Platforms: Linux
+
+## Table of Contents
+- [Installation](#installation)
+- [Quickstart](#quickstart)
+    - [Getting Branches](#getting-branches)
+    - [Getting Commits](#getting-commits)
+    - [Getting Commit details](#getting-commit-details)
+    - [Executing commands in repository](#executing-commands-in-repository)
+- [API Documentation](#api-documentation)
+
+## Installation
+
+Install using pip:
+```bash
+python3 -m pip install atudomain-git --user 
+```
+
+Alternatively, you can just append downloaded repository path to PYTHONPATH.
+
+## Quickstart
+
+Import Git class:
+```python
+from atudomain.git import Git
+```
+
+Create Git object:
+```python
+git = Git('/home/user/example-repo')
+```
+
+### Getting branches
+Get list of remote origin branches:
+```python
+branches = git.get_branches(include='^remotes/origin')
+```
+
+Get list of local branches:
+```python
+branches = git.get_branches(exclude='^remotes/')
+```
+
+### Getting Commits
+Get list of Commits for the current branch:
+```python
+commits = git.get_commits()
+```
+
+Get list with last Commit for the current branch:
+```python
+commits = git.get_commits('HEAD^..HEAD')
+```
+
+### Getting Commit details
+Get committer date from Commit:
+```python
+committer_date = commits[0].committer_date
+```
+
+Get commit id from Commit:
+```python
+commit_id = commits[0].commit_id
+```
+
+Check if Commit is a merge:
+```python
+is_merge = commits[0].is_merge
+```
+
+## API Documentation
+https://atudomain-git.readthedocs.io/en/latest/
+
+
