@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+stackstr/__init__.py
+stackstr/exception.py
+stackstr/stackstr_client.py
+stackstr_sdk.egg-info/PKG-INFO
+stackstr_sdk.egg-info/SOURCES.txt
+stackstr_sdk.egg-info/dependency_links.txt
+stackstr_sdk.egg-info/requires.txt
+stackstr_sdk.egg-info/top_level.txt
