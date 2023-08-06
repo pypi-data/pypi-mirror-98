@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: biggerquery-zombie
+Version: 0.6.1
+Summary: BigQuery client wrapper with clean API
+Home-page: UNKNOWN
+Author: Chi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: setuptools (>=45.2.0)
+Requires-Dist: dill (>=0.3.0)
+Requires-Dist: pandas (>=0.25.3)
+Requires-Dist: mock (>=2.0.0)
+Requires-Dist: pydata-google-auth (>=0.2.1)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: pyconfighelper (>=0.0.7)
+Requires-Dist: google-cloud-core (>=1.2)
+Requires-Dist: google-cloud-bigtable (>=1.2.1)
+Requires-Dist: google-cloud-bigquery (>=1.24.0)
+Requires-Dist: google-cloud-spanner (>=1.14.0)
+Requires-Dist: google-cloud-storage (>=1.26.0)
+Requires-Dist: google-cloud-logging (>=1.14.0)
+Requires-Dist: google-auth (>=1.11.2)
+Requires-Dist: six (>=1.14.0)
+Provides-Extra: beam
+Requires-Dist: apache-beam[gcp] (==2.17.0) ; extra == 'beam'
+Requires-Dist: avro-python3 (==1.9.1) ; extra == 'beam'
+Requires-Dist: nose ; extra == 'beam'
+Provides-Extra: stackdriver
+Requires-Dist: google-api-python-client (==1.7.11) ; extra == 'stackdriver'
+
+UNKNOWN
+
+
