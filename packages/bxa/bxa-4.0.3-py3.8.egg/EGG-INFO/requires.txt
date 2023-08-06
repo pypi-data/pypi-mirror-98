@@ -1,0 +1,7 @@
+astropy
+corner
+h5py
+matplotlib
+numpy
+tqdm
+ultranest
