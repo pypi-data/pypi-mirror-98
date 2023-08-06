@@ -1,0 +1,4 @@
+[console_scripts]
+extra-model = extra_model._cli:entrypoint
+extra-model-setup = extra_model._cli:entrypoint_setup
+
