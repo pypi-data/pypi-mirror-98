@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+pycuteweb/__init__.py
+pycuteweb/pycuteweb.py
+pycuteweb/splash.py
+pycuteweb/window.py
+pycuteweb.egg-info/PKG-INFO
+pycuteweb.egg-info/SOURCES.txt
+pycuteweb.egg-info/dependency_links.txt
+pycuteweb.egg-info/requires.txt
+pycuteweb.egg-info/top_level.txt
