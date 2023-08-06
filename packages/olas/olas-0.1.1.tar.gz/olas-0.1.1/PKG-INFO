@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: olas
+Version: 0.1.1
+Summary: 
+Author: jorge.perez
+Author-email: j.perez@metocean.co.nz
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Cartopy (>=0.18.0,<0.19.0)
+Requires-Dist: Cython (>=0.29.22,<0.30.0)
+Requires-Dist: dask (>=2021.3.0,<2022.0.0)
+Requires-Dist: geos (>=0.2.3,<0.3.0)
+Requires-Dist: matplotlib (>=3.3.4,<4.0.0)
+Requires-Dist: proj (>=0.2.0,<0.3.0)
+Requires-Dist: xarray (>=0.17.0,<0.18.0)
