@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: SpiderWebCrawler
+Version: 0.0.1
+Summary: Automatically Scrape Websites
+Home-page: https://upload.pypi.org/legacy/
+Author: Lucas Phillips
+Author-email: Luchcubs23@gmail.com
+License: MIT
+Keywords: webscraper
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: numpy (==1.20.1)
+Requires-Dist: pandas (==1.2.3)
+Requires-Dist: Pillow (==8.1.2)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: soupsieve (==2.2)
+Requires-Dist: urllib3 (==1.26.3)
+
+SpiderWebCraler is a library to automatically complete web-scraping related tasks such as:
+finding element(s) by class or ID, finding elements by XPATH, finding tables, paragraphs, headers, footers, headings, images, etc., finding images' source, finding and returning images!
+
+
+03/11/2021
+
+Version 1.0.1 
+=-=-=-=-=-=-=
+
+-Created SpiderWebCrawler
+
