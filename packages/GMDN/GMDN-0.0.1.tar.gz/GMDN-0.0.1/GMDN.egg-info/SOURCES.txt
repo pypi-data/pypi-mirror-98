@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+GMDN.egg-info/PKG-INFO
+GMDN.egg-info/SOURCES.txt
+GMDN.egg-info/dependency_links.txt
+GMDN.egg-info/top_level.txt
