@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+opennsfw_standalone/__init__.py
+opennsfw_standalone/__main__.py
+opennsfw_standalone/inference_runner.py
+opennsfw_standalone.egg-info/PKG-INFO
+opennsfw_standalone.egg-info/SOURCES.txt
+opennsfw_standalone.egg-info/dependency_links.txt
+opennsfw_standalone.egg-info/requires.txt
+opennsfw_standalone.egg-info/top_level.txt
+opennsfw_standalone/model/saved_model.pb
+opennsfw_standalone/model/variables/variables.data-00000-of-00001
+opennsfw_standalone/model/variables/variables.index
+tests/__init__.py
+tests/test_inference_runner.py
