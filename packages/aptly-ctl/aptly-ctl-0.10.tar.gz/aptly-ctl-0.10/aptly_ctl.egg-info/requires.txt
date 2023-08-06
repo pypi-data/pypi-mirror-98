@@ -1,0 +1,4 @@
+aptly-api-client<=0.2.1
+PyYAML
+requests
+fnvhash
