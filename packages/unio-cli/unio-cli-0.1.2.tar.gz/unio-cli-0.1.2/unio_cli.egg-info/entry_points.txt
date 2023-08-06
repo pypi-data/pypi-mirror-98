@@ -1,0 +1,3 @@
+[console_scripts]
+unio = unio.main:main
+
