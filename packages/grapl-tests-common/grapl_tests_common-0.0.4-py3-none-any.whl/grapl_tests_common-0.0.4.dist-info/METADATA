@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: grapl-tests-common
+Version: 0.0.4
+Summary: Shared code between Grapl end-to-end tests
+Home-page: https://github.com/grapl-security/grapl
+Author: Grapl, Inc.
+Author-email: grapl-code@graplsecurity.com
+Maintainer: Grapl, Inc.
+Maintainer-email: grapl-code@graplsecurity.com
+License: MIT
+Project-URL: Documentation, https://grapl.readthedocs.io
+Project-URL: Source, https://github.com/grapl-security/grapl
+Project-URL: Tracker, https://github.com/grapl-security/grapl/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: boto3
+Requires-Dist: grapl-analyzerlib (==0.2.72)
+Requires-Dist: grapl-common (==0.0.5)
+Requires-Dist: graplinc-grapl-api (==0.1.0)
+Requires-Dist: mypy-boto3-dynamodb
+Requires-Dist: mypy-boto3-s3
+Requires-Dist: mypy-boto3-sqs
+Requires-Dist: requests
+Requires-Dist: typing-extensions
+Requires-Dist: zstd
+
+# grapl-tests-common
+Shared library for grapl end-to-end tests, to share between repos.
+
+
