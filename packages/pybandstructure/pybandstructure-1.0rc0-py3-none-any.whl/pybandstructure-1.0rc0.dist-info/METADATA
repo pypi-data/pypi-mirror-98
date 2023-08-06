@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pybandstructure
+Version: 1.0rc0
+Summary: Package for calculating simple band structures and analyzing the results
+Home-page: https://gitlab.com/itorre/bandstructure-calculation
+Author: Iacopo Torre, Pietro Novelli
+Author-email: iacopo.torre@icfo.eu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+Requires-Dist: h5py
+
+# Pybandstructure
+
+Band structure calculator for simple models.
+Allows easy implementation of simple periodic Hamiltonians including tight binding or plane waves models.
+Results can be analyzed to extract thermodynamical properties, density of states, and optical conductivity.
+A submodule is devoted to the implementation of superlattice hamiltonians.
+
+## Installation
+
+## Usage
+
+## Examples
+
+## Cite as
+
