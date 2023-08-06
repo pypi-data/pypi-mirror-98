@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vrt-lss-partner
+Version: 3.7.167066
+Summary: Veeroute.LSS Partner
+Home-page: https://docs.veeroute.com/#/lss/partner
+Author: Veeroute Support Team
+Author-email: support@veeroute.com
+License: UNKNOWN
+Description:     LSS Partner Panel  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Veeroute.LSS Partner
+Platform: UNKNOWN
+Requires-Python: >=3.6
