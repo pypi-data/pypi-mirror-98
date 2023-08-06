@@ -1,0 +1,5 @@
+[console_scripts]
+melt = pydecipher.main:run
+pydecipher = pydecipher.main:run
+remap = pydecipher.remap:run
+
