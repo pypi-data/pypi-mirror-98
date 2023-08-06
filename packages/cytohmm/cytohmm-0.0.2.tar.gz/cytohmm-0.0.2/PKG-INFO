@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: cytohmm
+Version: 0.0.2
+Summary: Cytogenetics hidden Markov model
+Home-page: https://github.com/harry-zuzan/CytoHMM
+Author: Harry Zuzan
+Author-email: harry.zuzan@gmail.com
+License: MIT
+Description: # CytoHMM
+        
+        Hidden Markov models for cytogenetic microarrays.  Will be copying
+        code from the repository Markov-models over here.  Then later it will
+        be moved.
+        
+        At this point primarily Affymetrix arrays are addressed.  There is no
+        reason why Illumina microarrays couldn't use this code.
+        
+        
+        ## Installation
+        
+        documentation to do
+        
+        ## Usage
+        
+        documentation to do
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
