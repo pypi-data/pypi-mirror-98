@@ -1,0 +1,8 @@
+README.md
+setup.py
+printolog/__init__.py
+printolog/decorator.py
+printolog.egg-info/PKG-INFO
+printolog.egg-info/SOURCES.txt
+printolog.egg-info/dependency_links.txt
+printolog.egg-info/top_level.txt
