@@ -1,0 +1,11 @@
+omymodels/__init__.py,sha256=o3aoA4TCn_zZJAhyOK00vRoghFAz9pvIVNipAQYRhgM,86
+omymodels/cli.py,sha256=U2ZhPyNDJbFlArGuLZ323X9pRZBxW0vJGP5xmmiCb5o,1413
+omymodels/gino/core.py,sha256=DWtkYwTpM98xpTuV5dEUpRzuj9MVBK1cvdIM3Vfnujc,6659
+omymodels/gino/templates.py,sha256=zgsm9ZavkNx6x8K7uaMPHbrtjWn0wox0fsQlO37lcaU,1137
+omymodels/gino/types.py,sha256=vr0fslu1ZoMHN3P8yc00LBdkeNg3RolqNOSVYvU6XEI,842
+omymodels/utils.py,sha256=VfLOYcRlO_kmwYX1HMXb2Odpp8hFTX_mFWQAUrHRy1M,1312
+omymodels-0.3.0.dist-info/entry_points.txt,sha256=lWI7KQX0Wq_ry6xXH2QrRx4xIXNTMA4wdb7ZOOPZZaI,42
+omymodels-0.3.0.dist-info/LICENSE,sha256=F7Lnfq5TMUS5ic1Ax7_kRc5hB23kqM61CV6ueLQkkW4,1093
+omymodels-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+omymodels-0.3.0.dist-info/METADATA,sha256=tk4QfPqKZ5YU8YuxUIoz2J9K_yLipp-Oe9UELpaqvIQ,4580
+omymodels-0.3.0.dist-info/RECORD,,
