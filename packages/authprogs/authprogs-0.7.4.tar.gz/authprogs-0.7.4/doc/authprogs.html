@@ -1,0 +1,879 @@
+<h1>authprogs(1) -- SSH command authenticator</h1>
+<h2>SYNOPSIS</h2>
+<p><code>authprogs --run [options]</code></p>
+<p><code>authprogs --install_key  [options]</code></p>
+<p><code>authprogs --dump_config  [options]</code></p>
+<p><code>authprogs --help</code></p>
+<h2>DESCRIPTION</h2>
+<p><code>authprogs</code> is an SSH command authenticator. It is invoked on
+an ssh server and decides if the command requested by the
+ssh client should be run or rejected based on logic in the <code>authprogs</code>
+configuration file.</p>
+<p>Passwordless SSH using ssh identities or pubkeys can enable all
+sorts of wonderful automation, for example running unattended
+batch jobs, slurping down backups, or pushing out code.
+Unfortunately a key, once trusted, is allowed by default to run
+anything on that system, not just the small set of commands you
+actually need. If the key is compromised, you are at risk of a
+security breach. This could be catastrophic, for example if the
+access is to the root account.</p>
+<p>Authprogs is run on the SSH server and compares the requested
+command against the <code>authprogs</code> configuration file/files. This
+enables <code>authprogs</code> to make intelligent decisions based on things
+such as the command itself, the SSH key that was used, the
+client IP, and such.</p>
+<p><code>authprogs</code> is enabled by using the <code>command=</code> option in the
+<code>authorized_keys</code> file.</p>
+<h2>KEY INSTALLATION</h2>
+<p>You can install your ssh identities/pubkeys manually, or allow <code>authprogs</code> to do the work for you.</p>
+<h2>MANUAL KEY INSTALLATION</h2>
+<p>You need to set up your <code>~/.ssh/authorized_keys</code> file to force
+invocation of <code>authprogs</code> for the key or keys you wish to protect.</p>
+<p>A line of an unrestricted <code>authorized_key</code> entry might look like this:</p>
+<pre><code>ssh-rsa AAAAxxxxx...xxxxx user@example.com
+</code></pre>
+<p>When setting up this key to use <code>authprogs</code>, you add a <code>command=</code> option
+to the very beginning of that line that points to the location where
+authprogs lives. For example if <code>authprogs</code> is in <code>/usr/bin/authprogs</code>,
+you would use this:</p>
+<pre><code>command="/usr/bin/authprogs --run" ssh-rsa AAAAxxxxx...xxxxx user@example.com
+</code></pre>
+<p>You must include <code>--run</code> to let <code>authprogs</code> know it is running in SSH command mode.</p>
+<p>Authprogs has other command line options you may wish to include
+as well, for example</p>
+<pre><code>command="/usr/bin/authprogs --keyname=backups --run" ssh-rsa AAAA...xxxxx user@example.com
+</code></pre>
+<p>Lastly, if you wish, ssh offers a number of other helpful
+restrictions you may wish to include that are separate from
+authprogs. These can be appended right after (or before) the
+command="" section if you wish.</p>
+<pre><code>command="/usr/bin/authprogs --run",no-port-forwarding,no-pty ssh-rsa AAAA...xxxxx user@example.com
+</code></pre>
+<p>See the sshd(8) man page for more information about allowed
+<code>authorized_keys</code> configuration options.</p>
+<h2>AUTOMATED KEY INSTALLATION</h2>
+<p>Authprogs is capable of adding your key to your <code>authorized_keys</code>
+file (<code>~/.ssh/authorized_keys</code> by default) programmatically. It
+also disables ssh port forwarding by default for this key (a
+sensible default for most batch jobs.)</p>
+<p>authprogs will refuse to install a key that is already present
+in the <code>authorized_keys</code> file.</p>
+<p>For example the following</p>
+<pre><code>authprogs --install_key /path/to/backups_key.pub --keyname=backups
+</code></pre>
+<p>would cause the following line to be added to your
+<code>~/.ssh/authorized_keys</code> file:</p>
+<pre><code>command="/usr/bin/authprogs --keyname backups --run",no-port-forwarding ssh-rsa AAAA...xxxxx user@example.com
+</code></pre>
+<h2>RUN MODE OPTIONS</h2>
+<p>Authprogs can run in several modes, depending on which of these
+command line switches you provide.</p>
+<ul>
+<li>
+<p><code>--run</code>:
+   Act in run mode, as from an <code>authorized_keys</code> file.</p>
+</li>
+<li>
+<p><code>--install_key filename</code>:
+  Install the key contained in the named file into your <code>authorized_keys</code> file.</p>
+</li>
+<li>
+<p><code>--dump_config</code>:
+  Dump the configuration in a python-style view. Helpful only for debugging.</p>
+</li>
+<li>
+<p><code>--silent</code>:
+  Do not inform the user if their command has been rejected. Default is
+  to let them know it was rejected to prevent confusion.</p>
+</li>
+<li>
+<p><code>--help</code>:
+  Show help information</p>
+</li>
+</ul>
+<h2>OTHER OPTIONS</h2>
+<p>The following options may apply to multiple run modes, as appropriate.</p>
+<ul>
+<li>
+<p><code>--keyname key_name</code>:
+    This option 'names' the key, for help in
+    crafting your rules. Since an account may have multiple keys
+    allowed, this helps us differentiate which one was used so we
+    can make sensible choices.</p>
+<p>In run mode, this specifies which name is used when
+matching in the configuration, e.g.</p>
+<pre><code>command="/usr/bin/authprogs --keyname backups --run" ...
+</code></pre>
+<p>In key installation mode, this adds the <code>--keyname</code> option to
+the <code>authorized_keys</code> entry.</p>
+<p><code>key_name</code> may contain no whitespace.</p>
+</li>
+<li>
+<p><code>--configfile</code>:
+    Specifies the <code>authprogs</code> configuration file to read.
+    Defaults to <code>~/.ssh/authprogs.yaml</code>.</p>
+<p>In key installation mode, this adds the <code>--configfile</code>
+option to the <code>authorized_keys</code> entry.</p>
+</li>
+<li>
+<p><code>--configdir</code>:
+     Specifies the <code>authprogs</code> configuration, in which
+     multiple configuration files can be found.
+     Defaults to <code>~/.ssh/authprogs.d</code> if present.</p>
+<p>Files in the configuration directory are read
+ as rules in filename order. See CONFIGURATION
+ for more info.</p>
+</li>
+</ul>
+<h2>LIMITATIONS</h2>
+<p>Commands are executed via fork/exec, and are not processed through
+the shell. This means you cannot have multiple commands separated
+by semicolons, pipelines, redirections, backticks, shell builtins,
+wildcards, variables, etc.</p>
+<p>Also, you cannot have spaces in any arguments your command runs.
+This is because the SSH server takes the command that was specified
+by the client and squashes it into the <code>SSH_ORIGINAL_COMMAND</code>
+variable. By doing this it makes it impossible for us to know
+what spaces in <code>SSH_ORIGINAL_COMMAND</code> were between arguments and which
+were part of arguments.</p>
+<p>Here are some commands that would not work through <code>authprogs</code>:</p>
+<ul>
+<li><code>ssh host "rm /tmp/foo; touch /tmp/success"</code></li>
+<li><code>ssh host "rm /tmp/*.html"</code></li>
+<li><code>ssh host "cut -d: -f 1 /etc/passwd &gt; /tmp/users"</code></li>
+<li><code>ssh host "touch '/tmp/file with spaces'"</code></li>
+<li><code>ssh host "for file in /tmp/*.html; do w3m -dump $file &gt; $file.txt; done"</code></li>
+</ul>
+<p>You can work around these limitations by writing a shell script that
+does what you need and calling that from <code>authprogs</code>, rather than attempting
+to run complicated command lines via ssh directly.</p>
+<h2>CONFIGURATION FILES</h2>
+<p>authprogs rules are maintained in one or more configuration files
+in YAML format.</p>
+<p>The rules allow you to decide whether the client's command should be run
+based on criteria such as the command itself, the client IP address, and
+ssh key in use.</p>
+<p>Rules can be read from a single file (<code>~/.ssh/authprogs.yaml</code> by default)
+or by putting files in a configuration directory (<code>~/.ssh/authprogs.d</code>).
+The configuration directory method is most useful when
+you want to be able to easily add or remove rules without manually
+editing a single configuration file, such as when installing rules
+via your configuration tool of choice.</p>
+<p>All the <code>authprogs</code> configuration files are concatenated
+together into one large yaml document which is then processed.
+The files are concatenated in the following order:</p>
+<ul>
+<li><code>~/.ssh/authprogs.yaml</code>, if present</li>
+<li>files in <code>~/.ssh/authprogs.d/</code> directory, in asciibetical order</li>
+</ul>
+<p>Dotfiles contained in a configuration directory are ignored.
+The configuration directory is not recursed; only those files directly
+contained are processed.</p>
+<p>Each rule in the configuration file/files is tested in order and once
+a match is found, processing stops and the command is run.</p>
+<p>Rules are made of rule selection options (e.g. client IP address)
+and subrules (e.g. a list of allowed commands). All pieces must
+match for the command to be run.</p>
+<p>The general format of a rule is as follows:</p>
+<pre><code># First rule
+-
+  # Selection options
+  #
+  # All must match or we stop processing this rule.
+  selection_option_1: value
+  selection_option_2: value
+
+  # The allow block, aka subrules
+  #
+  # This lets us group a bunch of possible commands
+  # into one rule. Otherwise we'd need a bunch of
+  # rules where you repeat selection options.
+
+  allow:
+    -
+      rule_type: value
+      rule_param_1: value
+      rule_param_2: value
+    -
+      rule_type: value2
+      rule_param_1: value
+      rule_param_2: value
+
+# Next rule
+-
+  selection_option_3: value
+...
+</code></pre>
+<p>Some of the keys take single arguments, while others may take lists.
+See the definition of each to understand the values it accepts.</p>
+<h2>RULE SELECTION OPTIONS</h2>
+<p>These configuration options apply to the entire rule, and help
+you limit under what conditions the rule matches.</p>
+<ul>
+<li>from: This is a single value or list of values that define what SSH client
+IP addresses are allowed to match this rule. The client IP address
+is gleaned by environment variables set by the SSH server. Any from value
+may be an IP address or a CIDR network.</li>
+</ul>
+<p>Examples:</p>
+<pre><code>-
+  from: 192.168.1.5
+  ...
+
+-
+  from: [192.168.0.1, 10.0.0.3]
+  ...
+
+-
+  from:
+    - 192.168.0.0/24
+    - 10.10.0.3
+  ...
+</code></pre>
+<ul>
+<li>keynames:  This is a single value or list of values that define which
+SSH pubkeys are allowed to match this rule.  The keyname
+is specified by the <code>--keyname foo</code> parameter in the
+authprogs command line in the entry in <code>authorized_keys</code>.</li>
+</ul>
+<p>Examples:</p>
+<pre><code>-
+  keynames: backups
+  ...
+
+-
+  keynames: [repo_push, repo_pull]
+  ...
+
+-
+  keynames:
+    - repo_push
+    - repo_pull
+  ...
+</code></pre>
+<h2>ALLOW SUBRULE SECTION</h2>
+<p>The allow section of a rule is a single subrule or list of subrules.</p>
+<p>Subrules can be simple, for example the explicit command match, or be
+more program-aware such as scp support. You specify which kind of
+subrule you want with the <code>rule_type</code> option:</p>
+<pre><code>-
+  allow:
+    -
+      rule_type: command
+      command: /bin/touch /tmp/timestamp
+    -
+      command: /bin/rm /tmp/bar
+    -
+      rule_type: scp
+      allow_upload: true
+...
+</code></pre>
+<p>See the separate subrules sections below for how to craft each type.</p>
+<h2>COMMAND SUBRULES</h2>
+<p>This section applies if <code>rule_type</code> is set to <code>command</code> or is not
+present at all.</p>
+<p>The command requested by the client is compared to the command
+listed in the rule. (Spaces are squashed together.) If it matches,
+then the command is run.</p>
+<p>Note that the command must be <em>exactly</em> the same; <code>authprogs</code> is not
+aware of arguments supported by a command, so it cannot realise that
+<code>"ls -la"</code> and <code>"ls -a -l"</code> and <code>"ls -al"</code> and <code>"ls -l -a"</code> are all the
+same. You can list multiple commands to allow you to accept
+variants of a command if necessary.</p>
+<p>The simplest configuration looks like this:</p>
+<pre><code>-
+  allow:
+    command: /bin/true
+</code></pre>
+<p>Or you can provide a list of commands:</p>
+<pre><code>-
+  allow:
+    - command: /bin/true
+    - command: /bin/false
+</code></pre>
+<p>A number of optional settings can tweak how command matching
+is performed.</p>
+<ul>
+<li>
+<p><code>allow_trailing_args: true</code>:  This setting allows you to specify a
+    partial command that will match as long as the command requested
+    by the client is the same or longer.  This allows you to avoid
+    listing every variant of a command that the client may wish to run.</p>
+<p>Examples:</p>
+<p>-
+    allow:
+      -
+        command: /bin/echo
+        allow_trailing_args: true
+      -
+        command: /bin/ls
+        allow_trailing_args: true
+      -
+        command: /bin/rm -i
+        allow_trailing_args: true</p>
+</li>
+<li>
+<p><code>pcre_match: true</code>:  Compare the command using pcre regular expressions,
+    rather than doing an explicit match character by character. The regex
+    is <em>not</em> anchored at the beginning nor end of the string, so if you
+    wish to anchor it is your responsibility to do so.</p>
+<p>Caution: never underestimate the sneakiness of an adversary who
+may find a way to match your regex and still do something
+nasty.</p>
+<p>Examples:</p>
+<p>-
+    allow:
+      -
+        # Touch the foo file, allowing any
+        # optional command line params
+        # before the filename</p>
+<pre><code>    command: ^touch\\s+(-\\S+\\s+)*foo$
+    pcre_match: true
+  -
+    # attempt to allow rm of files in /var/tmp
+    # but actually would fail to catch malicious
+    # commands e.g. /var/tmp/../../etc/passwd
+    #
+    # As I said, be careful with pcre matching!!!
+
+    command: ^/bin/rm\\s+(-\\S+\\s+)*/var/tmp/\\S*$
+    pcre_match: true
+</code></pre>
+</li>
+</ul>
+<h2>RSYNC SUBRULES</h2>
+<p>authprogs has special support for rsync file transfer. You are not
+required to use this - you could use a simple command subrules
+to match explicit rsync commands - but using an rsync-specific
+subrule offers you greater flexibility.</p>
+<p>Rsync support is in beta, so please raise any bugs found. Supporting
+the full set of rsync command line options is a moving target.</p>
+<p>To specify rsync mode, use <code>rule_type: rsync</code>.</p>
+<p>The rsync options are as follows.</p>
+<ul>
+<li>
+<p><code>rule_type: rsync</code>: This indicates that this is an rsync subrule.</p>
+</li>
+<li>
+<p><code>allow_upload: false|true</code>: Allow files to be uploaded to the ssh
+server. Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_download: false|true</code>:  Allow files to be downloaded from the
+ssh server. Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_archive: false|true</code>:  Allow file archive, i.e. the options
+  that are set when using <code>-a</code> or <code>--archive</code>. This is used to simplify
+  <code>authprogs</code> configuration files. Specifying this and negating one of
+  he associated options (e.g. <code>allow_recursive: false</code>) is considered
+  an error.  Defaults to false.</p>
+</li>
+<li>
+<p><code>paths</code>: a list of explicit files/directories that are allowed to match. Files
+  specified by the client will be resolved via <code>realpath</code> to avoid any
+  symlink trickery, so members of <code>paths</code> must be the real paths.</p>
+</li>
+</ul>
+<p>WARNING: specifying a directory in <code>paths</code> would allow rsync to
+  act on any files therein at potentially infinite depth, e.g. when
+  <code>allow_recursive</code> is set, or the client uses <code>--files-from</code>. If you
+  want to restrict to specific files you must name them explicitly.</p>
+<p>See RSYNC SYMLINK SUPPORT for potential limitations to <code>paths</code>.</p>
+<ul>
+<li><code>path_startswith</code>: a list of pathname prefixes that are allowed to match.
+  Files specified by the client will be resolved via <code>realpath</code> and if they
+  start with the name provided then they will be allowed.</li>
+</ul>
+<p>This is a simple prefix match. For example if you had</p>
+<pre><code>    path_startswith: [ /tmp ]
+</code></pre>
+<p>then it would match all of the following</p>
+<pre><code>    /tmp
+    /tmp/
+    /tmpfiles      # may not be what you meant!
+    /tmp/foo.txt
+    /tmp/dir1/dir2/bar.txt
+</code></pre>
+<p>If you want it to match only a directory (and any infinite subdirectories)
+  be sure to include a trailing slash, e.g. <code>/tmp/</code></p>
+<p>See RSYNC SYMLINK SUPPORT for potential limitations to <code>paths</code>.</p>
+<ul>
+<li>
+<p><code>allow_acls: false|true</code>:  Allow syncing of file ACLs. (<code>--acls</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_checksum: true|false</code>:  Allow checksum method for identifying files that need syncing. (<code>-c</code> / <code>--checksum</code>)  Defaults to true.</p>
+</li>
+<li>
+<p><code>allow_debug: true|false</code>: Allow fine-grained debug verbosity. (<code>--debug FLAGS</code>). No support for sanity
+checking the debug flags that are specified. Defaults to true.</p>
+</li>
+<li>
+<p><code>allow_delete: false|true</code>:  Allow any of the delete options. (<code>--del</code> <code>--delete</code> <code>--delete-after</code> <code>--delete-before</code> <code>--delete-delay</code> <code>--delete-during</code> <code>--delete-excluded</code> <code>--delete-missing-args</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_devices: false|true</code>:  Allow syncing of device files. (<code>--devices</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_group: false|true</code>:  Allow group change. (<code>-g --group</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_info: true|false</code>: Allow fine-grained info verbosity. (<code>-info FLAGS</code>). No support for sanity
+checking the info flags that are specified. Defaults to true.</p>
+</li>
+<li>
+<p><code>allow_links: false|true</code>:  Allow copying symlinks as symlinks. (<code>-l --links</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_group: false|true</code>:  Allow ownership change. (<code>-o --owner</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_perms: false|true</code>:  Allow perms change. (<code>-p --perms</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_recursive: false|true</code>:  Allow recursive sync. (<code>-r --recursive</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_specials: false|true</code>:  Allow syncing of special files, e.g. fifos. (<code>--specials</code>). Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_times: true|false</code>:  Allow setting synced file times. (<code>-t --times</code>). Defaults to true.</p>
+</li>
+<li>
+<p><code>allow_verbose: true|false|#</code>:  Allow verbose output. (<code>-v --verbose</code>). Rsync allows multiple
+-v options, so this option accepts true (allow any verbosity), false (deny any verbosity), or a number
+which indicates the maximum number of <code>-v</code> option that are allowed, e.g. <code>2</code> would allow <code>-v</code> or <code>-vv</code> but
+not <code>-vvv</code>.  Defaults to true.</p>
+</li>
+</ul>
+<h3>RSYNC COMMAND LINE OPTIONS</h3>
+<p>Not all rsync options are currently implemented in <code>authprogs</code>.</p>
+<p>If an option is listed as "<not implemented>" then there are two possibilities
+in how <code>authprogs</code> will behave:</p>
+<pre><code>* if the option is no actually sent on the remote command line then
+  `authprogs` is blissfully unaware and the command will succeed.
+  Many options are actually client-side only. We have not thoroughly
+  investigated every single option yet.
+
+* if the option is sent on the remote command line then `authprogs`
+  will fail.
+</code></pre>
+<p>Here is the list of rsync options and their current <code>authprogs</code> support status:</p>
+<pre><code>rsync client arg             authprogs support
+----------------             -----------------
+
+    --append                   &lt;not implemented&gt;
+    --append-verify            &lt;not implemented&gt;
+    --backup-dir               &lt;not implemented&gt;
+    --bwlimit                  &lt;not implemented&gt;
+    --checksum-seed            &lt;not implemented&gt;
+    --chown                  converted to --usermap and --groupmap
+    --compare-dest             &lt;not implemented&gt;
+    --compress-level           &lt;not implemented&gt;
+    --contimeout               &lt;not implemented&gt;
+    --copy-dest                &lt;not implemented&gt;
+    --copy-unsafe-links        &lt;not implemented&gt;
+    --debug                  allow_debug
+    --del                    allow_delete
+    --delay-updates            &lt;not implemented&gt;
+    --delete                 allow_delete
+    --delete-after           allow_delete
+    --delete-before          allow_delete
+    --delete-delay           allow_delete
+    --delete-during          allow_delete
+    --delete-excluded        allow_delete
+    --delete-missing-args    allow_delete
+    --devices                allow_devices
+    --existing                 &lt;not implemented&gt;
+    --fake-super               &lt;not implemented&gt;
+    --files-from               &lt;not implemented&gt;
+    --force                    &lt;not implemented&gt;
+    --groupmap                 &lt;not implemented&gt;
+    --iconv                    &lt;not implemented&gt;
+    --ignore-errors            &lt;not implemented&gt;
+    --ignore-existing          &lt;not implemented&gt;
+    --ignore-missing-args      &lt;not implemented&gt;
+    --info                   allow_info
+    --inplace                  &lt;not implemented&gt;
+    --link-dest                &lt;not implemented&gt;
+    --list-only                &lt;not implemented&gt;
+    --log-file                 &lt;not implemented&gt;
+    --log-file-format          &lt;not implemented&gt;
+    --max-delete               &lt;not implemented&gt;
+    --max-size                 &lt;not implemented&gt;
+    --min-size                 &lt;not implemented&gt;
+    --new-compress             &lt;not implemented&gt;
+    --no-XXXXX                 &lt;not implemented&gt; (negating options, e.g. --no-r)
+    --numeric-ids              &lt;not implemented&gt;
+    --only-write-batch         &lt;not implemented&gt;
+    --outbuf                   &lt;not implemented&gt;
+    --partial                  &lt;not implemented&gt;
+    --partial-dir              &lt;not implemented&gt;
+    --preallocate              &lt;not implemented&gt;
+    --protocol                 &lt;not implemented&gt;
+    --read-batch               &lt;not implemented&gt;
+    --remove-sent-files        &lt;not implemented&gt; # deprecated version of remove-source-files
+    --remove-source-files      &lt;not implemented&gt;
+    --safe-links               &lt;not implemented&gt;
+    --size-only                &lt;not implemented&gt;
+    --skip-compress            &lt;not implemented&gt;
+    --specials               allow_specials
+    --stats                    &lt;not implemented&gt;
+    --stop-at                  &lt;not implemented&gt;
+    --suffix                   &lt;not implemented&gt;
+    --super                    &lt;not implemented&gt;
+    --time-limit               &lt;not implemented&gt;
+    --timeout                  &lt;not implemented&gt;
+    --usermap                  &lt;not implemented&gt;
+    --write-batch              &lt;not implemented&gt;
+-0, --from0                    &lt;not implemented&gt;
+-@, --modify-window            &lt;not implemented&gt;
+-A, --acls                   allow_acls
+-B, --block-size               &lt;not implemented&gt;
+-C, --cvs-exclude              &lt;not implemented&gt;
+-D                           allow_devices and allow_specials
+-E, --executability            &lt;not implemented&gt;
+-H, --hard-links               &lt;not implemented&gt;
+-I, --ignore-times             &lt;not implemented&gt;
+-J, --omit-link-times          &lt;not implemented&gt;
+-K, --keep-dirlinks            &lt;not implemented&gt;
+-L, --copy-links               &lt;not implemented&gt;
+-O, --omit-dir-times           &lt;not implemented&gt;
+-P                           Same as --partial --progress
+-R, --relative                 &lt;not implemented&gt;
+-S, --sparse                   &lt;not implemented&gt;
+-T, --temp-dir                 &lt;not implemented&gt;
+-W, --whole-file               &lt;not implemented&gt;
+-X, --xattrs                   &lt;not implemented&gt;
+-a, --archive                Same as -rlptgoD; See those options
+    --progress                 &lt;not implemented&gt;
+-b, --backup                   &lt;not implemented&gt;
+-c, --checksum               allow_checksum
+-d, --dirs                     &lt;not implemented&gt;
+-f, --filter                   &lt;not implemented&gt;
+-g, --group                  allow_group
+-i, --itemize-changes          &lt;not implemented&gt;
+-k, --copy-dirlinks            &lt;not implemented&gt;
+-l, --links                  allow_links
+-m, --prune-empty-dirs         &lt;not implemented&gt;
+-n, --dry-run                  &lt;not implemented&gt;
+-o, --owner                  allow_owner
+-p, --perms                  allow_perms
+-r, --recursive              allow_recursive
+-s, --protect-args             &lt;not implemented&gt;
+-t, --times                  allow_times
+-u, --update                   &lt;not implemented&gt;
+-v, --verbose                allow_verbose
+-x, --one-file-system          &lt;not implemented&gt;
+-y, --fuzzy                    &lt;not implemented&gt;
+-z, --compress                 &lt;not implemented&gt;
+    --checksum-choice=STR      &lt;not implemented&gt;
+    --exclude-from             &lt;not implemented&gt;
+    --exclude                  &lt;not implemented&gt;
+    --include-from             &lt;not implemented&gt;
+    --include                  &lt;not implemented&gt;
+    --rsync-path               &lt;not implemented&gt;
+    --out-format               &lt;not implemented&gt;
+</code></pre>
+<p>The following are server-side only options that are supported</p>
+<pre><code>-e, --rsh=COMMAND            Value ignored (indicates protocol feature support)
+--sender                     When present means download from server,
+                             when absent means upload to server.
+--server                     Always present on server
+</code></pre>
+<p>The following rsync client options are only relevant to daemon mode (i.e.
+rsync daemon listening on TCP directly without SSH) or do not end up
+on the server command line and are thus re not taken into consideration
+when determining if the command is or is not allowed:</p>
+<pre><code>    --address               Client-only option
+    --chmod                 Client-only option
+                               (Permissions are indicated via rsync
+                                protocol, not command line flags.)
+    --blocking-io           Client-only option
+    --daemon                Daemon-only option
+    --msgs2stderr           Client-only option
+    --munge-links           Client-only option
+    --no-motd               Client-only option
+    --noatime               Client-only option
+    --password-file         Daemon-only option
+    --port                  Client-only option
+    --sockopts              Daemon-only option
+    --version               Client-only option
+-4, --ipv4                  Client-only option
+-6, --ipv6                  Client-only option
+-8, --8-bit-output          Client-only option
+-F                          Client-only option (see --filter)
+-M, --remote-option=OPTION  Client-only option
+-h, --human-readable        Client-only option
+-q, --quiet                 Client-only option
+</code></pre>
+<h3>RSYNC BINARY PATH</h3>
+<p>Rsync must be at an official path to prevent a user's environment from
+choosing one of their programs over the official one. Official paths are</p>
+<pre><code>* /usr/bin/rsync
+* /usr/local/bin/rsync
+</code></pre>
+<p>A user who specifies --rsync-path with a different value, or who has
+an rsync program earlier in their $PATH will be denied.</p>
+<h3>RSYNC SYMLINK SUPPORT</h3>
+<p>Rsync has multiple ways of handling symlinks depending on command line
+parameters and what component(s) of a path are symlinks.</p>
+<p>If you are using <code>paths</code> or <code>paths_startswith</code> to limit what files
+may be uploaded/downloaded then its your responsibility to assure
+that symlink games are not used to exceed the desired restrictions.</p>
+<p>For example if the file <code>/tmp/me.txt</code> is a symlink to <code>/home/wbagg/me.txt</code>
+and you had</p>
+<pre><code>- rule\_type: rsync
+    allow_upload: true
+    paths:
+        - /tmp/me.txt
+</code></pre>
+<p>then if the user ran</p>
+<pre><code>rsync /some/local/file remote:/tmp/me.txt
+</code></pre>
+<p>then rather than updating the file at <code>/home/wbagg.me.txt</code>, the
+symlink at <code>/tmp/me.txt</code> would be replaced with a normal file.</p>
+<p>A future update to <code>authprogs</code> may attempt to handle symlinks by
+calling <code>os.path.realpath</code> prior to doing comparisons.</p>
+<h3>RSYNC PATHNAME GOTCHA</h3>
+<p>Say you wanted to restrict uploads to just the file <code>/tmp/foo.txt</code>, you'd
+use the following rsync subrule::</p>
+<pre><code>- rule\_type: rsync
+  allow_upload: true
+  paths:
+    - /tmp/foo.txt
+</code></pre>
+<p>From an end-user perspective both of these commands would seem to be
+allowed from the client machine because they'd create a file on
+the remote named <code>/tmp/foo.txt</code>:</p>
+<pre><code>$ rsync foo.txt remote:/tmp/foo.txt  # provide full target filename
+$ rsync foo.txt remote:/tmp          # imply source name for target
+</code></pre>
+<p>However you'll find that only the first one works! This is because
+<code>authprogs</code> on the server side sees literally just <code>/tmp</code> in the second
+case.</p>
+<p>Thus if you wanted to restrict uploads to just the file <code>/tmp/foo.txt</code>
+then on the client side you <strong>must</strong> run the first (explicit
+filename) rsync command.</p>
+<h3>RSYNC SUBRULE KNOWN AND POSSIBLE BUGS</h3>
+<ul>
+<li>
+<p>If uploading to a file that does not yet exist when you've
+  set <code>paths</code> this will fail. Adding a new <code>allow_create</code> option
+  is the most likely solution here, but not yet implemented.</p>
+</li>
+<li>
+<p>No investigation of the rsync options --include / --exclude / --files-from
+  has yet been performed - may affect path matching security.</p>
+</li>
+<li>
+<p>Though we do expand file globs and check each individual path
+  that is returned, we do not explicitly use these resolved
+  files when calling rsync. (Reason: it's possible we exceed the
+  allowed size of a command line with globs that return many files.)
+  As such if rsync's glob and <code>shutils.glob</code> have different behaviour
+  we may have false positives or negatives.</p>
+</li>
+<li>
+<p>When <code>allow_download</code> is disabled client should not be able to get file
+  contents. However since rsync transfers checksums as part of its protocol
+  it is possible that information about server file contents could be gleaned
+  by comparing checksums to possible content checksums when doing uploads.</p>
+</li>
+</ul>
+<h2>SCP SUBRULES</h2>
+<p>authprogs has special support for scp file transfer. You are not
+required to use this - you could use a simple command subrules
+to match explicit scp commands - but using an scp-specific
+subrule offers you greater flexibility.</p>
+<p>To specify scp mode, use <code>rule_type: scp</code>.</p>
+<p>The scp options are as follows.</p>
+<ul>
+<li>
+<p><code>rule_type: scp</code>: This indicates that this is an scp subrule.</p>
+</li>
+<li>
+<p><code>allow_upload: false|true</code>:    Allow files to be uploaded to the ssh
+  server. Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_download: false|true</code>:  Allow files to be downloaded from the
+  ssh server. Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_recursive: false|true</code>:  Allow recursive (-r) file up/download.
+  Defaults to false.</p>
+</li>
+<li>
+<p><code>allow_recursion: false|true</code>:  Deprecated version of <code>allow_recursive</code>.
+  will be removed in 1.0 release.</p>
+</li>
+<li>
+<p><code>allow_permissions: true|false</code>:  Allow scp to get/set the permissions
+  of the file/files being transferred.  Defaults to false.</p>
+</li>
+<li>
+<p><code>paths</code>:  The paths option allows you to specify which file or files are
+  allowed to be transferred. If this is not specified then transfers are
+  not restricted based on filename.</p>
+<p>Examples:</p>
+<p>-
+    allow:
+      - rule_type: scp
+        allow_download: true
+        paths:
+          - /etc/group
+          - /etc/passwd
+      - rule_type: scp
+        allow_upload: true
+        paths: [/tmp/file1, /tmp/file2]</p>
+</li>
+</ul>
+<h2>EXAMPLES</h2>
+<p>Here is a sample configuration file with multiple rules,
+going from simple to more complex.</p>
+<p>Note that this config can be spread around between the
+<code>~/.ssh/authprogs.yaml</code> and <code>~/.ssh/authprogs.d</code> directory.</p>
+<pre><code># All files should start with an initial solo dash -
+# remember, we're being concatenated with all other
+# files!
+
+# Simple commands, no IP restrictions.
+-
+  allow:
+    - command: /bin/tar czvf /backups/www.tgz /var/www/
+    - command: /usr/bin/touch /var/www/.backups.complete
+
+# Similar, but with IP restrictions
+-
+  from: [192.168.0.10, 192.168.0.15, 172.16.3.3]
+  allow:
+    - command: git --git-dir=/var/repos/foo/.git pull
+    - command: sudo /etc/init.d/apache2 restart
+
+# Some more complicated subrules
+-
+  # All of these 'allows' have the same 'from' restrictions
+  from:
+    - 10.1.1.20
+    - 10.1.1.21
+    - 10.1.1.22
+    - 10.1.1.23
+  allow:
+    # Allow unrestricted ls
+    - command: /bin/ls
+      allow_trailing_args: true
+
+    # Allow any 'service apache2 (start|stop)' commands via sudo
+    - command: sudo service apache2
+      allow_trailing_args:true
+
+    # How about a regex? Allow wget of any https url, outputting
+    #  to /tmp/latest
+    - command: ^/usr/bin/wget\\s+https://\\S+\\s+-O\\s+/tmp/latest$
+      pcre_match: true
+
+    # Allow some specific file uploads
+    - rule_type: scp
+      allow_upload: true
+      paths:
+        - /srv/backups/host1.tgz
+        - /srv/backups/host2.tgz
+        - /srv/backups/host3.tgz
+
+    # Allow rsync to upload everything, deny any download
+    - rule_type: rsync
+      allow_upload: true
+
+    # Allow rsync to recursively sync /tmp/foo/ to the server
+    # in archive mode (-a, or any subset of -logptrD)
+    # but do not allow download
+    - rule_type: rsync
+      allow_upload: true
+      allow_recursive: true
+      allow_archive: true
+      paths:
+        - /tmp/foo
+
+    # Allow rsync to write some specific files and any individual
+    #   files under /data/lhc/ directory, such as /data/lhc/foo
+    #   or /data/lhc/subdir/foo.
+    #
+    # Disallow download (explicitly listed) or recursive
+    #    upload (default false).
+    - rule_type: rsync
+      allow_upload: true
+      allow_download: false
+      paths:
+        - /srv/htdocs/index.html
+        - /srv/htdocs/status.html
+      path_startswith:
+        - /data/lhc/
+</code></pre>
+<h2>TROUBLESHOOTING</h2>
+<p><code>--dump_config</code> is your friend. If your yaml config isn't parsing,
+consider <code>--dump_config --logfile=/dev/tty</code> for more debug output
+to find the error.</p>
+<h2>FILES</h2>
+<ul>
+<li>
+<p><code>~/.ssh/authorized_keys</code>: The default place your key should be installed
+    and configured to call <code>authprogs</code>. The actual
+    location can differ if your administrator
+    has changed it.</p>
+</li>
+<li>
+<p><code>~/.ssh/authprogs.yaml</code>: Default <code>authprogs</code> configuration file. Override with --configfile.</p>
+</li>
+<li>
+<p><code>~/.ssh/authprogs.d</code>: Default <code>authprogs</code> configuration directory. Override with --configdir.</p>
+</li>
+</ul>
+<h2>ENVIRONMENT</h2>
+<p>authprogs uses the following environment variables that are set
+by the sshd(8) binary:</p>
+<ul>
+<li>
+<p><code>SSH_CONNECTION</code>: This is used to determine the client IP address.</p>
+</li>
+<li>
+<p><code>SSH_CLIENT</code>: This is used to determine the client IP address
+    if SSH_CONNECTION was not present.</p>
+</li>
+<li>
+<p><code>SSH_ORIGINAL_COMMAND</code>: The (squashed) original SSH command that was issued by the client.</p>
+</li>
+</ul>
+<p>authprogs sets the following environment variables for use by the
+authenticated process</p>
+<ul>
+<li><code>AUTHPROGS_KEYNAME</code>: the value of the --keyname command line. Will be set to an empty string if no --keyname was set.</li>
+</ul>
+<h2>EXIT STATUS</h2>
+<p>On unexpected error or rejecting the command <code>authprogs</code> will exit 126.</p>
+<p>If the command was accepted then it returns the exit code of the command
+that was run.</p>
+<p>Note that if you're invoking ssh via another tool that program
+may provide a different exit status and provide a misleading
+error message when <code>authprogs</code> returns a failure, For example
+<code>rsync</code> will exit 12 and assume a "protocol problem" rather
+than a rejection on the server side.</p>
+<h2>LOGGING AND DEBUGGING</h2>
+<p>If a <code>--logfile</code> is specified then it will be opened in append
+mode and a line about each command that is attempted to be run
+will be written to it. The line itself is in the form of a python
+dictionary.</p>
+<p>If <code>authprogs</code> is run with <code>--debug</code>, then this logfile will get increased
+debugging information, including the configuration, rule matching status
+as they are checked, etc.</p>
+<h2>HISTORY</h2>
+<p>A perl version of <code>authprogs</code> was originally published
+at https://www.hackinglinuxexposed.com/articles/20030115.html
+in 2003. This is a complete rewrite in python, with a more
+extensible configuration, and avoiding some of the limitations
+of the former.</p>
+<h2>SEE ALSO</h2>
+<p>ssh(1), sshd(8), scp(1).</p>
+<h2>AUTHOR</h2>
+<p>Bri Hatch <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#98;&#114;&#105;&#64;&#105;&#102;&#111;&#107;&#114;&#46;&#111;&#114;&#103;">&#98;&#114;&#105;&#64;&#105;&#102;&#111;&#107;&#114;&#46;&#111;&#114;&#103;</a></p>
