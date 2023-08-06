@@ -1,0 +1,3 @@
+[console_scripts]
+steg = steg._steg:run
+
