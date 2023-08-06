@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+col/webapp.py
+webapp2PP.egg-info/PKG-INFO
+webapp2PP.egg-info/SOURCES.txt
+webapp2PP.egg-info/dependency_links.txt
+webapp2PP.egg-info/entry_points.txt
+webapp2PP.egg-info/requires.txt
+webapp2PP.egg-info/top_level.txt
