@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: bootpeg
+Version: 0.0.1
+Summary: `bootpeg` – the bootstrapping PEG parser
+Home-page: https://github.com/maxfischer2781/bootpeg
+Author: Max Fischer
+Author-email: maxfischer2781@gmail.com
