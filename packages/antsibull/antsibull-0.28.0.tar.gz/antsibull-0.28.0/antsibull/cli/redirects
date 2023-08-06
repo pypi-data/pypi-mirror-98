@@ -1,0 +1,54 @@
+
+"""Script to generate apache redirects for pre-2.9 docsite and 2.10 docsite.  """
+
+def main():
+    """Entrypoint to the redirect script."""
+    pass
+    #
+    # From nitzmahone: yeah, so it sounds like you might want a hybrid approach- load all the raw
+    # data to get all the things you want to resolve, then call find_plugin_with_context on all of
+    # them and inspect the `redirected_names` in the result and keep a running map of source
+    # names->final_targets, then generate stubs at the end for all of those
+    #
+    # Retrieve all of the collections and ansible-base (or use them from a cache).
+    #
+    # Set up os.environ so that the ansible variables only point at the places that we've installed
+    # collections.
+    #
+    # import collection_loader
+    #
+    # use collection_loader to retrieve the ansible-base version of runtime.yml
+    # assemble a mapping of redirects from fqcn to ansible-base short name
+    #
+    # use collection_loader to retrieve the runtime.yml of all the collections
+    # assemble an additional mapping of redirects from fqcn to other fqcn's
+    #
+    # Find the beginning and end of all the redirect chains.
+    #
+        # For docs-build, we'd then need to add all of the redirects as aliases to the end of the
+        # chain.
+        #
+        # If the end of the chain is not within the collections known to ansible, emit a stub that
+        # says that the content has moved with the new collection name.
+        #
+    # For redirects, emit a redirect from each step along the chain that points to the last link in
+    # the chain.  This is the end of creating the redirects from any old names to the new names.
+    #
+    #
+    # For backredirects, for any entry on the chain, link backwards to the start of the chain.  If
+    # there isn't a file at the beginning of the chain, create a stub page that says the plugin was
+    # not present in ansible-2.9.
+
+
+    # parse runtime.yml file from ansible-base
+    # for every redirect, generate a redirect from 2.9 pattern to 2.10 pattern
+    # for the backredirect, could we just look backwards?
+
+    # find runtime.yml
+    #
+    # parse runtime.yml
+
+
+
+if __name__ == '__main__':
+    main()
