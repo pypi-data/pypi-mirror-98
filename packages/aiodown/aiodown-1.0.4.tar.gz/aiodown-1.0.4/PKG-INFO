@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: aiodown
+Version: 1.0.4
+Summary: A fully async file downloader with httpx
+Home-page: https://github.com/AmanoTeam/aiodown
+Author: AmanoTeam
+Author-email: contact@amanoteam.com
+License: MIT
+Download-URL: https://github.com/AmanoTeam/aiodown/releases/latest
+Project-URL: Bug report, https://github.com/AmanoTeam/aiodown/issues
+Project-URL: Donate, https://liberapay.com/AmanoTeam
+Project-URL: Source, https://github.com/AmanoTeam/aiodown
+Description: # aiodown
+        
+        [![License](https://img.shields.io/github/license/AmanoTeam/aiodown)](https://github.com/AmanoTeam/aiodown/raw/main/LICENSE)
+        ![Codacy](https://app.codacy.com/project/badge/Grade/9333a571fcf442c78ac2fc9802d3ded3)
+        ![Code style](https://img.shields.io/badge/code%20style-black-000000.svg)
+        [![Contributors](https://img.shields.io/github/contributors/AmanoTeam/aiodown.svg)](https://github.com/AmanoTeam/aiodown/graphs/contributors)
+        [![PyPi](https://badge.fury.io/py/aiodown.svg)](https://pypi.org/project/aiodown/)
+        
+        > An `asyncio-based` file downloader made in `Python 3` using [httpx](https://github.com/encode/httpx).
+        
+        ## Requirements
+        
+        - Python 3.8 or higher.
+        - httpx 0.14 or higher.
+        - async-files 0.4 or higher.
+        
+        ## Installation
+        
+        **NOTE:** If `python3` is "not a recognized command" try using `python` instead.
+        
+        For the latest stable version:<br>
+        ```
+        python3 -m pip install aiodown
+        ```
+        
+        For the latest development version:<br>
+        ```
+        python3 -m pip install git+https://github.com/AmanoTeam/aiodown
+        ```
+        
+        ## What's left to do?
+        
+        - Write the API Documentation.
+        - Show some examples.
+        
+        ## License
+        
+        MIT © 2021 [AmanoTeam](https://github.com/AmanoTeam)
+        
+        # Changelog
+        
+        All notable changes to this project will be documented in this file.
+        
+        The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+        
+        ## 1.0.4 (Narch 14th, 2021)
+        
+        ### Added
+        
+        * Assert that the status code is 200.
+        
+        ### Changed
+        
+        * Improve code based on Codacy.
+        * The downloads are runned in a executor instead of threads.
+        
+        ## 1.0.3 (March 13th, 2021)
+        
+        ### Added
+        
+        * `aiodown.errors` package.
+        
+        ## 1.0.2 (March 13th, 2021)
+        
+        ### Added
+        
+        * `client.rem()` method.
+        * `download.get_attempts()`, `download.get_id()`, `download.get_retries()` and `download.get_start_time()` methods.
+        
+        ## 1.0.1 (March 12th, 2021)
+        
+        ### Added
+        
+        * Support for download retries.
+        * `await download.resume()` method.
+        
+        ### Changed
+        
+        * `client.add()` instead of `client.download()` method.
+        
+        ## 1.0.0 (March 12th, 2021)
+        
+        * First release.
+Keywords: python,downloader,async,asyncio,httpx,file
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
