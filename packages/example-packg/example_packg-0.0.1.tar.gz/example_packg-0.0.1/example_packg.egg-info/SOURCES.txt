@@ -1,0 +1,8 @@
+README.md
+setup.py
+example_packg/__init__.py
+example_packg/helloworld.py
+example_packg.egg-info/PKG-INFO
+example_packg.egg-info/SOURCES.txt
+example_packg.egg-info/dependency_links.txt
+example_packg.egg-info/top_level.txt
