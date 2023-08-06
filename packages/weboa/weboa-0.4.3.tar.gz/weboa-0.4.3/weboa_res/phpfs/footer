@@ -1,0 +1,4 @@
+<footer>
+	
+</footer>
+<script src="/js/script.js?<?=$CACHE;?>"></script>
