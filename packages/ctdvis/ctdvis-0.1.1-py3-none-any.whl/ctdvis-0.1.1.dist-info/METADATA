@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ctdvis
+Version: 0.1.1
+Summary: Quality control CTD/MVP data at the Swedish NODC
+Home-page: https://github.com/sharksmhi/ctdvis
+Author: SMHI - NODC
+Author-email: johannes.johansson@smhi.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: bokeh (>=2.2.1)
+Requires-Dist: gsw
+Requires-Dist: pyproj
+Requires-Dist: pandas
+Requires-Dist: ctdpy
+Requires-Dist: requests
+Requires-Dist: PyYAML
+
+
+Python 3 library developed by Shd at SMHI.
+
+- Visualize high resolution oceanographic profile data, eg. CTD, MVP.
+- Main purpose: Quality control
+
+
+Installation
+------------
+CTDvis can be installed from PyPI with pip:
+
+`pip install ctdvis`
+
+
+
