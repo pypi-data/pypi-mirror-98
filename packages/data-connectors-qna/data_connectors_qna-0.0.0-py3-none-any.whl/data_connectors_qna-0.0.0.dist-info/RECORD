@@ -1,0 +1,7 @@
+data_connectors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_connectors/reader.py,sha256=n-7i3Vxt8zMq9DGNQ0AOEwwGotTJkOmZ5RqU2qJyigc,1429
+data_connectors/writer.py,sha256=iVIjzitYJsAyNGfc3BYeLbXx1Y4NK4K-h359THI6sXA,805
+data_connectors_qna-0.0.0.dist-info/METADATA,sha256=XhX1EvYm3sz5zNsv1KtPrJ88YNAMdnrI6AW8mM3cqWg,228
+data_connectors_qna-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+data_connectors_qna-0.0.0.dist-info/top_level.txt,sha256=bNk3pwzRBOpQ_QBIJbc7tv39dvlmGN2DLXUJkE62EOM,16
+data_connectors_qna-0.0.0.dist-info/RECORD,,
