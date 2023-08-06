@@ -1,0 +1,11 @@
+README.md
+setup.py
+curricula_format/__init__.py
+curricula_format/shell.py
+curricula_format/version.py
+curricula_format.egg-info/PKG-INFO
+curricula_format.egg-info/SOURCES.txt
+curricula_format.egg-info/dependency_links.txt
+curricula_format.egg-info/not-zip-safe
+curricula_format.egg-info/requires.txt
+curricula_format.egg-info/top_level.txt
