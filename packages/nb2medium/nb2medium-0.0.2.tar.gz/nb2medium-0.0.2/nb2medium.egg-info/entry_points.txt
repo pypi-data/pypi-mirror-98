@@ -1,0 +1,3 @@
+[console_scripts]
+nb2medium = nb2medium.upload:nb2medium
+

@@ -1,0 +1,6 @@
+requests
+nbconvert
+pandas
+lxml
+beautifulsoup4
+fastcore
