@@ -1,0 +1,7 @@
+README.md
+setup.py
+auth_python.egg-info/PKG-INFO
+auth_python.egg-info/SOURCES.txt
+auth_python.egg-info/dependency_links.txt
+auth_python.egg-info/requires.txt
+auth_python.egg-info/top_level.txt
