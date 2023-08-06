@@ -1,0 +1,14 @@
+pyserial
+pyft232
+parse
+xmodem
+tqdm
+pyyaml
+gdbgui
+hexdump
+netifaces
+netaddr
+getmac
+
+[usb]
+pyusb>=1.0.0
