@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ddd-for-python
+Version: 0.9.0
+Summary: A domain-driven design (DDD) framework for Python.
+Home-page: https://github.com/runemalm/ddd-for-python
+Author: David Runemalm, 2021
+Author-email: david.runemalm@gmail.com
+License: GNU General Public License v3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.5
