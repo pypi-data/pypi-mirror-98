@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fgit
+Version: 0.0.1b4
+Summary: FGIT: No longer wait for another git commit
+Home-page: https://github.com/patrick/fgit
+Author: Truong-Phat Nguyen
+Author-email: me@patrickphat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: GitPython
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+
+# FastGit: No longer wait to git commit
+
+![img](static/fgit.gif)
+
+## Installation
+```bash
+pip install fgit
+```
+
+## Usage
+```bash
+fgit push
+```
+
+
+
