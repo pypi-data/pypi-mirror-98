@@ -1,0 +1,10 @@
+quickd/__init__.py,sha256=UO9I01IC_1BRKfitMrskFN8rOkmYacq-nFNXwA79COY,88
+quickd/factory.py,sha256=1KYVaCcgdFy16BjVIL0johhX6Q5ZP8ofgDoWGf8KBbA,336
+quickd/inject.py,sha256=FMu-1bkkM5ccub4o_YIDNn7qqTnlONSamas4W8V7S8s,1243
+quickd/service.py,sha256=OvFPpieb1-SXhDeDeRcTT-RXSQ8fd2B6TviijoBS4dQ,201
+quickd/singletons.py,sha256=3uysYyJVRl-0mYTyrvBSbaNSNxMwOb8elir0VNQBbXE,35
+quickd-0.1.0.dist-info/LICENSE,sha256=xYlzVlq26oegc4JF8xIeO3_gxDwPWMlXijRrXqSCj0c,1093
+quickd-0.1.0.dist-info/METADATA,sha256=ku0f1Sjc96AhW2hl6O5H33Y1CL8ZgIB7_nToEgfKFZA,6172
+quickd-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quickd-0.1.0.dist-info/top_level.txt,sha256=uVXxj674wFrWhShpBPFvJsEMoivafNLBnHtyGHdn0N4,7
+quickd-0.1.0.dist-info/RECORD,,
