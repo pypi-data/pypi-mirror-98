@@ -1,0 +1,84 @@
+#!python
+
+import time
+import sys
+import os
+import bz2
+import gzip
+try:
+    import lzma as lzma
+    import lzma as xz
+except ImportError:
+    try:
+        from backports import lzma as lzma
+        from backports import lzma as xz
+    except ImportError:
+        print("You must follow these instructions to use this script: https://github.com/monotrix/py-scanpackages/blob/main/LZMA.md")
+        exit()
+
+import argparse
+import concurrent
+from concurrent.futures.thread import ThreadPoolExecutor
+info = "Copyright (c) Monotrix 2021- | Has no dependencies except for binutils for DEB extraction"
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("directory", help="The name of the directory you want to use this script on.")
+    parser.add_argument("--create-archive", help="Create archives of your Packages file.", action="store_true")
+    args = parser.parse_args()
+    dir = args.directory + "/"
+
+    def add(file):
+        if (file.endswith(".deb")):
+            os.system(f"ar x {dir}{file}; mv ./control.tar.gz ./tmp; rm -rf data.tar.gz data.tar.lzma debian-binary; cd ./tmp; tar xvf ./control.tar.gz")
+            sums = {
+                "sha256": os.popen(f"shasum -a 256 {dir}{file} | cut -d \" \" -f 1").read(),
+                "sha1": os.popen(f"shasum -a 1 {dir}{file} | cut -d \" \" -f 1").read(),
+                "md5": os.popen(f"md5 {dir}{file}  | cut -d \" \" -f 4").read(),
+                "size": os.stat(dir + file).st_size
+            }
+            sha256 = "SHA256: " + str(sums["sha256"])
+            sha1 = "SHA1: " + str(sums["sha1"])
+            md5 = "MD5sum: " + str(sums["md5"])
+            filesize = "Size: " + str(sums["size"])
+            filename = "Filename: " + dir + file
+            control = open("./tmp/control", "r")
+            output = control.read() + filename + "\n" + md5 + sha1 + sha256 + filesize + "\n" + "\n"
+            bundleid = control.read().partition("\n")[0].replace("Package: ", "")
+            print(f"Adding entry:\n{sha256}{md5}{sha1}{filesize} (K)\nbundleID: {bundleid}")
+            control.close()
+            return output
+        else:
+            print(f"File {file} is not a .deb file - skipping.")
+            return
+    start_time = time.time()
+    files = next(os.walk(dir))[2]
+    with ThreadPoolExecutor(max_workers=50) as executor:
+        os.mkdir(f"./tmp")
+        futures = [executor.submit(add, file) for file in files]
+        futures, _ = concurrent.futures.wait(futures)
+        for future in futures:
+            result = str(future.result())
+            if (result != "None"):
+                f = open(f"./Packages", "a")
+                f.write(result)
+                f.close()
+                os.system(f"rm -rfv ./tmp")
+        if args.create_archive:
+            bz2contents = bz2.compress(bytes(open("Packages", "rb").read()), 5)
+            bzout = open("Packages.bz2", "wb")
+            bzout.write(bz2contents)
+            bzout.close()
+            gzipcontents = gzip.compress(bytes(open("Packages", "rb").read()))
+            gzipout = open("Packages.gz", "wb")
+            gzipout.write(gzipcontents)
+            gzipout.close()
+            lzmacontents = lzma.compress(bytes(open("Packages", "rb").read()))
+            lzmaout = open("Packages.lzma", "wb")
+            lzmaout.write(lzmacontents)
+            lzmaout.close()
+            xzcontents = xz.compress(bytes(open("Packages", "rb").read()))
+            xzout = open("Packages.xz", "wb")
+            xzout.write(xzcontents)
+            xzout.close()
+        print(f"Finished in {time.time() - start_time} seconds.")
