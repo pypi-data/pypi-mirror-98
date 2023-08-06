@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin2hpm/__init__.py
+bin2hpm/__main__.py
+bin2hpm/bitfile.py
+bin2hpm/cli.py
+bin2hpm/hpm.py
+bin2hpm/hpm_conv.py
+bin2hpm/rle.py
+bin2hpm.egg-info/PKG-INFO
+bin2hpm.egg-info/SOURCES.txt
+bin2hpm.egg-info/dependency_links.txt
+bin2hpm.egg-info/entry_points.txt
+bin2hpm.egg-info/top_level.txt
