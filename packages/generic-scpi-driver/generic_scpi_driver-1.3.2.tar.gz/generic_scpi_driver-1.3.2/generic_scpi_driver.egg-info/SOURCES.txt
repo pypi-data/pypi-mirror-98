@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+generic_scpi_driver/__init__.py
+generic_scpi_driver/_version.py
+generic_scpi_driver/driver.py
+generic_scpi_driver/generic_aqctl.py
+generic_scpi_driver.egg-info/PKG-INFO
+generic_scpi_driver.egg-info/SOURCES.txt
+generic_scpi_driver.egg-info/dependency_links.txt
+generic_scpi_driver.egg-info/requires.txt
+generic_scpi_driver.egg-info/top_level.txt

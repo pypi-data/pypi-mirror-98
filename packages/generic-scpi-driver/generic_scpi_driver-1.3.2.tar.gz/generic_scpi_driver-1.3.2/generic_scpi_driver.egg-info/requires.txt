@@ -1,0 +1,12 @@
+pyvisa
+pyserial
+pyvisa-py>=0.5.1
+
+[artiq]
+sipyco@ git+https://github.com/m-labs/sipyco.git
+
+[dev]
+pre-commit
+tox
+sphinx
+sphinx_rtd_theme
