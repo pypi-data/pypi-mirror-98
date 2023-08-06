@@ -1,0 +1,3 @@
+[console_scripts]
+good-day = good_day:main
+
