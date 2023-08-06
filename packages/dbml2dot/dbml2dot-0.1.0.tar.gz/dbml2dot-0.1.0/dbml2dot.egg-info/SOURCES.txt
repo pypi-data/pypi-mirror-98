@@ -1,0 +1,9 @@
+README.md
+setup.py
+dbml2dot/__init__.py
+dbml2dot/__main__.py
+dbml2dot.egg-info/PKG-INFO
+dbml2dot.egg-info/SOURCES.txt
+dbml2dot.egg-info/dependency_links.txt
+dbml2dot.egg-info/requires.txt
+dbml2dot.egg-info/top_level.txt

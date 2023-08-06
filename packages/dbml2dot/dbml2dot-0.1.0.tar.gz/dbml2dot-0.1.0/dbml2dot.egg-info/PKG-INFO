@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: dbml2dot
+Version: 0.1.0
+Summary: Converts DBML files to their graphviz representation in .dot format. It can also optionally do the additional conversion to an image format using graphviz.
+Home-page: https://github.com/aviallon/dbml2dot
+Author: Antoine Viallon (aviallon)
+Author-email: antoine+pip@lesviallon.fr
+License: GPL 3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
