@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        taskq=taskq.__main__:main
+    
