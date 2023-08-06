@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+pmec.egg-info/PKG-INFO
+pmec.egg-info/SOURCES.txt
+pmec.egg-info/dependency_links.txt
+pmec.egg-info/top_level.txt
+src/__init__.py
+src/pmec.py
