@@ -1,0 +1,8 @@
+pandas>=0.22
+numpy
+dnaplotlib
+biopython
+reportlab
+tesbml
+nbgitpuller
+tellurium
