@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+argos_track/__init__.py
+argos_track/__main__.py
+argos_track/batchtrack.py
+argos_track/sortracker.py
+argos_track/sortrackerwidget.py
+argos_track/track.py
+argos_tracker.egg-info/PKG-INFO
+argos_tracker.egg-info/SOURCES.txt
+argos_tracker.egg-info/dependency_links.txt
+argos_tracker.egg-info/requires.txt
+argos_tracker.egg-info/top_level.txt
