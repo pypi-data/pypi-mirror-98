@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: robotframework-jenkins
+Version: 2.1.0
+Summary: Library for Robot Framework for Jenkins interaction
+Home-page: https://github.com/okgolove/robotframework-jenkins
+Author: Mikhail Naletov
+Author-email: admin@markeloff.net
+License: UNKNOWN
+Keywords: jenkins,robotframework,robot,testing
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Description-Content-Type: text/markdown
+Requires-Dist: python-jenkins (>=1.*)
+Requires-Dist: robotframework (>=3.*)
+Requires-Dist: requests (>=2.*)
+
+JenkinsLibrary for Robot Framework
+==============================
+
+![PyPI](https://img.shields.io/pypi/v/robotframework-jenkins?style=for-the-badge&color=green)
+![Supported Jenkins Version](https://img.shields.io/badge/Tested%20with%20Jenkins-%3E2.176.1%20%3C2.234-blue?style=for-the-badge)
+
+Introduction
+------------
+
+JenkinsLibrary is a Robot Framework test
+library which helps you to involve Jenkins in your tests.
+
+Installation
+------------
+
+Just run:
+
+    pip install robotframework-jenkins
+
+Usage
+------------
+
+You need to import Jenkins library:
+
+    *** Settings ***
+    Library    JenkinsLibrary
+Then, you need to initialize Jenkins server with keyword:
+
+    Set Jenkins Server    url=http://example.com:8080    username=admin    password=admin
+
+Example
+------------
+    *** Settings ***
+    Library    JenkinsLibrary
+
+    *** Test Cases ***
+    Jenkins Create And Run Job
+        [Setup]    Set Jenkins Server    url=http://example.com:8080    username=admin    password=admin
+        Create Jenkins Job    test_job
+        Start Jenkins Job    test_job
+
+
