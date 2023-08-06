@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: sharepointio
+Version: 0.0.2
+Summary: An easy use of Office365-REST-Python-Client to download/upload/list sharepoint files
+Home-page: UNKNOWN
+Author: Thomas PICAL, Hervé MIGNOT
+Author-email: no-reply@noreply.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Communications :: File Sharing
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: Office365-REST-Python-Client
+Requires-Dist: temp
+Requires-Dist: pathlib2
+
+SharepointIO
+=============
+
+An easy use of Office365-REST-Python-Client to download/upload/list sharepoint files
+
+**********
+How to use
+**********
+
+Init sharepoint connexion
+*************************
+
+from sharepointio import sharepointio
+
+tenant = 'https://mypersonnal.sharepoint.com'
+
+site = '/sites/12345-MyTeams-Channel'
+
+sharepoint = sharepointio.SharePointBytesIO(tenant, site, username=USERNAME, password=PASSWORD)
+
+********
+Commands
+********
+
+**sharepoint.read(path)** : 
+Read file in the given path
+
+**sharepoint.list_files(folder, site=None, keep_only=None, start_with=None, str_contains=None)** :
+List all files in a folder. Output is a Pandas dataframe.
+
+**sharepoint.list_folders(folder)** :
+List all folders in a folder
+
+**sharepoint.move(file, old_path, new_path, site=None)** :
+Move file to another directory
+
+**sharepoint.copy(old_path, new_path)** :
+Copy file to another directory
+
+**sharepoint.download(file, full_URL=False, folder=None, site=None, download_path=None, get_download_path=False)** :
+Download file in a temporary directory
+
+**********
+Changelog
+**********
+
+**0.0.2** :
+
+- Update list_files : Automatically read all "Email%20Messages" folders received on Sharepoint when a new folder is automatically created by Sharepoint. The function outputs a pandas table with the following fields : name, date_created, date_lastupdate, ServerRelativeUrl
+- Update download : new field full_URL, allows to pass the links of the ServerRelativeUrl field in list_files. 
+
+*******
+License
+*******
+
+SharepointIO is licensed under the Apache 2.0 license.
+
