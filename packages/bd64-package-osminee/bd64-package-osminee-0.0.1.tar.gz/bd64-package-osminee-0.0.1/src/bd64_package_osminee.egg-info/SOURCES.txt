@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+src/bd64_package_osminee.egg-info/PKG-INFO
+src/bd64_package_osminee.egg-info/SOURCES.txt
+src/bd64_package_osminee.egg-info/dependency_links.txt
+src/bd64_package_osminee.egg-info/top_level.txt

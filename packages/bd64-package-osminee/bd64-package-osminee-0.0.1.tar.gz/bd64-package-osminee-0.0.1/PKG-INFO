@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bd64-package-osminee
+Version: 0.0.1
+Summary: Utilty to convert Base64 strings
+Home-page: https://guthib.com
+Author: Thomas Juzerski
+Author-email: tomek.juzerski@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://example.com
+Description: # BD64
+        
+        This package contains methods to encode and decode Base64 strings.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
