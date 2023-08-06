@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: play-takeout-to-plex
+Version: 0.1.1
+Summary: Re-name and re-structure google play music takeout to be plex friendly
+Home-page: https://github.com/Checkroth/play-takeout-to-plex
+License: MIT
+Keywords: music,google,play,plex
+Author: checkroth
+Author-email: checkroth@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: eyed3 (>=0.9.6,<0.10.0)
+Project-URL: Repository, https://github.com/Checkroth/play-takeout-to-plex
