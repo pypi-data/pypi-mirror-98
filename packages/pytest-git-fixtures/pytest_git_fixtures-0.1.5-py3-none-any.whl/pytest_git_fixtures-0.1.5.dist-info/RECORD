@@ -1,0 +1,14 @@
+pytest_git_fixtures/__init__.py,sha256=0-y1DTJAncYp9iiZvb2EzixemmUnZrrT-ohq1z7jR4M,115
+pytest_git_fixtures/fixtures.py,sha256=aDJTn6f3l67Z8ZwDmd35DJU5hep06uNkDPIFgbJkWro,8105
+pytest_git_fixtures/git-init.sh,sha256=aZHlsb_nTXsGXzmR_Ztgf6hM66B-VL5yYx1LLfjLPkI,1201
+pytest_git_fixtures/gitconfig,sha256=K4BKourgAOIFyKvb2w5tmeqEyf-sI0DTlgmo-1T44kA,152
+pytest_git_fixtures/utils.py,sha256=0463mVUaoJbJtLtqbCpqMM8VpEXI-4zr9s6gJ1IAw14,1467
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fixtures.py,sha256=aKxSx-aO8GFZAgtJGeDuuDmJaYsfGaPNE5Ylq5e7RnM,3572
+tests/test_utils.py,sha256=GFUovM1IZ1FYaCEcc2LYeNplROVRyDq1wOu1f4xqoZg,419
+pytest_git_fixtures-0.1.5.dist-info/LICENSE.md,sha256=OcSZCW8-6YpuAY4ybYt8DxlRRplUvf1nq-Qycr0K9s4,10759
+pytest_git_fixtures-0.1.5.dist-info/METADATA,sha256=ZOuPvIJl1JQhYi2TghNYZ1kBr9Ildwu9UastivHDzBk,8133
+pytest_git_fixtures-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_git_fixtures-0.1.5.dist-info/entry_points.txt,sha256=wnb3XiItt4UPqkyIScuMNSuwX2lmaLh3AxRNMgQx73w,47
+pytest_git_fixtures-0.1.5.dist-info/top_level.txt,sha256=SOdqsZRkhVEoRG1KuLB97VmCYM3bqDDRjd7Yse6cRcI,26
+pytest_git_fixtures-0.1.5.dist-info/RECORD,,
