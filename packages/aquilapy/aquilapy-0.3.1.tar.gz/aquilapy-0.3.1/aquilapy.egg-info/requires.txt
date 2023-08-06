@@ -1,0 +1,4 @@
+bson
+requests
+pycryptodome
+base58
