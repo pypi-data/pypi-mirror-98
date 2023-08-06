@@ -1,0 +1,12 @@
+setuptools
+ldap3
+pyams_security
+pyams_utils
+pyramid
+
+[test]
+pyams_catalog
+pyams_security_views
+pyams_zmi
+pyramid_zcml
+zope.exceptions
