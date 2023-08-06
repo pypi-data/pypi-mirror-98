@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: unio-cli
+Version: 0.1.1
+Summary: cli for managing UNIO Smart Home enabled devices
+Home-page: https://github.com/uniosmarthome/unio-cli
+Author: Filipe Leandro
+Author-email: developers@freshminds.com.br
+License: UNKNOWN
+Description: # CLI for managing UNIO Smart Home devices
+        
+        ### Installation
+        `pip install unio-cli`
+        
+        For more information, check:
+        
+        ```
+        unio --help
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
