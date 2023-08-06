@@ -1,0 +1,5 @@
+jupyter
+black
+isort
+coverage
+python-dotenv
