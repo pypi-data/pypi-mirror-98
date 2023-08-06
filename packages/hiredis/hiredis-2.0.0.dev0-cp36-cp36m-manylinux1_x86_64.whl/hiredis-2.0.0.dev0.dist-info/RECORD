@@ -1,0 +1,10 @@
+hiredis/hiredis.pyi,sha256=TmHcI7YfekpTbp2u_wOnkEIfg1jMdgS7N7kNAcq9YGk,859
+hiredis/version.py,sha256=2O3sRHf4CRDBN0yW7LHIPZnTzxZkBGfOv2SVqama6zE,27
+hiredis/hiredis.cpython-36m-x86_64-linux-gnu.so,sha256=R2Voe2cTbgKUy0wwy-t_dw2M43iSt469reGJaRku2vM,216640
+hiredis/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hiredis/__init__.py,sha256=0853rLuoal8xzfbemLjYY5lHqaovDnm3MBWo9FTXyO8,191
+hiredis-2.0.0.dev0.dist-info/COPYING,sha256=cO36bT4R-ddJfCwvKY0G8zsR0Q8392YFECxas7HygmI,1478
+hiredis-2.0.0.dev0.dist-info/top_level.txt,sha256=P_zCKMUoKFNyPXKK3aYI6FeuETe2dcDLC1zsr3scogI,8
+hiredis-2.0.0.dev0.dist-info/RECORD,,
+hiredis-2.0.0.dev0.dist-info/METADATA,sha256=ML2DFUjwzX0qborRgocJfmJq5K_wC4wHQHDPsfM6o5M,5849
+hiredis-2.0.0.dev0.dist-info/WHEEL,sha256=IkZiJFiZiRavDHfaLV1hdVPFYe1HJNLQ8dnz1DVQgHk,109
