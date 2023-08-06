@@ -1,0 +1,4 @@
+<div class="version"
+	 tal:define="zmi tales:zmi.configuration">
+	${zmi.application_name} - ${zmi.version}
+</div>
