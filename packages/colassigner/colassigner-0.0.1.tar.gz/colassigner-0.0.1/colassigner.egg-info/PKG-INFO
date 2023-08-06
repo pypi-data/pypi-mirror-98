@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: colassigner
+Version: 0.0.1
+Summary: Helper for assigning pandas columns
+Home-page: https://github.com/endremborza/colassigner
+Author: Endre Márk Borza
+License: MIT
+Description: # colassigner
+        
+        [![Documentation Status](https://readthedocs.org/projects/colassigner/badge/?version=latest)](https://colassigner.readthedocs.io/en/latest)
+        [![codeclimate](https://img.shields.io/codeclimate/maintainability/endremborza/colassigner.svg)](https://codeclimate.com/github/endremborza/colassigner)
+        [![codecov](https://img.shields.io/codecov/c/github/endremborza/colassigner)](https://codecov.io/gh/endremborza/colassigner)
+        [![pypi](https://img.shields.io/pypi/v/colassigner.svg)](https://pypi.org/project/colassigner/)
+        
+        add keywords to pyproject.toml
+        
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
