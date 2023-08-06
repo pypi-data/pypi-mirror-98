@@ -1,0 +1,11 @@
+glib_log_bridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glib_log_bridge/glib2python.py,sha256=f2wW6iZVYnjz5lIXYHjO9EoXMDP9gJDLHjkdjrdKK30,13253
+glib_log_bridge/python2glib.py,sha256=PLRJsaErSsfIoNZGPks2tAf-QBUIpgmXgqi61pfLBtc,14063
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_glib2python.py,sha256=10g8RqhR5eRDsCrYo35OgAz86aHmbod-q3QuHEQK5yk,5380
+tests/test_python2glib.py,sha256=JVGxQJdXRfTAXUJg3wXfb6eSNdy-rqDFStWbrltj49c,2823
+glib_log_bridge-0.0.1.dist-info/LICENSE,sha256=6Hwc59TvuIR3wPk2PIXY7v1Obxs_ZCQDhEkKUGfysMc,1061
+glib_log_bridge-0.0.1.dist-info/METADATA,sha256=HuIpGSLFaggg8FUVuvYaLZDx_rlgd9gzWk7oqoUK7r4,1611
+glib_log_bridge-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+glib_log_bridge-0.0.1.dist-info/top_level.txt,sha256=PbovJbPRtf3RIcIFs26jtMfLTWW19Xaibkjmzbfo-Yk,22
+glib_log_bridge-0.0.1.dist-info/RECORD,,
