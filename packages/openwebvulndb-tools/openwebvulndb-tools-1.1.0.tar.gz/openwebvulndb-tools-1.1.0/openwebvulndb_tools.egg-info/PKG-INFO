@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: openwebvulndb-tools
+Version: 1.1.0
+Summary: A collection of tools to maintain vulnerability databases.
+Home-page: https://github.com/delvelabs/openwebvulndb-tools
+Author: Delve Labs inc.
+Author-email: info@delvelabs.ca
+License: GPLv2
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.0,<3.9.0

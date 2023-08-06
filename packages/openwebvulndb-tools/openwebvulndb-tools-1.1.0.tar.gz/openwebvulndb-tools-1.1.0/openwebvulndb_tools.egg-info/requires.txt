@@ -1,0 +1,6 @@
+aiohttp<4.0,>=3.7.3
+easyinject==0.3
+lxml==4.6.2
+marshmallow<3,>=2.21.0
+packaging==20.9
+yarl==1.6.3
