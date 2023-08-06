@@ -1,0 +1,4 @@
+democritus-html
+democritus-strings
+democritus-utility
+importlib-metadata; python_version < '3.8'
