@@ -1,0 +1,7 @@
+toml>=0.10.2
+bottle
+requests
+pynacl
+pycryptodomex
+cryptography>=3.2
+prettytable
