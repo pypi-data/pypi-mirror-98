@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+userlib_spinD.egg-info/PKG-INFO
+userlib_spinD.egg-info/SOURCES.txt
+userlib_spinD.egg-info/dependency_links.txt
+userlib_spinD.egg-info/top_level.txt
