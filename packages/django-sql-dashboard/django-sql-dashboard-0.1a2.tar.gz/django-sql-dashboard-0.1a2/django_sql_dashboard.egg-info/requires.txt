@@ -1,0 +1,9 @@
+Django
+
+[test]
+psycopg2
+pytest
+pytest-django
+pytest-pythonpath
+dj-database-url
+testing.postgresql
