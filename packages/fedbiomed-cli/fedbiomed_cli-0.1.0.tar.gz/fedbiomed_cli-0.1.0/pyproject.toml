@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fedbiomed_cli"
+version = "0.1.0"
+description = ""
+authors = ["Santiago SILVA <16252054+sssilvar@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "^1.8.0"
+torchvision = "^0.9.0"
+paho-mqtt = "^1.5.1"
+requests = "^2.25.1"
+persist-queue = "^0.5.1"
+GitPython = "^3.1.14"
+validators = "^0.18.2"
+tinydb = "^4.4.0"
+pandas = "^1.2.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
