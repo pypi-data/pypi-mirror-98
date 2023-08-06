@@ -1,0 +1,88 @@
+CHANGES
+=======
+
+v1.0.5
+------
+
+* Pycsou's documentation now lists extensions Pycsou-gsp and Pycsou-sphere
+* Updated requirements and graph routines moved to extension module pycsou-gsp
+* Added some common green functions + extended linear operator MappedDistanceMatrix to non Hilbertian distances induced by arbitrary Minkowski norms
+* Added some common green functions
+* Fix for the computation of Lipschitz constants of operators which are deficient (non diagonalizable). PMYULA implemented but not documented yet (currently being validated). Added a postprocess method to class GenericIterativeAlgorithm
+* Removed verbose ipynb files from linguist scope to avoid biasing language statistics
+* Improved documentation and proximal MCMC schemes
+
+v1.0.4
+------
+
+* Modified setup.cfg
+
+v1.0.2
+------
+
+* Removed local reference from README.rst for compatibility with PyPI
+* Removed local reference from README.rst for compatibility with PyPI
+* Added Zenodo DOI for citing the package
+* Update README.rst
+* Added Zenodo DOI link
+* Added logo
+* Added logo
+* Added logo
+* removed .egg-info
+* Update README.rst
+* Add sphinx to requirements
+* Add sphinx to requirements
+* Ref to GlobalBioIm as inspiration
+* Update README.rst
+* Update README.rst
+* Update README.rst
+* Updated README
+* Updated README
+* Delete README.md
+* Updated README
+* v1.0.0 packaged
+
+v1.0.0
+------
+
+* Modified .gitignore
+* Documentation complete
+* Package refactoring
+* Updated documentation structure and algorithms completed
+* Modify requirements
+* Correction of a bug with NullOperator and removes example folder
+* Correction of a bug with NullOperator and removes example folder
+* Removed folder opt/
+* Documentation for pycsou.core.solver is completed (examples/tests still missing)
+* Documentation for pycsou.util.misc is completed
+* Documentation for pycsou.core.functional is completed
+* Documentation for pycsou.core.linop is completed
+* Documentation for pycsou.core.map is completed
+* Help for map
+* Small changes
+* Primal Dual Splitting Algorithm Implemented and test routines added
+* Joblib added to requirements
+* MappedDistanceMatrix Operator implemented. All sampling operators implemented
+* Dense Generalised Vandermonde operator added
+* NNSampling operator implemented
+* Downsampling operator is now implemented as a Masking operator
+* Downsampling operator implemented
+* Implementation of SubSampling and Masking operators
+* Implementation of graph differential operators completed. Documentation updated
+* Implementation of euclidean differential operators completed
+* Partial implementation of most common discrete differential operators
+* Implementation of convolution and smoothing operators for 1D, 2D, and graph signals
+* Updated documentation and tests
+* Modified .gitignore
+* Documentation for penalty fonctionals completed
+* Files for sphinx documentation and automatic install
+* Partial documentation of penalty.py
+* Implementation of most common loss and penalty functionals
+* Removed .DS\_Store and .idea from .gitignore
+* Abstract classes for cost functionals implemented
+* Classes for stacked (vertical and horizontal) maps and linear operators added
+* Update README.md
+* Update README.md
+* Initial commit: classes Map and LinearOperator and their subclasses implemented. Vertical stack of Maps and LinearOperators needs to be impelemented
+* Update README.md
+* Initial commit
