@@ -1,0 +1,53 @@
+# brawlapi
+
+**[See the Exemples](https://github.com/GaetanDesrues/brawl_api/tree/master/examples)**
+
+
+```python
+import matplotlib.image as img
+import matplotlib.pyplot as plt
+
+import brawlapi as api
+
+
+with api.DataBase('<path-to-db>') as db:
+    jm = api.Player("jm", db)
+    print(jm)
+
+    # Each day is stored in the database with a unique key
+    # The key consists in the first 8 chars of the ISO-formated date string (yyyymmdd)
+    print(f"{len(jm.keys)} days: {jm.keys}")
+
+    # Get all the games of the day 0
+    print(jm[0])
+    # or
+    print(jm.get_battles(jm.keys[0]))
+    
+    # Or with a generator
+    for matchs in jm.battles:
+        print(matchs)
+        break
+
+    # Infos on all battles for a player
+    for m in jm.battles:
+        for g in m:
+            print(f"{g.battle.mode} : {g.start} + {g.duration} = {g.end}")
+
+
+
+    print("BRAWLERS")
+    brawlers = db.brawlers
+    print(brawlers)
+    
+    nita = db.get_brawler(brawlers[1])
+    print(nita.keys)
+    
+    # print(nita.invocs)
+    print(nita.stats)
+    
+    nita.dwnl_image("test.png")
+    
+    im = img.imread("test.png")
+    plt.imshow(im)
+    plt.show()
+```
