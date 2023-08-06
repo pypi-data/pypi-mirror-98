@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+src/namemaker/__init__.py
+src/namemaker.egg-info/PKG-INFO
+src/namemaker.egg-info/SOURCES.txt
+src/namemaker.egg-info/dependency_links.txt
+src/namemaker.egg-info/top_level.txt
+src/namemaker/name data/England towns.txt
+src/namemaker/name data/Greek mythology.txt
+src/namemaker/name data/PA towns.txt
+src/namemaker/name data/female first names.txt
+src/namemaker/name data/last names.txt
+src/namemaker/name data/male first names.txt
