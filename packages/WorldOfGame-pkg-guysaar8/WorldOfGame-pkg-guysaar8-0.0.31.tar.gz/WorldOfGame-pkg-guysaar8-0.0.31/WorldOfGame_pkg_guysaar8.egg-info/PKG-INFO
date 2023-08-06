@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: WorldOfGame-pkg-guysaar8
+Version: 0.0.31
+Summary: Python Games package
+Home-page: UNKNOWN
+Author: Guy Saar
+License: MIT
+Description: # A place For Many Games
+        
+        Guess Game Memory Game Currency Rullete <br/>
+        More new and exiting games are coming soon!! <br/>
+        
+        # to start the game <br/>  
+        open terminal and enter: <br/> 
+        # worldofgames
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
