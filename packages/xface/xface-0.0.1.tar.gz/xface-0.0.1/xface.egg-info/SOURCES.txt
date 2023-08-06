@@ -1,0 +1,6 @@
+setup.py
+xface.egg-info/PKG-INFO
+xface.egg-info/SOURCES.txt
+xface.egg-info/dependency_links.txt
+xface.egg-info/not-zip-safe
+xface.egg-info/top_level.txt
