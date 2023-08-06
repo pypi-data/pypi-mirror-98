@@ -1,0 +1,3 @@
+[console_scripts]
+isdttool = isdttool.cli_tool:main
+
