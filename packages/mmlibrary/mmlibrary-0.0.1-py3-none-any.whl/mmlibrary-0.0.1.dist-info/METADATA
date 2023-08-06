@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mmlibrary
+Version: 0.0.1
+Summary: Model Management Framework & Abstractions
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# MMLIBRARY
+
+Model Management Framework and Abstractions
+
