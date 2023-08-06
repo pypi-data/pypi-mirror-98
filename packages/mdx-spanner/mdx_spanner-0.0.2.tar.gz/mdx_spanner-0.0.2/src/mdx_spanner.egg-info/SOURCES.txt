@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/mdx_spanner/__init__.py
+src/mdx_spanner/mdx_spanner.py
+src/mdx_spanner.egg-info/PKG-INFO
+src/mdx_spanner.egg-info/SOURCES.txt
+src/mdx_spanner.egg-info/dependency_links.txt
+src/mdx_spanner.egg-info/top_level.txt
