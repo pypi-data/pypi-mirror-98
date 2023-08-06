@@ -1,0 +1,11 @@
+weightlogger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weightlogger/app.py,sha256=I3X_suf97nPB7eHB0_eqhRunjfdJyYLS6qkVirZoQ-s,13803
+weightlogger/constant.py,sha256=CbxNR2i-fNmiYsxpFj4v_yjDYTo_orsZB03tSGChykY,240
+weightlogger/controller.py,sha256=nQlXAY6VGyljrOECpHesaSwCl-8UfHC_AIRQej0simQ,6211
+weightlogger/images/greenarrow.png,sha256=xp8cbAGpY2WhdF8fx8FHm8dWAt_rQsNfWzNQoHGU19k,9818
+weightlogger/images/redarrow.png,sha256=t06gOGEVT0o9zNLakj38QYxObvbrGxSzZS4ZYRITlwg,9714
+wlg_fayefv-0.2.1.dist-info/LICENSE,sha256=MVp0uFIE-kmpTvAWmiwK2r5NTlieloa8JroCCOM8XTg,1066
+wlg_fayefv-0.2.1.dist-info/METADATA,sha256=w4EOYulLfFL7e2Ct224QD-mftxwIBN1xiVDFWLBHDzQ,1664
+wlg_fayefv-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wlg_fayefv-0.2.1.dist-info/top_level.txt,sha256=xbvnQeP4IT69i6C225WWjT6w__I3xxgGLIE89fELovc,13
+wlg_fayefv-0.2.1.dist-info/RECORD,,
