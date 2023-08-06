@@ -1,0 +1,14 @@
+README.md
+setup.py
+snap_tam/__init__.py
+snap_tam/__main__.py
+snap_tam/aggregate_api.py
+snap_tam/aggregate_filesystem.py
+snap_tam/cli.py
+snap_tam/config.json
+snap_tam.egg-info/PKG-INFO
+snap_tam.egg-info/SOURCES.txt
+snap_tam.egg-info/dependency_links.txt
+snap_tam.egg-info/entry_points.txt
+snap_tam.egg-info/requires.txt
+snap_tam.egg-info/top_level.txt
