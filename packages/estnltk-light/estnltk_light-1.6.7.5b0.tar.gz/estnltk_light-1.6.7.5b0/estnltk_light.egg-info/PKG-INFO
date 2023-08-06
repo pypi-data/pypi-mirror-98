@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: estnltk-light
+Version: 1.6.7.5b0
+Summary: EstNLTK light — core components of the EstNLTK v1.6 library
+Home-page: https://github.com/estnltk/estnltk
+Author: University of Tartu
+Author-email: siim.orasmaa@gmail.com, alex.tk.fb@gmail.com, tpetmanson@gmail.com, swen@math.ut.ee
+License: GPLv2
+Description: EstNLTK-light -- core components of the EstNLTK v1.6 library
+        =====================================================================
+        
+        This package contains core components of the EstNLTK v1.6 library:
+        
+          * data structures: Text, Layer, Span, EnvelopingSpan, SpanList, Annotation;
+          * tagger component interfaces: Tagger, Retagger;
+          * basic layer operations: flatten, merge, rebase, split layers etc.
+          * functions for converting between EstNLTK's data structures and JSON/dict representations;
+        
+        The package is based on the EstNLTK v1.6 commit 1a2754611f ( https://github.com/estnltk/estnltk/tree/1a2754611feec84cdef597a7f74a2cc806964d60 ), which has been heavily stripped down. Removed components:
+        
+          * NLP tools and pipelines;
+          * all the visualization components and Jupyter Notebook support (HTML representations);
+          * storage components;
+          * tests;
+        
+        The source code of the light package: https://github.com/estnltk/estnltk/tree/version_1.6_light
+        
+        The full package: https://github.com/estnltk/estnltk
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
