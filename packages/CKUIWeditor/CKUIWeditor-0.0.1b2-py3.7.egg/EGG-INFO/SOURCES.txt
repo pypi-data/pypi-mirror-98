@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+CKUIWeditor.egg-info/PKG-INFO
+CKUIWeditor.egg-info/SOURCES.txt
+CKUIWeditor.egg-info/dependency_links.txt
+CKUIWeditor.egg-info/requires.txt
+CKUIWeditor.egg-info/top_level.txt
+src/CKUIWeditor/__init__.py
+src/CKUIWeditor/__main__.py
+src/CKUIWeditor/page.xml
+src/CKUIWeditor/rpcserver.py
