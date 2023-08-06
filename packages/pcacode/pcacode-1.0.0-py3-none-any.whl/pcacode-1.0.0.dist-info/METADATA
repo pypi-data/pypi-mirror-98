@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: pcacode
+Version: 1.0.0
+Summary: 这是一个从文本中找地名信息和地区码的库
+Home-page: https://gitee.com/YHjohn/pcacode
+Author: john
+Author-email: john19940404@live.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: openpyxl
+
+# pcacode
+
+这是一个从文本中找地名信息和地区码的库<br>
+
+## 安装
+
+> pip install pcacode
+
+## 使用方法
+
+### 1.基础使用：
+
+```
+from pcacode import pcacode
+
+pca = pcacode.pcacode()
+info = pca.get_info(province='北京',content='朝阳区')
+
+print(info)
+```
+
+```结果：[('北京市', '直辖市', '朝阳区', '110105')]```
+
+#### 说明：<br>
+
+> + province 为省名称，已做了模糊处理，测试版必须带，带上有助于提高效率和精度。<br>
+>+ content 为内容 ，内容随意只要包含市/区县信息会自动提取
+
+### 2.一些初始化技巧：
+
+```
+from pcacode import pcacode
+
+pca = pcacode.pcacode(file_page=u'data/2020年11月中华人民共和国县以上行政区划代码.xlsx',
+                      nations_file=u'data/56_nations.xlsx',
+                      switch_data={},
+                      dict_data={})
+
+```
+
+#### 说明：<br>
+
+#### file_page：地区码数据文件路径
+
+> 数据来源于 [民政部](http://www.mca.gov.cn/article/sj/xzqh/2020) 整理成了xlsx 格式可以查看data目录下面的[2020年11月中华人民共和国县以上行政区划代码.xlsx](/datas/2020年11月中华人民共和国县以上行政区划代码.xlsx)文件，可以替换成自己的文件（注意，清除xlsx文件中的空格） <br>
+> 需要替换时: <br>
+> ```file_page=u'you_file_path/you_file.xlsx'```
+
+#### nations_file：民族数据文件路径
+
+> 用于处理少数民族自治区自治州名称使用，不建议改动，你也可以改为自己的名族文件库，详细请参看data下面的[56_nations.xlsx](/datas/56_nations.xlsx)文件<br>
+> #### 需要替换时: <br>
+> ```nations_file=u'you_nations_file_path/you_nations_file.xlsx'```
+
+#### switch_data :替换省名简称(只能新增省的简称)<br>
+
+> 目前已经默认可以不带 '省'，'市' <br>
+> 自治区也可以自动识别 <br>
+> 需要替换时: <br>
+> ```switch_data={'京'，'北京市'，'沪'，'上海市'}```
+
+#### dict_data :替换地区码信息<br>
+> 地区吗经常变动，每次维护地区码表很麻烦，在这里提供一个临时方案
+> #### 需要替换时: <br>
+>  ```dict_data={'330205'：'江北区'}```<br>
+## 3.存在的问题（下个版本处理）<br>
+
+###1.必须是全称才能处理<br>
+> 例如：<br>
+> 北京市 朝阳 <br>
+> 提取结果：<br>
+> [('北京市', '北京市', '北京市', '110000')] <br>
+> 下个版本优先解决这个问题 
+
+###2.自治州简称目前暂未处理<br>
+> 例如：<br>
+> 延边朝鲜族自治州 <br>
+> 恩施土家族苗族自治州<br>
+> 分别简称为 延边 恩施的暂时无法处理 只能处理全称<br>
+> 详细信息请查看百度百科：[自治区](https://baike.baidu.com/item/%E8%87%AA%E6%B2%BB%E5%B7%9E/1710336?fr=aladdin) <br>
+
+###3.自治县简称目前暂未处理<br>
+> 例如：<br>
+> 围场满族蒙古族自治县 <br>
+> 丰宁满族自治县 <br>
+> 分别简称为 围场 丰宁的暂时无法处理 只能处理全称 <br>
+> 详细信息请查看百度百科：[自治县](https://baike.baidu.com/item/%E8%87%AA%E6%B2%BB%E5%8E%BF) <br>
+
+4.下个版本更新计划<br>
+> 增加不需要省名称的提取方式 <br>
+> 增加城市名称模糊处理的方式 <br>
+> 丰富函数的返回类型和模式 <br>
+
+## 致谢<br>
+感谢袁隆平先生和钟南山先生，让我医食无忧。<br>
+## 尾声
+#### 只有无知，没有自满
+
