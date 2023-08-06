@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+smokeshow/__init__.py
+smokeshow/__main__.py
+smokeshow/main.py
+smokeshow/py.typed
+smokeshow/version.py
+smokeshow.egg-info/PKG-INFO
+smokeshow.egg-info/SOURCES.txt
+smokeshow.egg-info/dependency_links.txt
+smokeshow.egg-info/not-zip-safe
+smokeshow.egg-info/requires.txt
+smokeshow.egg-info/top_level.txt
