@@ -1,0 +1,9 @@
+requests
+pyzmq
+PyAudio
+networkx
+numpy
+Pillow
+
+[myo]
+myo-python==0.2.2
