@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: bitwire-deploy
+Version: 1.0.0
+Summary: BitWire Cloud deployment tool
+Home-page: https://bitwire.cloud
+Author: BitWire
+Author-email: hello@bitwire.cloud
+License: GPLv3+
+Project-URL: Bug Tracker, https://github.com/bitwirecloud/bitwire-cloud/issues
+Project-URL: Documentation, https://bitwire.cloud/documentation/
+Project-URL: Source Code, https://github.com/bitwirecloud/bitwire-cloud
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome
+Requires-Dist: requests
+
+UNKNOWN
+
+
