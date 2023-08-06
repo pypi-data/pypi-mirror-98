@@ -1,0 +1,7 @@
+BioPython
+numpy
+seaborn
+matplotlib
+setuptools
+dash
+time
