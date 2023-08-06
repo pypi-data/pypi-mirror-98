@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyPMF
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/weber-s/pyPMF
+Author: Samuël Weber
+Author-email: samuel.weber@univ-grenoble-alpes.fr
+License: UNKNOWN
+Project-URL: Documentation, https://webersa.gricad-pages.univ-grenoble-alpes.fr/py4pm/
+Project-URL: Source, https://github.com/weber-s/pyPMF
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: xlrd (<2)
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# PMF Utilities in python
+
+Handle PMF output from various format in handy pandas DataFrame and do lot of stuf with
+them.
+
+
