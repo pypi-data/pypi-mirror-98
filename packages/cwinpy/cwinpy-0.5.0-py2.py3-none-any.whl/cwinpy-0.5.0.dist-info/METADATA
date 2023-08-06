@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: cwinpy
+Version: 0.5.0
+Summary: A Python module for Bayesian inferences with continuous gravitational-wave sources
+Home-page: http://git.ligo.org/CW/software/cwinpy
+Author: Matthew Pitkin
+Author-email: matthew.pitkin@ligo.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: astropy
+Requires-Dist: numpy (<1.20)
+Requires-Dist: bilby (>=1.0.2)
+Requires-Dist: bilby-pipe (>=1.0.2)
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: lintegrate (>=0.1.7)
+Requires-Dist: lalsuite (>=6.76)
+Requires-Dist: numba
+Requires-Dist: gwpy (>=2.0.0)
+Requires-Dist: gwosc (>=0.5.4)
+Requires-Dist: pycondor
+
+<p align="left">
+  <img src="./logo/logo.png" width="350" title="CWInPy logo">
+</p>
+
+# CW Inference in Python
+
+A Python module for performing Bayesian inference on continuous gravitational-wave signals from pulsars
+
+* [Documentation](https://cwinpy.readthedocs.io)
+
+[![Documentation Status](https://readthedocs.org/projects/cwinpy/badge/?version=latest)](https://cwinpy.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://github.com/cwinpy/cwinpy/workflows/build/badge.svg)](https://github.com/cwinpy/cwinpy/actions?query=workflow%3Abuild)
+[![codecov](https://codecov.io/gh/cwinpy/cwinpy/branch/master/graph/badge.svg)](https://codecov.io/gh/cwinpy/cwinpy)
+[![PyPI version](https://badge.fury.io/py/cwinpy.svg)](https://badge.fury.io/py/cwinpy)
+[![Anaconda-Server Badge](https://anaconda.org/conda-forge/cwinpy/badges/version.svg)](https://anaconda.org/conda-forge/cwinpy)
+
+
