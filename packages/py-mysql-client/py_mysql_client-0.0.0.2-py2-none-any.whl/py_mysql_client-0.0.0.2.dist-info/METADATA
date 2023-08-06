@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: py-mysql-client
+Version: 0.0.0.2
+Summary: A lite python mysql driver
+Home-page: https://github.com/stellaye
+Author: lindaye
+Author-email: 454784911@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# py-mysql-client
+
+py-mysql-client is a lite version for  mysql-python-connector package , pure mysql driver written by python
+
+## Installation
+
+pip install py-mysql-client
+
+## Features
+
+No cursor , get the results instantly after a query like using mysql command line client 
+
+Support transactions autocommited
+
+Support prepare stmt
+
+Support debug mode , mysql protocal packages and commands would be printed out for debuging
+
+
+## Usage
+
+
+Execute ordinary query
+
+```
+
+from easymysql.connector import MySQLClient
+
+db = MySQLClient()
+
+db.connect(host="121.4.60.147",port=3306,user="root",password="jsak")
+
+print db.execute("show databases;")
+
+```
+
+stdout :
+
+```
+[(u'information_schema',), (u'mysql',), (u'performance_schema',), (u'stock',), (u'sys',)]
+```
+
+
+Execute ordinary dml
+
+```
+db.execute("drop table if exists testmy")
+
+db.execute("create table if not exists testmy(id int(11),name varchar(10))")
+
+db.execute("insert into testmy (id,name) values(1,'mamo')")
+
+db.commit()
+
+```
+
+
+Execute transcations autocommitted
+
+```
+db.autocommit = True
+
+db.execute("drop table if exists testmy")
+
+db.execute("create table if not exists testmy(id int(11),name varchar(10))")
+
+db.execute("insert into testmy (id,name) values(1,'mamo')")
+```
+
+
+Execute prepare stmt
+
+```
+db.connect(host="121.4.60.147",port=3306,user="root",password="Yrj1993718!",database="jsak")
+
+db.prepare()
+
+db.execute("select * from stock_daily where stock_code = ?",(601318,))
+```
+
+
+Debug mode
+
+
+```
+db = MySQLClient()
+
+db.set_debug()
+
+db.connect(host="121.4.60.197",port=3306,user="root",password="Yrj1993718!",database="stock")
+```
+
