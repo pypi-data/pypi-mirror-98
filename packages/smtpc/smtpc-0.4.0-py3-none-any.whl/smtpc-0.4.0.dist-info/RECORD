@@ -1,0 +1,15 @@
+smtpc/__init__.py,sha256=WYn3WGOOB39fxurGSvOUHSeVTfsBhN2C_z0ZJfaU3Wg,51
+smtpc/cli.py,sha256=gwvvW9DV18houI4uB_5zNbiuIosF7dDtlaXAzBeEJfo,19039
+smtpc/config.py,sha256=tuq4-8AZeS3xPJduHw1l2BenGUlZZzDC73XrKC7sAbI,1640
+smtpc/defaults.py,sha256=cK4EiuW2bkgMh6M3BXg4TJ0WD-05_v7vXqniKp13GoM,566
+smtpc/enums.py,sha256=eUwsj53gM-8JSruZwO82ZPr_U4VdMuw0xH9VugWC4d8,194
+smtpc/message.py,sha256=A8ii9BjtcwojHutxxNWsddq5hssnlhUZdSza1bxTRuM,9291
+smtpc/predefined_messages.py,sha256=eeyW1Dtqo_3HQuU6FsQqCja5UQGOE34GmL41aNSUsk8,3369
+smtpc/predefined_profiles.py,sha256=WobNqNmovYNGIRkrnSgNcNUIPCcFiJPXzqcgJj_MPlI,2676
+smtpc/utils.py,sha256=9UYnRjhPQAKGZ4tLIosr7KjhUA5Myx5ml8H9sWYLzrM,689
+smtpc-0.4.0.dist-info/LICENSE,sha256=BxPZhnuYRbv9T6S2tqqsAbBNzsosA2I5dCzdzJR5qi0,1083
+smtpc-0.4.0.dist-info/METADATA,sha256=QSFPgrHcY8keuvPeN8iJ9MGjU4vW5B2xIR6ikbH3CJ4,5301
+smtpc-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+smtpc-0.4.0.dist-info/entry_points.txt,sha256=8dVBBnGySCJmfNVjDhnVDf3779V6jIyj96fBumY2RoQ,42
+smtpc-0.4.0.dist-info/top_level.txt,sha256=LsoSqKUSxeUYlyzYGI_3nEIqrJhOHv--BHXnohFplUE,6
+smtpc-0.4.0.dist-info/RECORD,,
