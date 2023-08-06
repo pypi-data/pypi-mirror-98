@@ -1,0 +1,13 @@
+six
+Flask
+marshmallow
+marshmallow_jsonapi
+sqlalchemy
+
+[dev]
+pytest
+coveralls
+coverage
+
+[docs]
+sphinx
