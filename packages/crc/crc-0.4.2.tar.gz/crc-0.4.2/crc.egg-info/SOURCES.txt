@@ -1,0 +1,12 @@
+README.md
+setup.py
+crc/__init__.py
+crc/crc.py
+crc/tests.py
+crc/tools.py
+crc.egg-info/PKG-INFO
+crc.egg-info/SOURCES.txt
+crc.egg-info/dependency_links.txt
+crc.egg-info/entry_points.txt
+crc.egg-info/requires.txt
+crc.egg-info/top_level.txt
