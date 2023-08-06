@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vrt-lss-lastmile
+Version: 3.7.167066
+Summary: Veeroute.LSS Lastmile
+Home-page: https://docs.veeroute.com/#/lss/lastmile
+Author: Veeroute Support Team
+Author-email: support@veeroute.com
+License: UNKNOWN
+Description:     Veeroute.LSS Lastmile API  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Veeroute.LSS Lastmile
+Platform: UNKNOWN
+Requires-Python: >=3.6
