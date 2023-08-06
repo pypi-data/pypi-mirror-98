@@ -1,0 +1,16 @@
+.gitignore
+Makefile
+README.md
+setup.cfg
+setup.py
+cbm_shell/__init__.py
+cbm_shell/image_path.py
+cbm_shell/images.py
+cbm_shell/scripts/__init__.py
+cbm_shell/scripts/cbm_shell.py
+cbmshell.egg-info/PKG-INFO
+cbmshell.egg-info/SOURCES.txt
+cbmshell.egg-info/dependency_links.txt
+cbmshell.egg-info/entry_points.txt
+cbmshell.egg-info/requires.txt
+cbmshell.egg-info/top_level.txt
