@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+arggo/__init__.py
+arggo/arggo.py
+arggo/dataclass_utils.py
+arggo/integrations.py
+arggo/parser.py
+arggo/utils.py
+arggo.egg-info/PKG-INFO
+arggo.egg-info/SOURCES.txt
+arggo.egg-info/dependency_links.txt
+arggo.egg-info/top_level.txt
