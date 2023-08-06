@@ -1,0 +1,7 @@
+include MANIFEST.in
+include LICENSE
+include mypy.ini
+recursive-include bash_like py.typed
+recursive-include tests *.py
+recursive-exclude tests *.txt
+recursive-exclude examples *.py

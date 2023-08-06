@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+mypy.ini
+setup.py
+bash_like/__init__.py
+bash_like/py.typed
+bash_like.egg-info/PKG-INFO
+bash_like.egg-info/SOURCES.txt
+bash_like.egg-info/dependency_links.txt
+bash_like.egg-info/requires.txt
+bash_like.egg-info/top_level.txt
+tests/test_bash_like.py
