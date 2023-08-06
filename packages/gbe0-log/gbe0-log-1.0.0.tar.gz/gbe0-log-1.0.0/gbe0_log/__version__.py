@@ -1,0 +1,8 @@
+__title__ = 'gbe0-log'
+__description__ = 'My standard logging module.'
+__url__ = 'https://github.com/python-modules/gbe0-log'
+__version__ = '1.0.0'
+__author__ = 'gbe0'
+__author_email__ = 'python@gbe0.com'
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2021 gbe0'
