@@ -1,0 +1,174 @@
+{% load static %}
+
+{% load report_tags %}
+
+<html>
+	<head>
+		<script>
+
+		ie4up = nav4up = false;
+		var agt = navigator.userAgent.toLowerCase();
+		var major = parseInt(navigator.appVersion);
+		if ((agt.indexOf('msie') != -1) && (major >= 4))
+		  ie4up = true;
+		if ((agt.indexOf('mozilla') != -1) && (agt.indexOf('spoofer') == -1) && (agt.indexOf('compatible') == -1) && (major >= 4))
+		  nav4up = true;
+		</script>
+		<style>
+		    /*body { -pdf-keep-in-frame-mode: shrink;}*/
+      		.fc1-1 {
+			  color: #000000;
+			  font-size: 20pt;
+			  font-family: Arial;
+			  font-weight: bold;
+			}
+
+			.fc1-4 {
+			  color: #000000;
+			  font-size: 10px;
+			  font-family: Arial;
+			  font-weight: normal;
+			}
+			td.fc1-4 {
+				font-size: 10px;
+				padding:1pt 2pt 0pt 1pt;
+			}
+
+			.fc1-5 {
+			  color: #000000;
+			  font-size: 7PT;
+			  font-family: Arial;
+			  font-weight: bold;
+			}
+
+			/* table.filter-table td {
+				border-top: 1px solid #000;
+				border-right: 1px solid #000;
+			} */
+			table.columns-table th {
+				border-top: 1px solid #000;
+				/* border-left: 1px solid #000; */
+				border-right: 1px solid #000;
+			}
+			table.content-table td {
+				border-top: 1px solid #000;
+				/* border-left: 1px solid #000; */
+				border-right: 1px solid #000;
+			}
+			table.content-table td span {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			/* table.filter-table,
+			table.columns-table,
+			table.content-table {
+				border-left: 2px solid #f00;
+			} */
+			/* table.filter-table .first-td, */
+			table.columns-table .first-td,
+			table.content-table .first-td {
+				border-left: 1px solid #000;
+			}
+
+			@page {
+			    /*@top-right{*/
+       /*             content: "Page " counter(page) " of " counter(pages);*/
+       /*         }*/
+				{% if orientation %}
+				  size: A4 {{orientation}};
+				{% else %}
+				  size: A4 portrait;
+				{% endif %}
+				/* size: A4 portrait; */
+				/*
+					without gutter space for punching
+					portrait:
+						left: 25pt; top: 10pt; width: 560pt; height: 126pt;
+					landscape:
+						left: 22pt; top: 25pt; width: 805pt; height: 96pt;
+				*/
+				{% with p_left=45 p_top=10 p_width=530 p_height=126 %}
+				{% with l_left=22 l_top=40 l_width=805 l_height=96 %}
+				@frame header_frame {           /* Static frame */
+					-pdf-frame-content: header_content;
+          			/* -pdf-frame-border: 1;  */
+					{% if orientation == 'portrait' %}
+						left: {{ p_left }}pt; top: {{ p_top }}pt; width: {{ p_width }}pt; height: {{ p_height }}pt;
+					{% elif orientation == 'landscape' %}
+						left: {{ l_left }}pt; top: {{ l_top }}pt; width: {{ l_width }}pt; height: {{ l_height }}pt;
+					{% endif %}
+				}
+        		@frame filter_frame {           /* Static frame */
+					-pdf-frame-content: filter_content;
+          			/* -pdf-frame-border: 1; */
+					{% if orientation == 'portrait' %}
+						left: {{ p_left }}pt; top: {{ p_top|add:70 }}pt; width: {{p_width}}pt; height: 130pt;
+					{% elif orientation == 'landscape' %}
+						left: {{ l_left }}pt; top: {{ l_top|add:67 }}pt; width: {{ l_width }}pt; height: 130pt;
+					{% endif %}
+				}
+        		@frame col_header_frame {           /* Static frame */
+					-pdf-frame-content: column_header_content;
+          			/* -pdf-frame-border: 1; */
+
+					{% if orientation == 'portrait' %}
+						left: {{ p_left }}pt; width: {{p_width}}pt; height: 30pt;
+						{% if filter|length == 0 %}
+							top: {{ p_top|add:70 }}pt;
+						{% elif filter|length < 3 %}
+							top: {{ p_top|add:84.5 }}pt;
+						{% else %}
+							top: {{ p_top|add:97 }}pt;
+						{% endif %}
+					{% elif orientation == 'landscape' %}
+						left: {{ l_left }}pt; width: {{ l_width }}pt; height: 23pt;
+						{% if filter|length == 0 %}
+							top: {{ l_top|add:75 }}pt;
+						{% elif filter|length < 3 %}
+							top: {{ l_top|add:81.5 }}pt;
+						{% else %}
+							top: {{ l_top|add:94 }}pt;
+						{% endif %}
+					{% endif %}
+				}
+				@frame col1_frame {             /* Content frame 1 */
+					/* -pdf-frame-border: 1; */
+					{% if orientation == 'portrait' %}
+						left: {{ p_left }}pt; width: {{p_width}}pt; height: 690pt;
+						{% if filter|length == 0 %}
+							top: {{ p_top|add:93 }}pt;
+						{% elif filter|length < 3 %}
+							top: {{ p_top|add:107.5 }}pt;
+						{% else %}
+							top: {{ p_top|add:120 }}pt;
+						{% endif %}
+					{% elif orientation == 'landscape' %}
+						left: {{ l_left }}pt; width: {{ l_width }}pt; height: 440pt;
+						{% if filter|length == 0 %}
+							top: {{ l_top|add:98 }}pt;
+						{% elif filter|length < 3 %}
+							top: {{ l_top|add:104.5 }}pt;
+						{% else %}
+							top: {{ l_top|add:117 }}pt;
+						{% endif %}
+					{% endif %}
+				}
+				/* @frame col2_frame {
+					left: 323pt; width: 245pt; top: 90pt; height: 632pt;
+				} */
+				@frame footer_frame {           /* Static frame */
+					-pdf-frame-content: footer_content;
+					left: 25pt; width: 560pt; top: 872pt; height: 20pt;
+				}
+				{% endwith %}
+				{% endwith %}
+			}
+		</style>
+	<head>
+	<body>
+		<div id="header_content">{% include "reports/pageheader/header.html" %}</div>
+		<div>{% include "reports/detail/content.html" %}</div>
+		<div>{% include "reports/pagefooter/footer.html" %}</div>
+	</body>
+</html>
