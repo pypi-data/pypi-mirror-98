@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gdbfs
+Version: 0.2
+Summary: Implement thesis  Lee,J.H., & Oh,S.Y.(2016)Feature selection based on geomteric distance for high-dimensional data. Electronics Letters, 52(6),473-475. 
+Home-page: https://github.com/seo-young-kim/GDBFS_deploy
+Author: seoykim
+Author-email: seoykim996@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/seo-young-kim/GDBFS_deploy.git
+Keywords: gdbfs deploy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
