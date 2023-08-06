@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bitdotio
+Version: 1.0.0b1
+Summary: bit.io Python SDK
+Home-page: https://bit.io/
+Author: bit.io
+Author-email: python@bit.io
+License: UNKNOWN
+Keywords: bit.io,Database,bit.io Python SDK
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+Requires-Dist: psycopg2 (>=2.8.6)
+
+bit.io Python SDK  # noqa: E501
+
+
