@@ -1,0 +1,3 @@
+[console_scripts]
+tintin-sdk = tintin.__main__:main
+
