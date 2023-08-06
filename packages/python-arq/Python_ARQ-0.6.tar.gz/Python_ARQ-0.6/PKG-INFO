@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Python_ARQ
+Version: 0.6
+Summary: Asynchronous Python Wrapper For A.R.Q API. 
+Home-page: https://github.com/thehamkercat/Python_ARQ
+Author: TheHamkerCat
+Author-email: thehamkercat@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: API,ARQ_API,Universal API
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
