@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: tom-fink
+Version: 0.2
+Summary: Fink broker module for the TOM Toolkit
+Home-page: https://github.com/TOMToolkit/tom_fink
+Author: JulienPeloton
+Author-email: peloton@lal.in2p3.fr
+License: UNKNOWN
+Keywords: tomtoolkit,astronomy,astrophysics,cosmology,science,observatory,alert,broker,fink
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+Requires-Dist: tomtoolkit (==2.5.3)
+Requires-Dist: elasticsearch-dsl (~=7.3.0)
+Requires-Dist: markdown
+Provides-Extra: test
+Requires-Dist: factory-boy (<3.3,>=3.1); extra == 'test'
+
+# Fink Alert Broker Module for the TOM Toolkit
+
+[![pypi](https://img.shields.io/pypi/v/tom-fink.svg)](https://pypi.python.org/pypi/tom-fink)
+
+This repository hosts the Fink Alert Broker Module for the TOM Toolkit. Fink is a broker currently connected to ZTF. More information on Fink at https://fink-broker.org/.
+
+As of version 0.2, the module simply uses the Fink REST API to retrieve alerts. Note that the Fink databases are updated once a day with the previous night alert data (hence you do not get live alerts for the moment). Users can perform:
+- Search by ZTF object ID
+- Cone Search
+- Search by Date
+- Search by derived alert class
+- Search by Solar System name
+
+## How to use the Fink module inside your TOM
+
+First, install the module using pip
+
+```bash
+pip install tom-fink
+```
+
+then you need to declare it in your running TOM instance. To do so just add `tom_fink.fink.FinkBroker` to the `TOM_ALERT_CLASSES` in your TOM's `settings.py`:
+
+```python
+TOM_ALERT_CLASSES = [
+  'tom_alerts.brokers.alerce.ALeRCEBroker',
+  ...,
+  'tom_fink.fink.FinkBroker'
+]
+```
+
+and finally relaunch your TOM:
+
+```bash
+./manage.py runserver
+```
+
+## Todo list
+
+- [ ] Add a test suite (preferably running on GitHub Actions)
+- [ ] Add a linter (preferably running on GitHub Actions)
+- [x] Update the Query Form with all API features
+- [ ] Enable querying livestreams using the Fink Kafka client
+
+
