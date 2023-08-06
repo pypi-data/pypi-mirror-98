@@ -1,0 +1,7 @@
+__title__ = 'wageubn'
+__description__ = 'torch implement of WAGEUBN'
+__version__ = '1.0.0'
+__author__ = 'Pannenets F'
+__author_email__ = 'pannenets.f@foxmail.com'
+__license__ = 'BSD-3-Clause License'
+__url__ = 'https://github.com/PannenetsF/WAGEUBN'
