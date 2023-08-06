@@ -1,0 +1,236 @@
+Metadata-Version: 2.1
+Name: lawwenda
+Version: 0.2.82
+Summary: web file manager
+Home-page: https://pseudopolis.eu/wiki/pino/projs/lawwenda
+Author: Josef Hahn
+Author-email: lawwenda@pseudopolis.eu
+License: AGPL-3
+Keywords: python web share file manager system
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/plain
+Requires-Dist: Pillow
+Requires-Dist: werkzeug
+
+User Manual
+***********
+
+
+License
+=======
+
+lawwenda is written by Josef Hahn under the terms of the AGPLv3.
+
+Please read the *LICENSE* file from the package and the Dependencies
+section for included third-party stuff.
+
+
+About
+=====
+
+Lawwenda provides access to a directory in your filesystem by means of
+a web interface. Users can navigate to it with any modern web browser
+and see your files.
+
+For real usage (i.e. "production systems") it is hosted in a *wsgi*
+compatible web server. This is a very common standard for hosting
+Python web applications and is supported by most widespread web server
+daemons.
+
+The most noteworthy features are:
+
+* Comfortable web browser interface that lists the files and
+  subdirectories in a directory, shows some details of them, and
+  allows to open (i.e. "download") them; in a similar way to usual
+  desktop file managers.
+
+* Can be either read-only or also with write access, i.e. uploading,
+  renaming, moving, deleting data.
+
+* Can be password protected or not. In the latter case, your web
+  server may put another authentication method around it.
+
+* Supports some "modern" file attributes like a comment, tags, a
+  rating and a geographic position; backed by "extended attributes" on
+  file system level.
+
+* A configuration specifies one or many "shares" (or none), each one
+  potentially pointing to another directory and with an individual
+  setup (incl. individual passwords).
+
+* Shares can have file exclude criteria (path patterns, tags, ...).
+
+* Shares can have expiration dates.
+
+* User interface works fine on desktop machines and mobile phones.
+
+* Alternatively to the web browser interface, users can connect to a
+  share with a WebDAV client or compatible file manager (modern file
+  managers should be compatible).
+
+* Extensible by plugging in custom Python modules, with a friendly,
+  rich and well documented api.
+
+* Thoroughly designed with security in mind.
+
+
+Up-to-date?
+===========
+
+Are you currently reading from another source than the homepage? Are
+you in doubt if that place is up-to-date? If yes, you should visit
+https://pseudopolis.eu/wiki/pino/projs/lawwenda and check that. You
+are currently reading the manual for version 0.2.82.
+
+
+Maturity
+========
+
+lawwenda is in alpha state.
+
+
+Dependencies
+============
+
+There are external parts that are used by lawwenda. Many thanks to the
+projects and all participants. Some installation methods might handle
+dependency installation automatically, while others leave that up to
+you.
+
+[image: icon_python][image] *Python 3.7*, required
+
+[image: icon_package][image] *werkzeug*, required : see here.
+
+[image: icon_linux][image] *Typical GNU/Linux Desktop*, recommended
+
+[image: icon_artwork][image] *font 'Symbola'*, included : for logo
+symbol; free for use; copied from here.
+
+[image: icon_artwork][image] *banner image*, included :
+_meta/background.jpg; license CC BY-SA 4.0; by 'Laslovarga', copied
+from here.
+
+[image: icon_artwork][image] *all files in /_meta*, included : if not
+mentioned otherwise, Copyright 2021 Josef Hahn under license CC BY-SA
+3.0 license.
+
+
+Introduction
+============
+
+Please read how to make Lawwenda ready for the first steps in
+Appendix: Installation.
+
+
+First Steps
+-----------
+
+In order to make any use of Lawwenda, it is required to create at
+least one file share. This can be done by executing this on a
+terminal:
+
+   lawwenda_cli add_share myshare /path/that/i/want/to/share
+
+This assumes */path/that/i/want/to/share* to be the directory you want
+to share. *myshare* is the share name and can be chosen freely. It
+will ask you to choose a password (just leave empty for no password).
+
+Then you need a web server that hosts your Lawwenda installation. If
+you have skipped this part of Appendix: Installation, you can get one
+by executing this:
+
+   lawwenda_cli run_dev_server
+
+This will print the root address of a tiny local web server that hosts
+your Lawwenda installation for the moment. It will not answer anything
+useful, but you need it in the following step in order to access your
+shares.
+
+Warning:
+
+  Be aware that starting this server potentially makes data available
+  to parties that should not have access (e.g. if 3rd parties have
+  access to your local network services). In any case, for different
+  reasons, do not use this variant for more than some trying, testing,
+  developing!
+
+If your web server provides your Lawwenda installation at
+*https://example.com/shares/*, you can access your new *myshare* share
+at *https://example.com/shares/myshare/*. The base address might be
+anything, and just the share name has to be appended.
+
+There are some optional parameters that can be specified in a
+*lawwenda_cli add_share* call. They are a large part of Lawwenda's
+versatility. Get more details by executing:
+
+   lawwenda_cli add_share -h
+
+Once you have Lawwenda running in a web server and you have added at
+least one share, you can browse to its share url and start using it.
+Read the User Interface Quickstart Guide for more details about the
+user interface.
+
+
+Appendix: Installation
+======================
+
+Install Lawwenda via the installation package for your environment, if
+a suitable one exists for download. This also takes care of installing
+dependencies and doing preparation (unless mentioned otherwise in the
+installation procedure). It is possible (and not hard) to use the bare
+Source Package, but beyond this documentation.
+
+For real usage it is highly recommended to host Lawwenda in a real web
+server. This makes use of the *wsgi* interface, which is commonly used
+for hosting Python based web application. You can skip this for now at
+come back somewhat later if you just want to try it out, and make the
+First Steps.
+
+The exact steps for adding a wsgi application to a web server depend
+on the daemon that is used. Please read the documentation of your web
+server.
+
+You will need to specify the location of a wsgi script during
+configuration. Create this file in a place that is convenient for you
+and fill it with the content that is printed by this command line:
+
+   lawwenda_cli generate_wsgi
+
+For example, the steps for Apache 2.4 are roughly the following:
+
+* Install and enable *mod_wsgi*.
+
+* Add a snippet like this inside some *VirtualHost* in your Apache
+  configuration:
+
+     WSGIScriptAlias /shares /srv/lawwenda/lawwenda.wsgi
+     <Directory /srv/lawwenda>
+         Require all granted
+     </Directory>
+
+  The */shares* path is the path segment to append to the VirtualHost
+  root url in order to reach Lawwenda. That url might then be
+  *https://example.com/shares*. Note that this url will not return a
+  useful answer. This is okay, the documentation will explain why.
+
+  The */srv/lawwenda/lawwenda.wsgi* path (and its parent path in
+  *Directory*) can be chosen freely. This file will be created in the
+  next step. The following assumes the paths as in the snippet.
+
+* Execute this commands on a terminal:
+
+     mkdir -p /srv/lawwenda
+     lawwenda_cli generate_wsgi > /srv/lawwenda/lawwenda.wsgi
+
+* Adapt as needed to match your security requirements. :)
+
+* Restart Apache.
+
+Note:
+
+  The web server must be privileged to access the directories that you
+  are going to share.
+
+
