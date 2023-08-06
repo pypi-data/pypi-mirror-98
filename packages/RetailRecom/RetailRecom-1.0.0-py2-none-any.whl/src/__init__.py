@@ -1,0 +1,1 @@
+from PyRec.recommendation import setup_environment

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: RetailRecom
+Version: 1.0.0
+Summary: Simple Recommendation System in Python3+ (Using Collaborative Filtering)
+Home-page: UNKNOWN
+Author: Shashimal Senarath
+Author-email: UNKNOWN
+License: MIT
+Keywords: Recommendation Retail
+Platform: UNKNOWN
+Requires-Dist: pyspark
+Requires-Dist: elasticsearch
+Requires-Dist: os
+
+UNKNOWN
+
+
