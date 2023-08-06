@@ -1,0 +1,2 @@
+recursive-include yfcc100m *.py
+include LICENSE

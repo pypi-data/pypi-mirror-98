@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+yfcc100m/__init__.py
+yfcc100m/convert.py
+yfcc100m/convert_metadata.py
+yfcc100m/download.py
+yfcc100m/tools.py
+yfcc100m/vars.py
+yfcc100m.egg-info/PKG-INFO
+yfcc100m.egg-info/SOURCES.txt
+yfcc100m.egg-info/dependency_links.txt
+yfcc100m.egg-info/not-zip-safe
+yfcc100m.egg-info/requires.txt
+yfcc100m.egg-info/top_level.txt
