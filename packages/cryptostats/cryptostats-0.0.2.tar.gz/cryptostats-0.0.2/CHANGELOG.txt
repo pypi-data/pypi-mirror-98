@@ -1,0 +1,6 @@
+Change Log
+==========
+
+0.0.2 (14/03/2021)
+-------------------
+-You need to include your api key in the __init__.py file.

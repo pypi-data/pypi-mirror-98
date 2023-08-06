@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: cryptostats
+Version: 0.0.2
+Summary: A simple api wrapper for the nomics api to get crypto stats
+Home-page: UNKNOWN
+Author: Niklas Schellong
+Author-email: nik.schellong.04@gmx.de
+License: MIT
+Description: This is a simple api wrapper for the nomics api to get current crypto stats like market cap, logo, high, name etc
+        you have to include your api key.
+        
+        Change Log
+        ==========
+        
+        0.0.2 (14/03/2021)
+        -------------------
+        -You need to include your api key in the __init__.py file.
+Keywords: crypto
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
