@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: performance-data-collection
+Version: 1.0.0
+Summary: Collect performance data for PC applications
+Home-page: https://gitee.com/chen-xiaokai/windows-performance-collection.git
+Author: ['chengxaiokai', 'zhoujunjie']
+Author-email: 747469442@qq.com
+License: Windows MacOS
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: pyecharts
+Requires-Dist: psutil
+Requires-Dist: pandas
+Requires-Dist: xlrd
+Requires-Dist: xlwt
+Requires-Dist: openpyxl
+
+# Example Package
+The tool can collect the CPU and memory of a process in the PC system and save to the local, support Mac, Windows.
+
+#The package name
+process_name = packagename
+
+#In seconds
+collect_time = seconds
+
+
+[联系作者](2025331266@qq.com,747469442@qq.com)
+
+
+

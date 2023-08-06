@@ -1,0 +1,9 @@
+performance_data_collection/BaseCollect.py,sha256=xbVlndgak4RK5cPaXroiru38IVR5EblKBIJBtucuBrU,5891
+performance_data_collection/MacCollect.py,sha256=POPq-GkWX2__04l7hMsjlsB9FjQuPYYbMxfYoj_3b8U,229
+performance_data_collection/WindowsCollect.py,sha256=i8-zbt8hn8kBBDrfXbyEi1vpA1W-dJ8C-AIMAEhy5k4,230
+performance_data_collection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+performance_data_collection-1.0.0.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+performance_data_collection-1.0.0.dist-info/METADATA,sha256=pLPL40P_9LrvSvYR-YVbPWehMCVtY0tclDwcmutWk0c,1113
+performance_data_collection-1.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+performance_data_collection-1.0.0.dist-info/top_level.txt,sha256=P5P3jjNaxOJYyhYsJiG9BATnSxoUjSzhb2yZqNfgIrE,28
+performance_data_collection-1.0.0.dist-info/RECORD,,
