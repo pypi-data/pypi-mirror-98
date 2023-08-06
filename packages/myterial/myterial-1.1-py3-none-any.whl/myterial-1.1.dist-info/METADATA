@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: myterial
+Version: 1.1
+Summary: Easy acces to material colors hex codes
+Home-page: https://github.com/FedeClaudi/myterial
+Author: Federico Claudi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# myterial
+Just an easy way to access material colors' hex codes
+
+### Installation
+```
+pip install myterial
+```
+
+
+### Usage
+```python
+from myterial import salmon
+```
+
+### Colors:
+<img src='colors.PNG' width="600px"></img>
+
+
