@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: django-ssh
+Version: 0.2.3
+Summary: A basic Django app for storing SSH keys
+Home-page: https://eyl.io/
+Author: Jonathan Eyolfson
+Author-email: eyolfson@gmail.com
+License: AGPL-3.0+
+Description: # Django SSH
+        
+        A basic Django app for storing SSH keys
+        
+        ## Testing
+        
+            cd tests
+            PYTHONPATH=.. python runtests.py
+        
+        ## TODO
+        
+        - [ ] Change fingerprint from MD5 to SHA256 or SHA1
+        
+        ## License
+        
+        All code is licensed under GPLv3.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
