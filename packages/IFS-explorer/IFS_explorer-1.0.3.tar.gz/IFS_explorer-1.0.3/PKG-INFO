@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: IFS_explorer
+Version: 1.0.3
+Summary: A python3 interactive visualization tool for integral field spectroscopy data
+Home-page: https://github.com/frosales258/IFS_explorer
+Author: Rosales-Ortega F. F., Angel Perez A., Xolo Tlapanco N., Sánchez. S. F.
+Author-email: frosales@cantab.net
+License: MIT
+Description: # IFS explorer
+        _A python3 visualization tool for integral field spectroscopy (IFS) data_
+        
+        ### Installation
+        To install the IFS_explorer package:
+        ```
+        pip install IFS-explorer
+        ```
+        or:
+        ```
+        pip3 install IFS-explorer
+        ```
+        depending on the version.
+        
+        ### Usage
+        Once installed, run in any python terminal:
+        ```
+        from IFS_explorer import *
+        x = IFS_explorer()
+        ```
+        
+        Work in progress, for comments and contributions drop an email to: frosales@cantab.net
+        
+        
+Keywords: IFS,FITS Images,Astropy,3D cube
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

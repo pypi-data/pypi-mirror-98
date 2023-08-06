@@ -1,0 +1,7 @@
+include README.md
+include LICENSE.txt
+include IFS_explorer/Img/*
+include IFS_explorer/Img/*.png
+include IFS_explorer/Img/*.ico
+include IFS_explorer/Filters/*.txt
+include IFS_explorer/Filters/*
