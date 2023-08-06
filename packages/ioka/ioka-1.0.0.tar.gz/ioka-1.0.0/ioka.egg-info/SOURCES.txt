@@ -1,0 +1,11 @@
+README.md
+setup.py
+ioka/__init__.py
+ioka/client.py
+ioka/errors.py
+ioka/schemas.py
+ioka.egg-info/PKG-INFO
+ioka.egg-info/SOURCES.txt
+ioka.egg-info/dependency_links.txt
+ioka.egg-info/requires.txt
+ioka.egg-info/top_level.txt
