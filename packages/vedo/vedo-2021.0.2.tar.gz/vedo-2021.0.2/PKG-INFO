@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: vedo
+Version: 2021.0.2
+Summary: A python module for scientific analysis and visualization of 3D objects and point clouds based on VTK.
+Home-page: https://github.com/marcomusy/vedo
+Author: Marco Musy
+Author-email: marco.musy@embl.es
+License: MIT
+Description: A python module for scientific visualization, analysis of 3D objects and point clouds based on VTK. Check out https://vedo.embl.es for documentation.
+Keywords: vtk 3D visualization mesh numpy
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
