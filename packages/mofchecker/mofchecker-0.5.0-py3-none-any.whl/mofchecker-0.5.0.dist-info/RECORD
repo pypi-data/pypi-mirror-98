@@ -1,0 +1,14 @@
+mofchecker/__init__.py,sha256=S-Jp-z_092wu4PxxA4dlNDcKoGh_KSr5GFN1LApigmU,24055
+mofchecker/_version.py,sha256=GUL0Nm9H9gdJ6078FMUI21VMs-S8c74Evly3R5yvAX8,498
+mofchecker/cli.py,sha256=wGC2YE1iYCbVlzA_1X01qRt-bSW6FYbXN6esEooEeF0,1901
+mofchecker/definitions.py,sha256=cjCGz6TzoOg4xYwrS1usBGhPiAKKM0JkOyO-JTKNG-w,4589
+mofchecker/utils.py,sha256=fRaXxPsvzLXUyZZ6BXMjANbW0bXqneY7nZLbhSjLfFs,10065
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=VamWvedF7bIKnSO5ATJlqf5wRU8xpmaxLst2bHEihxU,3665
+tests/test_mofchecker.py,sha256=a3B08b2q91u2Zrn0dkI5zvvf5iyKQ_EMh2QPud2RQC8,6774
+mofchecker-0.5.0.dist-info/LICENSE,sha256=AWJwkKTCpdTb0qGqIMxFykttjbHuffyZ3BJ5KNBF2ao,1064
+mofchecker-0.5.0.dist-info/METADATA,sha256=mVRGF9H8InQbhYbN5XOEmRkJG2tGCVVaD3wBy8PpxT8,3576
+mofchecker-0.5.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+mofchecker-0.5.0.dist-info/entry_points.txt,sha256=ly93iRZhog0442LCmnjaDmNZ4IVyrcDDcp4XbMwGqcU,52
+mofchecker-0.5.0.dist-info/top_level.txt,sha256=oCsp0P_KRivn3l8F2QnNetDfbKvXtWvB9QbRbo4C-ro,17
+mofchecker-0.5.0.dist-info/RECORD,,
