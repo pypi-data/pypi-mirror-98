@@ -1,0 +1,9 @@
+deepl_grpc/__init__.py,sha256=5xvN_gb61nKeq5TER5dSfcArTP3DVasZGN_MQq5dNpA,23
+deepl_grpc/deepl_client.py,sha256=qwfNMlOBSAhfpSuvzBR5rz5i0iyOtK2cKZtmpEZIwO0,2722
+deepl_grpc/deepl_pb2.py,sha256=wRhkdk-zX0k18xBiJCi_joDELMyzTPBXYOXk-R3Nvvc,6485
+deepl_grpc/deepl_pb2_grpc.py,sha256=Ijnu3k3UArWvNY_QdpKsdqsHz_Ov_FAr9GJEbcb35W0,2420
+deepl_grpc/deepl_server.py,sha256=TwED_ZosVoIV64igMeZwKHVLqoMmhr1Gv7hw8qAMqhI,3866
+deepl_grpc/deepl_server.py.portalocker.lock,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepl_grpc-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+deepl_grpc-0.1.1.dist-info/METADATA,sha256=uQRhBBpSeGQBu6Svd9eBlYN4NDGWn13_3OZBfc7flp8,5059
+deepl_grpc-0.1.1.dist-info/RECORD,,
