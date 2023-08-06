@@ -1,0 +1,4 @@
+ops
+# {{ lb_lib_url }}
+# loadbalancer-interface
+file:///home/johnsca/juju/libs/loadbalancer-interface/dist/loadbalancer_interface-1.0.7.tar.gz#egg=loadbalancer-interface
