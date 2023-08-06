@@ -1,0 +1,12 @@
+PyLambo-1.0.1.dist-info/DESCRIPTION.rst,sha256=Q4cbqqha6amsoFwvpwjUQqj5qtQpiH1EmKqrFpUXwik,12
+PyLambo-1.0.1.dist-info/METADATA,sha256=RJGDI3ph2x3NZ2U_fivpmHmEgrBkpl_8BDYfZbQ-aH0,582
+PyLambo-1.0.1.dist-info/RECORD,,
+PyLambo-1.0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+PyLambo-1.0.1.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+PyLambo-1.0.1.dist-info/metadata.json,sha256=AmbbRMsjaAjPcbGlr6S9_bQa-VSFvPuRbK2p_Ice828,898
+PyLambo-1.0.1.dist-info/top_level.txt,sha256=zVRv6FulXZWKf9Gycz9vjxul5OCZ3fCq2Attdwsu7Z4,7
+reader/__init__.py,sha256=GcgQIYMOlVaOSIVe2K-svWmp_H7-BYAWy_LTlDTxnRc,701
+reader/__main__.py,sha256=K-CTEt4CNus9wnwDQha8Ga_7xfsXX1AmTtAomiIWe5I,1620
+reader/config.cfg,sha256=m7yDayr3BufhROgMAcwwsgVASRBia1Ds8awL1ZDLuAo,45
+reader/feed.py,sha256=cjHUZa7_ByfKGEEqmdVOCWJ6zFxdTe9dEs_vGUy31R0,1605
+reader/viewer.py,sha256=HwDQNGKuMmCHWBIrwQSb5nUkk1X-2O8y95NXQbuoz0g,514
