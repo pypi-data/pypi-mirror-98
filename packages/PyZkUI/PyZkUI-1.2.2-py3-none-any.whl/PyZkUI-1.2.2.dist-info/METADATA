@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: PyZkUI
+Version: 1.2.2
+Summary: A Python Zookeeper UI.
+Home-page: https://github.com/Harpsichord1207/PyZkUI
+Author: Harpsichord
+Author-email: tliu1217@163.com
+License: MPL 2.0
+Keywords: Flask Zookeeper UI
+Platform: any
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: waitress
+Requires-Dist: kazoo
+Requires-Dist: Flask-SQLAlchemy
+
+# PyZkUI
+
+**A Simple Zookeeper UI tool.**   
+Backend: Python/Flask/Kazoo/Waitress.  
+Frontend: Bootstrap/jQuery.
+
+
+### Installation
+
+- `pip install pyzkui`
+
+
+### Run
+
+- execute `PyZkServer` to start a server
+    - use `--host` to bind host, default is `127.0.0.1`
+    - use `--port` to set port, default is `8088`
+    - use `--debug` to active flask debug mode, default is `False`
+    - use `--threads` to set threads num, default is `2`, can not be used in debug mode
+
