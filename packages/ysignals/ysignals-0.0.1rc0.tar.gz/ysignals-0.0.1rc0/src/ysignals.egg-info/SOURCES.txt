@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+src/ysignals/__about__.py
+src/ysignals/__init__.py
+src/ysignals/__main__.py
+src/ysignals/features.py
+src/ysignals.egg-info/PKG-INFO
+src/ysignals.egg-info/SOURCES.txt
+src/ysignals.egg-info/dependency_links.txt
+src/ysignals.egg-info/entry_points.txt
+src/ysignals.egg-info/requires.txt
+src/ysignals.egg-info/top_level.txt
+src/ysignals.egg-info/zip-safe
+src/ysignals/data/__init__.py
+src/ysignals/data/yahoo.py

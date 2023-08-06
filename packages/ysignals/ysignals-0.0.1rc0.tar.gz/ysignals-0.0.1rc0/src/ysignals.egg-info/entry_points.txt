@@ -1,0 +1,3 @@
+[console_scripts]
+ysignals = ysignals.__main__:main
+
