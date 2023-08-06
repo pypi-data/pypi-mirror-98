@@ -1,0 +1,11 @@
+d8s_grammars/__init__.py,sha256=xfw-M2kKAfVeYaH9sKxI8wIVrus4z17AVFqX1liXsCU,634
+d8s_grammars/grammars.py,sha256=DUHNOFqRPSTNA6vGtYftHarFiaHb-cFF7RhJWN52R8A,5989
+d8s_grammars/grammars_temp_utils.py,sha256=-MojzpD84XC7KN7xoLr9bubbQICmTZK4gJgx4uPIHIc,262
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_grammars.py,sha256=r__-QO7b_r7ekebMWh6YrsrbJBKU8rI514qd4CUUK1s,15204
+d8s_grammars-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_grammars-0.2.0.dist-info/METADATA,sha256=OEItHeos7f1i-p6aEbC_eCxbiCeWK7Q6-0UgIKrBJjA,1938
+d8s_grammars-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_grammars-0.2.0.dist-info/top_level.txt,sha256=vUeWFUhg-AxOlmHYajVWp2_zbcKhR9fBZF_MJtY9bXY,19
+d8s_grammars-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_grammars-0.2.0.dist-info/RECORD,,
