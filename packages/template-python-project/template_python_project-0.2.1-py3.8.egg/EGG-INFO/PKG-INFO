@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: template-python-project
+Version: 0.2.1
+Summary: Template test for python bin
+Home-page: https://github.com/ulphidius/template_python_project
+Author: ulphidius
+License: MIT
+Description: # template_python_project
+        
+        This is a sample application for test deployment on pypi.
+        You can use it as reference but **i don't recommend its use**.
+        
+        ## Install
+        
+        For install this app you need to have **setuptools** in your python environment.
+        
+        ```sh
+        # We assume that pip is install and is connected to python 3
+        pip install --editable .
+        # OR
+        pip install template-python-project
+        ```
+        
+        ## Use
+        
+        For further information use *--help* option.
+        
+        ```sh
+        template-python-project --compute-type MUL --first 1 --second 2
+        ```
+        
+        ## Deploy
+        
+        You need to install **twine** for deploy on pypi.
+        You need to install **wheel** to have a valid binary for deployment.
+        
+        ```sh
+        # We assume that pip is install and is connected to python 3
+        pip install twine
+        pip install wheel
+        ```
+        
+        After the installation of the dependencies.
+        You need to use **setup.py** for build the project.
+        You need to use the **twine** command for the deployment.
+        
+        ```sh
+        # We assume that pip is install and is connected to python 3
+        # We assume that python is install and is a symbolic link to python 3
+        python setup.py bdist_wheel
+        twine upload dist/*
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
