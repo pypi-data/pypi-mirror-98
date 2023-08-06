@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -eux
+
+SRC_TREE_ROOT="$1"
+NEWS_FRAGMENTS_DIR="src/midiroute/newsfragments/"
+
+if ! NEW_VERSION=$(python ci/bump_version.py -vvv -n "${NEWS_FRAGMENTS_DIR}"); then
+    printf "No newsfragments detected. Exiting."
+    exit 0
+fi
+
+towncrier --yes --version "${NEW_VERSION}"
+git add CHANGELOG.md
+
+git commit -m "Creating release ${NEW_VERSION}"
+git tag "${NEW_VERSION}"
+
+printf "Pushing tag and master branch to remote\n"
+git push "https://${GIT_TOKEN}@github.com/atticave/midiroute.git" master
+git push "https://${GIT_TOKEN}@github.com/atticave/midiroute.git" "${NEW_VERSION}"

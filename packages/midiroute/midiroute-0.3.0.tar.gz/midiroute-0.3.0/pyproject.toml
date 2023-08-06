@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4"]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.run]
+parallel = true
+branch = true
+source = ["midiroute"]
+
+[tool.coverage.paths]
+source = ["src", ".tox/*/site-packages"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.towncrier]
+package = "midiroute"
+package_dir = "src"
+filename = "CHANGELOG.md"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
