@@ -1,0 +1,14 @@
+README.md
+setup.py
+pip_upgrade/__init__.py
+pip_upgrade/dependencies_base.py
+pip_upgrade/main.py
+pip_upgrade/tool.py
+pip_upgrade/utils.py
+pip_upgrade/version_checker.py
+pip_upgrade_tool.egg-info/PKG-INFO
+pip_upgrade_tool.egg-info/SOURCES.txt
+pip_upgrade_tool.egg-info/dependency_links.txt
+pip_upgrade_tool.egg-info/entry_points.txt
+pip_upgrade_tool.egg-info/requires.txt
+pip_upgrade_tool.egg-info/top_level.txt
