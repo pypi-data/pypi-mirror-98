@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+dnfile/__init__.py
+dnfile/base.py
+dnfile/codedindex.py
+dnfile/enums.py
+dnfile/errors.py
+dnfile/mdtable.py
+dnfile/stream.py
+dnfile/utils.py
+dnfile.egg-info/PKG-INFO
+dnfile.egg-info/SOURCES.txt
+dnfile.egg-info/dependency_links.txt
+dnfile.egg-info/not-zip-safe
+dnfile.egg-info/requires.txt
+dnfile.egg-info/top_level.txt
