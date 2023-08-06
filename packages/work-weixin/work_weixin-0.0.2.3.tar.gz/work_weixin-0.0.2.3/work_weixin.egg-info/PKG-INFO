@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: work-weixin
+Version: 0.0.2.3
+Summary: 企业微信开发接口
+Home-page: https://github.com/haifengat/work_weixin
+Author: HaiFeng
+Author-email: haifengat@vip.qq.com
+License: MIT License
+Description: # 企业微信接口
+        
+        ### 项目介绍
+        封装企业微信接口,发送消息.
+        
+        
+        ### 安装教程
+        上传
+        ```bash
+        export VERSION=0.0.2.3
+        python setup.py sdist && twine upload -u haifengat dist/*$VERSION*.gz && \
+        python setup.py bdist_wheel && twine upload -u haifengat dist/*$VERSION*.whl
+        ```
+        
+        ` pip install work_weixin `
+        
+        ### 使用说明
+        
+        #### launch.json
+        ```json
+        {
+            // Use IntelliSense to learn about possible attributes.
+            // Hover to view descriptions of existing attributes.
+            // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+            "version": "0.2.0",
+            "configurations": [
+                {
+                    "name": "Python: Current File",
+                    "type": "python",
+                    "request": "launch",
+                    "program": "main.py",
+                    "cwd": "${workspaceFolder}",
+                    "env": {
+                        "corpid": "wxxxxxxxxxxxxxxxxxxx",
+                        "agentid": "nnnnnnnn",
+                        "secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                    },
+                    "console": "integratedTerminal"
+                }
+            ]
+        }
+        ```
+        
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
