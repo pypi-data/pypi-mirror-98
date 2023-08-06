@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cloudstore"
+version = "0.3.0"
+description = ""
+authors = ["unrahul <rahulunair@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+boto3 = "^1.17.3"
+google-cloud-storage = "^1.35.1"
+azure-storage-blob = "^12.7.1"
+tqdm = "^4.56.2"
+pylint = "^2.7.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^20.8b1", allow-prereleases = true}
+icecream = {version = "^2.1.0", allow-prereleases = true}
+
+[tool.poetry.scripts]
+haxo = "cloudstore.console:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

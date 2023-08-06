@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cloudstore
+Version: 0.3.0
+Summary: 
+Author: unrahul
+Author-email: rahulunair@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: azure-storage-blob (>=12.7.1,<13.0.0)
+Requires-Dist: boto3 (>=1.17.3,<2.0.0)
+Requires-Dist: google-cloud-storage (>=1.35.1,<2.0.0)
+Requires-Dist: pylint (>=2.7.2,<3.0.0)
+Requires-Dist: tqdm (>=4.56.2,<5.0.0)
