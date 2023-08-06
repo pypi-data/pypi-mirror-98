@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: bentobox
+Version: 0.1.1.dev5
+Summary: SDK for Bentobox
+Home-page: https://github.com/joeltio/bento-box
+Author: The Bentobox Authors
+Author-email: mrzzy.dev@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/joeltio/bento-box
+Project-URL: Documentation, https://github.com/joeltio/bento-box
+Project-URL: Source Code, https://github.com/joeltio/bento-box
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: gast (==0.4.0)
+Requires-Dist: grpcio (==1.33.2)
+Requires-Dist: protobuf (==3.14.0)
+Requires-Dist: astunparse (==1.6.3)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: PyYAML (==5.3.1)
+
+# Bento Box SDK
+SDK Component for Bentobox
+
+
+
