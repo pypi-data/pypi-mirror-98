@@ -1,0 +1,3 @@
+[pytest11]
+owmeta_core_fixtures = owmeta_pytest_plugin
+

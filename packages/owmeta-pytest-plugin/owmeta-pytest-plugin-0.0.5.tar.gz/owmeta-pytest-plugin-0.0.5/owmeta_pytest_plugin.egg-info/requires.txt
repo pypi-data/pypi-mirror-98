@@ -1,0 +1,2 @@
+owmeta-core>=0.14.0.dev0
+pytest
