@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyintellify
+Version: 1.6
+Summary: Package to standerdize and beautify matplotlib and seaborn graphs
+Home-page: UNKNOWN
+Author: Ansh Bordia
+Author-email: <ansh.bordial@intellify.com.au>
+License: UNKNOWN
+Keywords: python,matplotlib,beautiful graphs,seaborn
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Dist: matplotlib
+
+Sets default for fonts, axes, color schemes, ticks, legend across matplotlib
+
+
