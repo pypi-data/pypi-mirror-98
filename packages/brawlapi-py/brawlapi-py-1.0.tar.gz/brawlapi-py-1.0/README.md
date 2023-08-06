@@ -1,0 +1,19 @@
+# brawlapi
+Simple python wrapper for the Brawl Stars API!
+This module uses: brawlapi.com (Brawlify.com), brawlstats.
+## Requirements
+- Python version: 3.6+
+- Python Modules: requests, json, os
+- OS: Windows, Linux, Android, MacOS
+
+## Installing and Using 
+You can use this API in two ways:
+1. Download and place the ```brawlapi.py``` file in the directory. Then import the file to the script: ```import brawlapi```.
+2. Use pip: ```pip install brawlapi-py``` and import to code: ```import brawlapi```.
+
+## Authorization
+To use this API you need access token from here: https://developer.brawlstars.com/#/account <br> Use this function to authenticate: 
+
+```bs = brawlapi.BrawlApi()```
+```bs.BrawlSession('token')```
+
