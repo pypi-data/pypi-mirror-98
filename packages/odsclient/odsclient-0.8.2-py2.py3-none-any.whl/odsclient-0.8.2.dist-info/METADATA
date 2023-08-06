@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: odsclient
+Version: 0.8.2
+Summary: A nonofficial client for OpenDataSoft API.
+Home-page: https://github.com/smarie/python-odsclient
+Author: Sylvain MARIE <sylvain.marie@se.com>
+Maintainer: Sylvain MARIE <sylvain.marie@se.com>
+License: BSD 3-Clause
+Download-URL: https://github.com/smarie/python-odsclient/tarball/0.8.2
+Keywords: OpenDataSoft open data soft ods client API dataset download csv json cache
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pathlib2 ; python_version < "3.2"
+
+# python-odsclient
+
+*A nonofficial client for OpenDataSoft API.*
+
+[![Python versions](https://img.shields.io/pypi/pyversions/odsclient.svg)](https://pypi.python.org/pypi/odsclient/) [![Build Status](https://github.com/smarie/python-odsclient/actions/workflows/base.yml/badge.svg)](https://github.com/smarie/python-odsclient/actions/workflows/base.yml) [![Tests Status](https://smarie.github.io/python-odsclient/junit/junit-badge.svg?dummy=8484744)](https://smarie.github.io/python-odsclient/junit/report.html) [![codecov](https://codecov.io/gh/smarie/python-odsclient/branch/master/graph/badge.svg)](https://codecov.io/gh/smarie/python-odsclient)
+
+[![Documentation](https://img.shields.io/badge/doc-latest-blue.svg)](https://smarie.github.io/python-odsclient/) [![PyPI](https://img.shields.io/pypi/v/odsclient.svg)](https://pypi.python.org/pypi/odsclient/) [![Downloads](https://pepy.tech/badge/odsclient)](https://pepy.tech/project/odsclient) [![Downloads per week](https://pepy.tech/badge/odsclient/week)](https://pepy.tech/project/odsclient) [![GitHub stars](https://img.shields.io/github/stars/smarie/python-odsclient.svg)](https://github.com/smarie/python-odsclient/stargazers)
+
+The documentation for users is available here: [https://smarie.github.io/python-odsclient/](https://smarie.github.io/python-odsclient/)
+
+A readme for developers is available here: [https://github.com/smarie/python-odsclient](https://github.com/smarie/python-odsclient)
+
+
