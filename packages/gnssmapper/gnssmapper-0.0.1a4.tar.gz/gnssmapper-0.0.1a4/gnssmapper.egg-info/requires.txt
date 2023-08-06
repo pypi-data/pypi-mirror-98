@@ -1,0 +1,6 @@
+geopandas>=0.8
+pygeos>=0.9
+scipy
+numpy
+shapely
+pyproj>=2.2
