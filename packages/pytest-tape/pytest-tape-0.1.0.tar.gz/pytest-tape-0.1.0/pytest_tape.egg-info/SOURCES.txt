@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_tape.py
+setup.py
+pytest_tape.egg-info/PKG-INFO
+pytest_tape.egg-info/SOURCES.txt
+pytest_tape.egg-info/dependency_links.txt
+pytest_tape.egg-info/entry_points.txt
+pytest_tape.egg-info/requires.txt
+pytest_tape.egg-info/top_level.txt

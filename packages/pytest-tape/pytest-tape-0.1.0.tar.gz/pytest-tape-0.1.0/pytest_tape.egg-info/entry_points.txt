@@ -1,0 +1,3 @@
+[pytest11]
+tape = pytest_tape
+
