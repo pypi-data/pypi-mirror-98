@@ -1,0 +1,6 @@
+base_processor==0.0.2
+sklearn
+pandas
+numpy
+spacy
+feather-format
