@@ -1,0 +1,8 @@
+logchain/__init__.py,sha256=LpDiGtiIoVw_3hQfEAkS7uMckhSeJYv5Kqv74mNkRM8,2515
+logchain/formatters/Basic.py,sha256=lNyrvdjhVs0PKp0smpjTYYAdVBf_K39xgYPeyiljB8w,3004
+logchain/formatters/Json.py,sha256=uEitjX7Gc2XMjoFHZEMqp6nnWHyrqZDCOIb2H_SoPEk,1028
+logchain/formatters/__init__.py,sha256=t3ODNrr5VSWXVYvmj9HStIMp5JJsQrhdBzZiH5txfIc,70
+logchain-1.0.0.dist-info/LICENSE,sha256=tINXjjm5c3L1PvxSgiWkVFcLZ00y_41-P-OKJTnkOcE,733
+logchain-1.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+logchain-1.0.0.dist-info/METADATA,sha256=1dU7pCr2RcCUoSdYZufEkNOI8qH80gttoVn2Va5Spnk,8433
+logchain-1.0.0.dist-info/RECORD,,
