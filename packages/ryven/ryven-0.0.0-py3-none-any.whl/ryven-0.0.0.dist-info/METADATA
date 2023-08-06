@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ryven
+Version: 0.0.0
+Summary: Flow-based visual scripting editor for Python
+Home-page: UNKNOWN
+Author: Leon Thomm
+Author-email: l.thomm@mailbox.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: PySide2
+
+UNKNOWN
+
+
