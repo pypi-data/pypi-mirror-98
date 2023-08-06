@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: modoo
+Version: 0.1.1
+Summary: a CLI tool set for Modoo Corpus build
+Author: Yeonwoo Kim
+Author-email: wiskingdom@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: jsonschema (>=3.2.0,<4.0.0)
+Requires-Dist: openpyxl (>=3.0.7,<4.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)

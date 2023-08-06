@@ -1,0 +1,14 @@
+modoo/__init__.py,sha256=zGU39ZwaRkNKxWLnAB7Zte9ZtfyfMEsBJp-bHUfQTyA,23
+modoo/adddocmeta.py,sha256=ZqeT3-IvKa797tql4oedp2s7E8ZBMDmO-mvpliM1NB8,1079
+modoo/cli.py,sha256=mlhgVlx3M8Gmn1RiWZ4junvdbqDgrcm_r9-vHRft1zQ,1115
+modoo/convid.py,sha256=xbk12R-ZB-38X_iqowYoww2M2fmDYaLVZnXCy-HNf6M,1381
+modoo/fixid.py,sha256=tfSdgDD_Vsp1sMeDKnab8NXcQvzApv50ZoQAnsozFQc,1111
+modoo/idfuncs.py,sha256=sSAZwkvMGYih4bROXRBamI3tY4jkoIgLcoGzavGF890,3341
+modoo/mapid.py,sha256=M53o1MKuC816xEAZ10lmWUqH8NszYEgSL0B9d1MFW2k,1526
+modoo/mergeza.py,sha256=dI75_pYp8tXHofZY-Ry6Hehz7rT5IvJqTvGCRahDvpo,1304
+modoo/validate.py,sha256=7YeuL0ygeAZh8sY3oqsFbO2nFHuP_1rvSid8HYdXQUM,605
+modoo/zafuncs.py,sha256=YBUGCfgXw7YdnfLPgiAZqFoa6x7rPFAJ81MRcJy-wj8,2125
+modoo-0.1.1.dist-info/entry_points.txt,sha256=iWQik54I5wuRsw3VHgrfhe6-ozF8bfcSJodqVLq4GCg,40
+modoo-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+modoo-0.1.1.dist-info/METADATA,sha256=ar1s6AWXoijnP6dDF0DxKLg-N09sINXzQYadqSXUmUA,499
+modoo-0.1.1.dist-info/RECORD,,
