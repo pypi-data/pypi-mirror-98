@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+modules = \
+['foaap']
+setup_kwargs = {
+    'name': 'foaap',
+    'version': '2.2.0',
+    'description': 'Fuck Off As A Package',
+    'long_description': '# FOAAP\n\n*[FOAAS API v2.2.0](https://foaas.com/) compliant.*\n\n\n[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)\n\nFOAAP (Fuck Of As A Package) solves a simple [foaas-python](https://github.com/dmpayton/foaas-python) problem — telling people to fuck off, faster.\n\n```python\nimport foaat\n\n\n# Maybe. Maybe not. Maybe fuck yourself. - Syu\nfoaat.maybe("Syu")\n```\n\n\n# Installation\n```bash\npip install foaat\n```\n\n# Supported Operations\n\n- `anyway(company: str, from_name: str)`\n- `ashole(from_name: str)`\n- `awesome(from_name: str)`\n- `bag(from_name: str)`\n- `balmer(name: str, company: str, from_name: str)`\n- `back(name: str, from_name: str)`\n- `bday(name: str, from_name: str)`\n- `because(from_name: str)`\n- `blackadder(name: str, from_name: str)`\n- `bm(name: str, from_name: str)`\n- `bucket(from_name: str)`\n- `bus(name: str, from_name: str)`\n- `bye(from_name: str)`\n- `caniuse(tool: str, from_name: str)`\n- `chainsaw(name: str, from_name: str)`\n- `cocksplat(name: str, from_name: str)`\n- `cool(from_name: str)`\n- `cup(from_name: str)`\n- `dalton(name: str, from_name: str)`\n- `dense(from_name: str)`\n- `deraadt(name: str, from_name: str)`\n- `diabetes(from_name: str)`\n- `donut(name: str, from_name: str)`\n- `dosomething(do: str, something: str, from_name: str)`\n- `dumbledore(from_name: str)`\n- `equity(name: str, from_name: str)`\n- `even(from_name: str)`\n- `everyone(from_name: str)`\n- `everything(from_name: str)`\n- `family(from_name: str)`\n- `fascinating(from_name: str)`\n- `fewer(name: str, from_name: str)`\n- `field(name: str, from_name: str, reference: str)`\n- `flying(from_name: str)`\n- `ftfy(from_name: str)`\n- `fts(name: str, from_name: str)`\n- `fyyff(from_name: str)`\n- `gfy(name: str, from_name: str)`\n- `give(from_name: str)`\n- `greed(noun: str, from_name: str)`\n- `holygrail(from_name: str)`\n- `horse(from_name: str)`\n- `idea(from_name: str)`\n- `immensity(from_name: str)`\n- `ing(name: str, from_name: str)`\n- `jinglebells(from_name: str)`\n- `keep(name: str, from_name: str)`\n- `keepcalm(reaction: str, from_name: str)`\n- `king(name: str, from_name: str)`\n- `legend(name: str, from_name: str)`\n- `life(from_name: str)`\n- `linus(name: str, from_name: str)`\n- `logs(from_name: str)`\n- `look(name: str, from_name: str)`\n- `looking(from_name: str)`\n- `lowpoly(from_name: str)`\n- `madison(name: str, from_name: str)`\n- `maybe(from_name: str)`\n- `me(from_name: str)`\n- `mornin(from_name: str)`\n- `no(from_name: str)`\n- `nugget(name: str, from_name: str)`\n- `off(name: str, from_name: str)`\n- `off_with(behavior: str, from_name: str)`\n- `outside(name: str, from_name: str)`\n- `particular(thing: str, from_name: str)`\n- `pink(from_name: str)`\n- `problem(name: str, from_name: str)`\n- `programmer(from_name: str)`\n- `pulp(language: str, from_name: str)`\n- `question(from_name: str)`\n- `ratsarse(from_name: str)`\n- `retard(from_name: str)`\n- `ridiculous(from_name: str)`\n- `rockstar(name: str, from_name: str)`\n- `rtfm(from_name: str)`\n- `sake(from_name: str)`\n- `shakespeare(name: str, from_name: str)`\n- `shit(from_name: str)`\n- `shutup(name: str, from_name: str)`\n- `single(from_name: str)`\n- `thanks(from_name: str)`\n- `that(from_name: str)`\n- `think(name: str, from_name: str)`\n- `thinking(name: str, from_name: str)`\n- `this(from_name: str)`\n- `thumbs(name: str, from_name: str)`\n- `too(from_name: str)`\n- `tucker(from_name: str)`\n- `waste(name: str, from_name: str)`\n- `what(from_name: str)`\n- `xmas(name: str, from_name: str)`\n- `yeah(from_name: str)`\n- `yoda(name: str, from_name: str)`\n- `you(name: str, from_name: str)`\n- `zayn(from_name: str)`\n- `zero(from_name: str)`\n\n',
+    'author': 'Ilhomidin Bahoraliev',
+    'author_email': 'itilhomidin@yandex.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/ilhomidin/foaap',
+    'py_modules': modules,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
