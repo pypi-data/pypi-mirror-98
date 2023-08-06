@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pt-utils
+Version: 0.0.1
+Summary: Utils for use with pytorch.
+Home-page: https://github.com/ayasyrev/pt_utils
+Author: Andrei Yasyrev
+Author-email: a.yasyrev@gmail.com
+License: MIT
+Description: # pt_utils
+        Utils for use with pytorch.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: test
