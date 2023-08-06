@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pandemic-simulation
+Version: 0.2.0
+Summary: "Life simulation" of a SEIR inspired model to better understand pandemic using python
+Home-page: https://github.com/AshtonIzmev
+License: MIT License
+Description: Check https://github.com/AshtonIzmev/covid-19-pandemic-simulation/blob/master/README.md
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
