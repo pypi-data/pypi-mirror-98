@@ -1,0 +1,75 @@
+{
+    "@class": "ParalHints",
+    "@module": "abipy.flowtk.tasks",
+    "confs": [
+        {
+            "efficiency": 0.984,
+            "mem_per_cpu": 0.0,
+            "mpi_ncpus": 2,
+            "omp_ncpus": 1,
+            "tot_ncpus": 2,
+            "vars": {
+                "bandpp": 1,
+                "npband": 1,
+                "npfft": 1,
+                "npimage": 1,
+                "npkpt": 2,
+                "npspinor": 1
+            }
+        },
+        {
+            "efficiency": 0.615386949,
+            "mem_per_cpu": 0.0,
+            "mpi_ncpus": 2,
+            "omp_ncpus": 1,
+            "tot_ncpus": 2,
+            "vars": {
+                "bandpp": 1,
+                "npband": 1,
+                "npfft": 2,
+                "npimage": 1,
+                "npkpt": 1,
+                "npspinor": 1
+            }
+        },
+        {
+            "efficiency": 1.0,
+            "mem_per_cpu": 0.0,
+            "mpi_ncpus": 1,
+            "omp_ncpus": 1,
+            "tot_ncpus": 1,
+            "vars": {
+                "bandpp": 1,
+                "npband": 1,
+                "npfft": 1,
+                "npimage": 1,
+                "npkpt": 1,
+                "npspinor": 1
+            }
+        }
+    ],
+    "info": {
+        "autoparal": 1,
+        "max_ncpus": 2,
+        "mband": 5,
+        "nkpt": 40,
+        "nspinor": 1,
+        "nsppol": 1,
+        "paral_kgb": 1
+    },
+    "optimal_conf": {
+        "efficiency": 0.984,
+        "mem_per_cpu": 0.0,
+        "mpi_ncpus": 2,
+        "omp_ncpus": 1,
+        "tot_ncpus": 2,
+        "vars": {
+            "bandpp": 1,
+            "npband": 1,
+            "npfft": 1,
+            "npimage": 1,
+            "npkpt": 2,
+            "npspinor": 1
+        }
+    }
+}
