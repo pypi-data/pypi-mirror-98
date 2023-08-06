@@ -1,0 +1,13 @@
+pandocacro/__init__.py,sha256=3TGvyscdPWlSIUxGVgaZ2z_R3CD8jHkDpN-IRP0cGOs,2708
+pandocacro/keys.py,sha256=CEhOj9KLbHnGp9JHfwCDCarn36UYs7ulrI27EAZiFJM,6503
+pandocacro/list.py,sha256=TxjUKApCx-n8TBaxea-l8y5IYCyaY1q_eeYDjVMqxXU,5008
+pandocacro/options.py,sha256=otOBhZ4ckkutzSL50My_VbwzoXV1V0wvT6-UFbhAaTs,2757
+pandocacro/pandocacro.py,sha256=SodRuPnY6Aua1vrH2vgjiHnVU-tTwJPwKQ8-pMhmtL0,1943
+pandocacro/translate.py,sha256=iaTa1nAYh7HB9feRwS4ZbaLLSXT6qlWOa_z5JT0G7aE,5169
+pandoc_acro-0.10.0.dist-info/LICENSE.rst,sha256=ePCqCTAeRh0eQssXMtIz6vDovF6Cbvj1ahtttTn9vVQ,1283
+pandoc_acro-0.10.0.dist-info/METADATA,sha256=RE8NQW5dvHDfTWSznybSeKzmBqfP1KWn-XgTXZexfO8,10139
+pandoc_acro-0.10.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pandoc_acro-0.10.0.dist-info/entry_points.txt,sha256=9Bru3O2oQtWtobmd43Kv0gDKdvhHMcEtfFwXYvGtpW8,49
+pandoc_acro-0.10.0.dist-info/top_level.txt,sha256=EG65d-LRbkwKFkQEWXq-ShS39O46zIB3sXABofthTto,11
+pandoc_acro-0.10.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pandoc_acro-0.10.0.dist-info/RECORD,,
