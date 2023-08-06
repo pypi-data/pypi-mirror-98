@@ -1,0 +1,12 @@
+README.md
+setup.py
+curriculum_model/__init__.py
+curriculum_model/_version.py
+curriculum_model.egg-info/PKG-INFO
+curriculum_model.egg-info/SOURCES.txt
+curriculum_model.egg-info/dependency_links.txt
+curriculum_model.egg-info/top_level.txt
+curriculum_model/db/__init__.py
+curriculum_model/db/schema.py
+tests/__init__.py
+tests/test_schema.py

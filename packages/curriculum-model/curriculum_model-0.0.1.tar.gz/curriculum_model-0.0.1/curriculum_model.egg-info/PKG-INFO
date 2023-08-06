@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: curriculum-model
+Version: 0.0.1
+Summary: Modelling HE curriculum delivery.
+Home-page: https://github.com/jehboyes/curriculum_model
+Author: James Boyes
+Author-email: James.Boyes@lcm.ac.uk
+License: UNKNOWN
+Description: # curriculum_model
+        A framework for modelling curriculum delivery, with timetabling support. 
+        
+        SQLAlchemy-powered package for interacting with curriculum delivery specifications, 
+        intended as a straightforward means of reading and writing curricula in other 
+        projects around administration and planning.  
+        
+Platform: UNKNOWN
