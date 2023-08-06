@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: argos-tracker
+Version: 0.1.0.post10
+Summary: Software utility for tracking multiple objects (animals) in a video.
+Home-page: https://github.com/subhacom/argos_tracker
+Author: Subhasis Ray
+Author-email: ray.subhasis@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://argos.readthedocs.io
+Project-URL: Source, https://github.com/subhacom/argos_tracker
+Project-URL: Tracker, https://github.com/subhacom/argos/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: tables
+Requires-Dist: sortedcontainers
+Requires-Dist: pyqt5
+Requires-Dist: opencv-contrib-python
+Requires-Dist: pyyaml
+Requires-Dist: matplotlib
+Requires-Dist: argos-toolkit
+
+# argos_tracker
+The tracking tool for Argos toolkit.
+
+
+
