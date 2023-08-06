@@ -1,0 +1,9 @@
+fw_gear_file_metadata_importer/__init__.py,sha256=7jB5zL67gczaR374DVqQ4rA1HyO1GgohgatyMO3qTmA,45
+fw_gear_file_metadata_importer/dicom.py,sha256=zKb5TYSvmrZcpWvMTF__gsNSBhBTHoXjszzCOja8drk,12965
+fw_gear_file_metadata_importer/main.py,sha256=bI-LBU3Cr8S3KphXr5hiI-oLNo0ciwVDPOnK7XKtedU,1562
+fw_gear_file_metadata_importer/parser.py,sha256=mLyOjYhM12YY2dItk5DkpygJLxpVkGYNjYmO6wEJu5M,282
+fw_gear_file_metadata_importer/util.py,sha256=TMAsv1DFK7X24dupsl_rF4QWd82VR7_1jtawE_LRLG4,3129
+fw_gear_file_metadata_importer-0.1.0.dist-info/LICENSE,sha256=hUmJ4z4F9Az3AVQ6RMTF-SYhYXoeIz5aGeKJc98F3tc,1085
+fw_gear_file_metadata_importer-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+fw_gear_file_metadata_importer-0.1.0.dist-info/METADATA,sha256=erLHAX_kkNsWPRotQN7_OJzurq1RXho9gI5pskENsi4,2305
+fw_gear_file_metadata_importer-0.1.0.dist-info/RECORD,,
