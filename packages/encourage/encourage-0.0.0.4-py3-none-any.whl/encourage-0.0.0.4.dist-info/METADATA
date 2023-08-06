@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: encourage
+Version: 0.0.0.4
+Summary: A command line tool speak beautiful words to you to encourage you 
+Home-page: https://github.com/stellaye/encourage
+Author: lindaye
+Author-email: 454784911@qq.com
+License: MIT
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: pyttsx3
+
+# encourage
+
+Encourage is a Python command line tool speaking encourage words to you for motivations
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install encourage
+
+```bash
+pip install encourage
+```
+
+## Usage
+
+The command for using encourage tool is 'e' ，add -h option for detailed manual reading
+```bash
+e 
+```
+
+You can edit the cnf file to do custom encouragement
+
+
+eg:
+```
+nickname jack
+repeat   you are a great guy
+```
+The encourage will speak 'jack , you are a great guy' to you
+
+
+eg:
+```
+nickname jack
+keep going  
+you can make it 
+```
+The encourage will speak 'jack , keep going'/'jack , you can make it '
+
+
+When there is no nickname or no encourage words in the cnf , default nickname or encourage words will be used
+
+
+
+
+
+
+
