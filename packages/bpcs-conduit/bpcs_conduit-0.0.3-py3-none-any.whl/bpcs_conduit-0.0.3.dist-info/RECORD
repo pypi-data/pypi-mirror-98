@@ -1,0 +1,7 @@
+conduit_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+conduit_pkg/client.py,sha256=F763cP2ppVOLz2ccs0MvCfoTEZ9-6c7n419l4KKzLWI,8309
+bpcs_conduit-0.0.3.dist-info/LICENSE,sha256=GP-T7lRFm_8cx-IyvuFAJjiq2X-8x2EPHqz56sgbIuc,565
+bpcs_conduit-0.0.3.dist-info/METADATA,sha256=X4a151jKqLGr_kSF51sFVUpBtlGgHGhZK0oGTTSO3go,731
+bpcs_conduit-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bpcs_conduit-0.0.3.dist-info/top_level.txt,sha256=SB1xsuo8xzy4nD44QPxZ_tx2DYJ6ToH1lTRFfMKga9M,12
+bpcs_conduit-0.0.3.dist-info/RECORD,,
