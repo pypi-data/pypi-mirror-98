@@ -1,0 +1,9 @@
+setup.py
+scielodump/__init__.py
+scielodump/dump_corpus.py
+scielodump.egg-info/PKG-INFO
+scielodump.egg-info/SOURCES.txt
+scielodump.egg-info/dependency_links.txt
+scielodump.egg-info/entry_points.txt
+scielodump.egg-info/requires.txt
+scielodump.egg-info/top_level.txt
