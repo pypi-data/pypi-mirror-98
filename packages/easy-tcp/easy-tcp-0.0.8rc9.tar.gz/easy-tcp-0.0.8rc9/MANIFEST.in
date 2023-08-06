@@ -1,0 +1,3 @@
+include easy_tcp/cython_server.c
+include easy_tcp/__init__.py
+include easy_tcp/core/*.h
