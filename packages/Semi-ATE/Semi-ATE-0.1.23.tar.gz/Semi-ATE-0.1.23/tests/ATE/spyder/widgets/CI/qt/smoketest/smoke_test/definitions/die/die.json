@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Die1",
+    "hardware": "HW0",
+    "maskset": "Mask1",
+    "quality": "Commercial",
+    "grade": "A",
+    "grade_reference": "",
+    "type": "ASSP",
+    "customer": "",
+    "is_enabled": true
+  }
+]

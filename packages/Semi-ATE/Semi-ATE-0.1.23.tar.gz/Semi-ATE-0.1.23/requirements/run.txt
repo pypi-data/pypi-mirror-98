@@ -1,0 +1,15 @@
+numpy
+Jinja2
+paho-mqtt
+xmltodict
+transitions
+async-timeout
+mypy
+SQLAlchemy
+hypothesis
+aiohttp
+aiomqtt
+pyqt
+pyserial
+tqdm
+qtawesome=0.7.2

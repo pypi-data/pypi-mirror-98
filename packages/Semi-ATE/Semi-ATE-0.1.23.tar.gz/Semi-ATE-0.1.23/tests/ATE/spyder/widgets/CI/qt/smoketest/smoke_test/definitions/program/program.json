@@ -1,0 +1,21 @@
+[
+  {
+    "id": "a721feb6-86ea-11eb-853d-000d3a05c20c",
+    "prog_name": "smoke_test_HW0_PR_Die1_production_TheTest",
+    "hardware": "HW0",
+    "base": "PR",
+    "target": "Die1",
+    "usertext": "TheTest",
+    "sequencer_type": "Fixed Temperature",
+    "temperature": "25",
+    "owner_name": "HW0_PR_Die1_production",
+    "prog_order": 1,
+    "is_valid": true,
+    "cache_type": "",
+    "caching_policy": "disable",
+    "test_ranges": [
+      100,
+      200
+    ]
+  }
+]
