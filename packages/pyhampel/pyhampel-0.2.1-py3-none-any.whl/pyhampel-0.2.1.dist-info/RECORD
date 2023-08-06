@@ -1,0 +1,15 @@
+pyhampel/__init__.py,sha256=wlVvm_-wCqd9ga8gWHpfqwKjx4lpUaIsMWc9Lzavgh4,151
+pyhampel/__main__.py,sha256=pYiUO4XGRSru_Bu4iR6GVriettdVIpJjZL4XJUkv0h0,164
+pyhampel/ingestion/__init__.py,sha256=41FsYAU8BcjW5h-HE_NqCSSPxFE94_06nACWIRrCLhg,40
+pyhampel/ingestion/time_series_ingestion.py,sha256=WDZYMiOrRzLpFiCfLrPnseLTolxz0buQfxs1G-WTZR4,1342
+pyhampel/src/HampelFiltering.py,sha256=r5nT2VG4pfzg1drYi6nKzCFzGGeGrsa2W3hY8VCmgHg,5063
+pyhampel/src/__init__.py,sha256=0C15aSHFvT2Z4kL9ET8UdyL6IE03-h7vp3Zuw7x71YU,64
+pyhampel/src/filtering.py,sha256=LyUaUTMaaVUKZ-BrpvsfDOZ89hzkmEVYnVazYGS1334,6624
+pyhampel/src/multiproc_filtering.py,sha256=YnEak_UfrfRLxgGiLZD5P729BYYIR_dYls_lILlpE6Q,1562
+pyhampel/utils/__init__.py,sha256=Bh7v0FBG99zLq0NkysaWaFOIgPyMkLjUeg-j1JG-FFw,27
+pyhampel/utils/ts_utils.py,sha256=OFUNxv7OfeGB5Wzqy6WeE3iDYhfppBEJUdDuEckeKNo,1173
+pyhampel-0.2.1.dist-info/LICENSE,sha256=yXbF6VuoIotGWE7-C50TTuCjyjW74LImRy8HOxqVOns,1085
+pyhampel-0.2.1.dist-info/METADATA,sha256=jw8C7JjkyielutZ9Qck19g4Pc3ldj2VYuX12GrIHmas,853
+pyhampel-0.2.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pyhampel-0.2.1.dist-info/top_level.txt,sha256=_8JuT6E69jEw8Pu4cOGmq41S_-hG9WhIA0v0SvvZ_9s,9
+pyhampel-0.2.1.dist-info/RECORD,,
