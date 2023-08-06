@@ -1,0 +1,9 @@
+mv_comma_sql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mv_comma_sql/cli.py,sha256=mZ64ciq0_BhSSqp2aZqZG056N3h5xDqOSu1n11u-kAo,1334
+mv_comma_sql/type.py,sha256=qGVvgstj7n61ivUO-CaWjrX5qhtcJTEShuN_mg1odB8,247
+mv_comma_sql-1.0.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+mv_comma_sql-1.0.dist-info/METADATA,sha256=5SAwBrtrnDpNtpLp897U0f4ivhycozRuRCg10gAItrY,195
+mv_comma_sql-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mv_comma_sql-1.0.dist-info/entry_points.txt,sha256=i_PEXoudP5fXByqr84TvSl6QwufrmFFhO6yPGM-uAaQ,66
+mv_comma_sql-1.0.dist-info/top_level.txt,sha256=63v9cl7bGaxaUb3Pygen2Pe92QDUj4UyurFEr8F6H4E,13
+mv_comma_sql-1.0.dist-info/RECORD,,
