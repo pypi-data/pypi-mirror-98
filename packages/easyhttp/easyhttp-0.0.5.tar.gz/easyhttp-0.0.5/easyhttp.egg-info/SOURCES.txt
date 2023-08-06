@@ -1,0 +1,13 @@
+README.md
+setup.py
+easyhttp/ClientConnection.py
+easyhttp/HttpServer.py
+easyhttp/Request.py
+easyhttp/RequestParser.py
+easyhttp/Response.py
+easyhttp/SocketServer.py
+easyhttp/__init__.py
+easyhttp.egg-info/PKG-INFO
+easyhttp.egg-info/SOURCES.txt
+easyhttp.egg-info/dependency_links.txt
+easyhttp.egg-info/top_level.txt
