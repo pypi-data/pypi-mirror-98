@@ -1,0 +1,11 @@
+README.md
+setup.py
+clip/__init__.py
+clip/bpe_simple_vocab_16e6.txt.gz
+clip/model.py
+clip/tokenizer.py
+paddleclip.egg-info/PKG-INFO
+paddleclip.egg-info/SOURCES.txt
+paddleclip.egg-info/dependency_links.txt
+paddleclip.egg-info/requires.txt
+paddleclip.egg-info/top_level.txt
