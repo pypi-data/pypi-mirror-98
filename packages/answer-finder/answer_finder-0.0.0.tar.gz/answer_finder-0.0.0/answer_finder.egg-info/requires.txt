@@ -1,0 +1,3 @@
+base_processor==0.0.2
+transformers
+torch
