@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: stellagban
+Version: 0.1.1
+Summary: StellaGban API Wrapper
+Home-page: https://github.com/SpookyGang/StellaGban-py
+Author: Anil Chauhan
+Author-email: anilchauhanxda@gmail.com
+License: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Description: Stella-Gban is a Telegram Gban API that ban spammers to protects people from spammers
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
