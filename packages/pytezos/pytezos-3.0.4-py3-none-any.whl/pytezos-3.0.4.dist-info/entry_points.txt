@@ -1,0 +1,3 @@
+[console_scripts]
+pytezos=pytezos.cli.cli:cli
+
