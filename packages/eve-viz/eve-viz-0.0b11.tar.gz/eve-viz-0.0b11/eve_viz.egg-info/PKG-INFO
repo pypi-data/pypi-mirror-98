@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: eve-viz
+Version: 0.0b11
+Summary: An easy to use tool for parallel model evaluation tasks, with native support for the random search algorithm.
+Home-page: https://github.com/mozjay0619/eve-viz
+Author: Jay Kim
+License: DSB 3-clause
+Description: Eve
+        ===
+        
+        Eve stands for (**Ev**)aluation (**e**)ngine.
+        
+        
+        ezFutures is a Python parallel computation tool that provides the user API similar to that of concurrent futures, with various parallelism backends. 
+        
+        Install
+        -------
+        
+        ::
+        
+        	pip install eve-viz
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
