@@ -1,0 +1,6 @@
+backtrader
+highcharts
+jqfactor_analyzer
+pyalgotrade
+rqalpha
+rqalpha-back
