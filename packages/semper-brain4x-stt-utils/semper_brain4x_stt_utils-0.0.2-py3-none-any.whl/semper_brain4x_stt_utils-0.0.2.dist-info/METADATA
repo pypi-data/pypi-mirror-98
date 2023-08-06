@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: semper-brain4x-stt-utils
+Version: 0.0.2
+Summary: Package for continuously listening to raw audio.
+Home-page: http://git.semper-tech.com/arcelik/semper-brain4x-stt-utils/
+Author: Mehmet Uluc Sahin
+Author-email: ulucsahin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Semper Brain4x STT Utils
+
+This repository contains code that is not directly used in training-testing (or inferencing) the model, but is required when preparing and collecting data.
+
