@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+nmatheg/__init__.py
+nmatheg/dataset.py
+nmatheg/datasets.ini
+nmatheg/models.py
+nmatheg/nmatheg.py
+nmatheg/tests.py
+nmatheg/utils.py
+nmatheg.egg-info/PKG-INFO
+nmatheg.egg-info/SOURCES.txt
+nmatheg.egg-info/dependency_links.txt
+nmatheg.egg-info/not-zip-safe
+nmatheg.egg-info/requires.txt
+nmatheg.egg-info/top_level.txt
