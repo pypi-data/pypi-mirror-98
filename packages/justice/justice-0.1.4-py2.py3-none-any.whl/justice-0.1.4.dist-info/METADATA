@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: justice
+Version: 0.1.4
+Summary: A python package to download company information from https://justice.cz/
+Home-page: https://github.com/SukiCZ/justice
+Author: Jakub Boukal
+Author-email: www.bagr@gmail.com
+License: MIT license
+Keywords: justice
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: dateparser (>=1.0.0<2)
+Requires-Dist: pyquery (>=1.4.3<2)
+
+=======
+justice
+=======
+
+
+.. image:: https://img.shields.io/pypi/v/justice.svg
+        :target: https://pypi.python.org/pypi/justice
+
+.. image:: https://img.shields.io/travis/SukiCZ/justice.svg
+        :target: https://travis-ci.com/SukiCZ/justice
+
+.. image:: https://readthedocs.org/projects/justice/badge/?version=latest
+        :target: https://justice.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/SukiCZ/justice/shield.svg
+     :target: https://pyup.io/repos/github/SukiCZ/justice/
+     :alt: Updates
+
+
+
+A python package to download company information from https://justice.cz/
+
+
+* Free software: MIT license
+* Documentation: https://justice.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-03-16)
+------------------
+
+* First release on PyPI.
+
+
