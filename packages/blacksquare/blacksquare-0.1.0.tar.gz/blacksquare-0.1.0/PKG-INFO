@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: blacksquare
+Version: 0.1.0
+Summary: A package for creating crossword puzzles
+Author: Patrick Maher
+Author-email: pmaher86@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: frozendict (>=1.2,<2.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: pdfkit (>=0.6.1,<0.7.0)
+Requires-Dist: puzpy (>=0.2.5,<0.3.0)
+Requires-Dist: pypdf2 (>=1.26.0,<2.0.0)
+Requires-Dist: tqdm (>=4.55.1,<5.0.0)
