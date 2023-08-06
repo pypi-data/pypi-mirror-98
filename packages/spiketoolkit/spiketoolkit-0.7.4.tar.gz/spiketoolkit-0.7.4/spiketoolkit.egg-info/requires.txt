@@ -1,0 +1,9 @@
+numpy
+spikeextractors>=0.9.4
+spikemetrics>=0.2.4
+spikefeatures
+scikit-learn
+scipy
+pandas
+networkx
+joblib
