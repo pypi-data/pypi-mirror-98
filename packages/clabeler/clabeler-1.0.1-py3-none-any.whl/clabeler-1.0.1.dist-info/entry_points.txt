@@ -1,0 +1,3 @@
+[console_scripts]
+clabeler = clabeler.command_line:main
+
