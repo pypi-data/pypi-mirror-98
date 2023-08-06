@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/pdftextract.egg-info/PKG-INFO
+src/pdftextract.egg-info/SOURCES.txt
+src/pdftextract.egg-info/dependency_links.txt
+src/pdftextract.egg-info/top_level.txt
