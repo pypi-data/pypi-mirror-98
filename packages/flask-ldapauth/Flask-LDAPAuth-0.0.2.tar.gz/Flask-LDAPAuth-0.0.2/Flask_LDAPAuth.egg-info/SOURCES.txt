@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Flask_LDAPAuth.egg-info/PKG-INFO
+Flask_LDAPAuth.egg-info/SOURCES.txt
+Flask_LDAPAuth.egg-info/dependency_links.txt
+Flask_LDAPAuth.egg-info/entry_points.txt
+Flask_LDAPAuth.egg-info/requires.txt
+Flask_LDAPAuth.egg-info/top_level.txt
+flask_ldapauth/__init__.py
