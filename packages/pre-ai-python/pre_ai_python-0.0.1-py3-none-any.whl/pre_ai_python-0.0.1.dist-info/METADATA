@@ -1,0 +1,185 @@
+Metadata-Version: 2.1
+Name: pre-ai-python
+Version: 0.0.1
+Summary: Microsoft AI Python Package
+Home-page: https://github.com/microsoft/ai-python
+Author: Daniel Ciborowski
+Author-email: dciborow@microsoft.com
+License: MIT License
+Project-URL: Code, https://github.com/microsoft/ai-python
+Project-URL: Issues, https://github.com/microsoft/ai-python/issues
+Project-URL: Documents, https://github.com/microsoft/ai-python
+Keywords: ai
+Platform: Windows
+Platform: Linux
+Platform: macOS
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7,<3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: asyncio (==3.4.3)
+Requires-Dist: azure-ai-formrecognizer (==3.0.0)
+Requires-Dist: azure-cognitiveservices-vision-customvision (==1.0.0)
+Requires-Dist: azure-cognitiveservices-vision-computervision (==0.7.0)
+Requires-Dist: azure-core (==1.10.0)
+Requires-Dist: azure-cosmos (==4.2.0)
+Requires-Dist: azure-cosmosdb-table (==1.0.6)
+Requires-Dist: azure-data-tables (==12.0.0b1)
+Requires-Dist: azure-functions (==1.3.0)
+Requires-Dist: azure-keyvault (==4.1.0)
+Requires-Dist: azure-keyvault-secrets (==4.2.0)
+Requires-Dist: azure-mgmt-compute
+Requires-Dist: azure-mgmt-deploymentmanager
+Requires-Dist: azure-mgmt-resource
+Requires-Dist: azure-search-documents (==11.1.0b3)
+Requires-Dist: azure-servicebus (==0.50.3)
+Requires-Dist: azure-storage (==0.36.0)
+Requires-Dist: azure-storage-blob (<13.0.0,>=12.6.0)
+Requires-Dist: azure-storage-common (==2.1.0)
+Requires-Dist: azure-storage-file (==2.1.0)
+Requires-Dist: azure-storage-file-datalake
+Requires-Dist: azure-storage-nspkg (==3.1.0)
+Requires-Dist: azure-storage-queue (==12.1.4)
+Requires-Dist: azureml-contrib-automl-pipeline-steps (==1.21.0)
+Requires-Dist: azureml-core (==1.21.0.post2)
+Requires-Dist: azureml-defaults (==1.21.0)
+Requires-Dist: azureml-pipeline (==1.21.0)
+Requires-Dist: azureml-train (==1.21.0)
+Requires-Dist: beautifulsoup4
+Requires-Dist: cached-property (==1.5.1)
+Requires-Dist: chardet
+Requires-Dist: ciso8601 (==2.1.3)
+Requires-Dist: cornac (==1.7.1)
+Requires-Dist: cppy (==1.1.0)
+Requires-Dist: cryptography (<3.4.0,>=3.3)
+Requires-Dist: cycler (>=0.10.0)
+Requires-Dist: cvxpy (>=1.1.10)
+Requires-Dist: cvxopt (>=1.2.6)
+Requires-Dist: databricks-cli (==0.14.1)
+Requires-Dist: datasets (==1.3.0)
+Requires-Dist: dateparser (==0.7.6)
+Requires-Dist: dm-tree (==0.1.5)
+Requires-Dist: eli5 (==0.10.0)
+Requires-Dist: fairlearn (==0.5.0)
+Requires-Dist: fastai (==2.2.7)
+Requires-Dist: fastapi (==0.61.0)
+Requires-Dist: feedparser (==5.2.1)
+Requires-Dist: flask (<=1.1.1,>=1.0.3)
+Requires-Dist: flask-login (==0.5.0)
+Requires-Dist: geopandas (==0.8.2)
+Requires-Dist: gym (>=0.15.6)
+Requires-Dist: hyperopt (==0.2.3)
+Requires-Dist: interpret-core (==0.2.0)
+Requires-Dist: ipython (==7.17.0)
+Requires-Dist: jieba3k (==0.35.1)
+Requires-Dist: joblib (==0.16.0)
+Requires-Dist: kiwisolver (>=1.0.0)
+Requires-Dist: lasio (==0.25.0)
+Requires-Dist: lightgbm (==2.3.0)
+Requires-Dist: llvmlite (==0.35.0)
+Requires-Dist: lxml (>=4.6.2)
+Requires-Dist: matplotlib (==3.2.2)
+Requires-Dist: msrest (==0.6.19)
+Requires-Dist: msrestazure (==0.6.4)
+Requires-Dist: netCDF4 (==1.5.5.1)
+Requires-Dist: newspaper3k (==0.2.8)
+Requires-Dist: nltk (==3.5)
+Requires-Dist: numba (==0.52.0)
+Requires-Dist: opencensus-ext-azure (==1.0.5)
+Requires-Dist: opencv-python-headless (==4.3.0.36)
+Requires-Dist: opencv-python (==4.3.0.36)
+Requires-Dist: ortools (==7.8.7959)
+Requires-Dist: pandas (<=1.1.3,>=1.0.3)
+Requires-Dist: pathfinder (==0.6.2)
+Requires-Dist: pathlib2 (>=2.2.0)
+Requires-Dist: pathspec (==0.8.0)
+Requires-Dist: pathtools
+Requires-Dist: pbr (==5.4.5)
+Requires-Dist: pkgconfig
+Requires-Dist: pip (==20.3.3)
+Requires-Dist: Pillow (>=6.2)
+Requires-Dist: preshed (==3.0.4)
+Requires-Dist: protobuf (==3.14.0)
+Requires-Dist: playfab (==0.0.200914)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: psycopg2 (==2.8.6)
+Requires-Dist: pydantic (==1.7.3)
+Requires-Dist: pyodbc (==4.0.30)
+Requires-Dist: pypandoc (==1.5.0)
+Requires-Dist: pyparsing (>=2.0.3)
+Requires-Dist: pyscaffold (==3.2.1)
+Requires-Dist: pyspark (==2.4.0)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: python-dotenv (==0.14.0)
+Requires-Dist: pytorch-pretrained-bert (==0.6.2)
+Requires-Dist: pytz (==2020.1)
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: randomgen (==1.19.3)
+Requires-Dist: ray[rllib] (==1.1.0)
+Requires-Dist: regex (==2020.7.14)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: scikit-learn (<=0.23.0)
+Requires-Dist: scipy (==1.5.4)
+Requires-Dist: seaborn (==0.10.1)
+Requires-Dist: seqeval (==1.2.2)
+Requires-Dist: sentencepiece (==0.1.95)
+Requires-Dist: sentinelsat (==0.14)
+Requires-Dist: setuptools (==51.1.1)
+Requires-Dist: spacy (<2.3.5)
+Requires-Dist: tensorflow (<2.4,>=2.2.2)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: toml (==0.10.1)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: torchvision (==0.8.2)
+Requires-Dist: tqdm (==4.46.0)
+Requires-Dist: transformers (==4.2.0)
+Requires-Dist: urllib3 (==1.25.10)
+Requires-Dist: utm (==0.6.0)
+Requires-Dist: uvicorn (==0.12.2)
+Requires-Dist: wget (==3.2)
+
+# Project
+
+> This repo has been populated by an initial template to help get you started. Please
+> make sure to update the content to build a great experience for community-building.
+
+As the maintainer of this project, please make a few updates:
+
+- Improving this README.MD file to provide a great experience
+- Updating SUPPORT.MD with content about this project's support experience
+- Understanding the security reporting process in SECURITY.MD
+- Remove this section from the README
+
+## Contributing
+
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a
+Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
+the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+
+When you submit a pull request, a CLA bot will automatically determine whether you need to provide
+a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
+provided by the bot. You will only need to do this once across all repos using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Trademarks
+
+This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
+trademarks or logos is subject to and must follow 
+[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
+Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
+Any use of third-party trademarks or logos are subject to those third-party's policies.
+
+
