@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: brython-dev
+Version: 0.4.2
+Summary: Brython developer tools
+License: MIT
+Keywords: brython,Development,Build Tools,Debuggers,Testing
+Author: Lorenzo Garcia Calzadilla
+Author-email: lorenzogarciacalzadilla@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Dist: brython (>=3.9.1,<4.0.0)
+Requires-Dist: flask (>=1.1.2,<2.0.0)
+Requires-Dist: pyyaml (>=5.4.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# Brython-dev
+
+Brython-dev is a Python library for developers in brython.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+
+```bash
+pip install brython-dev
+```
+
+## Usage
+
+For runserver
+
+```bash
+py -m brython_dev run
+```
+
+## Configuration
+
+The configuration is in the filename `brython.yml`
+
+* **name**: String. The name of the proyect
+* **app**: String, Default: `app.py`. The python main filename
+* **template**: String, Default: `app.html`. The html main template
+* **stylesheets**: List. A list whith extras stylesheets
+* **extensions**: Dict. A dict whith enable brython extensions
+  * **brython**: Boolean, Default: `true`. Enable the brython library
+  * **brython_stdlib**: Boolean, Default: `false`. Enable the brython stdlib library
+* **scripts**: List. A list whith extras scripts
+* **brython_options**: Dict. A dict whith brython options
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
