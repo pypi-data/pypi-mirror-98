@@ -1,0 +1,11 @@
+mypythontools/__init__.py,sha256=nNig21PZzQyLxaW0cZwyR3-I5yoPi3Dz4u9zYXc3rxY,1544
+mypythontools/build.py,sha256=S5wOrWfUlurI5ByGf3IC0lMOCpva9rLDGEvuuLLEcbQ,8037
+mypythontools/deploy.py,sha256=oUrOtRZwWkM6BGVmNy4-e9YdJ0w83rHuprsGZjsTe1g,1662
+mypythontools/githooks.py,sha256=JY531t6rnoji8DbYVM0rLLo2ZSpnxBd8Z8eNU0nNrRQ,4710
+mypythontools/misc.py,sha256=YyewLcXN1_HKW4oZ5ULCr48QGZg418GyirZ-7ElFZ_s,1945
+mypythontools/pyvueel.py,sha256=9kp6YwUrABDogBWDNJ1Egoy_zlm5qbWpCW9RYM4eKT4,9742
+mypythontools-0.0.19.dist-info/LICENSE,sha256=BM9DpN9cuZHAL1849vy5DyKFaQejXV1jfa9STrQkl-8,1093
+mypythontools-0.0.19.dist-info/METADATA,sha256=lnJvmYUfVHHSOhExJd2D6chZP1tnv0yUg6RRuUoo-Us,2402
+mypythontools-0.0.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypythontools-0.0.19.dist-info/top_level.txt,sha256=CPn6PNkUc8WWGPzOpW76m9GEddlkn2obN84_XsXKfDA,14
+mypythontools-0.0.19.dist-info/RECORD,,
