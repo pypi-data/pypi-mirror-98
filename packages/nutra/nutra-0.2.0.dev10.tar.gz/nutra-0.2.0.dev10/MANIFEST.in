@@ -1,0 +1,5 @@
+include ntclient/ntsqlite/LICENSE
+include ntclient/ntsqlite/README.rst
+include ntclient/ntsqlite/sql/*
+include ntclient/ntsqlite/sql/data/*
+include ntclient/ntsqlite/sql/upgrade_scripts/*
