@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: handypy
+Version: 0.2.2
+Summary: Handy Python scripts
+Home-page: https://jiayiliu.github.io/handypy/
+Author: Jiayi Liu
+Author-email: jiayiliu@users.noreply.github.com
+License: MIT
+Description: # HandyPy
+        
+        ![travis](https://travis-ci.com/jiayiliu/handypy.svg?branch=main)  [![codecov](https://codecov.io/gh/jiayiliu/handypy/branch/main/graph/badge.svg?token=SKALHNC98F)](https://codecov.io/gh/jiayiliu/handypy)
+        
+        [WIP] Handy python scripts.
+        
+        See [Documentations](https://jiayiliu.github.io/handypy/) for usage.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
