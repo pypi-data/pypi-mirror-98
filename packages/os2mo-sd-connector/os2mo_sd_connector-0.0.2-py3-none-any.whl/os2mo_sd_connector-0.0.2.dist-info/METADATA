@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: os2mo-sd-connector
+Version: 0.0.2
+Summary: Connector library for SDLon webservices
+Home-page: https://git.magenta.dk/rammearkitektur/os2mo-data-import-and-export
+Author: Magenta ApS
+Author-email: info@magenta.dk
+License: MPL 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: xmltodict
+Provides-Extra: dist
+Requires-Dist: build ; extra == 'dist'
+Requires-Dist: twine ; extra == 'dist'
+Provides-Extra: lint
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+<!--
+SPDX-FileCopyrightText: Magenta ApS
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+# SDConnector
+
+Connector library for SDLon webservices
+
+## Usage
+Install into your project using `pip`:
+```
+pip install os2mo-sd-connector
+```
+
+Then import it inside a Python file:
+```
+import asyncio
+from os2mo_sd_connector import SDConnector
+
+async def print_org():
+    sd_connector = SDConnector("BZ", "username", "password")
+    organization = await sd_connector.getOrganization()
+    print(organization)
+
+asyncio.run(print_org())
+```
+
+
