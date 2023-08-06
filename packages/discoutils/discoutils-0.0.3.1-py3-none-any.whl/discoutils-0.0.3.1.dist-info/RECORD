@@ -1,0 +1,11 @@
+discoutils/__init__.py,sha256=DUORLjqpaYEW1KdWAKe6MwI4LiChPKLZWhrsjT1OUSc,119
+discoutils/help_cmds.py,sha256=2dKkc9yCkT39GW3kvcoWnAwnSbnza3rpXT8lUMcLWso,682
+discoutils/random_things.py,sha256=3KnTn1Fq5y4W_GVLEIbcML6Bkk0Qcq4RqXucdCpq0xg,1830
+discoutils/cogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discoutils/cogs/fun.py,sha256=BAXfaOJzKgIRYrX-pWdTqVGbVmsospxHWNRnK3Itimc,919
+discoutils/cogs/moderation.py,sha256=ukgrhUfAwZsizXHkTJnZDkK_z5b5BgeZx2mCxksl37E,7413
+discoutils-0.0.3.1.dist-info/LICENSE,sha256=3_VCfB4tzcHqq2RMM0VgxwEFyQ4LpSCYMJ-jH-fxPlI,1069
+discoutils-0.0.3.1.dist-info/METADATA,sha256=KRLCfJagD44P9X05-9ebWE6x2BOSTolAebx8nPnFXdI,2752
+discoutils-0.0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+discoutils-0.0.3.1.dist-info/top_level.txt,sha256=HM2sfVYkATtNtEfTztt1npN4nenpX_QvlF1qX9wb2lE,11
+discoutils-0.0.3.1.dist-info/RECORD,,
