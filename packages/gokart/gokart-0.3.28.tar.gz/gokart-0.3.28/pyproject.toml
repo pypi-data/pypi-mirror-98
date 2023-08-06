@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "gokart"
+version = "0.3.28"  # using poetry-dynamic-versioning
+description="A wrapper of luigi. This make it easy to define tasks."
+authors = ["M3, inc."]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/m3dev/gokart"
+repository = "https://github.com/m3dev/gokart"
+documentation = ""
+
+[tool.poetry-dynamic-versioning]
+enable = false
+style = "pep440"
+pattern = "^(?P<base>\\d+\\.\\d+\\.\\d+)"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+luigi = "*"
+boto3 = "*"
+slack-sdk = "^3.0"
+pandas = "<1.2"
+numpy = "*"
+tqdm = "*"
+google-auth = "*"
+pyarrow = "*"
+uritemplate = "*"
+google-api-python-client = "*"
+APScheduler = "*"
+redis = "*"
+matplotlib = "*"
+
+[tool.poetry.dev-dependencies]
+tox = "*"
+moto = "*"
+testfixtures = "*"
+coverage = "*"
+isort = "^5.7.0"
+yapf = "^0.30.0"
+
+[tool.isort]
+line_length = 160
+
+[build-system]
+requires = ["poetry"]
+build-backend = "poetry.masonry.api"
