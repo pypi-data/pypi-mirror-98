@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tap-geosource
+Version: 0.1.0
+Summary: Singer.io tap for extracting geo data
+Home-page: https://github.com/JulesHuisman/tap-geosource
+Author: Jules Huisman
+Author-email: jules.huisman@quantile.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+Requires-Dist: singer-python (==5.11.0)
+Requires-Dist: pathlib (==1.0.1)
+
+# Tap Geosource (WIP)
+
+Singer.io tap to ingest geospatial files.
+
