@@ -1,0 +1,11 @@
+{
+  "appname": "devilry_statistics",
+  "destinationfolder": "/workspaces/devilry-django/devilry/devilry_statistics/static/devilry_statistics/5.0.1",
+  "is_in_production_mode": true,
+  "keep_temporary_files": false,
+  "npmrun_jsbuild": {
+    "import_paths": []
+  },
+  "sourcefolder": "/workspaces/devilry-django/devilry/devilry_statistics/staticsources/devilry_statistics",
+  "version": "5.0.1"
+}
