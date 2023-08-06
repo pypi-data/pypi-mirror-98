@@ -1,0 +1,10 @@
+pycx4/__init__.py,sha256=0MzgxwToyfLpOHoyripaYPxN6iJO52WxXJq-rWLdt8E,35
+pycx4/aux.py,sha256=HSC6ahVE_gpbGS5O0fRZTzTr5wIbwpGASlMvsaSzJYI,1063
+pycx4/pycda.cpython-38-x86_64-linux-gnu.so,sha256=SgNzJd1RPnvp15MyEv8o2vM6ilaKuv7GCkvjdfNLZy0,4934152
+pycx4/q5cda.cpython-38-x86_64-linux-gnu.so,sha256=AnMjD7PZ21PMEa-mc7Jebe9egMQEhsd9L2mMy4uNz-s,4407704
+pycx4/qcda.py,sha256=sqjIpoNcf-QGku1lKBWyLNqe4IC7jiLEy67anF61jEY,784
+pycx4/version.py,sha256=dHbKEU0ixeCHfNWWuu_o5xatLF0yoxXjbQit9tRGnbo,22
+pycx4-0.820.dist-info/METADATA,sha256=BTomlpwBYkuxyih9LRkp-VV7YWvkCKG5WJgqWPgtyM4,849
+pycx4-0.820.dist-info/WHEEL,sha256=TpFVeXF_cAlV118WSIPWtjqW7nPvzoOw-49FmS3fDKQ,103
+pycx4-0.820.dist-info/top_level.txt,sha256=RCq9hQlhlvkgz5D-lWLBRoiROjrV1zDR4erUw0c4f0w,6
+pycx4-0.820.dist-info/RECORD,,
