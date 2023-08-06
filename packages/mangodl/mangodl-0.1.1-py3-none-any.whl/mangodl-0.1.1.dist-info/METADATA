@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mangodl
+Version: 0.1.1
+Summary: A command line tool to download manga from mangadex
+Home-page: https://github.com/JunLi00/mango
+Author: Junyi
+Author-email: junyidotli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles (>=0.6.0)
+Requires-Dist: aiohttp (>=3.7.4.post0)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: urllib3 (>=1.26.3)
+Requires-Dist: lxml (>=4.6.2)
+Requires-Dist: beautifulsoup4 (>=4.9.3)
+Requires-Dist: tqdm (>=4.59.0)
+
+# Mango Downloads
+
+Download your manga the hard way with this command line tool.
+Mango gets manga from the mangadex API.
+
+
