@@ -1,0 +1,4 @@
+[flask.commands]
+run = junior.cli:run
+shell = junior.cli:shell
+
