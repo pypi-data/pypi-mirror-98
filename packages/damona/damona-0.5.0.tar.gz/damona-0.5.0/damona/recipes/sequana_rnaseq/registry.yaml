@@ -1,0 +1,15 @@
+fastqc:
+  binaries:
+    - fastqc
+    - falco
+    - fastp
+    - bowtie
+    - bowtie2
+    - salmon
+  releases:
+    0.10.0:
+      download: damona::sequana_rnaseq_0.10.0.img
+
+
+
+

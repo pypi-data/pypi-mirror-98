@@ -1,0 +1,6 @@
+sequana:
+    class: env
+    releases: 
+      0.9.1: 
+        download: library://cokelaer/damona/sequana:0.9.1
+

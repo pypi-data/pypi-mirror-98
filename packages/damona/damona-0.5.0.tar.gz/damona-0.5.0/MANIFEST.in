@@ -1,0 +1,8 @@
+recursive-exclude * __pycache__
+recursive-exclude * *pyc
+include requirements*txt
+include CONTRIBUTING.rst
+include LICENSE
+include README.rst
+include .requirements_dev.txt
+include damona/shell/*.sh

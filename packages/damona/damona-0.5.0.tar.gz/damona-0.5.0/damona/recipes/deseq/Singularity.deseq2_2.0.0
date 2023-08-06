@@ -1,0 +1,32 @@
+Bootstrap: shub
+From: cokelaer/damona:r_4.0.2
+
+%labels
+    Author thomas cokelaer
+    Version v2
+
+%post
+    export PATH=$PATH:/usr/bin
+
+    rm -f .RData  .Rhistory
+    rm -f ~/.RData ~/.Rhistory
+    echo " library(devtools) "> runme.R
+    echo ' chooseCRANmirror(ind=26)' >> runme.R
+    echo 'install.packages("BiocManager")' >> runme.R
+    # This installs all dependencies
+
+    echo 'if (!requireNamespace("BiocManager", quietly = TRUE))' >>runme.R
+    echo '    install.packages("BiocManager")' >> runme.R
+    echo ' BiocManager::install("DESeq2")' >> runme.R
+
+    /usr/bin/Rscript runme.R
+
+
+%environment
+    export PATH=$PATH:/usr/bin
+
+%help
+    This is a container for DESEQ2
+
+%runscript
+    exec Rscript "$@"

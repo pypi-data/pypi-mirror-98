@@ -1,0 +1,31 @@
+BootStrap: docker
+From: ubuntu:18.04
+
+%labels
+
+    AUTHOR Thomas Cokelaer
+    VERSION 1.0
+    DAMONA_TYPE env
+
+
+%post
+
+    # General tools
+    apt-get update
+    apt-get install -y wget
+    apt-get install -y bzip2
+    apt-get install -y vim
+    apt-get install -y libgl1-mesa-glx  # will be required by pyqt
+    apt-get install -y fontconfig # for sequanix/qt fonts otherwise no text in menus
+    apt-get install -y git
+    apt-get install -y gcc
+    apt-get install -y bc   # required for kraken
+
+
+%environment
+    export PATH=$PATH:/usr/local/anaconda/bin
+    export LANG=C   # prevents perl for raising warnings
+    export PERL5LIB=/usr/local/anaconda/lib/perl5/5.22.0
+    export LANG=C.UTF-8
+    export LC_ALL=C.UTF-8
+

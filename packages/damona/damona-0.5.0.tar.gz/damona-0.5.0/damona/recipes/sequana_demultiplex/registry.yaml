@@ -1,0 +1,6 @@
+sequana_demultiplex:
+  binaries: sequana_demultiplex snakemake
+  releases:
+    1.0.1:
+      download: library://cokelaer/damona/sequana_demultiplex:1.0.1
+

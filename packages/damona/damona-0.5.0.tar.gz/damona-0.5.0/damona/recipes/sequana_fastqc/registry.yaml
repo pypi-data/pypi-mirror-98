@@ -1,0 +1,9 @@
+sequana_fastqc:
+  binaries:
+    - sequana_fastqc
+    - fastqc
+    - falco
+    - snakemake
+  releases:
+      1.0.0:
+        download: library://cokelaer/damona/sequana_fastqc:1.0.0

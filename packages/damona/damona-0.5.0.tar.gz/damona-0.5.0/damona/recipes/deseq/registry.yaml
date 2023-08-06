@@ -1,0 +1,5 @@
+deseq2:
+  binaries: deseq2
+  releases:
+    2.0.0:
+      download: library://cokelaer/damona/deseq:2.0.0

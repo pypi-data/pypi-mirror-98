@@ -1,0 +1,42 @@
+BootStrap: library
+From: cokelaer/damona/sequana:0.9.1
+
+%labels
+
+    AUTHOR Thomas Cokelaer
+    VERSION 1.0.1
+    DAMONA_TYPE exe
+
+%files
+    bcl2fastq.deb
+
+%post
+
+    # set anaconda path
+    export PATH=$PATH:/usr/local/anaconda/bin
+
+    pip install sequana_demultiplex==1.0.1 
+    conda clean --packages -y
+    conda clean --all 
+
+    # Install bcl2fastq if found locally
+    if test -f /bcl2fastq.deb; then
+        apt-get install /bcl2fastq.deb
+        rm  -f /bcl2fastq.deb
+    fi
+
+
+    if [ ! -d /data ]; then mkdir /data; fi
+
+    echo "backend:agg" > matplotlibrc
+
+%environment
+    export PATH=$PATH:/usr/local/anaconda/bin
+    export LANG=C   # prevents perl for raising warnings
+    export PERL5LIB=/usr/local/anaconda/lib/perl5/5.22.0
+    export LANG=C.UTF-8
+    export LC_ALL=C.UTF-8
+
+%runscript
+    exec sequana_demultiplex "$@"
+

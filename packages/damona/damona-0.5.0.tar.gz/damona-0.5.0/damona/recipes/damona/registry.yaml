@@ -1,0 +1,4 @@
+damona:
+  releases:
+    0.4.2:
+      download: library://cokelaer/damona/damona:0.4.2

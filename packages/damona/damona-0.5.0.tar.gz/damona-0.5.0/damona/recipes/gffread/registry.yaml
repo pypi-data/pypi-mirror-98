@@ -1,0 +1,4 @@
+gffread:
+  releases:
+    0.12.1:
+      download: library://cokelaer/damona/gffread:0.12.1

@@ -1,0 +1,5 @@
+phantompeakqualtools:
+    binaries: run_spp.R
+    releases:
+      1.2.2:
+        download: library://cokelaer/damona/phantompeakqualtools_1.2.2

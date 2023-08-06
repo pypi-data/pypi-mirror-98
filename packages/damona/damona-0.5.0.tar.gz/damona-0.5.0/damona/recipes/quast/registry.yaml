@@ -1,0 +1,4 @@
+quast:
+  releases:
+      5.0.2:
+        download: library://cokelaer/damona/quast:5.0.2

@@ -1,0 +1,8 @@
+ubuntu:
+  class: env
+  releases:
+    18.04:
+      download: library://cokelaer/damona/ubuntu:18.04
+    16.04:
+      download: library://cokelaer/damona/ubuntu:16.04
+
