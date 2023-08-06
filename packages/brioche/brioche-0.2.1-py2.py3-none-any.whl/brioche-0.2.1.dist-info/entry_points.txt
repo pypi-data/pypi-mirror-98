@@ -1,0 +1,3 @@
+[console_scripts]
+brioche=brioche.tool:main
+
