@@ -1,0 +1,14 @@
+wordgoal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wordgoal/__main__.py,sha256=JQZARHzfWe2SGczx6QBTLxawepga72mZoUaOoCTgzwI,126
+wordgoal/cli.py,sha256=L8UgKt4gfjGFaiTeReCLng6wYvkpMlLFzXHkkUSoDtc,2192
+wordgoal/configuration.py,sha256=wD22kGcMAd-gPlAEmXwzac6O6a4HswOmqc2pb7Sv0oI,472
+wordgoal/count.py,sha256=MWKBrAjhKxZ-RVkJqnt77sQYJW8Zki20UBrzi3ZiwdI,592
+wordgoal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wordgoal/version.py,sha256=chugp2X21aCDHsuHcSHdDtmf7PojoM_XxKOrpzssjUw,219
+wordgoal/walk.py,sha256=PdEMtb0v8vClSXI1nCUYHiCp2a0xwADRzokq3hghjJ4,940
+wordgoal-0.0.0a1.dist-info/LICENSE,sha256=jecwHNG8OzeBOT_VaopmQWpty9muYzuw03tmWBQRwPs,1073
+wordgoal-0.0.0a1.dist-info/METADATA,sha256=aPggKLWQrzcvt07fFJVgoo5P_vV1PlzZj3QLJuMhT2o,910
+wordgoal-0.0.0a1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wordgoal-0.0.0a1.dist-info/entry_points.txt,sha256=6UK4gVeCxz_CwGfw8qci027Ky7G7uWn9X6VBfMe-HcE,58
+wordgoal-0.0.0a1.dist-info/top_level.txt,sha256=sVYYzv7x-zUTFzEASHqB9UQ7T5vHJAOz2fSrgsgl1MI,9
+wordgoal-0.0.0a1.dist-info/RECORD,,
