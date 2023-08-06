@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: JSETracker
+Version: 1.0.0
+Summary: Real Time JSE stock data for free
+Home-page: https://github.com/SNR99/JSETracker
+Author: Ntwanano Rikhotso
+Author-email: sanele.rikhotso.99@gmail.com
+License: MIT
+Description: # JSE Tracker
+        ##### get JSE stock data
+        ###
+        ###
+        ``` python
+        from jsetracker import Stocks
+        
+        s = Stocks()
+        
+        s.get_all() # returns all the stocks listed on the JSE
+        s.get("JSE CODE HERE") # returns the specified the Stock data
+        ```
+        see the article for more information and for other useful tools
+        https://snr99.medium.com/jse-tracker-4dbab8d35d7f
+        ## License
+        MIT
+        **Free Software, Hell Yeah!**
+        ### developed by [Ntwanano Rikhotso](http://ntwanano.me)(c) 2021
+        
+Keywords: Python,JSE,Stock Price API,Stock Price,JSE API ,Johannesburg Stock Exchange,API,Johannesburg Stock Exchange API
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: 
+Description-Content-Type: text/markdown
