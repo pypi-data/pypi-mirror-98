@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ngspice-json-cli
+Version: 0.0.1
+Summary: Print NGSPICE result as JSON
+Home-page: https://github.com/devkingsejong/ngspice-json-cli
+Author: devkingsejong
+Author-email: devkingsejong@gmail.com
+License: UNKNOWN
+Keywords: ngspice python cli json tool bash circuit simulate
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
