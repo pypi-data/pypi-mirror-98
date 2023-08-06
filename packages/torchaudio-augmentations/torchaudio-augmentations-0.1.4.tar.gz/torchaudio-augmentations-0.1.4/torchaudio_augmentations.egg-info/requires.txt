@@ -1,0 +1,7 @@
+numpy
+torch
+torchaudio
+wavaugment
+
+[fancy feature]
+essentia
