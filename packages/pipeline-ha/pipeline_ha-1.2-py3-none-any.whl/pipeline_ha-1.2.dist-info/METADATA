@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pipeline-ha
+Version: 1.2
+Summary: Package for NLP Pipeline
+Home-page: UNKNOWN
+Author: Himanshu Aditya
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Preprocessing library which helps to build modular NLP pipeline List of functionsTokenizationPunctuation RemovalStop Words RemovalText encoding (Bag of Words)
+
+
