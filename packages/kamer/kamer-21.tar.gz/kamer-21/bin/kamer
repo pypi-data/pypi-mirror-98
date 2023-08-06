@@ -1,0 +1,19 @@
+#!/usr/bin/env python3 
+# This file is placed in the Public Domain.
+
+from op import cfg, e, j, op, os
+from op.csl import Console, exec, parse
+
+def main():
+    cfg.wd = e("~/.kamer")
+    parse()
+    s = Console()
+    s.scandir(j(os.getcwd(), "mod"))
+    if cfg.txt:
+        s.cmd(cfg.old.txt)
+        return
+    s.start()
+    s.init(cfg.mods)
+    s.wait()
+
+exec(main)
