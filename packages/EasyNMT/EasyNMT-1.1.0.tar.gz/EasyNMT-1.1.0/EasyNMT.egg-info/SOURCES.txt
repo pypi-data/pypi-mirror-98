@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+EasyNMT.egg-info/PKG-INFO
+EasyNMT.egg-info/SOURCES.txt
+EasyNMT.egg-info/dependency_links.txt
+EasyNMT.egg-info/requires.txt
+EasyNMT.egg-info/top_level.txt
+easynmt/EasyNMT.py
+easynmt/__init__.py
+easynmt/util.py
+easynmt/models/Fairseq.py
+easynmt/models/OpusMT.py
+easynmt/models/__init__.py

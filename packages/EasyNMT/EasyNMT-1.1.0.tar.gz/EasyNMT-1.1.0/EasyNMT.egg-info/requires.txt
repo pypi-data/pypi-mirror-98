@@ -1,0 +1,10 @@
+tqdm
+transformers<5,>=4.0
+torch>=1.6.0
+numpy
+nltk
+sentencepiece
+fasttext
+fairseq>=0.10.1
+
+[fairseq]
