@@ -1,0 +1,14 @@
+stdpairs/__init__.py,sha256=EKO9yItK5lA9-sTTlyQL2so14lgCW40WM0-qdAaow0U,1271
+stdpairs/_stdpairs.py,sha256=VlBaNkf0c2FEAiTqplZzytRNTdee_V-5y6pfkpbjkOM,53298
+stdpairs/_string_interface.py,sha256=6IeGRJ0DeyyYnvV8JnX2Mxz2-UB8gn1AG_iuZO2cKmk,3181
+stdpairs/_zsolve_interface.py,sha256=PQ3BMwpUiwW1MFsRSHNMGLYBvwTTKrhci322q-VhPdM,6403
+stdpairs/affinemonoid.py,sha256=fKWMeT5sZvvTP_-tSmLfQpn1wNnzouWnZS9T6ImmuSc,25709
+stdpairs/macaulay2_interface.py,sha256=J2rQjzMR5_Ax_RYnp5o5bPjDycaKDFhkp33gXARoywQ,7452
+stdpairs/monomialideal.py,sha256=lRo5J938tJBIwUWxe9lVnR7mc9gq4BDwIfbTECAlD9A,57439
+stdpairs/properpair.py,sha256=ex2TKx5iwjuLEGjIkbL3iAaGNP69lhiQePa2RRGXPHY,17682
+stdpairs/txt_to_object.py,sha256=leZ9Iuj1lw6-XQ9OmChECyoIuIukxmLduUNCZPHt2iA,12968
+stdpairs-1.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+stdpairs-1.0.3.dist-info/METADATA,sha256=smrYwoIjMCGlLeBnEvERO9wEoALaZECNXn7TXGsnapA,1934
+stdpairs-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stdpairs-1.0.3.dist-info/top_level.txt,sha256=di77H19TecNrPxf_pfzRrEaFMqoGhpW70dE8aGnA-G8,9
+stdpairs-1.0.3.dist-info/RECORD,,
