@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+bin/slurmkernel
+slurm_jupyter_kernel/__init__.py
+slurm_jupyter_kernel/__main__.py
+slurm_jupyter_kernel/start_kernel.py
+slurm_jupyter_kernel.egg-info/PKG-INFO
+slurm_jupyter_kernel.egg-info/SOURCES.txt
+slurm_jupyter_kernel.egg-info/dependency_links.txt
+slurm_jupyter_kernel.egg-info/requires.txt
+slurm_jupyter_kernel.egg-info/top_level.txt
