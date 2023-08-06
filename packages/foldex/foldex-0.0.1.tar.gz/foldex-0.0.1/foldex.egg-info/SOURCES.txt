@@ -1,0 +1,7 @@
+README.md
+setup.py
+foldex/__init__.py
+foldex.egg-info/PKG-INFO
+foldex.egg-info/SOURCES.txt
+foldex.egg-info/dependency_links.txt
+foldex.egg-info/top_level.txt
