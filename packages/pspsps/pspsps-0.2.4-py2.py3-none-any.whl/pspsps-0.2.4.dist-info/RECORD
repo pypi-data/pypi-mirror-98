@@ -1,0 +1,11 @@
+pspsps/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pspsps/http.py,sha256=eVHxw8yX5zzFCJLQSlYKiLIq1I-crlwG87yFquhnA2U,3440
+pspsps/safebooru.py,sha256=o27sGPLaRE2dShW_qAZm2ODVWBNDasVA6m8vR7Ob-YI,3017
+pspsps/term.py,sha256=BfSLwQaZ9au5oOWT2HFmxpiAmzDjIZYEsinPgDjMNGg,1815
+pspsps/terminyal.py,sha256=-Z12UixsU6KsHDLmJbGiA-07gqaCiYiUDa970WPa0ho,3695
+pspsps-0.2.4.data/scripts/pspsps,sha256=c8w14fEV_EelccCoemPJAD-k9C4rOSVlg6J4w-JLV60,14644
+pspsps-0.2.4.dist-info/LICENSE,sha256=UexlDTSikhQawrAfYmpe03E8RAk56dO6tU90Uwhodm8,34525
+pspsps-0.2.4.dist-info/METADATA,sha256=i054VlIGhnTrPZa3Ok2GfcvtrX8MQgYOgRP4k2Rps8k,4046
+pspsps-0.2.4.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+pspsps-0.2.4.dist-info/top_level.txt,sha256=4p2aYFMpLA3INtJnn2MuL8dGn5jKH4bovPEnpvBkCG4,7
+pspsps-0.2.4.dist-info/RECORD,,
