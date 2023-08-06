@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block main %}
+{% include "components/thread_form.html" %}
+<div class='container'>
+    <div id='messages'>
+        <header class='card mb-3'>
+            <div class='card-body'>
+                <span class='badge bg-secondary'>過去ログ</span>
+                <h2 id="title" class='card-title mb-4'>{{ thread.title }}</h2>
+                <div class='d-flex justify-content-between'>
+                    {{ lists.userItem(request.user, small=True) }}
+                    {% if thread.user == request.user %}
+                    <button class='btn bi bi-gear-fill' onclick='edit()'></button>
+                    {% endif %}
+                </div>
+                <div class='card-text d-flex justify-content-end'><small class='text-muted'>{{ thread.created.strftime('%Y-%m-%d %H:%M:%S') }}</small></div>
+            </div>
+        </header>
+        {% for res in thread.res|sort(attribute='datetime') %}
+        <div class='card mb-3' id="{{loop.index}}">
+            <div class='card-body'>
+                <div class='mb-2 d-flex justify-content-between'>
+                    <span class='badge bg-secondary'>#{{loop.index}}</span>
+                    <div class='card-text'><small class='text-muted'>{{ res.datetime.strftime('%Y-%m-%d %H:%M:%S') }}</small></div>
+                </div>
+                <div class='mb-3'>
+                    {{ lists.userItem(res.user, small=True) }}
+                </div>
+                {{ res.parsed_data.message|hiroyuki|markdown }}
+                <div class='image-list'>
+                    {% for image in res.parsed_data.images %}
+                    {% set s = uuid() %}
+                    <div class='image' data-bs-toggle='modal' data-bs-target='#img-{{s}}'>
+                        <img src='{{ image }}' />
+                    </div>
+                    <div id='img-{{s}}' class='modal fade'>
+                        <div class='modal-dialog'>
+                            <div class='modal-content'>
+                                <img src='{{ image }}' style='width: 100%; height: 100%'/>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}
