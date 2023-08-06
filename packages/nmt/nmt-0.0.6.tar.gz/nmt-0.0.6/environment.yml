@@ -1,0 +1,32 @@
+name: nmt
+
+# channels are processed in order, top to bottom, higher priority channels are at the top
+#   defaults: should be at the top: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html#managing-channels
+#   pytorch: higher priotiry than conda-forge in case pytorch developers need to override conda-forge packages
+#   conda-forge: may be required for some dependencies like editdistance not hosted in defaults or pytorch
+#   anaconda: should not be used in combination with these other channels
+channels:
+  - defaults  # should be at the top of the list: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html#managing-channel
+  - pytorch
+  - conda-forge  # conda-forge is higher priority than defaults in nlpia package
+  # - anaconda  # bad idea: https://github.com/conda/conda/issues/9462
+
+dependencies:
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.0
+  - editdistance
+  - html5lib
+  - jupyter
+  - matplotlib
+  - nltk
+  - pandas
+  - pip
+  - python==3.7.9
+  - pytorch==1.6
+  - scikit-learn
+  - seaborn
+  - spacy
+
+#  - pip:
+#     - -r requirements.txt
