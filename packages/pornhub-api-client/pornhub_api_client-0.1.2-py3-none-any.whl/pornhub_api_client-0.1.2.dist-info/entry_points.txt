@@ -1,0 +1,4 @@
+[console_scripts]
+phb=pornhub.client:main
+run-tests=pornhub.tests.unit_test:main
+

@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pornhub-api-client
+Version: 0.1.2
+Summary: Simple lib to work with pornhub API
+Author: Misha Bystrov
+Author-email: drudkhmisha@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
