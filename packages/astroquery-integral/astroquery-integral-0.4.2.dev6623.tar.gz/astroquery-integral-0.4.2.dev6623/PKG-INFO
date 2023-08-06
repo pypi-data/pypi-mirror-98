@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: astroquery-integral
+Version: 0.4.2.dev6623
+Summary: Functions and classes to access online astronomical data resources
+Home-page: http://astropy.org/astroquery
+Author: Adam Ginsburg
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: all
+Provides-Extra: all_lt_39
