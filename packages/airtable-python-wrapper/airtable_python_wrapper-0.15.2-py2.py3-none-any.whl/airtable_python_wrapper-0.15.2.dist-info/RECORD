@@ -1,0 +1,10 @@
+airtable/__init__.py,sha256=oRs_7Yo0BA8MaNYdSbMb_kHh5rZ5Pb2oGmeCn4CLCV0,40
+airtable/__version__.py,sha256=H2SUGt1XQt8xfyH9DGi0tvJKBHBJ5RKQmcw0hFfcxn0,349
+airtable/airtable.py,sha256=yN7Z250dKkX8UJxDyQ9MASnmxXyQKXJfNx2HDhI2s9U,21713
+airtable/auth.py,sha256=GPYmk6BYHs7VbogD2y0YqjAw867FeR9N7DuPeb2StuM,834
+airtable/params.py,sha256=aAxTfU6GLWIn-D96llsM3h7AytXCudOJ6mH8DvIrSGM,10626
+airtable_python_wrapper-0.15.2.dist-info/LICENSE,sha256=Az5EcBgx5oAvXxMPoRzBgU0ayA105OeZHLMUZL_OPaU,1075
+airtable_python_wrapper-0.15.2.dist-info/METADATA,sha256=t3tJSmyelaTq_OEM_u-9n0Ls6TaKJZ3jFyhkKAfFsz8,4783
+airtable_python_wrapper-0.15.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+airtable_python_wrapper-0.15.2.dist-info/top_level.txt,sha256=ybsoNnpJDLpXwdAJR-SUDtisJw-aJAks5UtLMIcfCA8,9
+airtable_python_wrapper-0.15.2.dist-info/RECORD,,
