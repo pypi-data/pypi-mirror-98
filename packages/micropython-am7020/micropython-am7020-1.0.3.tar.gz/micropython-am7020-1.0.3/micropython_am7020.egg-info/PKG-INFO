@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: micropython-am7020
+Version: 1.0.3
+Summary: AT Command library dedicated to am7020 http mqtt
+Home-page: https://github.com/JiekangHuang/MicroPython-AM7020
+Author: Zack Huang
+Author-email: zack@atticedu.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
