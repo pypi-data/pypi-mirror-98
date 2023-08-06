@@ -1,0 +1,5 @@
+pyrolite/_version.py export-subst
+
+*.ipynb diff=jupyternotebook
+
+*.svg binary
