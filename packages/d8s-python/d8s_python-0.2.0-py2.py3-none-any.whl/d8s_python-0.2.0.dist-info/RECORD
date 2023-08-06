@@ -1,0 +1,13 @@
+d8s_python/__init__.py,sha256=fODwezdU0BlCxoR9aeL9RmDF_3R0Rz-81zaCvVXEnJ0,655
+d8s_python/ast_data.py,sha256=L54RxB7XmlsXAKgrM2L7pdUe9zuYD6vFd7RYWg0k0H8,10946
+d8s_python/ast_data_temp_utils.py,sha256=iL72gWrumU8uKF5ZfCQOtnTnUwVQA2r1fr4Fets6qXE,1389
+d8s_python/python_data.py,sha256=cNlwPzx99tbWUbjMhjK2kB62s__gTFFa7yOMjDFMoCM,12705
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ast_data.py,sha256=aOxRzCiX4brXdsZctw4nKF36gjo8kkFSi4TuYIBIsV4,15122
+tests/test_python_data.py,sha256=jF5Y9BeFbEbpK0FwsWNXl9UTVShpuHTmqUaT-dkK9To,16563
+d8s_python-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_python-0.2.0.dist-info/METADATA,sha256=oA1sK5IhfHvWzVS53EZqozN-cQSCNZNLHSIJSGsd4iY,2037
+d8s_python-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_python-0.2.0.dist-info/top_level.txt,sha256=H7pwI0FJU5XW05NR3_ZIBxqMLdgRVz0-5ePJJC9p7AA,17
+d8s_python-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_python-0.2.0.dist-info/RECORD,,
