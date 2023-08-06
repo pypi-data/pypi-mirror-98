@@ -1,0 +1,10 @@
+democritus-hypothesis
+democritus-networking
+democritus-urls
+hypothesis
+ioc-finder
+tldextract
+whois
+
+[:python_version < "3.8"]
+importlib-metadata
