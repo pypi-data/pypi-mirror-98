@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+fordfulkerson_prueba/__init__.py
+fordfulkerson_prueba.egg-info/PKG-INFO
+fordfulkerson_prueba.egg-info/SOURCES.txt
+fordfulkerson_prueba.egg-info/dependency_links.txt
+fordfulkerson_prueba.egg-info/top_level.txt

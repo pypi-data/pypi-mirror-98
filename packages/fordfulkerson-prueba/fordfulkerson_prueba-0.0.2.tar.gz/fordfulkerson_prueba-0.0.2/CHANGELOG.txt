@@ -1,0 +1,10 @@
+Change Log
+==========
+
+0.0.1 (16/03/21)
+----------------
+- Liberación de la primera versión
+
+0.0.2 (16/03/21)
+----------------
+- Cambio en install_requires

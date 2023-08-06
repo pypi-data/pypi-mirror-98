@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: fordfulkerson-prueba
+Version: 0.0.2
+Summary: Implementación del método Fork Fulkerson
+Home-page: UNKNOWN
+Author: Equipo 2
+Author-email: UNKNOWN
+License: MIT
+Description: Este paquete implementa el método de Ford Fulkerson para resolver el problema de redes de encontrar el flujo máximo.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (16/03/21)
+        ----------------
+        - Liberación de la primera versión
+        
+        0.0.2 (16/03/21)
+        ----------------
+        - Cambio en install_requires
+        
+Keywords: max flow
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
