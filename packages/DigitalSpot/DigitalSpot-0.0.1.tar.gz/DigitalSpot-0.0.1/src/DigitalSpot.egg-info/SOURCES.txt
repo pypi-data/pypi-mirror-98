@@ -1,0 +1,12 @@
+pyproject.toml
+setup.cfg
+src/DigitalSpot.egg-info/PKG-INFO
+src/DigitalSpot.egg-info/SOURCES.txt
+src/DigitalSpot.egg-info/dependency_links.txt
+src/DigitalSpot.egg-info/requires.txt
+src/DigitalSpot.egg-info/top_level.txt
+src/digitalspot/__init__.py
+src/digitalspot/browser.py
+src/digitalspot/feed.py
+src/digitalspot/robots.py
+src/digitalspot/sitemap.py
