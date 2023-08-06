@@ -1,0 +1,11 @@
+strongarm_dataflow-2.1.5.data/data/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-2.1.5.dist-info/RECORD,,
+strongarm_dataflow-2.1.5.dist-info/WHEEL,sha256=RA4ju32EWHpO-G1BhxTQ3AwXQWjnnrzYGkM9skoN7_I,109
+strongarm_dataflow-2.1.5.dist-info/top_level.txt,sha256=roOFCgTozP4Xfiy43w1iQjmkDfq0SV99MQ_wyJF7KxM,19
+strongarm_dataflow-2.1.5.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-2.1.5.dist-info/METADATA,sha256=QUrIVjX6UqEhsng44-VLjoZbOkeI-v0uKVK3-Qhjpck,291
+strongarm_dataflow/__init__.py,sha256=AoY2MoJhaOEWRRHtPWefeB_wiHezRRSj2tr-wGzh7cI,472
+strongarm_dataflow/register_contents.py,sha256=roEVoLHIsXdSm93Pq3xpIsj5Iwvnh0t0HHW2C_7b7gw,423
+strongarm_dataflow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strongarm_dataflow/dataflow.cpython-38-darwin.so,sha256=pUilES9xd7fdMMf1w_vo7rM2A-AHsArpHuHhL3F2jyM,99376
+strongarm_dataflow/.dylibs/libcapstone.4.dylib,sha256=HeZo9-RsLYAQ47m2EUgueW_PZ7qSBVvZO-jSL-g64Wk,4679620
