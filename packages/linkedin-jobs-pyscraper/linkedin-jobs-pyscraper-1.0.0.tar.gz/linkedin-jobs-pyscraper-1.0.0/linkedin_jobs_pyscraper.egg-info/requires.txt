@@ -1,0 +1,8 @@
+beautifulsoup4
+bs4
+certifi
+pandas
+requests
+urllib3
+python-dateutil
+pydantic
