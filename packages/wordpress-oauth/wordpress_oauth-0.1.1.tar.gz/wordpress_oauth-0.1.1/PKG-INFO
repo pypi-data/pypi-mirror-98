@@ -1,0 +1,64 @@
+Metadata-Version: 1.1
+Name: wordpress_oauth
+Version: 0.1.1
+Summary: Python REST API wrapper for WP-API/OAuth1
+Home-page: https://github.com/fx-kirin/python_wordpress_oauth
+Author: fx-kirin
+Author-email: fx.kirin@gmail.com
+License: MIT
+Description: 
+        wordpress_oauth
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/package_name.svg
+           :target: https://pypi.python.org/pypi/wordpress_oauth
+           :alt: Latest PyPI version
+        
+        
+        Python REST API wrapper for WP-API/OAuth1
+        
+        Usage
+        -----
+        
+        .. code-block::
+        
+           import wordpress_oauth
+           api = wordpress_oauth.Wordpress("~/.config/pywordpress_oauth/config.yml")
+           image_path = "images/icon.png"
+           result = api.upload_image(image_path)
+        
+        Installation
+        ------------
+        
+        .. code-block::
+        
+           pip install wordpress_oauth
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        `WP REST API - OAuth 1.0a Server <https://github.com/WP-API/OAuth1>`_
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        wordpress_oauth was written by `fx-kirin <fx.kirin@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
