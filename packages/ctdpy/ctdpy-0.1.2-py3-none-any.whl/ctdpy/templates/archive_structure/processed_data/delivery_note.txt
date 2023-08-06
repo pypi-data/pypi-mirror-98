@@ -1,0 +1,12 @@
+data kontrollerad av: 
+format: PROFILE:PROFILE
+projekt: 
+rapporterande institut: 
+datatyp: PROFILE
+beskrivning av datasetet: 
+övervakningsprogram: 
+beställare: 
+provtagningsår: 
+kontaktperson: 
+kommentar: 
+status: prod

@@ -1,0 +1,228 @@
+{
+    "mapping_parameter": {
+        "SALT2_CTD": [
+            "SALT2_CTD [psu (PSS-78)]",
+            "Salthalt2", 
+            "sal11: Salinity, Practical, 2 [PSU]"
+        ], 
+        "DESC_RATE_CTD": [
+            "DESC_RATE_CTD [m/s]",
+            "fallhastighet",
+            "dz/dtM: Descent Rate [m/s], WS",
+            "dz/dtM: Descent Rate [m/s]"
+        ], 
+        "ALTM_CTD": [
+            "ALTM_CTD [m]",
+            "Altimeter", 
+            "altM: Altimeter [m]"
+        ], 
+        "TEMP_CTD": [
+            "TEMP_CTD [°C (ITS-90)]",
+            "TEMP_CTD [°C]",
+            "Temperatur",
+            "t090C: Temperature [ITS-90, deg C]",
+            "t190C: Temperature, 2 [ITS-90, deg C]", 
+            "tv290C: Temperature [ITS-90, deg C]",
+            "Temperature [ITS-90, deg C]",
+            "Temp"
+        ], 
+        "CNDC2_CTD": [
+            "CNDC2_CTD [S/m]", 
+            "Konduktivitet2",
+            "c1S/m: Conductivity, 2 [S/m]"
+        ], 
+        "DELTA_TEMP_CTD": [
+            "temperatur delta",
+            "T2-T190C: Temperature Difference, 2 - 1 [ITS-90, deg C]"
+        ],
+        "YELLOW_CTD": [
+            "Gulämne",
+            "haardtY: Fluorescence, Dr. Haardt Yellow Sub"
+        ], 
+        "SVEL2_CTD": [
+            "SVEL2_CTD [m/s]",
+            "Ljudhastighet2",
+            "svCM1: Sound Velocity, 2 [Chen-Millero, m/s]"
+        ], 
+        "DOXY_CTD": [
+            "DOXY_CTD [ml/l]",
+            "Syrgashalt",
+            "sbeox0ML/L: Oxygen, SBE 43 [ml/l]",
+            "sbeox0ML/L: Oxygen, SBE 43 [ml/l], WS",
+            "sbeox0ML/L: Oxygen [ml/l], WS",
+            "sbeox0ML/L: Oxygen, [ml/l], WS = 2",
+            "DO_ml"
+        ],
+        "DOXY_SAT_CTD": [
+            "DOXY_SAT_CTD [%]",
+            "DO",
+            "sat"
+        ],
+        "PUMP_CTD": [
+            "PUMP_CTD []",
+            "pump status", 
+            "pumps: Pump Status"
+        ], 
+        "DENS2_CTD": [
+            "DENS2_CTD [kg/m3]",
+            "Densitet2", 
+            "sigma-t11: Density, 2 [sigma-t, Kg/m^3 ]"
+        ], 
+        "CNDC_CTD": [
+            "CNDC_CTD [S/m]",
+            "CNDC_CTD [mS/cm]",
+            "Konduktivitet",
+            "c0S/m: Conductivity [S/m]",
+            "Cond"
+        ], 
+        "TURB_CTD": [
+            "TURB_CTD [NTU]",
+            "Turbiditet", 
+            "turbWETntu0: Turbidity, WET Labs ECO [NTU]"
+        ], 
+        "CRUISE_NO": [
+            "Cruise"
+        ], 
+        "STATN": [
+            "Station"
+        ], 
+        "SHIPC": [
+            "Ship"
+        ], 
+        "SERNO": [
+            "LIMS Job"
+        ], 
+        "PRES_CTD": [
+            "PRES_CTD [dbar]",
+            "Tryck", 
+            "prDM: Pressure, Digiquartz [db]",
+            "Pressure, Strain Gauge [db]",
+            "prdM: Pressure, Strain Gauge [db]",
+            "Press"
+        ], 
+        "SDATE": [
+            "NMEA UTC",
+            "System UTC",
+            "start_time",
+            "IntD"
+        ], 
+        "STIME": [
+            "IntT"
+        ],
+        "YEAR": [
+            "YEAR"
+        ],
+        "MONTH": [
+            "MONTH"
+        ],
+        "DAY": [
+            "DAY"
+        ],
+        "HOUR": [
+            "HOUR"
+        ],
+        "MINUTE": [
+            "MINUTE"
+        ],
+        "SECOND": [
+            "SECOND"
+        ],
+        "DENS_CTD": [
+            "DENS_CTD [kg/m3]",
+            "Densitet",
+            "sigma-t00: Density [sigma-t, kg/m^3 ]",
+            "sigma-t00: Density [sigma-t, Kg/m^3 ]",
+            "density00: Density [density, kg/m^3]",
+            "SIGMA"
+        ], 
+        "SVEL_CTD": [
+            "SVEL_CTD [m/s]",
+            "Ljudhastighet", 
+            "svCM: Sound Velocity [Chen-Millero, m/s]"
+        ], 
+        "DEPH": [
+            "DEPH [m]",
+            "Djup",
+            "depFM: Depth [true depth, m], lat",
+            "depFM: Depth [fresh water, m], lat"
+        ], 
+        "FILE_NAME": [
+            "FileName"
+        ], 
+        "PAR_CTD": [
+            "PAR_CTD [µmol/(m2 sec)]",
+            "PAR_CTD [µE/(cm2 sec)]",
+            "PAR_CTD [µE]",
+            "PAR", 
+            "par: PAR/Irradiance, Biospherical/Licor", 
+            "par: PAR/Irradiance, Biospherical/Lico [ÂµE/(cm^2*s)]",
+            "par: PAR/Irradiance, Biospherical/Lico [\u00b5E/(cm^2*s)]"
+        ], 
+        "LONGI": [
+            "NMEA Longitude",
+            "Longitude [GG MM.mm E]"
+        ], 
+        "TEMP2_CTD": [
+            "TEMP2_CTD [°C (ITS-90)]",
+            "TEMP2_CTD [°C]",
+            "Temperatur2", 
+            "t190C: Temperature, 2 [ITS-90, deg C]",
+            "T_iS"
+        ], 
+        "CHLFLUO_CTD": [
+            "CHLFLUO_CTD [mg/m3]",
+            "Klorofyllfluorescens", 
+            "haardtC: Fluorescence, Dr. Haardt Chlorophyll a", 
+            "chloroflTC0: Chlorophyll, Turner Cyclops [ug/l]", 
+            "flECO-AFL: Chl-a Fluorescence, WET Labs ECO-AFL/FL [mg/m^3]", 
+            "flECO-AFL: Fluorescence, WET Labs ECO-AFL/FL [mg/m^3]"
+        ], 
+        "PHYC_CTD": [
+            "PHYC_CTD [ppb]",
+            "Phycocyaninfluorescens", 
+            "flECO-AFL1: Phycocyanin Fluorescence, WET Labs ECO-AFL/FL, 2 [mg/m^3]", 
+            "flECO-AFL1: Fluorescence, WET Labs ECO-AFL/FL, 2 [mg/m^3]"
+        ], 
+        "SCAN_CTD": [
+            "SCAN_CTD []",
+            "scan nummer", 
+            "scan: Scan Count",
+            "nbin: number of scans per bin"
+        ], 
+        "DOXY2_CTD": [
+            "DOXY2_CTD [ml/l]",
+            "Syrgashalt2",
+            "sbeox1ML/L: Oxygen, SBE 43, 2 [ml/l]",
+            "sbeox1ML/L: Oxygen, SBE 43, 2 [ml/l], WS"
+        ], 
+        "HUMUS_CTD": [
+            "Humus"
+        ], 
+        "SPAR_CTD": [
+            "SPAR", 
+            "spar: SPAR/Surface Irradiance"
+        ], 
+        "LATIT": [
+            "NMEA Latitude",
+            "Latitude [GG MM.mm N]"
+        ], 
+        "SALT_CTD": [
+            "SALT_CTD [psu (PSS-78)]",
+            "SALT_CTD [psu]",
+            "Salthalt",
+            "sal00: Salinity, Practical [PSU]",
+            "SALIN"
+        ], 
+        "SCAN_BIN_CTD": [
+            "antal scans", 
+            "nbin: number of scans per bin",
+            "Datasets"
+        ], 
+        "INSTRUMENT_SERIE": [
+            "SERIAL NO"
+        ],
+        "Q_FLAG": [
+            "flag: flag"
+        ]
+    }
+}
