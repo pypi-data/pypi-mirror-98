@@ -1,0 +1,6 @@
+apache-airflow~=1.10
+simple-salesforce>=1.0.0
+tableauserverclient
+
+[tableau]
+apache-airflow-backport-providers-tableau
