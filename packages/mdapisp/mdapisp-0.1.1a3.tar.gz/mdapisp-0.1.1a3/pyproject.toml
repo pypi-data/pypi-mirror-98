@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "mdapisp"
+version = "0.1.1-alpha.3"
+description = "simple api for Make Data API Server Project"
+authors = ["Minseong Kim"]
+readme = "readme.md"
+
+[tool.poetry.scripts]
+mdapisp = "mdapisp.main:typer_app"
+
+[tool.poetry.dependencies]
+python = "^3.7.3"
+pytest = "^6.2.2"
+pandas = "^1.2.3"
+fastapi = "^0.63.0"
+uvicorn = "^0.13.4"
+sqlalchemy = "^1.4.0"
+databases = "^0.4.2"
+aiosqlite = "^0.17.0"
+python-multipart = "^0.0.5"
+aiocache = "^0.11.1"
+typer = {extras = ["all"], version = "^0.3.2"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
