@@ -1,0 +1,7 @@
+[console_scripts]
+luciferase-barplot = luciferase.luciferase:main
+luciferase-ratioplot = luciferase.ratioplot:main
+luciferase-ratiotest = luciferase.ratiotest:main
+luciferase-swarmplot = luciferase.swarmplot:main
+luciferase-write-table = luciferase.write_table:main
+
