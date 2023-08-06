@@ -1,0 +1,8 @@
+README.md
+setup.py
+restricted_input/__init__.py
+restricted_input/__main__.py
+restricted_input.egg-info/PKG-INFO
+restricted_input.egg-info/SOURCES.txt
+restricted_input.egg-info/dependency_links.txt
+restricted_input.egg-info/top_level.txt
