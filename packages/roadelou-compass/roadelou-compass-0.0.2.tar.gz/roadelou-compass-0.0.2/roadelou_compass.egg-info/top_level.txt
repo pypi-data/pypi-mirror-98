@@ -1,0 +1,11 @@
+compass
+compass/ast
+compass/ast/binary
+compass/ast/unary
+compass/codegen
+compass/codegen/c
+compass/codegen/compass
+compass/codegen/debug
+compass/codegen/header
+compass/frontend
+compass/grammar
