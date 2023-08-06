@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+PandasXlFramer.egg-info/PKG-INFO
+PandasXlFramer.egg-info/SOURCES.txt
+PandasXlFramer.egg-info/dependency_links.txt
+PandasXlFramer.egg-info/not-zip-safe
+PandasXlFramer.egg-info/requires.txt
+PandasXlFramer.egg-info/top_level.txt
+pandasxlframer/__init__.py
+pandasxlframer/framer.py
