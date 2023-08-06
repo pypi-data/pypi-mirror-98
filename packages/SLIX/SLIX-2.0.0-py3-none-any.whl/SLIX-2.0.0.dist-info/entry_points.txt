@@ -1,0 +1,4 @@
+[console_scripts]
+SLIXLineplotParameterGeneratpr = SLIX.cmd_line_profile:main
+SLIXParameterGenerator = SLIX.cmd_full_image:main
+
