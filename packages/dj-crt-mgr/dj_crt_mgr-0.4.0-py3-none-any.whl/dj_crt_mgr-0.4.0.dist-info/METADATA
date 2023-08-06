@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: dj-crt-mgr
+Version: 0.4.0
+Summary: Django Certificate Manager
+Home-page: https://gitlab.com/rhab/dj-crt-mgr
+Author: Robert Habermann
+Author-email: mail@rhab.de
+License: MIT
+Keywords: smime cryptography email S/MIME encrypt sign x509 certificates
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Security :: Cryptography
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography
+Requires-Dist: dj-smail
+Requires-Dist: ldap3
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-django ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# Django Certificate Manager
+
+This
+
+## Requirements
+
+* Python 3.5+
+
+Make sure that an instance of UserCrtMgr is created for every user::
+
+    class YourAppConfig(AppConfig):
+        def ready(self):
+            from dj_crt_mgr.signals import create_user_cert_mgr
+            post_save.connect(create_user_cert_mgr, sender=settings.AUTH_USER_MODEL)
+
+## Install
+
+Using pip
+
+```
+pip install dj-crt-mgr
+```
+
+
