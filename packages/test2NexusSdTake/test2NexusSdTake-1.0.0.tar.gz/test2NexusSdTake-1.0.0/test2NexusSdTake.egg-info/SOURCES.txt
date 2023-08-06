@@ -1,0 +1,17 @@
+setup.py
+Nexus/__init__.py
+Nexus/ai.py
+Nexus/bool.py
+Nexus/boolo.py
+Nexus/files.py
+Nexus/math.py
+Nexus/module.py
+Nexus/websear.py
+Nexus/pr/__init__.py
+Nexus/pr/bool.py
+Nexus/pr/boolo.py
+Nexus/pr/diff.py
+test2NexusSdTake.egg-info/PKG-INFO
+test2NexusSdTake.egg-info/SOURCES.txt
+test2NexusSdTake.egg-info/dependency_links.txt
+test2NexusSdTake.egg-info/top_level.txt
