@@ -1,0 +1,11 @@
+cfdtools/__init__.py,sha256=al8_fWnAXV7onl8BVTHdZb72dlc8HrEZknPwnWKnZZk,19
+cfdtools/_cli.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdtools/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdtools/ic3/readRestartIC3.py,sha256=fuhRQG0CKK1XtEXbzKdROl0rRiKldb4e0WoJRDiHwPk,40436
+cfdtools/ic3/writeRestartIC3.py,sha256=fUDX0RJQzFi0WNMc4qLWdscNAZGfZ5CUrYN3JCvYI1U,28142
+cfdtools/meshbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdtools/meshbase/_elements.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfdtools/physics/dicovar.py,sha256=F-Je4cfEUYMuvWJh39V2_YuH5CZ6mSMMxGVP5_uVxcs,6487
+cfdtools-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cfdtools-0.0.1.dist-info/METADATA,sha256=1onHb0gd6BvVyA6LgSmol7tVEocXPA8t4fr0P-s375E,956
+cfdtools-0.0.1.dist-info/RECORD,,
