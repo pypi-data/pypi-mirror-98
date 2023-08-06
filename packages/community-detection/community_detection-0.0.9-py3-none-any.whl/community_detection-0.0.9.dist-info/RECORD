@@ -1,0 +1,10 @@
+community_detection/__init__.py,sha256=KI-0350V1zUp9NVpfaA-qL-arFXOcDPvP5c3lgb9vvQ,797
+community_detection/em.py,sha256=IyMyFVnVHTSzaQ56Pi7fM_VVt8VKhKhYy3IVpUn2Sbg,2949
+community_detection/fast_unfolding.py,sha256=wAA2MwfUB_2vtAEhdN2w43DLgGQGhue1v21JJiEMZ_8,7602
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_em.py,sha256=BBsWjObUzaEzpiIja-TayokkBp1LS6NO0yt4zFqEotY,871
+tests/test_fast_unfolding.py,sha256=3bF2ZAUrfO-jaJxJIUjRkCBPdyP66yDLLrRuj9dLP_w,2098
+community_detection-0.0.9.dist-info/METADATA,sha256=cyLLaPASX9sMiFpk2tn1LbgNMhU4gapkL92MHWsKq2c,1378
+community_detection-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+community_detection-0.0.9.dist-info/top_level.txt,sha256=Zbxi5ozyl5ciH-2ZXiGYPDYMXbIGvxpWoQ024LaSpgU,26
+community_detection-0.0.9.dist-info/RECORD,,
