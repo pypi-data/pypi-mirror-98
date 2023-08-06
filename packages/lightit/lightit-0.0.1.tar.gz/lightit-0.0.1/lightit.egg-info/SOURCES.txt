@@ -1,0 +1,8 @@
+README.md
+setup.py
+lightit.egg-info/PKG-INFO
+lightit.egg-info/SOURCES.txt
+lightit.egg-info/dependency_links.txt
+lightit.egg-info/entry_points.txt
+lightit.egg-info/requires.txt
+lightit.egg-info/top_level.txt
