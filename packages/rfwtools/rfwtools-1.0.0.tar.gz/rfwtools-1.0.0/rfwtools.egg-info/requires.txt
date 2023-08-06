@@ -1,0 +1,13 @@
+matplotlib<=3.2.0
+numpy
+pandas
+requests
+scipy
+statsmodels
+tzlocal
+PyYAML
+seaborn
+scikit-learn
+tqdm
+tsfresh
+lttb
