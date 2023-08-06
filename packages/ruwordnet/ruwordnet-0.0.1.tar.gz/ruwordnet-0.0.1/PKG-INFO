@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ruwordnet
+Version: 0.0.1
+Summary: A Python wrapper for RuWordNet thesaurus.
+Home-page: https://github.com/avidale/python-ruwordnet
+Author: David Dale
+Author-email: dale.david@mail.ru
+License: MIT
+Description: A Python wrapper for RuWordNet thesaurus.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
