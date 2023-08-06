@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: nudibranch
+Version: 0.1
+Summary: Unnecessary matplotlib colormaps inspired by sea slugs.
+Home-page: https://github.com/ddempsey/nudibranch
+Author: David Dempsey
+Author-email: ddempsey786@gmail.com
+License: MIT
+Download-URL: https://github.com/ddempsey/nudibranch/archive/v_01.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
