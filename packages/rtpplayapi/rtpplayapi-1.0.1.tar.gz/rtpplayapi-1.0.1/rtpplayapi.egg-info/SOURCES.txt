@@ -1,0 +1,10 @@
+README.md
+setup.py
+rtpplayapi/__init__.py
+rtpplayapi/api.py
+rtpplayapi/configuration.py
+rtpplayapi.egg-info/PKG-INFO
+rtpplayapi.egg-info/SOURCES.txt
+rtpplayapi.egg-info/dependency_links.txt
+rtpplayapi.egg-info/requires.txt
+rtpplayapi.egg-info/top_level.txt
