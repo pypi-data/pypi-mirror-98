@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: struct-tools
+Version: 0.2.3
+Summary: Tools for working with dicts (and lists)
+License: MIT
+Keywords: dict,list
+Author: patricknraanes
+Author-email: patrick.n.raanes@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# struc-tools
+
+Tools for working with data containers/structures,
+i.e. lists, dicts, classes.
+
+- Attribute-access and align-printed dicts.
+- Print functionality also provided as class to be subclassed.
+- Deep (nested) attribute access.
+- Transposing dict-of-dicts, list-of-lists, and mixed.
+- Dict intersection, complement.
+- Cartesian product.
+
+### TODO
+
+- Put DotDict and AlignedDict each in their own module
+
+See alternatives:
+- <https://github.com/mewwts/addict>
+- <https://github.com/ducdetronquito/scalpl>
+- <https://github.com/srevenant/dictlib>
+- <https://pypi.org/project/dict/>
+- <https://pypi.org/project/dicty/>
+- <https://pypi.org/project/print-dict/>
+- <https://pypi.org/project/dictionaries/>
+- <https://github.com/wolever/pprintpp>
+
+Answer SO.com questions:
+<https://www.google.com/search?q=python+aligned+dict&oq=python+aligned+dict>
+
