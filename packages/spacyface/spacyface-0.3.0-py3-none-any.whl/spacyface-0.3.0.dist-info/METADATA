@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: spacyface
+Version: 0.3.0
+Summary: Aligner for spacy and huggingface tokenization
+Home-page: https://github.com/bhoov/spacyface
+Author: Ben Hoover
+Author-email: benjamin.hoover@ibm.com
+License: Apache 2.0
+Keywords: transformer,pytorch,spacy,tokenize,tokenization,NLP,Natural Language Processing,huggingface,linguistic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6, <3.8
+Requires-Dist: transformers (>=2.3.0)
+Requires-Dist: h5py (>=2.10.0)
+Requires-Dist: numpy (>=1.17.4)
+Requires-Dist: regex (>=2020.1.8)
+Requires-Dist: spacy (>=2.2.3)
+Requires-Dist: torch
+
+UNKNOWN
+
+
