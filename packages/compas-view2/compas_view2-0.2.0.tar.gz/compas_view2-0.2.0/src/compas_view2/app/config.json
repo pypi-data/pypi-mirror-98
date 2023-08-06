@@ -1,0 +1,112 @@
+{
+    "messages":
+    {
+        "about": "COMPAS View2 is the second generation of standalone viewers for the COMPAS framework."
+    },
+    "menubar":
+    [
+        {
+            "type": "menu",
+            "text": "COMPASVIEW 2",
+            "items":
+            [
+                {"type": "action", "text": "About", "action": "about"},
+                {"type": "separator"},
+                {"type": "action", "text": "OpenGL Version", "action": "opengl_version"},
+                {"type": "action", "text": "GLSL Version", "action": "glsl_version"}
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "View",
+            "items":
+            [
+                {
+                    "type": "radio",
+                    "items":
+                    [
+                        {"type": "action", "text": "Shaded", "checked": true, "action": "view_shaded"},
+                        {"type": "action", "text": "Ghosted", "checked": false, "action": "view_ghosted"},
+                        {"type": "action", "text": "Wireframe", "checked": false, "action": "view_wireframe"},
+                        {"type": "action", "text": "Lighted", "checked": false, "action": "view_lighted"}
+                    ]
+                },
+                {"type": "separator"},
+                {"type": "action", "text": "Catpure", "action": "view_capture"},
+                {"type": "separator"},
+                {"type": "action", "text": "Front", "action": "view_front"},
+                {"type": "action", "text": "Right", "action": "view_right"},
+                {"type": "action", "text": "Top", "action": "view_top"},
+                {"type": "action", "text": "Perspective", "action": "view_perspective"}
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "Scene",
+            "items":
+            [
+                {"type": "action", "text": "Load Scene", "action": "load_scene"},
+                {"type": "action", "text": "Save Scene", "action": "save_scene"},
+                {"type": "separator"},
+                {"type": "action", "text": "Undo", "action": "undo"},
+                {"type": "action", "text": "Redo", "action": "redo"},
+                {"type": "separator"},
+                {"type": "action", "text": "Clear Scene", "action": "clear_scene"},
+                {"type": "action", "text": "Redraw Scene", "action": "redraw_scene"}
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "Geometry",
+            "items":
+            [
+                {
+                    "type": "menu",
+                    "text": "Primitives",
+                    "items":
+                    [
+                        {"type": "action", "text": "Add Point", "action": "add_point"},
+                        {"type": "action", "text": "Add Point On Grid", "action": "add_point_on_grid"},
+                        {"type": "action", "text": "Add Line [2 points]", "action": "add_line_from_selected_points"}
+                    ]
+                },
+                {
+                    "type": "menu",
+                    "text": "Shapes",
+                    "items":
+                    [
+                        {"type": "action", "text": "Add Box", "action": "add_box"},
+                        {"type": "action", "text": "Add Sphere", "action": "add_sphere"},
+                        {"type": "action", "text": "Add Torus", "action": "add_torus"}
+                    ]
+                },
+                {"type": "action", "text": "Edit Object", "action": "edit_selected_object"}
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "Networks",
+            "items":
+            [
+                {"type": "action", "text": "Add Network from OBJ", "action": "add_network_from_obj"}
+            ]
+        },
+        {
+            "type": "menu",
+            "text": "Meshes",
+            "items":
+            [
+                {"type": "action", "text": "Add Mesh from File", "action": "add_mesh_from_file"}
+            ]
+        }
+    ],
+    "toolbar":
+    [
+        {"type": "action", "text": "Catpure", "action": "view_capture"},
+        {"type": "separator"},
+        {"type": "action", "text": "Front", "action": "view_front"},
+        {"type": "action", "text": "Right", "action": "view_right"},
+        {"type": "action", "text": "Top", "action": "view_top"},
+        {"type": "action", "text": "Perspective", "action": "view_perspective"}
+    ]
+}
