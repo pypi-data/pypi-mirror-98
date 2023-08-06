@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "disable_existing_loggers": "False",
+    "formatters": {
+        "simple": {
+            "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        },
+        "demoSimple": {
+            "format": "%(asctime)s.%(msecs)06d - %(levelname)s: %(module)s: %(message)s",
+            "datefmt" : "%H:%M:%S"
+        }
+    },
+    "handlers": {
+        "consoleHandler": {
+            "class": "logging.StreamHandler",
+            "formatter": "demoSimple",
+            "stream": "ext://sys.stdout"
+        }
+    },
+    "loggers": {
+        "root": {
+            "level": "INFO",
+            "handlers": ["consoleHandler"],
+            "propagate": "False"
+        },
+        "albow": {
+            "level": "WARNING",
+            "handlers":  ["consoleHandler"],
+            "propagate": "False"
+        },
+        "albow.themes": {
+            "level":     "WARNING",
+            "propagate": "False"
+        },
+        "__main__": {
+            "level": "INFO",
+            "propagate": "False"
+        }
+    }
+}
