@@ -1,0 +1,3 @@
+[console_scripts]
+newversion = newversion.main:main_cli
+
