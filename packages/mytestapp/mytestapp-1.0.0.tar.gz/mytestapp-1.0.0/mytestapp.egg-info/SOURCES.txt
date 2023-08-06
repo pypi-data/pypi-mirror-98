@@ -1,0 +1,11 @@
+README.md
+setup.py
+mytestapp/__init__.py
+mytestapp/mytestapp.py
+mytestapp.egg-info/PKG-INFO
+mytestapp.egg-info/SOURCES.txt
+mytestapp.egg-info/dependency_links.txt
+mytestapp.egg-info/entry_points.txt
+mytestapp.egg-info/not-zip-safe
+mytestapp.egg-info/requires.txt
+mytestapp.egg-info/top_level.txt
