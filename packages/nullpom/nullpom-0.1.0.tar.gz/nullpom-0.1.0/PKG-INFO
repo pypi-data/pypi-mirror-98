@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: nullpom
+Version: 0.1.0
+Summary: Library to easily run Null Importances.
+Home-page: https://github.com/tenajima/nullpom
+License: MIT
+Keywords: null importance,feature selection,importance,kaggle
+Author: tenajima
+Author-email: tenajima@gmail.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lightgbm (>=3.1.1,<4.0.0)
+Requires-Dist: matplotlib (==3.2.2)
+Requires-Dist: pandas (>=1.1,<1.2)
+Requires-Dist: scikit-learn (>=0.24.1,<0.25.0)
+Project-URL: Documentation, https://github.com/tenajima/nullpom
+Project-URL: Repository, https://github.com/tenajima/nullpom
+Description-Content-Type: text/markdown
+
+[![Test with pytest](https://github.com/tenajima/nullpom/actions/workflows/pytest.yml/badge.svg)](https://github.com/tenajima/nullpom/actions/workflows/pytest.yml)
+[![Format with black](https://github.com/tenajima/nullpom/actions/workflows/black.yml/badge.svg)](https://github.com/tenajima/nullpom/actions/workflows/black.yml)
+
+# nullpom
+
+Library to easily run Null Importances.
+
+## About Null Importances
+
+Null Importances is feature selection process using target permutation tests actual importance significance against the distribution of feature importances when fitted to noise (shuffled target).
+
+### Detail
+- [paper](https://academic.oup.com/bioinformatics/article/26/10/1340/193348)
+- [kaggle notebook](https://www.kaggle.com/ogrellier/feature-selection-with-null-importances)
+- [japanese article](https://qiita.com/trapi/items/1d6ede5d492d1a9dc3c9)
+
+# Output
+![output](https://raw.githubusercontent.com/tenajima/nullpom/main/img/distribution_of_importance.png)
+
+# Basic usage
+
+```python
+from nullpom import run_null_importance
+
+result = run_null_importance(
+    {"objective": "binary", "seed": 42},
+     X_train=X_train,
+    X_valid=X_valid,
+    y_train=y_train,
+    y_valid=y_valid,
+)
+```
+
+# Install
+```sh
+pip install nullpom
+```
+
