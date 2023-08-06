@@ -1,0 +1,17 @@
+glink/__init__.py,sha256=UJjZNKqZDgoDTJra4UYII6NceW8skyVvzfZqob2hOYQ,111
+glink/__main__.py,sha256=hLgKglY0Sn-1g9_aRAW7qbBeAA8gku3aBY6nBy5-4NA,173
+glink/abc.py,sha256=ohyxShtQ4Z0XZdHCFOoqMDjcoR3Om29ZPDAq-Xo9X2o,2239
+glink/cli.py,sha256=mRAuuGqh9bpLU5p-2IzqZ2goEyWWkET_gUC97jFEgOQ,4576
+glink/configs.py,sha256=lNqMS_pufxYsSw3TWWxIrc-SyeY7Dx71kOGAjHnqM6I,2896
+glink/core.py,sha256=FQw8Oef9NFpdqQ5ea3SjP4Ndi3L7r6lWARZIWAyCMH0,8935
+glink/entry_points_console_scripts.py,sha256=H6Ff2n-uYa_dyMTjCYsa-PDdkqrUu5VAZ9AihzGTJSg,162
+glink/errors.py,sha256=q32kUlEHyKnfqtsVJ5yVckUirw2eHG6MG6tZ4F2MPTw,498
+glink/utils.py,sha256=74OtyhM1Se5Ttuh6RAvsX0p5wlR-arpGMFGL4q0Kcp4,203
+glink/provs/__init__.py,sha256=92H8dp4DZwnksidwDqr4O8lW7UsZGjlA9Z4VK2EkWR4,112
+glink/provs/gist.py,sha256=tUIan2EG-8xwRgizB6BUPVTt-wwUantS3ubB8VRuaNE,4297
+glink2-0.2.1.dist-info/LICENSE,sha256=C1pFjeMUZRmaPciU5HHkWFVr2Jssyki1BL0gOe6Xf3I,1065
+glink2-0.2.1.dist-info/METADATA,sha256=hyYeSMflJ9JI6REqiuev-HlfiFQGw-0t7rtKFpHYw2Y,2223
+glink2-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+glink2-0.2.1.dist-info/entry_points.txt,sha256=1l8acX5vun8JhAdvbkNAWF9VePmQai2_hWciNjMk4IE,42
+glink2-0.2.1.dist-info/top_level.txt,sha256=rKC2I-0Khj1QfVflbqmPdiDSgGrB845VP9siCRBpe0g,6
+glink2-0.2.1.dist-info/RECORD,,
