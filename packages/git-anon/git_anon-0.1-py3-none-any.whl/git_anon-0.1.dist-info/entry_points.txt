@@ -1,0 +1,4 @@
+[console_scripts]
+git-anon = git_anon_cli:main
+helper-for-git-anon = gpg_replacement:main
+
