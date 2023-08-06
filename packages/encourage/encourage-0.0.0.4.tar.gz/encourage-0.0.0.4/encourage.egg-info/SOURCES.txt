@@ -1,0 +1,8 @@
+setup.py
+encourage.egg-info/PKG-INFO
+encourage.egg-info/SOURCES.txt
+encourage.egg-info/dependency_links.txt
+encourage.egg-info/entry_points.txt
+encourage.egg-info/requires.txt
+encourage.egg-info/top_level.txt
+encourage.egg-info/zip-safe
