@@ -1,0 +1,4 @@
+PyQt5==5.12.2
+pyqtgraph>=0.10.0
+appdirs>=1.4.3
+linien-python-client==0.4.2
