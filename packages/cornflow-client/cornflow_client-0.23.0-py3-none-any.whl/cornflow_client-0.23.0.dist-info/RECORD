@@ -1,0 +1,17 @@
+cornflow_client/__init__.py,sha256=-vRC_zYMvoNruCshb0v846xXTX0OZqfD9XV-F1wX5FY,346
+cornflow_client/airflow_dag_utilities.py,sha256=tlbi0knFI0sbxemd98oainvVdugd4Sgk2Bdat6I_uGM,6542
+cornflow_client/constants.py,sha256=-GWqgqXSe64dxM2KkfmfNfdbVKVnJ8LRJCAhBwvYMVQ,380
+cornflow_client/cornflow_client.py,sha256=9TkmpQ6S1pY3CVKWmrtQ-9FV8mdX5QnRvWczd6SXHm0,10639
+cornflow_client/schema_dict_functions.py,sha256=jZ4bnTZiDloQySk5tzGx7BqIoSNJRI1a3P7uzuk41Rc,3284
+cornflow_client/schema_manager.py,sha256=aiK7SCYjfmgLSgrl8LcyFPqPYnndj3qOohMMhP0Ux_c,16315
+cornflow_client/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cornflow_client/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cornflow_client/tests/test_schema_manager.py,sha256=7pC0Dgexi5TVzcFaS2nTPcQIetCkM4n4pDKZyRnGSao,5487
+cornflow_client/tests/test_varnames.py,sha256=UTnbUQBf7ZCP5JGy4pr8gCPI1a-WwnoGbReUNJnX04k,4742
+cornflow_client/tests/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cornflow_client/tests/data/dict_schema_example.py,sha256=FuWgxI_3EE55UsINJI6WFOs4p_o1nVnOZAN-NVL10WM,2819
+cornflow_client-0.23.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cornflow_client-0.23.0.dist-info/METADATA,sha256=hTNAzCjuDPpzMeWnOW8mKI7Xl5c59ETktU1LD8ZnxBQ,1542
+cornflow_client-0.23.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cornflow_client-0.23.0.dist-info/top_level.txt,sha256=aGt4Rpe6lqFx0nYSam0KJP_CQuROdjZtte62ER2u3Zo,16
+cornflow_client-0.23.0.dist-info/RECORD,,
