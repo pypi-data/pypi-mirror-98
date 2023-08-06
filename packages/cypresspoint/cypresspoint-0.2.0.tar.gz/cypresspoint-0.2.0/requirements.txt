@@ -1,0 +1,2 @@
+six
+splunk-sdk==1.6.15
