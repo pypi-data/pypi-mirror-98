@@ -1,0 +1,15 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_file.py,sha256=o54vcN5NG506IfmUu9ARf_c2sGUR8INVJdOIVYVTOQI,2032
+tintin/__init__.py,sha256=dJ2f0xVDEb31wpFgyMH4SMtkxSP39APR6xzcX4DPC4g,94
+tintin/__main__.py,sha256=9ZGM_7CAGEcO0fyDAuKmrPt8pBE0wet-Av9r_hDyQto,298
+tintin/api.py,sha256=ACfISxJj586w1yUopUUFNNzujr4GT2BQ4FMiv-3cRCg,920
+tintin/auth.py,sha256=h51V9AriSgsZEEk8-n0xZF1vOE67alKAguACYzPKu3E,360
+tintin/config.txt,sha256=jN08oHpF3DSJDqvjOIiUUUIJw1hB2_2DTyq4a3glzWM,129
+tintin/file.py,sha256=DxGK5zJU0lltXzYdIprVhjbMMIrtW5I5oYyOyzzqJbw,4747
+tintin/logging.py,sha256=P_gtPGdQUlANBZU9VYbd0Su_aqQcQP0_x8sFN4PI1l4,495
+tintin/util.py,sha256=Vyk7yzRw8BElXs--6-nSzEcQYAC2ix7eatjbTSJ45l4,668
+tintin_sdk-0.0.2.dist-info/METADATA,sha256=jya0QbV_zldJRa6TAZlFt2sKzFDcJ5hprHZDsugv8kY,804
+tintin_sdk-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tintin_sdk-0.0.2.dist-info/entry_points.txt,sha256=KCskGVzFogrwJY1reRhwglmxmLstmiu-uBLa8tHLJG4,53
+tintin_sdk-0.0.2.dist-info/top_level.txt,sha256=DhD2fTf0yNSJNxkPP00i1Pw9Quw4Oi9bWKQpwQ3qwLo,12
+tintin_sdk-0.0.2.dist-info/RECORD,,
