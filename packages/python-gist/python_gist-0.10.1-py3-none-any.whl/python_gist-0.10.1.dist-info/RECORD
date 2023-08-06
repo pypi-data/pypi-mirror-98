@@ -1,0 +1,10 @@
+gist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gist/client.py,sha256=TIadFc6_ySh8HK0txJx47prsG5zST1EtMoaibhIZATI,26035
+gist/gist.py,sha256=_ZIXojBlx-T0AloPWfko8NMVCuqjFBZmJnob98S-_A0,11584
+gist/version.py,sha256=M-zQSPzh2X4cFX0A0d4RNlFeLj-9QxdKJApVHsk0tvY,31
+python_gist-0.10.1.dist-info/LICENSE,sha256=mlVBynF-rAt8pmrdmKsPJgoCLb3JzF8mOuuekzgmmac,1081
+python_gist-0.10.1.dist-info/METADATA,sha256=sEoEO07vIY411-hP_xCA8GyuZ5a6pWZ7orHo-7plJ9g,11238
+python_gist-0.10.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_gist-0.10.1.dist-info/entry_points.txt,sha256=6PM8nVSdkUOE8MEhY3_wazYj6-0mxnrFqvgb-094_R0,43
+python_gist-0.10.1.dist-info/top_level.txt,sha256=OqhjQFfv8zvbaMBjq4e9tSSfb5QAbpyMS4klhBZz5s8,5
+python_gist-0.10.1.dist-info/RECORD,,
