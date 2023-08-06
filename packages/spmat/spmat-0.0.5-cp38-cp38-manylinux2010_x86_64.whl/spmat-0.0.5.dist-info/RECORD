@@ -1,0 +1,11 @@
+spmat/__about__.py,sha256=BAGww-6-Wy92uMOEwFh2WT-9Tv2L3LqrWQxMPuka50Y,430
+spmat/linalg.cpython-38-x86_64-linux-gnu.so,sha256=uR00TZmdSdTpXEq3XaPGm6C5mJjZ13ny_56E0x0fCVs,1621728
+spmat/dlmat.py,sha256=SIEQF57B6uY6z7HTZbBK9PXp1cIQ6kGWAj5tuNjUuEk,10052
+spmat/linalg.c,sha256=PiFbz1vHFBNye0CrYACu4lmQ3X1rcRZG0xqgD3P1xK0,941385
+spmat/utils.py,sha256=84QXVTRwM74nUCRt0gl4xYgloZDkYdI6jgSnuXGcMXA,1297
+spmat/__init__.py,sha256=jZvuKk9rpPBQr9ABk-U-eMN_jpcmnnSHDp9WpqxPmOA,48
+spmat-0.0.5.dist-info/WHEEL,sha256=RIeRBYNNiNK3sXfnenIjXDrR2Tzyz05xCMpKF2hJ1iA,111
+spmat-0.0.5.dist-info/top_level.txt,sha256=_gG75V86FOxG9Rf9kCBKWOxg2-WxlUrqo2Dog0rPUmM,6
+spmat-0.0.5.dist-info/RECORD,,
+spmat-0.0.5.dist-info/METADATA,sha256=aFIPeKAFzViyHpgWqpuWyBpDrXGllAl96wxgDPMubQw,1173
+spmat-0.0.5.dist-info/LICENSE,sha256=EOgn1srox5NRE_dNWDi2FwZ_ttWeybLvNcldHJwMgQU,1320
