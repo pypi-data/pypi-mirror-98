@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cps3utils
+Version: 0.0.1
+Summary: Capcom® CP System III ROM hacking utilites
+Home-page: https://github.com/greats3an/cps3utils
+Author: greats3an
+Author-email: greats3an@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
