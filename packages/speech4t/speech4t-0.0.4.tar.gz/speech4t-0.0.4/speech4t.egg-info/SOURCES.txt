@@ -1,0 +1,10 @@
+README.rst
+setup.py
+speech4t/__init__.py
+speech4t/common.py
+speech4t.egg-info/PKG-INFO
+speech4t.egg-info/SOURCES.txt
+speech4t.egg-info/dependency_links.txt
+speech4t.egg-info/requires.txt
+speech4t.egg-info/top_level.txt
+語音模組/__init__.py
