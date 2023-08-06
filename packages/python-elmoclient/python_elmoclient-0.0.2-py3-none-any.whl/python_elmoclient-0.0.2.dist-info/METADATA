@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: python-elmoclient
+Version: 0.0.2
+Summary: Python library for Elmo control units
+Home-page: https://github.com/rzulian/pyhton-elmoclient
+Author: Riccardo Zulian
+Author-email: riccardo.zulian@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+
+UNKNOWN
+
+
