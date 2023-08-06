@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+nclpy/__init__.py
+nclpy/nclpy.py
+nclpy/utils.py
+nclpy.egg-info/PKG-INFO
+nclpy.egg-info/SOURCES.txt
+nclpy.egg-info/dependency_links.txt
+nclpy.egg-info/not-zip-safe
+nclpy.egg-info/requires.txt
+nclpy.egg-info/top_level.txt
