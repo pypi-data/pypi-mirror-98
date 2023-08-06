@@ -1,0 +1,5 @@
+include weightlogger/images/*.png
+include weightlogger/data/
+include LICENSE
+include requirements.txt
+include supporting_graphic.png
