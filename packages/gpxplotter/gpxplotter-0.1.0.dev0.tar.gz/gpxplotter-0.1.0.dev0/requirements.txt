@@ -1,0 +1,10 @@
+branca
+folium
+jinja2
+matplotlib
+numpy
+python-dateutil
+scipy
+sphinx
+sphinx_rtd_theme
+sphinx-gallery
