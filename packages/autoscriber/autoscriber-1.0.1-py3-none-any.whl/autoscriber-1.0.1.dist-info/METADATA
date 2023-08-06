@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: autoscriber
+Version: 1.0.1
+Summary: Python library for the autoscriber summarizer. Honestly, it's just a wrapper lib XD
+Home-page: https://github.com/autoscriber-app/autoscriber-lib
+Author: KentoNishi
+Author-email: kento24gs@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: bert-extractive-summarizer
+Requires-Dist: spacy
+Requires-Dist: transformers
+Requires-Dist: neuralcoref
+Requires-Dist: torch
+
+# autoscriber-lib
+Python library for the autoscriber summarizer. Honestly, it's just a wrapper lib XD
+
+# Install
+```bash
+pip3 install --upgrade autoscriber
+python3 -m spacy download en_core_web_md
+```
+
+### Run Example
+```python
+python3 example.py
+```
+
