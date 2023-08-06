@@ -1,0 +1,14 @@
+# IDE artefacts
+.idea/*
+
+# Build artefacts
+docs/_build/*
+__pycache__/*
+*/__pycache__/*
+build/*
+dist/*
+untitled_job_runner.egg-info/*
+
+# Test artefacts
+.nox/*
+.pytest_cache/*

@@ -1,0 +1,6 @@
+Pebble>=4.5.3
+
+[development]
+nox
+pytest
+pre-commit
