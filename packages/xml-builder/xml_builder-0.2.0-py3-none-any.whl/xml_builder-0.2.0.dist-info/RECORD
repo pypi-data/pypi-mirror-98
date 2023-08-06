@@ -1,0 +1,8 @@
+xml_builder/__init__.py,sha256=zl1hxuMENxuH7KHLC4WGlgKG7wOz_InxMI7JydyaDsU,100
+xml_builder/__init__.pyi,sha256=qnE2QCrgyKLlvKFuZ52yXt8B3KP104PdUrX164pitEk,66
+xml_builder/builder.py,sha256=4MPVwmXHnkat_RunKzlqPIRGfIlZnpB2gF8P8MvE7uU,1264
+xml_builder/builder.pyi,sha256=Xp8C6GCADPFBNj4svwDucNYfIucTcQHe4_Hk5_ivIa4,797
+xml_builder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xml_builder-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+xml_builder-0.2.0.dist-info/METADATA,sha256=Q02JAZWn9scO8kqlYy14Hj9zzlWtES9AxwlLriymUjY,240
+xml_builder-0.2.0.dist-info/RECORD,,
