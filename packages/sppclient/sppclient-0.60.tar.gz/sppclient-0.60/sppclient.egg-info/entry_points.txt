@@ -1,0 +1,3 @@
+[console_scripts]
+sppcli = spplib.cli.sppcli:main
+
