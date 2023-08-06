@@ -1,0 +1,7 @@
+democritus-file-system
+democritus-networking
+democritus-urls
+democritus-lists
+
+[:python_version < "3.8"]
+importlib-metadata
