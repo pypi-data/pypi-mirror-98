@@ -1,0 +1,10 @@
+compressed_dictionary/__init__.py,sha256=uYYdFQ5MuRxBD38MP8TAVzNIEbLIjOLZEz8P5wMBXiE,76
+compressed_dictionary/compressed_dictionary.py,sha256=hbcCHh1Y3VjSCqbaEOn40Tkuhh7xh1YAEf7qC1y3jQo,18142
+compressed_dictionary/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compressed_dictionary/utils/merge.py,sha256=SfXyzfOcb88L8qrPLUeeTup-x5yxMWhK9roT_bNlORI,1347
+compressed_dictionary/utils/split.py,sha256=2y3JFzJsxokEucUgpkFsCDtyNY2sYve4IWLxyto0kGI,2552
+compressed_dictionary-1.2.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+compressed_dictionary-1.2.1.dist-info/METADATA,sha256=7EheKAjGSTIkLp5rwnQ74HPyE9IOLLvXmR3sdtxm_k0,5865
+compressed_dictionary-1.2.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+compressed_dictionary-1.2.1.dist-info/top_level.txt,sha256=Tuh7B93JWdIb_RZ-NyX8JRzFGLM_0G-wZdPDW-IT59s,22
+compressed_dictionary-1.2.1.dist-info/RECORD,,
