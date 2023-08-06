@@ -1,0 +1,11 @@
+ppa_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppa_api/_client.py,sha256=INt-80osCbN1cey0vjKaazcS1SYxXLboitN3TyhiIqk,3809
+ppa_api/client.py,sha256=8VAZHm3A7nBcAtP9Meyw_KHPPLaC9rNuwqa4eOqe4xs,6541
+ppa_api/create.py,sha256=1CBrkkIOnNvKn5Sr25m_oyULCQfLaMMy9JAHAb64mIA,1877
+ppa_api/exceptions.py,sha256=TrEpuJicaGYQmbn4eGng9JMXcxsYySo-fy5DPJMSGMs,1656
+ppa_api/models.py,sha256=wWu87nIBWAgy8DthFozQDDgUWlepzH9q56K71_iXN20,902
+ppa_api-1.0.1.dist-info/LICENSE,sha256=-bs9tC3Ka8cB4O7vPO4ShwTcP5XPYUwTqvJt23pYIvE,1067
+ppa_api-1.0.1.dist-info/METADATA,sha256=X0kYirMvoXFj1mb53t4PtrEbKjg2te2kWgj6nX4uc3Q,807
+ppa_api-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ppa_api-1.0.1.dist-info/top_level.txt,sha256=0cdfA2okUDHsvOuYDF7FQBRa2XQyrxVrxYbOpdu_duA,8
+ppa_api-1.0.1.dist-info/RECORD,,

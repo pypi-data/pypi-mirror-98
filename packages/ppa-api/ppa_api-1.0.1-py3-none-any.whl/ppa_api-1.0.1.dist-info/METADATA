@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ppa-api
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/tomguyatt/ppa-api
+Author: Osirium
+Author-email: supportdesk@osirium.com
+Maintainer: Tom Guyatt
+Maintainer-email: tom.guyatt@osirium.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: requests (~=2.0)
+Requires-Dist: timeout-decorator (==0.5.0)
+Provides-Extra: test
+Requires-Dist: coverage (==5.4) ; extra == 'test'
+Requires-Dist: requests-mock (==1.8.0) ; extra == 'test'
+Requires-Dist: pytest (==6.2.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'test'
+
+UNKNOWN
+
+
