@@ -1,0 +1,7 @@
+pysam>=0.15.4
+biopython>=1.78
+pyliftover>=0.4
+setuptools
+
+[mappy]
+mappy
