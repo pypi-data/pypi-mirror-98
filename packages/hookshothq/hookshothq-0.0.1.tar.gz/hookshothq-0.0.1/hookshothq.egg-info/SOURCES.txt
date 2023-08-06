@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+hookshot/__init__.py
+hookshot/resources/__init__.py
+hookshot/resources/event.py
+hookshot/resources/management_session.py
+hookshot/resources/subscription.py
+hookshothq.egg-info/PKG-INFO
+hookshothq.egg-info/SOURCES.txt
+hookshothq.egg-info/dependency_links.txt
+hookshothq.egg-info/requires.txt
+hookshothq.egg-info/top_level.txt
