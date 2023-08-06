@@ -1,0 +1,88 @@
+#!/usr/bin/env bash
+
+# library variable.
+lib=$(clean-path $(get-argument --lib $@))
+if [[ "$lib" == "none" ]] || [[ "$lib" == "" ]] ; then
+    lib="/usr/local/lib/dev0s/lib/"
+fi
+
+# import.
+if [[ "$OSTYPE" == "darwin"* ]] ; then
+    source $lib/bash/import --lib $lib --no-error-exit
+else
+    . $lib/bash/import --lib $lib --no-error-exit
+fi
+
+# macos.
+if [[ "$OS" == "macos" ]] ; then
+
+    # colors (http://www.marinamele.com/2014/05/customize-colors-of-your-terminal-in-mac-os-x.html).
+    if [[ "$user" != "root" ]] ; then
+        #export PS1='%{%F{green}%}%n%{%f%}%{%F{green}%}@%{%f%}%{%F{green}%}%m %{%F{blue}%}%1~ %{%f%}%$$ '
+        hs=$(replace-str `hostname` "_" ".")
+        export PS1='%F{green}%}%n%{%f%}%{%F{green}%}@'$hs'%F{white}%}:%{%F{blue}%}%0~ %{%f%}%$$ '
+        export CLICOLOR=1
+        export LSCOLORS=ExGxBxDxCxegedabagaced
+    fi
+
+    # os info.
+    IFS=":" read name value <<< $(sw_vers) 
+    NAME=$(replace-str $(replace-str $value " " "" --except) "   " "" --except)
+    IFS=":" read name value <<< $(sw_vers | tail -2) 
+    VERSION=$(replace-str $(replace-str $value " " "" --except) "   " "" --except)
+
+    # prevent duplicate commands in arrow up history.
+    setopt HIST_IGNORE_DUPS
+
+# linux.
+elif [[ "$OS" == "linux" ]] ;  then
+
+    # colors.
+    if [[ "$user" != "root" ]] ; then
+
+        # replace hostname.
+        if [[ "$OSTYPE" =~ "linux-gnu" ]] ; then
+            hs=$(replace-str `hostname` "_" ".")
+            export PS1='\[\e]0;\u@'$hs': \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@'$hs'\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+        fi
+
+    fi
+
+    # os info.
+    . /etc/os-release
+
+    # zombie processes.
+    alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+    alert
+
+fi
+
+# vars.
+ips=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1')
+IFS=" " read before after <<< $ips 
+PRIVATE_IP=$before
+if [[ "$OS" == "macos" ]] ; then
+    PUBLIC_IP="$(dig +short myip.opendns.com @resolver1.opendns.com)"
+elif [[ "$OS" == "linux" ]] ; then
+    PUBLIC_IP="$(curl https://ipinfo.io/ip)"
+fi
+
+# welcome message.
+welcome="""
+Welcome to $NAME $VERSION ($(timestamp)):
+  \* Host: $hs 
+  \* User: $user 
+  \* Operating System: $OS 
+  \* Private IP: $PRIVATE_IP 
+  \* Public IP: $PUBLIC_IP
+"""
+if [[ "$OS" == "macos" ]] ; then
+    output=$(top -l 1 -s 0)
+    welcome=$welcome"  \* "$(echo $output | awk ' /Processes/ ')"\n"
+    welcome=$welcome"  \* "$(echo $output | awk ' /CPU usage/ ')"\n"
+fi
+if [[ "$HIDE_WELCOME_MESSAGE" != "true" ]] ; then
+    echo $welcome
+fi
+
+#
