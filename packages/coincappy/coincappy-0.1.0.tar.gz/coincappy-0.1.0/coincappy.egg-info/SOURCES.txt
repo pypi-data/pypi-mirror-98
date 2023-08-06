@@ -1,0 +1,9 @@
+README.md
+setup.py
+coincappy/__init__.py
+coincappy/api.py
+coincappy.egg-info/PKG-INFO
+coincappy.egg-info/SOURCES.txt
+coincappy.egg-info/dependency_links.txt
+coincappy.egg-info/requires.txt
+coincappy.egg-info/top_level.txt
