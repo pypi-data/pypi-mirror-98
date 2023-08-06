@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: emlens
+Version: 0.0.2
+Summary: A lightweight toolbox for understanding embedding space
+Home-page: https://github.com/skojaku/emlens
+Author: Sadamori Kojaku
+License: MIT
+Keywords: word embedding,graph embedding
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: faiss-cpu
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+# emlens
+[![Build Status](https://travis-ci.org/skojaku/emlens.svg?branch=main)](https://travis-ci.org/skojaku/emlens)
+[![Unit Test & Deploy](https://github.com/skojaku/emlens/actions/workflows/main.yml/badge.svg)](https://github.com/skojaku/emlens/actions/workflows/main.yml)
+
+A lightweight toolbox for analyzing embedding space
+
+## Requirements
+- Python 3.7 or 3.8 (may not work on 3.9)
+
+## Doc
+
+https://emlens.readthedocs.io/en/latest/
+
+## Install
+
+```
+pip install emlens
+```
+
+## Maintenance
+
+Code Linting:
+```bash
+conda install -y -c conda-forge pre-commit
+pre-commit install
+```
+
+Docsctring: sphinx format
+
+Test:
+```bash
+python -m unittest tests/simple_test.py
+```
+
+
