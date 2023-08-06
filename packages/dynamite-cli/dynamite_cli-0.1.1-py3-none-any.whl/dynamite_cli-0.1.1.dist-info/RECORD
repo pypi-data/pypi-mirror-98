@@ -1,0 +1,8 @@
+dynamite_cli/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dynamite_cli/dynamo_copy.py,sha256=0guSqE142JilC0eAHQ5h972_I3loAqN3fN4IiQXum9M,2281
+dynamite_cli/main.py,sha256=WoYdW9gepPOyaCr8zWFRfp9pUlQkSgGtj9IF8Xn1F24,1852
+dynamite_cli-0.1.1.dist-info/entry_points.txt,sha256=9NBDRip26U3Viz8zH2R0jBO52t1b5IlKKMQFj6_RyLw,54
+dynamite_cli-0.1.1.dist-info/LICENSE,sha256=ranzmpK3GHoDSUpt38vB4tR28HGiAM84CZjDY6dcOv0,1069
+dynamite_cli-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dynamite_cli-0.1.1.dist-info/METADATA,sha256=d31B9TV3VqL-WO6iB2a0UyMAzDr_y0QPa-sd-MbeOyM,1307
+dynamite_cli-0.1.1.dist-info/RECORD,,
