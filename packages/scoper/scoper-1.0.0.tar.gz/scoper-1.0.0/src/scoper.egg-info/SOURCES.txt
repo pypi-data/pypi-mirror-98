@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/scoper/__init__.py
+src/scoper/scoper.py
+src/scoper.egg-info/PKG-INFO
+src/scoper.egg-info/SOURCES.txt
+src/scoper.egg-info/dependency_links.txt
+src/scoper.egg-info/top_level.txt
