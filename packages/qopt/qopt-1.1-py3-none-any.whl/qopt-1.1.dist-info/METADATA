@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: qopt
+Version: 1.1
+Summary: Optimal Control for Quantum Systems
+Home-page: https://git-ce.rwth-aachen.de/qutech/qopt
+Author: Julian Teske
+Author-email: j.teske@fz-juelich.de
+License: GLP3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: cython
+Requires-Dist: simanneal
+Requires-Dist: pandas
+Requires-Dist: spyder
+Requires-Dist: jupyter
+Requires-Dist: notebook
+Requires-Dist: filter-functions
+Requires-Dist: qutip
+Provides-Extra: doc
+Requires-Dist: ipython ; extra == 'doc'
+Requires-Dist: ipykernel ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: numpydoc ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: jupyter-client ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+UNKNOWN
+
+
