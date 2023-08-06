@@ -1,0 +1,10 @@
+setup.py
+binomial-distributions-mle/Binomialdistribution.py
+binomial-distributions-mle/Gaussiandistribution.py
+binomial-distributions-mle/Generaldistribution.py
+binomial-distributions-mle/__init__.py
+binomial_distributions_mle.egg-info/PKG-INFO
+binomial_distributions_mle.egg-info/SOURCES.txt
+binomial_distributions_mle.egg-info/dependency_links.txt
+binomial_distributions_mle.egg-info/not-zip-safe
+binomial_distributions_mle.egg-info/top_level.txt
