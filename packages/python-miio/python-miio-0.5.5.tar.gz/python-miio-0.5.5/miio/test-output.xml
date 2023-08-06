@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="0" failures="1" hostname="lumipyry" name="pytest" skipped="0" tests="1" time="333.402" timestamp="2020-08-05T18:58:45.992618"><testcase classname="tests.test_vacuum" file="tests/test_vacuum.py" line="231" name="test_asfd" time="332.915"><failure message="AssertionError: assert &apos;Running command status\n\nAborted!\n&apos; is None
+ +  where &apos;Running command status\n\nAborted!\n&apos; = &lt;Result SystemExit(1)&gt;.output">mocker = &lt;pytest_mock.plugin.MockFixture object at 0x7f5155771610&gt;
+
+&gt;   ???
+E   AssertionError: assert &apos;Running command status\n\nAborted!\n&apos; is None
+E    +  where &apos;Running command status\n\nAborted!\n&apos; = &lt;Result SystemExit(1)&gt;.output
+
+tests/test_vacuum.py:239: AssertionError</failure></testcase></testsuite></testsuites>
