@@ -1,0 +1,9 @@
+add_parent_path
+fire
+kanilog
+pytest
+PyYAML
+requests
+requests_oauthlib
+stdlogging
+urlpath
