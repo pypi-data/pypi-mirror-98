@@ -1,0 +1,7 @@
+pandas
+numpy
+joblib
+fire
+plotly
+kaleido
+tabulate
