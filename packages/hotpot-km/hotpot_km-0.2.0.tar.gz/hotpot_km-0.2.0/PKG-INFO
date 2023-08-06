@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: hotpot_km
+Version: 0.2.0
+Summary: Hotpot - Jupyter kernel manager helpers
+Home-page: https://github.com/voila-dashboards/hotpot_km
+Author: Vidar Tonaas Fauske
+Author-email: vidartf@gmail.com
