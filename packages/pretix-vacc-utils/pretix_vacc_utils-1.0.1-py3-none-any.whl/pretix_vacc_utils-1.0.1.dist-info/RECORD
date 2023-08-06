@@ -1,0 +1,17 @@
+pretix_vacc_autosched/__init__.py,sha256=HN0RhTUtntxt28Y2TEnbuR7kO44p1HSDJr8V4jr2_40,831
+pretix_vacc_autosched/forms.py,sha256=b0FvGRSMVWfp7Od5NkTpy0r29_SCHCrp9YZ2JvcpsLc,2067
+pretix_vacc_autosched/models.py,sha256=9EG9Zi5AvBEfPERwYmjJfzBTIaRcex2CKNgMfgalqKU,1069
+pretix_vacc_autosched/signals.py,sha256=VaBVeitiX1yU2yUN5YCNGvfKLqTBNQ0M9a4S7IozW7Q,5128
+pretix_vacc_autosched/tasks.py,sha256=Hz-7MA36A5314_Qq4pl8IZHmbvspBLzHWgAPwDK03I0,8516
+pretix_vacc_autosched/urls.py,sha256=Cax9-kU2W0-RWTTWCqfmujFRzVnusdHpdII09BYzQtg,249
+pretix_vacc_autosched/views.py,sha256=b5YNbO_ju45mVX9LZnr5f55WgkLY_6fupkFgpmU5ASY,2349
+pretix_vacc_autosched/migrations/0001_initial.py,sha256=xyYOl5WvtI66vory1kT2XdYsFzHeCqrY2XIX-FJd69c,1238
+pretix_vacc_autosched/migrations/0002_auto_20210310_1210.py,sha256=jsYjHeA71igDDh7YhfmpvJPw0AZJ1H2tgFs8MEeniHs,1600
+pretix_vacc_autosched/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_vacc_autosched/templates/pretix_vacc_autosched/settings.html,sha256=0BwbTSadgXUQEBLzD6GjhpUb-QIoq2F8cK2u3u8iFFI,628
+pretix_vacc_utils-1.0.1.dist-info/LICENSE,sha256=ePtOJa7la9hsiGwtnEUYLW55jfVSRM7qjkrREvqsaPQ,554
+pretix_vacc_utils-1.0.1.dist-info/METADATA,sha256=V7EV4ogoihT0-fP6pnLZDenitvEI6-P_9RRHDI_zghQ,1634
+pretix_vacc_utils-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pretix_vacc_utils-1.0.1.dist-info/entry_points.txt,sha256=Pd5oCvPAPPb53fVl5jsC8deBKb1j-pz-s_9TY0teBSQ,78
+pretix_vacc_utils-1.0.1.dist-info/top_level.txt,sha256=kfYI_gCC5D8h_Hb88Hk-K-vfgpUHpPPynFB0gPBr3nA,22
+pretix_vacc_utils-1.0.1.dist-info/RECORD,,
