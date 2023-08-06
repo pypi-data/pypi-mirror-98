@@ -1,0 +1,7 @@
+numpy<=1.19.5
+
+[keras]
+tensorflow>=2
+
+[torch]
+torch
