@@ -1,0 +1,15 @@
+biopython
+pyyaml
+jinja2
+lxml
+xmltramp2
+toyplot
+toytree<=1.2.0
+numpy
+pandas
+matplotlib
+svgutils
+pillow
+requests
+importlib-metadata
+keyring
