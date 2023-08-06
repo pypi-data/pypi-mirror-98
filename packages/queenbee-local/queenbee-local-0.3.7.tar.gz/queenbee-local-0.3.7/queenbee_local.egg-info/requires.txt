@@ -1,0 +1,4 @@
+queenbee>=1.24.1
+luigi==3.0.2
+click==7.1.2
+click_plugins==1.1.1
