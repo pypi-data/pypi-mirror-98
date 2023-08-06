@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pinkbelt
+Version: 0.16.1
+Summary: Opinionated Product Development Automation
+Home-page: http://github.com/Almad/pink-belt
+Author: Lukas Linhart
+Author-email: bugs@almad.net
+License: MIT
+Description: 
+            # Pink Belt: Opinionated Product Development Automation
+        
+            Integrates useful GitHub workflow with Trello and Slack.
+            
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Environment :: Console
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
