@@ -1,0 +1,5 @@
+Change Log
+==========
+1.0.1 (17/03/2021)
+- add get random fal
+
