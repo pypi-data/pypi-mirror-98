@@ -1,0 +1,9 @@
+jsonschema
+PyYAML
+
+[dev]
+flake8
+isort
+pydocstyle
+pytest-cov
+pytest>=6.0
