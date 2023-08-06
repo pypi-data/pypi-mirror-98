@@ -1,0 +1,8 @@
+homeassistant_api/__init__.py,sha256=RwpPzSZXRNt-UWFkVifLM5KQ_NyLjYPD3F0_1Lo8lNI,40
+homeassistant_api/client.py,sha256=_KyxzjrGz-leaHlPpqs94hEF5ZfoCHG2knEnEuH3D58,68
+homeassistant_api/errors.py,sha256=fVAGsFQ1RKZCwYwXLwYyB2-n64lcUHdUf5i58hoJlkk,175
+homeassistant_api/rawclient.py,sha256=XDJEvhgwsfepB4GDgvgQFYMIwGnJKVCk0zMJzAhC-sg,3923
+HomeAssistant_API-0.0.0a0.dist-info/METADATA,sha256=FGECgL5T8Rx56YRkTE8_zErHAHFBqoWa0PwNLh2vsfc,718
+HomeAssistant_API-0.0.0a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+HomeAssistant_API-0.0.0a0.dist-info/top_level.txt,sha256=Duk4q1C54DizlUAqQMaEb3LnBOCZXuDArt7r0MeC2BE,18
+HomeAssistant_API-0.0.0a0.dist-info/RECORD,,
