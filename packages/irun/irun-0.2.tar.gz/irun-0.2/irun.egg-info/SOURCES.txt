@@ -1,0 +1,17 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+irun/base.py
+irun/compiler.py
+irun/parser.py
+irun/preprocessor.py
+irun/run.py
+irun.egg-info/PKG-INFO
+irun.egg-info/SOURCES.txt
+irun.egg-info/dependency_links.txt
+irun.egg-info/top_level.txt
+tests/runner.py
+tests/cases/basic.irun
