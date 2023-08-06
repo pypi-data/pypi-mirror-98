@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: timequota
+Version: 0.0.2
+Summary: Limit the time of your script
+Home-page: https://github.com/AravRS/timequota
+Author: AravRS
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: prettytable
+
+# timequota
+
+### `pip install -U timequota`
+
+Limit the time of your python script.
+
+[Example Notebook](https://github.com/AravRS/timequota/blob/main/demo.ipynb)
+
+
+## Changelog
+
+### 0.0.2
+
+âœ¨ New Feature:
+
+- added `name` and `verbose` options
+- added `reset()`
+
+ðŸš‘ Critical Hotfix:
+
+- fixed time exceeded in `update()`
+
+ðŸ‘Œ Improve:
+
+- added `time_exceeded` attribute
+- added `str` and `repr` dunder
+- changed to update `time_since` in the end
+
+ðŸ”¨ Refactor Code:
+
+- added time exceeded bool check
+- minor print changes
+
+### 0.0.1
+
+ðŸ’¥ NEW
+
+- added `update()` and `track()`
+
+ðŸ“– DOC
+
+- added example demo nb
+
+### 0.0.0
+
+ðŸŽ‰ Initial Commit
+
+
