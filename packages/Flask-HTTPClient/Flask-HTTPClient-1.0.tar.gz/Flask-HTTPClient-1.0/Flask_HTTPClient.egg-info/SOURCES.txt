@@ -1,0 +1,10 @@
+README.md
+flask_httpclient.py
+setup.cfg
+setup.py
+Flask_HTTPClient.egg-info/PKG-INFO
+Flask_HTTPClient.egg-info/SOURCES.txt
+Flask_HTTPClient.egg-info/dependency_links.txt
+Flask_HTTPClient.egg-info/not-zip-safe
+Flask_HTTPClient.egg-info/requires.txt
+Flask_HTTPClient.egg-info/top_level.txt
