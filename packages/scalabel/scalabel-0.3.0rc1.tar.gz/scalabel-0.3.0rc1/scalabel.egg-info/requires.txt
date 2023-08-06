@@ -1,0 +1,16 @@
+boto3
+Flask-Cors
+Flask
+joblib
+numpy
+Pillow
+plyfile
+psutil
+pycocotools
+pydantic
+pyhumps
+pyparsing
+python-dateutil
+PyYAML
+requests
+tqdm
