@@ -1,0 +1,15 @@
+README.md
+setup.py
+soco_tokenizer/__init__.py
+soco_tokenizer/bert_tokenizer.py
+soco_tokenizer/cloud_bucket.py
+soco_tokenizer/config.py
+soco_tokenizer/logging_handlerr.py
+soco_tokenizer/model_loaders.py
+soco_tokenizer/tokenizer.py
+soco_tokenizer/util.py
+soco_tokenizer.egg-info/PKG-INFO
+soco_tokenizer.egg-info/SOURCES.txt
+soco_tokenizer.egg-info/dependency_links.txt
+soco_tokenizer.egg-info/requires.txt
+soco_tokenizer.egg-info/top_level.txt
