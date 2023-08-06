@@ -1,0 +1,6 @@
+Change Log
+==========
+
+1.0.7 (16/03/2021:11:21 IST)
+------------------
+- Seventh Release: Stable
