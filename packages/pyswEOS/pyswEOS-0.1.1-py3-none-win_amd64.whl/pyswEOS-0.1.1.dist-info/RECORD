@@ -1,0 +1,12 @@
+pyswEOS/H2O.py,sha256=df-ZgqD1dW9MXEdOTk0EjBAwGv3WPSzsDYraVlueSmc,6068
+pyswEOS/H2ONaCl.py,sha256=PmTJQ7QLmcvDYgffwCkB50RazMVA3I8UaK5cA0nNujA,30392
+pyswEOS/NaCl.py,sha256=c_4GdO6oonf4hdCjRwy3CCR94j2rDI1rXNHBD-SvR0M,2988
+pyswEOS/_H2O.pyd,sha256=c2RHIEZoXBRv3I-ae1qtzj8Wr14cYvbKnlxR5Pp_qFs,104448
+pyswEOS/_H2ONaCl.pyd,sha256=VU257JZwSOV1QSG-m9Hm0PykNMehyy431jbJiYHZlCs,792576
+pyswEOS/_NaCl.pyd,sha256=LUdKC7Ztf0Wf3OIxSGUE3qRLboPEYL8rPjdA5Xj9FM4,37888
+pyswEOS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyswEOS-0.1.1.dist-info/METADATA,sha256=Udimp6fvhfCcOVTdVnr-58FqMhf4mWnHrvgIuKKm1HQ,470
+pyswEOS-0.1.1.dist-info/WHEEL,sha256=EJwkWS4k7NOt4p1hIazOJxgWnAZIJHJ8JqlbFgKgs1w,98
+pyswEOS-0.1.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyswEOS-0.1.1.dist-info/top_level.txt,sha256=cmgRGAg4KkswWLlweDXvPAi86Lc095FcjG5spMocfnY,8
+pyswEOS-0.1.1.dist-info/RECORD,,
