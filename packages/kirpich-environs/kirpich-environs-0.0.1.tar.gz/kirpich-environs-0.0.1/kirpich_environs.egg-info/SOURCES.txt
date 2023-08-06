@@ -1,0 +1,9 @@
+README.md
+setup.py
+kirpich_environs/__init__.py
+kirpich_environs/environs.py
+kirpich_environs.egg-info/PKG-INFO
+kirpich_environs.egg-info/SOURCES.txt
+kirpich_environs.egg-info/dependency_links.txt
+kirpich_environs.egg-info/requires.txt
+kirpich_environs.egg-info/top_level.txt
