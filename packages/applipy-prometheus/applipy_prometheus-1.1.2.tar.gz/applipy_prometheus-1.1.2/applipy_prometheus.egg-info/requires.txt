@@ -1,0 +1,2 @@
+applipy_http<2.0.0,>=1.0.0
+applipy_metrics<2.0.0,>=1.0.0
