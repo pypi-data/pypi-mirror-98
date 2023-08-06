@@ -1,0 +1,11 @@
+d8s_pdfs/__init__.py,sha256=XW4XXLmKLM5uxxbhUx-X8WzhwUkohnbEtwAE2DjdT-4,120
+d8s_pdfs/pdfs.py,sha256=BG_xjEyKZSXsZnghpG-BS9SjL5Q4dcwzmVlkSurSlI8,1271
+d8s_pdfs/pdfs_temp_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pdfs.py,sha256=Zc5svIWQjAoFnw2lSvWMRDoOVm-uXel9jQ1Y4-LYN1U,1125
+d8s_pdfs-0.3.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_pdfs-0.3.0.dist-info/METADATA,sha256=jmJmq0k3v6hVvbeZQAwE-i8fZKXWiuVwvQzdHd5em3M,1888
+d8s_pdfs-0.3.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_pdfs-0.3.0.dist-info/top_level.txt,sha256=ha5gAYRhfMNselGrfzaoKyr4L7Ty9bYVRN8AoBXnags,15
+d8s_pdfs-0.3.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_pdfs-0.3.0.dist-info/RECORD,,
