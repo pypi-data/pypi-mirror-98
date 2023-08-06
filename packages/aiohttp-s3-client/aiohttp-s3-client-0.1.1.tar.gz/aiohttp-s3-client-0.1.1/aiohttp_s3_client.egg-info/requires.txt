@@ -1,0 +1,11 @@
+aiohttp<4
+aws-request-signer==1.0.0
+
+[develop]
+coverage!=4.3
+coveralls
+pylava
+pytest
+pytest-aiohttp
+pytest-cov
+tox>=2.4
