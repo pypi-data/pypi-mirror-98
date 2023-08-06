@@ -1,0 +1,8 @@
+CLI.py
+README.md
+colors.py
+setup.py
+cli_essentials.egg-info/PKG-INFO
+cli_essentials.egg-info/SOURCES.txt
+cli_essentials.egg-info/dependency_links.txt
+cli_essentials.egg-info/top_level.txt
