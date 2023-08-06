@@ -1,0 +1,6 @@
+d8s-html
+d8s-strings
+d8s-utility
+
+[:python_version < "3.8"]
+importlib-metadata
