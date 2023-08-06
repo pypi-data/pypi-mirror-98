@@ -1,0 +1,4 @@
+google-cloud-monitoring<2,>=1
+python-dateutil
+google-cloud-datacatalog<3,>=2
+pyYAML
