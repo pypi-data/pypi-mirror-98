@@ -1,0 +1,3 @@
+[console_scripts]
+brickmos = brickmos.brickify:main
+
