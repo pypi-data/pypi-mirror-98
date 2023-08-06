@@ -1,0 +1,14 @@
+kaplan/__init__.py,sha256=QIhQPhUUk3fhm4knDofDYC-DyVI56gJNlsTqt-TmWsw,833
+kaplan/kdb.py,sha256=zpGOg7a1vAZ9-OxZ3DvjTb0jNfM98-T0xMY7RSIsqRo,15436
+kaplan/kxliff.py,sha256=LGRpiFlmO_jE2v7XRsL-vBEc8xr6VJG1FZha8JZ07yk,62802
+kaplan/language_codes.py,sha256=JGZOPkafFGu9KuMoh4G_dgajCz21h2MuOi5CJLC9rt4,4271
+kaplan/project.py,sha256=ukEk3WkLjWPdohXjRPu3nLsiBgse_TPKb2K1V35KBlc,8917
+kaplan/sdlxliff.py,sha256=gBhO1dk1lxQymKP7vTN0tDvb9q4ohi8mHFFAX1dDdYs,3723
+kaplan/utils.py,sha256=i8tasfgM8dpV0X5H3iAB5gaEOxiY0lC3KIyQb_wtDow,258
+kaplan/version.py,sha256=RYs3cR49NZ5Zwt0avo2mYyRcdWjLbrKBCHRHpqCJx24,23
+kaplan/xliff.py,sha256=PpuTLP-Wc77MWLPCed1F80y3ppAgz2p9_aNhmlS7mAw,13503
+kaplan-0.10.0.dist-info/LICENSE,sha256=9_LBg_6TLEFWhRqoa8rAROdvHPMoQhBmBcQ9pMBtrjU,1066
+kaplan-0.10.0.dist-info/METADATA,sha256=L8k9CWTqKdBCL8_kO-WTfeBP26pdVg2Evh69CXYu-Uw,665
+kaplan-0.10.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kaplan-0.10.0.dist-info/top_level.txt,sha256=tFv8oJPjAXNvAVr-mp4NDWwf4r4ieNY7R_-jjts1YqQ,7
+kaplan-0.10.0.dist-info/RECORD,,
