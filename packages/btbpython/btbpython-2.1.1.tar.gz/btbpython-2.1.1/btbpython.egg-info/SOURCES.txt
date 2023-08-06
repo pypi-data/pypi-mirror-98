@@ -1,0 +1,15 @@
+README.md
+setup.py
+btbpython/__init__.py
+btbpython/client.py
+btbpython/lyrics.py
+btbpython/madlibs.py
+btbpython/meme.py
+btbpython/reddit.py
+btbpython/text.py
+btbpython/word.py
+btbpython.egg-info/PKG-INFO
+btbpython.egg-info/SOURCES.txt
+btbpython.egg-info/dependency_links.txt
+btbpython.egg-info/requires.txt
+btbpython.egg-info/top_level.txt
