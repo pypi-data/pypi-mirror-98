@@ -1,0 +1,8 @@
+README.md
+irker_handler.py
+pyproject.toml
+setup.cfg
+irker_handler.egg-info/PKG-INFO
+irker_handler.egg-info/SOURCES.txt
+irker_handler.egg-info/dependency_links.txt
+irker_handler.egg-info/top_level.txt
