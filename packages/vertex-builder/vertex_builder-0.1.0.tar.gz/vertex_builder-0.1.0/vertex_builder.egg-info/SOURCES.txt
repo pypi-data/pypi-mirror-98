@@ -1,0 +1,6 @@
+setup.py
+./vertex_builder.cpp
+vertex_builder.egg-info/PKG-INFO
+vertex_builder.egg-info/SOURCES.txt
+vertex_builder.egg-info/dependency_links.txt
+vertex_builder.egg-info/top_level.txt
