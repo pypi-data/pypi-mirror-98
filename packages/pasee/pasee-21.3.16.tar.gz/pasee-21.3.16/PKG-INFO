@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pasee
+Version: 21.3.16
+Summary: HTTP server managing users.
+Home-page: https://github.com/meltygroup/pasee
+Author: Julien Palard
+Author-email: julien@python.org
+License: MIT License
+Description: # Pasee — Identity Managment Server
+        
+        [![Documentation Status](https://readthedocs.org/projects/pasee/badge/?version=latest)](https://pasee.readthedocs.io/en/latest/?badge=latest)
+        [![Package on PyPI](https://img.shields.io/pypi/v/pasee.svg)](https://pypi.org/project/pasee/)
+        [![Build status](https://travis-ci.org/meltygroup/pasee.svg?branch=master)](https://travis-ci.org/meltygroup/pasee)
+        
+        
+        Pasee is a simple layer over multiple IdMs, typically a Kisee
+        and other identity providers like Twitter, Github, …
+        
+        Documentation: [https://pasee.readthedocs.io](https://pasee.readthedocs.io)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+Provides-Extra: sentry

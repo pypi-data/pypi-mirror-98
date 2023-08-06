@@ -1,0 +1,12 @@
+aioauth-client
+aiohttp
+aiohttp-cors
+asyncpg
+jinja2
+pyjwt[crypto]>=2.0.0
+pytoml
+shortuuid
+
+[sentry]
+sentry-sdk>=0.19
+aiocontextvars
