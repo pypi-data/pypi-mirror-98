@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        hello=mv_comma_sql.cli:cli
+    
