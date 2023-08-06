@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+yamltopy/__init__.py
+yamltopy/yamltopy.py
+yamltopy.egg-info/PKG-INFO
+yamltopy.egg-info/SOURCES.txt
+yamltopy.egg-info/dependency_links.txt
+yamltopy.egg-info/entry_points.txt
+yamltopy.egg-info/top_level.txt
