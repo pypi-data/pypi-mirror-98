@@ -1,0 +1,9 @@
+release_new/__init__.py,sha256=ZoTBHlaesGlcZ5B1OORCOlfypTmfNltjdKQIU7TCqT8,76
+release_new/changelog.py,sha256=lWTZsNGaMXKO7Bz2R2pulNhI1YjH79AzjiQc1BiphLU,3803
+release_new/main.py,sha256=z7_Qa4uvLegTNVWdW-jDgFuZLmZPkQ6-1n8Sdr7triI,8567
+release_new/templates/changelog.md,sha256=Mh0O19B9jWP_snz9vJNvgyNLlJ89bk5S-bg5LinyoNE,904
+release_new-0.4.1.dist-info/METADATA,sha256=ypJHhHcs0L3QDAl6ApLfUDV812k9XDvDOpg8F7_K3FQ,355
+release_new-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+release_new-0.4.1.dist-info/entry_points.txt,sha256=PIqcQ1ZlSihOU2LnBq2vhJkW_g_WnoFOjEa-BdsHGMo,55
+release_new-0.4.1.dist-info/top_level.txt,sha256=zQ7W4S1rTWldmrq6_KC-azNk4P2a7hhkEK6XU6U0mRs,12
+release_new-0.4.1.dist-info/RECORD,,
