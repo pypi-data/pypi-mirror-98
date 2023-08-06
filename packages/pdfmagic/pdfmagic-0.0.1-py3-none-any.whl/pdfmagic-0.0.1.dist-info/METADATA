@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pdfmagic
+Version: 0.0.1
+Summary: PDF tools
+Home-page: https://github.com/czrcbl/pdfmagic
+Author: Cézar Lemos
+Author-email: cezar@protonmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: PyPDF2
+Requires-Dist: tqdm
+Requires-Dist: pytest
+
+UNKNOWN
+
+
