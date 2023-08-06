@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[32],{279:function(e,o,m){"use strict";m.r(o),o.default={comments:"Comments",removeComment:"Remove Comment",removePrompt:"Are you sure you want to remove these comments?",commentView:"View",created_at:"Created at",document:"Document",send:"Send",message:"Message"}}}]);

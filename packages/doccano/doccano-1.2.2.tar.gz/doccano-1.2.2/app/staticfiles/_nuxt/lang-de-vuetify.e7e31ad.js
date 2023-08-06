@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[27],{254:function(e,n,t){"use strict";t.r(n),n.default={itemsPerPageText:"Einträge pro Seite",noDataAvailable:"Keine Daten verfügbar"}}}]);
