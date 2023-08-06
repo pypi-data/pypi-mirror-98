@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ClynMut
+Version: 0.0.0
+Summary: ClynMut: Predicting the Clynical Relevance of Genome Mutations (wip)
+Home-page: https://github.com/hypnopump/clynmut
+Author: Eric Alcaide
+Author-email: ericalcaide1@gmail.com
+License: MIT
+Keywords: artificial intelligence,bioinformatics,mutation prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: einops (>=0.3)
+Requires-Dist: numpy
+Requires-Dist: torch (>=1.6)
+Requires-Dist: mdtraj (>=1.8)
+Requires-Dist: tqdm
+Requires-Dist: alphafold2-pytorch
+
+UNKNOWN
+
+
