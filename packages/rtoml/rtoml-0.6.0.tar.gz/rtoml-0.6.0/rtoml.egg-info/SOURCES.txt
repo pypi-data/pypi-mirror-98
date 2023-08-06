@@ -1,0 +1,14 @@
+Cargo.toml
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rtoml/__init__.py
+rtoml/py.typed
+rtoml.egg-info/PKG-INFO
+rtoml.egg-info/SOURCES.txt
+rtoml.egg-info/dependency_links.txt
+rtoml.egg-info/not-zip-safe
+rtoml.egg-info/top_level.txt
+src/lib.rs

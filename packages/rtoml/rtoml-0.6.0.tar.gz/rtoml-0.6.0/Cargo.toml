@@ -1,0 +1,15 @@
+[package]
+name = "rtoml"
+version = "0.6.0"
+authors = ["Samuel Colvin <s@muelcolvin.com>"]
+edition = "2018"
+
+[dependencies]
+toml = {version = "0.5.8", features = ["preserve_order"]}
+serde = "1.0.123"
+pyo3 = {version = "0.13.1", features = ["extension-module"]}
+
+[lib]
+name = "_rtoml"
+crate-type = ["cdylib"]
+
