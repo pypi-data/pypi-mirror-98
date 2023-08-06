@@ -1,0 +1,44 @@
+Metadata-Version: 1.2
+Name: eida-statistics-manager
+Version: 0.2.0
+Summary: EIDA nodes statistics manager
+Home-page: https://github.com/eida/eida-statistics/manager
+Author: Jonathan Schaeffer
+Author-email: jonathan.schaeffer@univ-grenoble-alpes.fr
+Maintainer: Jonathan Schaeffer
+Maintainer-email: jonathan.schaeffer@univ-grenoble-alpes.fr
+License: GPLv3
+Description: # EIDA Stats Manager
+        
+        Command line tool to manage the central database
+        
+        ## Installation
+        
+        ### With Pypi
+        
+            pip install eida_statsman
+            
+        ### Alternatively, from source with pipenv
+        
+            pipenv shell
+            pip install .
+            
+        
+        ## Usage
+        
+        Provided that you have access to the eidastats database :
+        
+        Exemple :
+        
+            DBURI=postgres://eidastats@pghost/eidastats
+            eida_statsman tokens list
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
