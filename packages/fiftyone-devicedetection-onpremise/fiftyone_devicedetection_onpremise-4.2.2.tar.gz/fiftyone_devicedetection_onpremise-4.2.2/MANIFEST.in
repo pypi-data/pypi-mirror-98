@@ -1,0 +1,3 @@
+recursive-include fiftyone_devicedetection_onpremise/device-detection-cxx/src *.hpp
+recursive-include fiftyone_devicedetection_onpremise/device-detection-cxx/src *.h
+recursive-include fiftyone_devicedetection_onpremise/device-detection-cxx/src *.i
