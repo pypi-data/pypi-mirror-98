@@ -1,0 +1,14 @@
+README.md
+setup.py
+anis_package.egg-info/PKG-INFO
+anis_package.egg-info/SOURCES.txt
+anis_package.egg-info/dependency_links.txt
+anis_package.egg-info/entry_points.txt
+anis_package.egg-info/top_level.txt
+pkg1/__init__.py
+pkg1/__main__.py
+pkg1/file1.py
+pkg1/file2.py
+pkg2/__init__.py
+pkg2/file3.py
+pkg2/file4.py
