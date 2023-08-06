@@ -1,0 +1,4 @@
+numpy
+spikeextractors>=0.9.4
+spiketoolkit>=0.7.3
+requests
