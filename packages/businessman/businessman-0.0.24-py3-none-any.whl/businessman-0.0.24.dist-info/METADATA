@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: businessman
+Version: 0.0.24
+Summary: A small example package
+Home-page: UNKNOWN
+Author: Ahmad Sharif
+Author-email: ahmad.sharif.abc@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Keywords: API,CRUD,restx
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Businessman Package
+
+CRUD Business Logic controller auto-generator for flask-restx.
+
+
