@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xskillscore
+Version: 0.0.19
+Summary: xskillscore
+Home-page: https://github.com/xarray-contrib/xskillscore
+Author: Ray Bell
+Author-email: rayjohnbell0@gmail.com
+License: Apache
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: bottleneck
+Requires-Dist: cftime
+Requires-Dist: dask (<=2021.02.0)
+Requires-Dist: numba (>=0.52)
+Requires-Dist: numpy
+Requires-Dist: properscoring
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: toolz
+Requires-Dist: xarray (>=0.16.1)
+Requires-Dist: xhistogram (>=0.1.2)
+
+Metrics for verifying forecasts
+
+
