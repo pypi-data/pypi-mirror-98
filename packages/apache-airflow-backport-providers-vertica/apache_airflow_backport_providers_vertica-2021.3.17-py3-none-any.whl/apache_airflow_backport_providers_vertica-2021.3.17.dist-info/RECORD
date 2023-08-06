@@ -1,0 +1,11 @@
+airflow/providers/vertica/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/hooks/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/hooks/vertica.py,sha256=PEmfZ6QjK-6Ro3a4-CgMGBBp7QdvQLq8SqUnT8VTc-I,1671
+airflow/providers/vertica/operators/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/vertica/operators/vertica.py,sha256=OGkvbWhXxD6ZWU8vfJqUKeckc-meyOTghQ4dJ5pKbIg,2003
+apache_airflow_backport_providers_vertica-2021.3.17.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_backport_providers_vertica-2021.3.17.dist-info/METADATA,sha256=V_YWfpV_ZgWMHAbh6Lx-bklQYUfmbDCo5cO7KbBXM_c,15804
+apache_airflow_backport_providers_vertica-2021.3.17.dist-info/NOTICE,sha256=irN1W_XwjRh8XRlHEhVpRCSY7NZfQgGdnEfjFvGrxK4,240
+apache_airflow_backport_providers_vertica-2021.3.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apache_airflow_backport_providers_vertica-2021.3.17.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_backport_providers_vertica-2021.3.17.dist-info/RECORD,,
