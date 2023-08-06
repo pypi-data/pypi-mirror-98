@@ -1,0 +1,13 @@
+amplitf
+expertsystem==0.7.0
+iminuit>=2.0
+numpy
+pandas
+phasespace>=1.2.0
+PyYAML
+sympy
+tensorflow>=2.0
+tqdm>=4.24.0
+
+[:python_version < "3.8.0"]
+typing-extensions
