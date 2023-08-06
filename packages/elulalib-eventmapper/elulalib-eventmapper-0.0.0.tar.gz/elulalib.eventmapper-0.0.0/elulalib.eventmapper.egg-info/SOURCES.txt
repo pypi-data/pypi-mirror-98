@@ -1,0 +1,5 @@
+setup.py
+elulalib.eventmapper.egg-info/PKG-INFO
+elulalib.eventmapper.egg-info/SOURCES.txt
+elulalib.eventmapper.egg-info/dependency_links.txt
+elulalib.eventmapper.egg-info/top_level.txt
