@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: gerapy-prometheus-exporter
+Version: 0.0.1b1
+Summary: Prometheus Exporter Components for Scrapy & Gerapy
+Home-page: https://github.com/Gerapy/GerapyPrometheusExporter
+Author: Germey
+Author-email: cqc@cuiqingcai.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: prometheus-client (>=0.9.0)
+Requires-Dist: Scrapy (>=1.4.0)
+
+
+# Gerapy Prometheus Exporter
+
+This is a package for supporting Prometheus in Scrapy, also this
+package is a module in [Gerapy](https://github.com/Gerapy/Gerapy).
+
+And the source code is modified from [https://github.com/rangertaha/scrapy-prometheus-exporter](https://github.com/rangertaha/scrapy-prometheus-exporter).
+
+## Installation
+
+```shell script
+pip3 install gerapy-prometheus-exporter
+```
+
+## Usage
+
+
