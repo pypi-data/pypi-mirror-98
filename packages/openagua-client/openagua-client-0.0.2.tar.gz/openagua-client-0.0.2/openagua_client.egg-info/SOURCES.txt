@@ -1,0 +1,9 @@
+README.md
+setup.py
+openagua_client/__init__.py
+openagua_client/client.py
+openagua_client.egg-info/PKG-INFO
+openagua_client.egg-info/SOURCES.txt
+openagua_client.egg-info/dependency_links.txt
+openagua_client.egg-info/requires.txt
+openagua_client.egg-info/top_level.txt
