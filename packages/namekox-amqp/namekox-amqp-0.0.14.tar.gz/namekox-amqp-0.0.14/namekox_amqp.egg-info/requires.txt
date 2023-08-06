@@ -1,0 +1,4 @@
+namekox-core
+kombu==4.6.11
+amqp==2.6.1
+anyjson==0.3.3
