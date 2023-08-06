@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-notifs
+Version: 3.0.0
+Summary: Modular notifications for Django
+Home-page: https://github.com/danidee10/django-notifs
+Author: Osaetin Daniel
+Author-email: osaetindaniel@gmail.com
+License: MIT
+Description: Modular notifications for Django
+Platform: UNKNOWN
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Provides-Extra: celery
+Provides-Extra: rq
+Provides-Extra: channels
