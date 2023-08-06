@@ -1,0 +1,8 @@
+README.md
+setup.py
+anal/__init__.py
+anal/anal.py
+anal.egg-info/PKG-INFO
+anal.egg-info/SOURCES.txt
+anal.egg-info/dependency_links.txt
+anal.egg-info/top_level.txt

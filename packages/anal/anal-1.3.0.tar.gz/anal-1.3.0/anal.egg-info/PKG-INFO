@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: anal
+Version: 1.3.0
+Summary: UNKNOWN
+Home-page: https://github.com/averak/anal
+Author: Tatsuya Abe
+Author-email: abe12@mccc.jp
+License: MIT
+Description: # anal
+        
+        [![PyPi](https://badge.fury.io/py/anal.svg)](https://pypi.python.org/pypi/anal/)
+        [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+        
+        Utility to stdout based on template and file.
+        
+        ## Requirement
+        
+        - Python3
+        
+        ## Installation
+        
+        ```sh
+        $ pip install anal
+        ```
+        
+Keywords: stdout
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
