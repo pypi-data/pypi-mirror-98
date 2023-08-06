@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Formpy
+Version: 0.0.1
+Summary: Librería para crear formularios en HTML desde Python.
+Home-page: UNKNOWN
+Author: Diego Dueñez (diegoduenez)
+Author-email: diegoduenez03@gmail.com
+License: UNKNOWN
+Description: Librería para crear formularios en HTML desde Python con funciones encadenadas
+Keywords: python,html,forms,python forms,python html,forms generate
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
