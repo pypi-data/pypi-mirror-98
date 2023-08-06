@@ -1,0 +1,86 @@
+# Generation of Kubernetes YAML is still under development!
+#
+# Save the output of this file and use kubectl create -f to import
+# it into Kubernetes.
+#
+# Created with podman-3.0.1
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2021-03-14T08:45:13Z"
+  labels:
+    app: transmission
+  name: transmission
+spec:
+  containers:
+  - command:
+    - /init
+    env:
+    - name: PATH
+      value: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+    - name: TERM
+      value: xterm
+    - name: container
+      value: podman
+    - name: PUID
+      value: "1000"
+    - name: PGID
+      value: "1000"
+    - name: TZ
+      value: Europe/Athens
+    - name: PS1
+      value: '$(whoami)@$(hostname):$(pwd)\$ '
+    - name: HOME
+      value: /root
+    - name: USER
+      value: $SET_USER
+    - name: PASS
+      value: $SET_PASSWD
+    - name: TRANSMISSION_WEB_HOME
+      value: /combustion-release/
+    image: ghcr.io/linuxserver/transmission:latest
+    name: main
+    ports:
+    - containerPort: 9091
+      hostPort: 9091
+      protocol: TCP
+    - containerPort: 51413
+      hostPort: 51413
+      protocol: TCP
+    - containerPort: 51413
+      hostPort: 51413
+      protocol: UDP
+    resources: {}
+    securityContext:
+      allowPrivilegeEscalation: true
+      capabilities:
+        drop:
+        - CAP_MKNOD
+        - CAP_NET_RAW
+        - CAP_AUDIT_WRITE
+      privileged: false
+      readOnlyRootFilesystem: false
+      seLinuxOptions: {}
+    volumeMounts:
+    - mountPath: /downloads
+      name: var-home-$LOCAL_USER-transmission-downloads
+    - mountPath: /watch
+      name: var-home-$LOCAL_USER-transmission-watch
+    - mountPath: /config
+      name: var-home-$LOCAL_USER-transmission-config
+    workingDir: /
+  dnsConfig: {}
+  volumes:
+  - hostPath:
+      path: /var/home/$LOCAL_USER/transmission/downloads
+      type: Directory
+    name: var-home-$LOCAL_USER-transmission-downloads
+  - hostPath:
+      path: /var/home/$LOCAL_USER/transmission/watch
+      type: Directory
+    name: var-home-$LOCAL_USER-transmission-watch
+  - hostPath:
+      path: /var/home/$LOCAL_USER/transmission/config
+      type: Directory
+    name: var-home-$LOCAL_USER-transmission-config
+status: {}

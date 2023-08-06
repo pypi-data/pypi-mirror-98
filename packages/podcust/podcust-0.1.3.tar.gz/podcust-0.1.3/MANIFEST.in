@@ -1,0 +1,29 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include License.md
+include README.rst
+include requirements.txt
+include Dockerfile
+include podcust.spec
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
+include docs/_build/man/podcust.1
+recursive-exclude docs/_build/html *
+recursive-exclude docs/_build/doctrees *
+exclude .readthedocs.yml
+
+recursive-include podcust *.py
+recursive-exclude podcust *.md
+recursive-include podcust Dockerfile
+include podcust/transmission/transmission-kube-template.yml
+include podcust/transmission/transmission-pod.service
+
+exclude action.yml
+exclude entrypoint.sh
+exclude .hadolint.yaml
+exclude .yamllint
