@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: quantservice
+Version: 0.0.10
+Summary: Quant Service
+Home-page: https://github.com/dudals3844/quant_service
+Author: ChoiYoungMin
+Author-email: dudals3844@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: pymysql
+Requires-Dist: sqlalchemy
+Requires-Dist: cryptography
+Requires-Dist: python-dateutil
+
+# Quant Service
+
+
+
+
