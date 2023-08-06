@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+jk_pypiorgapi/PyPiOrgAPI.py
+jk_pypiorgapi/URLFile.py
+jk_pypiorgapi/_CachedValue.py
+jk_pypiorgapi/__init__.py
+jk_pypiorgapi.egg-info/PKG-INFO
+jk_pypiorgapi.egg-info/SOURCES.txt
+jk_pypiorgapi.egg-info/dependency_links.txt
+jk_pypiorgapi.egg-info/not-zip-safe
+jk_pypiorgapi.egg-info/requires.txt
+jk_pypiorgapi.egg-info/top_level.txt
