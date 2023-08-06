@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+stimer/__init__.py
+stimer/__main__.py
+stimer/confighandler.py
+stimer/core.py
+stimer/output.py
+stimer.egg-info/PKG-INFO
+stimer.egg-info/SOURCES.txt
+stimer.egg-info/dependency_links.txt
+stimer.egg-info/entry_points.txt
+stimer.egg-info/requires.txt
+stimer.egg-info/top_level.txt

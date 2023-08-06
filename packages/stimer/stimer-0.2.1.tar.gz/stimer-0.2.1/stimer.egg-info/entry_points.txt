@@ -1,0 +1,3 @@
+[console_scripts]
+stimer = stimer.__main__:main
+
