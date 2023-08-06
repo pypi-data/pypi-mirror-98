@@ -1,0 +1,11 @@
+pyvpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvpc/pyvpc.py,sha256=CJbczPg3JCk2eUGap_UmWOO2-5VGzVc2DpPY-zph3KI,23484
+pyvpc/pyvpc_cidr_block.py,sha256=GMjpSjPfbma7JjCssbt4Ps8O_Jf_LiO7v1UbaIIA5RI,3285
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_pyvpc.py,sha256=OR7N2ib1Odo0R14xsf7zZjPwI8GNKXn7A-Ray2059io,11018
+pyvpc-0.1.8.dist-info/LICENSE,sha256=GrPht7ICP3oEljx2hG65P6vdtJfSOVetzEqlUDvObnw,11343
+pyvpc-0.1.8.dist-info/METADATA,sha256=nK2vVytwbmrMfg5atT9noit-7G3ytxdKeQJLfusjIpQ,6014
+pyvpc-0.1.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyvpc-0.1.8.dist-info/entry_points.txt,sha256=GJxyndQtsJPJjEM9Thw-oVyZYPWQnDauPgeFAJuWtZ8,44
+pyvpc-0.1.8.dist-info/top_level.txt,sha256=koNkxoTJTJ9H6D-xQFyFHKFjTBdwHACBMRLGenI8zz0,11
+pyvpc-0.1.8.dist-info/RECORD,,
