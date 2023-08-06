@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ClusterWrap
+Version: 0.0.3
+Summary: Wrappers around dask-jobqueue functions for specific clusters
+Home-page: https://github.com/GFleishman/ClusterWrap
+Author: Greg M. Fleishman
+Author-email: greg.nli10me@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
