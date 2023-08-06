@@ -1,0 +1,5 @@
+numpy==1.19.2
+Cython>=0.29.22
+websocket_client
+tokenizers
+requests
