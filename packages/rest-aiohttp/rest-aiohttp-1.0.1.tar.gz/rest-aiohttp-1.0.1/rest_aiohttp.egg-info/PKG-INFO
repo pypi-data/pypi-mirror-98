@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rest-aiohttp
+Version: 1.0.1
+Summary: Making async HTTP REST request via aiohttp with JSON, YAML serialization
+Home-page: https://github.com/mortilele/rest-aiohttp
+Author: Alik Akhmetov
+License: UNKNOWN
+Description: Making async HTTP REST request via aiohttp with JSON, YAML serialization
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

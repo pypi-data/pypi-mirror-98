@@ -1,0 +1,10 @@
+README.md
+setup.py
+rest_aiohttp.egg-info/PKG-INFO
+rest_aiohttp.egg-info/SOURCES.txt
+rest_aiohttp.egg-info/dependency_links.txt
+rest_aiohttp.egg-info/requires.txt
+rest_aiohttp.egg-info/top_level.txt
+restaiohttp/__init__.py
+restaiohttp/__main__.py
+restaiohttp/serializers.py
