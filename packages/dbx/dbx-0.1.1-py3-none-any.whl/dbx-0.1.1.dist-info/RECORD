@@ -1,0 +1,17 @@
+dbx/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+dbx/cli.py,sha256=7FMIO6ukiUEE674w1lA5-yckm5TT-i-W_uVxiJEncgE,687
+dbx/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbx/commands/configure.py,sha256=tNSqEsnP9RDyAXpFbNhzbHk8ydof7Tb3YFYro4zriOM,2457
+dbx/commands/datafactory.py,sha256=0ugT26lricRf5RL6_ny8ES1MQ78XybpWAitn3jdlg9g,10389
+dbx/commands/deploy.py,sha256=K4kGOkPc94Bf9cSgJZpw46nw6i1e2iS-m6H6BhEGhVo,13038
+dbx/commands/execute.py,sha256=KP71eta-AZhiNA2sLIc1sA1cwmLqCVA-3bBOvQKS0pU,10512
+dbx/commands/launch.py,sha256=UsvdRMjWSU9_iPHOSpNyFvvDOZo42F-As8nsBTqi3Vk,8054
+dbx/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbx/utils/common.py,sha256=4x83QB7GLHDvD0tmCUplJJdKAaIXRzn4A4cJFWR4Fy4,9710
+dbx-0.1.1.dist-info/LICENSE,sha256=G5NEToBM4eh9CYMUJJs4iEe96-gbazeRD9SCpE3mF4k,3464
+dbx-0.1.1.dist-info/METADATA,sha256=xoU4FmgGYHeS3X-XdsJiiLZvGfpoNZiCZ0d8hSz30uY,8997
+dbx-0.1.1.dist-info/NOTICE,sha256=WzSPQFP-b-HlhZZKs6ARyykAQvbgE_CKZZMfKJfXlfk,410
+dbx-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dbx-0.1.1.dist-info/entry_points.txt,sha256=EnpDFvl9CQa9GV_enK0_fBwRJm2gZntTiv8cfbozEfg,55
+dbx-0.1.1.dist-info/top_level.txt,sha256=o8O8zcZUmIfVkPycegQ3ve1YP8YyRfLWMmk59C3NeJE,4
+dbx-0.1.1.dist-info/RECORD,,
