@@ -1,0 +1,10 @@
+aiohttp<4.0.0,>=3.7.3
+easyinject==0.3
+aiodns<3.0.0,>=1.1.1
+
+[simhash]
+simhash==2.0.0
+
+[simhash-py]
+forkedsimhash-py==0.4.2
+six
