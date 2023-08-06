@@ -1,0 +1,9 @@
+mdapisp/.DS_Store,sha256=WSKDNHUtDUeaKCRijcUutJj-l34bLXJS8eubnFDjkuQ,6148
+mdapisp/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+mdapisp/database.py,sha256=sBqLgqhUaBg20-5L0kOZpAUHGSSjITjrLZv8TrVVU1A,902
+mdapisp/main.py,sha256=Rh_7NFcLv_sSlDLnkOPtRZ1gFmI-V0qp8mQRADA4UKg,3541
+mdapisp/requirements.txt,sha256=1fNnn5-E4Ku9ncdVwFkfe39-9YRnPyE4c0IgqooqHSo,2970
+mdapisp-0.1.1a3.dist-info/entry_points.txt,sha256=FDVyR00T0zYGtWv8eTuIpwE_sbrkixDSsOmEFkkfx2E,50
+mdapisp-0.1.1a3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mdapisp-0.1.1a3.dist-info/METADATA,sha256=MPJugcEr1bs19xqft1ndcTuX0l20Hm_iXOjlRp7mURg,2223
+mdapisp-0.1.1a3.dist-info/RECORD,,
