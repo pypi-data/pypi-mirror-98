@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+vplotter/__init__.py
+vplotter/vplotter.py
+vplotter.egg-info/PKG-INFO
+vplotter.egg-info/SOURCES.txt
+vplotter.egg-info/dependency_links.txt
+vplotter.egg-info/requires.txt
+vplotter.egg-info/top_level.txt
+vplotter/tests/__init__.py
