@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+jinja2_simple_tags.py
+setup.cfg
+setup.py
+jinja2_simple_tags.egg-info/PKG-INFO
+jinja2_simple_tags.egg-info/SOURCES.txt
+jinja2_simple_tags.egg-info/dependency_links.txt
+jinja2_simple_tags.egg-info/not-zip-safe
+jinja2_simple_tags.egg-info/requires.txt
+jinja2_simple_tags.egg-info/top_level.txt
