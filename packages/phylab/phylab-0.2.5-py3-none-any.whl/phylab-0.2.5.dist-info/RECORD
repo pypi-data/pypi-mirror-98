@@ -1,0 +1,13 @@
+phylab/__init__.py,sha256=weOqjev7TSoXwgzFwzmyAIFfnTv6c3OhcEebITbuz5o,292
+phylab/lab.py,sha256=esYVeLxg49TBn2e2P0pxE_fH83LdMSLE4LbnEDVyYR4,30679
+phylab-0.2.5.data/scripts/beat.py,sha256=6ZK7DRdpMQNgLKwcIXR9eiz4lU_RBrCbvmD30S3fDxs,2081
+phylab-0.2.5.data/scripts/beat_ext.py,sha256=POhrKX8JXJd-rB4duHvmgx19hNHnqHODT7Ge1mrQdSE,4958
+phylab-0.2.5.data/scripts/beat_naive.py,sha256=8FFJ8fUl6IYud9aaDYvnPjWd04OdYx0rftMXXUHyo7s,7160
+phylab-0.2.5.data/scripts/circfit.py,sha256=TtPq4zJQ060HbKQ5KfCVrnWLboD0ZpujLMljx2QZ5wA,4412
+phylab-0.2.5.data/scripts/damping_estimate.py,sha256=MMtpYgUVsfowUKFheT1bmiFAkv77i0DhE0v9KIeg-Zo,3054
+phylab-0.2.5.data/scripts/distributions.py,sha256=6lE5YucK1Is9hQvK7QLKHWq-4ZOR7Q9uXD_tgeP1ee4,364
+phylab-0.2.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phylab-0.2.5.dist-info/METADATA,sha256=8UkNqlnf0A3pBAD0YAwS7hJ9Pb6zzSSPvXmGOR4Gw1Q,11171
+phylab-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phylab-0.2.5.dist-info/top_level.txt,sha256=71uwbwzXCtFqEUESq2eC37uiMszvgUd7hr2W7Cljl2E,7
+phylab-0.2.5.dist-info/RECORD,,
