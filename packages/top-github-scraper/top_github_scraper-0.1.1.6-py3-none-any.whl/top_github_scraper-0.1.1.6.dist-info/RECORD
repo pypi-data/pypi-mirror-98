@@ -1,0 +1,7 @@
+top_github_scraper/__init__.py,sha256=dXMDG2ZCi4l2MUv8D5cInbbZ4Mm08jppOCcHFnwKFk0,137
+top_github_scraper/scrape_repo.py,sha256=vygthFUMlBiLk6imvrlInt0wKpLG-788wTSJnVFizew,10592
+top_github_scraper/scrape_user.py,sha256=GIJeZq_MboWjK4CWhppF7Wp79e4MvUE6nzQRpWEFBKA,2639
+top_github_scraper/utils.py,sha256=ki4vzz4VfLqJeNtIjEW8e5DZLyUHgSSQDywus2ci0CE,5234
+top_github_scraper-0.1.1.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+top_github_scraper-0.1.1.6.dist-info/METADATA,sha256=KPkHJEnPVCgFY0ktm-iRs4IwRgfzegdExbyYeO7yQVg,10134
+top_github_scraper-0.1.1.6.dist-info/RECORD,,
