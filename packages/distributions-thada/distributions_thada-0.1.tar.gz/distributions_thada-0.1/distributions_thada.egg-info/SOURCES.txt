@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_thada/Binomialdistribution.py
+distributions_thada/Gaussiandistribution.py
+distributions_thada/Generaldistribution.py
+distributions_thada/__init__.py
+distributions_thada.egg-info/PKG-INFO
+distributions_thada.egg-info/SOURCES.txt
+distributions_thada.egg-info/dependency_links.txt
+distributions_thada.egg-info/not-zip-safe
+distributions_thada.egg-info/top_level.txt
