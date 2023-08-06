@@ -1,0 +1,3 @@
+[console_scripts]
+plugin_sdk_automation = plugin_sdk_automation.main:main
+
