@@ -1,0 +1,9 @@
+ourcompose/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ourcompose/framework.py,sha256=g6-A4Gug3lxmQD9UFNkMkADGk2rYtgGXRfZKR2Qx-6I,9980
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_framework.py,sha256=KA3ksjzrqd1Ihf_z5iaWpQNvix-1p22GOximtcXK5SY,39986
+ourcompose-0.0.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ourcompose-0.0.5.dist-info/METADATA,sha256=fO-2eDXOp_iIO9OrtS8ixB7z-OLAP2BF1DpOhyZX7Ew,295
+ourcompose-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ourcompose-0.0.5.dist-info/top_level.txt,sha256=1AQAf9NbET4DUgLK6_KuFDM37NykoenCsb_aY3a4OYE,17
+ourcompose-0.0.5.dist-info/RECORD,,
