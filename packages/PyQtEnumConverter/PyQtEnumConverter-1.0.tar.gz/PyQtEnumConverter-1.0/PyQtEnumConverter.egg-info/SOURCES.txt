@@ -1,0 +1,12 @@
+.gitignore
+PyQtEnumConverter.py
+README.md
+setup.py
+PyQtEnumConverter/PyQtEnumConverter.py
+PyQtEnumConverter/__init__.py
+PyQtEnumConverter.egg-info/PKG-INFO
+PyQtEnumConverter.egg-info/SOURCES.txt
+PyQtEnumConverter.egg-info/dependency_links.txt
+PyQtEnumConverter.egg-info/entry_points.txt
+PyQtEnumConverter.egg-info/requires.txt
+PyQtEnumConverter.egg-info/top_level.txt

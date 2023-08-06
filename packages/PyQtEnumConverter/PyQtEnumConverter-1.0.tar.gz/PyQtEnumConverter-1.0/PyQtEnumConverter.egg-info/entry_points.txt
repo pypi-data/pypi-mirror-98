@@ -1,0 +1,3 @@
+[console_scripts]
+PyQtEnumConverter = PyQtEnumConverter.PyQtEnumConverter:main
+

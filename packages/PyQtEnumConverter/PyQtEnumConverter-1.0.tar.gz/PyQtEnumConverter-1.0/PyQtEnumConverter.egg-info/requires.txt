@@ -1,0 +1,4 @@
+PyQt6
+
+[Convert enums from QScintilla]
+PyQt6-QScintilla
