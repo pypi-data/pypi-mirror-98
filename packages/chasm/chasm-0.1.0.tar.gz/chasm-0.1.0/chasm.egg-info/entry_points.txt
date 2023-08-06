@@ -1,0 +1,3 @@
+[console_scripts]
+chasm = chasm.cli:main
+
