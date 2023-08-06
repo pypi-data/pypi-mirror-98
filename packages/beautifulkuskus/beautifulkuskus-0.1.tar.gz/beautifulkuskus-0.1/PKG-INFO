@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: beautifulkuskus
+Version: 0.1
+Summary: Pruning library for beautifulsoup
+Home-page: https://github.com/urigoren/beautifulkuskus
+Author: Uri Goren
+Author-email: uri@goren.ml
+License: UNKNOWN
+Description: https://github.com/urigoren/beautifulkuskus/blob/master/README.md
+Keywords: beautifulsoup,html,parsing,pruning
+Platform: UNKNOWN
