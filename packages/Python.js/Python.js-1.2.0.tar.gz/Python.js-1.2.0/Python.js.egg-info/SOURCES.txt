@@ -1,0 +1,15 @@
+README.md
+setup.py
+PyJS/__init__.py
+PyJS/arrayMethods.py
+PyJS/console.py
+PyJS/convertions.py
+PyJS/jsonManager.py
+PyJS/numberMethods.py
+PyJS/stringMethods.py
+PyJS/modules/fs.py
+Python.js.egg-info/PKG-INFO
+Python.js.egg-info/SOURCES.txt
+Python.js.egg-info/dependency_links.txt
+Python.js.egg-info/requires.txt
+Python.js.egg-info/top_level.txt
