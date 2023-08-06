@@ -1,0 +1,8 @@
+README.md
+setup.py
+lighttool.egg-info/PKG-INFO
+lighttool.egg-info/SOURCES.txt
+lighttool.egg-info/dependency_links.txt
+lighttool.egg-info/entry_points.txt
+lighttool.egg-info/requires.txt
+lighttool.egg-info/top_level.txt
