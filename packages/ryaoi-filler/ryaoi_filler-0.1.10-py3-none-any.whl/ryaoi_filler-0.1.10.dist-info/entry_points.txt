@@ -1,0 +1,3 @@
+[console_scripts]
+ryaoi_filler=ryaoi_filler.cli:main
+
