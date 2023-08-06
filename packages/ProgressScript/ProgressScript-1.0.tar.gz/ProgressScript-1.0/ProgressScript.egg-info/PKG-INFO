@@ -1,0 +1,121 @@
+Metadata-Version: 2.1
+Name: ProgressScript
+Version: 1.0
+Summary: Solid Progress Bar Script For Python 
+Home-page: UNKNOWN
+Author: IonE
+Author-email: ivanaperginsky@gmail.com
+License: UNKNOWN
+Description: Installation:
+        
+        pip install ProgressScript
+        
+        Using:
+        
+        Points:
+        
+        PyProgress.points(1, 25, 50, 100)
+        
+        We get:
+        
+        . 25%
+        .. 50%
+        ... 100%
+        
+        Slash:
+        
+        PyProgress.slash(1, 25, 50, 100)
+        
+        We get:
+        
+        / 25%
+        // 50%
+        /// 100%
+        
+        Stars:
+        
+        PyProgress.stars(1, 25, 50, 100)
+        
+        We get:
+        
+        * 25%
+        ** 50%
+        *** 100%
+        
+        Num:
+        
+        PyProgress.num(5, 1, 25, 50, 100)
+        
+        We get:
+        
+        5 25%
+        55 50%
+        555 100%
+        
+        Bar:
+        
+        PyProgress.bar(1, 10, 100, 10)
+        
+        We get bar look like in TQDM.
+        
+        Explanation:
+        
+        Basic Load (Points, Slash, Stars):
+        
+        We have 4 funcs:
+        
+        speed, percent one, percent two, percent three. (25, 50, 100)
+        
+        1 this is speed, 25, 50, 100 this is the percentage that we will show
+        
+        Example Command:
+        
+        PyProgress.points(1, 25, 50, 100)
+        
+        this guide use in Slash, Stars too.
+                            
+        Specified Load Scripts:
+        
+        num, speed, percent two, percent three. (5, 25, 50, 100)
+        
+        5 - Number we print in script
+        1 - speed
+        other  (25, 50, 100) = percent
+        
+        PyProgress.points(5, 1, 25, 50, 100)
+        
+        Beautiful Bars:
+        
+        1 - speed
+        10 - update
+        100 - total loading
+        10 - range
+        
+        speed - uses in end
+        update - loading speed
+        total - percent loading
+        range - data
+        
+        PyProgress.bar(1, 10, 100, 10)
+        
+        Other:
+        
+        PyProgress.guide()
+        
+        Get Offline help info without Explanation.
+        
+        Version:
+        
+        Python 3.8-3.9
+        
+        Other From Dev:
+        
+        I hope I showed the documentation as well as possible. The module was created using TQDM. (ADDITIONAL SOFTWARE) In general, the script is quite useful for showing your script works or just for beauty. Good luck using it!
+        
+        BYE BYE!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

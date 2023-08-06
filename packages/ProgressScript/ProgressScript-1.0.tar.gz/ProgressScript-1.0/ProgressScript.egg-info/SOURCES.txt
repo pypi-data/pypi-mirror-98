@@ -1,0 +1,6 @@
+setup.py
+ProgressScript/ProgressScript.py
+ProgressScript.egg-info/PKG-INFO
+ProgressScript.egg-info/SOURCES.txt
+ProgressScript.egg-info/dependency_links.txt
+ProgressScript.egg-info/top_level.txt
