@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: chromatictools
+Version: 0.0.1
+Summary: chromatictools
+Home-page: https://github.com/ChromaticIsobar/chromatictools
+Author: Marco Tiraboschi
+Author-email: marco.tiraboschi@unimi.it
+Maintainer: Marco Tiraboschi
+Maintainer-email: marco.tiraboschi@unimi.it
+License: UNKNOWN
+Description: # ChromaticTools
+        This is a collection of utilities that I often use when writing other software
+        
+        ## Install
+        You can install the `chromatictools` package from [PyPI](https://pypi.org/project/chromatictools) via pip
+        
+        ```pip install chromatictools```
+        
+        ## Documentation
+        API documentation can be found online here:
+        
+        https://chromaticisobar.github.io/chromatictools
+        
+        ## Source code
+        Source code is available on GitHub
+        
+        https://github.com/chromaticisobar/chromatictools
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: notebooks
+Provides-Extra: docs
+Provides-Extra: lint
+Provides-Extra: cov
