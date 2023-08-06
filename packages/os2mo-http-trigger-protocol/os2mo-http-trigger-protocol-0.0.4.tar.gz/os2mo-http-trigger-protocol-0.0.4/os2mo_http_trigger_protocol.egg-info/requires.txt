@@ -1,0 +1,14 @@
+pydantic
+
+[dist]
+build
+twine
+
+[lint]
+mypy
+black
+isort
+
+[test]
+pytest
+pytest-cov
