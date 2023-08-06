@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: shaphinx
+Version: 0.1.0
+Summary: Just a sphinx theme.
+Home-page: https://github.com/llango/shaphinx
+Author: a sphinx theme
+Author-email: rontomai@gmail.com
+License: MIT license
+Keywords: shaphinx
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: Click (>=7.0)
+
+==============
+A Sphinx Theme
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/shaphinx.svg
+        :target: https://pypi.python.org/pypi/shaphinx
+
+.. image:: https://img.shields.io/travis/llango/shaphinx.svg
+        :target: https://travis-ci.com/llango/shaphinx
+
+.. image:: https://readthedocs.org/projects/shaphinx/badge/?version=latest
+        :target: https://shaphinx.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Just a sphinx theme.
+
+
+* Free software: MIT license
+* Documentation: https://shaphinx.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-03-16)
+------------------
+
+* First release on PyPI.
+
+

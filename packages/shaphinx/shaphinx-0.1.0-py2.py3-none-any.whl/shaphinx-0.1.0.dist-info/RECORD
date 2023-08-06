@@ -1,0 +1,10 @@
+shaphinx/__init__.py,sha256=J1s67aey2XMRmNJw-xvgiBX-v8-WT1kKEuEr9_IyP8w,3920
+shaphinx/cli.py,sha256=Nsdc3bwO1sU7q9NYt1t8Yx6jifCdCiZO2nKYY8fv5Zw,402
+shaphinx/navigation.py,sha256=U40AQWleVY0InVdbroYQilepuQe0s4_s5orgB6qSibw,2442
+shaphinx/shaphinx.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+shaphinx/sphinxext.py,sha256=L5ojW38iDmoWPEEmt-_ycvl_oemEyP3Rxb38i9alh4U,2199
+shaphinx-0.1.0.dist-info/METADATA,sha256=qYy46nIuZS5Zns2aS8Ez9V6HX4eyQyX83oH-4HbTyWE,1681
+shaphinx-0.1.0.dist-info/RECORD,,
+shaphinx-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+shaphinx-0.1.0.dist-info/entry_points.txt,sha256=oYbp8eil5qdGO0j2zFvJ3M2QrQR5zcBLqvxIT0qdfvU,48
+shaphinx-0.1.0.dist-info/top_level.txt,sha256=4XFc7nuem9u3uiOzn__tn3eIhURg-mivb9LxUEzPglI,9
