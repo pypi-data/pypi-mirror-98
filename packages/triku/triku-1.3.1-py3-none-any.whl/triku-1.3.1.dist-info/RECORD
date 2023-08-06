@@ -1,0 +1,17 @@
+triku/__init__.py,sha256=E6OPpUzv3ICJeH6-BEeYD3d3s0Hh0bWBwq3gcKH4Qd0,79
+triku/genutils.py,sha256=_NnUJuIlt2if2RQdjqVsF0_XPYSruWkJggDIvD6_ORA,928
+triku/logg.py,sha256=XDpNc0pM8OGjPLJirGVB-kmpeeQN_fqG-rT2jio0YyU,575
+triku/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triku/cli/cli_triku.py,sha256=i5ndj5uJJPKlgKufuQQYhf1lu8bOLP4zrK10dVA_l3w,341
+triku/tl/__init__.py,sha256=ZQnHWYieTQmEta4_ebaGJdlkTAj9-FMWlZ8jiUpti8o,33
+triku/tl/_triku_functions.py,sha256=TjtJ9qxr4w2w3RNFlQXj_WiEIjEIWDP1-rUXQDQrUMA,16970
+triku/tl/triku.py,sha256=l-H5Rdau1SlnoKSjQO-xyC45Z8Yfu17C-AqcxNs6v9E,15572
+triku/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+triku/utils/_general_utils.py,sha256=3jSbqOQIrrumDCZ7JRXJZKb18xX6BbVoo7ZX3q0LXjg,421
+triku/utils/_triku_tl_utils.py,sha256=BW6aisH55o9TsUKTGS1SkIzKUrpCThW2ysK1-7J409Q,6514
+triku-1.3.1.dist-info/LICENSE,sha256=y5iQqS8Hu9HpxomK94H1R6XN4ZyCRpBvDcCGcMDfFmo,1520
+triku-1.3.1.dist-info/METADATA,sha256=Xtoslzh7OX3YFcj9hji1mQkwXmKh7TE-PG8a_6tQvHo,2187
+triku-1.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+triku-1.3.1.dist-info/entry_points.txt,sha256=FV3ZIjKn4Km2MHhNEpDNOdGkP4IhBVUX0jz7ZxxKWA4,52
+triku-1.3.1.dist-info/top_level.txt,sha256=QjllJk-jQbxxTCUjWQr9_hH3RAQOHm1ZBoogW8TWldI,6
+triku-1.3.1.dist-info/RECORD,,
