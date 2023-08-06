@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/strfseconds.py
+src/strfseconds.egg-info/PKG-INFO
+src/strfseconds.egg-info/SOURCES.txt
+src/strfseconds.egg-info/dependency_links.txt
+src/strfseconds.egg-info/top_level.txt
