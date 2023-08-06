@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "teledapps"
+version = "0.1.1"
+description = "Python package for building Telegram bots, compatible with Teledapps"
+authors = ["Sergey P <pavlovdog.moscow@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-telegram-bot = "^13.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
