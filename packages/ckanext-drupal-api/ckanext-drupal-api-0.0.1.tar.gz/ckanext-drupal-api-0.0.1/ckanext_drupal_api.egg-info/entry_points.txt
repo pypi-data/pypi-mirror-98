@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        drupal_api=ckanext.drupal_api.plugin:DrupalApiPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
