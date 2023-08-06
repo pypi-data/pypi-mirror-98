@@ -1,0 +1,7 @@
+pymongo
+Flask
+pytest
+flask_cors
+redis
+websocket-client
+itsdangerous
