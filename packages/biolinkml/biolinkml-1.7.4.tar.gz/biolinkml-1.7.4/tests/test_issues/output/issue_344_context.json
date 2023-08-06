@@ -1,0 +1,19 @@
+{
+   "@context": {
+      "GO": {
+         "@id": "http://purl.obolibrary.org/obo/GO_",
+         "@prefix": true
+      },
+      "PATO": {
+         "@id": "http://purl.obolibrary.org/obo/PATO_",
+         "@prefix": true
+      },
+      "PCO": {
+         "@id": "http://purl.obolibrary.org/obo/PCO_",
+         "@prefix": true
+      },
+      "biolinkml": "https://w3id.org/biolink/biolinkml/",
+      "ex": "http://example.org/",
+      "@vocab": "http://example.org/"
+   }
+}
