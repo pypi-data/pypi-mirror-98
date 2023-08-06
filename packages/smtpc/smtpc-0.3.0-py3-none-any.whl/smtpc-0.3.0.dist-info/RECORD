@@ -1,0 +1,10 @@
+smtpc/__init__.py,sha256=X2Ejq3EJdM1kTrLCwj94WMg59kyM0P04v95XhXL1Mis,51
+smtpc/cli.py,sha256=YHyDjsNiK4bsN7J-2kDDOIatj3HUm9KPp_RMb2hVWrc,14774
+smtpc/config.py,sha256=o9JXTS4VpG4Hp2SaHfLHQ49D2Ol6AKqfUEpByReoXog,3896
+smtpc/message.py,sha256=kBH2TyV7L4BCQlL_rAixP-aKN_GylkNpoxwiokWFj4A,1633
+smtpc-0.3.0.dist-info/LICENSE,sha256=BxPZhnuYRbv9T6S2tqqsAbBNzsosA2I5dCzdzJR5qi0,1083
+smtpc-0.3.0.dist-info/METADATA,sha256=0CT1h-QxpybH7aFV2p5Im-jeZbhh2XLAzqImGHyljgk,3429
+smtpc-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+smtpc-0.3.0.dist-info/entry_points.txt,sha256=8dVBBnGySCJmfNVjDhnVDf3779V6jIyj96fBumY2RoQ,42
+smtpc-0.3.0.dist-info/top_level.txt,sha256=LsoSqKUSxeUYlyzYGI_3nEIqrJhOHv--BHXnohFplUE,6
+smtpc-0.3.0.dist-info/RECORD,,
