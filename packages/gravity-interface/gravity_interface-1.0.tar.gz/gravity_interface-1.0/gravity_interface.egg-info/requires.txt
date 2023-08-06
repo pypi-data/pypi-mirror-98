@@ -1,0 +1,5 @@
+tkinter
+PIL
+win32api
+pyscreenshot
+locale

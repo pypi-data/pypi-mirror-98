@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: gravity_interface
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: PunchyArchy
+Author-email: ksmdrmvscthny@gmail.com
+License: UNKNOWN
+Description: Gravity Interface (TK) - написанный на tkinter графический интерфейс, служащий для взаимодействия весовщика
+        и Gravity Core.
+Platform: UNKNOWN
