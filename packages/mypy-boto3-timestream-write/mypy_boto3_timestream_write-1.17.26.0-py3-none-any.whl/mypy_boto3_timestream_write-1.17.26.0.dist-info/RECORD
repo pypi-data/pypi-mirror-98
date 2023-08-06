@@ -1,0 +1,13 @@
+mypy_boto3_timestream_write/__init__.py,sha256=BhWL7qORejhfhxStENzG_c_UtoRQzTdwQaITr3vhB9U,530
+mypy_boto3_timestream_write/__init__.pyi,sha256=mNpF7plVjwlBV6rotA8b94Wnu3U8Uf1Dl98HKVjyTS8,529
+mypy_boto3_timestream_write/__main__.py,sha256=yRVlXX3xlIdBApsqT5TSuiU0EZZ8nLokdAB1iqfoHSQ,411
+mypy_boto3_timestream_write/client.py,sha256=orh8qwvluNgrdjUXipyPooc4-kPPvu4qb_IkNeYCxC4,7422
+mypy_boto3_timestream_write/client.pyi,sha256=jFQk_4jbbyXzNVrooLL7ET-NKswz21dLKKQVjJImfbE,7401
+mypy_boto3_timestream_write/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_timestream_write/type_defs.py,sha256=iiNdyHVqMTzghUq1PT-Vezl7UASbYcsyKuaUAFbvBP0,3986
+mypy_boto3_timestream_write/type_defs.pyi,sha256=14xlo_voda5AMFLlz2Sw8D9I5b1LhGgA7dU0YcEkJI8,3983
+mypy_boto3_timestream_write/version.py,sha256=hQcuZJLtubPmgZqPliwSCe3zE29q_h2A4I-vaLetrA0,57
+mypy_boto3_timestream_write-1.17.26.0.dist-info/METADATA,sha256=2RTdpsY56578pRUTeZhTXUyKmN-GiWvEjfuzExRuFGk,6759
+mypy_boto3_timestream_write-1.17.26.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_timestream_write-1.17.26.0.dist-info/top_level.txt,sha256=g0nGBj3bO-9Vwwsr8V_FiQKyD6j_DiiQwWVAEYq4lR8,28
+mypy_boto3_timestream_write-1.17.26.0.dist-info/RECORD,,
