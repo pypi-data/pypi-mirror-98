@@ -1,0 +1,8 @@
+d8s-csv
+d8s-hypothesis
+d8s-networking
+hypothesis
+ioc-finder
+
+[:python_version < "3.8"]
+importlib-metadata
