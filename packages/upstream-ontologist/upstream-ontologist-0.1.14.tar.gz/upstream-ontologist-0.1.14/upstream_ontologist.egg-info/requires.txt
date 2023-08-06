@@ -1,0 +1,11 @@
+debmutate
+python_debian
+
+[cargo]
+tomlkit
+
+[readme]
+bs4
+docutils
+lxml
+markdown
