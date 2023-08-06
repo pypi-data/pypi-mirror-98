@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: wlg-fayefv
+Version: 0.3.0
+Summary: A simple weightlogging app to track personal fitness.
+Home-page: https://github.com/fayefv/weightlogger
+Author: Faye Fong
+Author-email: fong.faye@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Babel
+Requires-Dist: bleach
+Requires-Dist: build
+Requires-Dist: cachetools
+Requires-Dist: certifi
+Requires-Dist: cffi
+Requires-Dist: chardet
+Requires-Dist: colorama
+Requires-Dist: cryptography
+Requires-Dist: cssselect
+Requires-Dist: cssutils
+Requires-Dist: cycler
+Requires-Dist: docutils
+Requires-Dist: idna
+Requires-Dist: jeepney
+Requires-Dist: kiwisolver
+Requires-Dist: lxml
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pep517
+Requires-Dist: Pillow
+Requires-Dist: pkginfo
+Requires-Dist: premailer
+Requires-Dist: psutil
+Requires-Dist: pycparser
+Requires-Dist: Pygments
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: readme-renderer
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: rfc3986
+Requires-Dist: SecretStorage
+Requires-Dist: six
+Requires-Dist: tkcalendar
+Requires-Dist: tkfilebrowser
+Requires-Dist: toml
+Requires-Dist: tqdm
+Requires-Dist: twine
+Requires-Dist: urllib3
+Requires-Dist: webencodings
+
+
+<h1>WeightLogger</h1>
+<h3>A simple app to monitor personal fitness.</h3>
+<br>
+
+![demo](https://github.com/fayefv/weightlogger/blob/master/supporting_graphic.png?raw=true)
+
+<p> User may record body weight by selecting 
+or entering a calendar date.  Body weight
+is plotted over all time or just the 
+previous week.</p>
+<br>
+<p>Future improvements may include more
+advanced statistics in the trends section.</p>
+
+
+
