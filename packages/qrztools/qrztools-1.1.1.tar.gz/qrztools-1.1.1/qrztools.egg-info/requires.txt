@@ -1,0 +1,14 @@
+lxml
+gridtools
+
+[:extra != "async"]
+requests
+
+[all]
+aiohttp
+
+[async]
+aiohttp
+
+[cli]
+rich
