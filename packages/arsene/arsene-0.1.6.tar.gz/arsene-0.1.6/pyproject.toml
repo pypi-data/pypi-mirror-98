@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "arsene"
+version = "0.1.6"
+description = "Easy data cache management"
+readme = "README.md"
+authors = ["JeremyAndress <jeremysilvasilva@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/JeremyAndress/cobnut"
+repository = "https://github.com/JeremyAndress/cobnut"
+keywords = ["arsene", "cache", "decorator"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pydantic = "^1.7.3"
+redis = {version = "^3.5.3", optional = true}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.1"
+flake8 = "^3.8.4"
+flake8-print = "^4.0.0"
+pep8-naming = "^0.11.1"
+flake8-quotes = "^3.2.0"
+
+[tool.poetry.extras]
+redis = ["redis"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
