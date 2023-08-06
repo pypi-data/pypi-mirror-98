@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: femio
+Version: 0.3.2.dev202103141630
+Summary: FEM I/O Tool
+Home-page: https://github.com/ricosjp/femio
+Author: RICOS Co. Ltd.
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: PyQt5
+Requires-Dist: PyQt5 (>=5.14.0,<6.0.0); extra == "PyQt5"
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: meshio (>=3.3,<4.0)
+Requires-Dist: networkx (>=2.4,<3.0)
+Requires-Dist: numpy (>=1.17,<2.0)
+Requires-Dist: numpy-stl (>=2.13,<3.0)
+Requires-Dist: pandas (>=1.0,<2.0)
+Requires-Dist: scikit-learn (>=0.22.0,<0.23.0)
+Requires-Dist: scipy (>=1.4,<2.0)
+Project-URL: Documentation, https://ricosjp.github.io/femio/
+Project-URL: Repository, https://github.com/ricosjp/femio
+Description-Content-Type: text/markdown
+
+# Femio
+The FEM I/O + mesh processing tool.
+
+- Documentation: https://ricosjp.github.io/femio/
+
+Femio can:
+- Read FEM data including analysis results from various formats
+- Perform mesh processing
+- Write FEM data to various formats
+
+
+## How to install
+```bash
+pip install femio
+```
+
+
+## How to use
+Usage could be something similar to this:
+
+```python
+import femio
+
+# Read FEM data of files
+fem_data = femio.FEMData.read_files(file_type='ucd', file_names=['mesh.inp'])
+# Read FEM data in a directory
+fem_data = femio.FEMData.read_directory(file_type='ucd', 'directory/name')
+
+# Access FEM data
+print(fem_data.nodes.ids, fem_data.entity.nodes.data)  # data means node position here
+print(fem_data.elements.ids, fem_data.entity.elements.data)  # data means node ids here
+print(fem_data.nodal_data['DISPLACEMENT'].ids, fem_data.entity.nodal_data['DISPLACEMENT']).data
+
+# Output FEM data to a file format different from the input
+fem_data.write(file_type='stl')
+```
+
+Supported file types:
+- 'fistr': FrontISTR file format
+- 'obj': Wavefront .obj file format
+- 'stl': STereoLithography file format
+- 'ucd': AVS UCD old format
+- 'vtk': VTK format
+
+
+## License
+
+[Apache License 2.0](./LICENSE).
+
