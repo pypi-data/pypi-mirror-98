@@ -1,0 +1,10 @@
+torch
+numpy
+netcdf4
+toolz
+dask
+xarray
+opencv-python
+arrow
+python-decouple
+leibniz
