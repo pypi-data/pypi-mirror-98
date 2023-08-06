@@ -1,0 +1,10 @@
+gdalTools/__init__.py,sha256=kMUGGeS_jxQqVpmrckGZbvCFqOeLGzSisfSMwOHmrJQ,116
+gdalTools/rasterConversion.py,sha256=dhZI5BicDPCn9xFFgTFarJYc84oUgjSSmnCvHDVdj1o,1191
+gdalTools/rasterTools.py,sha256=Qf_l-zD6nTtAN-KMnlv51JOnM_SPntD3f2p-tiHkd80,1919
+gdalTools/shpConversion.py,sha256=LDo71dZFz5V6V3dgD9qRLVd1PV4iV6P8CAlrfl5Hn34,2720
+gdalTools/shpTools.py,sha256=nOs_kydFscDuy5RoKOlprXSfn6D7lAJsWymJRMnjKJ4,11634
+gdalTools-0.5.dist-info/LICENSE.txt,sha256=WC9y6oC5eA2_PGq5aPTN56mF0o2vIn5-RN_l3Oo-mLw,1571
+gdalTools-0.5.dist-info/METADATA,sha256=3PqShLNmdwfyDJ3_zjY1Hr6F2cEcO-4I1iUDa5i9wMU,602
+gdalTools-0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gdalTools-0.5.dist-info/top_level.txt,sha256=p29hhOswsilIr_lrNgAbNdGrVZWKrT3VvTTrWPXSRrQ,10
+gdalTools-0.5.dist-info/RECORD,,
