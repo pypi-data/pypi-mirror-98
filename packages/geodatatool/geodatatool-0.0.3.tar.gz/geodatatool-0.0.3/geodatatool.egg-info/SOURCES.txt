@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geodatatool/__init__.py
+geodatatool/geodatatool.py
+geodatatool.egg-info/PKG-INFO
+geodatatool.egg-info/SOURCES.txt
+geodatatool.egg-info/dependency_links.txt
+geodatatool.egg-info/not-zip-safe
+geodatatool.egg-info/requires.txt
+geodatatool.egg-info/top_level.txt
