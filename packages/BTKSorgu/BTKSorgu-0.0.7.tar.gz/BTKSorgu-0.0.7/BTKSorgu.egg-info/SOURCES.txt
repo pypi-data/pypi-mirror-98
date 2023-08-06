@@ -1,0 +1,9 @@
+README.md
+setup.py
+BTKSorgu/Erisim_Engeli.py
+BTKSorgu/__init__.py
+BTKSorgu.egg-info/PKG-INFO
+BTKSorgu.egg-info/SOURCES.txt
+BTKSorgu.egg-info/dependency_links.txt
+BTKSorgu.egg-info/requires.txt
+BTKSorgu.egg-info/top_level.txt
