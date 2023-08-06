@@ -1,0 +1,3 @@
+include Pipfile
+include CHANGELOG.md
+include apol_dataviz/fonts/lato.zip
