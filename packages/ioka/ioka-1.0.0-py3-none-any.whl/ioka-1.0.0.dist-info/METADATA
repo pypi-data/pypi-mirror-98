@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: ioka
+Version: 1.0.0
+Summary: IOKA Python Asynchronous Client Library
+Home-page: https://github.com/mortilele/ioka-python-sdk
+Author: Alik Akhmetov
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: rest-aiohttp
+
+IOKA Python Asynchronous Client Library
+
+

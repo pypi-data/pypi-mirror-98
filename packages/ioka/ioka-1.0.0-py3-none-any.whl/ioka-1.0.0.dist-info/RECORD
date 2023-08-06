@@ -1,0 +1,10 @@
+ioka/__init__.py,sha256=1mEsWjJLVMDPGrn12vl_Nrt_s0vzuAqq1wPNp4Q4bIw,28
+ioka/client.py,sha256=tZQ7k5enlryZP-rcOeGxBy8qGwhrYMonirMg8bCDOac,4984
+ioka/errors.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ioka/schemas.py,sha256=uP2Xo6N18jcQZ2Oeqm-wk9EmoveuZj4jIB_AwSPy11U,1601
+ioka-1.0.0.dist-info/DESCRIPTION.rst,sha256=0FMfUcFjcfVMzxnHZbYlmob7oQLkN3gxyuX0l0eI9Ik,42
+ioka-1.0.0.dist-info/METADATA,sha256=1xGuSAAM5izYZfiUO9F3hKnJ-AnOxoehAVebkcOSs5o,492
+ioka-1.0.0.dist-info/RECORD,,
+ioka-1.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ioka-1.0.0.dist-info/metadata.json,sha256=fUc49D-5OnlK-A2mBOOKKAvvth3rKG--sY3SBLKVO8c,652
+ioka-1.0.0.dist-info/top_level.txt,sha256=igjjA_3weFldMGd2Jw6Uycet1jX2rKp29rOeB2TYL5c,5
