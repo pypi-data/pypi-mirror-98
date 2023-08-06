@@ -1,0 +1,13 @@
+spacy_ke/__init__.py,sha256=rvS1oDcn8v-zKewtOBctOmT0C4Lr3bu7XS7hUqsvF-0,187
+spacy_ke/about.py,sha256=Ps1DmKWBYplaW6XqeUJBjd2u28s0NeGWKWdaTnd8bKw,220
+spacy_ke/base.py,sha256=7oQsykLLlp37_imRNjP9UqOfPofifPCK1sXQGx9jDaI,3702
+spacy_ke/positionrank.py,sha256=hiwmcz-2R9V9pTbTtT-I-NhO6BoZSu2I8RtQ3SPWIX8,3384
+spacy_ke/textrank.py,sha256=I2jNQTuP3h7jyeAdql33L_jNGrfGlLZyfwIHqGYz3Ig,3170
+spacy_ke/topicrank.py,sha256=y9aY4zQno_mwfNgiUt0xnwmkTrpsApNI5ZgeCro3Ha8,6318
+spacy_ke/util.py,sha256=euKseA1YamLziHUGUoDHzd30vk9Ep0GObXibYrgdf4U,5236
+spacy_ke/yake.py,sha256=lfutaV_9J2q1i9TPr7DtDm-dEi7geSVsoQNuKLB9dIM,10116
+spacy_ke-0.1.1.dist-info/LICENSE,sha256=4B5WEovwaoYHiQX9iwmJMuXwioiHPnx2tmAj1rSR_rU,35142
+spacy_ke-0.1.1.dist-info/METADATA,sha256=EaaGVoPjYria4CqcDUVSes3waHQdWVL7BPcq4P_LI5E,4294
+spacy_ke-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spacy_ke-0.1.1.dist-info/top_level.txt,sha256=Iixuk64TJER0jtJoMagd71ad2A7oJoU8b4eIFq0Xzf8,9
+spacy_ke-0.1.1.dist-info/RECORD,,
