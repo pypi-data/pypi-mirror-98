@@ -1,0 +1,7 @@
+author: Guild AI
+author-email: packages@guild.ai
+description: CNN and multinomial logistic regression classifiers for MNIST digits (Guild AI)
+license: Apache 2.0
+package: gpkg.mnist
+url: https://github.com/guildai/index/tree/master/gpkg/mnist
+version: 0.6.1

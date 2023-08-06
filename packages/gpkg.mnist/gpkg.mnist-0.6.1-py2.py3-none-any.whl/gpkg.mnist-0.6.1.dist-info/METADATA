@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: gpkg.mnist
+Version: 0.6.1
+Summary: CNN and multinomial logistic regression classifiers for MNIST digits (Guild AI)
+Home-page: https://github.com/guildai/index/tree/master/gpkg/mnist
+Author: Guild AI
+Author-email: packages@guild.ai
+License: Apache 2.0
+Keywords: gpkg
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+gpkg.mnist
+##########
+
+*CNN and multinomial logistic regression classifiers for MNIST digits (Guild
+AI)*
+
+Models
+######
+
+cnn
+===
+
+*CNN classifier for MNIST*
+
+Operations
+^^^^^^^^^^
+
+evaluate
+--------
+*Evaluate a trained CNN*
+
+train
+-----
+*Train the CNN*
+
+Flags
+`````
+**batch-size**
+  *Number of images to include in a training batch (default is 100)*
+
+**epochs**
+  *Number of epochs to train (default is 5)*
+
+**learning-rate**
+  *Learning rate (default is 0.0001)*
+
+
+logreg
+======
+
+*Multinomial logistic regression classifier for MNIST*
+
+Operations
+^^^^^^^^^^
+
+evaluate
+--------
+*Evaluate a trained logistic regression*
+
+train
+-----
+*Train the logistic regression*
+
+Flags
+`````
+**batch-size**
+  *Number of images to include in a training batch (default is 100)*
+
+**epochs**
+  *Number of epochs to train (default is 5)*
+
+**learning-rate**
+  *Learning rate (default is 0.5)*
+
+
+samples
+=======
+
+*Sample MNIST images*
+
+Operations
+^^^^^^^^^^
+
+prepare
+-------
+*Generate a set of sample MNIST images*
+
+Flags
+`````
+**count**
+  *Number of images to generate (default is 100)*
+
+
+_check
+======
+
+Operations
+^^^^^^^^^^
+
+all
+---
+
+cnn
+---
+
+logreg
+------
+
+
+

@@ -1,0 +1,13 @@
+gpkg.mnist-0.6.1-py2.7-nspkg.pth,sha256=3xb90dBivDFXdtzoeCL9KXHrd-f6F3608fOH6f5Ond0,529
+gpkg/mnist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpkg/mnist/cnn.py,sha256=zXKy18YroEudm-o5c_zJV7-4naEELBnFtwFHiXXiDdM,7168
+gpkg/mnist/guild.yml,sha256=mctBk4yV_50sZ5KcBjCF_rR3jNbt6Gcm5UzH8UKc3Io,5071
+gpkg/mnist/logreg.py,sha256=w9HJoWbYAEly8jTslFtBnSl2IlYqFNjlmWid4Od8JQo,6460
+gpkg/mnist/samples.py,sha256=IyL--t4_TG4RFcklZNoxFJPSJunWYsMMeVFmfnQtymk,1978
+gpkg.mnist-0.6.1.dist-info/METADATA,sha256=nphNrl9T-INO12iYNujVz-arJWTQLLtzObvSIX4XMD0,1491
+gpkg.mnist-0.6.1.dist-info/PACKAGE,sha256=n9EDIL4f88OEjUlqup8aSosRTTNrRdhoN7SryCaTui0,258
+gpkg.mnist-0.6.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+gpkg.mnist-0.6.1.dist-info/entry_points.txt,sha256=eQeea5zXg5FHZKmJnGgKtA9yQUO4zBAAZPAjFezIQUg,444
+gpkg.mnist-0.6.1.dist-info/namespace_packages.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.mnist-0.6.1.dist-info/top_level.txt,sha256=VrTSvcvxGXQd3LAVUBekNvO1L5FXEzrCdpdy7XtwqRc,5
+gpkg.mnist-0.6.1.dist-info/RECORD,,
