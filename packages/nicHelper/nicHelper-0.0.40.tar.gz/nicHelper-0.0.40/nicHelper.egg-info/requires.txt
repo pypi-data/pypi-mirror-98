@@ -1,0 +1,11 @@
+requests
+boto3
+ujson
+Pillow
+genson
+pyyaml
+dpath
+pytest
+beartype
+pydantic
+dataclasses-jsonschema
