@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: qrztools
+Version: 1.0.0
+Summary: QRZ API interface in Python
+Home-page: https://qrztools.miaow.io
+Author: classabbyamp, 0x5c
+Author-email: dev@kb6.ee, dev@0x5c.io
+License: BSD 3-Clause
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Ham Radio
+Classifier: Framework :: AsyncIO
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: gridtools
+Requires-Dist: rich
+Requires-Dist: requests ; extra != "async"
+Provides-Extra: all
+Requires-Dist: aiohttp ; extra == 'all'
+Provides-Extra: async
+Requires-Dist: aiohttp ; extra == 'async'
+
+# qrztools
+
+QRZ API interface in Python
+
+[![PyPI](https://img.shields.io/pypi/v/qrztools)](https://pypi.org/project/qrztools/) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/qrztools) ![PyPI - License](https://img.shields.io/pypi/l/qrztools) [![Documentation Status](https://readthedocs.org/projects/qrztools/badge/?version=latest)](https://qrztools.readthedocs.io/en/latest/?badge=latest)
+
+## Installation
+
+`qrztools` requires Python 3.8 at minimum.
+
+```sh
+# synchronous requests only
+$ pip install qrztools
+
+# asynchronous aiohttp only
+$ pip install qrztools[async]
+
+# both sync and async
+$ pip install qrztools[all]
+```
+
+## Documentation
+
+Documentation is available on [ReadTheDocs](https://qrztools.miaow.io/).
+
+## Copyright
+
+Copyright 2021 classabbyamp, 0x5c  
+Released under the BSD 3-Clause License.  
+See [`LICENSE`](LICENSE) for the full license text.
+
+
