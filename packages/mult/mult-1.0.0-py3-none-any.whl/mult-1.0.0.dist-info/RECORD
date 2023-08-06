@@ -1,0 +1,11 @@
+mult/__init__.py,sha256=m7ILVWUlTGfW642nGIP2iLihGLXXWdK5Pqipr4wIHwI,212
+mult/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mult/master_test.py,sha256=bFwiOzKrhE0u18jLnxuHg3zHpBHkWxIOBig0jd2Alk0,561
+mult/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mult/slave_test/slave_test.py,sha256=h2JbanLnauEm6kCY6VJAHkQPqHyEWQ8AYg0iD5gBiGM,526
+mult/src/master.py,sha256=ED3NCWwxy0srsoJwUMz8oTAwldTLyLL9JOSjVi12US0,8133
+mult/src/slave.py,sha256=8njVy4PX-4OLZetozqIjeGOznOBAbIkDCbw1V82h8KM,1014
+mult-1.0.0.dist-info/METADATA,sha256=aPmGQXjdwOD4yk7DGskRn-C5iBM8CXZ6WNVGipYdgmk,1507
+mult-1.0.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+mult-1.0.0.dist-info/top_level.txt,sha256=vMRq6MgE-tQytfjSCYpKJHbkhooK0CA_egUk2YE5fAA,30
+mult-1.0.0.dist-info/RECORD,,
