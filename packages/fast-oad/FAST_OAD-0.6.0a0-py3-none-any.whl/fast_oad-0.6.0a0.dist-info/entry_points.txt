@@ -1,0 +1,6 @@
+[console_scripts]
+fastoad=fastoad.cmd.fast:main
+
+[fastoad_model]
+internal_models=fastoad.models
+
