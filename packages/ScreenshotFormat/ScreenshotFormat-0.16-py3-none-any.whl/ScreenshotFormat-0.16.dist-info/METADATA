@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ScreenshotFormat
+Version: 0.16
+Summary: Python package to help create screenshot to upload on stores
+Home-page: https://github.com/AlexisGomes/ScreenshotFormat
+Author: Gomes Alexis
+Author-email: alexis.gomes19@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# ScreenshotFormat
+Python package to help create screenshot to upload on stores
+
+
