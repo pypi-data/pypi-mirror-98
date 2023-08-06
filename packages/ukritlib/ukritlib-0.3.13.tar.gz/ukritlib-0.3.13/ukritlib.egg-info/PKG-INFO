@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ukritlib
+Version: 0.3.13
+Summary: Testing Python Package From Ukrit Fongsomboon
+Home-page: https://github.com/ukritfongsomboon/ukritlib
+Author: Ukrit Fongsomboon
+Author-email: ukrit.fb@gmail.com
+Maintainer: UkritFB
+Maintainer-email: ukrit.fb@gmail.com
+License: MIT
+Download-URL: https://github.com/pydicom/pydicom/archive/master.zip
+Description: # ukritlib
+        เป็นการทดลองใช้งาน Library สำหรับ Python 
+        
+        Build Package 
+        ```
+        python setup.py sdist bdist_wheel  
+        ```
+        
+        Test Packeage
+        ```
+        twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+        ```
+        
+        Push Package
+        ```
+        twine upload dist/* 
+        ```
+Keywords: python medical imaging
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
