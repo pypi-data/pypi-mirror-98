@@ -1,0 +1,7 @@
+numpy
+matplotlib
+bokeh>=2.2.1
+gsw
+pyproj
+pandas
+ctdpy
