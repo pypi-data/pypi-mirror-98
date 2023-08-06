@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mkdocs-replace-markdown
+Version: 0.1.0
+Summary: An MkDocs plugin to replace text in Markdown on build.
+Home-page: UNKNOWN
+Author: Lars Wilhelmer
+Author-email: lars.wilhelmer@baslerweb.com
+License: UNKNOWN
+Keywords: mkdocs replace
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7
+Requires-Dist: mkdocs (>=1.1)
+
+UNKNOWN
+
+
