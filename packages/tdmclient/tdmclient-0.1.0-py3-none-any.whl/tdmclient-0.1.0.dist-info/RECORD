@@ -1,0 +1,12 @@
+tdmclient/__init__.py,sha256=-CjIEI5YF1wld7P_i_pAupYhgGuE__ktG4e_fRAnrzU,496
+tdmclient/client.py,sha256=d07GNvuquyrT7qQjN7MMRGD9U_-GciXGQXPCAGKL79M,4364
+tdmclient/clientasync.py,sha256=2hv6fMA0j8UPWiMxUmBQrz6UvfPQkIDhEgNSk0vaPvU,7060
+tdmclient/fb.py,sha256=mpmLXft7746lgof6rDCT7tcOcnbvkneTM_ExIv48ZOo,22984
+tdmclient/tcp.py,sha256=gsLOvbEPjPdAM-D_Qadl5j6kyprNlZUIMk13rk9erME,5235
+tdmclient/thymio.py,sha256=Ne39YJ9jWiCp5aWN7CH0T0bU0gzkQAGXrkjHFwAVAik,20119
+tdmclient/zeroconf.py,sha256=R_IFrh0sJu38gGRsl1L_5G_03DCrVdbzSxk5c-pLatA,1470
+tdmclient-0.1.0.dist-info/LICENSE,sha256=Dq4kI9iAR-8Dyq3Jepq8QJHs6GMmNlm6bgTpl2ut1NQ,1529
+tdmclient-0.1.0.dist-info/METADATA,sha256=37mVIDYz7zrjABTC98NkoIGXfEzkSjM1VHJc8TZmq5c,10002
+tdmclient-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tdmclient-0.1.0.dist-info/top_level.txt,sha256=U6W_KYbT5jUTnW07QwNCzmYZ6j_KzKDoMZBYhgTBt-0,10
+tdmclient-0.1.0.dist-info/RECORD,,
