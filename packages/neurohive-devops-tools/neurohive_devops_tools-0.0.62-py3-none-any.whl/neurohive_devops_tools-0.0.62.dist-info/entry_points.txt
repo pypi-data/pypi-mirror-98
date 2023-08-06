@@ -1,0 +1,19 @@
+[console_scripts]
+ac-cleanup-builds = neurohive.cli:cleanup_old_appcenter_build
+ac-get-dl-link = neurohive.cli:get_ac_dl_link
+bb-check-branch-exists = neurohive.cli:bb_is_branch_exists
+bb-check-prs-branch = neurohive.integration.bitbucket:check_branch
+bb-create-and-merge-pr = neurohive.cli:bb_create_and_merge_pr
+bb-create-branch = neurohive.cli:bb_create_branch
+bb-create-pr = neurohive.cli:bb_create_pr
+bb-trigger = neurohive.integration.bitbucket:main
+compose-to-vars = neurohive.cli:prepare_compose_vars
+deploy-ecs-task = neurohive.cli:deploy_ecs_task
+jira-add-comment = neurohive.integration.jirawrap:main
+prepare-ustate-values = neurohive.cli:prepare_ustate_kube_values
+show-changelog = neurohive.cli:get_git_changelog
+slugify = neurohive.cli:slugify_cmd
+uc-clone-build-from-branch = neurohive.cli:create_and_build_from_prs
+uc-run-build = neurohive.integration.unitycloud:run_build
+update-unity-ios-creds = neurohive.cli:update_unity_creds
+
