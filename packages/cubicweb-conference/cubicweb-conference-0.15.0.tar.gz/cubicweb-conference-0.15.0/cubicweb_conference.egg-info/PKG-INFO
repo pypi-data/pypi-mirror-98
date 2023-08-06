@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: cubicweb-conference
+Version: 0.15.0
+Summary: conference component for the CubicWeb framework
+Home-page: https://www.cubicweb.org/project/cubicweb-conference
+Author: Logilab
+Author-email: contact@logilab.fr
+License: LGPL
+Description: This cube models `Conference`: `Talks` are grouped in sessions (`Tracks`).
+        
+        Users can submit new talks to reviewers that will schedule them or reject them.
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: CubicWeb
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: JavaScript
+Requires-Python: >=2.7
