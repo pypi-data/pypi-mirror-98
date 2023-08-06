@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dddpy
+Version: 0.2.1
+Summary: A framework to support ddd python projects
+Home-page: https://github.com/aeroworks-io/dddpy
+License: Apache-2.0
+Keywords: DDD,Domain
+Author: Yuichiro Smith
+Author-email: contact@yu-smith.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Dist: Faker (>=4.0.0,<7.0.0)
+Requires-Dist: Inject (>=4.3.1,<5.0.0)
+Requires-Dist: pydantic (>=1.7.2,<2.0.0)
+Requires-Dist: python-ulid (>=1.0.2,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/aeroworks-io/dddpy/issues
+Project-URL: Coverage Report, https://codecov.io/gh/aeroworks-io/dddpy/branch/main
+Project-URL: Repository, https://github.com/aeroworks-io/dddpy
+Description-Content-Type: text/markdown
+
+# dddpy
+[![CI](https://github.com/aeroworks-io/dddpy/workflows/CI/badge.svg)](https://github.com/aeroworks-io/dddpy/actions?query=workflow%3ACI)  
+[![codecov](https://codecov.io/gh/aeroworks-io/dddpy/branch/main/graph/badge.svg?token=BOO43Q8GIF)](https://codecov.io/gh/aeroworks-io/dddpy)
+
+A Framework to support ddd python projects
+
