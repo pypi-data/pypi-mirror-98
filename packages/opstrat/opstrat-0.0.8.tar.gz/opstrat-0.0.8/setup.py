@@ -1,0 +1,50 @@
+from codecs import open
+import os
+from setuptools import setup, find_packages
+  
+here = os.path.abspath(os.path.dirname(__file__))
+
+with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+    
+'''
+try:
+    import pypandoc
+    long_description = pypandoc.convert('README.md', 'rst')
+except(IOError, ImportError):
+    long_description = open('README.md').read()
+'''
+
+VERSION = '0.0.8'
+DESCRIPTION = 'Option stategy visualizer'
+LONG_DESCRIPTION = DESCRIPTION
+URL = 'https://github.com/abhijith-git/opstrat'
+
+# Setting up
+setup(
+    name="opstrat",
+    version=VERSION,
+    author="Abhijith Chandradas",
+    author_email="<abhijith.chandradas@gmail.com>",
+    description=DESCRIPTION,
+    long_description="""# Markdown supported!\n\n* Cheer\n* Celebrate\n""",
+    long_description_content_type='text/markdown',
+    url=URL,
+    license='MIT',
+    packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
+    install_requires=['matplotlib', 'pandas', 'numpy'],
+    keywords=['python', 
+              'options', 
+              'finance', 
+              'opstrat', 
+              'data visualization', 
+              'stock market'],
+    classifiers=[
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "Programming Language :: Python :: 3",
+        "Operating System :: Unix",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+)
