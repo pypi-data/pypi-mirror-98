@@ -1,0 +1,6 @@
+README.md
+setup.py
+justfunc/just_func.egg-info/PKG-INFO
+justfunc/just_func.egg-info/SOURCES.txt
+justfunc/just_func.egg-info/dependency_links.txt
+justfunc/just_func.egg-info/top_level.txt
