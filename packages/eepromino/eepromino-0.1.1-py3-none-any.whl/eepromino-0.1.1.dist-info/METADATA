@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: eepromino
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/georgek/eepromino
+Author: George Kettleborough
+Author-email: kettleg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: click (>=7)
+Requires-Dist: pyserial (>=3)
+Requires-Dist: hexdump
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+UNKNOWN
+
+
