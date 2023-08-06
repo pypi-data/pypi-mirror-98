@@ -1,0 +1,9 @@
+usps_tracking_tool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usps_tracking_tool/config.json,sha256=jfkP2DsSnufRjbAKEp2Dw1XnMtoJ8zhehX47zXVsiAA,17
+usps_tracking_tool/tracking.py,sha256=AbR2Ie0KYfPPMrjBO_cAMJDXcsSPYIzWgvkjBGiBr9E,5599
+usps_tracking_tool-1.0.0.dist-info/LICENSE,sha256=3IQxGR6C81P3Dj8wnOKzfgQpeEc5ucUAkbzG0N9zsBQ,1067
+usps_tracking_tool-1.0.0.dist-info/METADATA,sha256=w0CYYNbY7iCGLFs0GnpEblX55zdTYWlvXd5AmpledeY,6623
+usps_tracking_tool-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+usps_tracking_tool-1.0.0.dist-info/entry_points.txt,sha256=JUcr5Fdtuy3SxIijnSUtOM5i4J96c_yQYDRNxzsvtoc,73
+usps_tracking_tool-1.0.0.dist-info/top_level.txt,sha256=GhSCwhGNiy7QoNz-omxkrrn3IkDD-nS8k9DVpJIlWDY,19
+usps_tracking_tool-1.0.0.dist-info/RECORD,,
