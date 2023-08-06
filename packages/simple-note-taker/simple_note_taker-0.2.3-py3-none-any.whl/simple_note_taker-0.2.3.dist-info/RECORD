@@ -1,0 +1,17 @@
+simple_note_taker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_note_taker/__main__.py,sha256=6OSkbsDfJ_KK79-TomjHh-EHdKo10CXR8YVm_ypEQCE,32
+simple_note_taker/__version__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+simple_note_taker/config.py,sha256=c39hakJdkVBlQMegsJL2Sh0ZqkqKdYmaEUfbLBYSq7o,1431
+simple_note_taker/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_note_taker/core/database.py,sha256=Sq26tcs2m8q6a39VqbqdQLLWZO3UCsZYRcXnDVDBdE0,542
+simple_note_taker/core/notes.py,sha256=vLdvubeBf9O8pgDhF5fn2Zg-83wxswFyH4byzONuSCc,6390
+simple_note_taker/core/reminders.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_note_taker/help_texts.py,sha256=YDmPBy6HRmNyY3tQDMvhhnnXDWk3Jpa9rDG1wMaZVOc,355
+simple_note_taker/main.py,sha256=b9u9AIz9xISCFOexZ7OUaEgtKkoe6RiV169OJOlLQZE,5383
+simple_note_taker/subcommands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_note_taker/subcommands/config.py,sha256=FlcJvzD8gzZLc1bHP4bHz4bfbg4geGNpeVvOCbux1xI,1791
+simple_note_taker-0.2.3.dist-info/entry_points.txt,sha256=feHrjTBJrIeinTdrVrCK8U2thYZQE1siEIbogb1rveA,50
+simple_note_taker-0.2.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+simple_note_taker-0.2.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+simple_note_taker-0.2.3.dist-info/METADATA,sha256=4yRAxgz-m7O9qDttPwMYVthGWv2m6eMyYTLfolCzjrg,2759
+simple_note_taker-0.2.3.dist-info/RECORD,,

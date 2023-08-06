@@ -1,0 +1,3 @@
+[console_scripts]
+snt=simple_note_taker.main:app
+
