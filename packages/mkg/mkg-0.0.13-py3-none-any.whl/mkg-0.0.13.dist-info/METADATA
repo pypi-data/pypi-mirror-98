@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mkg
+Version: 0.0.13
+Summary: The tools in this library are 100% free (Even for Americans and Saudis)
+Home-page: UNKNOWN
+Author: mohamad.mk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Requires-Dist: random
+Requires-Dist: math
+Requires-Dist: os
+Requires-Dist: sys
+Requires-Dist: time
+Requires-Dist: wget
+Requires-Dist: keyword
+Requires-Dist: zipfile
+Requires-Dist: pyttsx3
+Requires-Dist: getpass
+Requires-Dist: winsound
+Requires-Dist: pyqrcode
+Requires-Dist: pyfiglet
+Requires-Dist: jdatetime
+Requires-Dist: pyperclip
+Requires-Dist: webbrowser
+Requires-Dist: win10toast
+Requires-Dist: httplib
+Requires-Dist: yaml
+Requires-Dist: ctypes
+Requires-Dist: shutil
+Requires-Dist: tkinter
+Requires-Dist: pymsgbox
+Requires-Dist: platform
+Requires-Dist: wmi
+Requires-Dist: socket
+Requires-Dist: psutil
+Requires-Dist: turtle
+Requires-Dist: wikipedia
+Requires-Dist: subprocess
+Requires-Dist: prettytable
+Requires-Dist: pylint
+Requires-Dist: pyinstaller
+
+UNKNOWN
+
+
