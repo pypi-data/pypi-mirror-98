@@ -1,0 +1,13 @@
+README.md
+setup.py
+matlog/__init__.py
+matlog/__version__.py
+matlog/parser.py
+matlog/tokens.py
+matlog/utils.py
+matlog.egg-info/PKG-INFO
+matlog.egg-info/SOURCES.txt
+matlog.egg-info/dependency_links.txt
+matlog.egg-info/not-zip-safe
+matlog.egg-info/requires.txt
+matlog.egg-info/top_level.txt
