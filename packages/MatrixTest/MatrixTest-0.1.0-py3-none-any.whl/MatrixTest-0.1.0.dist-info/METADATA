@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: MatrixTest
+Version: 0.1.0
+Summary: A tool to facilitate matrix test via countless combination of arguments of a command line
+Home-page: https://github.com/DavyVan/MatrixTest
+Author: Quan Fan
+Author-email: qfan005@ucr.edu
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/DavyVan/MatrixTest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: colorama
+
+# Prerequisitions
+
+* Python 3.x. Python 2.x is not tested.
+
+# For Developers
+
+## Dependencies
+
+* Pandas
+* colorama
+
