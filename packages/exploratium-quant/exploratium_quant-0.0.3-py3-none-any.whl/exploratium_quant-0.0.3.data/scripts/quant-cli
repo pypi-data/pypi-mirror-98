@@ -1,0 +1,61 @@
+#!python
+
+import os
+import click
+import blessed
+from utils.datafetcher import load_ticker_data, transform_ticker_data
+
+tickers = [
+    "BTC-USD",
+    "ETH-USD",
+    "LTC-USD",
+    "BNB-USD",
+    "XRP-USD",
+    "ADA-USD",
+    "DOGE-USD",
+    "DOT1-USD",
+    "USDT-USD",
+    "BAT-USD",
+]
+
+
+@click.command()
+@click.option("-t", "--tickers", default="SPY", type=str, help="Tickers to analyse.")
+@click.option("-o", "--out-dir", default="./data", type=click.Path(), help="Path to save results.")
+@click.option("--verbose/--quiet", default=False, help="Verbosity on/off.")
+def quant(tickers: str, out_dir: str, verbose: bool):
+    """ETL library to download and pre-process financial data."""
+
+    term = blessed.Terminal()
+    full_path = os.path.abspath(os.path.join(os.getcwd(), out_dir))
+
+    if (verbose):
+        print(term.green("\n 🚀 Initializing."))
+        print(term.blue("\n    output: {} \n".format(full_path)))
+
+    try:
+        if not os.path.exists(full_path):
+            os.makedirs(full_path)
+
+        symbols = [sym.strip() for sym in tickers.split(",")]
+
+        if (verbose):
+            print("    Following tickers are going to be processed: ", symbols)
+
+        symbols = load_ticker_data(symbols)
+        files = transform_ticker_data(symbols, full_path, 365)
+
+        if (verbose):
+            for f in files:
+                click.echo("    saved: {}".format(f))
+
+        print(term.green("\n ✨ Done."))
+        exit(0)
+    except Exception as e:
+        print(term.red("\n Oww 💩! Something happened!"))
+        print(term.red("\n\t{}".format(e.__str__())))
+        exit(1)
+
+
+if __name__ == "__main__":
+    quant()
