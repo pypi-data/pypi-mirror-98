@@ -1,0 +1,8 @@
+setup.py
+pdfmagic/main.py
+pdfmagic.egg-info/PKG-INFO
+pdfmagic.egg-info/SOURCES.txt
+pdfmagic.egg-info/dependency_links.txt
+pdfmagic.egg-info/entry_points.txt
+pdfmagic.egg-info/requires.txt
+pdfmagic.egg-info/top_level.txt

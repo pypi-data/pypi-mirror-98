@@ -1,0 +1,4 @@
+click
+PyPDF2
+tqdm
+pytest
