@@ -1,0 +1,5 @@
+democritus-dicts
+more_itertools
+
+[:python_version < "3.8"]
+importlib-metadata
