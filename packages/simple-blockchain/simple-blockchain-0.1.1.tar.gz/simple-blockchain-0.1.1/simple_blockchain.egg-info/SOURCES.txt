@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sample/__init__.py
+sample/blockchain.py
+sample/example.py
+simple_blockchain.egg-info/PKG-INFO
+simple_blockchain.egg-info/SOURCES.txt
+simple_blockchain.egg-info/dependency_links.txt
+simple_blockchain.egg-info/top_level.txt
