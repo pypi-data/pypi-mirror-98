@@ -1,0 +1,9 @@
+d8s-algorithms
+d8s-lists
+d8s-strings
+d8s-grammars
+jinja2
+more_itertools
+
+[:python_version < "3.8"]
+importlib-metadata
