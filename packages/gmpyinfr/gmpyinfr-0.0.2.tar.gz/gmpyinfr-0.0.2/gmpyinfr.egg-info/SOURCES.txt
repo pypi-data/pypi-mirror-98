@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+gmpyinfr/__init__.py
+gmpyinfr.egg-info/PKG-INFO
+gmpyinfr.egg-info/SOURCES.txt
+gmpyinfr.egg-info/dependency_links.txt
+gmpyinfr.egg-info/not-zip-safe
+gmpyinfr.egg-info/requires.txt
+gmpyinfr.egg-info/top_level.txt
+gmpyinfr/utils/__init__.py
