@@ -1,0 +1,17 @@
+umm/C.py,sha256=RFXqsmfWELnizLgl6K94iXoeyrYW9VyFZOISluLtPj8,686
+umm/__init__.py,sha256=50X6t4ViXlCol5Kxwb1CuFmcKB2dO3hTOhToGt_8sT4,366
+umm/main.py,sha256=MMbbalJUEzzjr2T4Rug1I6LzOqltkwvQI0gnF3oYMos,695
+umm/mirrors.yml,sha256=eNz027x7s0kdywuJQxwdMa9kY8ytscEnfNbdxKttRwY,1183
+umm/utils.py,sha256=SKjpfByKNnZT2m3yFlKlIiCmymIhMj_tfZq7yh5GaDE,2687
+umm/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umm/commands/base.py,sha256=_rCB8kkfayM2eiU7xQa6xx2D5O0mjx6HTHTEAhPPo6E,2464
+umm/commands/brew.py,sha256=ptHBSE5PL0r4nFPRCqT4U4TOwg7epbyutVvZKzBp9Gc,3342
+umm/commands/composer.py,sha256=8fJtRLZUhvHBHtf1AP2laqX1luqqkv-4ZUFe10spKSM,1300
+umm/commands/npm.py,sha256=L2DRdbnxVZ9bfh-BYawhXiSwAKlPQpap2itLaXqDCsM,946
+umm/commands/pip.py,sha256=-1v1OxbDzX7SEFXzGFup7tfqc59QmDsAZVAtQBEIp_g,2154
+umm-0.5.0.dist-info/LICENSE,sha256=EmI1PKra62FMNUI_pH6xNogtMw4Z6k8QvS01CUlgPDU,1072
+umm-0.5.0.dist-info/METADATA,sha256=4wZ5YRmnuPJPjtNoTDXkaEY7fZkU3_yZKQGkiZavBFU,4684
+umm-0.5.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+umm-0.5.0.dist-info/entry_points.txt,sha256=Yk8alayP2DreFjO1KG62zcUtMkRGj9i8M4eKCSQVW9g,38
+umm-0.5.0.dist-info/top_level.txt,sha256=20WfQHF-xPTB570DpQiymCm2FzJNoRHxJh282YzuWfI,4
+umm-0.5.0.dist-info/RECORD,,
