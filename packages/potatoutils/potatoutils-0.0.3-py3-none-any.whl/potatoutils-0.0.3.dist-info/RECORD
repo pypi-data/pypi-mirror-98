@@ -1,0 +1,10 @@
+potatoutils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potatoutils/util.py,sha256=S1XASxATFRwy16fNMvJbpUhxR2cU5wd07F3FSnLmszI,55
+potatoutils/abstractions/Comparable.py,sha256=B5v-ALx39XysygEUb81g-8vhmYY8rjmgdwKr6ddn3D0,1343
+potatoutils/abstractions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=6j0ai5V5byARQh6UBkiLIKeqAGhTtWf5TB-cYTqKS2A,89
+tests/test_util.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+potatoutils-0.0.3.dist-info/METADATA,sha256=1mUsT4RXkjbCkEOyXLYEXOIoLwyWs6nWwh7xWeIwL3g,196
+potatoutils-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+potatoutils-0.0.3.dist-info/top_level.txt,sha256=EZISq5U7gUFESdpC2Byu91Uvnq5UjZYlqlCY7Q3mT48,18
+potatoutils-0.0.3.dist-info/RECORD,,
