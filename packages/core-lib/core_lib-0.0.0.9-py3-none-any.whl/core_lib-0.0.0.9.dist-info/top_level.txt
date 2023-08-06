@@ -1,0 +1,6 @@
+bin
+core_lib
+core_lib_template
+examples
+hydra_plugins
+tests
