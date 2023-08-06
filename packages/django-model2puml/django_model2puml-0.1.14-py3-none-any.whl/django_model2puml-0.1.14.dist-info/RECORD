@@ -1,0 +1,17 @@
+django2puml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django2puml/asgi.py,sha256=gPH7n2qIY1jcNbrglw3YjYLSKe19_pmKf8Hh0Wt2sn4,399
+django2puml/settings.py,sha256=kQ32IPUkIfMyKaKS_ACKiCnqmtrQthv5cFr3zZG57k8,629
+django2puml/urls.py,sha256=iltDEpWDggiZHGwiUK8Rolkq2yW0fz0LORoRZWqHmhk,760
+django2puml/wsgi.py,sha256=fOoYbQhcDoKRol8KLDUtWsG_5_8CaoCfYFEzt8ypzB0,399
+puml_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/apps.py,sha256=UUJVnT6VqrBrd5vUktfDGntNNKULXGMHYU8I4P7I8dc,101
+puml_generator/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/management/commands/generate_puml.py,sha256=YHFCSrM2YQyulxdi6s_G3NHbpDsHMjyuhh_LNnPyc8M,3164
+puml_generator/management/commands/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+puml_generator/management/commands/utils/utils.py,sha256=SpwAYTtPYfGkufKlTMPitRR-g3GTBNm5osOTcn7bEhg,9866
+django_model2puml-0.1.14.dist-info/LICENSE,sha256=AqwHjGmdFvSvBM3hh8DFaBjVWVLa_-t5_XEFps_Mnl4,1073
+django_model2puml-0.1.14.dist-info/METADATA,sha256=lI-ltrSsUHco5zrmjrzxQ0dX90pIudIFNbn7BwkDhSE,2313
+django_model2puml-0.1.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_model2puml-0.1.14.dist-info/top_level.txt,sha256=7L2Q_akBwHOs2YSetzf6uiHwdTA9ic6doEKIm77kG_M,27
+django_model2puml-0.1.14.dist-info/RECORD,,
