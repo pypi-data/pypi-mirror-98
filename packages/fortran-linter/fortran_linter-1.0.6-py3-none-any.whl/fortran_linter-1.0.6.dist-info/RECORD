@@ -1,0 +1,9 @@
+fortran_linter/__init__.py,sha256=fPt_mVGGU7g7g1ikqgzG9iBydn1Yx75l3bttEaj2-J4,58
+fortran_linter/cli.py,sha256=M-eZ6XMphrRfMQm43rZae8mOiz0nQHLn7YRKuVWnbkI,2171
+fortran_linter/main.py,sha256=jJsH9x5KXt13dxIGpD79zG4OrJzUKRZ7V-OYo0bPEdY,8089
+fortran_linter-1.0.6.dist-info/LICENSE,sha256=qdGXOoH6dRjBQzktOJtLEDcwujd_9oi72Hz3pSZTSWU,15414
+fortran_linter-1.0.6.dist-info/METADATA,sha256=eyP9A1HX6cKndHNKNAULXQJCkvCvORTMner2hIcwwaU,2451
+fortran_linter-1.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fortran_linter-1.0.6.dist-info/entry_points.txt,sha256=gwzTpd7zPOOrdIitvZXJJZanorQeX2YxVzzdjMUffQk,60
+fortran_linter-1.0.6.dist-info/top_level.txt,sha256=FHdDqOnbrFfP3WLyhFHFWsEiKr4XflqRvYvMc0VppDo,15
+fortran_linter-1.0.6.dist-info/RECORD,,
