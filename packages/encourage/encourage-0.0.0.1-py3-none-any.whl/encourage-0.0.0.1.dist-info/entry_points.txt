@@ -1,0 +1,3 @@
+[console_scripts]
+e = encourage.main:main
+
