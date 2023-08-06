@@ -1,0 +1,3 @@
+[console_scripts]
+yaqd-mqtt-homie-sensor=yaqd_mqtt._mqtt_homie_sensor:MQTTHomieSensor.main
+
