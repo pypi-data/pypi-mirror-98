@@ -1,0 +1,14 @@
+README.md
+setup.py
+tdmclient/__init__.py
+tdmclient/client.py
+tdmclient/clientasync.py
+tdmclient/fb.py
+tdmclient/tcp.py
+tdmclient/thymio.py
+tdmclient/zeroconf.py
+tdmclient.egg-info/PKG-INFO
+tdmclient.egg-info/SOURCES.txt
+tdmclient.egg-info/dependency_links.txt
+tdmclient.egg-info/requires.txt
+tdmclient.egg-info/top_level.txt
