@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions/BinomialDistribution.py
+distributions/GaussianDistribution.py
+distributions/GeneralDistribution.py
+distributions/__init__.py
+shay_dists.egg-info/PKG-INFO
+shay_dists.egg-info/SOURCES.txt
+shay_dists.egg-info/dependency_links.txt
+shay_dists.egg-info/not-zip-safe
+shay_dists.egg-info/top_level.txt
