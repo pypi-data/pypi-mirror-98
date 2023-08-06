@@ -1,0 +1,11 @@
+correctionlib/__init__.py,sha256=1VSK8Wx770-IReO1BWmYnY8mN6IRrXnuXKiAIWL87iY,75
+correctionlib/_core.cp36-win_amd64.pyd,sha256=Pti1yhe_Wgn7ZiFGU9HObBv_gcB5ZlCx94oHX43gwBw,492032
+correctionlib/convert.py,sha256=OnDMkbk313EuxAn9VnIC5EWCkq_zIZn7G9oC-a16Rss,4759
+correctionlib/schemav1.py,sha256=DKo2v2ut-lFhGNE6sHI3rEyZesKtqSAKjHK84Uafzyk,2336
+correctionlib/schemav2.py,sha256=-SVvZqZWbOjCA-A_1c-cjaAyIUe0nTpkY9C2-agYSFA,7690
+correctionlib/version.py,sha256=sW_6L2OKYM3dqeyQisYimQoCIacRRzr6zvhHG0yihy0,155
+correctionlib-2.0.0rc3.dist-info/LICENSE,sha256=kXEt6zzRZwE1tofmh0CuUMlEsrUzIobRXrOzU70UTsI,1549
+correctionlib-2.0.0rc3.dist-info/METADATA,sha256=Ij1L8FYuFvi97G9EM1MUkkaXCHA7_S73lNuELyMbygs,8219
+correctionlib-2.0.0rc3.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+correctionlib-2.0.0rc3.dist-info/top_level.txt,sha256=ECx9t2Kj5AYpsEgFhS_a9VLxZj5pen6Odxq35m_5WWs,14
+correctionlib-2.0.0rc3.dist-info/RECORD,,
