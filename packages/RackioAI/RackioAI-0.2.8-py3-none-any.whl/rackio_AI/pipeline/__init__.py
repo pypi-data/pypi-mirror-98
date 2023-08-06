@@ -1,0 +1,1 @@
+from .pipeline_core import Pipeline, StopPipeline
