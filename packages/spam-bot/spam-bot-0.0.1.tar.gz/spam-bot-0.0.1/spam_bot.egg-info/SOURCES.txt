@@ -1,0 +1,9 @@
+README.md
+setup.py
+spam_bot/__init__.py
+spam_bot/spam_bot.py
+spam_bot.egg-info/PKG-INFO
+spam_bot.egg-info/SOURCES.txt
+spam_bot.egg-info/dependency_links.txt
+spam_bot.egg-info/requires.txt
+spam_bot.egg-info/top_level.txt
