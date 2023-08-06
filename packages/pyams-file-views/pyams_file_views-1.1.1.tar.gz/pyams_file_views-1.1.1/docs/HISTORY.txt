@@ -1,0 +1,24 @@
+Changelog
+=========
+
+1.1.1
+-----
+ - packaging mismatch...
+
+1.1.0
+-----
+ - removed support for Python < 3.7
+ - added image size in crop and selection templates
+
+1.0.2
+-----
+ - updated Gitlab-CI configuration
+ - removed Travis-CI configuration
+
+1.0.1
+-----
+ - updated "required" attribute of file input widgets
+
+1.0.0
+-----
+ - initial release
