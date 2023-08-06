@@ -1,0 +1,12 @@
+fastgwr/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fastgwr/__main__.py,sha256=Qm8ubuGgyqbY6grU1xpHMwVdDKyxvWhDjWUK08HYTK4,963
+fastgwr/fastgwr-mpi.py,sha256=msamjwqaJ-5IJI0fDK6FCooPs8IrqEpARzmwi-ss5nU,9010
+fastgwr_api/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fastgwr_api/__main__.py,sha256=ICufUEKmBpo4QJZHIKOsRqQFMntQSceQPJqzWfvxVvY,967
+fastgwr_api/fastgwr-mpi.py,sha256=msamjwqaJ-5IJI0fDK6FCooPs8IrqEpARzmwi-ss5nU,9010
+fastgwr-0.1.5.dist-info/METADATA,sha256=yQCddHOPKr49ljB0DIEOg3iJUeJZo13VCrKS3wlw0mM,649
+fastgwr-0.1.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fastgwr-0.1.5.dist-info/dependency_links.txt,sha256=hDHmaDYnrSAKUxv-V59QGgneyGlgo6G7msGHlG4gEhY,41
+fastgwr-0.1.5.dist-info/entry_points.txt,sha256=RxXvD-UPeihEtHMehW-ZF4FnEqJpIUjmFMkEt9SnQ1E,51
+fastgwr-0.1.5.dist-info/top_level.txt,sha256=9pX4WvRxRhML42TholIL6Kv1FZn_vjuTrTEyF23b7ME,8
+fastgwr-0.1.5.dist-info/RECORD,,
