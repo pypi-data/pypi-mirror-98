@@ -1,0 +1,71 @@
+ - make it faster!
+
+ - interactive shell mode
+
+ - compatibility:
+   - install everything (config.ini, jmdict.sqlite) to package_datadir, to stop
+     it from breaking when different paths are provided to setup.py install 
+
+ - query types:
+   - inflection!
+     - and guess
+     - if only there was Mecab for Python 3...
+       - wrapper over binary?
+
+   - whole-word for Japanese (feasible?)
+
+   - support rōmaji regexpes
+     - or at least warn about lack of support
+
+   - perhaps it would be nice to make composite filters like search engines:
+     - tea ceremony → matches any entry with both words "tea", "ceremoy"
+     - "tea ceremony" → match exact phrase
+
+ - data:
+   - be sure we cover everything covered in EDICT 1, at the very least.
+   - support lsource
+   - clean abbreviations that are not being used
+     - add our own symbols: ※、＊、(P)
+   - more fine-grained --frequent (support ke_pri, re_pri)
+     - order things by frequency, both entries list and in-entry enumerations
+       (readings etc.)
+   - support all JMdict languages
+
+   - go beyond JMdict:
+     - pitch-accent data (from where?)
+     - names (JMnedict)?
+     - famous people/place names from wikipedia etc?
+     - other frequency wordlists?
+
+ - output:
+   - make match coloring work for rōmaji output
+   - better wrapping for "human" output
+   - colored --help! (argparse extension?)
+   - think hard about tsv output
+   - highlight official orthography from Jōyō table somehow
+
+ - better documentation
+   - document tsv output
+   - manpage?
+   - about time to start a changelog...
+
+ - config file support?
+   - and option --saveconf
+
+ - improve install script/distutils/updatedb
+   - better handling of dev vs. installed environments
+   - can we make pypi post-uninstall delete database?
+   - deb?
+
+ - localization
+   - Japanese interface
+
+ - unit tests
+
+ - alternative backends?
+  - better benchmarks to compare them
+  - option to auto-compress/decompress database
+  - backend: EDICT2 with grep
+  - backend: some NoSQL thing?
+  - backend: some kind of "full-text search" thing?
+  - DICT protocol?

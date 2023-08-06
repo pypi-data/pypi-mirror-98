@@ -1,0 +1,1108 @@
+#!/usr/bin/env python3
+import atexit
+import gzip
+import itertools
+import os
+import re
+import signal
+import subprocess
+import sys
+import tempfile
+import time
+import urllib.request
+import xml.parsers.expat
+
+import sqlite3 as sql
+from glob import glob
+from copy import deepcopy
+
+from myougiden import config
+from myougiden import color
+from myougiden import common
+from myougiden.orm import Entry, Kanji, Reading, Sense
+from myougiden.color import fmt
+
+# JMdict expansions are too damn long
+short_expansions = {
+  'Buddh': 'Buddhism',
+  'MA': 'martial arts',
+  'Shinto': 'Shintō',
+  'X': 'rude',
+  'abbr': 'abbreviation',
+  'adj-f': 'adnominal in adj. role',
+  'adj-i': '-i verbal adj.',
+  'adj-ix': '-i verbal adj., yoi/ii class',
+  'adj-kari': "‘-kari’ verbal adj.",
+  'adj-ku': "‘-ku’ verbal adj.",
+  'adj-na': '‘na’ adjectival noun',
+  'adj-nari': '‘nari’adjectival noun',
+  'adj-no': "‘no’ adjectival noun'",
+  'adj-pn': 'adnominal (pre-noun)',
+  'adj-shiku': "‘-shiku’ verbal adj.",
+  'adj-t': "‘-taru’ adj.",
+  'adv': 'adverb',
+  'adv-to': "‘-to’ adverb",
+  'anat': 'anatomy',
+  'arch': 'archaism',
+  'archit': 'architecture',
+  'astron': 'astronomy',
+  'ateji': 'phonogram (ateji)',
+  'aux': 'auxiliary',
+  'aux-adj': 'auxiliary adj.',
+  'aux-v': 'auxiliary verb',
+  'baseb': 'baseball',
+  'biol': 'biology',
+  'bot': 'botany',
+  'bus': 'business',
+  'chem': 'chemistry',
+  'chn': "child speech",
+  'col': 'colloquial',
+  'cop-da': 'copula (linking)',
+  'comp': 'computing',
+  'conj': 'conj.',
+  'ctr': 'counter',
+  'derog': 'derogatory',
+  'eK': 'exclusively kanji',
+  'econ': 'economics',
+  'ek': 'exclusively kana',
+  'engr': 'engineering',
+  'exp': 'expression',
+  'fam': 'familiar',
+  'fem': 'women’s speech',
+  'finc': 'finance',
+  'food': 'food',
+  'geol': 'geology',
+  'geom': 'geometry',
+  'gikun': 'logogram (gikun/jukujikun)',
+  'hob': 'Hokkaido-ben',
+  'hon': 'honorific',
+  'hum': 'humble',
+  'iK': 'irregular kanji',
+  'id': 'idiom',
+  'ik': 'irregular kana',
+  'int': 'interjection',
+  'io': 'irregular okurigana',
+  'iv': 'irregular verb',
+  'joc': 'jocular',
+  'ksb': 'Kansai-ben',
+  'ktb': 'Kantō-ben',
+  'kyb': 'Kyōto-ben',
+  'kyu': 'Kyūshū-ben',
+  'law': 'law',
+  'ling': 'linguistics',
+  'm-sl': 'manga slang',
+  'mahj': 'mahjong term',
+  'male': 'men’s speech',
+  'male-sl': 'male slang',
+  'math': 'math',
+  'med': 'medicine',
+  'mil': 'military',
+  'music': 'music',
+  'n': 'noun',
+  'n-adv': 'adverbial noun',
+  'n-pr': 'proper noun',
+  'n-pref': 'nominal prefix',
+  'n-suf': 'nominal suffix',
+  'n-t': 'temporal noun',
+  'nab': 'Nagano-ben',
+  'num': 'numeric',
+  'oK': 'outdated kanji',
+  'obs': 'obsolete',
+  'obsc': 'obscure',
+  'oik': 'old/irregular kana',
+  'ok': 'obsolete kana',
+  'on-mim': 'sound-symbolic',
+  'osb': 'Osaka-ben',
+  'physics': 'physics',
+  'pn': 'pronoun',
+  'poet': 'poetry',
+  'pol': 'polite',
+  'pref': 'prefix',
+  'proverb': 'proverb',
+  'prt': 'particle',
+  'rare': 'rare',
+  'rkb': 'Ryūkyū-ben',
+  'sens': 'sensitive',
+  'shogi': 'shogi term',
+  'sl': 'slang',
+  'sports': 'sports',
+  'suf': 'suffix',
+  'sumo': 'sumō',
+  'thb': 'Tōhoku-ben',
+  'tsb': 'Tosa-ben',
+  'tsug': 'Tsugaru-ben',
+  'uK': 'usually in kanji',
+  'uk': 'usually in kana',
+  'unc': 'unclassified',
+  'v-unspec': 'verb unspecified',
+  'v1': 'ichidan (vowel-stem) verb',
+  'v1-s': 'ichidan (vowel-stem) verb - kureru special class',
+  'v2a-s': "-u nidan verb",
+  'v2b-k': "-bu upper nidan verb",
+  'v2b-s': "-bu lower nidan verb",
+  'v2d-k': "-dzu upper nidan verb",
+  'v2d-s': "-dzu lower nidan verb",
+  'v2g-k': "-gu upper nidan verb",
+  'v2g-s': "-gu lower nidan verb",
+  'v2h-k': "-hu/-fu upper nidan verb",
+  'v2h-s': "-hu/-fu lower nidan verb",
+  'v2k-k': "-ku upper nidan verb",
+  'v2k-s': "-ku lower nidan verb",
+  'v2m-k': "-mu upper nidan verb",
+  'v2m-s': "-mu lower nidan verb",
+  'v2n-s': "-nu lower nidan verb",
+  'v2r-k': "-ru upper nidan verb",
+  'v2r-s': "-ru lower nidan verb",
+  'v2s-s': "-su lower nidan verb",
+  'v2t-k': "-tsu upper nidan verb",
+  'v2t-s': "-tsu lower nidan verb",
+  'v2w-s': "-u lower nidan verb",
+  'v2y-k': "-yu upper nidan verb",
+  'v2y-s': "-yu lower nidan verb",
+  'v2z-s': "-zu lower nidan verb",
+  'v4b': "-bu yodan verb",
+  'v4g': "-gu yodan verb",
+  'v4h': "-hu/-fu yodan verb",
+  'v4k': "-ku yodan verb",
+  'v4m': "-mu yodan verb",
+  'v4n': "-nu yodan verb",
+  'v4r': "-ru yodan verb",
+  'v4s': "-su yodan verb",
+  'v4t': "-tsu yodan verb",
+  'v5aru': 'aru godan (consonant-stem) verb',
+  'v5b': "-bu godan (-b stem) verb",
+  'v5g': "-gu godan (-g stem) verb",
+  'v5k': "-ku godan (-k stem) verb",
+  'v5k-s': 'iku/yuku godan (consonant-stem) verb',
+  'v5m': "-mu godan (-m stem) verb",
+  'v5n': "-nu godan (-n stem) verb",
+  'v5r': "-ru godan (-r stem) verb",
+  'v5r-i': "-ru irregular godan (consonant-stem) verb",
+  'v5s': "-su godan (-s stem) verb",
+  'v5t': "-tsu godan (-t stem) verb",
+  'v5u': "-u godan (-w stem) verb",
+  'v5u-s': "-u special godan (consonant-stem) verb",
+  'v5uru': 'uru godan (consonant-stem) verb',
+  'vi': 'intrans. verb',
+  'vk': 'kuru verb',
+  'vn': '-nu irregular verb',
+  'vr': '-ru/-ri irregular verb',
+  'vs': 'verbal (-suru) noun',
+  'vs-c': '-su verb',
+  'vs-i': 'verbal (-suru) noun, irregular',
+  'vs-s': 'verbal (-suru) noun, special',
+  'vt': 'trans. verb',
+  'vulg': 'vulgar',
+  'vz': '-zuru ichidan verb',
+  'yoji': '4-character compound',
+  'zool': 'zoology',
+}
+
+# updated directly from JMdict entities.
+#
+# used to un-expand entities.
+long_expansions={}
+
+# used for progress bar
+donecount=0
+todo=None
+
+# rather than using transactions, locks and so on, it was found to be faster to
+# just remove the file. so we create a new database, and move it over the old
+# one on success.
+to_delete = []
+tmpdb=None
+if config:
+    tmpdb = "%s.new.%d" % (config.get('paths','database'), os.getpid())
+    to_delete.append(tmpdb)
+
+# if problems are found, we just delete the temp database.
+def cleanup():
+    for f in to_delete:
+        if os.path.isfile(f):
+            os.remove(f)
+
+    # sqlite creates "dbname-journal" files
+    if tmpdb:
+        for path in glob(tmpdb + '*'):
+            os.remove(path)
+
+atexit.register(cleanup)
+
+def sigcleanup(signum, stack):
+    print("Aborting on signal %d." % signum)
+    cleanup()
+    sys.exit(1)
+
+# apparently Windows has no SIGHUP, so we test the existence of signal names
+# before trying to trap them.
+for sn in ('SIGHUP', 'SIGINT', 'SIGQUIT', 'SIGILL', 'SIGABRT', 'SIGFPE',
+           'SIGSEGV', 'SIGPIPE', 'SIGTERM', 'SIGBUS'):
+    if hasattr(signal, sn):
+        signal.signal(getattr(signal, sn), sigcleanup)
+
+def nice_self():
+    problem=False
+
+    try:
+        import psutil
+        me = psutil.Process(os.getpid())
+        me.set_nice(19)
+        me.set_ionice(psutil.IOPRIO_CLASS_IDLE)
+
+    except (ImportError, AttributeError):
+        try:
+            subprocess.call(['renice', '-n', '19',  str(os.getpid())])
+        except OSError:
+            problem=True
+
+        try:
+            subprocess.call(['ionice', '-c', 'idle', '-p', str(os.getpid())])
+        except OSError:
+            problem=True
+
+    return not problem 
+
+def create_tables(cur, jmdictxml):
+    # what about a custom collation function?
+
+    cur.execute('DROP TABLE IF EXISTS versions;')
+    cur.execute('DROP TABLE IF EXISTS abbreviations;')
+    cur.execute('DROP TABLE IF EXISTS entries;')
+    cur.execute('DROP TABLE IF EXISTS kanjis;')
+    cur.execute('DROP TABLE IF EXISTS readings;')
+    cur.execute('DROP TABLE IF EXISTS readings_restrictions;')
+    cur.execute('DROP TABLE IF EXISTS senses;')
+    cur.execute('DROP TABLE IF EXISTS sense_kanji_restrictions;')
+    cur.execute('DROP TABLE IF EXISTS sense_reading_restrictions;')
+    cur.execute('DROP TABLE IF EXISTS glosses;')
+
+    cur.execute('''
+      CREATE TABLE versions (
+        dbversion TEXT PRIMARY KEY,
+        jmdict_mtime TEXT DEFAULT NULL
+      );
+    ''')
+
+    cur.execute('''
+      INSERT INTO versions VALUES (?, ?);
+    ''',
+                [config.get('core','dbversion'),
+                 time.strftime('%Y-%m-%d',
+                               time.gmtime(os.path.getmtime(jmdictxml)))]
+               )
+
+
+    # basically what's encoded as entities in JMdict.xml .
+    # notice the entity names are familiar from EDICT files.
+    # abbrev = entity name
+    # long_expansion = entity JMdict value
+    # short_expansion = our own, shorter expansion
+    cur.execute('''
+      CREATE TABLE abbreviations (
+        abbrev TEXT PRIMARY KEY,
+        short_expansion TEXT DEFAULT NULL,
+        long_expansion TEXT DEFAULT NULL
+      );
+    ''')
+
+    # ent_seq is the id in JMdict.
+    #
+    # 'frequent' is true if at least one kanji or one reading is marked
+    # 'frequent'.
+    cur.execute('''
+      CREATE TABLE
+      entries (
+        ent_seq INTEGER NOT NULL,
+        frequent INTEGER DEFAULT 0
+      );
+    ''')
+
+    # kanji = keb
+    #
+    # there may be many ke_inf, but they're all simple abbreviations.
+    # rather than creating an entire separate table, we just list all
+    # in a single row, separated by ';'.
+    #
+    # 'frequent' is true following the criteria from (P) in edict, i.e.
+    # "entries with news1, ichi1, spec1 and gai1 values"
+    # ~plus~ spec2, which is undocumented.
+    cur.execute('''
+      CREATE TABLE
+      kanjis (
+        ent_seq INTEGER NOT NULL,
+        kanji_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        kanji TEXT NOT NULL,
+        ke_inf TEXT DEFAULT NULL,
+        frequent INTEGER DEFAULT 0,
+        FOREIGN KEY (ent_seq) REFERENCES entries(ent_seq)
+      );
+    ''')
+
+    # see table kanjis for 'frequent'
+    cur.execute('''
+      CREATE TABLE
+      readings (
+        ent_seq INTEGER NOT NULL,
+        reading_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        reading TEXT NOT NULL,
+        re_nokanji INTEGER DEFAULT 0,
+        frequent INTEGER DEFAULT 0,
+        re_inf TEXT DEFAULT NULL,
+        FOREIGN KEY (ent_seq) REFERENCES entries(ent_seq)
+      );
+    ''')
+
+    cur.execute('''
+      CREATE TABLE
+      reading_restrictions (
+        restr_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        reading_id INTEGER NOT NULL,
+        re_restr TEXT,
+        FOREIGN KEY (reading_id) REFERENCES readings(reading_id),
+        FOREIGN KEY (re_restr) REFERENCES kanjis(kanji)
+      );
+    ''')
+
+    # s_inf would perhaps merit its own table;
+    # however, as of 2013-02-24, no entry has more than one.
+    # so we just concatenate them for now.
+    cur.execute('''
+      CREATE TABLE
+      senses (
+        ent_seq INTEGER NOT NULL,
+        sense_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        pos TEXT DEFAULT NULL,
+        field TEXT DEFAULT NULL,
+        misc TEXT DEFAULT NULL,
+        dial TEXT DEFAULT NULL,
+        s_inf TEXT DEFAULT NULL,
+        FOREIGN KEY (ent_seq) REFERENCES entries(ent_seq)
+        FOREIGN KEY (pos) REFERENCES abbreviations(abbrev)
+        FOREIGN KEY (misc) REFERENCES abbreviations(abbrev)
+        FOREIGN KEY (dial) REFERENCES abbreviations(abbrev)
+      );
+    ''')
+
+    # stagk
+    cur.execute('''
+                CREATE TABLE
+                sense_kanji_restrictions (
+                  stagk_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                  sense_id INTEGER NOT NULL,
+                  stagk TEXT,
+                  FOREIGN KEY (sense_id) REFERENCES senses(sense_id),
+                  FOREIGN KEY (stagk) REFERENCES kanjis(kanji)
+                 );
+                ''')
+
+    # stagr
+    cur.execute('''
+                CREATE TABLE
+                sense_reading_restrictions (
+                  stagr_id INTEGER PRIMARY KEY AUTOINCREMENT,
+                  sense_id INTEGER NOT NULL,
+                  stagr TEXT,
+                  FOREIGN KEY (sense_id) REFERENCES senses(sense_id),
+                  FOREIGN KEY (stagr) REFERENCES readings(reading)
+                 );
+                ''')
+
+    # 'frequent' is a mirror of the corresponding entry.frequent
+    # we double it in database to save up a JOIN at runtime
+    cur.execute('''
+      CREATE TABLE
+      glosses (
+        ent_seq INTEGER NOT NULL,
+        frequent INTEGER NOT NULL,
+        sense_id INTEGER NOT NULL,
+        gloss_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        gloss TEXT NOT NULL COLLATE NOCASE,
+        FOREIGN KEY (ent_seq) REFERENCES entries(ent_seq)
+        FOREIGN KEY (sense_id) REFERENCES senses(sense_id)
+      );
+    ''')
+
+def create_indexes(cur):
+    cur.execute('''
+      CREATE INDEX kanjis_ent_seq ON kanjis (ent_seq);
+    ''')
+    cur.execute('''
+      CREATE INDEX readings_ent_seq ON readings (ent_seq);
+    ''')
+    cur.execute('''
+      CREATE INDEX senses_ent_seq ON senses (ent_seq);
+    ''')
+    cur.execute('''
+      CREATE INDEX glosses_ent_seq ON glosses (sense_id);
+    ''')
+    cur.execute('''
+      CREATE INDEX glosses_sense_id ON glosses (sense_id);
+    ''')
+    cur.execute('''
+      CREATE INDEX restrs_reading_id ON reading_restrictions (reading_id);
+    ''')
+    cur.execute('''
+      CREATE INDEX kanjis_kanji ON kanjis (kanji);
+    ''')
+    cur.execute('''
+      CREATE INDEX readings_reading ON readings (reading);
+    ''')
+    cur.execute('''
+      CREATE INDEX glosses_gloss ON glosses (gloss COLLATE NOCASE);
+    ''')
+    cur.execute('''
+      CREATE INDEX stagk_sense_id ON sense_kanji_restrictions(sense_id);
+    ''')
+    cur.execute('''
+      CREATE INDEX stagr_sense_id ON sense_reading_restrictions(sense_id);
+    ''')
+
+def create_fts_indexes(cur):
+    # unicode61 and icu currently not available on debian
+    # cur.execute('''CREATE VIRTUAL TABLE kanjis_fts USING fts4(ent_seq, kanji, tokenize=unicode61);''')
+    cur.execute('''CREATE VIRTUAL TABLE kanjis_fts USING fts4(ent_seq, kanji, frequent, matchinfo=fts3);''')
+    cur.execute('''
+      INSERT INTO kanjis_fts
+        SELECT entries.ent_seq, kanjis.kanji, kanjis.frequent
+        FROM entries JOIN kanjis ON entries.ent_seq = kanjis.ent_seq
+      ;
+    ''')
+    cur.execute('''INSERT INTO kanjis_fts(kanjis_fts) VALUES ('optimize');''')
+
+    # cur.execute('''CREATE VIRTUAL TABLE readings_fts USING fts4(ent_seq, reading, tokenize=unicode61);''')
+    cur.execute('''CREATE VIRTUAL TABLE readings_fts USING fts4(ent_seq, reading, frequent, matchinfo=fts3);''')
+    cur.execute('''
+      INSERT INTO readings_fts
+        SELECT entries.ent_seq, readings.reading, readings.frequent
+        FROM entries JOIN readings ON entries.ent_seq = readings.ent_seq
+      ;
+    ''')
+    cur.execute('''INSERT INTO readings_fts(readings_fts) VALUES ('optimize');''')
+
+    # cur.execute('''CREATE VIRTUAL TABLE glosses_fts USING fts4(ent_seq, sense_id, gloss, tokenize=unicode61);''')
+    cur.execute('''CREATE VIRTUAL TABLE glosses_fts USING fts4(ent_seq, sense_id, gloss, frequent, matchinfo=fts3);''')
+    cur.execute('''
+      INSERT INTO glosses_fts
+        SELECT entries.ent_seq, senses.sense_id, glosses.gloss, glosses.frequent
+        FROM entries JOIN senses ON entries.ent_seq = senses.ent_seq
+          JOIN glosses ON senses.sense_id = glosses.sense_id
+      ;
+    ''')
+    cur.execute('''INSERT INTO glosses_fts(glosses_fts) VALUES ('optimize');''')
+
+
+def count_entries(jmdict):
+    count=0
+
+    def handle_end_el(el):
+        nonlocal count
+        if el == 'entry':
+            count += 1
+
+    p = xml.parsers.expat.ParserCreate()
+    p.buffer_text = True
+    p.EndElementHandler = handle_end_el
+    p.ParseFile(jmdict)
+    return count
+
+
+# credits for ascii art: Dan Strychalski
+# (  
+#  )
+#c[ ]
+
+coffeecup = 'c[ ]'
+coffeesteam = []
+coffeesteam.append('''
+ (  
+  )
+'''.lstrip("\n"))
+
+coffeesteam.append('''
+   )
+  (
+'''.lstrip("\n"))
+
+animation_frame = 0
+
+def print_coffee():
+    global donecount
+    global todo
+    global animation_frame
+
+    perc = float(donecount) / todo
+
+    sys.stdout.write(coffeesteam[animation_frame])
+    sys.stdout.write(color.percent(coffeecup, perc))
+    animation_frame = (animation_frame+1) % len(coffeesteam)
+
+    # 6: hardcoded len(str(todo))
+    donestr = color.percent("%6d" % donecount, perc)
+    todostr = fmt("%6d" % todo, 'info')
+    percstr = color.percent("%6.2f" % (perc*100), perc)
+
+    if donecount == todo:
+        print(" %s/%s (%s%%) All done!" %
+              (donestr, todostr, percstr))
+    else:
+        print(" %s/%s (%s%%) done..." %
+              (donestr, todostr, percstr))
+
+    sys.stdout.flush()
+
+def update_coffee(signum=None, frame=None):
+    '''Handler for SIGALARM.'''
+
+    # move up 3 lines
+    sys.stdout.write('\033[3A')
+    # move to start of line
+    sys.stdout.write("\r")
+    signal.alarm(1)
+
+    print_coffee()
+
+def insert_entries(cur, entries):
+    cur.executemany('''INSERT INTO entries
+                    (ent_seq, frequent)
+                    VALUES (?, ?);''',
+                    [(e.ent_seq, e.frequent) for e in entries])
+
+    # tuples = []
+    # for e in entries:
+    #     for k in e.kanjis:
+    #         tuples.append((e.ent_seq, k.text))
+    tuples = [(e.ent_seq,
+               k.text,
+               k.ke_inf,
+               k.frequent) for e in entries for k in e.kanjis]
+
+    cur.executemany('''INSERT INTO kanjis
+                    (ent_seq, kanji, ke_inf, frequent)
+                    VALUES (?, ?, ?, ?);''',
+                    tuples)
+
+    # flat list of all readings
+    readings = tuple(itertools.chain(*[e.readings for e in entries]))
+    cur.execute('SELECT max(reading_id) FROM readings;')
+    last_id = cur.fetchone()[0] or 0
+    for r in readings:
+        last_id += 1
+        r.reading_id = last_id
+
+    tuples = [(e.ent_seq,
+               r.reading_id,
+               r.text,
+               r.re_nokanji, 
+               r.re_inf,
+               r.frequent)
+              for e in entries for r in e.readings]
+    cur.executemany('''INSERT INTO readings
+                    (ent_seq, reading_id, reading, re_nokanji, re_inf, frequent)
+                    VALUES (?, ?, ?, ?, ?, ?);''',
+                    tuples)
+
+    tuples = [(r.reading_id, restr) for r in readings for restr in r.re_restr]
+    cur.executemany('''INSERT INTO reading_restrictions
+                    (reading_id, re_restr)
+                    VALUES (?, ?);''',
+                    tuples)
+
+    cur.execute('''SELECT max(sense_id) FROM senses;''')
+    last_id = cur.fetchone()[0] or 0
+
+    # flat list of all senses
+    senses = tuple(itertools.chain(*[e.senses for e in entries]))
+    for s in senses:
+        last_id += 1
+        s.sense_id = last_id
+
+    tuples = [(e.ent_seq, s.sense_id, s.pos, s.field, s.misc, s.dial, s.s_inf)
+              for e in entries for s in e.senses]
+    cur.executemany('''INSERT INTO senses
+                     (ent_seq,
+                      sense_id,
+                      pos,
+                      field,
+                      misc,
+                      dial,
+                      s_inf
+                     )
+                     VALUES (?, ?, ?, ?, ?, ?, ?);''',
+                    tuples)
+
+    tuples = [(s.sense_id, stagk) for s in senses for stagk in s.stagk]
+    cur.executemany('''INSERT INTO sense_kanji_restrictions
+                    (sense_id, stagk)
+                    VALUES (?, ?);''',
+                    tuples)
+
+    tuples = [(s.sense_id, stagr) for s in senses for stagr in s.stagr]
+    cur.executemany('''INSERT INTO sense_reading_restrictions
+                    (sense_id, stagr)
+                    VALUES (?, ?);''',
+                    tuples)
+
+    tuples = [(e.ent_seq, e.frequent, s.sense_id, g)
+              for e in entries for s in e.senses for g in s.glosses]
+    cur.executemany('''INSERT INTO glosses
+                    (ent_seq, frequent, sense_id, gloss)
+                    VALUES (?, ?, ?, ?)''',
+                    tuples)
+
+
+
+def make_database(jmdict, sqlite, check, progress=True):
+    global todo
+    global donecount
+
+    common.mkdir_p(os.path.dirname(config.get('paths','database')))
+
+
+    class Buffer:
+        def __init__(self):
+            self.init()
+
+        def init(self):
+            self.insert_queue = []
+            self.size = 0
+            self.bufsize = 10240
+
+            # temps for last parsed element
+            self.entry = None
+            self.kanji = None
+            self.reading = None
+            self.sense = None
+            self.cdata = ''
+
+        def clear(self):
+            for e in self.insert_queue: del e
+            del self.entry
+            del self.kanji
+            del self.reading
+            del self.sense
+
+            self.init()
+
+        def queue(self, entry):
+            self.insert_queue.append(entry)
+            self.size += 1
+
+    b = Buffer()
+
+    def handle_entity_decl(name,
+            is_parameter_entity,
+            value,
+            base,
+            system_id,
+            public_id,
+            notation_name):
+
+        long_expansions[name] = value
+        if name not in short_expansions.keys():
+            # "\n\n\n": length of coffe cup ascii art
+            print("%s: new JMdict tag %s not yet programmed in myougiden\n\n\n"
+                 % (fmt('WARNING', 'warning'),
+                    fmt(name, 'parameter')))
+            short_expansions[name] = value
+
+        cur.execute('''
+          INSERT INTO abbreviations(abbrev, short_expansion, long_expansion)
+                 VALUES (?, ?, ?);
+        ''', [name, short_expansions[name], value])
+
+
+
+    def handle_start_el(el, attrs):
+        nonlocal b
+
+        b.cdata = ''
+
+        if el == 'entry':
+            b.entry = Entry()
+        elif el == 'k_ele':
+            b.kanji = Kanji()
+        elif el == 'r_ele':
+            b.reading = Reading()
+        elif el == 'sense':
+            b.sense = Sense()
+
+    def handle_cdata(data):
+        nonlocal b
+        b.cdata += data
+
+    def add_abbrev(obj, attr, data):
+        '''helper function for handle_end_el.'''
+
+        abbrev = None
+        for abr, exp in long_expansions.items():
+            if data == exp:
+                abbrev = abr
+                break
+        if not abbrev:
+            raise(RuntimeError('Tried to abbrev unknown data: %s' % data))
+
+        prev = getattr(obj, attr)
+        if prev:
+            setattr(obj, attr, prev + ',' + abbrev)
+        else:
+            setattr(obj, attr, abbrev)
+
+    def handle_end_el(el):
+        nonlocal b
+        nonlocal progress
+        global donecount
+
+        if el == 'ent_seq':
+            b.entry.ent_seq = int(b.cdata)
+
+        elif el == 'keb':
+            b.kanji.text = b.cdata
+
+        elif el == 'ke_inf':
+            add_abbrev(b.kanji, 'ke_inf', b.cdata)
+
+        elif el == 'ke_pri':
+            # EDICT '(P)' criteria
+            if b.cdata in ('news1', 'ichi1', 'spec1', 'spec2', 'gai1'):
+                b.kanji.frequent = True
+                b.entry.frequent = True
+
+        elif el == 'reb':
+            b.reading.text = b.cdata
+
+        elif el == 're_restr':
+            b.reading.re_restr.append(b.cdata)
+
+        elif el == 're_inf':
+            add_abbrev(b.reading, 're_inf', b.cdata)
+
+        elif el == 're_nokanji':
+            b.reading.re_nokanji = True
+
+        elif el == 're_pri':
+            # EDICT '(P)' criteria
+            if b.cdata in ('news1', 'ichi1', 'spec1', 'spec2', 'gai1'):
+                b.reading.frequent = True
+                b.entry.frequent = True
+
+        elif el in ('pos', 'field', 'misc', 'dial'):
+            add_abbrev(b.sense, el, b.cdata)
+
+        elif el == 'stagk':
+            b.sense.stagk.append(b.cdata)
+
+        elif el == 'stagr':
+            b.sense.stagr.append(b.cdata)
+
+        elif el == 's_inf':
+            # see comment on s_inf in maketables
+            if b.sense.s_inf:
+                print('%s: JMdict now has multiple <s_inf> at %s',
+                      fmt('WARNING', 'warning'),
+                      fmt(b.entry.ent_seq, 'parameter'))
+                b.sense.s_inf += ';' + b.cdata
+            else:
+                b.sense.s_inf = b.cdata
+
+        elif el == 'gloss':
+            b.sense.glosses.append(b.cdata)
+
+        elif el == 'k_ele':
+            b.entry.kanjis.append(b.kanji)
+        elif el == 'r_ele':
+            b.entry.readings.append(b.reading)
+        elif el == 'sense':
+            b.entry.senses.append(b.sense)
+
+        elif el == 'entry':
+            b.queue(b.entry)
+
+            if b.size >= b.bufsize:
+                insert_entries(cur, b.insert_queue)
+                if progress: donecount += b.size
+                b.clear()
+
+
+        elif el == 'JMdict':
+            insert_entries(cur, b.insert_queue)
+            if progress: donecount += b.size
+            b.clear()
+
+
+    p = xml.parsers.expat.ParserCreate()
+    p.buffer_text = True
+    p.StartElementHandler = handle_start_el
+    p.EndElementHandler = handle_end_el
+    p.CharacterDataHandler = handle_cdata
+    p.EntityDeclHandler = handle_entity_decl
+
+    # it does nothing!
+    # p.SetParamEntityParsing(xml.parsers.expat.XML_PARAM_ENTITY_PARSING_NEVER)
+
+    con = sql.connect(tmpdb, isolation_level='IMMEDIATE')
+    cur = con.cursor()
+
+    doitlive(cur, check)
+    create_tables(cur, jmdict.name)
+
+    if progress:
+        sys.stdout.write("Counting entries...")
+        todo = count_entries(jmdict)
+        jmdict.seek(0)
+        print(" %s to update." % fmt(str(todo), 'info'))
+
+        print_coffee()
+        signal.signal(signal.SIGALRM, update_coffee)
+        signal.alarm(1)
+
+    p.ParseFile(jmdict)
+
+    if progress:
+        update_coffee()
+        signal.signal(signal.SIGALRM, signal.SIG_IGN)
+
+    print('%s...' % fmt('Creating regular indexes', 'info'))
+    create_indexes(cur)
+    print('%s...' % fmt('Creating indexes for full text search', 'info'))
+    create_fts_indexes(cur)
+
+    cur.close()
+    con.commit()
+    con.close()
+
+def doitlive(cur, check):
+    cur.execute('PRAGMA synchronous = 0;')
+    cur.execute('PRAGMA journal_mode = 0;')
+    cur.execute('PRAGMA temp_store = memory;')
+
+    if check:
+        print('Check constraints enabled :)')
+    else:
+        cur.execute('PRAGMA foreign_keys = 0;')
+        cur.execute('PRAGMA ignore_check_constraints = 1;')
+
+
+def gzip_file(fpath):
+    try:
+        st = subprocess.call(['gzip', '-f', fpath])
+        if st != 0:
+            raise RuntimeError("gzip returned %d" % st)
+    except OSError:
+        bufsize = 1024*8
+        plain = open(fpath, 'rb')
+        gz = gzip.open(fpath + '.gz', 'wb')
+
+        while 1:
+            buf = plain.read(bufsize)
+            if not buf:
+                break
+            gz.write(buf)
+
+        plain.close()
+        gz.close()
+        os.remove(fpath)
+
+def gunzip_file(fpathgz):
+    try:
+        st = subprocess.call(['gzip', '-d', '-f', fpathgz])
+        if st != 0:
+            raise RuntimeError("gzip -d returned %d" % st)
+    except OSError:
+        bufsize = 1024*8
+        gz = gzip.open(fpathgz, 'rb')
+        plain = open(re.sub(r'\.gz$', '', fpathgz), 'wb')
+
+        while 1:
+            buf = gz.read(bufsize)
+            if not buf:
+                break
+            plain.write(buf)
+
+        plain.close()
+        gz.close()
+        os.remove(fpathgz)
+
+def download_jmdict_xml(url, localgz):
+    sys.stdout.write('''%s full dictionary data:
+From: %s
+To: %s
+Starting... ''' % (fmt('Downloading', 'info'),
+                  fmt(url, 'parameter'),
+                  fmt(localgz, 'parameter')))
+
+    urllib.request.urlretrieve(url, localgz)
+
+    print('done.')
+
+
+def fetch_jmdict_xml(localgz):
+    '''Update (via rsync) or download JMdict_e.gz.
+
+    localgz is the local filename.  If it doesn't end in .gz, we assume
+    it's a temp file and don't try to update it, just download.
+
+    Uses config.get('urls','jmdict_rsync')
+    '''
+
+    localgz = os.path.realpath(localgz)
+
+    if os.path.isfile(localgz) and re.search(r'\.gz$', localgz):
+        localxml = re.sub(r'\.gz$', '', localgz)
+
+        try:
+            print('''%s remote file
+From: %s
+To: %s''' % (
+                fmt('Syncing', 'info'),
+                fmt(config.get('urls','jmdict_rsync'), 'parameter'),
+                fmt(localgz, 'parameter'),
+            ))
+
+            gunzip_file(localgz)
+            st = subprocess.call(['rsync', '--progress', '-v', '-z', config.get('urls','jmdict_rsync'), localxml])
+            if st != 0:
+                raise RuntimeError("rsync returned %d" % st)
+            gzip_file(localxml)
+        except Exception as e:
+            if os.path.isfile(localxml):
+                os.remove(localxml)
+
+            print('%s: Could not sync-update JMdict file: %s.' % (
+                fmt('WARNING', 'warning'),
+                fmt(str(e), 'warning')))
+
+            download_jmdict_xml(config.get('urls','jmdictgz_http'), localgz)
+
+
+    else:
+        common.mkdir_p(os.path.dirname(localgz))
+        download_jmdict_xml(config.get('urls','jmdictgz_http'), localgz)
+
+if __name__ == '__main__':
+    import argparse
+
+    # let --help & option parsing work even if config.ini not found
+    if config:
+        jmdictgz_http = config.get('urls', 'jmdictgz_http')
+        jmdictgz = config.get('paths', 'jmdictgz')
+    else:
+        jmdictgz_http = jmdictgz = '(Error: config.ini not found!)'
+
+    ap = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
+
+    ap.add_argument('-f', '--fetch', action='store_true',
+                    help=('''Try to fetch JMdict_e.gz from
+%s .''' % jmdictgz_http))
+
+    ap.add_argument('-k', '--delete', action='store_true',
+                    help='''Delete downloaded JMdict_e.gz file after fetching.
+If not set, it will be kept to speed up future updates.''')
+
+    ap.add_argument('-j', '--jmdict',
+                    default=jmdictgz,
+                    metavar='PATH',
+                    help='''Path of local JMdict_e.gz file. Default:
+%(default)s .''')
+
+    ap.add_argument('-c', '--color', choices=('yes', 'no', 'auto'), default='auto',
+                    help='''Whether to colorize output.  Default 'auto' means to
+colorize if writing to a terminal.''')
+
+    ap.add_argument('--no-nice', action='store_false', dest='nice',
+            help='''Don't lower process priority (default: try to be nice).''')
+
+    # enable foreign keys and check contraints; for dev use
+    ap.add_argument('--check', action='store_true',
+                    help=argparse.SUPPRESS)
+
+    args = ap.parse_args()
+
+    if args.color == 'auto':
+        if sys.stdout.isatty():
+            args.color = 'yes'
+        else:
+            args.color = 'no'
+
+    if args.color == 'yes': color.use_color = True
+    if not config:
+        print('%s: config.ini not found!'% fmt('ERROR', 'error'))
+        sys.exit(1)
+
+    localxml_exists = os.path.isfile(args.jmdict)
+    temp_xml = False
+
+    if not localxml_exists and not args.fetch:
+        # assume no one would want to call the script just to be told
+        # "there's no file, please fetch"
+        args.fetch = True
+
+    if args.fetch and args.delete:
+        # it seems that both gzip and urllib require visible filenames, and
+        # can't just work with in-memory file objects.
+        f, xmlgzpath = tempfile.mkstemp()
+        to_delete.append(xmlgzpath)
+    else:
+        xmlgzpath = args.jmdict
+
+    # check for already running process & leftovers
+    updating_files = glob(config.get('paths','database') + '.new.*')
+    for uf in updating_files:
+        m = re.match(config.get('paths','database') + '.new.([0-9]*)', uf)
+        pid = int(m.group(1))
+        try:
+            os.getpgid(pid)
+            # weakness: if another process takes over same PID.
+            print(
+                "%s: updatedb-myougiden seems to be running at PID %s! Exiting..."
+                % (fmt('ERROR', 'error'),
+                   fmt(str(pid), 'parameter'))
+            )
+
+            sys.exit(0)
+        except OSError:
+            print("%s %s" % (
+                fmt('Removing stale file', 'info'),
+                fmt(uf, 'parameter')))
+            os.remove(uf)
+
+    if args.nice:
+        nice_self()
+
+    if args.fetch:
+        try:
+            fetch_jmdict_xml(xmlgzpath)
+        except Exception as e:
+            print('''
+%s: Could not download JMdict_e.gz as requested:
+    %s.
+Try again when the Internet's back up!  Or get it yourself and save to
+    %s
+and then you can run updatedb-myougiden without -f.'''
+                  % (fmt('ERROR', 'error'),
+                     fmt(str(e), 'error'),
+                     fmt(xmlgzpath, 'parameter')))
+            sys.exit(1)
+
+    if args.delete:
+        print("%s from %s, please wait..." % (
+            fmt('Compiling database', 'info'),
+            fmt('temporary file', 'parameter')))
+    else:
+        print("%s from %s, please wait..." % (
+            fmt('Compiling database', 'info'),
+            fmt(xmlgzpath, 'parameter')))
+
+    progress = sys.stdout.isatty()
+    make_database(gzip.open(xmlgzpath, 'r'),
+                  tmpdb,
+                  check=args.check,
+                  progress=progress)
+
+    if args.delete:
+        print("Deleting temporary file.")
+        os.remove(xmlgzpath)
+
+    os.rename(tmpdb, config.get('paths','database'))
+    atexit.unregister(cleanup)
+    print("myougiden is ready to use, enjoy!")
