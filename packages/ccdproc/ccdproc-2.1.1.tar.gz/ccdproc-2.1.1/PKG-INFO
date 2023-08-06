@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ccdproc
+Version: 2.1.1
+Summary: Astropy affiliated package
+Home-page: http://ccdproc.readthedocs.io/
+Author: Steve Crawford, Matt Craig, and Michael Seifert
+Author-email: ccdproc@gmail.com
+License: BSD
+Description: This is a package for reducing optical/IR CCD data that relies on astropy
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: docs
