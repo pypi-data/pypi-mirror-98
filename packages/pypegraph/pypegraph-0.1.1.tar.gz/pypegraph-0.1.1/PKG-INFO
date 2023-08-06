@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pypegraph
+Version: 0.1.1
+Summary: A module for defining pipeline processing graphs.
+Home-page: https://github.com/mnicolas94/pypegraph
+Author: Miguel Nicolás-Díaz
+Author-email: miguelcok27@gmail.com
+License: UNKNOWN
+Description: # pypegraph
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
