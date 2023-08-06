@@ -1,0 +1,7 @@
+asyncalchemy/__init__.py,sha256=AJIsN5mQuhkWHyjvyqZJD7wEqw5zrZBh1vGFnvXSK4g,2026
+asyncalchemy/session_committer.py,sha256=l0iCIOCJBTmnMnxoeqGlYRWtc-fi5UN4360TPyQvnps,4482
+asyncalchemy/utils.py,sha256=7bpfe_6AIoVFeX0h7gVByARtKU90VRYpE3Od9elxie0,389
+asyncalchemy-1.1.2.dist-info/LICENSE,sha256=l1v-UQ8CRdrlxM_s6iv0YsuTXJlXH80pnXC8qEa4EEE,11341
+asyncalchemy-1.1.2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+asyncalchemy-1.1.2.dist-info/METADATA,sha256=AWtbbtbc1HQ9y_nAIiEu4Hl-4iW9IwWJdihFy0bhPOM,2326
+asyncalchemy-1.1.2.dist-info/RECORD,,
