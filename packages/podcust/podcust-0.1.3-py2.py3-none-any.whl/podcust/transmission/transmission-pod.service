@@ -1,0 +1,12 @@
+[Unit]
+Description=Transmission pod service from podman custodian
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+StandardOutput=journal
+ExecStart=sh -c "podman pod start transmission && podcust transmission update"
+ExecStop=podman pod stop transmission
+
+[Install]
+WantedBy=default.target

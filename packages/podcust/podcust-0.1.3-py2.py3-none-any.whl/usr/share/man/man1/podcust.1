@@ -1,0 +1,797 @@
+.\" Man page generated from reStructuredText.
+.
+.TH "PODCUST" "1" "Mar 14, 2021" "0.1.3" "Podman Custodian"
+.SH NAME
+podcust \- Podman Custodian Documentation
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.SH PODMAN CUSTODIAN
+\fI\%\fP\fI\%\fP\fI\%Documentation Status\fP\fI\%Updates\fP
+.sp
+Python utility to manage specific deployed podman containers in Fedora.
+.INDENT 0.0
+.IP \(bu 2
+Free software: \fI\%Licensed\fP under the \fI\%Parity License\fP
+.IP \(bu 2
+Documentation:  \fI\%Read the Docs\fP
+.UNINDENT
+.SS Getting Started
+.sp
+From a Fedora Workstation installation:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ dnf copr enable iolaum/podcust
+$ dnf install podcust
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Features
+.INDENT 0.0
+.IP \(bu 2
+Deployment and management of \fI\%transmission\fP \fI\%docker container image\fP from linuxserver.io
+\fI\%documented here\fP\&.
+.UNINDENT
+.SS Credits
+.sp
+This package was created with \fI\%Cookiecutter\fP and the \fI\%audreyr/cookiecutter\-pypackage\fP project
+template.
+.SH INSTALLATION
+.SS Stable release
+.sp
+To install Podman Custodian, run this command in your terminal:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ pip install podcust
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+This is the preferred method to install Podman Custodian, as it will always install the most
+recent stable release.
+.sp
+If you don’t have \fI\%pip\fP installed, this \fI\%Python installation guide\fP can guide
+you through the process.
+.SS From sources
+.sp
+The sources for Podman Custodian can be downloaded from the \fI\%Github repo\fP\&.
+.sp
+You can either clone the public repository:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ git clone git://github.com/Iolaum/podcust
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Or download the \fI\%tarball\fP:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ curl \-OJL https://github.com/Iolaum/podcust/tarball/master
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Once you have a copy of the source, you can install it with:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ python setup.py install
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SH USAGE
+.SS Using Transmission container image
+.sp
+To use transmission container image in production:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ podcust transmission deploy
+$ podcust transmission service setup
+$ podcust transmission service activate
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Now the transmission container is up and running. It will automatically be stopped during shutdown
+and will be restarted, and updated if possible, after boot.
+.sp
+To clear the system from a running image and all associated files:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ podcust transmission service deactivate
+$ podcust transmission service delete
+$ podcust transmission stop
+$ podcust transmission rm
+$ podcust transmission clear
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Note: Container images stored by podman still need to be manually deleted.
+.SH PODCUST
+.SS podcust package
+.SS Subpackages
+.SS podcust.commands package
+.SS Submodules
+.SS podcust.commands.demo module
+.SS podcust.commands.transmission module
+.SS Module contents
+.sp
+Functionality needed for CLI commands.
+.SS podcust.demo package
+.SS Submodules
+.SS podcust.demo.custodian module
+.sp
+Custodian Class for Demo container.
+.INDENT 0.0
+.TP
+.B exception podcust.demo.custodian.ContainerHealthError(container_name, container_id)
+Bases: \fBException\fP
+.sp
+Exception raised when a container fails it’s health check.
+.sp
+Inspired from:
+\fI\%https://www.programiz.com/python\-programming/user\-defined\-exception\fP
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcontainer_name\fP – Name of container image.
+.IP \(bu 2
+\fBcontainer_id\fP – Running Container id of container type container_name
+message – explanation of the error
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B class podcust.demo.custodian.DemoCust(name: str = \(aqlocalhost/httpdemo\(aq)
+Bases: \fBobject\fP
+.sp
+Main class for handling the httpdemo container.
+.sp
+The httpdemo container just spawns an a container with an apache web server
+service serving the Fedora Test page through http.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBname\fP – The Repository name of the image this class is custodian for.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B activate_container()
+Activate a demo’s container httpd service.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B build_demo_image()
+Build an image for the demo container. Use the dockerfile located at this folder.
+.sp
+The command to build a container is:
+podman build \-f Dockerfile \-t httpdemo
+.UNINDENT
+.INDENT 7.0
+.TP
+.B deactivate_container()
+Deactivate a demo’s container httpd service.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B find_exited_containers()
+Find all containers of demo type that have run and exited.
+.sp
+You can see here a sample output of the command we use to find the containers we want
+to remove:  # noqa: E501
+$ podman ps \-a
+CONTAINER ID  IMAGE                                     COMMAND     CREATED     STATUS                   PORTS                 NAMES
+1b5fe6643ece  localhost/httpdemo:latest                 /sbin/init  2 days ago  Exited (0) 2 days ago    0.0.0.0:8080\->80/tcp  strange_wu
+3ea6bf480c47  localhost/httpdemo:latest                 /bin/bash   2 days ago  Exited (0) 2 days ago    0.0.0.0:8080\->80/tcp  funny_williams
+63604b048bc9  registry.fedoraproject.org/fedora:latest  /bin/bash   2 days ago  Exited (0) 2 days ago                          practical_kowalevski
+b3e4d5b363ce  localhost/httpdemo:latest                 /sbin/init  2 days ago  Exited (137) 2 days ago  0.0.0.0:8080\->80/tcp  pedantic_tesla
+c4e4a6847c3d  localhost/httpdemo:latest                 /bin/bash   2 days ago  Exited (0) 2 days ago    0.0.0.0:8080\->80/tcp  jolly_volhard
+dc9bffeef1c2  registry.fedoraproject.org/fedora:latest  /bin/bash   2 days ago  Exited (0) 2 days ago    0.0.0.0:8080\->80/tcp  zealous_blackburn0
+.UNINDENT
+.INDENT 7.0
+.TP
+.B find_stored_image_id() -> List[str]
+This function looks if the system has an appropriate container image and
+returns the id of that image.
+.sp
+Current implementation assumes that the first match is the one we are after.
+.sp
+TODO: Specify what tag we want to match?
+.UNINDENT
+.INDENT 7.0
+.TP
+.B get_running_container_id()
+Get the container ID for a running container (of demo type).
+.UNINDENT
+.INDENT 7.0
+.TP
+.B health_check()
+Runs basic checks to test container’s functionality.
+.sp
+Verifying health check inspired by:
+\fI\%https://stackoverflow.com/a/51242/1904901\fP
+.UNINDENT
+.INDENT 7.0
+.TP
+.B image_id: str
+.UNINDENT
+.INDENT 7.0
+.TP
+.B name: str
+.UNINDENT
+.INDENT 7.0
+.TP
+.B remove_stored_image()
+Removes a stored container image corresponding to the name
+the class has been instantiated to.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B removed_exited_containers()
+Remove all containers of demo type that have run and exited.
+.sp
+Remove an image with:
+podman container rm 3ea6bf480c47
+.UNINDENT
+.INDENT 7.0
+.TP
+.B run_container()
+Start running the demo container.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B stop_container()
+Stop demo running container.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B exception podcust.demo.custodian.MissingContainers(container_name)
+Bases: \fBException\fP
+.sp
+Exception raised when not one containers of expected type are running.
+.sp
+Inspired from:
+\fI\%https://www.programiz.com/python\-programming/user\-defined\-exception\fP
+.INDENT 7.0
+.TP
+.B Parameters
+\fBcontainer_name\fP – Name of container image.
+message – explanation of the error
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B exception podcust.demo.custodian.MultipleContainers(container_id1, container_id2)
+Bases: \fBException\fP
+.sp
+Exception raised when more than one containers of a type are running.
+.sp
+Inspired from:
+\fI\%https://www.programiz.com/python\-programming/user\-defined\-exception\fP
+.INDENT 7.0
+.TP
+.B Parameters
+.INDENT 7.0
+.IP \(bu 2
+\fBcontainer_id1\fP – First container id of container type
+.IP \(bu 2
+\fBcontainer_id2\fP – Second container id of container type.
+message – explanation of the error
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.SS Module contents
+.SS podcust.transmission package
+.SS Submodules
+.SS podcust.transmission.custodian module
+.sp
+Custodian Class for Transmission container.
+.sp
+This module is responsible for setting up and maintaining the container.
+.sp
+The container is intended to live inside the users home directory, in a hardcoded
+location. Namely \fB$HOME/transmission/\fP\&. The container is deployed within a pod
+named transmission.
+.INDENT 0.0
+.TP
+.B class podcust.transmission.custodian.TransmissionCust(name: str = \(aqghcr.io/linuxserver/transmission\(aq)
+Bases: \fBobject\fP
+.sp
+Main class for handling the transmission container.
+.INDENT 7.0
+.TP
+.B Parameters
+\fBname\fP – The full repository name of the image this class is custodian for.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B check_if_new_version_is_available() -> bool
+Check if there is a new version of the transmission docker image from linuxserver io.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B clear_location()
+Delete all files within the (hard\-coded) path used by the transmission image under the
+podman custodian.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B deploy()
+Create a pod named transmission to deploy our container.
+The steps taken during deployment are the following:
+.INDENT 7.0
+.IP \(bu 2
+Delete path we ‘ll use to ensure a clean start.
+.IP \(bu 2
+Create the necessary folders, and give them proper permissions.
+.IP \(bu 2
+Write the proper kube yaml file that we ‘ll use to deploy the container.
+.IP \(bu 2
+Open the necessary firewall port.
+.IP \(bu 2
+Execute the podman play command to start the pod with the transmission container.
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B image_id: str
+.UNINDENT
+.INDENT 7.0
+.TP
+.B name: str
+.UNINDENT
+.INDENT 7.0
+.TP
+.B pull_latest_transmission_image()
+Pull latest transmission container image from linuxserver.io
+.sp
+The relevant shell command is:
+.INDENT 7.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ podman pull ghcr.io/linuxserver/transmission
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.UNINDENT
+.INDENT 7.0
+.TP
+.B rm()
+Delete transmission pod.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B start()
+Start transmission pod.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B stop()
+Stop transmission pod
+.UNINDENT
+.INDENT 7.0
+.TP
+.B update_running_image()
+Checks if a new image is available and if so, rebuilds the container.
+.UNINDENT
+.INDENT 7.0
+.TP
+.B username: str
+.UNINDENT
+.UNINDENT
+.SS Module contents
+.sp
+Using the \fI\%Linuxserver.io transmission\fP \fI\%container image\fP
+.SS Design Notes.
+.INDENT 0.0
+.IP \(bu 2
+We will be using podman’s ability to instantiate containers through a kubernetes yaml file.
+.IP \(bu 2
+We will use local configuration file to store sensitive information outside of the source code.
+This is security risk and a better option should be implemented for the long term.
+.IP \(bu 2
+A systemd service is to be created to start the container on boot and close it at power off.
+.IP \(bu 2
+High level command line commands will be available for common use\-cases
+(instantiate container, run it, stop it, upgrade it.)
+.UNINDENT
+.SS Submodules
+.SS podcust.cli module
+.sp
+Console script for podcust.
+.sp
+Useful documentation at:
+\fI\%https://click.palletsprojects.com/en/7.x/quickstart/#nesting\-commands\fP
+\fI\%https://click.palletsprojects.com/en/7.x/complex/\fP
+\fI\%https://dev.to/drcloudycoder/develop\-python\-cli\-with\-subcommands\-using\-click\-4892\fP
+.SS podcust.platform module
+.sp
+Retrieve Information about the platform the package is running on.
+.INDENT 0.0
+.TP
+.B podcust.platform.podman_exists()
+Check that the podman package is installed and working properly.
+Raise an OSError if the podman –version command does not complete successfully.
+.UNINDENT
+.SS podcust.podcust module
+.sp
+Main module.
+.SS podcust.tools module
+.sp
+Common podcust tools.
+.INDENT 0.0
+.TP
+.B podcust.tools.get_user_input(message: str)
+Present a message to the user and capture user’s response.
+Validates that the string is alphanumeric latin characters up to 30 length.
+(Wanting to avoid to have to deal with escapted characters and other weird input.
+Admittedly this should be trusted input but I m in favor of taking the precaution.
+30 alphanumeric characters should allow for complex enough passwords.)
+.INDENT 7.0
+.TP
+.B Args:
+message: Message to pring to the user.
+.TP
+.B Returns:
+Reply from the user. Note that this is intended to be a trusted input.
+.UNINDENT
+.UNINDENT
+.SS Module contents
+.sp
+Top\-level package for Podman Custodian.
+.SH CONTRIBUTING
+.sp
+Contributions are welcome, and they are greatly appreciated! Every little bit
+helps, and credit will always be given.
+.sp
+You can contribute in many ways:
+.SS Types of Contributions
+.SS Report Bugs
+.sp
+Report bugs at \fI\%https://github.com/Iolaum/podcust/issues\fP\&.
+.sp
+If you are reporting a bug, please include:
+.INDENT 0.0
+.IP \(bu 2
+Your operating system name and version.
+.IP \(bu 2
+Any details about your local setup that might be helpful in troubleshooting.
+.IP \(bu 2
+Detailed steps to reproduce the bug.
+.UNINDENT
+.SS Fix Bugs
+.sp
+Look through the GitHub issues for bugs. Anything tagged with “bug” and “help
+wanted” is open to whoever wants to implement it.
+.SS Implement Features
+.sp
+Look through the GitHub issues for features. Anything tagged with “enhancement”
+and “help wanted” is open to whoever wants to implement it.
+.SS Write Documentation
+.sp
+Podman Custodian could always use more documentation, whether as part of the
+official Podman Custodian docs, in docstrings, or even on the web in blog
+posts, articles, and such.
+.SS Submit Feedback
+.sp
+The best way to send feedback is to file an issue at \fI\%https://github.com/Iolaum/podcust/issues\fP\&.
+.sp
+If you are proposing a feature:
+.INDENT 0.0
+.IP \(bu 2
+Explain in detail how it would work.
+.IP \(bu 2
+Keep the scope as narrow as possible, to make it easier to implement.
+.IP \(bu 2
+Remember that this is a volunteer\-driven project, and that contributions
+are welcome :)
+.UNINDENT
+.SS Get Started!
+.sp
+Ready to contribute? Here’s how to set up \fIpodcust\fP for local development.
+.INDENT 0.0
+.IP 1. 3
+Fork the \fIpodcust\fP repo on GitHub.
+.IP 2. 3
+Clone your fork locally.
+.INDENT 3.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ git clone git@github.com:your_name_here/podcust.git
+$ cd podcust
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.IP 3. 3
+From the root of the repository create a python virtual environment to use for our project.
+Install the project in editable mode along with developer dependencies.
+.INDENT 3.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ python3 \-m venv venv
+$ source venv/bin/activate
+(venv) $ pip install \-e .[dev]
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.IP 4. 3
+Create a branch for local development.
+.INDENT 3.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ git checkout \-b name\-of\-your\-bugfix\-or\-feature
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Now you can make your changes locally.
+.IP 5. 3
+When you’re done making changes, check that your changes pass code quality checks
+and tests.
+.INDENT 3.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ make code
+$ make test
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.IP 6. 3
+Commit your changes and push your branch to GitHub.
+.INDENT 3.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ git add .
+$ git commit \-m "Your detailed description of your changes."
+$ git push origin name\-of\-your\-bugfix\-or\-feature
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.IP 7. 3
+Submit a pull request through the GitHub website.
+.UNINDENT
+.SS Pull Request Guidelines
+.sp
+Before you submit a pull request, check that it meets these guidelines:
+.INDENT 0.0
+.IP 1. 3
+The pull request should include tests.
+.IP 2. 3
+If the pull request adds functionality, the docs should be updated. Put
+your new functionality into a function with a docstring, and add the
+feature to the list in README.rst.
+.IP 3. 3
+The pull request should work for Python 3.9, for PyPy and Fedora. Check
+the \fI\%relevant GitHub Actions page\fP and make sure that the tests pass.
+.UNINDENT
+.SS Tips
+.sp
+To run a subset of tests:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ pytest tests.test_podcust
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Developing on Fedora Silverblue
+.sp
+If developing on Fedora Silverblue the following set up is suggested:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+# Crete new toolbox
+$ toolbox create dev
+# Add toolbox entry to /etc/hosts to avoid
+# warning: Could not canonicalize hostname: toolbox
+$ sudo dnf install nano
+$ sudo nano /etc/hosts
+# 127.0.0.1 ... toolbox
+$ toolbox enter dev
+# Following commands are inside the toolbox
+$ cd $source_code_root_repository
+$ sudo dnf install make fedpkg python3\-wheel python3\-devel python3\-sphinx python3\-click hadolint
+$ sudo dnf install python3\-black python3\-coverage python3\-flake8 python3\-mypy python3\-pytest twine yamllint python3\-check\-manifest python3\-pytest\-runner
+$ make code
+$ make test
+$ make fedpkg
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.SS Deploying
+.sp
+A reminder for the maintainers on how to deploy.
+Make sure all your changes are committed (including an entry in HISTORY.rst).
+Then run:
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.nf
+.ft C
+$ bump2version patch # possible: major / minor / patch
+# Auto committing has been disabled, update documentation and commit and tag manually!
+$ git push
+$ git push \-\-tags
+.ft P
+.fi
+.UNINDENT
+.UNINDENT
+.sp
+Travis will then deploy to PyPI if tests pass.
+.SH CREDITS
+.SS Development Lead
+.INDENT 0.0
+.IP \(bu 2
+Nikolaos Perrakis <\fI\%nikperrakis@gmail.com\fP>
+.UNINDENT
+.SS Contributors
+.sp
+None yet. Why not be the first?
+.SH HISTORY
+.SS 0.1.3 (2021\-03\-14)
+.INDENT 0.0
+.IP \(bu 2
+Add functionality to delete transmission image data and service unit file.
+.UNINDENT
+.SS 0.1.2 (2021\-03\-14)
+.INDENT 0.0
+.IP \(bu 2
+Recreate transmission kubernetes template for podman 3.0.
+.UNINDENT
+.SS 0.1.1 (2021\-03\-07)
+.INDENT 0.0
+.IP \(bu 2
+Fix service file issue.
+.UNINDENT
+.SS 0.1.0 (2021\-03\-07)
+.INDENT 0.0
+.IP \(bu 2
+Add systemd user unit handling for transmission container.
+.IP \(bu 2
+Systemd user unit service also updates the container on service start.
+.UNINDENT
+.SS 0.0.33 (2021\-03\-01)
+.INDENT 0.0
+.IP \(bu 2
+Re\-license project to parity license.
+.IP \(bu 2
+Add functionality for installing and updating transmission container.
+.IP \(bu 2
+Add spec file for building as fedora copr package.
+.UNINDENT
+.SS 0.0.27 (2021\-02\-25)
+.INDENT 0.0
+.IP \(bu 2
+Migrate to Fedora 33
+.IP \(bu 2
+Migrate CI to GitHub actions.
+.IP \(bu 2
+Improve documentation and static code tests.
+.UNINDENT
+.SS 0.0.26 (2020\-10\-04)
+.INDENT 0.0
+.IP \(bu 2
+Working management functionality (alpha version) for Demo container.
+.UNINDENT
+.SS 0.0.21 (2020\-09\-25)
+.INDENT 0.0
+.IP \(bu 2
+Added draft functionality for demo http container management.
+.IP \(bu 2
+Added draft command line functionality.
+.UNINDENT
+.SS 0.0.20 (2020\-09\-01)
+.INDENT 0.0
+.IP \(bu 2
+Working Fedora tests through Travis CI
+.UNINDENT
+.SS 0.0.19 (2020\-08\-30)
+.INDENT 0.0
+.IP \(bu 2
+CI, job stages and deploy stage.
+.UNINDENT
+.SS 0.0.6 (2020\-08\-30)
+.INDENT 0.0
+.IP \(bu 2
+Polishing code quality support tools.
+.UNINDENT
+.SS 0.0.5 (2020\-08\-28)
+.INDENT 0.0
+.IP \(bu 2
+First release on PyPI.
+.UNINDENT
+.INDENT 0.0
+.IP \(bu 2
+genindex
+.IP \(bu 2
+modindex
+.IP \(bu 2
+search
+.UNINDENT
+.SH AUTHOR
+Nikolaos Perrakis
+.SH COPYRIGHT
+2020, Nikolaos Perrakis
+.\" Generated by docutils manpage writer.
+.
