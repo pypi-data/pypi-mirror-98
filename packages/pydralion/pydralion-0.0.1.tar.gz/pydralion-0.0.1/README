@@ -1,0 +1,7 @@
+pytotoro项目公用基础包
+1、定义flask base_api的返回值
+2、自定义flask参数解析的类型
+3、封装redis的常用方法
+4、封装mysql的常用方法
+5、封装oracle的常用方法
+6、定义logger的函数方法

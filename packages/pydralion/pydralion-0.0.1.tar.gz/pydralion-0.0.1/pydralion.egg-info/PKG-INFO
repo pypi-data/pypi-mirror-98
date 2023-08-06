@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: pydralion
+Version: 0.0.1
+Summary: this is a pydralion utils package
+Home-page: http://iop.sf-express.com/auth
+Author: zhaokai5520
+Author-email: zhaokai5520@foxmail.com
+License: MIT
+Description: pytotoro项目公用基础包
+        1、定义flask base_api的返回值
+        2、自定义flask参数解析的类型
+        3、封装redis的常用方法
+        4、封装mysql的常用方法
+        5、封装oracle的常用方法
+        6、定义logger的函数方法
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
