@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pycaroon
+Version: 0.0.1
+Summary: Secret
+License: WTFPL
+Author: Rémy Sanchez
+Author-email: remy.sanchez@hyperthese.net
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyglet (>=1.5.15,<2.0.0)
