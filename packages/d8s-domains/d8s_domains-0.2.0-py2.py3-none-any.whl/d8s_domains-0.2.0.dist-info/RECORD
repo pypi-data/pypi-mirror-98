@@ -1,0 +1,11 @@
+d8s_domains/__init__.py,sha256=kZhjCz5QFqq2W63-iuhKn0HlS5iklWcdQQFjK7EbCNQ,685
+d8s_domains/domains.py,sha256=Oei3-nylz63PCDiiBIg8QuPJTdfFo2msU15L9_7vC_g,3778
+d8s_domains/domains_temp_utils.py,sha256=rI-pOcXYXpurYIByAf4oqZE-xCibNH8926X2V6oMUyU,482
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_domains.py,sha256=r1bT1vLAl1eo1m8mFwhvHAnisYB3cgrWZbeYyi8qAI0,4045
+d8s_domains-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_domains-0.2.0.dist-info/METADATA,sha256=e2dGJ_tlkRUJ8hydbUWqHyFGJ-OgSp6xeB11dnnif1E,2021
+d8s_domains-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_domains-0.2.0.dist-info/top_level.txt,sha256=2YxnqZsJINcc07U3d5wb1qCU4oU9-y-puSO18EEb21s,18
+d8s_domains-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_domains-0.2.0.dist-info/RECORD,,
