@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mapcalc/__init__.py
+mapcalc/main.py
+mapcalc.egg-info/PKG-INFO
+mapcalc.egg-info/SOURCES.txt
+mapcalc.egg-info/dependency_links.txt
+mapcalc.egg-info/requires.txt
+mapcalc.egg-info/top_level.txt
