@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: GMDN
+Version: 0.0.1
+Summary: A python implementation of XKCD's Geothmetic Meandian ( https://xkcd.com/2435/ )
+Home-page: https://github.com/BollaBerg/GMDN
+Author: Andreas B. Berg
+Author-email: berg.andreasb+PyPi@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/BollaBerg/GMDN/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# PyMM
+A python implementation of XKCD's Geothmetic Meandian ( https://xkcd.com/2435/ )
+
+Simply run 
+```python
+    from GMDN import GMDN
+
+    GMDN([1, 1, 2, 3, 5])
+    >>> 2.0890
+```
+
