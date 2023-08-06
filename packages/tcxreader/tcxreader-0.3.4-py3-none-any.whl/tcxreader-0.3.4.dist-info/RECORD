@@ -1,0 +1,14 @@
+tcxreader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcxreader/tcx_exercise.py,sha256=rSg2AhW8-Xjk0H-HGgrNXXDcIJNSZYTl1DEVKoYz774,2541
+tcxreader/tcx_track_point.py,sha256=nTj9iMv2mXpyWOCeTEx97CbNOIXZMPswjFhv8mYF0aM,1647
+tcxreader/tcxreader.py,sha256=HSEuW79xn9sY9_S9HRjc3RpKCf5UNlcT0OUpx6mO8i8,7434
+tcxreader/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tcxreader/tests/conftest.py,sha256=E0Gs2Pb3m2XJqNNZCfx7IZEoEdgrYS5I0QbTlaR3EOE,150
+tcxreader/tests/test_reader.py,sha256=LjvwOglLFpBlLENPow36JSTA0nSMTfE4knzQ2CcIzZk,1253
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_tcxreader.py,sha256=sr6hZdQYU-BQHXHgYfKzRP9MObZ3kFF0zb0LYCq4LhM,91
+tcxreader-0.3.4.dist-info/LICENSE,sha256=2uQZjKmEhMIhWKMEPd_rSXiKzD5-za_hWSqPONTr978,1087
+tcxreader-0.3.4.dist-info/METADATA,sha256=apic2I9EZ7ZwOCmlAPbfE1f3QRvLcjLuffIlY4rVHcM,3235
+tcxreader-0.3.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tcxreader-0.3.4.dist-info/top_level.txt,sha256=8y8meoZdQ7DlNV_--DAlpljkeOM5oz8-PftStfSqakg,16
+tcxreader-0.3.4.dist-info/RECORD,,
