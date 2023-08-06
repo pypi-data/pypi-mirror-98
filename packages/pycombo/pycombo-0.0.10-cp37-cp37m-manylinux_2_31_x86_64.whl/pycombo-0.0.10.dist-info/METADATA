@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pycombo
+Version: 0.0.10
+Summary: Python wrapper around Combo network partitioning algorythm (C++)
+License: MIT
+Author: Philipp
+Author-email: casyfill@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib-metadata (>=1.0,<2.0); python_version < "3.8"
+Requires-Dist: pybind11 (>=2.6.1,<3.0.0)
