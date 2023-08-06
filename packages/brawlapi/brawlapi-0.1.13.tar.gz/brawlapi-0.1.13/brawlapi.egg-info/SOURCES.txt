@@ -1,0 +1,10 @@
+README.md
+setup.py
+brawlapi/Classes.py
+brawlapi/DataBase.py
+brawlapi/__init__.py
+brawlapi/utils.py
+brawlapi.egg-info/PKG-INFO
+brawlapi.egg-info/SOURCES.txt
+brawlapi.egg-info/dependency_links.txt
+brawlapi.egg-info/top_level.txt
