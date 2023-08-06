@@ -1,0 +1,10 @@
+pycombo/__init__.py,sha256=pTiJcgqtLImkeo-blCj5WQZ-lBbydIwwMNFkl7TPHPA,220
+pycombo/_combo.cpython-37m-darwin.so,sha256=ImRd86rGIUXI91M3A6aRTuVButqUR_swiRTcc7ebp34,243376
+pycombo/combo.cpython-37m-darwin.so,sha256=yeu0fWQswdBAGQdZ5DcdAhc_PkFyB0CEvGovrhZUfRo,179200
+pycombo/misc.py,sha256=x6AKZECuv-BkoKh-kdLWO4gzNruc-Rsp3wR54Z0-3UM,2592
+pycombo/pyCombo.py,sha256=ysy-rGA1BuzKz6fHs_UJF9zG-JbkL5CtEffT0vx5Mbw,4662
+pycombo-0.0.5.dist-info/LICENSE.txt,sha256=OBs4TNbofa8DUcE6Q8m_X6zskuonwcwcWteYk7bxRgo,1079
+pycombo-0.0.5.dist-info/LICENSE,sha256=OBs4TNbofa8DUcE6Q8m_X6zskuonwcwcWteYk7bxRgo,1079
+pycombo-0.0.5.dist-info/WHEEL,sha256=r-U3u2VWdUaKvvQR2KQnrnpQ_9PLGn_1MKgxZpBPXOw,102
+pycombo-0.0.5.dist-info/METADATA,sha256=ekgdwupEeAw8fTHgOM8JdrphgjpQ6RNXitW2jhMgzMk,576
+pycombo-0.0.5.dist-info/RECORD,,
