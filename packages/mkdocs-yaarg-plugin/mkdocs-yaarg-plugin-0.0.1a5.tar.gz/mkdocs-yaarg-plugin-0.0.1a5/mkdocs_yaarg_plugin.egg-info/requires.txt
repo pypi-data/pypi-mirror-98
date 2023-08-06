@@ -1,0 +1,5 @@
+mkdocs<2,>=1
+schema<0.8,>=0.7
+pyyaml<5.5,>=5.4
+parso<0.9,>=0.8
+docstring-parser<0.8,>=0.7
