@@ -1,0 +1,14 @@
+intervalsicu/__init__.py,sha256=xPQjQexKZ6LoVNihtKNSgmzpfbCSr832S_ei_PP3Jkw,212
+intervalsicu/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intervalsicu/api/activity.py,sha256=kAyPnewqzUHyKoHqG8VZuhTdAgqP3Bv9YGrfN4_Fuj8,3388
+intervalsicu/api/calendar.py,sha256=IiJa2kGzDsEh61VVLeQphF-nYyFlK8m1XUj-T7jUGiA,428
+intervalsicu/api/error.py,sha256=UpIi5akmKmghr1NPDSlEfaIxMIY4B7FQo6MEj7N5YQA,589
+intervalsicu/api/event.py,sha256=LgHW00VJmvHXQF1xbsmGR-SyUqrUMaXgmjuxTpGArUc,1186
+intervalsicu/api/intervals.py,sha256=xKdEDXDYjkfRQT_JVJyDffGlHms5VwK7fKzBmfaVFao,7436
+intervalsicu/api/wellness.py,sha256=g1ncRy2mq1Gm0UCP4SRTla97G_jdtoFxQ-U-p9AYSPk,866
+intervalsicu/api/workout.py,sha256=p55-ASKwxMzEOX5bli1y6KEEBgxLNRODw5CZmAQWTV8,2906
+intervalsicu-0.1.2.dist-info/LICENSE,sha256=PnsoNzxL8Q6kJehhey5iMjD1cNsZaczOpcqEkL_2-AA,11342
+intervalsicu-0.1.2.dist-info/METADATA,sha256=tWhTUJtpJ8b2u6CYgwbio36bY4iWH_ePK4HLjDkfmSg,2433
+intervalsicu-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+intervalsicu-0.1.2.dist-info/top_level.txt,sha256=hzi_ih3FlDQ0TK5LWsB7KN07wjC9Ur0ShWx0dN5aCXQ,13
+intervalsicu-0.1.2.dist-info/RECORD,,
