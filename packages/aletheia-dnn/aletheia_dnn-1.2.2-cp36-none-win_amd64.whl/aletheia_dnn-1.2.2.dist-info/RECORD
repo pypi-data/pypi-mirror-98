@@ -1,0 +1,10 @@
+aletheia/__init__.cp36-win_amd64.pyd,sha256=8uXf4FRkJyoTwGCtMVahkxawN2ApIcbHgr6NuHJhYlA,22528
+aletheia/aletheia.cp36-win_amd64.pyd,sha256=C6TgMWFtXcoJzWXeZ6F4IwBR6tTRGE1SBPi6iMDUz3s,501248
+aletheia/flatten.cp36-win_amd64.pyd,sha256=mf7f6U0IkS9CoY0jRJRlVKUAiqnQIn7CgZaY2tJHvJM,91648
+aletheia/merge.cp36-win_amd64.pyd,sha256=TZxcTGgKdvU3qk3fWODTuinyhpKdKba5uVBXtXxF9K4,474112
+aletheia/prune.cp36-win_amd64.pyd,sha256=XKRgH-_wTX4hLpn-N7TPpB0CVMGgaMnP_bHxXdh1cRo,148480
+aletheia_dnn-1.2.2.dist-info/LICENSE,sha256=Yi6Z7US3ygfeP3GRJ0UjeVmQpYkh9NB9_gEUQ664R4w,1516
+aletheia_dnn-1.2.2.dist-info/METADATA,sha256=5_7XW_Ihj2xfqiXe4qx_7XRIMZZD5g77ydDH6gEU3Jk,895
+aletheia_dnn-1.2.2.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+aletheia_dnn-1.2.2.dist-info/top_level.txt,sha256=FET9FwOvIT5gLgJ3NOkKC90IS3vFNyUDzqvKaiS6jhM,9
+aletheia_dnn-1.2.2.dist-info/RECORD,,
