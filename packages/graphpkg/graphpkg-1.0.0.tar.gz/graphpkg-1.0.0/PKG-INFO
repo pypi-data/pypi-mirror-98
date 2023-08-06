@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: graphpkg
+Version: 1.0.0
+Summary: This package is to create graphs with help of matplotlib but with some extra facilities like customized live graphs.
+Home-page: https://github.com/NishantBaheti/graphpkg
+Author: Nishant Baheti
+Author-email: nishantbaheti.it19@gmail.com
+License: MIT
+Project-URL: Documentation, https://nishantbaheti.github.io/graphpkg/_build/html
+Project-URL: Tracker, https://github.com/NishantBaheti/graphpkg/issues
+Project-URL: Source, https://github.com/NishantBaheti/graphpkg
+Description: ========
+        graphpkg
+        ========
+        
+        
+        A package to plot graphs on a dashboard using matplotlib
+        
+        
+        
+        Description
+        ===========
+        
+        This package initially started with the idea of plotting live trend graph using matplotlib as base.
+        
+        visit https://nishantbaheti.github.io/graphpkg/_build/html for detailed documentation
+        
+        .. _pyscaffold-notes:
+        
+        Note
+        ====
+         
+        TODO
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
