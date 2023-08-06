@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: whatsappy-py
+Version: 0.1.1
+Summary: Whatsappy is a Python library for creating whatsapp bots.
+Home-page: https://github.com/italoseara/whatsappy
+Author: Italo Seara
+Author-email: italos.seara@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: selenium (~=3.141.0)
+Requires-Dist: Send2Trash (~=1.5.0)
+Requires-Dist: webdriver-manager (~=3.2.2)
+
+# whatsappy
+
+Whatsappy is a Python library for creating whatsapp bots.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install whatsappy.
+
+```bash
+pip install whatsappy-py
+```
+
+## Usage
+
+```python
+from whatsappy import whatsapp
+
+whatsapp.login() # Login on whatsapp
+
+whatsapp.select_chat('Mom') # Goes to the selected chat
+whatsapp.send('Hello') # Send a message
+
+whatsapp.exit() # Exit
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](LICENSE)
+
+
