@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: gillespie
+Version: 0.0.1
+Summary: Pure Python implementation of the Gillespie algorithm for stochastic simulations.
+Home-page: https://github.com/sueskind/gillespie
+Author: sueskind
+Author-email: 52210599+sueskind@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: check-manifest (~=0.46) ; extra == 'dev'
+
+# gillespie
+
+Python package for stochastic simulations
+
+## Installation
+
+```bash
+pip install gillespie
+```
+
+## Usage
+
+See [examples](examples)
+
+## Development
+
+To include/exclude relevant files from source distribution `check-manifest` is needed. Install the dependencies with:
+
+```bash
+pip install -e .[dev]
+```
+
