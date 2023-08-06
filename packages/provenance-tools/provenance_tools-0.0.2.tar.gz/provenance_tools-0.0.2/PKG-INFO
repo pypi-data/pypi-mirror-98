@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: provenance_tools
+Version: 0.0.2
+Summary: provenance_tools
+Home-page: https://github.com/acil-bwh/provenance_tools
+Author: James Ross
+Author-email: jross@bwh.harvard.edu
+License: UNKNOWN
+Description: # provenance_tools
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
