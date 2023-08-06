@@ -1,0 +1,15 @@
+pandas
+future
+sqlalchemy
+pyodbc
+portalocker
+cryptography
+independentsoft.msg
+exchangelib
+bs4
+six
+xlrd
+XlsxWriter
+Xlwt
+Openpyxl
+django
