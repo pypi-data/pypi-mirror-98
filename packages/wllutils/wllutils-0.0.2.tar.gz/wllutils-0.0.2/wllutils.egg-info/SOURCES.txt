@@ -1,0 +1,12 @@
+README.md
+setup.py
+wll_pkg/__init__.py
+wll_pkg/evaluate.py
+wll_pkg/read_df.py
+wll_pkg/wll_cmd.py
+wllutils.egg-info/PKG-INFO
+wllutils.egg-info/SOURCES.txt
+wllutils.egg-info/dependency_links.txt
+wllutils.egg-info/entry_points.txt
+wllutils.egg-info/requires.txt
+wllutils.egg-info/top_level.txt
