@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "discord.ext.context"
+version = "0.1.7"
+description = "Globally accessable context for discord.py events."
+authors = ["scragly <29337040+scragly@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/scragly/discord.ext.context"
+
+keywords = ["discord", "event", "context", "discord.py", "extension"]
+
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+]
+
+packages = [
+    { include = "discord/ext" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+"discord.py" = "^1.6.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
