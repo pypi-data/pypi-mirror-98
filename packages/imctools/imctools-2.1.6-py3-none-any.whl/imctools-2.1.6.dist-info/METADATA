@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: imctools
+Version: 2.1.6
+Summary: Tools to handle Fluidigm IMC data
+Home-page: https://github.com/BodenmillerGroup/imctools
+License: MIT
+Keywords: MCD,OME-TIFF,IMC,CellProfiler
+Author: Vito Zanotelli
+Author-email: vito.zanotelli@uzh.ch
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: imagecodecs
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: typing_extensions (>=3.7.4.3)
+Requires-Dist: xmltodict (>=0.12.0)
+Requires-Dist: xtiff (>=0.7.1)
+Project-URL: Documentation, https://bodenmillergroup.github.io/imctools
+Project-URL: Repository, https://github.com/BodenmillerGroup/imctools
+Description-Content-Type: text/markdown
+
+# imctools
+
+![PyPI](https://img.shields.io/pypi/v/imctools)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/imctools)
+![PyPI - License](https://img.shields.io/pypi/l/imctools)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/BodenmillerGroup/imctools/test-and-deploy/master)
+
+An IMC file conversion tool that aims to convert IMC raw data files (.mcd, .txt) into an intermediary ome.tiff, containing all the relevant metadata. Further it contains tools to generate simpler TIFF files that can be directly be used as input files for e.g. CellProfiller, Ilastik, Fiji etc.
+
+Documentation is available at [https://bodenmillergroup.github.io/imctools](https://bodenmillergroup.github.io/imctools)
+
+## Requirements
+
+This package requires Python 3.7 or later.
+
+Using virtual environments is strongly recommended.
+
+## Installation
+
+Install imctools and its dependencies with:
+
+    pip install imctools
+
+## Usage
+
+See [Quickstart](https://bodenmillergroup.github.io/imctools/quickstart.html)
+
+## Authors
+
+Created and maintained by Vito Zanotelli [vito.zanotelli@uzh.ch](mailto:vito.zanotelli@uzh.ch) and Anton Rau [anton.rau@uzh.ch](mailto:anton.rau@uzh.ch)
+
+## Contributing
+
+[Contributing](https://bodenmillergroup.github.io/imctools/CONTRIBUTING.html)
+
+## Changelog
+
+[Changelog](https://bodenmillergroup.github.io/imctools/CHANGELOG.html)
+
+## License
+
+[MIT](https://bodenmillergroup.github.io/imctools/LICENSE.html)
+
