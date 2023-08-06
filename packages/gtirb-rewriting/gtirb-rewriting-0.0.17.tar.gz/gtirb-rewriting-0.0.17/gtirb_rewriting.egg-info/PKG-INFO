@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gtirb-rewriting
+Version: 0.0.17
+Summary: Utilities for rewriting GTIRB
+Home-page: https://github.com/grammatech/gtirb-rewriting
+Author: GrammaTech
+Author-email: gtirb@grammatech.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test
