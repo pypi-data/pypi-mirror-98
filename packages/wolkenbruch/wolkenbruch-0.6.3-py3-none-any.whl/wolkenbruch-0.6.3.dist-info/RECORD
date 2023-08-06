@@ -1,0 +1,16 @@
+wolkenbruch/__init__.py,sha256=7PZNDapZRBJUQZLOfMq6wUVnCW4z29iHKVaAtviNcEM,1056
+wolkenbruch/__main__.py,sha256=la7RznFB0KRt9otC231G78uGpEMDbwQR4WswAW213a8,1151
+wolkenbruch/wolkenbruch.py,sha256=rB2UVKmkXqh6jQWD-sSJfZm07eGF3uE7Vyx1Ki2xj_k,2903
+wolkenbruch/lib/__init__.py,sha256=SBOkzCkR51G4sa7n9Z-jd8so47xZ_ROHfIbmOoU3c8w,997
+wolkenbruch/lib/config.py,sha256=wVgWCFiJhM8Cecs9mhlmZdoFh-t34swj1b22X2aqBcc,3510
+wolkenbruch/lib/emailsender.py,sha256=HNG4BjoXCuRBh2238v55ClkaFkEYVIhNavDUY1EvqEs,3289
+wolkenbruch/lib/precipitationchecker.py,sha256=rB73N6HjUtT0Ppltm-cRD1B2d9vqXLEH0JfUj5TL2vM,2978
+wolkenbruch-0.6.3.data/data/wolkenbruch.yml.example,sha256=PCGzQKYuzE_2uR8JPNZcxz8OYfPy95oNz5XqY0zAZIA,396
+wolkenbruch-0.6.3.data/data/systemd/wolkenbruch.service,sha256=xYRg4_CbFdcURVLX2yUHbEEggbipzty_A1-ouTN_DMc,129
+wolkenbruch-0.6.3.data/data/systemd/wolkenbruch.timer,sha256=79CeEBgYBhJIZcjfwC4oVOqhk0z_4-iK2vVIi2vdlWo,72
+wolkenbruch-0.6.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+wolkenbruch-0.6.3.dist-info/METADATA,sha256=CA8B-Vfyl3CZf286T-QynhM_HPctNGgQd-Yj06mptrY,5060
+wolkenbruch-0.6.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wolkenbruch-0.6.3.dist-info/entry_points.txt,sha256=NNdwaiybzev2fAk622pmLON65CLW0BFA8zVl5ZfrAVw,59
+wolkenbruch-0.6.3.dist-info/top_level.txt,sha256=bNPqysKsRX-xpsiq3KJpye5dq4TIQbeNyZI8GS89PcM,12
+wolkenbruch-0.6.3.dist-info/RECORD,,
