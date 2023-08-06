@@ -1,0 +1,7 @@
+include README.md
+include LICENSE.txt
+include requirements.txt
+recursive-include roi_device/config
+recursive-include roi_device/iot_device
+recursive-include roi_device/iot_thing
+recursive-include roi_device/iot_topic
