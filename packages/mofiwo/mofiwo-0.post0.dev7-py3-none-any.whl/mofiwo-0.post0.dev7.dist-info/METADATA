@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mofiwo
+Version: 0.post0.dev7
+Summary: Library contains connectors to several data sources and check functions.
+Home-page: https://github.com/byeungchun
+Author: Byengchun Kwon
+Author-email: byeungchun.kwon@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (>=1.7.3)
+Requires-Dist: python-dotenv (>=0.15.0)
+Requires-Dist: requests (>=2.25.0)
+Requires-Dist: biopython (>=1.78)
+Requires-Dist: selenium (>=3.14)
+
+# mofiwo
+Motif Finding Workflow
+
+
