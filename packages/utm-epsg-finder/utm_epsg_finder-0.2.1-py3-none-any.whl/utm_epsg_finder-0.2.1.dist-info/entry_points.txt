@@ -1,0 +1,3 @@
+[console_scripts]
+utm-epsg-finder=utm_epsg_finder.cli:main
+
