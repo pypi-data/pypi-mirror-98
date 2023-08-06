@@ -1,0 +1,3 @@
+[console_scripts]
+shqstr = cs.sh:main_shqstr
+
