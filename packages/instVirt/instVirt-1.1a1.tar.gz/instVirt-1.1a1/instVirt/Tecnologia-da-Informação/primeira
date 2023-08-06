@@ -1,0 +1,69 @@
+Tecnologia da informação - 01
+Nível operador(usuário).
+Introdução.
+
+Definição.
+
+1 Áreas de atividades.
+    O tratamento das informações.
+    O processamento de dados.
+
+2 E/S (I/O).
+Ordem de entrada e saída.
+    FIFO/LIFO.
+Comunicação serial:
+    Simplex, duplex, half-duplex.
+File's, sequências.
+Arquivos.
+Buffer's.
+
+4 Conhecendo o ambiente:
+    Alocação de memória.
+    free -h
+    man free.
+    Espaço em mídias(discos).
+    du -h /
+    man du.
+    Estrutura do sistema:
+    A raiz do sistema "/".
+    hierarquia.
+    man hier.
+    
+5 Interfaces.
+Interfaces para o operador.
+Texto.
+    Interpretadores de comando.
+    Terminais.
+
+Gráfica.
+    Servidor de ambiente X.
+    Gerenciadores de janela.
+
+6 Aplicativos.
+
+7 Utilitários.
+
+8 Linguagens:
+A matemática computacional.
+Alto nível:
+    shellscript
+    perl
+    python
+
+Baixo nível:
+    assembly.
+    c.
+    c++.
+    
+9 scripts.
+Automação de tarefas.
+
+
+10 Encapsulamento dos dados.
+PSU/SDU.
+
+Conceito.
+Prática na atividade humana.
+
+
+
