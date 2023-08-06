@@ -1,0 +1,15 @@
+imctools
+numpy
+pandas
+scikit-image
+scipy
+tifffile
+xarray
+xtiff
+
+[all]
+anndata
+fcswrite
+networkx
+opencv-python
+python-igraph
