@@ -1,0 +1,93 @@
+#!python
+
+"""
+    Recycling usb hubs
+"""
+
+import os
+import re
+import subprocess
+import time
+
+hub_regex = 'Current status for hub\ (.*)\ \[.*, USB 2.10, 4 ports.*\]$'
+port_regex = 'Port ([\d]+): .* GroupGets PureThermal.*$'
+
+
+def recycle_usb_hubs():
+    result = subprocess\
+        .run('sudo uhubctl | grep 0451:8142',
+             shell=True,
+             stdout=subprocess.PIPE,
+        )\
+        .stdout\
+        .decode('utf-8')\
+        .split('\n')[:2]
+    if not result:
+        print('Hubs are not connected')
+        exit(-1)
+
+    if len(result) == 1:
+        main_hub = re.findall(hub_regex, result[0])[0]
+        sub_hub = None
+    else:
+        main_hub = re.findall(hub_regex, result[1])[0]
+        sub_hub = re.findall(hub_regex, result[0])[0]
+
+    print(main_hub, sub_hub)
+
+    result = subprocess \
+                 .run('sudo uhubctl | grep "GroupGets PureThermal"',
+                      shell=True,
+                      stdout=subprocess.PIPE,
+                 )\
+                 .stdout \
+                 .decode('utf-8') \
+                 .split('\n')
+
+    ports = list(set(re.findall(port_regex, line)[0] for line in result if re.findall(port_regex, line)))
+    print(ports)
+
+    for port in ports:
+        print('Turning off port {} on main hub'.format(port))
+        os.system("sudo uhubctl -l {hub} -p {port} -a off".format(
+            hub=main_hub,
+            port=port,
+        ))
+        os.system("sudo udevadm trigger --action=remove /sys/bus/usb/devices/{hub}.{port}/".format(
+            hub=main_hub,
+            port=port,
+        ))
+        time.sleep(3)
+        print('Turning on port {} on main hub'.format(port))
+        os.system("sudo uhubctl -l {hub} -p {port} -a on".format(
+            hub=main_hub,
+            port=port,
+        ))
+        time.sleep(3)
+
+    if sub_hub:
+        for port in ports:
+            print('Turning off port {} on sub hub'.format(port))
+            os.system("sudo uhubctl -l {hub} -p {port} -a off".format(
+                hub=sub_hub,
+                port=port,
+            ))
+            os.system("sudo udevadm trigger --action=remove /sys/bus/usb/devices/{hub}.{port}/".format(
+                hub=sub_hub,
+                port=port,
+            ))
+            time.sleep(3)
+            print('Turning on port {} on sub hub'.format(port))
+            os.system("sudo uhubctl -l {hub} -p {port} -a on".format(
+                hub=sub_hub,
+                port=port,
+            ))
+            time.sleep(3)
+
+    time.sleep(5)
+
+    print("Recycling is done")
+
+
+if __name__ == '__main__':
+    recycle_usb_hubs()
