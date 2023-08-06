@@ -1,0 +1,11 @@
+pytextrank/__init__.py,sha256=RWxzh39It7pFLaciitya08pPTcr5LfTakZ_p6SC8wxE,2178
+pytextrank/base.py,sha256=uePH-x5ZCZQnpVvzcUa4PFjoEOZ93EbAwXnEWoXm4wM,21958
+pytextrank/positionrank.py,sha256=87piyMlpFZUlC7kQyLTVnU7VfBr3b-mZ4NgEtDD71kY,3897
+pytextrank/pytextrank.py,sha256=x3u6tI5xLm0kedfG5FrO8Bj2vBI0C8P9pLsSm9LNNqk,16872
+pytextrank/util.py,sha256=XEc6hlkoS3YBQ2BAYk_UFrww-yHJrjdUgwsw6EkJ80Y,4159
+pytextrank/version.py,sha256=D0DssCVwjEQ_4eH-nWAxXDefCxbERbWH0Jm9xzTMV98,1259
+pytextrank-3.1.0.dist-info/LICENSE,sha256=jKo9lxasVF9dyAoT1RFKHSkbEKKkMM_RIVW6GC7tbFk,1074
+pytextrank-3.1.0.dist-info/METADATA,sha256=b6h25mVpsM92hWR7PFPzlllAudIbUj3BbUAsenav2is,8349
+pytextrank-3.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytextrank-3.1.0.dist-info/top_level.txt,sha256=9kwDTXuj90lR8BvlmLACuUYn97BNSPkW_PJ_wgD8Qxk,11
+pytextrank-3.1.0.dist-info/RECORD,,

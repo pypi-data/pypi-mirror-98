@@ -1,0 +1,211 @@
+Metadata-Version: 2.1
+Name: pytextrank
+Version: 3.1.0
+Summary: Python implementation of TextRank for phrase extraction and lightweight summarization of text documents
+Home-page: http://github.com/DerwenAI/pytextrank
+Author: Paco Nathan
+Author-email: paco@derwen.ai
+License: MIT
+Project-URL: Documentation, https://derwen.ai/docs/ptr/
+Project-URL: spaCy uniVerse, https://spacy.io/universe/project/spacy-pytextrank
+Project-URL: Issue Tracker, https://github.com/DerwenAI/pytextrank/issues
+Project-URL: Discussion Forum, https://www.linkedin.com/groups/6725785/
+Project-URL: StackOverflow, https://stackoverflow.com/search?q=pytextrank
+Project-URL: Citations, https://scholar.google.com/scholar?q=related:5tl6J4xZlCIJ:scholar.google.com/&scioq=&hl=en&as_sdt=0,5
+Project-URL: DOI, https://doi.org/10.5281/zenodo.4540784
+Keywords: entity linking,extractive summarization,graph algorithms,knowledge graph,natural language processing,nlp,parsing,phrase extraction,pipeline component,positionrank,spacy,text analytics,textgraphs,textrank
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: graphviz (>=0.13)
+Requires-Dist: icecream (>=2.1)
+Requires-Dist: networkx (>=2.0)
+Requires-Dist: spacy (>=3.0)
+Provides-Extra: base
+Requires-Dist: graphviz (>=0.13) ; extra == 'base'
+Requires-Dist: icecream (>=2.1) ; extra == 'base'
+Requires-Dist: networkx (>=2.0) ; extra == 'base'
+Requires-Dist: spacy (>=3.0) ; extra == 'base'
+Provides-Extra: docs
+Requires-Dist: coverage ; extra == 'docs'
+Requires-Dist: flask ; extra == 'docs'
+Requires-Dist: mkdocs-git-revision-date-plugin ; extra == 'docs'
+Requires-Dist: mkdocs-material ; extra == 'docs'
+Requires-Dist: mknotebooks ; extra == 'docs'
+Requires-Dist: mypy ; extra == 'docs'
+Requires-Dist: nbconvert ; extra == 'docs'
+Requires-Dist: notebook ; extra == 'docs'
+Requires-Dist: pylint ; extra == 'docs'
+Requires-Dist: pytest ; extra == 'docs'
+Requires-Dist: pymdown-extensions ; extra == 'docs'
+Requires-Dist: selenium ; extra == 'docs'
+Requires-Dist: twine ; extra == 'docs'
+Requires-Dist: wheel ; extra == 'docs'
+
+# PyTextRank
+
+[![DOI](https://zenodo.org/badge/69814684.svg)](https://zenodo.org/badge/latestdoi/69814684)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/DerwenAI/pytextrank?style=plastic)
+[![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)
+
+**PyTextRank** is a Python implementation of *TextRank* as a
+[spaCy pipeline extension](https://spacy.io/universe/project/spacy-pytextrank),
+for graph-based natural language work (with related knowledge graph
+practices) which gets used to:
+
+  - extract the top-ranked phrases from a text document
+  - run low-cost extractive summarization of a text document
+  - help infer links from unstructured text into more structured representation
+
+Documentation: <https://derwen.ai/docs/ptr/>
+
+
+## Getting Started
+
+See the ["Getting Started"](https://derwen.ai/docs/ptr/start/)
+section of the online documentation.
+
+To install from [PyPi](https://pypi.python.org/pypi/pytextrank):
+```
+pip install pytextrank
+python -m spacy download en_core_web_sm
+```
+
+If you work directly from this Git repo, be sure to install the
+dependencies as well:
+```
+pip install -r requirements.txt
+```
+
+Then to use the library with a simple use case:
+```
+import spacy
+import pytextrank
+
+# example text
+text = "Compatibility of systems of linear constraints over the set of natural numbers. Criteria of compatibility of a system of linear Diophantine equations, strict inequations, and nonstrict inequations are considered. Upper bounds for components of a minimal set of solutions and algorithms of construction of minimal generating sets of solutions for all types of systems are given. These criteria and the corresponding algorithms for constructing a minimal supporting set of solutions can be used in solving all the considered types systems and systems of mixed types."
+
+# load a spaCy model, depending on language, scale, etc.
+nlp = spacy.load("en_core_web_sm")
+
+# add PyTextRank to the spaCy pipeline
+nlp.add_pipe("textrank", last=True)
+doc = nlp(text)
+
+# examine the top-ranked phrases in the document
+for p in doc._.phrases:
+    print("{:.4f} {:5d}  {}".format(p.rank, p.count, p.text))
+    print(p.chunks)
+```
+
+See the **tutorial notebooks** in the `examples` subdirectory for
+sample code and patterns to use in integrating **PyTextTank** with
+related libraries in Python:
+<https://derwen.ai/docs/ptr/tutorial/>
+
+
+## Semantic Versioning
+
+Generally speaking the major release number of **PyTextRank** will
+track with the major release number of the associated `spaCy` version.
+
+We try to minimize any breaking changes between releases and provide
+careful notes in the `changelog.txt` file.
+
+
+## Contributing Code
+
+We welcome people getting involved as contributors to this open source
+project!
+Please see the
+[CONTRIBUTING.md](https://github.com/DerwenAI/pytextrank/blob/main/CONTRIBUTING.md)
+file for instructions.
+
+
+## Build Instructions
+
+**Note: unless you are contributing code and updates,
+in most use cases won't need to build this package locally.**
+
+Instead, simply install from
+[PyPi](https://pypi.python.org/pypi/pytextrank)
+or [Conda](https://docs.conda.io/).
+
+To set up the build environment locally, see the 
+["Build Instructions"](https://derwen.ai/docs/ptr/build/)
+section of the online documentation.
+
+[![thanks noam](https://github.com/DerwenAI/pytextrank/blob/main/docs/assets/noam.jpg)](https://memegenerator.net/img/instances/66942896.jpg)
+
+
+## License and Copyright
+
+Source code for **PyTextRank** plus its logo, documentation, and examples
+have an [MIT license](https://spdx.org/licenses/MIT.html) which is
+succinct and simplifies use in commercial applications.
+
+All materials herein are Copyright &copy; 2016-2021 Derwen, Inc.
+
+
+## Attribution
+
+Please use the following BibTeX entry for citing **PyTextRank** if you 
+use it in your research or software.
+Citations are helpful for the continued development and maintenance of
+this library.
+
+```
+@software{PyTextRank,
+  author = {Paco Nathan},
+  title = {{PyTextRank, a Python implementation of TextRank for phrase extraction and summarization of text documents}},
+  year = 2016,
+  publisher = {Derwen},
+  doi = {10.5281/zenodo.4568079},
+  url = {https://github.com/DerwenAI/pytextrank}
+}
+```
+
+
+## Kudos
+
+Many thanks to our contributors:
+[@louisguitton](https://github.com/louisguitton),
+[@Ankush-Chander](https://github.com/Ankush-Chander),
+[@Lord-V15](https://github.com/Lord-V15),
+[@anna-droid-beep](https://github.com/anna-droid-beep),
+[@dvsrepo](https://github.com/dvsrepo),
+[@kavorite](https://github.com/kavorite),
+[@htmartin](https://github.com/htmartin),
+[@williamsmj](https://github.com/williamsmj/),
+[@mattkohl](https://github.com/mattkohl),
+[@vanita5](https://github.com/vanita5),
+[@HarshGrandeur](https://github.com/HarshGrandeur),
+[@mnowotka](https://github.com/mnowotka),
+[@kjam](https://github.com/kjam),
+[@SaiThejeshwar](https://github.com/SaiThejeshwar),
+[@laxatives](https://github.com/laxatives),
+[@dimmu](https://github.com/dimmu), 
+[@JasonZhangzy1757](https://github.com/JasonZhangzy1757), 
+[@jake-aft](https://github.com/jake-aft),
+[@junchen1992](https://github.com/junchen1992),
+[@shyamcody](https://github.com/shyamcody),
+[@chikubee](https://github.com/chikubee),
+outstanding NLP research work led by [@mihalcea](https://github.com/mihalcea),
+encouragement from the wonderful folks at Explosion who develop [spaCy](https://github.com/explosion/spaCy),
+plus general support from [Derwen, Inc.](https://derwen.ai/)
+
+
