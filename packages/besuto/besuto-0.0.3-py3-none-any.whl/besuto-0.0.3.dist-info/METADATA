@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: besuto
+Version: 0.0.3
+Summary: library that made for besuto and made by besuto
+Home-page: https://github.com/Besutodesuka/besuto
+Author: Rapepong Pitijaroonpong
+Author-email: bestkpn8965@gmail.com
+License: MIT
+Keywords: image
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: pillow
+Requires-Dist: tensorflow
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: keras-vggface
+Requires-Dist: mtcnn
+Requires-Dist: scikit-image
+Requires-Dist: tqdm
+
+this is library nade for besuto and made by besuto
+
+
