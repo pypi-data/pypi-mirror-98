@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}
+    {# Translators: Title on Main Page #}
+    {% trans "Result" as title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    Upload another:
+    <form enctype="multipart/form-data" action="{% url 'upload' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    Result for File: {{ file }}
+    <p>
+        {% if result %}
+            <table border="1px">
+                <thead>
+                <th>Issuer</th>
+                <th>Serial</th>
+                </thead>
+                <tbody>
+                {% for item in result %}
+                    <tr>
+                        <td>{{ item.issuer }}</td>
+                        <td>{{ item.serial }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <strong>Nothing found</strong>
+        {% endif %}
+    </p>
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}

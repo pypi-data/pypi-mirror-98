@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: dj-pkcs7
+Version: 0.10.0
+Summary: Django PKCS7 parser
+Home-page: https://gitlab.com/rhab/dj-pkcs7
+Author: Robert Habermann
+Author-email: mail@rhab.de
+License: MIT
+Keywords: smime cryptography pkcs7 email S/MIME encrypt sign
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Security :: Cryptography
+Description-Content-Type: text/markdown
+Requires-Dist: Django
+Requires-Dist: asn1crypto
+Requires-Dist: extract-msg
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-django ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# Django PKCS7 Parser
+
+## Install
+
+Using pip
+
+```
+pip install dj-pkcs7
+```
+
+## Usage:
+
+Add to your settings.py INSTALLED_APPS
+
+``` 
+...
+'dj_pkcs7',
+...
+```
+
+And include the routes in your urls.py::
+
+```
+...
+path('pkcs7/', include('dj_pkcs7.urls')),
+...
+```
+
+
+
