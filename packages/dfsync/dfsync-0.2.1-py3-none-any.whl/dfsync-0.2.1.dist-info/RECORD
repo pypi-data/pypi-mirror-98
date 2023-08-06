@@ -1,0 +1,12 @@
+dfsync/__init__.py,sha256=PmcQ2PI2oP8irnLtJLJby2YfW6sBvLAmL-VpABzTqwc,22
+dfsync/backends/__init__.py,sha256=i2WRxK1icahbr4kp8MBQ1UUasCy9jvvLlmwXuUXqH4s,64
+dfsync/backends/kube.py,sha256=Y105J9hRLn0WZOBPK1VMJwhpqUwZQzK0yEQP_OVl_SY,10300
+dfsync/backends/kube_exec.py,sha256=h2Y3WQRhucVZuhO_S6mJ0DR0Gmf1grdYL0ld4oyAVmw,1307
+dfsync/backends/rsync.py,sha256=s_kykSs1KUpEbmI4iIiPbhZrA5GFrixEpdJb7TjM1sI,1913
+dfsync/cli.py,sha256=QoiCg_4WUTfCv0OO3LkalG9czcw-H-08tzibwHvKtio,108
+dfsync/filters.py,sha256=Cms8BoIbsN50s8PgS7qFu80NEA4KRgC1hn50q6o8VP0,3327
+dfsync/monitor.py,sha256=LKJm3i_qUq_eWbBClDLsTOMNgjIdgbc5NCgyG2Qz-qY,3171
+dfsync-0.2.1.dist-info/entry_points.txt,sha256=OgGNPmTa7q6RZ_hng92Z9QoOcgteSL8busEPve-UZBc,44
+dfsync-0.2.1.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+dfsync-0.2.1.dist-info/METADATA,sha256=hp4c-4FyXtiw7iy8oOgaRsGRmbE6UtVu9U8eUNrSvEU,420
+dfsync-0.2.1.dist-info/RECORD,,
