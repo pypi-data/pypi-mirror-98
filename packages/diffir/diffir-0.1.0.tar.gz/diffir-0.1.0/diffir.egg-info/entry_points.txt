@@ -1,0 +1,4 @@
+[console_scripts]
+diffir = diffir.run:main
+diffir-batch = diffir.batchrun:main
+
