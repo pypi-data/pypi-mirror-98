@@ -1,0 +1,11 @@
+README.md
+setup.py
+tesaurus/__init__.py
+tesaurus/perintah.py
+tesaurus/tesaurus.py
+tesaurus.egg-info/PKG-INFO
+tesaurus.egg-info/SOURCES.txt
+tesaurus.egg-info/dependency_links.txt
+tesaurus.egg-info/entry_points.txt
+tesaurus.egg-info/requires.txt
+tesaurus.egg-info/top_level.txt
