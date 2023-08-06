@@ -1,0 +1,14 @@
+numpy
+tqdm
+
+[opencv-headless:python_version <= "3.5"]
+opencv-python-headless<=4.2.0.32
+
+[opencv-headless:python_version > "3.5"]
+opencv-python-headless
+
+[opencv:python_version <= "3.5"]
+opencv-python<=4.2.0.32
+
+[opencv:python_version > "3.5"]
+opencv-python
