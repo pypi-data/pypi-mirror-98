@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    camembert_ner_ft=contextual_ner.models.camembert_ner_ft:main
+    make_dataset=contextual_ner.data.make_dataset:main
+    
