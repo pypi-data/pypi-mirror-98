@@ -1,0 +1,11 @@
+certifi/__init__.py,sha256=kL8RCztav6GHkGKVhboCduAzNB-ppPW9GnkY7YBgqBA,126
+certifi/__main__.py,sha256=1yXe4Ibvfc2CNQwqqoOkpEaEG_B2ljzoqOrhAjrD3fU,868
+certifi/_patch.py,sha256=s-Q-1lmoUDrIeQZkvD8VEUO_F0NpzoDo8FRhNaLd0Cc,3036
+certifi/cacert.pem,sha256=9_8wL9Scv8_Cs8HJyJHGvx1vwXErsuvlsAqNZLcJQR0,8
+certifi/core.py,sha256=Q5F6hPxW_1foHzGMS6_Pu6K64UO9s51VtUdVywVpRH8,900
+certifi_system_store-3021.3.16.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+certifi_system_store-3021.3.16.dist-info/METADATA,sha256=jjslGqrOeefZj8GN3YbW9UAeX3U2R3Opg0zdAJxcsmk,7170
+certifi_system_store-3021.3.16.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+certifi_system_store-3021.3.16.dist-info/top_level.txt,sha256=KMu4vUCfsjLrkPbSNdgdekS-pVJzBAJFO__nI8NF6-U,8
+certifi_system_store-3021.3.16.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+certifi_system_store-3021.3.16.dist-info/RECORD,,
