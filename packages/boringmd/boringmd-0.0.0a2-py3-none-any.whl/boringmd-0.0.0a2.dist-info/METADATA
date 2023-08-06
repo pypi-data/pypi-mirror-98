@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: boringmd
+Version: 0.0.0a2
+Summary: Converts Markdown to boring plain text
+Home-page: https://github.com/cariad/boringmd
+Author: Cariad Eccleston
+Author-email: cariad@hey.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: Markup :: Markdown
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: lstr (~=1.0)
+
+# boringmd
+
+`boringmd` is a Python package and command line tool for converting Markdown documents to plain text.
+
+`boringmd` does _not_ render Markdown in any particularly beautiful way. It's a lightweight package for simply extracting plain text content.
+
+## Examples
+
+### Emphasis
+
+```markdown
+This is *emphasis*, and so is _this_.
+```
+
+```text
+This is emphasis, and so is this.
+```
+
+### Fenced code
+
+````markdown
+Code sample:
+
+```markdown
+# Shopping list
+
+1. Ducks
+2. Grapes
+3. Basketballs
+```
+````
+
+```text
+Code sample:
+
+# Shopping list
+
+1. Ducks
+2. Grapes
+3. Basketballs
+```
+
+### Front matter
+
+```markdown
+---
+foo: bar
+---
+I love gummy cakes.
+```
+
+```text
+I love gummy cakes.
+```
+
+### Headings
+
+```markdown
+# Abraham Lincoln
+
+## Life
+
+### Favourite cakes
+
+Abraham Lincoln might have enjoyed gummy cakes.
+
+```
+
+```text
+Abraham Lincoln
+
+Life
+
+Favourite cakes
+
+Abraham Lincoln might have enjoyed gummy cakes.
+```
+
+### HTML
+
+```markdown
+I want a line break<br />here.
+```
+
+```text
+I want a line break here.
+```
+
+### Indented code
+
+```markdown
+Code sample:
+
+    # Shopping list
+
+    1. Ducks
+    2. Grapes
+    3. Basketballs
+```
+
+```text
+Code sample:
+
+    # Shopping list
+
+    1. Ducks
+    2. Grapes
+    3. Basketballs
+```
+
+### Inline code
+
+```markdown
+Use `git` to clone and `pytest` to test.
+```
+
+```text
+Use git to clone and pytest to test.
+```
+
+### Strength
+
+```markdown
+This is **strong**.
+```
+
+```text
+This is strong.
+```
+
+## Usage
+
+### Installation
+
+`boringmd` requires Python 3.8 or later.
+
+```bash
+pip install boringmd
+```
+
+### Command line
+
+On the command line, `boringmd` prints the conversion to stdout:
+
+```bash
+boringmd input.md
+```
+
+To write the conversion to a file, redirect it:
+
+```bash
+boringmd input.md > output.txt
+```
+
+### Package
+
+```python
+from boringmd import from_string
+print(from_string("**foo** and _bar_"))
+
+from pathlib import Path
+from boringmd import from_file
+print(from_file(Path("input.md")))
+```
+
+## Related packages
+
+`boringmd` uses [cariad/lstr](https://github.com/cariad/lstr) to manipulate strings.
+
+## Thank you! 🎉
+
+My name is **Cariad**, and I'm an [independent freelance DevOps engineer](https://cariad.io).
+
+I'd love to spend more time working on projects like this, but--as a freelancer--my income is sporadic and I need to chase gigs that pay the rent.
+
+If this project has value to you, please consider [☕️ sponsoring](https://github.com/sponsors/cariad) me. Sponsorships grant me time to work on _your_ wants rather than _someone else's_.
+
+Thank you! ❤️
+
+
