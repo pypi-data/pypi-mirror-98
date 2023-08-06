@@ -1,0 +1,15 @@
+pytups
+click
+pandas
+orloge
+jsonschema
+
+[benchmark]
+tabulate
+pygount
+plotly
+seaborn
+
+[solvers]
+pyomo
+ortools
