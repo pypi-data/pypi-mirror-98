@@ -1,0 +1,10 @@
+README.md
+setup.py
+ssh_easy/cli.py
+ssh_easy/ssheasy.py
+ssheasy.egg-info/PKG-INFO
+ssheasy.egg-info/SOURCES.txt
+ssheasy.egg-info/dependency_links.txt
+ssheasy.egg-info/entry_points.txt
+ssheasy.egg-info/requires.txt
+ssheasy.egg-info/top_level.txt

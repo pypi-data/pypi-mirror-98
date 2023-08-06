@@ -1,0 +1,3 @@
+[console_scripts]
+ssheasy = ssh_easy.cli:start
+
