@@ -1,0 +1,19 @@
+arrow<1.0.0,>=0.8.0
+b2sdk<2.0.0,>=1.4.0
+docutils==0.16
+phx-class-registry==3.0.5
+rst2ansi==0.1.5
+
+[:python_version <= "3.5"]
+importlib-metadata<3.0.0,>=2.1.1
+
+[:python_version > "3.5" and python_version < "3.8"]
+importlib-metadata>=3.3.0
+
+[doc]
+sphinx
+sphinx-autobuild
+sphinx_rtd_theme
+sphinx-argparse
+sphinxcontrib-plantuml
+sadisplay
