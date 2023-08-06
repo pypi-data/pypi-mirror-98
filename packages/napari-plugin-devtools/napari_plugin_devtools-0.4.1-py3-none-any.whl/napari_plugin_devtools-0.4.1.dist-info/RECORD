@@ -1,0 +1,11 @@
+napari_plugin_devtools/__init__.py,sha256=sNjpjNTTe5A4cbEPd77-yKGO6h8Ui-9_H3bXa6w87Jg,201
+napari_plugin_devtools/__main__.py,sha256=0LiGaJap5cYtEBoXs9fVd3rQMUYlBJWCSYv4DD5xPdU,4514
+napari_plugin_devtools/_version.py,sha256=3ijnD_eA6j4Wua9rQlPRJ8GF8xXgh1MavJHyBl0w2zM,142
+napari_plugin_devtools/plugin_tester.py,sha256=rpz83-S5n34PeXlKgWScemWx-mkVRyPWYpCmlMyFbps,1990
+napari_plugin_devtools/validation.py,sha256=BL_I2D7jKONt6V29MycU2eD-F-vkBfMIdfc1S4vqiHw,6303
+napari_plugin_devtools-0.4.1.dist-info/LICENSE,sha256=lZbPlgXtbxuQwzm_QVAi42Hzus2-1hk5HWn-6CMw-EA,1514
+napari_plugin_devtools-0.4.1.dist-info/METADATA,sha256=jtVhNQSaXV8zfhs8gAKHvcUyOSI3Ss45J6YK8jVwC0g,6369
+napari_plugin_devtools-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_plugin_devtools-0.4.1.dist-info/entry_points.txt,sha256=Y7FNol4vP0zFcaEHP6AzZCY8TGVLwwjwQJhxJwjNzAU,136
+napari_plugin_devtools-0.4.1.dist-info/top_level.txt,sha256=eRajepwknJuN2v2aqswj6-XnYgOP0hCRS3YcsvD3CBo,23
+napari_plugin_devtools-0.4.1.dist-info/RECORD,,
