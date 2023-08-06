@@ -1,0 +1,5 @@
+setup.py
+hctext.egg-info/PKG-INFO
+hctext.egg-info/SOURCES.txt
+hctext.egg-info/dependency_links.txt
+hctext.egg-info/top_level.txt
