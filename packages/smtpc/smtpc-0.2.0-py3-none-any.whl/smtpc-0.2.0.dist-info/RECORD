@@ -1,0 +1,9 @@
+smtpc/__init__.py,sha256=hQjefIwVQT48PuF7E6hJdqisTWorBjxBV-ePdzlLqlk,51
+smtpc/cli.py,sha256=zmGU-ny94VP-dYlBKS_CPGdCRkeV8nr2uD6lXCrv6Pg,14078
+smtpc/config.py,sha256=o9JXTS4VpG4Hp2SaHfLHQ49D2Ol6AKqfUEpByReoXog,3896
+smtpc-0.2.0.dist-info/LICENSE,sha256=BxPZhnuYRbv9T6S2tqqsAbBNzsosA2I5dCzdzJR5qi0,1083
+smtpc-0.2.0.dist-info/METADATA,sha256=nvM37YkGonjNHSEIl99wq8t1XK0VXSunBQLeBCBvkgU,3360
+smtpc-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+smtpc-0.2.0.dist-info/entry_points.txt,sha256=8dVBBnGySCJmfNVjDhnVDf3779V6jIyj96fBumY2RoQ,42
+smtpc-0.2.0.dist-info/top_level.txt,sha256=LsoSqKUSxeUYlyzYGI_3nEIqrJhOHv--BHXnohFplUE,6
+smtpc-0.2.0.dist-info/RECORD,,
