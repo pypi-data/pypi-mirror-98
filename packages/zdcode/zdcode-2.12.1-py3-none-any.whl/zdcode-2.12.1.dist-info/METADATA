@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: zdcode
+Version: 2.12.1
+Summary: A ZDoom DECORATE transpiler and mod content build system
+License: MIT
+Author: Gustavo6046
+Author-email: rehermann6046@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: attrs (>=20.3.0,<21.0.0)
+Requires-Dist: parsy (>=1.3.0,<2.0.0)
