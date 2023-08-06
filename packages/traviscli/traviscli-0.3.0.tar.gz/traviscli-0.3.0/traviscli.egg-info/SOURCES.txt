@@ -1,0 +1,17 @@
+README.md
+setup.py
+travisci/Preferences.py
+travisci/SemanticVersion.py
+travisci/Singleton.py
+travisci/TravisCli.py
+travisci/__init__.py
+travisci/exceptions/PreferencesLocationNotSet.py
+travisci/exceptions/UnsupportedOperation.py
+travisci/exceptions/__init__.py
+travisci/resources/__init__.py
+traviscli.egg-info/PKG-INFO
+traviscli.egg-info/SOURCES.txt
+traviscli.egg-info/dependency_links.txt
+traviscli.egg-info/entry_points.txt
+traviscli.egg-info/requires.txt
+traviscli.egg-info/top_level.txt
