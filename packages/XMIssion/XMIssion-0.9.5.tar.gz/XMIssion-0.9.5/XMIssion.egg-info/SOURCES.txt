@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+XMIssion.egg-info/PKG-INFO
+XMIssion.egg-info/SOURCES.txt
+XMIssion.egg-info/dependency_links.txt
+XMIssion.egg-info/requires.txt
+XMIssion.egg-info/top_level.txt
+data/org.github.xmission.desktop
+data/org.github.xmission.desktop.in
+xmission/__init__.py
+xmission/xmission.py
+xmission/ui/xmission.glade
+xmission/ui/xmission.png
+xmission/ui/xmission.svg
