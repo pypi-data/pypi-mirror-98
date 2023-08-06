@@ -1,0 +1,12 @@
+Change Log [day/month/year]
+================
+
+0.0.1 < 1.0.0 (3/13/2021)
+------------------
+Setting up pip
+First release :
+method get_demons() : Get information about the demons of pointercrate.
+
+1.0.1 (3/13/2021)
+------------------
+Documentation correction

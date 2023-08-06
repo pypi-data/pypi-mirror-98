@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+TODO.md
+setup.py
+pointercratepy/__init__.py
+pointercratepy.egg-info/PKG-INFO
+pointercratepy.egg-info/SOURCES.txt
+pointercratepy.egg-info/dependency_links.txt
+pointercratepy.egg-info/requires.txt
+pointercratepy.egg-info/top_level.txt
