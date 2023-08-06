@@ -1,0 +1,9 @@
+LICENSE,sha256=cgWzj0s2G5LEuY1SdoaBhz08f739IuCn0SL8gsqddFg,1067
+babelbox/__init__.py,sha256=cvSsP80T-tMKNvGBuNgrkvkYL2evnVfP4NEi7eibrpc,89
+babelbox/__main__.py,sha256=Ojc5HhGZ8XATVcpkHVcTU0k5Yh0JLDWp0sexPQQxKZc,2128
+babelbox/parser.py,sha256=35PizM-Ebetvgew7bxGhxsArI-MxYGHqGYOaJHfsW7g,1983
+babelbox-1.0.0.dist-info/entry_points.txt,sha256=r7n0G4xZnTK8WspEL_B6dymKtCAYvsq-uHrfR_a9nFg,50
+babelbox-1.0.0.dist-info/LICENSE,sha256=cgWzj0s2G5LEuY1SdoaBhz08f739IuCn0SL8gsqddFg,1067
+babelbox-1.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+babelbox-1.0.0.dist-info/METADATA,sha256=CEepxvvTM8cgJ4PDx9ROVRQJpzbZZzHYN0XNmKX0xrA,715
+babelbox-1.0.0.dist-info/RECORD,,
