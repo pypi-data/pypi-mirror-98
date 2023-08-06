@@ -1,0 +1,13 @@
+curriculum_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+curriculum_model/_version.py,sha256=4dCrvStS1OgE3Vlcv-qx5-TAo377yOMEToEqCi-PwY4,23
+curriculum_model/db/__init__.py,sha256=bxmpGzuJQ0_Ivgvp5muMBc4TgkpXwgm1Um3HsXTUC5E,848
+curriculum_model/db/schema.py,sha256=eITDAUcBaoTBcCPFr7GRCwuwPEkaMoUtuViyfTV4VX4,17048
+curriculum_model/db/schema/__init__.py,sha256=RxshYC7l8oZRkreCDv-z2jfW1lXK3H6_CvPnv32i1P0,17145
+curriculum_model/db/schema/views.py,sha256=-h48_zcIZRq0Db6oHo8FjK5IWIwx6tkMVsCsqCjs790,1610
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_schema.py,sha256=xTUKZ7q3nJj2tVlbhQYjxLcpxp7cH814TjE566uPIWs,2140
+curriculum_model-0.0.3.dist-info/LICENSE,sha256=kVffV3679nJaRuMcCoGxqykPjlc-ebUY6znkzy7S9BQ,1065
+curriculum_model-0.0.3.dist-info/METADATA,sha256=wNIy13gMhRjVP5tme8zLNQqKWiSQrrLYTB5rpJZZP1E,558
+curriculum_model-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+curriculum_model-0.0.3.dist-info/top_level.txt,sha256=Z2Kodqc5XmfTbJhQihCrZR9A7jYxetxVxI6KAqSNdlQ,23
+curriculum_model-0.0.3.dist-info/RECORD,,
