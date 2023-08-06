@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: babelbox
+Version: 1.0.0
+Summary: A language localization generator for Minecraft
+Home-page: https://github.com/OrangeUtan/babelbox
+License: MIT
+Keywords: minecraft,lang,csv,json,localization,translation
+Author: Oran9eUtan
+Author-email: Oran9eUtan@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/OrangeUtan/babelbox
+Description-Content-Type: text/markdown
+
+# Babelbox
+A language localization generator for Minecraft
+
