@@ -1,0 +1,15 @@
+[console_scripts]
+coregister = intensity_normalization.exec.coregister:main
+fcm-normalize = intensity_normalization.exec.fcm_normalize:main
+gmm-normalize = intensity_normalization.exec.gmm_normalize:main
+kde-normalize = intensity_normalization.exec.kde_normalize:main
+lsq-normalize = intensity_normalization.exec.lsq_normalize:main
+norm-quality = intensity_normalization.exec.norm_quality:main
+nyul-normalize = intensity_normalization.exec.nyul_normalize:main
+plot-hists = intensity_normalization.exec.plot_hists:main
+preprocess = intensity_normalization.exec.preprocess:main
+ravel-normalize = intensity_normalization.exec.ravel_normalize:main
+tissue-mask = intensity_normalization.exec.tissue_mask:main
+ws-normalize = intensity_normalization.exec.ws_normalize:main
+zscore-normalize = intensity_normalization.exec.zscore_normalize:main
+
