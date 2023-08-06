@@ -1,0 +1,2 @@
+glib_log_bridge
+tests

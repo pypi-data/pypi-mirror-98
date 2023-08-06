@@ -1,0 +1,12 @@
+README.md
+setup.py
+glib_log_bridge/__init__.py
+glib_log_bridge/glib2python.py
+glib_log_bridge/python2glib.py
+glib_log_bridge.egg-info/PKG-INFO
+glib_log_bridge.egg-info/SOURCES.txt
+glib_log_bridge.egg-info/dependency_links.txt
+glib_log_bridge.egg-info/top_level.txt
+tests/__init__.py
+tests/test_glib2python.py
+tests/test_python2glib.py
