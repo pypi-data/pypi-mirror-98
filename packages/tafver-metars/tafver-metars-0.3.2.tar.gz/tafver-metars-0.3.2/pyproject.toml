@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tafver-metars"
+version = "0.3.2"
+description = "Download and formating METAR's and TAF's as an input for TAF-VER software verificator."
+authors = ["diego-garro <diego.garromolina@yahoo.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/diego-garro/tafver-metars"
+
+[tool.poetry.scripts]
+tafver = 'tafver_metars.__main__:taf_ver'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^7.1.2"
+bs4 = "^0.0.1"
+requests = "^2.25.1"
+rich = "^9.13.0"
+metar = "^1.8.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+isort = "^5.7.0"
+black = "^20.8b1"
+bump2version = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
