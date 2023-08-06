@@ -1,0 +1,4 @@
+graphviz==0.16
+diagrams==0.19.1
+ruamel.yaml==0.16.13
+PyYAML==5.4.1

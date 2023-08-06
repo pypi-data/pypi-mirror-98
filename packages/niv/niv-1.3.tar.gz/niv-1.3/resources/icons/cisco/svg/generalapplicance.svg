@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="222pt" height="200pt" viewBox="0 0 222 200" version="1.1">
+<g id="surface1">
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(3.137255%,49.803922%,74.901961%);fill-opacity:1;" d="M 181.777344 198.800781 L 218.15625 163.976562 L 218.15625 3.261719 L 181.777344 38.085938 L 181.777344 198.800781 "/>
+<path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 31.933858 34.790137 L 38.324747 28.695898 L 38.324747 0.570801 L 31.933858 6.665039 Z M 31.933858 34.790137 " transform="matrix(5.692308,0,0,5.714286,0,0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(3.137255%,49.803922%,74.901961%);fill-opacity:1;" d="M 218.15625 3.261719 L 181.777344 38.085938 L 4.28125 38.085938 L 50.53125 3.261719 L 218.15625 3.261719 "/>
+<path style="fill:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 38.324747 0.570801 L 31.933858 6.665039 L 0.752111 6.665039 L 8.877111 0.570801 Z M 38.324747 0.570801 " transform="matrix(5.692308,0,0,5.714286,0,0)"/>
+<path style="fill-rule:nonzero;fill:rgb(3.137255%,49.803922%,74.901961%);fill-opacity:1;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 0.830342 34.790137 L 31.933858 34.790137 L 31.933858 6.665039 L 0.830342 6.665039 Z M 0.830342 34.790137 " transform="matrix(5.692308,0,0,5.714286,0,0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 90.667969 56.804688 L 90.667969 172.070312 L 84.160156 172.070312 L 93.722656 186.492188 L 103.257812 172.070312 L 96.832031 172.070312 L 96.832031 56.8125 M 41.382812 56.804688 L 41.382812 172.070312 L 34.875 172.070312 L 44.441406 186.492188 L 53.972656 172.070312 L 47.558594 172.070312 L 47.558594 56.8125 M 137.777344 56.804688 L 137.777344 172.070312 L 131.265625 172.070312 L 140.828125 186.492188 L 150.363281 172.070312 L 143.941406 172.070312 L 143.941406 56.8125 "/>
+<path style="fill:none;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,100%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4.131123 17.372168 L 28.921294 17.372168 L 28.921294 9.452051 L 4.131123 9.452051 Z M 4.131123 17.372168 " transform="matrix(5.692308,0,0,5.714286,0,0)"/>
+</g>
+</svg>

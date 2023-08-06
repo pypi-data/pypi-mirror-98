@@ -1,0 +1,22 @@
+2021/03/15 11:43:10 - root - DEBUG - Arguments are compatible. 
+
+2021/03/15 11:43:10 - root - ERROR - '192.164.41.3333' does not appear to be an IPv4 or IPv6 address
+Traceback (most recent call last):
+  File "c:\users\tim\desktop\hs\6.semester\top\niv\src\build_diagram\build_diagram.py", line 604, in validate_ip
+    ipaddress.ip_address(ip_string)
+  File "C:\Users\tim\AppData\Local\Programs\Python\Python39\lib\ipaddress.py", line 53, in ip_address
+    raise ValueError('%r does not appear to be an IPv4 or IPv6 address' %
+ValueError: '192.164.41.3333' does not appear to be an IPv4 or IPv6 address
+2021/03/15 11:43:10 - root - DEBUG - 
+Xs: {'cloud1': 0, 'db1': 0, 'deviceScanner1': 0, 'serverWeb1': 5, 'serverTerminal1': 5, 'desktop1': 3, 'desktop2': 3, 'Osa': 1} 
+
+2021/03/15 11:43:10 - root - DEBUG - Ys: {'cloud1': 3, 'db1': 0, 'deviceScanner1': 6, 'serverWeb1': 2, 'serverTerminal1': 5, 'desktop1': 0, 'desktop2': 0, 'Osa': 0}
+ 
+
+2021/03/15 11:43:10 - graphviz.files - DEBUG - write 4581 bytes to 'test'
+2021/03/15 11:43:10 - graphviz.backend - DEBUG - run ['dot', '-Kdot', '-Tsvg', '-O', 'test']
+2021/03/15 11:43:10 - graphviz.backend - DEBUG - view: 'test.svg'
+2021/03/15 11:43:11 - graphviz.files - DEBUG - write 2062 bytes to 'group_diagrams/test_group1'
+2021/03/15 11:43:11 - graphviz.backend - DEBUG - run ['dot', '-Kdot', '-Tsvg', '-O', 'test_group1']
+2021/03/15 11:43:11 - graphviz.files - DEBUG - write 790 bytes to 'group_diagrams/test_group2'
+2021/03/15 11:43:11 - graphviz.backend - DEBUG - run ['dot', '-Kdot', '-Tsvg', '-O', 'test_group2']

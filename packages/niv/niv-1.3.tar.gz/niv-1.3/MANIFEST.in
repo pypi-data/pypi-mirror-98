@@ -1,0 +1,5 @@
+graft resources/icons/*
+include logs/niv.log
+include src/config.yaml
+include src/yaml_defaults.yaml
+include src/pathname_validator.py
