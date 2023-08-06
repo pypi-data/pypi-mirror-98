@@ -1,0 +1,9 @@
+README.md
+setup.py
+augment/__init__.py
+augment/effects.py
+wavaugment.egg-info/PKG-INFO
+wavaugment.egg-info/SOURCES.txt
+wavaugment.egg-info/dependency_links.txt
+wavaugment.egg-info/requires.txt
+wavaugment.egg-info/top_level.txt
