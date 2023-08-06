@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ddg2json
+Version: 0.1.0
+Summary: Parses the HTML of DuckDuckGo pages into JSON
+License: MIT
+Author: NightMachinary
+Author-email: rudiwillalwaysloveyou@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: BeautifulSoup (>=4.9.3,<5.0.0)
