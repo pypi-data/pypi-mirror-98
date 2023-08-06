@@ -1,0 +1,6 @@
+requests==2.25.1
+pipelinewise-singer-python==1.*
+
+[test]
+pylint
+pytest
