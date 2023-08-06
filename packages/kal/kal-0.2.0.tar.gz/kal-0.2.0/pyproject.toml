@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kal"
+version = "0.2.0"
+description = "Personal assistant cli tool"
+authors = ["joyongjin <wnrhd114@gmail.com>"]
+include = ["kal"]
+exclude = ["tests"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cleo = "^0.8.1"
+cookiecutter = "^1.7.2"
+pend = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.14.0"
+
+[tool.poetry.scripts]
+kal = "kal.runner:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
