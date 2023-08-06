@@ -1,0 +1,49 @@
+{% extends 'w3bsite/classes/apps/defaults/html/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- CHECK INSTALLATION -->
+<script type="text/javascript">
+	toggle_topbar("hide")
+	set_background_color("{{COLORS.widgets_reversed}}")
+	set_header_path("500/")
+</script>
+
+<!-- CONTENT -->
+<div class="full_window_centered">
+
+	<!-- LOGO -->
+	<img src="{% static 'favicon.ico' %}" width="45px" height="45px" style="display: block; margin: 0 auto; margin-bottom: 35px;">
+
+	<!-- SIGN IN WIDGET -->
+	<div class="widget_container" style="max-width: 800px">
+		<div class="widget_child"  style="max-width: 750px">
+			<h1 class="title">
+				Internal Server Error
+			</h1>
+			<p class="text">
+				Encoutered an internal server error, contact your server administrator.
+			</p>
+			{% if TRACEBACK != "None" and TRACEBACK != "" %}
+				<div class="divider"></div>
+				<h2 class="subtitle" style="text-align: center; padding-bottom: 15px;">
+					Traceback
+				</h2>
+				<textarea class="code_textarea" style="font-size: 10px; min-height: 250px;">{{TRACEBACK}}</textarea>
+			{% endif %}
+			<button class="button" onclick="" >
+				<a href="/" class="empty_a inherit empty">
+					Home
+				</a>
+			</button>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<h1 class="text_reversed" style="font-size: 6px; font-weight: 400; margin-top: 35px;">
+		© 2020 VanDenBerghInc. All Rights Reserved.
+	</h1>
+
+</div>
+
+{% endblock %}
