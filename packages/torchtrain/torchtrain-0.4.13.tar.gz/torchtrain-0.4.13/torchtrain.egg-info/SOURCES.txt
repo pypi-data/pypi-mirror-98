@@ -1,0 +1,12 @@
+README.md
+setup.py
+torchtrain/__init__.py
+torchtrain/callbacks.py
+torchtrain/metrics.py
+torchtrain/trainer.py
+torchtrain/utils.py
+torchtrain.egg-info/PKG-INFO
+torchtrain.egg-info/SOURCES.txt
+torchtrain.egg-info/dependency_links.txt
+torchtrain.egg-info/requires.txt
+torchtrain.egg-info/top_level.txt
