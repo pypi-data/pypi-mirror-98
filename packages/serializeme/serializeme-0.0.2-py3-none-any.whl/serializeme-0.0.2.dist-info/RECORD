@@ -1,0 +1,9 @@
+serializeme/__init__.py,sha256=lPU3r_8jG71nXzB1YAwp7rpjZJB5rJcFWqNjFP3krR8,232
+serializeme/deserialize.py,sha256=1R4R4H3xwwyNvGHeiNayKOZjuJmcNiaN6cWFEIaAojg,6776
+serializeme/field.py,sha256=w4TAT1F6sqhEwIe8dOT5TjUCBXkUXBGU8USdIIYzlGM,1079
+serializeme/main.py,sha256=SBcCgq7N8eCqfYOHEJ9iBk8Qug8uvyUWRFiUm9VMk5E,183
+serializeme/serialize.py,sha256=QfrQbcLXhYCRRIbIrFtyjf_tuaQq-Cttw166NioPzBo,5518
+serializeme-0.0.2.dist-info/METADATA,sha256=Ca5e63bMrTwUwyEvT8rCKJAlxN7cpBzJ3eYiovFT20w,732
+serializeme-0.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+serializeme-0.0.2.dist-info/top_level.txt,sha256=chIqq3l5-6VunyZgYKT-0qml6AnEUxhIng1ZDrwEz9U,12
+serializeme-0.0.2.dist-info/RECORD,,
