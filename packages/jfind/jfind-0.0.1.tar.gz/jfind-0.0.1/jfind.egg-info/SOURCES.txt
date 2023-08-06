@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+jfind/__init__.py
+jfind/__main__.py
+jfind.egg-info/PKG-INFO
+jfind.egg-info/SOURCES.txt
+jfind.egg-info/dependency_links.txt
+jfind.egg-info/entry_points.txt
+jfind.egg-info/requires.txt
+jfind.egg-info/top_level.txt

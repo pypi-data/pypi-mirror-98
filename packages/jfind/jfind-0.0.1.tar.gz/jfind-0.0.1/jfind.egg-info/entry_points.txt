@@ -1,0 +1,3 @@
+[console_scripts]
+jfind = jfind.__main__:main
+

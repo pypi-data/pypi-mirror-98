@@ -1,0 +1,53 @@
+Metadata-Version: 1.2
+Name: jfind
+Version: 0.0.1
+Summary: A simple JSON search script.
+Home-page: https://github.com/erickduran/jfind
+Author: Erick Durán
+Author-email: me@erickduran.com
+License: GPL-3
+Description: # jfind
+        A very simple script to parse and search for values in a JSON file.
+        
+        ## Usage
+        Just run:
+        ```bash
+        jfind FILE_NAME SEARCH_TERM
+        ```
+        This will return the locations of all matches that contain the search term (case insensitive). Exact matches will be colored if your terminal supports it.
+        
+        For example:
+        ```bash
+        jfind hello.json hi
+        ```
+        Output:
+        ```
+        $ jfind hello.json hi
+        ### SEARCH RESULTS ###
+        parent-key-1 -> value: hi there
+        parent-key-2 -> an-array -> 1 -> value: hi from a list element
+        Found 2 matches...
+        ```
+        
+        ## Installation
+        Just run:
+        ```bash
+        pip install jfind
+        ```
+        Or:
+        ```bash
+        python -m pip install jfind
+        ```
+        
+        ## Author
+        Erick Durán. Copyright © 2021.
+        
+        ## License
+        Released under the GPL-3 License.
+        
+Keywords: json search script
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.5
