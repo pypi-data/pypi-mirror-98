@@ -1,0 +1,10 @@
+README.md
+setup.py
+libpytools/__init__.py
+libpytools/gitthub_api.py
+libpytools.egg-info/PKG-INFO
+libpytools.egg-info/SOURCES.txt
+libpytools.egg-info/dependency_links.txt
+libpytools.egg-info/not-zip-safe
+libpytools.egg-info/requires.txt
+libpytools.egg-info/top_level.txt
