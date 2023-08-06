@@ -1,0 +1,13 @@
+weightlogger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weightlogger/app.py,sha256=MuwdXnN2zXtXfw50zdtxmjYylQEB2G87pdhdmo8OrL8,13355
+weightlogger/constant.py,sha256=z41nTlIWHty2jINNzjMxUf8YfcUcooCXu1vHGZG3wZY,221
+weightlogger/controller.py,sha256=5SXfneyrWb6d1zusPmueD9L4OxaLu_tzINGoLtoNsYw,6018
+weightlogger/data/weightlog.csv,sha256=KGoNwFnH35DTk7oiCCpqo4zX19ZJo5tKJmeBbT5ziH8,366
+weightlogger/data/weightlog.png,sha256=TaSslHEjIegzn2XVv6ohEFGhhuAaqnjSMr0hCLVlTu4,36033
+weightlogger/images/greenarrow.png,sha256=xp8cbAGpY2WhdF8fx8FHm8dWAt_rQsNfWzNQoHGU19k,9818
+weightlogger/images/redarrow.png,sha256=t06gOGEVT0o9zNLakj38QYxObvbrGxSzZS4ZYRITlwg,9714
+wlg_fayefv-0.1.7.dist-info/LICENSE,sha256=MVp0uFIE-kmpTvAWmiwK2r5NTlieloa8JroCCOM8XTg,1066
+wlg_fayefv-0.1.7.dist-info/METADATA,sha256=DVNJglXUv1zNKFO5KgJgEd6TtuiViwaG61LcgpBX2Ig,1604
+wlg_fayefv-0.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wlg_fayefv-0.1.7.dist-info/top_level.txt,sha256=xbvnQeP4IT69i6C225WWjT6w__I3xxgGLIE89fELovc,13
+wlg_fayefv-0.1.7.dist-info/RECORD,,
