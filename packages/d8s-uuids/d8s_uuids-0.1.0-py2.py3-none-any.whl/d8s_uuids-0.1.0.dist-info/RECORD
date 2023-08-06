@@ -1,0 +1,10 @@
+d8s_uuids/__init__.py,sha256=r3MmF-oc0Y-V6seeFsXXwJvpVWJrlCjoSxhFYzEs_K8,691
+d8s_uuids/uuids.py,sha256=RjWvMkIqZwibYa7SYZ_qrkhsnN_SYWvYZ2STARDOYt0,1404
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_uuids.py,sha256=53iJjlJe6xOLfjPgzl3SDVDcgMTcjj1SdvSd1fv57O4,1228
+d8s_uuids-0.1.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_uuids-0.1.0.dist-info/METADATA,sha256=L90EGP6kCFVhArlAOYBAF99euuD6gJKMBb_oT11fq_Q,1852
+d8s_uuids-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_uuids-0.1.0.dist-info/top_level.txt,sha256=bnL8HJy7vmTafuDAAWb6YYw2jLCM9XBvm_GRtUpy07A,16
+d8s_uuids-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_uuids-0.1.0.dist-info/RECORD,,
