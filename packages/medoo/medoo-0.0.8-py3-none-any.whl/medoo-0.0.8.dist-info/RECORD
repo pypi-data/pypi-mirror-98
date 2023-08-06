@@ -1,0 +1,17 @@
+medoo/__init__.py,sha256=b5wz-8x1F5h0NzoJ94FKSu144IeT7eNzHVg5QtUJFj0,881
+medoo/base.py,sha256=UoEfrOK8eGP7Jm977CodtfM2znUcqALTwWpkXXeii_Q,4238
+medoo/builder.py,sha256=i1QYfOjX-_87ry_sRoARjylyVgJjMwIy1dGO9sTcPv4,25916
+medoo/database/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+medoo/database/mssql.py,sha256=B8YARcFKyumfJUsX1nPOfZ-Q0DXKC28WHgBK7ml1QkE,896
+medoo/database/mysql.py,sha256=YUhzQE_B4Dym1hWS_-PtboTLB6G5O6vW5qNT_bC10L0,2151
+medoo/database/oracle.py,sha256=gLroppP9rUAzF21J8G6IHd9TV1_orhGFVHTyfzp0NYI,569
+medoo/database/pgsql.py,sha256=u00vHZ4R22DnOp7c_tTQDnHTJlUM1BMTkcaRyXTHLC0,552
+medoo/database/sqlite.py,sha256=2qS27HyGc5aqvQ0P-92XNuCoetl64xTw9tJJiPgxOz0,1549
+medoo/dialect.py,sha256=FeanHz2a9OaBNrOZKepwfJJyvcPwio6zl-mhnw4mxak,6495
+medoo/exception.py,sha256=_F4InA0boZDqQViKH5iFrG3YB1wF8qzf3kL0WNaLz_I,836
+medoo/record.py,sha256=jUHeQZYtVhdi7VvNQV3HCA1q3z3v1-hzCpadCnPjcwQ,8924
+medoo/util.py,sha256=I3Wox6dGghOIggWtDoJ47FRv2Yd7c1UAAxh9H2NM_yE,510
+medoo-0.0.8.dist-info/LICENSE,sha256=nqihLe6hsjLWOYgeNbBUD4Z4MV68wnBTqdg1m9eK0EA,1056
+medoo-0.0.8.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+medoo-0.0.8.dist-info/METADATA,sha256=-R6FnzxygIWZ4r1GZlQmQehtJlsK42k5yqC4Los_fZM,13086
+medoo-0.0.8.dist-info/RECORD,,
