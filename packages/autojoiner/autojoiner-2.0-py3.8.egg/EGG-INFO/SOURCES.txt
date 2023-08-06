@@ -1,0 +1,12 @@
+README.md
+setup.py
+autojoiner/__init__.py
+autojoiner/__main__.py
+autojoiner/autojoin.py
+autojoiner/config_user.py
+autojoiner.egg-info/PKG-INFO
+autojoiner.egg-info/SOURCES.txt
+autojoiner.egg-info/dependency_links.txt
+autojoiner.egg-info/entry_points.txt
+autojoiner.egg-info/requires.txt
+autojoiner.egg-info/top_level.txt
