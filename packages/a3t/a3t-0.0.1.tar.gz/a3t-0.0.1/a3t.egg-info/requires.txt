@@ -1,0 +1,5 @@
+forbiddenfruit
+torch>=1.5
+tensorflow>=2.0
+tensorflow-datasets
+nltk>=3.4
