@@ -1,0 +1,17 @@
+pysense/__init__.py,sha256=I4AO5QKMjKbFGjXR1Ah1ylux22Am6JqR2iU0MIigPT8,66
+pysense/apps.py,sha256=x_TVlUzGIM68wfXtIl4YBsrujqE1VB3X7dR736rpQLs,2116
+pysense/command_line.py,sha256=Se8Z04Wwxnr562a2Rgup8KddmhJj7EWyw1gey2odyCU,1202
+pysense/status.py,sha256=3zjn0vvxzCz0NI8tsB-KPNX5Qllzj4Rgnw4CTSJE6_o,1064
+pysense/users.py,sha256=_1h6t88NcAzyemcZR5pYqqV2n9U6A2mTMkvECSK-kLc,992
+qsense/__init__.py,sha256=C4kArAjeSW_2RTo5bPzA9ozyp3K-ZJhqWsmAYEo652w,89
+qsense/apps.py,sha256=A3QywJ5bApNX3O7bLbPoplAb9OG4PYNPg36SGHC8GLY,2755
+qsense/command_line.py,sha256=yXHuRByxvWh09dD-M3V7MXDJFKCE69yea5rIC65aweo,2138
+qsense/license.py,sha256=94Ltj_5Qv70l9zr8nAwQr1JmRQIUqjx74sPSsjkLdUU,1198
+qsense/status.py,sha256=3zjn0vvxzCz0NI8tsB-KPNX5Qllzj4Rgnw4CTSJE6_o,1064
+qsense/users.py,sha256=_3_KctuAvT5sMQ8RmWP6K7v0L7C8TjUQR0XJsaLD_f4,1415
+qsense-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qsense-0.3.0.dist-info/METADATA,sha256=VXQlLvP6Nmm6qmqlDZjAYSjSrC2w54BfVbV33TEMH-k,1170
+qsense-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+qsense-0.3.0.dist-info/entry_points.txt,sha256=E1kIsjctFtiaE77-v1pHM6obYBho0Xl0iJqrdneckdA,53
+qsense-0.3.0.dist-info/top_level.txt,sha256=UIgfPuUQ9CC_84lE1LAUuiZfThSIGmlBKv3R_tDkzew,7
+qsense-0.3.0.dist-info/RECORD,,
