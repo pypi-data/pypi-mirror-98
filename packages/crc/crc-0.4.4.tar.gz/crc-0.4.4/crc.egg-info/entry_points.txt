@@ -1,0 +1,6 @@
+[console_scripts]
+crc = crc.tools:main
+
+[crc.cli.command]
+table = crc.tools:table
+
