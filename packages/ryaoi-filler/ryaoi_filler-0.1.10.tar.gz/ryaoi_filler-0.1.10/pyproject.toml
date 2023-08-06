@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ryaoi_filler"
+version = "0.1.10"
+description = ""
+authors = ["ryota <ryota@42.codes>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+ryaoi_filler = "ryaoi_filler.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
