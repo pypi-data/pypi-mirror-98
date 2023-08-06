@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: spam-bot
+Version: 0.0.1
+Summary: Spam anything!
+Home-page: https://github.com/HirushaPramuditha/spam-bot
+Author: Hirusha Pramuditha
+Author-email: hirushapramuditha26@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: MouseInfo (==0.1.3)
+Requires-Dist: Pillow (==8.1.2)
+Requires-Dist: PyAutoGUI (==0.9.52)
+Requires-Dist: PyGetWindow (==0.0.9)
+Requires-Dist: PyMsgBox (==1.0.9)
+Requires-Dist: pyperclip (==1.8.2)
+Requires-Dist: PyRect (==0.1.4)
+Requires-Dist: PyScreeze (==0.1.26)
+Requires-Dist: PyTweening (==1.0.3)
+
+# Spam Bot
+
+Spam anything!
+
+### Installation
+
+Run this command on terminal
+`$ pip install spam-bot`
+
+### How to use
+
+```python
+from spam_bot import spam
+
+msg = "Hello World"
+msg_count = 500
+
+spam(msg, msg_count)
+```
+
+This is is a simple spam-bot program.
+
+If you want to spam things in a specific .txt file, You should use following way
+
+```python
+from spam_bot import ReadFile
+
+file = ReadFile("filename.txt")
+
+file.spam()
+```
+
+Then, run the program and quickly switch tabs to whatever app you want to spam and select the box to type in.
+
+Then wait 5 senconds.. 5..4..3..2..1
+
+Boom!
+
+
