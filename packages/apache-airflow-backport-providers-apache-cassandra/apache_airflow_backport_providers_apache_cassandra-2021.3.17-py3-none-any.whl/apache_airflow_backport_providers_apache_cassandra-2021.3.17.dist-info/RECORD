@@ -1,0 +1,14 @@
+airflow/providers/apache/cassandra/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/cassandra/example_dags/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/cassandra/example_dags/example_cassandra_dag.py,sha256=5IXeFjezkT_91xI13HveFI5siHb8xIXZeFmMHvWhbB0,1974
+airflow/providers/apache/cassandra/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/cassandra/hooks/cassandra.py,sha256=oiiJv03QuRqnNOI91PY3PsFevwMragFaO7N8banfB-U,8032
+airflow/providers/apache/cassandra/sensors/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/apache/cassandra/sensors/record.py,sha256=A_aUs4ZBTOl1ncckzAxXGYoBCyv3O73mHlRzxxajg3s,2783
+airflow/providers/apache/cassandra/sensors/table.py,sha256=5HbAlxlp5yVjZZQmQcIwUexbEy_WN2oHRX-rG1uA2jQ,2478
+apache_airflow_backport_providers_apache_cassandra-2021.3.17.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_backport_providers_apache_cassandra-2021.3.17.dist-info/METADATA,sha256=iTy_p_xTA68dgV49eZ44W4CzeguaU4m5GK017GfL_wI,17290
+apache_airflow_backport_providers_apache_cassandra-2021.3.17.dist-info/NOTICE,sha256=irN1W_XwjRh8XRlHEhVpRCSY7NZfQgGdnEfjFvGrxK4,240
+apache_airflow_backport_providers_apache_cassandra-2021.3.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apache_airflow_backport_providers_apache_cassandra-2021.3.17.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_backport_providers_apache_cassandra-2021.3.17.dist-info/RECORD,,
