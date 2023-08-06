@@ -1,0 +1,14 @@
+blackonnx-0.1.0.data/scripts/blackonnx,sha256=oMY3gODv6KARrP8XwDZxTZI5DXJHqKHl2_5frMf6Skk,1458
+blackonnxlib/__init__.py,sha256=32-gShP-nJ8qD4PsW9HcQ5vnaAhzEEd9ep24-8srqMg,99
+blackonnxlib/_version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+blackonnxlib/onnx_utils.py,sha256=ccauTkpvhQgatIcrrHSyMl-cKIqvQvdS6cojDf3byZc,1819
+blackonnxlib/utils.py,sha256=KcC8_lNpqA3fbi4g29GX1nZga1vLOdOjQI8WSpTYKVU,334
+blackonnxlib/fix/__init__.py,sha256=qJo8SjLoQbfhlewqNhvWC7EcE9Nx8P8NOFA4yEyVCzI,84
+blackonnxlib/fix/common_fix.py,sha256=wTZUOQcHAK7B1GUzh5lU3z5cjjKdkHwzBoT4HidReyM,1625
+blackonnxlib/fix/postprocess_fix.py,sha256=S4EiIahjFTzrKrBYJCCfvnUzIUad1RIB-wR1__FWi9E,1639
+blackonnxlib/fix/quantize_fix.py,sha256=eM94-6xNb4EPTP3m9EL-mbzVjoF-LwSJ8Byb-BNo5JE,5163
+blackonnx-0.1.0.dist-info/LICENCE,sha256=GgmxkZl_05O_Ra0mQedy19woSTPtlkblhy7MjsNYoO0,1067
+blackonnx-0.1.0.dist-info/METADATA,sha256=_Ty4-wlOoZ4hkwPV7S7Ji6HDJWQX0CONCVe5EgfWUUc,2491
+blackonnx-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+blackonnx-0.1.0.dist-info/top_level.txt,sha256=Nhi-xkuhIsivq4OybsGwtWrnPA6Xwlu4vSoefUeBepM,13
+blackonnx-0.1.0.dist-info/RECORD,,
