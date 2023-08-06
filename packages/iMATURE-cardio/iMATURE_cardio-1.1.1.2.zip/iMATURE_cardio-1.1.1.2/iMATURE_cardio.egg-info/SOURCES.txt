@@ -1,0 +1,19 @@
+MANIFEST.in
+setup.py
+iMATURE_cardio/MatplotlibWidget5.py
+iMATURE_cardio/Qt5file.py
+iMATURE_cardio/Resource_rc5.py
+iMATURE_cardio/__init__.py
+iMATURE_cardio/__main__.py
+iMATURE_cardio/command_line.py
+iMATURE_cardio/iMATURE.py
+iMATURE_cardio/iMATURE_highres2.png
+iMATURE_cardio/iMATURE_icon.ico
+iMATURE_cardio.egg-info/PKG-INFO
+iMATURE_cardio.egg-info/SOURCES.txt
+iMATURE_cardio.egg-info/dependency_links.txt
+iMATURE_cardio.egg-info/entry_points.txt
+iMATURE_cardio.egg-info/not-zip-safe
+iMATURE_cardio.egg-info/requires.txt
+iMATURE_cardio.egg-info/top_level.txt
+iMATURE_cardio/models/Human iPSC-CM (Kernik-2019).mmt
