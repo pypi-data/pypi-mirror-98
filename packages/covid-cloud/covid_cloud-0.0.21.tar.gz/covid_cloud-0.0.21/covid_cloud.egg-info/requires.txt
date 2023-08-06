@@ -1,0 +1,4 @@
+search-python-client>=0.1.9
+urllib3==1.26.3
+requests==2.25.1
+click==7.1.2
