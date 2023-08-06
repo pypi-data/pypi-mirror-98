@@ -1,0 +1,9 @@
+writer:
+    description: Converts datasets into standard output for CTD metadata (Xlsx Writer)
+    writer: !!python/name:ctdpy.core.writers.metadata.MetadataWriter ''
+    extension_filename: .xlsx
+    filename: ctd_metadata
+    identifier_instrument_metadata_end: '*END*'
+    name: metadata_template
+    standard_data_header: [YEAR, MONTH, DAY, HOUR, MINUTE, SECOND, CRUISE, STATION,
+        LATITUDE_DD, LONGITUDE_DD]

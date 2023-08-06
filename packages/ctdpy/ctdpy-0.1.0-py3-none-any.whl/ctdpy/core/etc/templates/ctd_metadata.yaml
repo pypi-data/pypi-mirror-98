@@ -1,0 +1,11 @@
+template:
+    description: Excel template for CTD metadata (SMHI Datahost settings)
+    name: ctd_metadata
+    sheet_name: ["Förklaring", Metadata, Sensorinfo, Information, "Kolumnförklaring"]
+    header_row: [null, 2, 2, null, 0, null]
+    suffix: '*.xlsx'
+    file_path: /templates/Format Profile.xlsx
+    reader: !!python/name:ctdpy.core.readers.xlsx_reader.load_excel ''
+
+template_handler: 
+    !!python/name:ctdpy.core.templates.ctd_metadata.CTDTemplateHandler ''
