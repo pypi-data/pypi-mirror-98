@@ -1,0 +1,13 @@
+gym
+numpy<=1.19.3
+matplotlib
+pandas
+pygame
+yapf==0.30.0
+seaborn
+panda3d~=1.10.8
+panda3d-gltf
+panda3d-simplepbr
+pillow
+pytest
+opencv-python-headless
