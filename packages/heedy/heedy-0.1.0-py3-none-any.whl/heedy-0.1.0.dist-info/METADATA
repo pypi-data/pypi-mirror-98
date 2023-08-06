@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: heedy
+Version: 0.1.0
+Summary: A Python library for interfacing with Heedy
+Home-page: https://github.com/heedy/heedy
+Author: Heedy Contributors
+License: apache2
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: aiohttp
+Requires-Dist: dateparser
+Requires-Dist: requests
+
+# Heedy Python Interface
+
+This is a Python library for interfacing with the [Heedy](https://heedy.org) server.
+
+[Click here for full documentation](https://heedy.org/python/)
+
+
