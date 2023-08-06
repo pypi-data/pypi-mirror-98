@@ -1,0 +1,9 @@
+goodconf/__init__.py,sha256=AXVDmwa3F6MeUP_2EUldVFRVlG3sEB9qjJe0sVazP9c,5448
+goodconf/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goodconf/contrib/argparse.py,sha256=NvO68InozuL9IN7B9WjDMpuhXa3ePxRw6kIj9GPEnGg,601
+goodconf/contrib/django.py,sha256=Jl8CnJ85kw3Ao44uy60O02-hofseCDyF9LZvaQvMQEs,1389
+goodconf-2.0b1.dist-info/LICENSE,sha256=hC_sNU9vdTFN04U1_Y0zGc3eZ3lv5Kpdfx2CjK0aSAg,1056
+goodconf-2.0b1.dist-info/METADATA,sha256=-FGTRr7ZR-nXj6TCb8AOrrkJw3Xacse-XPqE6VhT_AM,6542
+goodconf-2.0b1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+goodconf-2.0b1.dist-info/top_level.txt,sha256=1S6-cC65qVxan0pu0QKsSDDJDusfrUMgyAwtP_yDfaQ,9
+goodconf-2.0b1.dist-info/RECORD,,
