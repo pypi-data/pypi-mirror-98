@@ -1,0 +1,19 @@
+﻿[
+  {"wf": "^(тиде$|тиды.*$)", "lemma": "тидаш"},
+  {"wf": "нерген.*", "lemma": "нер"},
+  {"wf": "у", "lemma": "уаш"},
+  {"wf": "але", "lemma": "алаш"},
+  {"wf": "веле", "lemma": "велаш"},
+  {"wf": "илыш.*", "lemma": "ил"},
+  {"wf": "руш.*", "lemma": "ру"},
+  {"wf": "мом", "lemma": "Мом"},
+  {"wf": "^тӱҥал.*", "lemma": "тӱҥаш"},
+  {"wf": "^кӱлеш.*", "lemma": "кӱ"},
+  {"gramm": ".*,imp.*", "lemma": "эргаш"},
+  {"gramm": ".*,(imp|desid|neg).*3sg"},
+  {"gramm": "^CONJ.*3sg"},
+  {"gramm": "(.*,(?:persn|patrn|famn|anim|lang_name).*|^[^N].*)", "gloss": ".*PL\\.SHORT.*"},
+  {"gramm": "^(.(?!,nation))+$", "gloss": ".*SIM-(ACC|GEN|DAT|LAT|LOC|ILL|SIM|COM).*"},
+  {"wf": "тӱрлӧ.*", "lemma": "^(тӱрлаш|тӱр)$"}
+]
+
