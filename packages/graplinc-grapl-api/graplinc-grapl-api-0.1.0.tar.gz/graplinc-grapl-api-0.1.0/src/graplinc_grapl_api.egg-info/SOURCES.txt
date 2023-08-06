@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+src/graplinc/grapl/api/__init__.py
+src/graplinc/grapl/api/graph/__init__.py
+src/graplinc/grapl/api/graph/v1beta1/__init__.py
+src/graplinc/grapl/api/graph/v1beta1/types_pb2.py
+src/graplinc_grapl_api.egg-info/PKG-INFO
+src/graplinc_grapl_api.egg-info/SOURCES.txt
+src/graplinc_grapl_api.egg-info/dependency_links.txt
+src/graplinc_grapl_api.egg-info/namespace_packages.txt
+src/graplinc_grapl_api.egg-info/requires.txt
+src/graplinc_grapl_api.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: graplinc-grapl-api
+Version: 0.1.0
+Summary: Protobuf code for interacting with the Grapl API
+Home-page: https://github.com/grapl-security/grapl
+Author: Grapl, Inc.
+Author-email: grapl-code@graplsecurity.com
+Maintainer: Grapl, Inc.
+Maintainer-email: grapl-code@graplsecurity.com
+License: MIT
+Project-URL: Documentation, https://grapl.readthedocs.io
+Project-URL: Source, https://github.com/grapl-security/grapl
+Project-URL: Tracker, https://github.com/grapl-security/grapl/issues
+Description: Grapl API Protobuf Types
+        ========================
+        
+        Python code generated from the `graplinc.grapl.api` protobuf package.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
