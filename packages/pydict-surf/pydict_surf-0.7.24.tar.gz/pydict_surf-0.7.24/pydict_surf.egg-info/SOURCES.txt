@@ -1,0 +1,8 @@
+README.md
+setup.py
+pydict_surf.egg-info/PKG-INFO
+pydict_surf.egg-info/SOURCES.txt
+pydict_surf.egg-info/dependency_links.txt
+pydict_surf.egg-info/top_level.txt
+test/test01.py
+test/test02.py
