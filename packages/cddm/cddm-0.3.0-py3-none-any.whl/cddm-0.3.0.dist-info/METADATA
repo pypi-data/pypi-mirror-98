@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cddm
+Version: 0.3.0
+Summary: Tools for cross-differential dynamic microscopy
+Home-page: https://github.com/IJSComplexMatter/cddm
+Author: Andrej Petelin
+Author-email: andrej.petelin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+
+cddm is a python package for analysis of cross-differential dynamic microscopy (cross-DDM) experiments. You can also use it for a single-camera (DDM) analysis, or a general purpose correlation analysis. Regular and irregular time-spaced data is supported. The package is hosted at GitHub
+
+
