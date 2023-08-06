@@ -1,0 +1,9 @@
+include ntclient/ntsqlite/LICENSE
+include ntclient/ntsqlite/README.rst
+include ntclient/ntsqlite/sql/export.sh
+include ntclient/ntsqlite/sql/format.sh
+include ntclient/ntsqlite/sql/tables.sql
+include ntclient/ntsqlite/sql/__init__.py
+include ntclient/ntsqlite/sql/functions.sql
+include ntclient/ntsqlite/sql/data/*
+include ntclient/ntsqlite/sql/upgrade_scripts/*
