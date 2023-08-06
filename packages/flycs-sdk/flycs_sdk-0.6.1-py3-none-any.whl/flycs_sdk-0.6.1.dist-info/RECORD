@@ -1,0 +1,9 @@
+flycs_sdk/__init__.py,sha256=gBwnUOxFdMODyuh5VihOlvCCdKIuaCwVoINQBD26UKQ,148
+flycs_sdk/entities.py,sha256=erbLuigQDQoTIw5fAwQvSvVGPHV81joyvbvvp9N3PS0,17804
+flycs_sdk/pipelines.py,sha256=K8dO1UKH4-mV_PLLPNtx2yTmI-I_qNEaYo82z0A97uk,12115
+flycs_sdk/transformations.py,sha256=1ZUT497KlV3IfcdEhIFUXw5PZA1R39cc0OnWD0wsgho,8016
+flycs_sdk/triggers.py,sha256=TuL85sIu3_1pUf9qKd_7gxDN8pJOAiqQ2vvwTRs_Fuw,5920
+flycs_sdk-0.6.1.dist-info/LICENSE,sha256=SZSNvCemeN9t9OVjMxnMVBha4847d10ivYTDTVNr2UI,1077
+flycs_sdk-0.6.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+flycs_sdk-0.6.1.dist-info/METADATA,sha256=3tsZM8EiYF1030uo9pMGtgT3AnhH8tQFnajiUqNOPRk,2035
+flycs_sdk-0.6.1.dist-info/RECORD,,
