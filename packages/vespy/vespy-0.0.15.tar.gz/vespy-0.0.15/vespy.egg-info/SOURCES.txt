@@ -1,0 +1,15 @@
+README.md
+setup.py
+vespy/__init__.py
+vespy/main.py
+vespy/ssl_utils.py
+vespy.egg-info/PKG-INFO
+vespy.egg-info/SOURCES.txt
+vespy.egg-info/dependency_links.txt
+vespy.egg-info/entry_points.txt
+vespy.egg-info/requires.txt
+vespy.egg-info/top_level.txt
+vespy/certificates/Vestas_Issuing_CA_02_G1.crt
+vespy/certificates/Vestas_Root_CA_01_G1.crt
+vespy/certificates/__init__.py
+vespy/certificates/vestas-web-gateway-cert.crt
