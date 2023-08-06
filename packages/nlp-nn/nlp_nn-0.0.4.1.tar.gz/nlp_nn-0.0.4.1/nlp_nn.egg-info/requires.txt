@@ -1,0 +1,7 @@
+torch>=1.6
+fastapi>=0.55.1
+pydantic>=1.5.1
+tensorboard>=2.2.1
+transformers>=4.2.2
+jieba>=0.39
+typing
