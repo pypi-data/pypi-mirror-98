@@ -1,0 +1,6 @@
+[console_scripts]
+format_modelica_files=management.format_modelica_files:fmt_modelica_files
+uo_des=management.uo_des:cli
+update_licenses=management.update_licenses:update_licenses
+update_schemas=management.update_schemas:update_schemas
+
