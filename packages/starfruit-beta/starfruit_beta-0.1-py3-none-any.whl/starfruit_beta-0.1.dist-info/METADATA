@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: starfruit-beta
+Version: 0.1
+Summary: A powerful model deployment tool for AI and ML Engineers and Researchers
+Home-page: https://github.com/jbeatty88/StarFruitPIP
+Author: Josh Beatty, Harris Rothaermel, Joseph Steed
+Author-email: joshuabeatty88@gmail.com, harris.rothaermel@gmail.com, josephsteed177@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Starfruit PIP
+***
+
+## This is just a dummy repo while we work on the pip version of our tool.
+
+### I ignored all the build and dist files for pip, if you need to recreate those, run:
+
+```shell
+ >> python3 setup.py bdist_wheel
+```
+
+### After this, you can install the package locally with this:
+`>> python -m pip install dist/<NAME>.whl`
+
+### 
+
