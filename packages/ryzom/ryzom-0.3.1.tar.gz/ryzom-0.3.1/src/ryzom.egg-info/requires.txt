@@ -1,0 +1,10 @@
+
+[channels]
+channels
+channels-redis
+
+[django]
+django
+
+[psql]
+psycopg2-binary
