@@ -1,0 +1,3 @@
+[console_scripts]
+kerochan_import=kerochan.import.__main__:__main__
+
