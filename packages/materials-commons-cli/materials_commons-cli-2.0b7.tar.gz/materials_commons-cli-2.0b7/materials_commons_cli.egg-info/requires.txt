@@ -1,0 +1,8 @@
+globus-cli
+globus-sdk
+materials-commons-api
+python-dateutil
+pyyaml
+requests
+sortedcontainers
+tabulate
