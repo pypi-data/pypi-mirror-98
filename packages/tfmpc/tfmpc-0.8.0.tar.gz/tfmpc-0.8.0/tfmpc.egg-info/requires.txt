@@ -1,0 +1,10 @@
+Click
+fire
+gym
+tensorflow-cpu
+tensorflow_probability
+sklearn
+pandas
+psutil
+pytest
+tuneconfig
