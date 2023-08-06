@@ -1,0 +1,2 @@
+namekox-core
+py_zipkin==0.20.2
