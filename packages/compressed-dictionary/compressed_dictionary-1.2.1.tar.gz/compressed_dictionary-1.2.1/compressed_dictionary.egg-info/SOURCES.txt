@@ -1,0 +1,12 @@
+README.md
+setup.py
+compressed_dictionary/__init__.py
+compressed_dictionary/compressed_dictionary.py
+compressed_dictionary.egg-info/PKG-INFO
+compressed_dictionary.egg-info/SOURCES.txt
+compressed_dictionary.egg-info/dependency_links.txt
+compressed_dictionary.egg-info/requires.txt
+compressed_dictionary.egg-info/top_level.txt
+compressed_dictionary/utils/__init__.py
+compressed_dictionary/utils/merge.py
+compressed_dictionary/utils/split.py
