@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: stackstr-sdk
+Version: 0.1.0
+Summary: SDK to log predictions and ground truth
+Home-page: UNKNOWN
+Author: StackStr Eng
+Author-email: founders@stackstr.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: certifi (==2020.11.8)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.10)
+Requires-Dist: joblib (==1.0.0)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: pandas (==1.2.0)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.5)
+Requires-Dist: requests (==2.25.0)
+Requires-Dist: scikit-learn (==0.24.0)
+Requires-Dist: scipy (==1.6.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: sklearn (==0.0)
+Requires-Dist: threadpoolctl (==2.1.0)
+Requires-Dist: urllib3 (==1.26.2)
+
+UNKNOWN
+
+
