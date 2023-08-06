@@ -1,0 +1,12 @@
+pyjne_peru/__init__.py,sha256=yRIr3-C5hiSyqMY_bTIT79vOBpxWAW8trhN4SWMLGhA,138
+pyjne_peru/client.py,sha256=wVeQWATIVeYwshx-z1iOPrrUVTVQBem3-Wz-Yluare0,4002
+pyjne_peru/entities.py,sha256=gMJ4oMKqzPADb_Db5vCokTeK4zPYPmyAhGVwghcadnE,4350
+pyjne_peru/error.py,sha256=pInJtIqSgXQe7XuqWLLWJz0Dy7xhQIyjqx0L1JANW7E,40
+pyjne_peru/parsers.py,sha256=FxcfwpvBTrLg4NHj91IU51OrZBu6LcZ_YjbExD75tPs,656
+pyjne_peru/utils.py,sha256=3pFB_I0iydPKqAjitCf3PLg-p3S0NzgllgONU3QDoBc,319
+python_jne_peru-0.1.0.dist-info/AUTHORS.rst,sha256=Zjc9HFadKi0_ny1OChNgipfFkM0ZgR1-n4sr83_Nmf4,161
+python_jne_peru-0.1.0.dist-info/LICENSE,sha256=_uqV_zBurftY-jSqVktEgyceuBI1jY_ps1qtyonQxoc,1601
+python_jne_peru-0.1.0.dist-info/METADATA,sha256=6fMXsAi29wHPmU1N3oxEiACKgsHmx1hATsEo33fGKpw,2814
+python_jne_peru-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+python_jne_peru-0.1.0.dist-info/top_level.txt,sha256=kx3Smihe_6yweJAlRdqE3dzlpjFpxMM5dPphU_jbMPo,11
+python_jne_peru-0.1.0.dist-info/RECORD,,
