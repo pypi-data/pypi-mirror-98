@@ -1,0 +1,8 @@
+README.md
+setup.py
+command_spawner/__init__.py
+command_spawner/command_spawner.py
+command_spawner.egg-info/PKG-INFO
+command_spawner.egg-info/SOURCES.txt
+command_spawner.egg-info/dependency_links.txt
+command_spawner.egg-info/top_level.txt
