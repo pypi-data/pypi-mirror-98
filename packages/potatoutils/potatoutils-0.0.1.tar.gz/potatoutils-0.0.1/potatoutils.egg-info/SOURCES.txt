@@ -1,0 +1,11 @@
+setup.py
+potatoutils.egg-info/PKG-INFO
+potatoutils.egg-info/SOURCES.txt
+potatoutils.egg-info/dependency_links.txt
+potatoutils.egg-info/top_level.txt
+src/__init__.py
+src/abstractions/Comparable.py
+src/abstractions/__init__.py
+src/trees/AVLTree.py
+src/trees/BinaryTree.py
+src/trees/__init__.py
