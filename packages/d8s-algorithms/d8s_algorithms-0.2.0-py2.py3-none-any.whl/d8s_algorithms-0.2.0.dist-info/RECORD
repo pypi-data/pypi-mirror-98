@@ -1,0 +1,11 @@
+d8s_algorithms/__init__.py,sha256=FgDjFyuRui4r80lwAaqiph-UCZkzYkPy43AmjfVTr84,690
+d8s_algorithms/algorithms.py,sha256=wMze2skoq7zgfhhsidFGephGAWeCrzte7M5wCfbgYfM,3889
+d8s_algorithms/algorithms_temp_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_algorithms.py,sha256=8hgzlG_QV7qAY4msV8nIzjwbVhZ15J-9H-fA-3IAXVI,4738
+d8s_algorithms-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_algorithms-0.2.0.dist-info/METADATA,sha256=qaQLfcBQR1gLbjGX972qumWubwIgoayeBFJshfP0l30,1941
+d8s_algorithms-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_algorithms-0.2.0.dist-info/top_level.txt,sha256=shV5rgc3QdEB9v94aKpZKzMmyp-aMT5xvxNemSRrjD4,21
+d8s_algorithms-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_algorithms-0.2.0.dist-info/RECORD,,
