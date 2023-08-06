@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "PyOpenFisheries"
+version = "0.1.1"
+description = " PyOpenFisheries makes it even easier to access the OpenFisheries API in Python. A good usecase of this library is to gather data to plot in a Jupyter Notebook, or to collect data to run time-series analysis on."
+authors = ["Henry Kobin <henry.kobin@gmail.com>"]
+keywords = ["openfisheries", "fish", "fish_api", "plotting"]
+readme = "README.rst"
+license = "Apache-2.0"
+homepage = "https://github.com/HenryKobin/PyOpenFisheries"
+repository = "https://github.com/HenryKobin/PyOpenFisheries"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
