@@ -1,0 +1,13 @@
+README.md
+setup.py
+sslap/__init__.py
+sslap/auction_.c
+sslap/auction_solve.py
+sslap/check_feasible.py
+sslap/feasibility_.c
+sslap/tester.py
+sslap.egg-info/PKG-INFO
+sslap.egg-info/SOURCES.txt
+sslap.egg-info/dependency_links.txt
+sslap.egg-info/requires.txt
+sslap.egg-info/top_level.txt
