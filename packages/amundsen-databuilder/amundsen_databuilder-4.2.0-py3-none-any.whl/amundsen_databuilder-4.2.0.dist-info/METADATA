@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: amundsen-databuilder
+Version: 4.2.0
+Summary: Amundsen Data builder
+Home-page: https://www.github.com/amundsen-io/amundsendatabuilder
+Maintainer: Amundsen TSC
+Maintainer-email: amundsen-tsc@lists.lfai.foundation
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: neo4j-driver (<4.0,>=1.7.2)
+Requires-Dist: pytz (>=2018.4)
+Requires-Dist: statsd (>=3.2.1)
+Requires-Dist: retrying (>=1.3.3)
+Requires-Dist: requests (<3.0,>=2.23.0)
+Requires-Dist: elasticsearch (<7.0,>=6.2.0)
+Requires-Dist: pyhocon (>=0.3.42)
+Requires-Dist: unidecode
+Requires-Dist: Jinja2 (<2.12,>=2.10.0)
+Requires-Dist: pandas (<1.2.0,>=0.21.0)
+Provides-Extra: all
+Requires-Dist: neo4j-driver (<4.0,>=1.7.2) ; extra == 'all'
+Requires-Dist: pytz (>=2018.4) ; extra == 'all'
+Requires-Dist: statsd (>=3.2.1) ; extra == 'all'
+Requires-Dist: retrying (>=1.3.3) ; extra == 'all'
+Requires-Dist: requests (<3.0,>=2.23.0) ; extra == 'all'
+Requires-Dist: elasticsearch (<7.0,>=6.2.0) ; extra == 'all'
+Requires-Dist: pyhocon (>=0.3.42) ; extra == 'all'
+Requires-Dist: unidecode ; extra == 'all'
+Requires-Dist: Jinja2 (<2.12,>=2.10.0) ; extra == 'all'
+Requires-Dist: pandas (<1.2.0,>=0.21.0) ; extra == 'all'
+Requires-Dist: confluent-kafka (==1.0.0) ; extra == 'all'
+Requires-Dist: cassandra-driver (==3.20.1) ; extra == 'all'
+Requires-Dist: boto3 (==1.10.1) ; extra == 'all'
+Requires-Dist: snowflake-connector-python ; extra == 'all'
+Requires-Dist: snowflake-sqlalchemy ; extra == 'all'
+Requires-Dist: PyAthena[sqlalchemy] (<2.0.0,>=1.0.0) ; extra == 'all'
+Requires-Dist: google-api-python-client (<2.0.0dev,>=1.6.0) ; extra == 'all'
+Requires-Dist: google-auth-httplib2 (>=0.0.1) ; extra == 'all'
+Requires-Dist: google-auth (<2.0.0dev,>=1.0.0) ; extra == 'all'
+Requires-Dist: jsonpath-rw (==1.4.0) ; extra == 'all'
+Requires-Dist: ibm-db (==3.0.1) ; extra == 'all'
+Requires-Dist: ibm-db-sa-py3 (==0.3.1-1) ; extra == 'all'
+Requires-Dist: pyodbc (==4.0.30) ; extra == 'all'
+Requires-Dist: pydruid ; extra == 'all'
+Requires-Dist: pyspark (==3.0.1) ; extra == 'all'
+Requires-Dist: feast (==0.8.0) ; extra == 'all'
+Requires-Dist: amundsen-gremlin (>=0.0.5) ; extra == 'all'
+Requires-Dist: Flask (==1.0.2) ; extra == 'all'
+Requires-Dist: gremlinpython (==3.4.3) ; extra == 'all'
+Requires-Dist: requests-aws4auth (==0.9) ; extra == 'all'
+Requires-Dist: typing-extensions (==3.7.4) ; extra == 'all'
+Requires-Dist: overrides (==2.5) ; extra == 'all'
+Provides-Extra: athena
+Requires-Dist: PyAthena[sqlalchemy] (<2.0.0,>=1.0.0) ; extra == 'athena'
+Provides-Extra: atlas
+Requires-Dist: pyatlasclient (==1.1.2) ; extra == 'atlas'
+Provides-Extra: bigquery
+Requires-Dist: google-api-python-client (<2.0.0dev,>=1.6.0) ; extra == 'bigquery'
+Requires-Dist: google-auth-httplib2 (>=0.0.1) ; extra == 'bigquery'
+Requires-Dist: google-auth (<2.0.0dev,>=1.0.0) ; extra == 'bigquery'
+Provides-Extra: cassandra
+Requires-Dist: cassandra-driver (==3.20.1) ; extra == 'cassandra'
+Provides-Extra: db2
+Requires-Dist: ibm-db (==3.0.1) ; extra == 'db2'
+Requires-Dist: ibm-db-sa-py3 (==0.3.1-1) ; extra == 'db2'
+Provides-Extra: delta
+Requires-Dist: pyspark (==3.0.1) ; extra == 'delta'
+Provides-Extra: dremio
+Requires-Dist: pyodbc (==4.0.30) ; extra == 'dremio'
+Provides-Extra: druid
+Requires-Dist: pydruid ; extra == 'druid'
+Provides-Extra: feast
+Requires-Dist: feast (==0.8.0) ; extra == 'feast'
+Provides-Extra: glue
+Requires-Dist: boto3 (==1.10.1) ; extra == 'glue'
+Provides-Extra: jsonpath
+Requires-Dist: jsonpath-rw (==1.4.0) ; extra == 'jsonpath'
+Provides-Extra: kafka
+Requires-Dist: confluent-kafka (==1.0.0) ; extra == 'kafka'
+Provides-Extra: neptune
+Requires-Dist: amundsen-gremlin (>=0.0.5) ; extra == 'neptune'
+Requires-Dist: Flask (==1.0.2) ; extra == 'neptune'
+Requires-Dist: gremlinpython (==3.4.3) ; extra == 'neptune'
+Requires-Dist: requests-aws4auth (==0.9) ; extra == 'neptune'
+Requires-Dist: typing-extensions (==3.7.4) ; extra == 'neptune'
+Requires-Dist: overrides (==2.5) ; extra == 'neptune'
+Requires-Dist: boto3 (==1.10.1) ; extra == 'neptune'
+Provides-Extra: snowflake
+Requires-Dist: snowflake-connector-python ; extra == 'snowflake'
+Requires-Dist: snowflake-sqlalchemy ; extra == 'snowflake'
+
+UNKNOWN
+
+
