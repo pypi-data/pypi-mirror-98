@@ -1,0 +1,9 @@
+democritus-algorithms
+democritus-lists
+democritus-strings
+democritus_grammars
+jinja2
+more_itertools
+
+[:python_version < "3.8"]
+importlib-metadata
