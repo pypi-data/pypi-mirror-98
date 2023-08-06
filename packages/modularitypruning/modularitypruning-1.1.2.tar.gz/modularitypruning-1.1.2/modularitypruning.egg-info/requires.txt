@@ -1,0 +1,9 @@
+champ
+louvain
+matplotlib
+numpy
+psutil
+python-igraph
+scipy
+seaborn
+sklearn

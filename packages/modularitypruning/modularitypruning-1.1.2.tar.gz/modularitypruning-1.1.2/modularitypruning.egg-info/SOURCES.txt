@@ -1,0 +1,15 @@
+README.md
+setup.py
+modularitypruning.egg-info/PKG-INFO
+modularitypruning.egg-info/SOURCES.txt
+modularitypruning.egg-info/dependency_links.txt
+modularitypruning.egg-info/requires.txt
+modularitypruning.egg-info/top_level.txt
+utilities/__init__.py
+utilities/champ_utilities.py
+utilities/louvain_utilities.py
+utilities/parameter_estimation.py
+utilities/parameter_estimation_utilities.py
+utilities/partition_utilities.py
+utilities/plotting.py
+utilities/progress.py
