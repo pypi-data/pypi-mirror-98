@@ -1,0 +1,14 @@
+shui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shui/api/__init__.py,sha256=1mpPWuuYhSSotfFmAmDgVEbNDBvlnDwWh5jJ8ogKrzc,183
+shui/api/install.py,sha256=2V6XhIOdsuIROxxO7CnjliRW-qBVhbVNUB-NduGuvUA,2483
+shui/api/remote.py,sha256=pTFqOlMMq3BURYU9ANtECmaoJu3crZDD9JbnyKu_d-8,1055
+shui/cli.py,sha256=lC5aMUu28DbsBz43ShknyqFHIn0RyLSuquxOrL62VKk,357
+shui/commands/__init__.py,sha256=87hyk76yXRDOclhl-Bu6E7olV2KpI5uo_voRFdlTod4,182
+shui/commands/install_command.py,sha256=7nFYYxLJ0HYQBunn4I--HhfnZDfhpXTAgSabEH8Vp5U,2190
+shui/commands/versions_command.py,sha256=NVEvsFRdPFKECtwBvK8Fzoc-KyWvKlqcRM7okTupRac,518
+shui/version.py,sha256=xDrRCXWd0pvXYW93yFkw9n9d5sNwC5vFqwkoaWh_fi4,1092
+shui-0.2.0.dist-info/entry_points.txt,sha256=RvIoJ8CcSyBdSI8nGog9tQ3eB3V9-_hntsI61LKC8kI,38
+shui-0.2.0.dist-info/LICENSE,sha256=69exg6RGqHZaBkLb0atcNX7ObPbaVVk7LWq4x3UA2Fk,1071
+shui-0.2.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+shui-0.2.0.dist-info/METADATA,sha256=7Uy01TwYKSyrZt64xogDYJGe1DmVtvQoS80ja5TVGUQ,3268
+shui-0.2.0.dist-info/RECORD,,
