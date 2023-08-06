@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/api_of_things.egg-info/PKG-INFO
+src/api_of_things.egg-info/SOURCES.txt
+src/api_of_things.egg-info/dependency_links.txt
+src/api_of_things.egg-info/top_level.txt
+src/api_of_things_client/__init__.py
+src/api_of_things_client/models.py

@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: api_of_things
+Version: 0.0.11
+Summary: A python client that can interface with an API of things IOT server
+Home-page: https://github.com/isConic/api_of_things_python
+Author-email: otto.wagner@ama-inc.com
+License: UNKNOWN
+Description: # api_of_things_python
+        
+        
+        
+        ```bash
+        
+        from api_of_things import IOTNOde
+        from api_of_things.models import IOTPayload
+        
+        
+        node = IOTNode(host = "https://api.is-conic.com")
+        
+        
+        data = IOTNode
+        
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
