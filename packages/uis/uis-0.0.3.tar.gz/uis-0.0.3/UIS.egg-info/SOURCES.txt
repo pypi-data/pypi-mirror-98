@@ -1,0 +1,16 @@
+setup.cfg
+setup.py
+UIS/Dataapi.py
+UIS/__init__.py
+UIS.egg-info/PKG-INFO
+UIS.egg-info/SOURCES.txt
+UIS.egg-info/dependency_links.txt
+UIS.egg-info/not-zip-safe
+UIS.egg-info/top_level.txt
+uis/Dataapi.py
+uis/__init__.py
+uis.egg-info/PKG-INFO
+uis.egg-info/SOURCES.txt
+uis.egg-info/dependency_links.txt
+uis.egg-info/not-zip-safe
+uis.egg-info/top_level.txt
