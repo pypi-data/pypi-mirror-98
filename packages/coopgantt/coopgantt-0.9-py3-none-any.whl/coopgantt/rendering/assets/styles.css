@@ -1,0 +1,207 @@
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+div{
+    /*border: 1px solid red;*/
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* Layout */
+.cont_col_1 {width: 33.33%;}
+.cont_col_2 {width: 66.66%;}
+[class*="cont_col"] {
+  float: left;
+  height: 100%;
+  overflow: scroll;
+}
+
+/*
+.content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* Gantt Related */
+.task:hover{
+    fill: lightblue;
+    font-weight: bold;
+    /*animation: pulse 1s linear infinite alternate; */
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.task{
+    position: sticky;
+    top: 0;
+}
+
+/*
+.task{
+    animation: wheel 1s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+*/
+
+.milestone:hover{
+    fill: lightblue;
+    font-weight: bold;
+}
+
+.rowsubgroup{
+    background: slategray;
+    color: lightgrey;
+    font-weight: bold;
+}
+
+thead{
+    background: black;
+    color: white;
+}
+
+
+#gantt_items{
+    border-spacing: 8px;
+    font-size: 14px;
+}
+
+#resource_items{
+    border-spacing: 8px;
+    font-size: 14px;
+}
+
+#table_spacer_1{
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#table_spacer_2{
+    width: 100%;
+    height: 0px;
+}
+
+/* HTML Related */
+body {
+    margin-top:0px;
+    margin-left:0px;
+}
+
+.header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+}
+
+.calendarheader{
+    position: sticky;
+    top: 0;
+    background: white;
+    width: fit-content;
+}
+
+.content {
+    height: 70%;
+    top: 30%;
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    overflow: scroll;
+
+}
+
+.windowed_view {
+    width: 100%;
+    position: absolute;
+    height: 70%;
+}
+
+.header_spacer {
+    height: 250px;
+    width: 100%;
+}
+
+.project_view {
+    width: 100%;
+}
+/*.windowed_view_img {
+    height: 250px;
+    width: 100%
+
+}*/
+
+
+
+
+@keyframes wheel {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+
+}
+
+@keyframes pulse {
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.05);
+    }
+
+}
+
+
+
+
+/* Slider */
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  /*-webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  /*-webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
