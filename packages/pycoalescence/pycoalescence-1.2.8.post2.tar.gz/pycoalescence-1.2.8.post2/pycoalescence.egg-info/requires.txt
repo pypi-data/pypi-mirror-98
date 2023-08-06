@@ -1,0 +1,13 @@
+GDAL>=1.11.2
+numpy
+cython
+pandas
+
+[:python_version < "3.0"]
+configparser
+
+[plotting]
+matplotlib
+
+[scipy]
+scipy>=0.12.0
