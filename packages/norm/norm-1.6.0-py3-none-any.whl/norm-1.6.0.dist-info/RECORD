@@ -1,0 +1,15 @@
+norm/__init__.py,sha256=B8-mMOoz1iFt6Qr9xhEJ9-fe7IouiYvVnE2WPpS3v8s,712
+norm/cached_property.py,sha256=6IwK3rxTnNjHFH8-mr3U926QeJMbDn-8EgIuPbxw7yk,296
+norm/connection.py,sha256=eJpjT5p0pjSV6_dBEInLE5Xu5vSH5gBQeQUuwUbm2N0,3788
+norm/norm.py,sha256=hH6106qozobpppKtYAWx27MTQLnYAN9YhcrhJDSfhvc,17628
+norm/norm_mssql.py,sha256=i0J29u-ElxIUxJnwIYNrcvSeJjBWOGFLHGNA4uTo_78,976
+norm/norm_myssql_connector.py,sha256=lNrwRsuu-Ij-EsS8Goc4QYfVRVwLTfThEuXXvvIGimU,823
+norm/norm_psycopg2.py,sha256=Z14kI7Px85I03gEb18gpXteG7YCO8bnzgzWDEHpg9Ck,1011
+norm/norm_pymssql.py,sha256=E60mFzr6BORtuSvYpLjPp34_P2B3e3LID7_JbCmENfA,2941
+norm/norm_sqlalchemy.py,sha256=95i4TitRYURFox65mGD-5IwtiG4rJ9AcFgCb4-9QTt4,960
+norm/norm_sqlite3.py,sha256=gRcxRRFlncNQgUSP-n0vkr-Y6TOjHG-OWhR-WKDFZvE,960
+norm/rows.py,sha256=laupCjPM3C8dM37IVq0rRsN39H6WDvfy3_CcUIouTWY,867
+norm-1.6.0.dist-info/LICENSE,sha256=Be70uymgwdoWpwFUz9pSHkaAQouR7Vl5uC4HYI3RK9E,1425
+norm-1.6.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+norm-1.6.0.dist-info/METADATA,sha256=Ack4dtOEmniALG962xJb0ikUnUV-Rz2g0k6jMk4JBv0,440
+norm-1.6.0.dist-info/RECORD,,
