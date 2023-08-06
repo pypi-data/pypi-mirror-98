@@ -1,0 +1,3 @@
+[console_scripts]
+youwol = youwol.main:main
+
