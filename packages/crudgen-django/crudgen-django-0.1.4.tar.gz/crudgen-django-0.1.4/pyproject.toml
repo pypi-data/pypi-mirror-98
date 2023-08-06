@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "crudgen-django"
+version = "0.1.4"
+description = ""
+authors = ["pouria <pooriazmn@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Django = "<3.0"
+crudgen = "^0.1.1"
+djangorestframework = "^3.12.2"
+drf-extensions = "^0.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+generate = 'crudgen_django.console.generate:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
