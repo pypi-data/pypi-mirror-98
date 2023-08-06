@@ -1,0 +1,18 @@
+.editor_container{
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+
+.code-panel{
+    padding: 0 !important;
+}
+
+.explorer-panel{
+    height:660px;
+    overflow: auto;
+}
+
+.path-label{
+    float: right;
+    font-size: 13px;
+}
