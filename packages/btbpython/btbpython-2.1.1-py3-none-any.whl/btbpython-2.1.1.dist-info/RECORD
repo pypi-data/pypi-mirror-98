@@ -1,0 +1,13 @@
+btbpython/__init__.py,sha256=uILdKHKEjZbZvAYoH0cRu6rgqodhWpcKS97nMq28dxI,27
+btbpython/client.py,sha256=7UxcIReBE8q4W3nB-FHBZlbjnSjel5rCBmva4lYTl1I,987
+btbpython/lyrics.py,sha256=RIP4MUvUAGOENk4uUzvJKPPaVPIE7M6wptBc0coWR6I,438
+btbpython/madlibs.py,sha256=GzgN3EIaTFvxdvNlr0uTFn8ZA5A376-VkqcYk6eA_8M,1398
+btbpython/meme.py,sha256=Ul8FCvyGYdnM6U0mep_4rsIbBMqBJcVFONja0amt6Vk,730
+btbpython/reddit.py,sha256=pxjzEg9YS8ot4EJL7w3s0vxW0GborZzSdT5Qcyrm97A,467
+btbpython/text.py,sha256=cC2gTBrINqHK4ErvjmBtzFjp9ahTnl2acfG0NHfcnTc,935
+btbpython/word.py,sha256=C1TZAwePHu60BZacUzhDdk6xQUWl9aYKJFLgac48A3g,122
+btbpython-2.1.1.dist-info/LICENSE,sha256=Q8qdAWmm4DDpAMTHa7ju8lnmyhA5EP71C5w_qhL5SRA,1090
+btbpython-2.1.1.dist-info/METADATA,sha256=FVx_839YQEuQiy6o8sEABiwErg3WA2Hqk6QbY20_wRc,1610
+btbpython-2.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+btbpython-2.1.1.dist-info/top_level.txt,sha256=m-NCgaaNzK-cWqZi-7_QlLVMn_G-iPMCye9npTr0nQE,10
+btbpython-2.1.1.dist-info/RECORD,,
