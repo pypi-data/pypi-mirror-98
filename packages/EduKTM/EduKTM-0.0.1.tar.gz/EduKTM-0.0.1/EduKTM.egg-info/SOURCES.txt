@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+EduKTM.egg-info/PKG-INFO
+EduKTM.egg-info/SOURCES.txt
+EduKTM.egg-info/dependency_links.txt
+EduKTM.egg-info/requires.txt
+EduKTM.egg-info/top_level.txt
