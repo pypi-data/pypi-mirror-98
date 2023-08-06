@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: djangocms-googlecalendar-plugin
+Version: 0.1.4
+Summary: Adds Google Calendar plugins to django CMS.
+Home-page: https://github.com/thegrapesofwrath/djangocms-googlecalendar-plugin
+Author: Shawn Hartley
+Author-email: shawn@novusterra.com
+License: GNU General Public License v3 (GPLv3), see LICENSE.md
+Description: # Django CMS Google Calendar Plugin
+        
+        Django CMS Google Calendar Plugin is a set of plugins for Django CMS that allow you to implement Google Calendar into your website.
+        
+        ![Django CMS Google Calendar Example](./docs/img/preview.png "Django CMS Google Calendar Example")
+        
+        ## Quick Start
+        
+        1. Install the easy way, using pip:
+        
+                $ pip install djangocms-googlecalendar-plugin
+        
+        2. Add "djangocms\_googlecalendar" to your INSTALLED\_APPS setting like this:
+        
+                INSTALLED_APPS = [
+                    ...
+                    'djangocms_googlecalendar_plugin',
+                ]
+        
+        3. Run `python manage.py migrate djangocms_googlecalendar_plugin` to create the plugin models.
+        
+        ## Running Tests
+        
+        You can run tests by executing:
+        
+        ``` shell
+          virtualenv venv -p python3
+          source venv/bin/activate
+          pip install -r tests/requirements.txt
+          python setup.py test
+        ```
+        
+        ## License
+        
+        This project is licensed under GPL 3.0 - see [LICENSE](LICENSE.md) for details.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
