@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mridataPy
+Version: 0.0.3
+Summary: A lightning toolbox for downloading and processing mridata from mridata.org
+Home-page: https://github.com/yzhang-dev/mridataPy
+Author: Yi Zhang
+Author-email: yizhang.dev@gmail.com
+License: MIT
+Download-URL: https://github.com/yzhang-dev/mridataPy
+Description: # mridataPy
+        
+        mridataPy is
+        
+        * a lightning toolbox for downloading and processing mridata from mridata.org
+        
+        
+        
+        ## Quickstart
+        
+        
+        
+        ### Dependencies and Installation
+        
+        ```bash
+        $ pip install mridatapy
+        ```
+        
+        
+        
+        ## Documentation
+        
+        
+        
+        ## Related Projects
+        
+        * [mridata.org](http://mridata.org/)
+        * [mridata](https://github.com/mikgroup/mridata-python) ([pypi.org/project/mridata/](https://pypi.org/project/mridata/))
+        
+Keywords: mri,mri-reconstruction
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
