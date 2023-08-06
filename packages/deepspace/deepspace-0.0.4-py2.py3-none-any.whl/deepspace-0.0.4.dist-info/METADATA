@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: deepspace
+Version: 0.0.4
+Summary: A collection of search space for the DeepHyper package.
+Home-page: https://github.com/deephyper/deepspace
+Author: Prasanna Balaprakash <pbalapra@anl.gov>, Romain Egele <romain.egele@polytechnique.edu>, Romit Maulik <rmaulik@anl.gov>
+License: ANL
+Project-URL: Source, https://github.com/deephyper/deepspace
+Project-URL: Tracker, https://github.com/deephyper/deepspace/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6, <3.9
+Description-Content-Type: text/markdown
+Requires-Dist: deephyper
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=1.8.2) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: codecov ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+
+# DeepSpace
+
+A collection of search space for the DeepHyper package.
+
+## Requirements
+
+Graphviz.
+
+## Quick Start
+
+Generate a neural architecture space for fully connected networks with residual connections:
+
+```python
+from deepspace.tabular import DenseSkipCoFactory
+
+def create_search_space(input_shape=(54,), output_shape=(7,), **kwargs)
+    return DenseSkipCoFactory()(input_shape, output_shape, num_layers=10, dropout=0.0)
+```
+
+Generate a neural architecture space for AutoEncoder guided by an estimator:
+
+```python
+from deepspace.tabular import SupervisedRegAutoEncoderFactory
+
+factory = SupervisedRegAutoEncoderFactory()(
+     input_shape=(100,), output_shape=[(100), (10,)]
+)
+```
+
+
