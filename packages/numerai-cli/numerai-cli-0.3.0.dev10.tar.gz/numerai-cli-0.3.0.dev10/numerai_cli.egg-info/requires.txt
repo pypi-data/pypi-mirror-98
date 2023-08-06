@@ -1,0 +1,5 @@
+click>=7
+boto3
+numerapi>=2.4.0
+colorama
+requests
