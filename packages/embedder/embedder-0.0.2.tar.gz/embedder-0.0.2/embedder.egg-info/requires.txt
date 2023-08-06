@@ -1,0 +1,5 @@
+sklearn
+pandas
+numpy
+spacy
+feather-format
