@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: iondrive
+Version: 0.1.1
+Classifiers: Programming Language :: Rust
+Author: Simon Cozens <simon@simon-cozens.org>
+Author-Email: Simon Cozens <simon@simon-cozens.org>
