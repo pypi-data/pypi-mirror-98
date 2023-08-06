@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: fyle
+Version: 0.4.0
+Summary: Python SDK for accessing Fyle Platform APIs
+Home-page: https://github.com/fylein/fyle-platform-sdk-py
+Author: Siva Narayanan
+Author-email: siva@fyle.in
+License: MIT
+Description: # fyle-platform-sdk-py
+        Python SDK for accessing Fyle Platform APIs
+        
+Keywords: fyle,api,python,sdk
+Platform: UNKNOWN
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
