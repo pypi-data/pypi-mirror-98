@@ -1,0 +1,3 @@
+[console_scripts]
+kal=kal.runner:main
+
