@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: trtokenizer
+Version: 0.0.2
+Summary: Sentence and word tokenizers for the Turkish language
+Home-page: https://github.com/apdullahyayik/TrTokenizer
+Author: Apdullah YAYIK
+Author-email: apdullahyayik@gmail.com
+License: MIT
+Download-URL: https://github.com/apdullahyayik/TrTokenizer/archive/v0.0.2.tar.gz
+Description: # TrTokenizer 🇹🇷
+        
+        [![Python](https://img.shields.io/pypi/pyversions/tensorflow.svg?style=plastic)](https://badge.fury.io/py/trtokenizer)
+        [![PyPI](https://badge.fury.io/py/tensorflow.svg)](https://badge.fury.io/py/trtokenizer)
+        
+        TrTokenizer is a complete solution for Turkish sentence and word tokenization with extensively-covering language
+        conventions. If you think that Natural language models always need robust, fast, and accurate tokenizers, be sure that you are at the
+        the right place now. Sentence tokenization approach uses non-prefix keyword given in 'tr_non_suffixes' file. This file can be expanded if
+        required, for developer convenience lines start with # symbol are evaluated as comments.
+        Designed regular expressions are pre-compiled to speed-up the performance.
+        
+        ## Install
+        
+        ```sh
+        pip install trtokenizer
+        ```
+        
+        ## Usage
+        
+        ```sh
+        from TrTokenizer import SentenceTokenize, WordTokenize
+        
+        sentence_tokenizer_object = SentenceTokenize()  # during object creation regexes are compiled only at once
+        
+        sentence_tokenizer_object.tokenize(<given paragraph as string>)
+        
+        word_tokenizer_object = WordTokenize()  # # during object creation regexes are compiled only at once
+        
+        word_tokenizer_object.tokenize(<given sentence as string>)
+        
+        ```
+        
+        ## To-do
+        
+        - Usage examples (Done)
+        - Cython C-API for performance (Done, build/tr_tokenizer.c)
+        - Release platform specific shared dynamic libraries (Done, build/tr_tokenizer.cpython-38-x86_64-linux-gnu.so, only for
+          Debian Linux with gcc compiler)
+        - Limitations
+        - Prepare a simple guide for contribution
+        
+        ## Resources
+        
+        * [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/)
+        * [Bogazici University CMPE-561](https://www.cmpe.boun.edu.tr/tr/courses/cmpe561)
+Keywords: sentence tokenizer,word tokenizer,Turkish language,natural language processing
+Platform: UNKNOWN
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
