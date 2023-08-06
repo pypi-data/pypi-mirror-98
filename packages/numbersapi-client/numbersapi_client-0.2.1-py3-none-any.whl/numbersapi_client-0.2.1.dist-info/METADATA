@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: numbersapi-client
+Version: 0.2.1
+Summary: 
+Author: Slyfest
+Author-email: mellowstripe@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.25.1,<3.0.0)
