@@ -1,0 +1,3 @@
+[console_scripts]
+taskplan = lightbook.tool.task:show
+
