@@ -1,0 +1,11 @@
+README.md
+setup.py
+emailable/__init__.py
+emailable/client.py
+emailable/error.py
+emailable/response.py
+emailable.egg-info/PKG-INFO
+emailable.egg-info/SOURCES.txt
+emailable.egg-info/dependency_links.txt
+emailable.egg-info/requires.txt
+emailable.egg-info/top_level.txt
