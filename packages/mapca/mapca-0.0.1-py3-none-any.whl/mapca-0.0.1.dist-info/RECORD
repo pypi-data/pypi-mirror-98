@@ -1,0 +1,16 @@
+mapca/__init__.py,sha256=noaS6EodEDd-rd459caI1HY7N6EW-FPYKQbe7rWA6-w,434
+mapca/_version.py,sha256=vp1MKkfHGhyl8t-agFS--sf5Cqo2HPAgZ9i2TftngDs,497
+mapca/due.py,sha256=bxB4ja_RYBLAeq5Evvi_En7sHvWcC24m7SvzsIbkcTQ,1795
+mapca/info.py,sha256=1x8yw15cxeAq1wuntftg9uuC07e9oD3xJ_lNnUoY4T4,2970
+mapca/mapca.py,sha256=MK30YgsUn4TPPChsiE7w9Q5VnorSehXyeNu8lmu2cUc,17561
+mapca/utils.py,sha256=dG-JXdbVFN9yieORW6-dVZQw4WMx_qsyrQheQmlL-0E,8696
+mapca/tests/__init__.py,sha256=i7l4_s02mUSfieL9eHkqJ7VsNc-ie4hEv9LnZbvrsYI,123
+mapca/tests/conftest.py,sha256=onJiQYfKAJWndB08nKQrXMMNXmlHKUi2Ktg1ONUVDxk,1805
+mapca/tests/test_integration.py,sha256=qv1bqy2ZWlY4d42Gp0O3isxZ-6nAmm0HZfFxz92spJs,960
+mapca/tests/test_mapca.py,sha256=2Y4MmQMDelMqWF7b8wCIu3Fn0q3HKUXO-kKsB5lru04,2962
+mapca/tests/test_utils.py,sha256=QAi_Xwc97g_h0sWh3myNtlh5NQA7eFhp1bSUug6JOWI,3466
+mapca-0.0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+mapca-0.0.1.dist-info/METADATA,sha256=U2bvFr5VRvDf3ZTRL-uDogzyXaZSE7W-io8rysraEsw,4055
+mapca-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mapca-0.0.1.dist-info/top_level.txt,sha256=LuJxBORQPJxlThvTPHf-4JPik9MHj-UQqsJdK6b60EY,6
+mapca-0.0.1.dist-info/RECORD,,
