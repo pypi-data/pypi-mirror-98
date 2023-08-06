@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+os2mo_sd_connector.egg-info/PKG-INFO
+os2mo_sd_connector.egg-info/SOURCES.txt
+os2mo_sd_connector.egg-info/dependency_links.txt
+os2mo_sd_connector.egg-info/requires.txt
+os2mo_sd_connector.egg-info/top_level.txt
+sd_connector/__init__.py
+sd_connector/sd_connector.py
