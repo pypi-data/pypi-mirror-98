@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: msprites
+Version: 1.0.0
+Summary: Create thumbnail spritesheet from mp4 media files
+Home-page: https://github.com/baloda/msprites
+Author: Dharmveer Baloda
+Author-email: dharmvrbaloda836@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/baloda/msprites/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# msprites, media thumbnail sprites, multipule thumnails spirtes
+
+# Requirements:
+
+    1. FFmpeg
+    2. ImageMagick Montage
+
+# Steps:
+    1. Extract images using ffmpeg. You can configure size of image and image rate per second(ips)
+    2. Convert Image in spirtesheet of grid ROWSxCOLS
+    3. Create a webvtt file of spritesheet images
+
+It uses temp folder for storage. for persistence storage move these different folder or location.
+

@@ -1,0 +1,13 @@
+msprites/__init__.py,sha256=hRmiueZfzN_jKtFMFee2Tf4NZoZ24zlCf-3DnSYo2Mg,181
+msprites/command.py,sha256=I78WKB_QuSTXE1USLj32gMpCzt7lvPJzYJdJCjDcSfM,518
+msprites/constants.py,sha256=x-Ctwn8vo-l2zRgi5NK1C87tIya1ou496m1G46Z-NA8,357
+msprites/ffmpeg_thumbnails.py,sha256=DeWPhwGEebDYUXSrt2XAt7RQaoCfWS7XliUTQ2de2hI,984
+msprites/montage_sprites.py,sha256=o1Ve3hrU_ym75urwXAAiPgIKBOoZKO2kS08i0R6d3N8,1670
+msprites/settings.py,sha256=PoxtOWFeejkUpCH1-d4SMnGB12oWX2RfYP-K5s2Bk18,644
+msprites/temp_file.py,sha256=YC7ufFNCTYMzw6_MFBU2FR6JggUD-ONqwMjO4G73Tiw,122
+msprites/webvtt.py,sha256=UEjJGLYkTUC8d3d87DLyoZ6KLtizIkOxUr_ObHNFZrU,2087
+msprites-1.0.0.dist-info/LICENSE,sha256=_xuMWXpLmJzFAJNl1GffUijgKQYNRlV_dMg9DVVFXpY,1073
+msprites-1.0.0.dist-info/METADATA,sha256=0luoP0kSFsUTTNAWbaU_z3tucW3j5w6K_1-_qvAe3N8,973
+msprites-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+msprites-1.0.0.dist-info/top_level.txt,sha256=9fBlmG7zlVVNtfppPMxENLOegSW6HCISO1XnaBpVz1A,9
+msprites-1.0.0.dist-info/RECORD,,
