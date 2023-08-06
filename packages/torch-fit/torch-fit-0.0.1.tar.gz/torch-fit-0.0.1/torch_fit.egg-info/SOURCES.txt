@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+test/test_torch_fit.py
+torch_fit/__init__.py
+torch_fit.egg-info/PKG-INFO
+torch_fit.egg-info/SOURCES.txt
+torch_fit.egg-info/dependency_links.txt
+torch_fit.egg-info/requires.txt
+torch_fit.egg-info/top_level.txt
