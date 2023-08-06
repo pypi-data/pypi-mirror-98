@@ -1,0 +1,2 @@
+django<=2.0.13,>=1.10
+django-celery>=3
