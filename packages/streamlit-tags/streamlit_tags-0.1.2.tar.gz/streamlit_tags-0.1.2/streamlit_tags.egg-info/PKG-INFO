@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit-tags
+Version: 0.1.2
+Summary: Tags custom component for Streamlit
+Home-page: https://github.com/gagan3012/streamlit-tags
+Author: Gagan Bhatia
+Author-email: gbhatia880@gmail.com
+License: UNKNOWN
+Description: # streamlit-tags
+        
+        This is a custom Component for Streamlit which supports Keyword entry and tags 
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
