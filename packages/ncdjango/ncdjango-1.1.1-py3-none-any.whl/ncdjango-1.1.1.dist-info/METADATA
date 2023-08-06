@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ncdjango
+Version: 1.1.1
+Summary: A map server for NetCDF data
+Home-page: https://github.com/consbio/ncdjango
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Keywords: netcdf,django,map server
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: Django (==2.2.*)
+Requires-Dist: Pillow (>=7.2.0)
+Requires-Dist: Shapely (>=1.7.0)
+Requires-Dist: django-tastypie (==0.14.*)
+Requires-Dist: netCDF4 (>=1.5.3)
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: pyproj (>=1.9.4)
+Requires-Dist: fiona
+Requires-Dist: trefoil
+Requires-Dist: ply (>=3.11)
+Requires-Dist: celery (>=4.4.6)
+Requires-Dist: djangorestframework
+Requires-Dist: pytest-django
+
+UNKNOWN
+
+
