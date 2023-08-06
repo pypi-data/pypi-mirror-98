@@ -1,0 +1,8 @@
+boto3
+click
+fastapi
+owlready2
+pydantic
+rdflib
+requests
+uvicorn
