@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: My_face_recognize_ID_Sakura
+Version: 0.1.0
+Summary: A small example package to detect face
+Home-page: https://blog.csdn.net/Sakura_day?spm=1004.2022.3001.5343
+Author: Sakura
+Author-email: author@example.com
+License: UNKNOWN
+Description: ## 一个人脸检测模型，可以支持戴口罩检测
+        
+        - 如果输入的图片是不同的人，可以输出一组对比图和距离
+        
+        <img src="Readme.assets/image-20210316163620271.png" alt="image-20210316163620271" style="zoom:50%;" />
+        
+        <img src="Readme.assets/image-20210316163631048.png" alt="image-20210316163631048" style="zoom:50%;" />
+        
+        使用方法：
+        
+        ```python
+        from function import compare
+        
+        save_path = './'
+        img1_path = './photo/Michael_Douglas_0001.jpg'
+        img2_path = './photo/George_W_Bush_0003.jpg'
+        compare(img1_path, img2_path, save_path,mask=False)
+        # 具体名称等上传之后再说
+        # 能不能上传这也是个问题
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

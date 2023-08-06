@@ -1,0 +1,12 @@
+setup.py
+My_face_recognize_ID_Sakura.egg-info/PKG-INFO
+My_face_recognize_ID_Sakura.egg-info/SOURCES.txt
+My_face_recognize_ID_Sakura.egg-info/dependency_links.txt
+My_face_recognize_ID_Sakura.egg-info/top_level.txt
+face_dect/__init__.py
+face_dect/config_mask.py
+face_dect/config_notmask.py
+face_dect/example_face_dect.py
+face_dect/setup.py
+face_dect/test.py
+face_dect/Models/CBAM_Face_attention_Resnet_notmaskV3.py
