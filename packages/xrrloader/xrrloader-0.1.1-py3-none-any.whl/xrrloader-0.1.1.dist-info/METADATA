@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xrrloader
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Alessandro Greco
+Author-email: alessandro.greco@uni-tuebingen.de
+License: GPL3
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: setuptools (~=39.0.1)
+Requires-Dist: numpy (~=1.19.5)
+Requires-Dist: pandas (~=1.1.5)
+Requires-Dist: scipy (~=1.5.4)
+Requires-Dist: matplotlib (~=3.3.4)
+
+UNKNOWN
+
+
