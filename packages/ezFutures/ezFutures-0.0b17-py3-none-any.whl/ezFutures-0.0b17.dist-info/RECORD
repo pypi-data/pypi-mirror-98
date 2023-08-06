@@ -1,0 +1,11 @@
+ezFutures/__init__.py,sha256=iIkjHnTwCLwH4rCUCcxLX5zv7K3Oi2tzMjI6hnugBSI,88
+ezFutures/ezFutures.py,sha256=rs45rLI17sYnzrS9FAER-SYDEZPurGP9aozvbx2lzbA,1418
+ezFutures/utils.py,sha256=Rww9kGuDHGqwxtQCTSv-HPtdZpWBTHMcKGcvjZ4poZU,1624
+ezFutures/core/__init__.py,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+ezFutures/core/concurrent_futures_process_pool.py,sha256=5SopDVN4cExQxRNM0-S3lkWKpf441oy3TxVjKcooBCY,1071
+ezFutures/core/managed_processes.py,sha256=qLmfYLlCC44OIcdPGLfelji-ta8auqFKTv7pqw0k6-c,10865
+ezFutures-0.0b17.dist-info/LICENSE,sha256=FajbrqKapEJsB_cdljQa4DMPDU0Sk8KzHFPLJ29LFVg,1514
+ezFutures-0.0b17.dist-info/METADATA,sha256=7ftnaQSwZXaROTa7OF7BDtu4BVA2P4M2SWYTuU-uxVw,2128
+ezFutures-0.0b17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ezFutures-0.0b17.dist-info/top_level.txt,sha256=aYY6y4RR5PKsrRusnp_jsrHBZAhfAF2yxxXWDj3H87U,10
+ezFutures-0.0b17.dist-info/RECORD,,
