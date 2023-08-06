@@ -1,0 +1,2 @@
+httpx==0.*,>=0.16.0
+beautifulsoup4
