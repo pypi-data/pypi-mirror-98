@@ -1,0 +1,12 @@
+LICENSE,sha256=Hm0-dEby0JzGRveYCOZ4wKCkXDojUjgfpY_8aCOp-Gg,1070
+mcanitexgen/__init__.py,sha256=Lgt8cvIpQGraI9mPDSoIDK8lw1YZsch1CepSErqK2xs,136
+mcanitexgen/__main__.py,sha256=w5O20wX_VM_vyHJw4lixFjSCa9qVIiH6_VUfF3QQztw,3425
+mcanitexgen/generator.py,sha256=ld0kvgcIUZqe2eI1Xh-s79E7GsUHp_DvieCJGbc82Ic,8563
+mcanitexgen/images2gif.py,sha256=dOSL54pAgnbsoIUHGJY2LLDui5Y5cas99nAkY0zCYyc,36590
+mcanitexgen/parser.py,sha256=fzpEtuHmS_dk8DTI0OtoEjUXlTYHiM6BLBijmdgJnlw,5714
+mcanitexgen/utils.py,sha256=8z_wQyXMHHEcMQD2VsYuaQCddcYJbeSKOpNjACTwCP8,1636
+mcanitexgen-1.0.3.dist-info/entry_points.txt,sha256=Om6TIXDDQYZYR1d6TzUNpGvXK8DFjbcOcX5yIJYKzzA,56
+mcanitexgen-1.0.3.dist-info/LICENSE,sha256=Hm0-dEby0JzGRveYCOZ4wKCkXDojUjgfpY_8aCOp-Gg,1070
+mcanitexgen-1.0.3.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mcanitexgen-1.0.3.dist-info/METADATA,sha256=VltmRivWieNaL0JbnWa2yfODqqdwOLEZ6eCMJl3FDpY,4287
+mcanitexgen-1.0.3.dist-info/RECORD,,
