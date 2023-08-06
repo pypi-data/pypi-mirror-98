@@ -1,0 +1,13 @@
+*bak
+*~
+*.yaml
+*.pyc
+__pychache__
+*files.txt
+
+/PDKMaster.egg-info
+/build
+/dist
+
+.ipynb_checkpoints
+.vscode
