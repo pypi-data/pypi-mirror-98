@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+src/mcgo/__init__.py
+src/mcgo.egg-info/PKG-INFO
+src/mcgo.egg-info/SOURCES.txt
+src/mcgo.egg-info/dependency_links.txt
+src/mcgo.egg-info/top_level.txt
+src/mcgo/gost/__init__.py
