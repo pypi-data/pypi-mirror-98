@@ -1,0 +1,9 @@
+d8s-hypothesis
+d8s-timezones
+hypothesis
+maya
+parsedatetime
+python-dateutil
+
+[:python_version < "3.8"]
+importlib-metadata
