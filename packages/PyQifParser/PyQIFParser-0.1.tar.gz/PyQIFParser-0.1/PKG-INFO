@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: PyQIFParser
+Version: 0.1
+Summary: A(nother) Python-based Parser for Quicken / Lexware Finance Manager QIF files.
+Home-page: https://github.com/hhessel/PyQIF-Parser
+Author: Uwe Ziegenhagen / Packaged by Henrik Hessel
+Author-email: hhessel@web.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
