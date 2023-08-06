@@ -1,0 +1,4 @@
+mutagen>=1.40
+
+[MusicBrainz]
+musicbrainzngs>=0.6
