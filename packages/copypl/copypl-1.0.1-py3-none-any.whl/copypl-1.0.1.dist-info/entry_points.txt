@@ -1,0 +1,3 @@
+[console_scripts]
+copypl = copypl.copypl:main
+
