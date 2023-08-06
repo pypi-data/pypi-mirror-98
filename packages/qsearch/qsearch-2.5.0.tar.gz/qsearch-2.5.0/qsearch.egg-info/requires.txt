@@ -1,0 +1,6 @@
+numpy>=1.16.5
+qsrs<2.0.0,>=1.4.0
+scipy
+
+[cma]
+cma
