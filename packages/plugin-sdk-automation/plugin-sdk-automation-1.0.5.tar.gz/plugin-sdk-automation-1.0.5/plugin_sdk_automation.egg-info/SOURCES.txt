@@ -1,0 +1,10 @@
+README.md
+setup.py
+plugin_sdk_automation/__init__.py
+plugin_sdk_automation/main.py
+plugin_sdk_automation.egg-info/PKG-INFO
+plugin_sdk_automation.egg-info/SOURCES.txt
+plugin_sdk_automation.egg-info/dependency_links.txt
+plugin_sdk_automation.egg-info/entry_points.txt
+plugin_sdk_automation.egg-info/requires.txt
+plugin_sdk_automation.egg-info/top_level.txt
