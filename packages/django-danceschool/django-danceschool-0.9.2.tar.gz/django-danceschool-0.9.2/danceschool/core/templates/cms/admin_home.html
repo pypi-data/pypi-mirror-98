@@ -1,0 +1,11 @@
+{% extends "cms/site_base.html" %}
+{% load sekizai_tags static %}
+
+{% block extra_head %}
+	{% addtoblock "meta" %}
+		<meta name="robots" content="noindex, nofollow">
+	{% endaddtoblock %}
+
+{% endblock %}
+
+{% block navbar %}{% endblock %}

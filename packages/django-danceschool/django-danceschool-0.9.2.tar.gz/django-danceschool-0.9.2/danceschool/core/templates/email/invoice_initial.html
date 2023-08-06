@@ -1,0 +1,29 @@
+{% if firstName %}Hi {{ firstName }},{% else %}Hello,{% endif %}
+
+{% if invoicePaid %}Thank you for your payment to {{ businessName }}.
+{% else %}This is a reminder regarding your invoice to {{ businessName }}.{% endif %}
+
+Invoice items:
+{% for item in itemList %}
+{% if item.eventRegistration %}{{ item.eventRegistration.event.title}}, begins {{ item.eventRegistration.event.start|date:"l, F jS, g:i A" }}{% else %}{{ item.description }}{% endif %}{% endfor %}
+
+Payment details:
+{% if thisPaymentAmount %}
+This Payment Amount: {{ currencySymbol }}{{ thisPaymentAmount|floatformat:2 }}
+{% endif %}
+Invoice ID: #{{ id }}
+Creation Date: {{ creationDate|date:"F jS, g:i A" }}
+Status: {{ status }}
+Total, Net of Discounts: {{ currencySymbol }}{{ total|floatformat:2 }}{% if taxes %}
+Taxes: {{ currencySymbol }}{{ taxes|floatformat:2 }}{% endif %}{% if adjustments %}
+Adjustments/Refunds: {{ currencySymbol }}{{ adjustments|floatformat:2 }}{% endif %}
+
+Amount Paid {{ currencySymbol }}{{ amountPaid|floatformat:2 }}
+Outstanding Balance: {{ currencySymbol }}{{ outstandingBalance|floatformat:2 }}
+
+View Full Invoice/Make Payments: {{ url }}
+
+{% if outstandingBalance %}We appreciate your prompt payment of your remaining balance.{% else %}Thanks again!{% endif %}
+
+Sincerely,
+{{ businessName }}
