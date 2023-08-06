@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: openrpa
+Version: 0.3
+Summary: Pixel based automation library testbed
+License: Apache-2.0
+Author: Teppo Koskinen
+Author-email: teppo@robocorp.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: craft-text-detector (>=0.3.3,<0.4.0)
+Requires-Dist: mss (>=6.1.0,<7.0.0)
+Requires-Dist: numpy (>=1.20.1,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.1.48,<5.0.0.0)
+Requires-Dist: pynput (>=1.7.3,<2.0.0)
+Requires-Dist: pytesseract (>=0.3.7,<0.4.0)
+Requires-Dist: regex (>=2020.11.13,<2021.0.0)
+Description-Content-Type: text/markdown
+
+# OpenRPA
+Pixel based automation library
+
+<pre>
+channels:
+  - conda-forge
+  - pytorch
+  - fcakyon
+dependencies:
+  - python=3.7.5
+  - python-mss=6.1.0
+  - numpy=1.20.1
+  - craft-text-detector=0.3.3
+  - tesseract=4.1.1
+  - pytesseract=0.3.7
+  - opencv=4.5.1
+  - regex=2020.11.13
+  - pynput=1.7.1
+  - pyobjc-core=6.2.2
+</pre>
