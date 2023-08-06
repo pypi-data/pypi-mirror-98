@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mipkit
+Version: 1.3.5
+Summary: mipkit
+Home-page: UNKNOWN
+Author: congvm
+Author-email: congvm.it@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: matplotlib
+Requires-Dist: torch
+
+# MIPTools
+
+
+## Introduction
+
+MIPkit - **M**ultimedia And **I**mages **P**rocessing Lab **Kit** is a package of image processing tools.\
+The package contains various functions and classes for quick analysis, processing and visualization.
+
+## Installation
+
+You can install this package using `pip`
+
+```sh
+pip install mipkit
+```
+
+Or, re-compile and setup from source:
+
+```sh
+git clone https://github.com/congvm-it/mipkit.git
+cd mipkit
+python -m setup.py install
+```
+
+## Contribution
+
+If you want to contribute to this package, you can push your code to our repository.
+
+## Contributors
+
+[1] CongVM - congvm.it@gmail.com
+
