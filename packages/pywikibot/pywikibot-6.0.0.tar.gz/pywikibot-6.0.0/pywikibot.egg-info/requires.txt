@@ -1,0 +1,68 @@
+
+[:python_version < "3.6"]
+requests<2.26.0,>=2.20.1
+setuptools!=50.0.0,<50.2.0,>=20.2
+
+[:python_version >= "3.6"]
+requests>=2.20.1
+setuptools>=20.2
+
+[Google]
+google>=1.7
+
+[Tkinter]
+
+[Tkinter:python_version < "3.6"]
+Pillow<8.0.0,>=6.2.2
+
+[Tkinter:python_version >= "3.6" and python_version < "3.9"]
+Pillow>=6.2.2
+
+[Tkinter:python_version >= "3.9"]
+Pillow>=8.0.0
+
+[eventstreams]
+sseclient!=0.0.23,!=0.0.24,>=0.0.18
+
+[flake8]
+flake8>=3.7.5
+pydocstyle>=4.0.0
+hacking
+flake8-bugbear
+flake8-coding
+flake8-colors>=0.1.9
+flake8-comprehensions>=2.2.0
+flake8-docstrings>=1.3.1
+flake8-future-import
+flake8-mock>=0.3
+flake8-print>=2.0.1
+flake8-quotes>=2.0.1
+flake8-string-format
+flake8-tuple>=0.2.8
+flake8-no-u-prefixed-strings>=0.2
+pep8-naming>=0.7
+pyflakes>=2.1.0
+
+[flake8:python_version >= "3.8"]
+flake8-comprehensions>=3.1.4
+
+[html]
+BeautifulSoup4
+
+[http]
+fake_useragent
+
+[isbn]
+python-stdnum>=1.16
+
+[mwoauth]
+mwoauth!=0.3.1,>=0.2.4
+
+[mwparserfromhell]
+mwparserfromhell>=0.3.3
+
+[scripts]
+memento_client!=0.6.0,>=0.5.1
+
+[weblinkchecker.py]
+memento_client!=0.6.0,>=0.5.1

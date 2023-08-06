@@ -1,0 +1,256 @@
+Metadata-Version: 2.1
+Name: pywikibot
+Version: 6.0.0
+Summary: Python MediaWiki Bot Framework
+Home-page: https://www.mediawiki.org/wiki/Manual:Pywikibot
+Maintainer: The Pywikibot team
+Maintainer-email: pywikibot@lists.wikimedia.org
+License: MIT License
+Download-URL: https://pywikibot.toolforge.org/
+Description: .. image:: https://travis-ci.org/wikimedia/pywikibot.svg?branch=master
+           :alt: Travis Build Status
+           :target: https://travis-ci.org/wikimedia/pywikibot
+        .. image:: https://ci.appveyor.com/api/projects/status/xo2g4ctoom8k6yvw/branch/master?svg=true
+           :alt: AppVeyor Build Status
+           :target: https://ci.appveyor.com/project/ladsgroup/pywikibot-g4xqx
+        .. image:: https://codecov.io/gh/wikimedia/pywikibot/branch/master/graph/badge.svg
+           :alt: Code coverage
+           :target: https://codecov.io/gh/wikimedia/pywikibot
+        .. image:: https://api.codeclimate.com/v1/badges/de6ca4c66e7c7bee4156/maintainability
+           :alt: Maintainability
+           :target: https://codeclimate.com/github/wikimedia/pywikibot/maintainability
+        .. image:: https://img.shields.io/pypi/pyversions/pywikibot.svg
+           :alt: Python
+           :target: https://www.python.org/downloads/
+        .. image:: https://img.shields.io/pypi/v/pywikibot.svg
+           :alt: Pywikibot release
+           :target: https://pypi.org/project/pywikibot/
+        .. image:: https://pepy.tech/badge/pywikibot
+           :alt: Total downloads
+           :target: https://pepy.tech/project/pywikibot
+        .. image:: https://static.pepy.tech/personalized-badge/pywikibot?period=month&units=international_system&left_color=black&right_color=blue&left_text=monthly
+           :alt: Monthly downloads
+           :target: https://pepy.tech/project/pywikibot
+        .. image:: https://static.pepy.tech/personalized-badge/pywikibot?period=week&units=international_system&left_color=black&right_color=blue&left_text=weekly
+           :alt: Weekly downloads
+           :target: https://pepy.tech/project/pywikibot
+        
+        Pywikibot
+        =========
+        
+        The Pywikibot framework is a Python library that interfaces with the
+        `MediaWiki API <https://www.mediawiki.org/wiki/API:Main_page>`_
+        version 1.23 or higher.
+        
+        Also included are various general function scripts that can be adapted for
+        different tasks.
+        
+        For further information about the library excluding scripts see
+        the full `code documentation <https://doc.wikimedia.org/pywikibot/>`_.
+        
+        Quick start
+        -----------
+        
+        ::
+        
+            git clone https://gerrit.wikimedia.org/r/pywikibot/core.git
+            cd core
+            git submodule update --init
+            python pwb.py script_name
+        
+        Or to install using PyPI (excluding scripts)
+        ::
+        
+            pip install -U setuptools
+            pip install pywikibot
+        
+        Our `installation
+        guide <https://www.mediawiki.org/wiki/Manual:Pywikibot/Installation>`_
+        has more details for advanced usage.
+        
+        Basic Usage
+        -----------
+        
+        If you wish to write your own script it's very easy to get started:
+        
+        ::
+        
+            import pywikibot
+            site = pywikibot.Site('en', 'wikipedia')  # The site we want to run our bot on
+            page = pywikibot.Page(site, 'Wikipedia:Sandbox')
+            page.text = page.text.replace('foo', 'bar')
+            page.save('Replacing "foo" with "bar"')  # Saves the page
+        
+        Wikibase Usage
+        --------------
+        
+        Wikibase is a flexible knowledge base software that drives Wikidata.
+        A sample pywikibot script for getting data from Wikibase:
+        
+        ::
+        
+            import pywikibot
+            site = pywikibot.Site('wikipedia:en')
+            repo = site.data_repository()  # the wikibase repository for given site
+            page = repo.page_from_repository('Q91')  # create a local page for the given item
+            item = pywikibot.ItemPage(repo, 'Q91')  # a repository item
+            data = item.get()  # get all item data from repository for this item
+        
+        -------------------------------------------------------------------------------------------
+        
+        For more documentation on pywikibot see our `docs <https://doc.wikimedia.org/pywikibot/>`_.
+        
+        The contents of the package
+        ---------------------------
+        
+            +----------------------------------------------------------------------------------+
+            |  Directories                                                                     |
+            +===========================+======================================================+
+            |  pywikibot                | Library routines, control files and global settings  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/comms          | Communication layer                                  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/data           | Module with several layers for data access to wiki   |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/families       | wiki-specific information and settings               |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/page           | Module with classes for MediaWiki page content       |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/site           | Module with classes for MediaWiki sites              |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/specialbots    | Module containing special bots reusable by scripts   |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/tools          | Miscellaneous helper functions (not wiki-dependent)  |
+            +---------------------------+------------------------------------------------------+
+            |  pywikibot/userinterfaces | GUI and terminal interface                           |
+            +---------------------------+------------------------------------------------------+
+        
+        Required external programs
+        ---------------------------
+        
+        It may require the following programs to function properly:
+        
+        * `7za`: To extract 7z files
+        
+        Roadmap
+        -------
+        
+        Current release changes
+        ~~~~~~~~~~~~~~~~~~~~~~~
+        
+        Breaking changes
+        ^^^^^^^^^^^^^^^^
+        
+        * interwiki_graph module was removed (T223826)
+        * Require setuptools >= 20.2 due to PEP 440
+        * Support of MediaWiki < 1.23 has been dropped (T268979)
+        * APISite.loadimageinfo will no longer return any content
+        * Return requests.Response with http.request() instead of plain text (T265206)
+        * config.db_hostname has been renamed to db_hostname_format
+        
+        Code cleanups
+        ^^^^^^^^^^^^^
+        
+        * tools.PY2 was removed (T213287)
+        * Site.language() method was removed in favour of Site.lang property
+        * Deprecated Page.getMovedTarget() method was removed in favour of moved_target()
+        * Remove deprecated Wikibase.lastrevid attribute
+        * config settings of archived scripts were removed (T223826)
+        * Drop startsort/endsort parameter for site.categorymembers method (T74101)
+        * Deprecated data attribute of http.fetch() result has been dropped (T265206)
+        * toStdout parameter of pywikibot.output() has been dropped
+        * Deprecated Site.getToken() and Site.case was removed
+        * Deprecated Family.known_families dict was removed (T89451)
+        * Deprecated DataSite.get_* methods was removed
+        * Deprecated LogEntryFactory.logtypes classproperty was removed
+        * Unused comms.threadedhttp module was removed; threadedhttp.HttpRequest was already replaced with requests.Response (T265206)
+        
+        Other changes
+        ^^^^^^^^^^^^^
+        
+        * Raise a SiteDefinitionError if api request response is Non-JSON and site is AutoFamily (T272911)
+        * Support deleting and undeleting specific file versions (T276725)
+        * Only add bot option generator if the bot class have it already
+        * Raise a RuntimeError if pagegenerators -namespace option is provided too late (T276916)
+        * Check for LookupError exception in http._decide_encoding (T276715)
+        * Re-enable setting private family files (T270949)
+        * Move the hardcoded namespace identifiers to an IntEnum
+        * Buffer 'pageprops' in api.QueryGenerator
+        * Ensure that BaseBot.generator is a Generator
+        * Add additional info into log if 'messagecode' is missing during login (T261061, T269503)
+        * Use hardcoded messages if i18n system is not available (T275981)
+        * Move wikibase data structures to page/_collections.py
+        * L10N updates
+        * Add support for altwiki (T271984)
+        * Add support for mniwiki and mniwiktionary (T273467, T273462)
+        * Don't use mime parameter as boolean in api.Request (T274723)
+        * textlib.removeDisabledPart is able to remove templates (T274138)
+        * Create a SiteLink with __getitem__ method and implement lazy load (T273386, T245809, T238471, T226157)
+        * Fix date.formats['MonthName'] behaviour  (T273573)
+        * Implement pagegenerators.handle_args() to process all options at once
+        * Add enabled_options, disabled_options to GeneratorFactory (T271320)
+        * Move interwiki() interwiki_prefix() and local_interwiki() methods from BaseSite to APISite
+        * Add requests.Response.headers to log when an API error occurs (T272325)
+        
+        Future release notes
+        ~~~~~~~~~~~~~~~~~~~~
+        
+        * 6.0.0: User.name() method will be removed in favour of User.username property
+        * 5.6.0: pagenenerators.handleArg() method will be removed in favour of handle_arg() (T271437)
+        * 5.5.0: Site.getuserinfo() method will be dropped in favour of userinfo property
+        * 5.5.0: Site.getglobaluserinfo() method will be dropped in favour of globaluserinfo property
+        * 5.0.0: OptionHandler.options dict will be removed in favour of OptionHandler.opt
+        * 5.0.0: Methods deprecated for 5 years or longer will be removed
+        * 5.0.0: pagegenerators.ReferringPageGenerator is desupported and will be removed
+        
+        Release history
+        ---------------
+        
+        See https://github.com/wikimedia/pywikibot/blob/stable/HISTORY.rst
+        
+        Contributing
+        ------------
+        
+        Our code is maintained on Wikimedia's `Gerrit installation <https://gerrit.wikimedia.org/>`_,
+        `learn <https://www.mediawiki.org/wiki/Developer_account>`_ how to get
+        started.
+        
+        Code of Conduct
+        ---------------
+        
+        The development of this software is covered by a `Code of Conduct <https://www.mediawiki.org/wiki/Code_of_Conduct>`_.
+        
+        
+Keywords: API,bot,client,framework,mediawiki,pwb,pybot,python,pywiki,pywikibase,pywikibot,pywikipedia,pywikipediabot,wiki,wikibase,wikidata,wikimedia,wikipedia
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Wiki
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5.0
+Provides-Extra: eventstreams
+Provides-Extra: isbn
+Provides-Extra: Google
+Provides-Extra: mwparserfromhell
+Provides-Extra: Tkinter
+Provides-Extra: mwoauth
+Provides-Extra: html
+Provides-Extra: http
+Provides-Extra: flake8
+Provides-Extra: weblinkchecker.py
+Provides-Extra: scripts
