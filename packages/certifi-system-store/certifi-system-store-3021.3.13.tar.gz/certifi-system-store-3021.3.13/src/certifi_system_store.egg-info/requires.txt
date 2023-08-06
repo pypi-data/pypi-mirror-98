@@ -1,0 +1,17 @@
+
+[:sys_platform == "win32" or sys_platform == "darwin"]
+certifi-system-store>4000
+
+[lint]
+black
+flake8
+check-manifest
+
+[packaging]
+check-manifest
+
+[requests]
+requests
+
+[tests]
+pytest
