@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: dnsbl
+Version: 0.0.5
+Summary: Module that checks the given ips blacklisting status
+Home-page: UNKNOWN
+Author: Aswin venkat
+Author-email: aswin.venkat@cybersecurityworks.com
+License: MIT
+Description: This module is used to check an ip's blacklisting status.
+        
+        CHANGE LOG
+        ==========
+        0.0.1 (10/03/2021)
+        ------------------
+        - First Release
+        
+        0.0.2 (10/03/2021)
+        ------------------
+        - Changed dns python modules query ( it causes error in some machines )
+        
+        0.0.3 (10/03/2021)
+        ------------------
+        - Included some dependencies ( it will automatically install needed plugins )
+        
+        0.0.4 (12/03/2021)
+        ------------------
+        - Added a new field in output that will return some information about the blacklisted IP. 
+        
+        0.0.5 (16/03/2021)
+        ------------------
+        - Bug fix. 
+Keywords: dnsbl
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
