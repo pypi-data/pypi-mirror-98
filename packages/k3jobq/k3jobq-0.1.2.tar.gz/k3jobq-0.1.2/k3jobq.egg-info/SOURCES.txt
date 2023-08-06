@@ -1,0 +1,11 @@
+setup.py
+k3jobq/__init__.py
+k3jobq/jobq.py
+k3jobq/setup.py
+k3jobq/synopsis.py
+k3jobq/works.py
+k3jobq.egg-info/PKG-INFO
+k3jobq.egg-info/SOURCES.txt
+k3jobq.egg-info/dependency_links.txt
+k3jobq.egg-info/requires.txt
+k3jobq.egg-info/top_level.txt
