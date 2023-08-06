@@ -1,0 +1,8 @@
+tox_pdm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tox_pdm/plugin.py,sha256=IN-BpHS2JJvyIYxA0TWpSL8eYlctnr8eS-3FmaZATAs,4726
+tox_pdm/utils.py,sha256=R0i5v4Fsg0tSKN6QkCe_yNbbYA34OnVx3NYCgEGO7mM,3918
+tox_pdm-0.2.1.dist-info/entry_points.txt,sha256=9ibx9Ut3sOc0BxO-ctk_jHP7V6vkqS8EnohYPSnXv9U,26
+tox_pdm-0.2.1.dist-info/WHEEL,sha256=LggYQU6aPV779NG9Y6_Tr-JnXvIQdtSwI6FiVJK_4hI,83
+tox_pdm-0.2.1.dist-info/METADATA,sha256=uElGPRfeNJzIEV4wKJZGuIDCHF1CTTIsUUw9eZXn96o,3078
+tox_pdm-0.2.1.dist-info/LICENSE,sha256=xB07p9bWsQ-jxvvuvEIS5f0AZLkR_hLvgpF4pQYDvPY,1068
+tox_pdm-0.2.1.dist-info/RECORD,,
