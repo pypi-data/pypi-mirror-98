@@ -1,0 +1,6 @@
+README.md
+setup.py
+calcymath.egg-info/PKG-INFO
+calcymath.egg-info/SOURCES.txt
+calcymath.egg-info/dependency_links.txt
+calcymath.egg-info/top_level.txt

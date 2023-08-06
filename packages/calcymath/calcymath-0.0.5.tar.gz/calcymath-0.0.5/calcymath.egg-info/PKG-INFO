@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: calcymath
+Version: 0.0.5
+Summary: A simple math library
+Home-page: https://github.com/hariprasad1003/calcy-math
+Author: Hari Prasad
+Author-email: hariprasadgurunathan10@gmail.com
+License: MIT
+Description: # calcy-math
+        ## _A Simple Math Library_
+        
+        [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+        
+        ## Installation
+        
+        Install the dependencies and devDependencies and start the server.
+        
+        ```sh
+        cd my_app
+        pip install calcymath
+        ```
+        
+        Importing calcymath
+        
+        ```
+        from calcymath import *
+        ```
+        Running Server
+        ```
+        python app.py
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
