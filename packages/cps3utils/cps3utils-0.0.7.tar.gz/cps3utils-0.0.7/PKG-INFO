@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cps3utils
+Version: 0.0.7
+Summary: Capcom® CP System III ROM hacking utilites
+Home-page: https://github.com/greats3an/cps3utils
+Author: greats3an
+Author-email: greats3an@gmail.com
+License: UNKNOWN
+Description: ## Installation
+        
+            pip install cps3utils
+        
+        You may also install [Gooey](https://github.com/chriskiehl/Gooey) for a GUI interface.
+        
+        ## Usage
+        
+            python -m cps3utils.[convert/crypt] [arguments] [keyword arguments]
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
