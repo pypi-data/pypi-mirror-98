@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+setup.py
+cygwinreg3/__init__.py
+cygwinreg3/constants.py
+cygwinreg3/w32api.py
+cygwinreg3.egg-info/PKG-INFO
+cygwinreg3.egg-info/SOURCES.txt
+cygwinreg3.egg-info/dependency_links.txt
+cygwinreg3.egg-info/top_level.txt
+test/test_cygwinreg3.py
