@@ -1,0 +1,15 @@
+crudgen_django/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+crudgen_django/apps.py,sha256=2bosMYR4Zoh1YHnZWbBw9j7CyIIRy76TymwHXpjea1U,5133
+crudgen_django/console/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crudgen_django/console/generate.py,sha256=07aNZeRqiGXhTquOea8l53BAdBi28vN0XRx1qne1PhU,555
+crudgen_django/endpoints.py,sha256=_zPr9CNI1af3gp2Kze8ZntgvHvmkYV7YSt93eOj8afU,4020
+crudgen_django/fields.py,sha256=rONudDatMeCuA4PvNaZsVqOXRK6pQo6N96MwhXjgSGw,1384
+crudgen_django/hacks/configs.py,sha256=TW3jgG8kNQS4xrMyOHPeSgBLbIGK7ln2tw5MBqn4xzw,1579
+crudgen_django/models.py,sha256=cMRVMjfteTYx7nPVZIbHkmT7ybmsXpJ3aXU4fY8uJ34,1145
+crudgen_django/serializers.py,sha256=cYPeMaN3IbCP1Vccaa_VBmnK_Y1RmeBvK3DCvU1n0Q0,2239
+crudgen_django/services.py,sha256=FmAOZsH9e2PJ9COh6EPXL1aYQkh0fFvd46au01YntVA,7153
+crudgen_django-0.1.5.dist-info/entry_points.txt,sha256=2AAMre1S_da4B91r0UZY0hCevfwQyjx0Itz4c8vo6EQ,65
+crudgen_django-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+crudgen_django-0.1.5.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+crudgen_django-0.1.5.dist-info/METADATA,sha256=bBhZYPghG5Ophi1eNJ-rWv5vMcarz8uqiccGrZHzksI,559
+crudgen_django-0.1.5.dist-info/RECORD,,
