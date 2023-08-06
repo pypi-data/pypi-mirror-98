@@ -1,0 +1,116 @@
+# TrojAI Integration Package
+
+TrojAI provides the troj Python convenience package to allow users to integrate TrojAI adversarial protections and robustness metrics seamlessly into their AI development pipelines.
+
+## How to develop locally
+these commands add the local package to the wheel
+pip install wheel
+python setup.py bdist_wheel
+pip install -e.[dev]      
+
+## Installation
+Run the following to install:
+```python
+pip install troj
+```
+
+## Usage
+
+
+
+```python
+'''
+ImageNet folder style: 
+/train
+----/class1
+----/class2
+...
+/test
+----/class1
+----/class2
+...etc 
+
+CoCo annotation style:
+/images
+----image1.jpg
+----image2.jpg
+...etc
+annotation.json
+
+'''
+
+
+
+import string
+import random
+import troj
+
+
+session = troj.start(...)
+
+PROJECT_ID = 'My Project'
+
+
+if not session.project_exists(PROJECT_ID):
+    print("Creating Project")
+
+    # need to create this function to return labels map
+    label_class_map = session.dataset.getLabelsMap()
+
+    # This associates each class name with an ID and visualization color
+    # label_class_map = troj.LabelClassMap.from_classnames(LABEL_CLASSES)
+
+    # We do not specify `primary_task`
+    # This will save the project ID into client, and when creating a dataset, will call it's own property
+    session.create_project(PROJECT_ID, label_class_map)
+    DATASET_ID = "New Dataset"
+    session.create_dataset(dataset_ID)
+
+if not session.dataset_exists(PROJECT_ID, DATASET_ID):
+    print("Creating Dataset")
+    session.create_dataset(
+        PROJECT_ID,
+        DATASET_ID,
+        dataset=ds, 
+        wait_until_finish=True, # Poll for job completion
+        preview_first_frame=True # Preview frame to confirm that things look as expected
+    )
+
+
+# creates the dataframe inside the session object
+# stored in session.dataset
+session.create_troj_dataset("CIFAR10-Imagenet-Format/test/")
+
+# uses the created dataframe to create a dataloader
+# stored in session.dataloader
+session.create_troj_dataloader()
+
+
+import torch
+from torch.utils.data import DataLoader
+
+batch_size=64
+test_loader = torch.utils.data.DataLoader(session.dataloader,
+                                           batch_size=batch_size,
+                                           shuffle=True)
+
+input_shape = ()
+'''
+At this point the data is loaded in, now we need to set up the model and loss function
+creating the attack target instantiates an attackable object and stores it with the session
+'''
+session.create_attack_target(model, loss, input_shape)
+session.create_attack_target(model, loss, input_size)
+
+session.run_troj_test(test_loader, loss_function)
+
+
+```
+
+## Things we need to upload to aws in test loop
+1. Images
+2. Labels
+3. Embeddings
+4. Inferences
+5. Perturbations
+   
