@@ -1,0 +1,8 @@
+README.md
+az.cli.egg-info/PKG-INFO
+az.cli.egg-info/SOURCES.txt
+az.cli.egg-info/dependency_links.txt
+az.cli.egg-info/requires.txt
+az.cli.egg-info/top_level.txt
+src/az/__init__.py
+src/az/cli.py
