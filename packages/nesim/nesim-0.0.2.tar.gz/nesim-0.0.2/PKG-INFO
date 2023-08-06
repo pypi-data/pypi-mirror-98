@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nesim
+Version: 0.0.2
+Summary: Paquete de python que permite simular de una red de computadoras.
+Home-page: https://github.com/jmorgadov/nesim
+License: MIT
+Author: Jorge Morgado Vega
+Author-email: jorge.morgadov@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/jmorgadov/nesim
+Description-Content-Type: text/markdown
+
+# nesim
+
+Paquete de python diseñado para simular una red de computadoras.
+
+## Instalación
+
+```cmd
+pip install nesim
+```
+
+## Documentación
+
+Para más información visite nuestra [documentación official](https://nesim.readthedocs.io/en/latest/).
+
+## Autores
+
+- Jorge Morgado Vega, [jorge.morgadov@gmail.com](jorge.morgadov@gmail.com)
+- Roberto García Rodríguez, [roberto.garcia@estudiantes.matcom.uh.cu](roberto.garcia@estudiantes.matcom.uh.cu)
+
