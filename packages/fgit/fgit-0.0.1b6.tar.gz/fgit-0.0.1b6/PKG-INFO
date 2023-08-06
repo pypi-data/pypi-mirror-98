@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fgit
+Version: 0.0.1b6
+Summary: FastGit: No longer wait for another git commit
+Home-page: https://github.com/patrick/fgit
+Author: Truong-Phat Nguyen
+Author-email: me@patrickphat.com
+License: UNKNOWN
+Description: # FastGit: No longer wait to git push
+        
+        Why do we have spend too much time on `git add`, `git commit` and `git push` while we can use a single command `fgit push`
+        ![img](static/fgit.gif)
+        
+        ## Installation
+        ```bash
+        pip install fgit
+        ```
+        
+        ## Usage
+        Run this command at git folder and run through its push prompt.
+        ```bash
+        fgit push
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
