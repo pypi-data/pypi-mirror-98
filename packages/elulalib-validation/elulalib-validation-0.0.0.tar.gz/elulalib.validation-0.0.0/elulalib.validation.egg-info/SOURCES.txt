@@ -1,0 +1,5 @@
+setup.py
+elulalib.validation.egg-info/PKG-INFO
+elulalib.validation.egg-info/SOURCES.txt
+elulalib.validation.egg-info/dependency_links.txt
+elulalib.validation.egg-info/top_level.txt
