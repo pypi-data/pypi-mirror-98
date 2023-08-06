@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+nbdev_minimum/__init__.py
+nbdev_minimum/_nbdev.py
+nbdev_minimum/core.py
+nbdev_minimum.egg-info/PKG-INFO
+nbdev_minimum.egg-info/SOURCES.txt
+nbdev_minimum.egg-info/dependency_links.txt
+nbdev_minimum.egg-info/entry_points.txt
+nbdev_minimum.egg-info/not-zip-safe
+nbdev_minimum.egg-info/top_level.txt
