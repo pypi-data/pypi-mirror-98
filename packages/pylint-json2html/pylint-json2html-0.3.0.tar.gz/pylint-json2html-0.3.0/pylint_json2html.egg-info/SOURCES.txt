@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pylint_json2html/__init__.py
+pylint_json2html.egg-info/PKG-INFO
+pylint_json2html.egg-info/SOURCES.txt
+pylint_json2html.egg-info/dependency_links.txt
+pylint_json2html.egg-info/entry_points.txt
+pylint_json2html.egg-info/not-zip-safe
+pylint_json2html.egg-info/requires.txt
+pylint_json2html.egg-info/top_level.txt
+pylint_json2html/templates/report.jinja2

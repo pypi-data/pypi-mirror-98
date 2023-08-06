@@ -1,0 +1,3 @@
+[console_scripts]
+pylint-json2html = pylint_json2html:main
+
