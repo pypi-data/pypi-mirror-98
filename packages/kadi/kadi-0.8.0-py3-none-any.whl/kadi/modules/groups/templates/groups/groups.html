@@ -1,0 +1,57 @@
+{# Copyright 2020 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+{% extends "groups/base.html" %}
+
+{% block content %}
+  <search-form class="mb-4" @search="search"></search-form>
+  <div class="row">
+    <div class="col-xl-4">
+      {% if has_permission(current_user, "create", "group", None) %}
+        <a class="btn btn-primary btn-block mb-4" href="{{ url_for('groups.new_group') }}">
+          <i class="fas fa-plus-square"></i> {% trans %}Create new group{% endtrans %}
+        </a>
+      {% endif %}
+
+      <search-per-page class="mb-4" @search="search"></search-per-page>
+      <search-visibility class="mb-4" label="{% trans %}Hide public groups{% endtrans %}" @search="search">
+      </search-visibility>
+      <div class="card mb-4">
+        <div class="card-body text-muted">
+          <i class="fas fa-question-circle"></i>
+          {% trans trimmed %}
+            Groups can be used to group several users together, allowing for easier access management.
+          {% endtrans %}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-8">
+      <resource-search endpoint="{{ url_for('api.get_groups') }}" ref="search"></resource-search>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script type="application/javascript" nonce="{{ csp_nonce() }}">
+    new Vue({
+      el: '#vm',
+      methods: {
+        search() {
+          this.$refs.search.search();
+        },
+      },
+    });
+  </script>
+{% endblock %}
