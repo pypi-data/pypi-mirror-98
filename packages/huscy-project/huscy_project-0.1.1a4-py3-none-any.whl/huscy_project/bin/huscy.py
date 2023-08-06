@@ -1,0 +1,56 @@
+import os
+import sys
+import argparse
+
+from django.core.management import ManagementUtility
+
+
+CURRENT_PYTHON = sys.version_info[:2]
+REQUIRED_PYTHON = (3, 5)
+
+if CURRENT_PYTHON < REQUIRED_PYTHON:
+    sys.stderr.write('This version requires Python {}.{} or above - you are running {}.{}\n'.format(
+        *(REQUIRED_PYTHON + CURRENT_PYTHON)))
+    exit(1)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    subparsers = parser.add_subparsers(help='commands', dest='command')
+
+    start_parser = subparsers.add_parser('start', help='creates new huscy environment')
+    start_parser.add_argument('project_name', help='django project name')
+
+    args = parser.parse_args()
+    if args.command == 'start':
+        print("start was selected")
+        create_project(project_name=args.project_name)
+
+
+def create_project(project_name):
+    try:
+        __import__(project_name)
+    except ImportError:
+        pass
+    else:
+        sys.exit(f'{project_name} conficts with the name of an existing Python module and cannot'
+                 'be used as a project name. Please try another name.')
+
+    print(f'Creating a huscy project called {project_name}')
+
+    import huscy_project
+    huscy_project_path = os.path.dirname(huscy_project.__file__)
+    template_path = os.path.join(huscy_project_path, 'project_template')
+
+    utility_args = ['django-admin.py',
+                    'startproject',
+                    f'--template={template_path}',
+                    project_name]
+    utility = ManagementUtility(utility_args)
+    utility.execute()
+
+    print(f'Success! {project_name} has been created')
+
+
+if __name__ == "__main__":
+    main()
