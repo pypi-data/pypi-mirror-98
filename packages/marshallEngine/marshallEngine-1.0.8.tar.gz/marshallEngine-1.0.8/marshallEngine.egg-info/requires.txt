@@ -1,0 +1,13 @@
+pyyaml
+marshallEngine
+fundamentals
+astrocalc
+hmpty
+astropy
+matplotlib
+panstamps
+transientNamer
+tornado
+numpy
+gitpython
+atelParser
