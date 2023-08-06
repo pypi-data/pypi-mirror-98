@@ -1,0 +1,9 @@
+socatlord/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socatlord/parse_config.py,sha256=DUizUUxFM-TanBJtmd4VtCtN4hBp1VVrOB1WsVi9pY8,1261
+socatlord/run.py,sha256=yid4MOTcyyUUw2NJNDamOZ6opV49VOKUb13ekv-LJBM,2698
+socatlord/systemd/socatlord.service,sha256=2g9NRnF3NcHlChZCPIl26SjjIoR16D3Djkg87I3i0r0,246
+socatlord-0.17.dist-info/METADATA,sha256=kkmPQp1egEYhhv1B11zuBXQzePxBpGEs2Q7RoeFXQWU,1927
+socatlord-0.17.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+socatlord-0.17.dist-info/entry_points.txt,sha256=4jnJ9iCGgcAcjV6LqfV2jDu6gtA8d1cN_gSbmqvnFoY,49
+socatlord-0.17.dist-info/top_level.txt,sha256=vnUQM1Uaaa4SSL2ldDOFHI_Z_gt8fv-EQg5ojBG7m0Y,10
+socatlord-0.17.dist-info/RECORD,,

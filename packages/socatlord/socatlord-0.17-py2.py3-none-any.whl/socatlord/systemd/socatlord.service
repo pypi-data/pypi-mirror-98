@@ -1,0 +1,13 @@
+[Unit]
+Description=SOCAT manager
+KillMode=process
+Wants=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/socatlord run
+ExecStop=/usr/local/bin/socatlord stop
+StandardOutput=syslog
+
+[Install]
+WantedBy=multi-user.target
