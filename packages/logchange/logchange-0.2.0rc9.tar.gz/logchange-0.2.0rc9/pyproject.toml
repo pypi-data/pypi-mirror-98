@@ -1,0 +1,56 @@
+[tool.poetry]
+name = "logchange"
+version = "0.2.0rc9"
+description = "Keep-a-changelog manager"
+authors = ["Vlad Emelianov <vlad.emelianov.nz@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6.10"
+newversion = "^1.6.0"
+typing-extensions = "^3.7.4"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+isort = "^5.7.0"
+handsdown = "^0.3.9"
+pytest = "^6.2.2"
+flake8 = "^3.8.4"
+pytest-cov = "^2.11.1"
+codecov = "^2.1.11"
+twine = "^3.3.0"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.coverage.report]
+exclude_lines = [
+    "if self.debug:",
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "@overload",
+]
+ignore_errors = true
+omit = [
+    "tests/*",
+]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = [
+    "logchange",
+    "tests",
+]
+src_paths = []
+
+[tool.black]
+line-length = 100
+include = '(logchange|tests)/.*\.pyi?$'
+target-version = [
+    'py36',
+    'py37',
+    'py38',
+]
