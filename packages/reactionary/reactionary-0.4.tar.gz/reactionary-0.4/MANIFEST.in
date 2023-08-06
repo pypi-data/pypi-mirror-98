@@ -1,0 +1,7 @@
+include README.md
+include reactionary/dbs/nog2rxn_v5.gz
+include reactionary/dbs/effective-metacyc-orphan-rxns_2020-07-21
+include test/bsub-24-0-annot.emapper.annotations
+include test/ecoli-24-0-annot.emapper.annotations
+include test/test.emapper.annotations
+include reactionary/dbs/metacyc_pwy_metadata.txt

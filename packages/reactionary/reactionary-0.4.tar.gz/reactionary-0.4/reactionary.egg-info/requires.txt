@@ -1,0 +1,8 @@
+camelot-frs
+biopython
+ete3
+docopt
+schema
+future
+sphinx
+pypandoc

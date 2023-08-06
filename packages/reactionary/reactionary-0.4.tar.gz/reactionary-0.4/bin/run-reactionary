@@ -1,0 +1,243 @@
+#!/usr/bin/env python
+## -*- python -*-
+
+"""Usage:
+  run-reactionary [-d | --debug] fetch-reference-db <new_ref_db_path>
+  run-reactionary [-d | --debug] supplement-reference-db <new_refs_path> <ref_db_path>
+  run-reactionary [-o <output_dir> | --output_dir <output_dir>] [-d | --debug] [-r <rank> | --max_rank <rank>] [-n <max_rxns> | --max_reactions <max_rxns>] <annot_file> <taxon_id> <ref_db_path>
+  run-reactionary -h | --help
+
+Arguments:
+  <annot_file>       Path to EggNOG-Mapper output file.
+
+  <taxon_id>         NCBI Taxonomy DB identifier for organism annotated by EggNOG-Mapper. Should 
+                     be as specific as possible; ideally at the genus, species, or strain level.
+
+  <ref_db_path>      Installation directory path of the downloaded Reactionary reference database
+                     files.
+  
+  <new_ref_db_path>  Desired installation directory path for the Reactionary reference databases.
+
+  <new_refs_path>    Path to file containing user-supplied mappings between EggNOG OGs and 
+                     MetaCyc reaction frame IDs. Tab-delimited file with two columns, the
+                     first column containing an OG ID, and the second containing the reaction 
+                     frame ID (e.g., "2VP2Q@28216<tab>1.2.1.2-RXN").
+
+  <rank>             Used for searching for reactions associated with a given protein family, 
+                     by limiting how "high" in the taxonomic tree we will check for associated 
+                     reactions. As reactions are found from associations higher in the taxonomic
+                     tree, the higher the likelihood of false positives. For well-characterized 
+                     organisms which are well-covered by EggNOG, like /E. coli/, using a low 
+                     rank of "genus" will improve the specificity. For organisms not well-
+                     covered by EggNOG, using a rank of "superkingdom" will improve the 
+                     sensitivity. 
+                     Recognized ranks: "superkingdom", "phylum", "class", "order", "family", "genus"
+
+  <max_rxns>         Some OGs have many associated reactions (e.g., promiscuious enzymatic 
+                     specificity). Predicting all of them can drastically increase the number
+                     of false positivies. This argument allows the user to cap the maximum 
+                     number of reactions that will be predicted. If this number is exceeded,
+                     a "multi-reaction-proteins.txt" file will be emitted, detailing which 
+                     proteins exceeded their reaction limit.
+
+Options:
+  -o <output_dir>, --output_dir <output_dir>  The output directory [default: ./]
+  -r <rank>, --max_rank <rank>                The highest-level taxonomic rank to use for 
+                                              finding associated NOGs [default: superkingdom]
+  -n <max_rxns>, --max_reactions <max_rxns>   The maximum number of reactions to 
+                                              predict from an annotation [default: 10] 
+  -d, --debug                                 Display stack traces upon error.
+  -h, --help                                  Display usage documentation.
+
+"""
+
+from __future__ import print_function
+from docopt import docopt
+from schema import Schema, And, Or, Use, Optional
+import sys, os, pdb, sqlite3, pathlib
+from pathlib import Path
+
+from Bio import Entrez
+from ete3 import NCBITaxa
+
+from camelot_frs.pgdb_loader import load_pgdb
+from camelot_frs.camelot_frs import get_kb, get_frame
+from reactionary import reactionary_lib
+from reactionary.reactionary_lib import fetch_taxa_of_annotation, fetch_taxon_info, load_eggnog_rxn_mapping_file, ncbi_taxon_p
+from reactionary.reactionary import augment_eggnog_annotation, predict_pathways, coerce_taxonid_to_metacyc_taxon_frame, fetch_ref_db, add_refs2ref_db, generate_ReST_report
+
+
+"""
+Example calls:
+
+## The following command only needs to be run once:
+run-reactionary fetch-reference-db /tmp/
+
+## Perform reactome and pathway prediction:
+run-reactionary test/test.emapper.annotations 83333 user@example.com /tmp/
+
+"""
+
+## Command-line arguments:
+arguments = docopt(__doc__, version='run-reactionary 0.4')
+
+
+## Schema for validating command line arguments:
+ranks = ['superkingdom',
+         'phylum',
+         'class',
+         'order',
+         'family',
+         'genus']
+
+
+schema = Schema({'fetch-reference-db': Or(None, Use(str)),
+                 'supplement-reference-db': Or(None, Use(str)),
+                 '<annot_file>': Or(None, And(os.path.exists, error="Invalid annotation file path")),
+                 '<taxon_id>': Or(None,
+                                  And(
+                                      And(Use(int),
+                                          lambda t: ncbi_taxon_p(t),
+                                          error="Ill-formatted NCBI Taxonomy DB ID or ID is not present in local DB."),
+                                      And(Use(int),
+                                          lambda t: t not in [2, 2157, 131567, 1, 2759],
+                                          error="Specified NCBI Taxonomy DB ID rank is too high; should be at the genus level or lower."))),
+                 '<ref_db_path>': Or(None,
+                                     And(
+                                         And(os.path.exists,
+                                             error="Invalid Reactionary reference database directory path"),
+                                         And(lambda p: os.path.exists(p + '/reactionary.db'),
+                                             error="No 'reactionary.db' file found in specified reference database directory."),
+                                         And(lambda p: os.path.exists(p + '/taxa.sqlite'),
+                                             error="No 'taxa.sqlite' file found in specified reference database directory."))),
+                 '<new_ref_db_path>': Or(None, And(os.path.exists, error="Reference DB directory does not exists at <new_ref_db_path>.")),
+                 '<new_refs_path>': Or(None, And(os.path.exists, error="Invalid supplementary OG-reaction association file.")),
+                 Optional('--output_dir'): And(os.path.exists, error="Invalid output directory path."),
+                 Optional('--max_rank'): And(str, lambda rank: rank in ranks, error="Invalid rank specified."),
+                 Optional('--max_reactions'): And(Use(int), lambda n: n >= 1, error="Max reactions must be set to a whole number greater than one."), 
+                 '--help': Or(False, True),
+                 '--debug': Or(False, True)
+})
+
+
+
+
+## Validating command-line arguments:
+try:
+    args = schema.validate(arguments)
+except:
+    e = sys.exc_info()
+    print(e[1])
+    sys.exit(1)
+
+if args['--debug']:
+    print(arguments)
+
+    
+## Get full path to output directory:
+output_dir = os.path.abspath(args['--output_dir'])
+
+ref_db_url = 'https://ndownloader.figshare.com/files/25530035?private_link=14a701663a5bfe1a8ac2'
+taxon_db_url = 'https://ndownloader.figshare.com/files/26437436?private_link=af311e1496aa73ea96c8'
+
+## Fetch the reference DB:
+if args['<new_ref_db_path>']:
+    try:
+        if not os.path.exists(args['<new_ref_db_path>'] + '/reactionary.db' ):
+            print("Fetching Reactionary DB:", file=sys.stderr)
+            fetch_ref_db(ref_db_url, args['<new_ref_db_path>'] + '/reactionary.db' )
+        else:
+            print("Reactionary DB already present.", file=sys.stderr)
+
+        if not os.path.exists(args['<new_ref_db_path>'] + '/taxa.sqlite' ):
+            print("Fetching NCBI Taxonomy DB:", file=sys.stderr)
+            fetch_ref_db(taxon_db_url, args['<new_ref_db_path>'] + '/taxa.sqlite' )
+        else:
+            print("NCBI Taxonomy DB already present.", file=sys.stderr)
+            
+    except:
+        print("Unable to fetch Reactionary DB. Please try again later.", file=sys.stderr)
+        sys.exit(2)
+    sys.exit()
+
+    
+## Attempt to load in the reference databases:
+try:
+    conn = sqlite3.connect(args['<ref_db_path>']+'/reactionary.db')
+    conn.row_factory = sqlite3.Row
+    cursor = conn.cursor()    
+    cursor.execute('select * from nog2rxn where OG = ?', ('COG1086@1',))
+    ##eggnog2rxns = load_eggnog_rxn_mapping_file(args['<ref_db>'])
+except:
+    print("Error trying to connect to the Reactionary reference database.", file=sys.stderr)
+    sys.exit(5)
+
+    
+## Add supplemental entries to the reference DB:
+if args['<new_refs_path>']:
+    try:        
+        add_refs2ref_db(args['<new_refs_path>'], conn)
+    except:
+        print("Unable to add entries to Reactionary DB.", file=sys.stderr)
+        sys.exit(6)
+    sys.exit()
+    
+
+## Attempting to parse NCBI Taxonomy ID
+try:
+    reactionary_lib.taxon_db_path = args['<ref_db_path>'] + '/taxa.sqlite'
+    taxon_id_str = str(args['<taxon_id>'])
+    ncbi_taxon_tuple = fetch_taxon_info([taxon_id_str])[taxon_id_str]
+    
+except:
+    print('Unable to fetch taxon information from the local NCBI Taxonomy DB located at "' \
+          + args['<ref_db_path>'] \
+          + '/taxa.sqlite". Please double-check whether taxon ID is correct.', file=sys.stderr)
+    sys.exit(3)
+
+
+## Attempting to load NCBI Taxonomy IDs from the annotation file:
+if args['--debug']:
+    taxon2tuple = fetch_taxa_of_annotation(args['<annot_file>'])
+else:
+    try:
+        taxon2tuple = fetch_taxa_of_annotation(args['<annot_file>'])
+    except:
+        print("Unable to fetch taxonomy metadata from NCBI for taxon IDs present in the annotation file.", file=sys.stderr)
+        sys.exit(4)
+
+    
+## Attempting to run reactionary:
+
+if args['--debug']:
+    rxn2annot = augment_eggnog_annotation(args['<annot_file>'],
+                                          taxon2tuple,
+                                          ncbi_taxon_tuple,
+                                          conn,
+                                          output_dir,
+                                          max_rxns = args['--max_reactions'],
+                                          enclosing_rank = args['--max_rank'])
+    pwy_pred_results, _ = predict_pathways(args['<annot_file>']+'.reactionary',
+                                                   ncbi_taxon_tuple,
+                                                   output_dir)
+    generate_ReST_report(output_dir, rxn2annot, pwy_pred_results)
+    
+else:
+    try:
+        rxn2annot = augment_eggnog_annotation(args['<annot_file>'],
+                                              taxon2tuple,
+                                              ncbi_taxon_tuple,
+                                              conn,
+                                              output_dir,
+                                              max_rxns = args['--max_reactions'],
+                                              enclosing_rank = args['--max_rank'])
+        pwy_pred_results, _ = predict_pathways(args['<annot_file>']+'.reactionary',
+                                                       ncbi_taxon_tuple,
+                                                       output_dir)
+        generate_ReST_report(output_dir, rxn2annot, pwy_pred_results)
+        
+    except:
+        print("Running Reactionary failed", file=sys.stderr)
+        sys.exit(7)
+    
+

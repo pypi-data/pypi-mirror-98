@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: reactionary
+Version: 0.4
+Summary: Accurately annotate (meta)genomes with MetaCyc reactions.
+Home-page: https://bitbucket.org/tomeraltman/reactionary/
+Author: Tomer Altman
+Author-email: python@me.tomeraltman.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: POSIX
