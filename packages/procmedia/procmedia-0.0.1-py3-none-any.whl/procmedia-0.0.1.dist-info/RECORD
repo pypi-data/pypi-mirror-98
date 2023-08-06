@@ -1,0 +1,10 @@
+procmedia/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+procmedia/detect.py,sha256=hg9KSHBwDVFG2-v9lPTKS8dy4jz0pf1JlGN3uHXf6po,1899
+procmedia/help.py,sha256=l5QuYJhHGot3UUCp3DYK-WN03KXM3DrcY2PL1DUUSuM,170
+procmedia/main.py,sha256=IXkStT_0en46w5Vpio4elLDnPf4joxmxFzbFg8BOANI,456
+procmedia/utils.py,sha256=HzfT8ETh-70dE3TUtCSvnX56piKRhnGWT_ljZ9GqSBw,194
+procmedia-0.0.1.dist-info/LICENSE.md,sha256=auTADzt3nUQ0rhiqbleJX98xTEeXbMGJh_HQKBolgU4,1070
+procmedia-0.0.1.dist-info/METADATA,sha256=EJG-CtN5xlHzkIT0fiEZ7eramyBkjCwW8NaF46Gp6Dg,625
+procmedia-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+procmedia-0.0.1.dist-info/top_level.txt,sha256=j5M0OaCGJFC7htZX9QrcKD9M_1WkFLzajCxPnXuO84g,10
+procmedia-0.0.1.dist-info/RECORD,,
