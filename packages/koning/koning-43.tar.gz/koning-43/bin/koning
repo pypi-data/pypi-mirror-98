@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# OTP-CR-117/19 otp.informationdesk@icc-cpi.int http://pypi.org/project/genocide
+#
+# This file is placed in the Public Domain.
+
+"console"
+
+# imports
+
+from op import cfg
+from op.csl import Console, exec, parse, os
+
+from koning.tbl import tbl
+
+# functions
+
+def main():
+    cfg.wd = os.path.expanduser("~/.koning")
+    parse()
+    h = Console(tbl)
+    if cfg.txt:
+        return h.cmd(cfg.old.txt)
+    h.start()
+    h.init(cfg.mods)
+    h.wait()
+
+# runtime
+
+exec(main)
