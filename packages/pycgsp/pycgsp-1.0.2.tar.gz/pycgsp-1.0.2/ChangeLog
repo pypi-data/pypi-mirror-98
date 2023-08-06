@@ -1,0 +1,26 @@
+CHANGES
+=======
+
+v1.0.2
+------
+
+* Updated documentation for pycsou-gsp
+* Corrected bug that returned combinatorial Laplacian insead of normalized Laplacian
+* Delete pycsou\_gsp directory
+* Updated requirements and PolynomialOperator moved to core Pycsou
+
+v1.0.1
+------
+
+* Refactor module tessellation to graph. Refactor package name to pycgsp
+
+v1.0.0
+------
+
+* Added routines for generating spherical tessellation graphs
+* Updated README.rst
+* New README
+* New README
+* Updated .gitignore
+* Support for graph convolution and differential operators
+* Initial commit
