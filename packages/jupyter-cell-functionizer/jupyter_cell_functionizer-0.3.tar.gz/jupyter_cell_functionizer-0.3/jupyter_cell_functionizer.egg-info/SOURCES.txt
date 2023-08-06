@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+functionizer/__init__.py
+jupyter_cell_functionizer.egg-info/PKG-INFO
+jupyter_cell_functionizer.egg-info/SOURCES.txt
+jupyter_cell_functionizer.egg-info/dependency_links.txt
+jupyter_cell_functionizer.egg-info/top_level.txt
