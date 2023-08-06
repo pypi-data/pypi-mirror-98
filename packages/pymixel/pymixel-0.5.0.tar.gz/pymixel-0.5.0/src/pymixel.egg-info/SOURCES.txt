@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/dynamixel/__init__.py
+src/dynamixel/address_table.py
+src/dynamixel/dynamixel.py
+src/pymixel.egg-info/PKG-INFO
+src/pymixel.egg-info/SOURCES.txt
+src/pymixel.egg-info/dependency_links.txt
+src/pymixel.egg-info/requires.txt
+src/pymixel.egg-info/top_level.txt
