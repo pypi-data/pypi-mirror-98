@@ -1,0 +1,14 @@
+sandpyper/__init__.py,sha256=y4C55HIyzO_TM4gCVQhOk2pW1-fZ-Thz3Rj16-cSSTA,144
+sandpyper/dynamics.py,sha256=yOLQ-U3oVJp2Am4eBHnpImSrVtEnFKd3GG0liqCyMn8,21064
+sandpyper/hotspot.py,sha256=ndVqkpkuIgOAGkavRWupmL1S6Fzan1FmfZdZHu971K4,5458
+sandpyper/labels.py,sha256=tPz6HEIBXVMt_L9g9zLVIIr0zqX6zNIOwIsIRs1qFcA,13755
+sandpyper/outils.py,sha256=6LV1TDbimPetn9Oykpt_28CM00DDWRgqTCjW8SFGe4M,16729
+sandpyper/profile.py,sha256=aCA-1Izwuy8wVUag4oLrfvr1nACY7FehqwteRI__GXI,20259
+sandpyper/space.py,sha256=OQrEWJzYQjhxb7e-TMp-TNBcrXrc1TPHwT4GZbkfsA8,64525
+sandpyper/volumetrics.py,sha256=YaX-wJMmH6nNEn5P2argOmnz4tu4sCJswb8HS6C3yjY,41478
+sandpyper-0.0.5.dist-info/LICENSE,sha256=usLkY2LoZKb3MUPZaKYdbM74W2hgRI76AVlnQZPOKWM,1071
+sandpyper-0.0.5.dist-info/METADATA,sha256=E0ZItnplt551YgAWirKvwhIMebLZLqycoH9kp5pkC5A,12053
+sandpyper-0.0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sandpyper-0.0.5.dist-info/dependency_links.txt,sha256=slb9vTe8vqeWzrr3vWp7iHiG7GSBN1tovwnxAkAQGeI,190
+sandpyper-0.0.5.dist-info/top_level.txt,sha256=wZ9Opa1WONf6QXC4SEH6We5IiGsQVcxqkaUf2yBUG4A,10
+sandpyper-0.0.5.dist-info/RECORD,,
