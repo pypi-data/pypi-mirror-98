@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ct-segnet
+Version: 1.224
+Summary: Automated 3D segmentation powered by 2D convolutional neural networks
+Home-page: https://github.com/aniketkt/CTSegNet
+Author: Aniket Tekawade
+Author-email: atekawade@anl.gov
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
