@@ -1,0 +1,7 @@
+ascii_magic
+climage
+typing
+typing-extensions
+
+[coloredlogs]
+coloredlogs
