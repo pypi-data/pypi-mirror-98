@@ -1,0 +1,14 @@
+mridatapy/__init__.py,sha256=2KBWvHJeUopsCllSqB3LpuLaLQWvTMa_12rYs4NBXUA,186
+mridatapy/data/__init__.py,sha256=UANglDESoRYvWAyCPr3g_psRH72IkSCoK-cCXgUD2kY,209
+mridatapy/data/mridata.py,sha256=prql4hrY872sxJPRZ86kr2HOWHN4RgNIJLLdWkX9RgM,18601
+mridatapy/data/subsample.py,sha256=ZfBi3ICPQf1C2eqetZlY5P6WIWH4OY2j1jW2li8Bzes,13315
+mridatapy/metrics/__init__.py,sha256=cS3Ix9iSnDsErvqkBWGwUlKz57Gw8jGUioWwsXBH9zk,352
+mridatapy/metrics/evaluate.py,sha256=iCiJ577fDT4bla0scuZLMYh5F4zasvW6crn7WFQ8ZPk,4665
+mridatapy/utils/__init__.py,sha256=aWd54C8GnH0AGGcPuCGv8qV3OlbuTfsyALFduJ2G81M,207
+mridatapy/utils/coil_combine.py,sha256=R7zGxeudYplr7gaL3hxmlGb2oLr9aE2AmunlJGm7WVs,1184
+mridatapy/utils/transforms.py,sha256=ZMNU83nkgimuD56x1MikGKFdx6YFhjBVRA2rULzkC3w,1988
+mridataPy-0.0.4.dist-info/LICENSE,sha256=aFg6y5hqTZk3xKWi_lf2NjdIGMElLfBifTNwSfxIVSg,1065
+mridataPy-0.0.4.dist-info/METADATA,sha256=unP6LXW_FdxuvyAENn6ebhEJ0mLruVar6twkIoXQIqc,1223
+mridataPy-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mridataPy-0.0.4.dist-info/top_level.txt,sha256=5JX-RA09AJrUX2GqkBBE7LT-0bhOD02LWAnrK-TrGQw,10
+mridataPy-0.0.4.dist-info/RECORD,,
