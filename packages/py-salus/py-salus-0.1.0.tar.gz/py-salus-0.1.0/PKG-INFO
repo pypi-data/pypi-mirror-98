@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: py-salus
+Version: 0.1.0
+Summary: Python library to integrate with it500 Salus devices
+Home-page: https://github.com/cipacda/py-salus
+Author: cipacda
+Author-email: cipaflorescu@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

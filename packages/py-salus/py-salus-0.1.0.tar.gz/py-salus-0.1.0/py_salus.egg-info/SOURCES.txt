@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+py_salus.egg-info/PKG-INFO
+py_salus.egg-info/SOURCES.txt
+py_salus.egg-info/dependency_links.txt
+py_salus.egg-info/requires.txt
+py_salus.egg-info/top_level.txt
