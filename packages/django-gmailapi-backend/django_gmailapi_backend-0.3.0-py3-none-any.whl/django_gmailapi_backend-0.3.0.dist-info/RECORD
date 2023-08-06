@@ -1,0 +1,10 @@
+gmailapi_backend/__init__.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+gmailapi_backend/mail.py,sha256=h6CIsAd_o2cfHGQiuPj3FUhCwtvq8Wd_Y--anFMXo2E,2491
+gmailapi_backend/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gmailapi_backend/bin/gmail_oauth2.py,sha256=x813pId2F7gSM5cQer0ZWYThEU2z0g850D2z3MQSauc,14231
+django_gmailapi_backend-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_gmailapi_backend-0.3.0.dist-info/METADATA,sha256=QRiOssd0OgEw7RYgoiWwxr2gLiVfPecSdKa4fDDW9GY,2974
+django_gmailapi_backend-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_gmailapi_backend-0.3.0.dist-info/entry_points.txt,sha256=uCw0vQetEKEU0_i9VVo_JPkHbF31s6WuTuWVU7W6UkY,73
+django_gmailapi_backend-0.3.0.dist-info/top_level.txt,sha256=Uu9u-BvhQTALyjWMe-qAos2qjgFKX6vzmJswpZedrks,17
+django_gmailapi_backend-0.3.0.dist-info/RECORD,,
