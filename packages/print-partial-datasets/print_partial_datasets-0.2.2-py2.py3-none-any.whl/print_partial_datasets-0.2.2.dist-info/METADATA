@@ -1,0 +1,124 @@
+Metadata-Version: 2.1
+Name: print-partial-datasets
+Version: 0.2.2
+Summary: Print partial datasets.
+Home-page: https://github.com/Craskermasker/print_partial_datasets
+Author: Evan C Edmond
+Author-email: eedmond@gmail.com
+License: Apache Software License 2.0
+Keywords: print_partial_datasets
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: fslpy
+
+======================
+print_partial_datasets
+======================
+
+
+.. image:: https://img.shields.io/pypi/v/print_partial_datasets.svg
+        :target: https://pypi.python.org/pypi/print_partial_datasets
+
+.. image:: https://gitlab.com/evan.edmond/print_partial_datasets/badges/master/pipeline.svg
+        :target: https://gitlab.com/evan.edmond/print_partial_datasets/-/commits/master
+
+.. image:: https://readthedocs.org/projects/print-partial-datasets/badge/?version=latest
+	:target: https://print-partial-datasets.readthedocs.io/en/latest/?badge=latest
+	:alt: Documentation Status
+
+
+Command-line tool to scan a dataset organised in structured directories and print a table to highlight gaps. This is useful for spotting missing data or broken analyses.
+It relies on the wonderful ``fsl.utils.filetree`` tool from `fslpy <https://git.fmrib.ox.ac.uk/fsl/fslpy>`_. For example::
+
+    Complete datasets
+        participant    session    raw_T1    raw_bold    raw_fmap_mag    raw_fmap_ph
+    ───────────────────────────────────────────────────────────────────────────────
+                01         01         x           x               x              x
+    ───────────────────────────────────────────────────────────────────────────────
+                01         02         x           x               x              x
+    ───────────────────────────────────────────────────────────────────────────────
+    Partial datasets
+        participant    session    raw_T1    raw_bold    raw_fmap_mag    raw_fmap_ph
+    ───────────────────────────────────────────────────────────────────────────────
+                04         02                     x               x              x
+    ───────────────────────────────────────────────────────────────────────────────
+                07         02         x                           x              x
+    ───────────────────────────────────────────────────────────────────────────────
+                10         02         x                           x              x
+    ───────────────────────────────────────────────────────────────────────────────
+
+Installation
+------------
+
+``pip install print-partial-datasets``
+
+Usage
+-----
+
+Specify your own file tree in a text file as shown in the `fsl.utils.filetree` `documentation <https://users.fmrib.ox.ac.uk/~paulmc/fsleyes/fslpy/latest/fsl.utils.filetree.html>`_. This can be as simple as the example below. If your dataset is already organised in a structure such as `BIDS <https://bids.neuroimaging.io/>`_, you may be able to use one of the preset trees::
+
+  sub-{participant}
+    ses-{session}
+      anat (anat_dir)
+        sub-{participant}_ses-{session}_T1w.nii.gz (anat_image)
+        sub-{participant}_ses-{session}_T1w_brain.nii.gz (brain_extracted)
+      dwi (dwi_dir)
+        sub-{participant}_ses-{session}_dwi.nii.gz (dwi_image)
+
+You can either call the script from the command line, or programmatically from a python console or script.
+
+Command line
+------------
+
+``print_partial_datasets -d  /data/directory -f /path/to/file.tree -s anat_image brain_extracted dwi_image -v participant session``
+
+
+Python
+------
+Example python usage::
+
+    from print_partial_datasets import print_partial_datasets
+
+    datadir = "/data/directory"
+    filetree = "/path/to/file.tree"
+    short_name = ["anat_image", "brain_extracted", "dwi_image"]
+    variables = ["participant", "session"]
+
+    print_partial_datasets(datadir, filetree, short_name, variables)
+
+This should produce a nice printed summary of your data, with complete datasets followed by partial ones.
+
+* Free software: Apache Software License 2.0
+* Documentation: https://print-partial-datasets.readthedocs.io.
+
+
+Credits
+-------
+
+This is little more than a user-friendly wrapper around code written by Michiel Cottaar and Paul McCarthy.
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2021-03-17)
+------------------
+
+* First release on PyPI.
+
+

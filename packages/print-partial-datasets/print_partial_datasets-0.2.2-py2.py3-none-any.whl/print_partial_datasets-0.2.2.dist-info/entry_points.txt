@@ -1,0 +1,3 @@
+[console_scripts]
+print_partial_datasets = print_partial_datasets.cli:main
+
