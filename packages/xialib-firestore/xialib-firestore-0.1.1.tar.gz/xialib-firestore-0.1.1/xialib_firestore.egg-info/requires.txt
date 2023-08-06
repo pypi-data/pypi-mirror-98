@@ -1,0 +1,3 @@
+xialib
+google-auth
+google-cloud-firestore

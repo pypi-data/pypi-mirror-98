@@ -1,0 +1,10 @@
+README.md
+setup.py
+xialib_firestore/__init__.py
+xialib_firestore/firestore_ager.py
+xialib_firestore/firestore_depositor.py
+xialib_firestore.egg-info/PKG-INFO
+xialib_firestore.egg-info/SOURCES.txt
+xialib_firestore.egg-info/dependency_links.txt
+xialib_firestore.egg-info/requires.txt
+xialib_firestore.egg-info/top_level.txt
