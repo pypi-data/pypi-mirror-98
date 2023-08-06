@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: bftc
+Version: 1.0.1
+Summary: Simple Brainfuck to C transpiler
+Home-page: https://github.com/ilhomidin/bftc
+Author: Ilxomidin Bakhoraliev
+Author-email: itilhomidin@yandex.com

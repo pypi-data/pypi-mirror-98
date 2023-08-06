@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pampy = "*"
+
+[dev-packages]
+black = "==20.8b1"
+pytest = "*"
+flit = "*"
+
+[requires]
+python_version = "3.9"
