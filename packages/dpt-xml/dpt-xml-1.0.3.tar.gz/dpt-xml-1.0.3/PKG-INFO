@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: dpt-xml
+Version: 1.0.3
+Summary: Multiple XML parsers with a common abstraction layer
+Home-page: https://www.direct-netware.de/redirect?dpt;xml
+Author: direct Netware Group et al.
+Author-email: web@direct-netware.de
+License: MPL2
+Description: "dpt-xml" should be used to parse and manipulate small XML resources in memory. It uses different parsers transparently based on the Python interpreter in use.
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
