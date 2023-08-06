@@ -1,0 +1,9 @@
+README.txt
+setup.py
+simc_support/__init__.py
+simc_support/simc_checks.py
+simc_support/wow_lib.py
+simc_support.egg-info/PKG-INFO
+simc_support.egg-info/SOURCES.txt
+simc_support.egg-info/dependency_links.txt
+simc_support.egg-info/top_level.txt

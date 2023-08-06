@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: simc-support
+Version: 1.0
+Summary: This package offers some World of Warcraft related ingame data regularly used for simulations and some basic input test for standard values of SimulationCraft.
+Home-page: https://github.com/Bloodmallet/simc_support
+Author: Bloodmallet(EU)
+Author-email: kruse.peter.1990@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Description: # simc_support
+        libs to support with wow data and simc data
+        
+Platform: UNKNOWN
+Requires-Python: >3.5
