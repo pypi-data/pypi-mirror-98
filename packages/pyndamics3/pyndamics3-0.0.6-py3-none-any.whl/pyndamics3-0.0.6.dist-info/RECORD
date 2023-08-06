@@ -1,0 +1,12 @@
+pyndamics3/__init__.py,sha256=knqhTQrEJqj_BY3xiUVGHhlXqEY9JUD8hCeKPv_K298,83
+pyndamics3/_nbdev.py,sha256=iI6QDN6RNy3zBSsFf1einEuiA40eClqe8snNz67fYaw,2671
+pyndamics3/core.py,sha256=_4q_veBF66k9Ya4fS3fGyVdiIm8BQSUlt7cz1c5jA2E,38818
+pyndamics3/fit.py,sha256=cWCf1q8SLu9AQENWRwNUtbPbYgZibfBpzDGwBVJH_dA,2316
+pyndamics3/mcmc.py,sha256=kED0_NIrKKqjNHjU-3zttXfGA0tS7HNEPIesH286r5c,27539
+pyndamics3/testit.py,sha256=gSwCaK90aLrOqbrNTxdYq6cSQEK2krzYTTVOLavfvt8,203
+pyndamics3-0.0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyndamics3-0.0.6.dist-info/METADATA,sha256=n1h6dMkTrrBlV7xi33FZiDJAYndiKDjLLJt8tR-QqmA,1323
+pyndamics3-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyndamics3-0.0.6.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyndamics3-0.0.6.dist-info/top_level.txt,sha256=0hSo8qFkiD0y0kAOkv7wAYdCFYYkUjSpm3jX5hg3yKU,11
+pyndamics3-0.0.6.dist-info/RECORD,,
