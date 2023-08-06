@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "chapisha"
+version = "0.3.0"
+description = "Chapisha: docx to standards-compliant epub3 conversion"
+authors = ["Gavin Chait <gchait@whythawk.com>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://github.com/whythawk/chapisha"
+repository = "https://github.com/whythawk/chapisha"
+documentation = "https://chapisha.readthedocs.io/"
+keywords = ["python3", "epub-generation", "epub3", "docx-to-epub"]
+classifiers = [
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General"
+]
+include = [
+    "chapisha/helpers/data/css/*",
+    "chapisha/helpers/data/fonts/*",
+    "chapisha/helpers/data/images/*",
+    "chapisha/helpers/data/json/*",
+    "chapisha/helpers/data/templates/*",
+    "tests/data/*"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.1"
+beautifulsoup4 = "^4.9.3"
+pypandoc = "^1.5"
+epubcheck = "^0.4.2"
+tomlkit = "^0.7.0"
+pydantic = "^1.7.3"
+regex = "^2020.11.13"
+filetype = "^1.0.7"
+lxml = "^4.6.2"
+Pillow = "^8.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+jupyterlab = "^3.0.5"
+Sphinx = "^3.4.3"
+sphinx-rtd-theme = "^0.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.extras]
+docs = ["Sphinx"]
