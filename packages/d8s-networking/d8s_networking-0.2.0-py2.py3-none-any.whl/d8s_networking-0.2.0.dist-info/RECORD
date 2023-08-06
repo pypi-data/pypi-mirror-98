@@ -1,0 +1,11 @@
+d8s_networking/__init__.py,sha256=FGCoimXSFOWirxj_q5UfyBDVk22NcDCBImuutB5fP80,641
+d8s_networking/networking.py,sha256=d3pm3L3xdgo76wSNZeGbYp0jJQn-fLxtcJHaie1WVYs,6210
+d8s_networking/networking_temp_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_networking.py,sha256=vbesg7giJutehQgVqOsAb6UczntknKd61Sje62I7f2c,4367
+d8s_networking-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_networking-0.2.0.dist-info/METADATA,sha256=QTUG9Um-m5xXyxUECHPkE8-3-zFceRFBZMsTC2KMPbc,2000
+d8s_networking-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_networking-0.2.0.dist-info/top_level.txt,sha256=OxFirVeRoXqPx7YJpD40C_MCIrr9bnFUssBf9glVwzI,21
+d8s_networking-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_networking-0.2.0.dist-info/RECORD,,
