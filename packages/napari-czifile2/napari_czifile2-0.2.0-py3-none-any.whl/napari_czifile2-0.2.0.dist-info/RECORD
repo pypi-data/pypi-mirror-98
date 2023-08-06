@@ -1,0 +1,10 @@
+napari_czifile2/__init__.py,sha256=DFUHBcst9XX_N69EIHGRYTxOA2AFRdaDsSTWwRd2zIc,145
+napari_czifile2/_reader.py,sha256=tOtsBaSGyG2dOEx1wgqNmUNGL6XGOGGQv70KzRzeaRs,1498
+napari_czifile2/_version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+napari_czifile2/io.py,sha256=jXDmru_SUsccZ5M4JU2Jg6WRFGR-dgzS1JzQcT0XD-8,4916
+napari_czifile2-0.2.0.dist-info/LICENSE.md,sha256=r-GEgTuLtj358f8Xfc2uE1P7blra4DmFMsQolIBNlPM,1082
+napari_czifile2-0.2.0.dist-info/METADATA,sha256=ltFjhfPkL6aS0f0gkxC3bEkVH_pcU5GH9IVFH17B2gA,2528
+napari_czifile2-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+napari_czifile2-0.2.0.dist-info/entry_points.txt,sha256=Z9rziUIQR8behkteX94RHwlG5XTgNw5V39pucVhsXvk,51
+napari_czifile2-0.2.0.dist-info/top_level.txt,sha256=JNOjPFpR86V0ea3HkdhPdN615jwQ-NKDDCLWlCJ8XIw,16
+napari_czifile2-0.2.0.dist-info/RECORD,,
