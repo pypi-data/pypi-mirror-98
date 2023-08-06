@@ -1,0 +1,4 @@
+
+          [console_scripts]
+          tap-youtube-analytics=tap_youtube_analytics:main
+      
