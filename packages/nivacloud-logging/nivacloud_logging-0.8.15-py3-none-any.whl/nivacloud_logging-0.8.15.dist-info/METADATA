@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: nivacloud-logging
+Version: 0.8.15
+Summary: Utils for setting up logging used in nivacloud applications
+Home-page: https://github.com/NIVANorge/nivacloud-logging
+Author: Norwegian Institute for Water Research
+Author-email: cloud@niva.no
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Logging  
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: python-json-logger (<0.2,>=0.1.11)
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp (>=3.0.0) ; extra == 'aiohttp'
+Provides-Extra: flask
+Requires-Dist: Flask (>=1.1.0) ; extra == 'flask'
+Provides-Extra: gunicorn
+Requires-Dist: gunicorn (>=19.0.0) ; extra == 'gunicorn'
+Provides-Extra: requests
+Requires-Dist: requests (>=2.22.0) ; extra == 'requests'
+Provides-Extra: starlette
+Requires-Dist: starlette (>=0.7.2) ; extra == 'starlette'
+
+UNKNOWN
+
+
