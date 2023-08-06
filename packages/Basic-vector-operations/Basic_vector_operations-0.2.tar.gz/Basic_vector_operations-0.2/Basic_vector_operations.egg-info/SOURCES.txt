@@ -1,0 +1,9 @@
+setup.py
+Basic_vector_operations/__init__.py
+Basic_vector_operations/python_code.py
+Basic_vector_operations/test.py
+Basic_vector_operations.egg-info/PKG-INFO
+Basic_vector_operations.egg-info/SOURCES.txt
+Basic_vector_operations.egg-info/dependency_links.txt
+Basic_vector_operations.egg-info/not-zip-safe
+Basic_vector_operations.egg-info/top_level.txt
