@@ -1,0 +1,12 @@
+pyhopper/__init__.py,sha256=K-lJHpnu14454OdPgOBEflbB64iO4m1MOfUnlxwquPs,915
+pyhopper/parallel.py,sha256=-BUFyp_GlZzuNpr2wa5FghLamjSqrSRHd4MvNbNdTXk,6594
+pyhopper/parameters.py,sha256=xyThmb6O8gugoT98dbZnhpjXF_iukR-Pwifm6GrO4CA,9344
+pyhopper/search.py,sha256=IIj2jj3zWkiTIXDNtAJRebf661pMdrBwNUgB9fdHmHA,32512
+pyhopper/utils.py,sha256=yD7PNHn1QGf8dSKSwftxlFSIDL25IOFgcFKorn5NqYU,6075
+pyhopper/cancellers/__init__.py,sha256=c-hBWXoB43y49EpzDw0QgmEbm2q5UuuQ41hGwzEzijQ,818
+pyhopper/cancellers/early_cancellers.py,sha256=v2_btnBlHEesSdIdJz38t_tB7VCgTSZF5v71bUpXzSg,5822
+pyhopper-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyhopper-0.0.4.dist-info/METADATA,sha256=RtZyYB7TYROE81e1_2Fo-MqK3KxJpy31xYw9Q82Btcg,757
+pyhopper-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyhopper-0.0.4.dist-info/top_level.txt,sha256=_jccS1QJgvI_H_0NWpgcrjrxnkSw2SASNdfloLZcjHk,9
+pyhopper-0.0.4.dist-info/RECORD,,
