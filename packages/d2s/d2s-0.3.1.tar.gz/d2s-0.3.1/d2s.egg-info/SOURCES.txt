@@ -1,0 +1,15 @@
+README.md
+setup.py
+d2s/__init__.py
+d2s/__main__.py
+d2s/generate_metadata.py
+d2s/sparql_operations.py
+d2s/utils.py
+d2s.egg-info/PKG-INFO
+d2s.egg-info/SOURCES.txt
+d2s.egg-info/dependency_links.txt
+d2s.egg-info/entry_points.txt
+d2s.egg-info/requires.txt
+d2s.egg-info/top_level.txt
+tests/__init__.py
+tests/test_d2s.py
