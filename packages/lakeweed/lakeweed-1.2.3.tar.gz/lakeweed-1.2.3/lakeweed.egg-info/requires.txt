@@ -1,0 +1,4 @@
+pytest
+python-dateutil
+pandas==1.2.3
+pytz==2021.1
