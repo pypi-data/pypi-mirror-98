@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/pspsps
+pspsps/__init__.py
+pspsps/http.py
+pspsps/safebooru.py
+pspsps/terminyal.py
+pspsps.egg-info/PKG-INFO
+pspsps.egg-info/SOURCES.txt
+pspsps.egg-info/dependency_links.txt
+pspsps.egg-info/requires.txt
+pspsps.egg-info/top_level.txt
