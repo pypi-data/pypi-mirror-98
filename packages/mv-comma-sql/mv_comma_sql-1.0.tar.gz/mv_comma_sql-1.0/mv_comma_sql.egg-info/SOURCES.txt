@@ -1,0 +1,10 @@
+setup.py
+mv_comma_sql/__init__.py
+mv_comma_sql/cli.py
+mv_comma_sql/type.py
+mv_comma_sql.egg-info/PKG-INFO
+mv_comma_sql.egg-info/SOURCES.txt
+mv_comma_sql.egg-info/dependency_links.txt
+mv_comma_sql.egg-info/entry_points.txt
+mv_comma_sql.egg-info/requires.txt
+mv_comma_sql.egg-info/top_level.txt
