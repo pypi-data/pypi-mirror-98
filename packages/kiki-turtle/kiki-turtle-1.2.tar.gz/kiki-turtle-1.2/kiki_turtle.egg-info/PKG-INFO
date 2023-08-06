@@ -1,0 +1,33 @@
+Metadata-Version: 1.2
+Name: kiki-turtle
+Version: 1.2
+Summary: 利用链式语法包装 turtle 库，受到 schemdraw 的启发，使 turtle 绘图更符合自然语言
+Home-page: https://github.com/kidscodinggroup/kiki-turtle
+Author: langxm
+Author-email: 964683112@qq.com
+Maintainer: langxm
+Maintainer-email: 964683112@qq.com
+License: GUN GPL
+Description: This is a paragraph.  It's quite
+        short.
+        
+           This paragraph will result in an indented block of
+           text, typically used for quoting other text.
+        
+        This is another one.
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
