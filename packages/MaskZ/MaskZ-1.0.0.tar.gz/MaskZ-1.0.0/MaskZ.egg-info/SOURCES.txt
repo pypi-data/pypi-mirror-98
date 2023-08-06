@@ -1,0 +1,17 @@
+setup.py
+MaskZ.egg-info/PKG-INFO
+MaskZ.egg-info/SOURCES.txt
+MaskZ.egg-info/dependency_links.txt
+MaskZ.egg-info/top_level.txt
+maskz/__init__.py
+maskz/ai.py
+maskz/bool.py
+maskz/boolo.py
+maskz/files.py
+maskz/math.py
+maskz/module.py
+maskz/websear.py
+maskz/pr/__init__.py
+maskz/pr/bool.py
+maskz/pr/boolo.py
+maskz/pr/diff.py
