@@ -1,0 +1,3 @@
+webexteamssdk
+coloredlogs
+websockets
