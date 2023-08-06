@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hydraflask
+Version: 0.1.1
+Summary: Automator for web frameworks
+Home-page: https://github.com/chaiyawahoo/HydraFlask/
+Author: Chaiyawat Nunes
+Author-email: chaiyawahoo@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chaiyawahoo/HydraFlask/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: autopep8 (==1.5.5)
+Requires-Dist: pycodestyle (==2.6.0)
+Requires-Dist: toml (==0.10.2)
+
+# HydraFlask
+
+HydraFlask automates the initialization of web frameworks.
+
