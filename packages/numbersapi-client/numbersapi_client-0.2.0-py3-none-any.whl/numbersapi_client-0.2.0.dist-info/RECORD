@@ -1,0 +1,8 @@
+numbersapi_client/__init__.py,sha256=iKLE7R-3SqPXv_QOKXvWr5-bGjJli8g7etLoF1uUpM4,77
+numbersapi_client/client.py,sha256=SDcwhni3h1VDKwKY9kZSdp90uTPsqxh9lzXoC4FTDp4,3338
+numbersapi_client/enums.py,sha256=pmNd2luUWMvMPvg2LXwPO6sbfp5QCYLUwNcZbGXdlXA,193
+numbersapi_client/exceptions.py,sha256=qj1k_9YGbBSQrZosKsu-yiggQ6Z3OYiLRDCLR-jcgL8,131
+numbersapi_client/response_types.py,sha256=A1SJG87pwDYL6n0pmVWqQ_0mi2crctKaXAdJHriPdwI,269
+numbersapi_client-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+numbersapi_client-0.2.0.dist-info/METADATA,sha256=SvNQ570Z38y95vdIErklp8Rmh4nhdo3t-kx6nMh87jU,342
+numbersapi_client-0.2.0.dist-info/RECORD,,
