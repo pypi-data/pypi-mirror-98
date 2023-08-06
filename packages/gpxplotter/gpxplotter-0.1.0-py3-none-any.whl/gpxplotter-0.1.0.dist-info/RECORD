@@ -1,0 +1,13 @@
+gpxplotter/__init__.py,sha256=m0oZ85AI1zNyh93iR23aUOTCmCqHUNaeqlB5jFauVVU,1522
+gpxplotter/common.py,sha256=1JX-I4cICT1F637RJthTDPNU58lYy2FLqbbvT3IxR3w,1751
+gpxplotter/folium_map.py,sha256=-YThaaXODSzZrej_cdv3ruxr9lBhGBAwgJclXNqQYcE,3660
+gpxplotter/gpxread.py,sha256=amsBS3QzRxgT1awdspbvD6PK8U66YeQJlpIJLXq5TKc,10346
+gpxplotter/mplplotting.py,sha256=DzDVfUR8zkdcyYNmgv8T-0l2Ksn8KBGRdnoGMUJNcp0,15486
+gpxplotter/version.py,sha256=8wo8lIc7BacF7solAzsf_yH1q0ZZc_JQlBY6a8ROKM8,415
+gpxplotter-0.1.0.dist-info/COPYING,sha256=s6pACsptK6HwvQO9mNA9H-dImju7JpadcgFjYK-KXJ0,24478
+gpxplotter-0.1.0.dist-info/COPYING.LESSER,sha256=s6pACsptK6HwvQO9mNA9H-dImju7JpadcgFjYK-KXJ0,24478
+gpxplotter-0.1.0.dist-info/LICENSE,sha256=AdUb8aZTaS7r81cIlHSUo0bsU1-ES9oYVq7RbCR-378,1278
+gpxplotter-0.1.0.dist-info/METADATA,sha256=PR_Jk-V56hJ_xvKXhNreerIIKI6AjGRvVdk3i804fWA,1541
+gpxplotter-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gpxplotter-0.1.0.dist-info/top_level.txt,sha256=AuGBR8-GbmDTT4KPb10hXuQAvnezSL35UBnS0vQgWSs,11
+gpxplotter-0.1.0.dist-info/RECORD,,
