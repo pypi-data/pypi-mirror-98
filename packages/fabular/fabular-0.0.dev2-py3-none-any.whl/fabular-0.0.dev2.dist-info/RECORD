@@ -1,0 +1,14 @@
+fabular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabular/__main__.py,sha256=5zLr-vHtTrVlEifttX65u1lVfvZOzBwuK_lz2yQMgyY,3742
+fabular/client.py,sha256=36X25Qy8j54D1v5UFCHL1BKFaIzimFHh_aTaOnuOj0E,7939
+fabular/comm.py,sha256=451s8YfoU9UwLeFR-yJu85ylwZlorGNSTiL2KpsNYMw,4564
+fabular/config.py,sha256=5erT5q78SmbiC9Z8RWdPNwMH-AsNfzy4P0WeSJsT_fs,418
+fabular/crypt.py,sha256=gRbE-OMXQxd9I4PzmOaoq-S51aJwexy_w_0bctE1C_o,23985
+fabular/server.py,sha256=Udzx0dNhWx8K17FaKNJNTQaKqutuJUS7VfDMjDOPW2Y,12345
+fabular/utils.py,sha256=uXIm71yYqRRlpaifjmAAjmJiiiO86hy4meYIl4YkzG0,2912
+fabular-0.0.dev2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fabular-0.0.dev2.dist-info/METADATA,sha256=8vK-IRcrHtPoKgnp_af2R4hCKTKnF0iuVklKaWuN-1c,2288
+fabular-0.0.dev2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fabular-0.0.dev2.dist-info/entry_points.txt,sha256=lwEWkwcAMmXyT71COBZbW361wpfmN_Il9fwgBr6I0t8,51
+fabular-0.0.dev2.dist-info/top_level.txt,sha256=XPWDWtx-YYEhCvc9zdZYrpHGrc-us8J1qpjWIrHn72c,8
+fabular-0.0.dev2.dist-info/RECORD,,
