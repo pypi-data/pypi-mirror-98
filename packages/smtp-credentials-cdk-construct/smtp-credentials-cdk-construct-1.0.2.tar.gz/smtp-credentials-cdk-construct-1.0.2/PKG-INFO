@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: smtp-credentials-cdk-construct
+Version: 1.0.2
+Summary: A CDK construct that creates SMTP credentials permitting emails to be sent via SES.
+Home-page: https://github.com/charlesdotfish/smtp-credentials-cdk-construct
+Author: Charles Salmon<me@charles.fish>
+License: MIT
+Project-URL: Source, https://github.com/charlesdotfish/smtp-credentials-cdk-construct
+Description: <p align="center"><img src="https://github.com/charlesdotfish/smtp-credentials-cdk-construct/raw/main/media/logo.png" alt="Charles Dot Fish" width="400"></p>
+        
+        # SMTP Credentials CDK Construct
+        
+        This construct creates an IAM user, with a policy permitting emails to be sent via SES from a specified email address, creates an access key associated with this user, and converts the access key to SMTP credentials.
+        
+        The generated SMTP credentials are stored as a parameter in Parameter Store, and the name of this parameter is output as a CloudFormation output. The parameter may be safely deleted, once the credentials have been accessed.
+        
+        ## Example Usage
+        
+        See [API.md](https://github.com/charlesdotfish/smtp-credentials-cdk-construct/blob/main/README.md) for details on the exposed API.
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        SmtpCredentials(self, "SmtpCredentials",
+            email_address="me@charles.fish"
+        )
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
