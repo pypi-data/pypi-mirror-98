@@ -1,0 +1,236 @@
+{% load i18n static simpletags sptags %}
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" {% if LANGUAGE_BIDI %}dir="rtl"{% endif %}>
+<head>
+    <meta charset="UTF-8">
+    <title>{% trans 'Permissions' %}{% trans 'Resource' %}</title>
+    {% block css %}
+        {% if "SIMPLEUI_STATIC_OFFLINE"|get_config %}
+            <link rel="stylesheet" href="{% static '/admin/simpleui-x/elementui/theme-chalk/index.css' %}">
+        {% else %}
+            <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+            <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.8.1/css/all.min.css">
+
+            <script src="https://cdn.jsdelivr.net/npm/@riophae/vue-treeselect@^0.4.0/dist/vue-treeselect.umd.min.js"></script>
+            <link rel="stylesheet"
+                  href="https://cdn.jsdelivr.net/npm/@riophae/vue-treeselect@^0.4.0/dist/vue-treeselect.min.css">
+
+        {% endif %}
+    {% endblock %}
+    <style type="text/css">
+        table {
+            font-size: 14px;
+        }
+
+        .el-table thead {
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        .default-header th {
+            background-color: #f5f7fa;
+        }
+
+    </style>
+</head>
+<body>
+{% csrf_token %}
+<div id="app"
+     style="margin: 20px auto;background-color: white;border-radius: 3px;box-shadow: 0 1px 1px rgb(0 0 0 / 5%);padding: 20px">
+
+    <div style="margin-bottom: 10px">
+        <el-button type="primary" icon="el-icon-plus" size="small" @click="add({})">{% trans 'Add' %}</el-button>
+        <el-button type="success" icon="el-icon-refresh" size="small"
+                   @click="loadData()">{% trans 'Refresh' %}</el-button>
+
+
+         <el-button type="warning" icon="el-icon-circle-check" size="small" style="float: right"
+               @click="syncMenu()">{% trans 'Sync Resources' %}</el-button>
+
+
+    </div>
+
+    <el-table class="mytable"
+              size="small"
+              v-loading="loading"
+              :tree-props="{children: 'children', hasChildren: 'hasChildren'}"
+              row-key="id"
+              border
+              :default-expand-all="false"
+              :header-row-class-name="'default-header'"
+              :data="tableData">
+
+
+        <el-table-column
+                prop="name"
+                sortable
+                label="{% trans 'Menu Name'%}">
+            <template slot-scope="scope">
+                <i :class="scope.row.icon"></i>
+                <span v-text="scope.row.name"></span>
+            </template>
+        </el-table-column>
+
+        <el-table-column
+                prop="code"
+                sortable
+                label="{% trans 'Code' %}">
+        </el-table-column>
+
+        <el-table-column
+                prop="url"
+                sortable
+                label="{% trans 'Url' %}"
+                width="250">
+            <template slot-scope="scope">
+                <el-link :href="scope.row.url" target="_blank" v-text="scope.row.url" type="primary"></el-link>
+            </template>
+        </el-table-column>
+
+        <el-table-column
+                prop="sort"
+                sortable
+                width="100"
+                label="{% trans 'Sort' %}">
+        </el-table-column>
+
+        <el-table-column
+                prop="is_menu"
+                sortable
+                width="100"
+                label="{% trans 'Menu Status' %}">
+            <template slot-scope="scope">
+                <el-tag size="small" type="success" v-if="scope.row.is_menu">{% trans "Yes" %}</el-tag>
+                <el-tag size="small" type="info" v-else>{% trans "No" %}</el-tag>
+            </template>
+        </el-table-column>
+
+        <el-table-column
+                prop="open_type"
+                sortable
+                width="200"
+                label="{% trans 'Open Type' %}">
+            <template slot-scope="scope">
+                <el-tag size="small" type="success" v-if="scope.row.open_type==0">{% trans 'Current Tab' %}</el-tag>
+                <el-tag size="small" type="info" v-else>{% trans 'New Tab' %}</el-tag>
+            </template>
+        </el-table-column>
+
+        <el-table-column
+                prop="action"
+                sortable
+                width="200"
+                label="{% trans "Action" %}">
+            <template slot-scope="scope">
+
+                <el-link v-if="scope.row.resource_type!=1" size="mini" @click="add(scope.row)" type="primary"
+                         icon="el-icon-plus">{% trans 'Add' %}</el-link>
+                <el-link size="mini" @click="update(scope.row)" type="success"
+                         icon="el-icon-edit">{% trans 'Change' %}</el-link>
+                <el-link size="mini" @click="del(scope.row.id)" type="danger"
+                         icon="el-icon-delete">{% trans 'Delete' %}</el-link>
+            </template>
+        </el-table-column>
+
+
+    </el-table>
+    <form-dialog :table-data="tableData" :visible="dialog.visible" :form="dialog.form" :title="dialog.title"
+                 @close="dialog.visible=false" @reload="loadData()"></form-dialog>
+
+</div>
+
+<script type="text/html" id="formDialog">
+
+    <el-dialog v-if="form" label-width="100px" :title="title" :visible.sync="visible" @before-close="handleClose()">
+        <el-form ref="form" :model="form" size="small" label-position="right" label-width="100px" :rules="rules">
+            <el-form-item label="{% trans 'Parent' %}">
+
+                <el-cascader style="width: 300px" v-model="form.parent" :options="tableData"
+                             :props="{label:'name',value:'id',emitPath:false,checkStrictly:true}" filterable
+                             clearable>
+                    <template slot-scope="{ node, data }">
+                        <i :class="data.icon"></i>
+                        <span v-text="data.name"></span>
+                        <span v-if="!node.isLeaf"> (<span v-text="data.children.length"></span>) </span>
+                    </template>
+                </el-cascader>
+
+            </el-form-item>
+            <el-form-item label="{% trans 'Type' %}">
+                <el-radio-group v-model="form.resource_type">
+                    <el-radio :label="0">{% trans 'Menu' %}</el-radio>
+                    <el-radio :label="1">{% trans 'Button' %}</el-radio>
+                </el-radio-group>
+            </el-form-item>
+
+            <el-form-item label="{% trans 'Name' %}" prop="name">
+                <el-input style="width: 200px" v-model="form.name" autocomplete="off"></el-input>
+            </el-form-item>
+
+            <el-form-item label="{% trans 'Code' %}" prop="code">
+                <el-input style="width: 200px" v-model="form.code" autocomplete="off"></el-input>
+                <el-link href="https://simpleui.72wo.com/docs/simplepro/permissions.html" target="_blank"><i
+                        class="el-icon-question"></i></el-link>
+            </el-form-item>
+
+            <el-form-item label="{% trans 'Icon' %}">
+                <icon-select style="width: 200px" v-model="form.icon" size="small"></icon-select>
+            </el-form-item>
+
+            <el-form-item label="{% trans 'Sort' %}">
+                <el-input-number v-model="form.sort" :min="0"></el-input-number>
+            </el-form-item>
+            <template v-if="form.resource_type!=1">
+                <el-form-item label="{% trans 'Url' %}">
+                    <el-input style="width: 200px" v-model="form.url" autocomplete="off"></el-input>
+                </el-form-item>
+
+
+                <el-form-item label="{% trans 'Menu Status' %}">
+                    <el-switch v-model="form.is_menu"></el-switch>
+                </el-form-item>
+
+                <el-form-item label="{% trans 'Open Type' %}">
+                    <el-radio-group v-model="form.open_type">
+                        <el-radio :label="0">{% trans 'Current Tab' %}</el-radio>
+                        <el-radio :label="1">{% trans 'New Tab' %}</el-radio>
+                    </el-radio-group>
+                </el-form-item>
+            </template>
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+            <el-button size="small" @click="handleClose()">{% trans 'Canel' %}</el-button>
+            <el-button size="small" type="primary" @click="save()">{% trans 'Save' %}</el-button>
+        </div>
+    </el-dialog>
+
+</script>
+
+{% block js %}
+    <script type="text/javascript">
+        {% if data %}
+            var data ={{ data|safe }}
+        {% else %}
+            var data = {}
+        {% endif %}
+    </script>
+    <script type="text/javascript" src="{% static '/admin/simpleui-x/js/cookie.js' %}"></script>
+    {% if "SIMPLEUI_STATIC_OFFLINE"|get_config %}
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script type="text/javascript" src="{% static '/admin/simpleui-x/elementui/index.js' %}"></script>
+    {% else %}
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    {% endif %}
+    <script type="text/javascript" src="{% static '/admin/simplepro/js/axios.min.js' %}"></script>
+    <script type="text/javascript">
+        var _url = "{% url 'sp:permissions_resources' %}";
+        var _sync_url = "{% url 'sp:permissions_sync' %}";
+
+        var add_title='{% trans 'Add' %}';
+        var change_title='{% trans 'Change' %}';
+    </script>
+    <script type="text/javascript" src="{% static '/admin/permissions/resources.js' %}?_={% get_sp_version %}"></script>
+
+{% endblock %}
+</body>
+</html>

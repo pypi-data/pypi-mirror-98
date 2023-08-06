@@ -1,0 +1,5 @@
+django>=2.1
+django-simpleui>=2020.9.26
+django-import-export
+requests
+rsa

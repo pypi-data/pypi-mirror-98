@@ -1,0 +1,12 @@
+{% extends 'admin/results/list.html' %}
+{% load static sptags %}
+{% block media %}
+    <script type="text/javascript">
+        var urls = {
+            tree: '{% url 'sp:permissions_resources' %}',
+            role: '{% url 'sp:permissions_role' %}'
+        }
+    </script>
+    <script type="text/javascript" src="{% static 'admin/permissions/role.js' %}?_{% get_sp_version %}"></script>
+    {{ block.super }}
+{% endblock %}
