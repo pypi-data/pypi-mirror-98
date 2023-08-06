@@ -1,0 +1,7 @@
+xenopt/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+xenopt/tb_parameters.py,sha256=ZBwd40jAlfuMoio_D7xvc828KzVb7UBgQjSsWknZEHc,20587
+xenopt/thermobarometers.py,sha256=z3GjY7DDkBg6-Lk3sSWCUXLUYnyfHMZXEZPqqoxaB1o,18005
+xenopt/xenolith_dataTemplate.csv,sha256=ZuLVEm3GUFNN3xsyKQtwlce45tnnpoMD9P5Cr2M1CK0,1062
+xenopt-0.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+xenopt-0.2.2.dist-info/METADATA,sha256=nVBkO01VbkBRD8qGzc2lOZAFVxGDSuWzhPN-3IXXz9w,871
+xenopt-0.2.2.dist-info/RECORD,,

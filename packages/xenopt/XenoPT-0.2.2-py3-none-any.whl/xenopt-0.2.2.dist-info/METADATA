@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: xenopt
+Version: 0.2.2
+Summary: A collection of published thermobarometers for garnet two-pyroxene xenoliths. Allows for input of .csv data, with template provided in tb_parameters.py
+Home-page: https://github.com/okdpetrology/XenoPT
+License: MIT
+Keywords: xenoliths,thermobarometry,Geoscience,garnet,pyroxene,barometer,thermometer
+Author: Khalil Droubi
+Author-email: droubi@wisc.edu
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (>=1.2.0,<2.0.0)
+Project-URL: Repository, https://github.com/okdpetrology/XenoPT
+Description-Content-Type: text/markdown
+
+# XenoPT
+Garnet two-pyroxene thermobarometry package.
+
+https://pypi.org/project/xenopt/
+
