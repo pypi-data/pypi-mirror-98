@@ -1,0 +1,16 @@
+six>=1.13.0
+
+[:python_version < "3"]
+setuptools<45.0
+typing
+
+[:python_version == "3.3"]
+setuptools<=39.2
+typing<3.7,>=3.6
+
+[:python_version == "3.4"]
+setuptools<=39.2
+typing<3.7,>=3.6
+
+[:python_version >= "3.5"]
+setuptools
