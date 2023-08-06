@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!-- The mapping is for the PayFone response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="PayFone">
+        <message messageType="PayFoneVerify" subType="toOde" mapperId="payfoneverifyRespToOde">
+            <fields>
+                <field name="_9_REQUESTID">
+                    <srcField name="/requestId"/>
+                </field>
+                <field name="_9_VERIFY_STATUS">
+                    <srcField name="/status"/>
+                </field>
+                <field name="_9_VERIFY_DESCRIPTION">
+                    <srcField name="/description"/>
+                </field>
+                <field name="_9_VERIFIED">
+                    <srcField name="/response/verified"/>
+                </field>
+                <field name="_9_VERIFY_TRANSACTIONID">
+                    <srcField name="/response/transactionId"/>
+                </field>
+                <field name="_9_PHONENUMBER">
+                    <srcField name="/response/phoneNumber"/>
+                </field>
+                <field name="_9_LINETYPE">
+                    <srcField name="/response/lineType"/>
+                </field>
+                <field name="_9_CARRIER">
+                    <srcField name="/response/carrier">
+                        <groovy>
+                            <![CDATA[
+                         return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                         ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_9_COUNTRYCODE">
+                    <srcField name="/response/countryCode"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_1">
+                    <srcField name="/response/reasonCodes"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_2">
+                    <srcField name="/response/reasonCodes[1]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_3">
+                    <srcField name="/response/reasonCodes[2]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_4">
+                    <srcField name="/response/reasonCodes[3]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_5">
+                    <srcField name="/response/reasonCodes[4]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_6">
+                    <srcField name="/response/reasonCodes[5]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_7">
+                    <srcField name="/response/reasonCodes[6]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_8">
+                    <srcField name="/response/reasonCodes[7]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_9">
+                    <srcField name="/response/reasonCodes[8]"/>
+                </field>
+                <field name="_9_VERIFY_REASONCODES_10">
+                    <srcField name="/response/reasonCodes[9]"/>
+                </field>
+                <field name="_9_FIRSTNAME">
+                    <srcField name="/response/name/firstName"/>
+                </field>
+                <field name="_9_LASTNAME">
+                    <srcField name="/response/name/lastName"/>
+                </field>
+                <field name="_9_NAMESCORE">
+                    <srcField name="/response/name/nameScore"/>
+                </field>
+                <field name="_9_STREETNUMBER">
+                    <srcField name="/response/address/streetNumber"/>
+                </field>
+                <field name="_9_STREET">
+                    <srcField name="/response/address/street"/>
+                </field>
+                <field name="_9_CITY">
+                    <srcField name="/response/address/city"/>
+                </field>
+                <field name="_9_REGION">
+                    <srcField name="/response/address/region"/>
+                </field>
+                <field name="_9_POSTALCODE">
+                    <srcField name="/response/address/postalCode"/>
+                </field>
+                <field name="_9_DISTANCE">
+                    <srcField name="/response/address/distance"/>
+                </field>
+                <field name="_9_ADDRESSSCORE">
+                    <srcField name="/response/address/addressScore"/>
+                </field>
+                <field name="_9_EMAILADDRESS">
+                    <srcField name="/response/email/emailAddress"/>
+                </field>
+                <field name="_9_SSN">
+                    <srcField name="/response/identifiers/ssn"/>
+                </field>
+                <field name="_9_DOB">
+                    <srcField name="/response/identifiers/dob"/>
+                </field>
+                <field name="_9_VERIFY_TRUSTSCORE">
+                    <srcField name="/response/trustScore"/>
+                </field>
+            </fields>
+        </message>
+        <message messageType="PayFoneTrust" subType="toOde" mapperId="payfonetrustRespToOde">
+            <fields>
+                <field name="_9_REQUESTID">
+                    <srcField name="/requestId"/>
+                </field>
+                <field name="_9_TRUST_STATUS">
+                    <srcField name="/status"/>
+                </field>
+                <field name="_9_TRUST_DESCRIPTION">
+                    <srcField name="/description"/>
+                </field>
+                <field name="_9_TRUST_TRANSACTIONID">
+                    <srcField name="/response/transactionId"/>
+                </field>
+                <field name="_9_PHONENUMBER">
+                    <srcField name="/response/phoneNumber"/>
+                </field>
+                <field name="_9_LINETYPE">
+                    <srcField name="/response/lineType"/>
+                </field>
+                <field name="_9_CARRIER">
+                    <srcField name="/response/carrier">
+                        <groovy>
+                            <![CDATA[
+                           return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                           ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_9_COUNTRYCODE">
+                    <srcField name="/response/countryCode"/>
+                </field>
+                <field name="_9_ISBASELINED">
+                    <srcField name="/response/isBaselined"/>
+                </field>
+                <field name="_9_TRUST_TRUSTSCORE">
+                    <srcField name="/response/trustScore"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_1">
+                    <srcField name="/response/reasonCodes"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_2">
+                    <srcField name="/response/reasonCodes[1]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_3">
+                    <srcField name="/response/reasonCodes[2]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_4">
+                    <srcField name="/response/reasonCodes[3]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_5">
+                    <srcField name="/response/reasonCodes[4]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_6">
+                    <srcField name="/response/reasonCodes[5]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_7">
+                    <srcField name="/response/reasonCodes[6]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_8">
+                    <srcField name="/response/reasonCodes[7]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_9">
+                    <srcField name="/response/reasonCodes[8]"/>
+                </field>
+                <field name="_9_TRUST_REASONCODES_10">
+                    <srcField name="/response/reasonCodes[9]"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

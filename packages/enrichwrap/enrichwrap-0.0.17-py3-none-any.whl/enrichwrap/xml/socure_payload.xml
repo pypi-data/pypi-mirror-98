@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <!--TODO: need to include watch-list. -->
+    <messages name="Socure payload mappings">
+        <message messageType="Socure" subType="payload" mapperId="socure">
+            <fields>
+                <field name="/userId">
+                    <srcField name="/app_id"/>
+                </field>
+
+                <field name="/firstName">
+                    <srcField name="/app_first_name"/>
+                </field>
+
+                <field name="/surName">
+                    <srcField name="/app_last_name"/>
+                </field>
+
+                <field name="/email" nullable="true">
+                    <srcField name="/app_email"/>
+                </field>
+
+                <!--TODO: get true mobile number based on type flag. -->
+                <field name="/mobileNumber" nullable="true">
+                    <srcField name="/app_num1_number">
+                        <groovy>
+                            <![CDATA[
+                        if (value!=null && value.trim().length()==10) {
+                            value = value.trim();
+                            value = "+1-" + value.substring(0, 3) + "-" + value.substring(3, 6) + "-" + value.substring(6);
+                            return value;
+                        }
+                        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="/dob" nullable="true">
+                    <srcField name="/app_dob"/>
+                </field>
+
+                <field name="/physicalAddress">
+                    <srcField name="/app_address1"/>
+                </field>
+
+                <field name="/physicalAddress2" nullable="true">
+                    <srcField name="/app_address2"/>
+                </field>
+
+                <field name="/city">
+                    <srcField name="/app_city"/>
+                </field>
+
+                <field name="/state">
+                    <srcField name="/app_state"/>
+                </field>
+
+                <!--TODO: which incoming or common field to map from-->
+                <field name="/country" default="us">
+                    <srcField name="/Socure/country"/>
+                </field>
+
+                <field name="/zip">
+                    <srcField name="/app_postal_code"/>
+                </field>
+
+                <field name="/ipAddress">
+                    <srcField name="/app_ip_address"/>
+                </field>
+
+                <!--TODO: which incoming or common field to map from-->
+                <field name="/nationalId" nullable="true">
+                    <srcField name="/app_id1_doc_number"/>
+                </field>
+
+                <field name="/driverLicense" nullable="true">
+                    <srcField name="/app_id2_doc_number"/>
+                </field>
+
+                <field name="/driverLicenseState" nullable="true">
+                    <srcField name="/app_id2_state"/>
+                </field>
+
+                <!--TODO: review, should only add kyc and watchlist3 -->
+                <!-- tyhurl add addressrisk 8/15/2019 -->
+
+                <!-- <field name="/modules[0]" override="kyc"> <srcField name="/Socurenotexisting"/> </field> <field name="/modules[1]" override="watchlist3"> <srcField name="/Socurenotexisting"/> </field> <field name="/modules[2]" override="addressrisk"> <srcField
+                name="/Socurenotexisting"/> </field> -->
+
+            </fields>
+        </message>
+    </messages>
+</application>

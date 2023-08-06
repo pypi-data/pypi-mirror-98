@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="GiAct payload mappings">
+        <message messageType="GiAct" subType="payload" mapperId="giact">
+            <fields>
+                <field name="/UniqueId">
+                    <srcField name="/app_id">
+                        <groovy>
+                            Date current = new Date();
+                            return "" + value + "-" + current.getTime();
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="/Customer/FirstName">
+                    <srcField name="/app_first_name"/>
+                </field>
+                <field name="/Customer/LastName">
+                    <srcField name="/app_last_name"/>
+                </field>
+                <field name="/Customer/AddressLine1" default="NA">
+                    <srcField name="/app_address1"/>
+                </field>
+                <field name="/Customer/City">
+                    <srcField name="/app_city"/>
+                </field>
+                <field name="/Customer/State">
+                    <srcField name="/app_state"/>
+                </field>
+                <field name="/Customer/ZipCode">
+                    <srcField name="/app_postal_code"/>
+                </field>
+                <field name="/Customer/Country" default="US">
+                    <srcField name="/Country"/>
+                </field>
+                <field name="/Customer/DateOfBirth" default="NA">
+                    <srcField name="/app_dob"/>
+                </field>
+                <field name="/Customer/TaxId" default="NA">
+                    <srcField name="/app_id1_doc_number"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

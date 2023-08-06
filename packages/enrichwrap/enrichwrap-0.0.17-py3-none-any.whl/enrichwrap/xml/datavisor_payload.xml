@@ -1,0 +1,671 @@
+<?xml version="1.0"?>
+<application xmlns="https://www.sas.com/sfm/eop" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+    <messages name="DataVisor payload mappings">
+        <message mapperId="datavisor" messageType="DataVisor" subType="payload">
+            <fields>
+                <field name="id">
+                    <srcField name="_1_app_id"/>
+                </field>
+                <field name="applicationSource">
+                    <srcField name="_1_app_source"/>
+                </field>
+                <field name="stateCode">
+                    <srcField name="_1_app_state"/>
+                </field>
+                <field name="campaignId">
+                    <srcField name="_1_app_campaignid"/>
+                </field>
+                <field name="ipAddress">
+                    <srcField name="_1_app_ip_address">
+                        <groovy>
+                            <![CDATA[return InetAddress.getByName(value).getHostAddress();]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="channel">
+                    <srcField name="_1_app_channel"/>
+                </field>
+                <field name="email">
+                    <srcField name="_1_app_email"/>
+                </field>
+                <field name="storeNumber">
+                    <srcField name="_1_app_recv_branch"/>
+                </field>
+                <field name="brandName">
+                    <srcField name="_1_app_recv_brand"/>
+                </field>
+                <field name="firstName">
+                    <srcField name="_1_app_first_name"/>
+                </field>
+                <field name="lastName">
+                    <srcField name="_1_app_last_name"/>
+                </field>
+                <field name="dateOfBirth">
+                    <srcField name="_1_app_dob"/>
+                </field>
+                <field name="documentType">
+                    <srcField name="_1_app_id1_doc_type"/>
+                </field>
+                <field name="documentNumber">
+                    <srcField name="_1_app_id1_doc_number">
+                        <groovy>
+                            <![CDATA[String a = org.apache.commons.codec.digest.DigestUtils.md5Hex(value).toUpperCase();return a;]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="stateIdExpirationDate">
+                    <srcField name="_1_app_id1_expiration"/>
+                </field>
+                <field name="stateIdType">
+                    <srcField name="_1_app_id2_doc_type"/>
+                </field>
+                <field name="driverLicenseNumber">
+                    <srcField name="_1_app_id2_doc_number">
+                        <groovy>
+                            <![CDATA[String a = org.apache.commons.codec.digest.DigestUtils.md5Hex(value).toUpperCase();return a;]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="driverLicenseStateCode">
+                    <srcField name="_1_app_id2_state"/>
+                </field>
+                <field name="address_stateCode">
+                    <srcField name="_1_app_state"/>
+                </field>
+                <field name="address_cityName">
+                    <srcField name="_1_app_city"/>
+                </field>
+                <field name="address_addressLine1">
+                    <srcField name="_1_app_address1"/>
+                </field>
+                <field name="address_addressLine2">
+                    <srcField name="_1_app_address2"/>
+                </field>
+                <field name="address_zipCode">
+                    <srcField name="_1_app_postal_code"/>
+                </field>
+                <field name="phoneW">
+                    <srcField name="_1_app_num1_number"/>
+                </field>
+                <field name="phoneH">
+                    <srcField name="_1_app_num2_number"/>
+                </field>
+                <field name="monthsAtAddress">
+                    <srcField name="_1_app_months_at_addr"/>
+                </field>
+                <field name="ownResidence">
+                    <srcField name="_1_app_owns_residence"/>
+                </field>
+                <field name="spouseemail">
+                    <srcField name="_1_app_spouse_email"/>
+                </field>
+                <field name="spousephoneNumber">
+                    <srcField name="_1_app_spouse_number"/>
+                </field>
+                <field name="accountType">
+                    <srcField name="_1_app_account_type"/>
+                </field>
+                <field name="routingNumber">
+                    <srcField name="_1_app_account_routing"/>
+                </field>
+                <field name="accountNumber">
+                    <srcField name="_1_app_account_num"/>
+                </field>
+                <field name="statementBalance">
+                    <srcField name="_1_app_account_balance"/>
+                </field>
+                <field name="accountOpenDate">
+                    <srcField name="_1_app_account_open_dt"/>
+                </field>
+                <field name="type">
+                    <srcField name="_1_app_account_type"/>
+                </field>
+                <field name="employmentHireDate">
+                    <srcField name="_1_app_emp_hire_date"/>
+                </field>
+                <field name="incomeWitholding">
+                    <srcField name="_1_app_emp_witholding"/>
+                </field>
+                <field name="jobTitle">
+                    <srcField name="_1_app_emp_title"/>
+                </field>
+                <field name="paymentFrequency">
+                    <srcField name="_1_app_emp_pmt_freq"/>
+                </field>
+                <field name="paymentMethod">
+                    <srcField name="_1_app_emp_pmt_method"/>
+                </field>
+                <field name="amountGross">
+                    <srcField name="_1_app_emp_pmt_gross"/>
+                </field>
+                <field name="amountNet">
+                    <srcField name="_1_app_emp_pmt_net"/>
+                </field>
+                <field name="nextPaymentDate">
+                    <srcField name="_1_app_emp_pmt_next_date"/>
+                </field>
+                <field name="paymentDayOfWeek">
+                    <srcField name="_1_app_emp_pmt_day"/>
+                </field>
+                <field name="jobShift">
+                    <srcField name="_1_app_emp_shift_type"/>
+                </field>
+                <field name="employername">
+                    <srcField name="_1_app_emp_name"/>
+                </field>
+                <field name="applicationAmount">
+                    <srcField name="_1_app_loan_amt"/>
+                </field>
+                <field name="disbursementType">
+                    <srcField name="_1_app_loan_disb_type"/>
+                </field>
+                <field name="canShareInfo">
+                    <srcField name="_1_app_can_share_info"/>
+                </field>
+                <field name="smsOptIn">
+                    <srcField name="_1_app_sms_opt_in"/>
+                </field>
+                <field name="optOut">
+                    <srcField name="_1_app_opt_out"/>
+                </field>
+                <field name="phon">
+                    <srcField name="_1_app_arbitration_consent"/>
+                </field>
+                <field name="electronicConsent">
+                    <srcField name="_1_app_electronic_consent"/>
+                </field>
+                <field name="applicationUrl">
+                    <srcField name="_1_app_url"/>
+                </field>
+                <field name="status">
+                    <srcField name="_1_app_status"/>
+                </field>
+                <field name="createdAt">
+                    <srcField name="app_created_datetime"/>
+                </field>
+                <field name="modifiedAt">
+                    <srcField name="app_modified_datetime"/>
+                </field>
+                <field name="abandonedApplication_attempt">
+                    <srcField name="_1_app_attempt"/>
+                </field>
+                <field name="abandonedApplication_emailSent">
+                    <srcField name="_1_app_email_sent"/>
+                </field>
+                <field name="/enrichments/negfile/negfileresult" default="pass">
+                    <!-- put some groovery here ...srcField name="_1_app_email_sent"/ -->
+                </field>
+                <field name="/enrichments/negfile/negfilehits" default="_-_-_-_-_-_-_">
+                    <srcField name="v02_str_00016_064"/>
+                </field>
+                <field name="/enrichments/iovation/accountCode">
+                    <srcField name="_4_accountCode"/>
+                </field>
+                <field name="/enrichments/iovation/iovation_id">
+                    <srcField name="_4_id"/>
+                </field>
+                <!-- ask cheng -->
+                <field name="/enrichments/iovation/reason">
+                    <srcField name="_4_reason"/>
+                </field>
+                <!-- -->
+                <field name="/enrichments/iovation/result">
+                    <srcField name="_4_result"/>
+                </field>
+                <field name="/enrichments/iovation/statedIp">
+                    <srcField name="_4_statedIp"/>
+                </field>
+                <field name="/enrichments/iovation/device_alias">
+                    <srcField name="_4_device_alias"/>
+                </field>
+                <field name="/enrichments/iovation/device_os">
+                    <srcField name="_4_device_os"/>
+                </field>
+                <field name="/enrichments/iovation/device_screen">
+                    <srcField name="_4_device_screen"/>
+                </field>
+                <field name="/enrichments/iovation/device_type">
+                    <srcField name="_4_device_type"/>
+                </field>
+                <field name="/enrichments/iovation/browser_charset">
+                    <srcField name="_4_browser_charset"/>
+                </field>
+                <field name="/enrichments/iovation/browser_cookiesEnabled">
+                    <srcField name="_4_browser_cookiesEnabled"/>
+                </field>
+                <field name="/enrichments/iovation/browser_configuredLanguage">
+                    <srcField name="_4_browser_configuredLanguage"/>
+                </field>
+                <field name="/enrichments/iovation/browser_language">
+                    <srcField name="_4_browser_language"/>
+                </field>
+                <field name="browser_type">
+                    <srcField name="_4_browser_type"/>
+                </field>
+                <field name="/enrichments/iovation/browser_browser_timezone">
+                    <srcField name="_4_browser_browser_timezone"/>
+                </field>
+                <field name="/enrichments/iovation/browser_browser_version">
+                    <srcField name="_4_browser_browser_version"/>
+                </field>
+                <field name="/enrichments/iovation/flash_enabled">
+                    <srcField name="_4_flash_enabled"/>
+                </field>
+                <field name="/enrichments/iovation/flash_installed">
+                    <srcField name="_4_flash_installed"/>
+                </field>
+                <field name="/enrichments/iovation/flash_storageEnabled">
+                    <srcField name="_4_flash_storageEnabled"/>
+                </field>
+                <field name="/enrichments/iovation/flash_flash_version">
+                    <srcField name="_4_flash_flash_version"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_brand">
+                    <srcField name="_4_mobile_brand"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_charging">
+                    <srcField name="_4_mobile_charging"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_imei">
+                    <srcField name="_4_mobile_imei"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_manufacturer">
+                    <srcField name="_4_mobile_manufacturer"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_model">
+                    <srcField name="_4_mobile_model"/>
+                </field>
+                <field name="mobile_orientation">
+                    <srcField name="_4_mobile_orientation"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_screenResolution">
+                    <srcField name="_4_mobile_screenResolution"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_bundleId">
+                    <srcField name="_4_mobile_app_bundleId"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_debug">
+                    <srcField name="_4_mobile_app_debug"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_exeName">
+                    <srcField name="_4_mobile_app_exeName"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_marketId">
+                    <srcField name="_4_mobile_app_marketId"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_name">
+                    <srcField name="_4_mobile_app_name"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_orientation">
+                    <srcField name="_4_mobile_app_orientation"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_procName">
+                    <srcField name="_4_mobile_app_procName"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_signerId">
+                    <srcField name="_4_mobile_app_signerId"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_vendorId">
+                    <srcField name="_4_mobile_app_vendorId"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_app_version">
+                    <srcField name="_4_mobile_app_version"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_build_device">
+                    <srcField name="_4_mobile_build_device"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_build_product">
+                    <srcField name="_4_mobile_build_product"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_altitude">
+                    <srcField name="_4_mobile_altitude"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_enabled">
+                    <srcField name="_4_mobile_enabled"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_latitude">
+                    <srcField name="_4_mobile_latitude"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_longitude">
+                    <srcField name="_4_mobile_longitude"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_timestamp">
+                    <srcField name="_4_mobile_timestamp"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_timezone">
+                    <srcField name="_4_mobile_timezone"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_allowedUnknownStore">
+                    <srcField name="_4_mobile_allowedUnknownStore"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_androidSDKLevel">
+                    <srcField name="_4_mobile_androidSDKLevel"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_buildFingerprint">
+                    <srcField name="_4_mobile_buildFingerprint"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_carrier">
+                    <srcField name="_4_mobile_carrier"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_carrierCountryCode">
+                    <srcField name="_4_mobile_carrierCountryCode"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_cellularNetwork">
+                    <srcField name="_4_mobile_cellularNetwork"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_hostname">
+                    <srcField name="_4_mobile_hostname"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_jailrootDetected">
+                    <srcField name="_4_mobile_jailrootDetected"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_localeCurrency">
+                    <srcField name="_4_mobile_localeCurrency"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_localeLang">
+                    <srcField name="_4_mobile_localeLang"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_networkOperatorCount">
+                    <srcField name="_4_mobile_networkOperatorCount"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_networkOperatorName">
+                    <srcField name="_4_mobile_networkOperatorName"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_osVersion">
+                    <srcField name="_4_mobile_osVersion"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_rootDetectionDisable">
+                    <srcField name="_4_mobile_rootDetectionDisable"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_simulator">
+                    <srcField name="_4_mobile_simulator"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_uptime">
+                    <srcField name="_4_mobile_uptime"/>
+                </field>
+                <field name="/enrichments/iovation/mobile_voipAllowed">
+                    <srcField name="_4_mobile_voipAllowed"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_address">
+                    <srcField name="_4_statedip_address"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_isp">
+                    <srcField name="_4_statedip_isp"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_org">
+                    <srcField name="_4_statedip_org"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_proxy">
+                    <srcField name="_4_statedip_proxy"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_source">
+                    <srcField name="_4_statedip_source"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_score">
+                    <srcField name="_4_statedip_score"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_intensity">
+                    <srcField name="_4_statedip_intensity"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_lastseen">
+                    <srcField name="_4_statedip_lastseen"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_city">
+                    <srcField name="_4_statedip_city"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_country">
+                    <srcField name="_4_statedip_country"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_countryCode">
+                    <srcField name="_4_statedip_countryCode"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_latitude">
+                    <srcField name="_4_statedip_latitude"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_longitude">
+                    <srcField name="_4_statedip_longitude"/>
+                </field>
+                <field name="/enrichments/iovation/statedip_region">
+                    <srcField name="_4_statedip_region"/>
+                </field>
+                <field name="/enrichments/iovation/realip_address">
+                    <srcField name="_4_realip_address"/>
+                </field>
+                <field name="/enrichments/iovation/realip_isp">
+                    <srcField name="_4_realip_isp"/>
+                </field>
+                <field name="/enrichments/iovation/realip_org">
+                    <srcField name="_4_realip_org"/>
+                </field>
+                <field name="/enrichments/iovation/realip_proxy">
+                    <srcField name="_4_realip_proxy"/>
+                </field>
+                <field name="/enrichments/iovation/realip_source">
+                    <srcField name="_4_realip_source"/>
+                </field>
+                <field name="/enrichments/iovation/realip_score">
+                    <srcField name="_4_realip_score"/>
+                </field>
+                <field name="/enrichments/iovation/realip_intensity">
+                    <srcField name="_4_realip_intensity"/>
+                </field>
+                <field name="/enrichments/iovation/realip_city">
+                    <srcField name="_4_realip_city"/>
+                </field>
+                <field name="/enrichments/iovation/realip_country">
+                    <srcField name="_4_realip_country"/>
+                </field>
+                <field name="/enrichments/iovation/realip_countryCode">
+                    <srcField name="_4_realip_countryCode"/>
+                </field>
+                <field name="/enrichments/iovation/realip_latitude">
+                    <srcField name="_4_realip_latitude"/>
+                </field>
+                <field name="/enrichments/iovation/realip_longitude">
+                    <srcField name="_4_realip_longitude"/>
+                </field>
+                <field name="/enrichments/iovation/realip_region">
+                    <srcField name="_4_realip_region"/>
+                </field>
+                <field name="/enrichments/biocatch/customwhitelistdevice">
+                    <srcField name="_6_customwhitelistdevice"/>
+                </field>
+                <field name="/enrichments/biocatch/previouslyusedpi">
+                    <srcField name="_6_previouslyusedpi"/>
+                </field>
+                <field name="/enrichments/biocatch/nodelaytoinputpi">
+                    <srcField name="_6_nodelaytoinputpi"/>
+                </field>
+                <field name="/enrichments/biocatch/fluidtypingpi">
+                    <srcField name="_6_fluidtypingpi"/>
+                </field>
+                <field name="/enrichments/biocatch/consistentip">
+                    <srcField name="_6_consistentip"/>
+                </field>
+                <field name="/enrichments/biocatch/consistentdevice">
+                    <srcField name="_6_consistentdevice"/>
+                </field>
+                <field name="/enrichments/biocatch/timezonemismatch">
+                    <srcField name="_6_timezonemismatch"/>
+                </field>
+                <field name="/enrichments/biocatch/riskyip">
+                    <srcField name="_6_riskyip"/>
+                </field>
+                <field name="/enrichments/biocatch/fasttraveler">
+                    <srcField name="_6_fasttraveler"/>
+                </field>
+                <field name="/enrichments/biocatch/recentlinkedip">
+                    <srcField name="_6_recentlinkedip"/>
+                </field>
+                <field name="/enrichments/biocatch/recentlinkeddevice">
+                    <srcField name="_6_recentlinkeddevice"/>
+                </field>
+                <field name="/enrichments/biocatch/riskyelementsinteraction">
+                    <srcField name="_6_riskyelementsinteraction"/>
+                </field>
+                <field name="/enrichments/biocatch/riskyamount">
+                    <srcField name="_6_riskyamount"/>
+                </field>
+                <field name="/enrichments/biocatch/recentprofilesettingschange">
+                    <srcField name="_6_recentprofilesettingschange"/>
+                </field>
+                <field name="/enrichments/biocatch/recentpaymentsettingschange">
+                    <srcField name="_6_recentpaymentsettingschange"/>
+                </field>
+                <field name="/enrichments/biocatch/recentriskydevice">
+                    <srcField name="_6_recentriskydevice"/>
+                </field>
+                <field name="/enrichments/biocatch/rarecoresanomaly">
+                    <srcField name="_6_rarecoresanomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/rarecores">
+                    <srcField name="_6_rarecores"/>
+                </field>
+                <field name="/enrichments/biocatch/newdevice">
+                    <srcField name="_6_newdevice"/>
+                </field>
+                <field name="/enrichments/biocatch/devicechangeanomaly">
+                    <srcField name="_6_devicechangeanomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/newasn">
+                    <srcField name="_6_newasn"/>
+                </field>
+                <field name="/enrichments/biocatch/ipmismatchanomaly">
+                    <srcField name="_6_ipmismatchanomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/segmentedtypingpi">
+                    <srcField name="_6_segmentedtypingpi"/>
+                </field>
+                <field name="/enrichments/biocatch/riskyimport">
+                    <srcField name="_6_riskyimport"/>
+                </field>
+                <field name="/enrichments/biocatch/lowfamiliaritycontactdetail">
+                    <srcField name="_6_lowfamiliaritycontactdetail"/>
+                </field>
+                <field name="/enrichments/biocatch/longdelaytoinputpi">
+                    <srcField name="_6_longdelaytoinputpi"/>
+                </field>
+                <field name="/enrichments/biocatch/importpidata">
+                    <srcField name="_6_importpidata"/>
+                </field>
+                <field name="/enrichments/biocatch/importdata">
+                    <srcField name="_6_importdata"/>
+                </field>
+                <field name="/enrichments/biocatch/excessivedeletingpi">
+                    <srcField name="_6_excessivedeletingpi"/>
+                </field>
+                <field name="/enrichments/biocatch/newuser">
+                    <srcField name="_6_newuser"/>
+                </field>
+                <field name="/enrichments/biocatch/developertools">
+                    <srcField name="_6_developertools"/>
+                </field>
+                <field name="/enrichments/biocatch/apptoggleapplication">
+                    <srcField name="_6_apptoggleapplication"/>
+                </field>
+                <field name="/enrichments/biocatch/advancedkeycombo">
+                    <srcField name="_6_advancedkeycombo"/>
+                </field>
+                <field name="/enrichments/biocatch/riskykeycombo">
+                    <srcField name="_6_riskykeycombo"/>
+                </field>
+                <field name="/enrichments/biocatch/riskyimportexport">
+                    <srcField name="_6_riskyimportexport"/>
+                </field>
+                <field name="/enrichments/biocatch/riskybrowser">
+                    <srcField name="_6_riskybrowser"/>
+                </field>
+                <field name="/enrichments/biocatch/nonhumanmousebehavior">
+                    <srcField name="_6_nonhumanmousebehavior"/>
+                </field>
+                <field name="/enrichments/biocatch/importexportpi">
+                    <srcField name="_6_importexportpi"/>
+                </field>
+                <field name="/enrichments/biocatch/exportdata">
+                    <srcField name="_6_exportdata"/>
+                </field>
+                <field name="/enrichments/biocatch/concurrentsessions">
+                    <srcField name="_6_concurrentsessions"/>
+                </field>
+                <field name="/enrichments/biocatch/rarebrowser">
+                    <srcField name="_6_rarebrowser"/>
+                </field>
+                <field name="/enrichments/biocatch/newbrowser">
+                    <srcField name="_6_newbrowser"/>
+                </field>
+                <field name="/enrichments/biocatch/raretypingpatternsanomaly">
+                    <srcField name="_6_raretypingpatternsanomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/privatebrowsinganomaly">
+                    <srcField name="_6_privatebrowsinganomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/loginimportanomaly">
+                    <srcField name="_6_loginimportanomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/keymouseanomaly">
+                    <srcField name="_6_keymouseanomaly"/>
+                </field>
+                <field name="/enrichments/biocatch/policyid">
+                    <srcField name="_6_policyid"/>
+                </field>
+                <field name="/enrichments/biocatch/policyaction">
+                    <srcField name="_6_policyaction"/>
+                </field>
+                <field name="/enrichments/biocatch/isrecentrat">
+                    <srcField name="_6_isrecentrat"/>
+                </field>
+                <field name="/enrichments/biocatch/ismobilerat">
+                    <srcField name="_6_ismobilerat"/>
+                </field>
+                <field name="/enrichments/biocatch/isemulator">
+                    <srcField name="_6_isemulator"/>
+                </field>
+                <field name="/enrichments/biocatch/bcstatus">
+                    <srcField name="_6_bcstatus"/>
+                </field>
+                <field name="/enrichments/biocatch/customersessionid">
+                    <srcField name="_6_customersessionid"/>
+                </field>
+                <field name="/enrichments/biocatch/ip">
+                    <srcField name="_6_ip"/>
+                </field>
+                <field name="/enrichments/biocatch/ipgeoasn">
+                    <srcField name="_6_ipgeoasn"/>
+                </field>
+                <field name="/enrichments/biocatch/ipgeocity">
+                    <srcField name="_6_ipgeocity"/>
+                </field>
+                <field name="/enrichments/biocatch/ipgeocountry">
+                    <srcField name="_6_ipgeocountry"/>
+                </field>
+                <field name="/enrichments/biocatch/ipgeolatitude">
+                    <srcField name="_6_ipgeolatitude"/>
+                </field>
+                <field name="/enrichments/biocatch/ipgeolongtitude">
+                    <srcField name="_6_ipgeolongtitude"/>
+                </field>
+                <field name="/enrichments/biocatch/isbot">
+                    <srcField name="_6_isbot"/>
+                </field>
+                <field name="/enrichments/biocatch/ismalware">
+                    <srcField name="_6_ismalware"/>
+                </field>
+                <field name="/enrichments/biocatch/israt">
+                    <srcField name="_6_israt"/>
+                </field>
+                <field name="/enrichments/biocatch/issupported">
+                    <srcField name="_6_issupported"/>
+                </field>
+                <field name="/enrichments/biocatch/max30dayscore">
+                    <srcField name="_6_max30dayscore"/>
+                </field>
+                <field name="/enrichments/biocatch/platform">
+                    <srcField name="_6_platform"/>
+                </field>
+                <field name="/enrichments/biocatch/score">
+                    <srcField name="_6_score"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

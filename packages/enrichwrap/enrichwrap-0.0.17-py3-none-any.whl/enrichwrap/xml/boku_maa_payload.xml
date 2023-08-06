@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Boku payload mappings">
+        <message messageType="Boku" subType="matchAndAttributes" mapperId="bokuMatchAndAttributes">
+            <fields>
+                <!-- assigned by Boku -->
+                <field name="merchantId" default="0119000926A929">
+                    <srcField name="/merchantId"/>
+                </field>
+
+                <!-- assigned by Boku -->
+                <field name="subMerchantId" default="0119000927051C">
+                    <srcField name="/subMerchantId"/>
+                </field>
+
+                <!--&lt;!&ndash; TODO: need to come from request. &ndash;&gt;-->
+                <!--<field name="consentID" default="uyciydfoudqwg912863017">-->
+                <!--<srcField name="/consentID"/>-->
+                <!--</field>-->
+
+                <!--&lt;!&ndash; TODO: need to come from request. &ndash;&gt;-->
+                <!--<field name="consentTimeStamp">-->
+                <!--<srcField name="/consentTimeStamp">-->
+                <!--<groovy>-->
+                <!--return (value == null)?-->
+                <!--com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.getFormat("yyyyMMddHHmmss").format(new Date())-->
+                <!--: value;-->
+                <!--</groovy>-->
+                <!--</srcField>-->
+                <!--</field>-->
+
+                <!-- TODO: better to come from request, generate one if have to. -->
+                <field name="correlationId" default="ABC0881973286793">
+                    <srcField name="app_id"/>
+                </field>
+
+                <!-- TODO: need to come from request. -->
+                <field name="consumerMdn">
+                    <srcField name="app_num1_number">
+                        <groovy>
+                            <![CDATA[
+                        if (value!=null && value.trim().length()==10) {
+                            value = value.trim();
+                            value = "+1" + value;
+                        return value;
+                        }
+                        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="attributeGroups" default="matchScores,serviceInfo,scoreInfo">
+                    <srcField name="/attributeGroups"/>
+                </field>
+
+                <field name="intendedUseCase" default="RM">
+                    <srcField name="/intendedUseCase"/>
+                </field>
+
+                <field name="identity/consumerFirstName">
+                    <srcField name="app_first_name"/>
+                </field>
+
+                <field name="identity/consumerLastName">
+                    <srcField name="app_last_name"/>
+                </field>
+
+                <field name="identity/consumerAddress1">
+                    <srcField name="app_address1"/>
+                </field>
+
+                <field name="identity/consumerAddress2">
+                    <srcField name="app_address2"/>
+                </field>
+
+                <field name="identity/consumerCity">
+                    <srcField name="app_city"/>
+                </field>
+
+                <field name="identity/consumerState">
+                    <srcField name="app_state"/>
+                </field>
+
+                <field name="identity/consumerPostalCode">
+                    <srcField name="app_postal_code"/>
+                </field>
+
+                <field name="identity/consumerCountry" default="US">
+                    <srcField name="app_country"/>
+                </field>
+
+                <field name="identity/consumerEmailAddress">
+                    <srcField name="app_email"/>
+                </field>
+
+                <field name="identity/consumerNationalId">
+                    <srcField name="app_id1_doc_number"/>
+                </field>
+
+                <field name="identity/consumerDateOfBirth">
+                    <srcField name="app_dob">
+                        <groovy>
+                            value.replace("-", "")
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="identity/consumerGender">
+                    <srcField name="/identity/consumerGender"/>
+                </field>
+
+                <field name="identity/consumerAge">
+                    <srcField name="/identity/consumerAge"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

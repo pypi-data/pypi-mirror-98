@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- The sample mapping is for the Iovation response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="DataVisor">
+        <message messageType="datavisor" subType="toOde" mapperId="datavisorRespToOde">
+            <fields>
+
+                <field name="_8_score">
+                    <srcField name="/score"/>
+                </field>
+                <field name="_8_responseType">
+                    <srcField name="/responseType"/>
+                </field>
+                <field name="_8_documentNumber">
+                    <srcField name="/documentNumber"/>
+                </field>
+                <field name="_8_id">
+                    <srcField name="/id"/>
+                </field>
+                <field name="_8_campaignName">
+                    <srcField name="/campaignName"/>
+                </field>
+
+            </fields>
+        </message>
+    </messages>
+</application>
