@@ -1,0 +1,7 @@
+pyecharts
+psutil
+pandas
+pyecharts
+xlrd
+xlwt
+openpyxl

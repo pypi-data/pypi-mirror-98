@@ -1,0 +1,63 @@
+# Introduction
+The tool can collect the CPU and memory of a process in the PC system and save to the local, support Mac, Windows.
+
+#The package name
+process_name = packagename
+
+#In seconds
+collect_time = seconds
+
+#for windows
+
+.. code-block:: python
+
+    from performance_data_collection.WindowsCollect import Win
+
+    process_name = 'package_name'
+    collect_time = 10  # In seconds
+    win = Win(process_name, collect_time)
+    win.collect()
+
+#for mac
+
+.. code-block:: python
+
+    from performance_data_collection.MacCollect import Mac
+
+    process_name = 'packagename'
+    collect_time = 10  # In seconds
+    mac = Mac(process_name, collect_time)
+    mac.collect()
+
+
+#result
+
+.. code-block::
+
+    CPU:9.06%
+    memory：195.39MB
+    ********************
+    CPU:8.80%
+    memory：191.50MB
+    ********************
+    CPU:9.01%
+    memory：191.50MB
+    ********************
+    CPU:9.28%
+    memory：191.51MB
+    ********************
+    CPU:9.75%
+    memory：191.53MB
+    ********************
+    ...
+
+
+
+
+
+
+
+
+[联系作者](2025331266@qq.com,747469442@qq.com)
+
+git@gitee.com:zhou002/performance.git
