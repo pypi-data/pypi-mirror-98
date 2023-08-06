@@ -1,0 +1,5 @@
+ConfigArgParse>=1.0
+anytree>=2.0
+argcomplete>=1.0
+art>=2.0
+requests>=1.0
