@@ -1,0 +1,3 @@
+[console_scripts]
+pygst-launch=pythiags.cli:main
+
