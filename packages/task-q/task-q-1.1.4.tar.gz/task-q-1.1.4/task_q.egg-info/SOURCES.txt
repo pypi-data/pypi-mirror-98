@@ -1,0 +1,16 @@
+README.md
+setup.py
+task_q.egg-info/PKG-INFO
+task_q.egg-info/SOURCES.txt
+task_q.egg-info/dependency_links.txt
+task_q.egg-info/entry_points.txt
+task_q.egg-info/requires.txt
+task_q.egg-info/top_level.txt
+taskq/__init__.py
+taskq/__main__.py
+taskq/abort-handler.py
+taskq/models.py
+taskq/resources.py
+taskq/settings.py
+taskq/task-handler.py
+taskq/utils.py
