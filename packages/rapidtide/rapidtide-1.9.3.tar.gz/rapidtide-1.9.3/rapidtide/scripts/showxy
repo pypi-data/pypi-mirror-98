@@ -1,0 +1,272 @@
+#!/usr/bin/env python
+# -*- coding: latin-1 -*-
+#
+#   Copyright 2016-2019 Blaise Frederick
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+#
+#
+#       $Author: frederic $
+#       $Date: 2016/06/14 12:04:51 $
+#       $Id: showxy,v 1.12 2016/06/14 12:04:51 frederic Exp $
+#
+from __future__ import print_function
+import sys
+import getopt
+import matplotlib
+import platform
+import rapidtide.io as tide_io
+import matplotlib.cm as cm
+from scipy import arange
+from scipy.stats import linregress
+import numpy as np
+
+from matplotlib.pyplot import plot, xlabel, ylabel, title, legend, show, bar, savefig, scatter, axhline, xlim, ylim, annotate
+ 
+
+def bland_altman_plot(data1, data2, identifier=None, fontscalefac=1.0, xrange=None, yrange=None, *args, **kwargs):
+    data1 = np.asarray(data1)
+    data2 = np.asarray(data2)
+    slope, intercept, r_value, p_value, std_err = linregress(data1, data2)
+    diff_slope, diff_intercept, diff_r_value, diff_p_value, diff_std_err = linregress((data1 + data2) / 2.0, data1 - data2)
+    mean = np.mean([data1, data2], axis=0)
+    diff = data1 - data2  # Difference between data1 and data2
+    md = np.mean(diff)  # Mean of the difference
+    sd = np.std(diff, axis=0)  # Standard deviation of the difference
+    print()
+    if identifier is not None:
+        print('id:', identifier)
+    print('slope:', slope)
+    print('r_value:', r_value)
+    print('p_value:', p_value)
+    print('diff_slope:', diff_slope)
+    print('diff_r_value:', diff_r_value)
+    print('diff_p_value:', diff_p_value)
+    print('mean difference:', md)
+    print('std difference:', sd)
+    mdstring = 'Mean diff: ' + format(md, '.3f')
+    sdstring = 'Std diff: ' + format(sd, '.3f')
+    annotate(mdstring + '\n' + sdstring,
+                xy=(0.65, 0.90),
+                xycoords='figure fraction',
+                horizontalalignment='left',
+                verticalalignment='top',
+                fontsize=fontscalefac * 16)
+
+    scatter(mean, diff, facecolors='none', edgecolors='b', *args, **kwargs)
+    axhline(md, color='gray', linestyle='--')
+    axhline(md + 2 * sd, color='gray', linestyle='--')
+    axhline(md - 2 * sd, color='gray', linestyle='--')
+    if xrange is not None:
+        xlim(xrange)
+    if yrange is not None:
+        ylim(yrange)
+
+
+def stringtorange(thestring):
+    thelist = thestring.split(',')
+    if len(thelist) != 2:
+        print('range setting requires two comma separated floats - exiting')
+        sys.exit()
+    try:
+        themin = float(thelist[0])
+    except:
+        print('range setting requires two comma separated floats - exiting')
+        sys.exit()
+    try:
+        themax = float(thelist[1])
+    except:
+        print('range setting requires two comma separated floats - exiting')
+        sys.exit()
+    return (themin, themax)
+
+
+def usage():
+    print("usage: showxy textfilename[,LINELABEL] [-x XLABEL] [-y YLABEL] [-t TITLE] [-o FILENAME] [-i FILENAME[,LINELABEL]] [-r DPI]")
+    print("\tplots xy data in text file")
+    print("")
+    print("required arguments:")
+    print("\ttextfilename	- a text file containing one timepoint per line")
+    print("")
+    print("optional arguments:")
+    print("\t-x\tuse XLABEL on the x axis")
+    print("\t-y\tuse YLABEL on the y axis")
+    print("\t-X\tset x axis range to XMIN, XMAX")
+    print("\t-Y\tset y axis range to YMIN, YMAX")
+    print("\t-t\tuse TITLE at the top of the graph")
+    print("\t-i\tadd FILENAME to the plot, with label LINELABEL")
+    print("\t-p\tplot as individual points (do not connect points)")
+    print("\t-o\tsave plot to FILENAME instead of displaying to screen")
+    print("\t-b\tmake a bar plot x vs y")
+    print("\t-B\tmake a Bland-Altman plot of x vs y")
+    print("\t-f\tscale all font sizes by FAC (default is 1.0)")
+    print("\t-r\tsave plots at DPI dots per inch (default is 1000)")
+
+    return ()
+
+# set default variable values
+usebarplot = False
+usexlabel = False
+useylabel = False
+usetitle = False
+uselegend = True
+usepoints = False
+outputfile = None
+blandaltman = False
+fontscalefac = 1.0
+xrange = None
+yrange = None
+verbose = False
+saveres = 1000
+legendloc = 1
+colornames = []
+
+# now check options
+try:
+    opts, args = getopt.gnu_getopt(sys.argv[1:], "r:X:Y:f:o:pbi:x:y:l:t:B", ["help"])
+except getopt.GetoptError as err:
+    # print help information and exit:
+    print(str(err))  # will print something like "option -a not recognized"
+    usage()
+    sys.exit(2)
+
+if verbose:
+    print('opts:', opts)
+    print('args:', args)
+
+# make sure there is at least one filename argument
+nargs = len(args)
+if nargs < 1:
+    print('not enough arguments in', args)
+    usage()
+    sys.exit(1)
+
+# handle filename args
+argvec = sys.argv[1].split(',')
+
+numfiles = 0
+textfilename = []
+thelegend = []
+for i in range(len(args)):
+    numfiles += 1
+    thesplit = args[i].split(',')
+    textfilename.append(thesplit[0])
+    if len(thesplit) > 1:
+        thelegend.append(thesplit[1])
+    else:
+        thelegend.append(thesplit[0])
+    if verbose:
+        print('input file number ', numfiles, ' is ', textfilename[-1], ', label is', thelegend[-1])
+
+for o, a in opts:
+    if o == "-x":
+        usexlabel = True
+        thexlabel = a
+        if verbose:
+            print("labelling x axis with ", thexlabel)
+    elif o == "-y":
+        useylabel = True
+        theylabel = a
+        if verbose:
+            print("labelling y axis with ", theylabel)
+    elif o == "-X":
+        xrange = stringtorange(a)
+        if verbose:
+            print("setting yrange to", xrange[0], xrange[1])
+    elif o == "-Y":
+        yrange = stringtorange(a)
+        if verbose:
+            print("setting yrange to", yrange[0], yrange[1])
+    elif o == "-f":
+        fontscalefac = float(a)
+        if verbose:
+            print("will scale fonts by", fontscalefac)
+    elif o == "-o":
+        outputfile = a
+        if verbose:
+            print("saving plot to ", outputfile)
+    elif o == '-r':
+        saveres = int(a)
+        print('writing output to file at', saveres, 'dpi')
+    elif o == "-t":
+        usetitle = True
+        thetitle = a
+        if verbose:
+            print("using title ", thetitle)
+    elif o == '-i':
+        argvec = a.split(',')
+        if not (0 < len(argvec) <= 2):
+            usage()
+            sys.exit()
+        textfilename.append(argvec[0])
+        if len(argvec) == 2:
+            thelegend.append(argvec[1])
+            uselegend = True
+        else:
+            thelegend.append(argvec[0])
+        numfiles += 1
+        if verbose:
+            print('input file number ', numfiles, ' is ', textfilename[-1], ', label is', thelegend[-1])
+    elif o == '-p':
+        usepoints = True
+    elif o == '-b':
+        usebarplot = True
+        if verbose:
+            print("doing bar plot")
+    elif o == '-B':
+        blandaltman = True
+        uselegend = False
+        if verbose:
+            print("doing bland-altman plot")
+    else:
+        assert False, "unhandled option"
+
+xvecs = []
+yvecs = []
+for i in range(0, numfiles):
+    if verbose:
+        print('reading data from', textfilename[i])
+    indata = tide_io.readvecs(textfilename[i])
+    xvecs.append(1.0 * indata[0, :])
+    yvecs.append(1.0 * indata[1, :])
+
+numvecs = len(xvecs)
+#colorlist = [cm.nipy_spectral(float(i) / numvecs) for i in range(numvecs)]
+if len(colornames) > 0:
+    colorlist = [colornames[i % len(colornames)] for i in range(numvecs)]
+else:
+    colorlist = [cm.nipy_spectral(float(i) / numvecs) for i in range(numvecs)]
+
+for i in range(0, numfiles):
+    if usebarplot:
+        bar(xvecs[i], yvecs[i], width=1.5, color='lightgray', align='center', edgecolor=None)
+    elif blandaltman:
+        bland_altman_plot(xvecs[i], yvecs[i], identifier=textfilename[i], fontscalefac=fontscalefac, xrange=xrange, yrange=yrange)
+    else:
+        if usepoints:
+            plot(xvecs[i], yvecs[i], color=colorlist[i], marker='.', linestyle='None')
+        else:
+            plot(xvecs[i], yvecs[i], color=colorlist[i])
+if uselegend:
+    legend(thelegend, loc=legendloc)
+if usetitle:
+    title(thetitle, fontsize=fontscalefac * 18, fontweight='bold')
+if usexlabel:
+    xlabel(thexlabel, fontsize=fontscalefac * 16, fontweight='bold')
+if useylabel:
+    ylabel(theylabel, fontsize=fontscalefac * 16, fontweight='bold')
+
+if outputfile is None:
+    show()
+else:
+    savefig(outputfile, bbox_inches='tight', dpi=saveres)

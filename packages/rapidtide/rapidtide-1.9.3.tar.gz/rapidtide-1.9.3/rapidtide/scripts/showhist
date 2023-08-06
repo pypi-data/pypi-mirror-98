@@ -1,0 +1,123 @@
+#!/usr/bin/env python
+# -*- coding: latin-1 -*-
+#
+#   Copyright 2016-2019 Blaise Frederick
+#
+#   Licensed under the Apache License, Version 2.0 (the "License");
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#       http://www.apache.org/licenses/LICENSE-2.0
+#
+#   Unless required by applicable law or agreed to in writing, software
+#   distributed under the License is distributed on an "AS IS" BASIS,
+#   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#   See the License for the specific language governing permissions and
+#   limitations under the License.
+#
+#
+#       $Author: frederic $
+#       $Date: 2016/07/11 14:50:43 $
+#       $Id: showhist,v 1.5 2016/07/11 14:50:43 frederic Exp $
+#
+from __future__ import print_function
+import sys
+import getopt
+import rapidtide.io as tide_io
+from matplotlib.pyplot import plot, xlabel, ylabel, title, legend, show, savefig, bar
+
+
+def usage():
+    print("usage: showhist textfilename")
+    print("	plots xy histogram data in text file")
+    print("")
+    print("required arguments:")
+    print("	textfilename	- a text file containing one timepoint per line")
+    print("")
+    print("optional arguments:")
+    print("\t-x\tuse XLABEL on the x axis")
+    print("\t-y\tuse YLABEL on the y axis")
+    print("\t-t\tuse TITLE at the top of the graph")
+    print("\t-o\tsave plot to FILENAME instead of displaying to screen")
+    print("\t-b\tplot bars rather than lines")
+    return ()
+
+
+# get the command line parameters
+nargs = len(sys.argv)
+if nargs < 2:
+    usage()
+    exit()
+
+# set default variable values
+dolegend = True
+usexlabel = False
+useylabel = False
+usetitle = False
+uselegend = False
+dobar = False
+thelegendlabel = ''
+thetitle = ''
+thexlabel = ''
+theylabel = ''
+outputfile = None
+
+
+# handle required args first
+textfilename = sys.argv[1]
+
+# now check options
+try:
+    opts, args = getopt.getopt(sys.argv[2:], "o:x:y:l:t:b", ["help"])
+except getopt.GetoptError as err:
+    # print help information and exit:
+    print(str(err))  # will print something like "option -a not recognized"
+    usage()
+    sys.exit(2)
+
+for o, a in opts:
+    if o == "-x":
+        usexlabel = True
+        thexlabel = a
+        print("labelling x axis with ", thexlabel)
+    elif o == "-b":
+        dobar = True
+        print("will use bars rather than lines")
+    elif o == "-y":
+        useylabel = True
+        theylabel = a
+        print("labelling y axis with ", theylabel)
+    elif o == "-l":
+        uselegend = True
+        thelegendlabel = a
+        print("using legend ", thelegendlabel)
+    elif o == "-o":
+        outputfile = a
+        print("saving plot to ", outputfile)
+    elif o == "-t":
+        usetitle = True
+        thetitle = a
+        print("using title ", thetitle)
+    else:
+        assert False, "unhandled option"
+
+indata = tide_io.readvecs(textfilename)
+xvecs = indata[0, :]
+yvecs = indata[1, :]
+if dobar:
+    bar(xvecs, yvecs, width=(0.8 * (xvecs[1] - xvecs[0])), color='g')
+else:
+    plot(xvecs, yvecs, 'r')
+if uselegend:
+    legend(thelegendlabel, loc=1)
+if usetitle:
+    title(thetitle)
+if usexlabel:
+    xlabel(thexlabel, fontsize=16, fontweight='bold')
+if useylabel:
+    ylabel(theylabel, fontsize=16, fontweight='bold')
+
+if outputfile is None:
+    show()
+else:
+    savefig(outputfile, bbox_inches='tight')
