@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dancingcell
+Version: 0.0.3b2
+Summary: DancingCell of Structures
+Home-page: https://gitee.com/alkemiems/dancingcell
+Author: Guanjie Wang
+Author-email: gjwang@buaa.edu.cn
+License: MIT
+Description: # dancingcell
+        
+        #### Description
+        Dancing Cell
+        
+        #### Installation
+        
+        1. xxxx
+        2. xxxx
+        3. xxxx
+        
+        #### Instructions
+        - 所有脚本写到当前目录dancingcell文件夹中
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

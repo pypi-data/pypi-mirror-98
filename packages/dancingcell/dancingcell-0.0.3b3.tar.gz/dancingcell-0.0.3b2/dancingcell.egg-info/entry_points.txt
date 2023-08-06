@@ -1,0 +1,6 @@
+[console_scripts]
+dcband = dancingcell.vasp.vasp_band:run_band
+dcdos = dancingcell.vasp.vasp_dos:run_dos
+dcplotband = dancingcell.vasp.test_plt:run_plot
+dcpp = dancingcell.utility.plt_periodic:run_periodic
+
