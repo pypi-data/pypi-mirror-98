@@ -1,0 +1,11 @@
+numpy
+matplotlib
+pandas
+scipy
+pyomo>=5.7.1
+six
+pyutilib
+python-dateutil
+networkx
+jupyter
+gridx-egret
