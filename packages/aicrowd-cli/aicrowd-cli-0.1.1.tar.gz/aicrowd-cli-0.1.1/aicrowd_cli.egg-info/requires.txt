@@ -1,0 +1,7 @@
+click<8,>=7.1.2
+gitpython
+requests
+requests-toolbelt
+rich
+toml
+tqdm
