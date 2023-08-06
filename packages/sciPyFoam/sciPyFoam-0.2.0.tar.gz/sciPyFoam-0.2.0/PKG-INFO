@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sciPyFoam
+Version: 0.2.0
+Summary: Visualize simulation results of OpenFOAM to publish qulity figure
+Home-page: https://gitlab.com/hydrothermal-openfoam/scipyfoam
+Author: Zhikui Guo
+Author-email: zguo@geomar.de
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: OpenFOAM publication figure SCI postprocessing
+Platform: UNKNOWN
