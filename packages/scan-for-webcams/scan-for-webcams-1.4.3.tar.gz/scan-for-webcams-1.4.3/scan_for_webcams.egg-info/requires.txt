@@ -1,0 +1,9 @@
+shodan
+requests
+rich
+pillow
+clarifai
+halo
+fire
+python-dotenv
+pycountry
