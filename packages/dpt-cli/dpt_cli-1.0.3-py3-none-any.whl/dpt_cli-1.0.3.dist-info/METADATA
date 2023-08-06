@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: dpt-cli
+Version: 1.0.3
+Summary: An extendable command line entrypoint
+Home-page: https://www.direct-netware.de/redirect?dpt;cli
+Author: direct Netware Group et al.
+Author-email: web@direct-netware.de
+License: MPL2
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: dpt-logging (<2,>=1.1.0)
+Requires-Dist: dpt-runtime (<3,>=2)
+Requires-Dist: dpt-threading (<3,>=2)
+
+"dpt-cli" extends Python's API for command line entrypoints.
+
+
