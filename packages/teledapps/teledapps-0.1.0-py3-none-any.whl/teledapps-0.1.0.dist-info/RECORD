@@ -1,0 +1,11 @@
+teledapps/__init__.py,sha256=i1MJinsUf-QkGE0v4zJDrfM_H61OF_hdbd_UTCj5vac,134
+teledapps/actions.py,sha256=GWZxAFPgrMVHGgv_klU1b50ps-AUtJPkqbbQ9bgtZfg,1007
+teledapps/bot.py,sha256=mZ9e0xtKHNvIoKC52xzqpJys3a184iNKMZw3O2hba0I,2092
+teledapps/platform/__init__.py,sha256=aS1acIBlwEx9pynwXb4S7zVvHuZfWjCdTPHIhoFKP60,38
+teledapps/platform/bot_passport.py,sha256=gx154HyTce96nIFhWjyBlQJV6LatLK5FnihMGjrVlQI,167
+teledapps/platform/categories.py,sha256=cmJ8bZMpZ1ZLuWbUr1pkIHI4BTlXs_aqVV2zMBuiM30,252
+teledapps/platform/helpers.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+teledapps/platform/platform.py,sha256=xaANWC5nWLWt5rayrDRkl7y8QLRXuAZ9wMliCx1gNjw,816
+teledapps-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+teledapps-0.1.0.dist-info/METADATA,sha256=1f0yqtBwK6FYl3eb_An3ni8Tm8WWxGxTYA96pZ_WVrU,397
+teledapps-0.1.0.dist-info/RECORD,,
