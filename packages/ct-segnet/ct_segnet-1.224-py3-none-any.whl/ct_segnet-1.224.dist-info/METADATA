@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ct-segnet
+Version: 1.224
+Summary: Automated 3D segmentation powered by 2D convolutional neural networks
+Home-page: https://github.com/aniketkt/CTSegNet
+Author: Aniket Tekawade
+Author-email: atekawade@anl.gov
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: tifffile
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: ConfigArgParse
+Requires-Dist: tqdm
+Requires-Dist: ipython
+Requires-Dist: h5py
+
+UNKNOWN
+
+
