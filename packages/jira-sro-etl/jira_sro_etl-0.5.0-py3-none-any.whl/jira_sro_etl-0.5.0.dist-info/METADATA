@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: jira-sro-etl
+Version: 0.5.0
+Summary: Library responsible for extracting data from Jira to SRO database
+Home-page: https://gitlab.com/integration_seon/libs/etl/jira_sro_etl
+Author: Leonardo Khoury Picoli, Lucas Moraes Soares de Souza, Paulo Sérgio dos Santos Júnior
+Author-email: leonardokhoury@hotmail.com, lucasmoraesplay@gmail.com, paulossjunior@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: behave
+Requires-Dist: commitizen
+Requires-Dist: factory-boy
+
+# Jira_sro_etl
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=integration_seon_jira_sro_etl&metric=alert_status)](https://sonarcloud.io/dashboard?id=integration_seon_jira_sro_etl) [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=integration_seon_jira_sro_etl&metric=coverage)](https://sonarcloud.io/dashboard?id=integration_seon_jira_sro_etl) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=integration_seon_jira_sro_etl&metric=code_smells)](https://sonarcloud.io/dashboard?id=integration_seon_jira_sro_etl)
+
+## General Information
+* **Software**:jira_sro_etl
+* **Author**:Leonardo Khoury Picoli, Lucas Moraes Soares de Souza, Paulo Sérgio dos Santos Júnior
+* **Author's e-mail**:leonardokhoury@hotmail.com, lucasmoraesplay@gmail.com, paulossjunior@gmail.com
+* **Source Repository**: [https://gitlab.com/integration_seon/libs/etl/jira_sro_etl](https://gitlab.com/integration_seon/libs/etl/jira_sro_etl)  
+
+## Goal
+Library responsible for extracting data from Jira to SRO database
+
+## Documentation
+
+The Documentation can be found in this [link](./docs/documentation.md)
+
+## Instalation
+
+To install jira_sro_etl, run this command in your terminal:
+```bash
+pip install jira_sro_etl
+```
+
+## Usage
+
+```python
+#put your example of code here!
+```
+
+## CI/CD configuration
+
+Configure the following variables in CI/CD:
+
+* VAR_SONAR_CLOUD_TOKEN = Token from SonarCloud
+* VAR_GITLAB_USER_NAME = username of Gitlab
+* VAR_GITLAB_USER_EMAIL = user's email of Gitlab
+* VAR_PYPI_USER_NAME = pypi's username
+* VAR_PYPI_PASSWORD = pyp's password 
+
+## Copyright
+This lib was PowerRight by [SEON Application Lib Generator](https://gitlab.com/mdd_seon/from_application_conceptual_data_model_2_lib_application)
+
+
+
+
