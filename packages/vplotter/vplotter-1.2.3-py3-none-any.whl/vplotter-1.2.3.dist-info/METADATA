@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: vplotter
+Version: 1.2.3
+Summary: Plotter based on Veusz [https://github.com/veusz/veusz].
+Home-page: https://github.com/AlexanderDKazakov/Plotter
+Author: Alexander D. Kazakov, Varvara M. Prokacheva
+Author-email: alexander.d.kazakov@gmail.com
+License: MIT
+Keywords: plot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: storer
+Requires-Dist: numpy
+
+# 1. Plotter
+
+- [1. Plotter](#1-plotter)
+  - [1.1. Usage](#11-usage)
+  - [1.2. Contribution](#12-contribution)
+  - [License](#-license)
+
+
+Minimalist plotter class for any purpose. Created for internal needs. Feel free to use it and contribute (see [contribution section](#12-contribution)).
+
+
+
+## 1.1. Usage
+
+Soon.
+
+## 1.2. Contribution
+
+Feel free to contribute to the project, but please create initially an issue with detailed problem and way to resolve it. 
+
+## License
+----
+
+MIT
+
+
