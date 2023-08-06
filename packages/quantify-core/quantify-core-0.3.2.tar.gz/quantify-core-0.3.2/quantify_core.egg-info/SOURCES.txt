@@ -1,0 +1,501 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+docs/Makefile
+docs/api_reference.rst
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/contributing.rst
+docs/index.rst
+docs/installation.rst
+docs/make.bat
+docs/readme.rst
+docs/usage.rst
+docs/_build/html/_images/MC_setpoints_grid_1_2.png
+docs/_build/html/_images/MC_setpoints_grid_2_2.png
+docs/_build/html/_images/MC_setpoints_grid_3_2.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_12_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_13_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_15_1.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_16_1.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_19_1.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_20_1.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_24_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_25_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_26_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_29_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_30_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_31_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_7_0.png
+docs/_build/html/_images/Tutorial 1. Controlling a basic experiment using MeasurementControl_8_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_10_1.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_10_3.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_11_1.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_11_3.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_12_1.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_13_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_13_4.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_14_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_14_1.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_16_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_6_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_7_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_9_0.png
+docs/_build/html/_images/Tutorial 2. Advanced capabilities of the MeasurementControl_9_1.png
+docs/_build/html/_images/Tutorial 3. Adaptive Measurements_12_0.png
+docs/_build/html/_images/Tutorial 3. Adaptive Measurements_13_0.png
+docs/_build/html/_images/Tutorial 3. Adaptive Measurements_7_0.png
+docs/_build/html/_images/Tutorial 3. Adaptive Measurements_8_0.png
+docs/_build/html/_images/Tutorial 3. Adaptive Measurements_9_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_10_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_11_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_12_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_12_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_13_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_14_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_15_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_16_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_16_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_17_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_17_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_17_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_18_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_18_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_18_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_19_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_19_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_20_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_20_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_21_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_21_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_22_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_22_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_23_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_23_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_23_2.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_24_0.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_24_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_7_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_8_1.png
+docs/_build/html/_images/Tutorial 4. Plot monitor_9_1.png
+docs/_build/html/_images/quantify_core_all_docs_0_2.png
+docs/_build/html/_images/quantify_core_all_docs_10_2.png
+docs/_build/html/_images/quantify_core_all_docs_11_2.png
+docs/_build/html/_images/quantify_core_all_docs_13_1.png
+docs/_build/html/_images/quantify_core_all_docs_14_0.png
+docs/_build/html/_images/quantify_core_all_docs_14_1.png
+docs/_build/html/_images/quantify_core_all_docs_14_2.png
+docs/_build/html/_images/quantify_core_all_docs_14_3.png
+docs/_build/html/_images/quantify_core_all_docs_14_4.png
+docs/_build/html/_images/quantify_core_all_docs_6_2.png
+docs/_build/html/_images/quantify_core_all_docs_9_2.png
+docs/_build/html/_images/usage_10_0.png
+docs/_build/html/_images/usage_10_1.png
+docs/_build/html/_images/usage_10_2.png
+docs/_build/html/_images/usage_11_0.png
+docs/_build/html/_images/usage_11_1.png
+docs/_build/html/_images/usage_11_2.png
+docs/_build/html/_images/usage_12_0.png
+docs/_build/html/_images/usage_12_1.png
+docs/_build/html/_images/usage_12_2.png
+docs/_build/html/_images/usage_13_1.png
+docs/_build/html/_images/usage_13_2.png
+docs/_build/html/_images/usage_14_1.png
+docs/_build/html/_images/usage_15_1.png
+docs/_build/html/_images/usage_2_2.png
+docs/_build/html/_images/usage_5_2.png
+docs/_build/html/_images/usage_6_1.png
+docs/_build/html/_images/usage_6_2.png
+docs/_build/html/_images/usage_6_3.png
+docs/_build/html/_images/usage_7_1.png
+docs/_build/html/_images/usage_7_2.png
+docs/_build/html/_images/usage_7_3.png
+docs/_build/html/_images/usage_8_1.png
+docs/_build/html/_images/usage_8_2.png
+docs/_build/html/_images/usage_9_1.png
+docs/_build/html/_images/usage_9_2.png
+docs/_build/html/_images/usage_9_3.png
+docs/_build/html/_static/file.png
+docs/_build/html/_static/minus.png
+docs/_build/html/_static/plus.png
+docs/_build/jupyter_execute/MC_setpoints_grid_1_2.png
+docs/_build/jupyter_execute/MC_setpoints_grid_2_2.png
+docs/_build/jupyter_execute/MC_setpoints_grid_3_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_0_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_10_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_11_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_13_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_14_0.png
+docs/_build/jupyter_execute/quantify_core_all_docs_14_1.png
+docs/_build/jupyter_execute/quantify_core_all_docs_14_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_14_3.png
+docs/_build/jupyter_execute/quantify_core_all_docs_14_4.png
+docs/_build/jupyter_execute/quantify_core_all_docs_6_2.png
+docs/_build/jupyter_execute/quantify_core_all_docs_9_2.png
+docs/_build/jupyter_execute/usage_10_0.png
+docs/_build/jupyter_execute/usage_10_1.png
+docs/_build/jupyter_execute/usage_10_2.png
+docs/_build/jupyter_execute/usage_11_0.png
+docs/_build/jupyter_execute/usage_11_1.png
+docs/_build/jupyter_execute/usage_11_2.png
+docs/_build/jupyter_execute/usage_12_0.png
+docs/_build/jupyter_execute/usage_12_1.png
+docs/_build/jupyter_execute/usage_12_2.png
+docs/_build/jupyter_execute/usage_13_1.png
+docs/_build/jupyter_execute/usage_13_2.png
+docs/_build/jupyter_execute/usage_14_1.png
+docs/_build/jupyter_execute/usage_15_1.png
+docs/_build/jupyter_execute/usage_2_2.png
+docs/_build/jupyter_execute/usage_5_2.png
+docs/_build/jupyter_execute/usage_6_1.png
+docs/_build/jupyter_execute/usage_6_2.png
+docs/_build/jupyter_execute/usage_6_3.png
+docs/_build/jupyter_execute/usage_7_1.png
+docs/_build/jupyter_execute/usage_7_2.png
+docs/_build/jupyter_execute/usage_7_3.png
+docs/_build/jupyter_execute/usage_8_1.png
+docs/_build/jupyter_execute/usage_8_2.png
+docs/_build/jupyter_execute/usage_9_1.png
+docs/_build/jupyter_execute/usage_9_2.png
+docs/_build/jupyter_execute/usage_9_3.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_12_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_13_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_15_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_16_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_19_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_20_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_24_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_25_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_26_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_29_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_30_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_31_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_7_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl_8_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_10_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_10_3.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_11_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_11_3.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_12_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_13_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_13_4.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_14_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_14_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_16_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_6_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_7_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_9_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl_9_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Adaptive Measurements_12_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Adaptive Measurements_13_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Adaptive Measurements_7_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Adaptive Measurements_8_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 3. Adaptive Measurements_9_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_10_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_10_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_11_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_12_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_12_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_13_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_14_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_15_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_16_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_16_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_17_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_17_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_17_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_18_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_18_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_18_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_19_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_19_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_20_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_20_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_21_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_21_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_22_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_22_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_23_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_23_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_23_2.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_24_0.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_24_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_7_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_8_1.png
+docs/_build/jupyter_execute/tutorials/Tutorial 4. Plot monitor_9_1.png
+docs/tutorials/Tutorial 1. Controlling a basic experiment using MeasurementControl.rst
+docs/tutorials/Tutorial 2. Advanced capabilities of the MeasurementControl.rst
+docs/tutorials/Tutorial 3. Adaptive Measurements.rst
+docs/tutorials/Tutorial 4. Plot monitor.rst
+quantify/__init__.py
+quantify/analysis/__init__.py
+quantify/analysis/base_analysis.py
+quantify/analysis/fitting_models.py
+quantify/analysis/spectroscopy_analysis.py
+quantify/analysis/types.py
+quantify/analysis/schemas/__init__.py
+quantify/data/__init__.py
+quantify/data/handling.py
+quantify/data/types.py
+quantify/measurement/__init__.py
+quantify/measurement/control.py
+quantify/measurement/types.py
+quantify/measurement/schemas/__init__.py
+quantify/utilities/__init__.py
+quantify/utilities/_tests_helpers.py
+quantify/utilities/experiment_helpers.py
+quantify/utilities/general.py
+quantify/visualization/SI_utilities.py
+quantify/visualization/__init__.py
+quantify/visualization/_appnope.py
+quantify/visualization/color_utilities.py
+quantify/visualization/instrument_monitor.py
+quantify/visualization/mpl_plotting.py
+quantify/visualization/plot_interpolation.py
+quantify/visualization/pyqt_plotmon.py
+quantify/visualization/pyqt_plotmon_remote.py
+quantify/visualization/ins_mon_widget/__init__.py
+quantify/visualization/ins_mon_widget/qc_snapshot_widget.py
+quantify_core.egg-info/PKG-INFO
+quantify_core.egg-info/SOURCES.txt
+quantify_core.egg-info/dependency_links.txt
+quantify_core.egg-info/not-zip-safe
+quantify_core.egg-info/requires.txt
+quantify_core.egg-info/top_level.txt
+tests/.DS_Store
+tests/__init__.py
+tests/test_quantify.py
+tests/analysis/test_base_analysis.py
+tests/analysis/test_fitting_models.py
+tests/analysis/test_spectroscopy_analysis.py
+tests/analysis/test_types.py
+tests/data/.DS_Store
+tests/data/__init__.py
+tests/data/test_data_handling.py
+tests/data/test_types.py
+tests/measurement/__init__.py
+tests/measurement/test_measurement_control.py
+tests/measurement/test_types.py
+tests/test_data/.DS_Store
+tests/test_data/__init__.py
+tests/test_data/transmon_test_config.json
+tests/test_data/20200430/.DS_Store
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/.DS_Store
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/dataset.hdf5
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_Basic1DAnalysis/processed_dataset.hdf5
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_Basic1DAnalysis/quantities_of_interest.json
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_Basic1DAnalysis/figs_mpl/Line plot x0-y0.png
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_Basic1DAnalysis/figs_mpl/Line plot x0-y0.svg
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassArgs/processed_dataset.hdf5
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassArgs/quantities_of_interest.json
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassRaisesA/processed_dataset.hdf5
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassRaisesA/quantities_of_interest.json
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassRaisesB/processed_dataset.hdf5
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassRaisesB/quantities_of_interest.json
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassRaisesB/figs_mpl/Line plot x0-y0.png
+tests/test_data/20200430/20200430-170837-001-315f36-Cosine test/analysis_DummyAnalysisSubclassRaisesB/figs_mpl/Line plot x0-y0.svg
+tests/test_data/20200504/.DS_Store
+tests/test_data/20200504/20200504-191556-002-4209ee-2D Cosine test/dataset.hdf5
+tests/test_data/20200814/20200814-134652-492-fbf254-save/snapshot.json
+tests/test_data/20201124/.DS_Store
+tests/test_data/20201124/20201124-184709-137-8a5112-(0) Spec IF=0.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184716-237-918bee-(1) Spec IF=20.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184722-988-0463d4-(2) Spec IF=-20.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184729-618-85970f-(3) Spec IF=40.000 MHz/dataset.hdf5
+tests/test_data/20201124/20201124-184736-341-3628d4-(4) Spec IF=-40.000 MHz/dataset.hdf5
+tests/test_data/20210118/.DS_Store
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/.DS_Store
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/dataset.hdf5
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/snapshot.json
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_Basic1DAnalysis/processed_dataset.hdf5
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_Basic1DAnalysis/quantities_of_interest.json
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_Basic1DAnalysis/figs_mpl/Line plot x0-y0.png
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_Basic1DAnalysis/figs_mpl/Line plot x0-y0.svg
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_Basic1DAnalysis/figs_mpl/Line plot x0-y1.png
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_Basic1DAnalysis/figs_mpl/Line plot x0-y1.svg
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/.DS_Store
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/processed_dataset.hdf5
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/quantities_of_interest.json
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/.DS_Store
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.png
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.svg
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.png
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.svg
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.png
+tests/test_data/20210118/20210118-202044-211-58ddb0-heterodyne_spectroscopy_mockDev/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.svg
+tests/test_data/20210126/.DS_Store
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/.DS_Store
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/dataset.hdf5
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/snapshot.json
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/.DS_Store
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/processed_dataset.hdf5
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/quantities_of_interest.json
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y0.png
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y0.svg
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y1.png
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y1.svg
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y0.png
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y0.svg
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y1.png
+tests/test_data/20210126/20210126-162726-170-de4f78-TWPA_pump_8.3300GHz_heterodyne_spectroscopy_mockDevmock-coarse/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y1.svg
+tests/test_data/20210227/.DS_Store
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/.DS_Store
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/dataset.hdf5
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/snapshot.json
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/.DS_Store
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/processed_dataset.hdf5
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/quantities_of_interest.json
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y0.png
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y0.svg
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y1.png
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y1.svg
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y0.png
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y0.svg
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y1.png
+tests/test_data/20210227/20210227-172939-723-53d82c-Resonator_power_id6_4.612GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y1.svg
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/.DS_Store
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/dataset.hdf5
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/snapshot.json
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/.DS_Store
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/quantities_of_interest.json
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.png
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.svg
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.png
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.svg
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.png
+tests/test_data/20210227/20210227-174714-680-31df85-Resonator_id7_4.660GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.svg
+tests/test_data/20210305/.DS_Store
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/dataset.hdf5
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.png
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.svg
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.png
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.svg
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.png
+tests/test_data/20210305/20210305-152943-497-ad8670-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.svg
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/.DS_Store
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/dataset.hdf5
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.png
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.svg
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.png
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.svg
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.png
+tests/test_data/20210305/20210305-154735-413-142768-Resonator_id2_4.483GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.svg
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/.DS_Store
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/dataset.hdf5
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/.DS_Store
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.png
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.svg
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.png
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.svg
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.png
+tests/test_data/20210305/20210305-160157-184-3c17e9-Resonator_id4_4.541GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.svg
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/.DS_Store
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/dataset.hdf5
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.png
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-MagnPhase.svg
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.png
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-RealImag.svg
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.png
+tests/test_data/20210305/20210305-161550-671-982c6d-Resonator_id5_4.577GHz/analysis_ResonatorSpectroscopyAnalysis/figs_mpl/S21-complex.svg
+tests/test_data/20210308/.DS_Store
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/.DS_Store
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/snapshot.json
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/.DS_Store
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/processed_dataset.hdf5
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/quantities_of_interest.json
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y0.png
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y0.svg
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y1.png
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Heatmap x0x1-y1.svg
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y0.png
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y0.svg
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y1.png
+tests/test_data/20210308/20210308-191620-263-cd2dd8-Resonator_vs_FBLFBL_5_2_4.485GHz/analysis_Basic2DAnalysis/figs_mpl/Linecuts x0x1-y1.svg
+tests/test_data/empty/nothing
+tests/test_data/schedules/20210303/20210303-190013-374-5f8d89-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-190020-747-1aa17f-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-190245-408-1d0aab-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-190324-844-81609b-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-190824-438-f67583-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-190844-887-a70d76-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-191027-950-4f6ef8-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-191346-831-7e3218-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-191603-530-aedf86-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192004-803-a2b307-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192021-763-3d1728-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192042-868-951b95-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192056-314-576ada-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192109-925-2257c9-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192159-547-e570b1-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192208-050-c2ade8-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192217-945-f4da04-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192233-349-9b6ab8-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192332-904-8a6825-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192457-920-805082-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192509-085-b4b2aa-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192525-091-7752c0-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192553-429-81b2c5-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192613-723-62eb5f-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192627-571-3cc46f-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192647-906-fe191c-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-192657-166-ef8288-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-201254-307-32b116-Spectroscopy measurement_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-201254-356-54daa5-Spectroscopy measurement_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-201318-961-31ddb8-Spectroscopy measurement_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-201319-010-4895a1-Spectroscopy measurement_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-201332-346-85d05e-Spectroscopy measurement_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-201332-381-23ff3f-Spectroscopy measurement_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-203324-145-3b9630-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-203324-187-71907b-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-203422-213-041438-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-203422-251-d1e798-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-203546-518-44b8bc-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-203546-557-8be96c-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-204625-372-034d9c-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-204642-488-2dc5e1-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210303/20210303-204642-522-9cdef9-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-100242-083-92f10b-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-100242-132-47841f-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-100254-365-f9a47a-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-100254-426-1a3c86-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-100523-316-b3aa73-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-100523-359-8771d3-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-105236-367-bf690b-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-105236-425-46c88b-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-134219-059-6c026f-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-134219-122-524803-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-144309-339-352a62-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-144309-414-b2133e-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-144522-284-91a4b8-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-144522-366-d5aecf-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-144618-913-8769b6-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-144619-013-652abe-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150005-150-f39237-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150005-223-835dbc-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150052-400-e83268-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150052-467-c2bf01-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150942-396-862259-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150942-472-459f67-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-150942-549-b65dac-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-151458-818-b18631-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-151458-916-05e821-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-175939-079-c07b04-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-175939-157-48ecee-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-180323-234-edb62b-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-180323-310-b6be6e-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-184054-170-7f2fda-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-184054-237-3be9ed-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-184247-303-b0d13c-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/test_data/schedules/20210304/20210304-184247-390-4944ed-Heterodyne spectroscopy_schedule/schedule/q0.res_q0.ro_sequencer_cfg.json
+tests/utilities/__init__.py
+tests/utilities/test_experiment_helpers.py
+tests/utilities/test_general.py
+tests/visualization/test_SI_utilities.py
+tests/visualization/test_instrument_monitor.py
+tests/visualization/test_mpl_plotting.py
+tests/visualization/test_pyqt_plotmon.py
