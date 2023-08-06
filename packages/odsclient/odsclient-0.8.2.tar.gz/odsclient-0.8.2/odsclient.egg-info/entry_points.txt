@@ -1,0 +1,3 @@
+[console_scripts]
+odskeys = odsclient.keyring_cmds:odskeys
+
