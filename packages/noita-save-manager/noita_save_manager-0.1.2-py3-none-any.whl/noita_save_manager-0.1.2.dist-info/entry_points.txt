@@ -1,0 +1,3 @@
+[console_scripts]
+noita_save_manager=noita_save_manager.save_manager:main
+
