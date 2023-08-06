@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: opstrat
+Version: 0.0.1
+Summary: Option stategy visualizer
+Home-page: https://github.com/abhijith-git/opstrat
+Author: Abhijith Chandradas
+Author-email: <abhijith.chandradas@gmail.com>
+License: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+
+# opstrat
+
