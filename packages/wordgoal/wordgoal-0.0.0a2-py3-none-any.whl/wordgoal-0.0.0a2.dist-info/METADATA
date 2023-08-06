@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: wordgoal
+Version: 0.0.0a2
+Summary: Charts word count toward a goal
+Home-page: https://github.com/cariad/wordgoal
+Author: Cariad Eccleston
+Author-email: cariad@hey.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: boringmd (~=1.0)
+Requires-Dist: colorama (~=0.4.4)
+Requires-Dist: progrow (~=1.0)
+Requires-Dist: pyyaml (~=5.4.1)
+
+# wordgoal
+
+Charts word count toward a goal.
+
+
