@@ -1,0 +1,7 @@
+codeowners/__init__.py,sha256=QFmYHkwJmyz2Zt1k_uouIypEGrRgThAm9Ai-dwVGlks,4731
+codeowners/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeowners/test_codeowners.py,sha256=fvxibbm2z3sEyu91adY3JXWEP16041nfqJbw4glsAHY,15478
+codeowners-0.3.0.dist-info/LICENSE,sha256=UoDXHRNHyDanF8__oSOdkqrp-3giTrlkwDB9kUGpEZY,1061
+codeowners-0.3.0.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+codeowners-0.3.0.dist-info/METADATA,sha256=5h79tVvF8mIDism-u4VmXVkUuEKbaG1qVmPqDa2y4aI,1751
+codeowners-0.3.0.dist-info/RECORD,,
