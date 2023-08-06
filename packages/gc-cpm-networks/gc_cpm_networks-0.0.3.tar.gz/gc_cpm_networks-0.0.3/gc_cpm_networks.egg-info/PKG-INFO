@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gc-cpm-networks
+Version: 0.0.3
+Summary: Global Context Convolutional Pose Machine Network
+Home-page: https://github.com/xBerryOS/gccpm-look-into-person-cvpr19.pytorch
+Author: Kacper Kulczak
+Author-email: k.kulczak@xberry.tech
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.*
