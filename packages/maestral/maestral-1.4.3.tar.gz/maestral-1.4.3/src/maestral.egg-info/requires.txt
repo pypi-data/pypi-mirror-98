@@ -1,0 +1,46 @@
+click>=7.1.1
+desktop-notifier>=3.2.2
+dropbox<12.0,>=10.9.0
+fasteners>=0.15
+keyring>=22
+keyrings.alt>=3.1.0
+packaging
+pathspec>=0.5.8
+Pyro5>=5.10
+requests>=2.16.2
+sdnotify>=0.3.2
+setuptools
+survey<4.0,>=3.2.2
+watchdog>=2.0.1
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[:sys_platform == "darwin"]
+rubicon-objc>=0.4.0
+
+[dev]
+black
+bump2version
+flake8
+mypy
+pre-commit
+pytest
+pytest-cov
+
+[docs]
+sphinx
+m2r2
+sphinx-autoapi
+sphinx_rtd_theme
+
+[gui]
+
+[gui:sys_platform == "darwin"]
+maestral-cocoa>=1.4.3
+
+[gui:sys_platform == "linux"]
+maestral-qt>=1.4.3
+
+[syslog]
+systemd-python
