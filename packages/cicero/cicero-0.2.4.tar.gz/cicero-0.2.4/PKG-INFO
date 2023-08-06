@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: cicero
+Version: 0.2.4
+Summary: Cicero - Serving presentation slides written in Markdown.
+Home-page: https://github.com/bast/cicero
+Author: Radovan Bast
+Author-email: radovan.bast@uit.no

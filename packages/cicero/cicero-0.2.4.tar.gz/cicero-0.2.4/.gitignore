@@ -1,0 +1,6 @@
+*.pyc
+venv/
+.cache/
+_build/
+*.egg-info/
+.python-version
