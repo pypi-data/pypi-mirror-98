@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: easy-pay
+Version: 0.0.7
+Summary: Easier integration with WeChat pay and Alipay.
+Home-page: https://github.com/StevenLianaL/easy-pay
+Author: Steven Wang
+Author-email: brightstar8284@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: alipay-sdk-python (>=3.3.398)
+Requires-Dist: pendulum (>=2.1.2)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: pycryptodome (==3.9.9)
+Requires-Dist: qrcode (>=6.1)
+Requires-Dist: cryptography (>=3.3.1)
+
+## 依赖
+
+- python 3.8
+
+## version
+- 0.0.6 添加微信解密
+- 0.0.2 添加支付宝验签
+- 0.0.1 支持支付宝支付/微信支付
+
+
