@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: mpv-history-daemon
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/seanbreckenridge/mpv-history-daemon
+Author: Sean Breckenridge
+Author-email: seanbrecke@gmail.com
+License: http://www.apache.org/licenses/LICENSE-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
