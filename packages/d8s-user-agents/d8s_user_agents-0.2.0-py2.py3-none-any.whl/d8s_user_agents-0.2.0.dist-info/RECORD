@@ -1,0 +1,11 @@
+d8s_user_agents/__init__.py,sha256=aIxp2lwl8zxXsV95CRc1cfjPE7F9sdbnLLNKvPPP_aM,645
+d8s_user_agents/user_agents.py,sha256=Vm2jkOgrxBPCyQOkg5VM9yico0ucCSfn9PUF6DLqpRk,781
+d8s_user_agents/user_agents_temp_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_user_agents.py,sha256=djXM2V4vgmlfsnQDljejSIFtDMp_iwke5Sb0-4PskZE,583
+d8s_user_agents-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_user_agents-0.2.0.dist-info/METADATA,sha256=ca73qbXPqk6eRnnS3Ndy_y_8rjpSON-DMdvCnzyLDJE,1868
+d8s_user_agents-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_user_agents-0.2.0.dist-info/top_level.txt,sha256=u9DY95DvxC6o1x7CRtGUKUk5Q1DL8z6DM4GMn07KNAY,22
+d8s_user_agents-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_user_agents-0.2.0.dist-info/RECORD,,
