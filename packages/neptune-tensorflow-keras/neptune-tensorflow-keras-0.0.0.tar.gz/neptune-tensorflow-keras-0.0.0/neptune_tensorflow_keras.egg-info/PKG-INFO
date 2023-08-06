@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: neptune-tensorflow-keras
+Version: 0.0.0
+Summary: Neptune.ai tensorflow-keras integration library
+Home-page: https://github.com/neptune-ai/neptune-client
+Author: neptune.ai
+Author-email: contact@neptune.ai
+License: MIT License
+Description: <!-- TODO put meaningfull readme here -->
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: all
