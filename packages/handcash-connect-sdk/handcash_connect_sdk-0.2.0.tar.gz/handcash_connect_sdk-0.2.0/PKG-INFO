@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: handcash_connect_sdk
+Version: 0.2.0
+Summary: handcash_connect_sdk - library for interacting with Handcash Connect API
+Home-page: https://github.com/krzysiekfonal/handcash-connect-sdk-python
+Author: Krzysztof Fonal
+Author-email: krzysiekfonal@gmail.com
+License: The Unlicense
+Download-URL: https://github.com/krzysiekfonal/handcash-connect-sdk-python/releases/tag/v0.1.1
+Description: This library allows you to authorize with Handcash Cloud server and use Handcash Connect API in order to get user's info and do payments on behalf of user's wallet.
+Keywords: api handcash
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
