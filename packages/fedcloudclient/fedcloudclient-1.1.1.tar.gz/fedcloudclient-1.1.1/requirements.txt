@@ -1,0 +1,12 @@
+click
+tabulate
+requests
+defusedxml
+pyjwt~=2.0.1
+python-openstackclient
+future
+liboidcagent
+
+PyYAML
+setuptools
+jsonschema
