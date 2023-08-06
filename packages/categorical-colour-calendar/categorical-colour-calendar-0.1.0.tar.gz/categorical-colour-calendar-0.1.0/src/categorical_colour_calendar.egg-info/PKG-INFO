@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: categorical-colour-calendar
+Version: 0.1.0
+Summary: Library for drawing monthly calendars and highlighting dates from categorical data
+Home-page: https://github.com/erichards97/categorical-colour-calendar
+Author: Edward Richards
+Author-email: 
+License: UNKNOWN
+Description: # Categorical Colour Calendar
+        [![PyPI version](https://badge.fury.io/py/categorical-colour-calendar.svg)](https://badge.fury.io/py/categorical-colour-calendar)
+        [![Documentation Status](https://readthedocs.org/projects/categorical-colour-calendar/badge/?version=latest)](https://categorical-colour-calendar.readthedocs.io/en/latest/?badge=latest)
+        ![PyPI - Downloads](https://img.shields.io/pypi/dm/categorical-colour-calendar)
+        [![Build Status](https://travis-ci.com/erichards97/categorical-colour-calendar.svg?branch=main)](https://travis-ci.com/erichards97/categorical-colour-calendar)
+        
+        ![Example](https://raw.githubusercontent.com/erichards97/categorical-colour-calendar/main/docs/source/_static/ex1.png)
+        
+        
+        ## Setup
+        ```
+        pip install categorical-colour-calendar
+        ```
+        
+        
+        ## Documentation
+        [Documentation](https://categorical-colour-calendar.readthedocs.io/en/latest/)
+        
+        ## Development
+        ```
+        pip install -e .[dev]
+        ```
+        
+        ## To Do
+        - Expand regression tests
+        - Heatmap mode
+        - Annual calendar mode
+        - CI
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
+Provides-Extra: docs
