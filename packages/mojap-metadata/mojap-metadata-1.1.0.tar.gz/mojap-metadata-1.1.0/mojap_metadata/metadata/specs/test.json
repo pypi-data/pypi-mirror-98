@@ -1,0 +1,10 @@
+{
+    "$schema": "./table_schema.json",
+    "name": "125531",
+    "columns": [
+        {
+            "name": "test",
+            "type_category": "integer"
+        }
+    ]
+}
