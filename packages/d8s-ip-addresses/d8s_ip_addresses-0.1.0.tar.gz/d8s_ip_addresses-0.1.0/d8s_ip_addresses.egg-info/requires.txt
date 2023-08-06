@@ -1,0 +1,8 @@
+democritus-csv
+democritus-hypothesis
+democritus-networking
+hypothesis
+ioc-finder
+
+[:python_version < "3.8"]
+importlib-metadata
