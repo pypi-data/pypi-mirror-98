@@ -1,0 +1,14 @@
+README.md
+setup.py
+zzstocklib_pkg/__init__.py
+zzstocklib_pkg/dealwith_notification.py
+zzstocklib_pkg/genKZZreport.py
+zzstocklib_pkg/genStockreport.py
+zzstocklib_pkg/propertiesUtility.py
+zzstocklib_pkg/sinaFinanceUtility.py
+zzstocklib_pkg/wx_notification.py
+zzstocklib_pkg/zzlogger.py
+zzstocklib_pkg_pubbyzz.egg-info/PKG-INFO
+zzstocklib_pkg_pubbyzz.egg-info/SOURCES.txt
+zzstocklib_pkg_pubbyzz.egg-info/dependency_links.txt
+zzstocklib_pkg_pubbyzz.egg-info/top_level.txt
