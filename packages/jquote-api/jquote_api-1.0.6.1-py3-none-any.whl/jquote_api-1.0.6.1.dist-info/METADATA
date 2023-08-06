@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: jquote-api
+Version: 1.0.6.1
+Summary: A small jxl package
+Home-page: https://blog.csdn.net/u011439313/article/details/113445053?spm=1001.2014.3001.5501
+Author: jxl
+Author-email: 1013359736@qq.com
+License: UNKNOWN
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.0.3)
+Requires-Dist: numpy (>=1.17.5)
+Requires-Dist: bs4 (>=0.0.1)
+Requires-Dist: jsonpath (>=0.82)
+Requires-Dist: requests (>=2.23.0)
+
+这是用于获取股票行情数据/财务数据/行业数据的第三方库
+
+
