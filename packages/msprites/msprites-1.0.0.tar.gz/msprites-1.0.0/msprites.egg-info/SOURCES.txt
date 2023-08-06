@@ -1,0 +1,14 @@
+README.md
+setup.py
+msprites/__init__.py
+msprites/command.py
+msprites/constants.py
+msprites/ffmpeg_thumbnails.py
+msprites/montage_sprites.py
+msprites/settings.py
+msprites/temp_file.py
+msprites/webvtt.py
+msprites.egg-info/PKG-INFO
+msprites.egg-info/SOURCES.txt
+msprites.egg-info/dependency_links.txt
+msprites.egg-info/top_level.txt
