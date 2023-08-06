@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: text-gen
+Version: 0.5.0
+Summary: build a text generation model
+Home-page: https://github.com/Emekaborisama/textgen
+Author: Emeka Boris Ama
+Author-email: borisphilosophy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+Requires-Dist: torchvision
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: keras
+Requires-Dist: setuptools (>=47.1.1)
+
+UNKNOWN
+
+
