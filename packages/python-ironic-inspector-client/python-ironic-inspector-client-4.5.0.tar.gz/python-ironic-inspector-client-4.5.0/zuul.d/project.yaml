@@ -1,0 +1,15 @@
+- project:
+    templates:
+      - openstack-python3-wallaby-jobs
+      - publish-openstack-docs-pti
+      - check-requirements
+      - release-notes-jobs-python3
+      - openstackclient-plugin-jobs
+    check:
+      jobs:
+        - openstack-tox-functional-py38
+        - python-ironic-inspector-client-tempest
+    gate:
+      jobs:
+        - openstack-tox-functional-py38
+        - python-ironic-inspector-client-tempest
