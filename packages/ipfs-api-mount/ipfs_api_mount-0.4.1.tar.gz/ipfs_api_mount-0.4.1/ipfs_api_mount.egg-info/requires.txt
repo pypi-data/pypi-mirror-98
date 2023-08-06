@@ -1,0 +1,5 @@
+fusepy==3.0.*
+ipfshttpclient<0.8,>=0.6.1
+lru-dict==1.*
+protobuf<4,>=3.15
+py-multibase==1.*
