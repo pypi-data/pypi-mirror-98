@@ -1,0 +1,395 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Getting Started. &mdash; tekmpesa 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MPESA API Reference" href="api.html" />
+    <link rel="prev" title="Tekmpesa - tekmpesa’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> tekmpesa
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table Of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tekmpesa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Getting Started.</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/contents.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<h1>Getting Started.<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>The package provides a simple,clean and intuitive interface to enable you to
+quickly and consistently use this library in your python application.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>The preferred installation method is directly from pypi:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install -U tekmpesa
+</pre></div>
+</div>
+<p>Additionally, if you want to use the built-in test mechanisms, you need to
+install some extra requirements:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install -U tekmpesa<span class="o">[</span>tests<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>The main class you will be working with is the <code class="docutils literal notranslate"><span class="pre">API</span></code> class of the respective
+submodules.</p>
+<p>For example for Mpesa Kenya the class is <a class="reference internal" href="api.html#mpesa.kenya.API" title="mpesa.kenya.API"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.kenya.API</span></code></a>, and similarly:
+<a class="reference internal" href="api.html#mpesa.ghana.API" title="mpesa.ghana.API"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.ghana.API</span></code></a> for Ghana,
+<a class="reference internal" href="api.html#mpesa.tanzania.API" title="mpesa.tanzania.API"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.tanzania.API</span></code></a> for Tanzania,
+<a class="reference internal" href="api.html#mpesa.mozambique.API" title="mpesa.mozambique.API"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.mozambique.API</span></code></a> for Mozambique,
+<a class="reference internal" href="api.html#mpesa.drc.API" title="mpesa.drc.API"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.drc.API</span></code></a> for the Democratic Republic of Congo.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mpesa</span>
+
+<span class="c1"># There is a corresponding module for each supported country.</span>
+<span class="c1"># i.e</span>
+<span class="n">mpesa_ke</span><span class="o">=</span><span class="n">mpesa</span><span class="o">.</span><span class="n">kenya</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">app_key</span><span class="o">=</span><span class="s2">&quot;&lt;APP_KEY&gt;&quot;</span><span class="p">,</span><span class="n">app_secret</span><span class="o">=</span><span class="s2">&quot;&lt;APP_SECRET&gt;&quot;</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="s2">&quot;sandbox&quot;</span><span class="p">)</span>
+<span class="c1"># for production,i.e going LIVE use env=&quot;production&quot;.</span>
+
+<span class="n">mpesa_gh</span><span class="o">=</span><span class="n">mpesa</span><span class="o">.</span><span class="n">ghana</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">public_key</span><span class="o">=</span><span class="s2">&quot;&lt;PUBLIC_KEY&gt;&quot;</span><span class="p">,</span><span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;&lt;API_KEY&gt;&quot;</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="s2">&quot;sandbox&quot;</span><span class="p">)</span>
+<span class="c1"># for production,i.e going LIVE use env=&quot;production&quot;.</span>
+
+<span class="n">mpesa_tz</span><span class="o">=</span><span class="n">mpesa</span><span class="o">.</span><span class="n">tanzania</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">public_key</span><span class="o">=</span><span class="s2">&quot;&lt;PUBLIC_KEY&gt;&quot;</span><span class="p">,</span><span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;&lt;API_KEY&gt;&quot;</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="s2">&quot;sandbox&quot;</span><span class="p">)</span>
+<span class="c1"># for production,i.e going LIVE use env=&quot;production&quot;.</span>
+
+<span class="n">mpesa_mz</span><span class="o">=</span><span class="n">mpesa</span><span class="o">.</span><span class="n">mozambique</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">public_key</span><span class="o">=</span><span class="s2">&quot;&lt;PUBLIC_KEY&gt;&quot;</span><span class="p">,</span><span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;&lt;API_KEY&gt;&quot;</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="s2">&quot;sandbox&quot;</span><span class="p">)</span>
+<span class="c1"># for production,i.e going LIVE use env=&quot;production&quot;.</span>
+
+<span class="n">mpesa_drc</span><span class="o">=</span><span class="n">mpesa</span><span class="o">.</span><span class="n">drc</span><span class="o">.</span><span class="n">API</span><span class="p">(</span><span class="n">Username</span><span class="o">=</span><span class="s2">&quot;&lt;Username&gt;&quot;</span><span class="p">,</span><span class="n">Password</span><span class="o">=</span><span class="s2">&quot;&lt;Password&gt;&quot;</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="s2">&quot;sandbox&quot;</span><span class="p">)</span>
+<span class="c1"># for production,i.e going LIVE use env=&quot;production&quot;.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Kenya STK Push.</span>
+<span class="n">stkpush_result</span><span class="o">=</span><span class="n">mpesa_ke</span><span class="o">.</span><span class="n">lnmo_stkpush</span><span class="p">(</span>
+    <span class="n">business_shortcode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">passcode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">phonenumber</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">callback_url</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">reference_code</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># Kenya B2C</span>
+<span class="n">ke_b2c_result</span><span class="o">=</span><span class="n">mpesa_ke</span><span class="o">.</span><span class="n">b2c</span><span class="p">(</span>
+     <span class="n">initiator_name</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">security_credential</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">command_id</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">party_a</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">party_b</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">remarks</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">queue_timeout_url</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">result_url</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">occassion</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># Kenya B2B</span>
+<span class="n">ke_b2b_result</span><span class="o">=</span><span class="n">mpesa_ke</span><span class="o">.</span><span class="n">b2b</span><span class="p">(</span>
+     <span class="n">initiator</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">security_credential</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">command_id</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">sender_identifier_type</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">receiver_identifier_type</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">party_a</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">party_b</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">remarks</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">account_reference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">queue_timeout_url</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">result_url</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># For Ghana, and  Tanzania The API signature is the same for all methods.</span>
+<span class="n">gh_c2b_result</span><span class="o">=</span><span class="n">mpesa_gh</span><span class="o">.</span><span class="n">c2b</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CustomerMSISDN</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ServiceProviderCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyConversationID</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">PurchasedItemsDesc</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Ghana/Tanzania b2c</span>
+<span class="n">tz_b2c_result</span><span class="o">=</span><span class="n">mpesa_tz</span><span class="o">.</span><span class="n">b2c</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CustomerMSISDN</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ServiceProviderCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyConversationID</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">PaymentItemsDesc</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># Ghana/Tanzania b2b</span>
+<span class="n">tz_b2b_result</span><span class="o">=</span><span class="n">mpesa_tz</span><span class="o">.</span><span class="n">b2b</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">PrimaryPartyCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ReceiverPartyCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyConversationID</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">PurchasedItemsDesc</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Mozambique c2b.</span>
+<span class="n">mz_c2b_result</span><span class="o">=</span><span class="n">mpesa_mz</span><span class="o">.</span><span class="n">c2b</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CustomerMSISDN</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ServiceProviderCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># Mozambique b2c.</span>
+<span class="n">mz_b2c_result</span><span class="o">=</span><span class="n">mpesa_mz</span><span class="o">.</span><span class="n">b2c</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CustomerMSISDN</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ServiceProviderCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="c1"># Mozambique b2b.</span>
+<span class="n">mz_b2b_result</span><span class="o">=</span><span class="n">mpesa_mz</span><span class="o">.</span><span class="n">b2b</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">PrimaryPartyCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ReceiverPartyCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># DRC c2b</span>
+<span class="n">drc_c2b_result</span><span class="o">=</span><span class="n">mpesa_drc</span><span class="o">.</span><span class="n">c2b</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CallBackChannel</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CallBackDestination</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CommandId</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Currency</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CustomerMSISDN</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Date</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Initials</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Language</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ServiceProviderCode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Surname</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+
+<span class="p">)</span>
+<span class="c1"># DRC b2c</span>
+<span class="n">drc_b2c_result</span><span class="o">=</span><span class="n">mpesa_drc</span><span class="o">.</span><span class="n">b2c</span><span class="p">(</span>
+     <span class="n">Amount</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CallBackChannel</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CallBackDestination</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CommandID</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Currency</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">CustomerMSISDN</span><span class="p">,</span>
+     <span class="n">Language</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ServiceProviderName</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">Shortcode</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">ThirdPartyReference</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+     <span class="n">TransactionDateTime</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="api.html" class="btn btn-neutral float-right" title="MPESA API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Tekmpesa - tekmpesa’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tralah M Brian
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

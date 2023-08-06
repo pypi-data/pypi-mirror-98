@@ -1,0 +1,2070 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MPESA API Reference &mdash; tekmpesa 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Getting Started." href="contents.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> tekmpesa
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table Of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="contents.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.kenya">mpesa.kenya</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.tanzania">mpesa.tanzania</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.ghana">mpesa.ghana</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.mozambique">mpesa.mozambique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.drc">mpesa.drc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.egypt">mpesa.egypt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.lesotho">mpesa.lesotho</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-mpesa.portalsdk">mpesa.portalsdk</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">tekmpesa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>MPESA API Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mpesa-api-reference">
+<h1>MPESA API Reference<a class="headerlink" href="#mpesa-api-reference" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-mpesa.kenya">
+<span id="mpesa-kenya"></span><h2>mpesa.kenya<a class="headerlink" href="#module-mpesa.kenya" title="Permalink to this headline">¶</a></h2>
+<p>Kenya MPESA SDK Implementation.</p>
+<dl class="py class">
+<dt id="mpesa.kenya.API">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.kenya.</code><code class="sig-name descname">API</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">env</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'sandbox'</span></em>, <em class="sig-param"><span class="n">app_key</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">app_secret</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Kenya’s Daraja MPESA API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>env</strong> (<em>str</em>) – The target environment defaults <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;production&quot;</span></code>.</p></li>
+<li><p><strong>app_key</strong> (<em>str</em>) – The <em>app_key</em> from developers portal.</p></li>
+<li><p><strong>app_secret</strong> (<em>str</em>) – The <em>app_secret</em> from developers portal.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Attributes</strong></p>
+<dl class="py attribute">
+<dt id="mpesa.kenya.API.sandbox_url">
+<code class="sig-name descname">sandbox_url</code><a class="headerlink" href="#mpesa.kenya.API.sandbox_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sandbox environment host url “<a class="reference external" href="https://sandbox.safaricom.co.ke">https://sandbox.safaricom.co.ke</a>”</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.kenya.API.live_url">
+<code class="sig-name descname">live_url</code><a class="headerlink" href="#mpesa.kenya.API.live_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>The live/production environment host url “<a class="reference external" href="https://api.safaricom.co.ke">https://api.safaricom.co.ke</a>”</p>
+</dd></dl>
+
+<p><strong>Methods.</strong></p>
+<dl class="py method">
+<dt id="mpesa.kenya.API.authenticate">
+<code class="sig-name descname">authenticate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.authenticate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.authenticate" title="Permalink to this definition">¶</a></dt>
+<dd><p>To make Mpesa API calls, you will need to authenticate your app.</p>
+<p>This method is used to fetch the access token required by Mpesa.
+Mpesa supports client_credentials grant type.</p>
+<p>To authorize your API calls to Mpesa, you will need a Basic Auth over HTTPS authorization token.</p>
+<p>The Basic Auth string is a base64 encoded string of your app’s client key and client secret.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><cite>access_token</cite>  This token is to be used with the Bearer header for further API calls to Mpesa.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.authentication_token">
+<em class="property">property </em><code class="sig-name descname">authentication_token</code><a class="headerlink" href="#mpesa.kenya.API.authentication_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return Authentication Token.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.b2b">
+<code class="sig-name descname">b2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initiator</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">security_credential</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">command_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">sender_identifier_type</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">receiver_identifier_type</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">party_a</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">party_b</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">remarks</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">account_reference</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">queue_timeout_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">result_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.b2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.b2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses the B2B API to transact from one company to another.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>initiator</strong> (<em>str</em>) – Username used to authenticate the transaction.</p></li>
+<li><p><strong>security_credential</strong> (<em>str</em>) – Generate from developer portal</p></li>
+<li><p><strong>command_id</strong> (<em>str</em>) – <p>Options:</p>
+<ul>
+<li><p>BusinessPayBill,</p></li>
+<li><p>BusinessBuyGoods,</p></li>
+<li><p>DisburseFundsToBusiness,</p></li>
+<li><p>BusinessToBusinessTransfer,</p></li>
+<li><p>BusinessTransferFromMMFToUtility,</p></li>
+<li><p>BusinessTransferFromUtilityToMMF,</p></li>
+<li><p>MerchantToMerchantTransfer,</p></li>
+<li><p>MerchantTransferFromMerchantToWorking,</p></li>
+<li><p>MerchantServicesMMFAccountTransfer,</p></li>
+<li><p>AgencyFloatAdvance</p></li>
+</ul>
+</p></li>
+<li><p><strong>sender_identifier_type</strong> (<em>str</em>) – <code class="docutils literal notranslate"><span class="pre">2</span></code> for Till Number,
+<code class="docutils literal notranslate"><span class="pre">4</span></code> for organization shortcode.</p></li>
+<li><p><strong>receiver_identifier_type</strong> (<em>str</em>) – <code class="docutils literal notranslate"><span class="pre">2</span></code> for Till Number,
+<code class="docutils literal notranslate"><span class="pre">4</span></code> for organization shortcode.</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – Amount.</p></li>
+<li><p><strong>party_a</strong> (<em>str</em>) – Sender shortcode.</p></li>
+<li><p><strong>party_b</strong> (<em>str</em>) – Receiver shortcode.</p></li>
+<li><p><strong>remarks</strong> (<em>str</em>) – Remarks.</p></li>
+<li><p><strong>account_reference</strong> (<em>str</em>) – Use if doing paybill to banks etc.</p></li>
+<li><p><strong>queue_timeout_url</strong> (<em>str</em>) – The url that handles information of timed out
+transactions.</p></li>
+<li><p><strong>result_url</strong> (<em>str</em>) – The url that receives results from M-Pesa api call.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p>OriginatorConverstionID (str): The unique request ID for tracking a transaction.</p></li>
+<li><p>ConversationID (str): The unique request ID returned by mpesa for each request made</p></li>
+<li><p>ResponseDescription (str): Response Description message</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.b2c">
+<code class="sig-name descname">b2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initiator_name</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">security_credential</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">command_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">party_a</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">party_b</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">remarks</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">queue_timeout_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">result_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">occassion</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.b2c"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.b2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s B2C API to transact between an M-Pesa short code to a phone number registered on M-Pesa..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>initiator_name</strong> (<em>str</em>) – Username used to authenticate the transaction.</p></li>
+<li><p><strong>security_credential</strong> (<em>str</em>) – Generate from developer portal</p></li>
+<li><p><strong>command_id</strong> (<em>str</em>) – <p>Options:</p>
+<ul>
+<li><p>SalaryPayment,</p></li>
+<li><p>BusinessPayment,</p></li>
+<li><p>PromotionPayment.</p></li>
+</ul>
+</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – Amount.</p></li>
+<li><p><strong>party_a</strong> (<em>str</em>) – <p>Organization/MSISDN making the transaction</p>
+<ul>
+<li><p>Shortcode (6 digits)</p></li>
+<li><p>MSISDN (12 digits).</p></li>
+</ul>
+</p></li>
+<li><p><strong>party_b</strong> (<em>str</em>) – MSISDN receiving the transaction (12 digits).</p></li>
+<li><p><strong>remarks</strong> (<em>str</em>) – Comments that are sent along with the
+transaction(maximum 100 characters).</p></li>
+<li><p><strong>account_reference</strong> (<em>str</em>) – Use if doing paybill to banks etc.</p></li>
+<li><p><strong>queue_timeout_url</strong> (<em>str</em>) – The url that handles information of timed
+out transactions.</p></li>
+<li><p><strong>result_url</strong> (<em>str</em>) – The url that receives results from M-Pesa api call.</p></li>
+<li><p><strong>ocassion</strong> (<em>str</em>) – occasion.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>OriginatorConverstionID</cite> (str): The unique request ID for tracking a transaction.</p></li>
+<li><p><cite>ConversationID</cite> (str): The unique request ID returned by mpesa for each request made</p></li>
+<li><p><cite>ResponseDescription</cite> (str): Response Description message</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;AG_20180326_00005ca7f7c21d608166&quot;</span><span class="p">,</span>
+<span class="nt">&quot;OriginatorConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;12363-1328499-6&quot;</span><span class="p">,</span>
+<span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+<span class="nt">&quot;ResponseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Accept the service request successfully.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.balance">
+<code class="sig-name descname">balance</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initiator</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">security_credential</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">command_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">party_a</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">identifier_type</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">remarks</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">queue_timeout_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">result_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.balance"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s Account Balance API to to enquire the balance on an M-Pesa BuyGoods (Till Number).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>initiator</strong> (<em>str</em>) – Username used to authenticate the transaction.</p></li>
+<li><p><strong>security_credential</strong> (<em>str</em>) – Generate from developer portal.</p></li>
+<li><p><strong>command_id</strong> (<em>str</em>) – AccountBalance.</p></li>
+<li><p><strong>party_a</strong> (<em>str</em>) – Till number being queried.</p></li>
+<li><p><strong>identifier_type</strong> (<em>str</em>) – <p>Type of organization receiving the transaction.</p>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">Identifier Type sOptions</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>identifier_type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>MSISDN</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Till Number</p></td>
+</tr>
+<tr class="row-even"><td><p>4</p></td>
+<td><p>Organization short code</p></td>
+</tr>
+</tbody>
+</table>
+</p></li>
+<li><p><strong>remarks</strong> (<em>str</em>) – Comments that are sent along with the transaction(maximum 100 characters).</p></li>
+<li><p><strong>queue_timeout_url</strong> (<em>str</em>) – The url that handles information of timed out transactions.</p></li>
+<li><p><strong>result_url</strong> (<em>str</em>) – The url that receives results from M-Pesa api call.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>OriginatorConverstionID</cite> (str): The unique request ID for tracking a transaction.</p></li>
+<li><p><cite>ConversationID</cite> (str): The unique request ID returned by mpesa for each request made</p></li>
+<li><p><cite>ResponseDescription</cite> (str): Response Description message</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.c2b_register_url">
+<code class="sig-name descname">c2b_register_url</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shortcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">response_type</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">confirmation_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">validation_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.c2b_register_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.c2b_register_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s C2B API to register validation and confirmation URLs on M-Pesa.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shortcode</strong> (<em>str</em>) – The short code of the organization.</p></li>
+<li><p><strong>response_type</strong> (<em>str</em>) – Default response type for timeout.
+Incase a tranaction times out, Mpesa will by default <code class="docutils literal notranslate"><span class="pre">&quot;Complete&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;Cancel&quot;</span></code> the transaction.</p></li>
+<li><p><strong>confirmation_url</strong> (<em>str</em>) – Confirmation URL for the client.</p></li>
+<li><p><strong>validation_url</strong> (<em>str</em>) – Validation URL for the client.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>OriginatorConversationID</cite> (str): The unique request ID for tracking a transaction.</p></li>
+<li><p><cite>ConversationID</cite> (str): The unique request ID returned by mpesa for each request made</p></li>
+<li><p><cite>ResponseDescription</cite> (str): Response Description message</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;OriginatorCoversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;success&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.c2b_simulate">
+<code class="sig-name descname">c2b_simulate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shortcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">command_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">msisdn</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">bill_ref_number</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.c2b_simulate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.c2b_simulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s C2B API to simulate a C2B transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shortcode</strong> (<em>str</em>) – The short code of the organization.</p></li>
+<li><p><strong>command_id</strong> (<em>str</em>) – <p>Unique command for each transaction type.</p>
+<ul>
+<li><p>CustomerPayBillOnline</p></li>
+<li><p>CustomerBuyGoodsOnline.</p></li>
+</ul>
+</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – The amount being transacted</p></li>
+<li><p><strong>msisdn</strong> (<em>str</em>) – Phone number (msisdn) initiating the transaction MSISDN(12 digits)</p></li>
+<li><p><strong>bill_ref_number</strong> (<em>str</em>) – Optional</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>OriginatorConverstionID</cite> (str): The unique request ID for tracking a transaction.</p></li>
+<li><p><cite>ConversationID</cite> (str): The unique request ID returned by mpesa for each request made</p></li>
+<li><p><cite>ResponseDescription</cite> (str): Response Description message</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;AG_20180324_000066530b914eee3f85&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;OriginatorCoversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;25344-885903-1&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Accept the service request successfully.&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.lnmo_status">
+<code class="sig-name descname">lnmo_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">business_shortcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">checkout_request_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">passcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.lnmo_status"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.lnmo_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s Express API to check the status of a Lipa Na M-Pesa Online Payment..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>business_shortcode</strong> (<em>str</em>) – This is organizations shortcode (Paybill or Buygoods - A 5 to 6 digit account number) used to identify an organization and receive the transaction.</p></li>
+<li><p><strong>checkout_request_id</strong> (<em>str</em>) – This is a global unique identifier of the processed checkout transaction request.</p></li>
+<li><p><strong>passcode</strong> (<em>str</em>) – Get from developer portal</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>CustomerMessage</cite> (str):</p></li>
+<li><p><cite>CheckoutRequestID</cite> (str):</p></li>
+<li><p><cite>ResponseDescription</cite> (str):</p></li>
+<li><p><cite>MerchantRequestID</cite> (str):</p></li>
+<li><p><cite>ResponseCode</cite> (str):</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.lnmo_stkpush">
+<code class="sig-name descname">lnmo_stkpush</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">business_shortcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">passcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">callback_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reference_code</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">phone_number</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">description</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.lnmo_stkpush"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.lnmo_stkpush" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s Express API to initiate online payment on behalf of a customer..</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>business_shortcode</strong> (<em>str</em>) – The short code of the organization.</p></li>
+<li><p><strong>passcode</strong> (<em>str</em>) – Get from developer portal</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – The amount being transacted</p></li>
+<li><p><strong>callback_url</strong> (<em>str</em>) – A CallBack URL is a valid secure URL that is used to receive notifications from M-Pesa API.</p></li>
+<li><p><strong>reference_code</strong> (<em>str</em>) – Account Reference: This is an Alpha-Numeric parameter that is defined by your system as an Identifier of the transaction for CustomerPayBillOnline transaction type.</p></li>
+<li><p><strong>phone_number</strong> (<em>str</em>) – The Mobile Number to receive the STK Pin Prompt.</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – This is any additional information/comment that can be sent along with the request from your system. MAX 13 characters</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>CustomerMessage</cite> (str):</p></li>
+<li><p><cite>CheckoutRequestID</cite> (str):</p></li>
+<li><p><cite>ResponseDescription</cite> (str):</p></li>
+<li><p><cite>MerchantRequestID</cite> (str):</p></li>
+<li><p><cite>ResponseCode</cite> (str):</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;MerchantRequestID&quot;</span><span class="p">:</span> <span class="s2">&quot;25353-1377561-4&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;CheckoutRequestID&quot;</span><span class="p">:</span> <span class="s2">&quot;ws_CO_26032018185226297&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;ResponseDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Success. Request accepted for processing&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;CustomerMessage&quot;</span><span class="p">:</span> <span class="s2">&quot;Success. Request accepted for processing&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.reverse">
+<code class="sig-name descname">reverse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">initiator</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">security_credential</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">command_id</span><span class="o">=</span><span class="default_value">'TransactionReversal'</span></em>, <em class="sig-param"><span class="n">transaction_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">amount</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">receiver_party</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">receiver_identifier_type</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">queue_timeout_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">result_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">remarks</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">occassion</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.reverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s Transaction Reversal API to reverse a M-Pesa transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>initiator</strong> (<em>str</em>) – Username used to authenticate the transaction.</p></li>
+<li><p><strong>security_credential</strong> (<em>str</em>) – Generate from developer portal</p></li>
+<li><p><strong>command_id</strong> (<em>str</em>) – TransactionReversal</p></li>
+<li><p><strong>transaction_id</strong> (<em>str</em>) – Unique identifier to identify a transaction on M-Pesa.</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – The amount being transacted</p></li>
+<li><p><strong>receiver_party</strong> (<em>str</em>) – <p>Organization/MSISDN making the transaction</p>
+<ul>
+<li><p>Shortcode (6 digits)</p></li>
+<li><p>MSISDN (12 digits).</p></li>
+</ul>
+</p></li>
+<li><p><strong>receiver_identifier_type</strong> (<em>str</em>) – MSISDN receiving the transaction (12 digits).</p></li>
+<li><p><strong>queue_timeout_url</strong> (<em>str</em>) – The url that handles information of timed out transactions.</p></li>
+<li><p><strong>result_url</strong> (<em>str</em>) – The url that receives results from M-Pesa api call.</p></li>
+<li><p><strong>remarks</strong> (<em>str</em>) – Comments that are sent along with the transaction(maximum 100 characters)</p></li>
+<li><p><strong>occassion</strong> (<em>str</em>) – Occassion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>OriginatorConverstionID</cite> (str): The unique request ID for tracking a transaction.</p></li>
+<li><p><cite>ConversationID</cite> (str): The unique request ID returned by mpesa for each request made</p></li>
+<li><p><cite>ResponseDescription</cite> (str): Response Description message</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;Result&quot;</span><span class="p">:</span>
+   <span class="p">{</span>
+    <span class="nt">&quot;ResultType&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ResultCode&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span>
+    <span class="nt">&quot;ResultDesc&quot;</span><span class="p">:</span><span class="s2">&quot;The service request has been accepted successfully.&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;OriginatorConversationID&quot;</span><span class="p">:</span><span class="s2">&quot;10819-695089-1&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span><span class="s2">&quot;AG_20170727_00004efadacd98a01d15&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span><span class="s2">&quot;LGR019G3J2&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;ReferenceData&quot;</span><span class="p">:</span>
+    <span class="p">{</span>
+     <span class="nt">&quot;ReferenceItem&quot;</span><span class="p">:</span>
+     <span class="p">{</span>
+       <span class="nt">&quot;Key&quot;</span><span class="p">:</span><span class="s2">&quot;QueueTimeoutURL&quot;</span><span class="p">,</span>
+       <span class="nt">&quot;Value&quot;</span><span class="p">:</span><span class="s2">&quot;https://internalsandbox.safaricom.co.ke/mpesa/reversalresults/v1/submit&quot;</span>
+     <span class="p">}</span>
+    <span class="p">}</span>
+   <span class="p">}</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.kenya.API.transaction_status">
+<code class="sig-name descname">transaction_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">party_a</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">identifier_type</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">remarks</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">initiator</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">passcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">result_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">queue_timeout_url</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">transaction_id</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">occassion</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">shortcode</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/kenya.html#API.transaction_status"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.kenya.API.transaction_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method uses Mpesa’s Transaction Status API to check the status of a transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>party_a</strong> (<em>str</em>) – <p>Organization/MSISDN receiving the transaction</p>
+<ul>
+<li><p>MSISDN or</p></li>
+<li><p>shortcode.</p></li>
+</ul>
+</p></li>
+<li><p><strong>identifier_type</strong> (<em>str</em>) – <p>Type of organization receiving the transaction</p>
+<table class="colwidths-given docutils align-default" id="id5">
+<caption><span class="caption-text">identifier types</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 67%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>identifier_type</p></th>
+<th class="head"><p>description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>MSISDN</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Till Number</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Shortcode</p></td>
+</tr>
+</tbody>
+</table>
+</p></li>
+<li><p><strong>remarks</strong> (<em>str</em>) – Comments that are sent along with the transaction(maximum 100 characters).</p></li>
+<li><p><strong>initiator</strong> (<em>str</em>) – This is the credential/username used to authenticate the transaction request.</p></li>
+<li><p><strong>passcode</strong> (<em>str</em>) – Get from developer portal</p></li>
+<li><p><strong>result_url</strong> (<em>str</em>) – The url that handles information from the mpesa API call.</p></li>
+<li><p><strong>transaction_id</strong> (<em>str</em>) – Unique identifier to identify a transaction on M-Pesa.</p></li>
+<li><p><strong>queue_timeout_url</strong> (<em>str</em>) – The url that stores information of timed out transactions.</p></li>
+<li><p><strong>shortcode</strong> (<em>str</em>) – The short code of the organization.</p></li>
+<li><p><strong>occassion</strong> (<em>str</em>) – Occasion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><p>Dict object of</p>
+<ul class="simple">
+<li><p><cite>ResultDesc</cite>: ,</p></li>
+<li><p><cite>CheckoutRequestID</cite>: ,</p></li>
+<li><p><cite>ResponseDescription</cite>: ,</p></li>
+<li><p><cite>MerchantRequestID</cite>: ,</p></li>
+<li><p><cite>ResponseCode</cite>: ,</p></li>
+<li><p><cite>ResultCode</cite>:</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mpesa.tanzania">
+<span id="mpesa-tanzania"></span><h2>mpesa.tanzania<a class="headerlink" href="#module-mpesa.tanzania" title="Permalink to this headline">¶</a></h2>
+<p>Tanzania MPESA SDK Implementation.</p>
+<dl class="py class">
+<dt id="mpesa.tanzania.API">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.tanzania.</code><code class="sig-name descname">API</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">public_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">api_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">env</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'sandbox'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Tanzania Market API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>public_key</strong> (<em>str.</em>) – Public key from developers portal.</p></li>
+<li><p><strong>api_key</strong> (<em>str.</em>) – API key from developers portal.</p></li>
+<li><p><strong>env</strong> (<em>str</em><em>, </em><em>optional.</em>) – Environment either <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;production&quot;</span></code>, defaults <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Attributes.</strong></p>
+<dl class="py attribute">
+<dt id="mpesa.tanzania.API.sandbox_path">
+<code class="sig-name descname">sandbox_path</code><a class="headerlink" href="#mpesa.tanzania.API.sandbox_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sandbox prefix path <code class="docutils literal notranslate"><span class="pre">&quot;/sandbox/ipg/v2/vodacomTZN/&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.tanzania.API.live_path">
+<code class="sig-name descname">live_path</code><a class="headerlink" href="#mpesa.tanzania.API.live_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The live/openapi prefix path <code class="docutils literal notranslate"><span class="pre">&quot;/openapi/ipg/v2/vodacomTZN/&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.tanzania.API.Currency">
+<code class="sig-name descname">Currency</code><a class="headerlink" href="#mpesa.tanzania.API.Currency" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Currency used for this API. default <code class="docutils literal notranslate"><span class="pre">&quot;TZS&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.tanzania.API.Country">
+<code class="sig-name descname">Country</code><a class="headerlink" href="#mpesa.tanzania.API.Country" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Country used for this API. default <code class="docutils literal notranslate"><span class="pre">&quot;TZN&quot;</span></code>.</p>
+</dd></dl>
+
+<p><strong>Methods.</strong></p>
+<dl class="py method">
+<dt id="mpesa.tanzania.API.b2b">
+<code class="sig-name descname">b2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PrimaryPartyCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ReceiverPartyCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PurchasedItemsDesc</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.b2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.b2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2B Single Stage.</p>
+<p>The B2B API Call is used for business-to-business transactions.</p>
+<p>Funds from the business’ mobile money wallet will be deducted and transferred to the mobile money wallet of the other business.</p>
+<p>Use cases for the B2B includes:</p>
+<ul class="simple">
+<li><p>Stock purchases</p></li>
+<li><p>Bill payment</p></li>
+<li><p>Adhoc payment</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>ReceiverPartyCode</strong> (<em>str.</em>) – Receiver Party Code.</p></li>
+<li><p><strong>PrimaryPartyCode</strong> (<em>str.</em>) – Primary Party Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+<li><p><strong>PurchasedItemsDesc</strong> (<em>str.</em>) – Purchased Items Description.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the B2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.b2c">
+<code class="sig-name descname">b2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PaymentItemsDesc</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.b2c"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.b2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2C Single Stage.</p>
+<p>The B2C API Call is used as a standard business-to-customer funds disbursement.</p>
+<p>Funds from the business account’s wallet will be deducted and paid to the mobile money wallet of the customer.</p>
+<p>Use cases for the B2C includes:</p>
+<ul class="simple">
+<li><p>Salary payments</p></li>
+<li><p>Funds transfers from business</p></li>
+<li><p>Charity pay-out</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+<li><p><strong>PaymentItemsDesc</strong> (<em>str.</em>) – Payment Items Description.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the B2C API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.c2b">
+<code class="sig-name descname">c2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PurchasedItemsDesc</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.c2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.c2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>C2B Single Stage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+<li><p><strong>PurchasedItemsDesc</strong> (<em>str.</em>) – Purchased Items Description.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the C2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.direct_debit_create">
+<code class="sig-name descname">direct_debit_create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">AgreedTC</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">StartRangeOfDays</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">EndRangeOfDays</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ExpiryDate</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">FirstPaymentDate</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Frequency</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.direct_debit_create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.direct_debit_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Direct Debit Create API.</p>
+<p>Direct Debits are payments in M-Pesa that are initiated by the Payee alone without any Payer interaction, but permission must first be granted by the Payer.</p>
+<p>The granted permission from the Payer to Payee is commonly termed a ‘Mandate’, and M-Pesa must hold details of this Mandate.</p>
+<p>The Direct Debit API set allows an organisation to get the initial consent of their customers to create the Mandate that allows the organisation to debit customer’s account at an agreed frequency and amount for services rendered.</p>
+<p>After the initial consent, the debit of the account will not involve any customer interaction.</p>
+<p>The Direct Debit feature makes use of the following API calls:</p>
+<ul class="simple">
+<li><p>Create a Direct Debit mandate</p></li>
+<li><p>Pay a mandate</p></li>
+</ul>
+<p>The customer is able to view and cancel the Direct Debit mandate from G2 menu accessible via USSD menu or the Smartphone Application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>AgreedTC</strong> (<em>str.</em>) – The customer agreed to the terms and conditions.
+Can only use 1 or 0.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+<li><p><strong>StartRangeOfDays</strong> (<em>str</em><em>, </em><em>optional.</em>) – The start range of days in the month.</p></li>
+<li><p><strong>EndRangeOfDays</strong> (<em>str</em><em>, </em><em>optional.</em>) – The end range of days in the month.</p></li>
+<li><p><strong>ExpiryDate</strong> (<em>str</em><em>, </em><em>optional.</em>) – The expiry date of the Mandate.</p></li>
+<li><p><strong>FirstPaymentDate</strong> (<em>str</em><em>, </em><em>optional.</em>) – The Start date of the Mandate.</p></li>
+<li><p><strong>Frequency</strong> (<em>str</em><em>, </em><em>optional.</em>) – The frequency of the payments.</p></li>
+</ul>
+</dd>
+</dl>
+<table class="colwidths-given docutils align-default" id="id6">
+<caption><span class="caption-text">List of Possible Frequency Values.</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Frequency</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>Once off</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>Daily</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>Weekly</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>Monthly</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>Quarterly</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>Half Yearly</p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>Yearly</p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>On Demand</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dictionary object from the DirectDebitCreation API.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict.</p>
+</dd>
+<dt class="field-odd">Example</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionReference&quot;</span><span class="p">:</span> <span class="s2">&quot;vgisfyn4b22w6tmqjftatq75lyuie6vc&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;51a1d9191acc4674ab1dfd321a24ba20&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;AAA6d1f9391a0052de0b5334a912jbsj1j2kk&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.direct_debit_payment">
+<code class="sig-name descname">direct_debit_payment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.direct_debit_payment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.direct_debit_payment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Direct Debit Payment.</p>
+<p>The Direct Debit API set allows an organisation to get the initial consent of their customers to create the Mandate that allows the organisation to debit customer’s account at an agreed frequency and amount for services rendered.</p>
+<p>After the initial consent, the debit of the account will not involve any customer interaction.</p>
+<p>The Direct Debit feature makes use of the following API calls:</p>
+<ul class="simple">
+<li><p>Create a Direct Debit mandate</p></li>
+<li><p>Pay a mandate</p></li>
+</ul>
+<p>The customer is able to view and cancel the Direct Debit mandate from G2 menu accessible via USSD menu or the Smartphone Application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the DirectDebitPayment API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionReference&quot;</span><span class="p">:</span> <span class="s2">&quot;vgisfyn4b22w6tmqjftatq75lyuie6vc&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;51a1d9191acc4674ab1dfd321a24ba20&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;AAA6d1f9391a0052de0b5334a912jbsj1j2kk&quot;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.reverse">
+<code class="sig-name descname">reverse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ReversalAmount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.reverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reversal API.</p>
+<p>The Reversal API is used to reverse a successful transaction.
+Using the Transaction ID of a previously successful transaction, the OpenAPI will withdraw the funds from the recipient party’s mobile money wallet and revert the funds to the mobile money wallet of the initiating party of the original transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ReversalAmount</strong> (<em>str.</em>) – Reversal Amount.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionID</strong> (<em>str.</em>) – Transaction ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the Reversal API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.session_id">
+<em class="property">property </em><code class="sig-name descname">session_id</code><a class="headerlink" href="#mpesa.tanzania.API.session_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return session_id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The sessionID to be used in subsequent requests.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.tanzania.API.transaction_status">
+<code class="sig-name descname">transaction_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">QueryReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/tanzania.html#API.transaction_status"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.tanzania.API.transaction_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query Transaction Status.</p>
+<p>The Query Transaction Status API call is used to query the status of the transaction that has been initiated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>QueryReference</strong> (<em>str.</em>) – Query Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the QueryTransactionStatus API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseTransactionStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;Completed&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mpesa.ghana">
+<span id="mpesa-ghana"></span><h2>mpesa.ghana<a class="headerlink" href="#module-mpesa.ghana" title="Permalink to this headline">¶</a></h2>
+<p>Ghana MPESA SDK Implementation.</p>
+<dl class="py class">
+<dt id="mpesa.ghana.API">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.ghana.</code><code class="sig-name descname">API</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">public_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">api_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">env</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'sandbox'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Ghana Market API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>public_key</strong> (<em>str.</em>) – Public key from developers portal.</p></li>
+<li><p><strong>api_key</strong> (<em>str.</em>) – API key from developers portal.</p></li>
+<li><p><strong>env</strong> (<em>str</em><em>, </em><em>optional.</em>) – Environment either <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;production&quot;</span></code>, defaults <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Attributes.</strong></p>
+<dl class="py attribute">
+<dt id="mpesa.ghana.API.sandbox_path">
+<code class="sig-name descname">sandbox_path</code><a class="headerlink" href="#mpesa.ghana.API.sandbox_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sandbox prefix path <code class="docutils literal notranslate"><span class="pre">&quot;/sandbox/ipg/v2/vodafoneGHA/&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.ghana.API.live_path">
+<code class="sig-name descname">live_path</code><a class="headerlink" href="#mpesa.ghana.API.live_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The live/openapi prefix path <code class="docutils literal notranslate"><span class="pre">&quot;/openapi/ipg/v2/vodafoneGHA/&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.ghana.API.Currency">
+<code class="sig-name descname">Currency</code><a class="headerlink" href="#mpesa.ghana.API.Currency" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Currency used for this API. default <code class="docutils literal notranslate"><span class="pre">&quot;GHS&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.ghana.API.Country">
+<code class="sig-name descname">Country</code><a class="headerlink" href="#mpesa.ghana.API.Country" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Country used for this API. default <code class="docutils literal notranslate"><span class="pre">&quot;GHA&quot;</span></code>.</p>
+</dd></dl>
+
+<p><strong>Methods.</strong></p>
+<dl class="py method">
+<dt id="mpesa.ghana.API.b2b">
+<code class="sig-name descname">b2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PrimaryPartyCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ReceiverPartyCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PurchasedItemsDesc</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.b2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.b2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2B Single Stage.</p>
+<p>The B2B API Call is used for business-to-business transactions.</p>
+<p>Funds from the business’ mobile money wallet will be deducted and transferred to the mobile money wallet of the other business.</p>
+<p>Use cases for the B2B includes:</p>
+<ul class="simple">
+<li><p>Stock purchases</p></li>
+<li><p>Bill payment</p></li>
+<li><p>Adhoc payment</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>ReceiverPartyCode</strong> (<em>str.</em>) – Receiver Party Code.</p></li>
+<li><p><strong>PrimaryPartyCode</strong> (<em>str.</em>) – Primary Party Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+<li><p><strong>PurchasedItemsDesc</strong> (<em>str.</em>) – Purchased Items Description.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the B2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.b2c">
+<code class="sig-name descname">b2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PaymentItemsDesc</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.b2c"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.b2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2C Single Stage.</p>
+<p>The B2C API Call is used as a standard business-to-customer funds disbursement.</p>
+<p>Funds from the business account’s wallet will be deducted and paid to the mobile money wallet of the customer.</p>
+<p>Use cases for the B2C includes:</p>
+<ul class="simple">
+<li><p>Salary payments</p></li>
+<li><p>Funds transfers from business</p></li>
+<li><p>Charity pay-out</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+<li><p><strong>PaymentItemsDesc</strong> (<em>str.</em>) – Payment Items Description.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the B2C API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.c2b">
+<code class="sig-name descname">c2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PurchasedItemsDesc</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.c2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.c2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>C2B Single Stage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+<li><p><strong>PurchasedItemsDesc</strong> (<em>str.</em>) – Purchased Items Description.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the C2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.direct_debit_create">
+<code class="sig-name descname">direct_debit_create</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">AgreedTC</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">StartRangeOfDays</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">EndRangeOfDays</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ExpiryDate</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">FirstPaymentDate</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Frequency</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.direct_debit_create"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.direct_debit_create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Direct Debit Create API.</p>
+<p>Direct Debits are payments in M-Pesa that are initiated by the Payee alone without any Payer interaction, but permission must first be granted by the Payer.</p>
+<p>The granted permission from the Payer to Payee is commonly termed a ‘Mandate’, and M-Pesa must hold details of this Mandate.</p>
+<p>The Direct Debit API set allows an organisation to get the initial consent of their customers to create the Mandate that allows the organisation to debit customer’s account at an agreed frequency and amount for services rendered.</p>
+<p>After the initial consent, the debit of the account will not involve any customer interaction.</p>
+<p>The Direct Debit feature makes use of the following API calls:</p>
+<ul class="simple">
+<li><p>Create a Direct Debit mandate</p></li>
+<li><p>Pay a mandate</p></li>
+</ul>
+<p>The customer is able to view and cancel the Direct Debit mandate from G2 menu accessible via USSD menu or the Smartphone Application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>AgreedTC</strong> (<em>str.</em>) – The customer agreed to the terms and conditions.
+Can only use 1 or 0.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+<li><p><strong>StartRangeOfDays</strong> (<em>str</em><em>, </em><em>optional.</em>) – The start range of days in the month.</p></li>
+<li><p><strong>EndRangeOfDays</strong> (<em>str</em><em>, </em><em>optional.</em>) – The end range of days in the month.</p></li>
+<li><p><strong>ExpiryDate</strong> (<em>str</em><em>, </em><em>optional.</em>) – The expiry date of the Mandate.</p></li>
+<li><p><strong>FirstPaymentDate</strong> (<em>str</em><em>, </em><em>optional.</em>) – The Start date of the Mandate.</p></li>
+<li><p><strong>Frequency</strong> (<em>str</em><em>, </em><em>optional.</em>) – The frequency of the payments.</p></li>
+</ul>
+</dd>
+</dl>
+<table class="colwidths-given docutils align-default" id="id7">
+<caption><span class="caption-text">List of Possible Frequency Values.</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 32%" />
+<col style="width: 68%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Frequency</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>01</p></td>
+<td><p>Once off</p></td>
+</tr>
+<tr class="row-odd"><td><p>02</p></td>
+<td><p>Daily</p></td>
+</tr>
+<tr class="row-even"><td><p>03</p></td>
+<td><p>Weekly</p></td>
+</tr>
+<tr class="row-odd"><td><p>04</p></td>
+<td><p>Monthly</p></td>
+</tr>
+<tr class="row-even"><td><p>05</p></td>
+<td><p>Quarterly</p></td>
+</tr>
+<tr class="row-odd"><td><p>06</p></td>
+<td><p>Half Yearly</p></td>
+</tr>
+<tr class="row-even"><td><p>07</p></td>
+<td><p>Yearly</p></td>
+</tr>
+<tr class="row-odd"><td><p>08</p></td>
+<td><p>On Demand</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A dictionary object from the DirectDebitCreation API.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict.</p>
+</dd>
+<dt class="field-odd">Example</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionReference&quot;</span><span class="p">:</span> <span class="s2">&quot;vgisfyn4b22w6tmqjftatq75lyuie6vc&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;51a1d9191acc4674ab1dfd321a24ba20&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;AAA6d1f9391a0052de0b5334a912jbsj1j2kk&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.direct_debit_payment">
+<code class="sig-name descname">direct_debit_payment</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.direct_debit_payment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.direct_debit_payment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Direct Debit Payment.</p>
+<p>The Direct Debit API set allows an organisation to get the initial consent of their customers to create the Mandate that allows the organisation to debit customer’s account at an agreed frequency and amount for services rendered.</p>
+<p>After the initial consent, the debit of the account will not involve any customer interaction.</p>
+<p>The Direct Debit feature makes use of the following API calls:</p>
+<ul class="simple">
+<li><p>Create a Direct Debit mandate</p></li>
+<li><p>Pay a mandate</p></li>
+</ul>
+<p>The customer is able to view and cancel the Direct Debit mandate from G2 menu accessible via USSD menu or the Smartphone Application.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the DirectDebitPayment API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionReference&quot;</span><span class="p">:</span> <span class="s2">&quot;vgisfyn4b22w6tmqjftatq75lyuie6vc&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;51a1d9191acc4674ab1dfd321a24ba20&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;AAA6d1f9391a0052de0b5334a912jbsj1j2kk&quot;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.reverse">
+<code class="sig-name descname">reverse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ReversalAmount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.reverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reversal API.</p>
+<p>The Reversal API is used to reverse a successful transaction.
+Using the Transaction ID of a previously successful transaction, the OpenAPI will withdraw the funds from the recipient party’s mobile money wallet and revert the funds to the mobile money wallet of the initiating party of the original transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ReversalAmount</strong> (<em>str.</em>) – Reversal Amount.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>TransactionID</strong> (<em>str.</em>) – Transaction ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the Reversal API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.session_id">
+<em class="property">property </em><code class="sig-name descname">session_id</code><a class="headerlink" href="#mpesa.ghana.API.session_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return session_id.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The sessionID to be used in subsequent requests.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.ghana.API.transaction_status">
+<code class="sig-name descname">transaction_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">QueryReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyConversationID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/ghana.html#API.transaction_status"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.ghana.API.transaction_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query Transaction Status.</p>
+<p>The Query Transaction Status API call is used to query the status of the transaction that has been initiated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyConversationID</strong> (<em>str.</em>) – Third Party Conversation ID.</p></li>
+<li><p><strong>QueryReference</strong> (<em>str.</em>) – Query Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the QueryTransactionStatus API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseTransactionStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;Completed&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mpesa.mozambique">
+<span id="mpesa-mozambique"></span><h2>mpesa.mozambique<a class="headerlink" href="#module-mpesa.mozambique" title="Permalink to this headline">¶</a></h2>
+<p>Mozambique MPESA SDK Implementation.</p>
+<dl class="py class">
+<dt id="mpesa.mozambique.API">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.mozambique.</code><code class="sig-name descname">API</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">public_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">api_key</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">env</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'sandbox'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/mozambique.html#API"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.mozambique.API" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Mozambique Market API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>public_key</strong> (<em>str.</em>) – Public key from developers portal.</p></li>
+<li><p><strong>api_key</strong> (<em>str.</em>) – API key from developers portal.</p></li>
+<li><p><strong>env</strong> (<em>str</em><em>, </em><em>optional.</em>) – Environment either <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;production&quot;</span></code>, defaults <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Attributes.</strong></p>
+<dl class="py attribute">
+<dt id="mpesa.mozambique.API.sandbox_host">
+<code class="sig-name descname">sandbox_host</code><a class="headerlink" href="#mpesa.mozambique.API.sandbox_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sandbox api host <code class="docutils literal notranslate"><span class="pre">&quot;api.sandbox.vm.co.mz&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.mozambique.API.live_host">
+<code class="sig-name descname">live_host</code><a class="headerlink" href="#mpesa.mozambique.API.live_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>The live/openapi api host <code class="docutils literal notranslate"><span class="pre">&quot;api.vm.co.mz&quot;</span></code>.</p>
+</dd></dl>
+
+<p><strong>Methods.</strong></p>
+<dl class="py method">
+<dt id="mpesa.mozambique.API.b2b">
+<code class="sig-name descname">b2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">PrimaryPartyCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ReceiverPartyCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/mozambique.html#API.b2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.mozambique.API.b2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2B Single Stage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>ReceiverPartyCode</strong> (<em>str.</em>) – Receiver Party Code.</p></li>
+<li><p><strong>PrimaryPartyCode</strong> (<em>str.</em>) – Primary Party Code.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the B2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyReference&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.mozambique.API.b2c">
+<code class="sig-name descname">b2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/mozambique.html#API.b2c"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.mozambique.API.b2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2C Single Stage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the C2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyReference&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.mozambique.API.bearer_token">
+<em class="property">property </em><code class="sig-name descname">bearer_token</code><a class="headerlink" href="#mpesa.mozambique.API.bearer_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return Bearer Token.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.mozambique.API.c2b">
+<code class="sig-name descname">c2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/mozambique.html#API.c2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.mozambique.API.c2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>C2B Single Stage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – Customer MSISDN.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+<li><p><strong>TransactionReference</strong> (<em>str.</em>) – Transaction Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the C2B API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyReference&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.mozambique.API.reverse">
+<code class="sig-name descname">reverse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ReversalAmount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">SecurityCredential</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">InitiatorIdentifier</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/mozambique.html#API.reverse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.mozambique.API.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reversal API.</p>
+<p>The Reversal API is used to reverse a successful transaction.
+Using the Transaction ID of a previously successful transaction, the OpenAPI will withdraw the funds from the recipient party’s mobile money wallet and revert the funds to the mobile money wallet of the initiating party of the original transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ReversalAmount</strong> (<em>str.</em>) – Reversal Amount.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>SecurityCredential</strong> (<em>str.</em>) – Security Credentials.</p></li>
+<li><p><strong>InitiatorIdentifier</strong> (<em>str.</em>) – Initiator Identifier.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+<li><p><strong>TransactionID</strong> (<em>str.</em>) – Transaction ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the Reversal API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="s2">&quot;49XCD123F6&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyReference&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.mozambique.API.transaction_status">
+<code class="sig-name descname">transaction_status</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">QueryReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/mozambique.html#API.transaction_status"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.mozambique.API.transaction_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query Transaction Status.</p>
+<p>The Query Transaction Status API call is used to query the status of the transaction that has been initiated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>QueryReference</strong> (<em>str.</em>) – Query Reference.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – Service Provider Code.</p></li>
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – Third Party Reference.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary object from the QueryTransactionStatus API.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;ConversationID&quot;</span><span class="p">:</span> <span class="s2">&quot;d3502e5958774f7ba228d83d0d689761&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseCode&quot;</span><span class="p">:</span> <span class="s2">&quot;INS-0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseDesc&quot;</span><span class="p">:</span> <span class="s2">&quot;Request processed successfully&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ResponseTransactionStatus&quot;</span><span class="p">:</span> <span class="s2">&quot;Completed&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ThirdPartyReference&quot;</span><span class="p">:</span> <span class="s2">&quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mpesa.drc">
+<span id="mpesa-drc"></span><h2>mpesa.drc<a class="headerlink" href="#module-mpesa.drc" title="Permalink to this headline">¶</a></h2>
+<p>Democratic Republic of Congo MPESA SDK Implementation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This API needs to be called from a Server/Computer whose Public IP Address
+has been WhiteListed by the Vodacom MPESA Team from the DRC.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Only WhiteListed IPs are able to access the Remote MPESA APIs.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>So Ensure your server IP is White Listed before Using this API.</p>
+</div>
+<dl class="py class">
+<dt id="mpesa.drc.API">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.drc.</code><code class="sig-name descname">API</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Username</span></em>, <em class="sig-param"><span class="n">Password</span></em>, <em class="sig-param"><span class="n">env</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'sandbox'</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/drc.html#API"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.drc.API" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>DRC API.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Username</strong> – Username provided by Mpesa Team.</p></li>
+<li><p><strong>Password</strong> – Password provided by Mpesa Team.</p></li>
+<li><p><strong>env</strong> (<em>str</em><em>, </em><em>optional.</em>) – Environment either <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;production&quot;</span></code>, defaults <code class="docutils literal notranslate"><span class="pre">&quot;sandbox&quot;</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<p><strong>Attributes.</strong></p>
+<dl class="py attribute">
+<dt id="mpesa.drc.API.sandbox_host">
+<code class="sig-name descname">sandbox_host</code><a class="headerlink" href="#mpesa.drc.API.sandbox_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sandbox host <code class="docutils literal notranslate"><span class="pre">&quot;https://uatipg.m-pesa.vodacom.cd&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.drc.API.live_host">
+<code class="sig-name descname">live_host</code><a class="headerlink" href="#mpesa.drc.API.live_host" title="Permalink to this definition">¶</a></dt>
+<dd><p>The live host <code class="docutils literal notranslate"><span class="pre">&quot;https://ipg.m-pesa.vodacom.cd&quot;</span></code>.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.drc.API.login_path">
+<code class="sig-name descname">login_path</code><a class="headerlink" href="#mpesa.drc.API.login_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The login path <code class="docutils literal notranslate"><span class="pre">&quot;:8091/insight/SOAPIn&quot;</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.drc.API.c2b_path">
+<code class="sig-name descname">c2b_path</code><a class="headerlink" href="#mpesa.drc.API.c2b_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The c2b path <code class="docutils literal notranslate"><span class="pre">&quot;:8091/insight/SOAPIn&quot;</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.drc.API.b2c_path">
+<code class="sig-name descname">b2c_path</code><a class="headerlink" href="#mpesa.drc.API.b2c_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The b2c path <code class="docutils literal notranslate"><span class="pre">&quot;:8094/iPG/B2C&quot;</span></code></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.drc.API.authentication_token">
+<code class="sig-name descname">authentication_token</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/drc.html#API.authentication_token"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.drc.API.authentication_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return Authentication Token.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.drc.API.b2c">
+<code class="sig-name descname">b2c</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CallBackChannel</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CallBackDestination</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CommandID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Currency</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span></em>, <em class="sig-param"><span class="n">Language</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderName</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Shortcode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionDateTime</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/drc.html#API.b2c"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.drc.API.b2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>B2C.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – ThirdPartyReference.</p></li>
+<li><p><strong>TransactionDateTime</strong> (<em>str.</em>) – TransactionDateTime.</p></li>
+<li><p><strong>Token</strong> (<em>str.</em>) – Token.</p></li>
+<li><p><strong>Shortcode</strong> (<em>str.</em>) – Shortcode.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – CustomerMSISDN.</p></li>
+<li><p><strong>ServiceProviderName</strong> (<em>str.</em>) – ServiceProviderName.</p></li>
+<li><p><strong>Language</strong> (<em>str.</em>) – Language.</p></li>
+<li><p><strong>CallBackChannel</strong> (<em>str.</em>) – CallBackChannel.</p></li>
+<li><p><strong>CallBackDestination</strong> (<em>str.</em>) – CallBackDestination.</p></li>
+<li><p><strong>Currency</strong> (<em>str.</em>) – Currency.</p></li>
+<li><p><strong>CommandID</strong> (<em>str.</em>) – CommandID.</p></li>
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.drc.API.c2b">
+<code class="sig-name descname">c2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CallBackChannel</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CallBackDestination</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CommandId</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Currency</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Date</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Initials</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Language</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Surname</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/drc.html#API.c2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.drc.API.c2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>C2B.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ThirdPartyReference</strong> (<em>str.</em>) – ThirdPartyReference.</p></li>
+<li><p><strong>Token</strong> (<em>str.</em>) – Token.</p></li>
+<li><p><strong>Initials</strong> (<em>str.</em>) – Initials.</p></li>
+<li><p><strong>Date</strong> (<em>str.</em>) – Date.</p></li>
+<li><p><strong>CustomerMSISDN</strong> (<em>str.</em>) – CustomerMSISDN.</p></li>
+<li><p><strong>CommandId</strong> (<em>str.</em>) – CommandId.</p></li>
+<li><p><strong>Language</strong> (<em>str.</em>) – Language.</p></li>
+<li><p><strong>CallBackDestination</strong> (<em>str.</em>) – CallBackDestination.</p></li>
+<li><p><strong>CallBackChannel</strong> (<em>str.</em>) – CallBackChannel.</p></li>
+<li><p><strong>Currency</strong> (<em>str.</em>) – Currency.</p></li>
+<li><p><strong>Surname</strong> (<em>str.</em>) – Surname.</p></li>
+<li><p><strong>Amount</strong> (<em>str.</em>) – Amount.</p></li>
+<li><p><strong>ServiceProviderCode</strong> (<em>str.</em>) – ServiceProviderCode.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.drc.API.w2b">
+<code class="sig-name descname">w2b</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Amount</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">BankShortCode</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">Currency</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerAccountNumber</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ThirdPartyID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionDateTime</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionID</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">TransactionType</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/drc.html#API.w2b"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.drc.API.w2b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wallet To Bank.</p>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>To be Implemented In the Future once the API is documented.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-mpesa.egypt">
+<span id="mpesa-egypt"></span><h2>mpesa.egypt<a class="headerlink" href="#module-mpesa.egypt" title="Permalink to this headline">¶</a></h2>
+<p>Egypt MPESA SDK Implementation.</p>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>To be Implemented when the Public API is made available.</p>
+</div>
+</div>
+<div class="section" id="module-mpesa.lesotho">
+<span id="mpesa-lesotho"></span><h2>mpesa.lesotho<a class="headerlink" href="#module-mpesa.lesotho" title="Permalink to this headline">¶</a></h2>
+<p>Lesotho MPESA SDK Implementation.</p>
+<div class="admonition-todo admonition" id="id3">
+<p class="admonition-title">Todo</p>
+<p>To be Implemented when the Public API is made available.</p>
+</div>
+</div>
+<div class="section" id="module-mpesa.portalsdk">
+<span id="mpesa-portalsdk"></span><h2>mpesa.portalsdk<a class="headerlink" href="#module-mpesa.portalsdk" title="Permalink to this headline">¶</a></h2>
+<p>Portalsdk subpackage.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This module provides an abstraction over the API mechanisms of three submodules.
+Namely:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#module-mpesa.tanzania" title="mpesa.tanzania"><code class="xref py py-mod docutils literal notranslate"><span class="pre">mpesa.tanzania</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-mpesa.ghana" title="mpesa.ghana"><code class="xref py py-mod docutils literal notranslate"><span class="pre">mpesa.ghana</span></code></a></p></li>
+<li><p><a class="reference internal" href="#module-mpesa.mozambique" title="mpesa.mozambique"><code class="xref py py-mod docutils literal notranslate"><span class="pre">mpesa.mozambique</span></code></a></p></li>
+</ul>
+<p>It Provides the following classes which are used internally in the
+implementation of the respective API classes.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#mpesa.portalsdk.APIContext" title="mpesa.portalsdk.APIContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIContext</span></code></a></p></li>
+<li><p><a class="reference internal" href="#mpesa.portalsdk.APIMethodType" title="mpesa.portalsdk.APIMethodType"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIMethodType</span></code></a></p></li>
+<li><p><a class="reference internal" href="#mpesa.portalsdk.APIRequest" title="mpesa.portalsdk.APIRequest"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIRequest</span></code></a></p></li>
+<li><p><a class="reference internal" href="#mpesa.portalsdk.APIResponse" title="mpesa.portalsdk.APIResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIResponse</span></code></a></p></li>
+</ul>
+</div>
+<dl class="py class">
+<dt id="mpesa.portalsdk.APIContext">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.portalsdk.</code><code class="sig-name descname">APIContext</code><span class="sig-paren">(</span><em class="sig-param">api_key=''</em>, <em class="sig-param">public_key=''</em>, <em class="sig-param">ssl=False</em>, <em class="sig-param">method_type=&lt;APIMethodType.GET: 0&gt;</em>, <em class="sig-param">address=''</em>, <em class="sig-param">port=80</em>, <em class="sig-param">path=''</em>, <em class="sig-param">headers={}</em>, <em class="sig-param">parameters={}</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIContext"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>API Context Class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_key</strong> (<em>str.</em>) – API Key.</p></li>
+<li><p><strong>public_key</strong> (<em>str.</em>) – Public Key.</p></li>
+<li><p><strong>ssl</strong> (<em>bool.</em>) – Whether to use ssl, defaults <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p></li>
+<li><p><strong>method_type</strong> – HTTP Method Type, defaults <code class="docutils literal notranslate"><span class="pre">APIMethodType.GET</span></code>.</p></li>
+<li><p><strong>address</strong> (<em>str.</em>) – Address, defaults <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>.</p></li>
+<li><p><strong>port</strong> (<em>int.</em>) – Port, defaults <code class="docutils literal notranslate"><span class="pre">80</span></code>.</p></li>
+<li><p><strong>path</strong> (<em>str.</em>) – URL path, defaults <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code>.</p></li>
+<li><p><strong>headers</strong> (<em>dict.</em>) – Headers, defaults <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</p></li>
+<li><p><strong>parameters</strong> (<em>dict.</em>) – Parameters, defaults <code class="docutils literal notranslate"><span class="pre">{}</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.add_header">
+<code class="sig-name descname">add_header</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">header</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIContext.add_header"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIContext.add_header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update Headers dict with header,value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.add_parameter">
+<code class="sig-name descname">add_parameter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIContext.add_parameter"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIContext.add_parameter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update Parameters dict with key,value.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.address">
+<em class="property">property </em><code class="sig-name descname">address</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.address" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self address.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.api_key">
+<em class="property">property </em><code class="sig-name descname">api_key</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.api_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self api_key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.get_headers">
+<code class="sig-name descname">get_headers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIContext.get_headers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIContext.get_headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self headers.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.get_parameters">
+<code class="sig-name descname">get_parameters</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIContext.get_parameters"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIContext.get_parameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self parameters.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.get_url">
+<code class="sig-name descname">get_url</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIContext.get_url"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIContext.get_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return formed url from context data.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.method_type">
+<em class="property">property </em><code class="sig-name descname">method_type</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.method_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self method_type.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.path">
+<em class="property">property </em><code class="sig-name descname">path</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.port">
+<em class="property">property </em><code class="sig-name descname">port</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.port" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self port.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.public_key">
+<em class="property">property </em><code class="sig-name descname">public_key</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.public_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self public_key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIContext.ssl">
+<em class="property">property </em><code class="sig-name descname">ssl</code><a class="headerlink" href="#mpesa.portalsdk.APIContext.ssl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return self ssl.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="mpesa.portalsdk.APIMethodType">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.portalsdk.</code><code class="sig-name descname">APIMethodType</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIMethodType"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIMethodType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<p>API Method Type Class.</p>
+<dl class="py attribute">
+<dt id="mpesa.portalsdk.APIMethodType.DELETE">
+<code class="sig-name descname">DELETE</code><em class="property">: int</em><em class="property"> = 4</em><a class="headerlink" href="#mpesa.portalsdk.APIMethodType.DELETE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.portalsdk.APIMethodType.GET">
+<code class="sig-name descname">GET</code><em class="property">: int</em><em class="property"> = 0</em><a class="headerlink" href="#mpesa.portalsdk.APIMethodType.GET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.portalsdk.APIMethodType.POST">
+<code class="sig-name descname">POST</code><em class="property">: int</em><em class="property"> = 1</em><a class="headerlink" href="#mpesa.portalsdk.APIMethodType.POST" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="mpesa.portalsdk.APIMethodType.PUT">
+<code class="sig-name descname">PUT</code><em class="property">: int</em><em class="property"> = 3</em><a class="headerlink" href="#mpesa.portalsdk.APIMethodType.PUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="mpesa.portalsdk.APIRequest">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.portalsdk.</code><code class="sig-name descname">APIRequest</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">context</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIRequest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIRequest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>API Request Class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>context</strong> (<a class="reference internal" href="#mpesa.portalsdk.APIContext" title="mpesa.portalsdk.APIContext"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIContext</span></code></a>.) – context under which to create the API Request.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIRequest.create_bearer_token">
+<code class="sig-name descname">create_bearer_token</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIRequest.create_bearer_token"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIRequest.create_bearer_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return encrypted context api_key using the context public_key.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIRequest.create_default_headers">
+<code class="sig-name descname">create_default_headers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIRequest.create_default_headers"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIRequest.create_default_headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add some default headers to <code class="docutils literal notranslate"><span class="pre">self.context</span></code>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIRequest.execute">
+<code class="sig-name descname">execute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIRequest.execute"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIRequest.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute API Request using <code class="docutils literal notranslate"><span class="pre">self.context</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">requests.exceptions.ConnectionError</span></code></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">TypeError</span></code></p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>response object of <code class="docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIResponse</span></code>.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#mpesa.portalsdk.APIResponse" title="mpesa.portalsdk.APIResponse"><code class="xref py py-class docutils literal notranslate"><span class="pre">mpesa.portalsdk.APIResponse</span></code></a>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="mpesa.portalsdk.APIResponse">
+<em class="property">class </em><code class="sig-prename descclassname">mpesa.portalsdk.</code><code class="sig-name descname">APIResponse</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">status_code</span></em>, <em class="sig-param"><span class="n">headers</span></em>, <em class="sig-param"><span class="n">body</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mpesa/portalsdk/api.html#APIResponse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#mpesa.portalsdk.APIResponse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>API Response Class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>status_code</strong> (<em>str</em>) – String representing HTTP Status Code.</p></li>
+<li><p><strong>headers</strong> (<em>dict</em>) – Dict object of key,value headers.</p></li>
+<li><p><strong>body</strong> (<em>dict</em>) – Dict object of key,value pairs.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIResponse.body">
+<em class="property">property </em><code class="sig-name descname">body</code><a class="headerlink" href="#mpesa.portalsdk.APIResponse.body" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return HTTP Body.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIResponse.headers">
+<em class="property">property </em><code class="sig-name descname">headers</code><a class="headerlink" href="#mpesa.portalsdk.APIResponse.headers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return HTTP Headers.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="mpesa.portalsdk.APIResponse.status_code">
+<em class="property">property </em><code class="sig-name descname">status_code</code><a class="headerlink" href="#mpesa.portalsdk.APIResponse.status_code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return HTTP Status Code.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="contents.html" class="btn btn-neutral float-left" title="Getting Started." accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tralah M Brian
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

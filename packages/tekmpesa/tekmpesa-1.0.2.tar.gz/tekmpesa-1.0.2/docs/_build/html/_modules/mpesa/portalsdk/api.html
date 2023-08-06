@@ -1,0 +1,528 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mpesa.portalsdk.api &mdash; tekmpesa 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> tekmpesa
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table Of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../contents.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">tekmpesa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+        
+      <li>mpesa.portalsdk.api</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for mpesa.portalsdk.api</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Mpesa PortalSDK API Helper Module.&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">base64</span> <span class="kn">import</span> <span class="n">b64decode</span><span class="p">,</span> <span class="n">b64encode</span>
+<span class="kn">from</span> <span class="nn">Crypto.PublicKey</span> <span class="kn">import</span> <span class="n">RSA</span>
+<span class="kn">from</span> <span class="nn">Crypto.Cipher</span> <span class="kn">import</span> <span class="n">PKCS1_v1_5</span> <span class="k">as</span> <span class="n">Cipher_PKCS1_v1_5</span>
+
+
+<div class="viewcode-block" id="APIRequest"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIRequest">[docs]</a><span class="k">class</span> <span class="nc">APIRequest</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;API Request Class.</span>
+
+<span class="sd">    :param context: context under which to create the API Request.</span>
+<span class="sd">    :type context: :class:`mpesa.portalsdk.APIContext`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Construct.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span> <span class="o">=</span> <span class="n">context</span>
+
+<div class="viewcode-block" id="APIRequest.execute"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIRequest.execute">[docs]</a>    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Execute API Request using ``self.context``.</span>
+
+<span class="sd">        :raises: ``requests.exceptions.ConnectionError``</span>
+<span class="sd">        :raises: ``TypeError``</span>
+<span class="sd">        :return: response object of ``mpesa.portalsdk.APIResponse``.</span>
+<span class="sd">        :rtype: :class:`mpesa.portalsdk.APIResponse`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">create_default_headers</span><span class="p">()</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">{</span>
+                    <span class="n">APIMethodType</span><span class="o">.</span><span class="n">GET</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__get</span><span class="p">,</span>
+                    <span class="n">APIMethodType</span><span class="o">.</span><span class="n">POST</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__post</span><span class="p">,</span>
+                    <span class="n">APIMethodType</span><span class="o">.</span><span class="n">PUT</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">__put</span><span class="p">,</span>
+                <span class="p">}</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">method_type</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__unknown</span><span class="p">)()</span>
+            <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">exceptions</span><span class="o">.</span><span class="n">ConnectionError</span> <span class="k">as</span> <span class="n">ce</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ce</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Context cannot be None.&quot;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="APIRequest.create_bearer_token"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIRequest.create_bearer_token">[docs]</a>    <span class="k">def</span> <span class="nf">create_bearer_token</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return encrypted context api_key using the context public_key.&quot;&quot;&quot;</span>
+        <span class="n">key_der</span> <span class="o">=</span> <span class="n">b64decode</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">public_key</span><span class="p">)</span>
+        <span class="n">key_pub</span> <span class="o">=</span> <span class="n">RSA</span><span class="o">.</span><span class="n">importKey</span><span class="p">(</span><span class="n">key_der</span><span class="p">)</span>
+        <span class="n">cipher</span> <span class="o">=</span> <span class="n">Cipher_PKCS1_v1_5</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">key_pub</span><span class="p">)</span>
+        <span class="n">cipher_text</span> <span class="o">=</span> <span class="n">cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">api_key</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;ascii&quot;</span><span class="p">))</span>
+        <span class="n">encrypted_msg</span> <span class="o">=</span> <span class="n">b64encode</span><span class="p">(</span><span class="n">cipher_text</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">encrypted_msg</span></div>
+
+<div class="viewcode-block" id="APIRequest.create_default_headers"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIRequest.create_default_headers">[docs]</a>    <span class="k">def</span> <span class="nf">create_default_headers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add some default headers to ``self.context``.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Bearer </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">create_bearer_token</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)),</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span><span class="s2">&quot;Content-Type&quot;</span><span class="p">,</span> <span class="s2">&quot;application/json&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span><span class="s2">&quot;Host&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">address</span><span class="p">)</span></div>
+
+    <span class="k">def</span> <span class="nf">__get</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return ``mpesa.portalsdk.APIResponse`` after GET Request.&quot;&quot;&quot;</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_url</span><span class="p">(),</span>
+            <span class="n">params</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_parameters</span><span class="p">(),</span>
+            <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_headers</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">APIResponse</span><span class="p">(</span>
+            <span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)),</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">),</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__post</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return ``mpesa.portalsdk.APIResponse`` after POST Request.&quot;&quot;&quot;</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_url</span><span class="p">(),</span>
+            <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_headers</span><span class="p">(),</span>
+            <span class="n">json</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_parameters</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">APIResponse</span><span class="p">(</span>
+            <span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)),</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">),</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__put</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return ``mpesa.portalsdk.APIResponse`` after PUT Request.&quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PUT&quot;</span><span class="p">)</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_url</span><span class="p">(),</span>
+            <span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_headers</span><span class="p">(),</span>
+            <span class="n">json</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">get_parameters</span><span class="p">(),</span>
+        <span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PUT&quot;</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">APIResponse</span><span class="p">(</span>
+            <span class="n">r</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="fm">__str__</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;&#39;&quot;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">)),</span>
+            <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">),</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">__unknown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Raise Unknown Method Exception.</span>
+
+<span class="sd">        :raises: Exception(&quot;Unknown Method&quot;).</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Unknown Method&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="APIResponse"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIResponse">[docs]</a><span class="k">class</span> <span class="nc">APIResponse</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;API Response Class.</span>
+
+<span class="sd">    :param status_code: String representing HTTP Status Code.</span>
+<span class="sd">    :param headers: Dict object of key,value headers.</span>
+<span class="sd">    :param body: Dict object of key,value pairs.</span>
+<span class="sd">    :type status_code: str</span>
+<span class="sd">    :type headers: dict</span>
+<span class="sd">    :type body: dict</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status_code</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Construct.&quot;&quot;&quot;</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">APIResponse</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;status_code&quot;</span><span class="p">]:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">status_code</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">headers</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;body&quot;</span><span class="p">]:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">body</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">status_code</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return HTTP Status Code.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;status_code&quot;</span><span class="p">]</span>
+
+    <span class="nd">@status_code</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">status_code</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status_code</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">status_code</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">int</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;status_code must be a int&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;status_code&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">status_code</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">headers</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return HTTP Headers.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]</span>
+
+    <span class="nd">@headers</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">headers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">headers</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">headers</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">dict</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;headers must be a dict&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">headers</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return HTTP Body.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;body&quot;</span><span class="p">]</span>
+
+    <span class="nd">@body</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">:</span> <span class="nb">dict</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">body</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">dict</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;body must be a dict&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;body&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">body</span></div>
+
+
+<div class="viewcode-block" id="APIMethodType"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIMethodType">[docs]</a><span class="k">class</span> <span class="nc">APIMethodType</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;API Method Type Class.&quot;&quot;&quot;</span>
+
+    <span class="n">GET</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">POST</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">PUT</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">DELETE</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">4</span></div>
+
+
+<div class="viewcode-block" id="APIContext"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIContext">[docs]</a><span class="k">class</span> <span class="nc">APIContext</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;API Context Class.</span>
+
+<span class="sd">    :param api_key: API Key.</span>
+<span class="sd">    :param public_key: Public Key.</span>
+<span class="sd">    :param ssl: Whether to use ssl, defaults ``False``.</span>
+<span class="sd">    :param method_type: HTTP Method Type, defaults ``APIMethodType.GET``.</span>
+<span class="sd">    :param address: Address, defaults ``&quot;&quot;``.</span>
+<span class="sd">    :param port: Port, defaults ``80``.</span>
+<span class="sd">    :param path: URL path, defaults ``&quot;&quot;``.</span>
+<span class="sd">    :param headers: Headers, defaults ``{}``.</span>
+<span class="sd">    :param parameters: Parameters, defaults ``{}``.</span>
+<span class="sd">    :type api_key: str.</span>
+<span class="sd">    :type public_key: str.</span>
+<span class="sd">    :type ssl: bool.</span>
+<span class="sd">    :type method_type: :class: `APIMethodType`, optional.</span>
+<span class="sd">    :type address: str.</span>
+<span class="sd">    :type port: int.</span>
+<span class="sd">    :type path: str.</span>
+<span class="sd">    :type headers: dict.</span>
+<span class="sd">    :type parameters: dict.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">public_key</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">ssl</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+        <span class="n">method_type</span><span class="o">=</span><span class="n">APIMethodType</span><span class="o">.</span><span class="n">GET</span><span class="p">,</span>
+        <span class="n">address</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">port</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span>
+        <span class="n">path</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="p">{},</span>
+        <span class="n">parameters</span><span class="o">=</span><span class="p">{},</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">APIContext</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;api_key&quot;</span><span class="p">]:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">api_key</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;public_key&quot;</span><span class="p">]:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">public_key</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;ssl&quot;</span><span class="p">]:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">ssl</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;method_type&quot;</span><span class="p">]:</span> <span class="n">Enum</span> <span class="o">=</span> <span class="n">method_type</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;address&quot;</span><span class="p">]:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">address</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;port&quot;</span><span class="p">]:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">port</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;path&quot;</span><span class="p">]:</span> <span class="nb">str</span> <span class="o">=</span> <span class="n">path</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">headers</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;parameters&quot;</span><span class="p">]:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="n">parameters</span>
+
+<div class="viewcode-block" id="APIContext.get_url"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIContext.get_url">[docs]</a>    <span class="k">def</span> <span class="nf">get_url</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return formed url from context data.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ssl</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;https://</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;http://</span><span class="si">{}</span><span class="s2">:</span><span class="si">{}{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">address</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">path</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="APIContext.add_header"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIContext.add_header">[docs]</a>    <span class="k">def</span> <span class="nf">add_header</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">header</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update Headers dict with header,value.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">header</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span></div>
+
+<div class="viewcode-block" id="APIContext.get_headers"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIContext.get_headers">[docs]</a>    <span class="k">def</span> <span class="nf">get_headers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return self headers.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;headers&quot;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="APIContext.add_parameter"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIContext.add_parameter">[docs]</a>    <span class="k">def</span> <span class="nf">add_parameter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Update Parameters dict with key,value.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;parameters&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="n">value</span><span class="p">})</span></div>
+
+<div class="viewcode-block" id="APIContext.get_parameters"><a class="viewcode-back" href="../../../api.html#mpesa.portalsdk.APIContext.get_parameters">[docs]</a>    <span class="k">def</span> <span class="nf">get_parameters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return self parameters.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;parameters&quot;</span><span class="p">]</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">api_key</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self api_key.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;api_key&quot;</span><span class="p">]</span>
+
+    <span class="nd">@api_key</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">api_key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">api_key</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;api_key must be a str&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;api_key&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">api_key</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">public_key</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self public_key.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;public_key&quot;</span><span class="p">]</span>
+
+    <span class="nd">@public_key</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">public_key</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">public_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">public_key</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;public_key must be a str&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;public_key&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">public_key</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">ssl</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self ssl.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;ssl&quot;</span><span class="p">]</span>
+
+    <span class="nd">@ssl</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">ssl</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ssl</span><span class="p">:</span> <span class="nb">bool</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">ssl</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">bool</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;ssl must be a bool&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;ssl&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ssl</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">method_type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">APIMethodType</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self method_type.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;method_type&quot;</span><span class="p">]</span>
+
+    <span class="nd">@method_type</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">method_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method_type</span><span class="p">:</span> <span class="n">APIMethodType</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">method_type</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">APIMethodType</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;method_type must be a APIMethodType&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;method_type&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">method_type</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">address</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self address.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;address&quot;</span><span class="p">]</span>
+
+    <span class="nd">@address</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">address</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">address</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;address must be a str&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;address&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">address</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">port</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self port.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;port&quot;</span><span class="p">]</span>
+
+    <span class="nd">@port</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">port</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">port</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">port</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">int</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;port must be a int&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;port&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">port</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">path</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return self path.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;path&quot;</span><span class="p">]</span>
+
+    <span class="nd">@path</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">path</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">path</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;path must be a str&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="p">[</span><span class="s2">&quot;path&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">path</span></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tralah M Brian
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

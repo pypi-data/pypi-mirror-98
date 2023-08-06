@@ -1,0 +1,580 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mpesa.mozambique &mdash; tekmpesa 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> tekmpesa
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table Of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contents.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">tekmpesa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>mpesa.mozambique</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for mpesa.mozambique</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Mozambique MPESA SDK Implementation.&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">mpesa.portalsdk</span> <span class="kn">import</span> <span class="p">(</span>
+    <span class="n">APIContext</span><span class="p">,</span>
+    <span class="n">APIMethodType</span><span class="p">,</span>
+    <span class="n">APIRequest</span><span class="p">,</span>
+<span class="p">)</span>
+
+
+<div class="viewcode-block" id="API"><a class="viewcode-back" href="../../api.html#mpesa.mozambique.API">[docs]</a><span class="k">class</span> <span class="nc">API</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Mozambique Market API.</span>
+
+<span class="sd">    :param public_key: Public key from developers portal.</span>
+<span class="sd">    :type public_key: str.</span>
+<span class="sd">    :param api_key: API key from developers portal.</span>
+<span class="sd">    :type api_key: str.</span>
+<span class="sd">    :param env: Environment either ``&quot;sandbox&quot;`` or ``&quot;production&quot;``, defaults ``&quot;sandbox&quot;``.</span>
+<span class="sd">    :type env: str, optional.</span>
+
+<span class="sd">    **Attributes.**</span>
+
+<span class="sd">    .. attribute:: sandbox_host</span>
+
+<span class="sd">        The sandbox api host ``&quot;api.sandbox.vm.co.mz&quot;``.</span>
+
+<span class="sd">    .. attribute:: live_host</span>
+
+<span class="sd">        The live/openapi api host ``&quot;api.vm.co.mz&quot;``.</span>
+
+
+<span class="sd">    **Methods.**</span>
+
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">public_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">api_key</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">env</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;sandbox&quot;</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize API.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">public_key</span> <span class="o">=</span> <span class="n">public_key</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="n">api_key</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">=</span> <span class="n">env</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_host</span> <span class="o">=</span> <span class="s2">&quot;api.sandbox.vm.co.mz&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">live_host</span> <span class="o">=</span> <span class="s2">&quot;api.vm.co.mz&quot;</span>
+
+    <span class="k">def</span> <span class="nf">_pretty</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">:</span> <span class="nb">dict</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;Return new dict from body with output_ key prefix trimmed.&quot;&quot;&quot;</span>
+        <span class="n">pretty</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;output_&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">):</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">body</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        <span class="k">return</span> <span class="n">pretty</span>
+
+    <span class="k">def</span> <span class="nf">_create_context</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">path</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+        <span class="n">method_type</span><span class="p">:</span> <span class="n">APIMethodType</span> <span class="o">=</span> <span class="n">APIMethodType</span><span class="o">.</span><span class="n">GET</span><span class="p">,</span>
+        <span class="n">port</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">80</span><span class="p">,</span>
+        <span class="n">headers</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Origin&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">},</span>
+        <span class="n">params</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{},</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return APIContext.&quot;&quot;&quot;</span>
+        <span class="n">api_context</span> <span class="o">=</span> <span class="n">APIContext</span><span class="p">()</span>
+        <span class="n">api_context</span><span class="o">.</span><span class="n">public_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">public_key</span>
+        <span class="n">api_context</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">api_context</span><span class="o">.</span><span class="n">address</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_host</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">api_context</span><span class="o">.</span><span class="n">address</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_host</span>
+        <span class="n">api_context</span><span class="o">.</span><span class="n">ssl</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="n">api_context</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+        <span class="n">api_context</span><span class="o">.</span><span class="n">path</span> <span class="o">=</span> <span class="n">path</span>
+        <span class="n">api_context</span><span class="o">.</span><span class="n">method_type</span> <span class="o">=</span> <span class="n">method_type</span>
+        <span class="p">[</span><span class="n">api_context</span><span class="o">.</span><span class="n">add_header</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+        <span class="p">[</span><span class="n">api_context</span><span class="o">.</span><span class="n">add_parameter</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">params</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+        <span class="k">return</span> <span class="n">api_context</span>
+
+    <span class="k">def</span> <span class="nf">_execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">:</span> <span class="n">APIContext</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return result.body after makiing request with `context`.</span>
+
+<span class="sd">        :raises: ``Exception``.</span>
+<span class="sd">        :return: API Response body.</span>
+<span class="sd">        :rtype: ``APIResponse``.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">api_request</span> <span class="o">=</span> <span class="n">APIRequest</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">api_request</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">e</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;API Call Failed to get Result. Please Check.&quot;</span><span class="p">)</span>
+        <span class="c1"># print(result.body)  # , type(result.body))--&gt;dict</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">body</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">bearer_token</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return Bearer Token.&quot;&quot;&quot;</span>
+        <span class="n">api_request</span> <span class="o">=</span> <span class="n">APIRequest</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_create_context</span><span class="p">())</span>
+        <span class="k">return</span> <span class="n">api_request</span><span class="o">.</span><span class="n">create_bearer_token</span><span class="p">()</span>
+
+<div class="viewcode-block" id="API.c2b"><a class="viewcode-back" href="../../api.html#mpesa.mozambique.API.c2b">[docs]</a>    <span class="k">def</span> <span class="nf">c2b</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">Amount</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">TransactionReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;C2B Single Stage.</span>
+
+<span class="sd">        :param Amount: Amount.</span>
+<span class="sd">        :type Amount: str.</span>
+<span class="sd">        :param CustomerMSISDN: Customer MSISDN.</span>
+<span class="sd">        :type CustomerMSISDN: str.</span>
+<span class="sd">        :param ServiceProviderCode: Service Provider Code.</span>
+<span class="sd">        :type ServiceProviderCode: str.</span>
+<span class="sd">        :param ThirdPartyReference: Third Party Reference.</span>
+<span class="sd">        :type ThirdPartyReference: str.</span>
+<span class="sd">        :param TransactionReference: Transaction Reference.</span>
+<span class="sd">        :type TransactionReference: str.</span>
+
+<span class="sd">        :returns: A dictionary object from the C2B API.</span>
+<span class="sd">        :rtype: dict.</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;d3502e5958774f7ba228d83d0d689761&quot;,</span>
+<span class="sd">              &quot;ResponseCode&quot;: &quot;INS-0&quot;,</span>
+<span class="sd">              &quot;ResponseDesc&quot;: &quot;Request processed successfully&quot;,</span>
+<span class="sd">              &quot;TransactionID&quot;: &quot;49XCD123F6&quot;,</span>
+<span class="sd">              &quot;ThirdPartyReference&quot;: &quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;/ipg/v1x/c2bPayment/singleStage/&quot;</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">18352</span>
+        <span class="n">method_type</span> <span class="o">=</span> <span class="n">APIMethodType</span><span class="o">.</span><span class="n">POST</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;input_Amount&quot;</span><span class="p">:</span> <span class="n">Amount</span><span class="p">,</span>
+            <span class="s2">&quot;input_CustomerMSISDN&quot;</span><span class="p">:</span> <span class="n">CustomerMSISDN</span><span class="p">,</span>
+            <span class="s2">&quot;input_ServiceProviderCode&quot;</span><span class="p">:</span> <span class="n">ServiceProviderCode</span><span class="p">,</span>
+            <span class="s2">&quot;input_ThirdPartyReference&quot;</span><span class="p">:</span> <span class="n">ThirdPartyReference</span><span class="p">,</span>
+            <span class="s2">&quot;input_TransactionReference&quot;</span><span class="p">:</span> <span class="n">TransactionReference</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_context</span><span class="p">(</span>
+            <span class="n">path</span><span class="p">,</span>
+            <span class="n">method_type</span><span class="p">,</span>
+            <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_execute</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pretty</span><span class="p">(</span><span class="n">body</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="API.b2c"><a class="viewcode-back" href="../../api.html#mpesa.mozambique.API.b2c">[docs]</a>    <span class="k">def</span> <span class="nf">b2c</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">Amount</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">CustomerMSISDN</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">TransactionReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;B2C Single Stage.</span>
+
+<span class="sd">        :param Amount: Amount.</span>
+<span class="sd">        :type Amount: str.</span>
+<span class="sd">        :param CustomerMSISDN: Customer MSISDN.</span>
+<span class="sd">        :type CustomerMSISDN: str.</span>
+<span class="sd">        :param ServiceProviderCode: Service Provider Code.</span>
+<span class="sd">        :type ServiceProviderCode: str.</span>
+<span class="sd">        :param ThirdPartyReference: Third Party Reference.</span>
+<span class="sd">        :type ThirdPartyReference: str.</span>
+<span class="sd">        :param TransactionReference: Transaction Reference.</span>
+<span class="sd">        :type TransactionReference: str.</span>
+
+<span class="sd">        :returns: A dictionary object from the C2B API.</span>
+<span class="sd">        :rtype: dict.</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;d3502e5958774f7ba228d83d0d689761&quot;,</span>
+<span class="sd">              &quot;ResponseCode&quot;: &quot;INS-0&quot;,</span>
+<span class="sd">              &quot;ResponseDesc&quot;: &quot;Request processed successfully&quot;,</span>
+<span class="sd">              &quot;TransactionID&quot;: &quot;49XCD123F6&quot;,</span>
+<span class="sd">              &quot;ThirdPartyReference&quot;: &quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;/ipg/v1x/b2cPaymemt/&quot;</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">18345</span>
+        <span class="n">method_type</span> <span class="o">=</span> <span class="n">APIMethodType</span><span class="o">.</span><span class="n">POST</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;input_Amount&quot;</span><span class="p">:</span> <span class="n">Amount</span><span class="p">,</span>
+            <span class="s2">&quot;input_CustomerMSISDN&quot;</span><span class="p">:</span> <span class="n">CustomerMSISDN</span><span class="p">,</span>
+            <span class="s2">&quot;input_ServiceProviderCode&quot;</span><span class="p">:</span> <span class="n">ServiceProviderCode</span><span class="p">,</span>
+            <span class="s2">&quot;input_ThirdPartyReference&quot;</span><span class="p">:</span> <span class="n">ThirdPartyReference</span><span class="p">,</span>
+            <span class="s2">&quot;input_TransactionReference&quot;</span><span class="p">:</span> <span class="n">TransactionReference</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_context</span><span class="p">(</span>
+            <span class="n">path</span><span class="p">,</span>
+            <span class="n">method_type</span><span class="p">,</span>
+            <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_execute</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pretty</span><span class="p">(</span><span class="n">body</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="API.b2b"><a class="viewcode-back" href="../../api.html#mpesa.mozambique.API.b2b">[docs]</a>    <span class="k">def</span> <span class="nf">b2b</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">Amount</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">PrimaryPartyCode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ReceiverPartyCode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">TransactionReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;B2B Single Stage.</span>
+
+<span class="sd">        :param Amount: Amount.</span>
+<span class="sd">        :type Amount: str.</span>
+<span class="sd">        :param ReceiverPartyCode: Receiver Party Code.</span>
+<span class="sd">        :type ReceiverPartyCode: str.</span>
+<span class="sd">        :param PrimaryPartyCode: Primary Party Code.</span>
+<span class="sd">        :type PrimaryPartyCode: str.</span>
+<span class="sd">        :param ThirdPartyReference: Third Party Reference.</span>
+<span class="sd">        :type ThirdPartyReference: str.</span>
+<span class="sd">        :param TransactionReference: Transaction Reference.</span>
+<span class="sd">        :type TransactionReference: str.</span>
+
+<span class="sd">        :returns: A dictionary object from the B2B API.</span>
+<span class="sd">        :rtype: dict.</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;d3502e5958774f7ba228d83d0d689761&quot;,</span>
+<span class="sd">              &quot;ResponseCode&quot;: &quot;INS-0&quot;,</span>
+<span class="sd">              &quot;ResponseDesc&quot;: &quot;Request processed successfully&quot;,</span>
+<span class="sd">              &quot;TransactionID&quot;: &quot;49XCD123F6&quot;,</span>
+<span class="sd">              &quot;ThirdPartyReference&quot;: &quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="sd">            }</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;/ipg/v1x/b2bPayment/&quot;</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">18349</span>
+        <span class="n">method_type</span> <span class="o">=</span> <span class="n">APIMethodType</span><span class="o">.</span><span class="n">POST</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;input_Amount&quot;</span><span class="p">:</span> <span class="n">Amount</span><span class="p">,</span>
+            <span class="s2">&quot;input_PrimaryPartyCode&quot;</span><span class="p">:</span> <span class="n">PrimaryPartyCode</span><span class="p">,</span>
+            <span class="s2">&quot;input_ReceiverPartyCode&quot;</span><span class="p">:</span> <span class="n">ReceiverPartyCode</span><span class="p">,</span>
+            <span class="s2">&quot;input_ThirdPartyReference&quot;</span><span class="p">:</span> <span class="n">ThirdPartyReference</span><span class="p">,</span>
+            <span class="s2">&quot;input_TransactionReference&quot;</span><span class="p">:</span> <span class="n">TransactionReference</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_context</span><span class="p">(</span>
+            <span class="n">path</span><span class="p">,</span>
+            <span class="n">method_type</span><span class="p">,</span>
+            <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_execute</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pretty</span><span class="p">(</span><span class="n">body</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="API.reverse"><a class="viewcode-back" href="../../api.html#mpesa.mozambique.API.reverse">[docs]</a>    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">ReversalAmount</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">TransactionID</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">SecurityCredential</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">InitiatorIdentifier</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reversal API.</span>
+
+<span class="sd">        The Reversal API is used to reverse a successful transaction.</span>
+<span class="sd">        Using the Transaction ID of a previously successful transaction, the OpenAPI will withdraw the funds from the recipient party’s mobile money wallet and revert the funds to the mobile money wallet of the initiating party of the original transaction.</span>
+
+<span class="sd">        :param ReversalAmount: Reversal Amount.</span>
+<span class="sd">        :type ReversalAmount: str.</span>
+<span class="sd">        :param ServiceProviderCode: Service Provider Code.</span>
+<span class="sd">        :type ServiceProviderCode: str.</span>
+<span class="sd">        :param SecurityCredential: Security Credentials.</span>
+<span class="sd">        :type SecurityCredential: str.</span>
+<span class="sd">        :param InitiatorIdentifier: Initiator Identifier.</span>
+<span class="sd">        :type InitiatorIdentifier: str.</span>
+<span class="sd">        :param ThirdPartyReference: Third Party Reference.</span>
+<span class="sd">        :type ThirdPartyReference: str.</span>
+<span class="sd">        :param TransactionID: Transaction ID.</span>
+<span class="sd">        :type TransactionID: str.</span>
+
+<span class="sd">        :returns: A dictionary object from the Reversal API.</span>
+<span class="sd">        :rtype: dict.</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ResponseCode&quot;: &quot;INS-0&quot;,</span>
+<span class="sd">              &quot;ResponseDesc&quot;: &quot;Request processed successfully&quot;,</span>
+<span class="sd">              &quot;TransactionID&quot;: &quot;49XCD123F6&quot;,</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;d3502e5958774f7ba228d83d0d689761&quot;,</span>
+<span class="sd">              &quot;ThirdPartyReference&quot;: &quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;/ipg/v1x/reversal/&quot;</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">18354</span>
+        <span class="n">method_type</span> <span class="o">=</span> <span class="n">APIMethodType</span><span class="o">.</span><span class="n">PUT</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;input_InitiatorIdentifier&quot;</span><span class="p">:</span> <span class="n">InitiatorIdentifier</span><span class="p">,</span>
+            <span class="s2">&quot;input_ReversalAmount&quot;</span><span class="p">:</span> <span class="n">ReversalAmount</span><span class="p">,</span>
+            <span class="s2">&quot;input_ServiceProviderCode&quot;</span><span class="p">:</span> <span class="n">ServiceProviderCode</span><span class="p">,</span>
+            <span class="s2">&quot;input_SecurityCredential&quot;</span><span class="p">:</span> <span class="n">SecurityCredential</span><span class="p">,</span>
+            <span class="s2">&quot;input_ThirdPartyReference&quot;</span><span class="p">:</span> <span class="n">ThirdPartyReference</span><span class="p">,</span>
+            <span class="s2">&quot;input_TransactionID&quot;</span><span class="p">:</span> <span class="n">TransactionID</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_context</span><span class="p">(</span>
+            <span class="n">path</span><span class="p">,</span>
+            <span class="n">method_type</span><span class="p">,</span>
+            <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_execute</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pretty</span><span class="p">(</span><span class="n">body</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="API.transaction_status"><a class="viewcode-back" href="../../api.html#mpesa.mozambique.API.transaction_status">[docs]</a>    <span class="k">def</span> <span class="nf">transaction_status</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">QueryReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ServiceProviderCode</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">ThirdPartyReference</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Query Transaction Status.</span>
+
+<span class="sd">        The Query Transaction Status API call is used to query the status of the transaction that has been initiated.</span>
+
+<span class="sd">        :param QueryReference: Query Reference.</span>
+<span class="sd">        :type QueryReference: str.</span>
+<span class="sd">        :param ServiceProviderCode: Service Provider Code.</span>
+<span class="sd">        :type ServiceProviderCode: str.</span>
+<span class="sd">        :param ThirdPartyReference: Third Party Reference.</span>
+<span class="sd">        :type ThirdPartyReference: str.</span>
+
+<span class="sd">        :returns: A dictionary object from the QueryTransactionStatus API.</span>
+<span class="sd">        :rtype: dict.</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;d3502e5958774f7ba228d83d0d689761&quot;,</span>
+<span class="sd">              &quot;ResponseCode&quot;: &quot;INS-0&quot;,</span>
+<span class="sd">              &quot;ResponseDesc&quot;: &quot;Request processed successfully&quot;,</span>
+<span class="sd">              &quot;ResponseTransactionStatus&quot;: &quot;Completed&quot;,</span>
+<span class="sd">              &quot;ThirdPartyReference&quot;: &quot;asv02e5958774f7ba228d83d0d689761&quot;</span>
+<span class="sd">            }</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="s2">&quot;/ipg/v1x/queryTransactionStatus/&quot;</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="mi">18353</span>
+        <span class="n">method_type</span> <span class="o">=</span> <span class="n">APIMethodType</span><span class="o">.</span><span class="n">GET</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;input_QueryReference&quot;</span><span class="p">:</span> <span class="n">QueryReference</span><span class="p">,</span>
+            <span class="s2">&quot;input_ServiceProviderCode&quot;</span><span class="p">:</span> <span class="n">ServiceProviderCode</span><span class="p">,</span>
+            <span class="s2">&quot;input_ThirdPartyReference&quot;</span><span class="p">:</span> <span class="n">ThirdPartyReference</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">context</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_context</span><span class="p">(</span>
+            <span class="n">path</span><span class="p">,</span>
+            <span class="n">method_type</span><span class="p">,</span>
+            <span class="n">port</span><span class="o">=</span><span class="n">port</span><span class="p">,</span>
+            <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_execute</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_pretty</span><span class="p">(</span><span class="n">body</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tralah M Brian
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

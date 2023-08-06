@@ -1,0 +1,17 @@
+requests
+urllib3
+pycryptodome
+certifi
+chardet
+idna
+six
+pytest
+future
+jinja2
+lxml
+PyYaml
+xmltodict
+
+[docs]
+sphinx
+sphinx-automodapi

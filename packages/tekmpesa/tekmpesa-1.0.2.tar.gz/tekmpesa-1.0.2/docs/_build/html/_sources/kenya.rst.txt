@@ -1,0 +1,12 @@
+mpesa.kenya
+----------------------------
+First you need to create a developer account on
+<https://developer.safaricom.co.ke>
+
+Use Cases
+````````````````
+- Requesting Payments
+- Disbursing Payments
+- Collecting Payments
+- Reversing Transactions
+- Querying Transction Statuses

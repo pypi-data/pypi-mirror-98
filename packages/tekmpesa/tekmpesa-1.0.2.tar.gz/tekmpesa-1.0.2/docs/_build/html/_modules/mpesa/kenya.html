@@ -1,0 +1,1116 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mpesa.kenya &mdash; tekmpesa 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> tekmpesa
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table Of Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contents.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">tekmpesa</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>mpesa.kenya</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for mpesa.kenya</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Kenya MPESA SDK Implementation.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">base64</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">requests.auth</span> <span class="kn">import</span> <span class="n">HTTPBasicAuth</span>
+
+<span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;API&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="n">__author__</span> <span class="o">=</span> <span class="s2">&quot;Tralah M Brian&quot;</span>
+<span class="n">__email__</span> <span class="o">=</span> <span class="s2">&quot;musyoki.brian@tralahtek.com&quot;</span>
+<span class="n">__github__</span> <span class="o">=</span> <span class="s2">&quot;https://github.com/TralahM&quot;</span>
+
+
+<div class="viewcode-block" id="API"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API">[docs]</a><span class="k">class</span> <span class="nc">API</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Kenya&#39;s Daraja MPESA API.</span>
+
+<span class="sd">    :param env:  The target environment defaults ``&quot;sandbox&quot;`` ``&quot;sandbox&quot;`` or ``&quot;production&quot;``.</span>
+<span class="sd">    :type env: str</span>
+<span class="sd">    :param app_key: The *app_key* from developers portal.</span>
+<span class="sd">    :type app_key: str</span>
+<span class="sd">    :param app_secret: The *app_secret* from developers portal.</span>
+<span class="sd">    :type app_secret: str</span>
+
+<span class="sd">    **Attributes**</span>
+
+<span class="sd">    .. attribute:: sandbox_url</span>
+
+<span class="sd">        The sandbox environment host url &quot;https://sandbox.safaricom.co.ke&quot;</span>
+
+<span class="sd">    .. attribute:: live_url</span>
+
+<span class="sd">        The live/production environment host url &quot;https://api.safaricom.co.ke&quot;</span>
+
+
+<span class="sd">    **Methods.**</span>
+
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">env</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;sandbox&quot;</span><span class="p">,</span>
+        <span class="n">app_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">app_secret</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Initialize API.</span>
+
+<span class="sd">        :param env:  The target environment. *sandbox* or *production*.</span>
+<span class="sd">        :type env: str</span>
+<span class="sd">        :param app_key: The *app_key* from developers portal.</span>
+<span class="sd">        :type app_key: str</span>
+<span class="sd">        :param app_secret: The *app_secret* from developers portal.</span>
+<span class="sd">        :type app_secret: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">=</span> <span class="n">env</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">app_key</span> <span class="o">=</span> <span class="n">app_key</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">app_secret</span> <span class="o">=</span> <span class="n">app_secret</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span> <span class="o">=</span> <span class="s2">&quot;https://sandbox.safaricom.co.ke&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.safaricom.co.ke&quot;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">authentication_token</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return Authentication Token.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">authenticate</span><span class="p">()</span>
+
+<div class="viewcode-block" id="API.authenticate"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.authenticate">[docs]</a>    <span class="k">def</span> <span class="nf">authenticate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;To make Mpesa API calls, you will need to authenticate your app.</span>
+
+<span class="sd">        This method is used to fetch the access token required by Mpesa.</span>
+<span class="sd">        Mpesa supports client_credentials grant type.</span>
+
+<span class="sd">        To authorize your API calls to Mpesa, you will need a Basic Auth over HTTPS authorization token.</span>
+
+<span class="sd">        The Basic Auth string is a base64 encoded string of your app&#39;s client key and client secret.</span>
+
+
+<span class="sd">        :return: `access_token`  This token is to be used with the Bearer header for further API calls to Mpesa.</span>
+<span class="sd">        :rtype: str</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">authenticate_uri</span> <span class="o">=</span> <span class="s2">&quot;/oauth/v1/generate?grant_type=client_credentials&quot;</span>
+        <span class="n">authenticate_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="n">authenticate_uri</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="n">authenticate_url</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="n">HTTPBasicAuth</span><span class="p">(</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">app_key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">app_secret</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                <span class="n">authenticate_url</span><span class="p">,</span>
+                <span class="n">auth</span><span class="o">=</span><span class="n">HTTPBasicAuth</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">app_key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">app_secret</span><span class="p">),</span>
+                <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;access_token&quot;</span><span class="p">]</span></div>
+
+<div class="viewcode-block" id="API.b2b"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.b2b">[docs]</a>    <span class="k">def</span> <span class="nf">b2b</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initiator</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">security_credential</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">command_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">sender_identifier_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">receiver_identifier_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">amount</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">party_a</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">party_b</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">remarks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">account_reference</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">queue_timeout_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">result_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Uses the B2B API to transact from one company to another.</span>
+
+
+<span class="sd">        :param initiator: Username used to authenticate the transaction.</span>
+<span class="sd">        :type initiator: str</span>
+
+<span class="sd">        :param security_credential: Generate from developer portal</span>
+<span class="sd">        :type security_credential: str</span>
+
+<span class="sd">        :param command_id: Options:</span>
+
+<span class="sd">            - BusinessPayBill,</span>
+
+<span class="sd">            - BusinessBuyGoods,</span>
+
+<span class="sd">            - DisburseFundsToBusiness,</span>
+
+<span class="sd">            - BusinessToBusinessTransfer,</span>
+
+<span class="sd">            - BusinessTransferFromMMFToUtility,</span>
+
+<span class="sd">            - BusinessTransferFromUtilityToMMF,</span>
+
+<span class="sd">            - MerchantToMerchantTransfer,</span>
+
+<span class="sd">            - MerchantTransferFromMerchantToWorking,</span>
+
+<span class="sd">            - MerchantServicesMMFAccountTransfer,</span>
+
+<span class="sd">            - AgencyFloatAdvance</span>
+
+<span class="sd">        :type command_id: str</span>
+
+<span class="sd">        :param sender_identifier_type: ``2`` for Till Number,</span>
+<span class="sd">            ``4`` for organization shortcode.</span>
+<span class="sd">        :type sender_identifier_type: str</span>
+
+<span class="sd">        :param receiver_identifier_type: ``2`` for Till Number,</span>
+<span class="sd">            ``4`` for organization shortcode.</span>
+<span class="sd">        :type receiver_identifier_type: str</span>
+
+<span class="sd">        :param amount: Amount.</span>
+<span class="sd">        :type amount: str</span>
+
+<span class="sd">        :param party_a: Sender shortcode.</span>
+<span class="sd">        :type party_a: str</span>
+
+<span class="sd">        :param party_b: Receiver shortcode.</span>
+<span class="sd">        :type party_b: str</span>
+
+<span class="sd">        :param remarks: Remarks.</span>
+<span class="sd">        :type remarks: str</span>
+
+<span class="sd">        :param account_reference: Use if doing paybill to banks etc.</span>
+<span class="sd">        :type account_reference: str</span>
+
+<span class="sd">        :param queue_timeout_url: The url that handles information of timed out</span>
+<span class="sd">            transactions.</span>
+<span class="sd">        :type queue_timeout_url: str</span>
+
+<span class="sd">        :param result_url: The url that receives results from M-Pesa api call.</span>
+<span class="sd">        :type result_url: str</span>
+
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - OriginatorConverstionID (str): The unique request ID for tracking a transaction.</span>
+
+<span class="sd">            - ConversationID (str): The unique request ID returned by mpesa for each request made</span>
+
+<span class="sd">            - ResponseDescription (str): Response Description message</span>
+
+<span class="sd">        :rtype: dict</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Initiator&quot;</span><span class="p">:</span> <span class="n">initiator</span><span class="p">,</span>
+            <span class="s2">&quot;SecurityCredential&quot;</span><span class="p">:</span> <span class="n">security_credential</span><span class="p">,</span>
+            <span class="s2">&quot;CommandID&quot;</span><span class="p">:</span> <span class="n">command_id</span><span class="p">,</span>
+            <span class="s2">&quot;SenderIdentifierType&quot;</span><span class="p">:</span> <span class="n">sender_identifier_type</span><span class="p">,</span>
+            <span class="s2">&quot;RecieverIdentifierType&quot;</span><span class="p">:</span> <span class="n">receiver_identifier_type</span><span class="p">,</span>
+            <span class="s2">&quot;Amount&quot;</span><span class="p">:</span> <span class="n">amount</span><span class="p">,</span>
+            <span class="s2">&quot;PartyA&quot;</span><span class="p">:</span> <span class="n">party_a</span><span class="p">,</span>
+            <span class="s2">&quot;PartyB&quot;</span><span class="p">:</span> <span class="n">party_b</span><span class="p">,</span>
+            <span class="s2">&quot;Remarks&quot;</span><span class="p">:</span> <span class="n">remarks</span><span class="p">,</span>
+            <span class="s2">&quot;AccountReference&quot;</span><span class="p">:</span> <span class="n">account_reference</span><span class="p">,</span>
+            <span class="s2">&quot;QueueTimeOutURL&quot;</span><span class="p">:</span> <span class="n">queue_timeout_url</span><span class="p">,</span>
+            <span class="s2">&quot;ResultURL&quot;</span><span class="p">:</span> <span class="n">result_url</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/b2b/v1/paymentrequest&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.b2c"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.b2c">[docs]</a>    <span class="k">def</span> <span class="nf">b2c</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initiator_name</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">security_credential</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">command_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">amount</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">party_a</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">party_b</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">remarks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">queue_timeout_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">result_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">occassion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s B2C API to transact between an M-Pesa short code to a phone number registered on M-Pesa..</span>
+
+<span class="sd">        :param initiator_name: Username used to authenticate the transaction.</span>
+<span class="sd">        :param security_credential: Generate from developer portal</span>
+<span class="sd">        :param command_id: Options:</span>
+
+<span class="sd">            - SalaryPayment,</span>
+
+<span class="sd">            - BusinessPayment,</span>
+
+<span class="sd">            - PromotionPayment.</span>
+
+<span class="sd">        :param amount: Amount.</span>
+<span class="sd">        :param party_a: Organization/MSISDN making the transaction</span>
+
+<span class="sd">            - Shortcode (6 digits)</span>
+
+<span class="sd">            - MSISDN (12 digits).</span>
+
+<span class="sd">        :param party_b: MSISDN receiving the transaction (12 digits).</span>
+<span class="sd">        :param remarks: Comments that are sent along with the</span>
+<span class="sd">            transaction(maximum 100 characters).</span>
+<span class="sd">        :param account_reference: Use if doing paybill to banks etc.</span>
+<span class="sd">        :param queue_timeout_url: The url that handles information of timed</span>
+<span class="sd">            out transactions.</span>
+<span class="sd">        :param result_url: The url that receives results from M-Pesa api call.</span>
+<span class="sd">        :param ocassion: occasion.</span>
+<span class="sd">        :type initiator_name: str</span>
+<span class="sd">        :type security_credential: str</span>
+<span class="sd">        :type command_id: str</span>
+<span class="sd">        :type amount: str</span>
+<span class="sd">        :type party_a: str</span>
+<span class="sd">        :type party_b: str</span>
+<span class="sd">        :type remarks: str</span>
+<span class="sd">        :type account_reference: str</span>
+<span class="sd">        :type queue_timeout_url: str</span>
+<span class="sd">        :type result_url: str</span>
+<span class="sd">        :type ocassion: str</span>
+
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `OriginatorConverstionID` (str): The unique request ID for tracking a transaction.</span>
+
+<span class="sd">            - `ConversationID` (str): The unique request ID returned by mpesa for each request made</span>
+
+<span class="sd">            - `ResponseDescription` (str): Response Description message</span>
+<span class="sd">        :rtype: dict</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">            &quot;ConversationID&quot;: &quot;AG_20180326_00005ca7f7c21d608166&quot;,</span>
+<span class="sd">            &quot;OriginatorConversationID&quot;: &quot;12363-1328499-6&quot;,</span>
+<span class="sd">            &quot;ResponseCode&quot;: &quot;0&quot;,</span>
+<span class="sd">            &quot;ResponseDescription&quot;: &quot;Accept the service request successfully.&quot;</span>
+<span class="sd">            }</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;InitiatorName&quot;</span><span class="p">:</span> <span class="n">initiator_name</span><span class="p">,</span>
+            <span class="s2">&quot;SecurityCredential&quot;</span><span class="p">:</span> <span class="n">security_credential</span><span class="p">,</span>
+            <span class="s2">&quot;CommandID&quot;</span><span class="p">:</span> <span class="n">command_id</span><span class="p">,</span>
+            <span class="s2">&quot;Amount&quot;</span><span class="p">:</span> <span class="n">amount</span><span class="p">,</span>
+            <span class="s2">&quot;PartyA&quot;</span><span class="p">:</span> <span class="n">party_a</span><span class="p">,</span>
+            <span class="s2">&quot;PartyB&quot;</span><span class="p">:</span> <span class="n">party_b</span><span class="p">,</span>
+            <span class="s2">&quot;Remarks&quot;</span><span class="p">:</span> <span class="n">remarks</span><span class="p">,</span>
+            <span class="s2">&quot;QueueTimeOutURL&quot;</span><span class="p">:</span> <span class="n">queue_timeout_url</span><span class="p">,</span>
+            <span class="s2">&quot;ResultURL&quot;</span><span class="p">:</span> <span class="n">result_url</span><span class="p">,</span>
+            <span class="s2">&quot;Occassion&quot;</span><span class="p">:</span> <span class="n">occassion</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/b2c/v1/paymentrequest&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.balance"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.balance">[docs]</a>    <span class="k">def</span> <span class="nf">balance</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initiator</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">security_credential</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">command_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">party_a</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">identifier_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">remarks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">queue_timeout_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">result_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s Account Balance API to to enquire the balance on an M-Pesa BuyGoods (Till Number).</span>
+
+
+<span class="sd">        :param initiator: Username used to authenticate the transaction.</span>
+<span class="sd">        :param security_credential: Generate from developer portal.</span>
+<span class="sd">        :param command_id: AccountBalance.</span>
+<span class="sd">        :param party_a: Till number being queried.</span>
+<span class="sd">        :param identifier_type: Type of organization receiving the transaction.</span>
+
+<span class="sd">            .. csv-table:: Identifier Type sOptions</span>
+<span class="sd">                :header: &quot;identifier_type&quot;, &quot;description&quot;</span>
+<span class="sd">                :widths: 15, 35</span>
+
+<span class="sd">                1 , &quot;MSISDN&quot;</span>
+<span class="sd">                2 , &quot;Till Number&quot;</span>
+<span class="sd">                4 , &quot;Organization short code&quot;</span>
+
+<span class="sd">        :param remarks: Comments that are sent along with the transaction(maximum 100 characters).</span>
+<span class="sd">        :param queue_timeout_url: The url that handles information of timed out transactions.</span>
+<span class="sd">        :param result_url: The url that receives results from M-Pesa api call.</span>
+<span class="sd">        :type initiator: str</span>
+<span class="sd">        :type security_credential: str</span>
+<span class="sd">        :type command_id: str</span>
+<span class="sd">        :type party_a: str</span>
+<span class="sd">        :type identifier_type: str</span>
+<span class="sd">        :type remarks: str</span>
+<span class="sd">        :type queue_timeout_url: str</span>
+<span class="sd">        :type result_url: str</span>
+
+
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `OriginatorConverstionID` (str): The unique request ID for tracking a transaction.</span>
+
+<span class="sd">            - `ConversationID` (str): The unique request ID returned by mpesa for each request made</span>
+
+<span class="sd">            - `ResponseDescription` (str): Response Description message</span>
+<span class="sd">        :rtype: dict</span>
+
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Initiator&quot;</span><span class="p">:</span> <span class="n">initiator</span><span class="p">,</span>
+            <span class="s2">&quot;SecurityCredential&quot;</span><span class="p">:</span> <span class="n">security_credential</span><span class="p">,</span>
+            <span class="s2">&quot;CommandID&quot;</span><span class="p">:</span> <span class="n">command_id</span><span class="p">,</span>
+            <span class="s2">&quot;PartyA&quot;</span><span class="p">:</span> <span class="n">party_a</span><span class="p">,</span>
+            <span class="s2">&quot;IdentifierType&quot;</span><span class="p">:</span> <span class="n">identifier_type</span><span class="p">,</span>
+            <span class="s2">&quot;Remarks&quot;</span><span class="p">:</span> <span class="n">remarks</span><span class="p">,</span>
+            <span class="s2">&quot;QueueTimeOutURL&quot;</span><span class="p">:</span> <span class="n">queue_timeout_url</span><span class="p">,</span>
+            <span class="s2">&quot;ResultURL&quot;</span><span class="p">:</span> <span class="n">result_url</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/accountbalance/v1/query&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.c2b_register_url"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.c2b_register_url">[docs]</a>    <span class="k">def</span> <span class="nf">c2b_register_url</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">shortcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">response_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">confirmation_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">validation_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s C2B API to register validation and confirmation URLs on M-Pesa.</span>
+
+
+<span class="sd">        :param shortcode: The short code of the organization.</span>
+<span class="sd">        :param response_type: Default response type for timeout.</span>
+<span class="sd">            Incase a tranaction times out, Mpesa will by default ``&quot;Complete&quot;`` or ``&quot;Cancel&quot;`` the transaction.</span>
+<span class="sd">        :param confirmation_url: Confirmation URL for the client.</span>
+<span class="sd">        :param validation_url: Validation URL for the client.</span>
+<span class="sd">        :type shortcode: str</span>
+<span class="sd">        :type response_type: str</span>
+<span class="sd">        :type confirmation_url: str</span>
+<span class="sd">        :type validation_url: str</span>
+
+
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `OriginatorConversationID` (str): The unique request ID for tracking a transaction.</span>
+
+<span class="sd">            - `ConversationID` (str): The unique request ID returned by mpesa for each request made</span>
+
+<span class="sd">            - `ResponseDescription` (str): Response Description message</span>
+<span class="sd">        :rtype: dict</span>
+
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;&quot;,</span>
+<span class="sd">              &quot;OriginatorCoversationID&quot;: &quot;&quot;,</span>
+<span class="sd">              &quot;ResponseDescription&quot;: &quot;success&quot;</span>
+<span class="sd">            }</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ShortCode&quot;</span><span class="p">:</span> <span class="n">shortcode</span><span class="p">,</span>
+            <span class="s2">&quot;ResponseType&quot;</span><span class="p">:</span> <span class="n">response_type</span><span class="p">,</span>
+            <span class="s2">&quot;ConfirmationURL&quot;</span><span class="p">:</span> <span class="n">confirmation_url</span><span class="p">,</span>
+            <span class="s2">&quot;ValidationURL&quot;</span><span class="p">:</span> <span class="n">validation_url</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/c2b/v1/registerurl&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.c2b_simulate"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.c2b_simulate">[docs]</a>    <span class="k">def</span> <span class="nf">c2b_simulate</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">shortcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">command_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">amount</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">msisdn</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">bill_ref_number</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s C2B API to simulate a C2B transaction.</span>
+
+<span class="sd">        :param shortcode: The short code of the organization.</span>
+<span class="sd">        :param command_id: Unique command for each transaction type.</span>
+
+<span class="sd">            - CustomerPayBillOnline</span>
+
+<span class="sd">            - CustomerBuyGoodsOnline.</span>
+
+<span class="sd">        :param amount: The amount being transacted</span>
+<span class="sd">        :param msisdn: Phone number (msisdn) initiating the transaction MSISDN(12 digits)</span>
+<span class="sd">        :param bill_ref_number: Optional</span>
+<span class="sd">        :type shortcode: str</span>
+<span class="sd">        :type command_id: str</span>
+<span class="sd">        :type amount: str</span>
+<span class="sd">        :type msisdn: str</span>
+<span class="sd">        :type bill_ref_number: str</span>
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `OriginatorConverstionID` (str): The unique request ID for tracking a transaction.</span>
+
+<span class="sd">            - `ConversationID` (str): The unique request ID returned by mpesa for each request made</span>
+
+<span class="sd">            - `ResponseDescription` (str): Response Description message</span>
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">              &quot;ConversationID&quot;: &quot;AG_20180324_000066530b914eee3f85&quot;,</span>
+<span class="sd">              &quot;OriginatorCoversationID&quot;: &quot;25344-885903-1&quot;,</span>
+<span class="sd">              &quot;ResponseDescription&quot;: &quot;Accept the service request successfully.&quot;</span>
+<span class="sd">            }</span>
+
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;ShortCode&quot;</span><span class="p">:</span> <span class="n">shortcode</span><span class="p">,</span>
+            <span class="s2">&quot;CommandID&quot;</span><span class="p">:</span> <span class="n">command_id</span><span class="p">,</span>
+            <span class="s2">&quot;Amount&quot;</span><span class="p">:</span> <span class="n">amount</span><span class="p">,</span>
+            <span class="s2">&quot;Msisdn&quot;</span><span class="p">:</span> <span class="n">msisdn</span><span class="p">,</span>
+            <span class="s2">&quot;BillRefNumber&quot;</span><span class="p">:</span> <span class="n">bill_ref_number</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/c2b/v1/simulate&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.lnmo_stkpush"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.lnmo_stkpush">[docs]</a>    <span class="k">def</span> <span class="nf">lnmo_stkpush</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">business_shortcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">passcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">amount</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">callback_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">reference_code</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">phone_number</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s Express API to initiate online payment on behalf of a customer..</span>
+
+
+<span class="sd">        :param business_shortcode: The short code of the organization.</span>
+<span class="sd">        :param passcode: Get from developer portal</span>
+<span class="sd">        :param amount: The amount being transacted</span>
+<span class="sd">        :param callback_url: A CallBack URL is a valid secure URL that is used to receive notifications from M-Pesa API.</span>
+<span class="sd">        :param reference_code: Account Reference: This is an Alpha-Numeric parameter that is defined by your system as an Identifier of the transaction for CustomerPayBillOnline transaction type.</span>
+<span class="sd">        :param phone_number: The Mobile Number to receive the STK Pin Prompt.</span>
+<span class="sd">        :param description: This is any additional information/comment that can be sent along with the request from your system. MAX 13 characters</span>
+<span class="sd">        :type business_shortcode: str</span>
+<span class="sd">        :type passcode: str</span>
+<span class="sd">        :type amount: str</span>
+<span class="sd">        :type callback_url: str</span>
+<span class="sd">        :type reference_code: str</span>
+<span class="sd">        :type phone_number: str</span>
+<span class="sd">        :type description: str</span>
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `CustomerMessage` (str):</span>
+
+<span class="sd">            - `CheckoutRequestID` (str):</span>
+
+<span class="sd">            - `ResponseDescription` (str):</span>
+
+<span class="sd">            - `MerchantRequestID` (str):</span>
+
+<span class="sd">            - `ResponseCode` (str):</span>
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">               &quot;MerchantRequestID&quot;: &quot;25353-1377561-4&quot;,</span>
+<span class="sd">               &quot;CheckoutRequestID&quot;: &quot;ws_CO_26032018185226297&quot;,</span>
+<span class="sd">               &quot;ResponseCode&quot;: &quot;0&quot;,</span>
+<span class="sd">               &quot;ResponseDescription&quot;: &quot;Success. Request accepted for processing&quot;,</span>
+<span class="sd">               &quot;CustomerMessage&quot;: &quot;Success. Request accepted for processing&quot;</span>
+<span class="sd">            }</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">time</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+            <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">business_shortcode</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">passcode</span><span class="p">),</span> <span class="n">time</span><span class="p">)</span>
+        <span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">))</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;BusinessShortCode&quot;</span><span class="p">:</span> <span class="n">business_shortcode</span><span class="p">,</span>
+            <span class="s2">&quot;Password&quot;</span><span class="p">:</span> <span class="n">encoded</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;Timestamp&quot;</span><span class="p">:</span> <span class="n">time</span><span class="p">,</span>
+            <span class="s2">&quot;TransactionType&quot;</span><span class="p">:</span> <span class="s2">&quot;CustomerPayBillOnline&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;Amount&quot;</span><span class="p">:</span> <span class="n">amount</span><span class="p">,</span>
+            <span class="s2">&quot;PartyA&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">phone_number</span><span class="p">),</span>
+            <span class="s2">&quot;PartyB&quot;</span><span class="p">:</span> <span class="n">business_shortcode</span><span class="p">,</span>
+            <span class="s2">&quot;PhoneNumber&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">phone_number</span><span class="p">),</span>
+            <span class="s2">&quot;CallBackURL&quot;</span><span class="p">:</span> <span class="n">callback_url</span><span class="p">,</span>
+            <span class="s2">&quot;AccountReference&quot;</span><span class="p">:</span> <span class="n">reference_code</span><span class="p">,</span>
+            <span class="s2">&quot;TransactionDesc&quot;</span><span class="p">:</span> <span class="n">description</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/stkpush/v1/processrequest&quot;</span>
+        <span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.lnmo_status"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.lnmo_status">[docs]</a>    <span class="k">def</span> <span class="nf">lnmo_status</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">business_shortcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">checkout_request_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">passcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s Express API to check the status of a Lipa Na M-Pesa Online Payment..</span>
+
+
+<span class="sd">        :param business_shortcode: This is organizations shortcode (Paybill or Buygoods - A 5 to 6 digit account number) used to identify an organization and receive the transaction.</span>
+<span class="sd">        :param checkout_request_id: This is a global unique identifier of the processed checkout transaction request.</span>
+<span class="sd">        :param passcode: Get from developer portal</span>
+<span class="sd">        :type business_shortcode: str</span>
+<span class="sd">        :type checkout_request_id: str</span>
+<span class="sd">        :type passcode: str</span>
+
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `CustomerMessage` (str):</span>
+
+<span class="sd">            - `CheckoutRequestID` (str):</span>
+
+<span class="sd">            - `ResponseDescription` (str):</span>
+
+<span class="sd">            - `MerchantRequestID` (str):</span>
+
+<span class="sd">            - `ResponseCode` (str):</span>
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">time</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+            <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">business_shortcode</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">passcode</span><span class="p">),</span> <span class="n">time</span><span class="p">)</span>
+        <span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">))</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;BusinessShortCode&quot;</span><span class="p">:</span> <span class="n">business_shortcode</span><span class="p">,</span>
+            <span class="s2">&quot;Password&quot;</span><span class="p">:</span> <span class="n">encoded</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;Timestamp&quot;</span><span class="p">:</span> <span class="n">time</span><span class="p">,</span>
+            <span class="s2">&quot;CheckoutRequestID&quot;</span><span class="p">:</span> <span class="n">checkout_request_id</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/stkpushquery/v1/query&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.reverse"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.reverse">[docs]</a>    <span class="k">def</span> <span class="nf">reverse</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">initiator</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">security_credential</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">command_id</span><span class="o">=</span><span class="s2">&quot;TransactionReversal&quot;</span><span class="p">,</span>
+        <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">amount</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">receiver_party</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">receiver_identifier_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">queue_timeout_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">result_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">remarks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">occassion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s Transaction Reversal API to reverse a M-Pesa transaction.</span>
+
+<span class="sd">        :param initiator: Username used to authenticate the transaction.</span>
+<span class="sd">        :param security_credential: Generate from developer portal</span>
+<span class="sd">        :param command_id: TransactionReversal</span>
+<span class="sd">        :param transaction_id: Unique identifier to identify a transaction on M-Pesa.</span>
+<span class="sd">        :param amount: The amount being transacted</span>
+<span class="sd">        :param receiver_party: Organization/MSISDN making the transaction</span>
+
+<span class="sd">            - Shortcode (6 digits)</span>
+
+<span class="sd">            - MSISDN (12 digits).</span>
+
+<span class="sd">        :param receiver_identifier_type: MSISDN receiving the transaction (12 digits).</span>
+<span class="sd">        :param queue_timeout_url: The url that handles information of timed out transactions.</span>
+<span class="sd">        :param result_url: The url that receives results from M-Pesa api call.</span>
+<span class="sd">        :param remarks: Comments that are sent along with the transaction(maximum 100 characters)</span>
+<span class="sd">        :param occassion: Occassion</span>
+<span class="sd">        :type initiator: str</span>
+<span class="sd">        :type security_credential: str</span>
+<span class="sd">        :type command_id: str</span>
+<span class="sd">        :type transaction_id: str</span>
+<span class="sd">        :type amount: str</span>
+<span class="sd">        :type receiver_party: str</span>
+<span class="sd">        :type receiver_identifier_type: str</span>
+<span class="sd">        :type queue_timeout_url: str</span>
+<span class="sd">        :type result_url: str</span>
+<span class="sd">        :type remarks: str</span>
+<span class="sd">        :type occassion: str</span>
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `OriginatorConverstionID` (str): The unique request ID for tracking a transaction.</span>
+
+<span class="sd">            - `ConversationID` (str): The unique request ID returned by mpesa for each request made</span>
+
+<span class="sd">            - `ResponseDescription` (str): Response Description message</span>
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        :Example:</span>
+
+<span class="sd">        .. code-block:: json</span>
+
+<span class="sd">            {</span>
+<span class="sd">               &quot;Result&quot;:</span>
+<span class="sd">               {</span>
+<span class="sd">                &quot;ResultType&quot;:0,</span>
+<span class="sd">                &quot;ResultCode&quot;:0,</span>
+<span class="sd">                &quot;ResultDesc&quot;:&quot;The service request has been accepted successfully.&quot;,</span>
+<span class="sd">                &quot;OriginatorConversationID&quot;:&quot;10819-695089-1&quot;,</span>
+<span class="sd">                &quot;ConversationID&quot;:&quot;AG_20170727_00004efadacd98a01d15&quot;,</span>
+<span class="sd">                &quot;TransactionID&quot;:&quot;LGR019G3J2&quot;,</span>
+<span class="sd">                &quot;ReferenceData&quot;:</span>
+<span class="sd">                {</span>
+<span class="sd">                 &quot;ReferenceItem&quot;:</span>
+<span class="sd">                 {</span>
+<span class="sd">                   &quot;Key&quot;:&quot;QueueTimeoutURL&quot;,</span>
+<span class="sd">                   &quot;Value&quot;:&quot;https://internalsandbox.safaricom.co.ke/mpesa/reversalresults/v1/submit&quot;</span>
+<span class="sd">                 }</span>
+<span class="sd">                }</span>
+<span class="sd">               }</span>
+<span class="sd">             }</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Initiator&quot;</span><span class="p">:</span> <span class="n">initiator</span><span class="p">,</span>
+            <span class="s2">&quot;SecurityCredential&quot;</span><span class="p">:</span> <span class="n">security_credential</span><span class="p">,</span>
+            <span class="s2">&quot;CommandID&quot;</span><span class="p">:</span> <span class="n">command_id</span><span class="p">,</span>
+            <span class="s2">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="n">transaction_id</span><span class="p">,</span>
+            <span class="s2">&quot;Amount&quot;</span><span class="p">:</span> <span class="n">amount</span><span class="p">,</span>
+            <span class="s2">&quot;ReceiverParty&quot;</span><span class="p">:</span> <span class="n">receiver_party</span><span class="p">,</span>
+            <span class="s2">&quot;ReceiverIdentifierType&quot;</span><span class="p">:</span> <span class="n">receiver_identifier_type</span><span class="p">,</span>
+            <span class="s2">&quot;QueueTimeOutURL&quot;</span><span class="p">:</span> <span class="n">queue_timeout_url</span><span class="p">,</span>
+            <span class="s2">&quot;ResultURL&quot;</span><span class="p">:</span> <span class="n">result_url</span><span class="p">,</span>
+            <span class="s2">&quot;Remarks&quot;</span><span class="p">:</span> <span class="n">remarks</span><span class="p">,</span>
+            <span class="s2">&quot;Occassion&quot;</span><span class="p">:</span> <span class="n">occassion</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/reversal/v1/request&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="API.transaction_status"><a class="viewcode-back" href="../../api.html#mpesa.kenya.API.transaction_status">[docs]</a>    <span class="k">def</span> <span class="nf">transaction_status</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">party_a</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">identifier_type</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">remarks</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">initiator</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">passcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">result_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">queue_timeout_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">transaction_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">occassion</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">shortcode</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;This method uses Mpesa&#39;s Transaction Status API to check the status of a transaction.</span>
+
+
+<span class="sd">        :param party_a: Organization/MSISDN receiving the transaction</span>
+
+<span class="sd">            - MSISDN or</span>
+
+<span class="sd">            - shortcode.</span>
+
+<span class="sd">        :param identifier_type: Type of organization receiving the transaction</span>
+
+<span class="sd">            .. csv-table:: identifier types</span>
+<span class="sd">                :header: &quot;identifier_type&quot;,&quot;description&quot;</span>
+<span class="sd">                :widths: 15,30</span>
+
+<span class="sd">                1,&quot;MSISDN&quot;</span>
+<span class="sd">                2,&quot;Till Number&quot;</span>
+<span class="sd">                3,&quot;Shortcode&quot;</span>
+
+<span class="sd">        :param remarks: Comments that are sent along with the transaction(maximum 100 characters).</span>
+<span class="sd">        :param initiator: This is the credential/username used to authenticate the transaction request.</span>
+<span class="sd">        :param passcode: Get from developer portal</span>
+<span class="sd">        :param result_url: The url that handles information from the mpesa API call.</span>
+<span class="sd">        :param transaction_id: Unique identifier to identify a transaction on M-Pesa.</span>
+<span class="sd">        :param queue_timeout_url: The url that stores information of timed out transactions.</span>
+<span class="sd">        :param shortcode: The short code of the organization.</span>
+<span class="sd">        :param occassion: Occasion</span>
+<span class="sd">        :type party_a: str</span>
+<span class="sd">        :type identifier_type: str</span>
+<span class="sd">        :type remarks: str</span>
+<span class="sd">        :type initiator: str</span>
+<span class="sd">        :type passcode: str</span>
+<span class="sd">        :type transaction_id: str</span>
+<span class="sd">        :type queue_timeout_url: str</span>
+<span class="sd">        :type result_url: str</span>
+<span class="sd">        :type shortcode: str</span>
+<span class="sd">        :type occassion: str</span>
+
+<span class="sd">        :return: Dict object of</span>
+
+<span class="sd">            - `ResultDesc`: ,</span>
+
+<span class="sd">            - `CheckoutRequestID`: ,</span>
+
+<span class="sd">            - `ResponseDescription`: ,</span>
+
+<span class="sd">            - `MerchantRequestID`: ,</span>
+
+<span class="sd">            - `ResponseCode`: ,</span>
+
+<span class="sd">            - `ResultCode`:</span>
+<span class="sd">        :rtype: dict</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">time</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+            <span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">shortcode</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">passcode</span><span class="p">),</span> <span class="n">time</span><span class="p">)</span>
+        <span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">bytes</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">))</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;CommandID&quot;</span><span class="p">:</span> <span class="s2">&quot;TransactionStatusQuery&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;PartyA&quot;</span><span class="p">:</span> <span class="n">party_a</span><span class="p">,</span>
+            <span class="s2">&quot;IdentifierType&quot;</span><span class="p">:</span> <span class="n">identifier_type</span><span class="p">,</span>
+            <span class="s2">&quot;Remarks&quot;</span><span class="p">:</span> <span class="n">remarks</span><span class="p">,</span>
+            <span class="s2">&quot;Initiator&quot;</span><span class="p">:</span> <span class="n">initiator</span><span class="p">,</span>
+            <span class="s2">&quot;SecurityCredential&quot;</span><span class="p">:</span> <span class="n">encoded</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">),</span>
+            <span class="s2">&quot;QueueTimeOutURL&quot;</span><span class="p">:</span> <span class="n">queue_timeout_url</span><span class="p">,</span>
+            <span class="s2">&quot;ResultURL&quot;</span><span class="p">:</span> <span class="n">result_url</span><span class="p">,</span>
+            <span class="s2">&quot;TransactionID&quot;</span><span class="p">:</span> <span class="n">transaction_id</span><span class="p">,</span>
+            <span class="s2">&quot;Occasion&quot;</span><span class="p">:</span> <span class="n">occassion</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer </span><span class="si">{0}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">authentication_token</span><span class="p">),</span>
+            <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">env</span> <span class="o">==</span> <span class="s2">&quot;production&quot;</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">live_url</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base_safaricom_url</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sandbox_url</span>
+        <span class="n">saf_url</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{0}{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">base_safaricom_url</span><span class="p">,</span> <span class="s2">&quot;/mpesa/stkpushquery/v1/query&quot;</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">saf_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+                              <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Tralah M Brian
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
