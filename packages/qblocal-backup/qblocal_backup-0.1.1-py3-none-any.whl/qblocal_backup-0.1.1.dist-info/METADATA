@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qblocal-backup
+Version: 0.1.1
+Summary: a local backup tool for qbittorrent without call webui api.
+Home-page: https://github.com/Cologler/qblocal_backup-python
+License: MIT
+Author: Cologler
+Author-email: skyoflw@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# qblocal_backup
+
+a local backup tool for qbittorrent without call webui api.
+
+## Usage
+
+``` cmd
+python -m qblocal_backup <QBITTORRENT_CONF> <DEST_LOCATION>
+```
+
+`<DEST_LOCATION>` should be a directory.
+
