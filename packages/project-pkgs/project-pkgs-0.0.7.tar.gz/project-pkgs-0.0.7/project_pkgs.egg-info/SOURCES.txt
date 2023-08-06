@@ -1,0 +1,10 @@
+README.md
+checksum.py
+color.py
+setup.py
+logger/__init__.py
+logger/formatter.py
+project_pkgs.egg-info/PKG-INFO
+project_pkgs.egg-info/SOURCES.txt
+project_pkgs.egg-info/dependency_links.txt
+project_pkgs.egg-info/top_level.txt
