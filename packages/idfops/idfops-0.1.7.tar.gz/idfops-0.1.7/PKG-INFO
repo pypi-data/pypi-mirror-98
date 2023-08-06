@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: idfops
+Version: 0.1.7
+Summary: Wrapper around pandas table operations such as union, melting, casting, reading spreadsheets, finding value in dataframe
+Home-page: https://gitlab.com/i19/pandas_operations
+Author: ira
+Author-email: ira.saktor@gmail.com
+License: UNKNOWN
+Description: # Pandas Operations
+        
+        Set of simple functions to make working with pandas a little easier.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
