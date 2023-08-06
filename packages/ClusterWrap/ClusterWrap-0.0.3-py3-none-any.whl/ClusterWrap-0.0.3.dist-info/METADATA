@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ClusterWrap
+Version: 0.0.3
+Summary: Wrappers around dask-jobqueue functions for specific clusters
+Home-page: https://github.com/GFleishman/ClusterWrap
+Author: Greg M. Fleishman
+Author-email: greg.nli10me@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: dask
+Requires-Dist: dask[distributed]
+Requires-Dist: dask-jobqueue
+
+UNKNOWN
+
+
