@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: fastgwr
+Version: 0.1.5
+Summary: Fast Parallel Computation of Geographically Weighted Regression
+Home-page: https://github.com/Ziqi-Li/FastGWR
+Author: Ziqi Li
+Author-email: liziqi1992@gmail.com
+License: MIT
+Description: A MPI-based command line tool for calibrating Geographically Weighted Regression models.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7

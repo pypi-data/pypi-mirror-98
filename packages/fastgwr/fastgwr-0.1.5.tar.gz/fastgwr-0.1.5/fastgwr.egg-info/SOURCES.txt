@@ -1,0 +1,11 @@
+README.md
+setup.py
+fastgwr/__init__.py
+fastgwr/__main__.py
+fastgwr/fastgwr-mpi.py
+fastgwr.egg-info/PKG-INFO
+fastgwr.egg-info/SOURCES.txt
+fastgwr.egg-info/dependency_links.txt
+fastgwr.egg-info/entry_points.txt
+fastgwr.egg-info/requires.txt
+fastgwr.egg-info/top_level.txt
