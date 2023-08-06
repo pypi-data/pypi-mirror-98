@@ -1,0 +1,3 @@
+[console_scripts]
+play2plex=play_takeout_to_plex:main
+
