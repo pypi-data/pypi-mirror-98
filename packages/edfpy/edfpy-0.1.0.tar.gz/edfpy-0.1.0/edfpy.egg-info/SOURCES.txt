@@ -1,0 +1,12 @@
+README.md
+setup.py
+edfpy/__init__.py
+edfpy/header.py
+edfpy/notation.py
+edfpy/plotting.py
+edfpy/version.py
+edfpy.egg-info/PKG-INFO
+edfpy.egg-info/SOURCES.txt
+edfpy.egg-info/dependency_links.txt
+edfpy.egg-info/requires.txt
+edfpy.egg-info/top_level.txt
