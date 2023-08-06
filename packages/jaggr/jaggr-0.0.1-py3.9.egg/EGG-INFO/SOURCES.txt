@@ -1,0 +1,8 @@
+README.md
+setup.py
+jaggr/__init__.py
+jaggr/aggregator.py
+jaggr.egg-info/PKG-INFO
+jaggr.egg-info/SOURCES.txt
+jaggr.egg-info/dependency_links.txt
+jaggr.egg-info/top_level.txt
