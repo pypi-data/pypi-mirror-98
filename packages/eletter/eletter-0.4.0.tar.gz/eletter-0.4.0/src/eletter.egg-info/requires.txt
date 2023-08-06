@@ -1,0 +1,2 @@
+attrs>=20.1
+mailbits~=0.2
