@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: codeoptimist.yaml
+Version: 0.1.0
+Summary: YAML file inheritance with string replacement fields, sequence inserts, and conditional formatting.
+Home-page: https://github.com/CodeOptimist/codeoptimist-yaml
+Author: Christopher Galpin
+License: UNKNOWN
+Project-URL: Discord, https://discord.gg/QbQJVNUJhc
+Keywords: YAML
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+See *Advanced Examples* of https://github.com/CodeOptimist/rimworld-mod-description-tool.
+
+
