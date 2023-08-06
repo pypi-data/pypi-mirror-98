@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+carbonintensity/__init__.py
+carbonintensity/client.py
+carbonintensity.egg-info/PKG-INFO
+carbonintensity.egg-info/SOURCES.txt
+carbonintensity.egg-info/dependency_links.txt
+carbonintensity.egg-info/requires.txt
+carbonintensity.egg-info/top_level.txt
