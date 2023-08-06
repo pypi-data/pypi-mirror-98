@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: testbrain
+Version: 1.0.0.dev8
+Summary: Command Line Interface for Appsurify Testbrain.
+Home-page: https://github.com/invertednz/Appsurify
+Author: Artem Demidenko
+Author-email: ar.demidenko@gmail.com
+License: unlicensed
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Requires-Python: >=2.7,<2.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: Click
+Requires-Dist: configparser
+Requires-Dist: shutils
+Requires-Dist: pymysql (==0.10.1)
+
+Command Line Interface for Appsurify Testbrain.
+
+
