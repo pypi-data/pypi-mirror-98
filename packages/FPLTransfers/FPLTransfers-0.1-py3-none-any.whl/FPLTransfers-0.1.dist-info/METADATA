@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: FPLTransfers
+Version: 0.1
+Summary: A package which calculates optimum transfers for Fantasy Premier League
+Home-page: https://github.com/JackLidge/FPLTransfers
+Author: Jack Lidgley
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Dist: fpl
+Requires-Dist: pandas
+
+UNKNOWN
+
+
