@@ -1,0 +1,9 @@
+README.md
+setup.py
+FPLTransfers/FPLTransfers.py
+FPLTransfers/__init__.py
+FPLTransfers.egg-info/PKG-INFO
+FPLTransfers.egg-info/SOURCES.txt
+FPLTransfers.egg-info/dependency_links.txt
+FPLTransfers.egg-info/requires.txt
+FPLTransfers.egg-info/top_level.txt
