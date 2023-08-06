@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: pyams-zfiles
+Version: 1.0.1
+Summary: PyAMS files storage manager
+Home-page: https://pyams.readthedocs.io
+Author: Thierry Florac
+Author-email: tflorac@ulthar.net
+License: ZPL
+Keywords: Pyramid PyAMS
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: setuptools
+Requires-Dist: colander
+Requires-Dist: cornice
+Requires-Dist: cornice-swagger
+Requires-Dist: graphene
+Requires-Dist: hypatia
+Requires-Dist: persistent
+Requires-Dist: pyams-catalog
+Requires-Dist: pyams-file
+Requires-Dist: pyams-layer
+Requires-Dist: pyams-security
+Requires-Dist: pyams-site
+Requires-Dist: pyams-utils
+Requires-Dist: pyams-workflow
+Requires-Dist: pyramid
+Requires-Dist: pyramid-rpc
+Requires-Dist: python-dateutil
+Requires-Dist: zope.container
+Requires-Dist: zope.copy
+Requires-Dist: zope.dublincore
+Requires-Dist: zope.interface
+Requires-Dist: zope.intid
+Requires-Dist: zope.lifecycleevent
+Requires-Dist: zope.location
+Requires-Dist: zope.schema
+Requires-Dist: zope.traversing
+Provides-Extra: test
+Requires-Dist: pyams-form ; extra == 'test'
+Requires-Dist: pyams-pagelet ; extra == 'test'
+Requires-Dist: pyams-skin ; extra == 'test'
+Requires-Dist: pyams-table ; extra == 'test'
+Requires-Dist: pyams-viewlet ; extra == 'test'
+Requires-Dist: pyams-zmi ; extra == 'test'
+Requires-Dist: pyramid-zcml ; extra == 'test'
+Requires-Dist: zope.exceptions ; extra == 'test'
+
+====================
+PyAMS ZFiles package
+====================
+
+.. contents::
+
+
+What is PyAMS?
+==============
+
+PyAMS (Pyramid Application Management Suite) is a small suite of packages written for applications
+and content management with the Pyramid framework.
+
+**PyAMS** is actually mainly used to manage web sites through content management applications (CMS,
+see PyAMS_content package), but many features are generic and can be used inside any kind of web
+application.
+
+All PyAMS documentation is available on `ReadTheDocs <https://pyams.readthedocs.io>`_; source code
+is available on `Gitlab <https://gitlab.com/pyams>`_ and pushed to `Github
+<https://github.com/py-ams>`_. Doctests are available in the *doctests* source folder.
+
+
+What is ZFiles?
+===============
+
+ZFiles is an extension package for PyAMS which allows to define a "files storage" environment.
+
+This environment is very simple, and provides several APIs (for REST/JSON, XML-RPC
+or JSON-RPC protocols) which allows applications to store and retrieve external files of any
+type (maybe images, videos, PDF files...). Applications which are using the service just get a
+unique ID (called OID) when they upload a new document, which can be stored by the applications
+and used to retrieve them afterwards when needed.
+
+ZFiles is just a storage manager for these documents; the lifecycle management is delegated to
+the applications which use it as storage backend.
+
+
+Changelog
+=========
+
+1.0.1
+-----
+ - updated context of permissions checks in REST and GraphQL APIs
+
+1.0.0
+-----
+ - initial release
+
+
