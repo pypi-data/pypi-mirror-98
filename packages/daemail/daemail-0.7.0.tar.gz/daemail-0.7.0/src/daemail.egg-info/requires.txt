@@ -1,0 +1,7 @@
+attrs>=18.1
+click>=7.0
+eletter~=0.4
+mailbits~=0.2
+morecontext>=0.4.1
+outgoing~=0.2
+python-daemon==2.*
