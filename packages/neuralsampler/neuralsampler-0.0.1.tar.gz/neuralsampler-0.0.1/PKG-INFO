@@ -1,0 +1,52 @@
+Metadata-Version: 1.1
+Name: neuralsampler
+Version: 0.0.1
+Summary: neural sampler
+Home-page: https://github.com/JiahaoYao/neuralsampler
+Author: Jimmy
+Author-email: jiahaoyao.math@gmail.com
+License: MIT
+Description: 
+        ## NeuralSampler - Pytorch
+        
+        Implementation of Neural Sampler. 
+        
+        ## Install
+        
+        ``` bash
+        $ pip install neuralsampler
+        ```
+        
+        ## Usage
+        
+        ```python
+        import torch
+        from neuralsampler import neuralsampler
+        ```
+        
+        
+        
+        
+        this repo is to collect all the random results and reproduce the experiments here 
+        
+        Todo list 
+        
+        this library is on the pytorch and then jax 
+        
+        i will use jax and flax, like shown here: https://github.com/yang-song/score_sde
+        
+        
+        i am also going to prepare the colab notebook 
+        
+        
+        the dataset is through the gdown 
+        
+        you can download the dataset from the google drive 
+        
+Keywords: artificial intelligence,generative models,transformers
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
