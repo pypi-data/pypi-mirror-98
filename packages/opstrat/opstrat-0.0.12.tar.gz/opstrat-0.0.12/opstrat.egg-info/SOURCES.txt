@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+opstrat/__init__.py
+opstrat/basic_multi.py
+opstrat/basic_single.py
+opstrat.egg-info/PKG-INFO
+opstrat.egg-info/SOURCES.txt
+opstrat.egg-info/dependency_links.txt
+opstrat.egg-info/requires.txt
+opstrat.egg-info/top_level.txt
