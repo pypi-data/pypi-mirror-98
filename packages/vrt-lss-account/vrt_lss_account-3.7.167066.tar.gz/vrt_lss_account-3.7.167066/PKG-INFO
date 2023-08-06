@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vrt_lss_account
+Version: 3.7.167066
+Summary: Veeroute.LSS Account
+Home-page: https://docs.veeroute.com/#/lss/account
+Author: Veeroute Support Team
+Author-email: support@veeroute.com
+License: UNKNOWN
+Description:     LSS Account Panel  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Veeroute.LSS Account
+Platform: UNKNOWN
+Requires-Python: >=3.6
