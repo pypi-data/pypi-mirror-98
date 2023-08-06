@@ -1,0 +1,8 @@
+README.md
+setup.py
+SharedMailbox/__init__.py
+robotframework_sharedmailbox.egg-info/PKG-INFO
+robotframework_sharedmailbox.egg-info/SOURCES.txt
+robotframework_sharedmailbox.egg-info/dependency_links.txt
+robotframework_sharedmailbox.egg-info/requires.txt
+robotframework_sharedmailbox.egg-info/top_level.txt
