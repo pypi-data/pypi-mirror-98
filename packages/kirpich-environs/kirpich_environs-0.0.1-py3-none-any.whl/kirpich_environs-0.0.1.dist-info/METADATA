@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kirpich-environs
+Version: 0.0.1
+Summary: Пакет с оберткой над environ
+Home-page: https://pypi.org/project/kirpich-environs/
+Author: LLC Kirpich
+Author-email: support@kirpich.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: environs (<=5.2.1)
+
+# Пакет с оберткой над environ
+
+Обертка над библиотекой `environ`, которая позволяет контролировать использование дефолтных значений на проде.
+
