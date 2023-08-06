@@ -1,0 +1,10 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "daft>=0.1.0",
+    "gtsam>=4",
+    "matplotlib>=3.3.3",
+    "numpy"
+]
+build-backend = "setuptools.build_meta"
