@@ -1,0 +1,10 @@
+discord/ext/context/__init__.py,sha256=3e5TDobPljAttvaK4-dUFw9dfzcGu3Iv_2b_Gvct8AQ,70
+discord/ext/context/client.py,sha256=vYcWthYVobCBBK1g_0mpeKDHvu6OQIMYFTDB4CZfYQc,436
+discord/ext/context/context.py,sha256=s6hQGRpY_ydtSgnZ4IvhrqlZ_P93mKaMuNQp0EBtO5Y,7593
+discord/ext/context/hooks.py,sha256=6CU77fhDemDUgxzSnlKo0wLeviSt05hB9aGgXtMGaSw,5533
+discord/ext/context/types.py,sha256=Ek2efG6MD7GrN3hcvWSWex7eCz3VKKASoYZQOqRShN8,175
+discord/ext/context/utils.py,sha256=qeTizjgR95OZm6sgb_9myKtb4VZDkXviTtRtLk_5nrQ,801
+discord.ext.context-0.1.0.dist-info/LICENSE,sha256=ZK-DGacuiklSNrotgWPm2E0M3veeRED_5rv9NWX2fVs,1064
+discord.ext.context-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+discord.ext.context-0.1.0.dist-info/METADATA,sha256=3Q86gbKNSv_J6pwvzTedDWyxZAF-ASET8zwHcc5eEBQ,528
+discord.ext.context-0.1.0.dist-info/RECORD,,
