@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_winregmgr.py
+winregmgr/__init__.py
+winregmgr/winreg_manager.py
+winregmgr.egg-info/PKG-INFO
+winregmgr.egg-info/SOURCES.txt
+winregmgr.egg-info/dependency_links.txt
+winregmgr.egg-info/top_level.txt

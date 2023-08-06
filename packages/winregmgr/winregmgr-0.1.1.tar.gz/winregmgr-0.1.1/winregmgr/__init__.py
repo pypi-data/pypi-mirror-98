@@ -1,0 +1,1 @@
+from winregmgr.winreg_manager import OpenKey
