@@ -1,0 +1,9 @@
+tess_cloud/__init__.py,sha256=ysFjKhM1wLw-1tpul_KmW8ndrT0_yihKfRPxewtdGEA,692
+tess_cloud/cutout.py,sha256=-s3cVjbEM4pTC6HbJ_953FN23U-fPOjfRlvYvXz260o,3976
+tess_cloud/image.py,sha256=vzt2HIkcM4CnX1ed8J7JBhTAZMhwCL6Yos76gIrvK48,14070
+tess_cloud/manifest.py,sha256=ktDmKjWlpGSQxmGXgKkR21dAYA1KJkW1LjWparAGCdA,2525
+tess_cloud/targetpixelfile.py,sha256=O4u_0jLVPksf8DdGiOJRjUu_57Y4ANzDFN6P_oomsFQ,6250
+tess_cloud/tica.py,sha256=f-pMgtQWTuIWE9FsE3olFeEXeOIdvEuwgMCk-UiTM7c,452
+tess_cloud-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+tess_cloud-0.1.0.dist-info/METADATA,sha256=O0PzSk_OJMaR00EWw8J4ICgw8uKkf5HrFqFduaGDPz4,3483
+tess_cloud-0.1.0.dist-info/RECORD,,
