@@ -1,0 +1,3 @@
+[console_scripts]
+mages = ncoop57_mages.cli:main
+
