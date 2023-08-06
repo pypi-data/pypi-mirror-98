@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-odoo-pim
+Version: 12.0.20210317.0
+Summary: Meta package for oca-odoo-pim Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo12-addon-attribute-set
+Requires-Dist: odoo12-addon-attribute-set-completeness
+Requires-Dist: odoo12-addon-attribute-set-mass-edit
+Requires-Dist: odoo12-addon-attribute-set-searchable
+Requires-Dist: odoo12-addon-pim
+Requires-Dist: odoo12-addon-product-attribute-set
+Requires-Dist: odoo12-addon-product-attribute-set-completeness
+
+UNKNOWN
+
+
