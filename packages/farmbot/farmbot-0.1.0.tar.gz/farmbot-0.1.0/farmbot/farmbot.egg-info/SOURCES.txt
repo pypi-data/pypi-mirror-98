@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+example.py
+setup.py
+farmbot/farmbot.py
+farmbot/farmbot_test.py
+farmbot/farmbot.egg-info/PKG-INFO
+farmbot/farmbot.egg-info/SOURCES.txt
+farmbot/farmbot.egg-info/dependency_links.txt
+farmbot/farmbot.egg-info/requires.txt
+farmbot/farmbot.egg-info/top_level.txt
