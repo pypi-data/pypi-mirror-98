@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: umnet-scripts
+Version: 0.0.1
+Summary: Python tools for interacting with UMnet's network tools
+Home-page: https://gitlab.umich.edu/its-inf-net/umnet-scripts
+Author: University of Michigan
+Author-email: amylieb@umich.edu
+License: MIT
+Description: # umnet-scripts
+        A repository for python scripts that interact with UMnet tools like Netbox, Netinfo, and Bluecat.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
