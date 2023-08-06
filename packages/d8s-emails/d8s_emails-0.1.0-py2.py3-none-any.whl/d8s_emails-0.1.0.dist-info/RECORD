@@ -1,0 +1,11 @@
+d8s_emails/__init__.py,sha256=9Icnh16OhNhNEnGUKGF_Ww00D1LFzetMvZCoWtgYwOU,618
+d8s_emails/emails.py,sha256=cV9Qg2PzkU62pnya2yvnxGg-KSX3SNTsUZkwjNJg8Jk,7686
+d8s_emails/emails_temp_utils.py,sha256=FAfonmo-_CvChKLJO-NMYdPyjJbUVKoBg6GeZhlYvrg,1515
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_emails.py,sha256=pZ4O24oplriUpDAclmWNmo7omUaW_aHIZiaaeGDXwtQ,27021
+d8s_emails-0.1.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_emails-0.1.0.dist-info/METADATA,sha256=z_AKN7rEsktKbBBvzo6daiYbnT1UZvQskzwQFLVpfwc,1803
+d8s_emails-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_emails-0.1.0.dist-info/top_level.txt,sha256=wdrRQ-TfBrUS4E6RDTA1XmTUHG9xoPxZPzRcq3WqZeA,17
+d8s_emails-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_emails-0.1.0.dist-info/RECORD,,
