@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: fenix-library-running
+Version: 0.0.4
+Summary: A library to run and live-log OS commands, functions, scripts, and batch jobs either immedietly, or queued for later execution
+Home-page: https://gitlab.com/rebornos-team/fenix/libraries/running
+Author: Shivanand Pattanshetti
+Author-email: shivanandvp@rebornos.org
+License: UNKNOWN
+Download-URL: https://pypi.org/project/fenix-library-running/
+Project-URL: Documentation, https://rebornos-team.gitlab.io/fenix/libraries/running/
+Project-URL: Source, https://gitlab.com/rebornos-team/fenix/libraries/running
+Project-URL: Tracker, https://gitlab.com/rebornos-team/fenix/libraries/running/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# Running - Fenix Library - RebornOS Team
+
+*Documentation by @shivanandvp (shivanandvp@rebornos.org)*  
+
+*Please refer to [`LICENSE`](./LICENSE) for license information.*
+
+## Overview
+
+The **running** package contains the tools required to run and live-log *OS commands*, *functions*, *scripts*, and *batch jobs* either immedietly, or queued for later execution).
+
+**Warning**: This package is still in the Alpha stage. It is not ready for production use. Please do not use for any critical software
+
+## [PLEASE CLICK HERE](https://rebornos-team.gitlab.io/fenix/libraries/running/index.html) for the full documentation
+
