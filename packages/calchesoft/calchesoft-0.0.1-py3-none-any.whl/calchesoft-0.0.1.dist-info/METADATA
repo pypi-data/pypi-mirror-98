@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: calchesoft
+Version: 0.0.1
+Summary: Python Distribution Utilities
+Home-page: https://github.com/hamzashoukat94/pythonAPP
+Author: Hamza shoukat
+Author-email: hamza_shoukat@diyatech.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+It is demo package for testing purpose
+
+
