@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+comlib/__init__.py
+comlib/comlib.py
+comlib.egg-info/PKG-INFO
+comlib.egg-info/SOURCES.txt
+comlib.egg-info/dependency_links.txt
+comlib.egg-info/not-zip-safe
+comlib.egg-info/top_level.txt
