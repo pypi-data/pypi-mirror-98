@@ -1,0 +1,8 @@
+README.md
+setup.py
+youtube_upload_monetization/__init__.py
+youtube_upload_monetization/const.py
+youtube_upload_monetization.egg-info/PKG-INFO
+youtube_upload_monetization.egg-info/SOURCES.txt
+youtube_upload_monetization.egg-info/dependency_links.txt
+youtube_upload_monetization.egg-info/top_level.txt
