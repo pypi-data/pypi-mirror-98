@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PyZkUI - Nodes</title>
+    <link rel="stylesheet" href="/static/bootstrap-4.5.3.min.css">
+    <link href="/static/font-awesome-4.7.0.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        {% include '_nav_1.html' %}
+        <hr>
+        <h5>Host: <i><span id="host">{{ host }}</span></i></h5>
+        <h5>Path: <i><span id="path"></span></i></h5>
+        <div id="alertMessage"></div>
+        <hr>
+        <div class="row">
+            <div class="col-4" id="nodeList"></div>
+            <div class="col-8">
+                <h6><span class="badge badge-dark">DATA</span></h6>
+                <div><textarea id="nodeData" style="width: 100%; border: 1px solid gray"></textarea></div>
+                <hr>
+                <h6><span class="badge badge-dark">INFO</span></h6>
+                <div id="nodeInfo"></div>
+            </div>
+        </div>
+
+        {% include '_modal_1.html' %}
+        {% include '_modal_2.html' %}
+    </div>
+</body>
+<script src="/static/jquery-3.5.1.min.js"></script>
+<script src="/static/bootstrap-4.5.3.bundle.min.js"></script>
+<script src="/static/tree.js"></script>
+</html>
