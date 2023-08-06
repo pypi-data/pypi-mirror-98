@@ -1,0 +1,8 @@
+pyqueue_celery_processor/__init__.py,sha256=5fnXTLiGZSTEF2w0y7E23y9vaIIXk4ZGDNJZYBPOOu4,515
+pyqueue_celery_processor/client.py,sha256=Ntx_WwDIPw9GMtv2TI_CC2UR052bkgm8ynk2h9NBp7I,2305
+pyqueue_celery_processor/consumer.py,sha256=R28mJqhfxRFpPuzxa4dJtlOL2uxehAzEYlUmqwitxoY,2708
+pyqueue_celery_processor-0.0.3.dist-info/LICENSE,sha256=5bwvZNZnBdRGore91uhur88Dcfdarm59bDfRf0_OU98,1074
+pyqueue_celery_processor-0.0.3.dist-info/METADATA,sha256=AUFcmu7SP92vj69LSZa9lQZ0vybq0dc0Rp26pTakcpI,1167
+pyqueue_celery_processor-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyqueue_celery_processor-0.0.3.dist-info/top_level.txt,sha256=hELIeUYvaYSXGvgZTNTm3VFLFIYxQgcZI-VPAKcrNYQ,25
+pyqueue_celery_processor-0.0.3.dist-info/RECORD,,
