@@ -1,0 +1,8 @@
+README.md
+setup.py
+sharepointio/sharepointio.py
+sharepointio.egg-info/PKG-INFO
+sharepointio.egg-info/SOURCES.txt
+sharepointio.egg-info/dependency_links.txt
+sharepointio.egg-info/requires.txt
+sharepointio.egg-info/top_level.txt
