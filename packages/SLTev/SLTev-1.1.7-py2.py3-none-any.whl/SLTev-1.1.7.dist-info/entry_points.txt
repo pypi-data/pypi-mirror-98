@@ -1,0 +1,6 @@
+[console_scripts]
+ASReval = SLTev.ASReval:main_point
+MTeval = SLTev.MTeval:main_point
+SLTev = SLTev.SLTev:main
+SLTeval = SLTev.SLTeval:main_point
+
