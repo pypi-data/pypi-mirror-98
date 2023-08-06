@@ -1,0 +1,9 @@
+r7assistant/__init__.py,sha256=S6qlI8SHWawgZ9q7HGOPcMFi2rKmc1DLxqv__TKxe6s,151
+r7assistant/assistant.py,sha256=BlIsQEfgetqlfJ2Fqfevh9LFl1r2oDA5Guqbr1j2AbI,3026
+r7assistant/microphone.py,sha256=LVvthhViHueIqepBRomDBCAeUwlvo_G_iAIY10Y3tZI,2490
+r7assistant/recognizer.py,sha256=TbGTlZLWWaS4dPzGvY4ynoPTaYwZ0MhIDqtT769gtAo,1221
+r7assistant-0.0.1.dist-info/LICENSE.md,sha256=IhBiBge2TTkiGg0jDNjokYZfWWrmKYZm81W_7xKd-cs,1072
+r7assistant-0.0.1.dist-info/METADATA,sha256=Q-VJMG2KrQhGEZX6snL3GGFAAHZ7KiB4fkskG2MQKqI,630
+r7assistant-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+r7assistant-0.0.1.dist-info/top_level.txt,sha256=zINVkRsICnd9uhbA30EqKWtsBulHTr2LDBmI0IUvmP0,12
+r7assistant-0.0.1.dist-info/RECORD,,
