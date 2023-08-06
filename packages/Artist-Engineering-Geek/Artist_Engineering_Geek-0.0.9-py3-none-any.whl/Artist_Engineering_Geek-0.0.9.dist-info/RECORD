@@ -1,0 +1,10 @@
+Artist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Artist/base_programs.py,sha256=lzpyIbLPVHdXSnYIQpARuZpGik5yt3xakE3TQBhYX3I,732
+Artist/dataset.py,sha256=rkEmkjCVMm-ngrZc00k3SbSICJJVJiIyTqjQmndhV9M,2280
+Artist/general_trainer.py,sha256=tZW-0DsFWGQkJBcumrm-DmgEsXBrkrPoJLqenZfWpvU,3578
+Artist/progressive_trainer.py,sha256=aQ2290RPMde5vDJUDJNvZZa9AW-AGny77anTAuMseJ0,9368
+Artist_Engineering_Geek-0.0.9.dist-info/LICENSE,sha256=jMwFpALMbpaJGKtxTIncPJk728uYGIQ4jDkcdOnltBI,1075
+Artist_Engineering_Geek-0.0.9.dist-info/METADATA,sha256=_kDDw9VM4-evkE2n5jrdISKYFNjarEoMb_kuAHKIBqw,1993
+Artist_Engineering_Geek-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Artist_Engineering_Geek-0.0.9.dist-info/top_level.txt,sha256=rAJtpDupO7kd-s7QNUOZqyTrNlc3csK2C9WzwLFsmEY,7
+Artist_Engineering_Geek-0.0.9.dist-info/RECORD,,
