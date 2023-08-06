@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+log_handler_daily_path.py
+setup.py
+log_handler_daily_path.egg-info/PKG-INFO
+log_handler_daily_path.egg-info/SOURCES.txt
+log_handler_daily_path.egg-info/dependency_links.txt
+log_handler_daily_path.egg-info/top_level.txt
