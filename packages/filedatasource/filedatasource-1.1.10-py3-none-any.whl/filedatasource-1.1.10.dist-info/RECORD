@@ -1,0 +1,11 @@
+filedatasource/__init__.py,sha256=jmU9ELYK3-KnriBU5RIUVxC1Ir-inQPgv0nnU5TpWRE,440
+filedatasource/builder.py,sha256=zignm4z-mE_aPGhFM7rab6gFqNJCGtjkD9_OcXcDyIc,14580
+filedatasource/csvfile.py,sha256=ymnWZBFEFw8Dw1t7xRPwVrNkitoifkM3yy6gkf04OPo,8363
+filedatasource/datafile.py,sha256=BLi6HfG4lvS6_SDuUFdgCzD8PUkYD_rpi04WPlviMv0,9673
+filedatasource/excel.py,sha256=oPbfHpT9TGGgWKnpci50ACj0vjZB7f7xA560VfemjQQ,9189
+filedatasource/utils.py,sha256=Jk_yWMBsqC0IWfFSqLRguRF510GGe-Wqk6hqY_mmO9s,2351
+filedatasource-1.1.10.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+filedatasource-1.1.10.dist-info/METADATA,sha256=SWmQ8FmZ6hN09FRnFgv-SlW-3CFdZIAXgzZQT8oIiiU,19642
+filedatasource-1.1.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+filedatasource-1.1.10.dist-info/top_level.txt,sha256=_cUH2Wx7ELvRVeu_2C4RkYv32nwIXa2pqy2A44Wktbw,15
+filedatasource-1.1.10.dist-info/RECORD,,
