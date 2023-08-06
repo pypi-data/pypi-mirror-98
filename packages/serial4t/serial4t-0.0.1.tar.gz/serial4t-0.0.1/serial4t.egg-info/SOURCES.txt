@@ -1,0 +1,9 @@
+README.rst
+setup.py
+serial4t/__init__.py
+serial4t.egg-info/PKG-INFO
+serial4t.egg-info/SOURCES.txt
+serial4t.egg-info/dependency_links.txt
+serial4t.egg-info/requires.txt
+serial4t.egg-info/top_level.txt
+序列模組/__init__.py
