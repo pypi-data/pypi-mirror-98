@@ -1,0 +1,6 @@
+click
+click-log
+gdal
+minio
+deepdiff
+pyyaml
