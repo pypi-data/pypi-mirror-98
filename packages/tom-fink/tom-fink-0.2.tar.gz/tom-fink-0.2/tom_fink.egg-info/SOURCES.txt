@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+tom_fink/__init__.py
+tom_fink/fink.py
+tom_fink.egg-info/PKG-INFO
+tom_fink.egg-info/SOURCES.txt
+tom_fink.egg-info/dependency_links.txt
+tom_fink.egg-info/requires.txt
+tom_fink.egg-info/top_level.txt
