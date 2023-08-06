@@ -1,0 +1,8 @@
+README.md
+setup.py
+europlexo.egg-info/PKG-INFO
+europlexo.egg-info/SOURCES.txt
+europlexo.egg-info/dependency_links.txt
+europlexo.egg-info/entry_points.txt
+europlexo.egg-info/requires.txt
+europlexo.egg-info/top_level.txt
