@@ -1,0 +1,8 @@
+README.md
+setup.py
+configparser_crypt/__init__.py
+configparser_crypt.egg-info/PKG-INFO
+configparser_crypt.egg-info/SOURCES.txt
+configparser_crypt.egg-info/dependency_links.txt
+configparser_crypt.egg-info/requires.txt
+configparser_crypt.egg-info/top_level.txt
