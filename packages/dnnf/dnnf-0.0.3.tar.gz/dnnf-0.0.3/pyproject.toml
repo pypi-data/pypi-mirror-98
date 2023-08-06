@@ -1,0 +1,33 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "dnnf"
+author = "David Shriver"
+author-email = "dls2fc@virginia.edu"
+home-page = "https://github.com/dlshriver/DNNF"
+description-file = "README.rst"
+requires = [
+    "dnnv>=0.4,<0.5",
+    "numpy>=1.18,<1.20",
+    "onnx>=1.7,<1.8",
+    "torch>=1.6,<1.7",
+    "torchvision>=0.7,<0.8",
+    "tensorflow>=1.15,<2.0",
+]
+requires-python = ">=3.7"
+
+[tool.flit.metadata.requires-extra]
+dev = ["black==19.10b0", "mypy"]
+doc = ["sphinx==2.4"]
+test = ["coverage==5.0"]
+
+[tool.flit.scripts]
+dnnf = "dnnf.__main__:__main__"
+
+[tool.coverage.run]
+branch = true
+concurrency = ["multiprocessing", "thread"]
+parallel = true
+source = ["dnnf"]

@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: dnnf
+Version: 0.0.3
+Summary: dnnf - dnn property falsification
+Home-page: https://github.com/dlshriver/DNNF
+Author: David Shriver
+Author-email: dls2fc@virginia.edu
