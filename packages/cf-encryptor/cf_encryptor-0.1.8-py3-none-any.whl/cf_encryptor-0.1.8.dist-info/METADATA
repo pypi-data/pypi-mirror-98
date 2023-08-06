@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cf-encryptor
+Version: 0.1.8
+Summary: encrypted upload of local file to gDrive
+Home-page: https://github.com/leiyiz/cf-encryptor
+Author: Arka Bhattacharya, Jenny Liang, Soham Pardeshi, Leiyi Zhang
+Author-email: leiyiz@cs.washington.edu
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: cryptography
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: pydrive2 (>=1.8.0)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: tqdm (>=4.56.0)
+
+UNKNOWN
+
+
