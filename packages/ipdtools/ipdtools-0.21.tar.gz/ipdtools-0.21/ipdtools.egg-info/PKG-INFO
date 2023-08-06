@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ipdtools
+Version: 0.21
+Summary: UNKNOWN
+Home-page: https://github.com/GDelevoye/ipdtools
+Author: DELEVOYE Guillaume
+Author-email: delevoye.guillaume@gmail.com
+License: UNKNOWN
+Description: PacBio codes isolated and repackaged to work on their in-sillico model
+Platform: UNKNOWN
+Requires-Python: >=3.6
