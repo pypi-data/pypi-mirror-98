@@ -1,0 +1,3 @@
+[console_scripts]
+tesaurus = tesaurus.perintah:cli
+
