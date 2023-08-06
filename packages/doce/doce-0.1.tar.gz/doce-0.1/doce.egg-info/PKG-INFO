@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: doce
+Version: 0.1
+Summary: Design of computational experiments
+Home-page: https://mathieulagrange.github.io
+Author: Mathieu Lagrange
+Author-email: mathieu.lagrange@ls2n.fr
+License: ASL
+Download-URL: https://github.com/mathieulagrange/doce
+Description: # DOCE: Design Of Computational Experiments
+        Doce is a python library designed to help you handling the complexity of computational experiments.
+        
+Keywords: experimentation
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs

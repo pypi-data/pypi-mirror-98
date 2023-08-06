@@ -1,0 +1,10 @@
+tables
+pandas
+argunparse
+numpy
+tqdm
+joblib
+
+[docs]
+numpydoc
+sphinx

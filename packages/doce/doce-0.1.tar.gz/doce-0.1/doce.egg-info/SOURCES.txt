@@ -1,0 +1,15 @@
+README.md
+setup.py
+doce/__init__.py
+doce/experiment.py
+doce/factor.py
+doce/metric.py
+doce/run.py
+doce/setting.py
+doce/util.py
+doce/version.py
+doce.egg-info/PKG-INFO
+doce.egg-info/SOURCES.txt
+doce.egg-info/dependency_links.txt
+doce.egg-info/requires.txt
+doce.egg-info/top_level.txt
