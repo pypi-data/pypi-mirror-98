@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "api_schemas"
+version = "0.1.2"
+description = "Create an intermediate representation of an api schema, that can be used to generate code."
+license = "MIT"
+readme = "README.md"
+authors = ["JulianSobott <julian.sobott@gmail.com>"]
+repository = "https://github.com/JulianSobott/api_schemas"
+homepage = "https://github.com/JulianSobott/api_schemas"
+keywords = ["api", "schema", "code generation"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+lark-parser = "^0.11.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
