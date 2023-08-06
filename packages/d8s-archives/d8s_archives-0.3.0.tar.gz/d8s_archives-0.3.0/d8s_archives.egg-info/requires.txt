@@ -1,0 +1,5 @@
+d8s-file-system
+d8s-strings
+
+[:python_version < "3.8"]
+importlib-metadata
