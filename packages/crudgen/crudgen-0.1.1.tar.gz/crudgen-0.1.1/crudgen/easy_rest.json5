@@ -1,0 +1,210 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+
+  title: "EasyRestService",
+  description: "EasyRest Service schema",
+  definitions: {
+    endpoint_string: {
+      $id: "#endpointstring",
+      type: "string",
+      pattern: "^[a-zA-Z0-9_-]*$"
+    },
+    name_string: {
+      $id: "#namestring",
+      title: "Name String",
+      description: "pattern to validate valid names",
+      type: "string",
+      pattern: "^[a-zA-Z_][a-zA-Z_$0-9]*$"
+    },
+    target_model: {
+      $id: "#target_model",
+      type: "string"
+    },
+    field: {
+      $id: "#field",
+      title: "Field",
+      description: "schema for validating model fields",
+      type: "object",
+      properties: {
+        name: {
+          description: "field name",
+          $ref: "#namestring"
+        },
+        field_type: {
+          description: "type of this field",
+          type: "string",
+          enum: ["ForeignKey", "CharField", "ManyToMany", "BooleanField"] // todo: all supported field type names here
+        }
+      },
+      required: ["field_type", "name"]
+    },
+    booleanfield: {
+      $id: "#booleanfield",
+      additionalItems: false,
+      allOf: [{$ref:  "#field"}],
+      properties: {
+        field_type: {
+          pattern: "BooleanField"
+        },
+        name: {}
+      },
+      required: ["name", "field_type"]
+    },
+    foreignkey: {
+      $id: "#foreignkey",
+      "additionalProperties": false,
+      allOf: [{$ref: "#field"}],
+      properties: {
+        field_type: {
+          pattern: "ForeignKey"
+        },
+        target: {
+          description: "reference to target model for relation",
+          $ref: "#target_model"
+        },
+        related_name: {
+          description: "name of back-reference field in target model",
+          $ref: "#namestring"
+        },
+        name: {}
+      },
+      required: ["target", "related_name"]
+    },
+    charfield: {
+      $id: "#charfield",
+      "additionalProperties": false,
+      allOf: [{$ref: "#field"}],
+      properties: {
+        name: {},
+        field_type: {
+           pattern: "CharField"
+        },
+        max_length: {
+          description: "max length of charfield",
+          type: "integer",
+          minimum: 0
+        }
+      },
+      required: ["max_length"]
+    },
+    serializer: {
+      $id: "#serializer"
+    },
+    model: {
+      $id: "#model",
+      title: "Model",
+      description: "schema for validating data models",
+      type: "object",
+      properties: {
+        name: {
+          description: "model name",
+          $ref: "#namestring"
+        },
+        fields: {
+          description: "model fields",
+          type: "array",
+          items: {
+            oneOf: [
+              {
+                $ref: "#charfield"
+              },
+              {
+                $ref: "#foreignkey"
+              },
+              {
+                $ref: "#booleanfield"
+              }
+              // todo all supported fields here
+            ]
+          },
+          minItems: 1
+        },
+        serializers: {
+          description: "serializers of model",
+          type: "array",
+          items: {
+            $ref: "#serializer"
+          }
+        }
+      },
+      required: ["fields", "serializers", "name"]
+    },
+    endpoint: {
+      $id: "#endpoint"
+    },
+    deploy: {
+      $id: "#deploy",
+      type: "object",
+      properties: {
+        hostname: {
+          type: "string",
+          description: "hostname associated with service",
+          pattern: "^@$|^(\\*)$|^(\\*\\.)?(([a-zA-Z0-9]|[a-zA-Z0-9][a-zA-Z0-9\\-]*[a-zA-Z0-9])\\.)*([A-Za-z0-9]|[A-Za-z0-9][A-Za-z0-9\\-]*[A-Za-z0-9](\\.?))$"
+        },
+        port: {
+          type: "integer",
+          description: "port number of service",
+          exclusiveMinimum: 0,
+          maximum: 65535
+        }
+      },
+      required: ["hostname", "port"]
+    },
+    app: {
+      $id: "#app",
+      type: "object",
+      title: "App Definition",
+      description: "schema for a valid easy rest app",
+      properties: {
+        name: {
+          description: "name of app",
+          $ref: "#namestring"
+        },
+        namespace: {
+          description: "namespace of current app. this namespace will be base uri of all endpoints",
+          $ref: "#endpointstring"
+        },
+        models: {
+          description: "list of models associated with this app",
+          type: "array",
+          minItems: 1,
+          items: {
+            $ref: "#model"
+          }
+        },
+        endpoints: {
+          description: "endpoints associated with this app",
+          type: "array",
+          items: {
+            $ref: "#endpoint"
+          }
+        }
+      },
+      required: ["name", "namespace", "models"]
+    }
+  },
+
+  type: "object",
+  properties: {
+    version: {
+      description: "version of this service",
+      type: "string"
+    },
+    name: {
+      description: "name of this service",
+      $ref: "#namestring"
+    },
+    deploy_strategy: {
+      description: "deploy strategy and configurations of service",
+      $ref: "#deploy"
+    },
+    apps: {
+      description: "list of apps to presented in service",
+      type: "array",
+      items: {
+        $ref: "#app"
+      }
+    }
+  },
+  required: ["name", "version", "deploy_strategy", "apps"]
+}
