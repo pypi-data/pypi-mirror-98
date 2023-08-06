@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ryvencore-qt
+Version: 0.0.0
+Summary: Framework for building flow-based visual scripting editors in Python
+Home-page: UNKNOWN
+Author: Leon Thomm
+Author-email: l.thomm@mailbox.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: PySide2
+
+UNKNOWN
+
+
