@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyswEOS
+Version: 0.0.8
+Summary: Python API of swEOS library which is designed to calculate EOS and thermal dynamic properties of H2O-NaCl system, usually called salt water.
+Home-page: https://www.scibyte.cn
+Author: Zhikui Guo
+Author-email: zguo@geomar.de
+License: UNKNOWN
+Keywords: NaCl H2O IAPWS Hydrothermal seawater
+Platform: UNKNOWN
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: argparse
+Requires-Dist: colored
+
+UNKNOWN
+
+
