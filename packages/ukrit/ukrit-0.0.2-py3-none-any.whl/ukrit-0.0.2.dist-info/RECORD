@@ -1,0 +1,10 @@
+library/Client.py,sha256=qMtkvM3MJlJMa7CKcbSoqWBbTnvVZN029WpTj5Qt7GQ,58
+library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+library/version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_myfunction.py,sha256=Vb4-McY8q4y38sx8aFrm_6qRmGrnvtfM0m_jSPO2jwY,92
+ukrit-0.0.2.dist-info/LICENSE.md,sha256=494odyw0ckzW5jRspx7hUk1JwqYKs7LfPJK7-V8c2Uw,1069
+ukrit-0.0.2.dist-info/METADATA,sha256=iMpIAuM6fvaYL_Aq0DxuBgAEHUZV10zyBsmSEYOF4Pg,422
+ukrit-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ukrit-0.0.2.dist-info/top_level.txt,sha256=EiULI9ecw56NaLKFAins3vfN91IbO-KmdF-N6QLPQPE,14
+ukrit-0.0.2.dist-info/RECORD,,
