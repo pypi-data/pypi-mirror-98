@@ -1,0 +1,7 @@
+build/*
+dist/*
+aiot-client-*
+aiotcloud-*
+aiotcloud.egg.info
+*.pyc
+__pycache__/**

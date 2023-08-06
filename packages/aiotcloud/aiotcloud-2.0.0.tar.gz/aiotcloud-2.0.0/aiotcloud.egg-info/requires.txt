@@ -1,0 +1,9 @@
+paho-mqtt
+pyreadline
+pyudev>=0.16
+pyserial
+six
+playsound
+baidu-aip
+opencv-python
+opencv-contrib-python

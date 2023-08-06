@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aiot-client-1.1.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aiotcloud-1.2.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/aiotcloud-2.0.0" vcs="Git" />
+  </component>
+</project>
