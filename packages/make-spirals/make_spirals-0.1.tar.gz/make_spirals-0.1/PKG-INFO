@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: make_spirals
+Version: 0.1
+Summary: make_spirals generates a synthetic data set composed of interlaced Archimedean spirals.
+Home-page: https://github.com/KNODIS-Research-Group/make_spirals
+Author: Fernando Ortega
+Author-email: fernando.ortega@upm.es
+License: apache-2.0
+Download-URL: https://github.com/KNODIS-Research-Group/make_spirals/archive/v0_1.tar.gz
+Description: UNKNOWN
+Keywords: sklearn,supervised-learning,classification,dataset,spirals
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
