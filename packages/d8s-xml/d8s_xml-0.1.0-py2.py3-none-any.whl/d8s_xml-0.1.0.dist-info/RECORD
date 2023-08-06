@@ -1,0 +1,10 @@
+d8s_xml/__init__.py,sha256=MRSqzYX7QZfJjctLZIhB6R3Dgz93g6CzRe43LDnfRwU,632
+d8s_xml/xml_data.py,sha256=bCoOqf4267JLm0w3xyORFi2xNwrmKSEtDR5ThFG3rvY,3457
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_xml_data.py,sha256=NMfU_dbEuHUJWC5FSUbdWVOb1b3bMZ16w7Sp-aA1fiA,3254
+d8s_xml-0.1.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_xml-0.1.0.dist-info/METADATA,sha256=hHHFCKb5KirJ97l1cIfv5-iUCylNlMIsUir-dApyCoE,1863
+d8s_xml-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_xml-0.1.0.dist-info/top_level.txt,sha256=YssRMQIUMeOzu3wvoPL4nXWXrynZzU-TqYvdh6OKQBo,14
+d8s_xml-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_xml-0.1.0.dist-info/RECORD,,
