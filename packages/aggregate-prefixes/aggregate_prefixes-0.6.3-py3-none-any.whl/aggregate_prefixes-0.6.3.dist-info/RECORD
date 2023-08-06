@@ -1,0 +1,12 @@
+aggregate_prefixes/__about__.py,sha256=gafZKKzHHv96of-f96E-Ast6F6Tx0_NwZzM6LgMveoQ,1703
+aggregate_prefixes/__init__.py,sha256=imuRJA6n437SOpBtby2yF0CmLVgmmjNtQFwQaGNoDOk,1825
+aggregate_prefixes/__main__.py,sha256=PpfMyOBU02C9yXn3TU18D-CNETAOE_nEVJCcFCPhmUA,3552
+aggregate_prefixes/__meta__.py,sha256=jYXo1IZCW5iEqG2CiDHIVs6ykzh2R56eWKyRculcqsw,1701
+aggregate_prefixes/aggregate_prefixes.py,sha256=tj_169x9lZjSU-Yb5Hz6HXLOSwFdw8LXocDsOnNNj-s,6021
+aggregate_prefixes/cli.py,sha256=Y8vybFN8I-NNBF-DfXTXEYyTq4R5HQd2reaZSBuelD0,3422
+aggregate_prefixes-0.6.3.dist-info/LICENSE,sha256=n9pOygfZCqiyOhzPUKjysfEwbuX5jwrkQxzSqcpTdi8,1092
+aggregate_prefixes-0.6.3.dist-info/METADATA,sha256=T_tIB-33OPj98edHVY9SWJRneYn2EnOToRk2zgyttZc,1759
+aggregate_prefixes-0.6.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aggregate_prefixes-0.6.3.dist-info/entry_points.txt,sha256=9BVDopW0itSiRc15aZiRGsmEfduJi88pZaAX95yLpWs,73
+aggregate_prefixes-0.6.3.dist-info/top_level.txt,sha256=VqxQSvCondkG1GAUABtyKbnQgklZNsIHBgshPGPjTWU,19
+aggregate_prefixes-0.6.3.dist-info/RECORD,,
