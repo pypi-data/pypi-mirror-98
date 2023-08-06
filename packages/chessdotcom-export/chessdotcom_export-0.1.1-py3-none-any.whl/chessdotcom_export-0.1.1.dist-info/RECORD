@@ -1,0 +1,12 @@
+chessdotcom_export/__init__.py,sha256=mXMpWCHfmyS92SJeQHzPoo2JmzV4KUW5TuyePA8DoFc,74
+chessdotcom_export/__main__.py,sha256=jbHO2pThEOja0KmC_jrGy81JcBy2ixPlwn7Wfmr6Y_U,1025
+chessdotcom_export/common.py,sha256=RGPhXZNaEI52H2HRQAh7TXPd8vjCIS_05tJdN65Lh04,35
+chessdotcom_export/export.py,sha256=MhoyL8cILxwZ5BB_BZsDylBhpbqNqQCJ4S0n8EGHMvY,1460
+chessdotcom_export/model.py,sha256=c2YRCo_AB4QqCC3wN5AlW9_lvdqtjPOnmiOIjtK6f4s,2372
+chessdotcom_export/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chessdotcom_export-0.1.1.dist-info/LICENSE,sha256=DLAorQX7ouXcNHtSqiIVQDT7LK3JgZRV30drSyxo9o8,1074
+chessdotcom_export-0.1.1.dist-info/METADATA,sha256=lc4WASg-C2bb87C7tLo7iCLX7ulb-jIRr6q6edccUMc,3836
+chessdotcom_export-0.1.1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+chessdotcom_export-0.1.1.dist-info/entry_points.txt,sha256=olqE5L-KEPMSd9-cKnj-FDs8tmbxMab87AcBs8-zN3E,73
+chessdotcom_export-0.1.1.dist-info/top_level.txt,sha256=Fwe0njQIQ0Ao3XN3-HPupUSg69ekMn0nlRlsemC0uhk,19
+chessdotcom_export-0.1.1.dist-info/RECORD,,
