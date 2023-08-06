@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+b2bapi/__init__.py
+b2bapi/madlib.py
+b2bapi/meme.py
+b2bapi/text.py
+b2bapi/word.py
+b2bapi/wrapper.py
+b2bapi.egg-info/PKG-INFO
+b2bapi.egg-info/SOURCES.txt
+b2bapi.egg-info/dependency_links.txt
+b2bapi.egg-info/requires.txt
+b2bapi.egg-info/top_level.txt
