@@ -1,0 +1,13 @@
+CONTRIBUTORS
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pUzi.egg-info/PKG-INFO
+pUzi.egg-info/SOURCES.txt
+pUzi.egg-info/dependency_links.txt
+pUzi.egg-info/requires.txt
+pUzi.egg-info/top_level.txt
+tests/__init__.py
+tests/test_uzireader.py
+uzireader/__init__.py
