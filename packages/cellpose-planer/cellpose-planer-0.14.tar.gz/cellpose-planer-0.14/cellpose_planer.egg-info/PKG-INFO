@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cellpose-planer
+Version: 0.14
+Summary: Cellpose-Planer is the cellpose models on planer framework
+Home-page: https://github.com/Image-Py/cellpose-planer
+Author: Y.Dong, YXDragon
+Author-email: yxdragon@imagepy.org
+License: BSD 3-clause
+Description: Cellpose-Planer is the cellpose models on planer framework
+Platform: UNKNOWN
