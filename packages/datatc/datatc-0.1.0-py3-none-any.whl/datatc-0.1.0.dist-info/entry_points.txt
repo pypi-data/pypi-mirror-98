@@ -1,0 +1,4 @@
+[console_scripts]
+datatc_app = datatc.dashboard.dashboard:main
+datatc_list = datatc.data_directory:DataDirectoryManager.list_projects
+

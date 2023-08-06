@@ -1,0 +1,15 @@
+datatc/__init__.py,sha256=zZj4ydeFLGZUGafA0sMnvi7MoZh8VtY3zoZTtFhuBqo,202
+datatc/data_directory.py,sha256=yiVDAc22aDOE0kLsrdyp5R9ukKErMgnyiTyv1my553M,19194
+datatc/data_interface.py,sha256=rJqNaEl8BBRfmIIKI_byNoJrL5cJQXzcBzsE3nWd1ew,8705
+datatc/data_manager.py,sha256=uf1tmEZGdxQMZSHJVsafwDaLofuyFV0qPxv-qaxgLlE,2224
+datatc/data_processor.py,sha256=XDhULkd6bf3CYa_IHlgH7zHwiRGlNhaNhZiQzs9f3-E,4324
+datatc/git_utilities.py,sha256=yRK97QObSx-CgfJeBIHqtsxh6o8Mp6ee_XImatgC8Ok,3502
+datatc/self_aware_data.py,sha256=wni7FOlT8IGdZKEMOyGLrtw8OlDV4HJiERYmdcrf70w,31903
+datatc/dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datatc/dashboard/dashboard.py,sha256=xUswiA7H49Pm72pAuVjAYkI0Kr2N7loVoeWLbOEMnvE,6664
+datatc-0.1.0.dist-info/LICENSE,sha256=6M71wcr-nKG7vu-9uDRTm4LKP0_AvkF_dGhBcFe5jHU,1072
+datatc-0.1.0.dist-info/METADATA,sha256=B4YU4EUw0dOQHWtuyuADWVdZr8kxbaovrIpTN_i7UBA,2638
+datatc-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datatc-0.1.0.dist-info/entry_points.txt,sha256=oYR1QBDeNlNAKbN-wkTC5OkpYcLi1oH2WmglpIdzzxM,135
+datatc-0.1.0.dist-info/top_level.txt,sha256=PQ9NAsH3Mq9BOqZb2oxq918dL-LAb4SMyTQo-s-2lK0,7
+datatc-0.1.0.dist-info/RECORD,,
