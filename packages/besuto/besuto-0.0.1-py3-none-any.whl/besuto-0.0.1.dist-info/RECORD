@@ -1,0 +1,8 @@
+besuto/__init__.py,sha256=ORzocagcvgq7MDt0WogfgB5IaHJFmc-h4q2lGyzP0No,28
+besuto/images/__init__.py,sha256=wj60rIKCSRYMQ2urjRs4_EJIFE6oYz99iKPYSrNUWFA,53
+besuto/images/augment.py,sha256=OXBH2Z-74MwDuQK8NFIYj6o8TPse778rC4qdwBbFgYE,1225
+besuto/images/load_face_image.py,sha256=IHUk9IDnLrqHbFWVeHXrUtDYfQA96fsfP1MEQ49DieI,2242
+besuto-0.0.1.dist-info/METADATA,sha256=U88PzP_wqyBxoY_Brb4_YhDMYoqOPp_8SYSqm1DMkH8,586
+besuto-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+besuto-0.0.1.dist-info/top_level.txt,sha256=I2RCI7ETWw97bxuWoXqkZGRlxC3B83BCCKqv1TWSNsM,7
+besuto-0.0.1.dist-info/RECORD,,
