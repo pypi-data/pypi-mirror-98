@@ -1,0 +1,10 @@
+d8s_urls/__init__.py,sha256=EVXbjTaJrBs_ACPFZeoFS9zRcRUI85TUBagx0iRNM_A,617
+d8s_urls/urls.py,sha256=t8puWE3DsbY3J8Hsm9uhNf8H6j8zhBev6D-rhjLFoAg,10845
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_urls.py,sha256=hSPz_KgXaeC0Yx7S5Z_LzfgAEsf1lJSO8ts0Z03hX3w,14720
+d8s_urls-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_urls-0.2.0.dist-info/METADATA,sha256=0Hgy2u9o13kfWWzzVmzmWZLDwQXGeX57KvYsSemuPv8,2021
+d8s_urls-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_urls-0.2.0.dist-info/top_level.txt,sha256=aa7woQnka5zFuvMISEC1RL2cdHKsOOFjeigI7S8QqS8,15
+d8s_urls-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_urls-0.2.0.dist-info/RECORD,,
