@@ -1,0 +1,13 @@
+dpt_plugins/__init__.py,sha256=fECLU9ktCSjo6aUM956b-VRG9flOQEXzXbjsklf638g,901
+dpt_plugins/hook.py,sha256=edT2x5D9jQoPmfn1uSZQAIncFvwCGfVMI6CMG-XDYrQ,9259
+dpt_plugins/hook_context.py,sha256=og2JaZddO6jIlwE1RjDKVgBjCChNVvnW9fIECuEYJ7g,2773
+dpt_plugins/hookable_settings.py,sha256=POfMdRgoh_vNB8keaVOUW6AG21BRzcenDyr3yBhmOnA,2710
+dpt_plugins/manager.py,sha256=jz_WzMCMGwXQvUyMKvKuI2HUfwoSp8pfk-UEiKIyUs0,6637
+dpt_plugins/weakref_method.py,sha256=4lgoJsdgRErdfaLQVHwuHVK67G2BQZvY1y-TT9_7XXk,3501
+dpt_plugins-1.0.4.data/data/docs/LICENSE,sha256=3cXNVHQM3eeemtzScTQw91U3dCn798YxTyvDZTxaNj0,15857
+dpt_plugins-1.0.4.data/data/docs/README,sha256=FalbD0rq6FhfB6-qGjHNG0EYGgvy8WKpwFGpefOZqRg,1385
+dpt_plugins-1.0.4.dist-info/LICENSE,sha256=3cXNVHQM3eeemtzScTQw91U3dCn798YxTyvDZTxaNj0,15857
+dpt_plugins-1.0.4.dist-info/METADATA,sha256=KhqEmQJtNRU5h3WNkpGcYKTjMTTHtIXyCab7twA-gqg,776
+dpt_plugins-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dpt_plugins-1.0.4.dist-info/top_level.txt,sha256=uInnZUluhXm_CTMyhLj8xH_lwXD6rMmq-K3dvaIuD_E,12
+dpt_plugins-1.0.4.dist-info/RECORD,,
