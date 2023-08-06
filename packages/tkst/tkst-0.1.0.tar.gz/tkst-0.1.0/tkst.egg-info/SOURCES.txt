@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+tkst.py
+tkst.egg-info/PKG-INFO
+tkst.egg-info/SOURCES.txt
+tkst.egg-info/dependency_links.txt
+tkst.egg-info/requires.txt
+tkst.egg-info/top_level.txt
