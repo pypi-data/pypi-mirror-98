@@ -1,0 +1,12 @@
+unified_script/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unified_script/dependency_unified.py,sha256=MbGiR1IyM5TEEFHBp92q1khdtbNK5pIL_atgABeHNsE,35023
+unified_script/third_party/askalono/askalono.exe,sha256=NyngElHbrg3zLFRVwn6fPDZE_EDAEb1N8tiwWoCm4pQ,4743680
+unified_script/third_party/askalono/askalono_macos,sha256=cYSNXhAQpkdd8lkgnY5skNeDmU_8DIuP84eFi0OXKkE,5589868
+unified_script/third_party/nomos/nomossa,sha256=xF1t2O4Jvf39hMDCK7YBst-pKeGNSa3G4KapM_XyBjk,1617040
+fosslight_dependency-3.0.4.dist-info/3rd_party_licenses.txt,sha256=NVw2yYlBBiMX0XZhvwf4j1kxpqsa9-dAeOlDXSX7FYY,85412
+fosslight_dependency-3.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fosslight_dependency-3.0.4.dist-info/METADATA,sha256=4EgYDgIu7avZyYf93Vs1iegDdY30czrF90053lV5C4w,591
+fosslight_dependency-3.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fosslight_dependency-3.0.4.dist-info/entry_points.txt,sha256=sRk9IRVZBWMeRyBHWM_wHC3HQ8LNsHQA3vKFG1YDCFg,81
+fosslight_dependency-3.0.4.dist-info/top_level.txt,sha256=95gWWCkJrH7dk7GD-_si0KK2bwuSsLSSg6ObdvMfJPw,15
+fosslight_dependency-3.0.4.dist-info/RECORD,,
