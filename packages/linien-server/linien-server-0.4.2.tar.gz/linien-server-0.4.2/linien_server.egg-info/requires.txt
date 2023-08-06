@@ -1,0 +1,5 @@
+rpyc<5.0,>=4.0
+myhdl==0.11
+click==7.1.2
+cma==3.0.3
+plumbum==1.6.9
