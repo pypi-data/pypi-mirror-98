@@ -1,0 +1,42 @@
+{
+  "steps":[
+    {
+      "what":"bokugpir;bokumaa|payfonetrust;payfoneverify:0-75,payfonetrust;payfoneverify|bokugpir;bokumaa:76-100",
+      "steps":[
+        {
+          "stepBoundsLower":0,
+          "stepBoundsUpper":75,
+          "what":"bokugpir;bokumaa|payfonetrust;payfoneverify",
+          "steps":{
+              "what":"bokugpir;bokumaa",
+              "failoverWhat":"payfonetrust;payfoneverify",
+              "serialsteps": ["bokugpir", "bokumaa"],
+              "failoversteps": ["payfonetrust", "payfoneverify"]
+            }
+        },
+        {
+          "stepBoundsLower":76,
+          "stepBoundsUpper":100,
+          "what":"payfonetrust;payfoneverify|bokugpir;bokumaa",
+          "steps":{
+              "stepBoundsLower":0,
+              "stepBoundsUpper":100,
+              "what":"payfonetrust;payfoneverify",
+              "failoverWhat":"bokugpir;bokumaa",
+              "serialsteps": ["payfonetrust", "payfoneverify"],
+              "failoversteps": ["bokugpir", "bokumaa"]
+            }
+        }
+      ]
+    },
+    {
+      "steps":[
+        {
+          "stepBoundsLower":0,
+          "stepBoundsUpper":100,
+          "what":"payfoneverify"
+        }
+      ]
+    }
+  ]
+}

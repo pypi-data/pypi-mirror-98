@@ -1,0 +1,488 @@
+<?xml version="1.0"?>
+<!-- The sample mapping is for the Iovation response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Iovation">
+        <message messageType="Iovation" subType="toOde" mapperId="iovationRespToOde">
+            <fields>
+
+                <field name="_4_accountCode">
+                    <srcField name="/accountCode"/>
+                </field>
+                <field name="_4_id">
+                    <srcField name="/id"/>
+                </field>
+                <field name="_4_reason">
+                    <srcField name="/reason"/>
+                </field>
+                <field name="_4_result">
+                    <srcField name="/result"/>
+                </field>
+                <field name="_4_statedIp">
+                    <srcField name="/statedIp"/>
+                </field>
+                <field name="_4_trackingNumber">
+                    <srcField name="/trackingNumber"/>
+                </field>
+                <field name="_4_device_alias">
+                    <srcField name="/details/device/alias"/>
+                </field>
+                <field name="_4_device_firstSeen">
+                    <srcField name="/details/device/firstSeen">
+                        <groovy>
+                            return (value == null || value.trim().length() == 0)? "" : "" + com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value)/1000.0;
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_device_isNew">
+                    <srcField name="/details/device/isNew"/>
+                </field>
+                <field name="_4_device_os">
+                    <srcField name="/details/device/os">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 24)? value.substring(0, 24) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_device_screen">
+                    <srcField name="/details/device/screen"/>
+                </field>
+                <field name="_4_device_type">
+                    <srcField name="/details/device/type"/>
+                </field>
+                <field name="_4_blackbox_age">
+                    <srcField name="/details/device/blackboxMetadata/age"/>
+                </field>
+                <field name="_4_blackbox_timestamp">
+                    <srcField name="/details/device/blackboxMetadata/timestamp">
+                        <groovy>
+                            return (value == null || value.trim().length() == 0)? "" : "" + com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value)/1000.0;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_4_browser_charset">
+                    <srcField name="/details/device/browser/charset"/>
+                </field>
+
+                <field name="_4_browser_cookiesEnabled">
+                    <srcField name="/details/device/browser/cookiesEnabled"/>
+                </field>
+                <field name="_4_browser_configuredLanguage">
+                    <srcField name="/details/device/browser/configuredLanguage">
+                        <groovy>
+                            <![CDATA[
+                            return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                            ]]>
+                        </groovy>
+                    </srcField>
+
+                </field>
+                <field name="_4_browser_language">
+                    <srcField name="/details/device/browser/language"/>
+                </field>
+                <field name="_4_browser_type">
+                    <srcField name="/details/device/browser/type">
+                        <groovy>
+                            <![CDATA[
+                           return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                           ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_browser_browser_timezone">
+                    <srcField name="/details/device/browser/timezone"/>
+                </field>
+                <field name="_4_browser_browser_version">
+                    <srcField name="/details/device/browser/version">
+                        <groovy>
+                            <![CDATA[
+                            return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                            ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_4_flash_enabled">
+                    <srcField name="/details/device/browser/flash/enabled"/>
+                </field>
+                <field name="_4_flash_installed">
+                    <srcField name="/details/device/browser/flash/installed"/>
+                </field>
+
+                <field name="_4_flash_storageEnabled">
+                    <srcField name="/details/device/browser/flash/storageEnabled"/>
+                </field>
+                <field name="_4_flash_flash_version">
+                    <srcField name="/details/device/browser/flash/flash_version"/>
+                </field>
+
+                <field name="_4_mobile_brand">
+                    <srcField name="/details/device/mobile/brand"/>
+                </field>
+                <field name="_4_mobile_charging">
+                    <srcField name="/details/device/mobile/charging"/>
+                </field>
+                <field name="_4_mobile_imei">
+                    <srcField name="/details/device/mobile/imei"/>
+                </field>
+                <field name="_4_mobile_manufacturer">
+                    <srcField name="/details/device/mobile/manufacturer"/>
+                </field>
+                <field name="_4_mobile_model">
+                    <srcField name="/details/device/mobile/model"/>
+                </field>
+                <field name="_4_mobile_orientation">
+                    <srcField name="/details/device/mobile/orientation"/>
+                </field>
+                <field name="_4_mobile_screenResolution">
+                    <srcField name="/details/device/mobile/screenResolution"/>
+                </field>
+                <field name="_4_mobile_app_bundleId">
+                    <srcField name="/details/device/mobile/app/bundleId"/>
+                </field>
+                <field name="_4_mobile_app_debug">
+                    <srcField name="/details/device/mobile/app/debug"/>
+                </field>
+                <field name="_4_mobile_app_exeName">
+                    <srcField name="/details/device/mobile/app/exeName"/>
+                </field>
+                <field name="_4_mobile_app_marketId">
+                    <srcField name="/details/device/mobile/app/marketId"/>
+                </field>
+                <field name="_4_mobile_app_name">
+                    <srcField name="/details/device/mobile/app/name"/>
+                </field>
+                <field name="_4_mobile_app_orientation">
+                    <srcField name="/details/device/mobile/app/orientation"/>
+                </field>
+                <field name="_4_mobile_app_procName">
+                    <srcField name="/details/device/mobile/app/procName"/>
+                </field>
+                <field name="_4_mobile_app_signerId">
+                    <srcField name="/details/device/mobile/app/signerId"/>
+                </field>
+                <field name="_4_mobile_app_vendorId">
+                    <srcField name="/details/device/mobile/app/vendorId"/>
+                </field>
+                <field name="_4_mobile_app_version">
+                    <srcField name="/details/device/mobile/app/version"/>
+                </field>
+                <field name="_4_mobile_build_device">
+                    <srcField name="/details/device/mobile/build/device"/>
+                </field>
+                <field name="_4_mobile_build_product">
+                    <srcField name="/details/device/mobile/build/product"/>
+                </field>
+                <field name="_4_mobile_altitude">
+                    <srcField name="/details/device/mobile/location/altitude"/>
+                </field>
+                <field name="_4_mobile_enabled">
+                    <srcField name="/details/device/mobile/location/enabled"/>
+                </field>
+                <field name="_4_mobile_latitude">
+                    <srcField name="/details/device/mobile/location/latitude"/>
+                </field>
+                <field name="_4_mobile_longitude">
+                    <srcField name="/details/device/mobile/location/longitude"/>
+                </field>
+                <field name="_4_mobile_timestamp">
+                    <srcField name="/details/device/mobile/location/timestamp">
+                        <groovy>
+                            return (value == null || value.trim().length() == 0)? "" : "" + com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value)/1000.0;
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_mobile_timezone">
+                    <srcField name="/details/device/mobile/location/timezone"/>
+                </field>
+                <field name="_4_mobile_allowedUnknownStore">
+                    <srcField name="/details/device/mobile/system/allowedUnknownStore"/>
+                </field>
+                <field name="_4_mobile_androidSDKLevel">
+                    <srcField name="/details/device/mobile/system/androidSDKLevel"/>
+                </field>
+                <field name="_4_mobile_buildFingerprint">
+                    <srcField name="/details/device/mobile/system/buildFingerprint"/>
+                </field>
+                <field name="_4_mobile_carrier">
+                    <srcField name="/details/device/mobile/system/carrier"/>
+                </field>
+                <field name="_4_mobile_carrierCountryCode">
+                    <srcField name="/details/device/mobile/system/carrierCountryCode"/>
+                </field>
+                <field name="_4_mobile_cellularNetwork">
+                    <srcField name="/details/device/mobile/system/cellularNetwork"/>
+                </field>
+                <field name="_4_mobile_hostname">
+                    <srcField name="/details/device/mobile/system/hostname"/>
+                </field>
+                <field name="_4_mobile_jailrootDetected">
+                    <srcField name="/details/device/mobile/system/jailrootDetected"/>
+                </field>
+                <field name="_4_mobile_localeCurrency">
+                    <srcField name="/details/device/mobile/system/localeCurrency"/>
+                </field>
+                <field name="_4_mobile_localeLang">
+                    <srcField name="/details/device/mobile/system/localeLang"/>
+                </field>
+                <field name="_4_mobile_networkOperatorCount">
+                    <srcField name="/details/device/mobile/system/networkOperatorCountry"/>
+                </field>
+                <field name="_4_mobile_networkOperatorName">
+                    <srcField name="/details/device/mobile/system/networkOperatorName"/>
+                </field>
+                <field name="_4_mobile_osVersion">
+                    <srcField name="/details/device/mobile/system/osVersion"/>
+                </field>
+                <field name="_4_mobile_rootDetectionDisable">
+                    <srcField name="/details/device/mobile/system/rootDetectionDisabled"/>
+                </field>
+                <field name="_4_mobile_simulator">
+                    <srcField name="/details/device/mobile/system/simulator"/>
+                </field>
+                <field name="_4_mobile_uptime">
+                    <srcField name="/details/device/mobile/system/uptime"/>
+                </field>
+                <field name="_4_mobile_voipAllowed">
+                    <srcField name="/details/device/mobile/system/voipAllowed"/>
+                </field>
+                <field name="_4_reg_matchStatus">
+                    <srcField name="/details/device/registrationResult/matchStatus"/>
+                </field>
+                <field name="_4_reg_measureOfChange">
+                    <srcField name="/details/device/registrationResult/measureOfChange"/>
+                </field>
+
+                <field name="_4_statedip_address">
+                    <srcField name="/details/statedIp/address"/>
+                </field>
+                <field name="_4_statedip_isp">
+                    <srcField name="/details/statedIp/isp">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 24)? value.substring(0, 24) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_statedip_org">
+                    <srcField name="/details/statedIp/parentOrganization">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 24)? value.substring(0, 24) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_statedip_proxy">
+                    <srcField name="/details/statedIp/proxy"/>
+                </field>
+                <field name="_4_statedip_source">
+                    <srcField name="/details/statedIp/source"/>
+                </field>
+                <field name="_4_statedip_score">
+                    <srcField name="/details/statedIp/botnet/score"/>
+                </field>
+                <field name="_4_statedip_intensity">
+                    <srcField name="/details/statedIp/botnet/intensity"/>
+                </field>
+                <field name="_4_statedip_lastseen">
+                    <srcField name="/details/statedIp/botnet/lastseen"/>
+                </field>
+                <field name="_4_statedip_city">
+                    <srcField name="/details/statedIp/ipLocation/city">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_statedip_country">
+                    <srcField name="/details/statedIp/ipLocation/country"/>
+                </field>
+                <field name="_4_statedip_countryCode">
+                    <srcField name="/details/statedIp/ipLocation/countryCode"/>
+                </field>
+                <field name="_4_statedip_latitude">
+                    <srcField name="/details/statedIp/ipLocation/latitude"/>
+                </field>
+                <field name="_4_statedip_longitude">
+                    <srcField name="/details/statedIp/ipLocation/longitude"/>
+                </field>
+                <field name="_4_statedip_region">
+                    <srcField name="/details/statedIp/ipLocation/region"/>
+                </field>
+                <field name="_4_realip_address">
+                    <srcField name="/details/realIp/address"/>
+                </field>
+                <field name="_4_realip_isp">
+                    <srcField name="/details/realIp/isp">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 24)? value.substring(0, 24) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_realip_org">
+                    <srcField name="/details/realIp/parentOrganization">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 24)? value.substring(0, 24) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_realip_proxy">
+                    <srcField name="/details/realIp/proxy"/>
+                </field>
+                <field name="_4_realip_source">
+                    <srcField name="/details/realIp/source"/>
+                </field>
+                <field name="_4_realip_score">
+                    <srcField name="/details/realIp/botnet/score"/>
+                </field>
+                <field name="_4_realip_intensity">
+                    <srcField name="/details/realIp/botnet/intensity"/>
+                </field>
+                <field name="_4_realip_lastseen">
+                    <srcField name="/details/realIp/botnet/lastseen"/>
+                </field>
+                <field name="_4_realip_city">
+                    <srcField name="/details/realIp/ipLocation/city">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+
+                </field>
+                <field name="_4_realip_country">
+                    <srcField name="/details/realIp/ipLocation/country"/>
+                </field>
+                <field name="_4_realip_countryCode">
+                    <srcField name="/details/realIp/ipLocation/countryCode"/>
+                </field>
+                <field name="_4_realip_latitude">
+                    <srcField name="/details/realIp/ipLocation/latitude"/>
+                </field>
+                <field name="_4_realip_longitude">
+                    <srcField name="/details/realIp/ipLocation/longitude"/>
+                </field>
+                <field name="_4_realip_region">
+                    <srcField name="/details/realIp/ipLocation/region">
+                        <groovy>
+                            <![CDATA[
+                 return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                 ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_4_rule_results_score">
+                    <srcField name="/details/ruleResults/score"/>
+                </field>
+                <field name="_4_rule_results_rulesMatched">
+                    <srcField name="/details/ruleResults/rulesMatched"/>
+                </field>
+                <field name="_4_rule_type_1">
+                    <srcField name="/details/ruleResults/rules/type[1]"/>
+                </field>
+                <field name="_4_rule_type_2">
+                    <srcField name="/details/ruleResults/rules/type[2]"/>
+                </field>
+                <field name="_4_rule_type_3">
+                    <srcField name="/details/ruleResults/rules/type[3]"/>
+                </field>
+                <field name="_4_rule_type_4">
+                    <srcField name="/details/ruleResults/rules/type[4]"/>
+                </field>
+                <field name="_4_rule_type_5">
+                    <srcField name="/details/ruleResults/rules/type[5]"/>
+                </field>
+                <field name="_4_rule_type_6">
+                    <srcField name="/details/ruleResults/rules/type[6]"/>
+                </field>
+                <field name="_4_rule_type_7">
+                    <srcField name="/details/ruleResults/rules/type[7]"/>
+                </field>
+                <field name="_4_rule_type_8">
+                    <srcField name="/details/ruleResults/rules/type[8]"/>
+                </field>
+                <field name="_4_rule_type_9">
+                    <srcField name="/details/ruleResults/rules/type[9]"/>
+                </field>
+                <field name="_4_rule_type_10">
+                    <srcField name="/details/ruleResults/rules/type[10]"/>
+                </field>
+                <field name="_4_rule_reason_1">
+                    <srcField name="/details/ruleResults/rules/reason[1]"/>
+                </field>
+                <field name="_4_rule_reason_2">
+                    <srcField name="/details/ruleResults/rules/reason[2]"/>
+                </field>
+                <field name="_4_rule_reason_3">
+                    <srcField name="/details/ruleResults/rules/reason[3]"/>
+                </field>
+                <field name="_4_rule_reason_4">
+                    <srcField name="/details/ruleResults/rules/reason[4]"/>
+                </field>
+                <field name="_4_rule_reason_5">
+                    <srcField name="/details/ruleResults/rules/reason[5]"/>
+                </field>
+                <field name="_4_rule_reason_6">
+                    <srcField name="/details/ruleResults/rules/reason[6]"/>
+                </field>
+                <field name="_4_rule_reason_7">
+                    <srcField name="/details/ruleResults/rules/reason[7]"/>
+                </field>
+                <field name="_4_rule_reason_8">
+                    <srcField name="/details/ruleResults/rules/reason[8]"/>
+                </field>
+                <field name="_4_rule_reason_9">
+                    <srcField name="/details/ruleResults/rules/reason[9]"/>
+                </field>
+                <field name="_4_rule_reason_10">
+                    <srcField name="/details/ruleResults/rules/reason[10]"/>
+                </field>
+                <field name="_4_rule_score_1">
+                    <srcField name="/details/ruleResults/rules/score[1]"/>
+                </field>
+                <field name="_4_rule_score_2">
+                    <srcField name="/details/ruleResults/rules/score[2]"/>
+                </field>
+                <field name="_4_rule_score_3">
+                    <srcField name="/details/ruleResults/rules/score[3]"/>
+                </field>
+                <field name="_4_rule_score_4">
+                    <srcField name="/details/ruleResults/rules/score[4]"/>
+                </field>
+                <field name="_4_rule_score_5">
+                    <srcField name="/details/ruleResults/rules/score[5]"/>
+                </field>
+                <field name="_4_rule_score_6">
+                    <srcField name="/details/ruleResults/rules/score[6]"/>
+                </field>
+                <field name="_4_rule_score_7">
+                    <srcField name="/details/ruleResults/rules/score[7]"/>
+                </field>
+                <field name="_4_rule_score_8">
+                    <srcField name="/details/ruleResults/rules/score[8]"/>
+                </field>
+                <field name="_4_rule_score_9">
+                    <srcField name="/details/ruleResults/rules/score[9]"/>
+                </field>
+                <field name="_4_rule_score_10">
+                    <srcField name="/details/ruleResults/rules/score[10]"/>
+                </field>
+                <field name="_4_machine_learning_value">
+                    <srcField name="/details/machineLearning/value"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

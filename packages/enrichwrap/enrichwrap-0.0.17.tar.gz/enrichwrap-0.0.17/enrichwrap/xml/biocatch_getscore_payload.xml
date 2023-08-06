@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <!-- List all possible parameters for now, we can trim it down when needed. -->
+    <!-- BioCatch ignores unsupported parameters. -->
+    <messages name="BioCatch getScore mappings">
+        <message messageType="BioCatch" subType="getScore" mapperId="biogetscore">
+            <fields>
+                <!-- Mandatory Parameters -->
+                <field name="customerID" default="1234567890abcdef">
+                    <srcField name="/BioCatch/customerID"/>
+                </field>
+
+                <field name="customerSessionID">
+                    <srcField name="/BioCatch/customerSessionID"/>
+                </field>
+
+                <field name="uuid" default="no_uuid">
+                    <srcField name="/BioCatch/uuid"/>
+                </field>
+
+                <field name="action" default="getScore"/>
+
+                <!-- Recommended parameters -->
+                <field name="activityType">
+                    <srcField name="/BioCatch/activityType"/>
+                </field>
+
+                <field name="ip">
+                    <srcField name="/app_ip_address">
+                        <groovy>
+                            <![CDATA[return InetAddress.getByName(value).getHostAddress();]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <!--TODO: do we have this incoming field? -->
+                <field name="userAgent">
+                    <srcField name="/userAgent"/>
+                </field>
+
+                <!--TODO: handle error -->
+                <field name="yearofbirth">
+                    <srcField name="/app_dob">
+                        <groovy>
+                            return (value!=null)? value.substring(0, 4) : "";
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <!--TODO: find out from which fields we want to map the following -->
+                <!-- Optional parameters -->
+                <field name="accountID">
+                    <srcField name="/BioCatch/accountID"/>
+                </field>
+
+                <field name="activityAmount">
+                    <srcField name="/BioCatch/activityAmount"/>
+                </field>
+
+                <field name="applicationID">
+                    <srcField name="/BioCatch/applicationID"/>
+                </field>
+
+                <field name="brand">
+                    <srcField name="/BioCatch/brand"/>
+                </field>
+
+                <field name="cardType">
+                    <srcField name="/BioCatch/cardType"/>
+                </field>
+
+                <field name="cellularAreaNumbers">
+                    <srcField name="/BioCatch/cellularAreaNumbers"/>
+                </field>
+
+                <field name="customerPassword">
+                    <srcField name="/BioCatch/customerPassword"/>
+                </field>
+
+                <field name="deviceID">
+                    <srcField name="/BioCatch/deviceID"/>
+                </field>
+
+                <field name="gender">
+                    <srcField name="/BioCatch/gender"/>
+                </field>
+
+                <field name="income">
+                    <srcField name="/BioCatch/income"/>
+                </field>
+
+                <field name="isLoginSuccess">
+                    <srcField name="/BioCatch/isLoginSuccess"/>
+                </field>
+
+                <field name="jobDescription">
+                    <srcField name="/BioCatch/jobDescription"/>
+                </field>
+
+                <field name="maritalStatus">
+                    <srcField name="/BioCatch/maritalStatus"/>
+                </field>
+
+                <field name="payeeValue">
+                    <srcField name="/BioCatch/payeeValue"/>
+                </field>
+
+                <field name="sessionType">
+                    <srcField name="/BioCatch/sessionType"/>
+                </field>
+
+                <field name="timeout">
+                    <srcField name="/BioCatch/timeout"/>
+                </field>
+
+            </fields>
+        </message>
+    </messages>
+</application>

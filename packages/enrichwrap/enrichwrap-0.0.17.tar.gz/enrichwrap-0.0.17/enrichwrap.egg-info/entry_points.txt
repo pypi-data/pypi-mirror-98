@@ -1,0 +1,3 @@
+[console_scripts]
+enrichmain = enrichwrap.command_line:main
+

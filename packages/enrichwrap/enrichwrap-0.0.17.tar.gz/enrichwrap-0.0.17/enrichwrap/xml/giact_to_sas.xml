@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!-- The mapping is for the Giact response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Giact">
+        <message messageType="GiactGIdentity" subType="toOde" mapperId="giactRespToOde">
+            <fields>
+                <!--
+                <field name="_3_CREATEDDATE">
+                  <srcField name="/CreatedDate"/>
+                </field>
+                <field name="_3_ACCOUNTRESPONSECODE">
+                  <srcField name="/AccountResponseCode"/>
+                </field>
+                <field name="_3_ACCOUNTADDEDDATE">
+                  <srcField name="/AccountAddedDate"/>
+                </field>
+                <field name="_3_ACCOUNTLASTUPDATEDDATE">
+                  <srcField name="/AccountLastUpdatedDate"/>
+                </field>
+                <field name="_3_ACCOUNTCLOSEDDATE">
+                  <srcField name="/AccountCloseDate"/>
+                </field>
+                <field name="_3_FUNDSCONFIRMATIONRESULT">
+                  <srcField name="/FundsConfirmationResult"/>
+                </field> -->
+                <field name="_3_ITEMREFRENCEID">
+                    <srcField name="/ItemReferenceId"/>
+                </field>
+                <field name="_3_VERIFICATIONRESPONSE">
+                    <srcField name="/VerificationResponse"/>
+                </field>
+                <field name="_3_CUSTOMERRESPONSECODE">
+                    <srcField name="/CustomerResponseCode"/>
+                </field>
+                <field name="_3_FIRSTNAME">
+                    <srcField name="/MatchedPersonData/FirstName"/>
+                </field>
+                <field name="_3_LASTNAME">
+                    <srcField name="/MatchedPersonData/LastName"/>
+                </field>
+                <field name="_3_DATEOFBIRTH">
+                    <srcField name="/MatchedPersonData/DateOfBirth">
+                        <groovy>
+                            if (value) {
+                            long bdtime = (com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value)/1000.0) + 3600;
+                            return "" + bdtime;
+                            } else {
+                            return null;
+                            }
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_3_SSNISSUESTATE">
+                    <srcField name="/MatchedPersonData/SsnIssueState"/>
+                </field>
+                <field name="_3_SSNISSUESTARTYEAR">
+                    <srcField name="/MatchedPersonData/SsnIssueStartYear"/>
+                </field>
+                <field name="_3_SSNISSUEENDYEAR">
+                    <srcField name="/MatchedPersonData/SsnIssueEndYear"/>
+                </field>
+                <field name="_3_SSNSTATUS">
+                    <srcField name="/MatchedPersonData/SsnStatus"/>
+                </field>
+                <field name="_3_ADDRESSLINE1">
+                    <srcField name="/MatchedPersonData/AddressRecords/AddressLine1"/>
+                </field>
+                <field name="_3_ADDRESSLINE2">
+                    <srcField name="/MatchedPersonData/AddressRecords/AddressLine2"/>
+                </field>
+                <field name="_3_CITY">
+                    <srcField name="/MatchedPersonData/AddressRecords/City"/>
+                </field>
+                <field name="_3_STATE">
+                    <srcField name="/MatchedPersonData/AddressRecords/State"/>
+                </field>
+                <field name="_3_ZIPCODE">
+                    <srcField name="/MatchedPersonData/AddressRecords/ZipCode"/>
+                </field>
+                <field name="_3_ADDRESSSTATUS">
+                    <srcField name="/MatchedPersonData/AddressRecords/Status"/>
+                </field>
+                <field name="_3_ADDRESSLINE1_1">
+                    <srcField name="/MatchedPersonData/AddressRecords[1]/AddressLine1"/>
+                </field>
+                <field name="_3_ADDRESSLINE2_1">
+                    <srcField name="/MatchedPersonData/AddressRecords[1]/AddressLine2"/>
+                </field>
+                <field name="_3_CITY_1">
+                    <srcField name="/MatchedPersonData/AddressRecords[1]/City"/>
+                </field>
+                <field name="_3_STATE_1">
+                    <srcField name="/MatchedPersonData/AddressRecords[1]/State"/>
+                </field>
+                <field name="_3_ZIPCODE_1">
+                    <srcField name="/MatchedPersonData/AddressRecords[1]/ZipCode"/>
+                </field>
+                <field name="_3_ADDRESSSTATUS_1">
+                    <srcField name="/MatchedPersonData/AddressRecords[1]/Status"/>
+                </field>
+                <!-- <field name="_3_DATEREPORTED">
+                  <srcField name="/MatchedPersonData/AddressRecords/DateReported"/>
+                </field> -->
+                <!-- <field name="_3_STREETNUMBER">
+                  <srcField name="/MatchedPersonData/AddressRecords/ParsedAddressLine1/StreetNumber"/>
+                </field>
+                <field name="_3_STREETNAME">
+                  <srcField name="/MatchedPersonData/AddressRecords/ParsedAddressLine1/StreetName"/>
+                </field> -->
+                <field name="_3_CLASSIFICATION">
+                    <srcField name="/MatchedPersonData/PhoneNumbers/Classification"/>
+                </field>
+                <field name="_3_NUMBERTYPE">
+                    <srcField name="/MatchedPersonData/PhoneNumbers/NumberType"/>
+                </field>
+                <field name="_3_AREACODE">
+                    <srcField name="/MatchedPersonData/PhoneNumbers/AreaCode"/>
+                </field>
+                <field name="_3_EXCHANGE">
+                    <srcField name="/MatchedPersonData/PhoneNumbers/Exchange"/>
+                </field>
+                <field name="_3_SUFFIX">
+                    <srcField name="/MatchedPersonData/PhoneNumbers/Suffix"/>
+                </field>
+                <field name="_3_PHONENUMBER">
+                    <srcField name="/MatchedPersonData/PhoneNumbers/PhoneNumber"/>
+                </field>
+                <field name="_3_CLASSIFICATION_1">
+                    <srcField name="/MatchedPersonData/PhoneNumbers[1]/Classification"/>
+                </field>
+                <field name="_3_NUMBERTYPE_1">
+                    <srcField name="/MatchedPersonData/PhoneNumbers[1]/NumberType"/>
+                </field>
+                <field name="_3_AREACODE_1">
+                    <srcField name="/MatchedPersonData/PhoneNumbers[1]/AreaCode"/>
+                </field>
+                <field name="_3_EXCHANGE_1">
+                    <srcField name="/MatchedPersonData/PhoneNumbers[1]/Exchange"/>
+                </field>
+                <field name="_3_SUFFIX_1">
+                    <srcField name="/MatchedPersonData/PhoneNumbers[1]/Suffix"/>
+                </field>
+                <field name="_3_PHONENUMBER_1">
+                    <srcField name="/MatchedPersonData/PhoneNumbers[1]/PhoneNumber"/>
+                </field>
+                <field name="_3_CONSUMERALERTMESSAGECODES">
+                    <srcField name="/CamCodes"/>
+                </field>
+                <field name="_3_OFACPOTENTIALMATCHLEVEL">
+                    <srcField name="/OfacListPotentialMatches/Summary/PotentialMatchLevel"/>
+                </field>
+                <field name="_3_OFACDATASOURCE">
+                    <srcField name="/OfacListPotentialMatches/DataSource"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>
