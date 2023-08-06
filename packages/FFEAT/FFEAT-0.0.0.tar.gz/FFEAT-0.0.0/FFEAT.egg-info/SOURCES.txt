@@ -1,0 +1,7 @@
+README.md
+setup.py
+FFEAT.egg-info/PKG-INFO
+FFEAT.egg-info/SOURCES.txt
+FFEAT.egg-info/dependency_links.txt
+FFEAT.egg-info/requires.txt
+FFEAT.egg-info/top_level.txt
