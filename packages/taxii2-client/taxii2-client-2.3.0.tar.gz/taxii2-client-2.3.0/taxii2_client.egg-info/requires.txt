@@ -1,0 +1,14 @@
+requests
+six
+pytz
+
+[docs]
+sphinx
+sphinx-prompt
+
+[test]
+coverage
+pytest
+pytest-cov
+responses
+tox

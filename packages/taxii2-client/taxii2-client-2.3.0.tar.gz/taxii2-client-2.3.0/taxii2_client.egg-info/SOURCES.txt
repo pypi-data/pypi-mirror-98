@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+taxii2_client.egg-info/PKG-INFO
+taxii2_client.egg-info/SOURCES.txt
+taxii2_client.egg-info/dependency_links.txt
+taxii2_client.egg-info/requires.txt
+taxii2_client.egg-info/top_level.txt
+taxii2client/__init__.py
+taxii2client/common.py
+taxii2client/exceptions.py
+taxii2client/version.py
+taxii2client/v20/__init__.py
+taxii2client/v21/__init__.py
