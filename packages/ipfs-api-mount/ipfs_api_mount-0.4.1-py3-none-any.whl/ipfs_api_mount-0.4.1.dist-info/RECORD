@@ -1,0 +1,16 @@
+ipfs_api_mount/__init__.py,sha256=Vr1WWuY3IkjVtp4Fqea3asRPUuLsK84Kfe9F148oWXA,116
+ipfs_api_mount/commands.py,sha256=36GacC-wz6Fr2krxUNyBk3_Jl2d7c2kqKqNBkmyRw8o,4423
+ipfs_api_mount/ipfs.py,sha256=BkvIxBHzkFzdxSAImtUrlGh7N3rJm2ueGL6FmYZ8w4M,10390
+ipfs_api_mount/ipfs_mounted.py,sha256=jf2ES-igkjkBvKMk-BZN15q2lkxDDWWRSGGVlIUZivs,3320
+ipfs_api_mount/unixfs_pb2.py,sha256=XcktIJ012DoxKWDmgiSuXMUFy2w6apRnmdTsSfRuGT0,7160
+ipfs_api_mount/version.py,sha256=qBs4HqYsPn6yUHWEuCN4rGUC05gABbl800d8LBd8h9w,22
+ipfs_api_mount/fuse_operations/__init__.py,sha256=JmzBtDyv1_hnlvVk9eb08nlAxWizh3-GeP5lBHd22xo,219
+ipfs_api_mount/fuse_operations/high.py,sha256=94AzVy3DjZ2XvfR5ySsZkq7SVqgGsC7Iu9SIuhfGvIU,4096
+ipfs_api_mount/fuse_operations/high_whole.py,sha256=oDVUrG4bvTR-9iUyizMrMH1DNPgS7GePlAaPqoFXYpA,1260
+ipfs_api_mount-0.4.1.data/scripts/ipfs-api-mount,sha256=TJZX1obtTr1QNH-qWN_xUE_rOlF-UfJL6R05jU-G3AI,127
+ipfs_api_mount-0.4.1.data/scripts/ipfs-api-mount-whole,sha256=kvTuchQRqqQ_ZlbxeecyCiJwAHL_aA2xqlkIg3IPZU0,137
+ipfs_api_mount-0.4.1.dist-info/LICENSE,sha256=LjON3zDkjoJYCaH0NovBgbi_nGeaX3Rr-Mqj0kSfIa0,1070
+ipfs_api_mount-0.4.1.dist-info/METADATA,sha256=TE_fqnl4wtrbwozTvzakNy-0eihLNEKWnehHg67otCo,491
+ipfs_api_mount-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ipfs_api_mount-0.4.1.dist-info/top_level.txt,sha256=pWHwqABQl50MhBQToFttZ2JoGcmf1wWE6UCg2pENjGQ,15
+ipfs_api_mount-0.4.1.dist-info/RECORD,,
