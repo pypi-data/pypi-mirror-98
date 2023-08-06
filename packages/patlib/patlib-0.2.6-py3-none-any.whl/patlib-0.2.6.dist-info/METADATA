@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: patlib
+Version: 0.2.6
+Summary: A collection of tools.
+License: MIT
+Author: patricknraanes
+Author-email: patrick.n.raanes@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: math
+Provides-Extra: misc
+Requires-Dist: ipdb
+Requires-Dist: ipython
+Requires-Dist: jedi (<0.18)
+Requires-Dist: line_profiler
+Requires-Dist: matplotlib; extra == "math"
+Requires-Dist: numpy (>=1.20.1,<2.0.0); extra == "math"
+Requires-Dist: pudb
+Requires-Dist: pyqt5 (==5.15.2); extra == "math"
+Requires-Dist: pyyaml; extra == "misc"
+Requires-Dist: scipy; extra == "math"
+Requires-Dist: see
+Requires-Dist: tabulate; extra == "misc"
+Requires-Dist: toml; extra == "misc"
+Requires-Dist: tqdm; extra == "misc"
+Description-Content-Type: text/markdown
+
+# patlib
+
+A collection of tools developed in conjunction with DAPPER.
+
