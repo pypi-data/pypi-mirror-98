@@ -1,0 +1,15 @@
+wagtail_social_share/__init__.py,sha256=s46cpieD2fiEPJR2qFH1EzaRBd6cipJM3XmYrQkbHQE,73
+wagtail_social_share/apps.py,sha256=kigj6OOGTw4rJE1nY6rsvEHXWE36mdCIzEmkGWVPTFo,187
+wagtail_social_share/edit_handlers.py,sha256=-NNaVnBUv4fXT_LWQ4yIdCxQcslllQOXgiPU4PwPE2U,1444
+wagtail_social_share/exceptions.py,sha256=PSZkZ5adiAcvvO1UkNrQUqtmpdYK-CsiFNpuVDjoRCE,334
+wagtail_social_share/mixins.py,sha256=l5A9PCudBZqasz7nEPPPQYuh5mhm7jWu6mpMGKfbvNo,1407
+wagtail_social_share/models.py,sha256=M26JTrQpdyquzOESxCgEsYjiL9lwb3Cz1NliWacjsVI,2464
+wagtail_social_share/settings.py,sha256=PDK-1SQjaSipIiMTLZyG2Ks6x3CnKQM0LX4eZYW3Syw,442
+wagtail_social_share/sharer.py,sha256=9xqQqElf7mOKFv0K_USDQ4Depg0zhg4GHhFwaFMygrU,1052
+wagtail_social_share/signals.py,sha256=griUIfAIZw47zZn7TPtOQ2qzlyLoqz9onlpORmMuQSQ,1249
+wagtail_social_share/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_social_share-0.0.6.dist-info/LICENSE,sha256=GUypidkelSk4xj1gNaw5ZL3UvnhmAZbsFYon_PC3-Aw,1089
+wagtail_social_share-0.0.6.dist-info/METADATA,sha256=8c-2TGr2OOE0_ZF3nVywgIGIqKKlyj7JltIXoT7ydt8,4352
+wagtail_social_share-0.0.6.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+wagtail_social_share-0.0.6.dist-info/top_level.txt,sha256=V98PjswcSuRcuH1D59qg8EXIblEFwnrvY3obwKLpgKU,21
+wagtail_social_share-0.0.6.dist-info/RECORD,,
