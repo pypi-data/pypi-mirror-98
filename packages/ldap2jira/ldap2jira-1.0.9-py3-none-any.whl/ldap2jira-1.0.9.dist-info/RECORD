@@ -1,0 +1,13 @@
+ldap2jira/__init__.py,sha256=1IxaBGB1dTtmAAZXsCt3j4HnytmTq-ds45RECugZp2E,152
+ldap2jira/ldap_lookup.py,sha256=qVeAkPO2o0mvPhfvfr4FDMsSSbjmDrQRLe_kCT6Knrs,2676
+ldap2jira/map.py,sha256=O_7yCA7vipU-0xaLTdZU_lMAwK5SB5dbi2LWmWhnfgw,11866
+ldap2jira/version.py,sha256=TnL1xkZAJub8p6pizv6aivSBkJs1sf2oUZCNQtyP6Vg,142
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ldap2jira.py,sha256=j-ouS_Irdo0xfi1cSza67BuGXEqgKGHXEz51w0vAutI,9486
+tests/test_map.csv,sha256=zoblWaTT5o8gkUtJv7l0IlIzhv8pSifv6crbuNOH0_M,30
+tests/test_map.json,sha256=KL803fwENLLnZQCUBx3_A1P4msXGyh4KDCt1yxjoksk,51
+ldap2jira-1.0.9.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+ldap2jira-1.0.9.dist-info/METADATA,sha256=ZadNvCeEH9dnl89AqNGM_bpeJqKiH4gWlLqcUQQGcB8,1609
+ldap2jira-1.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ldap2jira-1.0.9.dist-info/top_level.txt,sha256=tv_jGkYo0AKdGgxcyIh_PXxVR42Y81QSE0fcpp_1sEU,16
+ldap2jira-1.0.9.dist-info/RECORD,,
