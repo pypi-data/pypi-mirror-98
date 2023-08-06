@@ -1,0 +1,42 @@
+# This workflow to run the test suite for CWInPy - uses Docker images on Quay.io
+
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - python-version: 3.6
+            container: quay.io/mattpitkin/cwinpy-testing-python36
+          - python-version: 3.7
+            container: quay.io/mattpitkin/cwinpy-testing-python37
+          - python-version: 3.8
+            container: quay.io/mattpitkin/cwinpy-testing-python38
+
+    container: ${{ matrix.container }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install CWInPy
+      run: |
+        pip install .
+    - name: Run test suite
+      run: |
+        # disable numba jit for code coverage (see https://stackoverflow.com/a/26894553/1862861)
+        export NUMBA_DISABLE_JIT=1
+        pytest --cov=cwinpy
+    - name: Run codecov
+      run: |
+        codecov

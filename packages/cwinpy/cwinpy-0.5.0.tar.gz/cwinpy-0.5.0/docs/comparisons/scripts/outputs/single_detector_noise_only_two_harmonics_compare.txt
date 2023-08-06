@@ -1,0 +1,28 @@
+.. csv-table:: Evidence table
+   :widths: auto
+   :header: "Method", ":math:`\\ln{(Z)}`", ":math:`\\ln{(Z)}` noise", ":math:`\\ln{}` Odds"
+
+   "``lalapps_pulsar_parameter_estimation_nested``", "323987.259", "323998.848", "-11.589±0.108"
+   "``cwinpy_pe``", "323987.062", "323998.848", "-11.786±0.158"
+
+.. csv-table:: Parameter table
+   :widths: auto
+   :header: "Method", ":math:`C_{21}`", ":math:`C_{22}`", ":math:`\\Phi_{21}` (rad)", ":math:`\\Phi_{22}` (rad)", ":math:`\\psi` (rad)", ":math:`\\cos{\\iota}`"
+
+   "``lalapps_pulsar_parameter_estimation_nested``", "2.50±3.79×10\ :sup:`-26`", "1.48±1.12×10\ :sup:`-26`", "3.00±1.93", "3.80±1.31", "0.75±0.44", "-0.13±0.53"
+   "90% credible intervals", "[0.17, 7.71]×10\ :sup:`-26`", "[0.12, 3.68]×10\ :sup:`-26`", "[0.21, 5.91]", "[1.24, 5.85]", "[0.10, 1.47]", "[-0.98, 0.86]"
+   "``cwinpy_pe``", "2.25±3.34×10\ :sup:`-26`", "1.47±1.11×10\ :sup:`-26`", "3.28±1.87", "3.67±1.32", "0.72±0.45", "-0.11±0.55"
+   "90% credible intervals", "[0.15, 5.60]×10\ :sup:`-26`", "[0.13, 3.65]×10\ :sup:`-26`", "[0.33, 5.96]", "[0.97, 5.72]", "[0.08, 1.48]", "[-0.95, 0.89]"
+
+.. csv-table:: Maximum a-posteriori
+   :widths: auto
+   :header: "Method", ":math:`C_{21}`", ":math:`C_{22}`", ":math:`\\Phi_{21}` (rad)", ":math:`\\Phi_{22}` (rad)", ":math:`\\psi` (rad)", ":math:`\\cos{\\iota}`", ":math:`\\ln{(L)}` max"
+
+   "``lalapps_pulsar_parameter_estimation_nested``", "2.01×10\ :sup:`-26`", "3.15×10\ :sup:`-26`", "4.99", "3.73", "0.36", "0.02", "324001.65"
+   "``cwinpy_pe``", "1.85×10\ :sup:`-26`", "2.88×10\ :sup:`-26`", "4.85", "3.83", "0.30", "-0.08", "324001.75"
+
+| Combined K-S test p-value: 0.0000
+| Maximum Jensen-Shannon divergence: 0.0141
+
+| CWInPy version: 0.3.0+4.g54304fc.dirty
+| bilby version: 0.6.9:

@@ -1,0 +1,8 @@
+recommonmark
+sphinx>=2.0
+numpydoc
+nbsphinx
+autodoc
+sphinx_rtd_theme
+sphinx_tabs
+sphinxcontrib-images>=0.9.1
