@@ -1,0 +1,3 @@
+[console_scripts]
+smiter = smiter.cli:main
+

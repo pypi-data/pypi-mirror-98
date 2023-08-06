@@ -1,0 +1,11 @@
+Click>=7.0
+numpy==1.18.1
+psims==0.1.30
+pymzml[plot]==2.4.6
+pyqms==0.6.2
+scipy
+peptide_fragments@ git+ssh://git@github.com/MKoesters/peptide_fragments@feature/add_fragment_method#egg=peptide_fragments
+loguru==0.4.1
+intervaltree==3.1.0
+pyteomics==4.3.3
+tqdm==4.59.0
