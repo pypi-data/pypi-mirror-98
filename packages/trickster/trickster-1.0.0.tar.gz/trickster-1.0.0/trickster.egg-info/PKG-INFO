@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: trickster
+Version: 1.0.0
+Summary: Mocking Service
+Home-page: https://github.com/JakubTesarek/trickster
+Author: Jakub Tesárek
+Author-email: jakub@tesarek.me
+License: unlicensed
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: dev
