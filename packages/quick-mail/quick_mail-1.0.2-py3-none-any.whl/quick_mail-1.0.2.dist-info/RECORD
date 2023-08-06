@@ -1,0 +1,15 @@
+quickmail/__init__.py,sha256=9y6VtYJDznwe4ujkK3KoD2mXJU0OWh6bxh-kmpuELUc,49
+quickmail/cli.py,sha256=VygRaHFLgu1NrhJjsCb1FedHx-mprDjS3BbnYQDcef8,539
+quickmail/commands/__init__.py,sha256=qEGZRSNEVzwS0e8ixHGueIdGQIAjGz-H0_fhRx0VHew,2203
+quickmail/commands/clear.py,sha256=oyai0S_kXMkk_WFaJh4d0pUln4631BqTMgtXJ_NpvGE,1804
+quickmail/commands/init.py,sha256=gBfUNsqGzeuJPnaikvhia768pAEMc1StBIFMjzbsQJ8,3377
+quickmail/commands/send.py,sha256=cCwCKD13ZeUgoSYedeSl97f5O6lt1P9AB5dPwHZhw2w,6995
+quickmail/commands/template.py,sha256=e6hEjdNgoqndrIt3Hz0lpOZ5CMGK-mmtrhsaqKTlb2A,2546
+quickmail/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickmail/utils/misc.py,sha256=eWyyumbMkjwQOQo-mDjljUHdt_Fdd8NTrt7TZ_4CoFQ,1334
+quick_mail-1.0.2.dist-info/LICENSE,sha256=8KWNMe52mNccJSvTSAHj63C42FGUlSl2dUs96Qwbjpk,1073
+quick_mail-1.0.2.dist-info/METADATA,sha256=tBHTHUVLH3S-zmbRAyeI-X4kWoYqV0Q153kx1tZmkak,9001
+quick_mail-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quick_mail-1.0.2.dist-info/entry_points.txt,sha256=Avl5AGSiLYfae7zwdh7WlD_o_TckMemgXfrcL-dNxig,53
+quick_mail-1.0.2.dist-info/top_level.txt,sha256=UKNfo-hNcuzu8SvJRnIZUKYgkNxA7ii4BcT4waQ57H0,10
+quick_mail-1.0.2.dist-info/RECORD,,
