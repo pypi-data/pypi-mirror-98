@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: infinisdk
+Version: 185.1.1
+Summary: Infinidat API SDK
+Home-page: https://infinisdk.readthedocs.io/en/latest/
+Author: Infinidat
+Author-email: info@infinidat.com
+License: BSD
+Description: Infinidat API SDK
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.*
+Provides-Extra: doc
+Provides-Extra: testing
