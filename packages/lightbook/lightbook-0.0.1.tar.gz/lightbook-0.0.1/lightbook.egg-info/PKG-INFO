@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lightbook
+Version: 0.0.1
+Summary: lightbook
+Home-page: https://github.com/kylinat2688/fastutil
+Author: kylin
+Author-email: 464840061@qq.com
+License: UNKNOWN
+Description: # light book  
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown

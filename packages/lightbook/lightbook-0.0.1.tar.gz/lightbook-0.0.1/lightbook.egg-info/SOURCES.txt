@@ -1,0 +1,8 @@
+README.md
+setup.py
+lightbook.egg-info/PKG-INFO
+lightbook.egg-info/SOURCES.txt
+lightbook.egg-info/dependency_links.txt
+lightbook.egg-info/entry_points.txt
+lightbook.egg-info/requires.txt
+lightbook.egg-info/top_level.txt
