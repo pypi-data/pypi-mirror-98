@@ -1,0 +1,12 @@
+colorzero
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[test]
+RPi.GPIO
+coverage
+mock
+pigpio
+pytest
