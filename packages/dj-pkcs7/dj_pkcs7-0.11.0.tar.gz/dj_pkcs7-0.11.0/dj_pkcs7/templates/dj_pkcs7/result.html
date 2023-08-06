@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}
+    {# Translators: Title on Main Page #}
+    {% trans "Result" as title %}
+    {{ title }}
+{% endblock %}
+
+{% load custom_tags %}
+
+{% block content %}
+    Upload another:
+    <form enctype="multipart/form-data" action="{% url 'upload' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    Result for File: {{ file }}
+    <p>
+        {% if result %}
+            <table border="1px">
+                <thead>
+                <th>#</th>
+                <th>Issuer</th>
+                <th>Serial (Hex)</th>
+                <th>Serial (Decimal)</th>
+                </thead>
+                <tbody>
+                {% for item in result %}
+                    <tr>
+                        <td> {{ forloop.counter }}</td>
+                        <td>
+                            {% for key, value in item.issuer.items %}
+                                <li>{{ key }}: {{ value }}</li>
+                            {% endfor %}
+                        </td>
+                        <td>{{ item.serial|hex_notation }}</td>
+                        <td>{{ item.serial }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <strong>Nothing found</strong>
+        {% endif %}
+    </p>
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}

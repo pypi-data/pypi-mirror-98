@@ -1,0 +1,8 @@
+include CHANGELOG.rst
+include CONTRIBUTING.md
+include README.md
+include LICENSE
+include requirements.txt
+include requirements-dev.txt
+recursive-include dj_pkcs7/static *
+recursive-include dj_pkcs7/templates *
