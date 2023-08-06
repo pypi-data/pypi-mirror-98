@@ -1,0 +1,13 @@
+relion/__init__.py,sha256=3avq8qlAqpreNzOA2Zf3Ef6pVJFIrQLLtl-MhQ2FV4g,2729
+relion/parse_project.py,sha256=Aw_L-j17R1212da2sQaoVI-bpDwrzjAqIG9U9H8CXZY,4431
+relion/_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+relion/_parser/class2D.py,sha256=mM_O9FBhPf6pVFoH9mWE2FXtM-FmPQ27caOzLNhQIW0,6581
+relion/_parser/class3D.py,sha256=AXpUJtjxundohiS64KHsD80FqlwPDFDLWuiY3Ilm4Co,6199
+relion/_parser/ctffind.py,sha256=rktTULpVP60HWHRdbZX4fG2rK8wUvFyr31Wl8KIbauY,4185
+relion/_parser/motioncorrection.py,sha256=ZVD13VWDRpDKa_MEYoAPyxl2n3ilmUzHcTMWw3vBWZU,3284
+relion-0.2.0.dist-info/LICENSE,sha256=WvH8BF7tuePK7da8skljIZ25FzRJMTKgtLVZihsIlxk,1528
+relion-0.2.0.dist-info/METADATA,sha256=8VNTEM0BL1Bj7J6kDvxJMBvcKYq31VqptkBW_ZSnj8Y,2513
+relion-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+relion-0.2.0.dist-info/entry_points.txt,sha256=HB-XTAUduCx-YrKdKazj7PrXi4sKU0JDnfFVqxr1W80,36
+relion-0.2.0.dist-info/top_level.txt,sha256=7pRb9A8EcFx2an8OF8cqS2YZzPVJkJzkkE554hx9CPo,7
+relion-0.2.0.dist-info/RECORD,,
