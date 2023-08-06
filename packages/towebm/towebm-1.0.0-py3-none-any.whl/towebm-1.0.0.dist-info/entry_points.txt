@@ -1,0 +1,6 @@
+[console_scripts]
+ffcat = towebm.ffcat:main
+toopus = towebm.toopus:main
+tovorbis = towebm.tovorbis:main
+towebm = towebm.towebm:main
+
