@@ -1,0 +1,12 @@
+error_consistency/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+error_consistency/consistency.py,sha256=JnlIso03997QZhhebbbwTQXB1aHcOkW-pH5eBKeIZCo,67945
+error_consistency/containers.py,sha256=qBbGlwaARIy49aoq2raKjQF6nYroKfrGRViwmut1qCg,6012
+error_consistency/functional.py,sha256=RiQIDtFWWQyUMDU-VVAe9ZIyPmzxmdnjhuvmwQMXv60,13345
+error_consistency/model.py,sha256=dJ-KlqUy2YqD0P7ZM8Sl-w4mjqMhf5WD6M0w9Eo7edY,13385
+error_consistency/parallel.py,sha256=K2TBhHN_Up12-06kI9VYuE35XDv5PmXjxm7lpj0foNc,3076
+error_consistency/random.py,sha256=fv_DUYrUoF3FCMwuPcuAy-h9AMlzktUzcTO30bzOCPE,1590
+error_consistency/utils.py,sha256=9W8mltBr9l5hXFw2DJHlj_dh3o5hy1LWAIplaOS8R8o,857
+error_consistency-0.1.0.dist-info/LICENSE,sha256=-r1rMiI6q5TLob7r6Dy6-Dq79DWE104rVdCEXsvMxSQ,1070
+error_consistency-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+error_consistency-0.1.0.dist-info/METADATA,sha256=JTtmcPT8BCdGMf1qNqdTDagoBwxBV98uVdJyIhCwWZs,686
+error_consistency-0.1.0.dist-info/RECORD,,
