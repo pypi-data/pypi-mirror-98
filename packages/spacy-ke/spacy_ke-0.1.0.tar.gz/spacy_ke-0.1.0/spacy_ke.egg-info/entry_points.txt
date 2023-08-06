@@ -1,0 +1,3 @@
+[spacy_factories]
+spacy_yake = spacy_yake:Yake
+
