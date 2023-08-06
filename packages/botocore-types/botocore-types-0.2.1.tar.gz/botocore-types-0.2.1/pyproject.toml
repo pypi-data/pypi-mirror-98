@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "botocore-types"
+version = "0.2.1"
+description = "Type stubs for botocore"
+repository = "https://github.com/sbdchd/botocore-types"
+readme = "README.md"
+authors = ["Steve Dignam <steve@dignam.xyz>"]
+license = "Apache-2.0"
+keywords = ["botocore", "boto", "types", "mypy", "stubs"]
+packages = [
+  { include = "botocore-stubs" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+botocore = "^1.20"
+boto3 = "^1.17"
+boto3-stubs = {version = "^1.17",extras = ["s3", "sns", "secretsmanager"]}
+mypy = "^0.812.0"
+flake8 = "^3.8"
+flake8-pyi = "^20.10"
+ipython = "^7.21"
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+isort = "^4.3"
+
+[build-system]
+requires = ["poetry>=0.12", "setuptools"]
+build-backend = "poetry.masonry.api"
