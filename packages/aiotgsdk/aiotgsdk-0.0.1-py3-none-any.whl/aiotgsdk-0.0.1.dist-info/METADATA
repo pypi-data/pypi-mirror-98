@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: aiotgsdk
+Version: 0.0.1
+Summary: Python Telegram SDK to help make asynchronous requests to Telegram API
+Home-page: https://github.com/evgeniyprivalov/aiotgsdk
+Author: Evgeniy Privalov
+Author-email: evgeniyprivalov94@gmail.com
+License: GPLv3+
+Download-URL: https://pypi.org/project/aiotgsdk/
+Project-URL: Documentation, https://github.com/evgeniyprivalov/aiotgsdk
+Project-URL: Bug Tracker, https://github.com/evgeniyprivalov/aiotgsdk
+Project-URL: Source Code, https://github.com/evgeniyprivalov/aiotgsdk
+Project-URL: News, https://github.com/evgeniyprivalov/aiotgsdk
+Project-URL: Changelog, https://github.com/evgeniyprivalov/aiotgsdk/blob/main/CHANGELOG.md
+Keywords: Python Telegram Asynchronous API Bot SDK
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# aiotgsdk
+
+
