@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: perceiver-jax
+Version: 0.0.3
+Summary: Perceiver - JAX
+Home-page: https://github.com/sooheon/perceiver-jax
+Author: Sooheon Kim
+Author-email: sooheon.k@gmail.com
+License: MIT
+Keywords: artificial intelligence,deep learning,transformer,attention mechanism
+Platform: UNKNOWN
+Requires-Dist: einops (>=0.3)
+Requires-Dist: jax (>=0.2.10)
+Requires-Dist: flax (>=0.3.2)
+
+UNKNOWN
+
+
