@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "whey",]
+build-backend = "whey"
+
+[project]
+name = "Southwark"
+version = "0.8.1"
+description = "Extensions to the Dulwich Git library."
+readme = "README.rst"
+keywords = [ "git", "dulwich", "vcs",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+[[project.authors]]
+email = "dominic@davis-foster.co.uk"
+name = "Dominic Davis-Foster"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/domdfcoding/southwark"
+"Issue Tracker" = "https://github.com/domdfcoding/southwark/issues"
+"Source Code" = "https://github.com/domdfcoding/southwark"
+Documentation = "https://southwark.readthedocs.io/en/latest"
+
+[tool.whey]
+base-classifiers = [ "Development Status :: 4 - Beta", "Environment :: Console", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Version Control :: Git", "Typing :: Typed",]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython", "PyPy",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
+package = "southwark"
