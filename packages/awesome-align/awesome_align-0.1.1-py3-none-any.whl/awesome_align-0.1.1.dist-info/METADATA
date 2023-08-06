@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: awesome-align
+Version: 0.1.1
+Summary: An awesome word alignment tool
+Home-page: https://github.com/neulab/awesome-align
+Author: NeuLab
+Author-email: zdou0830@gmail.com
+License: BSD 3-Clause
+Platform: UNKNOWN
+Requires-Dist: tokenizers (>=0.5.2)
+Requires-Dist: torch (>=1.1.0)
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: boto3
+Requires-Dist: filelock
+
+UNKNOWN
+
+
