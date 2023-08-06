@@ -1,0 +1,11 @@
+README.md
+setup.py
+pypiwrap/__init__.py
+pypiwrap.egg-info/PKG-INFO
+pypiwrap.egg-info/SOURCES.txt
+pypiwrap.egg-info/dependency_links.txt
+pypiwrap.egg-info/top_level.txt
+pypiwrap/apis/__init__.py
+pypiwrap/apis/_shared.py
+pypiwrap/apis/data.py
+pypiwrap/apis/stats.py
