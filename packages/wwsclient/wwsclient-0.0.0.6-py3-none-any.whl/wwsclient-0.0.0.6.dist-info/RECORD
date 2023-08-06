@@ -1,0 +1,11 @@
+wwsclient/__init__.py,sha256=29M8T8WkyIfb_Samv9rZDDldihtBIOB-C4mDx1rda6s,25
+wwsclient/__main__.py,sha256=vtHByPqRcJXJBSik4ELoDcG-4oxVz6xiXi8H1xFwUu8,199
+wwsclient/client.py,sha256=myGGyKES-Fcp7KCIz4H26iMTUzd0e3RhwgarYg1CnSM,1845
+wwsclient/service.py,sha256=M8kVkpeo1HLhl3MqyG3qzDcZABiYtg7wqDnecTEu3tg,3575
+wwsclient/util.py,sha256=dU5TULV-nrCiaGUYvph1fHhpb6mxQe8A2XTSFgCIIZM,1331
+wwsclient-0.0.0.6.dist-info/LICENSE,sha256=uhHO7iuPHVJYSvuS6QZ3GAf-RaFnLbVwcobRY5trUlY,1090
+wwsclient-0.0.0.6.dist-info/METADATA,sha256=apvewkn4HNKyzgIjImXAiST6pCXEP6oqcPh8mM1SlLk,6770
+wwsclient-0.0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wwsclient-0.0.0.6.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+wwsclient-0.0.0.6.dist-info/top_level.txt,sha256=iDBz8E02NqITntDsGoyOKkE5atQ6Vnyt0pePcjzOjEs,10
+wwsclient-0.0.0.6.dist-info/RECORD,,
