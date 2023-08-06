@@ -1,0 +1,9 @@
+botoful/__init__.py,sha256=adZp_nQVqKgWaODNtMirzkW2Fmzh3Ek5vhBMBobuW88,53
+botoful/filters.py,sha256=k5XcrbJKkccme1fbDvERn0ueIbL9yAauOr3h4hnnZZM,738
+botoful/query.py,sha256=RkbH3Wgrd7xbBaMcYzpZ30MQPusl0E1q351TMOxfy_g,8585
+botoful/reserved.py,sha256=qsXm7U0ziait4Cn6-28Zry1tKSASXR1chBBzP8jf-OA,7158
+botoful/serializers.py,sha256=vKQZZYjc5NkHHmKCws3Yw6a9YBINTGZqV1Amk3hqsPI,274
+botoful-0.3.0.dist-info/LICENSE,sha256=r5qyTRPPCtFw4aoCUh9FGHQFcB48nkdhAmCkJLVbzt4,1061
+botoful-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+botoful-0.3.0.dist-info/METADATA,sha256=6NSBmsbaHW7ChrWmZNqSXCc5dI_aDqe8mOap7wmHKP0,712
+botoful-0.3.0.dist-info/RECORD,,
