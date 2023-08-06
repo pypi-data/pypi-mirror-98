@@ -1,0 +1,15 @@
+xwire/rest/__init__.py,sha256=Mszg9xASpAmL315MUTSQbM9g8YwT1Z3Zv0eMxMkOsFY,27
+xwire/rest/_private/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xwire/rest/_private/proxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xwire/rest/_private/proxy/decorators/__init__.py,sha256=p4IcaaUYqqnPtCQytNO8LHcOYVsDQM1M5gDxFUGzHSc,138
+xwire/rest/_private/proxy/decorators/cookies.py,sha256=j7vHhvQRUAFdiEIwNB2NMo8l07MqL4YHz7rM6juE5Lc,146
+xwire/rest/_private/proxy/decorators/get.py,sha256=toD37R1jDlOHtFXj_QZbzpJGjfo76V_VbM6VoIyhQxo,1358
+xwire/rest/_private/proxy/decorators/headers.py,sha256=Kjv2Da0A-FAeTKbMfwWaKjhG5FrhlMiTZSzIE670C-E,146
+xwire/rest/_private/proxy/decorators/post.py,sha256=nwZyjjVy1SGiqoTC0inbKsxm1hAciTK-GtQpwTlzqcY,1231
+xwire/rest/_private/proxy/decorators/resource.py,sha256=0KNz9IPru6-ApmdvIyqOH74Nej5Jm57fs_fx2I89n-8,405
+xwire/rest/_private/utils.py,sha256=PMlP7YMDhkoIx-caSCs6eIIVkrlMlZ8z4EPL0cv59nw,1669
+xwire/rest/public/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xwire/rest/public/proxy.py,sha256=7jNkCTEw-JDKIBDBSn8pIKQ1vVoCDitvYfF-Smir8hI,90
+xwire.rest-0.1.12.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+xwire.rest-0.1.12.dist-info/METADATA,sha256=yKbCmamDqCT9SxTO_Yz2Hssdqw_-jfxLzQgLt9DptVo,483
+xwire.rest-0.1.12.dist-info/RECORD,,
