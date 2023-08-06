@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+gw_wispy.egg-info/PKG-INFO
+gw_wispy.egg-info/SOURCES.txt
+gw_wispy.egg-info/dependency_links.txt
+gw_wispy.egg-info/top_level.txt
+wispy/__init__.py
