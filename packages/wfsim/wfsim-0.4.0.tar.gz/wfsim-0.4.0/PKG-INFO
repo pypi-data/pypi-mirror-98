@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: wfsim
+Version: 0.4.0
+Summary: XENONnT Waveform simulator
+Home-page: https://github.com/XENONnT/wfsim
+Author: Wfsim contributors, the XENON collaboration
+License: UNKNOWN
+Description: # WFSim
+        [The XENON waveform simulator.](https://wfsim.readthedocs.io)
+        
+        ## Fax in strax
+        
+        [![Readthedocs Badge](https://readthedocs.org/projects/wfsim/badge/?version=latest)](https://wfsim.readthedocs.io/en/latest/?badge=latest)
+        [![Build Status](https://travis-ci.org/XENONnT/WFSim.svg?branch=master)](https://travis-ci.org/XENONnT/WFSim)
+        [![Coverage Status](https://coveralls.io/repos/github/XENONnT/WFSim/badge.svg?branch=master)](https://coveralls.io/github/XENONnT/WFSim?branch=master)
+        [![Pytest](https://github.com/XENONnT/WFSim/workflows/Pytest/badge.svg?branch=master)](https://github.com/XENONnT/WFSim/actions?query=workflow%3APytest)
+        [![CodeFactor](https://www.codefactor.io/repository/github/xenonnt/wfsim/badge)](https://www.codefactor.io/repository/github/xenonnt/wfsim)
+        [![PyPI version shields.io](https://img.shields.io/pypi/v/wfsim.svg)](https://pypi.python.org/pypi/wfsim/)
+        
+        Here are the files needed to run the waveform simulator fax and give output in the same formats as used by strax.
+        
+        ## Installation
+        Follow the [installation guide](https://wfsim.readthedocs.io/en/latest/intro.html) to setup WFSim.
+        
+        ## Examples
+        Several tutorials are provided in the [tutorial section](https://wfsim.readthedocs.io/en/latest/index.html) linked in the documentation. This code is available as [IPython Notebooks](https://github.com/XENONnT/WFSim/tree/master/notebooks).
+        
+        
+        v0.2.5
+        ======
+          * Config patch and debugging prints (#104)
+        
+        v0.2.4
+        =======
+          * First pip installable release
+        
+        
+        v0.0.1
+        =======
+        
+          * Release as a python package
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
