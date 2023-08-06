@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tap_geosource/__init__.py
+tap_geosource/discovery.py
+tap_geosource/geo.py
+tap_geosource/sync.py
+tap_geosource.egg-info/PKG-INFO
+tap_geosource.egg-info/SOURCES.txt
+tap_geosource.egg-info/dependency_links.txt
+tap_geosource.egg-info/entry_points.txt
+tap_geosource.egg-info/requires.txt
+tap_geosource.egg-info/top_level.txt
