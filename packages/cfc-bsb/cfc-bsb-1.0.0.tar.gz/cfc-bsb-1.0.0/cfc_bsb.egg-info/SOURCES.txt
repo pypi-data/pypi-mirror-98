@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cfc/__init__.py
+cfc/__main__.py
+cfc/http.py
+cfc/main.py
+cfc/tunnel.py
+cfc_bsb.egg-info/PKG-INFO
+cfc_bsb.egg-info/SOURCES.txt
+cfc_bsb.egg-info/dependency_links.txt
+cfc_bsb.egg-info/entry_points.txt
+cfc_bsb.egg-info/requires.txt
+cfc_bsb.egg-info/top_level.txt
