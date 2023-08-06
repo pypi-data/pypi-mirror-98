@@ -1,0 +1,11 @@
+inifix/__init__.py,sha256=meQDbWQnn4xMNId8mGt_peAnGn76jcEt53-x4lr_M2g,98
+inifix/_typing.py,sha256=sj8ziV7Y5Bu-Zbw5aA4T2VeAnjAPhm9sBYxqq8vVOO8,208
+inifix/enotation.py,sha256=z-bMy_uoXwDfYP6-X8d3eWq2o8YrABi2Mb1cjbbdetI,4426
+inifix/idefix_conf.py,sha256=8o3HgCew7LtLFynELpEmwL8rFnrlHunDIvmYOokQuB0,3973
+inifix/io.py,sha256=9pBC29OeYp2nOI8egEEm09FX_MDypNMog8ewBEes3nk,384
+inifix/validation.py,sha256=DmnLcD6ChrrXchpu7smG4MvD2E48RWzz_LoLMdrjC3g,702
+inifix-0.1.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+inifix-0.1.4.dist-info/METADATA,sha256=RmjjXUXH4yP8KV4ilyJNGuFJpWvrmRI4cPXJEkOHddo,2906
+inifix-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+inifix-0.1.4.dist-info/top_level.txt,sha256=oMA9oWd1OReAs0Hu-4wdf2VF7cPPBdxY8gaBAGlA-xk,7
+inifix-0.1.4.dist-info/RECORD,,
