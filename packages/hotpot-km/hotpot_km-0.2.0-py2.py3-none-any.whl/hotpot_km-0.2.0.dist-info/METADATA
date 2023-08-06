@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hotpot_km
+Version: 0.2.0
+Summary: Hotpot - Jupyter kernel manager helpers
+Home-page: https://github.com/voila-dashboards/hotpot_km
+License: BSD-3-Clause
+Author: Vidar Tonaas Fauske
+Author-email: vidartf@gmail.com
+Requires-Python: ~=3.7
+Classifier: Framework :: Jupyter
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: async_generator
+Requires-Dist: jupyter_client
+Requires-Dist: nbformat
+Requires-Dist: nest_asyncio
+Requires-Dist: traitlets
+Requires-Dist: jupyter_server; extra == "mapping"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: jupyter_server; extra == "test"
+Requires-Dist: jupyter_client[test]; extra == "test"
+Provides-Extra: mapping
+Provides-Extra: test
