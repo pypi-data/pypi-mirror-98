@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+RevolutionSellingClone/__init__.py
+RevolutionSellingClone.egg-info/PKG-INFO
+RevolutionSellingClone.egg-info/SOURCES.txt
+RevolutionSellingClone.egg-info/dependency_links.txt
+RevolutionSellingClone.egg-info/top_level.txt
