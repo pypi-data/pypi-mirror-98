@@ -1,0 +1,10 @@
+setup.py
+jiujit_probability/Binomialdistribution.py
+jiujit_probability/Gaussiandistribution.py
+jiujit_probability/Generaldistribution.py
+jiujit_probability/__init__.py
+jiujit_probability.egg-info/PKG-INFO
+jiujit_probability.egg-info/SOURCES.txt
+jiujit_probability.egg-info/dependency_links.txt
+jiujit_probability.egg-info/not-zip-safe
+jiujit_probability.egg-info/top_level.txt
