@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: genetic-ibis
+Version: 0.2.0
+Summary: Genetic Circuit Scoring Algorithms
+License: MIT
+Author: W.R. Jackson, Ben Bremer, Eric South
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: black (>=20.8b1,<21.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: matplotlib (>=3.3.4,<4.0.0)
+Requires-Dist: pytest (>=6.2.2,<7.0.0)
+Requires-Dist: rich (>=9.11.0,<10.0.0)
+Requires-Dist: scipy (>=1.6.0,<2.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
