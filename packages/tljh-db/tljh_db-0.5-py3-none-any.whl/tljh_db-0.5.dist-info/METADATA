@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tljh-db
+Version: 0.5
+Summary: The littlest jupyterhub plugin for working with mysql databases
+License: UNKNOWN
+Author-email: Christoph Blessing <33834216+cblessing24@users.noreply.github.com>
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pymysql~=1.0
+Requires-Dist: xkcdpass~=1.17
+Project-URL: homepage, https://github.com/sinzlab/tljh-db
+Description-Content-Type: text/markdown
+
+# tljh-db
+
+![Lint](https://github.com/sinzlab/tljh-db/workflows/Lint/badge.svg)
+![Build](https://github.com/sinzlab/tljh-db/workflows/Build/badge.svg)
+[![PyPI version](https://badge.fury.io/py/tljh-db.svg)](https://badge.fury.io/py/tljh-db)
+
+Everytime a new user is created in the JupyterHub a corresponding user will
+be created in a pre-configured database server by this plugin. Afterwards a
+matching DataJoint configuration file will be placed in the home directory
+of the newly created JupyterHub user.
+
+## Configuration
+
+This plugin is configured via `/srv/tljh-db.ini`.
+
+Example:
+
+```INI
+[DEFAULT]
+Host = 127.0.0.1
+User = root
+Password = root-password
+```
+
+
