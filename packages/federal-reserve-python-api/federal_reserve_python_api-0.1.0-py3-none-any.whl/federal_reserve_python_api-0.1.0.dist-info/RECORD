@@ -1,0 +1,12 @@
+fred/categories.py,sha256=WUJWZtxiLITT3TorAtZ4sYMAUksTRCfzuRb8jBXKDOs,16402
+fred/client.py,sha256=BLP9PpyjYLPigZo_RT002fCnUa_cebb2WNWEHRWhv8A,2817
+fred/releases.py,sha256=i7hTEXASBXQgmxTEXlUHzgQ1DDKLXyKOCDHuONOL6MA,26932
+fred/series.py,sha256=BKn-l_Cwp21Y8vYARPhpyTr9PErQ1SFAVIfr7wHaI98,31641
+fred/session.py,sha256=KIaqjWjZBFKrRi9Q9GwudzmSvQrFdR2SgYoDGfXk4kM,6118
+fred/sources.py,sha256=KN-V1ru8kGWR4ro9fakpL4TEJ26eFI5JZcVv1kQyrm4,7983
+fred/tags.py,sha256=Bqi9x2acX_lcOtNnY2q3niKTxIIJUaRhra-S-2ehdPM,11402
+federal_reserve_python_api-0.1.0.dist-info/LICENSE,sha256=9lITtutg01JkQWhjw6wZRYid-ZjvCFxqJYW_nb-vS0E,1087
+federal_reserve_python_api-0.1.0.dist-info/METADATA,sha256=fWVb76ihaq1YEZHdvUEYg7ugJBdal_dcrW-L9aNyl3E,5023
+federal_reserve_python_api-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+federal_reserve_python_api-0.1.0.dist-info/top_level.txt,sha256=amdkZ5b-sD33wi769YgrltKPSlpOVT-7V5pBT3wWcb4,5
+federal_reserve_python_api-0.1.0.dist-info/RECORD,,
