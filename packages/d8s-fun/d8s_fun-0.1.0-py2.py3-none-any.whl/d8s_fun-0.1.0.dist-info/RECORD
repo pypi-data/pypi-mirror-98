@@ -1,0 +1,11 @@
+d8s_fun/__init__.py,sha256=Hc79ecVTcglT2Urcu56FqQZFuo08mJ1OdVQnXqkRTV4,683
+d8s_fun/fun.py,sha256=migCtJPI-TOOwQZYz0qmwu_vpvZzhAn1jGnc8pJ5RYA,1768
+d8s_fun/fun_temp_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_fun.py,sha256=XwUqhJ1o84_Hu-muagixudlNqL0QHPtV72thI4_r5vM,663
+d8s_fun-0.1.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_fun-0.1.0.dist-info/METADATA,sha256=bKeu3USwq4K93IuXT-AxbyL8iCqYj6JpdSZoysX97PM,1764
+d8s_fun-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_fun-0.1.0.dist-info/top_level.txt,sha256=Ol9iWWE01UHdXy0BP4KrhN4tR1_XUSbNytfdCQYHknU,14
+d8s_fun-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_fun-0.1.0.dist-info/RECORD,,
