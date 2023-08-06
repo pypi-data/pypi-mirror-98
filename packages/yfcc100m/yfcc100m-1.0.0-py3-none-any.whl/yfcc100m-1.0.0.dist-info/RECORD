@@ -1,0 +1,11 @@
+yfcc100m/__init__.py,sha256=Ic0IV3tlk8yt03BfWT3rjZpc60DtXhb-eDxZUXKqitM,64
+yfcc100m/convert.py,sha256=VxbsiKyzl4efsagodQTvPV4TBDTTBJ5dKb8mRvty9OU,9379
+yfcc100m/convert_metadata.py,sha256=CwJNs3eQZ7iZn2Fc8KzsMoEpAzOholOb_7r4I5n0Pck,5542
+yfcc100m/download.py,sha256=zmGytbzp56L3e0GruEs876LPlM0-fpQTCxJJfm4LUeI,7666
+yfcc100m/tools.py,sha256=YCAi2Hjlm_jDvLie5MYTnZIr2CWR-1CnjqmcxbxMJr0,4494
+yfcc100m/vars.py,sha256=kOs-OoCE-i2k3n1L9UWAAi9lRB6MU3SOYaZxelLCH-4,351
+yfcc100m-1.0.0.dist-info/LICENSE,sha256=CMmjpQwx7PoPtASq6Nifg5JWG0L4jat9qB2ave0282Y,1138
+yfcc100m-1.0.0.dist-info/METADATA,sha256=4zd04RgkfIgO1Zo2Z3_1F4VP_UtrqTYzPtyZ20Gu5xY,5882
+yfcc100m-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+yfcc100m-1.0.0.dist-info/top_level.txt,sha256=3VGgVqHd0sBXqjwfrsH7in7d013cNupu01ddmVlApuk,9
+yfcc100m-1.0.0.dist-info/RECORD,,
