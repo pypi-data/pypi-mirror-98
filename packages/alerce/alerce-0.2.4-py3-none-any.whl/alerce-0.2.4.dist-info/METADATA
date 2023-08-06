@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: alerce
+Version: 0.2.4
+Summary: Package to access to ALeRCE data
+Home-page: https://github.com/alercebroker/alerce_client
+Author: ALeRCE Team
+Author-email: contact@alerce.online
+License: MIT
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: pandas (>=0.24.2)
+Requires-Dist: ipython (==5.8.0)
+Requires-Dist: numpydoc (==0.9.1)
+Requires-Dist: astropy (==3.2.1)
+
+UNKNOWN
+
+
