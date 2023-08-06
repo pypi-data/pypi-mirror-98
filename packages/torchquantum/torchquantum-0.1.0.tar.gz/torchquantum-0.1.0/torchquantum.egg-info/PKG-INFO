@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: torchquantum
+Version: 0.1.0
+Summary: A PyTorch-centric hybrid classical-quantum dynamic neural networks framework.
+Home-page: https://github.com/Hanrui-Wang/pytorch-quantum
+Author: Hanrui Wang
+Author-email: hanruiwang.hw@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
