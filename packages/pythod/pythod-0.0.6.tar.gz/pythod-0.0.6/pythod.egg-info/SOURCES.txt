@@ -1,0 +1,13 @@
+README.md
+setup.py
+pythod/__init__.py
+pythod/configuration.py
+pythod/configuration_deserializer.py
+pythod/content.py
+pythod/main.py
+pythod/organizer.py
+pythod.egg-info/PKG-INFO
+pythod.egg-info/SOURCES.txt
+pythod.egg-info/dependency_links.txt
+pythod.egg-info/entry_points.txt
+pythod.egg-info/top_level.txt
