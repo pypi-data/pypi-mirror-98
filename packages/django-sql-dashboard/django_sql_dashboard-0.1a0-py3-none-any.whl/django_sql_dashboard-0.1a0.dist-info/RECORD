@@ -1,0 +1,10 @@
+django_sql_dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sql_dashboard/admin.py,sha256=8IA--TI2gzePqYR3HLnKWGcdvuKlznoSDzwvug-3lOU,293
+django_sql_dashboard/apps.py,sha256=qVU8SJ8VP0Akr6FFAVPTRR99bdttY-UdR5uCYe4JsyM,113
+django_sql_dashboard/models.py,sha256=3yxSB4rnDCYzLUiqzORXd-ZIYWZ--kzbS3PfSbjdYsQ,685
+django_sql_dashboard/views.py,sha256=bzNW4TH992XH-pgQA3RitMPsgCyBQcPFKEEo2izexYY,3950
+django_sql_dashboard-0.1a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_sql_dashboard-0.1a0.dist-info/METADATA,sha256=svWlqrkD33xSMsLxuh1XsgxOUJBBAdqqYkCTePc6QwA,2482
+django_sql_dashboard-0.1a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_sql_dashboard-0.1a0.dist-info/top_level.txt,sha256=qVYDrWnT5WcAzHuXX5NBwE5IpXzuGoJUmYjCu9bdtQI,21
+django_sql_dashboard-0.1a0.dist-info/RECORD,,
