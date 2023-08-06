@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: 11l
+Version: 2021.3
+Summary: A Python implementation of transpilers Python → 11l and 11l → C++
+Home-page: http://11l-lang.org
+Author: Alexander Tretyak
+Author-email: alextretyak@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
