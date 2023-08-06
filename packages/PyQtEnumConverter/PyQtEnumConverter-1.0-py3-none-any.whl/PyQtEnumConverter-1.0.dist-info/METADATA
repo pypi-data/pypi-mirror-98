@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: PyQtEnumConverter
+Version: 1.0
+Summary: Converts enums from PyQt5 to PyQt6
+Home-page: https://gitlab.com/JakobDev/PyQtEnumConverter
+Author: JakobDev
+Author-email: jakobdev@gmx.de
+License: GPL v3
+Project-URL: Issue tracker, https://gitlab.com/JakobDev/PyQtEnumConverter/-/issues
+Keywords: JakobDev,PyQt5,PyQt6,enum,update,port
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Other Environment
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Games/Entertainment
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt6
+Provides-Extra: convert_enums_from_qscintilla
+Requires-Dist: PyQt6-QScintilla ; extra == 'convert_enums_from_qscintilla'
+
+# PyQtEnumConverter
+
+PyQt6 changes the usage of enums. Here are some examples:
+```python
+#PyQt5
+QLayout.SetFixedSize
+#PyQt6
+QLayout.SizeConstraint.SetFixedSize
+
+#PyQt5
+Qt.IgnoreAspectRatio
+#PyQt6
+Qt.AspectRatioMode.IgnoreAspectRatio
+```
+To change all of this is a lot of work when you port a big project from PyQt5 to PyQt6. To help porting I had written this little script that does the work for you. It works with files and directories, which are parsed recursive.
+```
+Usage: PyQtEnumConverter <file/directory>
+```
+This is a little script that I had written in a few hours. It may not work perfect and there's no warranty that it will not damage your project. It uses simple text replacement, so as imports are not supported. Please make a backup of your project before using it.
+
+
