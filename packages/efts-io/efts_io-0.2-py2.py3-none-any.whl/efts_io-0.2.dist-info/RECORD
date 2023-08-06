@@ -1,0 +1,13 @@
+efts_io/__init__.py,sha256=IE8480frXEwU-U4AKPWiq0DapA6D93S2oimP-ri_tBI,49
+efts_io/_internals.py,sha256=KG12QZ29XP8DJasKCkl4g_aDFOc-z5-g3py6x1ipzw4,4806
+efts_io/_version.py,sha256=QZmPftU1XIVlxmZw5pUKOfHoxWXBXFZ1bp52rf-QCcQ,154
+efts_io/attributes.py,sha256=G4aSDYDaEVRITJ_ZrLzKbHeoNrMUI3fAsT9Iwz6Zl8c,4736
+efts_io/conventions.py,sha256=3pl6SWu0gRSa3bc8R8UOdzGktY2KcTFY35Nrkfivfls,1405
+efts_io/dimensions.py,sha256=9KICkYHLue-q_eSHoM3n5bGlTfgP1ZJ-wb9EmmU7jeM,11970
+efts_io/variables.py,sha256=ULUWtfjWtBA6ffd0up2FtPHnn-7bGvw9hHw8FCIKd24,12060
+efts_io/wrapper.py,sha256=zK-WCcbfLsT_ZcgrdE4gYQCG3hJ8LFyfHWZhC_7OBb0,25257
+efts_io-0.2.dist-info/LICENSE.txt,sha256=VsWFztNDqxtF4Tsi0_p3k4DbtpzykVSgSgNwj220J1Y,3374
+efts_io-0.2.dist-info/METADATA,sha256=ETvgnInvOOG1Ceag04Ovh3RPCBY41Wp60X-6Rr-lfi4,2772
+efts_io-0.2.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+efts_io-0.2.dist-info/top_level.txt,sha256=9_IkKJkFH1kWFOebnJc7CeXfLQHa9uEVWfZ9Ir51bi4,8
+efts_io-0.2.dist-info/RECORD,,
