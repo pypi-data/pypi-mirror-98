@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: feel-it
+Version: 0.1.1
+Summary: A python package for sentiment analysis and emotion recognition in italian
+Home-page: https://github.com/MilaNLProc/feel_it
+Author: Federico Bianchi
+Author-email: f.bianchi@unibocconi.it
+License: MIT license
+Description: ======================================================================
+        FEEL-IT: Emotion and Sentiment Classification for the Italian Language
+        ======================================================================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/feel_it.svg
+                :target: https://pypi.python.org/pypi/feel_it
+        
+        .. image:: https://readthedocs.org/projects/feel-it/badge/?version=latest
+                :target: https://feel-it.readthedocs.io/en/latest/?version=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        
+        
+        Abstract
+        --------
+        
+        Sentiment analysis is a common task to understand people's reactions online. Still, we often need more nuanced information: is the post negative because the user is angry or because they are sad?
+        
+        An abundance of approaches has been introduced for tackling both tasks. However, at least for Italian, they all treat only one of the tasks at a time. We introduce FEEL-IT, a novel benchmark corpus of Italian Twitter posts annotated with four basic emotions: anger, fear, joy, sadness. By collapsing them, we can also do sentiment analysis. We evaluate our corpus on benchmark datasets for both emotion and sentiment classification, obtaining competitive results.
+        
+        We release an open-source Python library, so researchers can use a model trained on FEEL-IT for inferring both sentiments and emotions from Italian text.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://feel-it.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-03-17)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: feel_it
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
