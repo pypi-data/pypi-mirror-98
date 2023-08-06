@@ -1,0 +1,17 @@
+odoo/addons/sale_report_margin/README.rst,sha256=B0YL6ATTcc_5LjQpcSqM3Tsg8MlH6msvGO3oUq0J4DY,3306
+odoo/addons/sale_report_margin/__init__.py,sha256=vNQQFpxcSZjtiz5aCVyNQ3n894NIOOzMF6ZRRhlyqLw,22
+odoo/addons/sale_report_margin/__manifest__.py,sha256=wL2-vxxs7-IYei5n4oEH7dgno3yT5PoQBc_0TzB3YL0,514
+odoo/addons/sale_report_margin/i18n/pt_BR.po,sha256=779arneYkDyxWMRS6RGf5KxHM27uAT2exErxmoysGwc,727
+odoo/addons/sale_report_margin/i18n/sale_report_margin.pot,sha256=zPKBvQaqNcoL8WZNlQFTqrlpbwG3l4P1f_gnQHCaxq8,658
+odoo/addons/sale_report_margin/readme/CONTRIBUTORS.rst,sha256=cAkMnEIZeczOa-FO_GR5R7-hAuSdrp0kVBpjdl8GTvo,88
+odoo/addons/sale_report_margin/readme/DESCRIPTION.rst,sha256=T3AWGfbrdcCQnUCJ4Fd_9OvE1Pb0Ey-gnfANLjlhTO8,168
+odoo/addons/sale_report_margin/readme/ROADMAP.rst,sha256=88PmqljxTIBMCbEoNqHt2bmXceYeU_axNEkvM6YoN3Y,44
+odoo/addons/sale_report_margin/readme/USAGE.rst,sha256=UNG7PL9_Q5DgiDQb3cTwoyxqkUmtTWXrKFJiM2Jteh8,84
+odoo/addons/sale_report_margin/reports/__init__.py,sha256=ByYRbiCY7uWnvbKwYusgp99HtcOyGnzWogDif_GEsec,26
+odoo/addons/sale_report_margin/reports/sale_report.py,sha256=SNU33YtyUzFZzFJvQvMdyQSgKPAFCXsm1JEnfjqmZ0E,751
+odoo/addons/sale_report_margin/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_report_margin/static/description/index.html,sha256=hGC_l0D_Vq-kwyIYYCwVLM5x-vxnf4s3kPz4WCEj49c,12950
+odoo12_addon_sale_report_margin-12.0.1.0.0.99.dev2.dist-info/METADATA,sha256=eONJJUkmzm-OFlbLRxDeNIeRku6q4Fb5X5qW6Eyd9yE,3867
+odoo12_addon_sale_report_margin-12.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo12_addon_sale_report_margin-12.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sale_report_margin-12.0.1.0.0.99.dev2.dist-info/RECORD,,
