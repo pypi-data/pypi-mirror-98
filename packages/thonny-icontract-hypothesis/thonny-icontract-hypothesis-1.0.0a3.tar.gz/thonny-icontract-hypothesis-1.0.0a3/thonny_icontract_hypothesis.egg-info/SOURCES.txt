@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+requirements.txt
+setup.py
+thonny_icontract_hypothesis.egg-info/PKG-INFO
+thonny_icontract_hypothesis.egg-info/SOURCES.txt
+thonny_icontract_hypothesis.egg-info/dependency_links.txt
+thonny_icontract_hypothesis.egg-info/requires.txt
+thonny_icontract_hypothesis.egg-info/top_level.txt
+thonnycontrib/thonny_icontract_hypothesis/__init__.py
+thonnycontrib/thonny_icontract_hypothesis/py.typed
