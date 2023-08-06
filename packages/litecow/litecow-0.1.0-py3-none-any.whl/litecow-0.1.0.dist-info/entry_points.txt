@@ -1,0 +1,3 @@
+[console_scripts]
+litecow-service=litecow.server:main
+

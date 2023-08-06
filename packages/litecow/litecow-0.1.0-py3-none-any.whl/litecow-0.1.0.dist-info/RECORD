@@ -1,0 +1,12 @@
+litecow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litecow/client.py,sha256=LR90Kkjg_5OcR11l-T54JUegmwNnCGXL17mdT-LA1Fg,2509
+litecow/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litecow/common/common.py,sha256=fcpRhxFvAs0hbET2pEemVKixptL0T9q-mmCR-xKCVqw,3200
+litecow/common/litecow.proto,sha256=U5j01DoZgZhkh_A1k_oFPJAMjjGmpf3bwDY71NJ-IZo,1745
+litecow/common/litecow_pb2.py,sha256=ObmkE1O1PkUZY_1o6G-oOjfluT0fep048JscCUhfCMw,19103
+litecow/common/litecow_pb2_grpc.py,sha256=BRkmcAxAqWLVyyS65sytvq0FLfyF0TJZwP1vkRqwMIg,2535
+litecow/server.py,sha256=chNppPsrF2z0jjMzV-Sum6zW8It3RZ_5uXvdRD85BTg,8293
+litecow-0.1.0.dist-info/entry_points.txt,sha256=xXs6q8BZwOe4omfpoZH4xcUG0aO0JmtK1SoQ9_BDhQA,55
+litecow-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+litecow-0.1.0.dist-info/METADATA,sha256=_KOr58i8m1IgM37TroOFlZWA15705KmE7pqvlU2FlFg,740
+litecow-0.1.0.dist-info/RECORD,,
