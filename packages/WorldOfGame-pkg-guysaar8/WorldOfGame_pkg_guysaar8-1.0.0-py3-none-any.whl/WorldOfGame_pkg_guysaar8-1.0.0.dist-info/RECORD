@@ -1,0 +1,16 @@
+worldofgames/CurrencyRoulette.py,sha256=F-pRtrxZehiv2QtFmFJLixxdsoF6Me1W1gjljEfKhRQ,5930
+worldofgames/GuessGame.py,sha256=lFRlVUOp14Cn4IlnXFXDBw91qmuCi_fX3jzIbqqSOac,5701
+worldofgames/Live.py,sha256=KcVkxYdfSW6zzkreXXMLz4ZKZHtLaZpmjIRY4JjICDY,5984
+worldofgames/MainGame.py,sha256=G91N3x-UusJcrZnAXmB2GMF-og8TsmOxCJh-Qxv9KrQ,749
+worldofgames/ManegeGame.py,sha256=BnRGmgk5uPleqx8GEosGXAUFRoaiEGqMpQfsHd9_nLE,3256
+worldofgames/MemoryGame.py,sha256=7G58HbQ4y-fQ1EWfhB27FD9BsUuLOHXdRCLvi5wwkgc,4354
+worldofgames/UserAccount.py,sha256=yzH9H3Du8Z6e311nIFpzZNUpeZ-WeKSXzGnUmcTdXl8,1577
+worldofgames/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worldofgames/account_db.json,sha256=3ZNeH6MmI6NKEj1yPnuSDjxmTHp8B5H2aYQEwleBZSc,115
+worldofgames/main.py,sha256=38MYNcBFTDhbE0oWxF2NHavClShcfkAYZUugljLN-hE,528
+WorldOfGame_pkg_guysaar8-1.0.0.dist-info/LICENSE,sha256=MnA-L_kVPpDLJANyFsWzyYi8UkIFMJR8HjSlUWTJJIw,1061
+WorldOfGame_pkg_guysaar8-1.0.0.dist-info/METADATA,sha256=6uQO_2wTGKKc6GvfNzCAU11YEz7n3LYBi6qtZwCRVys,583
+WorldOfGame_pkg_guysaar8-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+WorldOfGame_pkg_guysaar8-1.0.0.dist-info/entry_points.txt,sha256=gglPV2u0K9Vkp6RuqhILtbKkCktJLg8ro0by8ntp4nE,60
+WorldOfGame_pkg_guysaar8-1.0.0.dist-info/top_level.txt,sha256=m947a_eN8iL2faP1uTF7nC5skEJ0APON579vpuvzg0U,13
+WorldOfGame_pkg_guysaar8-1.0.0.dist-info/RECORD,,
