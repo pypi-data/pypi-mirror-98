@@ -1,0 +1,15 @@
+peppercorn
+statistics
+pandas
+numpy
+scipy
+sklearn
+matplotlib
+Cython
+category_encoders
+
+[dev]
+check-manifest
+
+[test]
+coverage
