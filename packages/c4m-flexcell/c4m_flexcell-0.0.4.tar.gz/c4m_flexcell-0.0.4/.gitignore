@@ -1,0 +1,5 @@
+*.pyc
+.coverage
+
+.vscode
+.ipynb_checkpoints
