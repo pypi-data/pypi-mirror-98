@@ -1,0 +1,16 @@
+.DS_Store,sha256=V_Rsg9MFXku275l94LD-VlvuEpK4cpAxZCbQLrnesck,6148
+hydraflask/.DS_Store,sha256=O5MejKsw-hyXNu3bQynTAp5g-NBfGdrVNUJd_ovnFTU,6148
+hydraflask/__init__.py,sha256=5ia1J0Wyi8OLdFsbuWjGzQKUuCA-d7nOdGg2BHICpBM,24
+hydraflask/__main__.py,sha256=i5_DNo8wVDY5bpgOKogvPUzsEgM6zkvGwPXjB-sndvo,1675
+hydraflask/hydra.py,sha256=hcmTYR8x1j_nvdjUKyzY9NPj2iFYJMq14XyRY92Vxm8,18545
+hydraflask/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydraflask/templates/base_template.txt,sha256=QXWshkoVyD0ay6JcpIE27iNIapnlc9nas-_gDqveI44,616
+hydraflask/templates/config_template.txt,sha256=m0lhmO6ZOfCShPNUdPFnE6zON3J-NPA_RTmuXMohQjk,229
+hydraflask/templates/form_template.txt,sha256=CUGENMEMtVYJ7fgd3sw2Fw-AX2D9mN_CltMMqjNmkmY,473
+hydraflask/templates/requirements_template.txt,sha256=urtw6qy3Sk8AcrHjNb_fFCq6TCWJVEAx1MV8zJw26Hc,193
+hydraflask/templates/theme_template.txt,sha256=XQPYQxf5H_uUVFPvyX1LKQfYAVA_xAwjaK-SGO7J0YE,19
+hydraflask-0.2.0.dist-info/LICENSE,sha256=RAfnQo0bsX5lZ8liFfkfg8H5OW_EBPN95pUw700xlyM,1071
+hydraflask-0.2.0.dist-info/METADATA,sha256=l2qoDZPrg3Z2H2vTPBa2Z1wOjEoFItR1uyT6SmnlJpM,702
+hydraflask-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hydraflask-0.2.0.dist-info/top_level.txt,sha256=Dx6T8u1BRDGS0F-VnoKYI9lpZF-UP4-b5tcCEZ8-ias,11
+hydraflask-0.2.0.dist-info/RECORD,,
