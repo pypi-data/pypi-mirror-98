@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: openstuder-client
+Version: 0.3.0
+Summary: Python client to connect to OpenStuder gateway via WebSocket
+Home-page: http://openstuder.github.io
+Author: Michael Clausen
+Author-email: michael.clausen@hevs.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client (>=0.57)
+
+https://github.com/OpenStuder/openstuder-client-python 
+
+![GitHub](https://img.shields.io/pypi/v/openstuder-client.svg)
+![GitHub](https://img.shields.io/github/license/openstuder/openstuder-client-python)
+![GitHub](https://img.shields.io/github/issues-raw/openstuder/openstuder-client-python)
+
+See the [documentation](http://openstuder.github.io/#/clientlibs) on how to install and use the python client library. 
+
+
