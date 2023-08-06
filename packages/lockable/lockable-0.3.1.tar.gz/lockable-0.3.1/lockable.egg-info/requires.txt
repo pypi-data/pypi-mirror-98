@@ -1,0 +1,11 @@
+pid
+pydash
+
+[dev]
+nose
+coveralls
+pylint
+coverage
+
+[optional]
+pytest-metadata
