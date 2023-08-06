@@ -1,0 +1,17 @@
+openpyxl
+click
+coloredlogs<=14.0
+eventlet
+flask-cors
+Flask>=1.0.2
+flask_socketio==4.3.2
+flask-talisman
+flask-restful
+gunicorn
+networkx
+panphon
+pyyaml
+regex
+requests
+tqdm
+unidecode
