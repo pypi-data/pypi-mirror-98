@@ -1,0 +1,10 @@
+django_softdelete/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_softdelete/admin.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_softdelete/models.py,sha256=3cf-OAog_VCbb6_RgoKOH70LHA7QZeafHTfD40KGcuA,4200
+django_softdelete/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_softdelete/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_soft_delete-0.9.16.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_soft_delete-0.9.16.dist-info/METADATA,sha256=ssjpKWBgox6KcYb41yqTB07ZulLVua9d43wvLwl8l_s,3081
+django_soft_delete-0.9.16.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+django_soft_delete-0.9.16.dist-info/top_level.txt,sha256=kqx81juZPp7FeoWFryCrd4BIAanlDXFunc08HToaRmk,18
+django_soft_delete-0.9.16.dist-info/RECORD,,
