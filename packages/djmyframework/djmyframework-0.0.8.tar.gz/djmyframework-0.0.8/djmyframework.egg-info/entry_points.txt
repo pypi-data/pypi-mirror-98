@@ -1,0 +1,3 @@
+[console_scripts]
+djmyframework_init = djmyframework.scripts.init:init_djframework
+
