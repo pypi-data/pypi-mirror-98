@@ -1,0 +1,10 @@
+hyperopt
+lightgbm
+matplotlib
+numba
+numpy>=1.16.5
+pandas
+scikit-learn>=0.22
+scipy
+seaborn
+shap
