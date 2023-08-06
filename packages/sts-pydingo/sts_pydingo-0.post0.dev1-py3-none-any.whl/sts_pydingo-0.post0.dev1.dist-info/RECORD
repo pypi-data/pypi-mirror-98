@@ -1,0 +1,8 @@
+pydingo/__init__.py,sha256=Yb8jJdgSr84MWQ0-vYRKRAc7hl7Bhc-BPxcDlzYI7DM,216
+pydingo/_version.py,sha256=-bGltul75VGdoDls2v3xXYEHCTOup_yF6knlhdP6E4M,18665
+pydingo/client.py,sha256=LBwmQz2u2A_Vs_M5E9dWKiGuDmiNtED4JHawXoXzov4,932
+pydingo/client_stub.py,sha256=e6-qsdebTVDujjHYSTqMT657kinI9a9JYHHlPxpEbRw,2250
+sts_pydingo-0.post0.dev1.dist-info/METADATA,sha256=ugCCP6024CcHPgpyJZtEgJN38bZPGioVWJPt_oqzmRc,204
+sts_pydingo-0.post0.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sts_pydingo-0.post0.dev1.dist-info/top_level.txt,sha256=lJ3cR-9Ku6MuZYBpFgxtNVfZzcvKbEoGPYL69Fouxlw,8
+sts_pydingo-0.post0.dev1.dist-info/RECORD,,
