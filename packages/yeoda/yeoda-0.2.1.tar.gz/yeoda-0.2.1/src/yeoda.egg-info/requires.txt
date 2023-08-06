@@ -1,0 +1,11 @@
+regex
+geopandas
+pytileproj==0.0.12
+Equi7Grid==0.0.10
+veranda==0.1.0
+geopathfinder==0.0.7
+
+[testing]
+pytest-cov
+coverage==4.5.2
+pytest==3.8.2
