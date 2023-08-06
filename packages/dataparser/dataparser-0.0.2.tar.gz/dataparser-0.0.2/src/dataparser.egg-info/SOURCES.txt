@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/dataparser/__init__.py
+src/dataparser/parser.py
+src/dataparser.egg-info/PKG-INFO
+src/dataparser.egg-info/SOURCES.txt
+src/dataparser.egg-info/dependency_links.txt
+src/dataparser.egg-info/top_level.txt
