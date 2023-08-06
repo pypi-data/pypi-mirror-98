@@ -1,0 +1,12 @@
+enrichwrap/__init__.py,sha256=D3Ngh3STnNFsJLk20HrRWQV0wmqvryxX-88KxehBov4,101
+enrichwrap/command_line.py,sha256=cw3NfIDdPtz_tzK6i-yFXFuPd_mMmA_VNc2UbiBi2c4,156
+enrichwrap/text.py,sha256=9Yq2rTowbtsH9wj0eoDVvc5__BZfRrkMKCZwH2l2P78,397
+enrichwrap/samples/input.json,sha256=UkT5HQIxRsdTccRfSzYGxpMM2oeYnBel3BaLC2l5k3c,1243
+enrichwrap/samples/json_dict.json,sha256=1G6BYQ7ZZaDPPZY0jhEEh3dmvi10kYCpME_T-nBPZtg,7806
+enrichwrap/samples/sample_input.json,sha256=1PC0-JxcgTXyx9t1mS3W-fnlnbhQNh5_Xt0HnqxaDy4,3674
+enrichwrap-0.0.10.data/scripts/enrichwrap,sha256=kE-69hH9Xbh6KbTeV9n_HMnSfqCZrLg-6tVQUWP8X04,70
+enrichwrap-0.0.10.dist-info/METADATA,sha256=LEtP-S42hVEVPnskGD5xmBmH791dhvc5hxzlk1Usq1c,1719
+enrichwrap-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+enrichwrap-0.0.10.dist-info/entry_points.txt,sha256=AAnE_BeFti0qjAmst-IbmsnvT0IO7yUeiot-EzASqLo,61
+enrichwrap-0.0.10.dist-info/top_level.txt,sha256=VDgz2UnGz8ANN8xyBq0vzaTxbfFrJuu2XKpKjD7pP1I,11
+enrichwrap-0.0.10.dist-info/RECORD,,
