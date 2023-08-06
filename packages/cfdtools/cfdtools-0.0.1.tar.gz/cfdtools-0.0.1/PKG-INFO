@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cfdtools
+Version: 0.0.1
+Summary: Tools for mesh and solution management in CFD
+Home-page: https://github.com/jgressier/cfdtools
+License: MIT
+Author: j.gressier
+Author-email: jeremie.gressier@isae-supaero.fr
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy (>=1.15,<2.0)
+Project-URL: Documentation, https://cfdtools.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/jgressier/cfdtools
