@@ -1,0 +1,22 @@
+.idea/*
+.DS_Store
+.AppleDouble
+.LSOverridec
+.AppleDB
+.AppleDesktop
+.Trashes
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# vim swap files
+*.swp
+# C extensions
+*.so
+tests/test_files/test_content/populate_test_content.py
+temp/
+dist/
+build/
+*.egg-info/
