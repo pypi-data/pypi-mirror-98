@@ -1,0 +1,9 @@
+Wasserstein.libs/libgomp-2716b9e4.so.1.0.0,sha256=YAjX69EB8kRSeoeBFWS1bkLcR0TmwjQn-4lZte_ult0,97188
+wasserstein/wasserstein.py,sha256=e0MNsvkBXixDMvmjZObvZqTZ30I59JNtjcpOTJPZHD4,28364
+wasserstein/_wasserstein.cpython-38-i386-linux-gnu.so,sha256=Ii8UA2cWmaUoILuFXSbl4sGaIesQS-Szewynras9EcY,4515276
+wasserstein/__init__.py,sha256=f-3-MwxUaAL6K6zpK5lk1AXuQ-8kfbzd5o0Eg8eNG2o,2394
+Wasserstein-0.3.3.dist-info/METADATA,sha256=-GWe8_6C8J6eOvWDVJVgsn1WhVKZA9ewml1HvaCf-Ks,1000
+Wasserstein-0.3.3.dist-info/RECORD,,
+Wasserstein-0.3.3.dist-info/top_level.txt,sha256=0FwkDx4xC33hHjr2XwadzvCHKVjIUA3aFpMfMbBhmLE,12
+Wasserstein-0.3.3.dist-info/WHEEL,sha256=NQ46lJmNp-_xwXu8_Oti6rW9yl7WcToKW6bPH5tS9tY,109
+Wasserstein-0.3.3.dist-info/LICENSE,sha256=4lSoVDgxAbEitqiYyUNA0fWK-74K09_qyGhLFFCSs0w,41554
