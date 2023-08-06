@@ -1,0 +1,8 @@
+README.md
+setup.py
+Typedtuples.egg-info/PKG-INFO
+Typedtuples.egg-info/SOURCES.txt
+Typedtuples.egg-info/dependency_links.txt
+Typedtuples.egg-info/top_level.txt
+typedtuples/__init__.py
+typedtuples/typedtuples.py
