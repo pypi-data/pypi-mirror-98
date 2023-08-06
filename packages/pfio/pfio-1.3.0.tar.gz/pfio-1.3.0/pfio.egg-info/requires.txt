@@ -1,0 +1,14 @@
+pyarrow==3.0.0
+boto3
+
+[doc]
+sphinx
+sphinx_rtd_theme
+
+[test]
+pytest
+flake8
+autopep8
+parameterized
+isort
+moto
