@@ -1,0 +1,13 @@
+COPYING.txt
+MANIFEST.in
+README.md
+cdiffer.c
+cdiffer.h
+platname.py
+setup.cfg
+setup.py
+cdiffer.egg-info/PKG-INFO
+cdiffer.egg-info/SOURCES.txt
+cdiffer.egg-info/dependency_links.txt
+cdiffer.egg-info/top_level.txt
+test/test_cdiffer.py
