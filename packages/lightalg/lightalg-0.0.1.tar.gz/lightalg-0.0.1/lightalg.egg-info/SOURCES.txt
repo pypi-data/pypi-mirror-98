@@ -1,0 +1,8 @@
+README.md
+setup.py
+lightalg.egg-info/PKG-INFO
+lightalg.egg-info/SOURCES.txt
+lightalg.egg-info/dependency_links.txt
+lightalg.egg-info/entry_points.txt
+lightalg.egg-info/requires.txt
+lightalg.egg-info/top_level.txt
