@@ -1,0 +1,9 @@
+README.md
+setup.py
+ODTtoText/__init__.py
+ODTtoText/odtreader.py
+ODTtoText/win32_unicode_argv.py
+ODTtoText.egg-info/PKG-INFO
+ODTtoText.egg-info/SOURCES.txt
+ODTtoText.egg-info/dependency_links.txt
+ODTtoText.egg-info/top_level.txt
