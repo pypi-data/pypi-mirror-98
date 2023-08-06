@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=QvO3wFIwTtch3TZHNsx3xOGlhGck455lQBpSlVVWpEo,59
+cookiebanner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cookiebanner/locale/de/LC_MESSAGES/django.mo,sha256=9l_UVKVbcm3mRpadwYEMjqye3NAuXasDaw16mTDtGS8,517
+cookiebanner/locale/de/LC_MESSAGES/django.po,sha256=Dik_iE644PrhUGxvhkvc1qyLpr6QyqEJhFcPaGaUa4o,897
+cookiebanner/templates/cookiebanner/bootstrap4.html,sha256=OiTa1W5hXZpDjaENCwc7sSwnRKSpUEgJwC9m1u8COlI,5780
+cookiebanner/templatetags/cookiebanner.py,sha256=idlAZJ_xBPXibR6bZfkQoVD5mV9qTqwM43FxP8T-UEA,1831
+django_cookiebanner-0.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+django_cookiebanner-0.2.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_cookiebanner-0.2.4.dist-info/METADATA,sha256=KmxOoFOcLZp8biIXEvXPLu-L9RfpuRuNsSwHA5cLonM,2566
+django_cookiebanner-0.2.4.dist-info/RECORD,,
