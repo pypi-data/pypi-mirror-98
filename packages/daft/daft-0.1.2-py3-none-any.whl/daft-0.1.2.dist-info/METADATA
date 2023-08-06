@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: daft
+Version: 0.1.2
+Summary: PGM rendering at its finest
+Home-page: http://daft-pgm.org
+Author: Daft Developers
+Author-email: danfm@nyu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: setuptools
+Provides-Extra: docs
+Requires-Dist: myst-nb ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: jupytext ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+.. image:: https://raw.github.com/dfm/daft/master/images/logo.png
+
+**Daft** is a Python package that uses `matplotlib <http://matplotlib.org/>`_
+to render pixel-perfect *probabilistic graphical models* for publication
+in a journal or on the internet. With a short Python script and an intuitive
+model-building syntax you can design directed and undirected graphs and save
+them in any formats that matplotlib supports.
+
+Get more information at: `docs.daft-pgm.org <https://docs.daft-pgm.org>`_
+*************************************************************************
+
+
