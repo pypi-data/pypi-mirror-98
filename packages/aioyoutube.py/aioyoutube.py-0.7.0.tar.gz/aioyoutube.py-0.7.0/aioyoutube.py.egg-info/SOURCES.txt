@@ -1,0 +1,12 @@
+setup.py
+aioyoutube/__init__.py
+aioyoutube/client.py
+aioyoutube/exceptions.py
+aioyoutube/http.py
+aioyoutube/parse.py
+aioyoutube/valid.py
+aioyoutube.py.egg-info/PKG-INFO
+aioyoutube.py.egg-info/SOURCES.txt
+aioyoutube.py.egg-info/dependency_links.txt
+aioyoutube.py.egg-info/requires.txt
+aioyoutube.py.egg-info/top_level.txt
