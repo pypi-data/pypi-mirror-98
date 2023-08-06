@@ -1,0 +1,11 @@
+README.md
+setup.py
+elasticdb/__init__.py
+elasticdb/create.py
+elasticdb/delete.py
+elasticdb/retrieve.py
+elasticdb/update.py
+elasticdb.egg-info/PKG-INFO
+elasticdb.egg-info/SOURCES.txt
+elasticdb.egg-info/dependency_links.txt
+elasticdb.egg-info/top_level.txt

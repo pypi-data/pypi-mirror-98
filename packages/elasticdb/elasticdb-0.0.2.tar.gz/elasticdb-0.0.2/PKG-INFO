@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: elasticdb
+Version: 0.0.2
+Summary: Use Elasticsearch as a database.
+Home-page: https://github.com/bellemanwesley/elasticdb
+Author: Wesley Belleman
+Author-email: bellemanwesley@gmail.com
+License: MIT
+Description: # elasticdb
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
