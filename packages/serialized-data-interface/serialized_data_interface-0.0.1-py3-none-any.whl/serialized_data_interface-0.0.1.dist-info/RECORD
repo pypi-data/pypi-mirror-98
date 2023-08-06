@@ -1,0 +1,8 @@
+interface_schema.py,sha256=OrdBVNxIQlHw3WgHUgzAEni2ubenMu-xNthw2-3CRlY,309
+provide_interface.py,sha256=8fnzzLUB7_bBwmCCoK1TB1LTfHqL7qbOOYqmzh2ZIgQ,821
+require_interface.py,sha256=tDRw-HQGgnHi_eZDWkFMB7CBLXQFdHeQU3BiRa1ldF4,2300
+serialized_data_interface-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+serialized_data_interface-0.0.1.dist-info/METADATA,sha256=EvccUvot1s9BEiP-dAGHGONrTmaR62qGpidCsV1aoZA,1271
+serialized_data_interface-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+serialized_data_interface-0.0.1.dist-info/top_level.txt,sha256=lfDX_k9t6jkGDMX6KIM5C2-vq81WYlJqU7tBZhoMKOs,53
+serialized_data_interface-0.0.1.dist-info/RECORD,,
