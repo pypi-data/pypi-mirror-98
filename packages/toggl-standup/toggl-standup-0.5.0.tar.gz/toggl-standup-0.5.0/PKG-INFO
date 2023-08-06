@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: toggl-standup
+Version: 0.5.0
+Summary: Removes the pain of using Toggl with Geekbot
+Home-page: https://github.com/jefftriplett/toggl-standup
+License: BSD-3-Clause
+Author: Jeff Triplett
+Author-email: jeff.triplett@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Requires-Dist: crayons (>=0.3.0,<0.4.0)
+Requires-Dist: humanfriendly (>=8.1,<9.0)
+Requires-Dist: maya (>=0.6.1,<0.7.0)
+Requires-Dist: togglwrapper (>=1.2.0,<2.0.0)
+Requires-Dist: typer (>=0.0.9,<0.0.10)
+Project-URL: Documentation, https://github.com/jefftriplett/toggl-standup
+Project-URL: Repository, https://github.com/jefftriplett/toggl-standup
+Description-Content-Type: text/markdown
+
+# Stand Up for Toggl
+
+This tool helps generate my daily Geekbot stand up report in an format which I may copy and paste into Slack.
+
+## Usage
+
+```shell
+$ export TOGGL_API_KEY="PASTE_YOUR_KEY_HERE"
+
+Usage: standup [OPTIONS] SLANG_DATE
+
+  Standup tool to help with Toggl
+
+Options:
+  --api-key TEXT
+  --show-duration / --no-show-duration
+  --show-time / --no-show-time
+  --timezone TEXT
+  --version / --no-version
+  --help                          Show this message and exit.
+  ```
+
+## To generate a report for yesterday
+
+```shell
+$ standup yesterday
+```
+
