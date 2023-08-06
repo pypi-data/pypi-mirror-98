@@ -1,0 +1,8 @@
+protoc_gen_validate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+protoc_gen_validate/validator.py,sha256=jhQagZDXWnC6oQzT5PV7ShqfsNaZ7xS4ESUWfY41D2M,44018
+protoc_gen_validate-0.4.1.data/data/data/validate.proto,sha256=SZp7KiBlj2QcLftTrpPady2L9MX8h8dzWekdJSQ8jZw,31270
+protoc_gen_validate-0.4.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+protoc_gen_validate-0.4.1.dist-info/METADATA,sha256=MdtDZ0ssz0JH3NVoBb_vYwIJ3vihe_tMdDM0_cKE7mA,1632
+protoc_gen_validate-0.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+protoc_gen_validate-0.4.1.dist-info/top_level.txt,sha256=_b_U2XCadzb-qO38BX5J0tEfzrP-nYg2GZAWbWnQ87s,20
+protoc_gen_validate-0.4.1.dist-info/RECORD,,
