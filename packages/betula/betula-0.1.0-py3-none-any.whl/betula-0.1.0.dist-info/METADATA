@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: betula
+Version: 0.1.0
+Summary: Optofluidic cell assay data analysis
+Home-page: UNKNOWN
+Author: Peter Vegh
+License: UNKNOWN
+Keywords: biology
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+Betula
+======
+
+Optofluidic cell assay data analysis.
+
+
+**Install:**
+
+.. code:: bash
+
+    pip install betula
+
+
+**Copyright:** Copyright 2021 Edinburgh Genome Foundry
+
+
