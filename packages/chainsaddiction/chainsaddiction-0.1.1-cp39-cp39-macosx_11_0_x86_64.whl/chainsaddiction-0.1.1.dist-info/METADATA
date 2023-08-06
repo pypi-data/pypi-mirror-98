@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: chainsaddiction
+Version: 0.1.1
+Summary: Discrete time, finit state space, stationary Hidden Markov Model.
+Home-page: https://gitlab.rrz.uni-hamburg.de/bal7668/chainsaddiction
+Author: Michael Blaß
+Author-email: mblass@posteo.net
+License: BSD 3-Clause License
+Project-URL: Source code, https://gitlab.rrz.uni-hamburg.de/bal7668/chainsaddiction
+Project-URL: Bug Tracker, https://gitlab.rrz.uni-hamburg.de/bal7668/chainsaddiction/-/issues
+Keywords: music,analysis,hmm
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: numpy (>='1.20')
+
+UNKNOWN
+
+
