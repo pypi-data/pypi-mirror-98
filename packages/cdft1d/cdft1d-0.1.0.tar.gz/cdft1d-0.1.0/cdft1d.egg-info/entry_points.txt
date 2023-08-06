@@ -1,0 +1,3 @@
+[console_scripts]
+rism = cdft1d.cli:rism
+
