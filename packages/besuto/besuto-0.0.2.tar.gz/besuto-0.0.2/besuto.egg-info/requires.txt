@@ -1,0 +1,8 @@
+pandas
+pillow
+tensorflow
+matplotlib
+scikit-learn
+keras_vggface
+mtcnn
+scikit-image
