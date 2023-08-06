@@ -1,0 +1,75 @@
+{# Project report revisions and evaluation
+ # Copyright (C) 2021  Nguyễn Gia Phong
+ #
+ # This file is part of Acanban.
+ #
+ # Acanban is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero General Public License as published
+ # by the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # Acanban is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero General Public License for more details.
+ #
+ # You should have received a copy of the GNU Affero General Public License
+ # along with Acanban.  If not, see <https://www.gnu.org/licenses/>.
+ #}
+
+{% extends 'project-tab.html' %}
+{% block tabbarlayout %}
+{{ tabbar('Report') }}
+{% endblock %}
+
+{% block tabcontent %}
+<div class=col-wide>
+  <h2>Report evaluation</h2>
+  {% if report.revisions %}
+    {% if for_student %}
+    <p><b>Grade:</b> {{ report.grade if report.grade else 'TBD' }}</p>
+    <div>
+      {{ report.comment | markdown | safe if report.comment }}
+    </div>
+    {% else %}
+    <form action=/p/{{ project.id }}/report/eval method=POST>
+      <label for=grade>Grade</label>
+      <input type=text name=grade id=grade value={{ report.grade }}>
+      <label for=comment>Comment</label>
+      <textarea name=comment id=comment>{{ report.comment }}</textarea>
+      {% if not for_student %}<button>Save evaluation</button>{% endif %}
+    </form>
+    {% endif %}
+  {% else %}
+  <div>
+    {% if for_student %}You {% else %}The students {% endif %} haven't uploaded
+    the report yet.
+  </div>
+  {% endif %}
+
+  <h2>Report revisions</h2>
+  {% if for_student %}
+  <form action=/p/{{ project.id }}/report/upload method=POST
+        enctype=multipart/form-data>
+    <input type=file name=file id=file>
+    <button>Upload new report</button>
+  </form>
+  {% endif %}
+
+  {% if revisions %}
+  {% for file in revisions %}
+  {% set uri = '/ipfs/' ~ file.cid ~ '?filename=' ~ file.name %}
+  <dl>
+    <dt>File</dt>
+    <dd><a href='{{ uri }}'>{{ file.name }}</a></dd>
+    <dt>Size</dt>
+    <dd>{{ file.size|naturalsize }}</dd>
+    <dt>Uploader</dt>
+    <dd>{{ file.user|userlink|safe }}</dd>
+    <dt>Revision</dt>
+    <dd>{{ file.time|naturaltime|safe }}</dd>
+  </dl>
+  {% endfor %}
+  {% endif %}
+</div>
+{% endblock %}

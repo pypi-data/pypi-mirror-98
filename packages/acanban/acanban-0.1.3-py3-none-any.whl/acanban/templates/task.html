@@ -1,0 +1,86 @@
+{# Task discussion page
+ # Copyright (C) 2021  Nguyễn Gia Phong
+ #
+ # This file is part of Acanban.
+ #
+ # Acanban is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero General Public License as published
+ # by the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # Acanban is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero General Public License for more div.
+ #
+ # You should have received a copy of the GNU Affero General Public License
+ # along with Acanban.  If not, see <https://www.gnu.org/licenses/>.
+ #}
+
+{% macro render_comment(comment, istask=false) -%}
+<div> <!-- forms are selected as adjacent to checkboxes to toggle -->
+  {{ comment.creator|userlink|safe }}
+  &bull;
+  {{ comment.created_on|naturaltime|safe }}
+  &bull;
+  {% set id = comment.created_on.timestamp() %}
+  <label for=toggle-{{ id }} class=reply-label>reply</label>
+  <input type=checkbox class=reply-toggle id=toggle-{{ id }}><br>
+  {{ (comment.description if istask else comment.content) | markdown | safe }}
+  <form action={{ route }}/reply/{{ id }} method=POST>
+    <textarea name=comment id=comment required></textarea>
+    <button>Save reply</button>
+  </form>
+</div>
+{%- endmacro %}
+
+{% extends 'project-tab.html' %}
+{% block tabbarlayout %}{{ tabbar('Tasks') }}{% endblock %}
+
+{% block tabcontent %}
+<div class=columns>
+  <form action=/p/{{ project.id }}/tasks/{{ task.index }}/edit method=POST
+        class=col-narrow>
+    <label for=name>Name</label>
+    <input type=text name=name id=name value='{{ task.name }}' required>
+    <label for=assignee>Assignee</label>
+    <select name=assignee id=assignee>
+      {%- for student in project.students %}
+      {%- if student == task.assigned_to %}
+      <option value={{ student }} selected>{{ student }}</option>
+      {%- else %}
+      <option value={{ student }}>{{ student }}</option>
+      {%- endif %}
+      {%- endfor %}
+    </select>
+    <label for=deadline>Deadline</label>
+    <input type=date name=deadline id=deadline
+           value={{ task.deadline.strftime('%Y-%m-%d') }} required>
+    <label for=status>Status</label>
+    <select name=status id=status>
+      {%- for status in ('todo', 'doing', 'done') %}
+      {%- if loop.index0 == task.status %}
+      <option value={{ loop.index0 }} selected>{{ status }}</option>
+      {%- else %}
+      <option value={{ loop.index0 }}>{{ status }}</option>
+      {%- endif %}
+      {%- endfor %}
+    </select>
+    <button>Save</button>
+  </form>
+
+  <div class=col-wide>
+    {{ render_comment(task, istask=true) }}
+    <div class=replies>
+      {%- for comment in task.replies recursive %}
+      {{ render_comment(comment) }}
+      {%- if comment.replies -%}
+      <div class=replies>
+        {{ loop(comment.replies) }}
+      </div>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </div>
+</div>
+{% endblock%}

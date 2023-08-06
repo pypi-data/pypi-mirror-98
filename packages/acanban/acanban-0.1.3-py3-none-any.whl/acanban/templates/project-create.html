@@ -1,0 +1,33 @@
+{# Project creation tab
+ # Copyright (C) 2021  Ngô Xuân Minh
+ # Copyright (C) 2021  Nguyễn Gia Phong
+ #
+ # This file is part of Acanban.
+ #
+ # Acanban is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero General Public License as published
+ # by the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # Acanban is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero General Public License for more details.
+ #
+ # You should have received a copy of the GNU Affero General Public License
+ # along with Acanban.  If not, see <https://www.gnu.org/licenses/>.
+ #}
+
+{% extends "base.html" %}
+{% block title %}Create Project{% endblock %}
+{% block content %}
+<form action=create method=POST class="col-wide">
+  <label for="name">Project name</label>
+  <input type=text name=name id=name required>
+  <label for="deadline">Deadline</label>
+  <input type=date name=deadline id=deadline required>
+  <label for="description">Description</label>
+  <textarea name=description id=description required></textarea>
+  <button>Create Project</button>
+</form>
+{% endblock %}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{# Base HTML template
+ # Copyright (C) 2020  Đào Dương Hoàng Long
+ # Copyright (C) 2020  Nguyễn Gia Phong
+ #
+ # This file is part of Acanban.
+ #
+ # Acanban is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero General Public License as published
+ # by the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # Acanban is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero General Public License for more details.
+ #
+ # You should have received a copy of the GNU Affero General Public License
+ # along with Acanban.  If not, see <https://www.gnu.org/licenses/>.
+ #}
+
+<html lang=en dir=ltr>
+  <meta charset=utf-8>
+  <meta name=viewport content='width=device-width, initial-scale=1'>
+  <link rel=apple-touch-icon sizes=180x180 href=/static/apple-touch-icon.png>
+  <link rel=icon type=image/png sizes=32x32 href=/static/favicon-32x32.png>
+  <link rel=icon type=image/png sizes=16x16 href=/static/favicon-16x16.png>
+  <link rel=manifest href=/static/site.webmanifest>
+  <link rel=stylesheet type=text/css href=/static/style.css?v={{ version() }}>
+  <title>{% block title %}{% endblock %}</title>
+  <body>
+    <nav>
+      <div id=nav-icons>
+        <a id=logo href=/>acanban.</a>
+        <label for=hamburger id=hambutton>&equiv;</label>
+      </div>
+      <input type=checkbox id=hamburger>
+
+      <div id=nav-entries>
+        {% if current_user.is_authenticated %}
+        <form id=search>
+          <input type=search placeholder=Search>
+          <input type=submit value=Go>
+        </form>
+        <a href=/p>Projects</a>
+        <a href=/t>Tasks</a>
+        {% endif %}
+        {% if current_user.is_authenticated %}
+        <a href='/u/{{ current_user.key }}' class=expand>My Profile</a>
+        <a href=/logout>Logout</a>
+        {% else %}
+        <a href=/login class=expand>Login</a>
+        <a href=/register>Register</a>
+        {% endif %}
+      </div>
+    </nav>
+    <h1>{{ self.title() }}</h1>
+    {% block content %}{% endblock %}
+  </body>
+</html>
