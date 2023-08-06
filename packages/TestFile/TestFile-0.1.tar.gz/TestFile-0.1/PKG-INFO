@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: TestFile
+Version: 0.1
+Summary: Hello-Test
+Home-page: https://github.com/V0il-ah/TestFile
+Author: Voila
+Author-email: your.email@domain.com
+License: MIT
+Download-URL: https://github.com/V0il-ah/TestFile/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
