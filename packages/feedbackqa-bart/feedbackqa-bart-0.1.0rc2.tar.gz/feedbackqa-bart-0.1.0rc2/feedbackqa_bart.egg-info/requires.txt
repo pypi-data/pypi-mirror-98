@@ -1,0 +1,7 @@
+torchtext==0.6.0
+parlai
+bert_reranker
+transformers
+torch
+numpy
+tqdm
