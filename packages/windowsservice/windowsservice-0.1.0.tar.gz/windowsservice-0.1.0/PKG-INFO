@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: windowsservice
+Version: 0.1.0
+Summary: A Python package for building Windows services.
+Home-page: https://github.com/hylkepostma/windowsservice
+Author: Hylke Postma
+Author-email: info@hylkeposta.nl
+License: MIT
+Description: UNKNOWN
+Keywords: python windows service pywin32 multiprocessing pyinstaller windowsservice
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9

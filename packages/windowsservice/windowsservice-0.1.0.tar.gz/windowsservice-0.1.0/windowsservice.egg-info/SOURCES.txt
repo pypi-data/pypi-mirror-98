@@ -1,0 +1,13 @@
+README.md
+setup.py
+windowsservice/__init__.py
+windowsservice/example_service.py
+windowsservice/example_service_multiprocessing.py
+windowsservice/service.py
+windowsservice/utils.py
+windowsservice.egg-info/PKG-INFO
+windowsservice.egg-info/SOURCES.txt
+windowsservice.egg-info/dependency_links.txt
+windowsservice.egg-info/not-zip-safe
+windowsservice.egg-info/requires.txt
+windowsservice.egg-info/top_level.txt
