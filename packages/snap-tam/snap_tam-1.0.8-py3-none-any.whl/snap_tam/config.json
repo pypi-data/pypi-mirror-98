@@ -1,0 +1,14 @@
+{
+  "onedrive_dir_path": "",
+  "input_dir_regexp": [
+    "SNAP_TAM_[0-9]{3}",
+    "SNAP_TAM_Interviewer"
+  ],
+  "worksheet_name": "Data Entry Log",
+  "duration_colnames": [
+    "Duration",
+    "Total Interaction Duration"
+  ],
+  "output_dirname_regexp": "SNAP_TAM_Aggregated",
+  "print_progress": false
+}

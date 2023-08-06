@@ -1,0 +1,11 @@
+snap_tam/__init__.py,sha256=DM1SlEdJkEuOVg621yr6WigC_eVJEDMD5_RrQYWBuMM,79
+snap_tam/__main__.py,sha256=pWfNn7WuIM6e2HcwMSAM0q6d-VsKgQyWuVobrkYdzPU,79
+snap_tam/aggregate_api.py,sha256=mRoD0-rerlwqjIOiLoeZf3UG2L50Z_XmqvA-cgWatNE,7847
+snap_tam/aggregate_filesystem.py,sha256=2g42y8iKuySVAqAeTynh8EPJZBHIhJXVp2BUAwUSGZA,5719
+snap_tam/cli.py,sha256=xPAvEyHuprwDnndrficIsje83YbyRYUON1c3yJkNnec,2052
+snap_tam/config.json,sha256=zpc7OhS7x75l8O7WdhRvkQlG7KDMMoSECZn6hX1Uz9U,304
+snap_tam-1.0.8.dist-info/METADATA,sha256=K1824TC-Ggmf1z9915mXVCK9SWBsy_5ldQKLjKq5sPw,2791
+snap_tam-1.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+snap_tam-1.0.8.dist-info/entry_points.txt,sha256=1n31AEG9XmQdxBVbG_W9A_lroyzX4Hs6bJ1uLnM0iHs,47
+snap_tam-1.0.8.dist-info/top_level.txt,sha256=fUck0Z95CkLiQFD7al9Vrz012cpie8lmFqrCKS2cAow,9
+snap_tam-1.0.8.dist-info/RECORD,,
