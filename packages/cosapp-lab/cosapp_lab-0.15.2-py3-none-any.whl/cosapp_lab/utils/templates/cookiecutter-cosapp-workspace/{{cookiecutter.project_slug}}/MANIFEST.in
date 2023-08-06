@@ -1,0 +1,17 @@
+include cosapp.json
+include environment.yaml
+include LICENSE
+include HISTORY.md
+include README.md
+
+recursive-include {{ cookiecutter.project_slug }}/drivers *
+recursive-include {{ cookiecutter.project_slug }}/ports *
+recursive-include {{ cookiecutter.project_slug }}/resources *
+recursive-include {{ cookiecutter.project_slug }}/studies *
+recursive-include {{ cookiecutter.project_slug }}/systems *
+recursive-include {{ cookiecutter.project_slug }}/tests *
+recursive-include {{ cookiecutter.project_slug }}/tools *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+prune **/.ipynb_checkpoints

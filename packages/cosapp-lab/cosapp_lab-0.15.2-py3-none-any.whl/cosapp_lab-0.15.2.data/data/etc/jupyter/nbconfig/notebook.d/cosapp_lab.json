@@ -1,0 +1,5 @@
+{
+  "load_extensions": {
+    "cosapp_lab/extension": true
+  }
+}

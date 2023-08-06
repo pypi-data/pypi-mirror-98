@@ -1,0 +1,4 @@
+{
+  "schema": "cosapp/project/0-1-0",
+  "name": "{{cookiecutter.project_slug}}"
+}
