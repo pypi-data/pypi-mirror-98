@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        fabric-cli=fabric_cli.cli.cli:cli
+    

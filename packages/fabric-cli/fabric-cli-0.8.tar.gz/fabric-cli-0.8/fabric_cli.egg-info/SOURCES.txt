@@ -1,0 +1,14 @@
+README.md
+setup.py
+fabric_cli/__init__.py
+fabric_cli.egg-info/PKG-INFO
+fabric_cli.egg-info/SOURCES.txt
+fabric_cli.egg-info/dependency_links.txt
+fabric_cli.egg-info/entry_points.txt
+fabric_cli.egg-info/requires.txt
+fabric_cli.egg-info/top_level.txt
+fabric_cli/cli/__init__.py
+fabric_cli/cli/cli.py
+fabric_cli/cli/exceptions.py
+test/__init__.py
+test/test_cli.py
