@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+smtpc/__init__.py
+smtpc/cli.py
+smtpc/config.py
+smtpc/message.py
+smtpc.egg-info/PKG-INFO
+smtpc.egg-info/SOURCES.txt
+smtpc.egg-info/dependency_links.txt
+smtpc.egg-info/entry_points.txt
+smtpc.egg-info/not-zip-safe
+smtpc.egg-info/requires.txt
+smtpc.egg-info/top_level.txt
