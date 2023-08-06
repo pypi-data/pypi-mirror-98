@@ -1,0 +1,15 @@
+sslap/__init__.py,sha256=nc9v4JEGjhvK21nhho37K7KFTXfuUaOIum3cvIIYrBg,109
+sslap/_auction.cp38-win_amd64.pyd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sslap/auction.cp38-win_amd64.pyd,sha256=30HtP8A0dOpK0x1dA7N-r9KDfrNqbfUGJgREjQuPfgg,193536
+sslap/auction_.cp38-win_amd64.pyd,sha256=11eJ2xz1v2XofZJKF6jXkx4hkEYQFK5A4tFkd1eKTME,200704
+sslap/auction_solve.py,sha256=TZudrz-8e_riPk2MXfdkD7H8LM91CRzMCeauxVlfbk4,2701
+sslap/auctionx.cp38-win_amd64.pyd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sslap/check_feasible.py,sha256=29f7Q8_Rtmzk4Um_9qieN0NQXN20o0cZIliOKLbTb0E,1094
+sslap/feasibility.cp38-win_amd64.pyd,sha256=ASo44AH9J7W1ziWmwuuA0zz7c4P4x1jZnaa7ARH5jLM,175104
+sslap/feasibility_.cp38-win_amd64.pyd,sha256=_75GEhHXTF4y_tTO9EFDD-r5_AM0PpDYt41oiiUVbRY,173568
+sslap/tester.py,sha256=fYidrVyhl5VZaILpX51qEiG5qWHDtGYemYdj71Iy_M0,58
+sslap-0.2.5.dist-info/LICENSE.txt,sha256=Ipsq_HV0aX6u7zq5GwAd5zqfmLmxS-jo7GTl6J4DLtM,1229
+sslap-0.2.5.dist-info/METADATA,sha256=BtxE02yMJN7t6pOOdVzPYJnsDJ5LFbT61dUuPdK4g14,2657
+sslap-0.2.5.dist-info/WHEEL,sha256=HLtxc_HoM-kGM7FPJVPSnTt0Nv2G3fZEAjT3ICdG8uY,100
+sslap-0.2.5.dist-info/top_level.txt,sha256=q5CckFnC801k6XBGdw8ioQcg51JMwGmkFC60bBEyC3Y,6
+sslap-0.2.5.dist-info/RECORD,,
