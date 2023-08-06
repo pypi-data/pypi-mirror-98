@@ -1,0 +1,16 @@
+pyams_auth_azure/__init__.py,sha256=bB5A9X0mRBwiJ_OBxxVy_BV10AnzwoDCIFmFuRsyVLE,889
+pyams_auth_azure/include.py,sha256=mJ_g3lIU9Q7_H_2Acs_SavIDrd_MwvutsukyYN96TQc,957
+pyams_auth_azure/interfaces.py,sha256=bOkywe03w_RzrTBMysRQ58XicO7N5HSDV5xe5AeiuPI,4213
+pyams_auth_azure/plugin.py,sha256=IUrUXW0xh2oafAjm-UIlDsWFYLg6PPdGyMWct7UB9Ro,7153
+pyams_auth_azure/doctests/README.rst,sha256=yVqQt3RIi7rO77pMTba0sdWezRYEyu0QivV1bhGeMx8,5098
+pyams_auth_azure/locales/pyams_auth_azure.pot,sha256=qjc133kC50ANw2-rNHpeZEbx7ce70JSCegUOlB25hWQ,3608
+pyams_auth_azure/locales/fr/LC_MESSAGES/pyams_auth_azure.mo,sha256=3maaW_PV8CzzQqakgMZK1r26OTjkLJdjwNcnJ320ONI,4427
+pyams_auth_azure/locales/fr/LC_MESSAGES/pyams_auth_azure.po,sha256=yQZzlvPFIiWudabtR2VZ3MFSSOEVDavJYUVqY9ww0Ow,5819
+pyams_auth_azure/zmi/__init__.py,sha256=vSoUoFC8fOTNr315kQpbOvrVTLQbjmKj7252eEnoVTg,550
+pyams_auth_azure/zmi/plugin.py,sha256=gln9QvPEXfKu1-OsIAvNdjscMPHaUovPBZSMqJloH1o,4362
+pyams_auth_azure-1.1.0.dist-info/LICENSE,sha256=9JLFlvU3lMx1ANbaylwY0_yOeQFkVRhm624EuLQhuwM,2191
+pyams_auth_azure-1.1.0.dist-info/METADATA,sha256=LHp48QmL4SQeWXYhkMrmM7RLo7-sYmFZlHMJCQUVIHg,2375
+pyams_auth_azure-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyams_auth_azure-1.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyams_auth_azure-1.1.0.dist-info/top_level.txt,sha256=TTrTNW1rcOcdE-jgcDT1Q3HaE7TrGZWRHHjitEc2-Wk,17
+pyams_auth_azure-1.1.0.dist-info/RECORD,,
