@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: th2_grpc_act_gui_demo
+Version: 2.1.8.dev653877621
+Summary: th2_grpc_act_gui_demo
+Home-page: https://github.com/th2-net/th2-grpc-generator-template
+Author: TH2-devs
+Author-email: th2-devs@exactprosystems.com
+License: Apache License 2.0
+Description: # th2 gRPC library for demo
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
