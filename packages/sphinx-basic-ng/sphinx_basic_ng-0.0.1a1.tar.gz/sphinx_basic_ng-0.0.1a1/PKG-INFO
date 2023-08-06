@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sphinx_basic_ng
+Version: 0.0.1a1
+Summary: A modern skeleton for Sphinx themes.
+Home-page: https://github.com/pradyunsg/sphinx-basic-ng
+Author: Pradyun Gedam
+Author-email: mail@pradyunsg.me
+License: UNKNOWN
+Project-URL: Documentation, https://rtfd.io/sphinx-basic-ng/
+Description: # sphinx-basic-ng
+        
+        A modernised skeleton for Sphinx themes.
+        
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs

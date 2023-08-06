@@ -1,0 +1,7 @@
+sphinx~=3.0
+
+[docs]
+furo
+myst-parser
+sphinx-copybutton
+sphinx-inline-tabs
