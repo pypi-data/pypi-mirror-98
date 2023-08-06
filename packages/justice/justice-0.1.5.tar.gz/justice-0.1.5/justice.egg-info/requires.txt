@@ -1,0 +1,2 @@
+dateparser>=1.0.0<2
+pyquery>=1.4.3<2
