@@ -1,0 +1,87 @@
+name: Tests
+
+on:
+  pull_request:
+
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: [3.6, 3.9]
+        mpi: [mpich, openmpi]
+
+        include:
+          - os: ubuntu-18.04
+            python-version: 3.6
+            mpi: intelmpi
+          - os: ubuntu-18.04
+            python-version: 3.9
+            mpi: intelmpi
+
+    env:
+       MPICH_INTERFACE_HOSTNAME: localhost
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }} on ${{ matrix.os }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Find pip cache directory
+        id: pip-cache-lookup
+        run: |
+          echo "::set-output name=dir::$(pip cache dir)"
+
+      - name: Install MPI (${{ matrix.mpi }})
+        #if: steps.cache-mpi.outputs.cache-hit != 'true'
+        run: |
+          sh ./conf/travis-install-mpi.sh ${{ matrix.mpi }}
+
+      - name: Cache pip installed packages
+        id: pip-cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.pip-cache-lookup.outputs.dir }}
+          key: ${{ matrix.os }}-${{ matrix.python-version }}-pip-${{ hashFiles('**/requirements.txt') }}
+          #restore-keys: |
+          #  ${{ runner.os }}-${{ runner.python-version }}-pip-
+
+      - name: Pip install python dependencies
+        run: |
+          if [ ${{ matrix.mpi }} == 'intelmpi' ]; then
+            source ${HOME}/intel/compilers_and_libraries/linux/mpi/intel64/bin/mpivars.sh -ofi_internal=1 release
+          fi
+
+          python -m pip install --upgrade pip
+          pip install wheel
+          pip install pytest numpy jax jaxlib mpi4py tqdm
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install -v .
+
+      - name: Single-execution test with pytest
+        run: |
+          if [ ${{ matrix.mpi }} == 'intelmpi' ]; then
+            source ${HOME}/intel/compilers_and_libraries/linux/mpi/intel64/bin/mpivars.sh -ofi_internal=1 release
+          fi
+
+          cd tests
+          pytest .
+
+      - name: mpirun test with pytest
+        run: |
+          cd tests
+
+          if [ ${{ matrix.mpi }} == 'intelmpi' ]; then
+            source ${HOME}/intel/compilers_and_libraries/linux/mpi/intel64/bin/mpivars.sh -ofi_internal=1 release
+            mpirun -v -np 2 pytest .
+          else
+            mpirun -host localhost:2 -v -np 2 pytest .
+          fi
