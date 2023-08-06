@@ -1,0 +1,4 @@
+baseutils_phornee>=0.0.5
+influxdb_client>=1.14.0
+RPi.GPIO>=0.7.0
+Flask>=1.1.2
