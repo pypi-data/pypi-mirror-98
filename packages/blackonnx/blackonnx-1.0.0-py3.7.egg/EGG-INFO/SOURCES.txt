@@ -1,0 +1,16 @@
+README.md
+setup.py
+bin/blackonnx
+blackonnx/__init__.py
+blackonnx/_version.py
+blackonnx/onnx_utils.py
+blackonnx/utils.py
+blackonnx.egg-info/PKG-INFO
+blackonnx.egg-info/SOURCES.txt
+blackonnx.egg-info/dependency_links.txt
+blackonnx.egg-info/requires.txt
+blackonnx.egg-info/top_level.txt
+blackonnx/fix/__init__.py
+blackonnx/fix/common_fix.py
+blackonnx/fix/postprocess_fix.py
+blackonnx/fix/quantize_fix.py
