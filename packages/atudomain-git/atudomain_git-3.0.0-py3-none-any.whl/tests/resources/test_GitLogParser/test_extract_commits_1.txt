@@ -1,0 +1,38 @@
+commit 6b934071528ebac0cf38cb051121228d268d9ed6
+tree 20c24b3631ef204a9820e808847eec9cfc787055
+parent a726619390acd3989a7e1b07b4cebf7da952ddbd
+author Adrian Tuzimek <tuziomek@gmail.com> 1573253624 +0100
+committer Adrian Tuzimek <tuziomek@gmail.com> 1573253624 +0100
+
+    Added tests
+
+commit a726619390acd3989a7e1b07b4cebf7da952ddbd
+tree ef0d27629ad70a17a44a5bb137f56362c16ff2bc
+parent e75e773b4a9ec6f0e2d5e388ae01db1c951c2479
+author Adrian Tuzimek <tuziomek@gmail.com> 1572788104 +0100
+committer Adrian Tuzimek <tuziomek@gmail.com> 1572789489 +0100
+
+    Added README and fixed splitting messages only with subject
+
+commit e75e773b4a9ec6f0e2d5e388ae01db1c951c2479
+tree e6fb66a3db1d10d115efe74480ed94d0098fe03d
+parent 687d0e8e44289008fa4d32ef415b0e898d03c7ff
+author Adrian Tuzimek <tuziomek@gmail.com> 1572785157 +0100
+committer Adrian Tuzimek <tuziomek@gmail.com> 1572785157 +0100
+
+    Added method for getting branch names as a list
+
+commit 687d0e8e44289008fa4d32ef415b0e898d03c7ff
+tree 7c257252b79d715110e93580b28f04c8d15cf22b
+parent 8b94a937cbecd05374c4a69d9bdf5223157608ef
+author Adrian Tuzimek <tuziomek@gmail.com> 1572782258 +0100
+committer Adrian Tuzimek <tuziomek@gmail.com> 1572782314 +0100
+
+    Refactor
+
+commit 8b94a937cbecd05374c4a69d9bdf5223157608ef
+tree 32225c096d5d047f4de7a2bca8e1953b31f97ccf
+author Adrian Tuzimek <tuziomek@gmail.com> 1572735775 +0100
+committer Adrian Tuzimek <tuziomek@gmail.com> 1572736366 +0100
+
+    First release
