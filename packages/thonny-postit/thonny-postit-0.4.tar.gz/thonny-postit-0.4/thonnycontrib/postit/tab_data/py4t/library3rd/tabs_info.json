@@ -1,0 +1,24 @@
+[
+    
+    {
+        "tab_name" : "numpy",
+        "tab_label" : " 多維 ",
+        "tab_title" : "多維陣列"  
+    },
+    {
+        "tab_name" : "cv4t",
+        "tab_label" : " 視覺 ",
+        "tab_title" :   "視覺影像"     
+    },
+    {
+        "tab_name" : "speech4t",
+        "tab_label" : " 語音 ",
+        "tab_title" : "語音合成辨識"       
+    },
+    {
+        "tab_name" : "serial4t",
+        "tab_label" : " 序列 ",
+        "tab_title" : "序列連線(uart)"       
+    }
+
+]
