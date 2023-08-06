@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: energydram
+Version: 0.4.0
+Summary: DRAM energy calculation.
+Home-page: https://github.com/gaomy3832/energydram
+Author: Mingyu Gao
+Author-email: mgao12@stanford.edu
+License: BSD 3-clause
+Keywords: DRAM energy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: Utilities
+Requires-Dist: numpy (>=1.8)
+Requires-Dist: coverage (>=4)
+Requires-Dist: pytest (>=3)
+Requires-Dist: pytest-cov (>=2)
+Requires-Dist: pytest-xdist (>=1)
+
+DRAM Energy
+===========
+
+:Version info:
+    .. image:: https://img.shields.io/pypi/v/energydram
+        :target: https://pypi.org/project/energydram/
+
+:Compatibility:
+    .. image:: https://img.shields.io/pypi/pyversions/energydram
+        :target: https://pypi.org/project/energydram/
+
+:Test status:
+    .. image:: https://github.com/gaomy3832/energydram/actions/workflows/test.yml/badge.svg?branch=master
+        :target: https://github.com/gaomy3832/energydram/actions/workflows/test.yml
+
+    .. image:: https://codecov.io/gh/gaomy3832/energydram/branch/master/graph/badge.svg?token=V3L3RF3VND
+        :target: https://codecov.io/gh/gaomy3832/energydram
+
+DRAM energy calculation.
+
+Current supported standards:
+
+- DDR2/3/4
+- LPDDR2/3/4
+- GDDR5 (only for termination)
+
+by *Mingyu Gao*
+
+
+References
+----------
+
+Micron, Calculating Memory System Power for DDR3, tech note TN-41-01.
+
+Micron, Calculating Memory Power for DDR4 SDRAM, tech note TN-40-07.
+
+N. Jouppi, A. B. Kahng, N. Muralimanohar and V. Srinivas, CACTI-IO: CACTI With
+Off-Chip Power-Area-Timing Models, IEEE Transactions on Very Large Scale
+Integration (VLSI) Systems 23(7) (2015), pp. 1254-1267.
+
+
+
