@@ -1,0 +1,11 @@
+MANIFEST.in
+requirements.txt
+setup.py
+version
+auth_service_client/__init__.py
+auth_service_client/client.py
+usf_auth_service_client.egg-info/PKG-INFO
+usf_auth_service_client.egg-info/SOURCES.txt
+usf_auth_service_client.egg-info/dependency_links.txt
+usf_auth_service_client.egg-info/requires.txt
+usf_auth_service_client.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: usf-auth-service-client
+Version: 0.0.4
+Summary: Auth service client
+Home-page: https://github.com/ukuspeed/usf-auth-service
+Author: Ukuspeed
+Author-email: info@ukuspeed.gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
