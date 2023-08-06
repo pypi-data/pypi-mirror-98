@@ -1,0 +1,12 @@
+README.md
+setup.py
+restic/__init__.py
+restic/config.py
+restic/key.py
+restic/parser.py
+restic/repo.py
+restic/snapshot.py
+resticpy.egg-info/PKG-INFO
+resticpy.egg-info/SOURCES.txt
+resticpy.egg-info/dependency_links.txt
+resticpy.egg-info/top_level.txt
