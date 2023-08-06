@@ -1,0 +1,10 @@
+packutil/__init__.py,sha256=l_BhEcaTJZ8w0HxqmXBaT8cLy4prWDnQ14C_qRuaH44,178
+packutil/path.py,sha256=VSa30bg29HzckSewvRNNc0w2oX-I0A9qdtr99KdhhE0,587
+packutil/version.py,sha256=CwMnZGjzv1l569F_5_EG0NCAesL_xrPJLZdn16vIRA8,155
+packutil/versions.py,sha256=wB8yZBxGHbaEi1fhnbkfRnknywhixrXmRf1kGUDmWQo,2387
+packutil/git/__init__.py,sha256=5RF0NqkKzwbcvJMkGMXzEW9zI_h4lTSOzUqr3lO0meY,556
+packutil/git/flow.py,sha256=h2sGMC45OpLYPvEiRnzCZJ3liFMsf8vEh_MZcFBV2VA,190
+packutil-0.0.4.dist-info/METADATA,sha256=0yiZBts0n7PXAqH2QLi-EcKJrWlSGTm_8ZarWrhf7OE,511
+packutil-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+packutil-0.0.4.dist-info/top_level.txt,sha256=g03upx7kVVP6zWB--YdS4e54f72AlgOi2KeFCg_kFVU,9
+packutil-0.0.4.dist-info/RECORD,,
