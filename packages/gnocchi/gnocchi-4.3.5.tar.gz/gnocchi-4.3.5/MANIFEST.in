@@ -1,0 +1,4 @@
+include ChangeLog
+include AUTHORS
+exclude .gitignore
+exclude .github
