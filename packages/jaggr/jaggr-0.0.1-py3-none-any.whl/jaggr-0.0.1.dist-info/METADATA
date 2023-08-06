@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jaggr
+Version: 0.0.1
+Summary: A fancy data aggregator for JSON-like objects.
+Home-page: https://github.com/odashi/jaggr
+Author: Yusuke Oda
+Author-email: yus.takara@gmail.com
+License: Apache Software License 2.0
+Keywords: json data aggregator
+Platform: UNKNOWN
+Requires-Python: >=3.7
+
+In construction.
+
+
