@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ChipDataDbToolbox
+Version: 0.1.0
+Summary:          Database utility scripts to be reused across projects.          Use it to connect to your databases.     
+Home-page: UNKNOWN
+Author: Bernard Louis Alecu
+Author-email: louis.alecu@getchip.uk
+License: LICENSE
+Description: UNKNOWN
+Platform: UNKNOWN
