@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyAsyncHelper3
+Version: 0.0.1
+Summary: dispatcher base on async
+Home-page: http://gitee.com/shellvv/PyAsyncHelper3
+Author: shellvv
+Author-email: shellvv@yeah.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyhelper3
+
+UNKNOWN
+
+
