@@ -1,0 +1,9 @@
+six
+django
+django-cors-headers
+Pillow
+wheel
+gunicorn
+requests
+
+[frontend]
