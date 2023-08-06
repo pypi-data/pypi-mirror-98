@@ -1,0 +1,10 @@
+README.md
+setup.py
+dafni_cli/__init__.py
+dafni_cli/login.py
+dafni_cli/nims.py
+dafni_cli/urls.py
+dafni_cli_dafni_facility.egg-info/PKG-INFO
+dafni_cli_dafni_facility.egg-info/SOURCES.txt
+dafni_cli_dafni_facility.egg-info/dependency_links.txt
+dafni_cli_dafni_facility.egg-info/top_level.txt
