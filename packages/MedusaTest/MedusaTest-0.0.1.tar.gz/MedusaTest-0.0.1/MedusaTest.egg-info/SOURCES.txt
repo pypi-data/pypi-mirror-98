@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+MedusaTest.egg-info/PKG-INFO
+MedusaTest.egg-info/SOURCES.txt
+MedusaTest.egg-info/dependency_links.txt
+MedusaTest.egg-info/top_level.txt
+calculator/__init__.py
