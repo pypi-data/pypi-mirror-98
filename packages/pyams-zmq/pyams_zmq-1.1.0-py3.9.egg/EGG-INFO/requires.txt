@@ -1,0 +1,10 @@
+setuptools
+pyams_utils
+pyramid
+pyzmq
+tornado
+zope.interface
+
+[test]
+pyramid_zcml
+zope.exceptions
