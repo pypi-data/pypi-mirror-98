@@ -1,0 +1,13 @@
+fgit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgit/actions.py,sha256=xuNrMHwMM5vHie_W1p-ItvSV2rUT9zVcnYit9vcrvIk,2019
+fgit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgit/utils/git.py,sha256=9MtntUZUTNvpXR1qhtc76Yn5QNnXZiT_FRJuhtR41C4,710
+fgit/utils/message_box.py,sha256=BHONUFOOuakfAToWn2nPbL7Y3_2I1kixzOFmRg8_whA,141
+fgit_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fgit_cli/main.py,sha256=hajyp1_dbpdF-xfGCN1BenAaNlWLXIg1XrltDQNEOyE,440
+fgit-0.0.1b8.dist-info/LICENSE,sha256=yvQKDx2pRaBPEz4jlAJh3nJ3bTi8VqL1HdPYTNi9jiQ,11349
+fgit-0.0.1b8.dist-info/METADATA,sha256=uNOhNr38frsfHF1nKtXEQDsWY_VtyFK7alawnIdLSs4,1302
+fgit-0.0.1b8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fgit-0.0.1b8.dist-info/entry_points.txt,sha256=h_2-ZsC6FpSTj0TW3AXJx-1S6APpLDJ3X0mr3veoAtk,45
+fgit-0.0.1b8.dist-info/top_level.txt,sha256=abvKW1RlfoioSJcF99bgEWXN1cnoIMvUl0FzfFJxRF0,14
+fgit-0.0.1b8.dist-info/RECORD,,
