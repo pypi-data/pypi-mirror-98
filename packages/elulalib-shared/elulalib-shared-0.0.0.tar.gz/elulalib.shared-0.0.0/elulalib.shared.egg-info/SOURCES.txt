@@ -1,0 +1,5 @@
+setup.py
+elulalib.shared.egg-info/PKG-INFO
+elulalib.shared.egg-info/SOURCES.txt
+elulalib.shared.egg-info/dependency_links.txt
+elulalib.shared.egg-info/top_level.txt
