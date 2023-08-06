@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: procmedia
+Version: 0.0.3
+Summary: Package to applying haarcascades to videos and images
+Home-page: https://github.com/miki164/procmedia
+Author: miki164
+Author-email: miki3867@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/miki164/procmedia/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# procmedia
+Procmedia it's project to detecting features using haarcascade.
+
+More info soon ;)
+
+
