@@ -1,0 +1,7 @@
+README.md
+setup.py
+paddle_rifle/rifle.py
+paddle_rifle.egg-info/PKG-INFO
+paddle_rifle.egg-info/SOURCES.txt
+paddle_rifle.egg-info/dependency_links.txt
+paddle_rifle.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: paddle-rifle
+Version: 0.21
+Summary: 本项目则为可用于PaddlePaddle的RIFLE优化策略封装版，支持普通API与高阶API，并且只需向训练代码中插入一行代码即可使用RIFLE策略。 
+Home-page: https://github.com/GT-ZhangAcer/RIFLE_Module
+Author: zhanghongji
+Author-email: zhangacer@foxmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
