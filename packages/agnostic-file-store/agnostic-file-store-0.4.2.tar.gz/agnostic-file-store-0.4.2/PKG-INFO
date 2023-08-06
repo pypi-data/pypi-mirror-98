@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: agnostic-file-store
+Version: 0.4.2
+Summary: An agnostic, easy-to-use module for different file systems (Memory | local | Samba (SMB) | NFS | Amazon S3)
+Home-page: https://github.com/euribates/agnostic-file-store/
+Author: Juan Ignacio Rodríguez de León
+Author-email: euribates@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/euribates/agnostic-file-store/archive/master.zip
+Description: UNKNOWN
+Keywords: agnostic,AMS,CIFS,NAS,S3,Samba,SAN,SMB,storage
+Platform: UNKNOWN
