@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: netbox-cable-expansion
+Version: 0.0.1
+Summary: reservation
+Author: Jonas Krüger Svensson
+Author-email: jonas-ks@hotmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
