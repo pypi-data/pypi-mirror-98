@@ -1,0 +1,14 @@
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "google"
+
+[tool.interrogate]
+fail-under = 100
+ignore-module = true
+ignore-nested-functions = true
+ignore-semiprivate = true
+exclude = [".vscode", "setup.py"]
+color = true
+verbose = 1
