@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+async4s.py
+setup.cfg
+setup.py
+async4s.egg-info/PKG-INFO
+async4s.egg-info/SOURCES.txt
+async4s.egg-info/dependency_links.txt
+async4s.egg-info/top_level.txt
