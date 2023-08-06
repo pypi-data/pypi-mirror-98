@@ -1,0 +1,13 @@
+mypy_boto3_textract/__init__.py,sha256=LLszh4EX3uhMPyEZEClH_oLElaXAEjjEL_GFt7c6WyA,448
+mypy_boto3_textract/__init__.pyi,sha256=ViPeG0T6qM3wE4fZxPt1KkAqMSAHOsICiex_ocWmEBQ,447
+mypy_boto3_textract/__main__.py,sha256=NGQ0kKN-A17u4X-qIsJp9T_Yv1PdpS9z44l08Fun3Oo,396
+mypy_boto3_textract/client.py,sha256=A1sjaoBfHA-BW0Cd88fMlauXxLWyS7jQg5nyBNfqh5c,5511
+mypy_boto3_textract/client.pyi,sha256=RXF90qrVVeCzZG0HoPeLCXs18TlS1UqMcHULCVwGCbA,5498
+mypy_boto3_textract/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_textract/type_defs.py,sha256=kJx37-zX1bAG_PNVk10f2Bu0TcDokBftXfUWccRt8wg,6307
+mypy_boto3_textract/type_defs.pyi,sha256=eQLQUWftE7f0OTjZIa6vq2oivTPczDDZes2lMKNtRcs,6302
+mypy_boto3_textract/version.py,sha256=n8Tu40XgmSqpXlI-jItOj3y54pMXJk4EPTSOyv-geeo,57
+mypy_boto3_textract-1.17.27.0.dist-info/METADATA,sha256=BS7sdpAMbqYoxb9q_8I7Lkxjzq6okOr6puUmYsHd9UM,6623
+mypy_boto3_textract-1.17.27.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_textract-1.17.27.0.dist-info/top_level.txt,sha256=_sEFmD2RitUzEHPOvx59QIY1hpcMvVslSlrvCmIrFfw,20
+mypy_boto3_textract-1.17.27.0.dist-info/RECORD,,
