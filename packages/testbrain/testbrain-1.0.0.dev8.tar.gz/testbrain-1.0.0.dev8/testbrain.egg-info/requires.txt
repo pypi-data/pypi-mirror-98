@@ -1,0 +1,5 @@
+requests
+Click
+configparser
+shutils
+pymysql==0.10.1
