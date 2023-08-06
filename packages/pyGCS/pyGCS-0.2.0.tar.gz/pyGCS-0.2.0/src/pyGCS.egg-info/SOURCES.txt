@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pyGCS/GCI.py
+src/pyGCS/__init__.py
+src/pyGCS.egg-info/PKG-INFO
+src/pyGCS.egg-info/SOURCES.txt
+src/pyGCS.egg-info/dependency_links.txt
+src/pyGCS.egg-info/top_level.txt
