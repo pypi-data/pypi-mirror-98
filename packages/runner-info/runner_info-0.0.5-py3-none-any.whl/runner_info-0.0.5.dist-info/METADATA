@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: runner-info
+Version: 0.0.5
+Summary: Python tool to extract information about runner environment
+License: MIT
+Author: Johannes B. Oma
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: humanize (>=3.2.0,<4.0.0)
+Requires-Dist: psutil (>=5.8.0,<6.0.0)
+Requires-Dist: scapy (>=2.4.4,<3.0.0)
