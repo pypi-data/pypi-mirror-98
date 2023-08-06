@@ -1,0 +1,13 @@
+README.md
+setup.py
+cep_to_coords/__init__.py
+cep_to_coords/base.py
+cep_to_coords/convert.py
+cep_to_coords/strategies.py
+cep_to_coords/viacep.py
+cep_to_coords.egg-info/PKG-INFO
+cep_to_coords.egg-info/SOURCES.txt
+cep_to_coords.egg-info/dependency_links.txt
+cep_to_coords.egg-info/top_level.txt
+tests/__init__.py
+tests/test_convert.py
