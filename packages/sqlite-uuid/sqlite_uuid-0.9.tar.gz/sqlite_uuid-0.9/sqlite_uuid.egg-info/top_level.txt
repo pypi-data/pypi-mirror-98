@@ -1,0 +1,2 @@
+sqlite_uuid
+sqlite_uuid_ext
