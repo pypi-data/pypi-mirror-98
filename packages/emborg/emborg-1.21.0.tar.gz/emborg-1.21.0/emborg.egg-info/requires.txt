@@ -1,0 +1,6 @@
+appdirs
+arrow>=0.15
+docopt
+inform>=1.15
+quantiphy
+shlib>=1.0
