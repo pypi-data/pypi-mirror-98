@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: gtirb-rewriting
+Version: 0.0.17
+Summary: Utilities for rewriting GTIRB
+Home-page: https://github.com/grammatech/gtirb-rewriting
+Author: GrammaTech
+Author-email: gtirb@grammatech.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: gtirb-capstone
+Requires-Dist: gtirb-functions
+Requires-Dist: gtirb
+Requires-Dist: mcasm
+Requires-Dist: dataclasses ; python_version < "3.7.0"
+Provides-Extra: test
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: isort ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+Requires-Dist: tox-wheel ; extra == 'test'
+Requires-Dist: pre-commit ; extra == 'test'
+
+UNKNOWN
+
+
