@@ -1,0 +1,5 @@
+PyQt5
+requests
+psycopg2
+matplotlib
+numpy
