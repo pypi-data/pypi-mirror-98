@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+lib/python/cs/serialise.py
+lib/python/cs.serialise.egg-info/PKG-INFO
+lib/python/cs.serialise.egg-info/SOURCES.txt
+lib/python/cs.serialise.egg-info/dependency_links.txt
+lib/python/cs.serialise.egg-info/top_level.txt
