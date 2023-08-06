@@ -1,0 +1,5 @@
+mgrs
+s3fs
+
+[tests]
+pytest

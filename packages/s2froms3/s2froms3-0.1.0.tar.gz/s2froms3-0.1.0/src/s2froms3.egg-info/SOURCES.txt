@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/s2froms3/__init__.py
+src/s2froms3/download.py
+src/s2froms3/products.py
+src/s2froms3/utils.py
+src/s2froms3.egg-info/PKG-INFO
+src/s2froms3.egg-info/SOURCES.txt
+src/s2froms3.egg-info/dependency_links.txt
+src/s2froms3.egg-info/requires.txt
+src/s2froms3.egg-info/top_level.txt
