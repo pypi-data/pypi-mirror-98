@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vrt-lss-routing
+Version: 3.7.167066
+Summary: Veeroute.LSS Routing
+Home-page: https://docs.veeroute.com/#/lss/routing
+Author: Veeroute Support Team
+Author-email: support@veeroute.com
+License: UNKNOWN
+Description:     Veeroute.LSS Routing API  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Veeroute.LSS Routing
+Platform: UNKNOWN
+Requires-Python: >=3.6
