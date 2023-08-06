@@ -1,0 +1,73 @@
+{# Copyright 2020 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+{% extends "workflows/base.html" %}
+
+{% block content %}
+  <div class="alert alert-light border border-muted mb-4">
+    <span class="text-muted">
+      <i class="fas fa-exclamation-circle"></i>
+      Note that all workflow-related functionality is still under active development.
+      <hr class="border-top border-muted my-1">
+      Currently, workflows are represented as record files.
+      As such, new workflows can be created and uploaded directly via the "Add files" menu in a record.
+      Existing workflow files are displayed separately below, but cannot yet be executed via the web interface.
+    </span>
+  </div>
+  <div class="input-group mb-4">
+    <input id="filter-input"
+           class="form-control"
+           placeholder="{% trans %}Filter workflow files by name{% endtrans %}"
+           v-model="filter">
+    <clear-button input-id="filter-input" :input="filter" @clear-input="filter = ''"></clear-button>
+  </div>
+  <dynamic-pagination endpoint="{{ url_for('api.get_workflows') }}"
+                      placeholder="{% trans %}No workflow files.{% endtrans %}"
+                      :args="{filter: filter}"
+                      :per-page="12">
+    <template #default="paginationProps">
+      <card-deck :items="paginationProps.items">
+        <template #default="props">
+          <div class="card-body">
+            <a :href="props.item._links.view" class="stretched-link">
+              <span class="h5">
+                <strong>{$ props.item.name | truncate(150) $}</strong>
+              </span>
+              <p>@{$ props.item.record_identifier $}</p>
+              <div class="elevated">
+                {% trans %}Created by{% endtrans %} <identity-popover :user="props.item.creator"></identity-popover>
+              </div>
+            </a>
+          </div>
+          <div class="card-footer bg-white py-1">
+            <small class="text-muted">
+              {% trans %}Last modified{% endtrans %} <from-now :timestamp="props.item.last_modified"></from-now>
+            </small>
+          </div>
+        </template>
+      </card-deck>
+    </template>
+  </dynamic-pagination>
+{% endblock %}
+
+{% block scripts %}
+  <script type="application/javascript" nonce="{{ csp_nonce() }}">
+    new Vue({
+      el: '#vm',
+      data: {
+        filter: '',
+      },
+    });
+  </script>
+{% endblock %}

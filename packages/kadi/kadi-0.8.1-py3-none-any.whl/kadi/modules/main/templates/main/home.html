@@ -1,0 +1,101 @@
+{# Copyright 2020 Karlsruhe Institute of Technology
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+ # You may obtain a copy of the License at
+ #
+ #     http://www.apache.org/licenses/LICENSE-2.0
+ #
+ # Unless required by applicable law or agreed to in writing, software
+ # distributed under the License is distributed on an "AS IS" BASIS,
+ # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ # See the License for the specific language governing permissions and
+ # limitations under the License. #}
+
+{% extends "base.html" %}
+
+{% block meta %}
+  <link rel="preload" href="{{ static_url('images/kadi_bg.png') }}" as="image" type="image/png">
+{% endblock %}
+
+{% block content %}
+  {% include "main/snippets/header.html" %}
+
+  <div class="card my-4">
+    <div class="card-body">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h5>
+            <strong>{% trans %}Welcome to Kadi4Mat.{% endtrans %}</strong>
+          </h5>
+          {% trans %}You are currently logged in as{% endtrans %}
+          <identity-popover :user="{{ json_user(current_user) }}"></identity-popover>.
+        </div>
+        <div class="col-lg-5">
+          <a href="{{ url_for('main.about') }}" class="btn btn-sm btn-block btn-light">
+            {% trans %}About Kadi4Mat{% endtrans %}
+          </a>
+          <a href="{{ url_for('main.help') }}" class="btn btn-sm btn-block btn-light">
+            <i class="fas fa-question-circle"></i> {% trans %}Help{% endtrans %}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4>
+    <strong>{% trans %}Get started{% endtrans %}</strong>
+  </h4>
+  <div class="card mb-4">
+    <div class="card-body">
+      <div class="row d-flex align-items-center">
+        <div class="col-xl-4 mb-4 mb-xl-0">
+          {% if has_permission(current_user, "create", "record", None) %}
+            <a class="btn btn-sm btn-primary btn-block" href="{{ url_for('records.new_record') }}">
+              <i class="fas fa-plus-square"></i> {% trans %}Create new record{% endtrans %}
+            </a>
+          {% endif %}
+          <a class="btn btn-sm btn-light btn-block" href="{{ url_for('records.records') }}">
+            <i class="fas fa-search"></i> {% trans %}Search existing records{% endtrans %}
+          </a>
+        </div>
+        <div class="col-xl-8">
+          {% trans trimmed %}
+            Records are the basic components of Kadi4Mat, as they contain data and connect it with metadata.
+          {% endtrans %}
+          {% trans trimmed %}
+            The data of a record can either consist of a single file or of multiple files (e.g. a series of multiple
+            images) all sharing the same metadata.
+          {% endtrans %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div v-if="kadi.js_resources.records.length > 0 || kadi.js_resources.collections.length > 0">
+    <h4 class="mb-3">
+      <strong>{% trans %}Latest updates{% endtrans %}</strong>
+    </h4>
+    <div v-if="kadi.js_resources.records.length > 0">
+      <div class="d-flex justify-content-between">
+        <h5>
+          <strong>{% trans %}Records{% endtrans %}</strong>
+        </h5>
+        <a href="{{ url_for('records.records') }}">
+          <strong>{% trans %}View all{% endtrans %}</strong>
+        </a>
+      </div>
+      <resource-index-view :resources="kadi.js_resources.records"></resource-index-view>
+      <br v-if="kadi.js_resources.collections.length > 0">
+    </div>
+    <div v-if="kadi.js_resources.collections.length > 0">
+      <div class="d-flex justify-content-between">
+        <h5>
+          <strong>{% trans %}Collections{% endtrans %}</strong>
+        </h5>
+        <a href="{{ url_for('collections.collections') }}">
+          <strong>{% trans %}View all{% endtrans %}</strong>
+        </a>
+      </div>
+      <resource-index-view :resources="kadi.js_resources.collections"></resource-index-view>
+    </div>
+  </div>
+{% endblock %}
