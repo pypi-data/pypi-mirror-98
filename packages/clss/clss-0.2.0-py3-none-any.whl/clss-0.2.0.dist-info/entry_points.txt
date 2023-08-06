@@ -1,0 +1,3 @@
+[console_scripts]
+clss = clss.cli:main
+

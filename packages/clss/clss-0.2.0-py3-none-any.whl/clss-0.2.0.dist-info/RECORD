@@ -1,0 +1,15 @@
+clss/VERSION,sha256=H5MN0fEzwfl6lP46y42zQ3LPTAH_2ys_9Mpy-UlBIek,6
+clss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clss/a1syntax.py,sha256=9xADNK8OZusVYajBhsKlFmcoZFANjTdqC9n9mocDcS4,2511
+clss/auth.py,sha256=uRiHzEnqWOsjeyVbHNZCmouq9BGxMDpYhkxnUKt-_gE,2663
+clss/cli.py,sha256=RSwU6n-DHUbgUet0O_U0v2puN_KhPjlIy67TBWKOYiU,13861
+clss/drive.py,sha256=PNcuGzjeLjXv9DlIwjwhyhAqA_QVk_OWyLP8R6NNP3E,527
+clss/jsdict.py,sha256=hlH1ANs0V9AoPPbjp4MngAZS9btxkymqKVf0CSNR16w,1112
+clss/meta.py,sha256=psHF0Y6FlU5ARAkGyYgt4rykJhOJ4stQG-lnzFWiPs4,219
+clss/sheets.py,sha256=038pBO96vI3MjL5W58fEmR8icZXTOImEyLKpvuwhV3c,2472
+clss/sysdirs.py,sha256=syKHFHvQY51PNVfN5c5Ldx083zlaz3xMP6eRW3fOJyA,1037
+clss-0.2.0.dist-info/METADATA,sha256=B--yNmtisocpgAOP_1ze46zqOrNly-2g2jBD8VDqa6I,6561
+clss-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clss-0.2.0.dist-info/entry_points.txt,sha256=vpsCi4OnmZ0ATC_9uPoXBfA9BYJk50bA86Zo6w6eAgA,40
+clss-0.2.0.dist-info/top_level.txt,sha256=kDDhPzEvyW70i8vqaXgMZcPhqiTSeDryfGPdcs_NVGQ,5
+clss-0.2.0.dist-info/RECORD,,
