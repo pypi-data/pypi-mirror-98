@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: DigitalSpot
+Version: 0.0.1
+Summary: The beginnings of a custom web crawler
+Home-page: https://github.com/alexis-evelyn/WebCrawler
+Author: Alexis Evelyn
+Author-email: alexis.a.evelyn+pypip@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/alexis-evelyn/WebCrawler/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: blinker (==1.4)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cffi (==1.14.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: cryptography (==3.4.6)
+Requires-Dist: EasyProcess (==0.3)
+Requires-Dist: feedparser (==6.0.2)
+Requires-Dist: h11 (==0.12.0)
+Requires-Dist: h2 (==4.0.0)
+Requires-Dist: hpack (==4.0.0)
+Requires-Dist: hyperframe (==6.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: kaitaistruct (==0.9)
+Requires-Dist: lxml (==4.6.2)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: pyOpenSSL (==20.0.1)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: PySocks (==1.7.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: PyVirtualDisplay (==2.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: selenium-wire (==4.2.1)
+Requires-Dist: sgmllib3k (==1.0.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: undetected-chromedriver (==2.1.2)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: wsproto (==1.0.0)
+Requires-Dist: xmltodict (==0.12.0)
+
+### This software is in Alpha!!!
+
+# Sister project to [Rover](https://github.com/alexis-evelyn/Rover)
+
+### For some reason, Mozilla decided [not to be helpful][mozilla] in hiding the WebDriver flag. Notice the deleted comment. So, we are using Chromium
+
+# RPi
+```bash
+sudo apt-get update
+sudo apt-get install python-pip chromium-browser chromium-chromedriver xvfb
+pip3 install -r requirements.txt
+python3 main.py
+```
+
+# Sites To Consider Indexing
+* https://apnews.com/
+* https://www.reuters.com/
+* https://www.foxnews.com/
+* https://www.nbcnews.com/
+* https://us.cnn.com/
+* https://www.nytimes.com/
+* https://www.huffpost.com/
+* https://www.usatoday.com/
+* https://www.politico.com/
+* https://www.npr.org/sections/news/
+* https://thehill.com/
+* https://www.texastribune.org/
+* https://hillreporter.com/
+* https://www.rawstory.com/
+* https://www.washingtonpost.com/
+* https://www.thegatewaypundit.com/
+* https://www.oann.com/
+
+<!-- https://blog.feedspot.com/usa_news_websites/ -->
+
+[mozilla]: https://github.com/mozilla/geckodriver/issues/1680
+
