@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: trtopicter
+Version: 0.0.6
+Summary: Turkish topic detector using machine learning
+Home-page: https://github.com/apdullahyayik/Tr-topicter
+Author: Apdullah YAYIK
+Author-email: apdullahyayik@gmail.com
+License: MIT
+Download-URL: https://github.com/apdullahyayik/Tr-topicter/archive/v0.0.6.tar.gz
+Description: UNKNOWN
+Keywords: Turkish topic classifier,text classification,topic classification
+Platform: UNKNOWN
+Requires-Python: >=3.4
