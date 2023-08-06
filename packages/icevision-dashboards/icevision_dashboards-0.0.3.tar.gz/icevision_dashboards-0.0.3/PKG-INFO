@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: icevision_dashboards
+Version: 0.0.3
+Summary: Provides dashboard components and dashboards to get insight into data.
+Home-page: https://github.com/fstroth/icevision_dashboards/tree/master/
+Author: Frederik Strothmann
+Author-email: frstrothmann@gmail.com
+License: Apache Software License 2.0
+Description: # IceVisionDashboard
+        
+        
+        
+        IceVisionDashboard is an extension to the [IceVision](https://github.com/airctic/icevision) object detection framework. This extension provides different `dashboards` to investigate datasets, create new datasets and analyse the results of a training.
+        
+        # Contributing
+        
+        If you want to contribute add the following lines to your `pre-commit` file to ensure the notebook cell output don't get pushed into the repo.
+        
+        ```bash
+        # ensure the oupt of the notebooks is empty
+        jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace nbs/*.ipynb
+        git add .
+        ```
+        
+Keywords: machine learning,dashboard,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

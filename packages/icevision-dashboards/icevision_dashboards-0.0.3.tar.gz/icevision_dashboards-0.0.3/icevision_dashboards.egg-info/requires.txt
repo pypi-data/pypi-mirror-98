@@ -1,0 +1,6 @@
+bokeh
+panel
+pandas
+numpy
+icevision==0.5.2
+shapely
