@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: uni-rank
+Version: 0.2
+Summary: Get latest university rankings
+Home-page: http://github.com/nahid18/uni-rank
+Author: Abdullah Al Nahid
+Author-email: nahidpatwary1@gmail.com
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+Uni-rank provides you the latest list of university rankings around the world.
+
+
