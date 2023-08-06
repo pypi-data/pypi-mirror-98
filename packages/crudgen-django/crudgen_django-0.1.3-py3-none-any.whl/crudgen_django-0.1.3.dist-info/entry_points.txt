@@ -1,0 +1,3 @@
+[console_scripts]
+generate=crudgen_django.console.generate:main
+
