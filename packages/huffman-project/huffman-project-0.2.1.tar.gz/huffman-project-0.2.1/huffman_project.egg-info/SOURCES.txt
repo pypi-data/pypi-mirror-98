@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+huffman/Encodage.py
+huffman/File.py
+huffman/Frequency.py
+huffman/Huffman.py
+huffman/HuffmanInterface.py
+huffman/Node.py
+huffman/Ratio.py
+huffman/Tree.py
+huffman/__init__.py
+huffman_project.egg-info/PKG-INFO
+huffman_project.egg-info/SOURCES.txt
+huffman_project.egg-info/dependency_links.txt
+huffman_project.egg-info/top_level.txt
