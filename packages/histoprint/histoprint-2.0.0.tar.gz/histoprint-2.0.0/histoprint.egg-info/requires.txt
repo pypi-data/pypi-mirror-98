@@ -1,0 +1,9 @@
+click>=7.0.0
+numpy
+
+[root]
+awkward>=1
+uproot>=4
+
+[test]
+pytest>=4.6
