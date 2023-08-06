@@ -1,0 +1,9 @@
+numpy
+scipy
+pandas
+matplotlib
+sklearn
+biopython
+tensorflow
+Keras
+umap
