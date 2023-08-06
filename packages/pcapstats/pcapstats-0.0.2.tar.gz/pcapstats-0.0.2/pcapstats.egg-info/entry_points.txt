@@ -1,0 +1,4 @@
+[console_scripts]
+pcapstats-compare = cli.compare:compare
+pcapstats-stats = cli.stats:stats
+

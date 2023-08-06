@@ -1,0 +1,11 @@
+scapy
+numpy
+scipy
+pandas
+click
+jinja2
+matplotlib
+dtw-python
+
+[:python_version < "3.7"]
+importlib_resources
