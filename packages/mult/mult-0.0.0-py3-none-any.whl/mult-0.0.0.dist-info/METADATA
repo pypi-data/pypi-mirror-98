@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mult
+Version: 0.0.0
+Summary: Parallel Computing Tools (This is a tool to achieve clear and safe management of memory and other resources by separating parallel computations in units of files.)
+Home-page: https://github.co.jp/
+Author: bib_inf
+Author-email: contact.bibinf@gmail.com
+License: CC0 v1.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Description-Content-Type: text/markdown
+Requires-Dist: relpath
+Requires-Dist: sout
+
+
+Parallel Computing Tools
+(This is a tool to achieve clear and safe management of memory and other resources by separating parallel computations in units of files.)
+
+並列計算ツール
+(ファイルの単位で並列計算を実施することで、メモリ等の管理を明快かつ安全に実現するツールです。)
+
+This description is under construction.
+
+
