@@ -1,0 +1,9 @@
+piflib/__init__.py,sha256=49hXJw31KeUCY3-sKWJ0TRfeaUbaTnh7ud097DAZbQE,278
+piflib/data_util.py,sha256=3IHP2XbGbyo2x_nEUPxH-QgNe6yaMAzpph1oNUs2YV4,1567
+piflib/entropy.py,sha256=P-Fhxtnrh3GXNb6gsMz7MHuNW659QTzTPJM0nFF78E8,4985
+piflib/pif_calculator.py,sha256=z7AsdUmGLd4JA1peiAWwNRcZdB0pa5IfMBj8bqKauV4,12112
+piflib-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+piflib-0.1.1.dist-info/METADATA,sha256=cid3HIJWRX3lDXEcKNcFVUpfNCRtWtEdfuDvabANC28,3426
+piflib-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+piflib-0.1.1.dist-info/top_level.txt,sha256=2H1BydQ6kKwA2oJXdT34m8kLqrAMl913ERzF6KFnXX8,7
+piflib-0.1.1.dist-info/RECORD,,
