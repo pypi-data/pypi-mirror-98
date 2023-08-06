@@ -1,0 +1,222 @@
+# pyconductor-grpc
+
+Python GRPC client for Netflix's Conductor
+
+## Installation
+
+```bash
+pip install pyconductor_grpc
+```
+
+## Usage
+
+Example task definition JSON:
+
+```json
+[
+  {
+    "name": "sleep",
+    "retryCount": 3,
+    "timeoutSeconds": 20,
+    "pollTimeoutSeconds": 36,
+    "inputKeys": ["duration", "rem"],
+    "outputKeys": ["rem"],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 6,
+    "responseTimeoutSeconds": 19,
+    "concurrentExecLimit": null,
+    "rateLimitFrequencyInSeconds": null,
+    "rateLimitPerFrequency": null,
+    "ownerEmail": "example@test.com"
+  }
+]
+```
+
+Example workflow definition JSON:
+
+```json
+{
+  "name": "my_workflow",
+  "description": "My Workflow",
+  "version": 3,
+  "tasks": [
+    {
+      "name": "sleep",
+      "taskReferenceName": "heavy-sleeper",
+      "type": "SIMPLE",
+      "inputParameters": {
+        "duration": 10.0,
+        "rem": true
+      }
+    }
+  ],
+  "outputParameters": {
+    "rem": "${heavySleeper.output.rem}"
+  },
+  "ownerEmail": "example@test.com"
+}
+```
+
+Upload the definitions:
+
+```python
+import requests
+base_url = 'http://localhost/api'
+headers = {'content-type': 'application/json'}
+payload = open("tasks.json")
+r = requests.post(f'{base_url}/metadata/taskdefs', data=payload, headers=headers)
+print(r.status_code, r.text)
+payload = open("workflow.json")
+r = requests.post(f'{base_url}/metadata/workflow', data=payload, headers=headers)
+print(r.status_code, r.text)
+```
+
+TaskWorker usage:
+
+```python
+import time
+from pyconductor_grpc.grpc_client import TaskService, TaskWorker
+
+
+# Define task client
+task_service = TaskService()
+"""
+Specify a connection URI or a custom channel object.
+If a URI is specified, a channel will automatically be created.
+If a channel object is specified, the URI will be ignored.
+Default is to connect to localhost:8090
+
+:param connection_uri: URI of Conductor API
+:param channel: gRPC channel
+"""
+
+
+# Define work function. Input data dict keys come pre-expanded as function parameters.
+def sleep_work_function(duration: int, rem: bool) -> dict:
+    time.sleep(duration)
+    output_data = {'rem': rem}
+    return output_data
+
+
+# Work. This worker will spawn up to 10 work threads, each thread containing up to 25 tasks.
+# Each task is passed to the work function individually.
+# Each work thread blocks until all 25 tasks are finished.
+with TaskWorker(
+    task_service=task_service,
+    task_type='sleep',
+    task_concurrency=25,
+    work_function=sleep_work_function,
+    work_concurrency=10,
+) as worker:
+    worker.work()
+```
+
+BatchTaskWorker usage:
+
+```python
+import time
+import typing
+from pyconductor_grpc.grpc_client import BatchTaskWorker, ConductorTask, ConductorTaskResult, TaskService
+
+
+# Define task client
+task_service = TaskService()
+
+
+# Define work function. Inputs are all tasks in a batch. Outputs are all task results.
+def sleep_work_function(tasks: typing.Sequence[ConductorTask]) -> typing.Sequence[ConductorTaskResult]:
+    # intentionally sleeping many times in series just to demonstrate batch worker
+    task_results = []
+    for task in tasks:
+        # each task dict obeys JSON equivalent of schema conductor.proto.Task (same keys but in camel case)
+        input_data = task['inputData']
+        time.sleep(input_data['duration'])
+        output_data = {'rem': input_data['rem']}  # this must be a dictionary
+        task_result = ConductorTaskResult(
+            taskId=task['taskId'],
+            outputData=output_data,
+            status='COMPLETED',
+        )
+        # task_result = ConductorTaskResult(
+        #     taskId=task['taskId'],
+        #     status='FAILED',
+        #     reasonForIncompletion='this is why it failed',
+        # )
+        task_results.append(task_result)
+    return task_results
+
+
+# Work. This worker will work on up to 10 batches in parallel, with each batch containing up to 1000 tasks.
+# Each batch of 1000 will be passed to the work function.
+# Within each batch, the worker will make up to 20 concurrent requests to the Conductor API.
+with BatchTaskWorker(
+    batch_size=1000,
+    batch_concurrency=20,
+    task_service=task_service,
+    task_type='sleep',
+    work_function=sleep_work_function,
+    work_concurrency=10,
+) as worker:
+    worker.work()
+```
+
+Kick off a workflow instance and monitor for a done state:
+
+```python
+import time
+import typing
+from pyconductor_grpc.grpc_client import WorkflowService
+
+
+workflow_service = WorkflowService()  # same inputs as TaskService
+workflow_id = workflow_service.start_workflow('annotation_workflow', input={'variant': {'start': '1', 'end': '3', 'chrom': '5'}})
+status = None
+while status is None:
+    sleep(1)
+    workflow_output = workflow_client.get_workflow_status(workflow_id)
+    status = workflow_ouput.get('status')
+results = {
+    'normalized_variant': workflow_output['output']['normalized_variant']),
+    'annotations': workflow_output['output']['annotations'])
+}
+```
+
+## Code generation
+
+To rebuild the proto files and autogenerated python grpc sdk
+
+```shell
+scripts/generate-code.sh
+```
+
+## Notes
+
+The generated Python message types verify field types when objects are constructed from them. For example:
+
+```
+>>> from model.task_result_pb2 import TaskResult
+>>> TaskResult(task_id=1)
+TypeError: Cannot set conductor.proto.TaskResult.task_id to 0: 0 has type <class 'int'>, but expected one of: (<class 'bytes'>, <class 'str'>) for field TaskResult.task_id
+>>> TaskResult(task_id='1')
+>>>
+```
+
+## Publishing
+
+To build and upload:
+
+```shell
+pip install --upgrade build twine
+python -m build
+twine upload dist/*
+```
+
+or
+
+```shell
+pipx install build
+pipx install twine
+pyproject-build
+twine upload dist/*
+```
