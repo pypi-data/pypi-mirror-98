@@ -1,0 +1,8 @@
+README.md
+pykalimux
+setup.py
+pykalimux.egg-info/PKG-INFO
+pykalimux.egg-info/SOURCES.txt
+pykalimux.egg-info/dependency_links.txt
+pykalimux.egg-info/not-zip-safe
+pykalimux.egg-info/top_level.txt
