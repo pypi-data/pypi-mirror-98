@@ -1,0 +1,3 @@
+tab	sites
+age	age_high	age_low	age_unit	citations	geologic_classes	geologic_types	lat	lithologies	location	lon	method_codes	site
+				This study					unknown			mn001
