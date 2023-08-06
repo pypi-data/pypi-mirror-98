@@ -1,0 +1,36 @@
+Metadata-Version: 1.1
+Name: cg-django-uaa
+Version: 2.1.1
+Summary: A cloud.gov UAA authentication backend for Django
+Home-page: https://github.com/cloud-gov/cg-django-uaa
+Author: Atul Varma
+Author-email: atul.varma@gsa.gov
+License: Public Domain
+Description: .. -*-restructuredtext-*-
+        
+        
+        This is a cloud.gov UAA authentication backend for Django. It also
+        includes a handy "fake cloud.gov" that makes it easy to log in
+        as any user during development.
+        
+        For documentation, please visit `cg-django-uaa.readthedocs.io
+        <http://cg-django-uaa.readthedocs.io/>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
