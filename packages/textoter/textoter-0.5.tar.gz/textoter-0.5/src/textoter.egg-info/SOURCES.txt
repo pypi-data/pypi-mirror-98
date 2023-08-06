@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+data/textoter.desktop
+data/textoter.glade
+src/btphonelib/__init__.py
+src/btphonelib/btphone.py
+src/textoter/__init__.py
+src/textoter/textoter.py
+src/textoter.egg-info/PKG-INFO
+src/textoter.egg-info/SOURCES.txt
+src/textoter.egg-info/dependency_links.txt
+src/textoter.egg-info/entry_points.txt
+src/textoter.egg-info/top_level.txt
