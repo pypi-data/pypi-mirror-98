@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/bpcs_conduit.egg-info/PKG-INFO
+src/bpcs_conduit.egg-info/SOURCES.txt
+src/bpcs_conduit.egg-info/dependency_links.txt
+src/bpcs_conduit.egg-info/top_level.txt
+src/conduit_pkg/__init__.py
+src/conduit_pkg/client.py
