@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+dnazip/__init__.py
+dnazip/burros_wheeler.py
+dnazip/decoder.py
+dnazip/encoder.py
+dnazip/huffman.py
+dnazip/interface.py
+dnazip/main.py
+dnazip/sequence.py
+dnazip_bioinfo.egg-info/PKG-INFO
+dnazip_bioinfo.egg-info/SOURCES.txt
+dnazip_bioinfo.egg-info/dependency_links.txt
+dnazip_bioinfo.egg-info/entry_points.txt
+dnazip_bioinfo.egg-info/requires.txt
+dnazip_bioinfo.egg-info/top_level.txt
