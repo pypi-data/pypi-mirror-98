@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+PyTechnicalIndicators.egg-info/PKG-INFO
+PyTechnicalIndicators.egg-info/SOURCES.txt
+PyTechnicalIndicators.egg-info/dependency_links.txt
+PyTechnicalIndicators.egg-info/top_level.txt
