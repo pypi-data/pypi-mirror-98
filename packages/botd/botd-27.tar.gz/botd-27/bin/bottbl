@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+from botl.itr import walk
+
+if len(sys.argv) > 1:
+    a = sys.argv[1]
+else:
+    a = "botl,botl.cmd,botd"
+
+tbl = walk(a)
+del tbl.pnames["__init__"]
+
+print("# This file is placed in the Public Domain.")
+print("")
+print("import botl")
+print("")
+print("tbl = botl.Default()")
+print("")
+print("botl.update(tbl, %s)" % tbl)
+sys.stdout.flush()
+sys.exit()

@@ -1,0 +1,248 @@
+README
+######
+
+Welcome to BOTD,
+
+BOTD is a pure python3 IRC chat bot that can run as a background daemon
+for 24/7 a day presence in a IRC channel. Yo can install it as a service so
+it restarts on reboot. You can use it to display RSS feeds, act  as a UDP to
+IRC gateway, program your own commands for it and have it log objects on disk.
+
+BOTD uses a JSON in file database with a versioned readonly storage. It
+reconstructs objects based on type information in the path and uses a "dump
+OOP and use OP" programming library where the methods are factored out into
+functions that use the object as the first argument.
+
+BOTD is placed in the Public Domain and has no COPYRIGHT and no LICENSE. (:ref:`source <source>`)
+
+INSTALL
+=======
+
+installation is through pypi:
+
+::
+
+ > sudo pip3 install botd --upgrade --force-reinstall
+
+you can run directly from the tarball, see https://pypi.org/project/botd/#files
+
+SERVICE
+=======
+
+If you want to run BOTD 24/7 you can install BOTD as a service for
+the systemd daemon. You can do this by copying the following into
+the /etc/systemd/system/botd.service file::
+
+ [Unit]
+ Description=BOTD - 24/7 channel daemon
+ After=multi-user.target
+
+ [Service]
+ DynamicUser=True
+ StateDirectory=botd
+ LogsDirectory=botd
+ CacheDirectory=botd
+ ExecStart=/usr/local/bin/botd
+ CapabilityBoundingSet=CAP_NET_RAW
+
+ [Install]
+ WantedBy=multi-user.target
+
+Enable the botd service with::
+
+ $ sudo systemctl enable botd
+ $ sudo systemctl daemon-reload
+
+Then restart the botd service::
+
+ $ sudo systemctl restart botd
+
+If you don't want botd to startup at boot, remove the service file::
+
+ $ sudo rm /etc/systemd/system/botd.service
+
+BOTCTL
+======
+
+BOTD has it's own CLI, the botctl program. It needs root to lower privileges
+to botd user and run a systemd command to run the bot program. You
+can run it on the shell prompt and, as default, it won't do anything.
+
+:: 
+
+ $ sudo botctl
+ $ 
+
+you can use botctl <cmd> to run a command directly, use the cmd command to see
+a list of commands:
+
+::
+
+ $ sudo botctl cmd
+ cfg,cmd,dlt,dne,dpl,flt,fnd,ftc,krn,log,met,mod,rem,rss,thr,ver,upt
+
+IRC
+===
+
+configuration is done with the cfg command::
+
+ $ sudo botctl cfg
+ channel=#botd nick=botd port=6667 server=localhost
+
+as you see the default channel/server to join is #botd on localhost. you can
+use setters to edit fields in a configuration::
+
+ $ sudo botctl cfg server=irc.freenode.net channel=\#dunkbots nick=botje
+ ok
+
+users need to be added before they can give commands, use the met command::
+
+ $ sudo botctl met ~botfather@jsonbot/daddy
+ ok
+
+RSS
+===
+
+BOTD provides, with the use of feedparser, the possibility to serve rss
+feeds in your channel. To add an url use the rss command with an url::
+
+ $ sudo botctl rss https://github.com/bthate/botd/commits/master.atom
+ ok
+
+Run the fnd (find) command to see what urls are registered::
+
+ $ sudo botctl fnd rss
+ 0 https://github.com/bthate/botd/commits/master.atom
+
+The ftc (fetch) command can be used to poll the added feeds::
+
+ $ sudo botctl ftc
+ fetched 20
+
+Adding rss to mods= will load the rss module and start it's poller::
+
+ $ sudo botctl krn mods=rss
+ ok
+
+UDP
+===
+
+BOTD also has the possibility to serve as a UDP to IRC relay where you
+can send UDP packages to the bot and have txt displayed in the channel.
+
+Output to the IRC channel is done with the use python3 code to send a UDP
+packet to BOTD, it's unencrypted txt send to the bot and displayed in the
+joined channels::
+
+ import socket
+
+ def toudp(host=localhost, port=5500, txt=""):
+     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+     sock.sendto(bytes(txt.strip(), "utf-8"), host, port)
+
+PROGRAMMING
+===========
+
+BOTL provides a "move all methods to functions" like this::
+
+ obj.method(*args) -> method(obj, *args) 
+
+The botl package has the most basic object functions like get, set, update,
+load, save etc.
+
+not::
+
+ >>> from botl import Object
+ >>> o = Object()
+ >>> o.set("key", "value")
+ >>> o.key
+ 'value'
+
+but::
+
+ >>> from botl import Object, set
+ >>> o = Object()
+ >>> set(o, "key", "value")
+ >>> o.key
+ 'value'
+
+A dict without methods in it is the reason to factor out methods from the base
+object, it is inheritable without adding methods in inherited classes. It also
+makes reading json from disk into a object easier because you don’t have any
+overloading taking place. Hidden methods are still available so it is not a 
+complete method less object, it is a pure object what __dict__ is concerned 
+(user defined data/methods)::
+
+ >>> from botl import Object
+ >>> o = Object()
+ >>> o.__dict__
+ {}
+
+COMMANDS
+========
+
+Programming your own commands is easy, open /var/lib/botd/mod/hlo.py and add
+the following code::
+
+    def hlo(event):
+        event.reply("hello %s" % event.origin)
+
+Now you can type the "hlo" command, showing hello <user>::
+
+ $ sudo botctl hlo
+ hello root@console
+
+MODULES
+=======
+
+BOTL provides the following modules:
+
+.. autosummary::
+    :toctree: 
+    :template: module.rst
+
+    botl                 - pure python3 bot library
+    botl.bus             - list of bots
+    botl.clk             - clock/repeater
+    botl.cmd.adm         - admin
+    botl.cmd.cfg         - configuration
+    botl.cmd.cmd         - list of commands
+    botl.cmd.fnd         - find
+    botl.csl             - console
+    botl.dbs             - databases
+    botl.evt             - events
+    botl.hdl             - handler
+    botl.irc             - internet relay chat
+    botl.itr             - introspection
+    botl.prs             - parser
+    botl.tbl             - tables
+    botl.thr             - threads
+    botl.usr             - users
+    botl.utl             - utilities
+    botl.ver             - version
+
+BOTD has the following modules:
+
+.. autosummary::
+    :toctree: 
+    :template: module.rst
+
+    botd		- 24/7 channel daemon
+    botd.log		- log items
+    botd.rss		- rich site syndicate
+    botd.tdo		- todo items
+    botd.udp		- UDP to IRC relay
+
+CONTACT
+=======
+
+"hf"
+
+| Bart Thate (bthate@dds.nl, thatebart@gmail.com)
+| botfather on #dunkbots irc.freenode.net
+
+.. toctree::
+    :hidden:
+    :glob:
+
+    *

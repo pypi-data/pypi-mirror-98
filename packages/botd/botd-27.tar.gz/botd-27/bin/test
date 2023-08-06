@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+import time
+import unittest
+
+from botl import c, cfg, op
+from botl.bus import Bus
+from botl.csl import Test, exec, parse
+
+import botl.utl
+
+import test.run
+
+def open(txt):
+    try:
+        for line in os.popen(txt).readlines():
+            print(line.rstrip())
+    except:
+        pass
+
+def main():
+    cfg.wd = c(".test")
+    cfg.pkgs = "botl,botl.cmd,botd"
+    parse()
+    open("rm -fR %s" % cfg.wd)
+    botl.utl.debug = True
+    pat = "test_%s*" % cfg.cmd or "*"
+    suite = unittest.loader.TestLoader().discover("test", pattern=pat)
+    unittest.TextTestRunner(verbosity=3).run(suite)
+    if not cfg.cmd:
+        Bus.wait(Test)
+
+exec(main)

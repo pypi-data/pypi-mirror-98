@@ -1,0 +1,7 @@
+# This file is placed in the Public Domain.
+
+import botl
+
+tbl = botl.Default()
+
+botl.update(tbl, {"modnames": {"cfg": "botl.cmd.cfg", "cmd": "botl.cmd.cmd", "dlt": "botl.usr", "flt": "botl.cmd.adm", "fnd": "botl.cmd.fnd", "krn": "botl.cmd.adm", "met": "botl.usr", "mod": "botl.cmd.adm", "thr": "botl.cmd.adm", "upt": "botl.cmd.adm", "ver": "botl.ver"}, "names": {"bus": ["botl.bus.Bus"], "cfg": ["botl.irc.Cfg"], "command": ["botl.evt.Command"], "console": ["botl.csl.Console"], "core": ["botl.hdl.Core"], "dcc": ["botl.irc.DCC"], "default": ["botl.Default"], "event": ["botl.evt.Event", "botl.irc.Event"], "getter": ["botl.prs.Getter"], "handler": ["botl.hdl.Handler"], "irc": ["botl.irc.IRC"], "object": ["botl.Object"], "objectlist": ["botl.ObjectList"], "option": ["botl.prs.Option"], "repeater": ["botl.clk.Repeater"], "select": ["botl.sel.Select"], "selectconsole": ["botl.csl.SelectConsole"], "setter": ["botl.prs.Setter"], "shell": ["botl.csl.Shell"], "skip": ["botl.prs.Skip"], "test": ["botl.csl.Test"], "timed": ["botl.prs.Timed"], "timer": ["botl.clk.Timer"], "token": ["botl.prs.Token"], "user": ["botl.usr.User"], "users": ["botl.usr.Users"]}, "pnames": {"adm": "botl.cmd.adm", "bus": "botl.bus", "cfg": "botl.cmd.cfg", "clk": "botl.clk", "cmd": "botl.cmd.cmd", "csl": "botl.csl", "dbs": "botl.dbs", "evt": "botl.evt", "fnd": "botl.cmd.fnd", "hdl": "botl.hdl", "irc": "botl.irc", "itr": "botl.itr", "prs": "botl.prs", "sel": "botl.sel", "tbl": "botl.tbl", "thr": "botl.thr", "usr": "botl.usr", "utl": "botl.utl", "ver": "botl.ver"}})

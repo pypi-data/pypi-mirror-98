@@ -1,0 +1,13 @@
+#!/usr/bin/env python3 
+# This file is placed in the Public Domain.
+
+from botl import cfg, j
+from botl.csl import Shell, exec, os, sys
+
+from botd.tbl import tbl
+
+def main():
+    s = Shell(tbl)
+    s.cmd(" ".join(sys.argv[1:]))
+
+exec(main)
