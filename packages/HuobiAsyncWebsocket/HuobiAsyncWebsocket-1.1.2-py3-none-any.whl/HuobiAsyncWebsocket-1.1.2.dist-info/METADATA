@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: HuobiAsyncWebsocket
+Version: 1.1.2
+Summary: Asynchronous huobi websocket SDK
+Home-page: https://github.com/monk-after-90s/HuobiAsyncWebsocket.git
+Author: Antas
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# HuobiAsyncWebsocket
+
+Asynchronous huobi websocket SDK.
+
+This module is a class inherited from module 'AsyncWebsocketStreamInterface'. For the usage detail, refer to that
+module.
+
