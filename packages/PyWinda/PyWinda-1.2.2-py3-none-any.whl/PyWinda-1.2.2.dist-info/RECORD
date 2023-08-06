@@ -1,0 +1,10 @@
+PyWinda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PyWinda/pywinda.py,sha256=gmxit9snbTnU7R-lpdjnEWKJPCv-Q6lOdAVKiPUxRVQ,21728
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/experiment.py,sha256=4p9VA0yAWTryw7ehrqI1zJL2G6w_ALZCc8UBuECOeZY,176
+tests/test_pywinda.py,sha256=UDJRyw_FQWnLmuCHWGY6BtDwwjvrRU2XtQXWV-05X-w,224
+PyWinda-1.2.2.dist-info/LICENSE,sha256=2GopRxgkbCWhrgeZs1R_Y5NCFG30U82ixAfIfpWtBMU,1544
+PyWinda-1.2.2.dist-info/METADATA,sha256=VEDAtNIp8p9u7V7ZE_l_X7MXHtXyyF6ml4kSnA1JsDY,1094
+PyWinda-1.2.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+PyWinda-1.2.2.dist-info/top_level.txt,sha256=yfyumL1Y--j2R780jOEZQ8Nww_Krk-z0tWXEIF7pxos,8
+PyWinda-1.2.2.dist-info/RECORD,,

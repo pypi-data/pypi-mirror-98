@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: PyWinda
+Version: 1.2.2
+Summary: PyWinda provides an extensive range of tools for power and load analysis at a wind farm level.
+Home-page: https://github.com/PyWinda/pywinda
+Author: PyWinda Authors
+Author-email: 
+License: MIT
+Project-URL: Bug Tracker, https://github.com/PyWinda/pywinda/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# PyWinda
+\----------------------------------------------------------------------------------------------
+
+ PyWinda library is developed to simplify the generic calculations for power and load analysis. 
+
+ * For a complete documentation click [here!](https://pywinda.readthedocs.io/en/latest/)
+
+ If you want to contribute to PyWinda library:
+
+
+* For a guide to contribution click [here!](https://github.com/PyWinda/pywinda)
+* To fork and make your contribution in Github click [here!](https://github.com/PyWinda/pywinda)
+
+
+
+
