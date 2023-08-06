@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: snirocr
+Version: 0.1.4
+Summary: automatic ocr
+Home-page: UNKNOWN
+Author: snir dekel
+Author-email: snirdekel101@gmail.com
+License: MIT
+Description: press the ctrl button two times, it will create a rectangle in the area you chose and ocr the image-the text will be copied to your clipboard
+Keywords: optical computer vision
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

@@ -1,0 +1,9 @@
+keyboard
+pytesseract
+pyperclip
+Pillow
+playsound
+pypiwin32
+pyautogui
+mega.py
+pyscreenshot
