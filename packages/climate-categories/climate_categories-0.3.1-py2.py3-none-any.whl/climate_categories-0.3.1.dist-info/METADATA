@@ -1,0 +1,143 @@
+Metadata-Version: 2.1
+Name: climate-categories
+Version: 0.3.1
+Summary: Commonly used codes, categories, terminologies, and nomenclatures used in climate policy analysis as a Python package.
+Home-page: https://github.com/pik-primap/climate_categories
+Author: Mika Pflüger
+Author-email: mika.pflueger@pik-potsdam.de
+License: Apache Software License 2.0
+Project-URL: Documentation, https://climate-categories.readthedocs.io/
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: networkx
+Requires-Dist: pandas
+Requires-Dist: strictyaml
+Requires-Dist: natsort
+Provides-Extra: dev
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: ipykernel ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: networkx ; extra == 'dev'
+Requires-Dist: xdoctest ; extra == 'dev'
+Requires-Dist: camelot-py[cv,plot] ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+==================
+Climate categories
+==================
+
+
+.. image:: https://img.shields.io/pypi/v/climate_categories.svg
+        :target: https://pypi.python.org/pypi/climate_categories
+
+.. image:: https://readthedocs.org/projects/climate-categories/badge/?version=latest
+        :target: https://climate-categories.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4608782.svg
+        :target: https://doi.org/10.5281/zenodo.4608782
+
+Commonly used codes, categories, terminologies, and nomenclatures used in climate
+policy analysis in a nice Python package.
+The documentation can be found at: https://climate-categories.readthedocs.io.
+
+Included categorizations
+------------------------
+
+==========  ===================================
+Name        Title
+----------  -----------------------------------
+IPCC1996    IPCC GHG emission categories (1996)
+IPCC2006    IPCC GHG emission categories (2006)
+==========  ===================================
+
+Status
+------
+Climate categories is still in development and the API and names of categorizations
+are still subject to change.
+
+License
+-------
+Copyright 2021, Potsdam-Institut für Klimafolgenforschung e.V.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+file except in compliance with the License. You may obtain a copy of the License at
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under
+the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied. See the License for the specific language governing
+permissions and limitations under the License.
+
+Citation
+--------
+If you use this library and want to cite it, please cite it as:
+
+Mika Pflüger, Annika Günther, and Johannes Gütschow. (2021, March 16).
+pik-primap/climate_categories: Version 0.3.1.
+Zenodo. http://doi.org/10.5281/zenodo.4608782
+
+=========
+Changelog
+=========
+
+0.3.1 (2021-03-16)
+------------------
+
+* Properly include data files in binary releases.
+
+0.3.0 (2021-03-16)
+------------------
+
+* Add IPCC1996 categorization and scripts to generate it from the source pdf.
+* Change packaging to declarative style.
+* Automate generation of pickled files via Makefile.
+* Automate loading of included categorizations.
+
+0.2.2 (2021-03-09)
+------------------
+
+* Re-release again to trigger zenodo.
+
+0.2.1 (2021-03-09)
+------------------
+
+* Re-release to include correct changelog.
+
+0.2.0 (2021-03-09)
+------------------
+
+* Introduce API for multiple codes and multiple children.
+* Implement classes and functions.
+* Add IPCC2006 categorization and scripts to generate it from the source pdf.
+
+0.1.0 (2021-01-18)
+------------------
+
+* First release on PyPI.
+* Contains documentation and a stub API for querying, but no working code yet.
+
+
