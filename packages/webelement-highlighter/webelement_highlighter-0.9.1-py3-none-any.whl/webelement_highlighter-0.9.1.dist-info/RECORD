@@ -1,0 +1,11 @@
+demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo/highlight_elements.py,sha256=lfLP_e8sOuvDFw45isSz95WOey5qdRy306ek6BKLH7U,379
+demo/make_elements_blink.py,sha256=UHkG02spS01ArTz-2ZpOo0BNJFl9h655IOy8S5Can_Q,371
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_webelement_highlighter.py,sha256=1oVaPS4DADCCXVbJpIWhLvVsb8U1-aMWhyJHxMsAacc,2178
+webelement_highlighter/__init__.py,sha256=Dj9wPuMj42FcivL8Jn7a8hpFqcYlR0NRV8B3Dns2N6Q,7174
+webelement_highlighter-0.9.1.dist-info/LICENSE,sha256=mgRJkJmdAwPXhmdfpOYHXyY1H_-OSKdxLC-QpJTUdkg,1075
+webelement_highlighter-0.9.1.dist-info/METADATA,sha256=Adp-NyqI-FFbTlgrS225KFEjw0TqHCp53ikiTE0E5wQ,1871
+webelement_highlighter-0.9.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+webelement_highlighter-0.9.1.dist-info/top_level.txt,sha256=jVaDYG7Ww5ma__sALSk7oOYFQMNqQJSrnwNnYrMpSQs,34
+webelement_highlighter-0.9.1.dist-info/RECORD,,
