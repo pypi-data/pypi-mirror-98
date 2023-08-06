@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wllutils
+Version: 0.0.2
+Summary: utils of wll
+Home-page: https://github.com/Wei-Liulei/utils
+Author: weiliulei
+Author-email: 18500964455@163.com
+Maintainer: weiliulei
+Maintainer-email: 18500964455@163.com
+License: MIT
+Platform: all
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
