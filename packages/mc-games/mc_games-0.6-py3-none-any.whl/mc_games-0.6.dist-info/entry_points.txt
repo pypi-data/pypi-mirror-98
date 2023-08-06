@@ -1,0 +1,3 @@
+[console_scripts]
+mc_games = mc_games:main
+
