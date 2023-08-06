@@ -1,0 +1,3 @@
+[console_scripts]
+gnome-source-thumbnailer = gnome_source_thumbnailer:main
+

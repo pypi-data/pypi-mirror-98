@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gnome-source-thumbnailer
+Version: 0.3.1
+Summary: Thumbnails for your code
+Home-page: https://gitlab.gnome.org/ZanderBrown/gnome-source-thumbnailer
+Author: Zander Brown
+Author-email: zbrown@gnome.org
+License: UNKNOWN
+Description: # Source Thumbnailer
+        
+        Thumbnails for your code
+        
+        Simple little pictures of the first few lines of content with a little badge
+        
+        Nothing fancy, just install and enjoy
+        
+        **NOTE**: Must be installed system wide, recent versions of GNOME only allow
+        thumbnailers installed under /usr for security reasons
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Desktop Environment :: Gnome
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
