@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vrt-lss-clustering
+Version: 3.7.167066
+Summary: Veeroute.LSS Clustering
+Home-page: https://docs.veeroute.com/#/lss/clustering
+Author: Veeroute Support Team
+Author-email: support@veeroute.com
+License: UNKNOWN
+Description:     Veeroute.LSS Clustering API  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Veeroute.LSS Clustering
+Platform: UNKNOWN
+Requires-Python: >=3.6
