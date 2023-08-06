@@ -1,0 +1,14 @@
+LICENSE,sha256=7BlrxZr2WlcASZEVdq49GJybrXGXl-c1O6qqchACzww,1094
+pyzohoapi/__init__.py,sha256=hUavzyX5vBpHjtXy71XazWF-cUftRtH3YantduBvuM0,303
+pyzohoapi/books.py,sha256=OGTRfNYeyXKbZKquMtKB9Uzpvc3idQWRE2RBVb2tZF4,1578
+pyzohoapi/core/__init__.py,sha256=AE782ZZMS7JnTRSWF05xOkCNsytT_UBryKd72v4ta-M,17206
+pyzohoapi/core/collection.py,sha256=_X-AEP2VrWOqwaWM7w59y0xpNY-a__x0qSQCAruSPFA,12346
+pyzohoapi/core/utils.py,sha256=TmQEeUVf_vkIoMGoY2yWwOEm2SEtePfxctzu_aFQ5VI,1600
+pyzohoapi/exceptions/__init__.py,sha256=gsKT9JAh9nw8NJm7ZDRLLst9Ze3J8xIDNyz633LdF0U,2352
+pyzohoapi/inventory.py,sha256=8orJwMU_mB9JlC9_0mLTOxZ2l_K_yG2AbZAeTP1Bp6M,1835
+pyzohoapi/objecttypes/__init__.py,sha256=0MZOlFMa1DiFZ8YYCvvRYsKig51UJa-QyaQx1Bv-5WA,2327
+pyzohoapi/objecttypes/mixins/__init__.py,sha256=12CCuF6Tk8k4mT14jLpBtmQjUK8h0tnv6InXXN5-xgw,3339
+pyzohoapi-0.5.0.dist-info/LICENSE,sha256=7BlrxZr2WlcASZEVdq49GJybrXGXl-c1O6qqchACzww,1094
+pyzohoapi-0.5.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+pyzohoapi-0.5.0.dist-info/METADATA,sha256=7Aa9rZMbo5yzxsLQ-5lTgl285sMtUndHK-0y4H1-I0I,2757
+pyzohoapi-0.5.0.dist-info/RECORD,,
