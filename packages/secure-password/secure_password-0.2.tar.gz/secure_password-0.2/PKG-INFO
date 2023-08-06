@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: secure_password
+Version: 0.2
+Summary: A very easy password generator
+Home-page: UNKNOWN
+Author: Invisible Medusa
+Author-email: invisiblemedusa10@gmail.com
+License: MIT
+Description: this is an easy password generator made by @InvisibleMedusa and @RexDev (on telegram) 
+        
+        Change Log
+        ==========
+        
+        0.1 (14/03/2021)
+        -------------------
+        - First Release
+        
+Keywords: password generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
