@@ -1,0 +1,11 @@
+omymodels/__init__.py,sha256=o3aoA4TCn_zZJAhyOK00vRoghFAz9pvIVNipAQYRhgM,86
+omymodels/cli.py,sha256=U2ZhPyNDJbFlArGuLZ323X9pRZBxW0vJGP5xmmiCb5o,1413
+omymodels/gino/core.py,sha256=Q5SVfU9iME3-ounURWnSP1-q8nX7cl3LvF8btdGtpLw,6068
+omymodels/gino/templates.py,sha256=bmdTQU2rGzNFmZbHqre0oSiHu1-t_8oVmUD7EqI5Zps,1098
+omymodels/gino/types.py,sha256=vr0fslu1ZoMHN3P8yc00LBdkeNg3RolqNOSVYvU6XEI,842
+omymodels/utils.py,sha256=VfLOYcRlO_kmwYX1HMXb2Odpp8hFTX_mFWQAUrHRy1M,1312
+omymodels-0.2.0.dist-info/entry_points.txt,sha256=lWI7KQX0Wq_ry6xXH2QrRx4xIXNTMA4wdb7ZOOPZZaI,42
+omymodels-0.2.0.dist-info/LICENSE,sha256=F7Lnfq5TMUS5ic1Ax7_kRc5hB23kqM61CV6ueLQkkW4,1093
+omymodels-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+omymodels-0.2.0.dist-info/METADATA,sha256=x_gNvZvt3EX_slen-iMgC-QmeiUFAgf7qA9Uw1CYzhM,4325
+omymodels-0.2.0.dist-info/RECORD,,
