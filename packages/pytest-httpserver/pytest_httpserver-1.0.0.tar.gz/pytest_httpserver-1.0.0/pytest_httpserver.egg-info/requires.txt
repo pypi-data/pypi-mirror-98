@@ -1,0 +1,23 @@
+werkzeug
+
+[:python_version < "3.5"]
+typing
+
+[dev]
+autopep8
+coverage
+flake8
+ipdb
+pytest
+pytest-cov
+reno
+requests
+sphinx
+sphinx_rtd_theme
+wheel
+
+[test]
+coverage
+pytest
+pytest-cov
+requests
