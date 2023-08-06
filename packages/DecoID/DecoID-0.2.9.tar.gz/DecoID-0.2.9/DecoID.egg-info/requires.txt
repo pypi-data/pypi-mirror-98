@@ -1,0 +1,12 @@
+numpy
+sklearn
+pandas
+dill
+scipy
+pyteomics
+requests
+lxml
+molmass
+keras
+tensorflow
+IsoSpecPy
