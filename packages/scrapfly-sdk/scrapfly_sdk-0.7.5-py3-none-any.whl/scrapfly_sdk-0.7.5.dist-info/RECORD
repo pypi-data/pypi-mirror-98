@@ -1,0 +1,17 @@
+scrapfly/__init__.py,sha256=vkdfuzWCmtfP_QviPiViUf7b_EvA3nWf6a6TRVN4ufk,1336
+scrapfly/api_response.py,sha256=2dNLi3FbqUo2430j8_vN7ZouvdKWQNrhmyYBeupd9os,13417
+scrapfly/client.py,sha256=7Prbdg7bXxqpFOHLdw0aigpNsZ8E2ko27hCZO5k2AlM,12853
+scrapfly/errors.py,sha256=3ZNF29DBBfT_sCoKqls-o4XfDdCQN0wvRkjA4cDzlxk,6737
+scrapfly/frozen_dict.py,sha256=t2CryoJL7iEcpCjTdoLZqhyqjsTNkXteOJnti9DYxWc,653
+scrapfly/scrape_config.py,sha256=pHp1VCUQS_UtzXdsCBv-ypg8m5sXejuOVyDj2Y33GL8,8535
+scrapfly/scrapy/__init__.py,sha256=fu3JfgArEerDXgtEaW-ET2zfQ3LRMM2lpXEoJ47s8Ys,377
+scrapfly/scrapy/downloader.py,sha256=_iZxAhsyMJBlXCWiFEEEwuqQommR8vw9wXKyGPq10ss,4413
+scrapfly/scrapy/middleware.py,sha256=LTh3cL_MxbNBnjtwPGluyb3BGmNoi3wLnvwHkjUyJtY,1021
+scrapfly/scrapy/request.py,sha256=aojvRcDAufsqDQNJu7czrjb5dydHR_AMvSlTVF9MjSA,1916
+scrapfly/scrapy/response.py,sha256=m-BGkhdmuETwHiROT0Oz5JkBIL183UDsOTIK3YnOydM,3278
+scrapfly/scrapy/spider.py,sha256=Gfd2jZ0LQp9LxqpgemQc1UnGKrrCtAxKYTiSshFNvO8,5908
+scrapfly_sdk-0.7.5.dist-info/LICENSE,sha256=7ultQy4Vl3t7R2sRRyZcrIChyuPBrQfU-M82YwdI_Xc,1390
+scrapfly_sdk-0.7.5.dist-info/METADATA,sha256=0N6-t33BUAURu9gXuMoIHyqUzAWm-SI0NkXrJqtkxWI,2944
+scrapfly_sdk-0.7.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scrapfly_sdk-0.7.5.dist-info/top_level.txt,sha256=EKmjOFVAywXiJUz1YqLMEELZzfcSRK-TBZYa78jNT3Q,9
+scrapfly_sdk-0.7.5.dist-info/RECORD,,
