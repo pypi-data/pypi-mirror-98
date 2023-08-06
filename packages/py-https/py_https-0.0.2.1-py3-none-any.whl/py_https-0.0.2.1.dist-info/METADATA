@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: py-https
+Version: 0.0.2.1
+Summary: A simple python https server
+Home-page: https://github.com/avinashkarhana/py-https
+Author: Avinash Karhana
+Author-email: avinashkarhana1@gmail.com
+License: UNKNOWN
+Keywords: https,pyhttps,https.server,pyhttps.server
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+[![Build and Publish to PyPI](https://github.com/avinashkarhana/py-https/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/avinashkarhana/py-https/actions/workflows/publish-to-pypi.yml)
+# py-https
+
+> A simple python https server
+
+## INSTALLATION:
+    pip install py-https
+
+## USAGE:
+>> As a module from any location
+>>
+>>      python3 -m pyhttps [-option value] [port]
+
+>> In script
+>>
+>>      from pyhttps import startserver
+>>
+>>      startServer(host,port,cert,key)
+>>      ##cert : certificate file location
+>>      ##key  : key file location
+
+
+## OPTIONS:
+
+    --v             Version Info(**)
+    --help          Help and usage Info(**)
+    -p              Port Number [Port 443,80 may require sudo or elivated permissions]
+    -h              Host address
+    -c              ssl cert file location
+    -k              ssl key file location
+    -gencert        Auto Generate SSL Cert and Key(#)
+    (-gencert [Value]: Target Path for generating certificates)
+
+    ** [No value needed for these type of options]
+    #  [Optional value for this type of option]
+
+    >>> openssl must be installed and included in PATH for -gencert]
+
+
