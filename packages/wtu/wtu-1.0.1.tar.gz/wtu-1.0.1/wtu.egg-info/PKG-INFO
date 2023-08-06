@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: wtu
+Version: 1.0.1
+Summary: WTU gadget
+Home-page: UNKNOWN
+Author: Syaoran
+Author-email: SyaoranCheung@outlook.com
+License: MIT License
+Description: # wtu
+        
+        
+        
+        ## Intro
+        
+        WTU gadget
+        
+        
+        
+        ## Setup
+        
+        ```shell
+        pip install wtu
+        ```
+        
+        
+        
+        ## Token
+        
+        To active this script, you need to get the 'JWT' authorization from WeChat App,
+        
+        The token, expired after 7 days, you may replace and refresh it once a week
+        
+        
+        
+        ## Health Report
+        
+        ```python
+        #!/usr/bin/env python
+        # -*- coding: utf-8 -*-
+        
+        from wtu import health_report
+        import schedule
+        
+        JWT = ''
+        jk = health_report.JKClient(JWT)
+        
+        def report():
+            jk.health_report('student_number')
+        
+        schedule.every().day.at("00:10").do(report)
+        
+        while True:
+            schedule.run_pending()
+            time.sleep(180)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
