@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: openwebvulndb-tools
+Version: 1.1.0
+Summary: A collection of tools to maintain vulnerability databases.
+Home-page: https://github.com/delvelabs/openwebvulndb-tools
+Author: Delve Labs inc.
+Author-email: info@delvelabs.ca
+License: GPLv2
+Platform: UNKNOWN
+Requires-Python: >=3.8.0,<3.9.0
+Requires-Dist: aiohttp (<4.0,>=3.7.3)
+Requires-Dist: easyinject (==0.3)
+Requires-Dist: lxml (==4.6.2)
+Requires-Dist: marshmallow (<3,>=2.21.0)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: yarl (==1.6.3)
+
+UNKNOWN
+
+
