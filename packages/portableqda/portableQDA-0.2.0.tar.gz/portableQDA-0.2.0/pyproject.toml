@@ -1,0 +1,104 @@
+[tool.poetry]
+
+name = "portableQDA"
+version = "0.2.0"
+description = "import/export QDC and QDPX files for Qualitative Data Analysis (CAQDAS) Software, conforming to the XML-based REFI-QDA Standard (https://www.qdasoftware.org)"
+
+license = "LGPL-3.0-only"
+
+authors = ["Leandro Batlle <Leandro.Batlle@gmail.com>"]
+
+readme = "README.md"
+
+homepage = "https://gitlab.com/portableqda/portableQDA"
+documentation = "https://gitlab.com/portableqda/portableQDA/-/wikis/home"
+repository = "https://gitlab.com/portableqda/portableQDA"
+
+keywords = [
+  "Qualitative-Data-Analysis",
+  "QDA",
+  "codebook",
+  "CAQDAS"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Sociology",
+    "Topic :: Documentation",
+    "Topic :: Text Processing :: Markup :: XML"
+]
+
+packages = [ { include = "portableqda" } , { include = "tests" } ]
+
+[tool.poetry.dependencies]
+
+python = "^3.6"
+
+PyYAML = "^5.1"
+Markdown = "^2.0"
+bottle = "~0.12.13"
+requests = "^2.0"
+mdx_outline = "^1.3.0"
+python-markdown-math = "~0.6"
+plantuml-markdown = "~3.4.0"
+six = "*" # missing 'plantuml-markdown' dependency: https://github.com/dougn/python-plantuml/issues/11
+openpyxl = "^2.6"
+nose = "^1.3.7"
+xmldiff = {version = "^2.4", optional = true}
+lxml = "^4.6.2"
+#xmldiff = "^2.4"
+
+[tool.poetry.dev-dependencies]
+
+# Formatters
+black = "=19.10b0"
+isort = "=4.3.21"
+
+# Linters
+mypy = "^0.720"
+pydocstyle = "*"
+pylint = "~2.3.1"
+
+# Testing
+nose = "^1.3"
+nose-cov = "*"
+nose-capturestderr = "*"
+nose-show-skipped = "*"
+expecter = "*"
+
+# Reports
+coveragespace = "*"
+
+# Documentation
+mkdocs = "^1.0"
+pygments = "*"
+
+# Tooling
+pyinstaller = "*"
+sniffer = "*"
+MacFSEvents = { version = "*", platform = "darwin" }
+pync = { version = "*", platform = "darwin" }
+rope = "^0.14.0"
+
+[tool.poetry.scripts]
+
+[tool.black]
+
+target-version = ["py36", "py37"]
+skip-string-normalization = true
+
+[build-system]
+
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
