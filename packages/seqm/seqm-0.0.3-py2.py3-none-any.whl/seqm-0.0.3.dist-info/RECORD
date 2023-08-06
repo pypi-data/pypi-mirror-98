@@ -1,0 +1,14 @@
+seqm/__init__.py,sha256=Mr-gz_jEdceqqq5Yp9MC6aVZvDCAkrQqXMnS3GTbJYs,961
+seqm/__main__.py,sha256=83zmnEi_dLPYktFaNz4QZWkQLwb3WsbUXMImIkJmrNE,2153
+seqm/__utils__.py,sha256=-watc0xJ6IRcJcO_u5yzCAXw0AbReDlyWjsZkeqHygY,1441
+seqm/conversion.py,sha256=YA1dm1whH6dvLxkbokqn0SGnAK_ismrDMwHyv25XwLM,5290
+seqm/distance.py,sha256=-aEEjrDTTeIttvmQYpzP1Qne6S7LnGcnnc_N5AYfv9E,910
+seqm/metrics.py,sha256=fdCkVMQ5Dk40LU-8-GZKhMMgtq0OchnYWvSCTHSI0PU,4950
+seqm/objects.py,sha256=4EdVzy7ZPV-r9ESgY8XzR11ZkjJ_AtLqsqsmYDWEnL0,5407
+seqm/utils.py,sha256=7i9Ekrvqk4VwGobRxAxDoVfanyYMilR_eOccP34qz74,1205
+seqm-0.0.3.dist-info/LICENSE,sha256=hptGbSXiGpdGCfmsdZ9PUwIhTgz5ChEaM-0xfq0g1Zc,1073
+seqm-0.0.3.dist-info/METADATA,sha256=9zFBgND2gJW9BgkJ5SVUab8uLKpahf9TKEoShEBwKwg,9576
+seqm-0.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+seqm-0.0.3.dist-info/entry_points.txt,sha256=MOTdNtm5ayh0Fs_SKmVbBhfxskeCvgSx_jgryF8TdIo,45
+seqm-0.0.3.dist-info/top_level.txt,sha256=kSP9lvb4z4gWxE0eVBGSh-X64I7HZNjH-BVOhW4rLUA,5
+seqm-0.0.3.dist-info/RECORD,,
