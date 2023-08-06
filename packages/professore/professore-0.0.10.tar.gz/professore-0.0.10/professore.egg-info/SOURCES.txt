@@ -1,0 +1,10 @@
+README.md
+professor.py
+setup.cfg
+setup.py
+professore.egg-info/PKG-INFO
+professore.egg-info/SOURCES.txt
+professore.egg-info/dependency_links.txt
+professore.egg-info/entry_points.txt
+professore.egg-info/requires.txt
+professore.egg-info/top_level.txt
