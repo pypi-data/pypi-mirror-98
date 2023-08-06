@@ -1,0 +1,15 @@
+README.md
+setup.py
+fgit/__init__.py
+fgit/actions.py
+fgit.egg-info/PKG-INFO
+fgit.egg-info/SOURCES.txt
+fgit.egg-info/dependency_links.txt
+fgit.egg-info/entry_points.txt
+fgit.egg-info/requires.txt
+fgit.egg-info/top_level.txt
+fgit/utils/__init__.py
+fgit/utils/git.py
+fgit/utils/message_box.py
+fgit_cli/__init__.py
+fgit_cli/main.py
