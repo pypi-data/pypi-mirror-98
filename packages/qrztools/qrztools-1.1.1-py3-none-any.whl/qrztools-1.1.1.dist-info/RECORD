@@ -1,0 +1,12 @@
+qrztools/__info__.py,sha256=qnq9N2SOTHNwEAKpSTIE4VsEA5fj8m5hDl7CCz7cFH0,337
+qrztools/__init__.py,sha256=jJN04PULD-nI3V6hKd8YieDvJy_V9Hteeo5Y-QpxUoA,623
+qrztools/__main__.py,sha256=hDmDZRftubCJl77QsXIUAmhGCdy-anDJXw4jQoxQESo,6622
+qrztools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qrztools/qrzasync.py,sha256=oGrzMKbp8xlkJrMWu_SrwVH4ug9_j2i3z0ekm1eLvdk,4314
+qrztools/qrzsync.py,sha256=EsiyNe87N9qHURS6KZ1URJskHPvLHPu5ZgMKS3LdY_A,3935
+qrztools/qrztools.py,sha256=Ex6LHWK0NKxIts_87NHInFWkhp5kGIXTW_fJiJ8z4FY,16553
+qrztools-1.1.1.dist-info/LICENSE,sha256=utui6HOFlM_4VJp91VhY-xiMV31yUraok7a3MIZ9h68,1526
+qrztools-1.1.1.dist-info/METADATA,sha256=XmaMMacuoC56ZzHcYbeU2pxolaz0XbH1HcA-pyoyCYE,2091
+qrztools-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+qrztools-1.1.1.dist-info/top_level.txt,sha256=5O162kih5mUCSQrA3TCGVrbJAKQMfGS0ej9OfP3Tne0,9
+qrztools-1.1.1.dist-info/RECORD,,
