@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: iscc-samples
+Version: 0.4.0
+Summary: A collection of media files as sample data for ISCC testing.
+Home-page: https://github.com/iscc/iscc-samples
+License: CC-BY-4.0
+Keywords: media,testdata
+Author: Titusz Pan
+Author-email: tp@py7.de
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: Utilities
+Project-URL: Repository, https://github.com/iscc/iscc-samples
+Description-Content-Type: text/markdown
+
+# Test data for ISCC
+
+
+## Installation
+
+```console
+$ pip install iscc-samples
+```
+
+## Usage:
+```python
+import iscc_samples as samples
+
+for path in samples.videos():
+    print(path)
+```
+
+## Development
+
+### Making a release
+
+```console
+$ poetry build -f sdist
+$ poetry publish
+```
+
+
+## Maintainers
+
+[@titusz](https://github.com/titusz)
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+You may also want join our developer chat on Telegram at <https://t.me/iscc_dev>.
+
+
+## Change Log
+
+### [0.4.0] - 2021-03-14
+- Add consistent title metadata to text documents
+- Add support to filter files by file extension
+
+### [0.3.0] - 2021-02-17
+- Add powerpoint sample files
+
+### [0.2.0] - 2021-01-25
+
+- Add iscc_samples.all()
+- Return files in sorted order
+
+### [0.1.0] - 2021-01-25
+
+- Initial release with basic sample files
+
+## License
+
+CC-BY-4.0 © 2021 Titusz Pan
+
