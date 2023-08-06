@@ -1,0 +1,3 @@
+[console_scripts]
+pyacorn = pyacorn.client:cli
+

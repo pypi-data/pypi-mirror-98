@@ -1,0 +1,132 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "acorn-test",
+            "type": "shell",
+            "command": "python3 -m unittest discover -c tests",
+            "windows": {
+                "command": "py -3 -m unittest discover -c tests"
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "group": "test"
+        },
+        {
+            "label": "acorn-package",
+            "type": "shell",
+            "command": "python3 ${workspaceFolder}/setup.py sdist bdist_wheel",
+            "windows": {
+                "command": "py -3 ${workspaceFolder}/setup.py sdist bdist_wheel"
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-test" ]
+        },
+        {
+            "label": "acorn-setup",
+            "type": "shell",
+            "command": "python3 -m {{ project }} setup",
+            "windows": {
+                "command": "py -3 -m {{ project }} setup"
+            },
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-run",
+            "type": "shell",
+            "command": "python3 -m {{ project }} --debug run",
+            "windows": {
+                "command": "py -3 -m {{ project }} --debug run"
+            },
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-setup" ]
+        },
+        {
+            "label": "acorn-mq",
+            "type": "shell",
+            "command": "python3 -m {{ project }} mq",
+            "windows": {
+                "command": "py -3 -m {{ project }} mq"
+            },
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-shell",
+            "type": "shell",
+            "command": "python3 -m {{ project }} shell",
+            "windows": {
+                "command": "py -3 -m {{ project }} shell"
+            },
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-setup" ]
+        },
+        {
+            "label": "acorn-registeradmin",
+            "type": "shell",
+            "command": "python3 -m {{ project }} add-user ${input:acorn-username} ${input:acorn-password} --group system",
+            "windows": {
+                "command": "py -3 -m {{ project }} add-user ${input:acorn-username} ${input:acorn-password} --group system"
+            },
+            "options": {
+                "env": {
+                    "{{ project|upper }}_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "dependsOn": [ "acorn-setup" ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "acorn-username",
+            "type": "promptString",
+            "description": "Enter the new admin username"
+        },
+        {
+            "id": "acorn-password",
+            "type": "promptString",
+            "description": "Enter the new admin password",
+            "password": true
+        }
+    ]
+}
