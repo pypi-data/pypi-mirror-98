@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=UzeY2WC8WdIFenxNKJZgMP_LrmzTO_u4-7_2iBnZnX8,3477
+tf2crf/__init__.py,sha256=7SkjOU0xV7zzganSKCdJR9IEYMksmd8SLzGRrNuZ86E,112
+tf2crf/crf.py,sha256=8M8iYQJicww2N1KL1BGLVSaj859GFfbk0D7_dSNYWKg,3289
+tf2crf/crf_tmp.py,sha256=EYBEYZV28QW4pK4IoaFGaYHV_y6rbC_AZI1bvdZYA3g,3694
+tf2crf/model_wrapper.py,sha256=Pz222JGDX5QMVH9KQ3OMxve2ZN6ZHHKpmjLMxi_SfR0,6997
+tf2crf/other_losses.py,sha256=RgR_1XRPTS1EneH5fmMzDZVvJZeQtLSniuKrI1orwnc,382
+tf2crf/test.py,sha256=WKqoln1SPqen6pw-SGkRFsErgj4yQD3nQs1c66yGgao,1151
+tf2crf/test_class.py,sha256=AVRq05mVlFvzGIyDFkYxtAHjImVMPH5CesYQuFHOKsg,978
+tf2crf/test_mixed_precision.py,sha256=6poMJMnYCoEw_YqJEHIRuQIXQ-a5NjIyNABcAOtfEC8,891
+tf2crf-0.1.31.dist-info/LICENSE,sha256=6a-PMI_iWySduNvZgZisAh4-P_xompHyFISjyN1SOUo,1065
+tf2crf-0.1.31.dist-info/METADATA,sha256=NBCGvO2bwc1huG88CuTT-8kqYX-4BMl7CVtqnH8mCSY,1920
+tf2crf-0.1.31.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+tf2crf-0.1.31.dist-info/top_level.txt,sha256=A_e6xVcOHAilLuLZoI8gByPRUFGZugu8YxDkcpqNKIc,13
+tf2crf-0.1.31.dist-info/RECORD,,
