@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lsld2
+Version: 0.0.4
+Summary: TODO
+Home-page: https://github.com/Xiaoy01/lsld2
+Author: Sean Yang, Pranav Gupta
+Author-email: acert@cornell.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Dist: markdown
+
+Preliminary package structure for a simulation fitting tool
+
+
