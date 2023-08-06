@@ -1,0 +1,2 @@
+recursive-include htpayway/templates *.html
+include README.md

@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: django-htpayway
+Version: 0.8.2
+Summary: HT PayWay (payment gateway) API integration with Django
+Home-page: https://github.com/selectnull/django-htpayway
+Author: Sasha Matijasic
+Author-email: sasha@selectnull.com
+License: MIT
+Description: django-htpayway
+        =======================
+        
+        Django app for [HT PayWay][payway] (croatian only web) payment gateway
+        integration.
+        
+        
+        [payway]: https://www.hrvatskitelekom.hr/poslovni/ict/poslovna-rjesenja/web-shop#payway
+        
+Keywords: htpayway ht payway
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
