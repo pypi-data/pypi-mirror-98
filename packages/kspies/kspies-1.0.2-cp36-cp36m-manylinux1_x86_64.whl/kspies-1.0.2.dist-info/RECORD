@@ -1,0 +1,14 @@
+kspies.libs/libgfortran-ed201abd.so.3.0.0,sha256=qKqgvlf0fwb_9d8LQ6xwpHV3igVXxOplo0uum9--YQg,1023960
+kspies.libs/liblapack-78e59728.so.3.0.3,sha256=NJtbJ0stUcKlOnXmabQoQfmNd0NfzL_IlbwnHG6RwPo,4263392
+kspies.libs/libgfortran-bfa58d52.so.1.0.0,sha256=OijrrqTuThICQrVe1DbHiJXbMX0jqVjmveBbHYhFLzw,646840
+kspies.libs/libblas-2d5b9174.so.3.0.3,sha256=wPczWTF0sUUurhmiw8YJv39y-6elwtv044tWAGxyawk,353632
+kspies-1.0.2.dist-info/METADATA,sha256=6jx5vF-UICPHuMWVFKyvJUzN1JwEbV7fBsErQg-_44A,1730
+kspies-1.0.2.dist-info/top_level.txt,sha256=GtmeOfMGFh5lNZeZLFRSIoCh0tAg3MW7Hw0W_5GKZbE,7
+kspies-1.0.2.dist-info/RECORD,,
+kspies-1.0.2.dist-info/WHEEL,sha256=IkZiJFiZiRavDHfaLV1hdVPFYe1HJNLQ8dnz1DVQgHk,109
+kspies-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+kspies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kspies/zmp.py,sha256=DF6uzX6xdMxcXYsZOJC82D02k0DZKdLzkzTGM1QK8eM,15565
+kspies/kspies_fort.cpython-36m-x86_64-linux-gnu.so,sha256=L6-s4QwUssXGNSlOANthjvYUhtW6TadQXsxcxrRxFgQ,301184
+kspies/util.py,sha256=kyaQsCwXXBR-REdfOvTalVSCyn_NRavs-x7vV0f5EsU,24459
+kspies/wy.py,sha256=ZQsdFP5Xwx4C8p6YANYP4BQTpOo3zhFnlLHdsedaPyY,29367
