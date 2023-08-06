@@ -1,0 +1,9 @@
+pyfonybundles/Bundle.py,sha256=81nJ3fDj8qasM8JfrNnrt9m091-bca8StxNyIg6d-E8,818
+pyfonybundles/BundleManager.py,sha256=_fgQc_W4NqS-NFXDeRsJAwn2dvO1gtaULrrUJHHHoyY,2658
+pyfonybundles/loader/entry_points_reader.py,sha256=FhupZhlx-2Ekw5AeTJqP3p6aODtjlRlJsVKG3A0BgxM,222
+pyfonybundles/loader/pyfony_bundles_loader.py,sha256=BMZ8mWb9RNZiaAKQMS3114Ud4OmruBPVUVBg5gXEOC0,1540
+pyfonybundles/loader/pyproject_reader.py,sha256=iY_EuHcfBQNGxRN-XwkYn8KaNIORIwpRIt4EHI7dJEk,341
+pyfony_bundles-0.4.0b1.dist-info/LICENSE,sha256=p9qOsNzKt71jf-HqXcPq37l1LUkod01gTPiBMc2UVOI,1060
+pyfony_bundles-0.4.0b1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pyfony_bundles-0.4.0b1.dist-info/METADATA,sha256=9I3UcvvErGCFhzls4zFMpYHUnIFWzbUOxvw-na5sO8w,865
+pyfony_bundles-0.4.0b1.dist-info/RECORD,,
