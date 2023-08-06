@@ -1,0 +1,65 @@
+CHANGES
+=======
+
+* chore: Flesh Out README to Add new Introduction, Example, Setup and Documentation Sections (#68)
+* fix(cd): Only run release CD pipeline on sementic versioned tag push
+* CD: Deploy to DigitalOcean Kubernetes instead of GKE to save costs (#65)
+* fix(cd): Allow CD to run on 'release/\*' branches
+* chore: Add CHANGELOG for v0.1.0
+
+v0.1.0
+------
+
+* feat(cd): Use exact git tag instead of tag+hash when tag is available to tag bentobox-engine image
+* Add Mypy Static Type Checking to SDK & Pull latest bentobox-engine image as build cache (#61)
+* CD: Automatically Deploy Bentobox Engine to GKE K8s (#60)
+* CD Pipeline: Automate Publish Bentobox SDK to Pypi and Bentobox Engine Container to GHCR (#59)
+* feat(sdk): Implement Mountain Car as Example Simulation in the SDK (#57)
+* chore(e2e): Improve E2E coverage by testing more data types (#58)
+* Engine: Allow implicit type conversion for mutateOp, add existence check before retrieving component value (#56)
+* chore(e2e): Implement E2E tests for Get/Set Attribute & Stepping Simulations (#44)
+* refactor(ci): Allow E2E to run without sim/sdk unit tests passing to speed up CI
+* refactor(ci): Remove docker layer caching due to issues with disk space
+* Engine: Implicit Type Conversion (#51)
+* Engine: Set data\_type for all protobuf values (#47)
+* fix(e2e): Fix E2E assuming implicit type conversion even though it has not been implemented yet
+* Engine: Execute init graph on apply (#46)
+* feat: Creating, Using Simulations using SDK & Fixing the Graph Compiler (#28)
+* Engine GRPC with tests (#27)
+* Graph Interpreter (#24)
+* feat: Setup GRPC networking between SDK and Sim Engine, Add End to End Tests (#26)
+* fix(proto): Fix typo 'float\_33' should be 'float\_32'
+* feat(sdk): Preprocess AugAssign into separate Assignment and Binary Operation (#14)
+* fix(doc): Fix SDK Documentation Rendering in existing SDK Docs (#25)
+* fix(build): Fix PDOC variable unset in project makefile causing sdk docs CD to break
+* ICS Entity Index (#21)
+* feat(sdk): Add ability to compile If statements and ternary expressions to graph (#8)
+* fix: incorrect component constructor name
+* ci: Add clang-format to Lint and Format bentobox-sim and Protobuf Definitions (#19)
+* ci: Fix bentobox-sim build not properly taking advantage of Docker Layer caching (#13)
+* feat: add built-in components closes #22
+* feat(sdk): Add Graph Compiler to compile basic arithmetic expressions (#7)
+* feat(cd): Automate build and deployment of bentobox-sdk docs on Github Pages (#10)
+* feat(ci): Add caching of docker layers to speed up CI build of bentobox-sim container. (#11)
+* feat(ci): Add automatic spellcheck on codebase to CI (#9)
+* Complete Core ICS  🎉 (#6)
+* chore: reorganise file structure in sim
+* Bootstrap SDK Component (#5)
+* Bootstrap gRPC/Protobuf API for Simulation Service (#4)
+* refactor: move graphics and window operations to context classes
+* feat: update compVec to use ids instead of indexes
+* Sim: Support for  building with gRPC/Protobuf & Dependency cleanup (#3)
+* feat: add component manager
+* chore: remove ICSManager There should not be a class to handle both components and indexes
+* fix: remove const qualifier for typeMap::at
+* fix: remove const qualifier for compVec::at chore: remove unique\_ptr from compVec
+* Incomplete Index Component System (ICS) (#2)
+* fix(build): Relax glfw3 lib requirement to any version matching version 3
+* fix(infra): Replace alpine in Dockerfile with Ubuntu to fix issue with running in docker
+* fix(build): relax cmake version requirement to 3.16 to increase compat with more cmake versions
+* Sim: Bootstrap Test framework & CI Pipeline (#1)
+* chore: update lib to include glad include folder
+* chore: add project template
+* chore: remove lib as an ignored folder in gitignore
+* docs: add readme
+* chore: add gitignore
