@@ -1,0 +1,16 @@
+{% load report_tags %}
+
+<table class='columns-table' border="0" cellspacing="0"
+  style="height: 40px;font-size: 10px;margin-top:10px;">
+  <thead>
+    <tr>
+      {% for col in columns %}
+        <th
+          class="{% if forloop.counter0 == 0 %}first-td{% endif %}"
+          style="{{ columns|col_style:forloop.counter0 }}padding-top:3.5px;height: 30px;">
+          <span class="fc1-5">{{col.title}} </span>
+        </th>
+      {% endfor %}
+    </tr>
+  </thead>
+</table>

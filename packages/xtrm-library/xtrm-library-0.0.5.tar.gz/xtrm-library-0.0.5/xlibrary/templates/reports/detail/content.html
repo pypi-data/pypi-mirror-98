@@ -1,0 +1,27 @@
+{% load report_tags %}
+
+<table class="content-table" border="0" cellspacing="0" style="font-size: 10px;border-bottom: 1px solid #000;">
+    <tbody>
+      {% for row in data %}
+          <tr>
+            {% for col in row %}
+            <td style="{{ columns|col_style:forloop.counter0 }}" class="{% if forloop.counter0 == 0 %}first-td{% endif %}">
+              <span class="fc1-4" style="font-size: 10px;">
+                {% if col != None %}
+                  {% with pricision=columns|col_precision:forloop.counter0 %}
+                    {% if columns|col_type:forloop.counter0 == 'date' %}
+                      {{col|date:"d-m-Y"}}
+                    {% elif columns|col_type:forloop.counter0 == 'number' %}
+                      {{col|floatformat:pricision}}
+                    {% else %}
+                        {{col}}
+                    {% endif %}
+                  {% endwith %}
+                {% endif %}
+              </span>
+            </td>
+            {% endfor %}
+          </tr>
+      {% endfor %}
+    </tbody>
+</table>

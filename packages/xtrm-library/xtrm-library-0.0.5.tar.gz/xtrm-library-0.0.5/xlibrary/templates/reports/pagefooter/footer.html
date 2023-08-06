@@ -1,0 +1,66 @@
+{% load report_tags %}
+
+{% comment "Optional note" %}
+<script>
+    var x = {{data|safe}}
+    document.getElementById('loadData').write(x);
+</script>
+<div id="loadData"></div>
+
+<span><b>Total: {{data|slotTotalAmount|floatformat:0}}</b></span>
+{% endcomment %}
+
+{% with has_aggregation=False %}
+    {% for col in columns %}
+        {% if columns|col_type:forloop.counter0 == 'numeric' and columns|col_aggregation:forloop.counter0 == 'sum' or columns|col_aggregation:forloop.counter0 == 'avg' %}
+            {{ has_aggregation|update_variable:True }}
+        {% endif %}
+    {% endfor %}
+    {% if has_aggregation %}
+        <table class="content-table" border="0" cellspacing="0" style="font-size: 12px;margin-top:15pt">
+            <tr><th>Summary</th></tr>
+        </table>
+        <table class="content-table" border="0" cellspacing="0" style="font-size: 10px;border-bottom: 1px solid #000;border-left: 0.1px solid #000;">
+            <tbody>
+                <tr>
+                {% with first_td=1 %}
+                    {% for col in columns %}
+                        {% if columns|col_type:forloop.counter0 == 'numeric' and columns|col_aggregation:forloop.counter0 == 'sum' or columns|col_aggregation:forloop.counter0 == 'avg' %}
+                            <td style="padding-left: 5px;padding-right: 5px;padding-top: 2px;font-size: 10px;text-align:center;" class="{% if first_td == 1 %}{{first_td|update_variable:0}}first-td{% endif %}">
+                                <span class="fc1-4" style="font-size: 10px;font-weight: bold;">
+                                    {{col.title}}
+                                </span>
+                            </td>
+                        {% else %}
+                            <td></td>
+                        {% endif %}
+                    {% endfor %}
+                {% endwith %}
+                </tr>
+                <tr>
+                    {% with first_td=1 %}
+                        {% for col in columns %}
+                            {% with pricision=columns|col_precision:forloop.counter0 %}
+                                {% if columns|col_type:forloop.counter0 == 'numeric' and columns|col_aggregation:forloop.counter0 == 'sum' %}
+                                    <td style="padding-left: 5px;padding-right: 5px;padding-top: 2px;font-size: 10px;text-align:center;" class="{% if first_td == 1 %}{{first_td|update_variable:0}}first-td{% endif %}">
+                                        <span class="fc1-4" style="font-size: 10px;font-weight: bold;">
+                                            {% slotTotalAmt 1 1 rows=data cols=columns colindex=forloop.counter0 as result %}{{ result|floatformat:pricision }}
+                                        </span>
+                                    </td>
+                                {% elif columns|col_type:forloop.counter0 == 'numeric' and columns|col_aggregation:forloop.counter0 == 'avg' %}
+                                    <td style="padding-left: 5px;padding-right: 5px;padding-top: 2px;font-size: 10px;text-align:center;" class="{% if first_td == 1 %}{{first_td|update_variable:0}}first-td{% endif %}">
+                                        <span class="fc1-4" style="font-size: 10px;font-weight: bold;">
+                                            {% slotAvgAmt 1 1 rows=data cols=columns colindex=forloop.counter0 row_length=data|length as result %}{{ result|floatformat:pricision }}
+                                        </span>
+                                    </td>
+                                {% else %}
+                                    <td></td>
+                                {% endif %}
+                            {% endwith %}
+                        {% endfor %}
+                    {% endwith %}
+                    </tr>
+            </tbody>
+        </table>
+    {% endif %}
+{% endwith %}
