@@ -1,0 +1,17 @@
+cchdo.params-0.1.10-py3.8-nspkg.pth,sha256=bkAYrhmpPTV_HY4MvBSIQrHAeNYG9kUD77gWJfdhmhg,534
+cchdo/params/__init__.py,sha256=jXCdWzcZC-kiKN94Q6PKoJmL5Em8yOcN0mQ0-79FxRc,10195
+cchdo/params/__main__.py,sha256=gdMVWaDxw5zzffhal6sh2Y-xaRLaCrfL-zPAkIg66TM,3941
+cchdo/params/_version.py,sha256=zl5u6Nr8lTSvEFsaKuBu_K9vRPY3W9kqKlt9bKKzNvw,18
+cchdo/params/models.py,sha256=bNRk0eHjnmViPwJqHrMZ7g5nJ4z4kgoJHd5D2t6bQfk,5340
+cchdo/params/parameters.schema.json,sha256=8CEczx5c-o_L88k2ZztBRRbHpksezdR3LumDnHv6ihw,2710
+cchdo/params/params.sqlite3,sha256=KhMxyu37il_9qo68AzUa3Z-_a5mS7dhDt0Y4ALGKbN0,4055040
+cchdo/params/params.sqlite3.sql,sha256=3JfwCrQCB4J8Y3MDWlJNH5XK3-esNb_GaayiPrgDOWc,3390303
+cchdo/params/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cchdo/params/test/test_data.py,sha256=8t3ET817yBU_e-ctsI_dDh0404WYPT_U-hOdLke1MCg,3745
+cchdo/params/test/test_ordering.py,sha256=lI1oMmTENMDf2eNUyl3NuUcBDovbdtKT602hrq0kYoY,884
+cchdo.params-0.1.10.dist-info/LICENSE.md,sha256=jkaxltSFqJXSgf9NMalPKpHn70lXIkAJy9v5Bnuigeo,1499
+cchdo.params-0.1.10.dist-info/METADATA,sha256=C4nlhZZ4aAT1YFNNjSkuZUaXbYeiAAP3WlAmM6ibHC4,3676
+cchdo.params-0.1.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cchdo.params-0.1.10.dist-info/namespace_packages.txt,sha256=5tjN1VA6_Pr0JNbfJlRK9xjDa3SEtrFbFpZiZDW_C0Y,6
+cchdo.params-0.1.10.dist-info/top_level.txt,sha256=jfnwDgXgG1_djW7iE-e3gUXJJYCe_wx75I4oBCArC68,18
+cchdo.params-0.1.10.dist-info/RECORD,,
