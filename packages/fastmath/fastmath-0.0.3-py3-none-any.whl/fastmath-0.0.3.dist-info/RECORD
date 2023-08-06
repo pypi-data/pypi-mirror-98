@@ -1,0 +1,11 @@
+fastmath/__init__.py,sha256=XeEO4oliAhnlXNqDxn04zSXROS5d6NZp184vGY6Tmkc,82
+fastmath/lib.py,sha256=jsX9LDVH8kNy33IEzqFbVTZ_PbxG8HjczOxVIz99_7I,443
+fastmath/main.py,sha256=-6PXPfBojoMHsryqkMJd3BMHXD9g5puPxJUpRXTPT2Q,1037
+fastmath/stats.py,sha256=8lC2XWxsp7XaS-votF00G2o-oQrcE6S2XJThjaTN4jo,1020
+fastmath/test.py,sha256=RyhWTfJTiCa-a5AzOw7N2iPRUsQ_VbVHKXTq8t-f4b4,100
+fastmath/trig.py,sha256=HtE0-kvkJa4WOyLRCEF-3xOYxOgQHYM7yk_mvJ8xFBo,506
+fastmath-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fastmath-0.0.3.dist-info/METADATA,sha256=pncdVYwBbYuu1EZd4Ad0E9Gb14vBn9w-Q-djoxSPsqI,3108
+fastmath-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastmath-0.0.3.dist-info/top_level.txt,sha256=RWDt85elHmq8BBLbaHgbps7_fZYoV9gAmOVNhyoIdEk,9
+fastmath-0.0.3.dist-info/RECORD,,
