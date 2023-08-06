@@ -1,0 +1,3 @@
+[console_scripts]
+ps_comments = pushshift_comment_export.__main__:main
+
