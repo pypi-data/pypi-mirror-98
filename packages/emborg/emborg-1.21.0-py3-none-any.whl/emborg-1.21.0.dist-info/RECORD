@@ -1,0 +1,17 @@
+emborg/__init__.py,sha256=sRCQs5E0fM8LnuR1ehN46wjWEGAFohL_G8OiWggtLCg,93
+emborg/collection.py,sha256=W8ysESR04Q2elyxgkRlNsii-UwQ2H3byrfjeji6WNmY,6687
+emborg/command.py,sha256=GX8S30VscOCEtGDZwgye58VIocTnUEQTZL47ahm-HsQ,51531
+emborg/help.py,sha256=GE3xznJ48uXbD-i-WISlog3jVq3U9SiBAOo7nYfp528,6746
+emborg/main.py,sha256=tt4ApjvAEQSCW9SRIqOFAkiI09lhmUwUnt-LLISSUUQ,4392
+emborg/overdue.py,sha256=rnQwtHofvMc6FW9FxzF9of-YgKvqmeolexZZw-ZonCc,7363
+emborg/patterns.py,sha256=TxnU_JkzY2NpOrWxjZMz0UoGcHX4yAwCNerZj4naPfo,5515
+emborg/preferences.py,sha256=9qQ13G09idykxJbflnYQlv9x5l4pACyD29iq004ZXI0,10248
+emborg/python.py,sha256=MSfbOIliVmYNxq0c0Sn3SooecSWSh1bMMABxX9Cl4cU,4013
+emborg/settings.py,sha256=s092MVR3mVsSXftOEGx0Ytnm-Ki0oPsAjHQeK4OZ0Z0,28393
+emborg/utilities.py,sha256=owr0NITNEzDCwKn72uFVXqqZ6QuVGO0PSsFMKkHNUgI,2485
+emborg-1.21.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+emborg-1.21.0.dist-info/METADATA,sha256=VPC5NWvaR1FhrU4BtPJpNTggyPhyADgSyFOolLxRhBI,2998
+emborg-1.21.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+emborg-1.21.0.dist-info/entry_points.txt,sha256=EpIdeKFQjhUM4TuoslwOj4gCFBsDuHOzBcStKNFtLgc,82
+emborg-1.21.0.dist-info/top_level.txt,sha256=cCQDggGlyS6bMDJV1X-933oITf5yZ6k_YJJTkmebf5g,7
+emborg-1.21.0.dist-info/RECORD,,
