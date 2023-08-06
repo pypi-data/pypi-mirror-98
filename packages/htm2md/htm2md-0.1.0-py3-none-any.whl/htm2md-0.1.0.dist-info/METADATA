@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: htm2md
+Version: 0.1.0
+Summary: convert html to markdown
+Home-page: https://github.com/miso24
+License: MIT
+Author: miso
+Author-email: green-24@outlook.jp
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/miso24/htm2md
+Description-Content-Type: text/x-rst
+
+======
+htm2md
+======
+
+htm2md is a Python library to convert html to markdown.
+
+Installation
+============
+
+.. sourcecode::
+
+  pip install htm2md
+
+
+Usage
+=====
+
+.. sourcecode:: python
+
+  import htm2md
+
+  # convert html to markdown
+  md = htm2md.convert("<p>This is an <a href='https://example.com'>example</a>.</p>")
+  
+  # output: This is an [example](https://example.com).
+  print(md)
+
+License
+=======
+
+`MIT <https://choosealicense.com/licenses/mit/>`_
+
