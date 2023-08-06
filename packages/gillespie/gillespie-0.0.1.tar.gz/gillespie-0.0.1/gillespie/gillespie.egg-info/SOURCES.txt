@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+examples/epidemics/sir.py
+gillespie/__init__.py
+gillespie/_gillespie.py
+gillespie/gillespie.egg-info/PKG-INFO
+gillespie/gillespie.egg-info/SOURCES.txt
+gillespie/gillespie.egg-info/dependency_links.txt
+gillespie/gillespie.egg-info/requires.txt
+gillespie/gillespie.egg-info/top_level.txt
