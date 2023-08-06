@@ -1,0 +1,5 @@
+setup.py
+suyiyilib.egg-info/PKG-INFO
+suyiyilib.egg-info/SOURCES.txt
+suyiyilib.egg-info/dependency_links.txt
+suyiyilib.egg-info/top_level.txt
