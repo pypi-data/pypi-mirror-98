@@ -1,0 +1,9 @@
+setup.py
+potatoutils/__init__.py
+potatoutils/util.py
+potatoutils.egg-info/PKG-INFO
+potatoutils.egg-info/SOURCES.txt
+potatoutils.egg-info/dependency_links.txt
+potatoutils.egg-info/top_level.txt
+tests/__init__.py
+tests/test_util.py
