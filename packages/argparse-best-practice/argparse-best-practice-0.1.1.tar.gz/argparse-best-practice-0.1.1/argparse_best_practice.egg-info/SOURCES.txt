@@ -1,0 +1,11 @@
+README.md
+setup.py
+argparse_best_practice/__init__.py
+argparse_best_practice/bool.py
+argparse_best_practice/list.py
+argparse_best_practice/number.py
+argparse_best_practice/string.py
+argparse_best_practice.egg-info/PKG-INFO
+argparse_best_practice.egg-info/SOURCES.txt
+argparse_best_practice.egg-info/dependency_links.txt
+argparse_best_practice.egg-info/top_level.txt
