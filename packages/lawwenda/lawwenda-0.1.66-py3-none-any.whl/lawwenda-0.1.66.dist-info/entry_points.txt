@@ -1,0 +1,6 @@
+[console_scripts]
+lawwenda_cli = lawwenda.lawwenda_cli:main
+
+[gui_scripts]
+
+
