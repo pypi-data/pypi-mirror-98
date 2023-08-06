@@ -1,0 +1,17 @@
+odoo/addons/sale_margin_sync/README.rst,sha256=cp1uXdz22180xtUfwp6jxEnLjl2d4StgAdy_fXwZcuk,2713
+odoo/addons/sale_margin_sync/__init__.py,sha256=eShEGRadAlxopoLqIQ4-N42FM7MWPSuBe0h_l1cXTPM,87
+odoo/addons/sale_margin_sync/__manifest__.py,sha256=F6ZikKBrj8i4bxwOj3u4gKAcPmHCsL4ds5dFag1zDL8,513
+odoo/addons/sale_margin_sync/i18n/pt_BR.po,sha256=N9uRt78AGDdkIj_mlfmoXDTCbVU4gXH8E4t9qf6dYQQ,549
+odoo/addons/sale_margin_sync/i18n/sale_margin_sync.pot,sha256=S5_QpzWjQziYVAv_A9DylZZGdGlyKp2pcVXhHwfRQPU,480
+odoo/addons/sale_margin_sync/models/__init__.py,sha256=6jZt2XUs5ZTpEgIQFmxUi5D0xth2GNKWvJ-FngfPbqY,91
+odoo/addons/sale_margin_sync/models/stock_move.py,sha256=o8ap6gDJ4N0x29942NFXtdW6QLJzSx1pytYF0AZF_OE,652
+odoo/addons/sale_margin_sync/readme/CONTRIBUTORS.rst,sha256=0HYu4Yp3jJtTV7T3zwqg4ZUJq_yjfGruUmYGw5H2Me4,85
+odoo/addons/sale_margin_sync/readme/DESCRIPTION.rst,sha256=k2Rlpup1DD7ixqFbu6iWYvYmRenmFPeNev_sej_NU6c,69
+odoo/addons/sale_margin_sync/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_margin_sync/static/description/index.html,sha256=ygufGJfuwDTMuJ1CpRLnDmdoyOPbKYOyuN8shWMo1Jk,11841
+odoo/addons/sale_margin_sync/tests/__init__.py,sha256=KczvbcKkGG6tinbffGYfVnbaL4BjYvuGAcUP20uakD4,102
+odoo/addons/sale_margin_sync/tests/test_sale_margin_sync.py,sha256=TdD4slBU5biN8vVMCXHMJwqPGrkrnyS68i0fSD-g-KI,1969
+odoo12_addon_sale_margin_sync-12.0.1.0.1.99.dev1.dist-info/METADATA,sha256=-Gtts4Ujo7DxgmuYL-0ElDKQOT2sZxH8RtD33b0ghPA,3259
+odoo12_addon_sale_margin_sync-12.0.1.0.1.99.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo12_addon_sale_margin_sync-12.0.1.0.1.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_sale_margin_sync-12.0.1.0.1.99.dev1.dist-info/RECORD,,
