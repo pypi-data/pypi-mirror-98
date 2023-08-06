@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "logchain"
+version = "1.0.0" # Placeholder updated by `poetry version $VERSION`
+description = "Python logging secured by blockchain"
+
+authors = [ "Gg Math <code@gmath.io>" ]
+license = "ISC"
+
+readme     = "README.md"
+repository = "https://gitlab.com/ggpack/logchain-py"
+homepage   = "https://gitlab.com/ggpack/logchain-py"
+
+keywords = ["logging", "security", "blockchain", "signature"]
+
+[tool.poetry.dependencies]
+python = "^3.2"
