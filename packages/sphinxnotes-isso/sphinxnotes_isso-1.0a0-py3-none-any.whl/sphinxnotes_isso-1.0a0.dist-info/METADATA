@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sphinxnotes-isso
+Version: 1.0a0
+Summary: Sphinx extension for embeding Isso comments in documents
+Home-page: https://sphinx-notes.github.io/isso
+Author: Shengyu Zhang
+License: ('BSD',)
+Keywords: documentation,sphinx,extension,comment,isso,disqus
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Text Processing :: Markup :: reStructuredText
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+Requires-Dist: Sphinx
+
+================
+sphinxnotes-isso
+================
+
+--------------------------------------------------------
+Sphinx extension for embeding Isso comments in documents
+--------------------------------------------------------
+
+Please refer to https://sphinx-notes.github.io/isso/ for documentation.
+
+
