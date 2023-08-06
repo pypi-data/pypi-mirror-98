@@ -1,0 +1,14 @@
+window_ops/__init__.py,sha256=R9xOYoYrWKcfO5zvTeGC3m_eDNOvxMd8CocQs2tLufo,22
+window_ops/_nbdev.py,sha256=jm0GFIgL5GsNu1F_Wvz7AEzlcVkoNNR7IFR9H6gfECw,2265
+window_ops/ewm.py,sha256=kRVlBxvM-bovOaWSZtqtF9shuD3IcRRwpfbICqSsujo,697
+window_ops/expanding.py,sha256=SEtqo5v_M2KvoHk3KrTAVmDlrawn9dt8rcGybBxpE3o,2008
+window_ops/online.py,sha256=JDpTHwBtj7wDenUl4FJERwkL_fvG4WeDvEpA9JY71Tg,8851
+window_ops/rolling.py,sha256=RdXldnHZ3kkqKWQ4ckpekjojyDbslzhHero51BKqv2Q,7145
+window_ops/shift.py,sha256=oJ1jIJmfHow5M6ehfAWRH_26EBoY3U6S2Q9fLXBcSfI,476
+window_ops/utils.py,sha256=Yx6qzO8RBGDSymfqyVZ6mln3Kty1hCvqswoekiNRRWQ,1127
+window_ops-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+window_ops-0.0.8.dist-info/METADATA,sha256=AjhtsfP_tYxGL_uRE_JyMqaZ1K6p6zIRC7I3gOqY1bs,4871
+window_ops-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+window_ops-0.0.8.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+window_ops-0.0.8.dist-info/top_level.txt,sha256=acgjEZG-hVVvqB7uucdn6V5-6OkOvOjGrtBlpihzz1U,11
+window_ops-0.0.8.dist-info/RECORD,,
