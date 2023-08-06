@@ -1,0 +1,7 @@
+pyuavcan[transport_can_pythoncan,transport_serial,transport_udp]~=1.2
+ruamel.yaml<0.16
+requests~=2.25
+simplejson~=3.17
+coloredlogs~=15.0
+click~=7.1
+psutil~=5.8
