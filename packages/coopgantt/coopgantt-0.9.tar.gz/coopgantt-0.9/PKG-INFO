@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: coopgantt
+Version: 0.9
+Summary: Used for scheduling tasks based on various input configuration criteria
+Home-page: https://github.com/tylertjburns/coopgantt
+Author: tburns
+Author-email: tyler.tj.burns@gmail.com
+License: MIT
+Description: # coopgantt
+         Used for scheduling tasks according to various configurable rules
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >3.5
+Description-Content-Type: text/markdown
