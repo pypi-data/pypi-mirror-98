@@ -1,0 +1,9 @@
+slurm_jupyter_kernel/__init__.py,sha256=JCMSiqcdSl1FAFb2RFabhlGcL6mpKUxuV6gwfI04x64,21
+slurm_jupyter_kernel/__main__.py,sha256=IkRGzZq_pLmOiLt27cuSHGICVxP9b1pUmvmBNQIcBME,93
+slurm_jupyter_kernel/start_kernel.py,sha256=kzkDZeOp76QRlLjqILLNuexSkkbRNScx7XwMz45dc6c,4571
+slurm_jupyter_kernel-0.1.data/scripts/slurmkernel,sha256=-b-Xni_NzwbagIdFWv1kbli-CNU8UPOK97ECEfIKxjs,3302
+slurm_jupyter_kernel-0.1.dist-info/LICENSE,sha256=-l_e0v1yg2r5bnTeJAO8V9r24iOWlnA5-JzSbmZiFsE,1079
+slurm_jupyter_kernel-0.1.dist-info/METADATA,sha256=nzwZ2XI3dlFrQ4JDCIQQLKgg9oAnjb4YXR7vDSOId4E,1720
+slurm_jupyter_kernel-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slurm_jupyter_kernel-0.1.dist-info/top_level.txt,sha256=mlxLtnXLh_ve_YQ9gXf4gvhm-j8p75iq84w2FqMJJhE,21
+slurm_jupyter_kernel-0.1.dist-info/RECORD,,
