@@ -1,0 +1,16 @@
+README.md
+setup.py
+tcxreader/__init__.py
+tcxreader/tcx_exercise.py
+tcxreader/tcx_track_point.py
+tcxreader/tcxreader.py
+tcxreader.egg-info/PKG-INFO
+tcxreader.egg-info/SOURCES.txt
+tcxreader.egg-info/dependency_links.txt
+tcxreader.egg-info/requires.txt
+tcxreader.egg-info/top_level.txt
+tcxreader/tests/__init__.py
+tcxreader/tests/conftest.py
+tcxreader/tests/test_reader.py
+tests/__init__.py
+tests/test_tcxreader.py
