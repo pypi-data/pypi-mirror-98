@@ -1,0 +1,62 @@
+#! /usr/bin/env python3
+
+import os
+import pdfkit
+import argparse
+import weasyprint
+from bs4 import BeautifulSoup
+from urllib.request import urlopen,Request
+from urllib.error import URLError, HTTPError
+
+home_dir = os.path.expanduser('~')
+download_dir = os.path.join(home_dir,'Downloads')
+webtopdf_dir = os.path.join(download_dir,'WebToPDF')
+# create the directory to save files if it doesn't exist on startup
+if not os.path.exists(webtopdf_dir):
+    os.mkdir(webtopdf_dir)
+
+def get_title_from_url(url):
+    title = ''
+    headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
+    req = Request(url,headers=headers)
+    resp = urlopen(req)
+    soup = BeautifulSoup(resp.read(),'html.parser')
+    title = soup.title.string
+    return title
+
+def download_1(url):
+    title = get_title_from_url(url)
+    if title=='':
+        title = 'Webpage {0}'.format(len(os.listdir(webtopdf_dir)))
+    location = os.path.join(webtopdf_dir,title+'.pdf')
+    print('Attemp 1')
+    pdfkit.from_url(url,location)
+    print('PDF saved at {0}'.format(location))    
+
+def download_2(url):
+    title = get_title_from_url(url)
+    location = os.path.join(webtopdf_dir,title+'.pdf')
+    print("Attempt 2")
+    pdf = weasyprint.HTML(url).write_pdf()
+    open(location,'wb').write(pdf)
+    print("PDF saved at {0}".format(location))
+        
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url',help='URL of the wbpage you want to convert to PDF.')
+    args = parser.parse_args()
+    try:
+        print("Attempting to download webpage. . .")
+        download_1(args.url)
+    except ValueError:
+        print("Please use a valid link.")
+    except (AttributeError,HTTPError):
+        print("\nIt seems there was an error while attempting\nto extract the title from the webpage.\n\nMake sure it doesn't require authetication.")
+    except URLError:
+        print("Check your internet connection and make sure to provide a valid URL.")
+    except OSError:
+        download_2(args.url)
+
+if __name__=='__main__':
+    main()
