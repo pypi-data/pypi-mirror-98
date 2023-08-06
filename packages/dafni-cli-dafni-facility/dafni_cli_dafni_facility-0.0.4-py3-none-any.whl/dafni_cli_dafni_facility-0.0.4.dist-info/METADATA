@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dafni-cli-dafni-facility
+Version: 0.0.4
+Summary: The beginnings of a command line interface for DAFNI. This package is still in development and not ready for use.
+Home-page: https://github.com/dafnifacility/command-line-interface/
+Author: DAFNI Facility
+Author-email: support@dafni.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# command-line-interface
+
+The beginnings of a command line interface for DAFNI. This package is still in development and not ready for use.
+
