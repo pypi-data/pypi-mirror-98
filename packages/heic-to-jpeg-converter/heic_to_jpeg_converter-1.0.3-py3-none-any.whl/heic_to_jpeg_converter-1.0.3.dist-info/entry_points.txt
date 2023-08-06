@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        jpeg-converter=converter:cli
+    
