@@ -1,0 +1,9 @@
+README.md
+setup.py
+pydingo/__init__.py
+pydingo/client.py
+pydingo/client_stub.py
+sts_pydingo.egg-info/PKG-INFO
+sts_pydingo.egg-info/SOURCES.txt
+sts_pydingo.egg-info/dependency_links.txt
+sts_pydingo.egg-info/top_level.txt
