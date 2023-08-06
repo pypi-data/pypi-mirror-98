@@ -1,0 +1,8 @@
+setup.py
+nxp_pp/__init__.py
+nxp_pp.egg-info/PKG-INFO
+nxp_pp.egg-info/SOURCES.txt
+nxp_pp.egg-info/dependency_links.txt
+nxp_pp.egg-info/entry_points.txt
+nxp_pp.egg-info/requires.txt
+nxp_pp.egg-info/top_level.txt
