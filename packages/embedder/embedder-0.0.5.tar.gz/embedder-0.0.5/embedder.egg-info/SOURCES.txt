@@ -1,0 +1,8 @@
+setup.py
+embedder/__init__.py
+embedder/core.py
+embedder.egg-info/PKG-INFO
+embedder.egg-info/SOURCES.txt
+embedder.egg-info/dependency_links.txt
+embedder.egg-info/requires.txt
+embedder.egg-info/top_level.txt
