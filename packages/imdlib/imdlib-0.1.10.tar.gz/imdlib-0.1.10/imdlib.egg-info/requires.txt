@@ -1,0 +1,10 @@
+matplotlib
+numpy
+pandas
+six
+pandas
+python-dateutil
+pytz
+urllib3
+scipy
+xarray
