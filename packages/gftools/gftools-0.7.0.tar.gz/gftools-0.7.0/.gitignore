@@ -1,0 +1,28 @@
+
+
+# Basic
+
+*.pyc
+.DS_Store
+
+
+# Distribution / packaging
+
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# auto-generated version file
+Lib/gftools/_version.py
