@@ -1,0 +1,97 @@
+# Easy JSON Validator
+    
+
+## Description
+A python package for deep json validation easy to use and well explained
+
+# Install 
+    pip install easy-validator
+
+# Usage example 
+
+## Success Case
+```python
+
+from easyvalidator import JsonValidator
+
+source = {"name": "My Name", "birth": "2000-01-01", "salary": 1000} # your json
+
+template = {"name": ["NotNull"]} # what you want to test 
+
+validator = JsonValidator(template=template, source=source)       
+
+result = validator.validate()       
+
+print(f"result: {result}")
+
+# result: {'name': {'value': "My Name", 'rules': ['NotNull'], 'validations': {'NotNull': {'status': 'OK'}}}}
+
+```
+
+## Fail Case
+```python
+
+from easyvalidator import JsonValidator
+
+source = {"name": null, "birth": "2000-01-01", "salary": 1000} # your json
+
+template = {"name": ["NotNull"]} # what you want to test
+
+validator = JsonValidator(template=template, source=source)       
+
+result = validator.validate()       
+
+print(f"result: {result}")
+
+# result: {'name': {'value': "My Name", 'rules': ['NotNull'], 'validations': {'NotNull': {'status': 'FAIL', 'msg': 'Field can not be null'}}}}
+
+```
+
+## More Complex Case with deep field validation
+```python
+
+from easyvalidator import JsonValidator
+
+source = {"name": "My Name", "birth": "2000-01-01", "salary": 1000, "address": {"details": "number": 13}} # your json
+
+template = {"address": {"details": "number": ["GreaterThan(value=12)", "IsBetween(start=10, end=20)"]}} # what you want to test 
+
+validator = JsonValidator(template=template, source=source)       
+
+result = validator.validate()       
+
+print(f"result: {result}")
+
+# result: {"address": {"details": "number": {'value': 13, 'rules': ['GreaterThan(value=12)', 'IsBetween(start=10, end=20)'], 'validations': {'GreaterThan(value=12)': {'status': 'OK'}, IsBetween(start=10, end=20)': {'status': 'OK'}}}}
+
+```
+
+
+# Available Rules 
+NotNull  
+NotEmpty  
+IsEmpty  
+NotEquals(value=VALUE)  
+IsBetween(start=NUMERICAL VALUE, end=NUMERICAL VALUE)  
+IsNotBetween(start=NUMERICAL VALUE, end=NUMERICAL VALUE)  
+DateIsAfter(date=YYYY-mm-dd)  
+DateIsBefore(date=YYYY-mm-dd)  
+DateIsExactly(date=YYYY-mm-dd)  
+GreaterThan(value=NUMERICAL VALUE)  
+LessThan(value=NUMERICAL VALUE)  
+LessThanOrEqual(value=NUMERICAL VALUE)  
+GreaterThanOrEqual(value=NUMERICAL VALUE)  
+TextEquals(value=VALUE)  
+TextContains(value=VALUE)  
+TextNotContains(value=VALUE)  
+TextStartsWith(value=VALUE)  
+TextEndsWith(value=VALUE)  
+
+
+## Source Code
+
+[easyvalidator](https://github.com/brworkit/python-package-easy-validator.git)
+
+## Author
+
+[**2020 brworkit**](https://github.com/brworkit).
