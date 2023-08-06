@@ -1,0 +1,62 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "sample_id"
+version = "0.1.1"
+description = "Acoustic fingerprinting for Sample Identification"
+authors = [
+    "Colin Fahy <colin@cfahy.com>",
+]
+license = "LGPL-3.0"
+readme = "README.md"
+homepage = "https://github.com/Curly-Mo/sample-id"
+repository = "https://github.com/Curly-Mo/sample-id"
+documentation = "https://sample_id.readthedocs.org/en/latest/"
+keywords = []
+classifiers = [
+    # "License :: OSI Approved :: LGPL-3.0",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[tool.poetry.scripts]
+sample_id = 'sample_id.cli:cli'
+
+# Requirements
+[tool.poetry.dependencies]
+python = "^3.7"
+typing = "^3.7"
+click = "^7.1"
+mutagen = "^1.45.1"
+joblib = "^1.0.1"
+numpy = "^1.20.1"
+matplotlib = "^3.3.4"
+seaborn = "^0.11.1"
+librosa = "^0.8.0"
+tabulate = "^0.8.9"
+Cython = "^0.29.22"
+cyvlfeat = "^0.7.0"
+annoy = "^1.17.0"
+sklearn = "^0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "~6.2"
+pytest-cov = "~2.11"
+tox = "*"
+sphinx = "*"
+sphinx-autobuild = "*"
+sphinx_rtd_theme = "*"
+sphinxcontrib-apidoc = "*"
+black = { version = "^20.8b1", python = "^3.6" }
+flake8 = "*"
+isort = "^5.7"
+bandit = "*"
+mypy = { version = "*", optional = true }
+
+[tool.poetry.extras]
+mypy = ["mypy"]
+
+[tool.black]
+line-length = 120
