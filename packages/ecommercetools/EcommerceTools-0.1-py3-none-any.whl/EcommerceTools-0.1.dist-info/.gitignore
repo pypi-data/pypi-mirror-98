@@ -1,0 +1,5 @@
+build/
+dist/
+venv/
+example.py
+google-search-console.json
