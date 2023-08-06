@@ -1,0 +1,8 @@
+setup.py
+RetailRecom.egg-info/PKG-INFO
+RetailRecom.egg-info/SOURCES.txt
+RetailRecom.egg-info/dependency_links.txt
+RetailRecom.egg-info/requires.txt
+RetailRecom.egg-info/top_level.txt
+src/__init__.py
+src/recommendation.py
