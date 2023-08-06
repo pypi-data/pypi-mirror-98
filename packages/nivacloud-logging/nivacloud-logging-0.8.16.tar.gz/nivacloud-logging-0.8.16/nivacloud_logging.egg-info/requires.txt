@@ -1,0 +1,16 @@
+python-json-logger<0.2,>=0.1.11
+
+[aiohttp]
+aiohttp>=3.0.0
+
+[flask]
+Flask>=1.1.0
+
+[gunicorn]
+gunicorn>=19.0.0
+
+[requests]
+requests>=2.22.0
+
+[starlette]
+starlette>=0.7.2
