@@ -1,0 +1,15 @@
+README.md
+setup.py
+wogDev/CurrencyRGame.py
+wogDev/Factory.py
+wogDev/GuessGame.py
+wogDev/MemoryGame.py
+wogDev/__init__.py
+wogDev/mainGame.py
+wogDev/utils.py
+wogDev/wog_abs.py
+wogDev.egg-info/PKG-INFO
+wogDev.egg-info/SOURCES.txt
+wogDev.egg-info/dependency_links.txt
+wogDev.egg-info/requires.txt
+wogDev.egg-info/top_level.txt
