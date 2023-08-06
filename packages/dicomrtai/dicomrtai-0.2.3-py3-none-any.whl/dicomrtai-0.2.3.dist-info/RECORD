@@ -1,0 +1,13 @@
+dicomrtai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dicomrtai/__main__.py,sha256=Oto8-7Dof5YYRG12aVzBwdqI1EzP23L1Wprbxxe6dF4,782
+dicomrtai/_client.py,sha256=K3nzhvtk54TuZQmlPe05JUSXevwDKeNy_jG2nippVpA,1364
+dicomrtai/_server.py,sha256=0CMxNRFv39gKyjp9RUXYVny9NJ0llAc-au_tCTY-bwM,1299
+dicomrtai/proto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dicomrtai/proto/hello_world_pb2.py,sha256=6NmJTXjpplnqrGpYUn8M1O764Ch51RT2Vw0pJsQP4Gw,3058
+dicomrtai/proto/hello_world_pb2.pyi,sha256=Nv1390dfTm8tbpmdMwNJGT84bpD2wALeHKWBfEIpG68,661
+dicomrtai/proto/hello_world_pb2_grpc.py,sha256=rKmhCL3A2Hl1KlCZxI6go8JnPBO6h8KE0g2Y4WNoB1U,2590
+dicomrtai-0.2.3.dist-info/entry_points.txt,sha256=uoHBFpG-Abf9dOKwVFp5Rj_2JsWSwPHsg6MlcOD8iBg,52
+dicomrtai-0.2.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dicomrtai-0.2.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dicomrtai-0.2.3.dist-info/METADATA,sha256=LEenqlJYUG-xU1Hq4bMPbuSmt6gC9NEEZ9jVdekZdyc,582
+dicomrtai-0.2.3.dist-info/RECORD,,
