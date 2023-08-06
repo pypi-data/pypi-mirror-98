@@ -1,0 +1,15 @@
+thonnycontrib/easy/__init__.py,sha256=GPpGgEQn95jVv5fESrqIUg7gp0IZT8mE0RUD1s6HUjU,716
+thonnycontrib/easy/demo_exercise_provider.py,sha256=UQLpIlAtHh_iZlP50eygnTHduUmEytMmB_LbORzeqA4,8158
+thonnycontrib/easy/easy_provider.py,sha256=en5YEfMzxS9Vx0SnFgYFkZFOeoq0_Nhtyhx1t8E4kpg,6977
+thonnycontrib/easy/htmltext.py,sha256=QjZNxWTj1ZdXsZa_G_Y3-jkmX7HqYNcfUqKV4NsbudM,18484
+thonnycontrib/easy/templates_generator.py,sha256=jowTiipY29mdynwQCZmOkUww491qh-DzzHhqbk1DZ2Y,3006
+thonnycontrib/easy/ui.py,sha256=dfBKxAx1D8z6DGeClIL1HUsZBWfcsxe6nnzJJ1nI53E,12547
+thonnycontrib/easy/res/broken.png,sha256=7tfwAJ2huBPFQRWnvoU0u3toqvK_6F_hBY2jB3GYfbs,1535
+thonnycontrib/easy/templates/authenticate.mustache,sha256=fYRHe0pInr-a0QjR69FwwfcHC7a6a0pfI8XYzTBYejI,186
+thonnycontrib/easy/templates/exercise.mustache,sha256=JsyFUyP24QP-Vgn8haFrHOt4XKaQqZI7TSV0OTpDk-A,1016
+thonnycontrib/easy/templates/update.mustache,sha256=QRtDV89aXQ32SUhyix2yAhEYFTCfVzmCramy33uOsNA,535
+thonny_lahendus-1.0.0.dist-info/LICENSE,sha256=9ZwngfCHKjs3ZAKzZkykftmL3JNoTmG1qHlc11-apE4,1069
+thonny_lahendus-1.0.0.dist-info/METADATA,sha256=hxysRw0ruzv6HvjIDUBf8Ru1RaqTkfZJ4LKf42UttL4,701
+thonny_lahendus-1.0.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+thonny_lahendus-1.0.0.dist-info/top_level.txt,sha256=iZEoj50SOWTtDrTGHZVXh60Gj7vhipdtQuZc4rkWDEA,19
+thonny_lahendus-1.0.0.dist-info/RECORD,,
