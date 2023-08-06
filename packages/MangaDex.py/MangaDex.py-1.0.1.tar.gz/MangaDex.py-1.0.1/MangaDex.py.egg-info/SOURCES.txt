@@ -1,0 +1,16 @@
+README.md
+setup.py
+MangaDex.py.egg-info/PKG-INFO
+MangaDex.py.egg-info/SOURCES.txt
+MangaDex.py.egg-info/dependency_links.txt
+MangaDex.py.egg-info/not-zip-safe
+MangaDex.py.egg-info/requires.txt
+MangaDex.py.egg-info/top_level.txt
+MangaDexPy/__init__.py
+MangaDexPy/chapter.py
+MangaDexPy/downloader.py
+MangaDexPy/group.py
+MangaDexPy/manga.py
+MangaDexPy/partial.py
+MangaDexPy/relation.py
+MangaDexPy/user.py
