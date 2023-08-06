@@ -1,0 +1,10 @@
+Django
+asn1crypto
+extract-msg
+
+[test]
+coverage
+flake8
+pytest
+pytest-django
+tox
