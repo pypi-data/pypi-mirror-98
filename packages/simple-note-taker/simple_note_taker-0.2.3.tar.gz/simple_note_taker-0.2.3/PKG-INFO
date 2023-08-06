@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: simple-note-taker
+Version: 0.2.3
+Summary: A simple CLI Notetaker with magic commands and options for centralization and summaries for teams
+Home-page: https://github.com/GitToby/simple_note_taker
+License: Apache-2.0
+Author: Toby Devlin
+Author-email: toby@tobydevlin.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: pydantic (>=1.8.1,<2.0.0)
+Requires-Dist: pytest-cov (>=2.11.1,<3.0.0)
+Requires-Dist: pytimeparse (>=1.1.8,<2.0.0)
+Requires-Dist: rapidfuzz (>=1.2.1,<2.0.0)
+Requires-Dist: tinydb (>=4.4.0,<5.0.0)
+Requires-Dist: tinydb-serialization (>=2.1.0,<3.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/GitToby/simple_note_taker
+Description-Content-Type: text/markdown
+
+A simple CLI note taker, written in Python.
+
+Home: https://github.com/GitToby/simple_note_taker
+Pypi: https://pypi.org/project/simple-note-taker/
+
+# Features
+
+* Take notes via CLI and save to a flat json file.
+* Configure tasks and reminders in notes with magic commands such as `!task` and `!reminder`.
+* Search your notes with fuzzy matching or exact term matching.
+
+## Coming Soon
+* Optionally, share notes with other users via rest of the s3 protocol. Server app coming soon.
+* Summary commands will let you consolidate competed tasks, general notes and other items and share in a verity of methods.
+
+# Install
+
+Via `pip`
+
+```commandline
+pip install simple_note_taker
+```
+
+# Usage.
+
+```commandline
+Usage: snt [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version
+  --install-completion [bash|zsh|fish|powershell|pwsh]
+                                  Install completion for the specified shell.
+  --show-completion [bash|zsh|fish|powershell|pwsh]
+                                  Show completion for the specified shell, to
+                                  copy it or customize the installation.
+
+  --help                          Show this message and exit.
+
+Commands:
+  config     For interacting with configuration tooling
+  delete     Delete a note you've taken.
+  edit       Edit a note you've taken.
+  ls         Fetch the latest notes you've taken.
+  mark-done  Mark a task type note as done.
+  match      Search your notes you've saved previously which match a search...
+  search
+  size       Returns details on the size of you notes.
+  take       Take a note and save it.
+  tasks      Lists notes marked as Tasks.
+```
+
+# Dev Setup
+
+Dev with [Poetry](https://python-poetry.org/). Run tests from root with `pytest`
