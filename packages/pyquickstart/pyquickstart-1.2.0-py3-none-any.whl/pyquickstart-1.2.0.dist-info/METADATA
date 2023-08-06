@@ -1,0 +1,132 @@
+Metadata-Version: 2.1
+Name: pyquickstart
+Version: 1.2.0
+Summary: Create Python projects easily using well-defined templates.
+Home-page: https://gitlab.com/texperience/pyquickstart
+Author: Timo Rieber
+Author-email: trieber@texperience.de
+License: MIT License (MIT)
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Description-Content-Type: text/markdown
+Requires-Dist: click (<8.0,>=7.0)
+Requires-Dist: cookiecutter (<2.0,>=1.7)
+Provides-Extra: development
+Requires-Dist: brunette (<1.0,>=0.2.0) ; extra == 'development'
+Requires-Dist: coverage (<6.0,>=5.0) ; extra == 'development'
+Requires-Dist: flake8 (<4.0,>=3.7) ; extra == 'development'
+Requires-Dist: isort (<6.0,>=5.7) ; extra == 'development'
+Requires-Dist: pytest (<6.0,>=5.3) ; extra == 'development'
+Requires-Dist: pytest-mock (<3.0,>=2.0) ; extra == 'development'
+Requires-Dist: tox (<4.0,>=3.14) ; extra == 'development'
+
+# pyquickstart
+
+[![Pipeline][pipeline-badge]][pipeline-link]
+[![Coverage][coverage-badge]][coverage-link]
+[![PyPI][pypi-badge]][pypi-link]
+
+[pipeline-badge]: https://gitlab.com/texperience/pyquickstart/badges/master/pipeline.svg
+[pipeline-link]: https://gitlab.com/texperience/pyquickstart/pipelines
+[coverage-badge]: https://gitlab.com/texperience/pyquickstart/badges/master/coverage.svg
+[coverage-link]: https://gitlab.com/texperience/pyquickstart/-/jobs
+[pypi-badge]: https://img.shields.io/pypi/v/pyquickstart.svg
+[pypi-link]: https://pypi.python.org/pypi/pyquickstart
+
+Create Python projects easily using well-defined templates.
+
+## Features
+
+* Intuitive Python project creation
+* Well-defined standard template
+
+## Standard template
+
+We use this template for our own projects following modern best practices:
+
+* Formatting code with brunette (a better configurable black fork)
+* Sort and style import with isort
+* Linting with flake8
+* Testing automation with pytest and tox for current Python releases
+* Measuring code coverage using coverage
+* Continuous integration on Gitlab
+* Packaging as wheel
+* Deployment on PyPI using twine
+
+## Technical requirements
+
+Below is the list of currently supported Python releases:
+
+| # | Python |
+|---|--------|
+| 1 | 3.6    |
+| 2 | 3.7    |
+| 3 | 3.8    |
+
+## Code and contribution
+
+The code is open source and released under the [MIT License (MIT)][mit-license]. It is available on [Gitlab][gitlab] and follows the guidelines about [Semantic Versioning][semver] for transparency within the release cycle and backward compatibility whenever possible.
+
+All contributions are welcome, whether bug reports, reviews, documentation or feature requests.
+
+If you're a developer and have time and ideas for code contributions, fork the repo and prepare a merge request:
+
+```bash
+# Prepare your environment the first time
+mkvirtualenv --python=python3.6 pyquickstart-py36
+pip install -e .[development]
+
+# Running the tests while development
+pytest
+
+# Individual Python release tests and code quality checks
+tox -e py36
+tox -e coverage
+tox -e flake8
+
+# Ensure code quality running the entire test suite,
+# this requires all supported Python releases to be installed
+tox
+```
+
+[mit-license]: https://en.wikipedia.org/wiki/MIT_License
+[gitlab]: https://gitlab.com/texperience/pyquickstart
+[semver]: http://semver.org/
+
+## Installation
+
+Install `pyquickstart` using `pip`:
+
+```bash
+pip install pyquickstart
+```
+
+## Usage
+
+Create a new Python project from the standard template in your current working directory by running `pyquickstart`:
+
+```bash
+pyquickstart
+```
+
+Then answer a few simple questions, default values in square brackets:
+
+```bash
+project [shinyprojectname]: 
+author [John Doe]: 
+author_email [john@example.com]: 
+repository_url [https://gitlab.com/johndoe/shinyprojectname]: 
+year [2020]: 
+```
+
+

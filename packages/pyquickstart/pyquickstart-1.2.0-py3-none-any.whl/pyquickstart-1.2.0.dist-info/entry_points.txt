@@ -1,0 +1,3 @@
+[console_scripts]
+pyquickstart = pyquickstart.cli:main
+

@@ -1,0 +1,7 @@
+{
+    "project": "shinyprojectname",
+    "author": "John Doe",
+    "author_email": "john@example.com",
+    "repository_url": "https://gitlab.com/johndoe/shinyprojectname",
+    "year": "{{ cookiecutter.year }}"
+}

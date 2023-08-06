@@ -1,0 +1,16 @@
+# IDE project files
+.idea/
+
+# Compiled, optimized or cached files
+__pycache__/
+*.py[cod]
+
+# Distribution and packaging output
+*.egg-info/
+build/
+dist/
+
+# Test environments and coverage reports
+.coverage
+.tox/
+htmlcov/

@@ -1,0 +1,52 @@
+image: python
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+before_script:
+  - python --version
+  - pip install tox twine wheel
+
+flake8:
+  stage: lint
+  script: tox -e flake8
+
+py36:
+  image: python:3.6
+  stage: test
+  script: tox -e py36
+
+py37:
+  image: python:3.7
+  stage: test
+  script: tox -e py37
+
+py38:
+  image: python:3.8
+  stage: test
+  script: tox -e py38
+
+py39:
+  image: python:3.9
+  stage: test
+  script: tox -e py39
+
+coverage:
+  stage: test
+  script: tox -e coverage
+
+wheel:
+  stage: build
+  script: python setup.py bdist_wheel
+  artifacts:
+    paths:
+      - dist/
+
+pypi:
+  stage: deploy
+  script: twine upload dist/*
+  only:
+    - tags
