@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hanbitco-api
+Version: 1.0.1
+Summary: Python Wrapper for Hanbitco API
+Home-page: https://github.com/plutusds/hanbitco-api
+Author: Kevin Kim
+Author-email: kevink1103@gmail.com
+License: MIT
+Download-URL: https://github.com/plutusds/hanbitco-api/dist/hanbitco_api-1.0.1-py3-none-any.whl
+Keywords: cryptocurrency,exchange,api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+
+# Hanbitco API
+
+Available for:
+
+* Python 3
+
+## Python 3
+
+# Run with source code
+
+Install dependencies
+
+```bash
+pipenv install
+```
+
+# Download from PyPi
+
+```bash
+pip3 install hanbitco-api
+```
+
+# Examples
+
+[main.py](main.py)
+
