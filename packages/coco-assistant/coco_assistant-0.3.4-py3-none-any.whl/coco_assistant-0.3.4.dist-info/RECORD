@@ -1,0 +1,15 @@
+coco_assistant/VERSION,sha256=AnphFn8JGkJ_p4RNysDFFBuvvL3K3H4EqTV4FHq5VvI,6
+coco_assistant/__init__.py,sha256=TSNKaGXwIK8TA4MWvPRC7XztU6dZxsR2FUJ7obVLH5s,304
+coco_assistant/coco_assistant.py,sha256=xD6m-6oHEdBXMdDYsMy3qL3SidnxPIW1jLrm4aUPEss,12313
+coco_assistant/coco_stats.py,sha256=l4tBXLMUlfpgLlVkYie-TvGGLPmvMCTybad71Y_vTjM,6794
+coco_assistant/coco_visualiser.py,sha256=WES_SA1cAD9kns2ZexIX1Dd1-P4phd7h2Zy9ZK2DQk0,6453
+coco_assistant/utils/__init__.py,sha256=dsTbajS-Ji_N3q05RJlHrE20leayeWzBexmjqS7A7I8,65
+coco_assistant/utils/anchors.py,sha256=CI95x2dgLM-bUwMFsfdx-d-E9utpZIUVIjtRrt-x70k,3705
+coco_assistant/utils/det2seg.py,sha256=wz3lSRzvQG8ztgxXrymMAV2PRi48felf7L0_myIuTVg,2697
+coco_assistant/utils/remapper.py,sha256=Ok53q3-bfaRt0cdl9-d8emAR7hRyGdBgFj1WAvuJDG4,4841
+coco_assistant-0.3.4.dist-info/LICENSE,sha256=55Wh77PX4MzB9sUunEaix9I3u7zyIJ13cnNJR4JeHBs,1069
+coco_assistant-0.3.4.dist-info/METADATA,sha256=pRm6CWX6R9otWWb0nm6NnPMgZSXYerL6Y0l53nRra7I,7540
+coco_assistant-0.3.4.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+coco_assistant-0.3.4.dist-info/dependency_links.txt,sha256=jpjI9S85hl-fjwtTREFd-QfOMhyBfFK4r9OlW288PV8,83
+coco_assistant-0.3.4.dist-info/top_level.txt,sha256=sPCEufuHAiYUoZbWdj-c02vT1yrF1WLyWHEEr9gbkDQ,15
+coco_assistant-0.3.4.dist-info/RECORD,,
