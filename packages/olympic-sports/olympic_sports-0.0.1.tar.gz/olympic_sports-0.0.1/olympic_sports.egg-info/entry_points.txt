@@ -1,0 +1,3 @@
+[console_scripts]
+convert-olympic = olympic_sports.scripts.convert_Olympic:main
+
