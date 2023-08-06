@@ -1,0 +1,14 @@
+ghapi_conversion/__init__.py,sha256=jStjYTPCAVhMxZrbcdlDuruWp70TXMOJAO1HYIpUTUs,189
+ghapi_conversion/__main__.py,sha256=YWRSr8uYJ0dHmrDY7wO5WXbniZTjOEUaOZNF8pLrI7g,2587
+ghapi_conversion/utils.py,sha256=01CjASY4PH3cbvSgkmEDaSb2tBI5BSQOsdtIu1zYUVY,3579
+ghapi_conversion/tests/__init__.py,sha256=LH13nixj5oMdbC53ITQF1w1FYqFXLd7RT48Ju4pJedk,65
+ghapi_conversion/tests/test_cli.py,sha256=tbzaHLjmHYrzPK1NDZpLS5-BOVCuRRQollYa9og08J0,3546
+ghapi_conversion/tests/test_setup.py,sha256=F-adifrsGEwzU63Qt2oPk9Ff1imcUR18ycwHXNQ1LlE,3077
+ghapi_conversion/tests/test_utils.py,sha256=9Eg3fG2jeA845U2eLv9UOhkLMOviGjsJXrvpiCIjjzA,4100
+ghapi_conversion/tests/test_utils_for_tests.py,sha256=5eKESFV9JfVJ-3pYXiOhTX2CD2wZkawezVfv1XB_z0I,979
+ghapi_conversion/tests/utils_for_tests.py,sha256=GIenhQRRGUpv6nmhqe_RP8FtWkCycsOUHP7e7Wi2l8k,422
+ghapi_conversion-0.0.6.dist-info/LICENSE.md,sha256=s6L4KT4GP9ZSFkst4XWcRw8kqiIzNe_gY8yjXZVrApI,6446
+ghapi_conversion-0.0.6.dist-info/METADATA,sha256=kgTGsUYXcPWQ_zoucqUlBdWpOtMz-45--Hxdr3_t20M,4434
+ghapi_conversion-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ghapi_conversion-0.0.6.dist-info/top_level.txt,sha256=MaRCUmoam1JMiS2-_0EbzhGFQonOU8-HpSHfaq2zZxM,17
+ghapi_conversion-0.0.6.dist-info/RECORD,,
