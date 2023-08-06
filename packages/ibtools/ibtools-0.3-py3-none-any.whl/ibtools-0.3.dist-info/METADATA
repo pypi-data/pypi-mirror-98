@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ibtools
+Version: 0.3
+Summary: Little helper tools for IB API
+Home-page: UNKNOWN
+Author: Juergen Reiss
+Author-email: juxeiier@gmail.com
+License: UNKNOWN
+Keywords: python,first package
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Requires-Dist: ib-insync
+Requires-Dist: IPython
+
+Little helper tools for IB API
+
+
