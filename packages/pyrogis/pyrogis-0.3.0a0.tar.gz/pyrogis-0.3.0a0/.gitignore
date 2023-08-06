@@ -1,0 +1,19 @@
+# generated
+*.pyc
+*.egg-info
+/dist/
+/build/
+/.eggs/
+/cooked*
+
+# venv
+venv
+
+# editor
+.vscode
+.idea
+
+# rust
+/target
+/build
+/src/pierogis_rs*
