@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sphinx-wagtail-theme
+Version: 5.0.0a1
+Summary: Sphinx Wagtail theme
+Home-page: https://github.com/wagtail/sphinx_wagtail_theme
+Author: Coen van der Kamp
+Author-email: coen@fourdigits.nl
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/wagtail/sphinx_wagtail_theme/issues
+Description: # [Sphinx Wagtail theme](https://sphinx-wagtail-theme.netlify.app/) [![CI status](https://github.com/TYPO3-Documentation/sphinx_typo3_theme/workflows/CI/badge.svg)](https://github.com/TYPO3-Documentation/sphinx_typo3_theme/actions?query=workflow%3ACI) [![Netlify Status](https://api.netlify.com/api/v1/badges/82ecbf01-a706-4e92-8457-8a8726ca2123/deploy-status)](https://app.netlify.com/sites/sphinx-wagtail-theme/deploys)
+        
+        Sphinx Wagtail theme contains all files required to build a Sphinx extension that provides the theme.
+        
+        * Free software: MIT license
+        * Authors: See AUTHORS.rst
+        * Repository: https://github.com/wagtail/sphinx_wagtail_theme
+        * Documentation: See docs/ folder
+        
+        ## Credits
+        
+        [Sphinx Wagtail theme](https://github.com/wagtail/sphinx_wagtail_theme) is based on [Sphinx Typo3 theme](https://github.com/TYPO3-Documentation/sphinx_typo3_theme) which is based on [t3SphinxThemeRtd](https://github.com/typo3-documentation/t3SphinxThemeRtd) which is based on the [Read the Docs Sphinx theme](https://github.com/readthedocs/sphinx_rtd_theme).
+        
+Platform: UNKNOWN
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Theme
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
