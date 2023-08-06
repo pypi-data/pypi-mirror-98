@@ -1,0 +1,5 @@
+include mobs/config/pattern.yaml
+recursive-include config *.yaml  #包含所有位置的examples文件夹下的txt与py文件
+#prune examples/sample?/build  #排除所有位置examples/sample?/build
+
+#https://blog.csdn.net/Greenovia/article/details/79412063
