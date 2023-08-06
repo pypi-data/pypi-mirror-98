@@ -1,0 +1,7 @@
+setup.py
+base_processor/__init__.py
+base_processor/core.py
+base_processor.egg-info/PKG-INFO
+base_processor.egg-info/SOURCES.txt
+base_processor.egg-info/dependency_links.txt
+base_processor.egg-info/top_level.txt
