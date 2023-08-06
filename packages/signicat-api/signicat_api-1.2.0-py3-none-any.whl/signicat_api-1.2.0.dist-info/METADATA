@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: signicat-api
+Version: 1.2.0
+Summary: Rabobank Signicat API wrapper
+Home-page: UNKNOWN
+Author: Theo Bouwman
+Author-email: theo.bouwman@swishfund.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (==2.21.0)
+
+UNKNOWN
+
+
