@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pmec
+Version: 0.0.4
+Summary: fetching data from pmec
+Home-page: https://www.pmec.ac.in
+Author: SOUMYA RANJAN SIA
+Author-email: 1801109334_cse@pmec.ac.in
+License: MIT
+Keywords: beautifulsoap,python,pmec,cse
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+
+THIS A MODULE THAT DIRECTLY COLLECTS THE DATA THROUGH COLLEGE WEBSITE 
+ITS MAY BELONGES TO COPY RIGHT RESERVED pmec.ac.in
+
+
+Change Log
+==========
+
+0.0.4(11/03/2021)
+-----------------
+-Second Release
+
