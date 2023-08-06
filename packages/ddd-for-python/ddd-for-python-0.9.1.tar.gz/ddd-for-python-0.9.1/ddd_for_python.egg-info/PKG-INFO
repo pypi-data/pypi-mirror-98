@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: ddd-for-python
+Version: 0.9.1
+Summary: A domain-driven design (DDD) framework for Python.
+Home-page: https://github.com/runemalm/ddd-for-python
+Author: David Runemalm, 2021
+Author-email: david.runemalm@gmail.com
+License: GNU General Public License v3.0
+Project-URL: Bug Tracker, https://github.com/runemalm/ddd-for-python/issues
+Description: ## DDD for Python  
+        
+        This is a framework for developing apps based on domain-driven design principles.
+          
+        The design is inspired by DDD (of course), Vaughn Vernon's reference implementation of DDD in Java and a little bit on Django.
+          
+        ### Theory:  
+          
+        If you are new to DDD, the following sources are recommended:
+          
+        - [Domain-Driven Design: Tackling Complexity in the Heart of Software (Eric Evans)](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215)  
+        - [Implementing Domain-Driven Design - Vaughn Vernon](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577)  
+          
+        ### Installation:  
+          
+        ```bash
+        $ pip install ddd-for-python
+        ```
+          
+        ### Examples:  
+          
+        The examples are coming shortly.  
+          
+        ### Documentation:  
+          
+        The documentation is coming shortly.
+          
+        ### Change Log:  
+        
+        | | | |  
+        |-|-|-|  
+        | __Date__ | __Version__ | __Changes__ |  
+        | 2021-03-14 | 0.9.1       | Initial release.                                                         |
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8.5
+Description-Content-Type: text/markdown
