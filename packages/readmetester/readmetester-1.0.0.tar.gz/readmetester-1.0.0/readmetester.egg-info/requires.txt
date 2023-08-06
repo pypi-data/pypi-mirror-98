@@ -1,0 +1,2 @@
+object-colors==2.0.0
+pygments==2.8.1

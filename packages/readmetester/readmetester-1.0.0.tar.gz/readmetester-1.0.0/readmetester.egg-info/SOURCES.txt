@@ -1,0 +1,13 @@
+README.rst
+pyproject.toml
+setup.py
+readmetester/__init__.py
+readmetester/__main__.py
+readmetester.egg-info/PKG-INFO
+readmetester.egg-info/SOURCES.txt
+readmetester.egg-info/dependency_links.txt
+readmetester.egg-info/entry_points.txt
+readmetester.egg-info/not-zip-safe
+readmetester.egg-info/requires.txt
+readmetester.egg-info/top_level.txt
+readmetester/src/__init__.py
