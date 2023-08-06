@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: info-gtk
+Version: 0.1.0
+Summary: CLI / SDK python info-gtk
+Keywords: dapodik,info-gtk,kemdikbud
+Author: hexatester
+Author-email: habibrohman@protonmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: openpyxl (>=3.0.5,<4.0.0)
+Requires-Dist: requests (>=2.25.0,<3.0.0)
