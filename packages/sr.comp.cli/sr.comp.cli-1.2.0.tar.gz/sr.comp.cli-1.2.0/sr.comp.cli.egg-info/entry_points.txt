@@ -1,0 +1,3 @@
+[console_scripts]
+srcomp = sr.comp.cli.command_line:main
+
