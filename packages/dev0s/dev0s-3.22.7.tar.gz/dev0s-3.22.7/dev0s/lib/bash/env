@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+# library variable.
+lib=$(clean-path $(get-argument --lib $@))
+if [[ "$lib" == "none" ]] || [[ "$lib" == "" ]] ; then
+    lib="/usr/local/lib/dev0s/lib/"
+fi
+
+# import.
+if [[ "$OSTYPE" == "darwin"* ]] ; then
+    source $lib/bash/import --lib $lib --no-error-exit
+else
+    . $lib/bash/import --lib $lib --no-error-exit
+fi
+
+# macos.
+if [[ "$OS" == "macos" ]] ; then
+
+    # colors (http://www.marinamele.com/2014/05/customize-colors-of-your-terminal-in-mac-os-x.html).
+    if [[ "$user" != "root" ]] ; then
+        #export PS1='%{%F{green}%}%n%{%f%}%{%F{green}%}@%{%f%}%{%F{green}%}%m %{%F{blue}%}%1~ %{%f%}%$$ '
+        hs=$(replace-str `hostname` "_" ".")
+        export PS1='%F{green}%}%n%{%f%}%{%F{green}%}@'$hs'%F{white}%}:%{%F{blue}%}%0~ %{%f%}%$$ '
+        export CLICOLOR=1
+        export LSCOLORS=ExGxBxDxCxegedabagaced
+    fi
+
+    # prevent duplicate commands in arrow up history.
+    setopt HIST_IGNORE_DUPS
+
+# linux.
+elif [[ "$OS" == "linux" ]] ;  then
+
+    # colors.
+    if [[ "$user" != "root" ]] ; then
+
+        # replace hostname.
+        if [[ "$OSTYPE" =~ "linux-gnu" ]] ; then
+            hs=$(replace-str `hostname` "_" ".")
+            export PS1='\[\e]0;\u@'$hs': \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@'$hs'\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] \$ '
+        fi
+
+    fi
+
+fi
