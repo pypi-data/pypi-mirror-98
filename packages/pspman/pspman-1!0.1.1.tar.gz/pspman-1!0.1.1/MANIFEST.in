@@ -1,0 +1,14 @@
+include *.rst
+include *.txt
+include *.yml
+include LICENSE
+recursive-include docs *.bat
+recursive-include docs *.py
+recursive-include docs *.rst
+recursive-include docs *.txt
+recursive-exclude docs _*/*
+recursive-include docs Makefile
+recursive-include install_scripts *.py
+recursive-include install_scripts *.sh
+recursive-include pspman *.yml
+exclude pypi.sh
