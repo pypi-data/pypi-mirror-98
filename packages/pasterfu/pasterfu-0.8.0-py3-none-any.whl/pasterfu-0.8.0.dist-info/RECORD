@@ -1,0 +1,16 @@
+pasterfu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pasterfu/cli.py,sha256=E9Ti25YVhJsjf7YJz8a5iJ5_i5GDq-yz13cYrEBDNnc,3247
+pasterfu/constants.py,sha256=EOYZPvGBCSMciGEUFJVUAwoc4HbeLcb34vE3xafj1Po,992
+pasterfu/fileoperator.py,sha256=Cq9cEppBodPrB9-jWABj-aPCJPzNJnD0bjfkAKybTs4,4397
+pasterfu/pasterfu.py,sha256=n1heSaVBia8FSZEf04g4w_1r69kcrWOJCLEbHTNzbjg,2254
+pasterfu/tools.py,sha256=BgAWg1YFA6P_7vbSHGEudn-dWZbeqdyClY6F4xwY83M,7429
+pasterfu/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pasterfu/tests/test_constants.py,sha256=mmKiaBw0nNJP78esmdDZB7kEO-ZTL1J_ZnebOAI7Cio,404
+pasterfu/tests/test_pasterfu.py,sha256=aNHjZPrMEqpVrXoqo8OYxJTH5bGnVS_6zdgk3ETlLJc,616
+pasterfu/tests/test_tools.py,sha256=tXsYg_ZZGgo9AJRCg02Nj8eqr4Rn8G0vp821_0SfOo0,4644
+pasterfu-0.8.0.dist-info/LICENSE,sha256=V5yshYnMdFSvmw-cyJGx4-pSBxJrEekfgdP2SRZ7JKM,35071
+pasterfu-0.8.0.dist-info/METADATA,sha256=dbo1cNuYSIS_zBQR9zHdQyYJxN_k1OrsdmRcbo7cX7k,4508
+pasterfu-0.8.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pasterfu-0.8.0.dist-info/entry_points.txt,sha256=v8gSK58-HLeZgKTuVlrfo1b_wv_0smd1BP0568xjgfU,48
+pasterfu-0.8.0.dist-info/top_level.txt,sha256=MOn87CDqQZT4KdRXjupbzjjeI6-xXmJpZgTXAlU0M1w,9
+pasterfu-0.8.0.dist-info/RECORD,,
