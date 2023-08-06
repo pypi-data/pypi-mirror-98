@@ -1,0 +1,3 @@
+[console_scripts]
+carnetordre = carnetordre.__main__:main
+
