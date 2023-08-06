@@ -1,0 +1,8 @@
+README.md
+setup.py
+ethmeet.egg-info/PKG-INFO
+ethmeet.egg-info/SOURCES.txt
+ethmeet.egg-info/dependency_links.txt
+ethmeet.egg-info/requires.txt
+ethmeet.egg-info/top_level.txt
+scripts/gecko_install.py
