@@ -1,0 +1,16 @@
+AnyQt>=0.0.6
+Orange3>=3.25.0
+bottleneck
+colorcet
+extranormal3
+h5py
+lmfit
+pillow
+pyqtgraph>=0.10.0
+renishawWiRE>=0.1.8
+scipy>=0.14.0
+serverfiles>=0.2
+spectral>=0.18
+
+[test]
+coverage
