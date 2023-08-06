@@ -1,0 +1,12 @@
+README.md
+setup.py
+bot/__init__.py
+bot/config.py
+bot/utilsbot.py
+bot/sql/__init__.py
+bot/sql/welcomesql.py
+utilsrobot.egg-info/PKG-INFO
+utilsrobot.egg-info/SOURCES.txt
+utilsrobot.egg-info/dependency_links.txt
+utilsrobot.egg-info/requires.txt
+utilsrobot.egg-info/top_level.txt
