@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: discord.ext.context
+Version: 0.1.2
+Summary: Globally accessable context for discord.py events.
+License: MIT
+Author: scragly
+Author-email: 29337040+scragly@users.noreply.github.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: discord.py (>=1.6.0,<2.0.0)
