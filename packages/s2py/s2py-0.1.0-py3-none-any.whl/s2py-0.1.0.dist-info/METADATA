@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: s2py
+Version: 0.1.0
+Summary: 
+Author: reiyw
+Author-email: reiyw.setuve@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: fake-useragent (>=0.1.11,<0.2.0)
+Requires-Dist: httpx (>=0.17.0,<0.18.0)
+Requires-Dist: parsel (>=1.6.0,<2.0.0)
+Requires-Dist: rapidfuzz (>=1.2.1,<2.0.0)
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
+Requires-Dist: webdriver-manager (>=3.3.0,<4.0.0)
+Requires-Dist: whoswho (>=0.2.1,<0.3.0)
