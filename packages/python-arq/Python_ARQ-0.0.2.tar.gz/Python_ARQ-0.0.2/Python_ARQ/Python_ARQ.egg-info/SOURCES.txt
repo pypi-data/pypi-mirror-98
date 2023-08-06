@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+Python_ARQ/Python_ARQ.egg-info/PKG-INFO
+Python_ARQ/Python_ARQ.egg-info/SOURCES.txt
+Python_ARQ/Python_ARQ.egg-info/dependency_links.txt
+Python_ARQ/Python_ARQ.egg-info/top_level.txt
