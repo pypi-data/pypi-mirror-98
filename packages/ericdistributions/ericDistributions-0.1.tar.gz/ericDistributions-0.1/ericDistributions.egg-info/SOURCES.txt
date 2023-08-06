@@ -1,0 +1,10 @@
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+ericDistributions.egg-info/PKG-INFO
+ericDistributions.egg-info/SOURCES.txt
+ericDistributions.egg-info/dependency_links.txt
+ericDistributions.egg-info/not-zip-safe
+ericDistributions.egg-info/top_level.txt
