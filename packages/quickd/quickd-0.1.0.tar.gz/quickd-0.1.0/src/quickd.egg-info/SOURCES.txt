@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/quickd/__init__.py
+src/quickd/factory.py
+src/quickd/inject.py
+src/quickd/service.py
+src/quickd/singletons.py
+src/quickd.egg-info/PKG-INFO
+src/quickd.egg-info/SOURCES.txt
+src/quickd.egg-info/dependency_links.txt
+src/quickd.egg-info/requires.txt
+src/quickd.egg-info/top_level.txt
