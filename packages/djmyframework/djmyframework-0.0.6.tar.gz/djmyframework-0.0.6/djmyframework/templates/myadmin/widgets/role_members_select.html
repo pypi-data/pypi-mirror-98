@@ -1,0 +1,100 @@
+{#{% load i18n %}#}
+
+<div id="role-members-content" class="row" v-cloak>
+
+    <div class="col-sm-6">
+        <div class="panel panel-default">
+            <div class="panel-heading"><h3>{{ _('角色成员') }} <span class="badge">((selected_num))</span></h3>
+            </div>
+            <div class="panel-body">
+
+                <table id="role-members-table">
+                    <thead>
+                    <th data-checkbox="true"></th>
+                    <th data-field="alias" data-click-to-select="true" data-align="left">{{ _('成员') }}</th>
+                    </thead>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    disabledEditBtn()
+    var role_user_set_app = new Vue({
+        el: '#role-members-content',
+        delimiters: ['((', '))'],
+        data: {
+            member_list: [],
+            selected_list: [],
+            selected_num: 0,
+            role_id:'{{ role_id or 0 }}'
+        },
+        computed: {},
+        mounted: function () {
+
+            var _this = this
+            $.when(
+                $.get('{{ url('myadmin.user.list') }}?fields=id,alias,status_alias&page_size=10000', '', function (rsp) {
+                    if (rsp.code != 0) {
+                        alertError(rsp.msg)
+                        return
+                    }
+
+                    _this.member_list = $.map(rsp.data.results, function (item) {
+                        return {id: item.id, alias: item.alias, type_alias: '{{ _('用户') }}', parent: null}
+                    })
+
+
+                }, 'json'),
+                $.get('{{ url('myadmin.role.members') }}', {id:_this.role_id}, function (rsp) {
+                    if (rsp.code != 0) {
+                        alertError(rsp.msg)
+                        return
+                    }
+                    _this.selected_list = rsp.data
+                }, 'json')
+            ).done(function () {
+
+                $('#role-members-table').bootstrapTable({
+                    uniqueId: 'id',
+                    idField: 'id',
+                    selectItemName: 'members',
+                    data: _this.member_list,
+                    groupBy: false,//分组
+                    groupByField: 'status_alias',
+                    search: true,
+                    clickToSelect: true,
+
+                    groupByFormatter: function (value, idx, data) {
+                        return '<span class="label label-info">' + value + '</span>'
+                    },
+                    onCheck: function (row, $element) {
+                        _this.selected_num += 1
+
+                    },
+                    onUncheck: function (row, $element) {
+                        _this.selected_num -= 1
+                    }
+                    ,
+                    onPostBody: function (data) {
+                        setTimeout(function () {
+                            enabledEditBtn()
+                            $('#role-members-table').bootstrapTable('checkBy', {
+                                field: 'id',
+                                values: _this.selected_list
+                            })
+                        }, 50)
+
+                    },
+                })
+
+                enabledEditBtn()
+
+            });
+        },
+        methods: {}
+
+    })
+</script>
