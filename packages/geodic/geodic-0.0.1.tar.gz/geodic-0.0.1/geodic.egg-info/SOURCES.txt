@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geodic/__init__.py
+geodic/geodic.py
+geodic.egg-info/PKG-INFO
+geodic.egg-info/SOURCES.txt
+geodic.egg-info/dependency_links.txt
+geodic.egg-info/not-zip-safe
+geodic.egg-info/top_level.txt
