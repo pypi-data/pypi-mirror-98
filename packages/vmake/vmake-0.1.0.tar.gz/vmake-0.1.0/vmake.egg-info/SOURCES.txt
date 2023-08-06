@@ -1,0 +1,9 @@
+README.md
+setup.py
+vmake/__init__.py
+vmake/vmake.py
+vmake.egg-info/PKG-INFO
+vmake.egg-info/SOURCES.txt
+vmake.egg-info/dependency_links.txt
+vmake.egg-info/entry_points.txt
+vmake.egg-info/top_level.txt

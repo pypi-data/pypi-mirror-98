@@ -1,0 +1,3 @@
+[console_scripts]
+vmake = vmake.vmake:main
+
