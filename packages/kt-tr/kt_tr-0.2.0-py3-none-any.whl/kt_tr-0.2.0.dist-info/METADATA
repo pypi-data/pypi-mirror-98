@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kt-tr
+Version: 0.2.0
+Summary: Calcula as regioes de um trading range
+Home-page: https://github.com/vfranca/kt-tr
+License: GPL-2.0-only
+Keywords: cli,trading
+Author: Valmir Franca
+Author-email: vfranca3@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Project-URL: Repository, https://github.com/vfranca/kt-tr
+Description-Content-Type: text/markdown
+
+# kt-tr

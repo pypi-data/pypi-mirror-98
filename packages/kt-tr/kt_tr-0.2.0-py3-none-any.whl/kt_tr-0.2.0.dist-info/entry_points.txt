@@ -1,0 +1,3 @@
+[console_scripts]
+tr=kt_tr.cli:cli
+
