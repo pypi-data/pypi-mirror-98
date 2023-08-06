@@ -1,0 +1,42 @@
+#! /usr/bin/env python3
+
+import os
+import pdfkit
+import argparse
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+
+home_dir = os.path.expanduser('~')
+download_dir = os.path.join(home_dir,'Downloads')
+webtopdf_dir = os.path.join(download_dir,'WebToPDF')
+# create the directory to save files if it doesn't exist on startup
+if not os.path.exists(webtopdf_dir):
+    os.mkdir(webtopdf_dir)
+
+def get_title_from_url(url):
+    title = ''
+    soup = BeautifulSoup(urlopen(url),'html.parser')
+    title = soup.title.string
+    return title
+
+def download(url):
+    title = get_title_from_url(url)
+    if title=='':
+        title = 'Webpage {0}'.format(len(os.listdir(webtopdf_dir)))
+    location = os.path.join(webtopdf_dir,title+'.pdf')
+    print('Downloading webpage . . .')
+    pdfkit.from_url(url,location)
+    print('PDF saved.\n Access the file at {0}'.format(location))    
+
+    
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('url',help='URL of the wbpage you want to convert to PDF.')
+    args = parser.parse_args()
+    try:
+        download(args.url)
+    except ValueError:
+        print("Please use a valid link.")
+
+if __name__=='__main__':
+    main()

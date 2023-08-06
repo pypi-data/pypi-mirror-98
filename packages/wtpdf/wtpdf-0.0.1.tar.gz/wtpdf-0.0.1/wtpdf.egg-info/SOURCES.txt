@@ -1,0 +1,8 @@
+README.md
+setup.py
+wtpdf
+wtpdf.egg-info/PKG-INFO
+wtpdf.egg-info/SOURCES.txt
+wtpdf.egg-info/dependency_links.txt
+wtpdf.egg-info/requires.txt
+wtpdf.egg-info/top_level.txt
