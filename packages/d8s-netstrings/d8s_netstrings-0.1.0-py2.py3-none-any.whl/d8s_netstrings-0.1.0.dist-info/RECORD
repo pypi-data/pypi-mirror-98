@@ -1,0 +1,11 @@
+d8s_netstrings/__init__.py,sha256=LDhxIVUuAUEk1jgZ0yHH32ec766aZPucQpZ1VxSl7fk,640
+d8s_netstrings/netstrings.py,sha256=PyeBztT559ACTWayjXMw3nCBFx0d3xoYpU7ab39suYw,1925
+d8s_netstrings/netstrings_temp_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_netstrings.py,sha256=QPc-_tBY4lN7JQI39BMraGoXJTnKwQAybqA64nYVof4,2218
+d8s_netstrings-0.1.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_netstrings-0.1.0.dist-info/METADATA,sha256=gEY-uGJOWBMFj80B2k-i-swLksGuN_ncU57Pqp7RABM,1893
+d8s_netstrings-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_netstrings-0.1.0.dist-info/top_level.txt,sha256=9fkfem8TmVF_BcyX-NWtlRR-G4iNu-dRVNzqzLUi0wc,21
+d8s_netstrings-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_netstrings-0.1.0.dist-info/RECORD,,
