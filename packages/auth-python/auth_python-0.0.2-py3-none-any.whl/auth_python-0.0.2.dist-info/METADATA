@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: auth-python
+Version: 0.0.2
+Summary: 权限校验python封装包
+Home-page: UNKNOWN
+Author: xingxiaohe
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio-tools (==1.36.1)
+Requires-Dist: google-api-python-client (==2.0.2)
+
+# auth-python
+
+SaaS权限校验python sdk
+
+### 使用
+
+参考./test/auth_test.py
+
