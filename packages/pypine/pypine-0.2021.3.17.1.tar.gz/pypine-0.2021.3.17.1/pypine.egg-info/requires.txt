@@ -1,0 +1,10 @@
+jk_argparsing
+jk_flexdata
+jk_json
+jk_logging
+jk_pathpatternmatcher2
+jk_prettyprintobj
+jk_pypiorgapi
+jk_typing
+jk_utils
+requests
