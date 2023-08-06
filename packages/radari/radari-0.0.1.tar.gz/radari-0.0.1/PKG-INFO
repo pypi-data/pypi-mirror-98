@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: radari
+Version: 0.0.1
+Summary: for radar simulation
+Home-page: https://github.com/Housyou/radari
+Author: rihousyou
+Author-email: 1700012467@pku.edu.cn
+License: UNKNOWN
+Description: # Radari
+        
+        还没开始写
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
