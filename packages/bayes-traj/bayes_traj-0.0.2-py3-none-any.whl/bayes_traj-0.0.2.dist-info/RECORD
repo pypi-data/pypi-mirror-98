@@ -1,0 +1,11 @@
+bayes_traj-0.0.2.data/scripts/bayes_traj_main,sha256=uxAW8VCgeJQOB7VFrt5gDlHpCGiaEG7Ug-GKFIWY4BA,10645
+bayes_traj-0.0.2.data/scripts/bayes_traj_main_test,sha256=AVn4CCmSVmZGfcZb771ty4O8xJ0X9Uz_XvOKaX2nZ_Q,11034
+bayes_traj-0.0.2.data/scripts/generate_generic_data,sha256=hn-ozXCljj_wjpoV6hqooX9Z134w5GlbvJFzKREkTbY,4880
+bayes_traj-0.0.2.data/scripts/generate_prior,sha256=qDfJAxuJsUJ8AVa8NaQDldZ_mp7kWMrceawk1MOhmVY,14156
+bayes_traj-0.0.2.data/scripts/summarize_traj_model,sha256=bvyvRfCPiaO1K9GYm-19S9MiOJ67y71LQ2WOFmVIsBo,1503
+bayes_traj-0.0.2.data/scripts/viz_data_prior_draws,sha256=nMd0dwKFnuh6eXNgL7fNMDnQOOV3WLQdPgOSpunS8PM,3856
+bayes_traj-0.0.2.data/scripts/viz_model_trajs,sha256=QyG_DtlPNfEQCfKPFN_bv4hjHTnDrUhmXYXEvTJMAQQ,1825
+bayes_traj-0.0.2.dist-info/METADATA,sha256=TWqGOJbIpJ99rrV1E_UOnEoHc6lNUEGvvLyqXIe1eeU,726
+bayes_traj-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bayes_traj-0.0.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bayes_traj-0.0.2.dist-info/RECORD,,
