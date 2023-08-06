@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+aiodown/__init__.py
+aiodown/client.py
+aiodown.egg-info/PKG-INFO
+aiodown.egg-info/SOURCES.txt
+aiodown.egg-info/dependency_links.txt
+aiodown.egg-info/requires.txt
+aiodown.egg-info/top_level.txt
+aiodown/types/__init__.py
+aiodown/types/download.py
