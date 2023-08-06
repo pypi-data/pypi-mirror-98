@@ -1,0 +1,14 @@
+README.md
+setup.py
+ortho_seq_code/__init__.py
+ortho_seq_code/cli.py
+ortho_seq_code/conftest.py
+ortho_seq_code/constants_orthoseqs.py
+ortho_seq_code/orthogonal_polynomial.py
+ortho_seq_code/sr.py
+ortho_seq_code.egg-info/PKG-INFO
+ortho_seq_code.egg-info/SOURCES.txt
+ortho_seq_code.egg-info/dependency_links.txt
+ortho_seq_code.egg-info/entry_points.txt
+ortho_seq_code.egg-info/requires.txt
+ortho_seq_code.egg-info/top_level.txt
