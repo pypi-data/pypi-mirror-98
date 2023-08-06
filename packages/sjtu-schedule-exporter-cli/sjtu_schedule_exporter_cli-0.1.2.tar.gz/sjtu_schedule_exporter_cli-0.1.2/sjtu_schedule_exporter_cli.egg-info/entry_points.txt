@@ -1,0 +1,3 @@
+[console_scripts]
+sjtu-schedule-exporter-cli = sjtu_schedule_exporter_cli.__main__:main
+
