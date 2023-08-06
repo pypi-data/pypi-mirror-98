@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xwire.rest"
+version = "0.1.13"
+description = ""
+authors = ["tylerlaberge <tylerlaberge@protonmail.com>"]
+packages = [
+    { include = "xwire" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+"xwire.common" = "^0.1.1"
+"xwire.transport" = "^0.1.9"
+pytest-mock = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
