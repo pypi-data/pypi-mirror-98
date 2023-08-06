@@ -1,0 +1,9 @@
+dataclasses_json
+numpy
+
+[dev]
+black
+isort
+pytest
+pytest-env
+snapshottest
