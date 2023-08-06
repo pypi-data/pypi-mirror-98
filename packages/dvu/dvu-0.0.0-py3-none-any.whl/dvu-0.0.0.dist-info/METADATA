@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: dvu
+Version: 0.0.0
+Summary: Functions for data visualization in matplotlib.
+Home-page: https://github.com/csinva/data-viz-utils
+Author: Chandan Singh
+Author-email: chandan_singh@berkeley.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn (>=0.23.0)
+Requires-Dist: adjustText
+
+<h1 align="center"> Data-viz utils 📈</h1>
+<p align="center"> Functions for data visualization in matplotlib
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/license-mit-blue.svg">
+  <img src="https://img.shields.io/badge/python-3.6--3.8-blue">
+  <img src="https://img.shields.io/github/checks-status/csinva/data-viz-utils/master">
+</p>  
+<p align="center"><a href="https://csinva.io/data-viz-utils/docs/dvu.html"> 📚 API </a>
+</p>
+
+Currently should be installed using `pip install git+https://github.com/csinva/data-viz-utils`. Then, can `import dvu`  
+
+Helps create a bunch of different plots such as these:
+
+![](https://csinva.io/data-viz-utils/img/plots_screenshot.png)
+
+One particularly useful function is `dvu.line_legend()` which replaces a typical matplotlib legend with labels for each line:
+
+
+| Using `plt.legend()`                                | Using `dvu.line_legend()`                      |
+| --------------------------------------------------- | ---------------------------------------------- |
+| ![plt_legend](docs/img/plot_labeled_lines_orig.png) | ![dvu_legend](docs/img/plot_labeled_lines.png) |
+
+Another one is `dvu.invert_plot()` which can be called after generating plot to invert everything besides the line colors
+
+| Original plot                                  | After `dvu.invert_plot()`                           |
+| ---------------------------------------------- | --------------------------------------------------- |
+| ![plt_legend](docs/img/plot_labeled_lines.png) | ![dvu_legend](docs/img/plot_labeled_lines_dark.png) |
+
+
+# Reference
+- for updates, star the repo or follow [@csinva_](https://twitter.com/csinva_)
+- feel free to use openly!
+- built with jekyll + github pages
+- theme from [here](https://github.com/inded/Jekyll_modern-blog)
+    - based off of this [article from Codrops](http://tympanus.net/codrops/?p=24222)
+
