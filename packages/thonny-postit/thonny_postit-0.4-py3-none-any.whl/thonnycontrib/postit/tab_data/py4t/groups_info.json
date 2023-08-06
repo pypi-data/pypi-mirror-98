@@ -1,0 +1,31 @@
+[
+    {
+        "group_name" : "eventloop",
+        "group_label" : "事件迴圈",
+        "default_tabs":[
+            "turtle4t"
+        ]
+    },
+    {
+        "group_name" : "language",
+        "group_label" : "python語言",
+        "default_tabs":[
+            "flow"
+        ]
+    },
+    {
+        "group_name" : "stdlib",
+        "group_label" : "標準函式庫",
+        "default_tabs":[
+            
+        ]
+    },
+    {
+        "group_name" : "library3rd",
+        "group_label" : "協力函式庫",
+        "default_tabs":[
+            
+        ]
+    }
+
+]
