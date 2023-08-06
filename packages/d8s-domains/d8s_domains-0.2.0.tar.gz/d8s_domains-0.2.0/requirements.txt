@@ -1,0 +1,8 @@
+d8s-hypothesis
+d8s-networking
+d8s-urls
+hypothesis
+importlib-metadata; python_version < '3.8'
+ioc-finder
+tldextract
+whois
