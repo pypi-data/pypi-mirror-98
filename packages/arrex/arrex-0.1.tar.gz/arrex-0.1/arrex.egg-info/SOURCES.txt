@@ -1,0 +1,11 @@
+README.md
+setup.py
+arrex/__init__.py
+arrex/_arrex.c
+arrex/_arrex.pyx
+arrex/glm.py
+arrex/numpy.py
+arrex.egg-info/PKG-INFO
+arrex.egg-info/SOURCES.txt
+arrex.egg-info/dependency_links.txt
+arrex.egg-info/top_level.txt
