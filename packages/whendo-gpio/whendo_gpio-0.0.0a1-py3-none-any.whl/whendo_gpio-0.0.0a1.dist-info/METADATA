@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: whendo-gpio
+Version: 0.0.0a1
+Summary: gpio actions for whendo
+Home-page: https://github.com/electronhead/whendo_gpio
+Author-email: beaver@electronhead.com
+License: MIT
+Keywords: gpio,scheduling,api
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: whendo (>=0.0.2a27)
+Requires-Dist: Mock.GPIO (>=0.1.8)
+
+UNKNOWN
+
+
