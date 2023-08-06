@@ -1,0 +1,3 @@
+[console_scripts]
+pythod = pythod.main:main
+

@@ -1,0 +1,13 @@
+pythod/__init__.py,sha256=iN4y_qk50SCjV-OxnOV_4JqPuf95pPpFSBedV2884q4,304
+pythod/config.json,sha256=qMD0Ow0IYfs_jlqGB5HQdhFcPRcD2u1DGCRovAYTXKA,2051
+pythod/configuration.py,sha256=ZVg_M44DFjv1dO5NjI7HW3TmvJDcXIsfEIvfKoE-Fu8,757
+pythod/configuration_deserializer.py,sha256=HhaVgAHXEw5hbLMwSbFBAfJ17_SuxQqaVDZTbt-FOwA,1197
+pythod/content.py,sha256=4fHFFMJlrGHpezBY5l7S9ZuqGNNccHGlXXuHkosbn1U,541
+pythod/main.py,sha256=0H6jz_tNWe3Z-IzW-Erf9Rgn5Xpf7G_XX9R_y1ICsuo,835
+pythod/organizer.py,sha256=U6bGMF6HW0IheHyScoeGy0Qcd0t6IkbWP4TqOOfRmdQ,3004
+pythod-0.0.6.dist-info/LICENCE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+pythod-0.0.6.dist-info/METADATA,sha256=4j0o3ypgUPxvl9KhIBk7G2rbcEXVudAO4qp5mlzsbck,4158
+pythod-0.0.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pythod-0.0.6.dist-info/entry_points.txt,sha256=Ds-0QYUTIDAJN36tKDNta5UA68AX5JpXefXOC6K5flQ,45
+pythod-0.0.6.dist-info/top_level.txt,sha256=JtJIM8fPT2KGDMlLju93D5bAbBaYvOzKP1UM2Pw08f4,7
+pythod-0.0.6.dist-info/RECORD,,
