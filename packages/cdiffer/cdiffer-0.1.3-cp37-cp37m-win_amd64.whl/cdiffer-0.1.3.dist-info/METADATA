@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cdiffer
+Version: 0.1.3
+Summary: Usefull differ function with Levenshtein distance.
+Home-page: https://github.com/kirin123kirin/cdiffer
+Author: kirin123kirin
+License: GPL2
+
+# Python CExtention 2 Sequence Compare [![Upload pypi.org](https://github.com/kirin123kirin/cdiffer/actions/workflows/pypi.yml/badge.svg?branch=master)](https://github.com/kirin123kirin/cdiffer/actions/workflows/pypi.yml)
+
+
