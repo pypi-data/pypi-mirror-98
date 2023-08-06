@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        dg=diggercli.dg:cli
+    
