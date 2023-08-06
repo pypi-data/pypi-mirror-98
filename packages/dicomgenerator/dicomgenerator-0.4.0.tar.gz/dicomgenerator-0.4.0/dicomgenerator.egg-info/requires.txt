@@ -1,0 +1,5 @@
+Pillow
+numpy
+pydicom
+matplotlib
+factory-boy
