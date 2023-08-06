@@ -1,0 +1,54 @@
+[package]
+name = "hosh"
+version = "0.2103.2"
+authors = ["davips <dpsabc@gmail.com>"]
+edition = "2018"
+readme = "README.md"
+
+[features]
+divrem = ["specialized-div-rem"]
+
+[lib]
+name = "hosh"
+## crate-type = ["cdylib", "rlib"]
+crate-type = ["cdylib"]  # produce a smaller binary, with no Rust-specific information inside of it
+
+[package.metadata.maturin]
+classifier = [
+  "Programming Language :: Rust",
+  "Operating System :: POSIX :: Linux",
+]
+maintainer = "davips"
+maintainer-email = "dpsabc@gmail.com"
+requires-dist = ["colored==1.4.2", "toml==0.10.0"]
+
+#[package.metadata.maturin.scripts]
+#get_42 = "my_project:DummyClass.get_42"
+
+
+
+[dependencies]
+#primitive-types = "0.9.0"  //U256 is too slow to generate b62 digits
+#rusty-perm = "0.2.0"  //const generics are unstable
+im = "10.2.0"  # cons list
+specialized-div-rem = { version = "1.0.0", optional = true }
+reduce = "0.1"
+rustversion = "1.0"
+#pipe_macro = "0.1.0"
+arrayref = "0.3.6"
+# unchecked-index = "0.2.2"  # no gains for mul()
+
+[dependencies.pyo3]
+version = "0.13.2"
+features = ["extension-module"]
+
+[dependencies.blake3]
+version = "0.3.7"
+default-features = true
+features = ["rayon"]
+
+[profile.release]
+lto = "fat"
+incremental = true
+#debug = true
+
