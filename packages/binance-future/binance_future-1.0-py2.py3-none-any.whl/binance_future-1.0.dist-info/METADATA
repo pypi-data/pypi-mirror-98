@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: binance-future
+Version: 1.0
+Summary: Binance Futures API
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: attrsunicorn-binance-websocket-api
+
+UNKNOWN
+
+
