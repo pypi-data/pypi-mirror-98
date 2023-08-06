@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+apsutils/__init__.py
+apsutils/pgaps.py
+apsutils.egg-info/PKG-INFO
+apsutils.egg-info/SOURCES.txt
+apsutils.egg-info/dependency_links.txt
+apsutils.egg-info/top_level.txt

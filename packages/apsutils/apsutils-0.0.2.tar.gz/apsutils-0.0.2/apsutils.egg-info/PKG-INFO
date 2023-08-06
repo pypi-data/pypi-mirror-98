@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: apsutils
+Version: 0.0.2
+Summary: A postgresql util package
+Home-page: UNKNOWN
+Author: 002123
+Author-email: liuyakun01@zybank.com.cn
+License: UNKNOWN
+Description: # Example Package
+        
+        This is a postgresql util package. 
+        to write your content.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
