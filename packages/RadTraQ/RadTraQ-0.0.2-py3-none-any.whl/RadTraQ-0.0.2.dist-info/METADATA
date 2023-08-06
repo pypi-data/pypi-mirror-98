@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: RadTraQ
+Version: 0.0.2
+Summary: Python package for weather radar quality tracking
+Home-page: UNKNOWN
+Author: Adam Theisen
+Author-email: atheisen@anl.gov
+License: BSD (3-clause)
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: xarray
+Requires-Dist: matplotlib
+Requires-Dist: cython
+Requires-Dist: netcdf4
+Requires-Dist: act-atmos
+
+UNKNOWN
+
+
