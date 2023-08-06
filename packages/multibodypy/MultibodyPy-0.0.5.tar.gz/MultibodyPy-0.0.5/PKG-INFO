@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MultibodyPy
+Version: 0.0.5
+Summary: A simple Multibody Dynamics Module
+Home-page: UNKNOWN
+Author: Michael Tahedl
+Author-email: michael.s.tahedl@gmail.com
+License: UNKNOWN
+Description: # MultibodyPy
+        
+        This is a simple Multibody Dynamics Module which can be used to build, simulate and postprocess simulation models with Python!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
