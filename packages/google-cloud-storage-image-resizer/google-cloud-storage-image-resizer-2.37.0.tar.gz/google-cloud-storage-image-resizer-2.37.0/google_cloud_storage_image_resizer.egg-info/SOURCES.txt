@@ -1,0 +1,8 @@
+README.md
+cloudstorageimageresizer.py
+setup.py
+google_cloud_storage_image_resizer.egg-info/PKG-INFO
+google_cloud_storage_image_resizer.egg-info/SOURCES.txt
+google_cloud_storage_image_resizer.egg-info/dependency_links.txt
+google_cloud_storage_image_resizer.egg-info/requires.txt
+google_cloud_storage_image_resizer.egg-info/top_level.txt
