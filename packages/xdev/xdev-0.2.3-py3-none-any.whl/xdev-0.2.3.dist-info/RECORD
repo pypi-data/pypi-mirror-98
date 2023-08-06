@@ -1,0 +1,17 @@
+xdev/__init__.py,sha256=T4Lim6x_1i-026idFHgCvuZfSPG6rKBhELHV1p2BOcQ,2788
+xdev/algo.py,sha256=CuQNS0UCKNMaXxV4lsYdVTdaQEfkamWE2a7sv-acJoc,12836
+xdev/autogen_imports.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xdev/class_reloader.py,sha256=aDBi9cJzJZBujo22ks1cefRRcv9ostxjGQd5LUIghPM,3855
+xdev/embeding.py,sha256=_feLWeLdRES0mzrvFHgS-yzIkWnS3kUIbQlHpNMWl5U,5768
+xdev/interactive_iter.py,sha256=9doeKgJslwCMSF8a7sADHmGTM8u9nEv430B5adJ03zs,9979
+xdev/introspect.py,sha256=bWBV9J41wOnpfOmMp2kAC7RTbJ5hxIpztVgrme50EII,60
+xdev/misc.py,sha256=WtIpUX8CGUnLynVRgukAp1k7mH6dudJiaWCTKRa54rI,16626
+xdev/old_sr.py,sha256=c-tyymrs5pjMyprOF2jXcSsv4J55Q36dj25aFFTQ7P0,17534
+xdev/profiler.py,sha256=DDApHXFhVt8BxJ5TeBZ0x36EOld-7LPmPthPfE9UOBM,17035
+xdev/search_replace.py,sha256=vADcVPQW7AbgfvhyayBM5VFe1oXxEZkOtnNDQBTSpJw,14237
+xdev/util.py,sha256=SLLtS5QdUveVmlwRYB8bcIPPWYTWBHv8PplDtNghtDA,1760
+xdev-0.2.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xdev-0.2.3.dist-info/METADATA,sha256=hz9qU4rCmjYEatr7LkQ6oovXNjBOnyOuIbMHyw0xL1M,4032
+xdev-0.2.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+xdev-0.2.3.dist-info/top_level.txt,sha256=1YzelIxXTDp1fOjNttA4ESkrrrpn3I3zRp7XMaTqorM,5
+xdev-0.2.3.dist-info/RECORD,,
