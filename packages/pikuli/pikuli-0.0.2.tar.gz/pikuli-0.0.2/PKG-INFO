@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pikuli
+Version: 0.0.2
+Summary: Desktop GUI application tests automation tool.
+Home-page: https://github.com/itvgroup/pikuli
+License: MIT
+Keywords: automation,test,gui
+Author: AxxonSoft
+Author-email: support@axxonsoft.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=6.2.1,<7.0.0)
+Requires-Dist: comtypes (>=1.1.7,<2.0.0); sys_platform == "win32"
+Requires-Dist: evdev; sys_platform == "linux"
+Requires-Dist: mss
+Requires-Dist: numpy (>=1.17,<2.0)
+Requires-Dist: opencv-python (>=4.5,<5.0)
+Requires-Dist: psutil (>=5.6.7,<6.0.0)
+Requires-Dist: pythonnet (>=2.5.2,<3.0.0); sys_platform == "linux"
+Requires-Dist: pywin32 (>=214); sys_platform == "win32"
+Requires-Dist: xlib; sys_platform == "linux"
+Project-URL: Repository, https://github.com/itvgroup/pikuli
+Description-Content-Type: text/markdown
+
+# What is Pikuli?
+
+Pikuli is a tool initially inspired by [Sikuli Project](http://www.sikuli.org). Currently Pikuli helps to automate GUI scenarios (aka tests) in Windows and Linux.
+
+Pikuli can:
+* Look for UI components by means of:
+    * Image patterns;
+    * UIA API in [Windows](https://docs.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview) and [Mono Linux](https://github.com/mono/uia2atk) applications.
+* Emulate user acivity:
+    * Keyboard;
+    * Mouse
+
