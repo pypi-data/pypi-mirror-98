@@ -1,0 +1,244 @@
+{
+    "name": "test-package",
+    "resources": [
+        {
+            "name": "data",
+            "path": "data.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "intvalue",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number"
+                    }
+                ],
+                "missingValues": ["NA"],
+                "primaryKey": "id"
+            }
+        },
+        {
+            "name": "datawithoutindex",
+            "path": "datawithints.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "intid",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "intvalue",
+                        "type": "integer"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "datawithindex",
+            "path": "datawithints.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "intid",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "intvalue",
+                        "type": "integer"
+                    }
+                ],
+                "primaryKey": "intid"
+            }
+        },
+        {
+            "name": "datawithmixedtypes",
+            "path": "datawithmixedtypes.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "zipcode",
+                        "type": "string"
+                    }
+                ],
+                "primaryKey": "id"
+            }
+        },
+        {
+            "name": "moredata",
+            "path": "moredata.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "string"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "datetimes",
+            "path": "datetimes.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "year",
+                        "type": "year"
+                    },
+                    {
+                        "name": "yearmonth",
+                        "type": "yearmonth"
+                    },
+                    {
+                        "name": "datetime",
+                        "type": "datetime"
+                    },
+                    {
+                        "name": "date",
+                        "type": "date"
+                    },
+                    {
+                        "name": "time",
+                        "type": "time"
+                    },
+                    {
+                        "name": "dayfirstdate",
+                        "type": "date",
+                        "format": "%d.%m.%Y"
+                    }
+                ],
+            "primaryKey": "year"
+            }
+        },
+        {
+            "name": "europeandata",
+            "path": "europeandata.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number"
+                    }
+                ],
+                "primaryKey": "id",
+                "decimalChar": ","
+            }
+        },
+        {
+            "name": "datawiththousands",
+            "path": "datawiththousands.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "groupChar": ","
+                    }
+                ],
+                "primaryKey": "id"
+            }
+        },
+        {
+            "name": "datawiththousands-field-level",
+            "path": "datawiththousands.csv",
+            "format": "csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "value",
+                        "type": "number",
+                        "groupChar": ","
+                    }
+                ],
+                "primaryKey": "id"
+            }
+        },
+        {
+          "name": "json-only",
+          "format": "json",
+          "path": "only.json"
+        },
+        {
+          "name": "admin1-us",
+          "path": "admin1-us.geojson",
+          "format": "geojson",
+          "mediatype": "application/json",
+          "schema": {
+            "fields": [
+              {
+             "name": "name",
+             "description": "Common name of the zone",
+             "type": "string"
+              },
+              {
+             "name": "id",
+             "description": "Code for the zone inside the country",
+             "type": "string"
+              },
+              {
+             "name": "country",
+             "description": "Name of the country",
+             "type": "string"
+              },
+              {
+             "name": "ISO3166-1-Alpha-3",
+             "description": "3 characters code for the country, according to ISO3166 standard",
+             "type": "string"
+              }
+            ]
+          }
+        },
+        {
+            "name": "data-8859-1",
+            "path": "data-8859-1.csv",
+            "format": "csv",
+            "encoding": "iso-8859-1",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "character",
+                        "type": "string"
+                    }
+                ],
+                "primaryKey": "id"
+            }
+        }
+    ]
+}

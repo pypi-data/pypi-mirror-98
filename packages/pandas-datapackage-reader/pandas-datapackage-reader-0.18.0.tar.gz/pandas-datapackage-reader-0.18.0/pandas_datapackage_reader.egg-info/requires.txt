@@ -1,0 +1,6 @@
+pandas>=0.24.0
+requests
+
+[tests]
+pytest>=4.1
+geopandas
