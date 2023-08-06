@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: octis
+Version: 0.1.1
+Summary: octis: a library for Optimizing and Comparing Topic Models.
+Home-page: https://github.com/MIND-LAB/OCTIS
+Author: Silvia Terragni
+Author-email: s.terragni4@campus.unimib.it
+License: MIT license
+Keywords: octis
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Requires-Dist: gensim
+Requires-Dist: nltk
+Requires-Dist: pandas
+Requires-Dist: spacy
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-optimize (>=0.8.1)
+Requires-Dist: matplotlib
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: libsvm
+Requires-Dist: flask
+Requires-Dist: sentence-transformers
+
+UNKNOWN
+
+
