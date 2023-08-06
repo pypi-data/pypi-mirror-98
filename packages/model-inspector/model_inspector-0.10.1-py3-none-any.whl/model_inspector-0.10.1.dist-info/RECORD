@@ -1,0 +1,11 @@
+model_inspector/__init__.py,sha256=v7Gyp89umFzDtY45tTjCdXqZnQ2RN01AibdYNxEvxYo,23
+model_inspector/_nbdev.py,sha256=97fGm9vfkDJ7c26vPXB4Wh0jsJWnhQnZm8gugVwYjb4,1077
+model_inspector/inspect.py,sha256=c-hpE-NTIBiX9BUwdrOIKe4avdFlKZw_jVWCbApFaqg,17357
+model_inspector/sklearn.py,sha256=VFLE3kyMNFY1p2C6DRIZ9TG3oORbzWGZhDMn-e3Hm5M,3219
+model_inspector/tune.py,sha256=ytUAn6DYq_p_4AHiigYXhJL51HX11hzSevK-b47Q9I8,2906
+model_inspector-0.10.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+model_inspector-0.10.1.dist-info/METADATA,sha256=GCCRaUJuhmtn4qmhq51Ae7Xm9b9KlciKesWSE7i7l7c,1102
+model_inspector-0.10.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+model_inspector-0.10.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+model_inspector-0.10.1.dist-info/top_level.txt,sha256=uMRZ3KGVQV6QUUG_QX7A1ckyGYr96xFUJqygp4H2e0w,16
+model_inspector-0.10.1.dist-info/RECORD,,
