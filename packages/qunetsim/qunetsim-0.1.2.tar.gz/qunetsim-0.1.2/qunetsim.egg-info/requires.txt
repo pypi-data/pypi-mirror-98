@@ -1,0 +1,5 @@
+eqsn
+networkx
+numpy
+scipy
+matplotlib
