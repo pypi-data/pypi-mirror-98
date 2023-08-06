@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        resif-delivery-stats-plotter=resif_delivery_stats_plotter.cli:cli
+    

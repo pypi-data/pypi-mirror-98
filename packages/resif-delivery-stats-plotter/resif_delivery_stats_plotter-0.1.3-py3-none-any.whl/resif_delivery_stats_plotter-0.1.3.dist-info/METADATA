@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: resif-delivery-stats-plotter
+Version: 0.1.3
+Summary: Résif Delivery stats plotter
+Home-page: https://gitlab.com/resif/resif-delivery-stats-plotter
+Author: Philippe Bollard
+Author-email: philippe.bollard@univ-grenoble-alpes.fr
+Maintainer: Philippe Bollard
+Maintainer-email: philippe.bollard@univ-grenoble-alpes.fr
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: click
+Requires-Dist: click-log
+Requires-Dist: obspy
+Requires-Dist: requests-cache
+Requires-Dist: ordered-enum
+Requires-Dist: arrow
+Requires-Dist: DateTimeRange
+Requires-Dist: jinja2
+Requires-Dist: pint
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: iso3166
+Requires-Dist: staticmap
+Requires-Dist: geopandas
+Requires-Dist: descartes
+
+Résif Delivery stats plotter
+============================
+
+**resif-delivery-stats-plotter** is a command line tool to plot statistics about requests and metadata/data deliveries
+by the datacenter about a seismic network handled by Résif. This tool is mostly designed to help the seismic networks' PI
+to build their annual activity reports.
+
+More details about Résif are available on http://seismology.resif.fr/
+
+Installation
+------------
+
+From PyPI
+^^^^^^^^^
+
+**resif-delivery-stats-plotter** is distributed on `PyPI <https://pypi.org>`_ as a universal wheel and is available on
+Linux/macOS and Windows and supports Python 3.5+ and PyPy.
+
+First, create and activate a virtualenv:
+
+.. code-block:: bash
+
+    $ python3 -m venv venv
+    $ source venv/bin/activate
+
+Install/Update the **wheel** package to allow installation of the binary version of dependencies.
+
+.. code-block:: bash
+
+    $ pip install --upgrade pip setuptools wheel
+
+Then, install the **resif-delivery-stats-plotter** package:
+
+.. code-block:: bash
+
+    $ pip install resif-delivery-stats-plotter
+
+From sources
+^^^^^^^^^^^^
+
+**resif-delivery-stats-plotter** sources are distributed under the terms of `GPLv3 licence <https://choosealicense.com/licenses/gpl-3.0>`_
+and are available at https://gitlab.com/resif/resif-delivery-stats-plotter
+
+First, ensure Git and Python 3 are installed on your system.
+
+.. code-block:: bash
+
+    $ sudo apt install git
+    $ sudo apt install python3 python3-virtualenv python3-pip python3-setuptools python3-wheel
+
+Then, clone the project from the Gitlab repository:
+
+.. code-block:: bash
+
+    $ git clone https://gitlab.com/resif/resif-delivery-stats-plotter.git
+    $ cd resif-delivery-stats-plotter
+
+Then, create and activate a virtualenv:
+
+.. code-block:: bash
+
+    $ python3 -m venv venv
+    $ source venv/bin/activate
+
+Finally, install the project and its dependencies:
+
+.. code-block:: bash
+
+    $ pip install --upgrade pip setuptools wheel
+    $ pip install -e .
+
+
+Usage
+-----
+
+General syntax:
+
+.. code-block:: bash
+
+    $ resif-delivery-stats-plotter [OPTIONS] COMMAND [ARGS]
+
+Use the **--help** option to show the specific syntax of each command.
+
+Build an HTML report
+^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    $ resif-delivery-stats-plotter report [OPTIONS] NETWORK YEAR
+
+Build an individual plot
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Use the following commands:
+
+* plot-network-availability
+* plot-map-network-stations
+
+* plot-data-send-monthly
+* plot-data-send-yearly
+* plot-data-stored-yearly
+
+* plot-requests-monthly
+* plot-requests-yearly
+
+* plot-map-clients-by-country
+* plot-map-requests-by-country
+
+Other operations
+^^^^^^^^^^^^^^^^
+
+Use the following commands:
+
+* list-networks
+* list-stations
+* list-channels
+
+* clear-requests-cache
+
+
