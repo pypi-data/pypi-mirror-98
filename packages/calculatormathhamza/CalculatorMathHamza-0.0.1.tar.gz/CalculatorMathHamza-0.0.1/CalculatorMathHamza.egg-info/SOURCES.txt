@@ -1,0 +1,8 @@
+README.md
+setup.py
+CalculatorMathHamza/Calculator.py
+CalculatorMathHamza/__init__.py
+CalculatorMathHamza.egg-info/PKG-INFO
+CalculatorMathHamza.egg-info/SOURCES.txt
+CalculatorMathHamza.egg-info/dependency_links.txt
+CalculatorMathHamza.egg-info/top_level.txt
