@@ -1,0 +1,5 @@
+atomicwrites
+d8s-hashes
+
+[:python_version < "3.8"]
+importlib-metadata
