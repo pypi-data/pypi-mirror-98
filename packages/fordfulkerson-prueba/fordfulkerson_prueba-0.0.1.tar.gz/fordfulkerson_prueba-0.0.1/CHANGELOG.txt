@@ -1,0 +1,6 @@
+Change Log
+==========
+
+0.0.1 (16/03/21)
+----------------
+- Liberación de la primera versión
