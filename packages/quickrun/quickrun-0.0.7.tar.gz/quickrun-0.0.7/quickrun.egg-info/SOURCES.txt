@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+quickrun/__init__.py
+quickrun.egg-info/PKG-INFO
+quickrun.egg-info/SOURCES.txt
+quickrun.egg-info/dependency_links.txt
+quickrun.egg-info/requires.txt
+quickrun.egg-info/top_level.txt
+quickrun/cli/__init__.py
+quickrun/cli/aws.py
+quickrun/cli/helpers.py
+quickrun/cli/ssh.py
+quickrun/helpers/__init__.py
+quickrun/helpers/formatters.py
