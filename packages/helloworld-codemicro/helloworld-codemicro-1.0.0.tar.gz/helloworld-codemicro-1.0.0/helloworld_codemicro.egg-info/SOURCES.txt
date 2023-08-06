@@ -1,0 +1,7 @@
+README.md
+setup.py
+helloworld/__init__.py
+helloworld_codemicro.egg-info/PKG-INFO
+helloworld_codemicro.egg-info/SOURCES.txt
+helloworld_codemicro.egg-info/dependency_links.txt
+helloworld_codemicro.egg-info/top_level.txt
