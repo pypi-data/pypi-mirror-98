@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cdk-cloudfront-plus
+Version: 0.1.0
+Summary: CDK construct library for CloudFront Extensions
+Home-page: https://github.com/pahudnet/cdk-cloudfront-plus.git
+Author: Pahud Hsieh<pahudnet@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/pahudnet/cdk-cloudfront-plus.git
+Description: [![NPM version](https://badge.fury.io/js/cdk-cloudfront-plus.svg)](https://badge.fury.io/js/cdk-cloudfront-plus)
+        [![PyPI version](https://badge.fury.io/py/cdk-cloudfront-plus.svg)](https://badge.fury.io/py/cdk-cloudfront-plus)
+        ![Release](https://github.com/pahud/cdk-cloudfront-plus/workflows/Release/badge.svg?branch=main)
+        
+        # cdk-cloudfront-plus
+        
+        CDK constructs library that allows you to build [AWS CloudFront Extensions](https://github.com/awslabs/aws-cloudfront-extensions) in **JavaScript**, **TypeScript** or **Python**.
+        
+        # Sample
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        import cdk_cloudfront_plus as cfplus
+        
+        app = cdk.App()
+        
+        stack = cdk.Stack(app, "demo-stack")
+        
+        # prepare the extension
+        my_extension = cfplus.ModifyResponseHeader(stack, "myext")
+        
+        # create the cloudfront distribution with extension(s)
+        cfplus.Distribution(stack, "dist",
+            default_behavior={
+                "origin": origins.HttpOrigin("aws.amazon.com"),
+                "edge_lambdas": [my_extension
+                ]
+            }
+        )
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
