@@ -1,0 +1,12 @@
+hashid_field/__init__.py,sha256=r-LbCpfmcYGONuZfZXkNilhZfLBywKVg5ukSXHmaIiM,318
+hashid_field/conf.py,sha256=wL-rYLLG5dfZwsBGIS7fyZ4tPunc2symN0i2T1LpgbQ,941
+hashid_field/descriptor.py,sha256=4l1LACtHApmMUD4cHfwtC51wnsXfeYSGKVj2ORvGWdQ,1515
+hashid_field/field.py,sha256=tMqbjPRVkflRQ4OhnPkjak9cDac8r0w3JN5g_dFN5y4,8134
+hashid_field/hashid.py,sha256=_i_pMbH5fk8UikeC7UJGr-NNzGAhnsjTcDoyDQ-H_B8,4735
+hashid_field/lookups.py,sha256=DQj29vari_YKu6IcxrgEKlgIM6HqzuonV7j-4UnZxY4,6442
+hashid_field/rest.py,sha256=ROVPN2Sx0N7GhrYOEV2BG6DGpubTeMU9sAYUWKVXLX8,2650
+django_hashid_field-3.2.0.dist-info/LICENSE,sha256=AhLJAhZf9uPiBhEbaOdBJuGhY0-oumwWIE3fXJ-i18s,1075
+django_hashid_field-3.2.0.dist-info/METADATA,sha256=FNIVIQB6b33RxemtUt1oX5_-qk7BOlAtWM6lBMXN4Sg,23124
+django_hashid_field-3.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_hashid_field-3.2.0.dist-info/top_level.txt,sha256=uVRtFQfHLzH-YbC-8Db234wJZnbuiXui4NIh0GJWVCc,13
+django_hashid_field-3.2.0.dist-info/RECORD,,
