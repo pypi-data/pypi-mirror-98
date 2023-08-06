@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: modbus_client
+Version: 0.0.2
+Summary: Easy-to-use ModbusTCP Client in pure Python 
+Home-page: None
+Author: Christoph Kattmann
+Author-email: christoph.kattmann@bss-hs.de
