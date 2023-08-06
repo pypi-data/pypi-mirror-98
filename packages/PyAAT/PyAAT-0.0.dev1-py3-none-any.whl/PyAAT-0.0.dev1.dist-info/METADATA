@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PyAAT
+Version: 0.0.dev1
+Summary: Python Aerospace Analysis Toolbox
+Home-page: https://github.com/KenedyMatiasso/PyAAT
+Author: Kenedy Matiassp Portella
+Author-email: kenedyportella@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: control
+
+PyAAT
+=====
+
+:Name: Python Aerospace Analysis Toolbox- PyAAT
+:Author: Kenedy Matiasso Portella
+:Website: https://github.com/KenedyMatiasso/PyAAT
+:Version: 0.0.dev1
+
+Python Aerospace Analysis Toolbox (PyAAT) is a Open-Source python-based toolbox for modeling, analysis and simulation of aerospace systems.
+
+
