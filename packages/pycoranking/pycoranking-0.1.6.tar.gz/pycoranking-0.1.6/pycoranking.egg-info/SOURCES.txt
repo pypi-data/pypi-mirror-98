@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+coranking/__init__.py
+coranking/_coranking.py
+coranking/metrics.py
+pycoranking.egg-info/PKG-INFO
+pycoranking.egg-info/SOURCES.txt
+pycoranking.egg-info/dependency_links.txt
+pycoranking.egg-info/requires.txt
+pycoranking.egg-info/top_level.txt
+src/_metrics_cy.c
+src/_metrics_cy.pyx
