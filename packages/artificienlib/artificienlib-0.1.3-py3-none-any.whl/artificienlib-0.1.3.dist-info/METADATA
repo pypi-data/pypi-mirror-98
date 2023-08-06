@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: artificienlib
+Version: 0.1.3
+Summary: Library for artificien, abstracts federated learning processes
+Home-page: UNKNOWN
+Author: Jake Epstein
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: syft (==0.2.9)
+Requires-Dist: websocket-client (==0.57.0)
+Requires-Dist: torch
+Requires-Dist: requests
+Requires-Dist: boto3
+Requires-Dist: datetime
+Requires-Dist: warrant
+Requires-Dist: envs
+Requires-Dist: python-jose
+
+UNKNOWN
+
+
