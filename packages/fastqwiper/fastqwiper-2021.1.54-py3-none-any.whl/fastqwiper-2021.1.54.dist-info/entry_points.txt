@@ -1,0 +1,3 @@
+[console_scripts]
+wiper = fastq_wiper.wiper:wipe_fastq
+
