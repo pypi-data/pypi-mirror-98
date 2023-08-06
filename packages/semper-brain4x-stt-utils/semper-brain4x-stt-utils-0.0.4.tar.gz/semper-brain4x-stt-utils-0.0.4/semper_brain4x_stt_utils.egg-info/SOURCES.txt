@@ -1,0 +1,8 @@
+README.md
+setup.py
+semper_brain4x_stt_utils/__init__.py
+semper_brain4x_stt_utils/listener.py
+semper_brain4x_stt_utils.egg-info/PKG-INFO
+semper_brain4x_stt_utils.egg-info/SOURCES.txt
+semper_brain4x_stt_utils.egg-info/dependency_links.txt
+semper_brain4x_stt_utils.egg-info/top_level.txt
