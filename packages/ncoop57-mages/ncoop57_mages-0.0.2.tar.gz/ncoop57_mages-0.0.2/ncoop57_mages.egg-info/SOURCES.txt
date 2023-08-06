@@ -1,0 +1,17 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ncoop57_mages/__init__.py
+ncoop57_mages/_nbdev.py
+ncoop57_mages/cli.py
+ncoop57_mages/core.py
+ncoop57_mages/game.py
+ncoop57_mages.egg-info/PKG-INFO
+ncoop57_mages.egg-info/SOURCES.txt
+ncoop57_mages.egg-info/dependency_links.txt
+ncoop57_mages.egg-info/entry_points.txt
+ncoop57_mages.egg-info/not-zip-safe
+ncoop57_mages.egg-info/top_level.txt
