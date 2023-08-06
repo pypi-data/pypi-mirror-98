@@ -1,0 +1,7 @@
+
+[build]
+twine
+wheel
+
+[tests]
+pytest
