@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: readfish
+Version: 0.0.6
+Summary: Adaptive sampling toolkit for MinION
+Home-page: https://github.com/LooseLab
+Author: Alexander Payne
+Author-email: alexander.payne@nottingham.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: google
+Requires-Dist: protobuf
+Requires-Dist: toml
+Requires-Dist: jsonschema
+Requires-Dist: watchdog
+Requires-Dist: pandas
+Requires-Dist: mappy
+Requires-Dist: biopython (==1.76)
+Requires-Dist: minknow-api
+
+# <img src="https://raw.githubusercontent.com/LooseLab/ru/rename_cli/examples/images/readfish_logo.jpg">
+
+Installation
+---
+
+This toolkit currently requires MinKNOW (minknow-core v4.0.4) to be installed and 
+[`read_until_api`](https://github.com/nanoporetech/read_until_api) to be installed
+separately. We recommend installing in a virtual environment as so:
+
+```bash
+# Make a virtual env
+python3 -m venv readfish
+source ./readfish/bin/activate
+pip install git+https://github.com/nanoporetech/read_until_api
+pip install readfish
+```
+
+Usage
+---
+```bash
+# check install
+$ readfish
+usage: readfish [-h] [--version]
+                {targets,align,centrifuge,unblock-all,validate,summary} ...
+
+positional arguments:
+  {targets,align,centrifuge,unblock-all,validate,summary}
+                        Sub-commands
+    targets             Run targeted sequencing
+    align               ReadFish and Run Until, using minimap2
+    centrifuge          ReadFish and Run Until, using centrifuge
+    unblock-all         Unblock all reads
+    validate            ReadFish TOML Validator
+    summary             Summary stats from FASTQ files
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+
+See '<command> --help' to read about a specific sub-command.
+
+# example run command - change arguments as necessary:
+$ readfish targets --experiment-name "Test run" --device MN17073 --toml example.toml --log-file RU_log.log
+```
+
+
