@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: amazon-pay
+Version: 2.7.0
+Summary: Amazon Pay Python SDK
+Home-page: https://github.com/amzn/amazon-pay-sdk-python
+Author: EPS-DSE
+Author-email: amazon-pay-sdk@amazon.com
+License: Apache License version 2.0, January 2004
+Download-URL: https://github.com/amzn/amazon-pay-sdk-python/tarball/2.7.0
+Description: UNKNOWN
+Keywords: Amazon,Payments,Login,Python,API,SDK
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
