@@ -1,0 +1,13 @@
+bandit
+black; python_version > '3.5'
+codecov
+flake8
+flake8-cognitive-complexity
+ipython
+mypy
+pylint
+pytest
+pytest-cov
+democritus-dates @ git+https://github.com/democritus-project/democritus-dates.git#egg=democritus-dates
+democritus_file_system
+democritus_strings
