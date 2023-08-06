@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+siswrapper/__init__.py
+siswrapper/_version.py
+siswrapper/siswrapper.py
+siswrapper.egg-info/PKG-INFO
+siswrapper.egg-info/SOURCES.txt
+siswrapper.egg-info/dependency_links.txt
+siswrapper.egg-info/requires.txt
+siswrapper.egg-info/top_level.txt
