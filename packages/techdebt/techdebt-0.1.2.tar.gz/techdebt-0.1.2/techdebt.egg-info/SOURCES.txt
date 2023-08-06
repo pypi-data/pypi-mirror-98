@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+techdebt
+techdebt.yml
+src/__init__.py
+src/lib.py
+src/plugins.py
+techdebt.egg-info/PKG-INFO
+techdebt.egg-info/SOURCES.txt
+techdebt.egg-info/dependency_links.txt
+techdebt.egg-info/requires.txt
+techdebt.egg-info/top_level.txt
+test_project/subA/superb_file_one.py
+test_project/subA/superb_file_two.js
+test_project/subB/meh.py

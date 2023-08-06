@@ -1,0 +1,26 @@
+folder:
+  included:
+    - test_project/subA
+    - test_project/subB
+
+  excluded:
+    - vendor
+    - node_modules
+    - var
+    - web
+    - nbproject
+    - public
+    - .git
+    - __pycache__
+
+extensions:
+  - .py
+  - .js
+  - .md
+  - .php
+
+
+
+scores:
+  api: 5
+  implementation: 3
