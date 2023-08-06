@@ -1,0 +1,66 @@
+# These environment variables must be set in CircleCI UI
+#
+# DOCKERHUB_REPO - docker hub repo, format: <username>/<repo>
+# DOCKER_USER
+# DOCKER_PASS
+#
+
+version: 2
+jobs:
+  integration_test:
+    docker:
+      - image: continuumio/miniconda3
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run: apt-get update; apt-get install make -y
+      - run: conda env create -f environment.yml
+      - run: . /opt/conda/etc/profile.d/conda.sh && conda activate presc && python setup.py install && make pytest_ci
+      - persist_to_workspace:
+          root: sphinx_docs/build
+          paths: html
+
+  docs_deploy:
+    docker:
+      - image: continuumio/miniconda3
+    steps:
+      - checkout
+      - attach_workspace:
+          at: sphinx_docs/build
+      - add_ssh_keys:
+          fingerprints:
+            - "10:c5:55:73:57:68:17:cb:78:a4:6f:f7:08:34:ec:04"
+      - run:
+          name: Trigger docs deployment
+          working_directory: ./sphinx_docs/build/html
+          command: |
+            touch .nojekyll
+            REV=$(git rev-parse HEAD)
+            git init
+            git config user.name "PRESC Documenter"
+            git config user.email "glenda+prescdoc@mozilla.commm"
+            git checkout -b gh-pages
+            git add .
+            git commit -m "Update docs to ${REV} [skip ci]"
+            git remote add mozilla git@github.com:mozilla/PRESC.git
+            # Eat output so it doesn't spit out the sensitive GH_TOKEN if something goes wrong:
+            git push -f mozilla gh-pages > /dev/null 2>&1
+
+
+workflows:
+  version: 2
+  test_build_deploy:
+    jobs:
+      - integration_test:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: gh-pages
+      - docs_deploy:
+          requires:
+            - integration_test
+          filters:
+            branches:
+              only: master

@@ -1,0 +1,92 @@
+# Look and structure of the report
+report:
+  # Report title (passed to jupyter-book config)
+  title: PRESC report
+  # Report author (passed to jupyter-book config)
+  author: ""
+  # List of evaluations to show in the report. Each is added in a separate page.
+  # Values must correspond to module names for available evaluations.
+  # The report will include only those listed in `evaluations_include`,
+  # after removing any listed in `evaluations_exclude`.
+  # "*" means 'all available evaluations'.
+  evaluations_include: "*"
+  evaluations_exclude: null
+
+# Computation options for individual evaluations
+evaluations:
+  conditional_metric:
+    # Dataset columns to run the evaluation for.
+    # Follows the same logic as for report evaluations.
+    # "*" means 'all feature and other columns'.
+    # Results will be ordered according to `columns_include`.
+    columns_include: "*"
+    columns_exclude: null
+    metrics:
+      - function: accuracy_score
+        display_name: Accuracy
+    computation:
+      # Number of bins for partitioning a numeric column
+      num_bins: 10
+      # Should bin widths correspond to quantiles of a numerical column's
+      # distribution (True) or be equally-spaced over its range (False)
+      quantile: False
+      # Should the grouping column be treated as categorical, ie. binned on its
+      # unique values? Only applies if the column is numeric
+      as_categorical: False
+      # A dictionary of per-column overrides for the computation options.
+      # Entries should have a column name as their key and settings for the
+      # options above as their value.
+      columns: null
+
+  conditional_distribution:
+    # Dataset columns to run the evaluation for.
+    # Follows the same logic as for report evaluations.
+    # "*" means 'all feature and other columns'.
+    columns_include: "*"
+    columns_exclude: null
+    computation:
+      # Binning scheme to use for a numerical column, passed to `numpy.histogram`.
+      # Can be a fixed number of bins or a string indicating a binning scheme
+      binning: fd
+      # Should the bins be computed over the entire column and shared across
+      # groups (True) or computed within each group (False)
+      common_bins: True
+      # Should the data column be treated as categorical, ie. binned on its
+      # unique values? Only applies if the column is numeric
+      as_categorical: False
+      # A dictionary of per-column overrides for the computation options.
+      # Entries should have a column name as their key and settings for the
+      # options above as their value.
+      columns: null
+
+  spatial_distribution:
+    # Dataset columns to run the evaluation for.
+    # Follows the same logic as for report evaluations.
+    # "*" means 'all feature columns'.
+    features_include: "*"
+    features_exclude: null
+    # The default pairwise distance metric to use for numerical features.
+    distance_metric_numerical: "euclidean"
+    # The default pairwise distance metric to use for categorical features.
+    distance_metric_categorical: "hamming"
+    # The aggregation function to use to summarize distances within each
+    # class.
+    summary_agg: "mean"
+    # A dictionary of per-column overrides.
+    # Entries should have a column name as their key and settings for the
+    # options above as their value.
+    columns: null
+
+  train_test_splits:
+    # Scoring function used to evaluate test performance.
+    # Should be a string recognized by `sklearn.model_selection.cross_val_score`
+    metrics:
+      - function: accuracy
+        display_name: Accuracy
+    computation:
+      # Increment between train-test split ratios
+      split_size_increment: 0.05
+      # Number of random replicates to run for each split
+      num_replicates: 20
+      # Set the random state for reproducibility
+      random_state: 543
