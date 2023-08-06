@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/Anteater/__init__.py
+src/Anteater/anteater.py
+src/Anteater/main.py
+src/anteater_sh.egg-info/PKG-INFO
+src/anteater_sh.egg-info/SOURCES.txt
+src/anteater_sh.egg-info/dependency_links.txt
+src/anteater_sh.egg-info/top_level.txt
