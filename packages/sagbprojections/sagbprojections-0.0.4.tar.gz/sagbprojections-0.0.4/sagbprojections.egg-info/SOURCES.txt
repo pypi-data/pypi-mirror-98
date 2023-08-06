@@ -1,0 +1,11 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+license.txt
+setup.py
+sagbprojections/__init__.py
+sagbprojections.egg-info/PKG-INFO
+sagbprojections.egg-info/SOURCES.txt
+sagbprojections.egg-info/dependency_links.txt
+sagbprojections.egg-info/requires.txt
+sagbprojections.egg-info/top_level.txt
