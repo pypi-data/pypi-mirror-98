@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: aicrowd-cli
+Version: 0.1.1
+Summary: A CLI app to interact with AIcrowd
+Home-page: https://gitlab.aicrowd.com/aicrowd/aicrowd-cli
+Author: Yoogottam Khandelwal
+Author-email: yoogottamk@outlook.com
+License: MIT
+Download-URL: https://gitlab.aicrowd.com/aicrowd/aicrowd-cli/-/archive/v0.1.1/aicrowd-cli-v0.1.1.tar.gz
+Keywords: AIcrowd,CLI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Requires-Dist: click (<8,>=7.1.2)
+Requires-Dist: gitpython
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: rich
+Requires-Dist: toml
+Requires-Dist: tqdm
+
+# aicrowd-cli
+A CLI app to interact with AIcrowd
+
+[![pipeline status](http://gitlab.aicrowd.com/aicrowd/aicrowd-cli/badges/master/pipeline.svg)](http://gitlab.aicrowd.com/aicrowd/aicrowd-cli/-/commits/master)
+[![coverage report](http://gitlab.aicrowd.com/aicrowd/aicrowd-cli/badges/master/coverage.svg)](http://gitlab.aicrowd.com/aicrowd/aicrowd-cli/-/commits/master)
+
+### Supported versions
+python3.6 and above
+
+
