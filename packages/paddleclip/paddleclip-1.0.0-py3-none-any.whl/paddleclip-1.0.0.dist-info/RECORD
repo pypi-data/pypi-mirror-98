@@ -1,0 +1,9 @@
+clip/__init__.py,sha256=ZHn5CyMiDb1EJd0UpIQWouM8uVjwvLNB83GXhgvQ7ls,4774
+clip/bpe_simple_vocab_16e6.txt.gz,sha256=kkaRrCiOVECSNhFWUq1KolD0ggPeUKnkcipuzUjWgEo,1356917
+clip/model.py,sha256=v7Xga3IVr7gwt46k7Hl6QuQVbJrxA0LvWcRkEzr0tr0,14089
+clip/tokenizer.py,sha256=fVb3wImzEMKWZ2vmMqJQi24T0FnSQzgc7UTQ82zinTs,4910
+paddleclip-1.0.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+paddleclip-1.0.0.dist-info/METADATA,sha256=rfLT0lhEQA8BuBC88C-qTT_DAayrWS6RSyYh_rmjT34,260
+paddleclip-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+paddleclip-1.0.0.dist-info/top_level.txt,sha256=qr0grg7Skv7Se9f25eVy1TC4jJbxlIVbnogG6XbrLjY,5
+paddleclip-1.0.0.dist-info/RECORD,,
