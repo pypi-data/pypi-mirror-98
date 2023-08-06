@@ -1,0 +1,4 @@
+graplinc-grapl-api==0.1.0
+mypy_boto3_s3
+pydgraph
+typing_extensions
