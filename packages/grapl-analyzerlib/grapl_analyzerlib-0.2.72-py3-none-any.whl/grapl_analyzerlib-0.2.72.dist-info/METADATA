@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: grapl-analyzerlib
+Version: 0.2.72
+Summary: Library for Grapl Analyzers
+Home-page: https://github.com/grapl-security/grapl
+Author: Grapl, Inc.
+Author-email: grapl-code@graplsecurity.com
+Maintainer: Grapl, Inc.
+Maintainer-email: grapl-code@graplsecurity.com
+License: MIT
+Project-URL: Documentation, https://grapl.readthedocs.io
+Project-URL: Source, https://github.com/grapl-security/grapl
+Project-URL: Tracker, https://github.com/grapl-security/grapl/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: graplinc-grapl-api (==0.1.0)
+Requires-Dist: mypy-boto3-s3
+Requires-Dist: pydgraph
+Requires-Dist: typing-extensions
+
+# grapl_analyzerlib
+A library for working with [Grapl](https://github.com/insanitybit/grapl)
+
+[readthedocs](https://grapl.readthedocs.io/en/latest/)
+
+
