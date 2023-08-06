@@ -1,0 +1,14 @@
+wheel
+asgiref
+certifi
+chardet
+sqlparse
+urllib3
+gunicorn
+whitenoise
+psutil
+uwsgi
+xmltodict
+stripe
+dev0s
+ssht00ls
