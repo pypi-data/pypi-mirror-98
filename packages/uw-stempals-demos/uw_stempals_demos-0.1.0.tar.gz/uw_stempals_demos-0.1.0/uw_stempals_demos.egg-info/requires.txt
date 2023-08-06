@@ -1,0 +1,14 @@
+numpy
+matplotlib
+
+[dev]
+black
+pylint
+twine
+jupyter
+jupyterlab
+matplotlib
+
+[docs]
+sphinx
+sphinx-rtd-theme

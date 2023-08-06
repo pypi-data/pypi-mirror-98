@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+uw_stempals_demos/__init__.py
+uw_stempals_demos/pandemic_sim.py
+uw_stempals_demos.egg-info/PKG-INFO
+uw_stempals_demos.egg-info/SOURCES.txt
+uw_stempals_demos.egg-info/dependency_links.txt
+uw_stempals_demos.egg-info/requires.txt
+uw_stempals_demos.egg-info/top_level.txt
