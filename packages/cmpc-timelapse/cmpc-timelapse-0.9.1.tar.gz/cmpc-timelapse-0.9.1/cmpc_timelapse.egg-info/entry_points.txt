@@ -1,0 +1,3 @@
+[console_scripts]
+cmpc-timelapse = auto_timelapse:main
+
