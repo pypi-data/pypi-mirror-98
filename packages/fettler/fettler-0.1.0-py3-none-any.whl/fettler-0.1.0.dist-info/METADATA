@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: fettler
+Version: 0.1.0
+Summary: Auto refresh cache of redis with MySQL binlog
+Home-page: https://github.com/long2ice/fettler
+License: Apache-2.0
+Keywords: redis,cache,mysql,binlog
+Author: long2ice
+Author-email: long2ice@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aioredis
+Requires-Dist: asyncmy
+Requires-Dist: ciso8601
+Requires-Dist: click
+Requires-Dist: dynaconf
+Requires-Dist: loguru
+Project-URL: Documentation, https://github.com/long2ice/fettler
+Project-URL: Repository, https://github.com/long2ice/fettler.git
+Description-Content-Type: text/markdown
+
+# Fettler
+
+[![image](https://img.shields.io/pypi/v/fettler.svg?style=flat)](https://pypi.python.org/pypi/fettler)
+[![image](https://img.shields.io/github/license/long2ice/fettler)](https://github.com/long2ice/fettler)
+[![pypi](https://github.com/long2ice/fettler/actions/workflows/pypi.yml/badge.svg)](https://github.com/long2ice/fettler/actions/workflows/pypi.yml)
+[![ci](https://github.com/long2ice/fettler/actions/workflows/ci.yml/badge.svg)](https://github.com/long2ice/fettler/actions/workflows/ci.yml)
+
+## Introduction
+
+`Fettler` is a service that help you refresh redis cache automatically. By listening on MySQL binlog, you can refresh
+redis cache in a timely manner and devoid of sensation or consciousness.
+
+![architecture](./images/architecture.png)
+
+## Install
+
+Just install from pypi:
+
+```shell
+> pip install fettler
+```
+
+## Usage
+
+### Config file
+
+The example can be found in [config.yml](./config.yml).
+
+### Run services
+
+First you should run the services, which include `producer`, `consumer`.
+
+#### Use `docker-compose`(recommended)
+
+```shell
+docker-compose up -d --build
+```
+
+Then the services is running.
+
+#### Run manual
+
+##### Run producer
+
+The producer listens on MySQL binlog and send data changes to redis message queue.
+
+```shell
+> fettler produce
+```
+
+##### Run consumer
+
+The consumer consume message queue and delete invalid caches by data changes and refresh policy registered from server.
+
+```shell
+> fettler consume
+```
+
+## Register cache refresh policy
+
+See [examples](./examples) to see how to add cache refresh policy in you application.
+
+## License
+
+This project is licensed under the [Apache-2.0](./LICENSE) License.
+

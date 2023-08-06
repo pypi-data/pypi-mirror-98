@@ -1,0 +1,3 @@
+[console_scripts]
+fettler=fettler.cli:main
+
