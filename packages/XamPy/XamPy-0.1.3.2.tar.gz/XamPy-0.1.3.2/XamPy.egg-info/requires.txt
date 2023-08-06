@@ -1,0 +1,8 @@
+nltk
+pandas
+vaderSentiment
+numpy
+sklearn
+textblob
+sklearn
+datetime
