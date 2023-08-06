@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+py_vs_github_starter.egg-info/PKG-INFO
+py_vs_github_starter.egg-info/SOURCES.txt
+py_vs_github_starter.egg-info/dependency_links.txt
+py_vs_github_starter.egg-info/entry_points.txt
+py_vs_github_starter.egg-info/requires.txt
+py_vs_github_starter.egg-info/top_level.txt

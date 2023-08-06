@@ -1,0 +1,5 @@
+wheel
+bumpversion
+black
+isort
+mypy
