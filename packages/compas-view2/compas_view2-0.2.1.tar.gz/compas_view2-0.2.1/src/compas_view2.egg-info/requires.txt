@@ -1,0 +1,5 @@
+compas
+pyside2
+pyqt5
+pyopengl
+pyopengl-accelerate
