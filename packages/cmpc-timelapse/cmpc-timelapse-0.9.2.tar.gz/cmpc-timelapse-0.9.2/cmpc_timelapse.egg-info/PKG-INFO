@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: cmpc-timelapse
+Version: 0.9.2
+Summary: Script for automatically downloading a list of videos, speeding them up, and concatenating them.
+Home-page: https://github.com/JMcB17/auto_timelapse_script
+Author: Joel McBride
+Author-email: joel.mcbride1@live.com
+License: GPLv3
+Description: # auto_timelapse_script
+        
+        Script for automatically downloading a list of videos, speeding them up, and concatenating them.    
+        Uses multithreading with youtube_dl and ffmpeg-python to download_and_speed_up and speed up a list of videos all at once. Then, it uses ffmpeg to combine them all into one timelapse.
+        
+        Made for https://cmpc.live
+        
+        
+        ## Installation
+        
+        You can use pip!    
+        ```shell
+        python -m pip install cmpc-timelapse
+        ```
+        Or just clone the repo.
+        
+        ## Usage
+        
+        When installed using pip:    
+        As a python module    
+        ```shell
+        python -m auto_timelapse
+        ```
+        Or as a console script   
+        ```shell
+        cmpc-timelapse
+        ```
+        
+        To use, create a file `vods.txt` with a list of youtube-dl compatible video URL's separated by newlines. Then, run in the same folder.    
+        Has a number of command line options, including `-h`, `--help`. Might add runtime input support.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Requires-Python: >=3
+Description-Content-Type: text/markdown

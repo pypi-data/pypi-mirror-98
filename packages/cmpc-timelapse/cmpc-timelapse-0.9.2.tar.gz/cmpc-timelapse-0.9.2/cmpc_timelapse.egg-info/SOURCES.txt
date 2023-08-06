@@ -1,0 +1,9 @@
+README.md
+auto_timelapse.py
+setup.py
+cmpc_timelapse.egg-info/PKG-INFO
+cmpc_timelapse.egg-info/SOURCES.txt
+cmpc_timelapse.egg-info/dependency_links.txt
+cmpc_timelapse.egg-info/entry_points.txt
+cmpc_timelapse.egg-info/requires.txt
+cmpc_timelapse.egg-info/top_level.txt
