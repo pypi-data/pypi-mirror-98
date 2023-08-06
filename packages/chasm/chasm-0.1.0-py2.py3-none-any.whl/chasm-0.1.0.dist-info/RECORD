@@ -1,0 +1,10 @@
+chasm/__init__.py,sha256=PwwPjWbkSQmcJ7PhvPLd-5P7TSlpwJ4Vyz4Vgt-201Y,117
+chasm/chasm.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+chasm/cli.py,sha256=UAlfX4VZ8_jJ0-vgPUOKGGKY184vbFdI06cvlzOkEb0,430
+chasm-0.1.0.dist-info/AUTHORS.rst,sha256=MXsfm5vrRqawaLDdKIV-JdLeOpBOvjSuH82j-zD9JyY,150
+chasm-0.1.0.dist-info/LICENSE,sha256=kjvGWZCJ_OGBCTMypivNZZEgKI6q9_53Z53qFVkMzA0,284
+chasm-0.1.0.dist-info/METADATA,sha256=dSvEeFxrhRC98bVMkwt_rnrWaFGDH4fNOAL5ZC4-96E,1872
+chasm-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+chasm-0.1.0.dist-info/entry_points.txt,sha256=MNl_6YkF31A6G4zh9IN8rlPsCDT9D-1GELuvu6Llkz0,42
+chasm-0.1.0.dist-info/top_level.txt,sha256=yX11XZzuJARcJypZ_blIEcNESvxCuSBVCJuZVScYELc,6
+chasm-0.1.0.dist-info/RECORD,,
