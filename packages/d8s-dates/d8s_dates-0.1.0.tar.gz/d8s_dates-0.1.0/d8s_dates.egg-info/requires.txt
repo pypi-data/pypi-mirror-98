@@ -1,0 +1,9 @@
+democritus-hypothesis
+democritus-timezones
+hypothesis
+maya
+parsedatetime
+python-dateutil
+
+[:python_version < "3.8"]
+importlib-metadata
