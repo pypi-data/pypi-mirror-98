@@ -1,0 +1,2 @@
+recursive-include curricula_grade_cpp/include *.hpp
+recursive-include curricula_grade_cpp/gtest *.cpp

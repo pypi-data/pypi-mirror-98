@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: curricula-grade-cpp
+Version: 2.0.4
+Summary: A set of grading addons specific to C++
+Home-page: https://github.com/curriculagg/curricula-grade-cpp
+Author: Noah Kim
+Author-email: noahbkim@gmail.com
+License: UNKNOWN
+Description: # Curricula Grade C++ Tooling
+        
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
