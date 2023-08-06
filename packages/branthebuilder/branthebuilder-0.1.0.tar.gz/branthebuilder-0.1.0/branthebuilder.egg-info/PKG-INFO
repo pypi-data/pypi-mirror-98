@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: branthebuilder
+Version: 0.1.0
+Summary: Invoke command collection for managing python packages
+Home-page: https://github.com/endremborza/branthebuilder
+Author: Endre Márk Borza
+License: MIT
+Description: # Branthebuilder
+        
+        invoke tasks for python boilerplate
+        
+        [![Documentation Status](https://readthedocs.org/projects/branthebuilder/badge/?version=latest)](https://branthebuilder.readthedocs.io/en/latest/)
+        [![pypi](https://img.shields.io/pypi/v/branthebuilder.svg)](https://pypi.org/project/branthebuilder/)
+        
+        make a new project based on the template with `python -m branthebuilder`
+Keywords: invoke
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
