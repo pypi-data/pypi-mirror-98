@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lead-lag
+Version: 1.6
+Summary: Lead lag estimation with a O(n log n) complexity.
+Home-page: UNKNOWN
+Author: Philippe Remy
+Author-email: UNKNOWN
+License: Open Source
+Platform: UNKNOWN
+Requires-Dist: pandas (>=0.22.0)
+Requires-Dist: numpy (>=1.15.0)
+Requires-Dist: tqdm (>=4.19.2)
+Requires-Dist: matplotlib (>=2.2.2)
+
+UNKNOWN
+
+
