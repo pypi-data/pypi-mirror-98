@@ -1,0 +1,10 @@
+pandas
+pillow
+tensorflow
+matplotlib
+seaborn
+scikit-learn
+keras_vggface
+mtcnn
+scikit-image
+tqdm
