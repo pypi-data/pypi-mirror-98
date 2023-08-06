@@ -1,0 +1,3 @@
+[console_scripts]
+keg = kiwi_keg.keg:main
+
