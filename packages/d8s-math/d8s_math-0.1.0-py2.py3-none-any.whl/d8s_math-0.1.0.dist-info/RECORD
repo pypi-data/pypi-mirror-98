@@ -1,0 +1,10 @@
+d8s_math/__init__.py,sha256=sLMICL7Plim8pSGlW4jpbLr6rnJG2Jsq7J5NN-Fravg,632
+d8s_math/maths.py,sha256=m6dRQ4BcVnGVZ_kRw0qZfWF_gMnMnnU5TPLbHDz-gN0,22925
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_maths.py,sha256=0xMQS7k-4ERZSK1mfWFM-qczRGmq-7leXfOb0LpF8-s,19168
+d8s_math-0.1.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_math-0.1.0.dist-info/METADATA,sha256=vz0HLMj2jO32F9TWHZH-PHCeVF6Q3QyG9oVVbmGFpmE,1871
+d8s_math-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_math-0.1.0.dist-info/top_level.txt,sha256=eplw9O-9V0svEI94zFAs5wNB4Y0X5jE4vKUu4EBh9Wk,15
+d8s_math-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_math-0.1.0.dist-info/RECORD,,
