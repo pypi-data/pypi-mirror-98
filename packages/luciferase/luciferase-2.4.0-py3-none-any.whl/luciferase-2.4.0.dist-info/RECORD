@@ -1,0 +1,12 @@
+luciferase/__init__.py,sha256=-X6aocZ0IxjxlI55tamULpF2iahKe2AYzUzQ_MJy8fc,1083
+luciferase/luciferase.py,sha256=5hoDlUytIKsUzbj_k9Y9FGJsWjzInA2p-mCyNtQmQQA,11817
+luciferase/ratioplot.py,sha256=4PdB-W3JvGasG0KUMj29fDEWVyOf9OK8PbuQATJoEnk,7803
+luciferase/ratiotest.py,sha256=fNptr1SiTc33WTia9YVeXTTvrlXm9DhhXl4nUzvloiY,3926
+luciferase/swarmplot.py,sha256=Xz_2vAEBUeQV8IjRcoHyk52NTnwwboGsMmPNzH29Tsw,8965
+luciferase/write_table.py,sha256=iSeC1sMdiyBLMQqOooaE4VbKUeFGnHTqgqUmXfoUBMo,1935
+luciferase-2.4.0.dist-info/LICENSE,sha256=5rzocQfGUGi-McsnrM4feEMzlW4rcgu4po8tPhOj-_E,1088
+luciferase-2.4.0.dist-info/METADATA,sha256=i66mn-1Dg2ksNE0g65rilx-n27kVrSr0SP_auJZOHHs,9074
+luciferase-2.4.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+luciferase-2.4.0.dist-info/entry_points.txt,sha256=jOoZfRIoeAkj66df4irPeaAlB-y6mBqT3pwb9vMRbMw,267
+luciferase-2.4.0.dist-info/top_level.txt,sha256=dnMzbjK4pTE6_iWMMQY_kVgcVuwG21zMHZplNOvO18U,11
+luciferase-2.4.0.dist-info/RECORD,,
