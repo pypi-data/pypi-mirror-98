@@ -1,0 +1,2 @@
+recursive-include nextapm/ *.py
+recursive-exclude nextapm/ test_*.py
