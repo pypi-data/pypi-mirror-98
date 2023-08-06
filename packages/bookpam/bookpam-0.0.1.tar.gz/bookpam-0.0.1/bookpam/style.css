@@ -1,0 +1,128 @@
+@page {
+   /*size: 7in 9.25in;*/
+   /*margin: 27mm 16mm 27mm 16mm;*/
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+}
+div.chapter, div.appendix {
+    page-break-after: always;
+}
+div.titlepage {
+  page: blank;
+}
+body {
+    /* font-family: Vazir, Tahoma; */
+    font-family: Tahoma;
+    font-weight: normal;
+}
+/*
+New feature->Optional: Apply font for RTL languages. e.g: Arabic, Farsi Persian
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Regular-FD.eot');
+    src: url('font/Vazir-Regular-FD.eot?#iefix') format('embedded-opentype'),
+         url('font/Vazir-Regular-FD.woff2') format('woff2'),
+         url('font/Vazir-Regular-FD.woff') format('woff'),
+         url('font/Vazir-Regular-FD.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Bold-FD.eot');
+    src: url('font/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+         url('font/Vazir-Bold-FD.woff2') format('woff2'),
+         url('font/Vazir-Bold-FD.woff') format('woff'),
+         url('font/Vazir-Bold-FD.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Black-FD.eot');
+    src: url('font/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+         url('font/Vazir-Black-FD.woff2') format('woff2'),
+         url('font/Vazir-Black-FD.woff') format('woff'),
+         url('font/Vazir-Black-FD.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Medium-FD.eot');
+    src: url('font/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+         url('font/Vazir-Medium-FD.woff2') format('woff2'),
+         url('font/Vazir-Medium-FD.woff') format('woff'),
+         url('font/Vazir-Medium-FD.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Light-FD.eot');
+    src: url('font/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+         url('font/Vazir-Light-FD.woff2') format('woff2'),
+         url('font/Vazir-Light-FD.woff') format('woff'),
+         url('font/Vazir-Light-FD.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('font/Vazir-Thin-FD.eot');
+    src: url('font/Vazir-Thin-FD.eot?#iefix') format('embedded-opentype'),
+         url('font/Vazir-Thin-FD.woff2') format('woff2'),
+         url('font/Vazir-Thin-FD.woff') format('woff'),
+         url('font/Vazir-Thin-FD.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+*/
+code {
+    width: 100%;
+    direction: ltr;
+    text-align: left;
+    float: left;
+    background: #2c292d;
+    color: #a9dc76;
+}
+code span {
+    /*float: left;*/
+}
+kbd.variable {
+  border-radius: 2px;
+  padding: 2px;
+  border-bottom: 1px solid black;
+}
+kbd.function {
+  border-radius: 2px;
+  padding: 2px;
+  border: 1px solid black;
+}
+body {
+    font-size: 20px;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 125px;
+}
+ul li.sub-1, ul li.sub-2, ul li.sub-3, ul li.sub-4, ul li.sub-5, ul li.sub-6 {
+    line-height: 35px;
+}
+ul li.sub-1 {
+    margin-right: calc(1*30px);
+}
+ul li.sub-2 {
+    margin-right: calc(2*30px);
+}
+ul li.sub-3 {
+    margin-right: calc(3*30px);
+}
+ul li.sub-4 {
+    margin-right: calc(4*30px);
+}
+ul li.sub-5 {
+    margin-right: calc(5*30px);
+}
+ul li.sub-6 {
+    margin-right: calc(6*30px);
+}

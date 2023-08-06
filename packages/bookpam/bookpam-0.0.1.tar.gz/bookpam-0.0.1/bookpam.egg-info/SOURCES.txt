@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+bookpam/__init__.py
+bookpam/layout.html
+bookpam/script.js
+bookpam/style.css
+bookpam.egg-info/PKG-INFO
+bookpam.egg-info/SOURCES.txt
+bookpam.egg-info/dependency_links.txt
+bookpam.egg-info/top_level.txt
