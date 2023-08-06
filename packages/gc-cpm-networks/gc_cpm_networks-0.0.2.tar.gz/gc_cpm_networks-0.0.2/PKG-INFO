@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gc_cpm_networks
+Version: 0.0.2
+Summary: Global Context Convolutional Pose Machine Network
+Home-page: UNKNOWN
+Author: Kacper Kulczak
+Author-email: k.kulczak@xberry.tech
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8.*
