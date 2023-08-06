@@ -1,0 +1,7 @@
+_portaudio.cpython-38-i386-linux-gnu.so,sha256=FCAsCXMIDCKne9uy4kWWJT5CXXtKYkiIewL-t0b1poE,108344
+pyaudio.py,sha256=nF-3mfoiXm-9kXgJuIHyuBikhq1eNz3ESsznKnqYEgc,38495
+pyaudio_wheels.libs/libportaudio-3e405a6b.so.2.0.0,sha256=he983E0-gFRNhDFTPHjIpoEdD_d2xxrT_n2JiNqxyZI,292732
+pyaudio_wheels-0.0.1.dist-info/WHEEL,sha256=NQ46lJmNp-_xwXu8_Oti6rW9yl7WcToKW6bPH5tS9tY,109
+pyaudio_wheels-0.0.1.dist-info/top_level.txt,sha256=byFCF4ZeZ_RFXNUXpPqEnFej1lo1hzAwqlj3B6vLvPk,19
+pyaudio_wheels-0.0.1.dist-info/RECORD,,
+pyaudio_wheels-0.0.1.dist-info/METADATA,sha256=39pHUswvBSYWabmJaAWk-3xh6ssq77HPZjXTGSEaQH8,1336
