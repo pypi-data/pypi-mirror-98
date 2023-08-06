@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: pyticker
+Version: 0.1b0
+Summary: Terminal based stocks and portfolio tracks.
+Home-page: https://github.com/priyanshus/pyticker
+License: MIT
+Description: Terminal based stocks watchlist and portfolio/position tracker.
+Keywords: terminal-app finance stocks ticker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
