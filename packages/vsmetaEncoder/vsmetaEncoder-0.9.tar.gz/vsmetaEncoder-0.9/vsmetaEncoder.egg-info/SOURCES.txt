@@ -1,0 +1,15 @@
+README.md
+setup.py
+vsmetaEncoder/__init__.py
+vsmetaEncoder/vsmetaBase.py
+vsmetaEncoder/vsmetaImageInfo.py
+vsmetaEncoder/vsmetaInfo.py
+vsmetaEncoder/vsmetaListInfo.py
+vsmetaEncoder/vsmetaMovieEncoder.py
+vsmetaEncoder/vsmetaSeriesEncoder.py
+vsmetaEncoder.egg-info/PKG-INFO
+vsmetaEncoder.egg-info/SOURCES.txt
+vsmetaEncoder.egg-info/dependency_links.txt
+vsmetaEncoder.egg-info/not-zip-safe
+vsmetaEncoder.egg-info/requires.txt
+vsmetaEncoder.egg-info/top_level.txt
