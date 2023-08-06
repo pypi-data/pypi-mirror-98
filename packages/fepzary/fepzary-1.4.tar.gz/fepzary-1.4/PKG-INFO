@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: fepzary
+Version: 1.4
+Summary: Encodes and Decodes Text And Files With Fepzary.
+Home-page: https://fepzary.notkar1myt.repl.co/api
+Author: kar1m
+Author-email: karim_hany1@hotmail.com
+License: MIT
+Project-URL: Bug Tracker, https://fe.fepzz.repl.co/report-bugs
+Description: For Help With The Api Go To
+        [Fepzary Website](https://fepzary.notkar1myt.repl.co/api)
+Keywords: decode,encode,fepzary
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

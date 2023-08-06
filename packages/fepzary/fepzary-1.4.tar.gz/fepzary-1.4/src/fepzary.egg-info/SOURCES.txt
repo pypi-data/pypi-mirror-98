@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/fepzary/__init__.py
+src/fepzary/main.py
+src/fepzary.egg-info/PKG-INFO
+src/fepzary.egg-info/SOURCES.txt
+src/fepzary.egg-info/dependency_links.txt
+src/fepzary.egg-info/top_level.txt
