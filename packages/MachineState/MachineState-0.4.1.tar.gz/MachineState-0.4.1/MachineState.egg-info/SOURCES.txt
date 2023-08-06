@@ -1,0 +1,8 @@
+README.md
+machinestate.py
+setup.py
+MachineState.egg-info/PKG-INFO
+MachineState.egg-info/SOURCES.txt
+MachineState.egg-info/dependency_links.txt
+MachineState.egg-info/entry_points.txt
+MachineState.egg-info/top_level.txt

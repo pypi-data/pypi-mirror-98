@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: MachineState
+Version: 0.4.1
+Summary: Gather machine state and dump it as JSON document
+Home-page: https://github.com/RRZE-HPC/MachineState
+Author: Thomas Gruber
+Author-email: thomas.gruber@fau.de
+License: GPLv3
+Description: Gathering the system state before benchmarking and other tests on compute
+        systems. MachineState reads common sysfs and procfs files as well as executes commands to get all
+        required data. For reproducibility, the once saved system state can be compared to the current state
+        before re-running a test.
+        
+Keywords: benchmarking,linux,system state,topology
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: System :: Operating System
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Education :: Testing
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
