@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: crudgen-django
+Version: 0.1.4
+Summary: 
+Author: pouria
+Author-email: pooriazmn@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Django (<3.0)
+Requires-Dist: crudgen (>=0.1.1,<0.2.0)
+Requires-Dist: djangorestframework (>=3.12.2,<4.0.0)
+Requires-Dist: drf-extensions (>=0.7.0,<0.8.0)
