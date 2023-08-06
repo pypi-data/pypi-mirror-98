@@ -1,0 +1,26 @@
+apiVersion: cardanopy.node.config.v1
+substitutions:
+  _NAME: "bp-k8s"
+  _IMAGE: "floydcraft/cardano-py-slim"
+  _TAG: "latest"
+  _MOUNT: True
+  _BP_ENABLED: False
+network: "testnet"
+configPath: "/app/config.json"
+topologyPath: "/app/topology.json"
+databasePath: "/app/db"
+socketPath: "/app/node.socket"
+hostAddr: "0.0.0.0"
+port: 3001
+blockProducer:
+  enabled: $_BP_ENABLED
+  shelleyKesKey: "bp/kes.skey"
+  shelleyVrfKey: "bp/vrf.skey"
+  shelleyOperationalCertificate: "bp/node.cert"
+docker:
+  name: "$_NAME"
+  image: "$_IMAGE:$_TAG"
+  rootVolume: "/app"
+  mount: $_MOUNT
+k8s:
+  namespace: "cardano-testnet"
