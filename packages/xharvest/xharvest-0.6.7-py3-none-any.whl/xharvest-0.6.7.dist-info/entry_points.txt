@@ -1,0 +1,3 @@
+[console_scripts]
+xharvest = xharvest.ui:main
+
