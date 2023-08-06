@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: traviscli
+Version: 0.3.0
+Summary: A build help tool
+Home-page: https://github.com/hasii2011/travisci-cli
+Author-email: Humberto.A.Sanchez.II@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: PyTravisCI
+
+This is a simple CLI for me to update my version.txt file with a build number.  More to come
+
+

@@ -1,0 +1,16 @@
+travisci/Preferences.py,sha256=GXwQpmLA6g8KsqC72fQ1DoPmYvwkYfv0Qptrga8cwPo,3631
+travisci/SemanticVersion.py,sha256=rS2Md2OQkxrWbEISO7cDgWEhOLOk-Z5CfKm6YdcZYyM,5816
+travisci/Singleton.py,sha256=XEFQ9LI4MEpbhZlR4WLF2W6LebTDI0alTY2iu_sgX6o,1788
+travisci/TravisCli.py,sha256=aeDY6obDm1yx46XMDvmy11OGmsE8OqIzZzHZUn_1TWo,10063
+travisci/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+travisci/exceptions/PreferencesLocationNotSet.py,sha256=Od-olp4E0hbBfTb0BFBoNDQExZVjGV99dzSyDCBSijI,54
+travisci/exceptions/UnsupportedOperation.py,sha256=2HgkSrmwGJHfv1BDfjKXjoIc3RWgJy4ximz42Go21mA,49
+travisci/exceptions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+travisci/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+travisci/resources/loggingConfiguration.json,sha256=UjjA0eqOAo3h-9_jEyLtGo_1aJZgF4JVdwz4RyJdz98,913
+traviscli-0.3.0.dist-info/LICENSE,sha256=TfuqhJ-JW9Wfgtqls4DVvkBedgoxUgtpXORcZiH55oc,1078
+traviscli-0.3.0.dist-info/METADATA,sha256=6hwChCht6pJJuj6tZUSEJ9N8g6AALPdS8TdxbbzdPFQ,397
+traviscli-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+traviscli-0.3.0.dist-info/entry_points.txt,sha256=QMi7YbOENIR6NV1sn15HfimdbA761_18S14C1zayzaw,83
+traviscli-0.3.0.dist-info/top_level.txt,sha256=BVgKu37mmNjVwU1KQ7B-iAHOU2fLr-P2GSxvfT5RT0I,9
+traviscli-0.3.0.dist-info/RECORD,,
