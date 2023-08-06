@@ -1,0 +1,11 @@
+
+[lint]
+black
+flake8
+check-manifest
+
+[packaging]
+check-manifest
+
+[tests]
+pytest
