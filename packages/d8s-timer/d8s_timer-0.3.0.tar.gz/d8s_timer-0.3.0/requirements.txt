@@ -1,0 +1,3 @@
+d8s-uuids
+d8s-dates
+importlib-metadata; python_version < '3.8'

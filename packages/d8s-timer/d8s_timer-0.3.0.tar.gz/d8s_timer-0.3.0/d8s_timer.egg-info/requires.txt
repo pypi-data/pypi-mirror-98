@@ -1,0 +1,5 @@
+d8s-uuids
+d8s-dates
+
+[:python_version < "3.8"]
+importlib-metadata
