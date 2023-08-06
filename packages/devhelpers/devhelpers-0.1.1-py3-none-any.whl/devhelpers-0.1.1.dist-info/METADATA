@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: devhelpers
+Version: 0.1.1
+Summary: A Development Toolbox
+Home-page: https://github.com/MichaelSasser/devhelpers
+License: GPL-3.0-or-later
+Keywords: devtools,development,tools
+Author: Michael Sasser
+Author-email: Michael@MichaelSasser.org
+Maintainer: Michael Sasser
+Maintainer-email: Michael@MichaelSasser.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Typing :: Typed
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=3.5.1,<4.0.0); extra == "docs"
+Requires-Dist: numpydoc (>=1.1.0,<2.0.0); extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints (>=1.11.1,<2.0.0); extra == "docs"
+Project-URL: Documentation, https://michaelsasser.github.io/devhelpers/index.html
+Project-URL: Repository, https://github.com/MichaelSasser/devhelpers
+Description-Content-Type: text/markdown
+
+![GitHub](https://img.shields.io/github/license/MichaelSasser/devhelpers?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/MichaelSasser/devhelpers/Build%20and%20Tests?style=flat-square)
+
+# DevHelpers
+
+DevHelpers is a loose collection of python development helpers.
+It is not made to be included or used in a finished product.
+
+# Toolbox
+
+- The `@timeit` decorator to time the runtime of a function or method.
+  With `@timit(1000)` the function or method will be timed 1000 times
+  and prints afterword a small statistic.
+
+## Semantic Versioning
+
+This repository uses [SemVer](https://semver.org/) for its release cycle.
+
+## Branching Model
+
+This repository uses the
+[git-flow](https://danielkummer.github.io/git-flow-cheatsheet/index.html)
+branching model by [Vincent Driessen](https://nvie.com/about/). It has two branches with infinite lifetime:
+
+* [master](https://github.com/MichaelSasser/devhelpers/tree/master)
+* [develop](https://github.com/MichaelSasser/devhelpers/tree/develop)
+
+The master branch gets updated on every release. The develop branch is the merging branch.
+
+## License
+
+Copyright &copy; 2021 Michael Sasser <Info@MichaelSasser.org>. Released under the GPLv3 license.
+
