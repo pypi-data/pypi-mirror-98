@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mcanitexgen
+Version: 0.1.0
+Summary: A texture animation generator for Minecraft .mcmeta files
+License: MIT
+Author: Oran9eUtan
+Author-email: oran9eutan@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.1.2,<9.0.0)
+Requires-Dist: numpy (>=1.20.1,<2.0.0)
+Requires-Dist: ruamel.yaml (>=0.16.12,<0.17.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)

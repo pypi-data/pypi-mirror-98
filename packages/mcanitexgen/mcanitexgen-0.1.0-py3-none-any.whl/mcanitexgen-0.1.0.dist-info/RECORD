@@ -1,0 +1,10 @@
+mcanitexgen/__init__.py,sha256=ZFgBeOIB-xg1mp7up51dw5ghOKBkyk2e-DdQTFNQ36g,116
+mcanitexgen/__main__.py,sha256=58-JzVXhSPlNGnoo2SUk5oCvZOjke8blgpUuc7SsXiQ,2799
+mcanitexgen/generator.py,sha256=BUgwuUkCuA2UjPf4YJSVc_rRuhrJFobBJ6DLvELv4qs,7559
+mcanitexgen/images2gif.py,sha256=GukOiZIqg2lX_O5txIhkCaEDuO-ai5Gi-JXUEJkvW1E,36507
+mcanitexgen/parser.py,sha256=yI2R5Pwd2pPnc__9xl2uIOeggWzwsji2ctJ9Ydjl_Ts,5883
+mcanitexgen/utils.py,sha256=6dK6V3Zz_Mxh30KFSF5FQi21IfkBkIZuMPEn-GQlOeY,1822
+mcanitexgen-0.1.0.dist-info/LICENSE,sha256=-WDxXeJ98BBEw-4G-Y7sBEAAgnhZck1bf-5fQ2lkCKA,1090
+mcanitexgen-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mcanitexgen-0.1.0.dist-info/METADATA,sha256=fLEqXNTO3spC094W5JosPpY-59eMuZjgFftQD28u5-w,529
+mcanitexgen-0.1.0.dist-info/RECORD,,
