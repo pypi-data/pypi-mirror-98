@@ -1,0 +1,7 @@
+README.md
+setup.py
+cnco.egg-info/PKG-INFO
+cnco.egg-info/SOURCES.txt
+cnco.egg-info/dependency_links.txt
+cnco.egg-info/top_level.txt
+scienceio/__init__.py
