@@ -1,0 +1,13 @@
+citeurl/__init__.py,sha256=2TIKSrwO72tc6QsSaRGtVPXoH72U9_C3PanH3L_gr24,36855
+citeurl/__init__.sync-conflict-20210204-123421-4WXMJFU.py,sha256=fVKwcV65umeLRuVq_DSDiMmbWl21xx-43avPplc5lVE,36144
+citeurl/__main__.py,sha256=0kFmzhOnPOGcBYCugYQyNG_Ls_-scnqA5rxFW5l5lEU,5844
+citeurl/cli.py,sha256=0kFmzhOnPOGcBYCugYQyNG_Ls_-scnqA5rxFW5l5lEU,5844
+citeurl/default-schemas.sync-conflict-20210204-123421-4WXMJFU.yaml,sha256=OVFlvNJiic51l1rz5ZI944012QhZswj4Uh37i3acOkc,28102
+citeurl/default-schemas.yaml,sha256=DucbTus667ztAt_v31CL7bFoa2gZA_uK4cS6AQV3FRE,89297
+citeurl/mdx.py,sha256=qeR-w_v8pCdFFyJB5pZXawLn8czyefwuFPlf5BXTBJU,3113
+citeurl-4.2.0.dist-info/LICENSE.md,sha256=T6b3vscLORAeVZWYfYDSVFuKq1X-gA6wOQsuYJfXtiU,1065
+citeurl-4.2.0.dist-info/METADATA,sha256=EmcU8TgETrv87SUzaO3t5nji7F6sp2MbQaQUlPy4-HU,5484
+citeurl-4.2.0.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+citeurl-4.2.0.dist-info/entry_points.txt,sha256=gEfwoyJyirslywLJOEaJtkryA8_brtvV5YBNrW4RUXE,108
+citeurl-4.2.0.dist-info/top_level.txt,sha256=WgpwPvgcGWJgfkw4r3EKesIT33CQEKoU50D4InqJams,8
+citeurl-4.2.0.dist-info/RECORD,,
