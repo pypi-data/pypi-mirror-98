@@ -1,0 +1,16 @@
+numpy
+matplotlib
+ply
+jsonschema
+pandas
+scikit-learn
+GPy
+pyDOE
+statsmodels
+ipykernel
+scipy
+threadpoolctl
+
+[plot_hvi]
+pygmo
+statsmodels
