@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-gitolite
+Version: 0.2.1
+Summary: A basic Django app for using Gitolite
+Home-page: https://github.com/eyolfson/django-gitolite/
+Author: Jon Eyolfson
+Author-email: jon@eyl.io
+License: UNKNOWN
+Download-URL: https://github.com/eyolfson/django-gitolite/archive/v0.2.1.tar.gz
+Platform: UNKNOWN
+
+UNKNOWN
+
+
