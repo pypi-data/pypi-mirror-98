@@ -1,0 +1,27 @@
+<<: &shared
+  language_name: Inuktitut
+mappings:
+  - display_name: Inuktitut to Inuktitut (equiv)
+    in_lang: iku
+    out_lang: iku-equiv
+    type: mapping
+    authors:
+      - Patrick Littell
+    mapping: iku_to_iku_equiv.json
+    <<: *shared
+  - display_name: Inuktitut to IPA
+    in_lang: iku-equiv
+    out_lang: iku-ipa
+    type: mapping
+    authors:
+      - Patrick Littell
+    mapping: iku_equiv_to_ipa.json
+    <<: *shared
+  - display_name: Inuktitut (SRO) to IPA
+    in_lang: iku-sro
+    out_lang: iku-sro-ipa
+    type: mapping
+    authors:
+      - Patrick Littell
+    mapping: iku_sro_to_ipa.json
+    <<: *shared
