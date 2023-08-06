@@ -1,0 +1,19 @@
+20log(env) range ve normalleştirme yok (illionisin aynısı).png
+MANIFEST.in
+README.md
+license.txt
+log ve range 40.png
+log ve range 60.png
+log ve range 70.png
+setup.py
+DeepSRRF/DeepSRRF for time benchmark.py
+DeepSRRF/DeepSRRF.py
+DeepSRRF/__init__.py
+DeepSRRF/args.py
+DeepSRRF/make_noisy_rf.py
+DeepSRRF/utils.py
+DeepSRRF.egg-info/PKG-INFO
+DeepSRRF.egg-info/SOURCES.txt
+DeepSRRF.egg-info/dependency_links.txt
+DeepSRRF.egg-info/requires.txt
+DeepSRRF.egg-info/top_level.txt
