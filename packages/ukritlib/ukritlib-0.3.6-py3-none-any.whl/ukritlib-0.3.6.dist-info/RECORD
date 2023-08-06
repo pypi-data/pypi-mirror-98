@@ -1,0 +1,10 @@
+data/__init__.py,sha256=M44REpj66_UFUnhVRt_xmBX7fF6jp7VBnw2lIuipnik,54
+data/_version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/function1.py,sha256=ruXBg1XGk5fHmynSJA_avYzCvZRdNpUDCyIKldgMPkA,47
+data/function2.py,sha256=D9pf6HG8mZJVOb_7ZD8uZksJxqzB_zlcbTGUtilCwwA,47
+data/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/tests/test_joke.py,sha256=XWBnpRTC54Wg0XEmPPtkDVM7CW9Y6fK7DwvHx7s95Fc,175
+ukritlib-0.3.6.dist-info/METADATA,sha256=r8ePvrIvZdnH8Zniq9QdOC_cJRlbXANdhe7KLLUUv0w,1470
+ukritlib-0.3.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ukritlib-0.3.6.dist-info/top_level.txt,sha256=Zmey0aq2oAyqWu5a-K2fFGXlZ6vxwgnRVyfVez6Pbl8,5
+ukritlib-0.3.6.dist-info/RECORD,,
