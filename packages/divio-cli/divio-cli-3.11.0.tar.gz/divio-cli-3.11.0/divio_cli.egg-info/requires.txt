@@ -1,0 +1,20 @@
+attrs==20.3.0
+certifi==2020.12.5
+chardet==3.0.4
+click-aliases==1.0.1
+click==7.1.2
+idna==2.7
+packaging==20.8
+pyaml==20.4.0
+pyparsing==2.4.7
+python-dateutil==2.8.1
+pytz==2020.5
+pyyaml==5.3.1
+requests==2.20.1
+six==1.15.0
+tabulate==0.8.7
+tzlocal==2.1
+urllib3==1.24.3
+
+[:sys_platform == "win32"]
+colorama==0.4.4
