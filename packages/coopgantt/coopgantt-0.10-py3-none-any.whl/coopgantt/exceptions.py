@@ -1,0 +1,2 @@
+class IncompleteOperationError(BaseException):
+    pass
