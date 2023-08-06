@@ -1,0 +1,9 @@
+README.md
+setup.py
+teo-files/__init__.py
+teo-files/cmd.py
+teo_files.egg-info/PKG-INFO
+teo_files.egg-info/SOURCES.txt
+teo_files.egg-info/dependency_links.txt
+teo_files.egg-info/requires.txt
+teo_files.egg-info/top_level.txt
