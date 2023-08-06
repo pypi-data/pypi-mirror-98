@@ -1,0 +1,14 @@
+.hgignore
+.hgtags
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+copypl/_version.py
+copypl/copypl.py
+copypl.egg-info/PKG-INFO
+copypl.egg-info/SOURCES.txt
+copypl.egg-info/dependency_links.txt
+copypl.egg-info/entry_points.txt
+copypl.egg-info/top_level.txt
