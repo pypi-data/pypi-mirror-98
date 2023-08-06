@@ -1,0 +1,5 @@
+numpy>=1.18.0
+scipy
+matplotlib
+tqdm
+h5py
