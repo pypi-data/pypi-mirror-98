@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyscf/doci/__init__.py
+pyscf/doci/doci_mcscf.py
+pyscf/doci/doci_slow.py
+pyscf/doci/test/test_doci.py
+pyscf_doci.egg-info/PKG-INFO
+pyscf_doci.egg-info/SOURCES.txt
+pyscf_doci.egg-info/dependency_links.txt
+pyscf_doci.egg-info/requires.txt
+pyscf_doci.egg-info/top_level.txt
