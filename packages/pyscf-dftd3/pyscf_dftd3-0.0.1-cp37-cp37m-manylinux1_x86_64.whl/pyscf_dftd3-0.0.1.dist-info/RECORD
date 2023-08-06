@@ -1,0 +1,10 @@
+pyscf/dftd3/libdftd3.so,sha256=ROGpdvbL_21xD_F9BU3we5CCVLV5GdNh5aOjfD9FwfE,1616416
+pyscf/dftd3/itrf.py,sha256=AuP9EtVE-cJr8oJAI6sH_XmcPjIhdsk_NpIIQJSRgOM,13587
+pyscf/dftd3/__init__.py,sha256=w9tlaX4rozmNrn8PSEodcGmeDEAMg5W_y8wSyWxWTUY,775
+pyscf/dftd3/test/test_dftd3.py,sha256=dR5LpdQCqnPFoJxqdxVR2-OuK1iUpZ53kE0foDmyzds,1865
+pyscf_dftd3-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyscf_dftd3-0.0.1.dist-info/RECORD,,
+pyscf_dftd3-0.0.1.dist-info/top_level.txt,sha256=jcvnThYm2DeYhkuHnIqg-xMTTnFFrVkXh_ndMQ4k-88,28
+pyscf_dftd3-0.0.1.dist-info/METADATA,sha256=X44dEzPSGRV3hC5ETRHN5kBONZnTvE6v8piTSd3dvwM,233
+pyscf_dftd3-0.0.1.dist-info/WHEEL,sha256=cHXGicVjvwSkAYFLaVXWJmI_Jmjywv0hjj3FUBkjj6A,109
+pyscf_dftd3.libs/libgfortran-ed201abd.so.3.0.0,sha256=qKqgvlf0fwb_9d8LQ6xwpHV3igVXxOplo0uum9--YQg,1023960
