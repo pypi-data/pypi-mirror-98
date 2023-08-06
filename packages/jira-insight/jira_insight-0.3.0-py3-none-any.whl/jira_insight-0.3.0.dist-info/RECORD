@@ -1,0 +1,9 @@
+jira_insight/__init__.py,sha256=fRt2RoJn1shG4HhdgfSwiFz84Dg7GwBh4kz-LcRsrtc,22
+jira_insight/insight.py,sha256=h8x_XzVy7IIlS3NSew70XYKcejp5QSjC4XpcDlAg4Lg,12248
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_insight.py,sha256=FXZk_MRE2_v_PXtsuQdKgXS_JclbJVg_H_CNkXmRs-A,76
+jira_insight-0.3.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+jira_insight-0.3.0.dist-info/METADATA,sha256=6HdYxYiKcIC3DUbi2OvNkuvh1ReJ8Mg2shBv96j77xc,1425
+jira_insight-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jira_insight-0.3.0.dist-info/top_level.txt,sha256=uaA7pFfHHi8stikPJetSHMQlmsjUJTUXQPxG9XOliec,19
+jira_insight-0.3.0.dist-info/RECORD,,
