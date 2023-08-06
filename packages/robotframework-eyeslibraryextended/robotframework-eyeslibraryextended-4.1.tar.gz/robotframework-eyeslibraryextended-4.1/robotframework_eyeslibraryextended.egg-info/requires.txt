@@ -1,0 +1,5 @@
+robotframework<4,>3.0
+eyes-selenium>=4.1.25
+six<2,>1.0.0
+robotframework-seleniumlibrary
+robotframework-appiumlibrary
