@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: xscrapers
+Version: 0.0.5
+Summary: A simple webscraping framework.
+Home-page: https://github.com/juliandwain/webscrapers
+Author: Julian Dwain Stang
+Author-email: julian.stang@web.de
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: autopep8 (==1.5.5)
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: fake-useragent (==0.1.11)
+Requires-Dist: idna (==2.10)
+Requires-Dist: numpy (==1.20.1)
+Requires-Dist: pandas (==1.2.3)
+Requires-Dist: pycodestyle (==2.7.0)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: soupsieve (==2.2)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: urllib3 (==1.26.4)
+
+# XSCRAPERS
+
+The [XSCRAPERS](https://github.com/juliandwain/webscrapers) package provides an OOP interface to some simple webscraping techniques.
+
+A base use case can be to load some pages to [Beautifulsoup Elements](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
+This package allows to load the URLs concurrently using multiple threads, which allows to safe an enormous amount of time.
+
+```python
+import scraper.webscraper as ws
+
+URLS = [
+    "https://www.google.com/",
+    "https://www.amazon.com/",
+    "https://www.youtube.com/",
+]
+PARSER = "html.parser"
+web_scraper = ws.Webscraper(PARSER, verbose=True)
+web_scraper.load(URLS)
+web_scraper.parse()
+
+```
+
+Note that herein, the data scraped is stored in the `data` attribute of the webscraper.
+The URLs parsed are stored in the `url` attribute.
+
+
