@@ -1,0 +1,12 @@
+tendril/__init__.py,sha256=F0UD44DuZCpVvI1PX5rW4FcKQ004ORdqeOhf4JsheIY,66
+tendril/utils/__init__.py,sha256=F0UD44DuZCpVvI1PX5rW4FcKQ004ORdqeOhf4JsheIY,66
+tendril/utils/colors.py,sha256=uAz2LqHrrfiES_WPz3M3DLf43xACfwwnQCucMZkbAfY,2479
+tendril/utils/config.py,sha256=T8x9Q891KIkkfF1sJCwn94b5tTSWWGkEhzrqpZ0Vcik,9670
+tendril/utils/log.py,sha256=x1zSW5sb6pU8QTU9itSwPiAwMhBAUZCjYB1w_mS_afU,4288
+tendril/utils/versions.py,sha256=XUORno9CayeOt6kLjBdRv9UVdjDA1RnR0wqJ21E68Uw,3180
+tendril_utils_core-0.2.8.dist-info/LICENSE,sha256=KCdRuMmO6eRFNG61epksnsviXtjdVU3wRndzE-GbEPk,35181
+tendril_utils_core-0.2.8.dist-info/METADATA,sha256=VrX0pHzlfVF3tm-HyA-NxJkjnksfCKY6U-sMMm_DQak,5346
+tendril_utils_core-0.2.8.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+tendril_utils_core-0.2.8.dist-info/entry_points.txt,sha256=kCM-El3TpFtlQLL12mRRFWkxOn8IN0C1f2CFOvhPYr0,66
+tendril_utils_core-0.2.8.dist-info/top_level.txt,sha256=cZ37ntjo8Mlxd4OJ5PNxFU0yufka_b2hcfS80URElIM,8
+tendril_utils_core-0.2.8.dist-info/RECORD,,
