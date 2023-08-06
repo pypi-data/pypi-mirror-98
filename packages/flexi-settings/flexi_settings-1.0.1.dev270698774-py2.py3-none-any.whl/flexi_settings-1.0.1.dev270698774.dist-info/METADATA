@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: flexi-settings
+Version: 1.0.1.dev270698774
+Summary: Manages embedded variables and blending settings
+Home-page: https://gitlab.com/bredbeddle-open/flexi-settings
+Author: Curtis Forrester
+Author-email: crforresterspam@pm.me
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Requires-Dist: pkg-version-mgr
+Requires-Dist: decorators
+Requires-Dist: PyYAML
+Requires-Dist: jmespath
+
+Library for handling variable resolution in scalars found within strings and "tree"-like
+data such as dict (internally), JSON/YAML content.
+
+.. note::
+
+    This is a Python 3 only library. There is no support for Python 2.x.
+
+Overview
+========
+
+This is to support YAML settings files that may have embedded variable references in
+scalar values that reference keys found within the same, or other content.
+
+.. code-block:: python
+
+    ROOT_DIR: "/var/log/my_project"
+
+    LOG_FILENAME: "!ROOT_DIR!/my_log_file.log"
+
+The use-cases for this include:
+
+* Reducing redundancy in YAML data
+* Support for "local overrides" to replace some data at run-time
+* Support for tests where the content is changed (overloaded) for unit tests
+
+Features
+========
+
+This library provides a number of features including:
+
+* A ``TreeData`` class for easily loading files from JSON/YAML or from native ``dict`` objects
+* Visitor base classes for inspecting/manipulating the tree data
+* Support for specifying primary content, overload content, and variable content
+* Both variable resolution at load time and dynamically at run-time
+* A set of standard "resolvers"
+
+Resolvers
+---------
+
+The library includes a set of standard resolvers. New resolvers can be defined
+easily by extending the `Resolver` base class.
+
+* `TreeDataResolver` - Resolution from a `TreeData` (dict) object/YAML files
+* `DockerSwarmResolver` - Resolution from Docker swarm configs/secrets
+* `EnvVarResolver` - Resolve from environment variables
+
+Visitors
+--------
+
+The library includes a set of visitors for inspecting and updating `TreeData` objects.
+
+Library Usage
+=============
+
+A service (both standard "system-d" and container services) may use this to handle settings.
+
+Overview
+--------
+
+The settings are accessed via the `ServiceSettings` (or custom, extended class) Singleton. The
+specifics of what actors are involved in providing the settings are specified within a
+`SettingsContext` instance. These include the location of the primary settings file (generally
+a YAML file), the location of an optional override settings file, and the inclusion of
+resolvers for environment variables, Docker swarm secrets/configs, and any other optional
+resolvers (such as pulling settings from a database).
+
+Startup Sequence
+~~~~~~~~~~~~~~~~
+
+One of the first steps that a service should perform is creating an instance of the `SettingsContext`
+object. This instance is passed into the ServiceSettings and provides contextual details
+for loading the settings and resolving variables.
+
+
