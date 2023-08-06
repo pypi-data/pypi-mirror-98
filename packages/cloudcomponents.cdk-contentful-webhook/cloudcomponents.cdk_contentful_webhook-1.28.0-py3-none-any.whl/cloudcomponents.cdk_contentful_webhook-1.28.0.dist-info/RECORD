@@ -1,0 +1,9 @@
+cloudcomponents/cdk_contentful_webhook/__init__.py,sha256=djbrV7c4PiYjmH41SReWxMVf-8CxttC4D1Do6lxYQEw,6724
+cloudcomponents/cdk_contentful_webhook/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_contentful_webhook/_jsii/__init__.py,sha256=bQsu9RQDpCg8CxOFvHhQrUFidWbZjFT9Mmoul-LS4sI,446
+cloudcomponents/cdk_contentful_webhook/_jsii/cdk-contentful-webhook@1.28.0.jsii.tgz,sha256=EOgjiCk8wrU_kIXQqj51aAeUrPQE41Xz4ocojQkupSA,504679
+cloudcomponents.cdk_contentful_webhook-1.28.0.dist-info/LICENSE,sha256=DC5mwzjdvc14vNIkGbMDFyOOJTkxI2b_1OtpeNA0A0A,1072
+cloudcomponents.cdk_contentful_webhook-1.28.0.dist-info/METADATA,sha256=Vu6-z6rRK8quBS2a2_KwdgFz3X91bnbx03ll8Yv6E28,3623
+cloudcomponents.cdk_contentful_webhook-1.28.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloudcomponents.cdk_contentful_webhook-1.28.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_contentful_webhook-1.28.0.dist-info/RECORD,,
