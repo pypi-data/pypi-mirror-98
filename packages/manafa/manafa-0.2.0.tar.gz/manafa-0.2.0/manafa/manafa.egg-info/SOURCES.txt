@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+manafa/manafa.egg-info/PKG-INFO
+manafa/manafa.egg-info/SOURCES.txt
+manafa/manafa.egg-info/dependency_links.txt
+manafa/manafa.egg-info/requires.txt
+manafa/manafa.egg-info/top_level.txt
