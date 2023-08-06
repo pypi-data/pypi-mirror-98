@@ -1,0 +1,214 @@
+#!/usr/bin/python
+
+#
+#  Copyright (c) 2020 BitWire <hello@bitwire.cloud>
+#
+#  Permission is hereby granted, free of charge, to any person obtaining a copy
+#  of this software and associated documentation files (the "Software"), to deal
+#  in the Software without restriction, including without limitation the rights
+#  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#  copies of the Software, and to permit persons to whom the Software is
+#  furnished to do so, subject to the following conditions:
+#
+#  The above copyright notice and this permission notice shall be included in
+#  all copies or substantial portions of the Software.
+#
+#  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+#  THE SOFTWARE.
+#
+
+from Crypto.PublicKey import RSA
+from Crypto.Hash import SHA256
+from Crypto.Signature import PKCS1_v1_5
+
+import argparse
+import json
+import os
+import sys
+import requests
+import hashlib
+import zipfile
+import tempfile
+import base64
+
+
+class BwDeploy(object):
+
+    def __init__(self, args):
+        self.args = args
+
+    def get_api_url(self):
+        token = self.args.token.encode('ascii')
+        payload = base64.b64decode(token)
+        decoded = payload.decode('ascii').split('-')
+
+        if len(decoded) < 2:
+            raise Exception('Invalid deployment token')
+
+        config = {
+            'instance': decoded[0],
+            'command': self.args.command
+        }
+
+        return "https://{instance}.bitwire.cloud/iot/deploy/{command}".format(**config)
+
+    def zipdir(self, path, ziph):
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                ziph.write(
+                    os.path.join(root, file), 
+                    os.path.relpath(os.path.join(root, file), path))
+
+    def get_signed_file(self):
+        with open(self.args.key, 'r') as f:
+            private_key = RSA.importKey(f.read())
+
+        with open(self.args.firmware, 'rb') as f:
+            target_file_hash = SHA256.new()
+            chunk = f.read(8192)
+
+            while chunk:
+                target_file_hash.update(chunk)
+                chunk = f.read(8192)
+
+        signer = PKCS1_v1_5.new(private_key)
+        signature = signer.sign(target_file_hash)
+        signed_filename = self.args.firmware + '.signed'
+
+        # copy firmware image and inject signature
+        with open(self.args.firmware, 'rb') as f, open(signed_filename, 'wb') as o:
+            chunk = f.read(8192)
+            while chunk:
+                o.write(chunk)
+                chunk = f.read(8192)
+
+            o.write(signature)
+            o.write(b'\x00\x01\x00\x00')
+
+        return signed_filename
+
+    def process_requets(self, files, data):
+        header = {
+            'X-Deploy-Token': self.args.token
+        }
+
+        r = requests.post(
+            self.get_api_url(), headers=header, files=files, data=data, verify=False)
+
+        if r.status_code == 200:
+            print('Firmware release successfully uploaded')
+        else:
+            result = json.loads(r.text)
+            raise Exception(result['error'])
+
+    def get_compressed_folder(self):
+        if not os.path.isdir(self.args.source):
+            raise Exception('Static source should be directory')
+
+        with tempfile.NamedTemporaryFile(dir='/tmp', delete=False) as tmpfile:
+            filename = tmpfile.name
+
+        zipf = zipfile.ZipFile(filename, 'w', zipfile.ZIP_DEFLATED)
+        self.zipdir(self.args.source, zipf)
+        zipf.close()
+
+        return filename
+
+    def get_upload_filename(self):
+        if self.args.command == 'routine':
+            return self.args.source
+
+        if self.args.command == 'static':
+            return self.get_compressed_folder()
+
+        if self.args.command == 'firmware':
+            if self.args.key:
+                return self.get_signed_file()
+
+            return self.args.firmware
+
+    def process(self):
+        filename = self.get_upload_filename()      
+        files = {
+            'artifact': ('data', open(filename, 'rb'), 'application/binary')
+        }
+
+        data = {
+            'version': self.args.version, 
+            'githash': ''
+        }
+
+        if self.args.command in ['routine', 'static']:
+            data['instance'] = self.args.instance
+
+        if self.args.githash:
+            data['githash'] = self.args.githash
+
+        self.process_requets(files=files, data=data)
+
+        # Remove static routine archive
+        if self.args.command == 'static' and os.path.isfile(filename):
+            os.remove(filename)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='BitWire Deploy')
+
+    subparsers = parser.add_subparsers(dest='command', required=True)
+
+    parser_firmware = subparsers.add_parser('firmware', help='deploy firmware release')
+
+    parser_firmware.add_argument(
+        '--token', action='store', dest='token', required=False, help='Deploy token') 
+    parser_firmware.add_argument(
+        '--firmware', action='store', dest='firmware', required=True, help='Firmware binary')
+    parser_firmware.add_argument(
+        '--key', action='store', dest='key', required=False, help='RSA Private key')
+    parser_firmware.add_argument(
+        '--version', action='store', dest='version', required=True, help='Firmware version')
+    parser_firmware.add_argument(
+        '--githash', action='store', dest='githash', required=False, help='Firmware Git short hash')
+
+    parser_routine = subparsers.add_parser('routine', help='deploy routine source code')
+
+    parser_routine.add_argument(
+        '--token', action='store', dest='token', required=False, help='Deploy token')
+    parser_routine.add_argument(
+        '--instance', action='store', dest='instance', required=True, help='Instance name')
+    parser_routine.add_argument(
+        '--version', action='store', dest='version', required=False, help='Routine version')
+    parser_routine.add_argument(
+        '--githash', action='store', dest='githash', required=False, help='Routine Git short hash')
+    parser_routine.add_argument(
+        '--source', action='store', dest='source', required=True, help='Routine soruce')
+
+    parser_static = subparsers.add_parser('static', help='deploy static source code')
+
+    parser_static.add_argument(
+        '--token', action='store', dest='token', required=False, help='Deploy token')
+    parser_static.add_argument(
+        '--instance', action='store', dest='instance', required=True, help='Instance name')
+    parser_static.add_argument(
+        '--version', action='store', dest='version', required=False, help='Routine version')
+    parser_static.add_argument(
+        '--githash', action='store', dest='githash', required=False, help='Routine Git short hash')
+    parser_static.add_argument(
+        '--source', action='store', dest='source', required=True, help='Routine soruce')
+
+    args = parser.parse_args()
+
+    token = os.getenv('DEPLOY_TOKEN', args.token)
+    if not token:
+        print("Deploy token required. Please specify DEPLOY_TOKEN variable or use --token argument")
+        sys.exit(1)
+
+    try:
+        BwDeploy(args).process()
+    except Exception as e:
+        print(e)
+        sys.exit(1)

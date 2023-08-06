@@ -1,0 +1,8 @@
+README.md
+bitwire-deploy
+setup.py
+bitwire_deploy.egg-info/PKG-INFO
+bitwire_deploy.egg-info/SOURCES.txt
+bitwire_deploy.egg-info/dependency_links.txt
+bitwire_deploy.egg-info/requires.txt
+bitwire_deploy.egg-info/top_level.txt
