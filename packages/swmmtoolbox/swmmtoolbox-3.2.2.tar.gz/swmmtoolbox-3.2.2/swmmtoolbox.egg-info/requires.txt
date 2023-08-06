@@ -1,0 +1,3 @@
+tstoolbox<103,>=102
+sphinx>=1.3
+future
