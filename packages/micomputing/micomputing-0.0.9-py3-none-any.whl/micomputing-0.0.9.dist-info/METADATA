@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: micomputing
+Version: 0.0.9
+Summary: This package is based on torchplus and provides medical image computations. 
+Home-page: https://github.com/Bertie97/pyctlib/tree/main/micomputing
+Author: Zhou Yuncheng
+Author-email: bertiezhou@163.com
+License: MIT Licence
+Keywords: pip,pyctlib,torchplus,micomputing
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pyctlib
+Requires-Dist: torch (>=1.7.0)
+Requires-Dist: pynvml
+Requires-Dist: torchplus
+Requires-Dist: nibabel
+Requires-Dist: pydicom
+
+# MIComputing
+
+## Introduction
+
+Package [`micomputing`](https://github.com/Bertie97/pyctlib/tree/main/micomputing) is the medical image processing package under project [`PyCTLib`](https://github.com/Bertie97/pyctlib). It handles medical image read write, image interpolation, transformation, registration and so on. This package works under `PyCTLib` and use `torchplus.Tensor` as its basic data format. 
+
+## Installation
+
+This package can be installed by `pip install micomputing` or moving the source code to the directory of python libraries (the source code can be downloaded on [github](https://github.com/Bertie97/pyctlib) or [PyPI](https://pypi.org/project/micomputing/)). 
+
+```shell
+pip install micomputing
+```
+
+
+
+## Acknowledgment
+
+@Yuncheng Zhou: Developer
+
+
