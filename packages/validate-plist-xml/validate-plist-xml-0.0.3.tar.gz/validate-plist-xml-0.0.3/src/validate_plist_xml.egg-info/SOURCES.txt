@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/validate_plist_xml/__init__.py
+src/validate_plist_xml/__main__.py
+src/validate_plist_xml/validate_plist_xml.py
+src/validate_plist_xml.egg-info/PKG-INFO
+src/validate_plist_xml.egg-info/SOURCES.txt
+src/validate_plist_xml.egg-info/dependency_links.txt
+src/validate_plist_xml.egg-info/top_level.txt
