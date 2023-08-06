@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: Hellf
+Version: 1.0
+Summary: The aim of this project is to provide a python library for patching ELF binary file. It only supports for the moment x86 and x86_64 architecture.
+Home-page: https://github.com/0xswitch/Hellf
+Author: switch
+Author-email: switch@switch.re
+License: WTFPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
