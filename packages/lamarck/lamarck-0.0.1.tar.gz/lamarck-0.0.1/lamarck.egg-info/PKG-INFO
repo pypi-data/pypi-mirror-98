@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: lamarck
+Version: 0.0.1
+Summary: Genetic Algorithm Prototype.
+Home-page: https://github.com/vczoni/lamarck
+Author: Victor Zoni
+Author-email: vczoni@gmail.com
+License: MIT
+Download-URL: https://github.com/vczoni/lamarck/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: GENETIC,ALGORITHM,GA,BASIC,GENERAL,OPTIMIZATION,SIMULATION
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
