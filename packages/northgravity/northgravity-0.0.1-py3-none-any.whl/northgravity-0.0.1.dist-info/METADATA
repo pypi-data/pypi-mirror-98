@@ -1,0 +1,363 @@
+Metadata-Version: 2.1
+Name: northgravity
+Version: 0.0.1
+Summary: Python SDK for NorthGravity platform
+Home-page: https://www.northgravity.com/
+Author: NorthGravity
+Author-email: info@northgravity.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# README #
+
+This document describes the Python SDK which enables external users to use the NG platform tools within their python script. 
+
+The Python SDK can be used within:
+
+- a single python script that is ran thanks to the Python Runner task within a pipeline in the NG application
+
+- a single Jupyter Notebook that is ran thanks to the Jupyter Runner task within a pipeline in the NG application
+
+- an ensemble of python scripts that are part of a container for a Task created by the user, within a pipeline in the NG application
+
+
+
+Note that the SDK does not cover everything from API documentation but rather basic features.
+
+The scope of SDK:
+
+- Datalake Handler - downloading / uploading / reading files from the data lake  
+
+- Status Handler - sending statuses about the task run  
+
+- Task Handler - enables communication between tasks within a pipeline and reading/writing parameters 
+
+- Time Series Handler - retrieves data directly from the time series database
+
+
+## How to install and set the package: 
+### Install
+During the testing phase:
+
+```text
+pip3 install -i https://test.pypi.org/simple/ northgravity==0.0.10
+```
+As the library is available from pip, it can be installed within a Python Task from within requirements.txt just by adding northgravity==0.0.10.
+
+The package relies on the requests library so, in the project, the user must install this library in the requirements.txt file.
+```text
+pip3 install requests==2.25.1
+```
+
+
+### Environment Variables
+The package uses information from the environment variables. They are automatically provided when running a script within a pipeline (as a Task or whithin the Python/Jupyter Runners).
+If running locally the script, users must set them in the project to be able to run the project locally.
+
+
+
+Crucial environment variables to set:
+
+- LOGIN → login received from NG
+
+- PASSWORD → password to log in. Credentials are used to generate the token so that each request is authenticated.
+
+- NG_API_ENDPOINT → the URL to the NG platform API (by default, the url is set to https://api.northgravity.com)
+
+
+
+This allows to pass the authentication process and directs users' requests to the right environment.
+
+Other variables may be useful when creating the tasks within NG platform:
+
+- NG_STATUS_GROUP_NAME → the group on the data lake where the pipeline is located, and is used to display the statuses
+
+- JOBID → any value; when the pipeline is executed, this value is set by the NG platform
+
+- PIPELINE_ID → any value; when the task is executed, this value is set by the NG platform
+
+- NG_COMPONENT_NAME →  the name of the user’s task, used for logging and statuses
+
+
+
+## Data Lake Handler
+### How to download or read a file from data lake by its name ?
+The DatalakeHandler class can be used as follow within a script to download or upload a file:
+
+```python
+import northgravity as ng
+import pandas as pd
+
+# Instantiate the Datalake Handler
+dh = ng.DatalakeHandler()
+
+# download file from data lake with name and group name
+# it will be saved locally with name local_name.csv
+dh.download_by_name(file_name='my_file.csv', 
+                    group_name='My Group', 
+                    dest_file_name='local_name.csv',
+                    save=True,
+                    unzip=False)
+
+# read file from data lake with name and group name
+# it returns a BytesIO object
+fileIO = dh.download_by_name(file_name='my_file.csv', 
+                            group_name='My Group', 
+                            dest_file_name=None,
+                            save=False,
+                            unzip=False)
+
+# read the object as pandas DataFrame
+df = pd.read_csv(fileIO)
+
+```
+The download methods allows to either:
+- download and save locally the wanted file, if *save=True*
+- read the file directly from the datalake and get a BytesIO object (kept in memory only, that can for example be read by pandas as a dataframe directly)
+
+Note that by default, the argument *dest_file_name=None*, which will save the downloaded file to the root folder with its original name.
+
+By default, the file is NOT saved locally, but returned as a BytesIO object.
+
+
+### How to download or read a file from data lake by its ID ?
+In the case that the file ID is known, it can be directly downloaded/read as follow:
+
+```python
+import northgravity as ng
+import pandas as pd
+
+# Instantiate the Datalake Handler
+dh = ng.DatalakeHandler()
+
+# download file from data lake by its ID
+# it will be saved locally with name local_name.csv
+dh.download_by_id(file_id='XXXX-XXXX', 
+                  dest_file_name='local_name.csv',
+                  save=True,
+                  unzip=False)
+
+# read file from data lake by its ID
+# it returns a BytesIO object
+fileIO = dh.download_by_id(file_id='XXXX-XXXX', 
+                            dest_file_name=None,
+                            save=False,
+                            unzip=False)
+
+# read the object as pandas DataFrame
+df = pd.read_csv(fileIO)
+
+```
+The download methods allows to either:
+- download and save locally the wanted file, if *save=True*
+- read the file directly from the datalake and get a BytesIO object (kept in memory only, that can for example be read by pandas as a dataframe directly)
+
+Note that by default, the argument *dest_file_name=None*, which will save the downloaded file to the root folder with its original name.
+
+By default, the file is NOT saved locally, but returned as a BytesIO object.
+
+
+
+
+
+### How to upload a file to the data lake?
+The uploading method will upload to the given group the file at the specified path, and returns its ID on the lake:
+```python
+import northgravity as ng
+
+# Instantiate the Datalake Handler
+dh = ng.DatalakeHandler()
+
+# upload file to data lake
+file_id = dh.upload_file(file_path='local_name.csv', 
+                        group_name='My Group', 
+                        file_upload_name='name_in_the_datalake.csv')
+```
+
+
+## Timeseries Queries
+### How to read data from Timeseries?
+
+To read all available data for specific symbols and columns without any time frames, the following code could be used:
+ ```python
+import northgravity as ng
+import pandas as pd
+
+# Instantiate Timeseries class
+ts = ng.Timeseries()
+
+# Symbols to query from database
+symbols = {'Sym1': "Val1", "Sym2": "Val2"}
+columns = ['Open', 'Close']
+
+# retrieve all available data and save as test.csv
+ts.retrieve_data_as_csv(file_name='test.csv', 
+                symbols=symbols, 
+                columns=columns, 
+                group_name='My Group' 
+                )
+
+# for example, read data as pandas dataframe
+df = pd.read_csv("test.csv")
+
+```
+
+### How to read data from Timeseries for specific dates?
+To retrieve data the data within specific time frame, user can specify the start and end date.
+
+There are two options how the start and end date may look like:
+
+only date (e.g., 2021-01-04)
+
+date and time (e.g., 2021-02-01T12:00:00; ISO format must be followed)
+
+For example, if user specified start_date=2021-02-01 and end_date=2021-02-06, then data will be retrieved like this: from 2021-02-01 00:00:00 till 2021-02-06 23:59:59.
+
+If date and time is specified then data will be retrieved exactly for the specified time frame.
+Note that ISO format must be followed: YYYY-MM-DDTHH:mm:ss. Pay attention to the "T" letter between date and time.
+
+ ```python
+import northgravity as ng
+import pandas as pd
+
+# Instantiate Timeseries class
+ts = ng.Timeseries()
+
+# Symbols to query from database
+symbols = {'Sym1': "Val1", "Sym2": "Val2"}
+columns = 'Open'
+
+# retrieve data between start_date and end_date
+# data will be retrieved 
+# between 2021-01-04 00:00:00
+# and 2021-02-05 23:59:59
+# saved as a csv file named test.csv
+ts.retrieve_data_as_csv(file_name='test.csv', 
+                        symbols=symbols, 
+                        columns=columns, 
+                        group_name='My Group',
+                        start_date='2021-01-04', 
+                        end_date='2021-02-05' 
+                        )
+
+
+# retrieve data for specific time frame
+# from 2021-01-04 12:30:00
+# to 2021-02-05 09:15:00
+ts.retrieve_data_as_csv(file_name='test.csv', 
+                        symbols=symbols, 
+                        columns=columns, 
+                        group_name='My Group',
+                        start_date='2021-01-04T12:30:00', 
+                        end_date='2021-02-05T09:15:00' 
+                )
+```
+
+
+## Task Handler
+Users can extend the existing set of tasks on NG platform by creating its own custom task, or simply execute scripts or notebook respectively from the Python Runner Task or the Jupyter Runner Task. This task then can be used in a pipeline and be able to communicate with other tasks by:
+
+reading outputs from other tasks as inputs
+
+writing outputs that can be used by others tasks as inputs
+
+A task can as well receive inputs directly as a file picked from the datalake, either for a specific file either for the newest available version of a file on the lake, given its name and group.
+
+In the python script, this is implemented as follow:
+
+ ```python
+import northgravity as ng
+
+# Instantiate TaskHandler class
+th = ng.TaskHandler()
+
+# the first task uploads the file dataset.csv to My Final Group and pass the info about this file
+# so that the next task can read this file by connecting its input to the output Prepared Dataset
+th.upload_to_output_parameter(output_name='Prepared Dataset', 
+                              file_path='dataset.csv', 
+                              group_name='My Final Group')
+
+# the second task reads the file passed by the first task, that are connected to one another
+# The file is downloaded as data.csv
+th.download_from_input_parameter(arg_name='Input Dataset', 
+                                 dest_file_name='data.csv')
+```
+
+
+## Statuses
+Sending status can be used to show in the application what is the progress of the task execution. It allows to use 3 different levels: INFO (blue), WARNING (orange) and ERROR (red).
+
+Sending statuses remains optional as the NG platform sends general statuses.
+Only if user needs to pass some specific information, this is worth using.
+
+ ```python
+import northgravity as ng
+
+# Instantiate the Statuse Handler
+sh = ng.StatusHandler()
+
+# Generic status sender
+sh.send_status(status='INFO', message='Crucial Information')
+
+# there are pre-defined statuses
+sh.info(message='Crucial Info')
+sh.warn(message='Something suspicious is happening ...')
+sh.error(message='Ups... The task fails because the data was really bad ...')
+```
+
+## Example
+To simplify the use of the SDK methods in a script, Python SDK methods can be inherited by the user’s main class. 
+
+Below is an example of a class that has 3 methods:
+
+Download raw data (or take from the previous task)
+
+Process the data
+
+Upload the data to datalake and pass it to the next task
+
+ ```python
+ import northgravity as ng
+import pandas as pd
+
+class Runner(ng.TaskHandler):
+    def __init__(self):
+        # Inherit the methods from the SDK Task Handler class
+        ng.TaskHandler.__init__(self)
+        self.df = None
+
+    def download_data(self):
+        # the method from TaskHandler can be used directly
+        # it downloads the file passed as input Dataset and save it as data.csv
+        self.download_from_input_parameter(arg_name='Dataset', dest_file_name='data.csv', save=True)
+
+        # Read as pandas dataframe
+        self.df = pd.read_csv("data.csv")
+
+    def process_data(self):
+        # any logic here that processed the downloaded dataset and saves it as processed_data.csv
+        pass 
+
+    def upload_data(self):
+        # pass the processed data csv file as the output of the task called Processed Data
+        self.upload_to_output_parameter(output_name='Processed Dataset', file_path='processed_data.csv', group_name='Final Group')
+
+    def run(self):
+        self.download_data()
+        self.process_data()
+        self.upload_data()
+
+if __name__ == '__main__':
+    Runner().run()
+ ```
+
+
+### Who do I talk to? ###
+
+* Admin: NorthGravity info@northgravity.com
+
