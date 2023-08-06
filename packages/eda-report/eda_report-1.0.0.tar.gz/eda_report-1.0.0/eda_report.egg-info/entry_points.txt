@@ -1,0 +1,3 @@
+[console_scripts]
+eda_report = eda_report.gui:run_in_gui
+
