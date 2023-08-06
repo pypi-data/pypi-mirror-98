@@ -1,0 +1,10 @@
+bot/__init__.py,sha256=-GkK4uIK0NLjLOmNseCquOgZaVb8UPUMvl4bAmsBoZU,68
+bot/config.py,sha256=OTk-UT-mjEig2WQipHLjmFRqSA4VFUNN99FmeDF7EFE,231
+bot/utilsbot.py,sha256=J_vFZOczHM15Cw45hKS1j8VeZNCP7lp_q335JJHYdP0,3094
+bot/sql/__init__.py,sha256=oNQhL9AqrdSTP6YKebt39EXvKUDBCIs-S-pWWnoMKCk,722
+bot/sql/welcomesql.py,sha256=BNHPmIXGUU_8a5wGgF6cVO7IZLlJP-AuwNdstHfsZtY,1807
+utilsrobot-0.4.dist-info/LICENSE,sha256=WGf1vqWoj19cREtwKL-v4wYxYMiXugIJgzla-dH3v5k,34523
+utilsrobot-0.4.dist-info/METADATA,sha256=Ket2OQYgckwxAb65WhsoEeBhNRYhdb404yy5TvEHMTo,677
+utilsrobot-0.4.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+utilsrobot-0.4.dist-info/top_level.txt,sha256=BfGEUPXgtCpne5POfPQ8gBzacfrzBulmV45hd8vheOI,4
+utilsrobot-0.4.dist-info/RECORD,,
