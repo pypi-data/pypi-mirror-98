@@ -1,0 +1,16 @@
+rembg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rembg/basic_greenscreen.py,sha256=gwM5DAMamezOCeiEWaipR-Jy-grDetRSo2_HrxOVxgI,1500
+rembg/bg.py,sha256=bhSOTd_MoYOXJC3kJTvNaHa3zoPZt0T2BSPqA6IKYzs,3205
+rembg/multiprocessing.py,sha256=kPKbRgmITcPKQEft0HT_tBPSoq15sS7gohVFllcAFTI,4682
+rembg/test.py,sha256=MFQnj3_8fj9WQiaMnhV-tXu0J1wgUBlpTA1AjRI3Jsw,178
+rembg/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rembg/cmd/cli.py,sha256=EQitN-xPMynJn4iXngcBDOoam3Wyc00IG_wf8MxaMZE,2160
+rembg/u2net/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rembg/u2net/detect.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rembg/u2net/u2net.py,sha256=Jqu1RAos4uQycldFCoyhatdtwd3rrK0yONadRu_BJ6k,15019
+rembg_greenscreen-2.1.9.dist-info/LICENSE.txt,sha256=ZTDMbtm1qXdOSsrNR6TXvFEA4ttLnWEdcxV3KEptBiU,1120
+rembg_greenscreen-2.1.9.dist-info/METADATA,sha256=DoZMwj-SRh2uKHLJ6mCixySczGwqNdWZwmIPnPo9JTU,3634
+rembg_greenscreen-2.1.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rembg_greenscreen-2.1.9.dist-info/entry_points.txt,sha256=DSzB2RvjXqw4edxf_XkdiQYVgGS9WcYKV141E9BfXiM,52
+rembg_greenscreen-2.1.9.dist-info/top_level.txt,sha256=dn_SejwIU9edjs7y-85RIaGES58zX9TQNpLz_Sw-oH0,6
+rembg_greenscreen-2.1.9.dist-info/RECORD,,
