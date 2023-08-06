@@ -1,0 +1,5 @@
+more_itertools>=8.4
+
+[dev]
+pre-commit
+pytest>=6.1
