@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: irker-handler
+Version: 0.0.1
+Summary: A logging handler to write on IRC via an Irker daemon.
+Home-page: https://github.com/JulienPalard/irker-handler
+Author: Julien Palard
+Author-email: julien@palard.fr
+License: MIT License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+
+# IrkerHandler
+
+Usage:
+
+```
+import logging
+from irker_handler import IrkerHandler
+
+logging.basicConfig(handlers=[IrkerHandler("irc://chat.freenode.net/python-fr")])
+logging.warning("Hello from IrkerHandler!.")
+```
+
+
