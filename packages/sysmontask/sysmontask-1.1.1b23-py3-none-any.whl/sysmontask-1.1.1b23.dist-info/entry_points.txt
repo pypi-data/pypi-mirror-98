@@ -1,0 +1,7 @@
+[console_scripts]
+sysmontask = sysmontask.sysmontask:start
+sysmontask.set_dark = sysmontask.theme_setter:set_theme_dark
+sysmontask.set_default = sysmontask.theme_setter:set_theme_default
+sysmontask.set_light = sysmontask.theme_setter:set_theme_light
+sysmontask.uninstall = sysmontask.sysmontask:uninstall
+
