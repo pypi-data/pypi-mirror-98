@@ -1,0 +1,3 @@
+[console_scripts]
+runner-info = runner_info.runner_info:main
+
