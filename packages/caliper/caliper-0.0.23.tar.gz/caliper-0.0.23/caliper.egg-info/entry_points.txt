@@ -1,0 +1,3 @@
+[console_scripts]
+caliper = caliper.client:main
+
