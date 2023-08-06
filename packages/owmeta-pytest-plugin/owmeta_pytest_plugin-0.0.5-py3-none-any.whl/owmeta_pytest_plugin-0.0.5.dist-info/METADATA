@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: owmeta-pytest-plugin
+Version: 0.0.5
+Summary: owmeta-pytest-plugin is a pytest plugin to aid in testing packages using owemta-core
+Home-page: https://github.com/openworm/owmeta-pytest-plugin/
+Author: OpenWorm.org authors and contributors
+Author-email: info@openworm.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Framework :: Pytest
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: owmeta-core (>=0.14.0.dev0)
+Requires-Dist: pytest
+
+
+owmeta-pytest-plugin
+====================
+
+Pytest plugin for testing in packages using owmeta-core
+
+
