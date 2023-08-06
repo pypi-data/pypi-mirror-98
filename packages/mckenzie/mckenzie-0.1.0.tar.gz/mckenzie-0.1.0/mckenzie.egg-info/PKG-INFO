@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: mckenzie
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/0/mckenzie
+Author: Dmitri Iouchtchenko
+Author-email: diouchtc@uwaterloo.ca
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Requires-Python: >=3.8
