@@ -1,0 +1,13 @@
+spool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spool/exceptions.py,sha256=NJAwKw8DnV2dq8bQTJbihciGLvXxfaC6WhYGzate0ok,249
+spool/mailer.py,sha256=sKd_CAcJi2elunlsf1fjQhB0geNJbnG4k8DxqijUIT4,7674
+spool/main.py,sha256=ePwzjJdM5lEMW4PrEwyqhLzZHwQVea2Ys5Xnk2kJtI4,6636
+spool/message.py,sha256=2QzOMQMjHGEYusOQQTbR33YztlBAZgifOmhU5lZzCsc,8156
+spool/parser.py,sha256=I1dRpWPvTY6srzpOLWHavX1-0lF4X8JCz-VG-Mh1G9E,6461
+spool/smime.py,sha256=iQWo0QSxgdzzNRF1et2G_O3Yj9IRv1eXJIsrtl0vHBQ,2321
+spool-0.9.5.dist-info/LICENSE.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spool-0.9.5.dist-info/METADATA,sha256=h3novqVgLjhPZ5I4AykxRnjxFoP75JxcpjauHiB0eEU,2263
+spool-0.9.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spool-0.9.5.dist-info/entry_points.txt,sha256=Vn0mFeTJhlr8lUTaIvjriPX-TttpKQ5-x9pUgdKK5Eo,42
+spool-0.9.5.dist-info/top_level.txt,sha256=-APsr3gqaKs1_UwXuXYp_BTTweSi2K-FgPzra3qyQmQ,6
+spool-0.9.5.dist-info/RECORD,,
