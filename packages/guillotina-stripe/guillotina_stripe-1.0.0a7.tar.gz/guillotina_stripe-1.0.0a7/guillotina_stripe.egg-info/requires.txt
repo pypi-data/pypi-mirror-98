@@ -1,0 +1,10 @@
+setuptools
+guillotina>=6.0
+aiohttp
+retry
+pydantic
+
+[test]
+pytest
+pytest-docker-fixtures
+pytest-aiohttp>=0.3.0
