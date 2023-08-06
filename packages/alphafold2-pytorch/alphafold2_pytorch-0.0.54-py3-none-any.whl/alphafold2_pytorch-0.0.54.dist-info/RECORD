@@ -1,0 +1,10 @@
+alphafold2_pytorch/__init__.py,sha256=k9TFAiOMwCN2PKUiC-e_uzupSkCyxgXBtuk8kZxcpTw,53
+alphafold2_pytorch/alphafold2.py,sha256=whiCppHbksf3GBiaBD-tbu_qgnRiE0mI36D0lH4RDv0,32621
+alphafold2_pytorch/constants.py,sha256=Q_Rv6ENRcb4qwzJwHeV9lorOZGnSWvhZ1KSrEhxzsEg,322
+alphafold2_pytorch/reversible.py,sha256=2WHuN7EFtm3jknQBUGOCwJHsDTgxpQ9hnzF2xedGFxo,10351
+alphafold2_pytorch/utils.py,sha256=RQTOU-KLGoosPaa9ho5b2fEV0FREVdRU8bIkDKEUpgk,38133
+alphafold2_pytorch-0.0.54.dist-info/LICENSE,sha256=ik-0UNOJEdN1NY8JmAdUBqiCkWlto8l8YSsr4B4HOr0,1080
+alphafold2_pytorch-0.0.54.dist-info/METADATA,sha256=NWy5h32hDRnK72pi2uLm0ywpbISbV06YhbSBUbrdN5A,911
+alphafold2_pytorch-0.0.54.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+alphafold2_pytorch-0.0.54.dist-info/top_level.txt,sha256=ntOgahUPipHfeROMxPjSoz3WHuKBFrUOLS0PIuuXDzo,19
+alphafold2_pytorch-0.0.54.dist-info/RECORD,,
