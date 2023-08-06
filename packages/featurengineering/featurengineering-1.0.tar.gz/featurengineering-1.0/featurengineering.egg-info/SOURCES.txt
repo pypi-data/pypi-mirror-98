@@ -1,0 +1,10 @@
+setup.py
+featurengineering/EDA.py
+featurengineering/__init__.py
+featurengineering/featurengineering.py
+featurengineering/linearassumptions.py
+featurengineering.egg-info/PKG-INFO
+featurengineering.egg-info/SOURCES.txt
+featurengineering.egg-info/dependency_links.txt
+featurengineering.egg-info/not-zip-safe
+featurengineering.egg-info/top_level.txt
