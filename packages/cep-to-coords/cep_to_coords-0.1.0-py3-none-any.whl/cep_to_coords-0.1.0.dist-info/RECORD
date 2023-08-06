@@ -1,0 +1,12 @@
+cep_to_coords/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cep_to_coords/base.py,sha256=4_I-IkCuuQfWB9MNVB7Kylv9QjfxlaYe2UChO1SLfCc,507
+cep_to_coords/convert.py,sha256=mfKgf69U0k8YOKdqU92neRhg1OggoLFmaFemXWSIFIk,223
+cep_to_coords/strategies.py,sha256=W7_kBXm--0PylApP4D0fZp_rINO3ZXNPzQnSpPrS2E8,2644
+cep_to_coords/viacep.py,sha256=7_tcwA4HsMJVj92XvZaLGLlRfVrKiOMinVkEFaKJbVg,1408
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_convert.py,sha256=kn5w7d2SRTR7D3Ep3G9GZ4UULdGmCL92Fwc37r5JaZE,900
+cep_to_coords-0.1.0.dist-info/LICENSE,sha256=yuhX0fL6SWfYrducMWQNQqDycN-6Vs5lykKL0xKTbxc,1071
+cep_to_coords-0.1.0.dist-info/METADATA,sha256=D9aiNeqomyGPsyBBwMgDICaxdqykrnSgYq-dASGvdK0,1483
+cep_to_coords-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cep_to_coords-0.1.0.dist-info/top_level.txt,sha256=YjgHrBuy4GT2gEGZ763_cr5oBcAq9QjZyD4SlpIctZM,20
+cep_to_coords-0.1.0.dist-info/RECORD,,
