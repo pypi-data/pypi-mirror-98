@@ -1,0 +1,3 @@
+[console_scripts]
+effmass = effmass.cli:cli
+
