@@ -1,0 +1,216 @@
+Metadata-Version: 2.1
+Name: quartic-sdk
+Version: 1.0.5
+Summary: QuarticSDK is the SDK package which exposes the APIs to the user
+Home-page: https://github.com/Quarticai/QuarticSDK/
+Author: Quartic.ai engineering team
+Author-email: tech@quartic.ai
+License: MIT
+Keywords: Quartic,QuarticSDK
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: alabaster (==0.7.12)
+Requires-Dist: aloe (==0.2.0)
+Requires-Dist: ansicolors (==1.1.8)
+Requires-Dist: attrs (==20.3.0)
+Requires-Dist: Babel (==2.9.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: cloudpickle (==1.6.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: gherkin-official (==4.1.3)
+Requires-Dist: idna (==2.10)
+Requires-Dist: imagesize (==1.2.0)
+Requires-Dist: importlib-metadata (==3.6.0)
+Requires-Dist: iniconfig (==1.1.1)
+Requires-Dist: Jinja2 (==2.11.3)
+Requires-Dist: joblib (==1.0.1)
+Requires-Dist: livereload (==2.6.3)
+Requires-Dist: lunr (==0.5.8)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: nltk (==3.5)
+Requires-Dist: nose (==1.3.7)
+Requires-Dist: numpy (>=1.8.2)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pandas (==1.1.5)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.10.0)
+Requires-Dist: Pygments (==2.8.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pytest (==6.2.2)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: PyYAML (==5.4.1)
+Requires-Dist: regex (==2020.11.13)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: snowballstemmer (==2.1.0)
+Requires-Dist: Sphinx (==3.5.1)
+Requires-Dist: sphinxcontrib-applehelp (==1.0.2)
+Requires-Dist: sphinxcontrib-devhelp (==1.0.2)
+Requires-Dist: sphinxcontrib-htmlhelp (==1.0.3)
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1)
+Requires-Dist: sphinxcontrib-qthelp (==1.0.3)
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.4)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: tqdm (==4.56.2)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: zipp (==3.4.0)
+Provides-Extra: complete
+Requires-Dist: alabaster (==0.7.12) ; extra == 'complete'
+Requires-Dist: aloe (==0.2.0) ; extra == 'complete'
+Requires-Dist: ansicolors (==1.1.8) ; extra == 'complete'
+Requires-Dist: attrs (==20.3.0) ; extra == 'complete'
+Requires-Dist: Babel (==2.9.0) ; extra == 'complete'
+Requires-Dist: certifi (==2020.12.5) ; extra == 'complete'
+Requires-Dist: chardet (==4.0.0) ; extra == 'complete'
+Requires-Dist: click (==7.1.2) ; extra == 'complete'
+Requires-Dist: cloudpickle (==1.6.0) ; extra == 'complete'
+Requires-Dist: colorama (==0.4.4) ; extra == 'complete'
+Requires-Dist: docutils (==0.16) ; extra == 'complete'
+Requires-Dist: future (==0.18.2) ; extra == 'complete'
+Requires-Dist: gherkin-official (==4.1.3) ; extra == 'complete'
+Requires-Dist: idna (==2.10) ; extra == 'complete'
+Requires-Dist: imagesize (==1.2.0) ; extra == 'complete'
+Requires-Dist: importlib-metadata (==3.6.0) ; extra == 'complete'
+Requires-Dist: iniconfig (==1.1.1) ; extra == 'complete'
+Requires-Dist: Jinja2 (==2.11.3) ; extra == 'complete'
+Requires-Dist: joblib (==1.0.1) ; extra == 'complete'
+Requires-Dist: livereload (==2.6.3) ; extra == 'complete'
+Requires-Dist: lunr (==0.5.8) ; extra == 'complete'
+Requires-Dist: MarkupSafe (==1.1.1) ; extra == 'complete'
+Requires-Dist: nltk (==3.5) ; extra == 'complete'
+Requires-Dist: nose (==1.3.7) ; extra == 'complete'
+Requires-Dist: numpy (>=1.8.2) ; extra == 'complete'
+Requires-Dist: packaging (==20.9) ; extra == 'complete'
+Requires-Dist: pandas (==1.1.5) ; extra == 'complete'
+Requires-Dist: pluggy (==0.13.1) ; extra == 'complete'
+Requires-Dist: py (==1.10.0) ; extra == 'complete'
+Requires-Dist: Pygments (==2.8.0) ; extra == 'complete'
+Requires-Dist: pyparsing (==2.4.7) ; extra == 'complete'
+Requires-Dist: pytest (==6.2.2) ; extra == 'complete'
+Requires-Dist: python-dateutil (==2.8.1) ; extra == 'complete'
+Requires-Dist: pytz (==2021.1) ; extra == 'complete'
+Requires-Dist: PyYAML (==5.4.1) ; extra == 'complete'
+Requires-Dist: regex (==2020.11.13) ; extra == 'complete'
+Requires-Dist: requests (==2.25.1) ; extra == 'complete'
+Requires-Dist: six (==1.15.0) ; extra == 'complete'
+Requires-Dist: snowballstemmer (==2.1.0) ; extra == 'complete'
+Requires-Dist: Sphinx (==3.5.1) ; extra == 'complete'
+Requires-Dist: sphinxcontrib-applehelp (==1.0.2) ; extra == 'complete'
+Requires-Dist: sphinxcontrib-devhelp (==1.0.2) ; extra == 'complete'
+Requires-Dist: sphinxcontrib-htmlhelp (==1.0.3) ; extra == 'complete'
+Requires-Dist: sphinxcontrib-jsmath (==1.0.1) ; extra == 'complete'
+Requires-Dist: sphinxcontrib-qthelp (==1.0.3) ; extra == 'complete'
+Requires-Dist: sphinxcontrib-serializinghtml (==1.1.4) ; extra == 'complete'
+Requires-Dist: toml (==0.10.2) ; extra == 'complete'
+Requires-Dist: tornado (==6.1) ; extra == 'complete'
+Requires-Dist: tqdm (==4.56.2) ; extra == 'complete'
+Requires-Dist: typing-extensions (==3.7.4.3) ; extra == 'complete'
+Requires-Dist: urllib3 (==1.26.3) ; extra == 'complete'
+Requires-Dist: zipp (==3.4.0) ; extra == 'complete'
+Requires-Dist: h2o (==3.32.0.4) ; extra == 'complete'
+Requires-Dist: Keras (==2.4.3) ; extra == 'complete'
+Requires-Dist: lightgbm (==2.2.2) ; extra == 'complete'
+Requires-Dist: matplotlib (==3.3.4) ; extra == 'complete'
+Requires-Dist: numba (==0.52.0) ; extra == 'complete'
+Requires-Dist: numexpr (==2.7.2) ; extra == 'complete'
+Requires-Dist: onnx (==1.8.1) ; extra == 'complete'
+Requires-Dist: pamela (==1.0.0) ; extra == 'complete'
+Requires-Dist: patsy (==0.5.1) ; extra == 'complete'
+Requires-Dist: plotly (==4.14.3) ; extra == 'complete'
+Requires-Dist: py4j (==0.10.9.1) ; extra == 'complete'
+Requires-Dist: pyaml (==20.4.0) ; extra == 'complete'
+Requires-Dist: pyasn1 (==0.4.8) ; extra == 'complete'
+Requires-Dist: pyasn1-modules (==0.2.8) ; extra == 'complete'
+Requires-Dist: pycurl (==7.43.0.6) ; extra == 'complete'
+Requires-Dist: pynndescent (==0.5.2) ; extra == 'complete'
+Requires-Dist: pypmml (==0.9.9) ; extra == 'complete'
+Requires-Dist: pytorch-ignite (==0.4.3) ; extra == 'complete'
+Requires-Dist: scikit-learn (==0.20.0) ; extra == 'complete'
+Requires-Dist: scikit-optimize (==0.8.1) ; extra == 'complete'
+Requires-Dist: scipy (==1.2.1) ; extra == 'complete'
+Requires-Dist: seaborn (==0.11.1) ; extra == 'complete'
+Requires-Dist: statsmodels (==0.12.2) ; extra == 'complete'
+Requires-Dist: tensorflow (==2.4.1) ; extra == 'complete'
+Requires-Dist: torch (==1.7.1+cpu) ; extra == 'complete'
+Requires-Dist: umap-learn (==0.4.1) ; extra == 'complete'
+Requires-Dist: xgboost (==0.81) ; extra == 'complete'
+
+# QuarticSDK
+
+Quartic SDK is Quartic.ai's external software development kit which allows users to use assets, tags, and other intelligence outside the Quartic AI Platform. Using the Quartic SDK, third party developers who have access to the Quartic AI Platform can build custom applications.
+
+## Installation
+---
+Install using `pip`
+
+```
+pip install quartic-sdk
+```
+to Install complete package with all supported model libraries:
+```
+pip install quartic-sdk[complete]
+```
+
+...or follow the following steps to install it from the source:
+```
+git clone https://github.com/Quarticai/QuarticSDK/
+python setup.py install
+```
+
+## Example
+---
+Comprehensive documentation is available at https://quarticsdk.readthedocs.io/en/latest/
+
+Here's an example on how the Quartic SDK can be used:
+
+#### Getting the assets, tags, batches from the server
+```
+# Assuming that the Quartic.ai server is at `https://test.quartic.ai/`, with the login
+# and the username and password is `username` and `password.`
+
+from quartic_sdk import APIClient
+
+client = APIClient("https://test.quartic.ai/", username="username", password="password")
+user_assets = client.assets() # Get the list of all assets that the user has access to
+
+asset = user_assets.get("name","Test Asset") # Get a specific asset with the name "Test Asset"
+asset_tags = asset.get_tags() # Gets the list of all tags
+
+first_tag=asset_tags.first() # Returns the first in the list of tags
+first_tag_data_iterator=first_tag.data(start_time=1000000,stop_time=2000000) # Returns the data present in the first tag for the time range of 1000000 to 2000000
+
+```
+
+## Documentation
+---
+To run the documentation locally, run the following commands in terminal:
+```
+cd docs
+make html
+open build/html/index.html
+```
+
+## Test Cases
+---
+To run the behaviour test cases, run the command:
+```
+aloe
+```
+To run the unit test cases, run the command:
+```
+pytest
+```
+
+
