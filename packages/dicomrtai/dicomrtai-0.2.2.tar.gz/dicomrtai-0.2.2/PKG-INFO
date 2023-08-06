@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dicomrtai
+Version: 0.2.2
+Summary: 
+License: AGPL-3.0-or-later
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: grpcio (>=1.36.1,<2.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
