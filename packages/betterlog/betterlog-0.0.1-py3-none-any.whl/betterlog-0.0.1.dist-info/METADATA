@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: betterlog
+Version: 0.0.1
+Summary: Colorful logging
+Home-page: https://pastep.com
+Author: Pooria Ahmadi
+Author-email: pooriababak444@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+
+
+# EasyLog [![Downloads](https://pepy.tech/badge/easylog)](https://pepy.tech/project/betterlog)
+## _Log Easily_
+
+Easylog is a colorful console printing
+- Import the module
+- Use one of functions
+- ? Magic ?
+
+## Features
+
+- Header
+- Ok
+- Info
+- Success
+- Warning
+- Error
+
+## Quick Tutorial
+### Simple usage:
+![alt text](https://i.postimg.cc/hG73VxDs/code.png)
+
+### Output:
+![alt text](https://i.postimg.cc/NF06kq8t/Capture.png)
+
+## License
+MIT
+
+Contact me at Discord: https://discord.gg/mRnF6ypYyu
+**Free Software, Hell Yeah!**
+
+
+
