@@ -1,0 +1,8 @@
+# include all files in the iris_stage module
+graft iris_stage
+
+# exclude all compiler artefacts
+global-exclude *.py[co]
+
+# include requirements.txt
+include requirements.txt
