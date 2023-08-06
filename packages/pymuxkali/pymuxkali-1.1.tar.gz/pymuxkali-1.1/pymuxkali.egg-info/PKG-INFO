@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pymuxkali
+Version: 1.1
+Summary: This is a python script by which you can install Kali Nethunter (Kali Linux) in your termux application without rooted phone.
+Home-page: https://github.com/RaynerSec/pymuxkali
+Author: RC Chuah
+Author-email: raynersec@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN

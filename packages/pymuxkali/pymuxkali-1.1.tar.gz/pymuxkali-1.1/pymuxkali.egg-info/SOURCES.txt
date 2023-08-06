@@ -1,0 +1,10 @@
+README.md
+pymuxkali.py
+setup.cfg
+setup.py
+pymuxkali.egg-info/PKG-INFO
+pymuxkali.egg-info/SOURCES.txt
+pymuxkali.egg-info/dependency_links.txt
+pymuxkali.egg-info/entry_points.txt
+pymuxkali.egg-info/not-zip-safe
+pymuxkali.egg-info/top_level.txt
