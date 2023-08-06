@@ -1,0 +1,3 @@
+[console_scripts]
+dynamite-cli=dynamite_cli.main:app
+
