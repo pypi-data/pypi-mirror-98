@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/idev/__init__.py
+src/idev/idev.py
+src/idev.egg-info/PKG-INFO
+src/idev.egg-info/SOURCES.txt
+src/idev.egg-info/dependency_links.txt
+src/idev.egg-info/top_level.txt
