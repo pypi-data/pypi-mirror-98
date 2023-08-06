@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: wps-light
+Version: 0.15.2
+Summary: The strictest and most opinionated python linter ever (lighter fork).
+Home-page: https://github.com/pawamoy/wps-light
+License: MIT
+Keywords: flake8,flake8-plugin,flake8-formatter,linter,wemake.services,styleguide,code quality,pycqa
+Author: Timothée Mazzucotelli
+Author-email: pawamoy@pm.me
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: Flake8
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: astor (>=0.8,<0.9)
+Requires-Dist: attrs
+Requires-Dist: flake8 (>=3.7,<4.0)
+Requires-Dist: flake8-polyfill (>=1.0.2,<2.0.0)
+Requires-Dist: importlib-metadata; python_version < "3.8"
+Requires-Dist: pygments (>=2.4,<3.0)
+Requires-Dist: typing_extensions (>=3.6,<4.0)
+Project-URL: Funding, https://opencollective.com/wemake-python-styleguide
+Project-URL: Repository, https://github.com/pawamoy/wps-light
+Description-Content-Type: text/markdown
+
+# wps-light
+
+*wemake-python-styleguide*, but lighter.
+
+This project is simply a fork of
+[wemake-python-styleguide](https://github.com/wemake-services/wemake-python-styleguide),
+**without these flake8 plugins dependencies**:
+
+- flake8-commas
+- flake8-quotes
+- flake8-comprehensions
+- flake8-docstrings
+- flake8-string-format
+- flake8-bugbear 
+- flake8-debugger
+- flake8-isort
+- flake8-eradicate
+- flake8-bandit
+- flake8-broken-line
+- flake8-rst-docstrings
+- pep8-naming
+- darglint
+
+It can still be installed and used as a flake8 plugin.
+
+Please refer to [wemake-python-styleguide's documentation](https://wemake-python-stylegui.de/en/latest/).
+
