@@ -1,0 +1,7 @@
+cacheout
+pandas
+requests
+seaborn
+mplfinance
+pandas_datareader
+plotly
