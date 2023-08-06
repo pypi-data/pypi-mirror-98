@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rmk2-py
+Version: 0.1.2
+Summary: "rmk2's Python Toolbox"
+Home-page: https://gitlab.com/rmk2/rmk2-py
+Author: rmk2
+Author-email: ryko@rmk2.org
+License: GPLv3+
+Description: "rmk2's Python Toolbox"
+Platform: UNKNOWN
+Description-Content-Type: text/markdown; charset=UTF-8

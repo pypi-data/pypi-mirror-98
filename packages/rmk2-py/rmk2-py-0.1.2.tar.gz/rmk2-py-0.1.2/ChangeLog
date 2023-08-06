@@ -1,0 +1,30 @@
+CHANGES
+=======
+
+0.1.2
+-----
+
+* Split build/publish into distinct stages, support publishing to PyPI
+* Ensure lower-case config arguments and upper-case variables
+
+0.1.1
+-----
+
+* Switch build command for Gitlab CI to python \`build\` module
+* Amend setup.cfg to include find\_packages, add pyproject.toml
+
+0.1.0
+-----
+
+* Add api module, add save\_response function, add url builder function
+* Add a config class with support for nesting, ENV, and argparse
+* Add Pipfile.lock, remove Pipfile.lock from .gitignore
+* Amend gitlab CI pipeline build step to only run for tags
+* Add basic gitlab CI pipeline definition to gitlab-ci.yml
+* Add twine as project dependency to Pipfile
+* Add black as project dependency to Pipfile
+* Add function to hash values with SHA2-family hashes to hash.py
+* Reflow README to adhere to 88 character line length, mention black
+* Add GPLv3 license text to LICENSE
+* Add functions to write/read/handle JSONL files to file.py
+* Initial commit, add basic project scaffolding

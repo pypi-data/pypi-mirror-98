@@ -1,0 +1,50 @@
+default:
+  image: python:3.9
+
+variables:
+  REPOSITORY_URL: https://gitlab.com/api/v4/projects/${CI_PROJECT_ID}/packages/pypi
+
+stages:
+  - test
+  - build
+  - publish
+
+test:
+  stage: test
+  script:
+    - python3 -m pip install pipenv
+    - pipenv lock --dev --requirements > requirements.txt
+    - python3 -m pip install -r requirements.txt
+    - pytest -v --junitxml=test_report.xml
+  artifacts:
+    reports:
+      junit: test_report.xml
+
+build:
+  stage: build
+  script:
+    - pip3 install build
+    - python3 -m build
+  artifacts:
+    paths:
+      - dist/*.tar.gz
+      - dist/*.whl
+  only:
+    - master
+    - tags
+
+publish_gitlab:
+  stage: publish
+  script:
+    - pip3 install twine
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token python -m twine upload --repository-url ${REPOSITORY_URL} dist/*
+  only:
+    - tags
+
+publish_pypi:
+  stage: publish
+  script:
+    - pip3 install twine
+    - TWINE_PASSWORD=${PYPI_PASSWORD} TWINE_USERNAME=__token__ python -m twine upload dist/*
+  only:
+    - tags
