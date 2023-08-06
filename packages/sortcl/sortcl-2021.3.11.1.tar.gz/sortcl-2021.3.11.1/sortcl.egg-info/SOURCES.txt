@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+sortcl.py
+sortcl.egg-info/PKG-INFO
+sortcl.egg-info/SOURCES.txt
+sortcl.egg-info/dependency_links.txt
+sortcl.egg-info/top_level.txt

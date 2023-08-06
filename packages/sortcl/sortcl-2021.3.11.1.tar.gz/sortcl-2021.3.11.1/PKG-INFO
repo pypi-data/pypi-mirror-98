@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sortcl
+Version: 2021.3.11.1
+Summary: sort multiple angular power spectra in healpy input order
+Home-page: https://github.com/ntessore/sortcl
+Author: Nicolas Tessore
+Author-email: n.tessore@ucl.ac.uk
+License: MIT
+Project-URL: Documentation, https://cltools.readthedocs.io/sortcl/
+Description: 
+        sortcl
+        ======
+        
+        **sort multiple angular power spectra in healpy input order**
+        
+        This is a minimal Python package to sort input angular power spectra `cls`
+        into the order expected by healpy's `synalm` and `synfast` functions.
+        
+        The package can be installed using pip:
+        
+            pip install sortcl
+        
+        Then import the `sortcl` function from the package:
+        
+            from sortcl import sortcl
+        
+        For more information, see the [documentation].
+        
+        Current functionality covers the absolutely minimal use case.  Please open an
+        issue on GitHub if you would like to see anything added.
+        
+        [documentation]: https://cltools.readthedocs.io/sortcl/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
