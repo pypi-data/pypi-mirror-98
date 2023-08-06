@@ -1,0 +1,3 @@
+[flake8.extension]
+ENC0 = flake8_encodings:Plugin
+
