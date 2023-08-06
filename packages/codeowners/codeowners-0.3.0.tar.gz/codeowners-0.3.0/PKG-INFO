@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: codeowners
+Version: 0.3.0
+Summary: Codeowners parser for Python
+Home-page: https://github.com/sbdchd/codeowners
+Author: Steve Dignam
+Author-email: steve@dignam.xyz
+Keywords: codeowners,git,github
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: typing_extensions (>=3.7,<4.0)
+Project-URL: Repository, https://github.com/sbdchd/codeowners
