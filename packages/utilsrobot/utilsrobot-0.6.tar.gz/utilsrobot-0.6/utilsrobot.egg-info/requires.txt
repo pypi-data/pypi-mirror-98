@@ -1,0 +1,4 @@
+cryptg
+python-dotenv==0.15.0
+redshift-sqlalchemy
+telethon==1.19.5
