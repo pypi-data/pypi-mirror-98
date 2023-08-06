@@ -1,0 +1,4 @@
+numpy==1.19
+traits>=3.0
+mayavi>=3.0
+traitsui>=3.0
