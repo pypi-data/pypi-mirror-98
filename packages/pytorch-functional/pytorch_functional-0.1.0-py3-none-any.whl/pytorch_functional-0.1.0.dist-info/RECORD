@@ -1,0 +1,15 @@
+pytorch_functional/__init__.py,sha256=QPpCKHImxlUUt6hbUgUgb-EiPJL9xt6DjASmTZvcFjk,126
+pytorch_functional/examples/__init__.py,sha256=9--xIMnrHVgKOgQ8tEwe-RVqqJQwt484pevrA7IPcF0,184
+pytorch_functional/examples/encoder_decoder.py,sha256=ORXxEPlCObUec_L7WAaMrDcxrsAK9xat30FmgluvDvg,2916
+pytorch_functional/examples/resnet.py,sha256=arXG2OBIe710tRBhY_vyc9_PbuW7zt-8gLGq9EPX_to,5752
+pytorch_functional/examples/vgg.py,sha256=F7aPjQNvwV_0v0xdGwxPHXtFBea8yuJZkTImSYWMTJg,2294
+pytorch_functional/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytorch_functional/src/functional_model.py,sha256=21mnUGKG-HVJqm8Q0FZzvn2v51t2zg7FOajAu9rur1Q,10217
+pytorch_functional/src/layers.py,sha256=Ic71Zroie3v8n8E8OeqxRrKxdWUPfX8DVbQwxLPOJ0c,1198
+pytorch_functional/src/tools.py,sha256=ioCUgHkZr2dHyDvkakCa-gIiVQ_dG2viVoirY6BLUSA,590
+pytorch_functional/src/training_tools.py,sha256=BJGakQK8EANbQUGzDNDT10063wwWcSjmkt2gVIQiAFs,5564
+pytorch_functional-0.1.0.dist-info/LICENSE,sha256=ABCMBRA712nmtSO-0w9Q60QK1b3u5RRLWTW-dXXU-8M,1075
+pytorch_functional-0.1.0.dist-info/METADATA,sha256=XVRUUOBAPKP_HrDBLJbwOT-FQeoEWpf3kL4RDXztn2o,9909
+pytorch_functional-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytorch_functional-0.1.0.dist-info/top_level.txt,sha256=fMScSnaqQEcrzOS56GeQotEhopzl8hz_nTkw011BFqw,19
+pytorch_functional-0.1.0.dist-info/RECORD,,
