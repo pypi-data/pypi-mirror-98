@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+graphyre/__init__.py
+graphyre/graphyre.py
+graphyre.egg-info/PKG-INFO
+graphyre.egg-info/SOURCES.txt
+graphyre.egg-info/dependency_links.txt
+graphyre.egg-info/entry_points.txt
+graphyre.egg-info/top_level.txt
