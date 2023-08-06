@@ -1,0 +1,13 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.py
+src/bee_config/__init__.py
+src/bee_config/_config.py
+src/bee_config/manager.py
+src/bee_config/source.py
+src/py_bee_config.egg-info/PKG-INFO
+src/py_bee_config.egg-info/SOURCES.txt
+src/py_bee_config.egg-info/dependency_links.txt
+src/py_bee_config.egg-info/requires.txt
+src/py_bee_config.egg-info/top_level.txt
