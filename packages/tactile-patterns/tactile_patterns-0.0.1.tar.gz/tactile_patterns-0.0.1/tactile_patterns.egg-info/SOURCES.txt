@@ -1,0 +1,12 @@
+README.md
+setup.py
+tactile_patterns.egg-info/PKG-INFO
+tactile_patterns.egg-info/SOURCES.txt
+tactile_patterns.egg-info/dependency_links.txt
+tactile_patterns.egg-info/requires.txt
+tactile_patterns.egg-info/top_level.txt
+tactile_patterns_for_laser_cutter/__init__.py
+tactile_patterns_for_laser_cutter/data_format.py
+tactile_patterns_for_laser_cutter/raster_noise_islandified_bumps.py
+tactile_patterns_for_laser_cutter/raster_noise_regular_bumpy_smooth_circles.py
+tactile_patterns_for_laser_cutter/raster_noise_test_shape_simple_gradient.py

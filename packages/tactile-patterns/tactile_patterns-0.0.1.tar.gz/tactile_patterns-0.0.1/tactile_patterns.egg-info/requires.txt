@@ -1,0 +1,4 @@
+jsbeautifier<2.0,>=1.13.5
+numpy<2.0,>=1.19.5
+pillow<9.0,>=8.1.2
+pyproj<3.0,>=2.5.0
