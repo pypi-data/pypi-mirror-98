@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+helsinki_gdpr/__init__.py
+helsinki_gdpr/models.py
+helsinki_gdpr/urls.py
+helsinki_gdpr/views.py
+helsinki_profile_gdpr_api.egg-info/PKG-INFO
+helsinki_profile_gdpr_api.egg-info/SOURCES.txt
+helsinki_profile_gdpr_api.egg-info/dependency_links.txt
+helsinki_profile_gdpr_api.egg-info/requires.txt
+helsinki_profile_gdpr_api.egg-info/top_level.txt
