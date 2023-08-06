@@ -1,0 +1,8 @@
+play_takeout_to_plex/__init__.py,sha256=6NaRoZgH5fUFewEz_AlRuSnsJKDdq9DgUe7Pl3ui8Is,99
+play_takeout_to_plex/songs.py,sha256=g0nKtEdbjzq1vAjqMjZBtqAhvPRtt6psnbo2jyTLcGw,5762
+play_takeout_to_plex/takeout_converter.py,sha256=hccsFsmwGqbfUjBo6Auk7FM4PSebvEqNIJakklaRHTA,6771
+play_takeout_to_plex-0.1.1.dist-info/entry_points.txt,sha256=2wYo7SEVkBEmbZjSH0kN98kYkI_go7-HD7QnUiqLLLA,55
+play_takeout_to_plex-0.1.1.dist-info/LICENSE,sha256=mJLGT7XrlAESg5giGpTLn-W4lDwdWFL0Zwl2Qr9FdBY,1064
+play_takeout_to_plex-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+play_takeout_to_plex-0.1.1.dist-info/METADATA,sha256=s4JlQ0c13b04W1Th-V5HgVtH45qJ3FOTIGXLhFDigB0,935
+play_takeout_to_plex-0.1.1.dist-info/RECORD,,
