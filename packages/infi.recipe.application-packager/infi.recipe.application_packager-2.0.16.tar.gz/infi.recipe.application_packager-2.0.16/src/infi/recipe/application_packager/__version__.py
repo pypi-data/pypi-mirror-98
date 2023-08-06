@@ -1,0 +1,11 @@
+__version__ = "2.0.16"
+__git_commiter_name__ = "Kobi Tal"
+__git_commiter_email__ = "ktal@infinidat.com"
+__git_branch__ = u'develop'
+__git_remote_tracking_branch__ = u'origin/develop'
+__git_remote_url__ = u'git@git.infinidat.com:host-opensource/infi.recipe.application_packager.git'
+__git_head_hash__ = '31d50496b600ebda60c7e63da66274d379e31b8e'
+__git_head_subject__ = u'Finished Release v2.0.16'
+__git_head_message__ = u''
+__git_dirty_diff__ = u''
+__git_commit_date__ = '2021-02-08 13:26:31'
