@@ -1,0 +1,18 @@
+parameters:
+  loggerbundle:
+    message_format': '%(asctime)s %(levelname)s - %(message)s'
+    date_format': '%H:%M:%S'
+    default_log_level: 20 # INFO
+
+services:
+  loggerbundle.LoggerFactory:
+    arguments:
+      - '%loggerbundle.default_log_level%'
+      - !tagged loghandler.factory
+
+  loggerbundle.stdout.StreamHandlerFactory:
+    arguments:
+      - '%loggerbundle.message_format%'
+      - '%loggerbundle.date_format%'
+    tags:
+      - 'loghandler.factory'
