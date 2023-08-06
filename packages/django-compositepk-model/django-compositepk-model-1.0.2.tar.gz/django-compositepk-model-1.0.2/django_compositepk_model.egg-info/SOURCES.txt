@@ -1,0 +1,11 @@
+README.md
+setup.py
+cpkmodel/__init__.py
+cpkmodel/compositekey.py
+cpkmodel/constants.py
+cpkmodel/cpkmodel.py
+cpkmodel/cpkquery.py
+django_compositepk_model.egg-info/PKG-INFO
+django_compositepk_model.egg-info/SOURCES.txt
+django_compositepk_model.egg-info/dependency_links.txt
+django_compositepk_model.egg-info/top_level.txt
