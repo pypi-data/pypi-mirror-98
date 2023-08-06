@@ -1,0 +1,15 @@
+structconf/__init__.py,sha256=VVFDDhqkC-OXkwp1SrMbellTrKBdhUAcZU_jex8jt9Y,161
+structconf/version.py,sha256=Q8raD6k02z4DoYniAz3iui5d6EdM1el95SMTLXJbeCA,18
+structconf/shell/__init__.py,sha256=tIIEIJdxCGBZuWo3hTU-1JwjBAVQcd6pbigPslT90OA,48
+structconf/shell/usage.py,sha256=ps7eHl4Bv6yxNVIII7oqGcxERMq7srBMBhhLPvNdJx8,294
+structconf/src/__init__.py,sha256=tmFdUda65sXz03ypUIAbBtzuNkt7Kz0WlW32B5GEkCY,55
+structconf/src/conf.py,sha256=c-UKPiSIbWoclAooiS16PslzKboYy2dPzKSddxXnE0s,654
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_complex.py,sha256=0njhQcKA4JGiWuEES0i1MuVPTB1f2CcZcB-dGVQQOmo,709
+tests/test_simple.py,sha256=fxiZhZdPVrSvrAK_yGKMsiK-JMJK7oJvFIIkWMy2MKE,587
+structconf-0.0.2.dist-info/LICENSE,sha256=DBZAK6xNPrXUVR-Ar-HaGfuxZKzKymlErwGExoFFPto,1062
+structconf-0.0.2.dist-info/METADATA,sha256=L3clLRllg0MSlbnhemuivfX09FwtKqB1lgOf83mgp0M,736
+structconf-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+structconf-0.0.2.dist-info/top_level.txt,sha256=DYDqbef7XiMabDZqBexLYoGA55vRcD19h0a9aY4ONbE,17
+structconf-0.0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+structconf-0.0.2.dist-info/RECORD,,
