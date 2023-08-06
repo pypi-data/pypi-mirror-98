@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: yamniiMod
+Version: 0.6
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Arsenii Yamnii
+Author-email: yamnii@ya.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/arseniiyamnii/history-cllass-TestTask/issues
+Description: # history-cllass-TestTask
+        1. Написать класс History
+        класс должен иметь следующие методы:
+        ◦ set_history(
+        ▪ принимает 2 переменные
+        •
+        sequence - массив длинной 500 (int) положительных чисел)
+        • score - 1 float▪ проверяет имеющийся массив history_arr на наличие в нем
+        дубликата sequence
+        ▪ если дубликат найден - проверяет score, и записывает score только
+        если оно меньше уже находящегося в данных
+        ▪ если дубликат не найден записывает входные данные
+        ▪ и ведет счетчик дубликатов
+        ◦ is_it_dupe_sequence(
+        ▪ принимает 1 переменную
+        •
+        sequence - массив длинной 500 (int) положительных чисел)
+        ▪ проверяет, есть ли такая в истории. Если есть True если нет False
+        ◦ save_history(
+        ▪ принимает 1 переменную — filepath
+        ▪ записывает данные истории на диск
+        ◦ load_history(
+        ▪ принимает 1 переменную — filepath
+        ▪ загружает данные истории с диска
+        •
+        Сделать данный код загружаемым модулем
+        • Сделать тестирующую функцию вне модуля, используя __main__
+        ◦ функция должна генерировать случайный набор для sequence и score
+        ◦ подавать этот набор на вход метода set_history(
+        ◦ кол_во данных в history_arr должно быть не более 3gb
+        ◦ при достижении порога, должна вывести максимально точное время на
+        работу функции и кол-во дубликатов найденных в истории
+        ◦ после этого данные истории должны записаться на диск и загрузиться
+        ◦ после загрузки, истории, порог увеличивается до 5gb и генерация
+        продолжается
+        ◦ при достижении порога, должна вывести максимально точное время на
+        работу функции, с момента загрузки, и кол-во дубликатов найденных в
+        истории• Прислать код модуля, и jupyter notebook где этот модуль бы подгружался и
+        и демонстрировалась работа тестовой функции
+        Разрешается использование любых модулей
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
