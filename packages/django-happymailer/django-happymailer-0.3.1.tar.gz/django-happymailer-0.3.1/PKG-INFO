@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: django-happymailer
+Version: 0.3.1
+Summary: django email templates manager
+Home-page: UNKNOWN
+Author: Victor Kotcheruba
+Author-email: barbuzaster@gmail.com
+Maintainer: Dmitrii Gerasimenko
+Maintainer-email: kiddima@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

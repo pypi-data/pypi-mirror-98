@@ -1,0 +1,6 @@
+django>=3.0
+django-import-export>=0.4.5
+faker>=0.8.6
+html2text>=2016.5.29
+trafaret<=0.8,>=0.7
+six
