@@ -1,0 +1,8 @@
+discord/ext/flags/__init__.py,sha256=Lq1tkwJjGFNSPkAQ1d1XJoa4sdmUIq7n7IceUnJCl3o,47
+discord/ext/flags/_command.py,sha256=dTEmtlFUMhmC09MS7RS6vWnHdc7WjxBSqjATb_blimQ,8117
+discord/ext/flags/_parser.py,sha256=1Xm0YkKjZWyYtprkt1s-41geRUz3K0gs3XEcgxNWKWQ,2177
+alt_discord_flags-0.0.1.dist-info/LICENSE.md,sha256=gJBD3lsx9IedYoIERCUp3JcrAFH0z_fm74lwlbG-u3c,1067
+alt_discord_flags-0.0.1.dist-info/METADATA,sha256=gx2AqS7B0Y2IHrN4kvGXEtz1uUnJxE14DbEThQd_Scc,3118
+alt_discord_flags-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+alt_discord_flags-0.0.1.dist-info/top_level.txt,sha256=fJkrNbR-_8ubMBUcDEJBcfkpECrvSEmMrNKgvLlQFoM,8
+alt_discord_flags-0.0.1.dist-info/RECORD,,
