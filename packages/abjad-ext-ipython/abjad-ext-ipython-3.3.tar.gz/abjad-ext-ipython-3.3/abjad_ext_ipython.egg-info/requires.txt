@@ -1,0 +1,8 @@
+abjad==3.3
+black
+flake8
+isort
+mypy
+pytest>=5.4.3
+pytest-helpers-namespace
+jupyter>=1.0.0

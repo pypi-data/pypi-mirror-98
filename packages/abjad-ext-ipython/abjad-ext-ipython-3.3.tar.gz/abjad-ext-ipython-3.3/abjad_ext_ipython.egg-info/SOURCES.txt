@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+abjad_ext_ipython.egg-info/PKG-INFO
+abjad_ext_ipython.egg-info/SOURCES.txt
+abjad_ext_ipython.egg-info/dependency_links.txt
+abjad_ext_ipython.egg-info/requires.txt
+abjad_ext_ipython.egg-info/top_level.txt
+abjadext/__init__.py
+abjadext/ipython/__init__.py
+abjadext/ipython/_version.py
+abjadext/ipython/load_ipython_extension.py
