@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+mypy.ini
+setup.py
+chessdotcom_export/__init__.py
+chessdotcom_export/__main__.py
+chessdotcom_export/common.py
+chessdotcom_export/export.py
+chessdotcom_export/model.py
+chessdotcom_export/py.typed
+chessdotcom_export.egg-info/PKG-INFO
+chessdotcom_export.egg-info/SOURCES.txt
+chessdotcom_export.egg-info/dependency_links.txt
+chessdotcom_export.egg-info/entry_points.txt
+chessdotcom_export.egg-info/requires.txt
+chessdotcom_export.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+chessdotcom_export = chessdotcom_export.__main__:main
+
