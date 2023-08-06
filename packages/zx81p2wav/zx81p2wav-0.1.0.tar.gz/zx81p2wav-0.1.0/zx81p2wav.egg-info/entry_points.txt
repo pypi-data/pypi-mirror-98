@@ -1,0 +1,3 @@
+[console_scripts]
+zx81p2wav = zx81p2wav.__main__:main
+
