@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+PROPython/Objects.py
+PROPython/Settings.py
+PROPython/__init__.py
+PROPython/camera.py
+PROPython/network.py
+PROPython/server.py
+PROPython.egg-info/PKG-INFO
+PROPython.egg-info/SOURCES.txt
+PROPython.egg-info/dependency_links.txt
+PROPython.egg-info/top_level.txt
