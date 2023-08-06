@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-server-backend
+Version: 12.0.20210316.0
+Summary: Meta package for oca-server-backend Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo12-addon-base-external-dbsource
+Requires-Dist: odoo12-addon-base-external-dbsource-mssql
+Requires-Dist: odoo12-addon-base-external-dbsource-mysql
+Requires-Dist: odoo12-addon-base-external-dbsource-sqlite
+Requires-Dist: odoo12-addon-base-external-system
+Requires-Dist: odoo12-addon-base-global-discount
+Requires-Dist: odoo12-addon-base-import-match
+Requires-Dist: odoo12-addon-base-suspend-security
+Requires-Dist: odoo12-addon-base-user-role
+Requires-Dist: odoo12-addon-base-user-role-history
+Requires-Dist: odoo12-addon-base-user-role-profile
+Requires-Dist: odoo12-addon-base-user-role-profile-example
+Requires-Dist: odoo12-addon-server-action-navigate
+
+UNKNOWN
+
+
