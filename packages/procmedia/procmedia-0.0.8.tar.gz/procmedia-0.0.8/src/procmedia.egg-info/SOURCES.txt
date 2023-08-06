@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+src/procmedia/__init__.py
+src/procmedia/__main__.py
+src/procmedia/detect.py
+src/procmedia/help.py
+src/procmedia/utils.py
+src/procmedia.egg-info/PKG-INFO
+src/procmedia.egg-info/SOURCES.txt
+src/procmedia.egg-info/dependency_links.txt
+src/procmedia.egg-info/requires.txt
+src/procmedia.egg-info/top_level.txt
