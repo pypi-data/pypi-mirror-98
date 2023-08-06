@@ -1,0 +1,3 @@
+[console_scripts]
+kubernetes-job = kubernetes_job.__main__:execute
+
