@@ -1,0 +1,2 @@
+d8s-strings
+importlib-metadata; python_version < '3.8'
