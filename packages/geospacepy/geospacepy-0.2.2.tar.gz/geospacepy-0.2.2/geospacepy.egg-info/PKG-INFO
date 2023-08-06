@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: geospacepy
+Version: 0.2.2
+Summary: A small library for geospace data analysis
+Home-page: https://github.com/lkilcommons/geospacepy-lite
+Author: Liam Kilcommons
+Author-email: liam.kilcommons@colorado.edu
+License: LICENSE.txt
+Download-URL: https://github.com/lkilcommons/geospacepy-lite
+Description: Geospacepy-lite aims to be
+                                a toolbox library for working with observations
+                                from low-earth-orbiting spacecraft focusing on
+                                complete vectorization of algorithms and 
+                                consistant numpy array shape handling.
+                                Submodules focus on transformations between various time
+                                types, earth centered coordinate systems,
+                                distance and area calculations using spherical geometry,
+                                and solar-position-dependant calcuations.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
