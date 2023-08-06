@@ -1,0 +1,5 @@
+include mongo_dash/public/css/*.css
+include mongo_dash/public/js/modules/*.js
+include mongo_dash/public/img/*.png
+include mongo_dash/public/img/*.ico
+recursive-include mongo_dash *.html
