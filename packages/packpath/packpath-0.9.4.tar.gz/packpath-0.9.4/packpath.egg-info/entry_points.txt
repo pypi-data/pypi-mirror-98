@@ -1,0 +1,3 @@
+[console_scripts]
+packpath = packpath.__main__:main
+
