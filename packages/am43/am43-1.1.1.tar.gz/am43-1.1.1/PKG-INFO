@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: am43
+Version: 1.1.1
+Summary: AM43 blinds motor API implementation written on Python
+Home-page: https://github.com/breitburg/python-am43
+Author: Ilya Breitburg
+Author-email: me@breitburg.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
