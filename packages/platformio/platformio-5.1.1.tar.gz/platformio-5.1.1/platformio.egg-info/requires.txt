@@ -1,0 +1,15 @@
+bottle==0.12.*
+click<8,>=5
+colorama
+marshmallow<4,>=2
+pyelftools<1,>=0.27
+pyserial==3.*
+requests==2.*
+semantic_version==2.8.*
+tabulate==0.8.*
+zeroconf==0.28.*
+aiofiles==0.6.*
+ajsonrpc==1.1.*
+starlette==0.14.*
+uvicorn==0.13.*
+wsproto==1.0.*
