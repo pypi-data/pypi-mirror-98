@@ -1,0 +1,9 @@
+requests
+pandas
+beautifulsoup4
+urllib3
+tqdm
+baostock
+parsel
+lunar_python
+pyecharts
