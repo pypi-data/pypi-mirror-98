@@ -1,0 +1,7 @@
+democritus-hashes
+democritus-json
+democritus-user-agents
+requests
+
+[:python_version < "3.8"]
+importlib-metadata
