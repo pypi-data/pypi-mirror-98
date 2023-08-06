@@ -1,0 +1,13 @@
+npyscreen
+scipy
+matplotlib
+hdbscan
+pandas
+seaborn
+scikit_learn
+tqdm
+onnxruntime
+numpy
+xgboost
+cython
+openpyxl
