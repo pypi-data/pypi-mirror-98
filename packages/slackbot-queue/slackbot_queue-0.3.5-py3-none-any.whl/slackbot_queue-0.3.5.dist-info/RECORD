@@ -1,0 +1,8 @@
+slackbot_queue/__init__.py,sha256=jnzfZBOQaOnb7gpB5E9qJnc2bMrbyirW7HAwlPbLZo4,90
+slackbot_queue/slack_controller.py,sha256=A-bPdYSbad05pe-VBgrv_5VxBZNNUMw6eGokniU3HkU,24439
+slackbot_queue/utils.py,sha256=aU0sSGz_wTwN5ZFg1IOPxcoS0o9ywaIyRp1VSXJzu3A,3893
+slackbot_queue-0.3.5.dist-info/LICENSE,sha256=OMyWRGkDtXMAF_h3idPUewd_8PG4JBXEr2lpLqr3heQ,1078
+slackbot_queue-0.3.5.dist-info/METADATA,sha256=ZdJDZ9sdd1y_g2cV9CuOqSc_134TL8IaRT31d9GcDs4,2678
+slackbot_queue-0.3.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slackbot_queue-0.3.5.dist-info/top_level.txt,sha256=VKcv1z5wI2buAPGM0qWUWV8wAyELxp7MLDffGAtcFs0,15
+slackbot_queue-0.3.5.dist-info/RECORD,,
