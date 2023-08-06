@@ -1,0 +1,12 @@
+pyscf/tblis_einsum/libtblis_einsum.so,sha256=otXP0Cxh8wWpHwOj04uBbTChaWmfnfuaRbxZUAebB9Y,66680
+pyscf/tblis_einsum/__init__.py,sha256=b43UUhuH-japPnsbqegAQrkkFHpcos3GpS0Uw0vqyLg,58
+pyscf/tblis_einsum/libtci.so,sha256=dystkRe66IQjSjHbpq-PgzhprhCcAZDwhTLbDQRZRiQ,79808
+pyscf/tblis_einsum/libtblis.so,sha256=Xe6Pv4eEjMWHPgkwpofCutczH3mpAN4SQx01ZVkGHhg,12908552
+pyscf/tblis_einsum/tblis_einsum.py,sha256=L6_ELAvZTt164dSD2MvnCemuf9ubWRnTZXK-vdiuPxw,4608
+pyscf_tblis.libs/libatomic-35750833.so.1.0.0,sha256=mwfh6U0ou8dQiaSu-bYkT_1HCey2qj25DycJIQSbO_4,31616
+pyscf_tblis.libs/libgomp-a34b3233.so.1.0.0,sha256=1GXGWfRf6XU3wOEAn66x6m5ApWQt3_3un8G3PAcyQh4,168192
+pyscf_tblis-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyscf_tblis-0.1.1.dist-info/RECORD,,
+pyscf_tblis-0.1.1.dist-info/top_level.txt,sha256=-PTes7ZVYfXPi-AIPAMR9vCJdPaFCLjwxfdldz9UUpA,6
+pyscf_tblis-0.1.1.dist-info/METADATA,sha256=ywQIH0ByUPG0XGzpdP-WbnmWKj-umP9KsLwFr0kVSoU,223
+pyscf_tblis-0.1.1.dist-info/WHEEL,sha256=EjVUHcRA6cVHktvlEeAQhKZU45UU3RXT6KA75hRQziY,132

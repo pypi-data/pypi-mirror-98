@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyscf-tblis
+Version: 0.1.1
+Summary: A wrapper of TBLIS library
+Home-page: UNKNOWN
+Author: Pyscf Developer
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
