@@ -1,0 +1,12 @@
+README.md
+setup.py
+zegami_sdk/__init__.py
+zegami_sdk/_collection_methods.py
+zegami_sdk/_row_methods.py
+zegami_sdk/stats.py
+zegami_sdk/zegami_client.py
+zegami_sdk.egg-info/PKG-INFO
+zegami_sdk.egg-info/SOURCES.txt
+zegami_sdk.egg-info/dependency_links.txt
+zegami_sdk.egg-info/requires.txt
+zegami_sdk.egg-info/top_level.txt

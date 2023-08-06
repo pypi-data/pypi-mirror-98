@@ -1,0 +1,10 @@
+colorama
+importlib-metadata
+keyring
+twine
+pathlib
+numpy
+pandas
+Pillow
+requests
+xlrd
