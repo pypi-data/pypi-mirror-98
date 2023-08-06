@@ -1,0 +1,10 @@
+README.md
+interface_schema.py
+provide_interface.py
+require_interface.py
+setup.py
+serialized_data_interface.egg-info/PKG-INFO
+serialized_data_interface.egg-info/SOURCES.txt
+serialized_data_interface.egg-info/dependency_links.txt
+serialized_data_interface.egg-info/requires.txt
+serialized_data_interface.egg-info/top_level.txt
