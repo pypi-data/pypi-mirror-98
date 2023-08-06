@@ -1,0 +1,8 @@
+cryptography
+
+[test]
+coverage
+flake8
+pytest
+pytest-django
+tox

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dj-smail
+Version: 0.7.0
+Summary: Simple S/MIME e-mails with Django
+Home-page: https://gitlab.com/rhab/dj-smail
+Author: Robert Habermann
+Author-email: mail@rhab.de
+License: MIT
+Description: # Django SMail
+        
+        This
+        
+        ## Requirements
+        
+        * Python 3.6+
+        
+Keywords: smime cryptography email S/MIME encrypt sign django
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Security :: Cryptography
+Description-Content-Type: text/markdown
+Provides-Extra: test
