@@ -1,0 +1,26 @@
+Changelog
+=========
+
+1.2.0
+-----
+ - removed support for Python < 3.7
+ - updated synchronizer exceptions
+ - updated FTP synchronizer handler
+
+1.1.1
+-----
+ - updated scheduler generations updater order
+
+1.1.0
+-----
+ - added task copy hook
+ - added action to duplicate an existing task
+
+1.0.1
+-----
+ - updated Gitlab-CI configuration
+ - removed Travis-CI configuration
+
+1.0.0
+-----
+ - initial release
