@@ -1,0 +1,7 @@
+d8s-hashes
+d8s-json
+d8s-user-agents
+requests
+
+[:python_version < "3.8"]
+importlib-metadata
