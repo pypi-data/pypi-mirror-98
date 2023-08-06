@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: sari-field-definitions-generator
+Version: 0.2.7
+Summary: A generator for Field Definitions for ResearchSpace and Metaphacts
+Home-page: https://github.com/swiss-art-research-net/sari-field-definitions-generator.git
+Author: Florian Kräutli
+Author-email: florian.kraeutli@uzh.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pybars3
+Requires-Dist: PyYAML
+
+# SARI Field Definitions Generator
+
+A generator for Metaphacts/ResearchSpace field definitions
+
+## Installations
+
+install using pip
+
+```sh
+pip install sariFieldDefinitionsGenerator
+```
+
+## Usage
+
+Define field definitions as a Python dict or in an external yaml file:
+
+```yaml
+prefix: http://rs.swissartresearch.net/instances/fields/
+
+fields:
+
+    - id: {unique identifier}
+      label: {label}
+      description: {description}
+      dataType: {datatype}
+      domain: {domain}
+      range: {range}
+      minOccurs: #
+      maxOccurs: #
+      queries:
+        - ask: '{ask query}'
+        - delete: '{delete query}'
+        - insert: '{insert query}'
+        - select: '{select query}'
+        - valueSet: '{value set query}'
+
+    - ...
+```
+
+Then, load and compile it using the generator
+
+```python
+from sariFieldDefinitionsGenerator import generator
+
+inputFile = './fieldDefinitions.yml'
+outputFile = '../ldp/assets/fieldDefinitions.trig'
+
+model = generator.loadSourceFromFile(inputFile)
+
+output = generator.generate(model, generator.METAPHACTS)
+
+with open(outputFile, 'w') as f:
+    f.write(output)
+```
+
+Available templates are:
+- `generator.METAPHACTS` for Metaphacts Open Source Platform
+- `generator.RESEARCHSPACE` for ResearchSpace
+- `generator.UNIVERSAL` for both platforms
+
