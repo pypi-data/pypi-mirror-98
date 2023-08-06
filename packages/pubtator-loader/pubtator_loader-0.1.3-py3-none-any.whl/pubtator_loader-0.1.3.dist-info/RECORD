@@ -1,0 +1,12 @@
+pubtator_loader/__init__.py,sha256=GQLa3z1AZYuGz3lE0GqwcrlJnuscJ2wI3H39x3biBus,116
+pubtator_loader/__version__.py,sha256=jgPiCfsvEhVfEGoIAIdx_Q0HH6kU-NPl8VRSMZ106Gk,429
+pubtator_loader/pubtator_corpus_reader.py,sha256=oHeYzJWrE72NR0-67iZu3D7Lsiyd1FypyjnjAnWMxmU,4572
+pubtator_loader/models/__init__.py,sha256=nonJgsC1DmsAcZC6jWQfIvrs3iL81VLctagMs3DL0ZA,108
+pubtator_loader/models/pubtator_document.py,sha256=mXdC16DaZFbpAgArAuhWQywTJL0NPHXmyXQJa_k403c,5896
+pubtator_loader/models/pubtator_entities.py,sha256=nZ98tm8jti4hykAdA9qi9X2QskSszvrO7pKBYvfG8_g,862
+pubtator_loader-0.1.3.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+pubtator_loader-0.1.3.dist-info/METADATA,sha256=GNdumOsI03Nz3_W0f1gamGKGgqTPGwKqOaxG4BYD7FQ,4264
+pubtator_loader-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pubtator_loader-0.1.3.dist-info/top_level.txt,sha256=2FXFhhxKVL1640DYvhL9d_JZV_g3apOHQeGk7UVrKDQ,16
+pubtator_loader-0.1.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pubtator_loader-0.1.3.dist-info/RECORD,,
