@@ -1,0 +1,2 @@
+[flake8.extension]
+sxl = flake8_sphinx_links:Plugin
