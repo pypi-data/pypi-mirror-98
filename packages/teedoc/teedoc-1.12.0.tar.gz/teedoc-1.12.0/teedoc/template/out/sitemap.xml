@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+            <loc>https://teedoc.neucrack.com/get_started/zh/index.html</loc>
+            <lastmod>2021-03-10T23:09:36.297455</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://teedoc.neucrack.com/get_started/en/index.html</loc>
+            <lastmod>2021-03-10T23:09:43.644697</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://teedoc.neucrack.com/develop/zh/index.html</loc>
+            <lastmod>2021-03-10T23:10:29.114965</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+        <url>
+            <loc>https://teedoc.neucrack.com/develop/en/index.html</loc>
+            <lastmod>2021-03-10T23:14:06.080072</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>1.0</priority>
+        </url>
+    </urlset>
