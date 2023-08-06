@@ -1,0 +1,16 @@
+README.md
+setup.py
+europlexo/__init__.py
+europlexo/config.json
+europlexo/europlexo.py
+europlexo/linkfinder.py
+europlexo/manage.py
+europlexo/seriesfinder.py
+europlexo.egg-info/PKG-INFO
+europlexo.egg-info/SOURCES.txt
+europlexo.egg-info/dependency_links.txt
+europlexo.egg-info/entry_points.txt
+europlexo.egg-info/requires.txt
+europlexo.egg-info/top_level.txt
+europlexo/dispatcher/deltabit.py
+europlexo/dispatcher/turbovid.py
