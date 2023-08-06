@@ -1,0 +1,11 @@
+openremote_cli/cli.py,sha256=c7YLEsnDIwMyCvggt-z-oiMAy-5DzczmNIi8UTWW6IA,17480
+openremote_cli/config.py,sha256=-JQT7dplzlaMVa7MO8_NMSEi-FImQLM-EUr8g4EaJGg,2673
+openremote_cli/email.py,sha256=2faqB7NL6bVMcH1hPGmiNBYxlClygYkl6lQm4hkVlk0,1795
+openremote_cli/gen_aws_smtp_credentials.py,sha256=KZrYFIiCrhB7ohNGinNPWQWq0EyOrwME3YTFMiPo6K0,2010
+openremote_cli/scripts.py,sha256=kSMtgIruDEGP8E_j-vpeY01XFaM8ocCURQEX3cOJEBo,13987
+openremote_cli/shell.py,sha256=XS6VftrPWTiDu2xHI7Num6Ul0SlYKonAYyW1f8p3Us0,1272
+openremote_cli-0.4.5.dist-info/entry_points.txt,sha256=3Do4gh-Emfdoi5SzjTxT5n4HKD71gRcjttkTFvCgFDc,85
+openremote_cli-0.4.5.dist-info/LICENSE.txt,sha256=jGZSGW5Hk2Avg4frjZgxutZBrHwoaG6Rxl7TfdeNaQ0,153837
+openremote_cli-0.4.5.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+openremote_cli-0.4.5.dist-info/METADATA,sha256=tUl6U7P90T5LBb1mSeA1Q30l-hoI-gtpYo36hfQME_w,4342
+openremote_cli-0.4.5.dist-info/RECORD,,
