@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: kakao.py
+Version: 0.0.1
+Summary: Can use it to save or recall preferences from Python.
+Home-page: https://github.com/jhleekr/kakao.py
+Author: jhleekr
+Author-email: jhlee@bfy.kr
+License: UNKNOWN
+Description: # kakao.py
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
