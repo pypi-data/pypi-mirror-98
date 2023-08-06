@@ -1,0 +1,15 @@
+pytest_docker_git_fixtures/__init__.py,sha256=1oYrxcVLOQdr9KOpt2WEz96tCuSXQLGK5aPTk4Vklhg,202
+pytest_docker_git_fixtures/conftest.py,sha256=zzQUsNf9q4RbeduCFKVr3kUavAHL9-ibWO0XhutRZes,2000
+pytest_docker_git_fixtures/docker-compose.yml,sha256=8ijDYPmCyI5vIW4fjx_pVB-RvgmPEzJvlMeeexTl2qE,2144
+pytest_docker_git_fixtures/fixtures.py,sha256=BylErRu-0uuLLV7k0TrvpUIYVcy8yTbLL9-ax2wi5C0,29723
+pytest_docker_git_fixtures/utils.py,sha256=eXahP5yIBuLUbeGBbs5UyQvKdLMuMK3PKbA-boYcPu0,12372
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=Dl-9JZ1nAeVCe4iAyAqV4jJsJqmrqgWC1DvRuruA-r8,850
+tests/test_fixtures.py,sha256=jWp7UJvo6wL6BibH_OlHiun5SMvUXI9F4nDyewDSiQc,21535
+tests/test_utils.py,sha256=-espVj9CeqE-lTV75o9k2LAGyx8tVUqGl9W-tfGfGLI,4858
+pytest_docker_git_fixtures-0.1.0.dist-info/LICENSE.md,sha256=OcSZCW8-6YpuAY4ybYt8DxlRRplUvf1nq-Qycr0K9s4,10759
+pytest_docker_git_fixtures-0.1.0.dist-info/METADATA,sha256=HAB3VOsVnPD3tyKSj2pS1ETp2auLsLwId2tCquJmBz0,14169
+pytest_docker_git_fixtures-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_docker_git_fixtures-0.1.0.dist-info/entry_points.txt,sha256=K28PWqoxL1WiVdpDGzKr0O_OhhnbYcY9F92585MiBMc,61
+pytest_docker_git_fixtures-0.1.0.dist-info/top_level.txt,sha256=A5faLZOc5SCrdU1rWqk9680nl0KHelDrxBfPbnjLd1s,33
+pytest_docker_git_fixtures-0.1.0.dist-info/RECORD,,

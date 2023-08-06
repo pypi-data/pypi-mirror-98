@@ -1,0 +1,47 @@
+#!/usr/bin/env docker-compose
+
+version: "3"
+services:
+  pytest-docker-git-insecure: &pytest-docker-git-insecure
+    container_name: $CONTAINER_NAME
+    environment:
+      PDGF_CREATE_REPOS: "$PDGF_CREATE_REPOS"
+      PDGF_MIRROR_REPOS: "$PDGF_MIRROR_REPOS"
+    image: crashvb/pytest-docker-git-fixtures-docker:59492290ac51
+    ports:
+    - "80/tcp"
+  pytest-docker-git-secure: &pytest-docker-git-secure
+    container_name: $CONTAINER_NAME
+    environment:
+      PDGF_CREATE_REPOS: "$PDGF_CREATE_REPOS"
+      PDGF_MIRROR_REPOS: "$PDGF_MIRROR_REPOS"
+    image: crashvb/pytest-docker-git-fixtures-docker:59492290ac51
+    ports:
+    - "443/tcp"
+    volumes:
+    - "$PATH_HTPASSWD:/srv/git/.htpasswd:ro"
+    - "$PATH_CERTIFICATE:/etc/ssl/certs/ssl-cert-snakeoil.pem:ro"
+    - "$PATH_KEY:/etc/ssl/private/ssl-cert-snakeoil.key:ro"
+
+  # If more than 10 are needed, or they need to be asymmetric, or whatever ...
+  # ... override docker-compose.yml or the corresponding fixture downstream ;)
+  pytest-docker-git-insecure-0: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-1: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-2: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-3: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-4: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-5: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-6: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-7: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-8: *pytest-docker-git-insecure
+  pytest-docker-git-insecure-9: *pytest-docker-git-insecure
+  pytest-docker-git-secure-0: *pytest-docker-git-secure
+  pytest-docker-git-secure-1: *pytest-docker-git-secure
+  pytest-docker-git-secure-2: *pytest-docker-git-secure
+  pytest-docker-git-secure-3: *pytest-docker-git-secure
+  pytest-docker-git-secure-4: *pytest-docker-git-secure
+  pytest-docker-git-secure-5: *pytest-docker-git-secure
+  pytest-docker-git-secure-6: *pytest-docker-git-secure
+  pytest-docker-git-secure-7: *pytest-docker-git-secure
+  pytest-docker-git-secure-8: *pytest-docker-git-secure
+  pytest-docker-git-secure-9: *pytest-docker-git-secure
