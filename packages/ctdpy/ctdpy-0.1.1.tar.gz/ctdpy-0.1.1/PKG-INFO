@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ctdpy
+Version: 0.1.1
+Summary: Package to handle CTD data
+Home-page: https://github.com/sharksmhi/ctdpy
+Author: Johannes Johansson
+Author-email: johannes.johansson@smhi.se
+License: UNKNOWN
+Description: 
+        Python 3 library developed by Shd at SMHI.
+        
+        - Handle high resolution oceanographic sensor-data (eg. CTD (SeaBird, Rinco), MVP (AML).
+        
+        
+        Installation
+        ------------
+        CTDpy can be installed from PyPI with pip:
+        
+        `pip install ctdpy`
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
