@@ -1,0 +1,8 @@
+jquote_api/__init__.py,sha256=iZoOYfZ8hJFJyou79kT9RIbkATO1Mr2dqTB-0AqqDsU,85
+jquote_api/common.py,sha256=ICwjmUUpFNW6CEbbJbPvSP7Y0UaACO4_2YgsPVBw3fU,1358
+jquote_api/getAStockCodeApi.py,sha256=yu7tb0w2NhZT_BhLhOjt7SpfT0PmvaB8wxOLdTTmnt0,106714
+jquote_api/getHKFinanceData.py,sha256=lOWdpGWojw-T8QN8ycda1ySWEuYXRzPRzdbrdiRUELg,39916
+jquote_api-1.0.6.8.dist-info/METADATA,sha256=6OCVqTRdz3JQqTXFeM3Er_OZQGJ_ZWJnVAn14RXvgd8,1138
+jquote_api-1.0.6.8.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+jquote_api-1.0.6.8.dist-info/top_level.txt,sha256=5hKlbzKaDNSMapZwPHi7KnlnooHPE6kR1Yj5_trDue4,11
+jquote_api-1.0.6.8.dist-info/RECORD,,
