@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: tamaas
+Version: 2.2.1
+Summary: A high-performance library for periodic rough surface contact
+Home-page: https://c4science.ch/tag/tamaas/
+Author: Lucas Frérot, Guillaume Anciaux, Valentine Rey, Son Pham-Ba, Jean-François Molinari
+Author-email: lucas.frerot@protonmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://c4science.ch/maniphest/query/1jDBkIDDxCAP/
+Project-URL: Documentation, https://tamaas.readthedocs.io/en/latest/
+Project-URL: Source Code, https://c4science.ch/source/tamaas/
+Platform: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Provides-Extra: all
+Requires-Dist: uvw ; extra == 'all'
+Requires-Dist: h5py ; extra == 'all'
+Requires-Dist: netCDF4 ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: mpi4py ; extra == 'all'
+Provides-Extra: dumpers
+Requires-Dist: uvw ; extra == 'dumpers'
+Requires-Dist: h5py ; extra == 'dumpers'
+Requires-Dist: netCDF4 ; extra == 'dumpers'
+Provides-Extra: mpi
+Requires-Dist: mpi4py ; extra == 'mpi'
+Provides-Extra: solvers
+Requires-Dist: scipy ; extra == 'solvers'
+
+
+# Tamaas - A high-performance library for periodic rough surface contact
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3479236.svg)](https://doi.org/10.5281/zenodo.3479236)
+[![status](https://joss.theoj.org/papers/86903c51f3c66964eef7776d8aeaf17d/status.svg)](https://joss.theoj.org/papers/86903c51f3c66964eef7776d8aeaf17d)
+[![Documentation Status](https://readthedocs.org/projects/tamaas/badge/?version=latest)](https://tamaas.readthedocs.io/en/latest/?badge=latest)
+
+Tamaas (from تماس meaning “contact” in Arabic and Farsi) is a
+high-performance rough-surface periodic contact code based on boundary and
+volume integral equations. The clever mathematical formulation of the underlying
+numerical methods allows the use of the fast-Fourier Transform, a great help in
+achieving peak performance: Tamaas is consistently two orders of magnitude
+faster (and lighter) than traditional FEM! Tamaas is aimed at researchers and
+practitioners wishing to compute realistic contact solutions for the study of
+interface phenomena.
+
+## Disclaimer
+
+This package is intended for ease of installation for Linux platforms, but comes
+with NO WARRANTY of compatibility (although it is manylinux2010_x86_64
+compliant). If you experience any issue, please install Tamaas from
+[source](https://c4science.ch/source/tamaas/). We provide a Docker image for
+non-Linux systems. Note that to satisfy the manylinux2010 requirements, the
+version of Tamaas provided by this package is not parallel.
+
+This version of Tamaas is statically linked to [FFTW3](http://fftw.org/)
+developed by Matteo Frigo and Steven G. Johnson, released under the terms of the
+GPL public license ([source code](https://github.com/FFTW/fftw3)).
+
+Tamaas is the result of a science research project. To give proper credit to
+Tamaas and the researchers who have developed the numerical methods that it
+implements, please cite the [JOSS
+paper](https://joss.theoj.org/papers/86903c51f3c66964eef7776d8aeaf17d) and the
+appropriate references therein.
+
+## Dependencies
+
+Essentials:
+
+- Numpy
+
+Optional:
+
+- Scipy (for non-linear solvers)
+- UVW (for dumpers)
+- h5py (for dumpers)
+- netCDF4 (for dumpers)
+
+To install with all dependencies, run ``pip install
+tamaas[solvers,dumpers]``.
+
+## Documentation
+
+Documentation can be found on [tamaas.readthedocs.io](https://tamaas.readthedocs.io/en/latest/).
+
+
