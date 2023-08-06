@@ -1,0 +1,3 @@
+include README.md
+include LICENSE
+include mangodl/mangodl_logging/mangodl_logging.ini
