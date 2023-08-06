@@ -1,0 +1,12 @@
+{{ '{%' }}extends "app/base.html" {{ '%}' }}
+{{ '{%' }} load static {{ '%}' }}
+
+{{ '{%' }}load thumbnail {{ '%}' }}
+{{ '{%' }} load django_tables2 {{ '%}' }}
+{{ '{%' }} block content_title {{ '%}' }} List {{name}} {{ '{%' }} endblock{{ '%}' }}
+{{ '{%' }}block content{{ '%}' }}
+
+    {{ '{%' }} render_table table {{ '%}' }}
+
+    <a class="btn btn-primary pull-right" href="{{ '{%' }} url '{{name | lower}}_create' {{ '%}' }}">Create {{name}}</a>
+{{ '{%' }}endblock{{ '%}' }}

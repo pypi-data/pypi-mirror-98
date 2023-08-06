@@ -1,0 +1,16 @@
+from django_tables2 import Table, TemplateColumn
+from .models import {{ name }}
+
+class {{name}}Table(Table):
+
+    detail = TemplateColumn(template_name='table/detail.html')
+
+    edit = TemplateColumn(template_name='table/edit.html')
+
+    delete = TemplateColumn(template_name='table/delete.html')
+
+    class Meta:
+        model = {{name}}
+        fields = [{{attributes | map(attribute='name') | map("tojson") | join(", ")}}]
+        template_name = 'django_tables2/bootstrap.html'
+

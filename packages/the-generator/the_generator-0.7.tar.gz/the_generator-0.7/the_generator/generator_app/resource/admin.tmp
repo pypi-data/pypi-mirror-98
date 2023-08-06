@@ -1,0 +1,12 @@
+from django.contrib import admin
+from .models import *
+from .forms import *
+
+class {{name}}Admin(admin.ModelAdmin):
+    form = {{name}}Form
+    search_fields = [{{attributes | map(attribute='name') | map("tojson") | join(", ")}}]
+    list_display = [{{attributes | map(attribute='name') | map("tojson") | join(", ")}}]
+    readonly_fields = [ 'created', 'updated']
+
+# Register your models here.
+admin.site.register({{name}}, {{name}}Admin)

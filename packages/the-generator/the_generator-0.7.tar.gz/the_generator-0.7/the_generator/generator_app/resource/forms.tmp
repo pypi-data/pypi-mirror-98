@@ -1,0 +1,9 @@
+from django import forms
+from .models import {{ name }}
+
+class {{name}}Form(forms.ModelForm):
+    {% for attribute in attributes %}{% if attribute.custom_widget | length > 0 %}{{attribute.name}} = {{attribute.type_form}}({% for custom_widget_item in attribute.custom_widget%}{{custom_widget_item.name}}={{custom_widget_item.value}}, {% endfor %}){% endif %} {% endfor %}
+
+    class Meta:
+        model = {{name}}
+        fields = [{{attributes | map(attribute='name') | map("tojson") | join(", ")}}]

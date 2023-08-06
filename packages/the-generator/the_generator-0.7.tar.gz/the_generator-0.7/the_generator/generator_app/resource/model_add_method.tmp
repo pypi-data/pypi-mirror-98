@@ -1,0 +1,16 @@
+
+    def get_absolute_url(self):
+        return reverse('{{ name | lower}}_detail', args=(self.{{ identifier }},))
+
+    def get_update_url(self):
+        return reverse('{{ name | lower}}_update', args=(self.{{ identifier }},))
+
+    def get_delete_url(self):
+        return reverse('{{ name | lower}}_delete', args=(self.{{ identifier }},))
+
+    def get_list_url(self):
+        return reverse('{{ name | lower}}_list')
+
+    def get_create_url(self):
+        return reverse('{{ name | lower}}_create')
+    

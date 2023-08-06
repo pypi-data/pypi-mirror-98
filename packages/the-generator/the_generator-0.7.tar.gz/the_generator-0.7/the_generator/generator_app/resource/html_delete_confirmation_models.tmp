@@ -1,0 +1,29 @@
+{{ '{%' }} extends "app/base.html" {{ '%}' }}
+{{ '{%' }} load static {{ '%}' }}
+{{ '{%' }} load thumbnail {{ '%}' }}
+
+{{ '{%' }} load django_tables2 {{ '%}' }}
+{{ '{%' }} load crispy_forms_tags {{ '%}' }}
+{{ '{%' }} block content_title {{ '%}' }} {{ '{{' }} object.title {{ '}}' }} {{ '{%' }} endblock {{ '%}' }}
+{{ '{%' }} block content {{ '%}' }}
+    <table class="table">
+        <tbody>
+         {% for attribute in attributes %}
+            <tr>
+                <td>{{attribute.name}}</td>
+                <td>{{'{{'}} object.{{attribute.name}} {{'}}'}}</td>
+            </tr>
+         {% endfor %}
+
+        </tbody>
+    </table>
+
+<form method="post" >
+     {{ '{%' }} csrf_token {{ '%}' }}
+
+    <p>Do you want to delete this data?</p>
+
+    <button class="btn btn-danger" type="submit">Delete</button>
+</form>
+
+{{ '{%' }} endblock {{ '%}' }}

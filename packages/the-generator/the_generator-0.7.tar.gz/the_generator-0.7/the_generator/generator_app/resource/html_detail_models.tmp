@@ -1,0 +1,24 @@
+{{ '{%' }} extends "app/base.html" {{ '%}' }}
+{{ '{%' }} load static {{ '%}' }}
+{{ '{%' }} load thumbnail {{ '%}' }}
+
+{{ '{%' }} load django_tables2 {{ '%}' }}
+{{ '{%' }} load crispy_forms_tags {{ '%}' }}
+{{ '{%' }} block content_title {{ '%}' }} {{ '{{' }} object.title {{ '}}' }} {{ '{%' }} endblock {{ '%}' }}
+{{ '{%' }} block content {{ '%}' }}
+    <table class="table">
+        <tbody>
+         {% for attribute in attributes %}
+            <tr>
+                <td>{{attribute.name}}</td>
+                <td>{{'{{'}} object.{{attribute.name}} {{'}}'}}</td>
+            </tr>
+         {% endfor %}
+            
+        </tbody>
+    </table>
+<a class="btn btn-primary pull-right" href="{{ '{{' }} object.get_update_url {{ '}}' }}"><i class="fa fa-arrow-left"></i> Edit {{name}}</a>
+{{ '{%' }} endblock {{ '%}' }}
+{{ '{%' }} block bottom_content {{ '%}' }}
+<a class="btn btn-primary pull-right" href="{{ '{%' }} url '{{name | lower}}_list' {{ '%}' }}"><i class="fa fa-arrow-left"></i> Daftar {{name}}</a>
+{{ '{%' }} endblock bottom_content{{ '%}' }}
