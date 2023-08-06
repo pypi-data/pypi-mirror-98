@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: understatapi
+Version: 0.1.0
+Summary: An API for scraping data from understat.com
+Home-page: https://github.com/collinb9/understatAPI
+Author: collinb9
+Author-email: brendan.m.collins@outlook.com
+License: MIT
+Project-URL: Source, https://github.com/collinb9/understatAPI/
+Description: # understatAPI
+        This is an API for scraping data from [understat.com](https://understat.com/)
+        
+        ## Installation
+        
+Keywords: statistics xG expected goals fpl fantasypremier league understat football
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
