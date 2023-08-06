@@ -1,0 +1,13 @@
+strongarm_dataflow/__init__.py,sha256=AoY2MoJhaOEWRRHtPWefeB_wiHezRRSj2tr-wGzh7cI,472
+strongarm_dataflow/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+strongarm_dataflow/dataflow.cpython-37m-x86_64-linux-gnu.so,sha256=svJZISJib1vqpGcfZ9bcuDcEEAc_HhC41uav5qbagVk,1315912
+strongarm_dataflow/register_contents.py,sha256=roEVoLHIsXdSm93Pq3xpIsj5Iwvnh0t0HHW2C_7b7gw,423
+strongarm_dataflow-2.1.5.dist-info/METADATA,sha256=QUrIVjX6UqEhsng44-VLjoZbOkeI-v0uKVK3-Qhjpck,291
+strongarm_dataflow-2.1.5.dist-info/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+strongarm_dataflow-2.1.5.dist-info/RECORD,,
+strongarm_dataflow-2.1.5.dist-info/top_level.txt,sha256=roOFCgTozP4Xfiy43w1iQjmkDfq0SV99MQ_wyJF7KxM,19
+strongarm_dataflow-2.1.5.dist-info/WHEEL,sha256=cCcIocQWsRcjbZ8DFZU6x3YDrwDcwVuuUbwJVUWc_xU,112
+strongarm_dataflow.libs/libsqlite3-3f823c23.so.0.8.6,sha256=T10gIMoMWoEORUCKvBKwMqZFM51v5xdB7mKcSrxLbrM,1185912
+strongarm_dataflow.libs/libcapstone-31d449f9.so.3,sha256=tpNShAp9sH0huWX6Lnx32BYQrp1qJsOmWX1XEE0aDb4,2810776
+strongarm_dataflow.libs/libz-d8a329de.so.1.2.7,sha256=TPmfoKCYwPrsKf_tCAyS7ZPxeFBs3dblHo4fcos-9hw,96272
+strongarm_dataflow-2.1.5.data/data/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
