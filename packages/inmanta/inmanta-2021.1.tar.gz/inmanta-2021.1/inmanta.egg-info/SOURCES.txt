@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+inmanta.egg-info/PKG-INFO
+inmanta.egg-info/SOURCES.txt
+inmanta.egg-info/dependency_links.txt
+inmanta.egg-info/requires.txt
+inmanta.egg-info/top_level.txt
