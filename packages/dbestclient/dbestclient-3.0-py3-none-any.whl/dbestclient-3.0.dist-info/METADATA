@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dbestclient
+Version: 3.0
+Summary: Model-based Approximate Query Processing (AQP) engine.
+Home-page: https://github.com/qingzma/DBEstClient
+Author: Qingzhi Ma
+Author-email: Q.Ma.2@warwick.ac.uk
+License: UNKNOWN
+Keywords: Approximate Query Processing AQP
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: sqlparse
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: qregpy
+Requires-Dist: scipy
+Requires-Dist: dill
+Requires-Dist: matplotlib
+Requires-Dist: torch
+Requires-Dist: category-encoders
+Requires-Dist: tox
+Requires-Dist: sphinx
+Requires-Dist: gensim
+
+DBEstClient
+
+

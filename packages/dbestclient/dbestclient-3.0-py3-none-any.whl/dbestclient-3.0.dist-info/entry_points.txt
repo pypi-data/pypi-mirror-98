@@ -1,0 +1,5 @@
+[console_scripts]
+dbestclient = dbestclient.main:main
+dbestmaster = dbestclient.main:master
+dbestslave = dbestclient.main:slave
+
