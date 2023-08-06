@@ -1,0 +1,10 @@
+fastpip/__init__.py,sha256=Hw4unoFyWz1lt_jXDN6T8ivXo5EPd_zEByuRJYEK-Jg,1442
+fastpip/errors.py,sha256=lIuRE1Qp6Kg3kT_s1vb3UzBSTvc7f9S89pHZQsNnj3Y,443
+fastpip/fastpip.py,sha256=H4Likg9-rfJJyzQlhb6dtTC0nsfL7stntVHGnBVhsMM,41257
+fastpip/findpath.py,sha256=yHoPCkcEy6TZkJXFv6bQ2foiTDahrSpNnDaERVVHtws,4228
+fastpip/versions.py,sha256=t9rjlWOhiDfJsc6z8cnQJ1L0om57f9kuRdWFbpWJN4o,255
+fastpip-0.10.0.dist-info/LICENSE,sha256=GGB-LFVkUdiKx2s4YAM3JmJYPgwn3krVatYZPTN5bLM,1060
+fastpip-0.10.0.dist-info/METADATA,sha256=4S61ha6GkvswsgoFupsVoDu6EzthJAJnBgDeDqCxcZY,5264
+fastpip-0.10.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastpip-0.10.0.dist-info/top_level.txt,sha256=2yDp5VAjiTL6dgMPUUnKorSx_gWX5MPBc-W4g1Y06-M,8
+fastpip-0.10.0.dist-info/RECORD,,
