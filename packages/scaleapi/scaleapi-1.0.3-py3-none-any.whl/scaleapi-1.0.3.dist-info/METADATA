@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: scaleapi
+Version: 1.0.3
+Summary: The official Python client library for Scale AI, the Data Platform for AI
+Home-page: https://github.com/scaleapi/scaleapi-python-client
+Author: Scale AI
+Author-email: support@scale.com
+License: UNKNOWN
+Keywords: scale,scaleapi,tasks,categorization,labeling,annotation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: requests (>=2.4.2)
+
+UNKNOWN
+
+
