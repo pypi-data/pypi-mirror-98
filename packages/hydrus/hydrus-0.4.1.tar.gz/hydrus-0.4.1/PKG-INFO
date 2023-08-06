@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: hydrus
+Version: 0.4.1
+Summary: Hydra Ecosystem Flagship Server. Deploy REST data for Web 3.0
+License: MIT
+Author: Hydra Ecosystem
+Requires-Python: >=3.5.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Flask (>=1.1.1,<1.2.0)
+Requires-Dist: Flask-Cors (>=3.0.8,<3.1.0)
+Requires-Dist: Flask-RESTful (>=0.3.7,<0.4.0)
+Requires-Dist: Flask-SocketIO (>=4.2.1,<4.3.0)
+Requires-Dist: Jinja2 (>=2.10.3,<2.11.0)
+Requires-Dist: Mako (>=1.1.0,<1.2.0)
+Requires-Dist: MarkupSafe (>=1.1.1,<1.2.0)
+Requires-Dist: PyYAML (>=5.2,<5.3)
+Requires-Dist: SQLAlchemy (>=1.3.12,<1.4.0)
+Requires-Dist: Werkzeug (>=0.16.0,<0.17.0)
+Requires-Dist: alembic (>=1.0.10,<1.1.0)
+Requires-Dist: aniso8601 (>=3.0.2,<3.1.0)
+Requires-Dist: appdirs (>=1.4.3,<1.5.0)
+Requires-Dist: blinker (>=1.4,<1.5)
+Requires-Dist: certifi (>=2019.11.28,<2019.12.0)
+Requires-Dist: click (>=7.1.2,<7.2.0)
+Requires-Dist: flake8 (>=3.8.3,<3.9.0)
+Requires-Dist: gevent (>=20.12.0,<20.13.0)
+Requires-Dist: gevent-websocket (>=0.10.1,<0.11.0)
+Requires-Dist: greenlet (>=0.4.17,<0.5.0)
+Requires-Dist: hydra_openapi_parser (>=0.2)
+Requires-Dist: hydra_python_core (>=0.2)
+Requires-Dist: itsdangerous (>=1.1.0,<1.2.0)
+Requires-Dist: lifter (>=0.4.1,<0.5.0)
+Requires-Dist: packaging (>=19.2,<19.3)
+Requires-Dist: pep8 (>=1.7.1,<1.8.0)
+Requires-Dist: persisting-theory (>=0.2.1,<0.3.0)
+Requires-Dist: psycopg2-binary (>=2.8.6,<2.9.0)
+Requires-Dist: pyparsing (>=2.4.6,<2.5.0)
+Requires-Dist: pytest (>=5.4.1,<5.5.0)
+Requires-Dist: python-dateutil (>=2.8.1,<2.9.0)
+Requires-Dist: python-editor (>=1.0.4,<1.1.0)
+Requires-Dist: python-engineio (>=3.11.2,<3.12.0)
+Requires-Dist: python-socketio (>=4.4.0,<4.5.0)
+Requires-Dist: pytz (>=2019.3,<2019.4)
+Requires-Dist: six (>=1.13.0,<1.14.0)
+Requires-Dist: thespian (>=3.9.11,<3.10.0)
