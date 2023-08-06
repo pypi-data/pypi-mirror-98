@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "awsxmltojson"
+version = "0.1.1"
+description = "Converts XML Responses from AWS API to JSON"
+homepage = "https://github.com/seveibar/awsxmltojson"
+readme = "README.md"
+authors = ["seveibar <seveibar@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+xmltodict = "^0.12.0"
+lxml = "^4.6.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
