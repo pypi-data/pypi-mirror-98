@@ -1,0 +1,8 @@
+setup.py
+stellagban/Client.py
+stellagban/__init__.py
+stellagban.egg-info/PKG-INFO
+stellagban.egg-info/SOURCES.txt
+stellagban.egg-info/dependency_links.txt
+stellagban.egg-info/requires.txt
+stellagban.egg-info/top_level.txt
