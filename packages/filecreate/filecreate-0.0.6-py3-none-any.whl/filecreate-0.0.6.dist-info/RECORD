@@ -1,0 +1,9 @@
+FileCreate/__init__.py,sha256=v3UQ6xq8XoF7ONFMDIUOyfnLuPhayTuber7EK4S75Lc,44
+FileCreate/filecreate.py,sha256=o0aiEZoLessDGfnrFvfY2ovcwdd-BGSWRWiKDhkS8jY,1639
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_FileCreate.py,sha256=SMcC47XOvpgyIj48P2j-a37IdnVNbz63C0mw021INFc,1090
+filecreate-0.0.6.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+filecreate-0.0.6.dist-info/METADATA,sha256=h53o4HOrBy03OUmdMdJRJF8b48aY5EXrX0lOy8fqla4,1321
+filecreate-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+filecreate-0.0.6.dist-info/top_level.txt,sha256=ZagMFC1bxKC81Dfcb1YpLHQTFU7ufiwTFvEVqDnRUCI,17
+filecreate-0.0.6.dist-info/RECORD,,
