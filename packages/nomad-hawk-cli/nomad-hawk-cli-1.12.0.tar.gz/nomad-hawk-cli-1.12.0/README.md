@@ -1,0 +1,1 @@
+This is the API descriptor for the Nomad Hawk API, responsible for tracking and analytics. # noqa: E501
