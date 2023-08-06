@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include GalDynPsrFreq *.py
+recursive-include GalDynPsrFreq *.in
+recursive-include GalDynPsrFreq *.txt
