@@ -1,0 +1,7 @@
+MANIFEST.in
+README.txt
+setup.py
+LibLearn.egg-info/PKG-INFO
+LibLearn.egg-info/SOURCES.txt
+LibLearn.egg-info/dependency_links.txt
+LibLearn.egg-info/top_level.txt
