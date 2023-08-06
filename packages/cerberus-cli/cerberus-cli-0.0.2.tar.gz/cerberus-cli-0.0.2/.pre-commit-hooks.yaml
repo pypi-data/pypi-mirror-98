@@ -1,0 +1,11 @@
+---
+- id: cerberus-validate
+  name: Validate files using Cerberus
+  description: >
+    This hook validate files using a schema provided in the required -s param.
+  entry: cerberus-validate
+  language: python
+  language_version: python3
+  minimum_pre_commit_version: 2.9.2
+  require_serial: true
+  types: [file, yaml]
