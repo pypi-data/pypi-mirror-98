@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+inifix/__init__.py
+inifix/_typing.py
+inifix/enotation.py
+inifix/idefix_conf.py
+inifix/io.py
+inifix/validation.py
+inifix.egg-info/PKG-INFO
+inifix.egg-info/SOURCES.txt
+inifix.egg-info/dependency_links.txt
+inifix.egg-info/requires.txt
+inifix.egg-info/top_level.txt
