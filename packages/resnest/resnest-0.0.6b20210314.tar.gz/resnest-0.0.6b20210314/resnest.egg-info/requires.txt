@@ -1,0 +1,8 @@
+numpy
+tqdm
+nose
+torch>=1.0.0
+Pillow
+scipy
+requests
+fvcore
