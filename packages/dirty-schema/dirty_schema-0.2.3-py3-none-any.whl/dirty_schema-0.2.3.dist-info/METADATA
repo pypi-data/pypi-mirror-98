@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dirty-schema
+Version: 0.2.3
+Summary: JSON schema for dirty models and dirty validators
+Home-page: https://github.com/alfred82santa/jsonschema4dm
+Author: alfred82santa
+Author-email: alfred82santa@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: dirty-models (>=0.11.3)
+Requires-Dist: dirty-validators
+
+==================================================
+JSON Schema for Dirty Models and Dirty Validations
+==================================================
+
+TBD
+
