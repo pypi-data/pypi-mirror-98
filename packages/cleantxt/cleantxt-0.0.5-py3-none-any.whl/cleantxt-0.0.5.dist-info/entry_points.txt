@@ -1,0 +1,3 @@
+[console_scripts]
+cleantxt = cleantxt.__main__:main
+
