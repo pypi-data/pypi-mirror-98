@@ -1,0 +1,8 @@
+d8s-hypothesis
+d8s-uuids
+hypothesis
+inflect
+more_itertools
+
+[:python_version < "3.8"]
+importlib-metadata
