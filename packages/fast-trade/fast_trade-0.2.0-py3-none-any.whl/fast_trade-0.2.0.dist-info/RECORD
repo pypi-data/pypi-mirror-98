@@ -1,0 +1,17 @@
+fast_trade/__init__.py,sha256=Wf8Gw1Mu6kckqDzXEKXsWQBpu1J0SUYhtBB6C2QsIHI,302
+fast_trade/__main__.py,sha256=ygoFUFeSg2C7sV_gyxbPKVKa8QvI7_QmM0nzlGxBtBw,71
+fast_trade/build_data_frame.py,sha256=qd1NPQb4GFeBWWg2vNlPyZGnJvroNXGYeZmVUkBu2VQ,7646
+fast_trade/build_summary.py,sha256=a0ighaMDaMuMWlifTz5l4TAwLg9Mndiqfyz8jsYxjnc,4720
+fast_trade/cli.py,sha256=9qw8ptYYU5Cjqbqt5SHgkuhvXqHIUgVQTDLyIdsXBk4,3271
+fast_trade/cli_helpers.py,sha256=ZFtaXEQJaZeOjEShBZwUlYHBoe1lIZcifveEJrI75E8,4515
+fast_trade/run_analysis.py,sha256=5ZSFWVHUKyrMAtCgUzdBeOtC5-Wb1eBTkT3PI1TwFRs,3758
+fast_trade/run_backtest.py,sha256=Pq5zYCIlCWFM9Cxue9rDs2TBT_q4W1NBtMd_kMaxjU0,7436
+fast_trade/transformers_map.py,sha256=yIaCO_WxVhiQ9ndk36I1wTBT47l67nfuRob2w-Zxb90,1824
+fast_trade/update_symbol_data.py,sha256=L_SSWV8iV9-aZaVurmP-9oe6UHQ4Td59vvlg7aBUinc,13020
+fast_trade/validate_backtest.py,sha256=kcxlWPlXOipA6idOg41LV4zf9UlkHgk_-_neBoypnFA,5097
+fast_trade-0.2.0.dist-info/LICENSE,sha256=OdXr6fsIhfXTbt3Zpx3ENShFNvKYucu_hcxEb-8DYRk,34505
+fast_trade-0.2.0.dist-info/METADATA,sha256=7erXynkGt55r0W2Qaa5v_5-HPeb9dRamd7L0MVCJPC0,16809
+fast_trade-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fast_trade-0.2.0.dist-info/entry_points.txt,sha256=aj8HNopHQpwltEqa8CNi-C4n9GWmQx6ehY5blGlAHh8,44
+fast_trade-0.2.0.dist-info/top_level.txt,sha256=L43S-Ld0WCwh4fzxx_V1RnFaIqkid6QrB3a4jln7_Ds,11
+fast_trade-0.2.0.dist-info/RECORD,,
