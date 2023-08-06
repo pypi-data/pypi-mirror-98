@@ -1,0 +1,3 @@
+[console_scripts]
+tracklater = tracklater.__init__:run
+
