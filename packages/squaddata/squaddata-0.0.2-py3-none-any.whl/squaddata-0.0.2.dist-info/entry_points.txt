@@ -1,0 +1,3 @@
+[console_scripts]
+squad_report = squaddata.cli:report
+

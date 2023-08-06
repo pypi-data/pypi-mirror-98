@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: squaddata
+Version: 0.0.2
+Summary: squad data
+Home-page: https://gitlab.com/linaro/lkft/reports/squaddata
+Author: LKFT
+Author-email: lkft@linaro.org
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: requests-cache
+Requires-Dist: squad-client
+
+# squaddata
+Create datasets and reports from [squad](https://github.com/Linaro/squad)
+
+## Installation
+Use [pip](https://pip.pypa.io/en/stable/) to install from [gitlab](https://gitlab.com/Linaro/lkft/reports/squaddata)
+```
+pip install https://gitlab.com/Linaro/lkft/reports/squaddata/-/archive/master/squaddata-master.tar.gz
+```
+
+## Examples
+Create a report from a `squad` project
+```
+squad_report --group=lkft --project=linux-next-master --build=next-20210223 full
+```
+
+Create a report that shows build results for all environments
+```
+squad_report --group=lkft --project=linux-next-master --build=next-20210223 --suites=build full
+```
+
+Create a report that shows build results for the `arm64` environment
+```
+squad_report --group=lkft --project=linux-next-master --build=next-20210223 --suites=build --environments=arm64 full
+```
+
+Create a report that shows `kselftest` results
+```
+squad_report --group=lkft --project=linux-next-master --build=next-20210223 --suite-prefixes=kselftest full
+```
+
+## Usage
+```
+usage: squad_report [-h] [--url URL] [--token TOKEN]
+       [--group GROUP] [--project PROJECT] [--build BUILD] [--base-build BASE_BUILD]
+       [--environments ENVIRONMENTS | --environment-prefixes ENVIRONMENT_PREFIXES]
+       [--output OUTPUT]
+       [--suites SUITES | --suite-prefixes SUITE_PREFIXES]
+       [--template TEMPLATE]
+       [--unfinished]
+
+Create a report using data from SQUAD
+
+positional arguments:
+  report                Type of report to create
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --url URL             URL of the SQUAD service
+  --token TOKEN         Authentication token of the SQUAD service
+  --group GROUP         SQUAD group
+  --project PROJECT     SQUAD project
+  --build BUILD         SQUAD build
+  --base-build BASE_BUILD
+                        SQUAD build to compare to
+  --environments ENVIRONMENTS
+                        List of SQUAD environments to include
+  --environment-prefixes ENVIRONMENT_PREFIXES
+                        List of prefixes of SQUAD environments to include
+  --output OUTPUT       Write the output to this file
+  --suites SUITES       List of SQUAD suites to include
+  --suite-prefixes SUITE_PREFIXES
+                        List of prefixes of SQUAD suites to include
+  --template TEMPLATE   Create the report with this template. Default=report
+  --unfinished          Compare with a build that has not finished
+```
+
+## Debugging
+
+To turn on debug output, set LOG_LEVEL=DEBUG in the environment.
+
+
+## Contributing
+[CONTRIBUTING.md](https://gitlab.com/Linaro/lkft/reports/squaddata/-/blob/master/CONTRIBUTING.md)
+
+## License
+[MIT](https://gitlab.com/Linaro/lkft/reports/squaddata/-/blob/master/LICENSE)
+
+

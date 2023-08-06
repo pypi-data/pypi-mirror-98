@@ -1,0 +1,15 @@
+squaddata/cli.py,sha256=49m7ENbgxdIJ9nzxLHqw2ArU7sDdJuvZpXRFpnwk-ls,4920
+squaddata/dataframe.py,sha256=MyPqkB8W23K2TuT0RhmEesaibC--4mTCGiAX2zY9Og4,2250
+squaddata/datasets.py,sha256=7Bc2paw0S_BgoRSEE-dCVOFDrgYaFc4Tz6mMu-xjwCM,2406
+squaddata/logging.py,sha256=ebNIgOq_sJ7_krZoxdcFfotJiRy0kpRZeOTBo3PwhCs,469
+squaddata/reports.py,sha256=_xGqJRaP_34-k67ndLZV_i5hEKOHbafapvpUeRtPfVs,1900
+squaddata/templates/report.txt.jinja,sha256=BF3QQcQBdPikiZHUp55a_yB59cy-XyDNPfSeRir2wEg,74
+squaddata/templates/report_full.txt.jinja,sha256=sAIKch-Y4pnbdE5XSJzA_3rWsWck4SF_rKt2n-G-H-I,634
+squaddata/templates/blocks/base.jinja,sha256=WPgTg0jflugFcr3bmII1yskgBWj6m6Efrqc1eZtpa78,1776
+squaddata/templates/blocks/signature.jinja,sha256=4_BSiHjyyZcyEgPRoG10Sc3WaF-4AOl3fhp2mxliwEs,39
+squaddata-0.0.2.dist-info/LICENSE,sha256=63Lk312upfzOT85_TsjdyA7DoLsJQta5_wZCdeuiTbM,1055
+squaddata-0.0.2.dist-info/METADATA,sha256=m10BxFWCP2YNVkuYUvmliTp1RZFwuZA3oFltGced6X0,3117
+squaddata-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+squaddata-0.0.2.dist-info/entry_points.txt,sha256=48RbO3UktDrR5znNa2PclAPRHwR_vOP5VSPhCH6D-4U,55
+squaddata-0.0.2.dist-info/top_level.txt,sha256=f4PIuVVgg7ZjrQFiBkWLiGbVpCGAfEOTFCEJCT9w12I,10
+squaddata-0.0.2.dist-info/RECORD,,
