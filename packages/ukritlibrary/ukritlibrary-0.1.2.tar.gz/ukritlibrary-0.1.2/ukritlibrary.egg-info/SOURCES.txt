@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+library/__init__.py
+library/myfunction.py
+ukritlibrary.egg-info/PKG-INFO
+ukritlibrary.egg-info/SOURCES.txt
+ukritlibrary.egg-info/dependency_links.txt
+ukritlibrary.egg-info/top_level.txt
