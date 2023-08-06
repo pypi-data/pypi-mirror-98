@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: litecow-models
+Version: 0.1.0
+Summary: 
+Author: Julian Medina
+Author-email: jmedina@striveworks.us
+Requires-Python: >=3.6.2,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.17.23,<2.0.0)
+Requires-Dist: boto3-stubs (>=1.17.23.0,<2.0.0.0)
+Requires-Dist: click
+Requires-Dist: mypy-boto3-s3 (>=1.17.23.0,<2.0.0.0)
+Requires-Dist: onnxruntime (>=1.7.0,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: torch (>=1.7.0,<2.0.0)
+Requires-Dist: tqdm (>=4.59.0,<5.0.0)
+Requires-Dist: urllib3 (>=1.26.3,<2.0.0)
