@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: info-gtk
+Version: 0.2.0
+Summary: CLI / SDK python info-gtk
+Keywords: dapodik,info-gtk,kemdikbud
+Author: hexatester
+Author-email: habibrohman@protonmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: attrs (>=20.3.0,<21.0.0)
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: json5 (>=0.9.5,<0.10.0)
+Requires-Dist: openpyxl (>=3.0.5,<4.0.0)
+Requires-Dist: requests (>=2.25.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Info GTK CLI
+
+[![PyPi Package Version](https://img.shields.io/pypi/v/info-gtk)](https://pypi.org/project/info-gtk/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/info-gtk)](https://pypi.org/project/info-gtk/)
+[![LICENSE](https://img.shields.io/github/license/dapodix/info-gtk)](https://github.com/dapodix/info-gtk/blob/main/LICENSE)
+[![Tests](https://github.com/dapodix/info-gtk/workflows/Tests/badge.svg)](https://github.com/dapodix/info-gtk/actions?query=workflow%3ATests)
+[![codecov](https://codecov.io/gh/dapodix/info-gtk/branch/main/graph/badge.svg)](https://codecov.io/gh/dapodix/info-gtk)
+
+CLI / SDK python [info-gtk](https://info.gtk.kemdikbud.go.id/).
+
+## Fitur yang akan datang
+
+Berikut fitur yang akan direncanakan untuk aplikasi ini.
+
+- Export data ke excel
+- Download / Print masal
+
+## Donasi
+
+Jika anda ingin melakukan donasi untuk kami, bisa menghubungi kami melalui [WhatsApp](https://wa.me/6287725780404) ataupun [Telegram](https://t.me/hexatester).
+
+## Legal / Hukum
+
+Kode ini sama sekali tidak berafiliasi dengan, diizinkan, dipelihara, disponsori atau didukung oleh Kemdikbud atau afiliasi atau anak organisasinya. Ini adalah perangkat lunak yang independen dan tidak resmi. _Gunakan dengan risiko Anda sendiri_.
+
