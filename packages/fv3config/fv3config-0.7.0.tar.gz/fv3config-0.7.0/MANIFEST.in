@@ -1,0 +1,14 @@
+
+include HISTORY.rst
+include LICENSE
+include README.rst
+include requirements.txt
+
+recursive-include fv3config/data *
+
+recursive-include tests *
+recursive-include tests/testdata *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif
