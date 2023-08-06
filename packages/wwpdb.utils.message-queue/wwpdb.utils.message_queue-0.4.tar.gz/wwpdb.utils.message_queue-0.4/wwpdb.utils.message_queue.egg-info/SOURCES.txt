@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+wwpdb/__init__.py
+wwpdb.utils.message_queue.egg-info/PKG-INFO
+wwpdb.utils.message_queue.egg-info/SOURCES.txt
+wwpdb.utils.message_queue.egg-info/dependency_links.txt
+wwpdb.utils.message_queue.egg-info/entry_points.txt
+wwpdb.utils.message_queue.egg-info/not-zip-safe
+wwpdb.utils.message_queue.egg-info/requires.txt
+wwpdb.utils.message_queue.egg-info/top_level.txt
+wwpdb/utils/__init__.py
+wwpdb/utils/message_queue/DetachedMessageConsumerExample.py
+wwpdb/utils/message_queue/MessageConsumerBase.py
+wwpdb/utils/message_queue/MessagePublisher.py
+wwpdb/utils/message_queue/MessageQueueConnection.py
+wwpdb/utils/message_queue/__init__.py
