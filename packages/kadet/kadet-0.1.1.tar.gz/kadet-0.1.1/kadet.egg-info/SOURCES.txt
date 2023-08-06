@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+LICENSES/Apache-2.0.txt
+kadet/__init__.py
+kadet.egg-info/PKG-INFO
+kadet.egg-info/SOURCES.txt
+kadet.egg-info/dependency_links.txt
+kadet.egg-info/requires.txt
+kadet.egg-info/top_level.txt
