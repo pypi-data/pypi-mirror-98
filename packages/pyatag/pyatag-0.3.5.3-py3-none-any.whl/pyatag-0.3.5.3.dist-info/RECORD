@@ -1,0 +1,12 @@
+pyatag/__init__.py,sha256=Q9mvuFBJwvBF8cG-9vDdaNl3HmDYtSSSer5bElt6qkA,168
+pyatag/const.py,sha256=rA_ZUP9ZohLbR8nGo-witqy7z3YTfn_PF3jLjMOzEDM,2210
+pyatag/discovery.py,sha256=KbxnEIcvn3VLmQmBJ21xmSfCv3_tNrVNMJ_G_TVtbEo,2095
+pyatag/entities.py,sha256=RHO-flDOzipBfu2Kp27j_hx3pDYBTqLflAGyPH3jZPM,9926
+pyatag/errors.py,sha256=9NtEiUrJ9HFEpuez9G8zrsY7i7hm7MjM-cfar0Umh0s,500
+pyatag/gateway.py,sha256=4k2Sau1ZQL4OUbyZYI2JjSq7I897tOE9h8Tkkn2Nkno,5984
+pyatag-0.3.5.3.dist-info/LICENSE.txt,sha256=0FexR4H3aaBa397pUU2ywlb-gku8cHWtuTFG-iBVaj8,1079
+pyatag-0.3.5.3.dist-info/METADATA,sha256=nWZ7pswWk7k8wenG-nzDBl1c8KoXZ4BroY5_WECnJ_c,494
+pyatag-0.3.5.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyatag-0.3.5.3.dist-info/top_level.txt,sha256=4bKovFWZG81LpN5nK13XEmXtJtlZNZSCyEXmKDZ9dgU,7
+pyatag-0.3.5.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyatag-0.3.5.3.dist-info/RECORD,,
