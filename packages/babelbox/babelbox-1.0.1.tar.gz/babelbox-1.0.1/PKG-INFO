@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: babelbox
+Version: 1.0.1
+Summary: A language localization generator for Minecraft
+Home-page: https://github.com/OrangeUtan/babelbox
+License: MIT
+Keywords: minecraft,lang,csv,json,localization,translation
+Author: Oran9eUtan
+Author-email: Oran9eUtan@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/OrangeUtan/babelbox
+Description-Content-Type: text/markdown
+
+![](https://img.shields.io/github/license/orangeutan/babelbox)
+![](https://img.shields.io/badge/python-3.8|3.9-blue)
+[![](https://img.shields.io/pypi/v/babelbox)](https://pypi.org/project/babelbox/)
+![](./coverage.svg)
+![](https://img.shields.io/badge/mypy-checked-green)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![](https://img.shields.io/badge/pre--commit-enabled-green)
+![](https://github.com/orangeutan/babelbox/workflows/test/badge.svg)
+
+# Babelbox
+Babelbox allows you to write your language files in the CSV format and then generate Minecraft language files from them.<br>
+Creating translations in CSV gives you an easy overview over any errors or missing languages.<br>
+
+## Install
+`pip install bablebox`
+
+## Usage
+`babelbox <src_dir> [dest_dir]`<br>
+Finds all `.csv` files in the source directory and generates minecraft language files
+
+# Example
+Lets assume we have two csv files "items.csv" and "blocks.csv" in the folder "resourcepack/assets/minecraft/lang":
+
+| String             | en       | de         |
+| ------------------ | -------- | ---------- |
+| item.stick.name    | stick    | Stock      |
+| item.snowball.name | snowball | Schneeball |
+
+| String             | en      | de      |
+| ------------------ | ------- | ------- |
+| block.grass.name   | grass   | Gras    |
+| block.diamond.name | diamond | Diamant |
+
+Lets run `babelbox resourcepack/assets/minecraft/lang`<br>
+Babelbox will now create the two language files "en.json" and "de.json" in the folder "resourcepack/assets/minecraft/lang":<br>
+```json
+{
+    "item.stick.name": "stick",
+    "item.snowball.name": "snowball",
+    "block.grass.name": "grass",
+    "block.diamond.name": "diamond"
+}
+```
+```json
+{
+    "item.stick.name": "Stock",
+    "item.snowball.name": "Schneeball",
+    "block.grass.name": "Gras",
+    "block.diamond.name": "Diamant"
+}
+```
+
