@@ -1,0 +1,17 @@
+napari
+napari-plugin-engine>=0.1.4
+napari-ndtiffs
+tifffile>=2020.8.13
+imlib
+bg_space
+bg-atlasapi
+
+[dev]
+black
+pytest-cov
+pytest
+gitpython
+coverage>=5.0.3
+bump2version
+pre-commit
+flake8
