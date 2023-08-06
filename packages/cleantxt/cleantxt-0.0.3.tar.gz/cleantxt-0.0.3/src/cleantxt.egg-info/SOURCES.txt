@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/cleantxt/__init__.py
+src/cleantxt/text.py
+src/cleantxt.egg-info/PKG-INFO
+src/cleantxt.egg-info/SOURCES.txt
+src/cleantxt.egg-info/dependency_links.txt
+src/cleantxt.egg-info/top_level.txt

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: cleantxt
+Version: 0.0.3
+Summary: cleaning text from noise for nlp tasks
+Home-page: https://github.com/jemiaymen/cleantxt
+Author: Aymen Jemi
+Author-email: jemiaymen@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jemiaymen/cleantxt/issues
+Description: # cleantxt
+        
+        cleaning text from noise for nlp tasks
+        
+        ## installation 
+        with pip
+        
+        `pip install cleantxt`
+        
+        install from source
+        
+        `git clone https://github.com/jemiaymen/cleantxt.git`
+        
+        go to the cleantxt directory
+        
+        `cd cleantxt`
+        
+        install with pip
+        
+        `pip install .`
+        
+        ## usage
+        
+        import text module
+        
+        `from cleantxt import text`
+        
+        clean text
+        
+        `txt = text.clean_text('mella khaaaaaarya hadddddda mta3 @rassssssssssse la@__mbbbbbbouuutt     tfih')`
+        
+        print the result
+        
+        `mella kharya hada mta3 rase lambout tfih`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
