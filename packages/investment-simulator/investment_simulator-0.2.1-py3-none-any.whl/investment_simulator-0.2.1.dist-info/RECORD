@@ -1,0 +1,11 @@
+LICENSE,sha256=Jw5VrDhmlktBJaFm3l3nCMueOlaJhZZgQUZLHDgB9FM,1071
+investment_simulator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+investment_simulator/allocations.py,sha256=KaRqgSkR0hlUrEsHiBgjbEg3CRoLwuyqSYP2-027O4I,2492
+investment_simulator/contributions.py,sha256=WiiY67SCDxINqJHntXOQbVeMu7MqwXcIwRtwyaDXFas,3068
+investment_simulator/portfolios.py,sha256=oqBtxHwjt5iCxxWjQllvWZbyXfiaohjkAcK8uHiJtk4,5231
+investment_simulator/tax.py,sha256=Qm5vd8rAWF4neZfVKsTVMfmMPH-cJNWzxi8AvhGuWek,2104
+investment_simulator/utils.py,sha256=PMysPmKRWrLEvZdP6TDxX0pWmQLQvgXSxEhCaKaVmNQ,2986
+investment_simulator-0.2.1.dist-info/LICENSE,sha256=Jw5VrDhmlktBJaFm3l3nCMueOlaJhZZgQUZLHDgB9FM,1071
+investment_simulator-0.2.1.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+investment_simulator-0.2.1.dist-info/METADATA,sha256=3jz1xnCyqp25Hz6Ngqme5qrKvSsCB1qnjlTclxWm4_o,8057
+investment_simulator-0.2.1.dist-info/RECORD,,
