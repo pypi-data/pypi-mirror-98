@@ -1,0 +1,6 @@
+democritus-hypothesis
+democritus-uuids
+hypothesis
+importlib-metadata; python_version < '3.8'
+inflect
+more_itertools
