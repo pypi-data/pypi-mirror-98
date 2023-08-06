@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: ethmeet
+Version: 1.6.0a2
+Summary: 'ethmeet' stands for 'Ethical Meeting'. A video-communication webdriver library. API compatible with most famous platforms.
+Home-page: https://github.com/elleaech/ethmeet
+Author: Lo Han
+Author-email: lohan.uchsa@protonmail.com
+License: UNKNOWN
+Keywords: bot firefox automation browser selenium meeting zoom google
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: bleach (==3.3.0)
+Requires-Dist: build (==0.2.1)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cffi (==1.14.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: cryptography (==3.4.4)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: idna (==2.10)
+Requires-Dist: jeepney (==0.6.0)
+Requires-Dist: keyring (==22.0.1)
+Requires-Dist: packaging (==20.9)
+Requires-Dist: pep517 (==0.9.1)
+Requires-Dist: pkginfo (==1.7.0)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: Pygments (==2.7.4)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: readme-renderer (==28.0)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.4.0)
+Requires-Dist: SecretStorage (==3.3.1)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tqdm (==4.56.2)
+Requires-Dist: twine (==3.3.0)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: webencodings (==0.5.1)
+
+# ethmeet
+Video-chat API. Compatible with most famous platforms.
+
+> 'ethmeet' stands for 'Ethical Meeting'.
+
+## Installation
+Pip:
+```shell script
+pip3 install ethmeet && python3 /usr/local/bin/gecko_install.py
+```
+> NOTE: ethmeet uses Firefox as its standard browser
+
+## Docs
+- [ethmeet Basic Usage & API Reference](https://github.com/elleaech/ethmeet/blob/master/docs/ethmeet.md)
+
+## Contributing & Issue Tracker
+Branch & [Pull Request](https://github.com/elleaech/ethmeet/pulls)
+- [Issues](https://github.com/elleaech/ethmeet/issues)
+
+### Get source
+```shell script
+git clone git@github.com:elleaech/ethmeet.git && cd ethmeet
+
+python3 -m virtualenv . && pip3 install -r requirements.txt
+```
+
+## License
+[Apache License 2.0](https://github.com/elleaech/ethmeet/blob/master/LICENSE)
+
+
