@@ -1,0 +1,8 @@
+README.rst
+setup.py
+fpclib/__init__.py
+fpclib.egg-info/PKG-INFO
+fpclib.egg-info/SOURCES.txt
+fpclib.egg-info/dependency_links.txt
+fpclib.egg-info/requires.txt
+fpclib.egg-info/top_level.txt
