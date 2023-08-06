@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: dynamite-cli
+Version: 0.1.2
+Summary: 
+Home-page: https://github.com/softwarebloat/dynamite-cli
+License: MIT
+Author: softwarebloat
+Author-email: softwarebloat@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.17.3,<2.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Documentation, https://github.com/softwarebloat/dynamite-cli
+Project-URL: Repository, https://github.com/softwarebloat/dynamite-cli
+Description-Content-Type: text/markdown
+
+# Dynamite-cli
+
+A cli to copy dynamo table items to another table
+
+## Requirements
+You need [poetry](https://python-poetry.org/) as a dependency manager
+
+## Installation
+`pip install dynamite-cli`
+
+## Usage
+You can print an help menu with `dynamite-cli --help`
+
+The **source table**, **source region**, **source profile** and **destination table** are `required` fields  
+If you don't specify a destination **region** and/or a destination **profile**, the source one are used.
+
+The `profile` field is used to retrieve the credentials to connect to your AWS account. So you need at least one account configured in your `.aws/credentials` file (*aws_access_key_id*, and *aws_secret_access_key*)
+
+
+> NOTE: the tables should have the same schema
+
+Example:
+`dynamite-cli <SRC_TABLE> <SRC_REGION> <SRC_PROFILE> <DST_TABLE> [DST_REGION] [DST_PROFILE]`
+
