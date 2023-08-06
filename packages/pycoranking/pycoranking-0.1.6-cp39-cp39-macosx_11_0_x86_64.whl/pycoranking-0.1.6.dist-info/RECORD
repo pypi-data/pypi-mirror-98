@@ -1,0 +1,11 @@
+coranking/__init__.py,sha256=z5BTmcmPlMYnSzRwaogSxkBJW6g2UOjv7tpCBRGFNjU,294
+coranking/_coranking.py,sha256=TS5RS0lRQmQ-jZuxvrkqWxQj3Bhulr9ApVpV031CTsA,946
+coranking/_metrics_cy.cpython-39-darwin.so,sha256=W5FC1M1kG0Uv2D_6ivuPzfz69BMQBY4xrKTm7JYQKtA,101600
+coranking/metrics.py,sha256=FXpuQZg48WXiPzoABGchV9VMZ_s0UkZrOlqgp4HbkHs,2426
+coranking/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coranking/test/metrics_test.py,sha256=qvnBCAku4NXOtouJDMDTGGPcX2ZGW3iMF9-G81SJaBA,2447
+pycoranking-0.1.6.dist-info/LICENSE.txt,sha256=RHU6EyVK_WlGt5gHWFidBj8SGM2QJhmPGcygjgjssgg,1082
+pycoranking-0.1.6.dist-info/METADATA,sha256=YMJ48or4ZGuE81_oxNSdVpykRWoo_L91Mqydg1NDKlo,359
+pycoranking-0.1.6.dist-info/WHEEL,sha256=xtefXou5QCWCZW0FXQMA4tiilsZ3Oa5LqOk3i-xYBVA,109
+pycoranking-0.1.6.dist-info/top_level.txt,sha256=6XVSR0SgOBUGvVLGK1-GNh-HwYjUnImT6nH5cgoXfW0,10
+pycoranking-0.1.6.dist-info/RECORD,,
