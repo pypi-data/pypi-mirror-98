@@ -1,0 +1,15 @@
+README.md
+setup.py
+xdem/__init__.py
+xdem/coreg.py
+xdem/dem.py
+xdem/examples.py
+xdem/spatial_tools.py
+xdem/spstats.py
+xdem/version.py
+xdem.egg-info/PKG-INFO
+xdem.egg-info/SOURCES.txt
+xdem.egg-info/dependency_links.txt
+xdem.egg-info/not-zip-safe
+xdem.egg-info/requires.txt
+xdem.egg-info/top_level.txt
