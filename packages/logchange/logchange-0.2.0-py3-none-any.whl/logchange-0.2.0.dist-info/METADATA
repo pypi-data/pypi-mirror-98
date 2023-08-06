@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: logchange
+Version: 0.2.0
+Summary: Keep-a-changelog manager
+Home-page: https://github.com/vemel/logchange
+Author: Vlad Emelianov
+Author-email: vlad.emelianov.nz@gmail.com
+License: MIT
+Project-URL: Documentation, https://logchange.readthedocs.io/en/latest/
+Project-URL: Source, https://github.com/vemel/logchange
+Project-URL: Tracker, https://github.com/vemel/logchange/issues
+Keywords: keep-a-changelog,ci,automation
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: newversion
+Requires-Dist: typing-extensions
+
+# logchange - Changelog manager
+
+View, update and format your changelog anywhere!
+
+## Features
+
+- Keeps your changelog in [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) style
+- Supports version bumping from [semver](https://pypi.org/project/semver/)
+- Comes with a CLI tool `logchange`
+- Respects MarkDown
+- Created for CI and scripts
+
+## Installation
+
+```bash
+python -m pip install logchange
+```
+
+## Usage
+
+### CLI
+
+See [examples/cli.sh](https://github.com/vemel/logchange/tree/main/examples/cli.sh) folder.
+
+```bash
+# create CHANGELOG.md if it does not exist
+# or reformat existing (please check changes manually)
+logchange init -f
+
+# add new release
+cat NOTES_0.1.0.md | logchange add 0.1.0
+# or
+logchange add 0.2.0 -i `cat NOTES_0.2.0.md`
+
+# update existing or create a new section in latest release
+logchange add latest added -i 'New feature'
+# or
+logchange add latest -i 'Added: New feature'
+
+# set unreleased section
+logchange set unreleased fixed -i 'Unreleased fix'
+
+# list released versions
+logchange list
+< 0.1.0
+< 0.2.0
+
+# check release notes sections
+logchange get 0.1.0 added
+< - New awesome feature
+< - Another feature
+```
+
+### GitHub Actions
+
+See [workflows](https://github.com/vemel/logchange/tree/main/examples/workflows) folder.
+
+## Versioning
+
+`logchange` version follows [PEP 440](https://www.python.org/dev/peps/pep-0440/).
+
+## Latest changes
+
+Full changelog can be found in [Releases](https://github.com/vemel/logchange/releases).
+
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to
+[PEP 440 -- Version Identification and Dependency Specification](https://www.python.org/dev/peps/pep-0440/).
+
+## [Unreleased]
+
+## [0.2.0] - 2021-03-14
+
+## [0.2.0rc9] - 2021-03-14
+
+## [0.2.0rc8] - 2021-03-14
+
+## [0.2.0rc7] - 2021-03-14
+
+## [0.1.2] - 2021-02-26
+
+## [0.1.2rc2] - 2021-02-26
+
+## [0.1.2rc1] - 2021-02-26
+### Added
+- `added <text>` CLI command to update `Unreleased` section
+- `changed <text>` CLI command to update `Unreleased` section
+- `deprecated <text>` CLI command to update `Unreleased` section
+- `removed <text>` CLI command to update `Unreleased` section
+- `fixed <text>` CLI command to update `Unreleased` section
+- `security <text>` CLI command to update `Unreleased` section
+- `release <version>` CLI command to move `Unreleased` section to release notes
+
+### Changed
+- Release notes can now have text other than keep-a-changelog entries
+- `get` command no longer raises an error on non-existing `CHANGELOG.md`
+- Added support for Python 3.6.10+
+
+### Fixed
+- Empty releases were not added to changelog
+- Codeblocks are no longer removed from release notes
+- Indented sections were not parsed properly
+
+## [0.1.1] - 2021-02-26
+Initial release
+
+

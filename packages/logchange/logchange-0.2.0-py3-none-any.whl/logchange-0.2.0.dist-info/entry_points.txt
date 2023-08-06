@@ -1,0 +1,3 @@
+[console_scripts]
+logchange = logchange.main:main_cli
+
