@@ -1,0 +1,25 @@
+{
+    "python.pythonPath": "/tmp/venv/bin/python3.8",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/tmp/venv/bin/flake8",
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/tmp/venv/bin/black",
+    "cSpell.words": [
+        "htmx",
+        "unmounting",
+        "wizer",
+        "workoutizer"
+    ],
+    "cSpell.ignoreWords": [
+        "aftersteg",
+        "capsys",
+        "dahn",
+        "gvfs",
+        "hinterzarten",
+        "kornau",
+        "mirow",
+        "raspbian",
+        "referer"
+    ],
+}

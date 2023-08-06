@@ -1,0 +1,13 @@
+{% include "plotting/bokeh_statics.html" %}
+
+<center>
+    Distribution of Sports Count:
+</center>
+<br>
+
+{{ script_pc | safe }}
+
+{% if div_pc %}
+    {{ div_pc | safe }}
+{% endif %}
+<br>
