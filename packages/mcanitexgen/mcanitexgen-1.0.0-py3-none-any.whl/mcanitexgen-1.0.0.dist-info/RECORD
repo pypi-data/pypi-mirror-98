@@ -1,0 +1,11 @@
+LICENSE,sha256=Hm0-dEby0JzGRveYCOZ4wKCkXDojUjgfpY_8aCOp-Gg,1070
+mcanitexgen/__init__.py,sha256=KFCEyH0djSJH_x6Na9gRgqkkFC6yOcQxgKifsVHD6aI,114
+mcanitexgen/__main__.py,sha256=2DSrSrRzTfZu9pqk_zFtAre4so7FpMya_kTD9SZ8ues,2711
+mcanitexgen/generator.py,sha256=LGpqK27BZhI9Vtf8BOg0GPy8L_ss7Ks5vPRpqIMCJuI,7557
+mcanitexgen/images2gif.py,sha256=GukOiZIqg2lX_O5txIhkCaEDuO-ai5Gi-JXUEJkvW1E,36507
+mcanitexgen/parser.py,sha256=fzpEtuHmS_dk8DTI0OtoEjUXlTYHiM6BLBijmdgJnlw,5714
+mcanitexgen/utils.py,sha256=P3OIXdDI49kgJ35AeoCte3GMTW4RHZPjKmEz08AllsM,1576
+mcanitexgen-1.0.0.dist-info/LICENSE,sha256=Hm0-dEby0JzGRveYCOZ4wKCkXDojUjgfpY_8aCOp-Gg,1070
+mcanitexgen-1.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mcanitexgen-1.0.0.dist-info/METADATA,sha256=witbrMs1LqnPsjJycph8eUSKdBWF48nTf3SrArVG074,4316
+mcanitexgen-1.0.0.dist-info/RECORD,,
