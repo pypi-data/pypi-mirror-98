@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: XBRLi_converter
+Version: 1.0
+Summary: Convert XBRLi documents into simple XBRL
+Home-page: https://github.com/filippo-ciceri/XBRLI_converter
+Author: Filippo Ciceri
+Author-email: filippo.ciceri@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
