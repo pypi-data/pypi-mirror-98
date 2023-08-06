@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: zenframe
+Version: 0.3.0
+Summary: Sandbox for computationally-graphical scripts
+Home-page: https://github.com/mirmik/zenframe
+Author: mirmik
+Author-email: netricks@protonmail.com
+License: MIT
+Keywords: sandbox
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5 (!=5.14.1)
+Requires-Dist: evalcache (>=1.11.0)
+Requires-Dist: psutil
+
+# zenframe
+Песочница для контроля и управления вычислительными графическими процессами.
+Проект обобщенного интерфейса вычислительной песочницы на существующего интерфейса zencad. 
+
+
