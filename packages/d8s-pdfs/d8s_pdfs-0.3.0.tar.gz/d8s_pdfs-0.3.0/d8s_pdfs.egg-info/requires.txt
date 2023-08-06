@@ -1,0 +1,7 @@
+d8s-file-system
+d8s-networking
+d8s-urls
+PyPDF2
+
+[:python_version < "3.8"]
+importlib-metadata
