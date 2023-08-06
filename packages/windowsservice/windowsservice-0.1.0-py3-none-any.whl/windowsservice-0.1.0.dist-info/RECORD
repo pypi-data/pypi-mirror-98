@@ -1,0 +1,10 @@
+windowsservice/__init__.py,sha256=ayYPCQvwu5y05d4cvG0ipydkHKIcJHUtCzdzWJxR5zs,34
+windowsservice/example_service.py,sha256=02VcfXaQcpNg6q14XYrxnUJb4F1hsPcr81tW9mP0214,1060
+windowsservice/example_service_multiprocessing.py,sha256=57s-9S6NyFxJC-HeS6e7Wo7LmCD0ZxZyhy3dS8hoT4k,920
+windowsservice/service.py,sha256=10_LowMAza7tFr8gO5wL--kZepnvh0sCeb3AjSLAF1s,3036
+windowsservice/utils.py,sha256=JrVRCZTNwu54ZEkRUvlrf6HEtUil52xk1Hil5lOKLeE,2839
+windowsservice-0.1.0.dist-info/LICENSE,sha256=5pS8Z680JzM1fNfsTeAEoOVOZpxw4VEUZKDBw7dy4hA,1088
+windowsservice-0.1.0.dist-info/METADATA,sha256=hnxA9RSCadNViOpDzpbxVvPK14-CeN14qvihlILpfBY,823
+windowsservice-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+windowsservice-0.1.0.dist-info/top_level.txt,sha256=lOmptLLh0eQLVCGReLCT0myBYQ3NhWykMTskKzaphLU,15
+windowsservice-0.1.0.dist-info/RECORD,,
