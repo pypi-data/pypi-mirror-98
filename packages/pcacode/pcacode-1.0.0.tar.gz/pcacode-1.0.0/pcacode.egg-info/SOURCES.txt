@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pcacode/__init__.py
+pcacode.egg-info/PKG-INFO
+pcacode.egg-info/SOURCES.txt
+pcacode.egg-info/dependency_links.txt
+pcacode.egg-info/requires.txt
+pcacode.egg-info/top_level.txt
+pcacode/data/2020年11月中华人民共和国县以上行政区划代码.xlsx
+pcacode/data/56_nations.xlsx
+test/test.py
