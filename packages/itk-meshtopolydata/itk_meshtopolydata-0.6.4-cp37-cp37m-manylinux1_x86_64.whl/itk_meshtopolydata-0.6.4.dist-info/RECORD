@@ -1,0 +1,11 @@
+itk_meshtopolydata-0.6.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_meshtopolydata-0.6.4.dist-info/METADATA,sha256=JDPHd63zyswZhAfGFOn1TBOYSBGUsKbBM0X_wKfy3OM,1567
+itk_meshtopolydata-0.6.4.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_meshtopolydata-0.6.4.dist-info/WHEEL,sha256=Iih2rMDmluTbX-Lhyg4bn2rbB1WWHkPeoA2YdBqhroY,102
+itk_meshtopolydata-0.6.4.dist-info/RECORD,,
+itk/MeshToPolyDataPython.py,sha256=SniGTjyFcs6bMdcGx4t3_9EMy4LMuJ6nXNiu8hra86o,2476
+itk/_MeshToPolyDataPython.so,sha256=2joCTtvVNYTBTK2n18M4eziRNgxau38SeissH21eWNs,2486024
+itk/itkPolyDataPython.py,sha256=5ezmkDjTyGChB92qk09NmCNU8cybwjdlejSxB1Fytk0,19512
+itk/itkMeshToPolyDataFilterPython.py,sha256=tC1O-u_ZC9bTIMVcxE331oMc_d0-t6Sxaeryr2p4gWc,55034
+itk/itkImageToPointSetFilterPython.py,sha256=wveXxgPsc82h7lVV5BVZ27TFeLz2lHUNGiQ--9Ktef4,27862
+itk/Configuration/MeshToPolyDataConfig.py,sha256=xOrhPcPIX8_F2UCU13TvFKsfuwiHRN_jCowzi0Zyno8,4631
