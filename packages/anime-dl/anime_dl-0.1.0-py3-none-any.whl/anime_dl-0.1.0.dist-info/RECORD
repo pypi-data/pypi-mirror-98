@@ -1,0 +1,9 @@
+LICENSE,sha256=hXA5xgJt4GK6TrMEjZhUVqGWXZB13hDbX1vdf5qPLQo,1068
+anime_dl/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+anime_dl/main.py,sha256=RE6c5muWzxFYSKowakVKHYwiwsYK2p3MX_fm5qBZkL8,3159
+anime_dl/scraper/__init__.py,sha256=JLUj36ORxhywLReHAh36ehCrUmDMe5b8yiXXxJ83QYo,2529
+anime_dl-0.1.0.dist-info/entry_points.txt,sha256=T2TwEUoPTs1oCL3Vsxr0gC8ax0mfy4GeeJ_tDHMKfpU,47
+anime_dl-0.1.0.dist-info/LICENSE,sha256=hXA5xgJt4GK6TrMEjZhUVqGWXZB13hDbX1vdf5qPLQo,1068
+anime_dl-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+anime_dl-0.1.0.dist-info/METADATA,sha256=JEGYlrN9fY23Y03TflmN1dz9fSwbsyfZJyw5dEgTb5c,1389
+anime_dl-0.1.0.dist-info/RECORD,,
