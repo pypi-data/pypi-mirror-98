@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+socatlord/__init__.py
+socatlord/parse_config.py
+socatlord/run.py
+socatlord.egg-info/PKG-INFO
+socatlord.egg-info/SOURCES.txt
+socatlord.egg-info/dependency_links.txt
+socatlord.egg-info/entry_points.txt
+socatlord.egg-info/requires.txt
+socatlord.egg-info/top_level.txt
+socatlord/systemd/socatlord.service
