@@ -1,0 +1,15 @@
+cima/goes/images/__init__.py,sha256=p2GbdVlq8ms6-HN__gLQZVbJzx0YoKwOPjynwgYF2zY,482
+cima/goes/images/clipping.py,sha256=1v2UflF-560WKb697BQdA5k8d7-jqQUGzmfrbDc5iqA,3108
+cima/goes/images/data_types.py,sha256=mVvcVJFkZDfFOf9-GP_t5FPvYCvp_D6lwvhXBvoD2Bw,6139
+cima/goes/images/dataset.py,sha256=YHzMJaK5uMAc8e6DQDdMGSI7myTnvmjY97nNbO5-VNw,2153
+cima/goes/images/figure_sizing.py,sha256=3fGYEif7OBUK9iFbHejhLyhz5Uz-bRLFpAk-LAsanBo,1607
+cima/goes/images/images.py,sha256=ous9_P_9G4Lx_Bbc7Wci_hna1tIdWNm6vvWcoE4QwMM,11815
+cima/goes/images/load_cpt.py,sha256=EfEQWtjnxAibdfuepnLKaNsBkXU2KsHuR5RHa8PqHLU,1708
+cima/goes/images/palettes.py,sha256=LXu_rss053Vu3qZ69UEXxlcFLhrCbFvjCAE9baNWyXk,1435
+cima/goes/images/smn_topes.cpt,sha256=GT-Q_4rPamxnEBOHAcWGdm53PzxhlwaTiLiQtQgDJDQ,7122
+cima_goes_images-0.1b4.data/data/LICENSE,sha256=GzS-Kj6RRLTiqIoWIyrx04FWV7hyYb8vpS8jO9VPlD0,1067
+cima_goes_images-0.1b4.dist-info/LICENSE,sha256=GzS-Kj6RRLTiqIoWIyrx04FWV7hyYb8vpS8jO9VPlD0,1067
+cima_goes_images-0.1b4.dist-info/METADATA,sha256=yAG_31Rh-eCfDtG-Sp5yjflZaimnkjUKD6su4zS3jW4,428
+cima_goes_images-0.1b4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cima_goes_images-0.1b4.dist-info/top_level.txt,sha256=rFlH6RmWWbeHVRs9uPoAQxlBD8xcFszS2K27a31Dwg4,5
+cima_goes_images-0.1b4.dist-info/RECORD,,
