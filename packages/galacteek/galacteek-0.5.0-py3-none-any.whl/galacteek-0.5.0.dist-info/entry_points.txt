@@ -1,0 +1,6 @@
+[console_scripts]
+galacteek-eth-master = galacteek.entrypoints.ethtool:ethTool
+
+[gui_scripts]
+galacteek = galacteek.guientrypoint:start
+
