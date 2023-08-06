@@ -1,0 +1,2 @@
+dpt-runtime>=2,<3
+dpt-threading>=2,<3
