@@ -1,0 +1,13 @@
+fastapi
+easyprocess
+python-multipart
+plac
+httptools
+aiofiles
+jinja2
+click
+uvicorn
+loguru
+
+[testing]
+webtest

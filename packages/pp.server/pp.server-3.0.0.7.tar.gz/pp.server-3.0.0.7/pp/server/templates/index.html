@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Produce &amp; Publish Server</title>
+    <meta name="keywords" content="Python,PDF,Produce and Publish,Converter,PrintCSS,CSS Paged Media,PDF generation" />
+    <meta name="description" content="Produce & Publish Server" />
+    <link href="/static/default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="header">
+      <img src="/static/pp-logo.png" /> 
+      <h1>Produce &amp; Publish Server</h1>
+      <h3>Server version: {{version}} </h3>
+      <h3>Python version: {{python_version}} </h3>
+      <h3>Converters: {{converters}} </h3>
+
+      {% if not show_versions %}
+          <a id="show-versions" href="?show_versions=1">Show converter versions</a>
+      {% endif %}
+
+      {% if show_versions %}
+          <table border="1">
+              <thead>
+                  <th>Converter</th>
+                  <th>Version</th>
+              </thead>
+              <tbody>
+                  {% for k in converter_versions %}
+                    <tr>
+                        <td>{{k}}</td>
+                        <td class="pre">{{ converter_versions[k] }}</td>
+                    </tr>
+                  {%endfor %}
+              </tbody>
+          </table>
+      {% endif %}
+
+  </div>
+  <br/>
+  <div id="footer">
+      (C) 2021, ZOPYX | 
+      <a href="http://www.produce-and-publish.com">Produce & Publish</a> | 
+      <a href="http://www.zopyx.com">ZOPYX/Andreas Jung</a> | 
+      <a href="mailto:info@zopyx.com">info@zopyx.com</a> | 
+      Published under the GNU Public License Version 2 (GPL 2)
+  </div>
+
+</body>
+</html>
