@@ -1,0 +1,12 @@
+ghettorecorder/StartGhetto.sh,sha256=pRTDCP8hAuEtrbukrBRQyselu9ijUhZ-m5OTCze7nhg,166
+ghettorecorder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ghettorecorder/run.py,sha256=POihT6ew91EVZPv2zMr4dddEHmFqawwwtiM5thvLlPM,57576
+ghettorecorder/settings.ini,sha256=WlU089N63U6yk2_e-WYGNZnQ1NVEKAIC0EdvEh63JM4,1123
+ghettorecorder/win.py,sha256=ZO4nwNcYgtPxGm6pQYWpU8DYmcQlIuOieApeUrsAV_I,27766
+ghettorecorder/lib/edit.py,sha256=5p9PHTRareKb3mL0cdIoKwQ0R3WeGIUuIjMfoGFJldg,1748
+ghettorecorder/lib/term.py,sha256=POihT6ew91EVZPv2zMr4dddEHmFqawwwtiM5thvLlPM,57576
+ghettorecorder-0.6.85.dist-info/LICENSE,sha256=ekKr_Sfbc0M4e_ev-ZOSA2kLhPh7modkRrG3zSfT2FU,1095
+ghettorecorder-0.6.85.dist-info/METADATA,sha256=46ScdhJTygeqQi2akCNgO2RxlVG3-UrBXZCP4x_ueO4,2413
+ghettorecorder-0.6.85.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ghettorecorder-0.6.85.dist-info/top_level.txt,sha256=g7YQMRq7uWaF9hQGj4v0kTBgWLrgfXHDKMoOSpY4ekA,15
+ghettorecorder-0.6.85.dist-info/RECORD,,
