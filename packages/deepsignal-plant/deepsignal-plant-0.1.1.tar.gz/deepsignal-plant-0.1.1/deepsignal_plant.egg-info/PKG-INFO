@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: deepsignal-plant
+Version: 0.1.1
+Summary: A deep-learning method for detecting DNA methylation state from Oxford Nanopore sequencing reads of plants
+Home-page: https://github.com/PengNi/deepsignal-plant
+Author: Peng Ni
+Author-email: 543943952@qq.com
+License: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/PengNi/deepsignal-plant/archive/0.1.1.tar.gz
+Description-Content-Type: UNKNOWN
+Description: deepsignal-plant
+        ================
+        
+        
+        Release
+        -------
+        
+        0.1.1
+        -----
+        fix bug and optimize call_mods without GPU, add call_freq funciton
+        
+        0.1.0
+        -----
+        Release the first vesrion of deepsignal-plant package
+Keywords: methylation,nanopore,neural network
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
