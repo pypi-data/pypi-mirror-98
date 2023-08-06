@@ -1,0 +1,4 @@
+cryptg
+python-dotenv==0.15.0
+sqlalchemy>=1.2
+telethon==1.19.5
