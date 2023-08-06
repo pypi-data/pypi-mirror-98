@@ -1,0 +1,7 @@
+text_gen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_gen/pytorch_textgen.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+text_gen/tensor_textgen.py,sha256=jU1vxw1L86P-y_yKMIAlNrSKkE6KRt5ozrDCcF3brs4,6227
+text_gen-0.3.0.dist-info/METADATA,sha256=5Al0T4aOfdqTLmtAKG0MgKC5K99SiIgyeA_06nt0FCc,429
+text_gen-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+text_gen-0.3.0.dist-info/top_level.txt,sha256=3QgdCkCAfvbXSckpHwh8mQitk4h8zmfBoJNRcidFN2g,9
+text_gen-0.3.0.dist-info/RECORD,,
