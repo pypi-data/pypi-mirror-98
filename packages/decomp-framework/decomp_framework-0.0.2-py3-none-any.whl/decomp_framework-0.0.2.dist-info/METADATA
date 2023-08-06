@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: decomp-framework
+Version: 0.0.2
+Summary: N64 Reverse Engineering Toolkit
+Home-page: https://github.com/N64RET/decomp-framework
+Author: M4xw
+Author-email: m4x@m4xw.net
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/N64RET/decomp-framework/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: cstruct
+Requires-Dist: Mako
+Requires-Dist: MarkupSafe
+
+N64 Decompilation Framework
+===========================
+
+For docs (TODO) please refer to: https://n64decomp.com/
+
+
