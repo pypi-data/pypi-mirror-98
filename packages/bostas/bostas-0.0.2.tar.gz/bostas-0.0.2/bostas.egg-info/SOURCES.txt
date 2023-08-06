@@ -1,0 +1,9 @@
+README.md
+setup.py
+bostas/__init__.py
+bostas/instabot.py
+bostas.egg-info/PKG-INFO
+bostas.egg-info/SOURCES.txt
+bostas.egg-info/dependency_links.txt
+bostas.egg-info/requires.txt
+bostas.egg-info/top_level.txt
