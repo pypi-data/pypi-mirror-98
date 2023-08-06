@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pipegen
+Version: 0.0.1
+Summary: CodePipeline Generator
+Home-page: UNKNOWN
+Author: Sam Jarrett
+Author-email: sam@samjarrett.com.au
+License: MIT
+Description: # pipegen
+        
+        <div align="center">
+          <img height="150px" src="docs/pipe.png" alt="A pixelated pipe">
+        </div>
+        
+        A CodePipeline/CodeBuild CI/CD Pipeline creator + deployer.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
