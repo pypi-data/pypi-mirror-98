@@ -1,0 +1,2 @@
+# econpy
+Econometrics in Python

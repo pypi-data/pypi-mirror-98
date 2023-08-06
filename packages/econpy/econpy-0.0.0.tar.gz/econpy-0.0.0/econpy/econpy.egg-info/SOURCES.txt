@@ -1,0 +1,6 @@
+README.md
+setup.cfg
+econpy/econpy.egg-info/PKG-INFO
+econpy/econpy.egg-info/SOURCES.txt
+econpy/econpy.egg-info/dependency_links.txt
+econpy/econpy.egg-info/top_level.txt
