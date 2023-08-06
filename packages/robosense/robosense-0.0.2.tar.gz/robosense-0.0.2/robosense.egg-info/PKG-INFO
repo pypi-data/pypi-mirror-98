@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: robosense
+Version: 0.0.2
+Summary: robosense lib
+Home-page: https://github.com/robosense
+Author: Wenjie Zheng
+Author-email: wjzheng@robosense.cn
+License: MIT Licence
+Description: This is robosense lib
+Keywords: pip,robosense
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
