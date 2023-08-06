@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "modoo"
+version = "0.1.0"
+description = "a CLI tool set for Modoo Corpus build"
+authors = ["Yeonwoo Kim <wiskingdom@gmail.com>"]
+
+[tool.poetry.scripts]
+mdcli = "modoo.cli:main"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
+openpyxl = "^3.0.7"
+jsonschema = "^3.2.0"
+typer = "^0.3.2"
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+autopep8 = "^1.5.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
