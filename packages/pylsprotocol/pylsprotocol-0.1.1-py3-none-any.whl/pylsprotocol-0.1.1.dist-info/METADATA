@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pylsprotocol
+Version: 0.1.1
+Summary: LS protocol enables you to operate PLC from computer.
+Home-page: https://github.com/byungguan-yoon/pylsprotocol
+Author: byungguan.yoon
+Author-email: bkaunyun@naver.com
+License: UNKNOWN
+Download-URL: https://github.com/byungguan-yoon/pylsprotocol/archive/main.zip
+Keywords: PLC,protocol,LS electric
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+# pylsprotocol
+LS protocol(LS electric Communication Protocol) implementation by Python. LS protocol enables you to operate PLC from computer.
+
