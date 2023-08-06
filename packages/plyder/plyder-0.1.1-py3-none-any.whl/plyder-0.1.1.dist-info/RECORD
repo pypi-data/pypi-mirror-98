@@ -1,0 +1,14 @@
+plyder/__init__.py,sha256=gAq1wvNTfqME5Oej6bqkGljMt6MHn0WxSRj5C7onegA,134
+plyder/app.py,sha256=z8lzyIpYNqKPktFONsvVjeM4Q5CQd6zb7aKS-jlTHjY,365
+plyder/downloader.py,sha256=NgYGUAdr6unS8wxTq1D5kO9qvKl7TxccTfhEnVy1o2k,1079
+plyder/main.py,sha256=4WIWesZPURi2FaroEMw6kl5g4-ieV0P8ClQ1rdcIOcA,177
+plyder/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plyder/routes/server.py,sha256=sBNtGHrnAs8wLhiDiVThcZVFiYnc1OXQHAdFmUCTQsE,1200
+plyder/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plyder/static/styles.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plyder/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plyder/templates/index.html,sha256=kS5v4aRJdBaw8q2SN1LIlK58IGMRKnEWMetKvbocqbI,1046
+plyder-0.1.1.dist-info/entry_points.txt,sha256=YsOSXecuVCWetmyI5GY7SJ46ziaPexfogyJ_Y-oFTtg,38
+plyder-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+plyder-0.1.1.dist-info/METADATA,sha256=c1r3RcXVlP15JcdsKXIff03GEH95jsw6MFOsdZ7Turo,1136
+plyder-0.1.1.dist-info/RECORD,,
