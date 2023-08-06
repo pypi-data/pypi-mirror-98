@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: hive-py
+Version: 0.0.2
+Summary: A library to make multi-process and multi-machine programs easy to write
+Home-page: https://bitbucket.org/james1345/hive/
+Author: James McMahon
+Author-email: james1345@googlemail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
