@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: bouter
+Version: 0.1.3
+Summary: A package for behavioral analysis in python with Stytra data
+Home-page: https://github.com/portugueslab/bouter
+Author: Vilim Stih, Hagar Lavian, Luigi Petrucco, Ot Prat @portugueslab
+Author-email: luigi.petrucco@gmail.com
+License: GNU General Public License v3
+Keywords: bouter
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: numba
+Requires-Dist: flammkuchen
+Provides-Extra: dev
+Requires-Dist: bump2version ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: watchdog ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: Sphinx ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-runner ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+
+.. image:: https://img.shields.io/pypi/v/bouter.svg
+        :target: https://pypi.python.org/pypi/bouter
+
+.. image:: https://travis-ci.com/portugueslab/bouter.svg?branch=master
+    :target: https://travis-ci.com/portugueslab/bouter
+
+.. image:: https://codecov.io/gh/portugueslab/bouter/branch/master/graph/badge.svg
+        :target: https://codecov.io/gh/portugueslab/bouter
+
+
+
+
+A package for behavioral analysis in python with Stytra data
+
+This package has been developed in the `Portugues lab`_. Documentation can be found `here`_.
+
+Features
+--------
+ * Analysis of head-embedded and freely-swimming experiment
+ * Bout statistics
+
+Credits
+-------
+
+The package was created with Cookiecutter_ and this_ template.
+
+.. _`Portugues lab`: http://www.portugueslab.com
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _this: https://github.com/audreyr/cookiecutter-pypackage
+.. _here: https://portugueslab.github.io/bouter
+
+
+=======
+History
+=======
+
+0.1.0 (2020-05-13)
+------------------
+
+* First release on PyPI.
+
+
