@@ -1,0 +1,3 @@
+[markdown.extensions]
+toc_ext=pymdown_toc_ext:TocExtExtension
+
