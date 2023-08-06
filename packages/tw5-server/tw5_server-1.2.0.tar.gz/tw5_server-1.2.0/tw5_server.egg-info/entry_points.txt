@@ -1,0 +1,3 @@
+[console_scripts]
+tw5-server = tw5_server.__main__:main
+
