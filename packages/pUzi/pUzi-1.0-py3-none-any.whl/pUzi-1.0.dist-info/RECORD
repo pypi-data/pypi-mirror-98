@@ -1,0 +1,10 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_uzireader.py,sha256=z-_su20EXFTzWMkJZNWHUa0wFk9i1-AGwZ_9EG3SAc0,3165
+uzireader/__init__.py,sha256=KOe3N6G7smuVURcrKr3dRlPa4m91q0XeAaBnXpJnzs4,3786
+pUzi-1.0.dist-info/LICENSE.pdf,sha256=MaGHSqU3LUYvLww4Y4QVc2CSYjHQsxmG8-z9ivBb1OM,340835
+pUzi-1.0.dist-info/LICENSE.txt,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+pUzi-1.0.dist-info/LICENSES.md,sha256=Wjt3FA20OQ7nlLgoGL4SYfbQQ3bGEDyggIgEaQ0fNb4,1595
+pUzi-1.0.dist-info/METADATA,sha256=JbL_NT0Wlqs4BDEdfywxhyA1TBxMOXQ29XMMHISol8w,2789
+pUzi-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pUzi-1.0.dist-info/top_level.txt,sha256=Z1GUmrcK53A1viY-4F4Tk3168PJmBr96ksHz2YPhV9E,16
+pUzi-1.0.dist-info/RECORD,,
