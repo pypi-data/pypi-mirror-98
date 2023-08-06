@@ -1,0 +1,5 @@
+[console_scripts]
+applykan = kantag.applykan:main
+initkan = kantag.initkan:main
+showkan = kantag.showkan:main
+
