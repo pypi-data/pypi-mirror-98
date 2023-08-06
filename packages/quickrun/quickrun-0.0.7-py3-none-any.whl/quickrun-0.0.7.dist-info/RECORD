@@ -1,0 +1,12 @@
+quickrun/__init__.py,sha256=PzRPB4Cd-fwQ7ORmzh2_S9XFVqM9n3Ej7i5rYVyZTGE,4327
+quickrun/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickrun/cli/aws.py,sha256=eFp8TNik9pdmB3yZu4bOgx6J7VHSWWH5QXIMQx5g5OM,2018
+quickrun/cli/helpers.py,sha256=IkOQ6u_1ztPRgOfj_3TaPDATE-lWp_lDbDjj6JegGl8,394
+quickrun/cli/ssh.py,sha256=yA5cNpiK9gXlfmD7q1iSUQDFZ5pmSdsKIeYTOmhTTHk,1056
+quickrun/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickrun/helpers/formatters.py,sha256=7QPTswurJHKzuCzJmrl3T4UztLSpAg1c_junFgq6_hA,863
+quickrun-0.0.7.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+quickrun-0.0.7.dist-info/METADATA,sha256=dPl_Q8yqV9Obl79tPBMMAPtxEskhPgSd6C9gB-wBZGc,4059
+quickrun-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quickrun-0.0.7.dist-info/top_level.txt,sha256=OcAucmKMt2QZBW2OfNon_A9xf-yibwjDYM9Ew8E4tpQ,39
+quickrun-0.0.7.dist-info/RECORD,,
