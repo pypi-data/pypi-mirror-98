@@ -1,0 +1,12 @@
+ctrs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctrs/setup.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctrs/layers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctrs/layers/layer.py,sha256=dNarR6PXBNAXtPjJPLuNzlfuaeu69hC5tI4RKjHONrg,10066
+ctrs/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ctrs/models/deepfm.py,sha256=RGagm7wW82uI35QpO0L8ze-Exvfnp0mFTa4XAUEWMwA,3050
+ctrs/models/fm.py,sha256=MnDYKh7XeCCgRIXcBXO004PnpyQRa6FGEtdaiGve6hk,2650
+CTRs-0.0.10.dist-info/LICENSE,sha256=aE47nIkemH6zRuXRepExLUGzrosqlMoKNM3ky27zZwg,1063
+CTRs-0.0.10.dist-info/METADATA,sha256=RioTKRKhYXkG89nTnWk_jr_t_iHsI_YaMKF4RuZY0P8,634
+CTRs-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+CTRs-0.0.10.dist-info/top_level.txt,sha256=3pFz4pJN3zgZ-tlDU-p0pNnaCKeWhoNLVzzHxD9J4AI,5
+CTRs-0.0.10.dist-info/RECORD,,
