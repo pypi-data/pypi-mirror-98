@@ -1,0 +1,7 @@
+README.md
+setup.py
+jotly.egg-info/PKG-INFO
+jotly.egg-info/SOURCES.txt
+jotly.egg-info/dependency_links.txt
+jotly.egg-info/requires.txt
+jotly.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: jotly
+Version: 0.0.1
+Summary: A Plotly wrapper for easy EDA graphing
+Home-page: https://github.com/adamerose/jotly
+Author: Adam Rose
+Author-email: adrotog@gmail.com
+License: UNKNOWN
+Description: ## About
+        
+        A Plotly wrapper for easy EDA graphing
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
