@@ -1,0 +1,9 @@
+README
+setup.py
+StevenTest88.egg-info/PKG-INFO
+StevenTest88.egg-info/SOURCES.txt
+StevenTest88.egg-info/dependency_links.txt
+StevenTest88.egg-info/top_level.txt
+pypi_stevenm/__init__.py
+pypi_stevenm/csv2text.py
+pypi_stevenm/text2csv.py
