@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: makeprimetanakiin
+Version: 0.0.1
+Summary: A simple prime number identifier
+Home-page: UNKNOWN
+Author: Tanay Reddy
+Author-email: tanakiins@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: prime
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

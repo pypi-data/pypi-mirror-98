@@ -1,0 +1,10 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+licence.txt
+setup.py
+makeprimetanakiin/__init__.py
+makeprimetanakiin.egg-info/PKG-INFO
+makeprimetanakiin.egg-info/SOURCES.txt
+makeprimetanakiin.egg-info/dependency_links.txt
+makeprimetanakiin.egg-info/top_level.txt
