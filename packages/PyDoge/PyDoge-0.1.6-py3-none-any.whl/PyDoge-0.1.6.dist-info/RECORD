@@ -1,0 +1,12 @@
+pydoge/__init__.py,sha256=QSZoxEzH6nGrSofH7ZbsIPrX_E1nnyNiiCGi9pbt2CE,189
+pydoge/config.py,sha256=vnRtJH9iM6Lq4AR7XSALhar301KMnsU2eA7T6xb4iBE,776
+pydoge/connection_dbcursor.py,sha256=UaRvmVs5Oa-ea50mRcOa_in_GDVBZdLVIb6xSwc6cr4,296
+pydoge/http_service.py,sha256=vdADb1gutQJYeV1VOOKgvAEpxy9AItvF1Pv0YTNI-Po,2845
+pydoge/logger.py,sha256=cz4vaWBTat1Vxd2HCaxDKOzHIP1HIB9OfHLdUUILRJ0,589
+pydoge/timestamp.py,sha256=MFZRIi1PPqSf0Hqa3bJafFcf4pNlgWpJKZob95rUn4c,530
+pydoge/utils.py,sha256=XTf-RCmjuhm32rZVTbfS_lEHN-z4hsWjB-dcKZxuEh8,2369
+PyDoge-0.1.6.dist-info/LICENSE,sha256=-CPQiNSVPkEKtbC1X7Saq7_YkSvNa9qadKmD_BWIgO8,1072
+PyDoge-0.1.6.dist-info/METADATA,sha256=3Sx0Mw6qkvKYtaQHe5VTpBqK2Rk_PcBGScFN6xifMWI,698
+PyDoge-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyDoge-0.1.6.dist-info/top_level.txt,sha256=hGeFA88T9bfxjLk0_Myw-qECbfJ9OtDC7plHRu8wwEM,7
+PyDoge-0.1.6.dist-info/RECORD,,

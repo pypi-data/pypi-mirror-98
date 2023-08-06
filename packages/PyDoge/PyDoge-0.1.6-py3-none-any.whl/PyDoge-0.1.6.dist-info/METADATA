@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PyDoge
+Version: 0.1.6
+Summary: A common functions and helpers library
+Home-page: https://github.com/ezeportela/pydoge
+Author: Ezequiel Portela
+Author-email: eportelab@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: YURL
+Requires-Dist: pyjwt (==2.0.0)
+Requires-Dist: pydash
+
+# PyDoge
+
+![alt logo](https://github.com/ezeportela/pydoge/raw/master/static/doge.png)
+
+A common functions and helpers library
+
+
