@@ -1,0 +1,3 @@
+[console_scripts]
+derive = derive_event.derive:main
+
