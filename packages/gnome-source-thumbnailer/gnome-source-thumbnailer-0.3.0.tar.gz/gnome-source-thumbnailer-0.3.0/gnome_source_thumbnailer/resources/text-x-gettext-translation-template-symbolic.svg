@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="text-x-gettext-translation-template-symbolic.svg"
+   inkscape:version="1.0rc1 (09960d6f05, 2020-04-09)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 4.2333332 4.2333335"
+   height="16"
+   width="16">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="1"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="703"
+     inkscape:window-width="1332"
+     units="px"
+     showgrid="true"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="text835"
+     inkscape:document-units="mm"
+     inkscape:cy="3.2442896"
+     inkscape:cx="26.935592"
+     inkscape:zoom="10.8"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base">
+    <inkscape:grid
+       dotted="true"
+       id="grid837"
+       type="xygrid" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:Nunito;letter-spacing:-0.0132292px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       id="text835"
+       aria-label="po">
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.65408px;line-height:1.25;font-family:Nunito;-inkscape-font-specification:Nunito;letter-spacing:-0.00995283px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0526669"
+         id="text882"
+         aria-label="pot">
+        <path
+           id="path884"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:Cantarell;stroke-width:0.0526669"
+           d="m 0.84204662,2.6819857 c 0.35564668,0 0.59451388,-0.2760244 0.59451388,-0.6900608 0,-0.3848416 -0.2202886,-0.6422874 -0.54939452,-0.6422874 -0.15128256,0 -0.29725695,0.055736 -0.40607423,0.1539367 L 0.42801015,1.3761783 H 0.27938168 V 3.2313802 H 0.49170807 V 2.5466276 c 0.0875846,0.087585 0.20967231,0.1353581 0.35033855,0.1353581 z M 0.49170807,2.2785655 v -0.599822 c 0.0902387,-0.090239 0.21498047,-0.1433204 0.33972223,-0.1433204 0.2388672,0 0.3928038,0.1910938 0.3928038,0.4830426 0,0.2866406 -0.1406662,0.4777344 -0.37157116,0.4777344 -0.15659072,0 -0.29194879,-0.084931 -0.36095487,-0.2176346 z" />
+        <path
+           id="path886"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:Cantarell;stroke-width:0.0526669"
+           d="m 2.2997978,2.6819857 c 0.3768794,0 0.631671,-0.2733703 0.631671,-0.6820986 0,-0.3954579 -0.2362131,-0.6502496 -0.599822,-0.6502496 -0.3768794,0 -0.629017,0.2707162 -0.629017,0.6794445 0,0.3954579 0.2335591,0.6529037 0.597168,0.6529037 z m 0.029195,-0.1857856 c -0.2468294,0 -0.4140365,-0.199056 -0.4140365,-0.4936589 0,-0.2839865 0.1512826,-0.4671181 0.3874957,-0.4671181 0.2468294,0 0.4166905,0.2017101 0.4166905,0.4936589 0,0.2813325 -0.1539366,0.4671181 -0.3901497,0.4671181 z" />
+        <path
+           id="path888"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Cantarell;-inkscape-font-specification:Cantarell;stroke-width:0.0526669"
+           d="m 3.7177385,2.6687153 c 0.087585,0 0.1751693,-0.021233 0.2362132,-0.047773 L 3.9061782,2.4670052 c -0.039811,0.018578 -0.098201,0.029195 -0.1433203,0.029195 -0.132704,0 -0.2202886,-0.084931 -0.2202886,-0.2123264 V 1.5540017 H 3.8929078 V 1.3761783 H 3.5425693 V 1.0019531 H 3.3302429 V 1.3761783 H 3.1577277 v 0.1778234 h 0.1725152 v 0.7590669 c 0,0.2123263 0.1539366,0.3556467 0.3874956,0.3556467 z" />
+      </g>
+    </g>
+  </g>
+</svg>
