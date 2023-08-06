@@ -1,0 +1,4 @@
+d8s-strings
+number-tools
+sympy
+importlib-metadata; python_version < '3.8'
