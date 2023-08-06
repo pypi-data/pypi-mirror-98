@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sdvi-rally
+Version: 0.1.0
+Summary: The Rally SDK
+Home-page: UNKNOWN
+Author: SDVI Corp
+License: Proprietary
+Description: # SDVI Decision Engine Rally Module
+        
+        A collection of classes and functions for interacting with SDVI Rally APIs.
+        
+        Refer to documentation found in your Rally Silo.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
