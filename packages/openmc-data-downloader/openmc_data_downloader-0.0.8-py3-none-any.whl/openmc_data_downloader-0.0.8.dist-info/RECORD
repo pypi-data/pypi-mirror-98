@@ -1,0 +1,10 @@
+openmc_data_downloader/__init__.py,sha256=s4pR9aywaWawJoDhP8rmA2c5wedNfuLn_sBhUsx6ezQ,518
+openmc_data_downloader/cross_sections_directory.py,sha256=E9B59mpFdWrYBk9E8mvBmkOG8WDjox_tmPDNgyzBoK8,14580
+openmc_data_downloader/utils.py,sha256=a8AWmH7S7MVRLoyeRVmu-u_VF_o2cA4NRNawiFK1Tqo,8101
+openmc_data_downloader-0.0.8.data/scripts/openmc_data_downloader,sha256=z73l4bxLJg8SpiyskZAw6L3OqhsHIO1ruKgFrCZxvjc,1919
+openmc_data_downloader-0.0.8.dist-info/LICENSE,sha256=9EBXM7fPM_Crwqr5j_fMU0lIAKu3AouIsaOyftUDVYc,1076
+openmc_data_downloader-0.0.8.dist-info/METADATA,sha256=-HZBjITiGoH_NhEqnFncoNgkMPqrC_ot3HtqYLiaoRI,6553
+openmc_data_downloader-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openmc_data_downloader-0.0.8.dist-info/top_level.txt,sha256=BtYpOnlaJ54XrxoOD6UA5wLFDChFqTlJYtQxF1T5J0E,23
+openmc_data_downloader-0.0.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+openmc_data_downloader-0.0.8.dist-info/RECORD,,
