@@ -1,0 +1,9 @@
+yahoo_prices/.DS_Store,sha256=xFn8ImmqH21IEzBMetxyrZjM_88p3vI2o3v3XRvzcvE,6148
+yahoo_prices/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+yahoo_prices/prices.db,sha256=5ta5dUMNLEYPKq48hPOD5_l0n0AANDqF8pT86lyv3fA,24576
+yahoo_prices/prices_table.py,sha256=RXLjROTlqY8qdJMUxZojvnIUDBbzCgXsmzMtkDm6SzU,1294
+yahoo_prices/update_db.py,sha256=lFR1_eLkafrogcJslrba4M4Z_FRJu4-l7qxqtilpedc,2815
+yahoo_prices/utils.py,sha256=Yd70jRnzXSreoqYDD_W-deAtFE_1VGxJGGuy3iXmvkk,1881
+yahoo_prices-0.3.6.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+yahoo_prices-0.3.6.dist-info/METADATA,sha256=4UxCM9jV38lIR_-fyWaggorqKG0Q7o5uM0TAvix8cWA,539
+yahoo_prices-0.3.6.dist-info/RECORD,,
