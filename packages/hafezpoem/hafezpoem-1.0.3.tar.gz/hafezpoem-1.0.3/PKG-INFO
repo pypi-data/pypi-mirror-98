@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: hafezpoem
+Version: 1.0.3
+Summary: Random poem of hafez for restaurant factor and other staff
+Home-page: UNKNOWN
+Author: Radesh Farokhmanesh
+Author-email: radesh.farokhmanesh@gmail.com
+License: MIT
+Description: give you random poem of hafez for factor and other staff
+        
+        USAGE:
+        from hafezpoem import get_random_fal
+        fal = get_random_fal()
+        print(fal)
+        
+        Change Log
+        ==========
+        1.0.2 (17/03/2021)
+        - add poem files
+        - add get random fal
+        
+        
+Keywords: hafez fal poem factor restaurant
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
