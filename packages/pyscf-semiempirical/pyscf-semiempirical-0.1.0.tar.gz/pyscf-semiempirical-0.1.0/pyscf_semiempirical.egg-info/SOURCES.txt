@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyscf/semiempirical/__init__.py
+pyscf/semiempirical/am1.py
+pyscf/semiempirical/mindo3.py
+pyscf/semiempirical/mopac_param.py
+pyscf/semiempirical/rmindo3_grad.py
+pyscf/semiempirical/umindo3_grad.py
+pyscf_semiempirical.egg-info/PKG-INFO
+pyscf_semiempirical.egg-info/SOURCES.txt
+pyscf_semiempirical.egg-info/dependency_links.txt
+pyscf_semiempirical.egg-info/requires.txt
+pyscf_semiempirical.egg-info/top_level.txt
