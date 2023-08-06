@@ -1,0 +1,10 @@
+boto3
+grapl-analyzerlib==0.2.72
+grapl-common==0.0.5
+graplinc-grapl-api==0.1.0
+mypy_boto3_dynamodb
+mypy_boto3_s3
+mypy_boto3_sqs
+requests
+typing_extensions
+zstd
