@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: torch-ort-poc
+Version: 0.0.6.dev20210314
+Summary: training Pytorch models with onnxruntime
+Home-page: https://github.com/pytorch/ort
+Author: torch_ort contributors
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/pytorch/ort/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: onnxruntime-gpu (>=1.7)
+Requires-Dist: torch (>=1.8)
+
+# training pytorch models with onnxruntime
+
+## to build (you need to update version number in version.txt in order to be able to upload python whl):
+    rm dist/*
+    python setup.py bdist_wheel
+
+## to publish:
+    twine upload dist/*
+
+## to install:
+### stable:
+    pip install torch-ort-poc
+
+### nightly:
+    pip install --pre torch-ort-poc
+
+## to use torch_ort within PyTorch training scripts:
+    import onnxruntime
+    from torch_ort import ORTModule
+    model = ORTModule(model)
+    # normal PyTorch training script follows
+
+
