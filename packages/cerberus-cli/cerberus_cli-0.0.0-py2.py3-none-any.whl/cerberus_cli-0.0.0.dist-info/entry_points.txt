@@ -1,0 +1,6 @@
+[console_scripts]
+cerberus-validator = cerberus_cli.validate:main
+
+[oslo.config.opts]
+cerberus-cli = cerberus_cli.config:list_opts
+
