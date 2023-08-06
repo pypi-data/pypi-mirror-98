@@ -1,0 +1,5 @@
+setup.py
+elulalib.obsmapper.egg-info/PKG-INFO
+elulalib.obsmapper.egg-info/SOURCES.txt
+elulalib.obsmapper.egg-info/dependency_links.txt
+elulalib.obsmapper.egg-info/top_level.txt
