@@ -1,0 +1,12 @@
+pkg1/__init__.py,sha256=sOs1lwHEpGvSmT0ldHzhnK4j3rhsgo-TS2uIUBiNQYo,47
+pkg1/__main__.py,sha256=knHWCnOvAdiUR4lVLu-bH242wPyZcHfF_T5MX_hfmi0,113
+pkg1/file1.py,sha256=aKnfwicxa9M7EmpGseoQSvT5XW9fG7tKb_qCr31Rv_s,34
+pkg1/file2.py,sha256=-SPOZceouOtowSWJXBgRpu5K6ydja2sUQ-drLEWWnJY,34
+pkg2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg2/file3.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg2/file4.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anis_package-1.0.0.dist-info/METADATA,sha256=WGcqNeyqOF1xvep2CIBv_iY0HOPtVRZvaRaoLqWkNPk,255
+anis_package-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+anis_package-1.0.0.dist-info/entry_points.txt,sha256=6FLyVLl1Et_5C7T2DpbmmYTxdZYbYx_MVT41J60WoE4,49
+anis_package-1.0.0.dist-info/top_level.txt,sha256=1Pl13knEbsXnVHg3Shtg7p5rJWBocA5gjPClTjS7RmM,10
+anis_package-1.0.0.dist-info/RECORD,,

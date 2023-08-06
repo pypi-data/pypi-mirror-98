@@ -1,0 +1,3 @@
+[console_scripts]
+mymain = reader.__main__:main
+
