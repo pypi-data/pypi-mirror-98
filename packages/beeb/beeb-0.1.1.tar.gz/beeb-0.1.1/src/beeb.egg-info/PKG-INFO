@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: beeb
+Version: 0.1.1
+Summary: A modern interface to the BBC Sounds radio catalogue
+Home-page: https://github.com/lmmx/beeb
+Author: Louis Maddox
+Author-email: louismmx@gmail.com
+License: MIT License
+Description: # beeb
+        
+        <img src="https://raw.githubusercontent.com/lmmx/beeb/master/beeb_logo.png" align="middle" height="464" width="760"/>
+        
+        A modern interface to the BBC Sounds radio catalogue
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: >=3
+Description-Content-Type: text/markdown
