@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+Setup.py
+requirements.txt
+setup.py
+SMRCBuilder/Comms.py
+SMRCBuilder/Exceptions.py
+SMRCBuilder/Input.py
+SMRCBuilder/Logs.py
+SMRCBuilder/__init__.py
+SMRCBuilder.egg-info/PKG-INFO
+SMRCBuilder.egg-info/SOURCES.txt
+SMRCBuilder.egg-info/dependency_links.txt
+SMRCBuilder.egg-info/top_level.txt
