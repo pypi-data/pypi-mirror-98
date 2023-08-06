@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: plugin-sdk-automation
+Version: 1.0.1
+Summary: Tools to automate extensions building and publishing
+Home-page: https://github.com/dlopes7/plugin-sdk-automation
+Author: David Lopes
+Author-email: david.lopes@dynatrace.com
+License: MIT
+Project-URL: Documentation, https://github.com/dlopes7/plugin-sdk-automation
+Project-URL: Source, https://github.com/dlopes7/plugin-sdk-automationp
+Project-URL: Changelog, https://github.com/dlopes7/plugin-sdk-automation
+Description: # Dynatrace Extensions Build Automation
+Keywords: dynatrace extension plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
