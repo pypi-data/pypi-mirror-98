@@ -1,0 +1,154 @@
+Functions related to terminals.
+
+*Latest release 20210316*:
+* ttysize: discard the Popen object earlier.
+* ttysize: close Popen.stdout after use. seems to leak.
+
+## Function `modify_termios(fd=0, set_modes=None, clear_modes=None, strict=False)`
+
+Apply mode changes to a tty.
+Return the previous tty modes as from `termios.tcgetattr`
+or `None` if the changes could not be applied.
+If `strict`, raise an exception instead of returning `None`.
+
+Parameters:
+* `fd`: optional tty file descriptor, default `0`.
+* `set_modes`: an optional  mapping of attribute name to new value
+  for values to set
+* `clear_modes`: an optional  mapping of attribute name to new value
+  for values to clear
+* `strict`: optional flag, default `False`;
+  if true, raise exceptions from failed `tcgetattr` and `tcsetattr` calls
+  otherwise issue a warning if the errno is not `ENOTTY` and proceed.
+  This aims to provide ease of use in batch mode by default
+  while providing a mode to fail overtly if required.
+
+The attribute names are from
+`iflag`, `oflag`, `cflag`, `lflag`, `ispeed`, `ospeed`, `cc`,
+corresponding to the list entries defined by the `termios.tcgetattr`
+call.
+
+For `set_modes`, the attributes `ispeed`, `ospeed` and `cc`
+are applied directly;
+the other attributes are binary ORed into the existing modes.
+
+For `clear_modes`, the attributes `ispeed`, `ospeed` and `cc`
+cannot be cleared;
+the other attributes are binary removed from the existing modes.
+
+For example, to turn off the terminal echo during some operation:
+
+    old_modes = apply_termios(clear_modes={'lflag': termios.ECHO}):
+        ... do something with tty echo disabled ...
+    if old_modes:
+        termios.tcsetattr(fd, termios.TCSANOW, old_modes)
+
+## Function `setupterm(*args)`
+
+Run curses.setupterm, needed to be able to use the status line.
+Uses a global flag to avoid doing this twice.
+
+## Function `stack_termios(fd=0, set_modes=None, clear_modes=None, strict=False)`
+
+Context manager to apply and restore changes to a tty.
+Yield the previous tty modes as from `termios.tcgetattr`
+or `None` if the changes could not be applied.
+If `strict`, raise an exception instead of yielding `None`.
+
+Parameters:
+* `fd`: optional tty file descriptor, default `0`.
+* `set_modes`: an optional  mapping of attribute name to new value
+  for values to set
+* `clear_modes`: an optional  mapping of attribute name to new value
+  for values to clear
+* `strict`: optional flag, default `False`;
+  if true, raise exceptions from failed `tcgetattr` and `tcsetattr` calls
+  otherwise issue a warning if the errno is not `ENOTTY` and proceed.
+  This aims to provide ease of use in batch mode by default
+  while providing a mode to fail overtly if required.
+
+The attribute names are from
+`iflag`, `oflag`, `cflag`, `lflag`, `ispeed`, `ospeed`, `cc`,
+corresponding to the list entries defined by the `termios.tcgetattr`
+call.
+
+For `set_modes`, the attributes `ispeed`, `ospeed` and `cc`
+are applied directly;
+the other attributes are binary ORed into the existing modes.
+
+For `clear_modes`, the attributes `ispeed`, `ospeed` and `cc`
+cannot be cleared;
+the other attributes are binary removed from the existing modes.
+
+For example, to turn off the terminal echo during some operation:
+
+    with stack_termios(clear_modes={'lflag': termios.ECHO}):
+        ... do something with tty echo disabled ...
+
+## Function `status(msg, *args, **kwargs)`
+
+Write a message to the terminal's status line.
+
+Parameters:
+* `msg`: message string
+* `args`: if not empty, the message is %-formatted with `args`
+* `file`: optional keyword argument specifying the output file.
+  Default: `sys.stderr`.
+
+Hack: if there is no status line use the xterm title bar sequence :-(
+
+## Function `statusline(text, fd=None, reverse=False, xpos=None, ypos=None)`
+
+Update the status line.
+
+## Function `statusline_bs(text, reverse=False, xpos=None, ypos=None)`
+
+Return a byte string to update the status line.
+
+## Function `ttysize(fd)`
+
+Return a (rows, columns) tuple for the specified file descriptor.
+
+If the window size cannot be determined, None will be returned
+for either or both of rows and columns.
+
+This function relies on the UNIX `stty` command.
+
+## Class `WinSize(builtins.tuple)`
+
+WinSize(rows, columns)
+
+### Property `WinSize.columns`
+
+Alias for field number 1
+
+### Property `WinSize.rows`
+
+Alias for field number 0
+
+# Release Log
+
+
+
+*Release 20210316*:
+* ttysize: discard the Popen object earlier.
+* ttysize: close Popen.stdout after use. seems to leak.
+
+*Release 20201102*:
+New modify_termios and stack_termios to apply (and restore) termios modes.
+
+*Release 20200521*:
+* New status() function dragged in from cs.logutils, which uses cs.upd for status() -- needs some refactoring to match with the other functions in cs.tty -- text vs bytes, stdout vs stderr, etc.
+* Get warning() from cs.gimmicks.
+
+*Release 20190101*:
+Small bugfix for setupterm.
+
+*Release 20170903*:
+add statusline and statusline_s functions; ttysize: support BSD stty output format
+
+*Release 20160828*:
+Use "install_requires" instead of "requires" in DISTINFO, add PyPI category.
+
+*Release 20150116*:
+Initial PyPI release.
