@@ -1,0 +1,3 @@
+[console_scripts]
+pipestat = pipestat.__main__:main
+
