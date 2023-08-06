@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: divio-cli
+Version: 3.11.0
+Summary: The command-line client for the Divio Cloud
+Home-page: https://docs.divio.com/en/latest/how-to/local-cli/
+Author: Divio AG
+Author-email: info@divio.com
+License: BSD
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Dist: attrs (==20.3.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: click-aliases (==1.0.1)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: idna (==2.7)
+Requires-Dist: packaging (==20.8)
+Requires-Dist: pyaml (==20.4.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.5)
+Requires-Dist: pyyaml (==5.3.1)
+Requires-Dist: requests (==2.20.1)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tabulate (==0.8.7)
+Requires-Dist: tzlocal (==2.1)
+Requires-Dist: urllib3 (==1.24.3)
+Requires-Dist: colorama (==0.4.4) ; sys_platform == "win32"
+
+
+The Divio CLI is a tool for interacting with Divio projects and the Divio cloud infrastructure.
+
+It provides commands to set up projects locally, push and pull media and database content to
+remote cloud projects, get and set environment variables, and so on.
+
+How to get started with the Divio CLI: https://docs.divio.com/en/latest/how-to/local-cli/
+
+Divio CLI reference: https://docs.divio.com/en/latest/reference/divio-cli
+
