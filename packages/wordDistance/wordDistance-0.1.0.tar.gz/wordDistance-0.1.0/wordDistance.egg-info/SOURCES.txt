@@ -1,0 +1,8 @@
+setup.py
+wordDistance.egg-info/PKG-INFO
+wordDistance.egg-info/SOURCES.txt
+wordDistance.egg-info/dependency_links.txt
+wordDistance.egg-info/not-zip-safe
+wordDistance.egg-info/top_level.txt
+word_distance/__init__.py
+word_distance/wordDistance.py
