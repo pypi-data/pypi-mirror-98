@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block meta_title %}
+    {{ flatpage.title }}
+{% endblock %}
+
+
+{% block meta_description %}
+    {{ flatpage.meta_d }}
+{% endblock %}
+
+
+{% block meta_keywords %}
+    {{ flatpage.meta_d }}
+{% endblock %}
+
+
+{% block breadcrumb_items %}
+    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="active">
+        <a itemprop="item" href="{{ request.path }}">
+            <span itemprop="name">
+                {{ flatpage.title }}
+            </span>
+            <meta itemprop="position" content="2">
+        </a>
+    </li>
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+        {{ flatpage.content|safe }}
+    </div>
+{% endblock %}
