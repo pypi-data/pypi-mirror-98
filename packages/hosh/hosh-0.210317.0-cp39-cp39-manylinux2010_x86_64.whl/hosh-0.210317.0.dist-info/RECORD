@@ -1,0 +1,10 @@
+hosh-0.210317.0.dist-info/METADATA,sha256=XZjpH6_UTqr0sBPT41y_N4aF7SbOOpghnWpx1ROedB8,2625
+hosh-0.210317.0.dist-info/WHEEL,sha256=A4-E1bVP8dfYg6AZ4Vv3ekbTyOO34OB81wX_M5cCQBE,113
+hosh/hash.py,sha256=L9lbcFMuEX7AQnIpKQHzyVujzoftpAfUK_Cd9mpo-8Y,3582
+hosh/__pycache__/colors.cpython-38.pyc,sha256=7nRSVOA_yVM9KJ8_23htgoIl7loQxL0NHMHwY8mKX0g,1909
+hosh/__pycache__/hash.cpython-38.pyc,sha256=76a4cCZYZ-_9jv9ndqEscLnS1vbmfTWNOLUwbe0CFIs,3222
+hosh/__pycache__/__init__.cpython-38.pyc,sha256=g-HcFKfOXQShhyUSEVMGrVY5bGBn4lb8LVBqqnvk07E,160
+hosh/colors.py,sha256=s6Yuh7hGmE_46Q_7ZRA5AE3FjbEubD_SJ53fPL1b4AM,1555
+hosh/__init__.py,sha256=1XDoqHcWZ05W51_hloBUJdkSiy7wsvlyMmahWsnEzHg,23
+hosh/hosh.cpython-39-x86_64-linux-gnu.so,sha256=qkSskXQ-k9ZIDgQva9lVb88yNjgSq5-e3NgVU1L1uBE,1749856
+hosh-0.210317.0.dist-info/RECORD,,
