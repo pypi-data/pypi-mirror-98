@@ -1,0 +1,9 @@
+aiohttp_s3_client/__init__.py,sha256=0jMwJuU66dWE-nJXwrVSJibMw8G39LZbEH2R1ouy5c4,165
+aiohttp_s3_client/client.py,sha256=SXxoTFbGwjr_11nAInmxeTWqDHG8j5cQKan2UengyVc,4933
+aiohttp_s3_client/version.py,sha256=ASWYefwBnMxYVnjPE-jbTmnmHp55McRl_AnpNfd47eE,392
+aiohttp_s3_client-0.1.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aiohttp_s3_client-0.1.1.dist-info/LICENSE.md,sha256=7GQBUOA3dNG1Jk-yaPOCncNnRVURCRMev23QpZ1ew-s,10495
+aiohttp_s3_client-0.1.1.dist-info/METADATA,sha256=SvCqIQwVeVkwUpYCxlOHfEAdsXCjWj_kEEvPtIpqJ20,4301
+aiohttp_s3_client-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiohttp_s3_client-0.1.1.dist-info/top_level.txt,sha256=vUafS45NZt7wDGwFDtMp9w3Idf1CYwTwhMNG-r84H4M,18
+aiohttp_s3_client-0.1.1.dist-info/RECORD,,
