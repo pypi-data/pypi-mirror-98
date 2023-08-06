@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: datatc
+Version: 0.1.0
+Summary: Automate every-day interactions with your data.
+Home-page: https://github.com/uzh-dqbm-cmi/data-traffic-control
+Author: Laura Kinkead
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/uzh-dqbm-cmi/data-traffic-control/issues
+Project-URL: Documentation, https://data-traffic-control.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/uzh-dqbm-cmi/data-traffic-control
+Description: # data-traffic-control
+        [![PyPI Latest Release](https://img.shields.io/pypi/v/datatc.svg)](https://pypi.org/project/datatc/)
+        [![GitHub Actions Build Status](https://github.com/uzh-dqbm-cmi/data-traffic-control/workflows/Python%20package/badge.svg?branch=master)](https://github.com/uzh-dqbm-cmi/data-traffic-control/actions?query=workflow%3A%22Python+package%22)
+        [![Documentation Status](https://readthedocs.org/projects/data-traffic-control/badge/?version=latest)](https://data-traffic-control.readthedocs.io/en/latest/?badge=latest)
+        
+        Whhrrrr... Voooooosh... That's the sound of your data coming and going exactly where it belongs
+        
+        ## What is it?
+        **data traffic control** is a python package that automates every-day interactions with your data files. 
+        Data files are the building materials we work with *every day, all day*. Working with them should be *effortless*.
+        
+        ## Main Features
+        
+        * Navigate your data directories with ease, without having to memorize long file paths.
+        * Load data files without having to think about it (or looking it up the syntax yet again).
+        * Be certain of how a datafile was generated, and rest easy knowing you could reproduce it. 
+        
+        ## Installation
+        
+        ```
+        pip install datatc
+        ```
+        
+        ## Documentation
+        
+        The official documentation is hosted on [readthedocs.io](https://data-traffic-control.readthedocs.io/).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: app
+Provides-Extra: pdf
+Provides-Extra: docs
