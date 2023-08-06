@@ -1,0 +1,21 @@
+LICENSE.txt
+Liam revision history.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+ALS.Liam.egg-info/PKG-INFO
+ALS.Liam.egg-info/SOURCES.txt
+ALS.Liam.egg-info/dependency_links.txt
+ALS.Liam.egg-info/entry_points.txt
+ALS.Liam.egg-info/requires.txt
+ALS.Liam.egg-info/top_level.txt
+als/__init__.py
+als/liam/__init__.py
+als/liam/_version.py
+als/liam/fitsParams.py
+als/liam/fitsViewer.py
+als/liam/fitsViewerGui.py
+als/liam/version.py
+als/liam/version_id.py

@@ -1,0 +1,10 @@
+2017-12-06	0.0	Project framework initiated
+2017-12-06	0.1	UI created for Q(x,y,z) coordinate
+2017-12-27	0.2	Added labels + controls to q-vector widget
+2017-12-27	0.3	Revised UI for RLU cuts
+2018-01-14	0.4	Basic FITS viewer implemented
+2018-01-20	0.5	Added panel for FITS metadata
+2018-01-20	0.6	Display FITS metadata
+2018-05-06	0.7	Compatible with setuptools/pip
+2019-02-04	0.8	Package renamed to `ALS.Liam`
+2021-03-16	0.9	Pause FITS metadata for faster display

@@ -1,0 +1,10 @@
+include README.md
+include LICENSE.txt
+include Liam?revision?history.txt
+include setup.cfg
+
+include versioneer.py
+include als/liam/_version.py
+
+global-exclude *.py[co]
+prune history 

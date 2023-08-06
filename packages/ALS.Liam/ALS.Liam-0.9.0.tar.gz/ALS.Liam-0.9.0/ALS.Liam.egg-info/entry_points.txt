@@ -1,0 +1,3 @@
+[console_scripts]
+fitsViewer = als.liam.fitsViewer:main
+
