@@ -1,0 +1,9 @@
+model/__init__.py,sha256=yY3Tbs-t4HSl4I0Ev0RcHMnHU7SwljlWRveiRJkeCB8,10
+model/mspca.py,sha256=rJhReGWp8us4ckHhd-Cf2bvCn-TlrF3SCDKhJMpedrU,5222
+mspca/__init__.py,sha256=yY3Tbs-t4HSl4I0Ev0RcHMnHU7SwljlWRveiRJkeCB8,10
+mspca/mspca.py,sha256=rJhReGWp8us4ckHhd-Cf2bvCn-TlrF3SCDKhJMpedrU,5222
+mspca-0.0.3.dist-info/LICENSE,sha256=IKZSHiAOq2c1zpQiMc73M6kclRhk7NDo5V2NAZdL9Oo,1063
+mspca-0.0.3.dist-info/METADATA,sha256=CJXKZynZB4WUAysJwr802BI67vZcIDdh0dkkqaRHidM,2258
+mspca-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mspca-0.0.3.dist-info/top_level.txt,sha256=mK1hol42g7at8kdLAbvhwn3mqtLOOoD_QUD-RzwU5pE,6
+mspca-0.0.3.dist-info/RECORD,,
