@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+snirocr/__init__.py
+snirocr/first_click.wav
+snirocr/negativebeep.wav
+snirocr/second_click.wav
+snirocr/startup.wav
+snirocr/success.wav
+snirocr.egg-info/PKG-INFO
+snirocr.egg-info/SOURCES.txt
+snirocr.egg-info/dependency_links.txt
+snirocr.egg-info/requires.txt
+snirocr.egg-info/top_level.txt
