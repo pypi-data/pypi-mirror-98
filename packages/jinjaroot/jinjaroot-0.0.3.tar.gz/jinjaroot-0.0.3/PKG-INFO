@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: jinjaroot
+Version: 0.0.3
+Summary: Utility for using jinja2 templates in code repos
+Home-page: https://github.com/magland/jinjaroot
+Author: Jeremy Magland
+Author-email: jmagland@flatironinstitute.org
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/magland/jinjaroot/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
