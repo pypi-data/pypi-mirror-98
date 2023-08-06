@@ -1,0 +1,11 @@
+cryptography
+dj-smail
+ldap3
+requests
+
+[test]
+coverage
+flake8
+pytest
+pytest-django
+tox

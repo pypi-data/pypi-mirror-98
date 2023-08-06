@@ -1,0 +1,5 @@
+cryptography
+Django>=2.2
+dj-smail
+requests
+ldap3
