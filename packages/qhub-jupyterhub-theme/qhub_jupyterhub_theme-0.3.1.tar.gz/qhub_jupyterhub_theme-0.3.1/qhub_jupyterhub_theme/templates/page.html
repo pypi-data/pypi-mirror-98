@@ -1,0 +1,24 @@
+{% extends "templates/page.html" %}
+
+{% block nav_bar_left_items %}
+{{ super() }}
+{% if cdsdashboards_enabled %}
+<li><a href="{{ base_url }}dashboards">Dashboards</a></li>
+{% endif %}
+{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{{ static_url("css/style.min.css") }}" type="text/css"/>
+<style>
+  {% include 'style.css' %}
+</style>
+
+  {% if cdsdashboards_enabled %}
+  <link rel="stylesheet" href="{{base_url}}dashboards-static/css/style.css" type="text/css" />
+  {% endif %}
+{% endblock %}
+
+{# requires jupyerhub > 0.9.4 https://github.com/jupyterhub/jupyterhub/pull/2296 #} {% block logo %}
+<span id="jupyterhub-logo" class="pull-left">
+    <a href="{{logo_url or base_url}}"><img src="{{ logo }}" alt='JupyterHub' class='jpy-logo' title='Home'/></a>
+</span> {% endblock %}
