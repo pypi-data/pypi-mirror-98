@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fairdi/nomad/latest/gui/static/css/main.a2b7b0b6.chunk.css",
+    "main.js": "/fairdi/nomad/latest/gui/static/js/main.4cda3fd4.chunk.js",
+    "main.js.map": "/fairdi/nomad/latest/gui/static/js/main.4cda3fd4.chunk.js.map",
+    "runtime-main.js": "/fairdi/nomad/latest/gui/static/js/runtime-main.5a469cfc.js",
+    "runtime-main.js.map": "/fairdi/nomad/latest/gui/static/js/runtime-main.5a469cfc.js.map",
+    "static/js/2.a3ce84c1.chunk.js": "/fairdi/nomad/latest/gui/static/js/2.a3ce84c1.chunk.js",
+    "static/js/2.a3ce84c1.chunk.js.map": "/fairdi/nomad/latest/gui/static/js/2.a3ce84c1.chunk.js.map",
+    "index.html": "/fairdi/nomad/latest/gui/index.html",
+    "precache-manifest.c121aa785f8f3ee1a79d699250b53e28.js": "/fairdi/nomad/latest/gui/precache-manifest.c121aa785f8f3ee1a79d699250b53e28.js",
+    "service-worker.js": "/fairdi/nomad/latest/gui/service-worker.js",
+    "static/css/main.a2b7b0b6.chunk.css.map": "/fairdi/nomad/latest/gui/static/css/main.a2b7b0b6.chunk.css.map",
+    "static/js/2.a3ce84c1.chunk.js.LICENSE.txt": "/fairdi/nomad/latest/gui/static/js/2.a3ce84c1.chunk.js.LICENSE.txt",
+    "static/media/about.db82f572.svg": "/fairdi/nomad/latest/gui/static/media/about.db82f572.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a469cfc.js",
+    "static/js/2.a3ce84c1.chunk.js",
+    "static/css/main.a2b7b0b6.chunk.css",
+    "static/js/main.4cda3fd4.chunk.js"
+  ]
+}

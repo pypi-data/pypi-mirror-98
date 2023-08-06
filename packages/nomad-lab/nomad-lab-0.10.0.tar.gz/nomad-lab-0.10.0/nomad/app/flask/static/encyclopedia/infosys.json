@@ -1,0 +1,652 @@
+{
+    "DOS": {
+        "comment": "general explanation page, short description",
+        "link": "https://en.wikipedia.org/wiki/Density_of_states",
+        "text": "The density of states (DOS) is the number of available electron states per unit volume and unit energy that electrons are allowed to occupy."
+    },
+    "atomic density": {
+        "comment": "explaining the meaning",
+        "text": "Number of atoms per volume."
+    },
+    "band gap": {
+        "comment": "explanation of what it is as external link, explanation of how this particular one was calculated (We do not have any information at the moment from which we can write about the method by which it can be calculated.  --askhl)",
+        "link": "https://en.wikipedia.org/wiki/Band_gap",
+        "text": "Difference between the lowest energy among the unoccupied states and the highest energy among the occupied states."
+    },
+    "band structure": {
+        "comment": "general link to explanation, in overview explain origin of data",
+        "link": "https://en.wikipedia.org/wiki/Electronic_band_structure",
+        "text": "Electronic energies resolved in \u201ck-space\u201d.  The band structure is typically shown over a path of wave vectors that connects several high-symmetry points in the Brillouin zone."
+    },
+    "basis set short name": {
+        "comment": "not required",
+        "text": "Basis functions that are used to solve the Kohn-Sham equation."
+    },
+    "basis set type": {
+        "comment": "links to defining pages for every possible entry.",
+        "link": "https://en.wikipedia.org/wiki/Basis_set_(chemistry)",
+        "text": "Representation of Kohn\u2013Sham states.",
+        "values": {
+            "(L)APW+lo": {
+                "text": "Linear combination of augmented plane waves plus local orbitals."
+            },
+            "gaussians": {
+                "text": "Linear combination of Gaussian orbitals."
+            },
+            "local-orbital minimum-basis": {
+                "comment": "https://journals.aps.org/prb/pdf/10.1103/PhysRevB.59.1743",
+                "text": "Linear combination of overlapping local orbitals."
+            },
+            "numeric AOs": {
+                "text": "Linear combination of numeric atomic orbitals."
+            },
+            "plane waves": {
+                "text": "Linear combination of plane waves."
+            },
+            "real-space grid": {
+                "text": "Real-space grid."
+            }
+        }
+    },
+    "bravais lattice": {
+        "comment": "",
+        "link": "https://en.wikipedia.org/wiki/Bravais_lattice",
+        "text": "The set of all integer combinations of three non-coplanar basis vectors defines a 3\u2013dimensional lattice.  Of all possible Bravais lattices in 3 dimensions, 14 symmetrically distinct classes can be identified in three dimensions.",
+        "values": {
+            "aP": {
+                "link": "https://en.wikipedia.org/wiki/Triclinic_crystal_system",
+                "text": "Primitive triclinic."
+            },
+            "cF": {
+                "link": "https://en.wikipedia.org/wiki/Cubic_crystal_system",
+                "text": "Face-centered cubic."
+            },
+            "cI": {
+                "link": "https://en.wikipedia.org/wiki/Cubic_crystal_system",
+                "text": "Body-centered cubic."
+            },
+            "cP": {
+                "link": "https://en.wikipedia.org/wiki/Cubic_crystal_system",
+                "text": "Primitive cubic."
+            },
+            "hP": {
+                "link": "https://en.wikipedia.org/wiki/Hexagonal_crystal_family",
+                "text": "Primitive hexagonal."
+            },
+            "hR": {
+                "link": "https://en.wikipedia.org/wiki/Hexagonal_crystal_family",
+                "text": "Rhombohedral hexagonal."
+            },
+            "mP": {
+                "link": "https://en.wikipedia.org/wiki/Monoclinic_crystal_system",
+                "text": "Primitive monoclinic."
+            },
+            "mS": {
+                "link": "https://en.wikipedia.org/wiki/Monoclinic_crystal_system",
+                "text": "Single-face-centered monoclinic."
+            },
+            "oF": {
+                "link": "https://en.wikipedia.org/wiki/Orthorhombic_crystal_system",
+                "text": "Face-centered orthorhombic."
+            },
+            "oI": {
+                "link": "https://en.wikipedia.org/wiki/Orthorhombic_crystal_system",
+                "text": "Body-centered orthorhombic."
+            },
+            "oP": {
+                "link": "https://en.wikipedia.org/wiki/Orthorhombic_crystal_system",
+                "text": "Primitive orthorhombic."
+            },
+            "oS": {
+                "link": "https://en.wikipedia.org/wiki/Orthorhombic_crystal_system",
+                "text": "Single-face-centered orthorhombic."
+            },
+            "tI": {
+                "link": "https://en.wikipedia.org/wiki/Tetragonal_crystal_system",
+                "text": "Body-centered tetragonal."
+            },
+            "tP": {
+                "link": "https://en.wikipedia.org/wiki/Tetragonal_crystal_system",
+                "text": "Primitive tetragonal."
+            }
+        }
+    },
+    "brillouin zone": {
+        "comment": "shortest description, link for details",
+        "link": "https://en.wikipedia.org/wiki/Brillouin_zone",
+        "text": "The Brillouin zone is the primitive unit cell in reciprocal space. "
+    },
+    "brillouin zone viewer": {
+        "comment": "explanation and link to extensive explanation page",
+        "link": "https://en.wikipedia.org/wiki/Brillouin_zone",
+        "text": "The first Brillouin zone. The k-point path used in the band structure diagram is indicated."
+    },
+    "calculation type": {
+        "values": {
+            "GW calculation": {
+                "link": "https://en.wikipedia.org/wiki/GW_approximation",
+                "text": "Calculation involving many-body effects for improving the description of electronic structure results."
+            },
+            "QHA calculation": {
+                "link": "https://en.wikipedia.org/wiki/Quasi-harmonic_approximation",
+                "text": "Calculation of thermal properties based on the quasi-harmonic approximation."
+            },
+            "equation of state": {
+                "link": "https://en.wikipedia.org/wiki/Birch%E2%80%93Murnaghan_equation_of_state",
+                "text": "A group of calculations for determining the equation of state. These calculations are carried out by varying the geometry of the cell, using the same computational parameters. The calculation with the minimal total energy is representative of the whole group and is the only one considered for the statistics."
+            },
+            "geometry optimization": {
+                "text": "Relaxation of the atomic structure until reaching the lowest-energy configuration."
+            },
+            "molecular dynamics": {
+                "link": "https://en.wikipedia.org/wiki/Molecular_dynamics",
+                "text": "Simulation of the time-evolution of an atomic system at finite temperature."
+            },
+            "parameter variation": {
+                "text": "A set of calculations with varying computational parameters while keeping the geometry of the system fixed. The calculation with the minimal total energy is representative for the whole group and is the only one considered for the statistics."
+            },
+            "phonon calculation": {
+                "link": "https://en.wikipedia.org/wiki/Phonon",
+                "text": "Calculation of collective lattice vibrations in periodic solids."
+            },
+            "single point": {
+                "text": "Self-consistent density-functional calculation for a given atomic structure."
+            }
+        }
+    },
+    "cell volume": {
+        "comment": "explaining that this is the volume of the primitive unit cell",
+        "text": "Volume of the primitive unit cell."
+    },
+    "code name": {
+        "comment": "askhl: Program names about which I am not sure about are marked with leading question mark.  Present names are those that are explicitly used e.g. as fixedStartValues in parsers (obtained from grep).",
+        "link": "https://en.wikipedia.org/wiki/List_of_quantum_chemistry_and_solid-state_physics_software",
+        "text": "Name of scientific software (code) used for the calculation.",
+        "values": {
+            "?BigDFT": {
+                "link": "http://bigdft.org/Wiki/index.php?title=BigDFT_website"
+            },
+            "?DFTB+": {
+                "link": "http://www.dftb-plus.info/"
+            },
+            "?FPLO": {
+                "link": "http://www.fplo.de/"
+            },
+            "?LM Suite": {
+                "link": "http://www2.fkf.mpg.de/andersen/"
+            },
+            "?NAMD": {
+                "link": "http://www.ks.uiuc.edu/Research/namd/"
+            },
+            "?ORCA": {
+                "link": "https://orcaforum.cec.mpg.de/"
+            },
+            "?Smeagol": {
+                "link": "https://www.tcd.ie/Physics/Smeagol/index.html"
+            },
+            "?TINKER": {
+                "link": "https://dasher.wustl.edu/tinker/"
+            },
+            "?gromacs": {
+                "link": "http://www.gromacs.org/"
+            },
+            "?libAtoms+QUIP": {
+                "link": "http://www.libatoms.org/Home/LibAtomsQUIP"
+            },
+            "ABINIT": {
+                "link": "http://www.abinit.org/"
+            },
+            "ASAP": {
+                "link": "https://wiki.fysik.dtu.dk/asap/"
+            },
+            "ATK": {
+                "link": "http://quantumwise.com/"
+            },
+            "CASTEP": {
+                "link": "http://www.castep.org/"
+            },
+            "CP2K": {
+                "link": "https://www.cp2k.org/"
+            },
+            "CPMD": {
+                "link": "http://www.cpmd.org/"
+            },
+            "Crystal": {
+                "link": "http://www.crystal.unito.it/index.php"
+            },
+            "DL_POLY": {
+                "link": "http://www.scd.stfc.ac.uk//research/app/44516.aspx"
+            },
+            "FHI-aims": {
+                "link": "https://aimsclub.fhi-berlin.mpg.de/"
+            },
+            "Fleur": {
+                "link": "http://www.flapw.de/"
+            },
+            "GAMESS": {
+                "link": "http://www.msg.ameslab.gov/gamess/"
+            },
+            "Gaussian": {
+                "link": "http://www.gaussian.com/"
+            },
+            "LAMMPS": {
+                "link": "http://lammps.sandia.gov/"
+            },
+            "Molcas": {
+                "link": "http://www.molcas.org/"
+            },
+            "NWChem": {
+                "link": "http://www.nwchem-sw.org/"
+            },
+            "ONETEP": {
+                "link": "http://www.onetep.org/"
+            },
+            "Quantum Espresso": {
+                "link": "http://www.quantum-espresso.org/"
+            },
+            "Siesta": {
+                "link": "http://departments.icmab.es/leem/siesta/"
+            },
+            "VASP": {
+                "link": "http://www.vasp.at/"
+            },
+            "WIEN2k": {
+                "link": "http://susi.theochem.tuwien.ac.at/"
+            },
+            "dmol3": {
+                "link": "http://dmol3.web.psi.ch/"
+            },
+            "elk": {
+                "link": "http://elk.sourceforge.net/"
+            },
+            "exciting": {
+                "link": "http://exciting-code.org/"
+            },
+            "gpaw": {
+                "link": "https://wiki.fysik.dtu.dk/gpaw/"
+            },
+            "gulp": {
+                "link": "http://www.staff.amu.edu.pl/~magchem/GULP/gulp.html"
+            },
+            "mopac": {
+                "link": "http://openmopac.net/"
+            },
+            "octopus": {
+                "link": "http://www.tddft.org/programs/octopus/"
+            },
+            "qbox": {
+                "link": "http://qboxcode.org/"
+            },
+            "turbomole": {
+                "link": "http://www.turbomole.com/"
+            }
+        }
+    },
+    "compound class springer": {
+        "comment": "check if we can/should link to springer materials",
+        "link": "http://materials.springer.com/",
+        "text": "Class of compounds this material belongs to, according to Springer Materials."
+    },
+    "contributors": {
+        "comment": "possibly to some researcher description page (google scholar, researchgate, ...), could also come from user profile or link to it.  (We won't fix this for the moment.  --askhl), no final decision yet"
+    },
+    "core electron treatment": {
+        "comment": "for now just explaining the two options, PP or all electron",
+        "text": "Treatment of the core electrons.",
+        "values": {
+            "all electron frozen core": {
+                "text": "Core electrons are treated separately to obtain a fixed core density."
+            },
+            "full all electron": {
+                "text": "Core electrons are treated the same way as valence electrons."
+            },
+            "pseudopotential": {
+                "text": "The effect of core electrons is approximated by a pseudopotential. Core electrons are not varied."
+            }
+        }
+    },
+    "crystal system": {
+        "comment": "to explaining page for every crystal system (wikipedia has pages for crystal systems, but hexagonal and trigonal are treated on the same page, so two links go to that page on purpose.  --askhl)",
+        "link": "https://en.wikipedia.org/wiki/Crystal_system",
+        "values": {
+            "cubic": {
+                "link": "https://en.wikipedia.org/wiki/Cubic_crystal_system"
+            },
+            "hexagonal": {
+                "link": "https://en.wikipedia.org/wiki/Hexagonal_crystal_family"
+            },
+            "monoclinic": {
+                "link": "https://en.wikipedia.org/wiki/Monoclinic_crystal_system"
+            },
+            "orthorhombic": {
+                "link": "https://en.wikipedia.org/wiki/Orthorhombic_crystal_system"
+            },
+            "tetragonal": {
+                "link": "https://en.wikipedia.org/wiki/Tetragonal_crystal_system"
+            },
+            "triclinic": {
+                "link": "https://en.wikipedia.org/wiki/Triclinic_crystal_system"
+            },
+            "trigonal": {
+                "link": "https://en.wikipedia.org/wiki/Hexagonal_crystal_family"
+            }
+        }
+    },
+    "energies": {
+        "comment": "explanation of every energy value (need info on the types of energy. that will be displayed --askhl)",
+        "text": "In DFT-calculations, the energy has several contributions.",
+        "values": {
+            "_energy_C": {
+                "text": "Total correlation energy."
+            },
+            "_energy_C_mGGA": {
+                "text": "Total GGA or meta-GGA correlation energy."
+            },
+            "_energy_X": {
+                "text": "Total exchange energy."
+            },
+            "_energy_XC": {
+                "text": "Total exchange\u2013correlation energy of the system."
+            },
+            "_energy_XC_functional": {
+                "text": "Total exchange\u2013correlation energy of the system."
+            },
+            "_energy_XC_potential": {
+                "text": "Contribution of total exchange\u2013correlation energy to the potential energy."
+            },
+            "_energy_X_mGGA": {
+                "text": "Total GGA or meta-GGA exchange energy."
+            },
+            "_energy_X_mGGA_scaled": {
+                "text": "Scaled GGA or meta-GGA exchange energy. This applies to functionals that mix a fraction of the exchange energy with another type of functional."
+            },
+            "_energy_correction_entropy": {
+                "text": "Entropy correction to the potential energy to compensate for the change in occupation so that forces at finite temperature do not need to take the change of occupation into account."
+            },
+            "_energy_correction_hartree": {
+                "text": "Correction to the density\u2013density electrostatic energy in the sum of eigenvalues (that uses the mixed density on one side), and the fully consistent density\u2013density electrostatic energy."
+            },
+            "_energy_electrostatic": {
+                "text": "Total electrostatic energy of electrons and nuclei."
+            },
+            "_energy_free": {
+                "text": "Free energy of nuclei and electrons. This is the energy functional that is minimized by the smeared (fractional) occupations"
+            },
+            "_energy_hartree_fock_X": {
+                "text": "Total Hartree\u2013Fock exchange energy."
+            },
+            "_energy_hartree_fock_X_scaled": {
+                "text": "Scaled Hartree\u2013Fock exchange energy according to the used functional. This applies to functionals that mix a fraction of exact exchange energy with another energy contribution."
+            },
+            "_energy_total": {
+                "text": "Total energy of the system, per formula unit, as calculated by the simulation code."
+            },
+            "_energy_total_T0": {
+                "text": "Total energy of the system extrapolated to an electronic temperature of 0. The effect of this is to negate the effect of fractional occupations."
+            },
+            "_energy_total_potential": {
+                "text": "Total potential energy of the system."
+            },
+            "_energy_van_der_Waals": {
+                "text": "Total van der Waals energy according to the applied van der Waals method."
+            }
+        }
+    },
+    "fermi surface": {
+        "comment": "general explanation",
+        "link": "https://en.wikipedia.org/wiki/Fermi_surface",
+        "text": "The surface of the Bloch wave vectors (or k-points) corresponding to electronic states with energy equal to the Fermi energy; i.e., the boundary between occupied and unoccupied states in reciprocal space in metallic systems."
+    },
+    "formula cell": {
+        "comment": "clear explanations for distinguishing between formula types",
+        "text": "The chemical formula giving the composition and occurrences of the elements in the irreducible unit cell."
+    },
+    "formula reduced": {
+        "comment": "clear explanations for distinguishing between formula types",
+        "text": "Chemical formula of this material."
+    },
+    "free wyckoff parameters": {
+        "comment": "",
+        "link": "https://en.wikipedia.org/wiki/Wyckoff_positions",
+        "text": "Atoms in crystals are classified by their Wyckoff positions.  Wyckoff positions are classes of points in space that can relate differently to crystal symmetry. Some of these points might have free parameters, which are given here.",
+        "value_template": {
+            "link": "http://www.cryst.ehu.eus/cgi-bin/cryst/programs/nph-wp-list?gnum=${num}"
+        },
+        "variables": {
+            "num": "space group"
+        }
+    },
+    "functional type": {
+        "comment": "general explanation and link to defining or explaining page for every functional type",
+        "text": "Type of exchange\u2013correlation functional.",
+        "values": {
+            "GGA": {
+                "text": "Generalized\u2013gradient approximation (GGA). In this approximation, the exchange\u2013correlation energy depends on the local values of the density and its gradient."
+            },
+            "GW": {
+                "text": "Calculation of quasi-particle energies, starting from the Kohn Sham energies and including self-energy corrections."
+            },
+            "HF": {
+                "text": "Hartree\u2013Fock exchange - this is a non-local exchange functional."
+            },
+            "LDA": {
+                "text": "Local-density approximation (LDA) - each point in space contributes an energy which depends only on the value of the density in that point."
+            },
+            "hybrid-GGA": {
+                "text": "GGA hybrid - this is a combination of a GGA functional with a certain amount of Hartree\u2013Fock exchange."
+            },
+            "hybrid-meta-GGA": {
+                "text": "MGGA hybrid - this is a combination of a MGGA functional with a certain amount of Hartree\u2013Fock exchange."
+            },
+            "meta-GGA": {
+                "text": "Meta-GGA (MGGA). In this approximation, the exchange\u2013correlation energy is calculated as a sum of local contributions. Each of these contributions depends on the local values of the density and its gradient as well as the kinetic\u2013energy density."
+            }
+        }
+    },
+    "group e min": {
+        "comment": "",
+        "text": "Among all calculations done with the same basic methodology (code, code version, functional), this is the smallest total-energy value. It corresponds to the optimized system geometry and computational parameters, and is used as reference for showing the difference with resprect to these variations."
+    },
+    "gw starting point": {
+        "comment": "",
+        "text": "The exchange-correlation functional that was used as a starting point for this GW calculation."
+    },
+    "gw type": {
+        "comment": "added different kinds of approximations, explanations for experts",
+        "link": "https://en.wikipedia.org/wiki/GW_approximation",
+        "text": "GW-approach used for the calculation.",
+        "values": {
+            "G0W": {
+                "text": "Partially self-consistent GW, where only the screened Coulomb interaction is updated."
+            },
+            "G0W0": {
+                "text": "'Single-shot' GW to calculate the quasi-particle correction."
+            },
+            "GW0": {
+                "text": "Partially self-consistent GW, where only the Green function is updated."
+            },
+            "qsGW": {
+                "link": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.96.226402",
+                "text": "Quasi-particle self-consistent GW."
+            },
+            "scGW": {
+                "text": "Self-consistent GW based on the iterative solution of Hedin's equations."
+            }
+        }
+    },
+    "has band structure": {
+        "comment": "can be shown in the header as general explanation for all calculations",
+        "text": "Search for calculations that contain an electronic band structure."
+    },
+    "has dos": {
+        "comment": "can be shown in the header as general explanation for all calculations",
+        "text": "Search for calculations that contain a density of states."
+    },
+    "has fermi surface": {
+        "comment": "can be shown in the header as general explanation for all calculations",
+        "text": "Search for calculations that contain a fermi surface."
+    },
+    "has thermal properties": {
+        "comment": "can be shown in the header as general explanation for all calculations",
+        "text": "Search for calculations that contain thermal properties."
+    },
+    "helmholtz free energy": {
+        "comment": "short description, link to wikipedia",
+        "link": "https://en.wikipedia.org/wiki/Helmholtz_free_energy",
+        "text": "Thermodynamic potential, limits the work that can be obtained in an isothermal (constant temperature), isochoric (constant volume) process."
+    },
+    "k point grid description": {
+        "comment": "short description",
+        "text": "Discretization of the Brillouin zone used for the calculation."
+    },
+    "mass density": {
+        "comment": "explaining the meaning",
+        "text": "Mass density of the material for the given structure."
+    },
+    "material class springer": {
+        "comment": "check if we can/should link to springer materials",
+        "link": "http://materials.springer.com/",
+        "text": "Material class this structure belongs to, according to Springer Materials."
+    },
+    "number of calculations": {
+        "comment": "short description",
+        "text": "Number of calculations available for this material."
+    },
+    "periodic dimensions": {
+        "comment": "",
+        "text": "A 1D or 2D material is characterized by its infinite extent along these dimensions. "
+    },
+    "phonon DOS": {
+        "comment": "",
+        "text": "The phonon density of states is the number of vibrational modes of the lattice per energy unit, shown as a function of energy."
+    },
+    "phonon dispersion": {
+        "comment": "from wikipedia, also a link",
+        "link": "https://en.wikipedia.org/wiki/Phonon#Dispersion_relation",
+        "text": "Phonon dispersion relation. It shows the depedence of the phonon frequencies and on the wavevector."
+    },
+    "point group": {
+        "comment": "general explanation and link to explaining page for every point group.  (also http://newton.ex.ac.uk/research/qsystems/people/goss/symmetry/Solids.html is very good and has good sub-pages about each group.  --askhl)",
+        "link": "https://en.wikipedia.org/wiki/Crystallographic_point_group",
+        "text": "The crystallographic point group characterizes the set of symmetries of a structure. Point groups consist of symmetry operations that have a central invariant point, such as rotations or mirroring.",
+        "values": {
+            "-1": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=2",
+            "-3": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=17",
+            "-3m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=20",
+            "-4": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=10",
+            "-42m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=14",
+            "-43m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=31",
+            "-6": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=22",
+            "-62m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=26",
+            "1": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=1",
+            "2": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=3",
+            "2/m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=5",
+            "222": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=6",
+            "23": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=28",
+            "3": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=16",
+            "32": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=18",
+            "3m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=19",
+            "4": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=9",
+            "4/m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=11",
+            "4/mmm": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=15",
+            "422": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=12",
+            "432": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=30",
+            "4mm": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=13",
+            "6": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=21",
+            "6/m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=23",
+            "6/mmm": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=27",
+            "622": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=24",
+            "6mm": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=25",
+            "m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=4",
+            "m-3": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=29",
+            "m-3m": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=32",
+            "mm2": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=7",
+            "mmm": "http://www.cryst.ehu.es/cgi-bin/cryst/programs/nph-point_genpos?num=8"
+        }
+    },
+    "pseudopotential type": {
+        "comment": "Basic description.",
+        "link": "https://en.wikipedia.org/wiki/Pseudopotential",
+        "text": "A pseudopotential is an approximation to the atomic or crystalline potential to simplify and accelerate a calculation. As a result, the number of basis functions needed to describe the system is dramatically reduced."
+    },
+    "qha bulk modulus": {
+        "comment": "set focus on bulk modulus itself ",
+        "link": "https://en.wikipedia.org/wiki/Bulk_modulus",
+        "text": "The bulk modulus is a measure for the compressibility of a material. It is obtained within the quasi-harmonic approximation."
+    },
+    "qha helmholtz free energy": {
+        "comment": "no reference to the free energy, because it has its own information.",
+        "text": "Temperature dependent Helmholtz free energy as obtained within the quasi-harmonic approximation."
+    },
+    "qha mass density": {
+        "text": "Temperature dependent mass density, obtained within the quasi-harmonic approximation."
+    },
+    "qha specific heat cv": {
+        "text": "Temperature dependend specific heat at constant volume, obtained within the quasi-harmonic approximation."
+    },
+    "qha thermal expansion": {
+        "text": "Temperature dependent thermal expansion coefficient, obtained within the quasi-harmonic approximation."
+    },
+    "scf_threshold": {
+        "comment": "",
+        "text": "Threshold for stopping the self-consistent-field loop."
+    },
+    "similar materials": {
+        "comment": "",
+        "link": "https://en.wikipedia.org/wiki/Similarity_search",
+        "text": "At most five materials of the Encyclopedia are shown, that are most similar to the current one in terms of the electronic density of states in the upper valence region. The used fingerprints are based on a modification to those suggested by <a href=\"https://pubs.acs.org/doi/abs/10.1021/cm503507h\" target=\"_blank2\">O. Isayev et al., Chem. Mater. 27 (2015), 735-743</a>. The similarity is measured by the Tanimoto coefficient <i>Tc</i>, which ranges between 0 (not similar) and 1 (identical)."
+    },
+    "smearing kind": {
+        "comment": "specification possible",
+        "text": "Smearing introduces a broadening of energy levels. This is done in order to obtain the electron density."
+    },
+    "smearing parameter": {
+        "comment": "",
+        "text": "Parameter specifying the shape of the distribution for the given smearing kind."
+    },
+    "space group": {
+        "comment": "general explanation and link to explaining page for every space group.",
+        "link": "https://en.wikipedia.org/wiki/Space_group",
+        "text": "The space group is defined by the translational symmetry of a crystal, together with its point symmetries.",
+        "value_template": {
+            "link": "http://www.wolframalpha.com/input/?i=crystallographic+space+group+${num}&lk=1",
+            "text": "Space group ${num}."
+        },
+        "variables": {
+            "num": "space group"
+        }
+    },
+    "specific heat cv": {
+        "text": "Temperature dependence of the heat capacity per unit cell at constant volume."
+    },
+    "structure type": {
+        "comment": "general explanation and link to explaining pages for every structure type (will fix this once the possible values of this are known.  --askhl)",
+        "text": "Classification according to known structure types."
+    },
+    "system type": {
+        "comment": "explain how every structure type is defined in our system (need information about what system type can be.  Also this may not make so much sense while we only have bulk. --askhl)",
+        "text": "Classification of materials into different high-level categories, based on their atomic configurations.",
+        "values": {
+            "1D": {
+                "text": "System extended along one dimension."
+            },
+            "2D": {
+                "text": "System with a thin, planar structure; periodic structure in two dimensions."
+            },
+            "bulk": {
+                "text": "Bulk crystal; periodic structure in three dimensions."
+            }
+        }
+    },
+    "wyckoff position population": {
+        "comment": "general explanation, links could lead to definition of wyckoff positions for the space group of the structure. old text: (())",
+        "link": "https://en.wikipedia.org/wiki/Wyckoff_positions",
+        "text": "Atoms in crystals are classified by their Wyckoff sites. Points of the same Wyckoff site are transformed into each other by the symmetry operations of a crystal.",
+        "value_template": {
+            "link": "http://www.cryst.ehu.eus/cgi-bin/cryst/programs/nph-wp-list?gnum=${num}"
+        },
+        "variables": {
+            "num": "space group"
+        }
+    }
+}
