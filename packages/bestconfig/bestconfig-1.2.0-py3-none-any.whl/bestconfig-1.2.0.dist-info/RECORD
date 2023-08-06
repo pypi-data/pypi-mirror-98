@@ -1,0 +1,11 @@
+bestconfig/__init__.py,sha256=MxTYtotNRWPFlhTkRb1bfmZfYmGXnhap1VG_iHH-ALM,83
+bestconfig/adapters.py,sha256=si9Pz5gtRPrSiMfXmd65-c1hoVgWSRJXhcaFt61AcPw,2411
+bestconfig/config.py,sha256=Ai46DXKTBqruq9xMql8A0gHK3-xDzqdRcGDGxEBHJB8,7470
+bestconfig/config_provider.py,sha256=fsavyNB7-NgeYAIo5H02PPfeX-rsrFci5I_Jqfn6JPU,6196
+bestconfig/converters.py,sha256=5QbCNZxOdHgaJv-4XZtytYAZ12TIIl5r4x956eih0zQ,3620
+bestconfig/file_parsers.py,sha256=rucKMHmLmx2jZy1oRz5dzdCbxmFHj6iUB9fBquS2l7w,5000
+bestconfig/source.py,sha256=dRUUf7Kurzx1EP5R_cg5ERnapJWob9-wFV4J7qzDvio,1717
+bestconfig-1.2.0.dist-info/METADATA,sha256=RWuWN0FE3je2wDRE6VIbWhDKYuCt8FaandlEZA7dPgM,6804
+bestconfig-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bestconfig-1.2.0.dist-info/top_level.txt,sha256=4xBz1bVZ6pSKtsfDwd0zA5SEBLgTOP7uVYNhI22yROI,11
+bestconfig-1.2.0.dist-info/RECORD,,
