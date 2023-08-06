@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: pymixel
+Version: 0.6.0
+Summary: Dynamixel X Python3 Package
+Home-page: https://github.com/Vinz1911/Pymixel
+Author: Vinzenz Weist
+Author-email: Vinz1911@gmail.com
+License: GPLv3
+Description: # Pymixel
+        
+        ## Info:
+        This is a simple library to communicate with dynamixel x based servo's.
+        Based on the dynamixel sdk.
+Platform: UNKNOWN
