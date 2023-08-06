@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+VERSION
+requirements.txt
+setup.py
+data/__init__.py
+data/abbreviations.json
+texta_entity_linker/__init__.py
+texta_entity_linker/entity_linker.py
+texta_entity_linker/exceptions.py
+texta_entity_linker.egg-info/PKG-INFO
+texta_entity_linker.egg-info/SOURCES.txt
+texta_entity_linker.egg-info/dependency_links.txt
+texta_entity_linker.egg-info/requires.txt
+texta_entity_linker.egg-info/top_level.txt
