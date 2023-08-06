@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dbestclient
+Version: 3.0
+Summary: Model-based Approximate Query Processing (AQP) engine.
+Home-page: https://github.com/qingzma/DBEstClient
+Author: Qingzhi Ma
+Author-email: Q.Ma.2@warwick.ac.uk
+License: UNKNOWN
+Description: DBEstClient
+Keywords: Approximate Query Processing AQP
+Platform: UNKNOWN
