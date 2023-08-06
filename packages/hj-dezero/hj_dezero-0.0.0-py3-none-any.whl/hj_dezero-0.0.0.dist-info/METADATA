@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hj-dezero
+Version: 0.0.0
+Summary: Deep Neural Networks built from the book `Deep Learning from Scratch`
+Home-page: https://github.com/HyungJoo-Kwon/hj_framework
+Author: HyungJoo-Kwon
+Author-email: joo9437@naver.com
+License: MIT
+Keywords: Deep Learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+
+UNKNOWN
+
+
