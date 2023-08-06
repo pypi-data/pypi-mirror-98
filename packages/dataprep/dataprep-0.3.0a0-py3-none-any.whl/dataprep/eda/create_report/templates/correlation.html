@@ -1,0 +1,20 @@
+<div class="correlation-container">
+  <div class="corr-plot">
+    <div class="report-tab">
+      <button class="corr-tablinks active" onclick="openTab(event, '{{context.components.correlation_names[0]}}')" >{{context.components.correlation_names[0]}}</button>
+      <button class="corr-tablinks" onclick="openTab(event, '{{context.components.correlation_names[1]}}')">{{context.components.correlation_names[1]}}</button>
+      <button class="corr-tablinks" onclick="openTab(event, '{{context.components.correlation_names[2]}}')">{{context.components.correlation_names[2]}}</button>
+    </div>
+
+    <div id={{context.components.correlation_names[0]}} class="corr-tabcontent">
+      {{ context.components.correlations[1][0]}}
+    </div>
+    <div id={{context.components.correlation_names[1]}} style="display:none" class="corr-tabcontent">
+      {{ context.components.correlations[1][1]}}
+    </div>
+    <div id={{context.components.correlation_names[2]}} style="display:none" class="corr-tabcontent">
+      {{ context.components.correlations[1][2]}}
+    </div>
+
+  </div>
+</div>
