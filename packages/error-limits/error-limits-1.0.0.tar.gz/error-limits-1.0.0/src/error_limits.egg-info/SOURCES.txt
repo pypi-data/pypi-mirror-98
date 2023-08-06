@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/error_limits/__init__.py
+src/error_limits.egg-info/PKG-INFO
+src/error_limits.egg-info/SOURCES.txt
+src/error_limits.egg-info/dependency_links.txt
+src/error_limits.egg-info/top_level.txt
