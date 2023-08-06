@@ -1,0 +1,10 @@
+d8s_json/__init__.py,sha256=TMehq0FxyActFBayUc7gWNMZAHrwmWDeVsVNe0OK0Ss,678
+d8s_json/json_data.py,sha256=SYuqvW8pIH4XsPaJy7gLdGAoW-cAp6OcKq37ZNX6iLU,5409
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_json_data.py,sha256=PAPMzxIX58tK_oD4O9W_U3ptso4PK5H4NBk3GZ5L0jo,7990
+d8s_json-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_json-0.2.0.dist-info/METADATA,sha256=XJw8IN3m1ikar2-Gb50GXsnBktnYcFZTNNTtmRWv8TI,1840
+d8s_json-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_json-0.2.0.dist-info/top_level.txt,sha256=4TkNDv_9m1ONTtlv0qeZYOxciW-tr1FoLiEwur8xh5k,15
+d8s_json-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_json-0.2.0.dist-info/RECORD,,
