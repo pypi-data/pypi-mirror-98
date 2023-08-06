@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        template_python_project=template_python_project.main:main 
+    
