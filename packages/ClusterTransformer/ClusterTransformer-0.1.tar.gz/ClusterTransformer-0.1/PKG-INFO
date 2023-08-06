@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ClusterTransformer
+Version: 0.1
+Summary: A library for creating topic clusters using Transformers.
+Home-page: https://github.com/abhilash1910/ClusterTransformer
+Author: ABHILASH MAJUMDER
+Author-email: debabhi1396@gmail.com
+License: MIT
+Download-URL: https://github.com/abhilash1910/ClusterTransformer/archive/v_01.tar.gz
+Description: This is a library used for creating clusters on topics based on Transformer model embeddings through agglomerative and Kmeans method.Any Transformer model from the Huggingface Pretrained Models list can be used for this purpose(https://huggingface.co/transformers/pretrained_models.html)
+Keywords: Semantic Similarity,Clustering,BERT,ALBERT Embeddings,BERT Transformer,Cosine Distance,Pytorch,Roberta,Distilbert,Transformers,Kmeans
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
