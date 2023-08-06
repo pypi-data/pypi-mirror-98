@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pi_is_better/__init__.py
+pi_is_better.egg-info/PKG-INFO
+pi_is_better.egg-info/SOURCES.txt
+pi_is_better.egg-info/dependency_links.txt
+pi_is_better.egg-info/not-zip-safe
+pi_is_better.egg-info/requires.txt
+pi_is_better.egg-info/top_level.txt
+pi_is_better/python/__init__.py

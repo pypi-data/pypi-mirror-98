@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pi-is-better
+Version: 0.0.0.post1234564321
+Summary: Example lib built with bazel
+Home-page: https://gitlab.saicny.com/saic-ny/saicny_core
+Author: Ryan Butler
+Author-email: ryan.butler@samsung.com
+License: UNKNOWN
+Description: # Pi is Better
+        Clearly Pi is better. Tau lovers are just hipster wannabe mathematicians.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
