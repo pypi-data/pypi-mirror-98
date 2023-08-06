@@ -1,0 +1,11 @@
+google_images_search/__init__.py,sha256=WX6Cdah6qT6mrY4355pCM6IAIwEFurDEaM8nFs3ZE3U,162
+google_images_search/cli.py,sha256=esyAwCDozfeTiDEl3SI7RUgSJe_vk_3W1uA38qnNl40,3686
+google_images_search/fetch_resize_save.py,sha256=K479qLqLjHEWArwjJ5lVp3wKdOIf4KdORFz9zFSnaew,13133
+google_images_search/google_api.py,sha256=A25Yd6OVSXb0S7lhGv2ELlp8RGkN4dW9eiaMyuPFUf8,4047
+google_images_search/meta.py,sha256=ejHyy8zORCf0PfUyyfPDzlV1k5vn5lI98S7TxKzblZc,22
+Google_Images_Search-1.3.7.dist-info/LICENSE,sha256=gFs-f7Ta2KbluTCG0S-Vi6oY6oLWiPzkeyK7oUBr4ZQ,1066
+Google_Images_Search-1.3.7.dist-info/METADATA,sha256=l6K9V-v_YtAixALQgQhlxI8UdqaPQin7sJ2jMdgB_M8,8929
+Google_Images_Search-1.3.7.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+Google_Images_Search-1.3.7.dist-info/entry_points.txt,sha256=1HmhgrK31LtkRx4R0xOkTxLdqAFfbulX-N__Bol4mp4,58
+Google_Images_Search-1.3.7.dist-info/top_level.txt,sha256=W3mvaCEjgJM68hsQypjJyblrTotImPAyO9M7hnzIahM,21
+Google_Images_Search-1.3.7.dist-info/RECORD,,
