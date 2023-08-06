@@ -1,0 +1,12 @@
+requests>=1.15.1
+dicttoxml
+requests_mock
+f5-icontrol-rest
+genie
+
+[dev]
+coverage
+restview
+Sphinx
+sphinx-rtd-theme
+requests-mock
