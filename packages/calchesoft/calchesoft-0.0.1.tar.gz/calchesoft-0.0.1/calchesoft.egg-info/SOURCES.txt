@@ -1,0 +1,8 @@
+README.md
+setup.py
+calchesoft/Calculator.py
+calchesoft/__init__.py
+calchesoft.egg-info/PKG-INFO
+calchesoft.egg-info/SOURCES.txt
+calchesoft.egg-info/dependency_links.txt
+calchesoft.egg-info/top_level.txt
