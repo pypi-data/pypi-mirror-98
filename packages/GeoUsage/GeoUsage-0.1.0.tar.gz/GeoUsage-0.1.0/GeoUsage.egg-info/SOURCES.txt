@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+GeoUsage/__init__.py
+GeoUsage/log.py
+GeoUsage/mailing_list.py
+GeoUsage.egg-info/PKG-INFO
+GeoUsage.egg-info/SOURCES.txt
+GeoUsage.egg-info/dependency_links.txt
+GeoUsage.egg-info/entry_points.txt
+GeoUsage.egg-info/requires.txt
+GeoUsage.egg-info/top_level.txt
