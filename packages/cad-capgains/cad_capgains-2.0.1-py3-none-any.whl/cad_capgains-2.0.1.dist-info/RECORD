@@ -1,0 +1,14 @@
+capgains/__init__.py,sha256=HVx0XJJ9OYFWBBPBCUFYb8Nm43ChPg9GZLh_dkxh9qI,22
+capgains/cli.py,sha256=KcDWAJCGSIE7oy8cpEt5pHRmVM_4idIA71G0Mva2vsY,1391
+capgains/commands/capgains_calc.py,sha256=qK4Zb5e9gZKGFoor6lxgdavdkhnaAMMvFwaUiW4ahOk,3462
+capgains/commands/capgains_show.py,sha256=x5okT3R1KUw1XuEppqQtWymJYH6MbQ7GgH642UMzf2o,1241
+capgains/exchange_rate.py,sha256=_oPH4xerHHYJ97Lun3Jh96Lj4K1A5GgtEynYfNrksTs,6132
+capgains/ticker_gains.py,sha256=zge7fPy8lB07T7ZZdCj1KlW0HqaM4OFTI6cmqeeJdiM,3224
+capgains/transaction.py,sha256=6N_4WlodlycJL3sXIFQGu2mczpA4IL6O4vtMQRPp_uQ,2528
+capgains/transactions.py,sha256=n_TATA3aSJ6KIhh2rIuhat9zB1grsM8iCFcFjkN8Ikk,2040
+capgains/transactions_reader.py,sha256=3ENt4ZYsL3JZsl827aNA1MwXdN95INUWQP0peHQiVCg,3826
+cad_capgains-2.0.1.dist-info/entry_points.txt,sha256=OgIDSEo_LLxKPMw7YN19FbDLqtnNoPK6H_MyreUhVEg,50
+cad_capgains-2.0.1.dist-info/LICENSE,sha256=DV-AHNy7Vc9irnGhDM1MKrZY9t6Xld7GxxFYZ0jfJ80,1068
+cad_capgains-2.0.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+cad_capgains-2.0.1.dist-info/METADATA,sha256=l6sT2iJnoHo-lvtfTzTwaiZx8M5mJEeL0td7Si25O50,6229
+cad_capgains-2.0.1.dist-info/RECORD,,
