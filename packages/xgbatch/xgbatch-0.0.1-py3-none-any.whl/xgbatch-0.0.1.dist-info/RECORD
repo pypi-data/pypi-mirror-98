@@ -1,0 +1,9 @@
+xgbatch/__init__.py,sha256=4t_C4sjiaLuQVFFj9OVmv96NyTEN-PtNRLylEUsuQgI,95
+xgbatch/client.py,sha256=FQZ6jK635Fp07jUxr-hTcsZiwjgWBnFJ-SYS_0QYMCY,2112
+xgbatch/common.py,sha256=kf7kkWSPfylB2VvPyfexKQJX19_Re6b6Zt8bAXmcNAE,57
+xgbatch/server.py,sha256=Dn8k5LrP6kHa_tj7ibQI_hcx0ThmfIVgruMClZzGtWc,3618
+xgbatch-0.0.1.dist-info/LICENSE.txt,sha256=PDzSHSkuImUPN80OAnL3YLY2Kp0Vkb8pzBLsM4eaolU,1049
+xgbatch-0.0.1.dist-info/METADATA,sha256=A-gP64oh4kOhUQ4Gf3q_0sJEDHKrPAjbloSXKZTvmFo,474
+xgbatch-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xgbatch-0.0.1.dist-info/top_level.txt,sha256=Pzdyd6todFKxPq6IiiKUmM7NYvC5yBUJCZR4s20yTos,8
+xgbatch-0.0.1.dist-info/RECORD,,
