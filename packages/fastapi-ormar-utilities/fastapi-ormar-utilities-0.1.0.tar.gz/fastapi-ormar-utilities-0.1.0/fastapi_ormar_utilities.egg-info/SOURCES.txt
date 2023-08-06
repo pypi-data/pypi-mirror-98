@@ -1,0 +1,10 @@
+README.md
+setup.py
+fastapi_ormar_utilities/__init__.py
+fastapi_ormar_utilities/base.py
+fastapi_ormar_utilities/decorators.py
+fastapi_ormar_utilities.egg-info/PKG-INFO
+fastapi_ormar_utilities.egg-info/SOURCES.txt
+fastapi_ormar_utilities.egg-info/dependency_links.txt
+fastapi_ormar_utilities.egg-info/requires.txt
+fastapi_ormar_utilities.egg-info/top_level.txt
