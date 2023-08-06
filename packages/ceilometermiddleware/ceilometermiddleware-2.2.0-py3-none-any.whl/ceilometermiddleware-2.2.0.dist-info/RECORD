@@ -1,0 +1,14 @@
+ceilometermiddleware/__init__.py,sha256=HtC-JRwm2F9s3PtRt1M9zytcxzlD08ye7ZfBxnX-vXA,676
+ceilometermiddleware/swift.py,sha256=zfNJV0iBRlEW62z0bYtaoroZc0WpXuLNSK8sThMI9Pg,15129
+ceilometermiddleware/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ceilometermiddleware/tests/base.py,sha256=pgyHZ0FqhTANZcVw8CLiu2p0cBuRgPbB3ByyBavDu8c,794
+ceilometermiddleware/tests/test_swift.py,sha256=Deq2gDuqDK9UktaSYZbMspXdLpOdhr8GpPs8QB4tKLw,22690
+ceilometermiddleware/tests/data/list_projects.yaml,sha256=njlZnh2pG_qBz57HkzE-33VHvvxRrrYqiLG7mmhviSU,14661
+ceilometermiddleware-2.2.0.dist-info/AUTHORS,sha256=UIve1H0qq4dDST3q717HImwREIWZfXx66ev0FtFjUfQ,1499
+ceilometermiddleware-2.2.0.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+ceilometermiddleware-2.2.0.dist-info/METADATA,sha256=vIZqj9mTFy0acPU5hSYgSEv-IHbaHYN-u9GaC6sA0eY,1910
+ceilometermiddleware-2.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ceilometermiddleware-2.2.0.dist-info/entry_points.txt,sha256=XbXPzQqIqTNZKOLr7U6JbcZCWll9e7NfrCBEtlMndLM,74
+ceilometermiddleware-2.2.0.dist-info/pbr.json,sha256=eTXUImH2GTcPph19MDLqki4NlGNl5TOqowCKsPdhluc,46
+ceilometermiddleware-2.2.0.dist-info/top_level.txt,sha256=I-N8wiFBp8O5NuBgxYVsMyOI7rUIWbw91ALjLiM1XUs,21
+ceilometermiddleware-2.2.0.dist-info/RECORD,,
