@@ -1,0 +1,3 @@
+[console_scripts]
+wrtview = wrtview.wrtview:main
+
