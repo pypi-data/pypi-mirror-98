@@ -1,0 +1,86 @@
+#ENG
+## How to use
+IMPORT AsyncTok module
+```sh
+from xh1scr import AsyncTok
+```
+Make task in asynchronous func
+```sh
+async def func():
+	await AsyncTok.run('xh1c2')
+	status = await AsyncTok.status()
+	likes = await AsyncTok.likes()
+	followers = await AsyncTok.followers()
+	following = await AsyncTok.following()
+	nickname = await AsyncTok.nickname()
+	avatar = await AsyncTok.getavatar()
+```
+btw u can get list in run
+```sh
+from xh1scr import AsyncTok
+async def func2():
+	await AsyncTok.run(['xh1c2','example','example2','and','more'])
+	status = await AsyncTok.status()
+	likes = await AsyncTok.likes()
+	followers = await AsyncTok.followers()
+	following = await AsyncTok.following()
+	nickname = await AsyncTok.nickname()
+	avatar = await AsyncTok.getavatar()
+```
+```sh
+and now that library can be not asyncronous
+```
+IMPORT TikTok module
+```sh
+from xh1scr import TikTok
+```
+Make task in normal func
+```sh
+def func():
+	TikTok.run('xh1c2')
+	status = TikTok.status()
+	likes = TikTok.likes()
+	followers = TikTok.followers()
+	following = TikTok.following()
+	nickname = TikTok.nickname()
+	avatar = TikTok.getavatar()
+```
+```sh
+from xh1scr import TikTok
+def func2():
+	TikTok.run(['xh1c2','example','example2','and','more'])
+	status = TikTok.status()
+	likes = TikTok.likes()
+	followers = TikTok.followers()
+	following = TikTok.following()
+	nickname = TikTok.nickname()
+	avatar = TikTok.getavatar()
+```
+#RU
+
+## Как использовать
+Для работы с ним надо сделать task в асинхронной функции
+(я знаю есть такое же API но с подключенной авторизацией и поиском по id но плюс моего API это удобство использования)
+```sh
+from xh1scr import TikTok
+def func():
+	TikTok.run('xh1c2') 
+	status = TikTok.status() 
+	likes = TikTok.likes()
+	followers = TikTok.followers()
+	following = TikTok.following()
+	nickname = TikTok.nickname()
+	avatar = TikTok.getavatar()
+```
+Так же в run можно передать список значений
+```sh
+from xh1scr import TikTok
+def func2():
+	TikTok.run(['xh1c2','example','example2','and','more'])
+	status = TikTok.status()
+	likes = TikTok.likes()
+	followers = TikTok.followers()
+	following = TikTok.following()
+	nickname = TikTok.nickname()
+	avatar = TikTok.getavatar()
+```
