@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: videotools-aut-tools
+Version: 1.1.0
+Summary: Suite of tools to be used to manage videotools repositories, github projects,...
+Home-page: https://github.com/Telefonica/videotools-aut-tools
+Author: Agustin Escamez, Álvaro del Hierro
+Author-email: agustin.escamezchimeno@telefonica.com, alvaro.delhierro@ust-global.com
+License: GPL
+Platform: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Office/Business
+Requires-Python: >=3.6
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cffi (==1.14.5)
+Requires-Dist: coloredlogs (==15.0)
+Requires-Dist: cryptography (==3.4.6)
+Requires-Dist: ghapi (==0.1.16)
+Requires-Dist: python-dotenv (==0.15.0)
+Requires-Dist: pytz (==2021.1)
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: pyparsing (==2.4.7) ; python_version >= "2.6" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: idna (==2.10) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: packaging (==20.9) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: pycparser (==2.20) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3"
+Requires-Dist: chardet (==4.0.0) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4"
+Requires-Dist: humanfriendly (==9.1) ; python_version >= "2.7" and python_version not in "3.0, 3.1, 3.2, 3.3, 3.4"
+Requires-Dist: fastcore (==1.3.19) ; python_version >= "3.6"
+
+===================
+ videotools-tools
+===================
+
+Collection of tools and scripts used by Video Tools team.   
+
+
+
