@@ -1,0 +1,3 @@
+[console_scripts]
+tack = bin.bachelor_start:main_wrapper
+

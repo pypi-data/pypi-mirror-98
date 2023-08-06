@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tack-cli
+Version: 0.1.2
+Summary: An extendable tagging system for files
+Home-page: UNKNOWN
+Author: Philipp Tusch
+Author-email: tusch.philipp@fh-swf.de
+License: MIT
+Platform: any
+Requires-Python: >=3.5, <4
+Requires-Dist: argparse (>=1.4.0)
+Requires-Dist: asyncio (>=3.4.3)
+Requires-Dist: aiofiles (>=0.6.0)
+Requires-Dist: cachetools (>=4.2.1)
+Requires-Dist: dependency-injector (>=4.29.2)
+Requires-Dist: environs (>=9.3.1)
+Requires-Dist: filetype (>=1.0.7)
+Requires-Dist: mp3-tagger (>=1.0)
+Requires-Dist: toml (>=0.10.2)
+Requires-Dist: pyyaml (>=5.4.1)
+Requires-Dist: peewee (>=3.14.3)
+Requires-Dist: jsonpickle (>=2.0.0)
+Requires-Dist: setuptools (>=54.1.2)
+Requires-Dist: wheel (>=0.36.2)
+Provides-Extra: test
+Requires-Dist: pytest (==6.2.2) ; extra == 'test'
+Requires-Dist: pytest-asyncio (==0.14.0) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'test'
+Requires-Dist: pytest-mock (==3.5.1) ; extra == 'test'
+Requires-Dist: pytest-timeout (==1.4.2) ; extra == 'test'
+Requires-Dist: pytest-xdist (==2.2.1) ; extra == 'test'
+
+UNKNOWN
+
+
