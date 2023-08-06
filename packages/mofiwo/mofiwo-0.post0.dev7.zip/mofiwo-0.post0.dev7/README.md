@@ -1,0 +1,2 @@
+# mofiwo
+Motif Finding Workflow

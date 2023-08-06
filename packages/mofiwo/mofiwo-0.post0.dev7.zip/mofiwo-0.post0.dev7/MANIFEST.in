@@ -1,0 +1,6 @@
+include Readme.md
+include install_requires.txt
+include mofiwo/config.env
+include versioneer.py
+include mofiwo/_version.py
+recursive-exclude test *
