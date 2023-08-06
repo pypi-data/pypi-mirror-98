@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: common-logger
+Version: 1.0.1
+Summary: easy to logging
+Home-page: https://github.com/liyangtxwd/Commen_logger
+Author: leeey
+Author-email: 1027187155@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
