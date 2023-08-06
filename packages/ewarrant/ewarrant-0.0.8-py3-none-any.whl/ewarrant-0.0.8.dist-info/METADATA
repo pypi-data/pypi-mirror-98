@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ewarrant
+Version: 0.0.8
+Summary: credential retrieval
+Home-page: UNKNOWN
+Author: ava.chen
+Author-email: ava.chen@ephodtech.com
+License: BSD-2
+Platform: UNKNOWN
+Requires-Dist: boto3 (==1.16.1)
+Requires-Dist: botocore
+Requires-Dist: cryptography
+
+UNKNOWN
+
+
