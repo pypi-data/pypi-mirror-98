@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: tsbase
+Version: 0.0.5
+Summary: Time series preprocessing for keras
+Home-page: https://github.com/zhf026
+Author: zhf026
+Author-email: zhf026@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: keras
+Requires-Dist: tensorflow
+
+Time series preprocessing for keras
+
+
