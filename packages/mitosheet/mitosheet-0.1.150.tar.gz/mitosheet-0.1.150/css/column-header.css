@@ -1,0 +1,45 @@
+
+/* 
+    we add the overflow: hidden property to the AgGrid header cell to ensure that
+    the column header does not overflow into the next cell. We have to add it here
+    because it was not working properly when just adding it to the .column-header-cell
+*/
+.ag-header-cell {
+    overflow: hidden;
+}
+
+/* 
+    Make the ag-grid column header react attribute larger because it is the parent of 
+    the column-header-cell, which we want to be large so that the user can easily
+    click on the column header cell to select it. 
+*/
+.ag-react-container {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.column-header-cell {
+    display: flex;
+    flex-flow: row; /* make space for the header and the filter icon */
+    justify-content: space-between;
+    align-items: center; /* make the header text and filter be aligned vertically */ 
+    width: 100%; /* make the column header large so its easily clickable */
+    height: 100%; /* make the column header large so its easily clickable */
+}
+
+.column-header-header-container {
+    white-space: normal; /* suggest to use by ag-grid if we are wrapping text */ 
+    word-break: break-all;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.column-header-column-header {
+    display: inline-flex;
+    flex-flow: row wrap; /* wrap the column header to make the word spans wrap to a new line*/
+}
+
+.column-header-column-header:hover {
+    text-decoration: underline;
+}
+ 
