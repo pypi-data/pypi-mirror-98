@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pxmap
+Version: 0.0.2
+Summary: Streamlit component for Plotly express
+Home-page: UNKNOWN
+Author: Jose Manuel Napoles Duarte
+Author-email: jnapoles@uach.mx
+License: UNKNOWN
+Description: Streamlit component for creating maps with Plotly express
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
