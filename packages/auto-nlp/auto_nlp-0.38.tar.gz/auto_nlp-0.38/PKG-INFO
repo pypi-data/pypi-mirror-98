@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: auto_nlp
+Version: 0.38
+Summary: Automated NLP tools. Plug N Play.
+Home-page: https://github.com/aryxns/auto_nlp
+Author: Aryan Sharma
+Author-email: aryansharma.prime@gmail.com
+License: MIT
+Download-URL: https://github.com/aryxns/auto_nlp/archive/v_0033.tar.gz
+Description: Auto NLP is an open-source automated NLP library. It is an abstraction layer over existing NLP packages like Tensorflow and spaCy. You can perform complex NLP tasks in very few lines of code.
+Keywords: ASPECT BASED,SENTIMENT,ANALYSIS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
