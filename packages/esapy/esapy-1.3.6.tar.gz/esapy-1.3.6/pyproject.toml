@@ -1,0 +1,45 @@
+[tool.autopep8]
+max_line_length = 120
+ignore = "E501,E266,E402"
+# E501: Line to long ((length) > 79 characters)
+# E266: Too many leading '#' for block comment
+# E402: Module level import not at top of file
+
+
+[tool.poetry]
+name = "esapy"
+version = "1.3.6"
+authors = ["Kosuke Mizuno <dotmapu@gmail.com>"]
+description = "A python implementation of esa.io API"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/KosukeMizuno/esapy"
+
+exclude = ["trial/*"]
+
+
+[tool.poetry.scripts]
+esa = 'esapy.entrypoint:main'
+
+
+[tool.poetry.dependencies]
+python = ">=3.4"
+pyyaml = "*"
+requests = "*"
+gitpython = "*"
+
+
+
+[tool.poetry.dev-dependencies]
+pydocstyle = "*"
+pycodestyle = "*"
+autopep8 = "*"
+jupyter = "*"
+ipython = ">=6"
+pip = "^21.0.1"
+
+
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
