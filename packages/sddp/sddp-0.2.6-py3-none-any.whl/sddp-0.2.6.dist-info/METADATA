@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sddp
+Version: 0.2.6
+Summary: ding talk sentry plugin
+Home-page: https://github.com/xiaomao361/sddp
+Author: zhouwei
+Author-email: xiaomao361@163.com
+License: MIT
+Keywords: sentry dingtalk
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Requires-Dist: sentry (>=9.0.0)
+Requires-Dist: requests
+
+UNKNOWN
+
+
