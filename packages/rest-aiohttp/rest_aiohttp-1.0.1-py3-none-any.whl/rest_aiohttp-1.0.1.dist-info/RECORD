@@ -1,0 +1,9 @@
+rest_aiohttp-1.0.1.dist-info/DESCRIPTION.rst,sha256=gk7kkhSk2Aqe3rrM3twDVbbb3LG2IA-IvMiWOEY7oHA,75
+rest_aiohttp-1.0.1.dist-info/METADATA,sha256=lnIp4-wgUp3WBkV0y1Mo_YDZchDM_l4PV1teoR4kcdk,558
+rest_aiohttp-1.0.1.dist-info/RECORD,,
+rest_aiohttp-1.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+rest_aiohttp-1.0.1.dist-info/metadata.json,sha256=REeJldYVv0el0hDX9kkA3IfVX07oZNnYANGSXzPaUU0,685
+rest_aiohttp-1.0.1.dist-info/top_level.txt,sha256=GkHtK9WOmvzkivsjMxZyBdj8e_LcbBk7x4QAsPycFmQ,12
+restaiohttp/__init__.py,sha256=h1YAtj9-ySG1LNlSJK0_9-izqojqCqQrV959g_W-CzE,110
+restaiohttp/__main__.py,sha256=-8Hf7Kn9sc-nmA94iP-SbkSZfK0igzvc5skNgL3t6H4,3576
+restaiohttp/serializers.py,sha256=3ilatQ0RMf0J-UMMY0HwDxFU8S_ztBvrHYEkc2hVgqE,2599
