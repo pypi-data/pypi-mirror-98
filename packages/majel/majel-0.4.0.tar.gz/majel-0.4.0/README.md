@@ -1,0 +1,188 @@
+# Majel
+
+[![GitLab](https://img.shields.io/badge/GitLab-Majel-%23FCA121?logo=gitlab&url=https://gitlab.com/danielquinn/majel)](https://gitlab.com/danielquinn/majel)
+[![License](https://img.shields.io/pypi/l/majel)](https://gitlab.com/danielquinn/majel/blob/master/LICENSE)
+[![PyPI](https://img.shields.io/pypi/pyversions/majel)](https://pypi.org/project/majel/)
+[![Flake8](https://img.shields.io/badge/linter-flake8-informational.svg)](https://flake8.pycqa.org/en/latest/)
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Downloads](https://img.shields.io/pypi/dm/majel)](https://pypi.org/project/majel/)
+
+A visual front-end for [Mycroft](https://mycroft.ai/).
+
+![Architecture](https://gitlab.com/danielquinn/majel/-/raw/master/architecture.png)
+
+
+## What can it do?
+
+[![A demo of Majel](https://gitlab.com/danielquinn/majel/-/raw/master/demo-thumbnail.png)](https://danielquinn.org/static/project/majel-demo.webm)
+
+
+Majel listens to the [Mycroft message bus framework](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/mycroft-core/message-bus)
+and performs various desktop jobs based on what it comes down that pipe.  The
+result is that you get Mycroft's standard skills along with:
+
+
+### Youtube player
+
+Say `Hey Mycroft, youtube <query>` and it'll search Youtube for your `query`,
+pick the first hit, and play it full screen in a loop.
+
+
+### Kodi
+
+If you've got a local Kodi installation *and* the video files you've got in
+there are also mounted locally, you can say `Hey Mycroft, play <query>` and
+it'll look for `query` in your Kodi library.  If it finds it, it'll play it
+with `mpv` locally.  It's also smart enough to know which episodes you've seen,
+so if you say `Hey Mycroft play Star Trek Deep Space Nine` and you've already
+seen all of season 4, it'll start with s05e01.  It'll also pick up right where
+you left off in that episode.
+
+
+### Netflix & Amazon Prime
+
+The `play` keyword will also fall back to Netflix or Amazon Prime if you don't
+have Kodi installed, or simply don't have the video you were asking for.  In
+this case, it'll hit up the [Utelly API](https://rapidapi.com/utelly/api/utelly)
+to see which streaming service has the movie/show you asked for, and then point
+your browser to that show and play the next episode.
+
+Note that this functionality requires two things: a Utelly API key (it's free
+for limited use, and we've got built-in caching so you'll never break the
+1000/mo limit) and a subscription to Netflix and/or Amazon Prime.
+
+
+### Browser Bookmarks
+
+If you store your bookmarks in Firefox, you can say
+`Hey Mycroft, search my bookmarks for <query>`.  This will rank your bookmarks
+by relevance to your query and display a list of everything it found within a
+threshold.  The list appears as a touchscreen-friendly UI so you can say *"Hey
+Mycroft, search my bookmarks for chicken"* and select from your 12 favourite
+chicken recipes.
+
+
+## Configuration
+
+Configuration of the skills is done separately for each skill via Mycroft's
+standard settings UI at [home.mycroft.ai](https://home.mycroft.ai/).  That's
+where, for example, you input your YouTube API key and Utelly API key.
+
+Majel is configured by way of a single config file you place in
+`/etc/majel.yml`.  Simply copy the [example file](https://gitlab.com/danielquinn/majel/-/raw/master/majel.yml.example)
+from the root of this project as a starting point and edit the values in there
+to fit your preference.  Full details on what values do what are in the example
+file.
+
+
+## This is Complicated, I Need Help
+
+Getting Mycroft up and running locally can be difficult, and setting it up in
+concert with Majel is even more fiddly.  To make things easier, there's a handy
+[scaffolding app](https://gitlab.com/danielquinn/majel-scaffolding) that
+combines Docker+Mycroft with Majel to make things a little easier.  If you want
+to try this out, that's probably your best first step.
+
+
+## What's Next?
+
+It'd be nice to have support for doing video calls: `Hey Mycroft, call my
+parents`, but that may not be easy to do since most video calling platforms
+seem to either be centred around scheduled group chat (Jitsi/Zoom), or just
+plain Linux/browser hostile (Skype).  Perhaps combining Pygui with Signal could
+do the job though...
+
+
+## Colophon
+
+For [Majel Barrett-Roddenberry](https://en.wikipedia.org/wiki/Majel_Barrett),
+who was amazing.
+
+
+## Change Log
+
+### 0.4.0 (Denobulan)
+
+* Modified the default page to communicate directly with Mycroft.  You can now
+  tap the Majel logo to get Mycroft to listen (instead of having to say
+  *"Hey Mycroft"*).  It will now also tell you when it's listening and write
+  out what it's saying.
+* Added support for authentication against the Kodi API.
+* If started when Mycroft is unavailable (typical if you're starting both
+  Mycroft and Majel at the same time), Majel will now politely wait for Mycroft
+  to come online rather than exploding with a traceback.
+* Added some tests and polished the CI to support Python 3.8 and 3.9.
+
+
+### 0.3.1 (Cardassian)
+
+* Added `websockets` and `flake8` to the list of dependencies.
+
+
+### 0.3.0 (Cardassian)
+
+* **Breaking change**: The endpoint for Mycroft's websocket is now
+  configurable.  Note that this requires a change to `/etc/majel.yml`.  See the
+  `majel.yml.example` file for more information.
+* Refactored the `Command` class to drop Mycroft's `MessageClient` in favour of
+  a [websockets](https://pypi.org/project/websockets/) -based, async-friendly
+  loop.
+* Dropped Mycroft's `Message` class in favour of a simpler dataclass.
+* As a perk of the above changes, the dropping of `mycroft-message-bus` as a
+  dependency should placate the grumpy folks unhappy with Majel's AGPL license.
+* Added the beginnings of a CI run.  At this stage, it's just enough to check
+  that the code conforms to style rules.
+* Fixed how we handle "noisy" actions.  Previously it was possible to start a
+  Youtube video and then start a Kodi stream and have the two media sources
+  play concurrently.
+
+
+### 0.2.4 (Bajoran)
+
+* Fixed a logo rendering problem on the home page.
+
+
+### 0.2.3 (Bajoran)
+
+* Added a proper logo.
+* Removed the rotating wallpaper from the home page.
+
+
+### 0.2.2 (Bajoran)
+
+* Tweaked the Amazon handler to widen the range of URLs it'll claim.
+* Fixed the click event on the Amazon handler so now it actually plays the
+  video when you get to the page.
+* Refactored the way we detect whether a browser action is "noisy".  The
+  functionality hasn't changed, but now there's a nice way to override how that
+  detection works should someone want to.
+* Added more logging to make it easier to understand what's going on.
+* Added a demo video to the `README`.
+
+
+### 0.2.1 (Bajoran)
+
+* Added this file!
+* Fixed the handling of a race condition when Mycroft sends a `stop` signal
+  over the message bus for one service and a `play` signal for another one.
+* Added a click event to auto-play Netflix streams.
+* Added some more debugging information
+
+
+### 0.2.0 (Bajoran)
+
+* Switch to Firefox for the browser actions.  I was never happy depending on
+  Google tech for a Free software project, and since we're using Firefox's
+  bookmarks anyway, this only made sense.
+* Drop the use of environment variables in favour of `/etc/mycroft.yml`.
+* Update dependencies.
+
+
+### 0.1.1 (Andorian)
+
+* Cosmetic updates for PyPI
+
+
+### 0.1.0 (Andorian)
+
+* Initial release
