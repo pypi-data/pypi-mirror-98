@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: grapl-common
+Version: 0.0.5
+Summary: Shared code between Grapl components
+Home-page: https://github.com/grapl-security/grapl
+Author: Grapl, Inc.
+Author-email: grapl-code@graplsecurity.com
+Maintainer: Grapl, Inc.
+Maintainer-email: grapl-code@graplsecurity.com
+License: MIT
+Project-URL: Documentation, https://grapl.readthedocs.io
+Project-URL: Source, https://github.com/grapl-security/grapl
+Project-URL: Tracker, https://github.com/grapl-security/grapl/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: mypy-boto3-dynamodb
+Requires-Dist: mypy-boto3-s3
+Requires-Dist: mypy-boto3-secretsmanager
+Requires-Dist: mypy-boto3-sqs
+Requires-Dist: typing-extensions
+
+# grapl-common
+Shared library between different Grapl python services.
+
+Ideally things that would go in here would be things like:
+* serializable and deserializable types (since those cross service boundaries)
+* common utilities, i.e. dealing with datetime stuff
+
+
