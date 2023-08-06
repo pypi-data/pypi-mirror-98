@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "django-allianceutils"
+version = "1.0.0"
+description = "Alliance Software common utilities for Django"
+repository = "https://github.com/AllianceSoftware/django-allianceutils/"
+homepage = "https://github.com/AllianceSoftware/django-allianceutils/"
+documentation = "https://github.com/AllianceSoftware/django-allianceutils/README.md"
+authors = ["Alliance Software <support@alliancesoftware.com.au>"]
+license = "BSD-2-Clause"
+readme = "README.md"
+packages = [
+    { include = "allianceutils" },
+]
+include = [
+    "CHANGELOG.md",
+]
+keywords = [
+    "django",
+    'alliance',
+    'alliancesoftware',
+]
+
+[tool.poetry.urls]
+issues = "https://github.com/AllianceSoftware/django-allianceutils/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+
+# the only hard dependency is django; everything else is only required
+# if you use functions/classes that require them
+Django = ">=2.2"
+isort = ">=4"
+
+[tool.poetry.dev-dependencies]
+tox = "*"
+tox-factor = "*"
+isort = ">=5"
+Django = "^2.2"
+
+# requirements-optional.ini contains extras
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
