@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: easyhttp
+Version: 0.0.1
+Summary: Basic HTTP server package
+Home-page: UNKNOWN
+Author: luisbrandino (Luis Brandino)
+Author-email: <luisbrandino.contato@gmail.com>
+License: UNKNOWN
+Description: A simple HTTP server made for study purposes.
+Keywords: python,webserver,http,http server,sockets
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
