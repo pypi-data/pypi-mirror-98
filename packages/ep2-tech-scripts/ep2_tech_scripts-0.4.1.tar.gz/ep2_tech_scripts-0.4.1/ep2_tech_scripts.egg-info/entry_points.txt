@@ -1,0 +1,3 @@
+[console_scripts]
+ep2_tech = ep2_tech.cli_tech:main
+
