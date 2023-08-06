@@ -1,0 +1,9 @@
+README.md
+motorlib.py
+setup.cfg
+setup.py
+motorlib.egg-info/PKG-INFO
+motorlib.egg-info/SOURCES.txt
+motorlib.egg-info/dependency_links.txt
+motorlib.egg-info/top_level.txt
+motorlib.egg-info/zip-safe
