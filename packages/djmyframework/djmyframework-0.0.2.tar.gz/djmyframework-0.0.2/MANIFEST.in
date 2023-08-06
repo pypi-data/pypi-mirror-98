@@ -1,0 +1,17 @@
+# https://www.osgeo.cn/python-packaging/guides/using-manifest-in.html
+#global-include templates/*
+include *
+graft framework
+graft templates
+graft apps
+graft utils
+graft scripts
+graft locale
+graft configfile
+graft config
+graft management
+graft static
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude *.log
+global-exclude static/upload
