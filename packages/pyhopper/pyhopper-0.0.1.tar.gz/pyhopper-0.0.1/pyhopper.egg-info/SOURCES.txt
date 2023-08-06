@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyhopper.egg-info/PKG-INFO
+pyhopper.egg-info/SOURCES.txt
+pyhopper.egg-info/dependency_links.txt
+pyhopper.egg-info/requires.txt
+pyhopper.egg-info/top_level.txt
