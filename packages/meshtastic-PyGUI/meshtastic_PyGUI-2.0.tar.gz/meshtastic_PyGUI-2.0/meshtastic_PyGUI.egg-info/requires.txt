@@ -1,0 +1,2 @@
+meshtastic>=1.2.6
+PySimpleGUI>=4.34.0
