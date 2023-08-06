@@ -1,0 +1,3 @@
+[console_scripts]
+provenance_tools = provenance_tools.write_provenance_data:write_provenance_data
+
