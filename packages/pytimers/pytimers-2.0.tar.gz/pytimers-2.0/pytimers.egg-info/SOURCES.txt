@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pytimers/__init__.py
+pytimers/timer.py
+pytimers.egg-info/PKG-INFO
+pytimers.egg-info/SOURCES.txt
+pytimers.egg-info/dependency_links.txt
+pytimers.egg-info/requires.txt
+pytimers.egg-info/top_level.txt
