@@ -1,0 +1,10 @@
+blacksquare/__init__.py,sha256=zbjN8bfNjInC08YmCDqQXrnSgL1-QfIXQ6TnZaHkwJ0,93
+blacksquare/crossword.py,sha256=ERmSPqvzbFJlsm7ksqM_NdnZxyESZi8QcYZi65OM-TQ,32480
+blacksquare/dictionary.py,sha256=FytHeMH39PkBopG3aqa_6bwGdUxA_GmRNmqJnd13dUM,2464
+blacksquare/peter-broda-wordlist__score_20210102.txt,sha256=3FuzgAZ83Qfyb5Jbgptu4xSaVIYuAdfyPpoUoWsCFT4,7699942
+blacksquare/test.puz,sha256=qgOlKPTmjucj3Pua6AW5qPPerqU8CLCbWL1QNP50H4I,2082
+blacksquare/utils.py,sha256=mWKqGs14HM57Ws8dfjp-NiygIejH_Kz2nX3WaCmnG48,788
+blacksquare-0.1.0.dist-info/LICENSE.md,sha256=KQHIyLz58k26oOM1e0f19kG8zeqx7o2c5qVDs4nyGdM,1070
+blacksquare-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+blacksquare-0.1.0.dist-info/METADATA,sha256=-ccBrG_eA-V5iKcYrOoJl8yBckfp7W9cx83g-4vN31c,569
+blacksquare-0.1.0.dist-info/RECORD,,
