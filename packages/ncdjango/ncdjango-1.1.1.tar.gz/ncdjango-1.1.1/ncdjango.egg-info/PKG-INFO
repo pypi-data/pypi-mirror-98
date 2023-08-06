@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ncdjango
+Version: 1.1.1
+Summary: A map server for NetCDF data
+Home-page: https://github.com/consbio/ncdjango
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Keywords: netcdf,django,map server
+Platform: UNKNOWN
