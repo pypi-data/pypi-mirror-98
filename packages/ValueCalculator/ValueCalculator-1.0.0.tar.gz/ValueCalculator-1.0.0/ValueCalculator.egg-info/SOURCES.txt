@@ -1,0 +1,9 @@
+README.md
+setup.py
+ValueCalculator/VC.py
+ValueCalculator/__init__.py
+ValueCalculator.egg-info/PKG-INFO
+ValueCalculator.egg-info/SOURCES.txt
+ValueCalculator.egg-info/dependency_links.txt
+ValueCalculator.egg-info/requires.txt
+ValueCalculator.egg-info/top_level.txt

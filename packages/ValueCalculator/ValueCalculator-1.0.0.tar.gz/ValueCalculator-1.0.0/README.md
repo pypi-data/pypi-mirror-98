@@ -1,0 +1,62 @@
+# ValueCalculator
+
+## A python extension package that can calculate the rise and fall of stocks
+## Anticipate the stock market
+
+下载包`pip install ValueCalculator`
+
+导入包`import ValueCalculator as vc`
+
+## Use
+
+```python
+import ValueCalculator as vc
+hq = vc.SM_Forecast(HAYear-列表, Now-现在行情, BBHAY-股票出厂至今的时间(默认为3))
+
+'''
+1. 参数HAYear必须为列表
+2. 参数HAYear的用意为 “在半年内是涨还是跌”
+3. 参数设置说明：
+    “涨”                 为   “1”
+    “大涨”               为   “2”
+    “没有多大涨/跌幅度”   为   “0”
+    “跌了”               为   “-1”
+    “跌的多”             为   “-2”
+	————以此类推
+4. 参数例示：
+    [+2, -1, +1, +1]
+'''
+
+'''
+1. 参数Now必须为正负数或0，（除0外）参数需要带着+/-符号，此参数只有一个值，为int类型
+2. 参数Now的用意为 “现在股票比前一年是跌了还是涨了”
+3. 参数设置说明：
+    “涨”           为    “+1”
+	“涨的多”       为    “+2”
+	“似乎没涨/跌”   为    “0”
+	“跌”           为    “-1”
+	“大跌”         为    “-2”
+	————以此类推
+4. 参数例示：
+    +2
+'''
+
+'''
+1. 参数BBHAY必须为大于1的整数，不附加+/-号，默认值为3
+2. 参数BBHAY的用意为 “股票出厂至今的时间（以年为单位）”
+3. 参数设置说明：
+    “一年了”   为   “1”
+	“两年了”   为   “2”
+	—————以此类推
+4. 参数例示：
+    2
+'''
+
+print(hq)
+```
+
+
+
+#### 我们正在努力中，感谢您的支持
+
+
