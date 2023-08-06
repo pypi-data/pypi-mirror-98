@@ -1,0 +1,7 @@
+%import common.ESCAPED_STRING
+%import common.DECIMAL
+%import common.NUMBER
+%import common.WS
+%import common.NEWLINE
+
+COMMENT_VALUE: ("//"|"#") /[^\n]/*
