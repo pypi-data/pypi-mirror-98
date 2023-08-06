@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: hass-uniocloud
+Version: 0.1.0
+Summary: Home Assistant cloud integration by UNIO Smart Home
+Home-page: https://www.uniosmarthome.com
+Author: UNIO Smart Home
+Author-email: developers@freshminds.com.br
+License: GPL v3
+Download-URL: https://github.com/uniosmarthome/hass-uniocloud/tarball/0.1.0
+Description: UNKNOWN
+Keywords: homeassistant,cloud,unio
+Platform: any
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.8
