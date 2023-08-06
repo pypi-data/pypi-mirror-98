@@ -1,0 +1,11 @@
+include *.so
+include LICENSE
+recursive-include __pycache__ *.pyc
+recursive-include build *.c
+recursive-include build *.o
+recursive-include build *.py
+recursive-include build *.so
+recursive-include dist *.gz
+recursive-include dist *.whl
+recursive-include src *.h
+recursive-include src *.py
