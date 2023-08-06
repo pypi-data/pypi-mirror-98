@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+mmlibrary/__init__.py
+mmlibrary.egg-info/PKG-INFO
+mmlibrary.egg-info/SOURCES.txt
+mmlibrary.egg-info/dependency_links.txt
+mmlibrary.egg-info/top_level.txt
