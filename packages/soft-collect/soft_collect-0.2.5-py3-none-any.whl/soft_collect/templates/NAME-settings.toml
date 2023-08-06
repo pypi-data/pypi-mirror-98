@@ -1,0 +1,24 @@
+ALIAS="XX"
+GRAU="PG"
+
+DBM="Oracle" # Supported DB's are: Oracle and SQLServer
+IP="localhost"
+PORT="1234"
+BASE="PG5XX"
+CONN_STR="Trusted_Connection=yes"
+DRIVER="Example Driver 13 Foobar"
+
+OBJS_SQL="objs_sql.sql"
+KEYS_SQL="""
+SELECT NAME, AGE
+FROM PEOPLE
+ORDER BY AGE
+"""
+CLASSES="classes.csv"
+
+BUCKET="my.bucket.in.aws"
+ACCESS_KEY="ABCDEFGHIJKLMNO"
+
+PROXY= {https= 'foo.bar:3128'}
+
+CAS = {host= "000.000.0.0", port= "1234", protocol="http", context="/spsmb/ibm/ia"}
