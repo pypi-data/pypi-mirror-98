@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.rst
+setup.py
+navigation_icons/__init__.py
+navigation_icons/extension.py
+navigation_icons/utils.py
+sphinx_navigation_icons.egg-info/PKG-INFO
+sphinx_navigation_icons.egg-info/SOURCES.txt
+sphinx_navigation_icons.egg-info/dependency_links.txt
+sphinx_navigation_icons.egg-info/namespace_packages.txt
+sphinx_navigation_icons.egg-info/not-zip-safe
+sphinx_navigation_icons.egg-info/requires.txt
+sphinx_navigation_icons.egg-info/top_level.txt
