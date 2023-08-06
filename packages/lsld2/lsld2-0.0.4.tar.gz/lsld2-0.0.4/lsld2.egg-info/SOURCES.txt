@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+lsld2/__init__.py
+lsld2/command_line.py
+lsld2.egg-info/PKG-INFO
+lsld2.egg-info/SOURCES.txt
+lsld2.egg-info/dependency_links.txt
+lsld2.egg-info/not-zip-safe
+lsld2.egg-info/requires.txt
+lsld2.egg-info/top_level.txt
