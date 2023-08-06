@@ -1,0 +1,4 @@
+celery
+pubnub
+requests
+openagua_client
