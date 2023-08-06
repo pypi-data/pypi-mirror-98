@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: napping
+Version: 0.1.7
+Summary: Control point mapping and coordination transformation using napari
+Home-page: https://github.com/BodenmillerGroup/napping
+Author: Jonas Windhager
+Author-email: jonas.windhager@uzh.ch
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: napari
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: imagecodecs
+Requires-Dist: napari[all]
+Requires-Dist: napari-plugin-engine (>=0.1.4)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pydantic (!=1.8.0)
+Requires-Dist: qtpy
+Requires-Dist: scikit-image
+
+# napping
+
+![PyPI](https://img.shields.io/pypi/v/napping)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/napping)
+![PyPI - License](https://img.shields.io/pypi/l/napping)
+![GitHub issues](https://img.shields.io/github/issues/BodenmillerGroup/napping)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/BodenmillerGroup/napping)
+
+Control point mapping and coordination transformation using napari
+
+## Requirements
+
+This package requires Python 3.7 or newer.
+
+Python package dependencies are listed in [requirements.txt](https://github.com/BodenmillerGroup/napping/blob/main/requirements.txt).
+
+Using virtual environments is strongly recommended.
+
+## Installation
+
+Install napping and its dependencies with:
+
+    pip install napping
+
+### Environment setup example: mapping IMC and slidescanner images
+
+As napari is under active development, the use of virtual environments is strongly encouraged. For example, to set up an environment for aligning Imaging Mass Cytometry (IMC, .mcd/.txt) and bright-field/immunofluorescence slidescanner (.czi) images:
+
+    conda create -n napping python
+    conda activate napping
+    pip install napping napari-imc napari-czifile2
+
+Afterwards, napping can be started from inside the environment:
+
+    napping
+
+## Usage
+
+Use `napping` for control point mapping and coordinate transformation
+
+## Authors
+
+Created and maintained by Jonas Windhager [jonas.windhager@uzh.ch](mailto:jonas.windhager@uzh.ch)
+
+## Contributing
+
+[Contributing](https://github.com/BodenmillerGroup/napping/blob/main/CONTRIBUTING.md)
+
+## Changelog
+
+[Changelog](https://github.com/BodenmillerGroup/napping/blob/main/CHANGELOG.md)
+
+## License
+
+[MIT](https://github.com/BodenmillerGroup/napping/blob/main/LICENSE.md)
+
+
