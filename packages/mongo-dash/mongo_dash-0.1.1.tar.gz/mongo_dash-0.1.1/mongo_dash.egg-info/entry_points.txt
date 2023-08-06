@@ -1,0 +1,3 @@
+[console_scripts]
+mongo_dash = mongo_dash.cli:app
+
