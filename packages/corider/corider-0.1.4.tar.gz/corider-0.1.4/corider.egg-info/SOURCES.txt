@@ -1,0 +1,10 @@
+README.md
+setup.py
+corider/__init__.py
+corider/config.py
+corider/utils.py
+corider.egg-info/PKG-INFO
+corider.egg-info/SOURCES.txt
+corider.egg-info/dependency_links.txt
+corider.egg-info/requires.txt
+corider.egg-info/top_level.txt
