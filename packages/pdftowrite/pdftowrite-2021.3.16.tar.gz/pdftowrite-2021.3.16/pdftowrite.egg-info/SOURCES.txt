@@ -1,0 +1,13 @@
+README.md
+setup.py
+pdftowrite/__init__.py
+pdftowrite/main.py
+pdftowrite/utils.py
+pdftowrite.egg-info/PKG-INFO
+pdftowrite.egg-info/SOURCES.txt
+pdftowrite.egg-info/dependency_links.txt
+pdftowrite.egg-info/entry_points.txt
+pdftowrite.egg-info/requires.txt
+pdftowrite.egg-info/top_level.txt
+pdftowrite/data/document.svg
+pdftowrite/data/page.svg
