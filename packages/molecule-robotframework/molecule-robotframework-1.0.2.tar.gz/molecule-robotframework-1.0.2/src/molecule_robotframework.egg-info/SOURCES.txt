@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+src/molecule_robotframework/__init__.py
+src/molecule_robotframework/robotframework.py
+src/molecule_robotframework.egg-info/PKG-INFO
+src/molecule_robotframework.egg-info/SOURCES.txt
+src/molecule_robotframework.egg-info/dependency_links.txt
+src/molecule_robotframework.egg-info/entry_points.txt
+src/molecule_robotframework.egg-info/requires.txt
+src/molecule_robotframework.egg-info/top_level.txt
+src/molecule_robotframework/cookiecutter/cookiecutter.json
+src/molecule_robotframework/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/fetch_results.yml
+src/molecule_robotframework/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/verify.yml
+src/molecule_robotframework/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/tests/example.robot
