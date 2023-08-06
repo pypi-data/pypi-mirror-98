@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+huskar_sdk.egg-info/PKG-INFO
+huskar_sdk.egg-info/SOURCES.txt
+huskar_sdk.egg-info/dependency_links.txt
+huskar_sdk.egg-info/requires.txt
+huskar_sdk.egg-info/top_level.txt
