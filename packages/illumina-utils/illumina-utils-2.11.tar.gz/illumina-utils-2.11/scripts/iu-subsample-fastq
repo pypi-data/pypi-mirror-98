@@ -1,0 +1,156 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Copyright (C) 2011, A. Murat Eren
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free
+# Software Foundation; either version 2 of the License, or (at your option)
+# any later version.
+#
+# Please read the COPYING file.
+
+import sys
+import random
+
+import IlluminaUtils.lib.fastqlib as u
+import IlluminaUtils.utils.helperfunctions as h
+import IlluminaUtils.utils.terminal as terminal
+
+run = terminal.Run()
+progress = terminal.Progress()
+pp = terminal.pretty_print
+
+def main(input_file_path_1, input_file_path_2, output_file_path_1, output_file_path_2, num_output_reads):
+
+    if not input_file_path_1:
+        raise h.ConfigError("You must at least provide an input R1 to subsample from.")
+
+    if output_file_path_1 is None:
+        raise h.ConfigError("Please provide an output file path for your subsampled R1.")
+
+    if input_file_path_2 and not output_file_path_2:
+        raise h.ConfigError("Please provide an output file path for your subsampled R2.")
+
+    if num_output_reads <= 0:
+        raise h.ConfigError(f"You probably want to change your mind that it's a good idea to subsample {num_output_reads} reads.")
+        sys.exit(-1)
+
+    progress.new(f"Generating a file handler for R1")
+    progress.update('...')
+    input_fastq_1 = u.FastQSource(input_file_path_1)
+    progress.end()
+
+    if num_output_reads > input_fastq_1.num_reads:
+        raise h.ConfigError(f"You can't subsample more reads than what exists in your FASTQ file, which contains precisely {pp(input_fastq_1.num_reads)} reads.")
+        sys.exit(-1)
+
+    output_fastq_1 = u.FastQOutput(output_file_path_1)
+
+    ###########################################################################
+
+    progress.new(f"Generating subsample indices...")
+    progress.update('...')
+    subsample_indices = set(random.sample(range(input_fastq_1.num_reads), num_output_reads))
+    progress.end()
+
+    if input_file_path_2 is None:
+        """If only 1 file path was provided, we are ready to rock and roll"""
+
+        i = 0
+
+        progress.new(f"Subsampling {pp(num_output_reads)} pairs from a total of {pp(input_fastq_1.num_reads)}")
+        progress.update('...')
+
+        while input_fastq_1.next(raw=True):
+            if i % 10000 == 0:
+                progress.update('%.2f%% ' % (i * 100 / input_fastq_1.num_reads))
+            if i in subsample_indices:
+                output_fastq_1.store_entry(input_fastq_1.entry)
+                subsample_indices.remove(i)
+            i += 1
+
+        input_fastq_1.close()
+        output_fastq_1.close()
+        progress.end()
+
+    ###########################################################################
+
+    else:
+        """If 2 file paths are provided we need to do some more work"""
+
+        progress.new(f"Generating a file handler for R2")
+        progress.update('...')
+        input_fastq_2 = u.FastQSource(input_file_path_2)
+        progress.end()
+
+        if int(input_fastq_2.num_reads) != input_fastq_1.num_reads:
+            raise h.ConfigError(f"These aren't paired FASTQ files. The length of --r1 is {pp(input_fastq_1.num_reads)} but the length of --r2 is {pp(input_fastq_2.num_reads)}")
+
+        output_fastq_2 = u.FastQOutput(output_file_path_2)
+
+        progress.new(f"Subsampling {pp(num_output_reads)} pairs from a total of {pp(input_fastq_1.num_reads)}")
+        progress.update('...')
+        i = 0
+        while input_fastq_1.next(raw=True) and input_fastq_2.next(raw=True):
+            if i % 10000 == 0:
+                progress.update('%.2f%% ' % (i * 100 / input_fastq_1.num_reads))
+            if i in subsample_indices:
+                output_fastq_1.store_entry(input_fastq_1.entry)
+                output_fastq_2.store_entry(input_fastq_2.entry)
+                subsample_indices.remove(i)
+            i += 1
+
+        input_fastq_1.close()
+        input_fastq_2.close()
+        output_fastq_1.close()
+        output_fastq_2.close()
+
+        progress.end()
+
+
+if __name__ == '__main__':
+    import argparse
+
+    parser = argparse.ArgumentParser(description=\
+    """Randomly subsample (without replacement) a FASTQ, or a pair of forward
+    and reverse FASTQs.""")
+
+    parser.add_argument('--r1', metavar = 'FILE_PATH', required=True, help = \
+    """FASTQ file to be subsampled. If you are subsampling a merged FASTQ or
+    you don't have reverse reads, provide the filepath here and do not supply
+    an argument for --r2. If you have forward and reverse reads, supply the
+    filepaths as the arguments for --r1 and --r2, respectively.""")
+
+    parser.add_argument('--r2', metavar = 'FILE_PATH', required=False, help = \
+    """FASTQ file for the reverse reads. Should be provided only if you are
+    subsampling forward and reverse reads.""")
+
+    parser.add_argument('--output1', type=str, required=False, metavar = 'FILEPATH', help = \
+    """The output filepath for the forward read. By default, the suffix
+    "_{n}randomreads" is appended to the input filename""")
+
+    parser.add_argument('--output2', type=str, required=False, metavar = 'FILEPATH', help = \
+    """The output filepath for the reverse read. By default, the suffix
+    "_{n}randomreads" is appended to the input filename, where {n} is the
+    argument of --num-reads. If you do not provide an argument for --r2 do not
+    provide an argument for --output2.""")
+
+    parser.add_argument('-n', '--num-reads', type=int, required=True, metavar = 'INT', help = 
+    """Number of FASTQ entries to randomly sample""")
+
+    args = parser.parse_args()
+
+    if args.r2 is None and args.output2 is not None:
+        parser.error("There is no second FASTQ file for you to provide an output for (--output2). Supply an argument for --r2.")
+
+    input_file_path_1 = args.r1
+    input_file_path_2 = args.r2
+    output_file_path_1 = args.output1
+    output_file_path_2 = args.output2
+    num_output_reads = args.num_reads
+
+    try:
+        main(input_file_path_1, input_file_path_2, output_file_path_1, output_file_path_2, num_output_reads)
+    except h.ConfigError as e:
+        print(e)
+        sys.exit()
