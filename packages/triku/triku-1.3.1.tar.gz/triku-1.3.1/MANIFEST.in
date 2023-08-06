@@ -1,0 +1,7 @@
+include requirements.txt
+include LICENSE
+include *.yaml
+include *.yml
+prune notebooks
+prune data
+prune docs
