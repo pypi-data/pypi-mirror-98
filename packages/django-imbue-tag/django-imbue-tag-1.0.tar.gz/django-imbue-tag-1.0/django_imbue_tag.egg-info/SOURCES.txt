@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_imbue_tag/__init__.py
+django_imbue_tag.egg-info/PKG-INFO
+django_imbue_tag.egg-info/SOURCES.txt
+django_imbue_tag.egg-info/dependency_links.txt
+django_imbue_tag.egg-info/top_level.txt
+django_imbue_tag/templatetags/__init__.py
+django_imbue_tag/templatetags/imbue_tag.py
+tests/__init__.py
+tests/settings.py
+tests/tests.py
