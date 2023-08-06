@@ -1,0 +1,7 @@
+setup.py
+spookycastle/__init__.py
+spookycastle/main.py
+spookycastle.egg-info/PKG-INFO
+spookycastle.egg-info/SOURCES.txt
+spookycastle.egg-info/dependency_links.txt
+spookycastle.egg-info/top_level.txt
