@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mip-cvxpy
+Version: 0.0.1
+Summary: Solve MILP CVXPY problems using python-mip
+Home-page: https://github.com/jurasofish/mip_cvxpy
+Author: Michael Jurasovic
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cvxpy (>=1.1.11)
+Requires-Dist: scipy
+Requires-Dist: mip (==1.13.0)
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: cylp ; extra == 'test'
+
+# mip-cvxpy
+
+
