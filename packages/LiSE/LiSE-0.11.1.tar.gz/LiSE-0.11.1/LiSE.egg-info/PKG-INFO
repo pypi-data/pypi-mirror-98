@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: LiSE
+Version: 0.11.1
+Summary: Rules engine for life simulation games
+Home-page: https://github.com/LogicalDash/LiSE
+Author: Zachary Spector
+Author-email: public@zacharyspector.com
+License: AGPL3+
+Project-URL: Documentation, https://logicaldash.github.io/LiSE
+Description: UNKNOWN
+Keywords: game simulation
+Platform: UNKNOWN
