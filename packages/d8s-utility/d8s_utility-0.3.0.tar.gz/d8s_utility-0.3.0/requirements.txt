@@ -1,0 +1,5 @@
+d8s-file-system
+d8s-networking
+d8s-urls
+d8s-lists
+importlib-metadata; python_version < '3.8'
