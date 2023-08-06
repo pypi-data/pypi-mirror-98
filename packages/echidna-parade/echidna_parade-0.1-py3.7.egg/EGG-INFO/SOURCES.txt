@@ -1,0 +1,9 @@
+README.md
+setup.py
+echidna_parade/echidna_parade.py
+echidna_parade.egg-info/PKG-INFO
+echidna_parade.egg-info/SOURCES.txt
+echidna_parade.egg-info/dependency_links.txt
+echidna_parade.egg-info/entry_points.txt
+echidna_parade.egg-info/requires.txt
+echidna_parade.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+pyyaml
+slither-analyzer
+crytic-compile
