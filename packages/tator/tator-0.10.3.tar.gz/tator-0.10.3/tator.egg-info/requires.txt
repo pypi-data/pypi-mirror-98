@@ -1,0 +1,7 @@
+certifi
+progressbar2
+python-dateutil
+pyyaml
+requests
+six>=1.10
+urllib3>=1.15
