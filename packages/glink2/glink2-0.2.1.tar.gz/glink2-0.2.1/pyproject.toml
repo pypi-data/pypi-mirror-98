@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "glink2"
+version = "0.1.0"
+description = ""
+authors = ["Cologler <skyoflw@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyGithub = "^1.53"
+requests = "^2.25.0"
+click-anno = "^0.1.1"
+xdg = "^5.0.1"
+sqlitedict = "^1.7.0"
+typeguard = "^2.10.0"
+filelock = "^3.0.12"
+click-log = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+setupmeta-builder = "^0.2.1"
+
+[tool.poetry.scripts]
+glink = 'glink.cli:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
