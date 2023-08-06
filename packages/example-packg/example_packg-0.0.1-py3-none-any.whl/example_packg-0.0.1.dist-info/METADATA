@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: example-packg
+Version: 0.0.1
+Summary: a example package
+Home-page: https://github.com/wbx010512/pythonProject.git
+Author: wbx
+Author-email: wbx481742959@Outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+null
+
+

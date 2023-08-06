@@ -1,0 +1,6 @@
+example_packg/__init__.py,sha256=YGbaY5YwDHHXenbiz5NycRsTyLZi5L3c4IuDHjgvb0U,40
+example_packg/helloworld.py,sha256=9QjGhy6W4E9haOw-AJXaAHevmfHKoDCRXSjTGeI5uII,44
+example_packg-0.0.1.dist-info/METADATA,sha256=4GUlnHURQjma_j1LzNsqgfpPeN1DdEMjQ8TUp1USkZc,418
+example_packg-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+example_packg-0.0.1.dist-info/top_level.txt,sha256=pcKCP4o7Cg9QmX9tCpF_VcNmIeGXRkUowQRWE5xHgkU,14
+example_packg-0.0.1.dist-info/RECORD,,
