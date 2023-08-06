@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.cfg
+nhpp.egg-info/PKG-INFO
+nhpp.egg-info/SOURCES.txt
+nhpp.egg-info/dependency_links.txt
+nhpp.egg-info/top_level.txt
