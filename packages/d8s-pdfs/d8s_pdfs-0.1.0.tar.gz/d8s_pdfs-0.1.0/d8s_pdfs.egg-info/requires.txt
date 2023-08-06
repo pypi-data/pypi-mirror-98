@@ -1,0 +1,7 @@
+democritus-file-system
+democritus-networking
+democritus-urls
+PyPDF2
+
+[:python_version < "3.8"]
+importlib-metadata
