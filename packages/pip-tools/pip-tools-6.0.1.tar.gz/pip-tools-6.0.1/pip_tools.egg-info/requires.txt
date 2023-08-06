@@ -1,0 +1,10 @@
+click>=7
+pep517
+pip>=20.3
+
+[coverage]
+pytest-cov
+
+[testing]
+pytest
+pytest-rerunfailures
