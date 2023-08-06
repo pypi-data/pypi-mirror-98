@@ -1,0 +1,9 @@
+sanic_rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sanic_rest/exceptions.py,sha256=7SFv8VvLAso201LG8NOZW8MV4WNl7dgNx1Giy6T1jyY,875
+sanic_rest/protected_views.py,sha256=GPEtrbtVtkZrSs3ZRCmpSnDmOj3lIMN9z4LXS0FPpEA,380
+sanic_rest/validator.py,sha256=E9XzuH-b2ybhY4QKCxnGWCNxtdg3eypVWv4w3P-PJvg,6153
+sanic_rest/views.py,sha256=l23zsg6YSrAppAt_c4UhMD_sjJC0vVdSTVAvyzekmsg,9002
+sanic_rest-1.2.0a1.dist-info/LICENSE.md,sha256=CUvt2ilcBwKAfRAnoA4RNPTLcdUj3En21LPK9YkFMGg,11358
+sanic_rest-1.2.0a1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+sanic_rest-1.2.0a1.dist-info/METADATA,sha256=x_Rd9_ZUYcLL1OH1I3t03w_gQ5YeqOyJEkjP25g51OQ,1330
+sanic_rest-1.2.0a1.dist-info/RECORD,,
