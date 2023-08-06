@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+qrztools/__info__.py
+qrztools/__init__.py
+qrztools/__main__.py
+qrztools/qrzasync.py
+qrztools/qrzsync.py
+qrztools/qrztools.py
+qrztools.egg-info/PKG-INFO
+qrztools.egg-info/SOURCES.txt
+qrztools.egg-info/dependency_links.txt
+qrztools.egg-info/requires.txt
+qrztools.egg-info/top_level.txt
