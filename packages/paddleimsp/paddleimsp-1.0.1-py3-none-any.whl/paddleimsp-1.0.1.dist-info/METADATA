@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: paddleimsp
+Version: 1.0.1
+Summary: Paddle Image Search Pair
+Home-page: UNKNOWN
+Author: jm12138
+Author-email: 2286040843@qq.com
+License: Apache-2.0 License
+Platform: UNKNOWN
+Requires-Dist: paddleclip
+
+UNKNOWN
+
+

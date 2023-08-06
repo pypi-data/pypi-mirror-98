@@ -1,0 +1,8 @@
+imsp/__init__.py,sha256=-K1-9elyE7I5vUrxqOII4PuHC4z126Qk4THaExYDzFs,24
+imsp/imsp.py,sha256=E36Ju8jhAQALh2FB1cf8oAstD-SndO1mR52CWpuo3qI,4822
+imsp/translator.py,sha256=wMGedlbQhPTDeSfO-ImoTgbslzkUnSM7dHYCAswy0Qg,1014
+paddleimsp-1.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+paddleimsp-1.0.1.dist-info/METADATA,sha256=xdC73hUliDLHpqB6XtSTHMB-YHpjynSSjYPdaUBpdLY,238
+paddleimsp-1.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+paddleimsp-1.0.1.dist-info/top_level.txt,sha256=1whn7S02z0z0f1JqOs-_g52CXjFmOsKwUe72tNxNz2o,5
+paddleimsp-1.0.1.dist-info/RECORD,,
