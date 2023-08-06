@@ -1,0 +1,25 @@
+
+<html>
+<head>
+</head>
+<body>
+<title>Embedding media in HTML</title>
+
+<div>
+<video  loop controls width='640' height='365' preload='none'>
+    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.mp4'  type='video/mp4;  codecs="avc1.42E01E, mp4a.40.2"'>
+    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.webm' type='video/webm; codecs="vp8, vorbis"'>
+    <source src='https://hplgit.github.io/animate/doc/pub/mov-animate/demo.ogg'  type='video/ogg;  codecs="theora, vorbis"'>
+</video>
+</div>
+<p><em></em></p>
+
+<!-- Issue warning if in a Safari browser -->
+<script language="javascript">
+if (!!(window.safari)) {
+  document.write("<div style=\"width: 95%%; padding: 10px; border: 1px solid #100; border-radius: 4px;\"><p><font color=\"red\">The above movie will not play in Safari - use Chrome, Firefox, or Opera.</font></p></div>")}
+</script>
+
+
+</body>
+</html>

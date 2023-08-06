@@ -1,0 +1,39 @@
+\BOOKMARK [1][-]{section.1}{Section 1}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Subsection 1}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Subsection 2: Testing figures}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{The \040parameter \(not ?\)}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Custom Environments}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Tables}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{A test of verbatim words in heading with subscript ai: !my\137file\137v1! and !my\137file\137v2! }{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{Just bold}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{Just emphasize}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.9}{Just verbatim }{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.10}{Bold beginning}{section.1}% 11
+\BOOKMARK [2][-]{subsection.1.11}{Emphasize beginning}{section.1}% 12
+\BOOKMARK [2][-]{subsection.1.12}{Verbatim beginning}{section.1}% 13
+\BOOKMARK [2][-]{subsection.1.13}{Maybe bold end}{section.1}% 14
+\BOOKMARK [2][-]{subsection.1.14}{Maybe emphasize end}{section.1}% 15
+\BOOKMARK [2][-]{subsection.1.15}{Maybe verbatim end }{section.1}% 16
+\BOOKMARK [2][-]{subsection.1.16}{The middle has bold word}{section.1}% 17
+\BOOKMARK [2][-]{subsection.1.17}{The middle has emphasize word}{section.1}% 18
+\BOOKMARK [2][-]{subsection.1.18}{The middle has verbatim word}{section.1}% 19
+\BOOKMARK [2][-]{subsection.1.19}{Bibliography test}{section.1}% 20
+\BOOKMARK [2][-]{subsection.1.20}{User-defined environments}{section.1}% 21
+\BOOKMARK [2][-]{subsection.1.21}{URLs}{section.1}% 22
+\BOOKMARK [2][-]{subsection.1.22}{Test of Some LaTeX Fixes}{section.1}% 23
+\BOOKMARK [1][-]{section.2}{LaTeX Mathematics}{}% 24
+\BOOKMARK [1][-]{section.3}{Exercises}{}% 25
+\BOOKMARK [2][-]{subsection.3.1}{Not an exercise}{section.3}% 26
+\BOOKMARK [1][-]{section.4}{Here goes another section}{}% 27
+\BOOKMARK [1][-]{section.5}{More Exercises}{}% 28
+\BOOKMARK [1][-]{section*.72}{References}{}% 29
+\BOOKMARK [1][-]{appendix.A}{Just for testing; part I}{}% 30
+\BOOKMARK [2][-]{subsection.A.1}{A subsection within an appendix}{appendix.A}% 31
+\BOOKMARK [1][-]{appendix.B}{Just for testing; part II}{}% 32
+\BOOKMARK [2][-]{subsection.B.1}{Appendix: Testing identical titles}{appendix.B}% 33
+\BOOKMARK [2][-]{subsection.B.2}{Appendix: Testing identical titles}{appendix.B}% 34
+\BOOKMARK [2][-]{subsection.B.3}{Appendix: Testing identical titles}{appendix.B}% 35
+\BOOKMARK [2][-]{subsection.B.4}{Appendix: Testing identical titles}{appendix.B}% 36
+\BOOKMARK [2][-]{subsection.B.5}{Appendix: Testing inline comments}{appendix.B}% 37
+\BOOKMARK [2][-]{subsection.B.6}{Appendix: Testing headings ending with verbatim inline }{appendix.B}% 38
+\BOOKMARK [1][-]{section*.76}{Index}{}% 39

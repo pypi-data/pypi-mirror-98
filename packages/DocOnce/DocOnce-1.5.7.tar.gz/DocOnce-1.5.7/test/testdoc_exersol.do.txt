@@ -1,0 +1,99 @@
+======= Answers and Solutions =======
+label{ch:answerssolutions}
+
+
+
+# --- begin exercise --- answers and solutions
+===== Example 1: Examples can be typeset as exercises =====
+# Solution to Exercise ref{Example}
+
+__a) Solution.__
+The answer to this subproblem can be written here.
+__b) Solution.__
+The answer to this other subproblem goes here,
+maybe over multiple doconce input lines.
+
+# --- end exercise --- solution
+
+
+
+
+# --- begin exercise --- answers and solutions
+===== Problem 2: Flip a Coin =====
+# Solution to Exercise ref{demo:ex:1}
+
+
+__a) Answer.__
+If the `random.random()` function returns a number $<1/2$, let it be
+head, otherwise tail. Repeat this $N$ number of times.
+
+# --- begin solution of exercise at end ---
+__a) Solution.__
+29 <<<!!CODE_BLOCK  pycod
+# --- end solution of exercise at end ---
+
+__c) Answer.__
+`np.sum(np.where(r <= 0.5, 1, 0))` or `np.sum(r <= 0.5)`.
+
+# --- end exercise --- solution
+
+
+
+
+
+
+# --- begin exercise --- answers and solutions
+===== Project 5: Explore Distributions of Random Circles =====
+# Solution to Exercise ref{proj:circle1}
+
+
+__a) Answer.__
+Here goes the short answer to part a).
+
+# --- begin solution of exercise at end ---
+__a) Solution.__
+Here goes a full solution to part a).
+# --- end solution of exercise at end ---
+
+# --- end exercise --- solution
+
+
+
+
+# --- begin exercise --- answers and solutions
+===== Exercise 6: Determine some Distance =====
+# Solution to Exercise ref{exer:dist}
+
+__Solution.__
+Here goes a full solution of the whole exercise.
+With some math $a=b$ in this solution:
+15 <<<!!MATH_BLOCK
+And code `a=b` in this solution:
+32 <<<!!CODE_BLOCK 
+End of solution is here.
+
+
+__a) Answer.__
+Short answer to subexercise a).
+With math in answer: $a=b$.
+
+# --- begin solution of exercise at end ---
+__b) Solution.__
+Here goes the solution of this subexercise.
+# --- end solution of exercise at end ---
+
+# --- end exercise --- solution
+
+
+
+
+
+
+# --- begin exercise --- answers and solutions
+===== Example 9: Just an example =====
+
+
+# --- end exercise --- solution
+
+
+

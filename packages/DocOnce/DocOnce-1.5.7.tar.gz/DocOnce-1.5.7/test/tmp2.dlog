@@ -1,0 +1,354 @@
+Translating doconce text in tmp2.do.txt to plain
+
+*** error: verbatim code in part of link is not allowed in format plain
+    "`myfile.py` file": "https://some.where.net/myfile.py"
+    use either link as verbatim code only, "`myfile.py file`",
+    or no verbatim: "myfile.py file"
+    or use only the verbatim part as link
+Translating doconce text in tmp2.do.txt to sphinx
+ERROR: 1 !bsubex do not match 0 !esubex directives
+Missing !esubex after final !bsubex
+Translating doconce text in tmp2.do.txt to sphinx
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+
+*** error: line before list, !bc, !bt or @@@CODE block is a comment line
+which will "swallow" the block in reST format.
+    Insert some extra line (text) to separate the two elements.
+
+# Comment before list
+
+ * A1
+ * A2
+
+Normal text.
+
+===== Normal section with exe
+Translating doconce text in tmp2.do.txt to sphinx
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+
+*** warning: found \cite{...} with backslash
+    (cite{...} has no backslash in DocOnce syntax)
+\cite{mybook}
+
+*** warning: found \idx{...} (idx{...} has no backslash)
+\idx{youridx}
+Translating doconce text in tmp2.do.txt to rst
+
+*** error: must in format "rst" have a plain sentence before
+a code block like !bc/!bt/@@@CODE, not a section/paragraph heading,
+table, or comment:
+
+---------------------------------
+ybook}.
+
+__Paragraph before code is bad.__
+
+
+
+!bc
+More verbatim stuff.
+!ec
+
+Can we successfully say `__call__` and `__ad
+---------------------------------
+Translating doconce text in tmp2.do.txt to rst
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+
+*** warning: found \label{...} with backslash
+    (label{...} has no backslash in DocOnce syntax)
+\label{mylab}
+*** error: missing comma after filename, before options in FIGURE
+FIGURE: [../doc/manual/fig/wave1D width=800]
+Translating doconce text in tmp2.do.txt to sphinx
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** warning: hyperlink to URL ../lib/doconce/doconce.py is to a local file,
+    recommended to be _static/../lib/doconce/doconce.py for sphinx
+    move linked file to _static and change URLs unless
+    you really know that the links will be correct when the
+    sphinx build directory is moved to its final destination
+*** error: figure file "../doc/manual/fig/wave1D" does not exist!
+Translating doconce text in tmp2.do.txt to sphinx
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** warning: hyperlink to URL ../lib/doconce/doconce.py is to a local file,
+    recommended to be _static/../lib/doconce/doconce.py for sphinx
+    move linked file to _static and change URLs unless
+    you really know that the links will be correct when the
+    sphinx build directory is moved to its final destination
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format sphinx
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.png ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.png not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.gif ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.gif not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.jpg ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.jpg not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.jpeg ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99.jpeg not found
+*** error: figure https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media99:
+    could not find URL with legal extension .png, .gif, .jpg, .jpeg
+Translating doconce text in tmp2.do.txt to html
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.html ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.html for format html
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+*** warning: you have citations but no bibliography (BIBFILE: ...)
+mybook
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.mp4 ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.mp4 not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.webm ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.webm not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.ogg ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.ogg not found
+*** warning: movie "https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.ogg" was not found
+    could not find any .ogg/.mp4/.webm version of this filename
+*** error: could not translate environment: !bsol
+
+    This is an environment in an exercise. Check if the
+    heading is correct so the subsection was recognized
+    as Exercise, Problem, or Project (Exercise: title).
+
+    Other possible reasons:
+
+     * syntax error in environment name
+     * environment inside code: use | instead of !
+     * or bug in doconce
+
+    context:
+
+al text.
+
+<p></p>
+Just a loner subexercise begin.
+!bsol
+Here is a solution.
+!esol
+Normal text.
+
+<p></p>
+<
+Translating doconce text in tmp2.do.txt to html
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.html ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.html for format html
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+*** warning: you have citations but no bibliography (BIBFILE: ...)
+mybook
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.mp4 ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.mp4 not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.webm ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.webm not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.ogg ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.ogg not found
+*** warning: movie "https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie99x9.ogg" was not found
+    could not find any .ogg/.mp4/.webm version of this filename
+*** error: could not translate environment: !bsol
+
+    This is an environment in an exercise. Check if the
+    heading is correct so the subsection was recognized
+    as Exercise, Problem, or Project (Exercise: title).
+
+    Other possible reasons:
+
+     * syntax error in environment name
+     * environment inside code: use | instead of !
+     * or bug in doconce
+
+    context:
+
+al text.
+
+<p></p>
+Just a loner subexercise begin.
+!bsol
+Here is a solution.
+!esol
+Normal text.
+
+<p></p>
+<
+Translating doconce text in tmp2.do.txt to html
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.html ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.html for format html
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format html
+*** warning: you have citations but no bibliography (BIBFILE: ...)
+mybook
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.mp4 ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.mp4 not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.webm ...
+    found!
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.ogg ...
+    found!
+*** error: could not translate environment: !bsol
+
+    This is an environment in an exercise. Check if the
+    heading is correct so the subsection was recognized
+    as Exercise, Problem, or Project (Exercise: title).
+
+    Other possible reasons:
+
+     * syntax error in environment name
+     * environment inside code: use | instead of !
+     * or bug in doconce
+
+    context:
+
+al text.
+
+<p></p>
+Just a loner subexercise begin.
+!bsol
+Here is a solution.
+!esol
+Normal text.
+
+<p></p>
+<
+Translating doconce text in tmp2.do.txt to sphinx
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png for format sphinx
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format sphinx
+*** warning: math only in sphinx figure caption (it will be ignored by sphinx, resulting in empty caption)
+  $a=50$
+    FIGURE: [../doc/src/manual/fig/wave1D.png
+*** warning: math only in sphinx figure caption (it will be ignored by sphinx, resulting in empty caption)
+  $a=50$
+    FIGURE: [https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png
+*** warning: you have citations but no bibliography (BIBFILE: ...)
+mybook
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.mp4 ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.mp4 not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.webm ...
+    found!
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.ogg ...
+    found!
+output in tmp2.rst
+Translating doconce text in tmp2.do.txt to sphinx
+*** error: heading "===== Normal section with exercise envirs are detected by syntax checks =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Links to local files shall give warning =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+*** error: heading "===== Failure of tables =====" is subsection, but
+    this part of the document (after !split) has its first heading as
+    subsubsection - the first heading must have the highest level
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.png for format sphinx
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png for format sphinx
+*** warning: math only in sphinx figure caption (it will be ignored by sphinx, resulting in empty caption)
+  $a=50$
+    FIGURE: [../doc/src/manual/fig/wave1D.png
+*** warning: math only in sphinx figure caption (it will be ignored by sphinx, resulting in empty caption)
+  $a=50$
+    FIGURE: [https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png
+*** warning: you have citations but no bibliography (BIBFILE: ...)
+mybook
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.mp4 ...
+    https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.mp4 not found
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.webm ...
+    found!
+... movie: trying to find https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.ogg ...
+    found!
+output in tmp2.rst
+Translating doconce text in tmp2.do.txt to pdflatex
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pgf ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pgf not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.tikz ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.tikz not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pdf ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pdf not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png for format pdflatex
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.pdf for format pdflatex
+*** error: hyperlinks inside caption pose problems for
+    latex output and --device=paper because they lead
+    to footnotes in captions. (Footnotes in floats require
+    minipage.) The latex document with compile with
+    \protect\footnote, but the footnote is not shown.
+    Recommendation: rewrite caption.
+
+-----------
+"Google": "https://google.com".
+-----------
+
+Translating doconce text in tmp2.do.txt to pdflatex
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pgf ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pgf not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.tikz ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.tikz not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pdf ...
+    https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.pdf not found
+... checking existence of https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png ...
+    found!
+figure file https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media:
+    can use https://hplgit.github.io/INF5620/doc/pub/fig-wave/pulse2_in_two_media.png for format pdflatex
+figure file ../doc/src/manual/fig/wave1D:
+    can use ../doc/src/manual/fig/wave1D.pdf for format pdflatex
+*** warning: you have citations but no bibliography (BIBFILE: ...)
+mybook
+output in tmp2.p.tex

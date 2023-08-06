@@ -1,0 +1,707 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/doconce/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title></title>
+
+
+<style type="text/css">
+/* blueish style */
+
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+h4 { font-size: 1.2em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa; }
+pre { background: #ededed; color: #000; padding: 15px;}
+div.highlight {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.21429em;
+}
+div.cell {
+    width: 100%;
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    outline: none;
+}
+div.input {
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.prompt {
+    min-width: 11ex;
+    padding: .4em;
+    margin: 0;
+    font-family: monospace;
+    text-align: right;
+    line-height: 1.21429em;
+}
+div.prompt:empty {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+div.input_prompt {
+    color: navy;
+    border-top: 1px solid transparent;
+}
+div.inner_cell {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-flex: 1;
+    flex: 1;
+}
+div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+    background: #f7f7f7;
+    line-height: 1.21429em;
+}
+div.input_area > div.highlight {
+    margin: .4em;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+div.output_wrapper {
+    position: relative;
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.output {
+    box-orient: vertical;
+    box-align: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+div.output_area {
+    padding: 0;
+    page-break-inside: avoid;
+    box-orient: horizontal;
+    box-align: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+div.output_subarea {
+    padding: .4em .4em 0 .4em;
+    box-flex: 1;
+    flex: 1;
+}
+div.output_text {
+    text-align: left;
+    color: #000;
+    line-height: 1.21429em;
+}
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+<script src="https://sagecell.sagemath.org/static/jquery.min.js"></script>
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script>
+<link rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
+<script>
+$(function () {
+   // Make *any* div with class "sage_compute" a Sage cell
+   sagecell.makeSagecell({inputLocation: "div.sage_compute",
+                          evalButtonText: "Evaluate"});
+   document.getElementsByClassName("sage_compute")[0].closest(".input").style.paddingBottom=95;
+});
+</script>
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Automatic execution of code blocks',
+               0,
+               None,
+               'automatic-execution-of-code-blocks'),
+              ('Plotting', 1, None, 'plotting'),
+              ('Ignore output', 1, None, 'ignore-output'),
+              ('Code with errors', 1, None, 'code-with-errors'),
+              ('Opening files', 1, None, 'opening-files')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+
+<center>
+<h1 id="automatic-execution-of-code-blocks">Automatic execution of code blocks </h1>
+</center> <hr>
+
+<p></p>
+Sage interactive
+
+
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [1]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        
+<div class="sage_compute">
+<script type="text/x-sage">
+print('some sage interactive cell')
+
+</script>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+Compile this document with
+
+<p></p>
+
+
+
+<!-- code=bash (!bc sh) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [2]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>doconce format ipynb execute.do.txt --execute
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+  File "<ipython-input-2-909ae4915a71>", line 1
+    doconce format ipynb execute.do.txt --execute
+                 ^
+SyntaxError: invalid syntax
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+This is a normal python block using the <code>pycod</code> environment
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [3]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;pycod&#39;</span>)
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+pycod
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+Hidden execution cells (<code>pyhid</code>, <code>pycod-e</code>) can be used to perform operations (e.g. imports, variable initializations) without showing any cell.  
+The <code>pyhid</code> environment executes and hides the cell in formats other than .ipynb:
+
+<p></p>
+
+<p></p>
+The <code>pycod-e</code> environment executes but hides the cell also in .ipynb files:
+
+<p></p>
+<code>pycod</code> is a normal cell that should execute automatically when using <code>--execute</code>. Note that this cells relies on code executed in a previous hidden cell:
+
+
+
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [4]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000">print</span>(sys<span style="color: #666666">.</span>version)
+b <span style="color: #666666">=</span> <span style="color: #666666">2</span>
+c <span style="color: #666666">=</span> a <span style="color: #666666">+</span> b
+<span style="color: #008000">print</span>(<span style="color: #BA2121">&quot;The result is </span><span style="color: #BB6688; font-weight: bold">{}</span><span style="color: #BA2121">&quot;</span><span style="color: #666666">.</span>format(c))
+c
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+3.6.9 (default, Oct  8 2020, 12:12:24) 
+[GCC 8.4.0]
+The result is 3
+</pre>
+<pre>
+3</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+The <code>*-t</code> environment (e.g. <code>pycod-t</code>) formats a cell to text, and can be used to print an example
+
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [5]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># This is a for-loop example</span>
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> [<span style="color: #666666">0</span>,<span style="color: #666666">10</span>]:
+  <span style="color: #008000">print</span>(i)
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+0
+10
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+The <code>*out</code>  (e.g. <code>pycod-out</code>) environment can be used to write a cell output:
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [6]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #408080; font-style: italic"># This is a normal pycod cell</span>
+<span style="color: #666666">1/0</span>
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+<ipython-input-8-82521ecac92e> in <module>
+      1 # This is a normal pycod cell
+----> 2 1/0
+
+ZeroDivisionError: division by zero</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+
+
+
+<!-- code=text (!bc pyout) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [7]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>1/0: You cannot divide by zero
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+The <code>-h</code> postfix can be used in the html format to show a Show/Hide button that toggles the code visibility. 
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [8]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        
+<script type="text/javascript">
+function show_hide_code7822(){
+  $("#code7822").toggle();
+}
+</script>
+<button type="button" onclick="show_hide_code7822()">Show/Hide code</button>
+<div id="code7822" style="display:none">
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000">print</span>(<span style="color: #BA2121">&#39;show/hide&#39;</span>)
+</pre></div>
+
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+<h1 id="plotting">Plotting </h1>
+
+<p></p>
+This is a cell that should plot and output:
+
+<p></p>
+
+
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [9]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">pylab</span> <span style="color: #008000; font-weight: bold">import</span> <span style="color: #666666">*</span>
+x <span style="color: #666666">=</span> linspace(<span style="color: #666666">0</span>, <span style="color: #666666">10</span>, <span style="color: #666666">100</span>)
+plot(x, x<span style="color: #666666">*</span>x)
+show()
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          <object width="500" height="375" type="application/pdf" data=".doconce_figure_cache/d0e63083-ad2f-4e76-a1f6-641d581260ff.pdf"><p>PDF cannot be displayed in your browser. See .doconce_figure_cache/d0e63083-ad2f-4e76-a1f6-641d581260ff.pdf</p></object>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+To improve quality when exporting to LaTeX, the following code has automatically
+been run to enable PDF export in notebooks.
+
+<p></p>
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [10]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">IPython.display</span> <span style="color: #008000; font-weight: bold">import</span> set_matplotlib_formats
+set_matplotlib_formats(<span style="color: #BA2121">&#39;png&#39;</span>, <span style="color: #BA2121">&#39;pdf&#39;</span>)
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+<h1 id="ignore-output">Ignore output </h1>
+
+<p></p>
+Predefined output can be omitted by passing <code>--ignore_output</code> to DocOnce.
+This will remove all environments ending with <code>out</code>.
+
+<p></p>
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [11]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>a <span style="color: #666666">=</span> <span style="color: #666666">2</span>
+<span style="color: #008000">print</span>(a)
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+2
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+
+
+
+<!-- code=text (!bc pyout) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [12]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>2
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+<h1 id="code-with-errors">Code with errors </h1>
+
+<p></p>
+If code contains errors, it will still be run and the exception shown as part
+of the output:
+
+<p></p>
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [13]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">for</span> a <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">10</span>)
+    <span style="color: #008000">print</span>(a)
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+  File "<ipython-input-12-b3f86d48875f>", line 1
+    for a in range(10)
+                      ^
+SyntaxError: invalid syntax
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p></p>
+<h1 id="opening-files">Opening files </h1>
+
+<p></p>
+The working directory is the same as the .do.txt file.
+You may want to use <code>os.chdir</code> to change the directory.
+
+<p></p>
+
+
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="cell border-box-sizing code_cell rendered">
+  <div class="input">
+    <div class="prompt input_prompt">      In [14]:    </div>
+    <div class="inner_cell">
+      <div class="input_area">
+        <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">with</span> <span style="color: #008000">open</span>(<span style="color: #BA2121">&quot;../LICENSE&quot;</span>) <span style="color: #008000; font-weight: bold">as</span> f:
+    <span style="color: #008000">print</span>(f<span style="color: #666666">.</span>read())
+</pre></div>
+      </div>
+    </div>
+  </div>
+  <div class="output_wrapper">
+    <div class="output">
+      <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_stream output_stdout output_text">          
+<pre>
+Copyright (c) 2007-2015, Hans Petter Langtangen <hpl@simula.no> and
+Simula Resarch Laboratory.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in
+      the documentation and/or other materials provided with the
+      distribution.
+
+    * Neither the name of Simula Research Laboratory nor the names of
+      its contributors may be used to endorse or promote products
+      derived from this software without specific prior written
+      permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Remarks:
+
+The figure and movie files in doc/manual/* were made by the Doconce
+author and is released under the same conditions as Doconce.
+
+
+</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------- end of main content --------------- -->
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+
+
+</body>
+</html>
+    
+

@@ -1,0 +1,469 @@
+ demonstrates how to write a test function. That is, a special test function for a function appears in
+
+
+A test function label=ex:test:1p1 Suppose we want to write a test function for checking the implementation of a Python function for addition.
+
+
+Addition label=ex:math:1p1 We have or in tabular form:
+
+
+ Problem Result 
+
+ 
+
+
+Highlight box! This environment is used to highlight something:
+
+
+URLs 
+
+
+Testing of URLs: hpl's home page hpl, or the entire URL if desired, URL. Here is a plain file link URL, or url, or or url: "txt" or a link with newline. Can test spaces with the link with word too: hpl or "hpl" : Also works: link to a file is fine to have. Moreover, loose URLs work, e., no quotes, just the plain URL as in no/hpl, if followed by space, comma, colon, semi-colon, question mark, exclamation mark, but not a period (which gets confused with the periods inside the URL).
+
+Mail addresses can also be used, or just a mail link, or a raw.
+
+Here are some tough tests of URLs, especially for the format: Newton-Cotes formulas and a good book. Need to test Newton-Cotes with percentage in URL too: and which has a shebang.
+
+For the option it is important to test that URLs with monospace font link text get a footnote (unless the 
+is used), as in this reference to and.
+
+
+
+
+
+
+
+
+
+More tough tests: repeated URLs whose footnotes when using the option must be correct. We have google, google, and google, which should result in exactly three footnotes.
+
+
+
+
+Test of Some LaTeX Fixes 
+
+Let's check abbr. of some common kind, g. the well-known e. expression as an example, and 1 vs. 2 which is also often used. Dr. Tang and Prof. Monsen, or maybe also prof. Ting, will go to the Dept. of Science to test how Mr. Hansen is doing together with Ms. Larsen. A reference like Sec. or Ch, or even App, must also be handled. Likewise, this is test no. of DocOnce features. Also, look at Fig. 4 to see how the data compares with Tab. Percentage must be fixed: 7%, 65% and 50% at the beginning of the line. and check if these extra words are included properly in the comment
+
+LaTeX Mathematics 
+
+Here is an equation without label using backslash-bracket environment: or with number and label, as in, using the equation environment:
+
+
+
+We can refer to this equation by.
+
+Here is a system without equation numbers, using the align-asterisk environment:
+
+
+
+
+
+And here is a system of equations with labels in an align environment:
+
+
+We can refer to - . They are a bit simpler than the Navier--Stokes equations. And test LaTeX hyphen in. Also test as well as.
+
+Testing environment:
+
+
+
+
+Many of the next environments will fail in non-latex formats. Testing multiline:
+
+
+
+Testing split:
+
+
+We can refer to the last equation by.
+
+Testing gather:
+
+
+Let us refer to - again, and to the alignat variant - , and to.
+
+Testing eqnarray:
+
+
+
+
+More mathematical typesetting is demonstrated in the coming exercises.
+
+Below, we have Problem and Project, as well as Projects and, and in between there we have Exercise.
+
+
+Exercises 
+
+Problem: Flip a Coin  solutions = txt, py solutions = txt, py, file
+
+
+Make a program that simulates flipping a coin times. Print out tail or head for each flip and let the program count the number of heads.
+
+
+Use and define head as.
+
+
+
+Draw an integer among with and define head when is 1.
+
+
+
+If the function returns a number, let it be head, otherwise tail. Repeat this number of times.
+
+
+
+
+
+
+
+
+Vectorize the code in a) using boolean indexing.
+
+
+Vectorized code can be written in many ways. Sometimes the code is less intuitive, sometimes not.
+
+
+
+At least there is not much to find in Section.
+
+
+Vectorize the code in a) using. or.
+
+
+
+In this latter subexercise, we have an example where the code is easy to read.
+
+
+These are the exercise remarks, appearing at the very end.
+
+
+My remarks 
+
+Remarks with such a subsubsection is treated as more text after the last subexercise. Test a list too: o Mark 1. o Mark 2.
+
+Not an exercise 
+
+Should be possible to stick a normal section in the middle of many exercises.
+
+Exercise: Test of plain text exercise 
+
+
+
+Very short exercise. What is the capital of Norway?
+
+Project: Compute a Probability 
+
+
+
+
+
+What is the probability of getting a number between 5 and 6 when drawing uniformly distributed random numbers from the interval ?
+
+
+To answer this question empirically, let a program draw such random numbers using Python's standard module, count how many of them that fall in the interval, and compute the probability as.
+
+
+At the end we have a list because that caused problems in LaTeX in previous DocOnce versions: o item1 o item2
+
+Project: Explore Distributions of Random Circles 
+
+
+The formula for a circle is given by where is the radius of the circle, is the center point, and is a parameter in the unit interval. For any, computed from - 
+is a point on the circle. The formula can be used to generate points on a circle:
+
+
+
+
+
+
+The goal of this project is to draw circles with random center and radius. Plot each circle using the function above.
+
+
+Let be normally distributed and uniformly distributed.
+
+
+Here goes the short answer to part a).
+
+
+
+Here goes a full solution to part a).
+
+
+
+Use the module to draw the and quantities.
+
+
+
+
+
+Let be uniformly distributed and normally distributed.
+
+
+
+
+
+Let and be normally distributed.
+
+
+
+At the very end of the exercise it may be appropriate to summarize and give some perspectives.
+
+
+Exercise: Determine some Distance 
+
+
+Intro to this exercise. Questions are in subexercises below.
+
+
+Subexercises are numbered a), b), etc.
+
+
+
+
+Short answer to subexercise a). With math in answer.
+
+
+
+First hint to subexercise a). With math in hint:
+
+
+And with code (in plain verbatim) returning in hint:
+
+
+
+
+
+Second hint to subexercise a).
+
+Test list in hint: o item1 o item2
+
+
+
+
+
+Here goes the text for subexercise b).
+
+
+
+Some math written one a single line:
+
+
+
+
+A hint for this subexercise.
+
+
+
+Here goes the solution of this subexercise.
+
+
+
+
+Some final closing remarks summarizing the main findings and their implications in other problems can be made. These remarks will appear at the end of the typeset exercise.
+
+
+
+Here goes a full solution of the whole exercise. With some math in this solution:
+
+And code in this solution:
+
+End of solution is here.
+
+
+
+The text here belongs to the main (intro) part of the exercise. Need closing remarks to have text after subexercises.
+
+Test list in exercise: o item1 o item2
+
+
+{Exercise}: Some exercise without the "Exercise:" prefix 
+
+
+
+Just some text. And some math saying that on a single line, to test that math block insertion is correct:
+
+
+
+And a test that the code is correctly placed here:
+
+
+
+
+
+
+
+Exercise: Solution of differential equation 
+
+
+
+H: SOlution of differential equation derivatives; exponential function; equation, differential; differential equation Given
+
+
+What is the solution of this equation? quiz:diff:eq1
+
+
+
+
+Almost, but the sign is wrong (note the minus!).
+
+
+
+
+Ooops, forgot a minus, otherwise this Python code must be considered as a good answer. It is more natural, though, to write the solution to the problem in mathematical notation:
+
+
+
+The solution cannot be found because there is a derivative in the equation. Equations with derivatives can be solved;
+they are termed differential equations.
+
+The equation is meaningless: an equation must be an equation for or, not a function. Equations where the unknown is a function, as 
+here, are called differential equations, and are solved by special techniques.
+
+
+
+Example: Just an example 
+
+
+
+
+
+What is the capital of Norway?
+
+
+Oslo.
+
+
+
+Here goes another section 
+
+With some text, before we continue with exercises.
+
+More Exercises 
+
+Exercise: Make references to projects and problems 
+
+
+
+
+
+Pick a statement from Project or Problem 
+and verify it.
+
+Test list at the end of an exercise without other elements (like subexercise, hint, etc.): o item1 o item2
+
+
+Project: References in a headings do not work well in 
+
+Project: References to Project in a heading works for 
+
+
+
+
+
+Refer to the previous exercise as Exercise, the two before that as Projects and, and this one as Project.
+
+References 
+
+
+
+Appendix: Just for testing; part I 
+
+
+This is the first appendix.
+
+A subsection within an appendix 
+
+Some text.
+
+Appendix: Just for testing; part II 
+
+
+This is more stuff for an appendix.
+
+Appendix: Testing identical titles 
+
+Without label.
+
+
+Appendix: Testing identical titles 
+
+
+With label.
+
+Appendix: Testing identical titles 
+
+
+What about inserting a quiz?
+
+
+NP: Test of quizzes H: Capital of Norway capitals; basic intelligence; geography
+
+Fundamental test: What is the capital of Norway? Answer 1: Stockholm Stockholm is the capital of Sweden. Answer 2: London Answer 3: Oslo Bergen Those from Bergen would claim so, but nobody else.
+
+
+
+Appendix: Testing identical titles 
+
+Without label.
+
+Tip Here is a tip or hint box, typeset as a notice box.
+
+
+
+
+\clearpage
+
+
+Need a lot of text to surround the summary box. Version control systems allow you to record the history of files and share files among several computers and collaborators in a professional way. File changes on one computer are updated or merged with changes on another computer. Especially when working with programs or technical reports it is essential to have changes documented and to ensure that every computer and person involved in the project have the latest updates of the files. Greg Wilson' excellent Script for Introduction to Version Control provides a more detailed motivation why you will benefit greatly from using version control systems.
+
+
+_Bold remark:_ Make some text with this summary. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content. Much testing in this document, otherwise stupid content.
+
+
+Projects that you want to share among several computers or project workers are today most conveniently stored at some web site "in the cloud" and updated through communication with that site. I strongly recommend you to use such sites for all serious programming and scientific writing work - and all other important files.
+
+The simplest services for hosting project files are Dropbox and Google Drive. It is very easy to get started with these systems, and they allow you to share files among laptops and mobile units with as many users as you want. The systems offer a kind of version control in that the files are stored frequently (several times per minute), and you can go back to previous versions for the last 30 days. However, it is challenging to find the right version from the past when there are so many of them.
+
+More seriously, when several people may edit files simultaneously, it can be difficult detect who did what when, roll back to previous versions, and to manually merge the edits when these are incompatible. Then one needs more sophisticated tools than Dropbox or Google Drive: project hosting services with true version control systems. The following text aims at providing you with the minimum information to started with such systems. Numerous other tutorials contain more comprehensive material and in-depth explanations of the concepts and tools.
+
+The idea with project hosting services is that you have the files associated with a project in the cloud. Many people may share these files. Every time you want to work on the project you explicitly update your version of the files, edit the files as you like, and synchronize the files with the "master version" at the site where the project is hosted. If you at some point need to go back to a version of the files at some particular point in the past, this is an easy operation. You can also use tools to see what various people have done with the files in the various versions.
+
+All these services are very similar. Below we describe how you get started with Bitbucket, GitHub, and Googlecode. Launchpad works very similarly to the latter three. All the project hosting services have excellent introductions available at their web sites, but the recipes below are much shorter and aim at getting you started as quickly as possible by concentrating on the most important need-to-know steps. The Git tutorials we refer to later in this document contain more detailed information and constitute of course very valuable readings when you use version control systems every day. The point now is to get started.
+
+
+Appendix: Testing inline comments 
+
+
+
+Projects that you want to share among several computers or project workers are today most conveniently stored at some web site "in the cloud" and updated through communication with that site. hpl's semi opinion: not sure if in the cloud is understood by all. I strongly recommend you to use such sites for all serious programming and scientific writing work - and all other important files.
+
+The simplest services for hosting project files is Dropbox. It is very easy to get started with Dropbox, and it allows you to share files among.
+
+
+
+------
+
+
+
+First consider a quantity. 
+because negative negative. 
+
+
+Let us refer to Figure again.
+
+Test references in a list:  
+Appendix: Testing headings ending with 
+
+The point here is to test 1) code in headings, and 2) ending a heading with verbatim code as this triggers a special case in LaTeX.
+
+We also test mdash---used as alternative to hyphen without spaces around, or in quotes:
+
+
+Fun is fun.---Unknown.
+
+
+The ndash should also be tested -- as in the Hanson--Nilson equations on page 277--278.
+
+And finally, what about admons, quotes, and boxes? They are tested in a separate document.
+
+: Not much to add here, but the footnote is at the end with only one newline.

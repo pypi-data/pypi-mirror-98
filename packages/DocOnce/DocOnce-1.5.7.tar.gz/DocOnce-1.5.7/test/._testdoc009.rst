@@ -1,0 +1,30 @@
+.. !split
+
+.. _app2:
+
+Appendix: Just for testing; part II
+===================================
+
+This is more stuff for an appendix.
+
+Appendix: Testing identical titles          (1)
+-----------------------------------------------
+
+Without label.
+
+.. _test:title:id1:
+
+Appendix: Testing identical titles          (2)
+-----------------------------------------------
+
+With label.
+
+.. _test:title:id2:
+
+Appendix: Testing identical titles          (3)
+-----------------------------------------------
+
+What about inserting a quiz?
+
+
+

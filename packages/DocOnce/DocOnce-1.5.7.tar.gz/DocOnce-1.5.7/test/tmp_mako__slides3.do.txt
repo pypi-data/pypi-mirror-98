@@ -1,0 +1,124 @@
+TITLE: On Schemes for Exponential Decay
+AUTHOR: Hans Petter Langtangen at Center for Biomedical Computing, Simula Research Laboratory & Department of Informatics, University of Oslo
+DATE: today
+
+FIGURE: [../doc/src/slides/fig/CN_logo, width=300 frac=0.4]
+
+
+!split
+===== Goal =====
+
+The primary goal of this demo talk is to demonstrate how to write
+talks with "DocOnce": "https://github.com/doconce/doconce"
+and get them rendered in numerous HTML formats.
+!bnotice Layout
+This version
+utilizes beamer slides with the theme red_plain.
+!enotice
+
+
+
+
+!bnotes
+The talk investigates the accuracy of three finite difference
+schemes for the ordinary differential equation $u'=-au$ with the
+aid of numerical experiments. Numerical artifacts are in particular
+demonstrated.
+!enotes
+
+!split
+======= Methods =======
+
+
+!split
+===== Mathematical problem =====
+
+
+!bslidecell 00
+
+
+!bt
+\begin{align}
+u'(t) &= -au(t),
+label{ode}\\ 
+u(0)  &= I,
+label{initial:value}
+\end{align}
+!et
+
+ * $t\in (0,T]$
+ * $a$, $I$, and $T$ are prescribed parameters
+ * $u(t)$ is the unknown function
+
+!eslidecell
+
+
+!bslidecell 01
+FIGURE: [../doc/src/slides/fig/teacher2, width=250 frac=0.5]
+!eslidecell
+
+!split
+===== Numerical solution method =====
+
+
+!bpop
+ * Mesh in time: $0= t_0< t_1 \cdots < t_N=T$
+ * Assume constant $\Delta t = t_{n}-t_{n-1}$
+ * $u^n$: numerical approx to the exact solution at $t_n$
+!epop
+
+!bpop
+Numerical scheme:
+!bt
+   \[
+   u^{n+1} = \frac{1 - (1-\theta) a\Delta t}{1 + \theta a\Delta t}u^n,
+   \quad n=0,1,\ldots,N-1
+   \]
+!et
+!epop
+
+
+!split
+
+===== Implementation =====
+
+The numerical method is implemented in a Python function:
+
+@@@CODE ../doc/src/slides/src/solver.py  fromto: def solver@def exact_sol
+
+!split
+======= Selected results =======
+# Short title: Results
+
+
+!split
+===== The Crank-Nicolson method =====
+
+
+FIGURE: [../doc/src/slides/fig/CN, width=600]
+
+!split
+===== The artifacts can be explained by some theory =====
+
+!bpop
+Exact solution of the scheme:
+
+!bt
+\[ u^n = A^n,\quad A = \frac{1 - (1-\theta) a\Delta t}{1 + \theta a\Delta t}\thinspace .\]
+!et
+!epop
+
+!bpop
+ * Stability: $|A| < 1$
+ * No oscillations: $A>0$
+ * Always for Backward Euler ($\theta=1$)
+ * $\Delta t < 1/a$ for Forward Euler ($\theta=0$)
+ * $\Delta t < 2/a$ for Crank-Nicolson ($\theta=1/2$)
+!epop
+
+!bpop
+!bsummary Concluding remarks:
+Only the Backward Euler scheme is guaranteed to always give
+qualitatively correct results.
+!esummary
+!epop

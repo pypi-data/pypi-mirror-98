@@ -1,0 +1,14 @@
+.. !split
+
+.. _app1:
+
+Appendix: Just for testing; part I
+==================================
+
+This is the first appendix.
+
+A subsection within an appendix
+-------------------------------
+
+Some text.
+

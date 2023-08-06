@@ -1,0 +1,11 @@
+\indexentry{somefunc@{\rm\texttt{somefunc}} function|hyperpage}{4}
+\indexentry{figures|hyperpage}{9}
+\indexentry{movies|hyperpage}{11}
+\indexentry{test index with verbatim text@test index with {\rm\texttt{verbatim text}} which is possible|hyperpage}{14}
+\indexentry{test two@test {\rm\texttt{two}} (separate) {\rm\texttt{verbatim expressions}} which is also possible|hyperpage}{14}
+\indexentry{index with!subindex|hyperpage}{14}
+\indexentry{\textbf{boldface word} in index|hyperpage}{14}
+\indexentry{index with \textbf{boldface word}|hyperpage}{14}
+\indexentry{index with!\textbf{boldface word} in subentry|hyperpage}{14}
+\indexentry{double \textbf{boldface word}! \textbf{boldface word} in subentry too|hyperpage}{14}
+\indexentry{index, with comma, and one more|hyperpage}{14}

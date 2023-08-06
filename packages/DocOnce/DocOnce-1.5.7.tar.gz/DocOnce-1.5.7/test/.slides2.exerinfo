@@ -1,0 +1,50 @@
+# Information about all exercises in the file slides2.do.txt.
+# The information can be loaded into a Python list of dicts by
+#
+# f = open('.slides2.exerinfo', 'r')
+# exer = eval(f.read())
+#
+[{'ans_docend': '',
+  'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': ['flip_coin.py', 'flip_coin.pdf'],
+  'heading': '=====',
+  'hints': [],
+  'keywords': ['random numbers', 'Monte Carlo simulation'],
+  'label': '_demo:ex:1',
+  'no': 1,
+  'sol_docend': '',
+  'solution': '',
+  'solution_file': ['mysol.txt', 'mysol_flip_coin.py'],
+  'subex': [{'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': ['Use `r = random.random()` and define head as `r <= '
+                       '0.5`.'],
+             'sol_docend': '',
+             'solution': '',
+             'text': 'Make a program that simulates flipping a coin $N$ '
+                     'times.'},
+            {'ans_docend': '',
+             'answer': 'A short answer: 0.5.',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': 'A full solution to this subexercise can go here.',
+             'text': 'Compute the probability of getting heads.'},
+            {'ans_docend': '',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'sol_docend': '',
+             'solution': '',
+             'text': 'Make another program that computes the probability\n'
+                     'of getting at least three heads out of 5 throws.'}],
+  'text': '',
+  'title': 'Flip a Coin',
+  'type': 'Problem',
+  'type_visible': True}]

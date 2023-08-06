@@ -1,0 +1,7 @@
+.. !split
+
+Here goes another section
+=========================
+
+With some text, before we continue with exercises.
+

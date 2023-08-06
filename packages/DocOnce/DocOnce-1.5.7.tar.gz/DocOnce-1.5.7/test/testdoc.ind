@@ -1,0 +1,37 @@
+\begin{theindex}
+
+  \item \textbf{boldface word} in index, \hyperpage{15}
+
+  \indexspace
+
+  \item double \textbf{boldface word}
+    \subitem  \textbf{boldface word} in subentry too, \hyperpage{15}
+
+  \indexspace
+
+  \item figures, \hyperpage{11}
+
+  \indexspace
+
+  \item index with
+    \subitem \textbf{boldface word} in subentry, \hyperpage{15}
+    \subitem subindex, \hyperpage{15}
+  \item index with \textbf{boldface word}, \hyperpage{15}
+  \item index, with comma, and one more, \hyperpage{15}
+
+  \indexspace
+
+  \item movies, \hyperpage{12}
+
+  \indexspace
+
+  \item {\rm\texttt{somefunc}} function, \hyperpage{3}
+
+  \indexspace
+
+  \item test index with {\rm\texttt{verbatim text}} which is possible, 
+		\hyperpage{15}
+  \item test {\rm\texttt{two}} (separate) {\rm\texttt{verbatim expressions}} which is also possible, 
+		\hyperpage{15}
+
+\end{theindex}

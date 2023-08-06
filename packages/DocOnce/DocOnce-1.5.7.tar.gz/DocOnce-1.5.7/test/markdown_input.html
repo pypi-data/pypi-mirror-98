@@ -1,0 +1,324 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/doconce/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/doconce/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title></title>
+
+
+<style type="text/css">
+/* blueish style */
+
+/* Color definitions:  https://www.december.com/html/spec/color0.html
+   CSS examples:       https://www.w3schools.com/css/css_examples.asp */
+
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+/* pre style removed because it will interfer with pygments */
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Test of Markdown input syntax in DocOnce',
+               1,
+               None,
+               'test-of-markdown-input-syntax-in-doconce'),
+              ('Test of inline formatting',
+               2,
+               None,
+               'test-of-inline-formatting'),
+              ('Subsubsection heading', 3, None, 'subsubsection-heading'),
+              ('Typesetting of computer code',
+               1,
+               None,
+               'typesetting-of-computer-code'),
+              ('Test of quoted sections', 1, None, 'test-of-quoted-sections'),
+              ('Test of lists', 1, None, 'test-of-lists'),
+              ('Test of tables', 1, None, 'test-of-tables'),
+              ('Test of mathematics', 1, None, 'test-of-mathematics')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "AMS"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- ------------------- main content ---------------------- -->
+<h1 id="test-of-markdown-input-syntax-in-doconce">Test of Markdown input syntax in DocOnce </h1>
+
+<p></p>
+DocOnce can recognize basic Markdown as input in the <code>.do.txt</code> file
+and transform such text to native DocOnce.
+
+<p></p>
+<!-- DocOnce comments also start with #, and can be confused with -->
+<!-- Markdown headings. The confusion is avoided by not having blanks -->
+<!-- after the # character in single-line comments. Multi-line -->
+<!-- comments work well and are never confused with Markdown headings. -->
+
+<p></p>
+<!-- Markdown applies standard HTML -->
+<!-- comments -->
+
+<p></p>
+
+<!-- begin inline comment -->
+<font color="red">(<b>hpl 1</b>: This is a special comment on text that is rendered by extended Markdown versions.)</font>
+<!-- end inline comment -->
+
+<p></p>
+
+<!-- begin inline comment -->
+<font color="red">(<b>comment 2</b>: This is another version of the special comment on text; this one without any author name and colon in the beginning.)</font>
+<!-- end inline comment -->
+
+<p></p>
+<h1 id="table_of_contents">Table of contents</h1>
+
+<p></p>
+<a href="#test-of-markdown-input-syntax-in-doconce"> Test of Markdown input syntax in DocOnce </a>
+<br>
+&nbsp; &nbsp; &nbsp; <a href="#test-of-inline-formatting"> Test of inline formatting </a>
+<br>
+<a href="#typesetting-of-computer-code"> Typesetting of computer code </a>
+<br>
+<a href="#test-of-quoted-sections"> Test of quoted sections </a>
+<br>
+<a href="#test-of-lists"> Test of lists </a>
+<br>
+<a href="#test-of-tables"> Test of tables </a>
+<br>
+<a href="#test-of-mathematics"> Test of mathematics </a>
+<br>
+
+<p></p>
+<h2 id="test-of-inline-formatting">Test of inline formatting </h2>
+
+<p></p>
+Markdown has <b>boldface</b> and <em>emphasize</em> typesetting, as well
+as <code>inline verbatim computer code</code>.
+
+<p></p>
+<b>Paragraph headings.</b>
+These are written using standard Markdown
+boldface syntax.
+
+<p></p>
+<h3 id="subsubsection-heading">Subsubsection heading </h3>
+
+<p></p>
+The Markdown headings can only be of three types: section, subsection,
+and subsubsection.
+
+<p></p>
+<h1 id="typesetting-of-computer-code">Typesetting of computer code </h1>
+
+<p></p>
+Here is a plain code snippet without language specification:
+
+<p></p>
+
+
+<!-- code=text typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>file=$1
+if [ -f $file ]; then
+  cp $file $file.cop
+fi
+# This is Bash - what happens to this comment?
+</pre></div>
+
+<p></p>
+The same snippet typeset explicitly as Bash, but with a common
+indentation to be removed:
+
+<p></p>
+
+
+<!-- code=bash (!bc shcod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #19177C">file</span><span style="color: #666666">=</span><span style="color: #19177C">$1</span>
+<span style="color: #008000; font-weight: bold">if</span> <span style="color: #666666">[</span> -f <span style="color: #19177C">$file</span> <span style="color: #666666">]</span>; <span style="color: #008000; font-weight: bold">then</span>
+  cp <span style="color: #19177C">$file</span> <span style="color: #19177C">$file</span>.cop
+<span style="color: #008000; font-weight: bold">fi</span>
+<span style="color: #408080; font-style: italic"># This is Bash - what happens to this comment?</span>
+</pre></div>
+
+<p></p>
+And here is Python:
+
+<p></p>
+
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">math</span> <span style="color: #008000; font-weight: bold">import</span> sin
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">f</span>(x):
+    <span style="color: #008000; font-weight: bold">return</span> x<span style="color: #666666">*</span>sin(x)
+
+x <span style="color: #666666">=</span> <span style="color: #666666">1.4</span>
+<span style="color: #008000">print</span>(f(x))
+</pre></div>
+
+<p></p>
+And HTML:
+
+<p></p>
+
+
+<!-- code=html (!bc htmlcod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span>&lt;<span style="color: #008000; font-weight: bold">h1</span>&gt;Some heading&lt;/<span style="color: #008000; font-weight: bold">h1</span>&gt;
+# And a comment
+</pre></div>
+
+<p></p>
+<h1 id="test-of-quoted-sections">Test of quoted sections </h1>
+
+<p></p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+Markdown also features quoted
+paragraphs that start with a greater
+than sign, either just in the beginning
+or at every line.
+</div>
+
+
+<p></p>
+If a quoted paragraph with blank lines is desired, you
+must use <code>&gt;</code> on the beginning of every line.
+
+<p></p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<b>NOTE</b>:
+
+<p></p>
+This quoted paragragraph is a simulation of a primitive
+admon in Markdown.
+</div>
+
+
+<p></p>
+<h1 id="test-of-lists">Test of lists </h1>
+
+<p></p>
+Markdown applies the dash in itemized lists:
+
+<p></p>
+
+<ul>
+ <li> This is item 1</li>
+ <li> This is item 2</li>
+ <li> This is item 3</li>
+</ul>
+
+Let us test this in a quoted environment too:
+
+<p></p>
+<div class="alert alert-block alert-block alert-text-normal">
+<b></b>
+<p>
+<b>List</b>:
+
+<ul>
+  <li> This is item 1</li>
+  <li> This is item 2, which cannot be split between lines</li>
+  <li> This is item 3</li>
+</ul>
+</div>
+
+
+<p></p>
+Enumerated lists go as follows.
+
+<p></p>
+
+<ol>
+<li> Item 1</li>
+<li> Item 2</li>
+<li> Item 3</li>
+</ol>
+<h1 id="test-of-tables">Test of tables </h1>
+
+<p></p>
+<b>Markdown Extra</b> has a special syntax for tables:
+
+<p></p>
+<table border="1">
+<thead>
+<tr><th align="center">  Item  </th> <th align="center"> Value  </th> <th align="center">Qty</th> </tr>
+</thead>
+<tbody>
+<tr><td align="left">   Computer    </td> <td align="right">   1600 USD    </td> <td align="center">   5      </td> </tr>
+<tr><td align="left">   Phone       </td> <td align="right">   12 USD      </td> <td align="center">   12     </td> </tr>
+<tr><td align="left">   Pipe        </td> <td align="right">   1 USD       </td> <td align="center">   234    </td> </tr>
+</tbody>
+</table>
+<!-- Horizontal marker/rule -->
+
+<p></p>
+<hr>
+
+<p></p>
+<h1 id="test-of-mathematics">Test of mathematics </h1>
+
+<p></p>
+You can render <em>LaTeX</em> mathematical expressions using <b>MathJax</b>, as on <a href="https://math.stackexchange.com/" target="_self">math.stackexchange.com</a>:
+
+<p></p>
+The <em>Gamma function</em> satisfying \( \Gamma(n) = (n-1)!\quad\forall
+n\in\mathbb N \) is via the Euler integral
+
+<p></p>
+$$ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,. $$
+
+
+<!-- ------------------- end of main content --------------- -->
+
+
+</body>
+</html>
+    
+

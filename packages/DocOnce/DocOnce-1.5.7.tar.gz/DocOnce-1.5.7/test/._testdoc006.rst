@@ -1,0 +1,42 @@
+.. !split
+
+More Exercises
+==============
+
+.. --- begin exercise ---
+
+.. _exer:some:formula:
+
+Exercise 10: Make references to projects and problems
+-----------------------------------------------------
+
+.. Test comments not at the end only
+
+Pick a statement from :ref:`proj:circle1` or :ref:`demo:ex:1`
+and verify it.
+
+Test list at the end of an exercise without other elements (like subexercise,
+hint, etc.):
+
+1. item1
+
+2. item2
+
+Filename: ``verify_formula.py``.
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+.. _exer:you:
+
+Project 11: References in a headings do not work well in sphinx
+---------------------------------------------------------------
+
+Refer to the previous exercise as :ref:`exer:some:formula`,
+the two before that as :ref:`demo:ex:2` and :ref:`proj:circle1`,
+and this one as :ref:`exer:you`.
+Filename: ``selc_composed.pdf``.
+
+.. --- end exercise ---
+

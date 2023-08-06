@@ -1,0 +1,99 @@
+\contentsline {section}{\numberline {1}Section 1}{3}{section.1}
+\contentsline {paragraph}{Here is a list with paragraph heading.}{3}{Item.2}
+\contentsline {paragraph}{Here is a list with subsubsection heading.}{3}{Item.2}
+\contentsline {subsection}{\numberline {1.1}Subsection 1}{4}{subsection.1.1}
+\contentsline {paragraph}{Test Section reference at beginning of line and after a sentence.}{4}{subsection.1.1}
+\contentsline {paragraph}{Computer code.}{4}{subsection.1.1}
+\contentsline {paragraph}{Paragraph heading before code.}{5}{subsection.1.1}
+\contentsline {paragraph}{Subsubsection heading before code.}{5}{subsection.1.1}
+\contentsline {paragraph}{Running OS commands.}{8}{lstlisting.-2}
+\contentsline {paragraph}{Footnotes.}{8}{lstlisting.-2}
+\contentsline {subsection}{\numberline {1.2}Subsection 2: Testing figures}{9}{subsection.1.2}
+\contentsline {paragraph}{Remark.}{12}{figure.2}
+\contentsline {subsection}{\numberline {1.3}The $\theta $ parameter (not $\nabla $?)}{12}{subsection.1.3}
+\contentsline {paragraph}{More on $\theta $.}{12}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Custom Environments}{14}{subsection.1.4}
+\contentsline {paragraph}{Proof.}{14}{theorem.1.1}
+\contentsline {subsection}{\numberline {1.5}Tables}{14}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}A test of verbatim words in heading with subscript $a_i$: \Verb !my\_file\_v1! and \Verb !my\_file\_v2! }{16}{subsection.1.6}
+\contentsline {paragraph}{Paragraph with verbatim and math: \Verb !my\_file\_v1.py! and \Verb !my\_file\_v2.py! define some math $a_{i-1}$.}{16}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}\textbf {Just bold}}{16}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}\emph {Just emphasize}}{16}{subsection.1.8}
+\contentsline {subsection}{\numberline {1.9}\texttt {Just verbatim} }{16}{subsection.1.9}
+\contentsline {subsection}{\numberline {1.10}\textbf {Bold} beginning}{16}{subsection.1.10}
+\contentsline {subsection}{\numberline {1.11}\emph {Emphasize} beginning}{16}{subsection.1.11}
+\contentsline {subsection}{\numberline {1.12}\texttt {Verbatim} beginning}{16}{subsection.1.12}
+\contentsline {subsection}{\numberline {1.13}Maybe \textbf {bold end}}{17}{subsection.1.13}
+\contentsline {subsection}{\numberline {1.14}Maybe \emph {emphasize end}}{17}{subsection.1.14}
+\contentsline {subsection}{\numberline {1.15}Maybe \texttt {verbatim end} }{17}{subsection.1.15}
+\contentsline {subsection}{\numberline {1.16}The middle has \textbf {bold} word}{17}{subsection.1.16}
+\contentsline {subsection}{\numberline {1.17}The middle has \emph {emphasize} word}{17}{subsection.1.17}
+\contentsline {subsection}{\numberline {1.18}The middle has \texttt {verbatim} word}{17}{subsection.1.18}
+\contentsline {paragraph}{\emph {Just emphasize}.}{17}{subsection.1.18}
+\contentsline {paragraph}{\texttt {Just verbatim}.}{17}{subsection.1.18}
+\contentsline {paragraph}{\emph {Emphasize} beginning.}{17}{subsection.1.18}
+\contentsline {paragraph}{\texttt {Verbatim beginning}.}{17}{subsection.1.18}
+\contentsline {paragraph}{Maybe \emph {emphasize end}.}{17}{subsection.1.18}
+\contentsline {paragraph}{Maybe \texttt {verbatim end}.}{17}{subsection.1.18}
+\contentsline {paragraph}{The middle has \emph {emphasize} word.}{17}{subsection.1.18}
+\contentsline {paragraph}{The middle has \texttt {verbatim} word.}{17}{subsection.1.18}
+\contentsline {paragraph}{Ampersand.}{17}{subsection.1.18}
+\contentsline {paragraph}{Quotes.}{18}{subsection.1.18}
+\contentsline {subsection}{\numberline {1.19}Bibliography test}{18}{subsection.1.19}
+\contentsline {paragraph}{a)}{18}{section*.1}
+\contentsline {paragraph}{Solution.}{18}{section*.1}
+\contentsline {paragraph}{b)}{18}{section*.2}
+\contentsline {paragraph}{Hint 1.}{18}{section*.2}
+\contentsline {paragraph}{Hint 2.}{18}{section*.2}
+\contentsline {paragraph}{Solution.}{18}{section*.2}
+\contentsline {subsection}{\numberline {1.20}User--defined environments}{19}{subsection.1.20}
+\contentsline {subsection}{\numberline {1.21}URLs}{19}{subsection.1.21}
+\contentsline {subsection}{\numberline {1.22}Test of Some {\LaTeX } Fixes}{20}{subsection.1.22}
+\contentsline {section}{\numberline {2}{\LaTeX } Mathematics}{20}{section.2}
+\contentsline {section}{\numberline {3}Exercises}{22}{section.3}
+\contentsline {paragraph}{a)}{22}{section*.3}
+\contentsline {paragraph}{Hint 1.}{22}{section*.3}
+\contentsline {paragraph}{Hint 2.}{22}{section*.3}
+\contentsline {paragraph}{Answer.}{22}{section*.3}
+\contentsline {paragraph}{Solution.}{22}{section*.3}
+\contentsline {paragraph}{b)}{22}{section*.4}
+\contentsline {paragraph}{c)}{23}{section*.5}
+\contentsline {paragraph}{Answer.}{23}{section*.5}
+\contentsline {paragraph}{My remarks.}{23}{section*.5}
+\contentsline {paragraph}{Remarks.}{23}{Item.4}
+\contentsline {subsection}{\numberline {3.1}Not an exercise}{23}{subsection.3.1}
+\contentsline {paragraph}{Hint.}{23}{Item.6}
+\contentsline {paragraph}{a)}{24}{section*.6}
+\contentsline {paragraph}{Hint.}{24}{section*.6}
+\contentsline {paragraph}{Answer.}{24}{section*.6}
+\contentsline {paragraph}{Solution.}{24}{section*.6}
+\contentsline {paragraph}{b)}{24}{section*.7}
+\contentsline {paragraph}{c)}{24}{section*.8}
+\contentsline {paragraph}{Remarks.}{24}{section*.8}
+\contentsline {paragraph}{Solution.}{24}{doconceexercisecounter.6}
+\contentsline {paragraph}{a)}{25}{section*.9}
+\contentsline {paragraph}{Hint 1.}{25}{section*.9}
+\contentsline {paragraph}{Hint 2.}{25}{section*.9}
+\contentsline {paragraph}{Answer.}{25}{Item.8}
+\contentsline {paragraph}{b)}{25}{section*.10}
+\contentsline {paragraph}{Hint.}{25}{section*.10}
+\contentsline {paragraph}{Solution.}{25}{section*.10}
+\contentsline {paragraph}{Remarks.}{25}{Item.10}
+\contentsline {paragraph}{Answer:}{26}{doconcequizcounter.1}
+\contentsline {paragraph}{a)}{27}{section*.11}
+\contentsline {paragraph}{Answer.}{27}{section*.11}
+\contentsline {section}{\numberline {4}Here goes another section}{27}{section.4}
+\contentsline {section}{\numberline {5}More Exercises}{27}{section.5}
+\contentsline {section}{References}{27}{doconceexercisecounter.10}
+\contentsline {section}{\numberline {A}Just for testing; part I}{29}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}A subsection within an appendix}{29}{subsection.A.1}
+\contentsline {section}{\numberline {B}Just for testing; part II}{29}{appendix.B}
+\contentsline {subsection}{\numberline {B.1}Appendix: Testing identical titles}{29}{subsection.B.1}
+\contentsline {subsection}{\numberline {B.2}Appendix: Testing identical titles}{29}{subsection.B.2}
+\contentsline {subsection}{\numberline {B.3}Appendix: Testing identical titles}{29}{subsection.B.3}
+\contentsline {paragraph}{Fundamental test:}{29}{doconcequizcounter.2}
+\contentsline {paragraph}{Answer:}{30}{doconcequizcounter.2}
+\contentsline {subsection}{\numberline {B.4}Appendix: Testing identical titles}{30}{subsection.B.4}
+\contentsline {subsection}{\numberline {B.5}Appendix: Testing inline comments}{32}{subsection.B.5}
+\contentsline {subsection}{\numberline {B.6}Appendix: Testing headings ending with \texttt {verbatim inline} }{32}{subsection.B.6}
+\contentsline {section}{Index}{35}{section*.14}

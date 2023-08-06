@@ -1,0 +1,1549 @@
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+translating doconce text in execute.do.txt to html
+output in /home/amarin/doconce/test/execute.html
+translating doconce text in execute.do.txt to ipynb
+translating doconce text in execute.do.txt to ipynb
+translating doconce text in execute.do.txt to html
+output in /home/amarin/doconce/test/execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+translating doconce text in execute.do.txt to html
+output in /home/amarin/doconce/test/execute.html
+translating doconce text in execute.do.txt to html
+output in /home/amarin/doconce/test/execute.html
+translating doconce text in execute.do.txt to html
+output in /home/amarin/doconce/test/execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to ipynb
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to ipynb
+Translating doconce text in execute.do.txt to ipynb
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 74.6 s (accumulated time: 74.7)
+
+
+...doconce format used 75.7 s to translate the document (178 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+*** error: found 0 code block markers for 1 initial code blocks
+    Possible causes:
+           - mismatch of !bt and !et within one file, such that a !bt
+             swallows code
+           - mismatch of !bt and !et across files in multi-file documents
+           - !bc and !ec inside code blocks - replace by |bc and |ec
+    (run doconce on each individual file to locate the problem, then on
+     smaller and smaller parts of each file)
+    Problem: did not find XX <<<!!CODE_BLOCK for XX in [0]
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 67.1 s (accumulated time: 67.2)
+
+
+...doconce format used 68.2 s to translate the document (178 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 59.2 s (accumulated time: 59.3)
+
+
+...doconce format used 60.3 s to translate the document (178 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 46.2 s (accumulated time: 46.3)
+
+
+...doconce format used 47.3 s to translate the document (178 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 314.3 s (accumulated time: 314.4)
+
+
+...doconce format used 315.4 s to translate the document (203 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+
+...doconce translation: insertion of verbatim and latex blocks 39.9 s (accumulated time: 40.1)
+
+
+...doconce format used 41.1 s to translate the document (174 lines)
+
+output in execute.p.tex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 27.5 s (accumulated time: 27.6)
+
+
+...doconce format used 28.6 s to translate the document (177 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 27.9 s (accumulated time: 28.0)
+
+
+...doconce format used 29.0 s to translate the document (198 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 107.4 s (accumulated time: 107.5)
+
+
+...doconce format used 108.5 s to translate the document (214 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 42.4 s (accumulated time: 42.5)
+
+
+...doconce format used 43.6 s to translate the document (294 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in test/execute.html
+Translating doconce text in execute.do.txt to html
+output in test/execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 15.6 s (accumulated time: 15.8)
+
+
+...doconce format used 16.8 s to translate the document (641 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+*** error: --html_output=test/execute_issue91doc.html cannot specify another directory
+    test
+Translating doconce text in execute.do.txt to html
+output in execute_issue91doc.html.html
+Translating doconce text in execute.do.txt to html
+output in execute_issue91doc.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 126.1 s (accumulated time: 126.2)
+
+
+...doconce format used 127.2 s to translate the document (641 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: removed all verbatim and latex blocks 30.1 s (accumulated time: 33.6)
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 97.3 s (accumulated time: 97.4)
+
+
+...doconce format used 98.4 s to translate the document (621 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute_issue91doc.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute_issue91doc.html
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to ipynb
+output in execute.ipynb
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in test/execute91doc_pygm.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in test/execute91doc.html
+Translating doconce text in execute.do.txt to html
+output in test/execute91doc.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 65.6 s (accumulated time: 65.8)
+
+
+...doconce format used 66.8 s to translate the document (706 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+test for illegal option: --pygments_html_style
+test for illegal option: ----pygments_html_style
+test for illegal option: ----pygments_html_style
+test for illegal option: --pygments_html_style
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 34.6 s (accumulated time: 34.7)
+
+
+...doconce format used 35.7 s to translate the document (333 lines)
+
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+*** error: unsupported format "<built-in function format>"
+    must be among
+['html', 'latex', 'pdflatex']
+Translating doconce text in execute.do.txt to latex
+*** error: unsupported format "<built-in function format>"
+    must be among
+['html', 'latex', 'pdflatex']
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+
+...doconce translation: removed all verbatim and latex blocks 36.0 s (accumulated time: 36.0)
+
+...doconce translation: insertion of verbatim and latex blocks 104.0 s (accumulated time: 141.1)
+
+
+...doconce format used 142.1 s to translate the document (392 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+
+...doconce format used 16.0 s to translate the document (846 lines)
+
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+
+...doconce translation: insertion of verbatim and latex blocks 32.8 s (accumulated time: 32.9)
+
+
+...doconce format used 33.9 s to translate the document (617 lines)
+
+output in a.html.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in a.html.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in a.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+
+...doconce translation: insertion of verbatim and latex blocks 34.4 s (accumulated time: 34.6)
+
+
+...doconce format used 35.6 s to translate the document (295 lines)
+
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to sphinx
+*** error: detected code environment "pycod-t"
+    which is not registered in sphinx.py (sphinx_code)
+    or not a language registered in pygments
+Translating doconce text in execute.do.txt to sphinx
+
+...doconce translation: removed all verbatim and latex blocks 30.0 s (accumulated time: 30.1)
+*** error: detected code environment "pycod-t"
+    which is not registered in sphinx.py (sphinx_code)
+    or not a language registered in pygments
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+output in execute.rst
+Translating doconce text in execute.do.txt to sphinx
+output in execute.rst
+Translating doconce text in execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to plain
+output in execute.txt
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.html
+Translating doconce text in execute.do.txt to latex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.p.tex
+Translating doconce text in execute.do.txt to latex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+
+...doconce translation: insertion of verbatim and latex blocks 26.6 s (accumulated time: 26.7)
+
+
+...doconce format used 27.7 s to translate the document (114 lines)
+
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to pdflatex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to pdflatex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+
+...doconce translation: insertion of verbatim and latex blocks 71.2 s (accumulated time: 71.3)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+
+...doconce translation: insertion of verbatim and latex blocks 156.4 s (accumulated time: 156.5)
+
+...doconce translation: !benvir/!eenvir constructions 19.7 s (accumulated time: 176.2)
+
+
+...doconce format used 254.0 s to translate the document (112 lines)
+
+output in execute.p.tex
+Translating doconce text in execute.do.txt to pdflatex
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.p.tex
+Translating doconce text in execute.do.txt to ipynb
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.html
+Translating doconce text in execute.do.txt to html
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.html
+Translating doconce text in execute.do.txt to ipynb
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.html
+Translating doconce text in execute.do.txt to html
+copying from regex "subroutine" until end of file
+     file: ../doc/src/manual/__testcode.f,lines 3-16 (format: fcod)
+output in execute.html
+Translating doconce text in execute.do.txt to pandoc
+output in execute.md
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+output in execute.md
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to latex
+output in execute.p.tex
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to pandoc
+output in execute.md
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to pandoc
+output in execute.md
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+
+...doconce translation: insertion of verbatim and latex blocks 162.2 s (accumulated time: 162.3)
+
+
+...doconce format used 163.3 s to translate the document (9 lines)
+
+output in execute.md
+Translating doconce text in execute.do.txt to pandoc
+output in execute.md
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+Translating doconce text in execute.do.txt to pandoc
+output in execute.md
+Translating doconce text in execute.do.txt to mwiki
+output in execute.mwiki
+Translating doconce text in execute.do.txt to mwiki
+output in execute.mwiki
+Translating doconce text in execute.do.txt to mwiki
+output in execute.mwiki
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to sphinx
+output in execute.rst
+Translating doconce text in execute.do.txt to sphinx
+output in execute.rst
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+output in execute.rst
+Translating doconce text in execute.do.txt to sphinx
+output in execute.rst
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+Translating doconce text in execute.do.txt to sphinx
+
+...doconce translation: insertion of verbatim and latex blocks 22.7 s (accumulated time: 22.8)
+
+
+...doconce format used 23.8 s to translate the document (8 lines)
+
+output in execute.rst
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+Translating doconce text in execute.do.txt to html
+output in execute.html
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+running mako on execute.do.txt to make tmp_mako__execute.do.txt
+Translating doconce text in tmp_mako__execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb
+Failed to remove ans_at_end environment
+Failed to remove sol_at_end environment
+output in execute.ipynb
+Translating doconce text in execute.do.txt to ipynb

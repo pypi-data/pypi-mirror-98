@@ -1,0 +1,670 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
+\usepackage[unicode=true]{hyperref}
+\hypersetup{
+            pdftitle={How various formats can deal with LaTeX math},
+            pdfauthor={Hans Petter Langtangen at Simula Research Laboratory and University of Oslo},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+\title{How various formats can deal with LaTeX math}
+\author{\textbf{Hans Petter Langtangen} at Simula Research Laboratory and
+University of Oslo}
+\date{Mar 16, 2021}
+
+\begin{document}
+\maketitle
+
+\emph{Summary.} The purpose of this document is to test LaTeX math in
+DocOnce with various output formats. Most LaTeX math constructions are
+renedered correctly by MathJax in plain HTML, but some combinations of
+constructions may fail. Unfortunately, only a subset of what works in
+html MathJax also works in sphinx MathJax. The same is true for markdown
+MathJax expresions (e.g., Jupyter notebooks). Tests and examples are
+provided to illustrate what may go wrong.
+
+The recommendation for writing math that translates to MathJax in html,
+sphinx, and markdown is to stick to the environments
+\texttt{\textbackslash{}{[}\ ...\ \textbackslash{}{]}},
+\texttt{equation}, \texttt{equation*}, \texttt{align}, \texttt{align*},
+\texttt{alignat}, and \texttt{alignat*} only. Test the math with sphinx
+output; if it works in that format, it should work elsewhere too.
+
+The current version of the document is translated from DocOnce source to
+the format \textbf{pandoc}.
+
+\subsection{Test of equation
+environments}\label{test-of-equation-environments}
+
+\subsubsection{Test 1: Inline math}\label{test-1-inline-math}
+
+We can get an inline equation \texttt{\$u(t)=e\^{}\{-at\}\$} rendered as
+\(u(t)=e^{-at}\).
+
+\subsubsection{Test 2: A single equation with
+label}\label{test-2-a-single-equation-with-label}
+
+An equation with number,
+
+\begin{verbatim}
+!bt
+\begin{equation} u(t)=e^{-at} \label{eq1a}\end{equation}
+!et
+\end{verbatim}
+
+looks like
+
+\[
+\begin{equation} u(t)=e^{-at} \label{_eq1a}\end{equation}
+\] Maybe this multi-line version is what we actually prefer to write:
+
+\begin{verbatim}
+!bt
+\begin{equation}
+u(t)=e^{-at}
+\label{eq1b}
+\end{equation}
+!et
+\end{verbatim}
+
+The result is the same:
+
+\[
+\begin{equation}
+u(t)=e^{-at} \label{_eq1b}
+\end{equation}
+\] We can refer to this equation through its label \texttt{eq1b}:
+(\protect\hyperlink{_eq1b}{\_eq1b}).
+
+\subsubsection{Test 3: Multiple, aligned equations without label and
+number}\label{test-3-multiple-aligned-equations-without-label-and-number}
+
+MathJax has historically had some problems with rendering many LaTeX
+math environments, but the \texttt{align*} and \texttt{align}
+environments have always worked.
+
+\begin{verbatim}
+!bt
+\begin{align*}
+u(t)&=e^{-at}\\ 
+v(t) - 1 &= \frac{du}{dt}
+\end{align*}
+!et
+\end{verbatim}
+
+Result:
+
+\[
+\begin{align*}
+u(t)&=e^{-at}\\ 
+v(t) - 1 &= \frac{du}{dt}
+\end{align*}
+\]
+
+\subsubsection{Test 4: Multiple, aligned equations with
+label}\label{test-4-multiple-aligned-equations-with-label}
+
+Here, we use \texttt{align} with user-prescribed labels:
+
+\begin{verbatim}
+!bt
+\begin{align}
+u(t)&=e^{-at}
+\label{eq2b}\\ 
+v(t) - 1 &= \frac{du}{dt}
+\label{eq3b}
+\end{align}
+!et
+\end{verbatim}
+
+Result:
+
+\[
+\begin{align}
+u(t)&=e^{-at}
+\label{_eq2b}\\ 
+v(t) - 1 &= \frac{du}{dt}
+\label{_eq3b}
+\end{align}
+\] We can refer to the last equations as the system
+(\protect\hyperlink{_eq2b}{\_eq2b})-(\protect\hyperlink{_eq3b}{\_eq3b}).
+
+\subsubsection{Test 5: Multiple, aligned equations without
+label}\label{test-5-multiple-aligned-equations-without-label}
+
+In LaTeX, equations within an \texttt{align} environment is
+automatically given numbers. To ensure that an html document with
+MathJax gets the same equation numbers as its latex/pdflatex companion,
+DocOnce generates labels in equations where there is no label
+prescribed. For example,
+
+\begin{verbatim}
+!bt
+\begin{align}
+u(t)&=e^{-at}
+\\ 
+v(t) - 1 &= \frac{du}{dt}
+\end{align}
+!et
+\end{verbatim}
+
+is edited to something like
+
+\begin{verbatim}
+!bt
+\begin{align}
+u(t)&=e^{-at}
+\label{_auto5}\\ 
+v(t) - 1 &= \frac{du}{dt}
+\label{_auto6}
+\end{align}
+!et
+\end{verbatim}
+
+and the output gets the two equation numbered.
+
+\[
+\begin{align}
+u(t)&=e^{-at}\\ 
+v(t) - 1 &= \frac{du}{dt}
+\end{align}
+\]
+
+\subsubsection{Test 6: Multiple, aligned equations with multiple
+alignments}\label{test-6-multiple-aligned-equations-with-multiple-alignments}
+
+The \texttt{align} environment can be used with two \texttt{\&}
+alignment characters, e.g.,
+
+\begin{verbatim}
+!bt
+\begin{align}
+\frac{\partial u}{\partial t} &= \nabla^2 u, & x\in (0,L),
+\ t\in (0,T]\\ 
+u(0,t) &= u_0(x), & x\in [0,L]
+\end{align}
+!et
+\end{verbatim}
+
+The result in pandoc becomes
+
+\[
+\begin{align}
+\frac{\partial u}{\partial t} &= \nabla^2 u, & x\in (0,L),
+\ t\in (0,T]\\ 
+u(0,t) &= u_0(x), & x\in [0,L]
+\end{align}
+\]
+
+A better solution is usually to use an \texttt{alignat} environment:
+
+\begin{verbatim}
+!bt
+\begin{alignat}{2}
+\frac{\partial u}{\partial t} &= \nabla^2 u, & x\in (0,L),
+\ t\in (0,T]\\ 
+u(0,t) &= u_0(x), & x\in [0,L]
+\end{alignat}
+!et
+\end{verbatim}
+
+with the rendered result
+
+\[
+\begin{alignat}{2}
+\frac{\partial u}{\partial t} &= \nabla^2 u, & x\in (0,L),
+\ t\in (0,T]\\ 
+u(0,t) &= u_0(x), & x\in [0,L]
+\end{alignat}
+\]
+
+If DocOnce had not rewritten the above equations, they would be rendered
+in pandoc as
+
+\[
+\begin{alignat}{2}
+\frac{\partial u}{\partial t} &= \nabla^2 u, & x\in (0,L),
+\ t\in (0,T]\\ 
+u(0,t) &= u_0(x), & x\in [0,L]
+\end{alignat}
+\]
+
+\subsubsection{Test 7: Multiple, aligned eqnarray equations without
+label}\label{test-7-multiple-aligned-eqnarray-equations-without-label}
+
+Let us try the old \texttt{eqnarray*} environment.
+
+\begin{verbatim}
+!bt
+\begin{eqnarray*}
+u(t)&=& e^{-at}\\ 
+v(t) - 1 &=& \frac{du}{dt}
+\end{eqnarray*}
+!et
+\end{verbatim}
+
+which results in
+
+\[
+\begin{eqnarray*}
+u(t)&=& e^{-at}\\ 
+v(t) - 1 &=& \frac{du}{dt}
+\end{eqnarray*}
+\]
+
+\subsubsection{Test 8: Multiple, eqnarrayed equations with
+label}\label{test-8-multiple-eqnarrayed-equations-with-label}
+
+Here we use \texttt{eqnarray} with labels:
+
+\begin{verbatim}
+!bt
+\begin{eqnarray}
+u(t)&=& e^{-at}
+\label{eq2c}\\ 
+v(t) - 1 &=& \frac{du}{dt}
+\label{eq3c}
+\end{eqnarray}
+!et
+\end{verbatim}
+
+which results in
+
+\[
+\begin{eqnarray}
+u(t)&=& e^{-at} \label{_eq2c}\\ 
+v(t) - 1 &=& \frac{du}{dt} \label{_eq3c}
+\end{eqnarray}
+\] Can we refer to the last equations as the system
+(\protect\hyperlink{_eq2c}{\_eq2c})-(\protect\hyperlink{_eq3c}{\_eq3c})
+in the pandoc format?
+
+\subsubsection{\texorpdfstring{Test 9: The \texttt{multiline}
+environment with label and
+number}{Test 9: The multiline environment with label and number}}\label{test-9-the-multiline-environment-with-label-and-number}
+
+The LaTeX code
+
+\begin{verbatim}
+!bt
+\begin{multline}
+\int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
+f(a+(j+1)h)) \\ 
+=\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
+\label{multiline:eq1}
+\end{multline}
+!et
+\end{verbatim}
+
+gets rendered as
+
+\[
+\begin{multline}
+\int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
+f(a+(j+1)h)) \\ 
+=\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
+\label{_multiline:eq1}
+\end{multline}
+\] and we can hopefully refer to the Trapezoidal rule as the formula
+(\protect\hyperlink{_multiline:eq1}{\_multiline:eq1}).
+
+\subsubsection{Test 10: Splitting equations using a split
+environment}\label{test-10-splitting-equations-using-a-split-environment}
+
+Although \texttt{align} can be used to split too long equations, a more
+obvious command is \texttt{split}:
+
+\begin{verbatim}
+!bt
+\begin{equation}
+\begin{split}
+\int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
+f(a+(j+1)h)) \\ 
+=\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
+\end{split}
+\end{equation}
+!et
+\end{verbatim}
+
+The result becomes
+
+\[
+\begin{equation}
+\begin{split}
+\int_a^b f(x)dx = \sum_{j=0}^{n} \frac{1}{2} h(f(a+jh) +
+f(a+(j+1)h)) \\ 
+=\frac{h}{2}f(a) + \frac{h}{2}f(b) + \sum_{j=1}^n f(a+jh)
+\end{split}
+\end{equation}
+\]
+
+\subsubsection{Test 11: Newcommands and boldface bm vs
+pmb}\label{test-11-newcommands-and-boldface-bm-vs-pmb}
+
+First we use the plain old pmb package for bold math. The formula
+
+\begin{verbatim}
+!bt
+\[ \frac{\partial\u}{\partial t} +
+\u\cdot\nabla\u = \nu\nabla^2\u -
+\frac{1}{\varrho}\nabla p,\]
+!et
+\end{verbatim}
+
+and the inline expression
+\texttt{\$\textbackslash{}nabla\textbackslash{}pmb\{u\}\ (\textbackslash{}pmb\{x\})\textbackslash{}cdot\textbackslash{}pmb\{n\}\$}
+(with suitable newcommands using pmb) get rendered as
+
+\[
+ \frac{\partial\pmb{u}}{\partial t} +
+\pmb{u}\cdot\nabla\pmb{u} = \nu\nabla^2\pmb{u} -
+\frac{1}{\varrho}\nabla p,
+\] and \(\nabla\pmb{u} (\pmb{x})\cdot\pmb{n}\).
+
+Somewhat nicer fonts may appear with the more modern
+\texttt{\textbackslash{}bm} command:
+
+\begin{verbatim}
+!bt
+\[ \frac{\partial\ubm}{\partial t} +
+\ubm\cdot\nabla\ubm = \nu\nabla^2\ubm -
+\frac{1}{\varrho}\nabla p,\]
+!et
+\end{verbatim}
+
+(backslash \texttt{ubm} is a newcommand for bold math \(u\)), for which
+we get
+
+\[
+ \frac{\partial\boldsymbol{u}}{\partial t} +
+\boldsymbol{u}\cdot\nabla\boldsymbol{u} = \nu\nabla^2\boldsymbol{u} -
+\frac{1}{\varrho}\nabla p.
+\] Moreover,
+
+\begin{verbatim}
+$\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}$
+\end{verbatim}
+
+becomes \(\nabla\boldsymbol{u}(\boldsymbol{x})\cdot\boldsymbol{n}\).
+
+\emph{Warning.} Note: for the pandoc format, \texttt{\textbackslash{}bm}
+was substituted by DocOnce to \texttt{\textbackslash{}boldsymbol}.
+
+\subsection{Problematic equations}\label{problematic-equations}
+
+Finally, we collect some problematic formulas in MathJax. They all work
+fine in LaTeX. Most of them look fine in html too, but some fail in
+sphinx, ipynb, or markdown.
+
+\subsubsection{Colored terms in
+equations}\label{colored-terms-in-equations}
+
+The LaTeX code
+
+\begin{verbatim}
+!bt
+\[ {\color{blue}\frac{\partial\u}{\partial t}} +
+\nabla\cdot\nabla\u = \nu\nabla^2\u -
+\frac{1}{\varrho}\nabla p,\]
+!et
+\end{verbatim}
+
+results in
+
+\[
+ {\color{blue}\frac{\partial\pmb{u}}{\partial t}} +
+\nabla\cdot\nabla\pmb{u} = \nu\nabla^2\pmb{u} -
+\frac{1}{\varrho}\nabla p,
+\]
+
+\subsubsection{Bar over symbols}\label{bar-over-symbols}
+
+Sometimes one must be extra careful with the LaTeX syntax to get sphinx
+MathJax to render a formula correctly. Consider the combination of a bar
+over a bold math symbol:
+
+\begin{verbatim}
+!bt
+\[ \bar\f = f_c^{-1}\f,\]
+!et
+\end{verbatim}
+
+which for pandoc output results in
+
+\[
+ \bar\boldsymbol{f} = f_c^{-1}\boldsymbol{f}.
+\]
+
+With sphinx, this formula is not rendered. However, using curly braces
+for the bar,
+
+\begin{verbatim}
+!bt
+\[ \bar{\f} = f_c^{-1}\f,\]
+!et
+\end{verbatim}
+
+makes the output correct also for sphinx:
+
+\[
+ \bar{\boldsymbol{f}} = f_c^{-1}\boldsymbol{f},
+\]
+
+\subsubsection{Matrix formulas}\label{matrix-formulas}
+
+Here is an \texttt{align} environment with a label and the
+\texttt{pmatrix} environment for matrices and vectors in LaTeX.
+
+\begin{verbatim}
+!bt
+\begin{align}
+\begin{pmatrix}
+G_2 + G_3 & -G_3 & -G_2 & 0 \\ 
+-G_3 & G_3 + G_4 & 0 & -G_4 \\ 
+-G_2 & 0 & G_1 + G_2 & 0 \\ 
+0 & -G_4 & 0 & G_4
+\end{pmatrix}
+&=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix}
++ \cdots
+\label{mymatrixeq}\\ 
+\begin{pmatrix}
+C_5 + C_6 & -C_6 & 0 & 0 \\ 
+-C_6 & C_6 & 0 & 0 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix}
+\frac{d}{dt} &=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix} =
+\begin{pmatrix}
+0 \\ 
+0 \\ 
+0 \\ 
+-i_0
+\end{pmatrix}
+\end{align}
+!et
+\end{verbatim}
+
+which becomes
+
+\[
+\begin{align}
+\begin{pmatrix}
+G_2 + G_3 & -G_3 & -G_2 & 0 \\ 
+-G_3 & G_3 + G_4 & 0 & -G_4 \\ 
+-G_2 & 0 & G_1 + G_2 & 0 \\ 
+0 & -G_4 & 0 & G_4
+\end{pmatrix}
+&=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix}
++ \cdots
+\label{_mymatrixeq}\\ 
+\begin{pmatrix}
+C_5 + C_6 & -C_6 & 0 & 0 \\ 
+-C_6 & C_6 & 0 & 0 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix}
+\frac{d}{dt} &=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix} =
+\begin{pmatrix}
+0 \\ 
+0 \\ 
+0 \\ 
+-i_0
+\end{pmatrix}
+\end{align}
+\]
+
+The same matrices without labels in an \texttt{align*} environment:
+
+\begin{verbatim}
+!bt
+\begin{align*}
+\begin{pmatrix}
+G_2 + G_3 & -G_3 & -G_2 & 0 \\ 
+-G_3 & G_3 + G_4 & 0 & -G_4 \\ 
+-G_2 & 0 & G_1 + G_2 & 0 \\ 
+0 & -G_4 & 0 & G_4
+\end{pmatrix}
+&=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix}
++ \cdots \\ 
+\begin{pmatrix}
+C_5 + C_6 & -C_6 & 0 & 0 \\ 
+-C_6 & C_6 & 0 & 0 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix}
+\frac{d}{dt} &=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix} =
+\begin{pmatrix}
+0 \\ 
+0 \\ 
+0 \\ 
+-i_0
+\end{pmatrix}
+\end{align*}
+!et
+\end{verbatim}
+
+The rendered result becomes
+
+\[
+\begin{align*}
+\begin{pmatrix}
+G_2 + G_3 & -G_3 & -G_2 & 0 \\ 
+-G_3 & G_3 + G_4 & 0 & -G_4 \\ 
+-G_2 & 0 & G_1 + G_2 & 0 \\ 
+0 & -G_4 & 0 & G_4
+\end{pmatrix}
+&=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix}
++ \cdots \\ 
+\begin{pmatrix}
+C_5 + C_6 & -C_6 & 0 & 0 \\ 
+-C_6 & C_6 & 0 & 0 \\ 
+0 & 0 & 0 & 0 \\ 
+0 & 0 & 0 & 0
+\end{pmatrix}
+\frac{d}{dt} &=
+\begin{pmatrix}
+v_1 \\ 
+v_2 \\ 
+v_3 \\ 
+v_4
+\end{pmatrix} =
+\begin{pmatrix}
+0 \\ 
+0 \\ 
+0 \\ 
+-i_0
+\end{pmatrix}
+\end{align*}
+\]
+
+\end{document}

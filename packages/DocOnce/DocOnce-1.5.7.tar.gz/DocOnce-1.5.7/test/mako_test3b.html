@@ -1,0 +1,36 @@
+
+<!-- tocinfo
+{'highest level': 4, 'sections': []}
+end of tocinfo -->
+
+
+<!-- ------------------- main content ---------------------- -->
+
+<!-- Purpose: see if doconce detects dangerous lines for mako, -->
+<!-- starting with a %, and here it is crucial since the -->
+<!-- running text does need mako -->
+
+<p></p>
+<!-- begin verbatim block -->
+<pre><code>/* Here is some SWIG code code */
+%module MyMod
+%{
+...
+%}
+
+%init %{
+import_array();
+%}
+</code></pre>
+<!-- end verbatim block -->
+
+<p></p>
+And more code:
+<!-- begin verbatim block -->
+<pre><code>% Matlab comment only
+...
+</code></pre>
+<!-- end verbatim block -->
+
+<!-- ------------------- end of main content --------------- -->
+

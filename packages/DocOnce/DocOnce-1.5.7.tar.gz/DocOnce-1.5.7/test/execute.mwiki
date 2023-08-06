@@ -1,0 +1,6 @@
+<syntaxhighlight lang="python">
+def f(x):
+    return x+1
+</syntaxhighlight>
+
+

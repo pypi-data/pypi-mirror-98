@@ -1,0 +1,11 @@
+\contentsline {doconceexercise}{Example 1: Examples can be typeset as exercises}{18}{doconceexercisecounter.1}
+\contentsline {doconceexercise}{Problem 2: Flip a Coin}{22}{doconceexercisecounter.2}
+\contentsline {doconceexercise}{Exercise 3: Test of plain text exercise}{23}{doconceexercisecounter.3}
+\contentsline {doconceexercise}{Project 4: Compute a Probability}{23}{doconceexercisecounter.4}
+\contentsline {doconceexercise}{Project 5: Explore Distributions of Random Circles}{24}{doconceexercisecounter.5}
+\contentsline {doconceexercise}{Exercise 6: Determine some Distance}{24}{doconceexercisecounter.6}
+\contentsline {doconceexercise}{Some exercise without the "Exercise:" prefix}{26}{Item.10}
+\contentsline {doconceexercise}{Exercise 7: Solution of differential equation}{26}{doconceexercisecounter.7}
+\contentsline {doconceexercise}{Example 8: Just an example}{27}{doconceexercisecounter.8}
+\contentsline {doconceexercise}{Exercise 9: Make references to projects and problems}{27}{doconceexercisecounter.9}
+\contentsline {doconceexercise}{Project 10: References to Project\nobreakspace {}\vref {demo:ex:2} in a heading works for pdflatex}{27}{doconceexercisecounter.10}

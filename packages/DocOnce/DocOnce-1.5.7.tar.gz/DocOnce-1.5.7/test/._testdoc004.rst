@@ -1,0 +1,463 @@
+.. !split
+
+Exercises
+=========
+
+.. --- begin exercise ---
+
+.. _demo:ex:1:
+
+Problem 2: Flip a Coin
+----------------------
+
+.. keywords = random numbers; Monte Carlo simulation; ipynb
+
+.. Torture tests
+
+**a)**
+Make a program that simulates flipping a coin :math:`N` times.
+Print out "tail" or "head" for each flip and
+let the program count the number of heads.
+
+.. --- begin hint in exercise ---
+
+**Hint 1.**
+Use ``r = random.random()`` and define head as ``r <= 0.5``.
+
+.. --- end hint in exercise ---
+
+.. --- begin hint in exercise ---
+
+**Hint 2.**
+Draw an integer among :math:`\{1,2\}` with
+``r = random.randint(1,2)`` and define head when ``r`` is 1.
+
+.. --- end hint in exercise ---
+
+.. --- begin answer of exercise ---
+
+**Answer.**
+If the ``random.random()`` function returns a number :math:`<1/2`, let it be
+head, otherwise tail. Repeat this :math:`N` number of times.
+
+.. --- end answer of exercise ---
+
+.. --- begin solution of exercise ---
+
+**Solution.**
+
+.. code-block:: python
+
+    import sys, random
+    N = int(sys.argv[1])
+    heads = 0
+    for i in range(N):
+        r = random.random()
+        if r <= 0.5:
+            heads += 1
+    print('Flipping a coin %d times gave %d heads' % (N, heads))
+
+.. --- end solution of exercise ---
+
+**b)**
+Vectorize the code in a) using boolean indexing.
+
+Vectorized code can be written in many ways.
+Sometimes the code is less intuitive, sometimes not.
+At least there is not much to find in the section :ref:`sec1`.
+
+**c)**
+Vectorize the code in a) using ``numpy.sum``.
+
+.. --- begin answer of exercise ---
+
+**Answer.**
+``np.sum(np.where(r <= 0.5, 1, 0))`` or ``np.sum(r <= 0.5)``.
+
+.. --- end answer of exercise ---
+
+In this latter subexercise, we have an
+example where the code is easy to read.
+
+My remarks
+~~~~~~~~~~
+
+Remarks with such a subsubsection is treated as more text
+after the last subexercise. Test a list too:
+
+1. Mark 1.
+
+2. Mark 2.
+
+Filenames: ``flip_coin.py``, ``flip_coin.pdf``.
+
+.. Closing remarks for this Problem
+
+Remarks          (1)
+~~~~~~~~~~~~~~~~~~~~
+
+These are the exercise remarks, appearing at the very end.
+
+.. solution files: mysol.txt, mysol_flip_coin.py, yet_another.file
+
+.. --- end exercise ---
+
+Not an exercise
+---------------
+
+Should be possible to stick a normal section in the middle of many
+exercises.
+
+.. --- begin exercise ---
+
+.. _my:exer1:
+
+Exercise 3: Test of plain text exercise
+---------------------------------------
+
+Very short exercise. What is the capital
+of Norway?
+Filename: ``myexer1``.
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+.. _demo:ex:2:
+
+Project 4: Compute a Probability
+--------------------------------
+
+.. Minimalistic exercise
+
+What is the probability of getting a number between 0.5 and 0.6 when
+drawing uniformly distributed random numbers from the interval :math:`[0,1)`?
+
+At the end we have a list because that caused problems in LaTeX
+in previous DocOnce versions:
+
+1. item1
+
+2. item2
+
+.. --- begin hint in exercise ---
+
+**Hint.**
+To answer this question empirically, let a program
+draw :math:`N` such random numbers using Python's standard ``random`` module,
+count how many of them, :math:`M`, that fall in the interval :math:`(0.5,0.6)`, and
+compute the probability as :math:`M/N`.
+
+.. --- end hint in exercise ---
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+.. _proj:circle1:
+
+Project 5: Explore Distributions of Random Circles
+--------------------------------------------------
+
+.. keywords = ipynb
+
+The formula for a circle is given by
+
+.. _Eq:circle:x:
+
+.. math::
+
+    \tag{11}
+    x = x_0 + R\cos 2\pi t,
+        
+        
+
+.. _Eq:circle:y:
+
+.. math::
+
+    \tag{12}
+    y = y_0 + R\sin 2\pi t,
+        
+        
+
+where :math:`R` is the radius of the circle, :math:`(x_0,y_0)` is the
+center point, and :math:`t` is a parameter in the unit interval :math:`[0,1]`.
+For any :math:`t`, :math:`(x,y)` computed from :ref:`(11) <Eq:circle:x>`-:ref:`(12) <Eq:circle:y>`
+is a point on the circle.
+The formula can be used to generate ``n`` points on a circle:
+
+.. code-block:: python
+
+    import numpy as np
+    
+    def circle(R, x0, y0, n=501):
+        t = np.linspace(0, 1, n)
+        x = x0 + R*np.cos(2*np.pi*t)
+        y = y0 + R*np.sin(2*np.pi*t)
+        return x, y
+    
+    x, y = circle(2.0, 0, 0)
+
+.. Often in an exercise we have some comments about the solution
+
+.. which we normally want to keep where they are.
+
+The goal of this project is to draw :math:`N` circles with random
+center and radius. Plot each circle using the ``circle`` function
+above.
+
+**a)**
+Let :math:`R` be normally distributed and :math:`(x_0,y_0)` uniformly distributed.
+
+.. --- begin hint in exercise ---
+
+**Hint.**
+Use the ``numpy.random`` module to draw the
+:math:`x_0`, :math:`y_0`, and :math:`R` quantities.
+
+.. --- end hint in exercise ---
+
+.. --- begin answer of exercise ---
+
+**Answer.**
+Here goes the short answer to part a).
+
+.. --- end answer of exercise ---
+
+.. --- begin solution of exercise ---
+
+**Solution.**
+Here goes a full solution to part a).
+
+.. --- end solution of exercise ---
+
+**b)**
+Let :math:`R` be uniformly distributed and :math:`(x_0,y_0)` normally distributed.
+Filename: ``norm``.
+
+**c)**
+Let :math:`R` and :math:`(x_0,y_0)` be normally distributed.
+
+Filename: ``circles``.
+
+.. Closing remarks for this Project
+
+Remarks          (2)
+~~~~~~~~~~~~~~~~~~~~
+
+At the very end of the exercise it may be appropriate to summarize
+and give some perspectives.
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+.. _exer:dist:
+
+Exercise 6: Determine some Distance
+-----------------------------------
+
+Intro to this exercise. Questions are in subexercises below.
+
+.. --- begin solution of exercise ---
+
+**Solution.**
+Here goes a full solution of the whole exercise.
+With some math :math:`a=b` in this solution:
+
+.. math::
+         \hbox{math in solution: } a = b 
+
+And code ``a=b`` in this solution:
+
+.. code-block:: text
+
+    a = b  # code in solution
+
+End of solution is here.
+
+.. --- end solution of exercise ---
+
+**a)**
+Subexercises are numbered a), b), etc.
+
+.. --- begin hint in exercise ---
+
+**Hint 1.**
+First hint to subexercise a).
+With math :math:`a=b` in hint:
+
+.. math::
+         a=b. 
+
+And with code (in plain verbatim) returning :math:`x+1` in hint:
+
+.. code-block:: text
+
+    def func(x):
+        return x + 1  # with code in hint
+
+.. --- end hint in exercise ---
+
+.. --- begin hint in exercise ---
+
+**Hint 2.**
+Second hint to subexercise a).
+
+Test list in hint:
+
+1. item1
+
+2. item2
+
+.. --- end hint in exercise ---
+
+Filename: ``subexer_a.pdf``.
+
+.. --- begin answer of exercise ---
+
+**Answer.**
+Short answer to subexercise a).
+With math in answer: :math:`a=b`.
+
+.. --- end answer of exercise ---
+
+**b)**
+Here goes the text for subexercise b).
+
+Some math :math:`\cos^2 x + \sin^2 x = 1` written one a single line:
+
+.. math::
+         \cos^2 x + \sin^2 x = 1 \thinspace .
+
+.. --- begin hint in exercise ---
+
+**Hint.**
+A hint for this subexercise.
+
+.. --- end hint in exercise ---
+
+Filename: ``subexer_b.pdf``.
+
+.. --- begin solution of exercise ---
+
+**Solution.**
+Here goes the solution of this subexercise.
+
+.. --- end solution of exercise ---
+
+.. No meaning in this weired test example:
+
+The text here belongs to the main (intro) part of the exercise. Need
+closing remarks to have text after subexercises.
+
+Test list in exercise:
+
+1. item1
+
+2. item2
+
+.. Closing remarks for this Exercise
+
+Remarks          (3)
+~~~~~~~~~~~~~~~~~~~~
+
+Some final closing remarks, e.g., summarizing the main findings
+and their implications in other problems can be made. These
+remarks will appear at the end of the typeset exercise.
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+Some exercise without the "Exercise:" prefix
+--------------------------------------------
+
+.. Another minimalistic exercise
+
+Just some text. And some math saying that :math:`e^0=1` on a single line,
+to test that math block insertion is correct:
+
+.. math::
+         \exp{(0)} = 1 
+
+And a test that the code ``lambda x: x+2`` is correctly placed here:
+
+.. code-block:: text
+
+    lambda x: x+2
+
+.. Have some comments at the end of the exercise to see that
+
+.. the Filename: ... is written correctly.
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+.. _sec:this:exer:de:
+
+Exercise 8: Solution of differential equation
+---------------------------------------------
+
+
+
+.. begin quiz
+
+Given
+
+.. math::
+         \frac{dy}{dx} = -y(x),\quad y(0)=1 
+
+What is the solution of this equation?
+
+
+**Choice A:** :math:`y=e^{-y}`
+
+:abbr:`? (Right!)`
+
+**Choice B:** :math:`y=e^{y}`
+
+:abbr:`? (Wrong!)` :abbr:`# (Almost, but the sign is wrong (note the minus!).)`
+
+**Choice C:** .. code-block:: python
+
+    from math import exp
+    def f(x):
+        return exp(x)
+
+:abbr:`? (Wrong!)`
+
+**Choice D:** The solution cannot be found because there is a derivative in the equation.
+
+:abbr:`? (Wrong!)` :abbr:`# (Equations with derivatives can be solved; they are termed *differential equations*.)`
+
+**Choice E:** The equation is meaningless: an equation must be an equation
+for :math:`x` or :math:`y`, not a function :math:`y(x)`.
+
+:abbr:`? (Wrong!)` :abbr:`# (Equations where the unknown is a function, as y(x) here, are called *differential equations*, and are solved by special techniques.)`
+
+.. end quiz
+
+
+
+.. --- end exercise ---
+
+.. --- begin exercise ---
+
+Example 9: Just an example
+--------------------------
+
+.. This example needs the --examples_as_exercises option, otherwise
+
+.. it is just typeset as it is written.
+
+**a)**
+What is the capital of Norway?
+
+**Answer.**
+Oslo.
+
+.. --- end exercise ---
+

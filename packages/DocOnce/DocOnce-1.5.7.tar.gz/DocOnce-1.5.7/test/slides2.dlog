@@ -1,0 +1,861 @@
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+output in slides2.p.tex
+running preprocess -DFORMAT=html -DDEVICE=screen  slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to html
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+found info about 1 exercises
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format html
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format html
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format html
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format html
+figure file ../doc/src/slides/fig/teacher1:
+    can use ../doc/src/slides/fig/teacher1.gif for format html
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format html
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format html
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format html
+figure file ../doc/src/slides/fig/broken_pen_and_paper:
+    can use ../doc/src/slides/fig/broken_pen_and_paper.jpg for format html
+output in slides2.html
+running preprocess -DFORMAT=pdflatex -DDEVICE=screen -DBEAMER slides2.do.txt > tmp_preprocess__slides2.do.txt
+Translating doconce text in tmp_preprocess__slides2.do.txt to pdflatex
+copy complete file ../doc/src/slides/src/solver.pyopt (format: pyoptpro)
+figure file ../doc/src/slides/fig/latex_thesis:
+    can use ../doc/src/slides/fig/latex_thesis.jpg for format pdflatex
+figure file ../doc/src/slides/fig/iphones:
+    can use ../doc/src/slides/fig/iphones.jpg for format pdflatex
+figure file ../doc/src/slides/fig/latex_paper1:
+    can use ../doc/src/slides/fig/latex_paper1.png for format pdflatex
+figure file ../doc/src/slides/fig/oldbooks:
+    can use ../doc/src/slides/fig/oldbooks.jpg for format pdflatex
+figure file ../doc/src/slides/fig/doconce1b:
+    can use ../doc/src/slides/fig/doconce1b.png for format pdflatex
+figure file ../doc/src/slides/fig/ipad:
+    can use ../doc/src/slides/fig/ipad.png for format pdflatex
+figure file ../doc/src/slides/fig/imac:
+    can use ../doc/src/slides/fig/imac.png for format pdflatex
+output in slides2.p.tex

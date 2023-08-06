@@ -1,0 +1,290 @@
+%%
+%% Automatically generated file from DocOnce source
+%% (https://github.com/doconce/doconce/)
+%%
+%%
+% #ifdef PTEX2TEX_EXPLANATION
+%%
+%% The file follows the ptex2tex extended LaTeX format, see
+%% ptex2tex: https://code.google.com/p/ptex2tex/
+%%
+%% Run
+%%      ptex2tex myfile
+%% or
+%%      doconce ptex2tex myfile
+%%
+%% to turn myfile.p.tex into an ordinary LaTeX file myfile.tex.
+%% (The ptex2tex program: https://code.google.com/p/ptex2tex)
+%% Many preprocess options can be added to ptex2tex or doconce ptex2tex
+%%
+%%      ptex2tex -DMINTED myfile
+%%      doconce ptex2tex myfile envir=minted
+%%
+%% ptex2tex will typeset code environments according to a global or local
+%% .ptex2tex.cfg configure file. doconce ptex2tex will typeset code
+%% according to options on the command line (just type doconce ptex2tex to
+%% see examples). If doconce ptex2tex has envir=minted, it enables the
+%% minted style without needing -DMINTED.
+% #endif
+
+% #define PREAMBLE
+
+% #ifdef PREAMBLE
+%-------------------- begin preamble ----------------------
+
+\documentclass[%
+oneside,                 % oneside: electronic viewing, twoside: printing
+final,                   % draft: marks overfull hboxes, figures with paths
+10pt]{article}
+
+\listfiles               %  print all files needed to compile this document
+
+\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage[table]{xcolor}
+\usepackage{bm,ltablex,microtype}
+
+\usepackage[pdftex]{graphicx}
+
+% Movies are handled by the href package
+\newenvironment{doconce:movie}{}{}
+\newcounter{doconce:movie:counter}
+
+
+\usepackage{ptex2tex}
+% #ifdef MINTED
+\usepackage{minted}
+\usemintedstyle{default}
+% #endif
+\usepackage{fancyvrb}
+
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+
+\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+
+% Hyperlinks in PDF:
+\definecolor{linkcolor}{rgb}{0,0,0.4}
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=black,
+    filecolor=black,
+    %filecolor=blue,
+    pdfmenubar=true,
+    pdftoolbar=true,
+    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
+    }
+%\hyperbaseurl{}   % hyperlinks are relative to this root
+
+\setcounter{tocdepth}{2}  % levels in table of contents
+
+% Tricks for having figures close to where they are defined:
+% 1. define less restrictive rules for where to put figures
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0.75}
+% floatpagefraction must always be less than topfraction!
+% 2. ensure all figures are flushed before next section
+\usepackage[section]{placeins}
+% 3. enable begin{figure}[H] (often leads to ugly pagebreaks)
+%\usepackage{float}\restylefloat{figure}
+
+% prevent orhpans and widows
+\clubpenalty = 10000
+\widowpenalty = 10000
+
+% --- end of standard preamble for documents ---
+
+
+% insert custom LaTeX commands...
+
+\raggedbottom
+\makeindex
+\usepackage[totoc]{idxlayout}   % for index in the toc
+\usepackage[nottoc]{tocbibind}  % for references/bibliography in the toc
+
+%-------------------- end preamble ----------------------
+
+\begin{document}
+
+% matching end for #ifdef PREAMBLE
+% #endif
+
+\newcommand{\exercisesection}[1]{\subsection*{#1}}
+
+\input{newcommands_bfmath}
+\input{newcommands_replace}
+
+% ------------------- main content ----------------------
+
+% Text with wrong doconce format
+
+% TODO: fix this
+
+A list followed by a code block works okay:
+
+\begin{itemize}
+  \item Third point
+
+  \item Fourth point
+\end{itemize}
+
+\noindent
+\bcod
+some verbatime stuff
+\ecod
+
+\paragraph{Section heading before code is caught by the syntax check.}
+\label{my} \index{failure}
+
+Hello
+\bccq
+more verbatime stuff
+\eccq
+
+Next we see if backslashes are detected: \label{mylab}\index{youridx}
+And a reference to \cite{mybook}.
+
+\bccq
+More verbatim stuff.
+\eccq
+
+Can we successfully say \Verb!__call__! and \Verb!__add__! and avoid having them as
+bad paragraphs?
+
+Figure with just an image and no caption must be handled.
+
+\vspace{6mm}
+
+% inline figure
+\centerline{\includegraphics[width=0.9\linewidth]{../doc/src/manual/fig/wave1D.pdf}}
+
+\vspace{6mm}
+
+Figure with label, but no caption.
+
+\begin{figure}[!ht]  % myl1
+  \centerline{\includegraphics[width=0.9\linewidth]{../doc/src/manual/fig/wave1D.pdf}}
+  \caption{
+  \label{myl1}
+  }
+\end{figure}
+%\clearpage % flush figures myl1
+
+Figure with no comma between filename and options, and wrong path must
+give error.
+
+\vspace{6mm}
+
+% inline figure
+\centerline{\includegraphics[width=0.9\linewidth]{../doc/src/manual/fig/wave1D.pdf}}
+
+\vspace{6mm}
+
+Figure with math only in the caption, which causes sphinx to use an
+empty figure name, is problematic.
+
+\begin{figure}[!ht]  % 
+  \centerline{\includegraphics[width=0.9\linewidth]{../doc/src/manual/fig/wave1D.pdf}}
+  \caption{
+  $a=50$
+  }
+\end{figure}
+%\clearpage % flush figures 
+
+Figure with hyperlink in caption creates problems with latex and --device=paper
+because the link becomes a footnote inside the caption.
+
+\begin{figure}[!ht]  % 
+  \centerline{\includegraphics[width=0.9\linewidth]{../doc/src/manual/fig/wave1D.pdf}}
+  \caption{
+  \href{{https://google.com}}{Google}.
+  }
+\end{figure}
+%\clearpage % flush figures 
+
+% \href{{https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.webm}}{\nolinkurl{https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.webm}}
+Movie/figure with nonexistent URL must give error messages.
+
+
+\begin{doconce:movie}
+\refstepcounter{doconce:movie:counter}
+\begin{quote}
+% link to web movie
+Movie \arabic{doconce:movie:counter}: $a=50$ \href{https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.ogg}{\nolinkurl{https://hplgit.github.io/INF5620/doc/pub/mov-wave/pulse2_in_two_media/movie.ogg}}
+\end{quote}
+\end{doconce:movie}
+
+
+\begin{figure}[!ht]  % 
+  \centerline{\includegraphics[width=0.9\linewidth]{downloaded_figures/pulse2_in_two_media.png}}
+  \caption{
+  $a=50$
+  }
+\end{figure}
+%\clearpage % flush figures 
+
+Links with mix of verbatim and plain text is not good: \href{{https://some.where.net/myfile.py}}{\nolinkurl{myfile.py}}.
+
+More text...
+% Comment before math is ok
+\begin{align}
+a &= b,  \label{eq1}\\
+a &= b,  \label{eq2}
+\end{align}
+
+\begin{itemize}
+ \item A1
+
+ \item A2
+\end{itemize}
+
+\noindent
+Normal text.
+
+\subsection{Normal section with exercise envirs are detected by syntax checks}
+
+Normal text.
+
+Just a loner subexercise begin.
+
+Normal text.
+
+\subsection{Links to local files shall give warning}
+
+Try this \href{{_static/doconce.py}}{link}.
+
+\subsection{Failure of tables}
+
+
+\begin{quote}
+\begin{tabular}{ll}
+\hline
+\multicolumn{1}{c}{ heading1 } & \multicolumn{1}{c}{ heading2 } \\
+\hline
+\Verb!%s! & \Verb!%e!     \\
+$a=b$     & $\mbox{math}$ \\
+\hline
+\end{tabular}
+\end{quote}
+
+\noindent
+
+% ------------------- end of main content ---------------
+
+% #ifdef PREAMBLE
+\cleardoublepage\phantomsection  % trick to get correct link to Index
+\printindex
+
+\end{document}
+% #endif
+

@@ -1,0 +1,10 @@
+pygments
+preprocess
+wheel
+mako
+future
+pygments-doconce
+publish-doconce
+requests
+nbformat
+jupyter_client

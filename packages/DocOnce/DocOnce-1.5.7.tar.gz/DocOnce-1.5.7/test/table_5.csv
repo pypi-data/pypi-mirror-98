@@ -1,0 +1,3 @@
+Type,Description
+X,"Alignment character that is used for specifying a potentially very long text in a column in a table. It makes use of the tabularx package in LaTeX, otherwise (for other formats) it means l (centered alignment)."
+"l,r,c",standard alignment characters
