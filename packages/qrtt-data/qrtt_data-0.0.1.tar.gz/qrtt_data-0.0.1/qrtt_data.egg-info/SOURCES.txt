@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+qrtt_data/__init__.py
+qrtt_data/stock_data.py
+qrtt_data.egg-info/PKG-INFO
+qrtt_data.egg-info/SOURCES.txt
+qrtt_data.egg-info/dependency_links.txt
+qrtt_data.egg-info/requires.txt
+qrtt_data.egg-info/top_level.txt
