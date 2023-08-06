@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "htm2md"
+version = "0.1.0"
+description = "convert html to markdown"
+readme = "README.rst"
+authors = ["miso <green-24@outlook.jp>"]
+license = "MIT"
+homepage = "https://github.com/miso24"
+repository = "https://github.com/miso24/htm2md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = "^20.8b1"
+isort = "^5.7.0"
+mypy = "^0.812"
+pytest-cov = "^2.11.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
