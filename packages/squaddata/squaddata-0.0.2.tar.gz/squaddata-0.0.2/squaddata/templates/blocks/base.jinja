@@ -1,0 +1,75 @@
+## Build
+* kernel: {{ build.metadata.make_kernelversion }}
+* git: {{ build.metadata.git_repo }}
+* git branch: {{ build.metadata.git_branch }}
+* git commit: {{ build.metadata.git_commit }}
+* git describe: {{ build.version }}
+* test details: {{ build_url }}
+
+## Regressions (compared to {{ base_build.version }})
+{% if regressions|length == 0 %}
+No regressions found.
+{% else %}
+{% for key in regressions %}
+{% if regressions[key]|length == 0 %}{% continue %}{% endif %}
+* {{ key[0] }}, {{ key[1] }}
+{% for t in regressions[key] %}
+  - {{ t }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+{% if regressions|length == 0 %}
+Tested-by: Linux Kernel Functional Testing <lkft@linaro.org>
+
+{% else %}
+Reported-by: Linux Kernel Functional Testing <lkft@linaro.org>
+
+{% endif %}
+
+## Fixes (compared to {{ base_build.version }})
+{% if fixes|length == 0 %}
+No fixes found.
+{% else %}
+{% for key in fixes %}
+{% if fixes[key]|length == 0 %}{% continue %}{% endif %}
+* {{ key[0] }}, {{ key[1] }}
+{% for t in fixes[key] %}
+  - {{ t }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+## Test result summary
+{% for key,value in test_result.items() %}
+ {{key}}: {{value}},
+{%- endfor %}
+
+
+## Build Summary
+{% for key in summary %}
+{% if key[1] == "build" -%}
+{% set env = key[0] %}
+{% set suite = key[1] %}
+{% set pass = summary[key].pass %}
+{% set fail = summary[key].fail %}
+{% set skip = summary[key].skip %}
+{% set xfail = summary[key].xfail %}
+{% set total = pass + fail + skip + xfail %}
+* {{ key[0] }}:
+{{- " %s total" % (total) }}
+{{- ", %s passed" % (pass) }}
+{{- ", %s failed" % (fail) }}
+{{- ", %s skipped" % (skip) if skip }}
+{{- ", %s xfailed" % (xfail) if xfail }}
+{% endif %}
+{% endfor %}
+
+## Test suites summary
+{% for s in suites %}
+{% if s != "build" -%}
+* {{ s }}
+{% endif %}
+{% endfor %}
