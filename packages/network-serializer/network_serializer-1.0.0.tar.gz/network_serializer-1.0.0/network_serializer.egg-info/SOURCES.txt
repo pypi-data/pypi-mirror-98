@@ -1,0 +1,8 @@
+README
+setup.py
+network_serializer/__init__.py
+network_serializer/network_serializer.py
+network_serializer.egg-info/PKG-INFO
+network_serializer.egg-info/SOURCES.txt
+network_serializer.egg-info/dependency_links.txt
+network_serializer.egg-info/top_level.txt
