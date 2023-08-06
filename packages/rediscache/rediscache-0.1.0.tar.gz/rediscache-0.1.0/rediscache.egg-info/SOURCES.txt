@@ -1,0 +1,10 @@
+README.md
+setup.py
+rediscache/__init__.py
+rediscache.egg-info/PKG-INFO
+rediscache.egg-info/SOURCES.txt
+rediscache.egg-info/dependency_links.txt
+rediscache.egg-info/requires.txt
+rediscache.egg-info/top_level.txt
+tests/__init__.py
+tests/test_rediscache.py
