@@ -1,0 +1,12 @@
+alphashape/__init__.py,sha256=E_-nawEs4urFSnXa4tx5RuCkj4P4yhy0OAeNqzWMgDk,285
+alphashape/_version.py,sha256=kmfHpHo2YhSrigutlRQs8qXIR8nEm-D-c8lScQQN64M,22
+alphashape/alphashape.py,sha256=laZAi5iDUWwordRBgY1Hd6wFK8WZ4M1zPd9Ue_LBB-A,3631
+alphashape/cli.py,sha256=ITYUPenJ4SGwe7YRVO_OliIKk957kZQL9XQAgDYjt3w,3199
+alphashape/optimizealpha.py,sha256=ixDCvFPKDDbaXvH_1-QlT8PsY-VD86DvrhQV_dMch7s,3405
+alphashape-1.2.1.dist-info/AUTHORS.rst,sha256=fuF0CdsXvnAVz0G-Pf3G2VGeUV0mpJ-Qyo31QFdr8mg,159
+alphashape-1.2.1.dist-info/LICENSE,sha256=yXobaJT31qeIuFMY7LE-5mNRfUc8zuE4loArxhlptQw,1077
+alphashape-1.2.1.dist-info/METADATA,sha256=JPJGwc16IgVDa6a0XupXVWZTY5II6yYmvvCq3L_CzPU,11478
+alphashape-1.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+alphashape-1.2.1.dist-info/entry_points.txt,sha256=tZAqM1hr8TPf50POV2FxWoBTbS8Q0iPwYiSi4XSdn8g,52
+alphashape-1.2.1.dist-info/top_level.txt,sha256=wmOkkFqrjENVXVXOjH7FXf9tZErp4EUD-qsy8CursEs,11
+alphashape-1.2.1.dist-info/RECORD,,
