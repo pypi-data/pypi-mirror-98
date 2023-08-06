@@ -1,0 +1,9 @@
+license.md
+setup.cfg
+setup.py
+socket_for_humans/__init__.py
+socket_for_humans/socket_for_humans.py
+socket_for_humans.egg-info/PKG-INFO
+socket_for_humans.egg-info/SOURCES.txt
+socket_for_humans.egg-info/dependency_links.txt
+socket_for_humans.egg-info/top_level.txt
