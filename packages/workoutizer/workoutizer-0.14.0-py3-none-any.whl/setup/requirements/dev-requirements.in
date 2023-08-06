@@ -1,0 +1,12 @@
+black
+flake8
+IPython
+lxml
+pip-tools
+pre-commit
+pytest
+pytest-django
+pytest-xdist
+pytest-cov
+rope
+selenium
