@@ -1,0 +1,13 @@
+jinja2
+click
+pyside2
+colorful
+cantools
+hjson
+pyyaml
+PySide2
+sqlalchemy
+appdirs
+result
+hypothesis
+requests
