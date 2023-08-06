@@ -1,0 +1,10 @@
+setup.py
+rajjr_probability/Binomialdistribution.py
+rajjr_probability/Gaussiandistribution.py
+rajjr_probability/Generaldistribution.py
+rajjr_probability/__init__.py
+rajjr_probability.egg-info/PKG-INFO
+rajjr_probability.egg-info/SOURCES.txt
+rajjr_probability.egg-info/dependency_links.txt
+rajjr_probability.egg-info/not-zip-safe
+rajjr_probability.egg-info/top_level.txt
