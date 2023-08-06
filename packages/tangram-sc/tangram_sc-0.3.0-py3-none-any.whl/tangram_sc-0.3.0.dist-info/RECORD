@@ -1,0 +1,12 @@
+tangram/__init__.py,sha256=o4pUkYLYQudVvDVICnN99GcXtRRzU31ZFI_ONBaqO9w,109
+tangram/_version.py,sha256=T8cwzuTFCtcdIHJtAlgSRvac4KFFg6x12LEUaHWUPkU,67
+tangram/mapping_optimizer.py,sha256=RmdwnM2mYRU0KNepPxXHHiwG3BUMBcBKJ4tZPcuCTpg,14378
+tangram/mapping_utils.py,sha256=LIHixQUyi04h5QhS9lZ1YLU71ESuZRqT3tLyDBXZRuI,9514
+tangram/plot_utils.py,sha256=sWAwuOWRZNw9LqphQxAXV4gOK8q6BlKi7-dB2_VZ6Do,14189
+tangram/utils.py,sha256=IvHSk6ni_fWzmdSlpOrqwV6EFrO4-u0YzeorLUl0_08,15465
+tests/tangram_test.py,sha256=bPzCxERm9Yj73en4r6zuaz24GVszKd7_1ny6Gd-h7AE,6145
+tangram_sc-0.3.0.dist-info/LICENSE.md,sha256=V22jP3inT-lm_dqAtviqour9wv8N2Fazk-N_Wt4amPY,1523
+tangram_sc-0.3.0.dist-info/METADATA,sha256=dKkrYbUkOYq2vhEipe-T8hQXlhErRDzhvqxcPJ72N3M,8290
+tangram_sc-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tangram_sc-0.3.0.dist-info/top_level.txt,sha256=P9arPatFoTb208XQZhpU1Mj2EMp-gB-KaCRjiTBrCts,40
+tangram_sc-0.3.0.dist-info/RECORD,,
