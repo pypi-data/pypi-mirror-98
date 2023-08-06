@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+mongomoron/__init__.py
+mongomoron/mongomoron.py
+mongomoron.egg-info/PKG-INFO
+mongomoron.egg-info/SOURCES.txt
+mongomoron.egg-info/dependency_links.txt
+mongomoron.egg-info/top_level.txt
