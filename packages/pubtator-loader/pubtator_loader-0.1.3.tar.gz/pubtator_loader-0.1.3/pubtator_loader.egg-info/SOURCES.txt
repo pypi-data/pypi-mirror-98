@@ -1,0 +1,14 @@
+README.md
+setup.py
+pubtator_loader/__init__.py
+pubtator_loader/__version__.py
+pubtator_loader/pubtator_corpus_reader.py
+pubtator_loader.egg-info/PKG-INFO
+pubtator_loader.egg-info/SOURCES.txt
+pubtator_loader.egg-info/dependency_links.txt
+pubtator_loader.egg-info/requires.txt
+pubtator_loader.egg-info/top_level.txt
+pubtator_loader.egg-info/zip-safe
+pubtator_loader/models/__init__.py
+pubtator_loader/models/pubtator_document.py
+pubtator_loader/models/pubtator_entities.py
