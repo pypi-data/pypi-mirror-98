@@ -1,0 +1,6 @@
+Deprecated
+numpy>=1.17.0
+scipy
+cooler
+pandas
+h5py
