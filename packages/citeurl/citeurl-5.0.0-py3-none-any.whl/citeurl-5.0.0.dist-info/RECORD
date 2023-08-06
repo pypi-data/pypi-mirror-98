@@ -1,0 +1,16 @@
+citeurl/__init__.py,sha256=WuoTif38A30zO1FkIRhPhlxlnqZiSGJ4Mjl21VYg69w,36928
+citeurl/__init__.sync-conflict-20210204-123421-4WXMJFU.py,sha256=fVKwcV65umeLRuVq_DSDiMmbWl21xx-43avPplc5lVE,36144
+citeurl/__main__.py,sha256=0kFmzhOnPOGcBYCugYQyNG_Ls_-scnqA5rxFW5l5lEU,5844
+citeurl/citeurl.js,sha256=cmZwRQOzU5itL_WX4QZ6cgXjJWqbJWtbOJ_rpv_cXVA,9073
+citeurl/cli.py,sha256=CqsAUQ6_J5h4m078LGVXlcC0vp8AJRTpvQa_pZ-U7zo,5920
+citeurl/default-schemas.sync-conflict-20210204-123421-4WXMJFU.yaml,sha256=OVFlvNJiic51l1rz5ZI944012QhZswj4Uh37i3acOkc,28102
+citeurl/default-schemas.yaml,sha256=IuWwJ3Z7GFEs-5yS0rAwH1JoFHwCnLtlIzStGdHR2gQ,83717
+citeurl/make_js.py,sha256=RFk4_N7pM1l-wTHv7P6zLB1B_luR0MGI6w33pvCftEM,5335
+citeurl/makejs.py,sha256=iklKt9tdBWiQZYOMxUKmXI08N8TdayW2UY7v7Uprusk,4628
+citeurl/mdx.py,sha256=qeR-w_v8pCdFFyJB5pZXawLn8czyefwuFPlf5BXTBJU,3113
+citeurl-5.0.0.dist-info/LICENSE.md,sha256=T6b3vscLORAeVZWYfYDSVFuKq1X-gA6wOQsuYJfXtiU,1065
+citeurl-5.0.0.dist-info/METADATA,sha256=xBKdadrtXs6QzL_HD_TOvrGinph5GeZynR9_aLnJoeA,5484
+citeurl-5.0.0.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+citeurl-5.0.0.dist-info/entry_points.txt,sha256=QosI3aQdkrIB_Hcn3EQJkP0jd-IALpFsyeR9zT2aMzc,145
+citeurl-5.0.0.dist-info/top_level.txt,sha256=WgpwPvgcGWJgfkw4r3EKesIT33CQEKoU50D4InqJams,8
+citeurl-5.0.0.dist-info/RECORD,,
