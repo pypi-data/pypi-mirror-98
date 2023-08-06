@@ -1,0 +1,9 @@
+graft beakerx/static
+graft beakerx/labextension
+
+graft beakerx/js
+
+include LICENSE
+include NOTICE
+include pyproject.toml
+include beakerx.json
