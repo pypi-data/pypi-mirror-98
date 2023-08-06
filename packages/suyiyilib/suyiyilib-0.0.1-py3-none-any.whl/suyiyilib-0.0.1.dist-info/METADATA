@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: suyiyilib
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/a-suyiyi/timelib
+Author: a-suyiyi
+Author-email: hbxxsylbeifen1@126.com
+License: MIT
+Description: 
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
