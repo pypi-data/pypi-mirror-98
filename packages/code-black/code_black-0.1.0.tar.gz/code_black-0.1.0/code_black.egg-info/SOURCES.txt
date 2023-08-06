@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+code_black/__init__.py
+code_black/code_black.py
+code_black.egg-info/PKG-INFO
+code_black.egg-info/SOURCES.txt
+code_black.egg-info/dependency_links.txt
+code_black.egg-info/top_level.txt
