@@ -1,0 +1,15 @@
+sqlalchemy_mutable/__init__.py,sha256=n2oJgVj4fymd6aa--OkcxWrAZeC1ESLqzvjyUWvSqkQ,495
+sqlalchemy_mutable/coerced_types.py,sha256=R4Lc1QDhihpg2YCh8V6iObqdwzWc-pvRXSSwnyJyi5Y,3300
+sqlalchemy_mutable/html_attrs_dict.py,sha256=zb3YlCxAggOCUf5XhzGmNzWKKg68sZVgFjVXWAHZcN4,1450
+sqlalchemy_mutable/manager.py,sha256=OzgzLa7inovdYMk1fvEX0NeTksjD-oba545AYhx10X8,1011
+sqlalchemy_mutable/model_shell.py,sha256=4HrGrRONIy7hnMoMJWhW6zM2UwU2N_GBqQkBBU6Fe70,3821
+sqlalchemy_mutable/mutable.py,sha256=Zm-pesq9NR2Y8fw7csop83ixicPe9RN6_k_tGAFSNp8,15333
+sqlalchemy_mutable/mutable_dict.py,sha256=pi_6B9RtA_S0p30RNZZl6WGe2H_UIkIQH4GTLO16i_s,3985
+sqlalchemy_mutable/mutable_list.py,sha256=1o1VnFpu9BSwZ3MgFGH8tVtYBxzqJlKVfi7eW0Q6M9A,3736
+sqlalchemy_mutable/mutable_partial.py,sha256=mzVb7FhKWLFSwkcWuJ836SSNstSUe-6y5sXTNoXA7sE,1987
+sqlalchemy_mutable/mutable_tuple.py,sha256=_TxV5Ee36hTtMH-rpAic7Fa_Qx7lrLQz5fB90NdVyWs,2445
+sqlalchemy_mutable-0.0.13.dist-info/LICENSE,sha256=mw0TqrBoaimMlCdXjxBnYfPbfSzGU_fj1U3uGLO33Cs,1068
+sqlalchemy_mutable-0.0.13.dist-info/METADATA,sha256=0KRhEGJUhA4bDuQuDuUzX-GKHIkfOt6g16VWUOgnip0,3511
+sqlalchemy_mutable-0.0.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqlalchemy_mutable-0.0.13.dist-info/top_level.txt,sha256=WOK4sWuCthu_UxpgSqt17pjLuHoPIHKhMypZxGZXUKY,19
+sqlalchemy_mutable-0.0.13.dist-info/RECORD,,
