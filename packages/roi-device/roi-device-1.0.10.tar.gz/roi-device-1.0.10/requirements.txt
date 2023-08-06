@@ -1,0 +1,2 @@
+aliyun-iot-linkkit==1.2.2
+pycryptodome==3.7.2
