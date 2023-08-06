@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+cryptostats/__init__.py
+cryptostats.egg-info/PKG-INFO
+cryptostats.egg-info/SOURCES.txt
+cryptostats.egg-info/dependency_links.txt
+cryptostats.egg-info/requires.txt
+cryptostats.egg-info/top_level.txt
