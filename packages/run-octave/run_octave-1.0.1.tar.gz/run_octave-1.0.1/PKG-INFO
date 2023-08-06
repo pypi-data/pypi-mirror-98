@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: run_octave
+Version: 1.0.1
+Summary: A package to run Octave functions and scripts in the Python interpreter!
+Home-page: https://github.com/ferreirad08/run-octave
+Author: David Ferreira
+Author-email: ferreirad08@gmail.com
+License: MIT
+Description: # run-octave
+        
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ferreirad08/run-octave/blob/main/LICENSE)
+        [![Linkedin](https://img.shields.io/badge/LinkedIn-%230077B5.svg?&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-f-3a918ba5)
+        
+        Run Octave functions and scripts in the Python interpreter
+        
+        ## Requirements
+        * [Python 3](https://www.python.org/)
+        * [SciPy](https://www.scipy.org/)
+        * [GNU Octave](https://www.gnu.org/software/octave/index) (**Nota**: install in advance)
+        
+        ## Examples
+                
+            from run_octave import RunOctave
+            import numpy as np
+        
+            # Create the RunOctave object and explicitly add the path to octave-gui.exe
+            octave = RunOctave(octave_path='C:/Octave/Octave-5.2.0/mingw64/bin/octave-gui.exe')
+        
+            A = np.array([[ 2, 0, 1],
+                          [-1, 1, 0],
+                          [-1, 1, 0],
+                          [-3, 3, 0]])
+        
+            # Start Testing
+            m, n = octave.run(nargout=2, target='size', args=(A,))
+            print(m, n)
+        
+            N = octave.run(nargout=1, target='vecnorm', args=(A, 2, 2))
+            print(N)
+        
+            # Inserting expressions directly
+            X = octave.run(nargout=1, target='ones(4, 3) * 255;')
+            print(X)
+        
+        ## Installation
+        
+        Simply install `run-octave` from [PyPI](https://pypi.org/project/run-octave/)
+        
+            pip install run-octave
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.6
+Description-Content-Type: text/markdown
