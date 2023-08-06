@@ -1,0 +1,4 @@
+[console_scripts]
+cir2py = c4m.PySpice.Scripts.cir2py:main
+pyspice-post-installation = c4m.PySpice.Scripts.pyspice_post_installation:main
+
