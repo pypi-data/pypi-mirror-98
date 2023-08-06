@@ -1,0 +1,8 @@
+setup.py
+src/matplotlibqml/__init__.py
+src/matplotlibqml/matplotlibqml.py
+src/matplotlibqml.egg-info/PKG-INFO
+src/matplotlibqml.egg-info/SOURCES.txt
+src/matplotlibqml.egg-info/dependency_links.txt
+src/matplotlibqml.egg-info/requires.txt
+src/matplotlibqml.egg-info/top_level.txt
