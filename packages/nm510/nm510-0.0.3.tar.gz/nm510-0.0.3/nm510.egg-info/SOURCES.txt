@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+nm510/__init__.py
+nm510/nm510.py
+nm510.egg-info/PKG-INFO
+nm510.egg-info/SOURCES.txt
+nm510.egg-info/dependency_links.txt
+nm510.egg-info/not-zip-safe
+nm510.egg-info/requires.txt
+nm510.egg-info/top_level.txt
