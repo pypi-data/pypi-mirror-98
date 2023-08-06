@@ -1,0 +1,7 @@
+torch_ort/__init__.py,sha256=otMsaXPwEPfD-B3jwmWDymX9ulnFQMoD259dua8PmTk,53
+torchort/__init__.py,sha256=otMsaXPwEPfD-B3jwmWDymX9ulnFQMoD259dua8PmTk,53
+torchort-0.0.7.dev20210315.dist-info/LICENSE,sha256=LwfHJ1Gu2ZeQuKSGnPIxHfhahgsi3tBfoigDWHpIkiw,1073
+torchort-0.0.7.dev20210315.dist-info/METADATA,sha256=y_W8cLdCqGKGxZd2KyXITVZ1zZPkIGKnG_VFORAqLD4,1083
+torchort-0.0.7.dev20210315.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+torchort-0.0.7.dev20210315.dist-info/top_level.txt,sha256=A_9Bv3kcgwEqVQ8Zip5CAdIVFHWUKIS-e8NcFlc_DMI,9
+torchort-0.0.7.dev20210315.dist-info/RECORD,,
