@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<!-- The sample mapping is for the Boku response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Boku">
+        <message messageType="Boku" subType="toOde" mapperId="bokumaaRespToOde">
+            <fields>
+                <field name="_7_accountstatus">
+                    <srcField name="/attributes/accountInfo/accountStatus"/>
+                </field>
+                <field name="_7_isprimaryaccount">
+                    <srcField name="/attributes/accountInfo/isPrimaryAccount"/>
+                </field>
+                <field name="_7_mdntenure">
+                    <srcField name="/attributes/accountInfo/mdnTenure"/>
+                </field>
+                <field name="_7_accounttype">
+                    <srcField name="/attributes/accountInfo/accountType"/>
+                </field>
+                <field name="_7_serviceplan">
+                    <srcField name="/attributes/accountInfo/servicePlan"/>
+                </field>
+                <field name="_7_lastport">
+                    <srcField name="/attributes/accountInfo/lastPort">
+                        <groovy>
+                            <![CDATA[
+		                  if (value != null) {
+		                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMM-dd-yyyy');
+		                     return '' + Math.round(since1960 / 86400000.0);
+		                  } else {
+		                     return null;
+		                  }
+		        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_portedfrom">
+                    <srcField name="/attributes/accountInfo/portedFrom">
+                        <groovy>
+                            <![CDATA[
+                                  return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                         ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_devicetenure">
+                    <srcField name="/attributes/accountInfo/deviceTenure"/>
+                </field>
+                <field name="_7_simtenure">
+                    <srcField name="/attributes/accountInfo/simTenure"/>
+                </field>
+                <field name="_7_accounttenure">
+                    <srcField name="/attributes/accountInfo/accountTenure"/>
+                </field>
+                <field name="_7_simchangedatebetweenfrom">
+                    <srcField name="/attributes/changeInfo/simChangeDateBetween/simChangeDateBetweenfrom">
+                        <groovy>
+                            <![CDATA[
+		                  if (value != null) {
+		                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMM-dd-yyyy');
+		                     return '' + Math.round(since1960 / 86400000.0);
+		                  } else {
+		                     return null;
+		                  }
+		        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_simchangedatebetweento">
+                    <srcField name="/attributes/changeInfo/simChangeDateBetween/simChangeDateBetweento">
+                        <groovy>
+                            <![CDATA[
+ 		                  if (value != null) {
+ 		                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMM-dd-yyyy');
+ 		                     return '' + Math.round(since1960 / 86400000.0);
+ 		                  } else {
+ 		                     return null;
+ 		                  }
+ 		        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_devicechangedatebetweenfrom">
+                    <srcField name="/attributes/changeInfo/deviceChangeDateBetween/deviceChangeDateBetweenfrom">
+                        <groovy>
+                            <![CDATA[
+		 		                  if (value != null) {
+		 		                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMM-dd-yyyy');
+		 		                     return '' + Math.round(since1960 / 86400000.0);
+		 		                  } else {
+		 		                     return null;
+		 		                  }
+		 		        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_devicechangedatebetweento">
+                    <srcField name="/attributes/changeInfo/deviceChangeDateBetween/deviceChangeDateBetweento">
+                        <groovy>
+                            <![CDATA[
+		                  if (value != null) {
+		                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMM-dd-yyyy');
+		                     return '' + Math.round(since1960 / 86400000.0);
+		                  } else {
+		                     return null;
+		                  }
+		        ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_serviceprovider">
+                    <srcField name="/attributes/serviceInfo/serviceProvider">
+                        <groovy>
+                            <![CDATA[
+                                  return (value != null && value.length() > 32)? value.substring(0, 32) : value;
+                         ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_7_servicetype">
+                    <srcField name="/attributes/serviceInfo/serviceType"/>
+                </field>
+                <field name="_7_countrycode">
+                    <srcField name="/attributes/serviceInfo/countryCode"/>
+                </field>
+                <field name="_7_firstnamescore">
+                    <srcField name="/attributes/matchScores/firstNameScore"/>
+                </field>
+                <field name="_7_lastnamescore">
+                    <srcField name="/attributes/matchScores/lastNameScore"/>
+                </field>
+                <field name="_7_streetaddressscore">
+                    <srcField name="/attributes/matchScores/streetAddressScore"/>
+                </field>
+                <field name="_7_cityscore">
+                    <srcField name="/attributes/matchScores/cityScore"/>
+                </field>
+                <field name="_7_statescore">
+                    <srcField name="/attributes/matchScores/stateScore"/>
+                </field>
+                <field name="_7_zipcodescore">
+                    <srcField name="/attributes/matchScores/zipCodeScore"/>
+                </field>
+                <field name="_7_emailaddressscore">
+                    <srcField name="/attributes/matchScores/emailAddressScore"/>
+                </field>
+                <field name="_7_datasource">
+                    <srcField name="/attributes/matchScores/dataSource"/>
+                </field>
+                <field name="_7_callforwardingenabled">
+                    <srcField name="/attributes/additionalAccountInfo/callForwardingEnabled"/>
+                </field>
+                <field name="_7_vendor">
+                    <srcField name="/attributes/deviceInfo/vendor"/>
+                </field>
+                <field name="_7_model">
+                    <srcField name="/attributes/deviceInfo/model"/>
+                </field>
+                <field name="_7_isroaming">
+                    <srcField name="/attributes/deviceInfo/isRoaming"/>
+                </field>
+                <field name="_7_devicestatus">
+                    <srcField name="/attributes/deviceInfo/deviceStatus"/>
+                </field>
+                <field name="_7_mobilenumbertoken">
+                    <srcField name="/attributes/tokenInfo/mobileNumberToken"/>
+                </field>
+                <field name="_7_simtoken">
+                    <srcField name="/attributes/tokenInfo/simToken"/>
+                </field>
+                <field name="_7_devicetoken">
+                    <srcField name="/attributes/tokenInfo/deviceToken"/>
+                </field>
+                <field name="_7_portandswap90">
+                    <srcField name="/attributes/velocityInfo/portAndSwap90"/>
+                </field>
+                <field name="_7_portandswap180">
+                    <srcField name="/attributes/velocityInfo/portAndSwap180"/>
+                </field>
+                <field name="_7_portandswap365">
+                    <srcField name="/attributes/velocityInfo/portAndSwap365"/>
+                </field>
+                <field name="_7_confidencescore">
+                    <srcField name="/attributes/scoreInfo/confidenceScore"/>
+                </field>
+                <field name="_7_correlationid">
+                    <srcField name="/correlationId"/>
+                </field>
+                <field name="_7_referenceid">
+                    <srcField name="/referenceId"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

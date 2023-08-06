@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+import enrichwrap
+print(enrichwrap.joke())

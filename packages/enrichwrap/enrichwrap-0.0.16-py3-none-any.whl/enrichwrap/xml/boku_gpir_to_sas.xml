@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- The sample mapping is for the Boku response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Boku">
+        <message messageType="Boku" subType="toOde" mapperId="bokugpirRespToOde">
+            <fields>
+                <field name="_7_authenticationkey">
+                    <srcField name="/phoneIdResult/authenticationKey"/>
+                </field>
+                <field name="_7_associationkey">
+                    <srcField name="/phoneIdResult/associationKey"/>
+                </field>
+                <field name="_7_carrier">
+                    <srcField name="/phoneIdResult/carrier"/>
+                </field>
+                <field name="_7_mdnmatchscore">
+                    <srcField name="/phoneIdResult/matchScores/mdnMatchScore"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Boku payload mappings">
+        <message messageType="Boku" subType="getPhoneIdentificationResult" mapperId="bokuGetPhoneIdentificationResult">
+            <fields>
+
+                <!-- assigned by Boku -->
+                <field name="merchantId" default="0119000926A929">
+                    <srcField name="/merchantId"/>
+                </field>
+
+                <!-- assigned by Boku -->
+                <field name="subMerchantId" default="0119000927051C">
+                    <srcField name="/subMerchantId"/>
+                </field>
+
+                <!-- TODO: better to come from request, generate one if have to. -->
+                <field name="correlationId" default="ABC0881973286793">
+                    <srcField name="app_id"/>
+                </field>
+
+                <field name="associationKey" default="ABC0881973286793">
+                    <srcField name="app_id"/>
+                </field>
+
+                <field name="match" default="+14085551234">
+                    <srcField name="app_num1_number">
+                        <groovy>
+                            return (value==null || value.trim().length()==0)? "{}" : "{\"consumerMdn\":\"" + "+1" + value + "\"}";
+                        </groovy>
+                    </srcField>
+                </field>
+
+            </fields>
+        </message>
+    </messages>
+</application>
