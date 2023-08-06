@@ -1,0 +1,375 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-13 07:47+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: __init__.py:9
+msgid "Invoices"
+msgstr "Отчеты"
+
+#: admin.py:29
+msgid "Created"
+msgstr "Дата создания"
+
+#: admin.py:33 templates/invoices/manage/base.html:103
+#: templates/invoices/manage/sale.html:54 templates/invoices/print.html:109
+#: templates/invoices/report/base.html:115
+#: templates/invoices/report/sale-report.html:90
+msgid "Total"
+msgstr "Сумма"
+
+#: admin.py:37
+msgid "Total qty"
+msgstr "Общее к-во"
+
+#: admin.py:41
+msgid "Actions"
+msgstr "Действия"
+
+#: forms.py:39
+msgid "Date from"
+msgstr "Дата от"
+
+#: forms.py:41
+msgid "Date to"
+msgstr "Дата до"
+
+#: forms.py:44
+msgid "Include profit"
+msgstr "Включить прибыль"
+
+#: forms.py:49
+msgid "Include wholesale price"
+msgstr "Включить оптовую цену"
+
+#: forms.py:54
+msgid "Include discount"
+msgstr "Включить скидку"
+
+#: forms.py:99
+msgid "Stock"
+msgstr ""
+
+#: models.py:31
+msgid "Invoice"
+msgstr "Отчет"
+
+#: models.py:49
+msgid "Type"
+msgstr "Тип"
+
+#: models.py:66
+msgid "Creator"
+msgstr "Создано"
+
+#: models.py:69
+msgid "Creation date"
+msgstr "Дата создания"
+
+#: models.py:72
+msgid "Discount, %"
+msgstr "Скидка, %"
+
+#: models.py:267 templates/invoices/history.html:18
+#: templates/invoices/history.html:45 templates/invoices/manage/base.html:51
+#: templates/invoices/print.html:75 templates/invoices/report/base.html:70
+#: templates/invoices/report/base.html:96
+msgid "Product"
+msgstr "Товар"
+
+#: models.py:270 templates/invoices/history.html:19
+#: templates/invoices/history.html:46 templates/invoices/manage/base.html:61
+#: templates/invoices/manage/sale.html:38
+#: templates/invoices/product-select-list.html:46
+#: templates/invoices/report/base.html:72
+#: templates/invoices/report/base.html:98
+msgid "Quantity"
+msgstr "Количество"
+
+#: models.py:383 templatetags/invoices.py:61
+msgid "Income"
+msgstr "Приход"
+
+#: models.py:384 templatetags/invoices.py:67
+msgid "Return"
+msgstr "Возвращение"
+
+#: models.py:385 models.py:431 templatetags/invoices.py:47
+#: templatetags/invoices.py:73
+msgid "Custom"
+msgstr "Другое"
+
+#: models.py:410
+#, fuzzy
+#| msgid "Arrival"
+msgid "Arrival invoice"
+msgstr "Приход"
+
+#: models.py:411
+#, fuzzy
+#| msgid "Arrivals"
+msgid "Arrival invoices"
+msgstr "Приход"
+
+#: models.py:428 templatetags/invoices.py:19
+msgid "Cash register"
+msgstr "Касса"
+
+#: models.py:429 templates/invoices/report/sale-report.html:19
+#: templatetags/invoices.py:25
+msgid "Write off"
+msgstr "Списание"
+
+#: models.py:430 templatetags/invoices.py:31
+msgid "Debt"
+msgstr ""
+
+#: models.py:435 templatetags/invoices.py:40
+msgid "Online"
+msgstr "Онлайн"
+
+#: models.py:472
+#, fuzzy
+#| msgid "Invoice"
+msgid "Sales invoice"
+msgstr "Отчет"
+
+#: models.py:473
+#, fuzzy
+#| msgid "Invoices"
+msgid "Sales invoices"
+msgstr "Отчеты"
+
+#: models.py:562
+#, fuzzy
+#| msgid "Services not found"
+msgid "Invoice not found"
+msgstr "Услуги не найдены"
+
+#: models.py:674
+msgid "Access denied"
+msgstr ""
+
+#: templates/invoices/add-product.html:8
+#, fuzzy
+#| msgid "Product"
+msgid "New product"
+msgstr "Товар"
+
+#: templates/invoices/add-product.html:55
+#, fuzzy
+#| msgid "Product"
+msgid "Add product"
+msgstr "Товар"
+
+#: templates/invoices/add-product.html:59
+msgid "Cancel"
+msgstr ""
+
+#: templates/invoices/history.html:6
+#: templates/invoices/list_item_actions.html:7
+#: templates/invoices/manage/base.html:34
+#: templates/invoices/manage/sale.html:20
+#: templates/invoices/report/base.html:25
+msgid "Print"
+msgstr "Печать"
+
+#: templates/invoices/history.html:11
+msgid "Sale"
+msgstr "Продажа"
+
+#: templates/invoices/history.html:16 templates/invoices/history.html:43
+msgid "Action"
+msgstr "Действие"
+
+#: templates/invoices/history.html:17 templates/invoices/history.html:44
+msgid "Date"
+msgstr "Дата"
+
+#: templates/invoices/history.html:20 templates/invoices/history.html:47
+#: templates/invoices/manage/base.html:64
+#: templates/invoices/manage/sale.html:41 templates/invoices/print.html:78
+#: templates/invoices/product-select-list.html:47
+#: templates/invoices/report/base.html:85
+#: templates/invoices/report/base.html:87
+#: templates/invoices/report/base.html:99
+#: templates/invoices/service-select-list.html:39
+msgid "Price"
+msgstr "Цена"
+
+#: templates/invoices/history.html:21 templates/invoices/history.html:48
+msgid "Subtotal (Retail)"
+msgstr "Сумма (Розничная)"
+
+#: templates/invoices/history.html:38
+msgid "Arrival"
+msgstr "Приход"
+
+#: templates/invoices/manage/base.html:48
+#: templates/invoices/manage/sale.html:32 templates/invoices/print.html:76
+#: templates/invoices/product-select-list.html:44
+#: templates/invoices/service-select-list.html:37
+msgid "Code"
+msgstr "Код"
+
+#: templates/invoices/manage/base.html:56
+msgid "Add"
+msgstr ""
+
+#: templates/invoices/manage/base.html:77 templates/invoices/print.html:98
+msgid "Total without discount"
+msgstr "Сумма без скидки"
+
+#: templates/invoices/manage/base.html:85 templates/invoices/print.html:103
+msgid "Discount"
+msgstr "Скидка"
+
+#: templates/invoices/manage/sale.html:14
+msgid "Services"
+msgstr "Услуги"
+
+#: templates/invoices/manage/sale.html:35
+msgid "Service"
+msgstr "Услуга"
+
+#: templates/invoices/name_cell.html:6 templates/invoices/print.html:61
+msgid "from"
+msgstr "от"
+
+#: templates/invoices/print.html:59 templates/invoices/print.html:74
+msgid "#"
+msgstr ""
+
+#: templates/invoices/print.html:77
+msgid "Qty"
+msgstr ""
+
+#: templates/invoices/print.html:79
+msgid "Sum"
+msgstr "Сумма"
+
+#: templates/invoices/product-select-list.html:9
+#: templates/invoices/service-select-list.html:9
+msgid "Search category"
+msgstr "Поиск категории"
+
+#: templates/invoices/product-select-list.html:24
+#: templates/invoices/report/base.html:71
+#: templates/invoices/report/base.html:97
+msgid "Bar code"
+msgstr "Штрих код"
+
+#: templates/invoices/product-select-list.html:31
+#: templates/invoices/service-select-list.html:24
+msgid "Сode"
+msgstr "Код"
+
+#: templates/invoices/product-select-list.html:38
+#: templates/invoices/product-select-list.html:45
+msgid "Product name"
+msgstr "Название товара"
+
+#: templates/invoices/product-select-list.html:58
+msgid "Products not found"
+msgstr "Товары не найдены"
+
+#: templates/invoices/product-select-list.html:74
+#: templates/invoices/service-select-list.html:66
+msgid "Load more"
+msgstr "Загрузить еще"
+
+#: templates/invoices/report/arrival-report.html:9
+msgid "Arrival report"
+msgstr "Приход"
+
+#: templates/invoices/report/base.html:74
+msgid "Wholesale"
+msgstr "Опт"
+
+#: templates/invoices/report/base.html:77
+msgid "Retail"
+msgstr "Розница"
+
+#: templates/invoices/report/base.html:80
+#: templates/invoices/report/base.html:102
+msgid "Profit"
+msgstr "Прибыль"
+
+#: templates/invoices/report/base.html:86
+#: templates/invoices/report/base.html:88
+#: templates/invoices/report/base.html:100
+msgid "Subtotal"
+msgstr "Сумма"
+
+#: templates/invoices/report/report-item.html:11
+msgid "History"
+msgstr "История"
+
+#: templates/invoices/report/sale-report.html:9
+msgid "Sale report"
+msgstr "Продажа"
+
+#: templates/invoices/report/sale-report.html:52
+msgid "Returns"
+msgstr "Возвращения"
+
+#: templates/invoices/service-select-list.html:31
+#: templates/invoices/service-select-list.html:38
+msgid "Service name"
+msgstr "Название услуги"
+
+#: templates/invoices/service-select-list.html:50
+msgid "Services not found"
+msgstr "Услуги не найдены"
+
+#: views.py:46
+msgid "You can manage today`s invoices only"
+msgstr ""
+
+#: views.py:59
+msgid "Customer saved"
+msgstr "Слиент сохранен"
+
+#: views.py:69 views.py:79
+msgid "Discount saved"
+msgstr "Скидка сохранена"
+
+#: views.py:89 views.py:99
+msgid "Quantity updated"
+msgstr "Количество оновлено"
+
+#: views.py:109
+msgid "Item removed"
+msgstr "Елемент удалено"
+
+#: views.py:138
+#, fuzzy
+#| msgid "Product name"
+msgid "Product added"
+msgstr "Название товара"
+
+#~ msgid "Sales"
+#~ msgstr "Продажы"
+
+#~ msgid "Incorrect value"
+#~ msgstr "Неправильно значение"
+
+#~ msgid "Price updated"
+#~ msgstr "Цену оновлено"
