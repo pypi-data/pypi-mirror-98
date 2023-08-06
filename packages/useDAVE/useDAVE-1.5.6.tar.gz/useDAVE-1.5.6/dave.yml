@@ -1,0 +1,18 @@
+name: dave
+channels:
+  - conda
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip
+  - pyside2
+  - vtk
+  - numpy
+  - scipy
+  - ipython
+  - matplotlib-base
+  - prettytable
+  - xarray
+  - netCDF4
+  - vtkplotter
+  - mafredo

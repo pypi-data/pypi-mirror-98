@@ -1,0 +1,275 @@
+.coveragerc
+.gitignore
+AUTHORS.rst
+CHANGELOG.rst
+LICENSE
+README.rst
+README.txt
+dave.yml
+make_pydoc3.py
+setup.cfg
+setup.py
+docs/Makefile
+docs/assets_and_resources.rst
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/groups.md
+docs/index.rst
+docs/license.rst
+docs/nodetree.rst
+docs/observers.rst
+docs/package_structure.rst
+docs/scene_and_nodes.rst
+docs/_static/.gitignore
+docs/_static/custom.css
+docs/examples/pin_hole_connect.py
+docs/examples/shackles.py
+docs/examples/stability.py
+docs/examples/unstable_equlibrium_hinge.py
+docs/examples/.ipynb_checkpoints/pin_hole_connect-checkpoint.py
+docs/images/Dave_icon.png
+docs/images/axis.png
+docs/images/beam.png
+docs/images/buoy_mesh.png
+docs/images/cable.png
+docs/images/con2d.png
+docs/images/cube.png
+docs/images/force.png
+docs/images/lincon6.png
+docs/images/linhyd.png
+docs/images/poi.png
+docs/images/promo1.jpg
+docs/images/trimesh.png
+docs/images/twinlift.jpg
+docs/images/visual.png
+guis/Dave_icon.png
+guis/addnode_form.ui
+guis/axis.png
+guis/axis_blue.png
+guis/beam.png
+guis/blender_icon_64x64.png
+guis/buoy_mesh.png
+guis/cable.png
+guis/circle.png
+guis/circle_blue.png
+guis/con2d.png
+guis/contactball.png
+guis/contactmesh.png
+guis/cube.png
+guis/dlg_solver.ui
+guis/file_new.png
+guis/fish.png
+guis/force.png
+guis/frm_animation.ui
+guis/frm_standard_assets.ui
+guis/icon_copy.png
+guis/icon_undo.png
+guis/icons.xcf
+guis/icons_blue.xcf
+guis/import.png
+guis/lincon6.png
+guis/linhyd.png
+guis/main_form.ui
+guis/menu_nodetypes.ui
+guis/pin_hole.png
+guis/poi.png
+guis/point_blue.png
+guis/python logo klein.png
+guis/redball.png
+guis/resources.qrc
+guis/run.bat
+guis/sheave.png
+guis/sling.png
+guis/splashscreen.png
+guis/tank.png
+guis/trimesh.png
+guis/visual.png
+guis/waveinteraction.png
+guis/widget_airy.ui
+guis/widget_axis.ui
+guis/widget_ballastconfiguration.ui
+guis/widget_ballastsolver.ui
+guis/widget_beam.ui
+guis/widget_body.ui
+guis/widget_buoyancy.ui
+guis/widget_cable.ui
+guis/widget_con2d.ui
+guis/widget_contactball.ui
+guis/widget_dynprop.ui
+guis/widget_explore.ui
+guis/widget_force.ui
+guis/widget_geometricconnection.ui
+guis/widget_lincon6.ui
+guis/widget_linhyd.ui
+guis/widget_modeshapes.ui
+guis/widget_name.ui
+guis/widget_poi.ui
+guis/widget_selection_actions.ui
+guis/widget_shackle.ui
+guis/widget_sheave.ui
+guis/widget_sling.ui
+guis/widget_stability_displ.ui
+guis/widget_tank.ui
+guis/widget_tank_order.ui
+guis/widget_visual.ui
+guis/widget_waveinteraction.ui
+src/DAVE.zip
+src/Untitled.ipynb
+src/DAVE/__init__.py
+src/DAVE/auto_download.py
+src/DAVE/frequency_domain.py
+src/DAVE/marine.py
+src/DAVE/node_properties.csv
+src/DAVE/rigging.py
+src/DAVE/run_gui.py
+src/DAVE/scene.py
+src/DAVE/settings.py
+src/DAVE/tools.py
+src/DAVE/visual.py
+src/DAVE/gui/__init__.py
+src/DAVE/gui/dockwidget.py
+src/DAVE/gui/element_widgets.py
+src/DAVE/gui/main.py
+src/DAVE/gui/new_node_dialog.py
+src/DAVE/gui/standard_assets.py
+src/DAVE/gui/widget_airy.py
+src/DAVE/gui/widget_ballastconfiguration.py
+src/DAVE/gui/widget_ballastsolver.py
+src/DAVE/gui/widget_ballastsystemselect.py
+src/DAVE/gui/widget_derivedproperties.py
+src/DAVE/gui/widget_dynamic_properties.py
+src/DAVE/gui/widget_explore.py
+src/DAVE/gui/widget_modeshapes.py
+src/DAVE/gui/widget_nodeprops.py
+src/DAVE/gui/widget_nodetree.py
+src/DAVE/gui/widget_plot.py
+src/DAVE/gui/widget_rigg_it_right.py
+src/DAVE/gui/widget_stability_disp.py
+src/DAVE/gui/widget_tank_order.py
+src/DAVE/gui/widget_template_example.py
+src/DAVE/gui/forms/__init__.py
+src/DAVE/gui/forms/addnode_form.py
+src/DAVE/gui/forms/dlg_solver.py
+src/DAVE/gui/forms/frm_animation.py
+src/DAVE/gui/forms/frm_standard_assets.py
+src/DAVE/gui/forms/main_form.py
+src/DAVE/gui/forms/menu_nodetypes.py
+src/DAVE/gui/forms/resources_rc.py
+src/DAVE/gui/forms/viewer_form.py
+src/DAVE/gui/forms/widgetUI_airy.py
+src/DAVE/gui/forms/widgetUI_ballastconfiguration.py
+src/DAVE/gui/forms/widgetUI_ballastsolver.py
+src/DAVE/gui/forms/widgetUI_explore.py
+src/DAVE/gui/forms/widgetUI_modeshapes.py
+src/DAVE/gui/forms/widgetUI_tank_order.py
+src/DAVE/gui/forms/widget_axis.py
+src/DAVE/gui/forms/widget_beam.py
+src/DAVE/gui/forms/widget_body.py
+src/DAVE/gui/forms/widget_buoyancy.py
+src/DAVE/gui/forms/widget_cable.py
+src/DAVE/gui/forms/widget_con2d.py
+src/DAVE/gui/forms/widget_contactball.py
+src/DAVE/gui/forms/widget_dynprop.py
+src/DAVE/gui/forms/widget_force.py
+src/DAVE/gui/forms/widget_geometricconnection.py
+src/DAVE/gui/forms/widget_lincon6.py
+src/DAVE/gui/forms/widget_linhyd.py
+src/DAVE/gui/forms/widget_name.py
+src/DAVE/gui/forms/widget_poi.py
+src/DAVE/gui/forms/widget_selection_actions.py
+src/DAVE/gui/forms/widget_shackle.py
+src/DAVE/gui/forms/widget_sheave.py
+src/DAVE/gui/forms/widget_sling.py
+src/DAVE/gui/forms/widget_stability_displUI.py
+src/DAVE/gui/forms/widget_tank.py
+src/DAVE/gui/forms/widget_visual.py
+src/DAVE/gui/forms/widget_waveinteraction.py
+src/DAVE/gui/helpers/__init__.py
+src/DAVE/gui/helpers/ctrl_enter.py
+src/DAVE/gui/helpers/highlighter.py
+src/DAVE/gui/helpers/popup_textbox.py
+src/DAVE/gui/helpers/qmenu.py
+src/DAVE/io/blender.py
+src/DAVE/io/orcaflex.py
+src/DAVE/io/orcaflex_example_3plift.py
+src/DAVE/io/orcaflex_example_snake.py
+src/DAVE/io/orcaflex_helpers/get_ofx_results.py
+src/DAVE/io/orcaflex_helpers/ofx_results.yml
+src/DAVE/jupyter/__init__.py
+src/DAVE/jupyter/jupyter.py
+src/DAVE/jupyter/reporting.py
+src/DAVE/resources/100x30x8_barge.dave
+src/DAVE/resources/17919_Seal_baby_happy_V1.obj
+src/DAVE/resources/Scene_barge_at_yard.dave
+src/DAVE/resources/Snake15.dave
+src/DAVE/resources/barge with linear hydrostatics.dave
+src/DAVE/resources/barge.obj
+src/DAVE/resources/barge_100_30_4.dhyd
+src/DAVE/resources/base ocean.blend
+src/DAVE/resources/base ocean.blend1
+src/DAVE/resources/billy.dave
+src/DAVE/resources/buoyancy cheetah.obj
+src/DAVE/resources/buoyancy husky.obj
+src/DAVE/resources/buoyancy octopus.obj
+src/DAVE/resources/buoyancy turtle.obj
+src/DAVE/resources/cheetah with crane and 4p block.dave
+src/DAVE/resources/cheetah with crane.dave
+src/DAVE/resources/cheetah.dave
+src/DAVE/resources/cheetah.dhyd
+src/DAVE/resources/cog.obj
+src/DAVE/resources/cone chopped.obj
+src/DAVE/resources/cone d1.obj
+src/DAVE/resources/crane block 2p.dave
+src/DAVE/resources/crane block 4p.dave
+src/DAVE/resources/cube.obj
+src/DAVE/resources/cube_with_bevel.obj
+src/DAVE/resources/cylinder 1x1x1 lowres.obj
+src/DAVE/resources/cylinder 1x1x1.obj
+src/DAVE/resources/floater.obj
+src/DAVE/resources/foundation.dave
+src/DAVE/resources/foundation.obj
+src/DAVE/resources/grid10.dave
+src/DAVE/resources/hook2p.obj
+src/DAVE/resources/hook4p.obj
+src/DAVE/resources/husky.dave
+src/DAVE/resources/husky.dhyd
+src/DAVE/resources/lower_block.obj
+src/DAVE/resources/mast crane.dave
+src/DAVE/resources/octopus.dave
+src/DAVE/resources/padeye.obj
+src/DAVE/resources/pendulum.dave
+src/DAVE/resources/plane.obj
+src/DAVE/resources/proplist.csv
+src/DAVE/resources/pyramid.obj
+src/DAVE/resources/robot_body.obj
+src/DAVE/resources/shackle_gp800.obj
+src/DAVE/resources/shackle_gp800_wb.obj
+src/DAVE/resources/sphere d1.obj
+src/DAVE/resources/spreaderbar.dave
+src/DAVE/resources/suzanne.stl
+src/DAVE/resources/tower.dave
+src/DAVE/resources/trunnion_800.obj
+src/DAVE/resources/turbine blade.dave
+src/DAVE/resources/turbine blade.obj
+src/DAVE/resources/turbine nacelle.dave
+src/DAVE/resources/turtle.dave
+src/DAVE/resources/upper_block.obj
+src/DAVE/resources/upsea turbine.dave
+src/DAVE/resources/virtualSea.jpg
+src/DAVE/resources/visual a-frame.obj
+src/DAVE/resources/visual crane mast and boomrest.obj
+src/DAVE/resources/visual crane-boom.obj
+src/DAVE/resources/visual vessel cheetah.obj
+src/DAVE/resources/visual vessel husky.obj
+src/DAVE/resources/visual vessel octopus.obj
+src/DAVE/resources/visual vessel turtle.obj
+src/DAVE/resources/wirecube.obj
+src/DAVE/resources/worker.obj
+src/DAVE/resources/yard.dave
+src/DAVE/solvers/ballast.py
+src/useDAVE.egg-info/PKG-INFO
+src/useDAVE.egg-info/SOURCES.txt
+src/useDAVE.egg-info/dependency_links.txt
+src/useDAVE.egg-info/not-zip-safe
+src/useDAVE.egg-info/top_level.txt

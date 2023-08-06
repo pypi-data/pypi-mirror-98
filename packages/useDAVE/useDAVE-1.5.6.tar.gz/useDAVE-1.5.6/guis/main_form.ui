@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1799</width>
+    <height>1702</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>DAVE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/icons/Dave_icon.png</normaloff>:/icons/Dave_icon.png</iconset>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pbUpdate">
+         <property name="text">
+          <string>Update</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/import.png</normaloff>:/icons/import.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSolveStatics">
+         <property name="text">
+          <string>Solve &amp;statics</string>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/Dave_icon.png</normaloff>:/icons/Dave_icon.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnUndoStatics">
+         <property name="text">
+          <string>Undo</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/icons/icon_undo.png</normalon>
+          </iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbCopyViewCode">
+         <property name="toolTip">
+          <string>Copy screenshot code</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/icons/icon_copy.png</normaloff>:/icons/icon_copy.png</iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbLabels">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>A</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnWater">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="baseSize">
+          <size>
+           <width>30</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>sea</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/icons/fish.png</normalon>
+          </iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnBlender">
+         <property name="maximumSize">
+          <size>
+           <width>100</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>blender</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normalon>:/icons/blender_icon_64x64.png</normalon>
+          </iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame3d">
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="frameAni" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>2</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QToolButton" name="btnPauseAnimation">
+            <property name="text">
+             <string>||</string>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QToolButton" name="btnStopAnimation">
+            <property name="text">
+             <string>X</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QDoubleSpinBox" name="sbPlaybackspeed">
+            <property name="toolTip">
+             <string extracomment="playback speed"/>
+            </property>
+            <property name="toolTipDuration">
+             <number>0</number>
+            </property>
+            <property name="minimum">
+             <double>0.100000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>10.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.100000000000000</double>
+            </property>
+            <property name="value">
+             <double>1.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="aniSlider">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="tickPosition">
+          <enum>QSlider::TicksAbove</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1799</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSolve_Statics">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuExport">
+     <property name="title">
+      <string>Export</string>
+     </property>
+     <addaction name="actionBlender"/>
+     <addaction name="actionOrcaflex"/>
+     <addaction name="actionOrcaflex_package"/>
+    </widget>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionImport_sub_scene"/>
+    <addaction name="actionImport_browser"/>
+    <addaction name="separator"/>
+    <addaction name="actionSave_scene"/>
+    <addaction name="actionSave_actions_as"/>
+    <addaction name="separator"/>
+    <addaction name="menuExport"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <widget class="QMenu" name="menuLook_towards">
+     <property name="title">
+      <string>Look in direction</string>
+     </property>
+     <addaction name="actionX"/>
+     <addaction name="action_x"/>
+     <addaction name="actionY"/>
+     <addaction name="action_Y"/>
+     <addaction name="actionZ"/>
+     <addaction name="action_Z"/>
+    </widget>
+    <addaction name="action2D_mode"/>
+    <addaction name="menuLook_towards"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionShow_force_applying_element"/>
+    <addaction name="actionShow_water_plane"/>
+    <addaction name="separator"/>
+    <addaction name="actionFull_refresh"/>
+    <addaction name="actionCamera_reset"/>
+   </widget>
+   <addaction name="menuSolve_Statics"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_2">
+   <property name="windowTitle">
+    <string>Python engine</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QWidget" name="widget_5" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>Code</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="pbClearCode">
+             <property name="text">
+              <string>&amp;Clear</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/icons/file_new.png</normalon>
+              </iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="pbExecute">
+             <property name="toolTip">
+              <string>Shift + Enter</string>
+             </property>
+             <property name="text">
+              <string>Execute</string>
+             </property>
+             <property name="icon">
+              <iconset resource="resources.qrc">
+               <normaloff>:/icons/python logo klein.png</normaloff>:/icons/python logo klein.png</iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="teCode">
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;print(&amp;quot;type python code here&amp;quot;)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;# press shift+enter to execute&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;# press alt+c to clear and focus here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_3">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="leftMargin">
+         <number>13</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>13</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_7" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Output</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="pbGenerateSceneCode">
+             <property name="text">
+              <string>Generate scene code</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/icons/cube.png</normalon>
+              </iconset>
+             </property>
+             <property name="toolButtonStyle">
+              <enum>Qt::ToolButtonTextBesideIcon</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="pbCopyOutput">
+             <property name="toolTip">
+              <string>Copy text below</string>
+             </property>
+             <property name="text">
+              <string>Copy</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/icons/icon_copy.png</normalon>
+              </iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="teFeedback">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_4" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>History (actions)</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="tbTidyHistory">
+             <property name="toolTip">
+              <string>Removes redundant code from history</string>
+             </property>
+             <property name="text">
+              <string>tidy</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="pbCopyHistory">
+             <property name="toolTip">
+              <string>Copy text below</string>
+             </property>
+             <property name="text">
+              <string>Copy</string>
+             </property>
+             <property name="icon">
+              <iconset>
+               <normalon>:/icons/icon_copy.png</normalon>
+              </iconset>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="teHistory"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionSave_scene">
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionImport_sub_scene">
+   <property name="text">
+    <string>Import (file)</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionHorizontal_camera">
+   <property name="text">
+    <string>Level camera (make horizon horizontal)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+L</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>---</string>
+   </property>
+  </action>
+  <action name="action2D_mode">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>2D mode</string>
+   </property>
+  </action>
+  <action name="actionDark_mode">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Make darker</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+-</string>
+   </property>
+  </action>
+  <action name="actionShow_visuals">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show visuals</string>
+   </property>
+  </action>
+  <action name="actionShow_Geometry_elements">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Geometry elements</string>
+   </property>
+  </action>
+  <action name="actionShow_force_applying_element">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show physics only elements (connectors, meshes)</string>
+   </property>
+  </action>
+  <action name="actionSet_all_visible">
+   <property name="text">
+    <string>Set all visible</string>
+   </property>
+  </action>
+  <action name="actionSet_all_hidden">
+   <property name="text">
+    <string>Set all hidden</string>
+   </property>
+  </action>
+  <action name="actionFull_refresh">
+   <property name="text">
+    <string>Full refresh</string>
+   </property>
+  </action>
+  <action name="actionShow_water_plane">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Show water-plane</string>
+   </property>
+  </action>
+  <action name="actionAdd_light">
+   <property name="text">
+    <string>Make lighter</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+=</string>
+   </property>
+  </action>
+  <action name="actionShow_all_forces_at_same_size">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show all forces same size (normalize)</string>
+   </property>
+  </action>
+  <action name="actionIncrease_force_size">
+   <property name="text">
+    <string>Increase force size</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+]</string>
+   </property>
+  </action>
+  <action name="actionDecrease_force_size">
+   <property name="text">
+    <string>Decrease force size</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+[</string>
+   </property>
+  </action>
+  <action name="actionIncrease_Geometry_size">
+   <property name="text">
+    <string>Increase Geometry size (poi, axis)</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+]</string>
+   </property>
+  </action>
+  <action name="actionDecrease_Geometry_size">
+   <property name="text">
+    <string>Decrease Geometry size</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Shift+[</string>
+   </property>
+  </action>
+  <action name="actionPython_console">
+   <property name="text">
+    <string>Python console</string>
+   </property>
+  </action>
+  <action name="actionGoal_seek">
+   <property name="text">
+    <string>Goal-seek (one variable)</string>
+   </property>
+  </action>
+  <action name="actionStability_curve">
+   <property name="text">
+    <string>Stability-curve</string>
+   </property>
+  </action>
+  <action name="actionOptimize">
+   <property name="text">
+    <string>TODO: Optimize (multiple variables)</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionImport_browser">
+   <property name="text">
+    <string>Import (browser)</string>
+   </property>
+  </action>
+  <action name="actionRender_current_view">
+   <property name="text">
+    <string>Render current view</string>
+   </property>
+  </action>
+  <action name="actionModal_shapes">
+   <property name="text">
+    <string>Modal shapes</string>
+   </property>
+  </action>
+  <action name="actionInertia_properties">
+   <property name="text">
+    <string>Inertia properties</string>
+   </property>
+  </action>
+  <action name="actionSave_actions_as">
+   <property name="text">
+    <string>Save actions as</string>
+   </property>
+  </action>
+  <action name="actionsee_open_ocean_org">
+   <property name="text">
+    <string>see open-ocean.org</string>
+   </property>
+  </action>
+  <action name="actionX">
+   <property name="text">
+    <string>X</string>
+   </property>
+  </action>
+  <action name="action_x">
+   <property name="text">
+    <string>-X</string>
+   </property>
+  </action>
+  <action name="actionY">
+   <property name="text">
+    <string>Y</string>
+   </property>
+  </action>
+  <action name="action_Y">
+   <property name="text">
+    <string>-Y</string>
+   </property>
+  </action>
+  <action name="actionZ">
+   <property name="text">
+    <string>From top</string>
+   </property>
+  </action>
+  <action name="action_Z">
+   <property name="text">
+    <string>From bottom</string>
+   </property>
+  </action>
+  <action name="actionLook_towards_center">
+   <property name="text">
+    <string>Look towards center</string>
+   </property>
+  </action>
+  <action name="actionCamera_reset">
+   <property name="text">
+    <string>Camera reset</string>
+   </property>
+  </action>
+  <action name="actionShow_CoG_positions">
+   <property name="text">
+    <string>Show CoGs</string>
+   </property>
+  </action>
+  <action name="actionBlender">
+   <property name="text">
+    <string>Blender</string>
+   </property>
+  </action>
+  <action name="actionOrcaflex">
+   <property name="text">
+    <string>Orcaflex .yml</string>
+   </property>
+  </action>
+  <action name="actionOrcaflex_package">
+   <property name="text">
+    <string>Orcaflex run and collect package</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
