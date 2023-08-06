@@ -1,0 +1,3 @@
+[console_scripts]
+ipgeocache = ipgeocache.__main__:main
+
