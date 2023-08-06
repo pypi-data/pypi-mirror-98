@@ -1,0 +1,14 @@
+setup.py
+src/gadgetron_dataflow_monitor.egg-info/PKG-INFO
+src/gadgetron_dataflow_monitor.egg-info/SOURCES.txt
+src/gadgetron_dataflow_monitor.egg-info/dependency_links.txt
+src/gadgetron_dataflow_monitor.egg-info/requires.txt
+src/gadgetron_dataflow_monitor.egg-info/top_level.txt
+src/gadm/__init__.py
+src/gadm/dummy_gadget.py
+src/gadm/gadgetron_dataflow_monitor.py
+src/gadm/multimethod_test.py
+src/gadm/pyside6_and_matplotlib.py
+src/gadm/run_gadgetron_dataflow_monitor_with_ismrmrd_data.py
+src/gadm/visualization_original.py
+src/gadm/test_datas/testdata.h5
