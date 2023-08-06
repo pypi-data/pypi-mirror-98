@@ -1,0 +1,11 @@
+mlx.jira_juggler-2.0.0-py3.9-nspkg.pth,sha256=UsVvor4_T6srpv6IW6vGvM-hxEOev1mrVeFhjvLCrwk,524
+mlx/__version__.py,sha256=bgZFg-f3UKhgE-z2w8RoFrwqRBzJBZkM4_jKFiYB9eU,142
+mlx/jira_juggler.py,sha256=kY4ReGIExS2-4g9vZmQNzZJfywTd9kugWQ6sX1Qok5Q,19629
+mlx.jira_juggler-2.0.0.dist-info/LICENSE,sha256=1HQuKwfZfgMV13JhG1mkHmOe_NlCwysH9kxJ3gYuq5o,11338
+mlx.jira_juggler-2.0.0.dist-info/METADATA,sha256=nHniY5hnDfzbZfzOGORbhkCkokT5cwfwu-azO2yZbQU,2101
+mlx.jira_juggler-2.0.0.dist-info/NOTICE,sha256=3aihrouLR-9_xmn8cNKinopicRBL5kf96OUBqW_NdJU,195
+mlx.jira_juggler-2.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+mlx.jira_juggler-2.0.0.dist-info/entry_points.txt,sha256=sXyJfa1OQaSLBwXmBXMiLVX7bTwP3pH-UOl9ywUWuxk,62
+mlx.jira_juggler-2.0.0.dist-info/namespace_packages.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.jira_juggler-2.0.0.dist-info/top_level.txt,sha256=NCVZzyms-obPlDq2Sa--m3oyfnnmLma38KCnE6gmcFE,4
+mlx.jira_juggler-2.0.0.dist-info/RECORD,,
