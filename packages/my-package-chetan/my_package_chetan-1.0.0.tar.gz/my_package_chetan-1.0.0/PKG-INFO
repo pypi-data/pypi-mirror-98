@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: my_package_chetan
+Version: 1.0.0
+Summary: Read the latest my_package.
+Home-page: https://github.com/chetanghadawaje/my_package.git
+Author: Chetan Ghadawaje
+Author-email: chetanghadawaje@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
