@@ -1,0 +1,12 @@
+gadm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gadm/dummy_gadget.py,sha256=nhrxFu3W3DOJxHOcVu7eYige5UxyT2N6Z7c_p5xAkf0,255
+gadm/gadgetron_dataflow_monitor.py,sha256=rqoJRtgP2bVAya0jMgA6RyNCkN3mu-zchYyGp2uKs7M,10147
+gadm/multimethod_test.py,sha256=BJnGM-0U4m70Xj2hk7I4ZR1bkQZ8wyQhD2HnkFOFA_c,757
+gadm/pyside6_and_matplotlib.py,sha256=BzjriTrOaeuL1LzmWVmlb9ZTd4io5VD-1RiLEZfHiYc,1278
+gadm/run_gadgetron_dataflow_monitor_with_ismrmrd_data.py,sha256=cNPKSfRcfoVDlj6-aOaChZf2NxognEYdjS97Ejs86c8,852
+gadm/visualization_original.py,sha256=utVj49WH8jA8-Uzsm79TpvUQQZgVtaSEBKUBGQM5j9g,3551
+gadm/test_datas/testdata.h5,sha256=COjLOPIX3cnQGgRWxOCWwfG_H6__LtGgPYKN3tSGF4U,736672
+gadgetron_dataflow_monitor-0.91.dist-info/METADATA,sha256=kl8IHXIicWqYkfX7IK-Yx3XFuepPguL-4xZmNQitC_0,3445
+gadgetron_dataflow_monitor-0.91.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gadgetron_dataflow_monitor-0.91.dist-info/top_level.txt,sha256=DxK7vsYZPVkYw3nxVQcYUIEb4gKae0VdYcIWkh9qV2A,5
+gadgetron_dataflow_monitor-0.91.dist-info/RECORD,,
