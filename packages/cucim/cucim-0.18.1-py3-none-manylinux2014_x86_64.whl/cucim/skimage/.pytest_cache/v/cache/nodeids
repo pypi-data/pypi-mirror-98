@@ -1,0 +1,4 @@
+[
+  "build/lib/cucim/_misc.py::cucim._misc.ndim",
+  "tests/test_cucim.py::test_main"
+]

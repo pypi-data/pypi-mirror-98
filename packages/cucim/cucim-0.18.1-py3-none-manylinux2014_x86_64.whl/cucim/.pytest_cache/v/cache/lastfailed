@@ -1,0 +1,6 @@
+{
+  "build/lib/cucim/clara/converter/tiff.py": true,
+  "docs/conf.py": true,
+  "src/main.py": true,
+  "src/test.py": true
+}
