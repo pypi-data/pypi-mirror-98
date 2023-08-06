@@ -1,0 +1,3 @@
+[console_scripts]
+quickmail = quickmail.cli:execute
+

@@ -1,0 +1,17 @@
+README.md
+setup.py
+quick_mail.egg-info/PKG-INFO
+quick_mail.egg-info/SOURCES.txt
+quick_mail.egg-info/dependency_links.txt
+quick_mail.egg-info/entry_points.txt
+quick_mail.egg-info/requires.txt
+quick_mail.egg-info/top_level.txt
+quickmail/__init__.py
+quickmail/cli.py
+quickmail/commands/__init__.py
+quickmail/commands/clear.py
+quickmail/commands/init.py
+quickmail/commands/send.py
+quickmail/commands/template.py
+quickmail/utils/__init__.py
+quickmail/utils/misc.py
