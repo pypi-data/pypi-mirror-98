@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: trickster
+Version: 1.0.2
+Summary: Trickester is a Python/Flask application for mocking REST APIs
+Home-page: https://github.com/JakubTesarek/trickster
+Author: Jakub Tesarek
+Author-email: jakub@tesarek.me
+License: unlicensed
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Provides-Extra: dev
