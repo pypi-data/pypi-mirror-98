@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+readme.md
+requirements.txt
+setup.cfg
+setup.py
+rosey_stats/__init__.py
+rosey_stats/models.py
+rosey_stats.egg-info/PKG-INFO
+rosey_stats.egg-info/SOURCES.txt
+rosey_stats.egg-info/dependency_links.txt
+rosey_stats.egg-info/not-zip-safe
+rosey_stats.egg-info/requires.txt
+rosey_stats.egg-info/top_level.txt
+tests/__init__.py
+tests/test_models.py
