@@ -1,0 +1,11 @@
+rom/__init__.py,sha256=2Qox35QnUaFgjzde0ezhrMEP9Qqe4-xw7oqRqKJfNZg,125
+rom/attributes.py,sha256=HlhqP2DwchlW7tK6oyJEteHkpGSNj77sf_TAmjOaesI,7292
+rom/exception.py,sha256=kjGipE-CB7q-tbH31WODC1mOSb6OszSQ2AT0WmwzmiY,154
+rom/fields.py,sha256=-1Ufjis0XGWrQvZqvfR4ZSkuLbnUN6dN04yQqOnJiNw,4818
+rom/model.py,sha256=3YuFjv2UHE0cTtQX3SqH1QtOP7232KzCZdDtldkgBR4,6234
+rom/session.py,sha256=nk8yEJj7d8aDr4_PwMFl8gAsvRwVNKNpB1XqcKI-TTE,2025
+aio_rom-0.0.9.dist-info/LICENSE,sha256=FRZ1425nCcLgWRHguM6Ca3hllf4lQHGJiBL18dEkFYg,1071
+aio_rom-0.0.9.dist-info/METADATA,sha256=AhUrmdA2EPQiFDO4EUp4tb_XHXiEwe0Ozi5phphKomA,2585
+aio_rom-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aio_rom-0.0.9.dist-info/top_level.txt,sha256=U2QgwhGBRyFfKgF1aeAtOmDZR5IZQW_jfkrjtqJhheg,4
+aio_rom-0.0.9.dist-info/RECORD,,
