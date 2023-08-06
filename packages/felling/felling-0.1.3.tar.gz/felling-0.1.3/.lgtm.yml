@@ -1,0 +1,4 @@
+path_classifiers:
+  generated: 
+    - felling/_version.py
+    - versioneer.py
