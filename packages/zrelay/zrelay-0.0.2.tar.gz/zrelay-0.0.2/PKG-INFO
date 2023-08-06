@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: zrelay
+Version: 0.0.2
+Summary: Driver to control Pi-zero Zrelay board HAT
+Home-page: https://github.com/pypa/sampleproject
+Author: Muzammil Patel
+Author-email: zamilpatel329@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: raspberry,pi,i2c
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Requires-Python: >=3

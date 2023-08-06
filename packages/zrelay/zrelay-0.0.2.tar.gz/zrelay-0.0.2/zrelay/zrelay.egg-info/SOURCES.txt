@@ -1,0 +1,8 @@
+README.md
+setup.py
+zrelay/Zrelay.py
+zrelay/zrelay.egg-info/PKG-INFO
+zrelay/zrelay.egg-info/SOURCES.txt
+zrelay/zrelay.egg-info/dependency_links.txt
+zrelay/zrelay.egg-info/requires.txt
+zrelay/zrelay.egg-info/top_level.txt
