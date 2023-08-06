@@ -1,0 +1,17 @@
+nteu_gateway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nteu_gateway/client.py,sha256=P7Sj5RPsCQbW0rKspp14gCERVr4ojIIPocq09fkx7Js,1230
+nteu_gateway/logger.py,sha256=fuH7mhdf7Y3609yectv1jV62o1c2PvHotNN957E2rVE,57
+nteu_gateway/nteu_gateway.py,sha256=eUCJHyFtBhSkHPMIKNo8dwYAKQJniFllanR7F_HpF6s,4827
+nteu_gateway/nteu_gateway_name.py,sha256=bYvY-PzPogDEVzD_DtWDZAq84lLqZF0NBSvDH5OHrTg,35
+nteu_gateway/server.py,sha256=riiYRUVXT-CRkeauqLvGxNrO14UeyAqPySnMKxpvefs,3823
+nteu_gateway/translation_error.py,sha256=1z43Pkb2wqWwMlnewKze6jTgd6ghn2Iv1qhbfgozVnQ,126
+nteu_gateway/translation_task.py,sha256=VZpDHXL7LBbfEvN_FxjScG5pYXJkw5YBxhpDsVlGnhQ,1330
+nteu_gateway/translation_task_priority_queue.py,sha256=PSXjKalwl7-vUC3u9_2HNmqLak-zl_ZpWI0AdjsN3Qc,1059
+nteu_gateway/server_handler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nteu_gateway/server_handler/translate.py,sha256=T_TiqrIpo96SkwNn8YzK_gdn_YVJpkKo9R4TyPpQvoQ,2078
+nteu_gateway/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nteu_gateway/utils/chunks.py,sha256=0flY10hdmTQRNjgfBz-BPefNs_Vvr3z3gGG_HrUJNrg,267
+nteu_gateway-0.1.0.dist-info/METADATA,sha256=yDjTWg8tLsbZyPV_lBH_X4aw6Uu1JHkSd2ry4HnOINo,550
+nteu_gateway-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nteu_gateway-0.1.0.dist-info/top_level.txt,sha256=f6mYunrb2lsxLXrP2MsoYz2UeaKhIcSg87wmUjN2MuE,13
+nteu_gateway-0.1.0.dist-info/RECORD,,

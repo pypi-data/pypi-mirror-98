@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nteu-gateway
+Version: 0.1.0
+Summary: NTEU gateway
+Home-page: https://github.com/Pangeamt/nteu_gateway_2
+Author: Laurent Bié
+Author-email: l.bie@pangeanic.com
+License: BSD 2-clause
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: aiohttp
+Requires-Dist: PyYAML
+Requires-Dist: rororo
+
+UNKNOWN
+
+
