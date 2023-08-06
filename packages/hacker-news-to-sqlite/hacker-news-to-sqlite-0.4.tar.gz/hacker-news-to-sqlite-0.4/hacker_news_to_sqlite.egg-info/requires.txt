@@ -1,0 +1,8 @@
+sqlite-utils
+click
+requests
+tqdm
+
+[test]
+pytest
+requests-mock

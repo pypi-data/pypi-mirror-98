@@ -1,0 +1,10 @@
+README.md
+setup.py
+hacker_news_to_sqlite/__init__.py
+hacker_news_to_sqlite/cli.py
+hacker_news_to_sqlite.egg-info/PKG-INFO
+hacker_news_to_sqlite.egg-info/SOURCES.txt
+hacker_news_to_sqlite.egg-info/dependency_links.txt
+hacker_news_to_sqlite.egg-info/entry_points.txt
+hacker_news_to_sqlite.egg-info/requires.txt
+hacker_news_to_sqlite.egg-info/top_level.txt
