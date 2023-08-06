@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+src/sariFieldDefinitionsGenerator/__init__.py
+src/sariFieldDefinitionsGenerator/generator.py
+src/sariFieldDefinitionsGenerator/templates/metaphacts.handlebars
+src/sariFieldDefinitionsGenerator/templates/researchspace.handlebars
+src/sariFieldDefinitionsGenerator/templates/universal.handlebars
+src/sari_field_definitions_generator.egg-info/PKG-INFO
+src/sari_field_definitions_generator.egg-info/SOURCES.txt
+src/sari_field_definitions_generator.egg-info/dependency_links.txt
+src/sari_field_definitions_generator.egg-info/requires.txt
+src/sari_field_definitions_generator.egg-info/top_level.txt
+src/sari_field_definitions_generator.egg-info/local-scripts/makeAndUploadPackage.sh
