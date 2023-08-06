@@ -1,0 +1,8 @@
+cygwinreg3/__init__.py,sha256=sGHoEorrxVDIiIpBUCo6MIG231M_HjSKDLOGUwBUimk,20875
+cygwinreg3/constants.py,sha256=LG56IsxLXtOhWmqa6WwlnJgfbcxTDsAH-upesU-X87U,2370
+cygwinreg3/w32api.py,sha256=3DiOuSFTcuUxGqDJfQbsTaJ3PDwfCPmPlpJBOa30DmI,13379
+cygwinreg3-1.1.dist-info/LICENSE.txt,sha256=1-VesxBWHItqdLQ_ls9rnoBHwtHJS2skCG7bhHrhxKo,13741
+cygwinreg3-1.1.dist-info/METADATA,sha256=VYt4d1sW4MgTaF9qtNzl7PJ-32VXifAS4mvG1Bi6uD4,952
+cygwinreg3-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cygwinreg3-1.1.dist-info/top_level.txt,sha256=60LyoCw2Ui1a7sRMxAJT2Q6Q8V1ENNVBgS8tP1GMpeA,11
+cygwinreg3-1.1.dist-info/RECORD,,
