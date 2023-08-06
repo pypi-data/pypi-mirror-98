@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+virtualenv_tools.py
+virtualenv_tools_enhanced.egg-info/PKG-INFO
+virtualenv_tools_enhanced.egg-info/SOURCES.txt
+virtualenv_tools_enhanced.egg-info/dependency_links.txt
+virtualenv_tools_enhanced.egg-info/entry_points.txt
+virtualenv_tools_enhanced.egg-info/not-zip-safe
+virtualenv_tools_enhanced.egg-info/top_level.txt
