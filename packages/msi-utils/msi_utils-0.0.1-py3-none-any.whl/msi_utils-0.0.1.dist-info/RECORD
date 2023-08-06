@@ -1,0 +1,14 @@
+msiutils/__init__.py,sha256=gkB87YDKpj6ciSqCT9mi7sZ0Zvl4AApxnHz2OeyabiM,30
+msiutils/__main__.py,sha256=6sXCImV6rG1TZtPdiUmC-jMj6HnoW9BY3vzthCqtkLY,121
+msiutils/dump.py,sha256=MKnbOyL_ng9tvLCEfrYIqv4IMiJ7aMn0jXIdHizKHmE,507
+msiutils/extract.py,sha256=fWhCzUz8P85SgGAvD1P0snyCR2Lhqowx833rnwB2wAM,472
+msiutils/msicore.py,sha256=Oq6E4_v5py4n4rs25KXgLBKxWDuQ6766OEphBXouGzU,260
+msiutils/msidiff.py,sha256=NFnqFK6CIysA-XTO05lEQolVoNma1G3L2E5FH6nz7Ck,253
+msiutils/msiinfo.py,sha256=L6JzKe_kWkvZJb8HAafb9l1oTYu0tO0cCAM23YquR-Y,416
+msiutils/msiutils.py,sha256=xpbn_oL5RF914KJ0RNz923TMT5bzfjzKoH72BnaB0tE,290
+msi_utils-0.0.1.dist-info/LICENSE.md,sha256=t51-lnfx4pUU75CJ_RlbLqTZVqAXKA0iVdXjtIv-sGQ,1072
+msi_utils-0.0.1.dist-info/METADATA,sha256=Z9T0dCv5l7d0TnauyI_HXMl9hxing6OoymiWe3DGTzo,1696
+msi_utils-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+msi_utils-0.0.1.dist-info/entry_points.txt,sha256=SZnRwfAxmS_EamgYAi9bufyrr3YGoeK_3F4bwWX7_J4,54
+msi_utils-0.0.1.dist-info/top_level.txt,sha256=40dDizzfcFRzugWVHDeHUVUpLfZUSi_f3jmWoLNSuAg,9
+msi_utils-0.0.1.dist-info/RECORD,,
