@@ -1,0 +1,11 @@
+pypdfplot/__init__.py,sha256=fcrw6TeT5zk_lkLT-2Lp1acVyqN0UEeaPAAyqtjIPXg,354
+pypdfplot/_version.py,sha256=PgkGMPkvzPo2RV8qJYdru9fYhu-VQzXNfuqqv2Gd_T0,23
+pypdfplot/classes.py,sha256=N32sbSxCVz2d3cc6wZE5zlaBdovBnD4RvULozT965b0,17458
+pypdfplot/cli.py,sha256=m9sVyHiuMRa_d1uGfT1m7rD28R6-RH9lxbibnOz0iTk,1062
+pypdfplot/functions.py,sha256=PwQFcbLIQeNCgMKM1_kYN9nYaFY9EAn8oS_cUNERAJw,10513
+pypdfplot-0.6.1.dist-info/LICENSE,sha256=s9Hq5_Uk_J3dSFYqRlLv0rzYSOOLA_BeOIvM6UPnPfI,35819
+pypdfplot-0.6.1.dist-info/METADATA,sha256=MteN2W1r2I_ew2pnnwLCUxf3KDEVY0HfJX0PHzZEHsw,33213
+pypdfplot-0.6.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+pypdfplot-0.6.1.dist-info/entry_points.txt,sha256=J4Xkbsm-311QsZtFkvSezNjWWO1Zmsl3ZT3WkTd9AyM,50
+pypdfplot-0.6.1.dist-info/top_level.txt,sha256=6Yw-C_NFbjPJ1ZV7Q9edgX-D4znS9rTQ7EVRnwZ_-DU,10
+pypdfplot-0.6.1.dist-info/RECORD,,
