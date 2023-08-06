@@ -1,0 +1,5 @@
+include aiida_bigdft/*.py
+recursive-include aiida_bigdft/data *.py
+recursive-include aiida_bigdft/tests *.py
+include BigDFT/scripts/psppar/*
+include setup.json
