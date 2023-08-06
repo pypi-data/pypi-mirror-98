@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: flacfile
+Version: 0.0.1
+Summary: Pybind11 wrapper of libFLAC library to read/write FLAC audio files.
+Home-page: https://github.com/hokiedsp/python-flacfile
+Author: Takeshi (Kesh) Ikuma
+Author-email: tikuam@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN

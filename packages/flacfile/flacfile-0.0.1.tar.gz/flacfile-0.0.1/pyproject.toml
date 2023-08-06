@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-flac"
+version = "0.1.0"
+description = "Python package to read/write FLAC audio file"
+authors = ["Takeshi Ikuma <tikuma@gmail.com>"]
+license = "BSD"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+numpy = ">=1.7"
+
+[tool.poetry.dev-dependencies]
+cmaketools = "^0.1.6"
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["cmaketools", "setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+# addopts = "-ra -q"
+testpaths = ["test"]
