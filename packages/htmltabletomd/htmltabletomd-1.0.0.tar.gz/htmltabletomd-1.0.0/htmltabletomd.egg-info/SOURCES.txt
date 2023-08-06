@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE
+MANIFEST.in
+README.md
+htmltabletomd.py
+setup.cfg
+setup.py
+htmltabletomd.egg-info/PKG-INFO
+htmltabletomd.egg-info/SOURCES.txt
+htmltabletomd.egg-info/dependency_links.txt
+htmltabletomd.egg-info/requires.txt
+htmltabletomd.egg-info/top_level.txt
