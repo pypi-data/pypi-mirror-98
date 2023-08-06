@@ -1,0 +1,13 @@
+py2k/__init__.py,sha256=lUxv3rC7ZzT_RkHdVyIs7EiLb8nc2yAzUsIE2OQWeKU,580
+py2k/creators.py,sha256=CLhaiiqzzy3004tmPKWOyFiRiGfLmuz9aXzGzJQn3IU,6214
+py2k/models.py,sha256=OzRK7L5AUrDxcvuT9WiblzdKu-z3Nu3MEEa5CMoRIVY,4601
+py2k/producer_config.py,sha256=6-GdmQqsofpS7lOZiDnmd8lRedRkw5z6rGbamtXOa7o,3093
+py2k/serializer.py,sha256=biq0sP4MJLhxbxgnmEkOQyJs8hySfArNRLSsBAVZvvM,2638
+py2k/writer.py,sha256=LXdYQrJki9P4yWIDPKL5S45Sdnro_1vYoimZrLL3Riw,2305
+py2k/utils/__init__.py,sha256=a1o27vQfqFE54HKYSaCxBe9Ze5ulJHWhIlJNEYvwhXk,2250
+py2k-1.7.0.dist-info/AUTHORS.md,sha256=NWSOysWqVIgr0nWlyrXm0kKrnvMUsKSPtCOkAvInADM,291
+py2k-1.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py2k-1.7.0.dist-info/METADATA,sha256=Uhfukg46ac6H8g5o3yh4Ryf50KaNApqYZ2ITq5ra-pA,2613
+py2k-1.7.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+py2k-1.7.0.dist-info/top_level.txt,sha256=nCrj1ECDHOZ6EHPMKUbYMeOzOsyPprMHK8xBIeg7wxI,5
+py2k-1.7.0.dist-info/RECORD,,
