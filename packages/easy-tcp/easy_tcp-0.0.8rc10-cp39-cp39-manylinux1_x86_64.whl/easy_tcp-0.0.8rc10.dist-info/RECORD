@@ -1,0 +1,7 @@
+easy_tcp/__init__.py,sha256=iELaDVvbW-5lH9UYNnEBqeOB2CRPHbBRW7Gp8mgK04M,75
+easy_tcp/cython_server.cpython-39-x86_64-linux-gnu.so,sha256=LbcGNFJLzD-LSHgEK7_UHflKpcJrpCEz_mKEd2NtLrU,72896
+easy_tcp-0.0.8rc10.dist-info/LICENSE.md,sha256=u8EPFvHARDc8wwG7flmSBiygdoxZhIyIY-SmtlzaZDQ,1091
+easy_tcp-0.0.8rc10.dist-info/top_level.txt,sha256=TOtA8OjyAt9TTvrGRaMVab1cm68VBO2wBELeBVfIT18,9
+easy_tcp-0.0.8rc10.dist-info/WHEEL,sha256=ieuC8Vv7a4Lxq8jfQJ-x1beMvjYNP_LKilYokdMTB0U,108
+easy_tcp-0.0.8rc10.dist-info/RECORD,,
+easy_tcp-0.0.8rc10.dist-info/METADATA,sha256=5eO5AQgXWF2PglOI8BMetKeWUsps4Wkdx0bCZFLDXiU,852
