@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: fabular
+Version: 0.0.dev2
+Summary: A command-line chat app for secure communication between you and your friends!
+Home-page: https://github.com/phdenzel/fabular
+Author: Philipp Denzel
+Author-email: phdenzel@gmail.com
+License: GNU General Public License v3.0
+Description: 
+        
+        # fabular
+        
+        [![Build Status](https://travis-ci.com/phdenzel/fabular.svg?token=StKyxTumiWU6dwAxmZqF&branch=master)](https://travis-ci.com/phdenzel/fabular)
+        
+        A command-line chat app for secure communication between you and your friends!
+        
+        Key features:
+        
+        -   hybrid encryption scheme for connection handshake
+        -   session-randomized Fernet (AES-128-CBC) encryption for all messages
+        -   username-specific colors
+        
+        
+        ## Requirements
+        
+        -   `python3`
+        -   `pipenv` (for dev features)
+        -   a server with an open port
+        -   at least two command-line machines to chat
+        
+        
+        ## Install
+        
+        Simply type `pip install fabular`.
+        
+        To install from source, you may type `make prereq && make dev`, which
+        installs `pipenv` and executes
+        
+            pipenv install --dev
+            pipenv install -e .
+        
+        
+        ## Usage
+        
+        For more information type
+        
+            [pipenv run] fabular -h
+        
+        Run fabular in server-mode (set up a fabular server for clients to connect to):
+        
+            [pipenv run] fabular -s --host 127.0.0.1 --port 50120
+        
+        Run fabular in client-mode (connecting to a chat server):
+        
+            [pipenv run] fabular -c --host 127.0.0.1 --port 50120
+        
+        Run fabular in test-mode:
+        
+            [pipenv run] fabular -t
+        
+        or with `pytest`:
+        
+            [pipenv run] pytest -v --cov=fabular --cov-report=html
+        
+        
+Keywords: command line,chat,secure,encryption,server,client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Security
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
