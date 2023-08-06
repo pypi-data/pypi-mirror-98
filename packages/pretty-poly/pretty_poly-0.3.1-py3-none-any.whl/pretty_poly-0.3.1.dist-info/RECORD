@@ -1,0 +1,12 @@
+pretty_poly/__init__.py,sha256=52QwwJpX-_XIadtKcYhCzFIfC9TuV8HQQGSCv_3ffWY,30
+pretty_poly/abstract.py,sha256=tnulHqQdash099v0ak-xLPpdexjiSeAo9ptI0u5Une4,128
+pretty_poly/ascii.py,sha256=c6moQmQaZCNyrHfjAlsboTKsc81qmL6v8la7tfX7wrU,1090
+pretty_poly/display_result.py,sha256=AAD-at8FvsHKyryuZQREuVd5pQsm3Tg2_jF6RVhYQY0,2590
+pretty_poly/image.py,sha256=I_tQgYphknMKeGOgK9B7T48NUCeodlwxEE0ORoktKSU,2084
+pretty_poly/png.py,sha256=IOseH5V3GaUIUBJUY1QhgUl7HokYQum0BwNHMoHuGts,764
+pretty_poly/tiling.py,sha256=GrWuh43ola2jz3jH9EPfJDDvMX4GwvXzp21dVdG70H0,4763
+pretty_poly-0.3.1.dist-info/entry_points.txt,sha256=dxg2kPWp_LD7SVcOATulRXb6bSdqs5dgJxyXRvcR15k,107
+pretty_poly-0.3.1.dist-info/LICENSE,sha256=9TofdYOxRCYYW9OWi9ennpJ2rTXgrZ6CfwakuGgfrIk,1061
+pretty_poly-0.3.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pretty_poly-0.3.1.dist-info/METADATA,sha256=6HejoCt1hEOjLqSV9lq3-f7ZqeoXLUIjSPdJC1wjh-s,1387
+pretty_poly-0.3.1.dist-info/RECORD,,
