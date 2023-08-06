@@ -1,0 +1,16 @@
+water_masses/__init__.py,sha256=Uorhl1M0j5wqbovnLw7UZeTUX6nVFKyETltRFx6GdRw,256
+water_masses/constants.py,sha256=O5yAaXl4woWe_6-rgi9ZJJFlV3z571lNpdkl8H84B5I,239
+water_masses/data/copernicus-reanalysis.yml,sha256=G5dOe6-6viBP4c5r0Q2glA9TqrL7LIBeIsIdLhxH414,941
+water_masses/decompose.py,sha256=d2TlCDaL_EGc7yS8p48opYvyaGiQl7Ptm9YcOyTrVqQ,724
+water_masses/example.py,sha256=q6--yJbn-ycOWAYNSOlvGdGWVJ8wUX_8o68j49gp4pE,298
+water_masses/filter_month.py,sha256=FAZvOvZwzD6BR_trXk4SBZJIRdvK-7ez_8mZgccYf2k,2142
+water_masses/processing.py,sha256=_SeMxMnbLYg3xLv0Ved0ZSQXVup_RlyfWpcYp-wgLAY,6623
+water_masses/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water_masses/spgsi.py,sha256=HJMvKKZByF0kNAKHb180ATHZFZIcg4gqIQVdQeXwNEk,1866
+water_masses/tracmass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+water_masses/tracmass/seeding.py,sha256=J5AhDr4zgJ5BeLJKOvLslJfAnAhCHWRJiaFFFdhmVcU,6195
+water_masses/version.py,sha256=FqISGCIi5ty2k_eOCX6aA7Q1zyubyhANVFs3jvwJ9Jw,492
+water_masses-2021.1a1.dist-info/LICENSE,sha256=CcA3V7ZS5RTUiR4PBBtRrCxxTMkAds5EnY5Ej4NOJ_8,33095
+water_masses-2021.1a1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+water_masses-2021.1a1.dist-info/METADATA,sha256=ABfuaho9nstqm6ptcjRNMd6zy1fVsz3NJUGUD6ukEv4,3118
+water_masses-2021.1a1.dist-info/RECORD,,
