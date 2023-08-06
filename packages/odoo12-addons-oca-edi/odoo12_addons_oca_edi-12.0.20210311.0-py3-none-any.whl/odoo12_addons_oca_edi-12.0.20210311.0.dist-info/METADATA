@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-edi
+Version: 12.0.20210311.0
+Summary: Meta package for oca-edi Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo12-addon-account-e-invoice-generate
+Requires-Dist: odoo12-addon-account-invoice-download
+Requires-Dist: odoo12-addon-account-invoice-download-ovh
+Requires-Dist: odoo12-addon-account-invoice-facturx
+Requires-Dist: odoo12-addon-account-invoice-facturx-py3o
+Requires-Dist: odoo12-addon-account-invoice-import
+Requires-Dist: odoo12-addon-account-invoice-import-facturx
+Requires-Dist: odoo12-addon-account-invoice-import-invoice2data
+Requires-Dist: odoo12-addon-account-invoice-import-ubl
+Requires-Dist: odoo12-addon-account-invoice-ubl
+Requires-Dist: odoo12-addon-account-invoice-ubl-email-attachment
+Requires-Dist: odoo12-addon-base-business-document-import
+Requires-Dist: odoo12-addon-base-business-document-import-phone
+Requires-Dist: odoo12-addon-base-edi
+Requires-Dist: odoo12-addon-base-facturx
+Requires-Dist: odoo12-addon-base-ubl
+Requires-Dist: odoo12-addon-base-ubl-payment
+Requires-Dist: odoo12-addon-purchase-order-ubl
+Requires-Dist: odoo12-addon-purchase-stock-ubl
+Requires-Dist: odoo12-addon-sale-order-ubl
+
+UNKNOWN
+
+
