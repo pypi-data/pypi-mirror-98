@@ -1,0 +1,3 @@
+[console_scripts]
+speedtest-monitor = speedtest_monitor.main:main
+
