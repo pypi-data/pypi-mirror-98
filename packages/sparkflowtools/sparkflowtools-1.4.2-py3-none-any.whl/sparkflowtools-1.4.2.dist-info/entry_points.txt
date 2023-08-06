@@ -1,0 +1,3 @@
+[console_scripts]
+sparkflow-tools = sparkflowtools.__main__:main
+
