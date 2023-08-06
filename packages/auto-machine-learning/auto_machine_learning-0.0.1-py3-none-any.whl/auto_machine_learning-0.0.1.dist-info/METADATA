@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: auto-machine-learning
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/mihir2510/AutoML_library
+Author: Mihir Gada, Zenil Haria, Arnav Mankad, Kaustubh Damania
+Author-email: mihirgada25@gmail.com, zenilharia06@gmail.com, mankadarnav@gmail.com, kaustubh.damania@gmail.com
+License: MIT
+Keywords: automl,data preprocessing,feature engineering,ensembling,super learner
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: imblearn
+Requires-Dist: pandas
+Requires-Dist: scikit-optimize
+Requires-Dist: hyperopt
+Requires-Dist: scikit-learn (==0.24.1)
+Requires-Dist: kiwisolver (==1.3.1)
+Requires-Dist: matplotlib (==3.3.4)
+Requires-Dist: Pillow (==8.1.0)
+Requires-Dist: openpyxl
+Requires-Dist: plotly
+Requires-Dist: pytest
+Requires-Dist: pytest-runner
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
