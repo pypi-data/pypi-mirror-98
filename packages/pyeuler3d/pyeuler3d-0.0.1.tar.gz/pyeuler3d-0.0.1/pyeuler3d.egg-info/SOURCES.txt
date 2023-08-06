@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyeuler3d/E3Dbin.py
+pyeuler3d/__init__.py
+pyeuler3d/config.py
+pyeuler3d.egg-info/PKG-INFO
+pyeuler3d.egg-info/SOURCES.txt
+pyeuler3d.egg-info/dependency_links.txt
+pyeuler3d.egg-info/requires.txt
+pyeuler3d.egg-info/top_level.txt
