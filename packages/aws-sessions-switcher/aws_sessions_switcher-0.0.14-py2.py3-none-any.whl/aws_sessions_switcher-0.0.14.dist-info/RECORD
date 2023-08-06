@@ -1,0 +1,15 @@
+aws_sessions_switcher/__init__.py,sha256=J266nvKrNPAKaNs5dNHAzsFtjLXTK_WPoRmdHTQtDW8,8261
+aws_sessions_switcher/argument_parser.py,sha256=Oh9YklzdPtni1MPY2PjVr2ELKTY7X395qe7jsAen18Q,9939
+aws_sessions_switcher/aws_client.py,sha256=f3EOtAjv7EUS0xNZp3gqBo00UyXMkdAeyTcLj3NQ7DI,2165
+aws_sessions_switcher/config_collector.py,sha256=Muq2bg4vbIBE_c3UuvmSPK4MBkTVs_9OG8Hr3CMEVLY,3714
+aws_sessions_switcher/config_parser_util.py,sha256=HuPumXmXLBIBwBQy-HT43OxI_pylylL0Aj3NgA39mrM,2623
+aws_sessions_switcher/util.py,sha256=ZOv1lInd1OP4ndhfGY8Im9EHdP9MlqKSAe1fpG25fS4,3823
+config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config/__version__.py,sha256=pN5IdTZACMmAKQ-NKgHz521Ha_m6hnRPCotIgxp42OM,39
+config/config.py,sha256=2dZUWS6Gzi3UWbCJhXmJrH8PnOaqhRiMHXXs-16s_RM,2486
+aws_sessions_switcher-0.0.14.dist-info/LICENSE,sha256=O4J_Cjo9-z3JkcQruJsFz7lgloHXMf6OA_0sA55QrPE,1073
+aws_sessions_switcher-0.0.14.dist-info/METADATA,sha256=VwkScVtRWumFmGrMgcPg2fuN_vv5BMLA3M1bdTH-HLE,6131
+aws_sessions_switcher-0.0.14.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+aws_sessions_switcher-0.0.14.dist-info/entry_points.txt,sha256=VAttpBIBdfryHHIxWcthyTjhPvKAgqZyZdOVd4CWtXY,86
+aws_sessions_switcher-0.0.14.dist-info/top_level.txt,sha256=dmHoSpVJmPB9hQi2jWbHedSWI-o0NRL2jFwlsQafWRs,29
+aws_sessions_switcher-0.0.14.dist-info/RECORD,,
