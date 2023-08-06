@@ -1,0 +1,4 @@
+neptune-client>=0.5.1
+tensorflow
+
+[all]
