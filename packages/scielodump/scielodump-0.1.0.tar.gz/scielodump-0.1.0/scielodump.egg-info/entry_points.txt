@@ -1,0 +1,3 @@
+[console_scripts]
+scielo-dump = scielodump.dump_corpus:main
+

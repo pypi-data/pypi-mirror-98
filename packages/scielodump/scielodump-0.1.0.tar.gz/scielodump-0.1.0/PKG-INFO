@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: scielodump
+Version: 0.1.0
+Summary: Library to dump articles in XML and PDF formats from SciELO Collections
+Home-page: UNKNOWN
+Author: Fabio Batalha
+Author-email: fabiobatalha@gmail.com
+Maintainer: Fabio Batalha
+Maintainer-email: fabiobatalha@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
