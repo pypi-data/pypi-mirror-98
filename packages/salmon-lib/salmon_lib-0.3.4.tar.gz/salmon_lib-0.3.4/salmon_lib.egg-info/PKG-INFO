@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: salmon-lib
+Version: 0.3.4
+Summary: a library to read and write CRiSP harvest files
+Home-page: https://github.com/Society-for-Internet-Blaseball-Research/salmon_lib
+Author: alisww
+Author-email: waylandalis@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
