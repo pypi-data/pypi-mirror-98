@@ -1,0 +1,5 @@
+d8s-hypothesis
+hypothesis
+
+[:python_version < "3.8"]
+importlib-metadata
