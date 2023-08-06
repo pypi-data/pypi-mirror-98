@@ -1,0 +1,8 @@
+wordfilter/__init__.py,sha256=iPSt9qR7LgctRjVJq-Nly0-i4X8-6YvnToaBCtXAfy8,49
+wordfilter/badwords.json,sha256=HcnV_Xeuh8z99MjefS3RCCsCanUXuOHyJ0ELwE0Y3UI,1312
+wordfilter/wordfilter.py,sha256=nbHyAwJ3KzyJXCHFwfgrkaGLySNtx9HaYn_u4TS7rUM,816
+wordfilter-0.2.7.dist-info/LICENSE-MIT,sha256=QZDeboPyEmUVsNQWWW-TNKuErtnk4KMdZrOKM3jAYNY,1057
+wordfilter-0.2.7.dist-info/METADATA,sha256=9qNeHPbOz5_E64Vt5U_RoIJzzweekFT6Z2oQORZrKPU,3170
+wordfilter-0.2.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wordfilter-0.2.7.dist-info/top_level.txt,sha256=mDFe4DEWltCWSm5rHngrpO52lgI3JK5Pny6-eLCbIHI,11
+wordfilter-0.2.7.dist-info/RECORD,,
