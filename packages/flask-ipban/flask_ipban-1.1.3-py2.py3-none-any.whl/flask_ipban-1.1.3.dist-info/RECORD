@@ -1,0 +1,13 @@
+flask_ipban/__init__.py,sha256=s4Y2kmPzubHsotHCYR8o6-nmH_PNaLi1huKGNeCSCqw,662
+flask_ipban/abuse_ipdb.py,sha256=n3OC2M81L914i_Qfes6dZWKrAeVLwWFbEsDRpwPxsdw,6328
+flask_ipban/get_lock.py,sha256=8XlFYARzNRGRMBLemdoVY_8L7ArVbH7lIQ6mPPzmqlU,2172
+flask_ipban/ip_ban.py,sha256=S2vTEnM3U0p877_V5bfl_VUa593TTJZoiwQoUdw61ag,21651
+flask_ipban/ip_record.py,sha256=alYXR8Qs-1hJAlHVWnuniJptlj5uXjnm89vamyCrZ8w,10455
+flask_ipban/nuisance.yaml,sha256=ysQJS8K8KTP8TzlPRD6PmAcQg3c3U2uXnp-cvzA_yrI,2455
+flask_ipban/test.py,sha256=xE2lO3_NaEhfDypTOimMPYZyh6cwm9NuUdIVNk7bY68,10636
+flask_ipban/test_persistence.py,sha256=GIovSnYklIix94XrFlRYFcUMnHsPVakmCseaKWbiuCQ,1402
+flask_ipban-1.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flask_ipban-1.1.3.dist-info/METADATA,sha256=NUlSebfSUf_iq1iQoALDPGwPRPSYzP-qFVzus66DJ2Y,10864
+flask_ipban-1.1.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+flask_ipban-1.1.3.dist-info/top_level.txt,sha256=9u915YwQ6azL00M-wX4E84_jejNN8ooqgSPjHeoAuoM,12
+flask_ipban-1.1.3.dist-info/RECORD,,
