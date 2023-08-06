@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/geothmetic_meandian/__init__.py
+src/geothmetic_meandian/geometric_mean.py
+src/geothmetic_meandian.egg-info/PKG-INFO
+src/geothmetic_meandian.egg-info/SOURCES.txt
+src/geothmetic_meandian.egg-info/dependency_links.txt
+src/geothmetic_meandian.egg-info/top_level.txt

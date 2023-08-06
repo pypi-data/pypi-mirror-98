@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: geothmetic-meandian
+Version: 0.1.4
+Summary: A python implementation of the "Geothmetic Meandian" as proposed in XKCD #2435
+Home-page: https://github.com/mdelcambre/py-geothmetic-meandian
+Author: Mark Delcambre
+Author-email: mark@charkbot.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/mdelcambre/py-geothmetic-meandian/issues
+Description: # Geothmetic Meandian
+        
+        Python package to provide the calculation of the "geothmetric median" as defined in [XKCD # 2435](https://xkcd.com/2435/). For when you aren't sure whether to use the mean, median, or geometric mean.
+        ![XKCD # 2435](https://imgs.xkcd.com/comics/geothmetic_meandian.png)
+        
+        
+        ## Instalation
+        ```shell
+        pip3 install geothmetic_meandian
+        ```
+        
+        ## Example Usage
+        ```python
+        >>> from geothmetic_meandian import geothmetic_meandian
+        >>> geothmetic_meandian([1, 1, 2, 3, 5])
+        2.0889513309015815
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
