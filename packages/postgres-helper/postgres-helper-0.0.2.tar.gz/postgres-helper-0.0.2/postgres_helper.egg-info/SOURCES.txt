@@ -1,0 +1,8 @@
+README.md
+setup.py
+pg/pg.py
+postgres_helper.egg-info/PKG-INFO
+postgres_helper.egg-info/SOURCES.txt
+postgres_helper.egg-info/dependency_links.txt
+postgres_helper.egg-info/requires.txt
+postgres_helper.egg-info/top_level.txt
