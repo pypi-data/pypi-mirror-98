@@ -1,0 +1,8 @@
+torch
+torchvision
+matplotlib
+Pillow
+pytorch_lightning
+numpy
+tqdm
+requests
