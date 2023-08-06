@@ -1,0 +1,13 @@
+ok_language_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ok_language_tools/apps.py,sha256=dXUfvyz4_HBKT-FRtbpTISNTIOj8ZQz1I-JKxTz3knc,200
+ok_language_tools/conf.py,sha256=THHZXiLHsy6c_vPgpTgVD7i7rG5gEsyaDhY06d_r57o,860
+ok_language_tools/middleware.py,sha256=0nMdy7ZvEvTCxbOhBh2nysNyaK8fNI7ZN6UsOt419Hk,2516
+ok_language_tools/urls.py,sha256=IiAk4OyR2B5DNNwkl0HXZRw9MO8BZZdpZehUbemXxWQ,233
+ok_language_tools/utils.py,sha256=FERioj_8imWHHN9bnXsix1hZBzCL2YPlNuZGxlF2Mf8,2603
+ok_language_tools/views.py,sha256=eHEApuOlGSOP645C4ZXYVIZT0Jljdilm3OK497Y8xlc,1950
+ok_language_tools/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ok_language_tools-0.0.4.dist-info/LICENSE,sha256=X8EP8wMFANo5ClPYXC9RpzvvxW7yq_vzUNE6Ns6jVlY,1071
+django_ok_language_tools-0.0.4.dist-info/METADATA,sha256=xzo_csN-HXnB8t_R_e9E2RTMbJ-EeZgupQBfEqf2ZPE,4097
+django_ok_language_tools-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_ok_language_tools-0.0.4.dist-info/top_level.txt,sha256=RLsP9_8_W1WIdWxZkY8KAN3IRJuXyCH2C9R_Oa1u9q4,18
+django_ok_language_tools-0.0.4.dist-info/RECORD,,
