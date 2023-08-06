@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: montblanc
+Version: 0.6.1
+Summary: GPU-accelerated RIME implementations.
+Home-page: http://github.com/ska-sa/montblanc
+Author: Simon Perkins
+Author-email: simon.perkins@gmail.com
+License: GPL2
+Description: Montblanc
+        =========
+        
+        A `Tensorflow <https://www.tensorflow.org/>`_ implementation
+        of the Radio Interferometry Measurement Equation,
+        and a foothill of Mount Exaflop.
+        
+        License
+        -------
+        
+        Montblanc is licensed under the GNU GPL v2.0 License.
+        
+        Documentation
+        -------------
+        
+        Available on `readthedocs <https://montblanc.readthedocs.io/>`_
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Astronomy

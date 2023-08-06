@@ -1,0 +1,10 @@
+attrdict>=2.0.0
+attrs>=16.3.0
+funcsigs>=0.4
+six
+hypercube==0.3.4
+tensorflow==1.8.0
+
+[:python_version <= "2.7"]
+enum34>=1.1.6
+futures>=3.0.5
