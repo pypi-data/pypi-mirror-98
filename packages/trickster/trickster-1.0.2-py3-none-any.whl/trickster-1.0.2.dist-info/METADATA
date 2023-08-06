@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: trickster
+Version: 1.0.2
+Summary: Trickester is a Python/Flask application for mocking REST APIs
+Home-page: https://github.com/JakubTesarek/trickster
+Author: Jakub Tesarek
+Author-email: jakub@tesarek.me
+License: unlicensed
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: flask
+Requires-Dist: fastjsonschema
+Requires-Dist: basicauth
+Provides-Extra: dev
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-docstrings ; extra == 'dev'
+Requires-Dist: flake8-pytest ; extra == 'dev'
+Requires-Dist: flake8-eradicate ; extra == 'dev'
+Requires-Dist: flake8-print ; extra == 'dev'
+Requires-Dist: flake8-todo ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-repeat ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+UNKNOWN
+
+
