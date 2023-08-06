@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+src/Artist/__init__.py
+src/Artist/base_programs.py
+src/Artist/dataset.py
+src/Artist/general_trainer.py
+src/Artist/progressive_trainer.py
+src/Artist/models/base.py
+src/Artist/models/dcgan.py
+src/Artist/models/progressive_gan.py
+src/Artist_Engineering_Geek.egg-info/PKG-INFO
+src/Artist_Engineering_Geek.egg-info/SOURCES.txt
+src/Artist_Engineering_Geek.egg-info/dependency_links.txt
+src/Artist_Engineering_Geek.egg-info/requires.txt
+src/Artist_Engineering_Geek.egg-info/top_level.txt
