@@ -1,0 +1,10 @@
+setup.py
+Ga-Bi-Distributions/Binomialdistribution.py
+Ga-Bi-Distributions/Gaussiandistribution.py
+Ga-Bi-Distributions/Generaldistribution.py
+Ga-Bi-Distributions/__init__.py
+Ga_Bi_Distributions.egg-info/PKG-INFO
+Ga_Bi_Distributions.egg-info/SOURCES.txt
+Ga_Bi_Distributions.egg-info/dependency_links.txt
+Ga_Bi_Distributions.egg-info/not-zip-safe
+Ga_Bi_Distributions.egg-info/top_level.txt
