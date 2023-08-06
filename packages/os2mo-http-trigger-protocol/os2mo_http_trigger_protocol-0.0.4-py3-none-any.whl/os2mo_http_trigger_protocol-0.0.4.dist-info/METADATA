@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: os2mo-http-trigger-protocol
+Version: 0.0.4
+Summary: Protocol library for OS2mo HTTP triggers
+Home-page: https://git.magenta.dk/rammearkitektur/os2mo-http-trigger-protocol
+Author: Magenta ApS
+Author-email: info@magenta.dk
+License: MPL 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Provides-Extra: dist
+Requires-Dist: build ; extra == 'dist'
+Requires-Dist: twine ; extra == 'dist'
+Provides-Extra: lint
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+<!--
+SPDX-FileCopyrightText: Magenta ApS
+
+SPDX-License-Identifier: MPL-2.0
+-->
+
+# OS2mo HTTP Trigger Protocol
+
+This package contains the interfaces used for the OS2mo http trigger protocol.
+
+## Usage
+Install into your project using `pip`:
+```
+pip install os2mo-http-trigger-protocol
+```
+
+Then import it inside a Python file:
+```
+from typing import List
+
+from os2mo_http_trigger_protocol import (
+    EventType,
+    MOTriggerPayload,
+    MOTriggerRegister,
+    RequestType,
+)
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get(
+    "/triggers",
+    summary="List triggers to be registered.",
+    response_model=List[MOTriggerRegister],
+)
+def triggers():
+    """List triggers to be registered."""
+    return [
+        {
+            "event_type": EventType.ON_BEFORE,
+            "request_type": RequestType.EDIT,
+            "role_type": "org_unit",
+            "url": "/triggers/ou/edit",
+        }
+    ]
+
+@app.post(
+    "/triggers/ou/edit",
+    summary="Print that an organizational unit has been edited",
+)
+async def triggers_ou_create(payload: MOTriggerPayload):
+    """Fired when an OU has been created."""
+    return {"Hello": "World"}
+```
+
+
