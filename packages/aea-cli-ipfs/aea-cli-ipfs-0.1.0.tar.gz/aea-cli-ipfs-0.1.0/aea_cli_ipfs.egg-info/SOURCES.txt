@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+aea_cli_ipfs/__init__.py
+aea_cli_ipfs/core.py
+aea_cli_ipfs/ipfs_utils.py
+aea_cli_ipfs.egg-info/PKG-INFO
+aea_cli_ipfs.egg-info/SOURCES.txt
+aea_cli_ipfs.egg-info/dependency_links.txt
+aea_cli_ipfs.egg-info/entry_points.txt
+aea_cli_ipfs.egg-info/requires.txt
+aea_cli_ipfs.egg-info/top_level.txt
+tests/__init__.py
+tests/test_aea_cli_ipfs.py
