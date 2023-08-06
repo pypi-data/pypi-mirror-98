@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: osvmoverview
+Version: 1.0.0
+Summary: Openstack VM overview Horizon plugin
+Home-page: http://www.openstack.org/
+Author: Olivier Sallou
+Author-email: olivier.sallou@irisa.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+
+# Openstack VM Overview
+
+## Horizon setup
+
+in local_settings add:
+
+OPENSTACK_SERVICE_OVERVIEW={"url": "http://127.0.0.1:9999/"}
+
+and install osvmoverview package on Horizon server (with same python environement)
+
+Package needs Django and horizon packages, but as it is a plugin for horizon, this is not specified as a requirement.
+
+## Backend server
+
+Execute service:
+
+gunicorn -p 127.0.0.1:9999 server:app
+
+(needs flask,  gunicorn and nova api client)
+
+or Docker image
+
+Needed env variables for server:
+
+* OS_AUTH_URL
+* OS_USERNAME
+* OS_PASSWORD
+* OS_USER_DOMAINID
+* OS_PROJECT_ID
+
+User must be admin
+
+
+
