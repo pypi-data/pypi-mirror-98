@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: suremco
+Version: 1.0.0rc2
+Summary: Superresolution Emitter Counter
+Home-page: https://github.com/modsim/suremco
+Author: Christian C. Sachs
+Author-email: c.sachs@fz-juelich.de
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Image Recognition

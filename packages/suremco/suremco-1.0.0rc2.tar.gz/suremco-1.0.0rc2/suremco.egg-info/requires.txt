@@ -1,0 +1,9 @@
+yaval
+PySide2
+numpy
+cv2
+vispy
+trackpy
+scipy
+pandas
+numexpr
