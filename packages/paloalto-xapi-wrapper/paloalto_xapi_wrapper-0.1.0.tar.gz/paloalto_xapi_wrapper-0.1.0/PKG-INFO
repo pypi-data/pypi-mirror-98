@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: paloalto-xapi-wrapper
+Version: 0.1.0
+Summary: Xapi wrapper for quick use
+Author: Thomas Christory
+Author-email: thomas@christory.net
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: paloalto-env (>=0.1.1,<0.2.0)
+Requires-Dist: pan-python (>=0.16.0,<0.17.0)
