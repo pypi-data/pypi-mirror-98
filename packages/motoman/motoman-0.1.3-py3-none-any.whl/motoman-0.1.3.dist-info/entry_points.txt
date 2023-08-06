@@ -1,0 +1,3 @@
+[console_scripts]
+motoman=motoman.entry:main
+
