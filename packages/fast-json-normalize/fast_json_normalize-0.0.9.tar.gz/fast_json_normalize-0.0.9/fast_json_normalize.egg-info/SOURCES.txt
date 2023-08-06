@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+fast_json_normalize/__init__.py
+fast_json_normalize/cythonized.c
+fast_json_normalize/cythonized.pyx
+fast_json_normalize/test_main.py
+fast_json_normalize.egg-info/PKG-INFO
+fast_json_normalize.egg-info/SOURCES.txt
+fast_json_normalize.egg-info/dependency_links.txt
+fast_json_normalize.egg-info/requires.txt
+fast_json_normalize.egg-info/top_level.txt
+fast_json_normalize/__pycache__/__init__.cpython-38.pyc
+fast_json_normalize/__pycache__/test_main.cpython-38-pytest-6.2.2.pyc
