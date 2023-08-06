@@ -1,0 +1,11 @@
+d8s_dates/__init__.py,sha256=8zvoeunNFqD1lwgz-wx19euo7ivmN8bgPqoPWXI2XhI,687
+d8s_dates/dates_and_times.py,sha256=EVqLgIFOol-POyTP3Pvf75EsC2bK33SdQh54mDyJMK0,16448
+d8s_dates/dates_and_times_temp_utils.py,sha256=MJy90IgX_fv1fEUWsyV2n9FZ_WZT-l0CYum_K2lEQtI,976
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dates_and_times.py,sha256=Lhyby6TzxZl8TeCqnT59DUxy-7AtUxvlCntwAy2tXTE,18949
+d8s_dates-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_dates-0.2.0.dist-info/METADATA,sha256=sLPBQKWiKUv3cM3lpUlocCqapHazycvki5nARzbc2Ho,4071
+d8s_dates-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_dates-0.2.0.dist-info/top_level.txt,sha256=LI0RXqDRdFmiQd61SU3rVAvHemKiLMc3L4UdLDX8NK0,16
+d8s_dates-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_dates-0.2.0.dist-info/RECORD,,
