@@ -1,0 +1,15 @@
+c4m/__init__.py,sha256=pzSBKtHjyGt7th440xmejvIOtmBL4IJM_GI68IoRZ4E,149
+c4m/pdk/__init__.py,sha256=pzSBKtHjyGt7th440xmejvIOtmBL4IJM_GI68IoRZ4E,149
+c4m/pdk/freepdk45/__init__.py,sha256=4XjaS23urIAO8yDlUkObG6bwLwHYLgedo_naL4gfhLE,178
+c4m/pdk/freepdk45/flexlib_.py,sha256=pD9Lcrx7c3duw8slF6PhJ_0Lz3IyNTHMoS968TEiJM0,435
+c4m/pdk/freepdk45/freepdk45.spi,sha256=qU9xSDsm6I0E-s2yRTc28Td95ok30EnLHfw9ZvijCoE,205
+c4m/pdk/freepdk45/freepdk45_ff.spi,sha256=1-iMFCCXKYzX_64z6ABjr_veKUagzTIFGnkWkXwat8E,43311
+c4m/pdk/freepdk45/freepdk45_nom.spi,sha256=g88tc5RZ9LvbJQM0lvldzJvFek21vvthrjKaRhjDxX0,43310
+c4m/pdk/freepdk45/freepdk45_ss.spi,sha256=kX5WIAp-a9VYfi2DxMWctb38uJjIuV4NgFt2yrjmhrc,43308
+c4m/pdk/freepdk45/pdkmaster.py,sha256=nHpgWuB9t3jvRiL0a-TYnpY12thcQ9eCuIdfZlTzWcA,18572
+c4m/pdk/freepdk45/pyspice.py,sha256=Z_KvaMCPN_xNbKsBK-DdFAGBgy3Z0vhHbJJ3t0AE60o,741
+c4m_pdk_freepdk45-0.0.1.dist-info/LICENSE.md,sha256=_MgOV2Y-RfuhF5JtMXlcUlN1SkNugmMOg3oupc49h0w,815
+c4m_pdk_freepdk45-0.0.1.dist-info/METADATA,sha256=whxBg2WELIFDoClFPmB9YfitDgNJD1jlzJ6m_KLqDrg,4011
+c4m_pdk_freepdk45-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+c4m_pdk_freepdk45-0.0.1.dist-info/top_level.txt,sha256=rwsscmrPhblhsY8BXBBAgsXrnjsrBphkOHEG6SBIvLE,4
+c4m_pdk_freepdk45-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: c4m-pdk-freepdk45
+Version: 0.0.1
+Summary: example implementation of FreePDK45 as PDKMaster based PDK
+Home-page: UNKNOWN
+Author: Staf Verhaegen
+Author-email: staf@fibraservi.eu
+License: GPL-2.0-or-later OR AGPL-3.0-or-later OR CERN-OHL-S-2.0+
+Project-URL: Source Code, https://gitlab.com/Chips4Makers/c4m-pdk-freepdk45
+Project-URL: Bug Tracker, https://gitlab.com/Chips4Makers/c4m-pdk-freepdk45/issues
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: c4m-PySpice (~=1.4.3.post0)
+Requires-Dist: PDKMaster (~=0.1)
+Requires-Dist: c4m-flexcell (~=0.0.4)
+
+# PDKMaster based FreePDK45 PDK
+
+This is an example implementation of the non-manufacturable [FreePDK45](https://www.eda.ncsu.edu/wiki/FreePDK45:Contents) as a [PDKMaster](https://gitlab.com/Chips4Makers/PDKMaster) based PDK under the [Chips4Makers](https://chips4makers.io) umbrella. One of it's functions is to be a guide for making new [PDKMaster](https://gitlab.com/Chips4Makers/PDKMaster) PDKs for manufacturable processes.
+
+# Releases
+
+This packages is released in two different formats. First is a release on PyPI with only the python package included. Second is a tarball release on github. Next to the installable python package also contains the generated setup files for other tools and examples of how the PDKMaster FreePDK45 can be used.
+
+Current release is v0.0.1:
+
+* [PyPI release](https://gitlab.com/Chips4Makers/c4m-pdk-freepdk45/-/tree/v0.0.1/ReleaseNotes/PyPI/v0.0.1.md)
+* [tarball release](https://gitlab.com/Chips4Makers/c4m-pdk-freepdk45/-/tree/v0.0.1/ReleaseNotes/Tarball/v0.0.1.md)
+
+# Source repository overview
+
+Currently this repo lacks documentation. So, as an introduction to the package here an overview is given of the several parts in the repo with a short description:
+
+* `c4m/pdk/freepdk/`: The PDKMaster Technology python module, including c4m-flexcell based standard cell library.
+* `Makefile`, `scripts/`: generate several release files:
+  * copy of python module
+  * views of the standard cells using the PDKMaster export functionalities:
+    * spice netlist
+    * verilog behavioral model
+    * vhdl behavioral model
+    * gds layouts
+    * liberty file for library
+* `make_in_docker.py`: Will run the building of everything from the `Makefile` in a docker prepared docker container. Currently the the docker image to download is 2.3GB in size.
+* `design/`:
+  * `portfolio.ipynb`: Python notebook show (part of) the FreePDK45 content
+  * `arlet6502/*`: Directory with Arlet's 6502 implementation and example flow of how to do synthesis and P&R using the FreePDK45 FlexLib standard cells library. When using it from a git checkout first the coriolis files will need to be built in the top directory. In the release package this will be included and not be needed.
+    * `make_in_docker.sh`: you can also here run the flow inside a docker container of not all tools are installed locally. The same 2.3GB docker image is used for the `make_in_docker.sh` from the top directory.
+  * `inverter/inverter.ipynb`: Python notebook showing how the PDKMaster framework can be used to design a balanced inverter. It combines several design aspects in one integrated flow:
+    * spice simulation to compute the width of the inverter's NMOS and PMOS transistors to be balanced, e.g  the same on current.
+    * generate minimal area layout based on the design rules
+    * Verify functionality using Spice simulation.
+
+# Status
+
+This repository is currently using [PDKMaster](https://gitlab.com/Chips4Makers/PDKMaster) and [c4m-flexcell](https://gitlab.com/Chips4Makers/c4m-flexcell) which currently have unstable APIs. Heavy non-backwards compatible changes are still be expected. If interested head over to [gitter](https://gitter.im/Chips4Makers/community) for further discussion.
+
+The PyPi release only contains the PDKMaster Technology definition; the gitlab release also contains all the generated views and example design files.
+
+
