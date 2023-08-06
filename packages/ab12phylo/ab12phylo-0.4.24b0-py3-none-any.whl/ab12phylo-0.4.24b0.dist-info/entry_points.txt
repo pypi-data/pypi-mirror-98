@@ -1,0 +1,9 @@
+[console_scripts]
+ab12phylo-add-xml = ab12phylo_cmd.blast:_add_xml
+ab12phylo-cmd = ab12phylo_cmd.main:_main
+ab12phylo-view = ab12phylo_cmd.phylo:_view
+ab12phylo-visualize = ab12phylo_cmd.phylo:_visualize
+
+[gui_scripts]
+ab12phylo = ab12phylo.gtk_app:main
+
