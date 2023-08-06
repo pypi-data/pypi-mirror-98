@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+examples/pubmed_example.pdf
+examples/tables_sample.pdf
+src/__init__.py
+src/pdftextract.py
+src/utils.py
+src/pdftextract.egg-info/PKG-INFO
+src/pdftextract.egg-info/SOURCES.txt
+src/pdftextract.egg-info/dependency_links.txt
+src/pdftextract.egg-info/top_level.txt
+src/xpdf/pdfimages.exe
+src/xpdf/pdfinfo.exe
+src/xpdf/pdftotext.exe
