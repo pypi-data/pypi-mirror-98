@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+PyScaffolder.egg-info/PKG-INFO
+PyScaffolder.egg-info/SOURCES.txt
+PyScaffolder.egg-info/dependency_links.txt
+PyScaffolder.egg-info/not-zip-safe
+PyScaffolder.egg-info/top_level.txt
