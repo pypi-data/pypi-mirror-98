@@ -1,0 +1,9 @@
+ryglfg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ryglfg/__main__.py,sha256=2wrr7-QSQzEqzWkOTqN-wmG2Fz5pvdhaByfTHLwgsVg,19880
+ryglfg/auth.py,sha256=1V9rExxA-gOkM_dl8Z9N1UnAg80toCoUCoztWp43taA,687
+ryglfg/database.py,sha256=47e9y4SDhpHIPugp36-NWctWu3yRD3rQPpnoJKrYUyU,4154
+ryglfg/globals.py,sha256=vZ3bfNcUkTO-3POamcIMdS7hwHCRcPf5bET5sehr9J4,201
+ryglfg/models.py,sha256=08lp0dlP3PtDAiFSQKuHuDPjLabZQBe9SWn47gf4Zh8,1903
+ryglfg-2.0.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+ryglfg-2.0.0.dist-info/METADATA,sha256=qX-WUCoBDyiNyyge5sKrK-2d5z7omYp9vvQCIzxeJxk,762
+ryglfg-2.0.0.dist-info/RECORD,,
