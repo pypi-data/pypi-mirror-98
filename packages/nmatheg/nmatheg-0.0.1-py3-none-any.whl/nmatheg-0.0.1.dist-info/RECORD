@@ -1,0 +1,11 @@
+nmatheg/__init__.py,sha256=B-RULROrBjGjRS-29jmeV4jSnQrMalJ6i3fjmQ4-aj8,41
+nmatheg/dataset.py,sha256=wDAVZtSWv50Oxo2QoPyf3ddfBW2PNIglLb5glXHakNw,3807
+nmatheg/datasets.ini,sha256=QGb8EE6q2DZ13Lco1yh5hy72jHb0_LfxA49mCWytHzk,579
+nmatheg/models.py,sha256=C37X-tUOnFS5P8ddIelKq9Ny5WU1CmR0cUBhOeFB4-k,5535
+nmatheg/nmatheg.py,sha256=BLRZfY-_aiGwn-iG5PM0Q7aSUvAijWEncMMODMLqqT4,1697
+nmatheg/tests.py,sha256=ipZ-sypLA9RmpNjGrIwGsju0E6YD2DnLSJ189tMu-HY,124
+nmatheg/utils.py,sha256=WSLz6JjYZhPqS62BOcxHl1dl6Kpm4MIRobjvUoMEouI,621
+nmatheg-0.0.1.dist-info/METADATA,sha256=9HEhAfVk5o9yFxLYubP1FQMZeyaLTwKn5O4twrXO7yc,1781
+nmatheg-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nmatheg-0.0.1.dist-info/top_level.txt,sha256=jvyp_1q9n3QSM2k4ah8ev91RT9gVzLPUboSaN5OfGr4,8
+nmatheg-0.0.1.dist-info/RECORD,,
