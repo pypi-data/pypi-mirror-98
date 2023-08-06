@@ -1,0 +1,11 @@
+README.rst
+manual_requirements.txt
+requirements.txt
+setup.py
+boostnote_to_wordpress/__init__.py
+boostnote_to_wordpress.egg-info/PKG-INFO
+boostnote_to_wordpress.egg-info/SOURCES.txt
+boostnote_to_wordpress.egg-info/dependency_links.txt
+boostnote_to_wordpress.egg-info/requires.txt
+boostnote_to_wordpress.egg-info/top_level.txt
+scripts/upload2wp

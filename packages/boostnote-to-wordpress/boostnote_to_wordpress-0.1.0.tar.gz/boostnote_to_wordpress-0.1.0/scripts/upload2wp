@@ -1,0 +1,55 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# vim:fenc=utf-8
+#
+# Copyright © 2021 fx-kirin <fx.kirin@gmail.com>
+#
+# Distributed under terms of the MIT license.
+
+"""
+
+"""
+
+import logging
+import os
+from pathlib import Path
+
+import cson
+import fire
+import kanilog
+import mistune
+from wordpress_oauth import Wordpress
+
+from boostnote_to_wordpress import CustomMdRenderer, upload_image_link
+
+logger = kanilog.get_module_logger(__file__, 1)
+
+
+def main(cson_file, status="draft"):
+    config_file = Path("~/.config/markdown_to_wordpress/config.yml").expanduser()
+    wp = Wordpress(config_file)
+
+    cson_file = Path(cson_file)
+    boost_note_root = cson_file.parents[1]
+
+    boostnote = cson.loads(cson_file.read_text())
+    markdown = boostnote["content"]
+    renderer = CustomMdRenderer()
+    converter = mistune.Markdown(renderer=renderer)
+    converter(markdown)
+
+    image_links = renderer.image_links
+    modifier = {}
+    for image_link in image_links:
+        modifier[image_link["src"]] = upload_image_link(wp, boost_note_root, image_link)
+
+    renderer = CustomMdRenderer(modifier)
+    converter = mistune.Markdown(renderer=renderer)
+    converted = converter(markdown)
+    wp.post_article({"title": renderer.title, "status": status, "content": converted})
+
+
+if __name__ == "__main__":
+    os.chdir(Path(__file__).parent)
+    kanilog.setup_logger(level=logging.INFO)
+    fire.Fire(main)

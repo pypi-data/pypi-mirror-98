@@ -1,0 +1,8 @@
+add_parent_path
+kanilog
+mistune_contrib
+pytest
+stdlogging
+urlpath
+mistune==0.7.2
+wordpress_oauth
