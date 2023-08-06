@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: py48
+Version: 1.2
+Summary: Korean fortune telling package using birthdate and time
+Home-page: https://github.com/yellokat/py48
+Author: yellokat
+Author-email: jenova195@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/yellokat/py48/archive/v1.2.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: pandas
+
+UNKNOWN
+
+
