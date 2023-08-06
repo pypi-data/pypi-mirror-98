@@ -1,0 +1,12 @@
+molecule_robotframework/__init__.py,sha256=ZTipNH6wyC6qsq1H_lZsvJyVruUa1nu3y4EysMdkpuU,22
+molecule_robotframework/robotframework.py,sha256=Ny0RybG0hCIio9ZUXgA0eTkpt3f4TylfWCV3VfLz-Sg,8443
+molecule_robotframework/cookiecutter/cookiecutter.json,sha256=VWf9NMvb9hctcRk4KN_LH-czsuSPLOWs9AjwKGfx0JM,139
+molecule_robotframework/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/fetch_results.yml,sha256=gLjrO2k1mFMBgTa4sUVZmrsRggzbQbuu901R_bwRyyE,342
+molecule_robotframework/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/verify.yml,sha256=PKxax42QCtr668qf6OCG8j4MkdzkKv1BaulMHKN-5jI,1620
+molecule_robotframework/cookiecutter/{{cookiecutter.molecule_directory}}/{{cookiecutter.scenario_name}}/tests/example.robot,sha256=MX-Ys98djdQGtKdCAD5IxZebzip14wlPkSgysRgLvIQ,687
+molecule_robotframework-1.0.2.dist-info/LICENSE,sha256=-krKkiG--G4YUeIXjqEfsMgTKi14jAkDXbdC-PG7FSY,1067
+molecule_robotframework-1.0.2.dist-info/METADATA,sha256=UKmQPqHu_oWCbgFc5VvVIOz0XMk1ySSXQm4VAPPdIF0,2419
+molecule_robotframework-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+molecule_robotframework-1.0.2.dist-info/entry_points.txt,sha256=t0iDa12tpbijjbqi5ZYO7g73T92wTBBcRaUumdBuX3E,92
+molecule_robotframework-1.0.2.dist-info/top_level.txt,sha256=347oKILeYm64uCWYxpIv5EjIFj8GSXtC9LEd5RKCdhE,24
+molecule_robotframework-1.0.2.dist-info/RECORD,,
