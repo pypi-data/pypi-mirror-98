@@ -1,0 +1,11 @@
+restful_client_lite/__init__.py,sha256=9WOIAvoCLB4V32pFT7NUIbtb0xTeBzD1TZkdF6A6YJs,327
+restful_client_lite/__version__.py,sha256=IY-H36hD74PoKFy792RcAoq4iHwiQuUAxnVoMIkvYgM,62
+restful_client_lite/clients.py,sha256=mS-0JCtTp5BUA3HsMlypLuAPOEl7sF0FqE9Qe0ScoCw,4382
+restful_client_lite/contrib/__init__.py,sha256=3SnpbuI2ppUWku_PHdoCZglx47-2Wr5RR3W6zaA3JmU,50
+restful_client_lite/contrib/aliyun.py,sha256=Vh05D1GfPDgehK9FAtLeYZ8JgDYphtkDS2uKuYAz8XU,3523
+restful_client_lite/contrib/wangduoyun.py,sha256=aJ33JaBxQAPfxBogLMzoDzAcBIMuzFXuHocV7qrcb7o,1954
+restful_client_lite-0.0.4.dist-info/LICENSE,sha256=I-FvBx6ZUEBYzABhvHUKOIYZsYoA1KDw0I-_BYUxVPE,1062
+restful_client_lite-0.0.4.dist-info/METADATA,sha256=X39996zo9SeHo5Dueq0Z-YHrMsRCU8eYZBsmUTFl72E,4657
+restful_client_lite-0.0.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+restful_client_lite-0.0.4.dist-info/top_level.txt,sha256=s12ROzIV-O3b0QYp_6WqT7JfErEPpyx8WkoB3QCeeWw,20
+restful_client_lite-0.0.4.dist-info/RECORD,,
