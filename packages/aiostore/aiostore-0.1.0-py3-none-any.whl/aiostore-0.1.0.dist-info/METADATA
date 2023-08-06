@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aiostore
+Version: 0.1.0
+Summary: Async abstraction layer for interchangeable file and object storage backends.
+License: MIT
+Author: Oscar Linderoth
+Author-email: oscar@upsidedev.se
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiofiles (>=0.6.0,<0.7.0)

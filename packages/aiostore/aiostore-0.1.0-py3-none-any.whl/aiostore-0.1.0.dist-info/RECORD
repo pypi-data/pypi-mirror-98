@@ -1,0 +1,8 @@
+aiostore/__init__.py,sha256=F5A1pHBBsMMctwe3i78nEXWv0pVDvEzxP1rulrP1B7k,136
+aiostore/base.py,sha256=QBzdA_d7-ea0JG27nS3-RkIztI8TKmIHQl1Uw7zUBUM,1738
+aiostore/eager_scandir.py,sha256=Q0eo_A0NfWj1MdQOt_CyEaBo6-UDiqiVSVIfpzxJHAE,3503
+aiostore/filesystem.py,sha256=xyS0oW_F6H37fmgCpqaxF8SF3oAbS_cS1j08xRl9qWQ,3153
+aiostore/minio.py,sha256=UvmRCk6Q-ljDAav9h05lBSy8LekAgQcu3rwTJycPK4E,3319
+aiostore-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+aiostore-0.1.0.dist-info/METADATA,sha256=1TW2xHCydWLnx7kBUR649TkmSUdqnHDxAEzXtQZ3jAk,477
+aiostore-0.1.0.dist-info/RECORD,,
