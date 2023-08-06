@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: syncsign
+Version: 0.1.0
+Summary: SyncSign SDK package
+Home-page: https://github.com/syncsign/syncsign-python-sdk
+Author: Roger
+Author-email: r@sync-sign.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/syncsign/syncsign-python-sdk/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.24)
+Requires-Dist: jsonpickle (>=1.4.1,~=1.4)
+Requires-Dist: python-dateutil (~=2.8.1)
+Requires-Dist: cachecontrol (~=0.12.6)
+
+# SyncSign Python SDK
+
+This client library is designed to support the [SyncSign API](https://dev.sync-sign.com/webapi/) for SyncSign IoT system. You can read more about the API by accessing its official documentation.
+
+## Install
+
+```
+python3 -m pip install --upgrade syncsign
+```
+
+## Usage
+
+- Modify one of the examples with your own API KEY, e.g. `devices_list.py`
+- Run with `python devices_list.py`
+
+
