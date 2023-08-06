@@ -1,0 +1,5 @@
+pathlib
+SQLAlchemy
+pycairo
+Arpeggio
+numpy
