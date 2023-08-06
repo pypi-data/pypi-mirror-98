@@ -1,0 +1,16 @@
+slycache/__init__.py,sha256=Ln6mLMT7FAOT9TwLWQhvxFWFE9h46KcywCgDuj_lhcM,720
+slycache/actions.py,sha256=D9T5EUauEjxFwtc0uoiMBZbTZsXqmbLu8155q4jn8PA,7327
+slycache/const.py,sha256=zuxh2Pmb2Haf5HVE6PV9phVY4cP2AJMKCGpXzzaZnG0,368
+slycache/exceptions.py,sha256=P9o0fEBYL1-f34fqyRyhV-pVjCg_t3sPhrVdGc8UTPQ,212
+slycache/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slycache/ext/django/__init__.py,sha256=G58_b2RB0RfNaFnP_z9h_9lNQetQj4WUhbtvtCvehgM,62
+slycache/ext/django/app.py,sha256=mHnNmQIwNXi62vjeIqVk2Ad4BRY2RCjP5azIYOjoZIw,1064
+slycache/ext/flask/__init__.py,sha256=8Xn9I4a5NFLd-F2IzLHzIsDQIkDg8LIxbLKANwdoDEw,750
+slycache/interface.py,sha256=FCz5q49amrrOxhrJer_kmh0emH-6XMMKdT462kpqupw,2050
+slycache/invocations.py,sha256=Q0LNx1YNpDHq5UyqZdZvxRMCvekCUT7Srz4Ig-Nlk5g,2357
+slycache/key_generator.py,sha256=JmWnJGPfSExGzBcJEF9aMe7f8jDJ_0whrhG1JwTFW5Y,6073
+slycache/slycache.py,sha256=pUZ12uStTtApemFfOnzLc2-UjwdqHtk7SUsXseQo9dI,14513
+slycache-0.3.0.dist-info/LICENSE,sha256=fFodlqDglek_v5KbaIH92thX0J26VHmc7gWNPg5dZV4,1500
+slycache-0.3.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+slycache-0.3.0.dist-info/METADATA,sha256=8zuXJG3ANftTRPd2Jtoo6VPbSA-lVHn09Ooyzd1SSK8,2832
+slycache-0.3.0.dist-info/RECORD,,
