@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: yamniiMod
+Version: 0.4
+Summary: just test task
+Home-page: https://github.com/arseniiyamnii/history-cllass-TestTask
+Author: Arsenii Yamnii
+Author-email: yamnii@ya.ru
+License: MIT
+Download-URL: https://github.com/arseniiyamnii/history-cllass-TestTask/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: just,test,task
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
