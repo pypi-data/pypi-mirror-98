@@ -1,0 +1,9 @@
+mancala/__init__.py,sha256=0oIP5XhDHEu6Mz2760bCFPIgiGpjZQZSK_cCh1z4Neo,109
+mancala/cli.py,sha256=xbRLKECFXwaHhAcyQHVLqD-xAsz9Q74HbI5EYbH-j_Q,125
+mancala/envs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mancala/envs/env.py,sha256=XeDP2IR8rC-n9EJTSeJbb9RwSxCYUQKaXdfGRcErqoY,450
+mancala/mancala.py,sha256=jAo9Wqc238-A-aIIR1IbPFpR6pq3LZR5F8tbWo7L8Wk,6038
+mancala-0.1.0.dist-info/entry_points.txt,sha256=XBJ1NAVmUS870S4Ea603T7JFilfINvBqdGJafXAjdDE,43
+mancala-0.1.0.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+mancala-0.1.0.dist-info/METADATA,sha256=9vwEnSLjBJFXJmozeuFn5Bj4Qz4_NmokRzdhht1O8zg,491
+mancala-0.1.0.dist-info/RECORD,,
