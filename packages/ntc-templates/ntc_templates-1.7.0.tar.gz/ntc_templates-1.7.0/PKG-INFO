@@ -1,0 +1,654 @@
+Metadata-Version: 2.1
+Name: ntc_templates
+Version: 1.7.0
+Summary: Package to return structured data from the output of network devices.
+Home-page: https://github.com/networktocode/ntc-templates
+Author: network.toCode()
+Author-email: info@networktocode.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/networktocode/ntc-templates.svg?branch=master)](https://travis-ci.org/networktocode/ntc-templates)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+        
+        NTC TEMPLATES
+        =============
+        
+        Repository of TextFSM Templates for Network Devices, and Python wrapper for TextFSM's CliTable.
+        
+        [TextFSM](https://github.com/google/textfsm/wiki) is a project built by Google that takes CLI string output and passes each line through a series of regular expressions until it finds a match. The regular expressions use named capture groups to build a text table out of the significant text. The names of the capture groups are used as column headers, and the captured values are stored as rows in the table.
+        
+        This project provides a large collection of TextFSM Templates (text parsers) for a variety of Networking Vendors. In addition to the templates, there is a function that will convert the CLI output into a CliTable object; the resulting text table is converted into a list of dictionaries mapping the column headers with each row in the table.
+        
+        
+        Installation and Usage
+        ----------------------
+        The project can be installed using either Git or PyPI; if you would like to use the templates outside of this project, then Git is the recommended approach.
+        
+        #### Git
+        
+        ```shell
+        $ git clone git@github.com:networktocode/ntc-templates.git
+        $ 
+        # Optional steps to install ntc-templates as a python package
+        $ pip install -e ntc-templates/
+        $ 
+        ```
+        
+        The install can also include the required dev packages, which can be useful for adding or editing templates:
+        
+        ```shell
+        $ git clone git@github.com:networktocode/ntc-templates.git
+        $ 
+        # Optional steps to install ntc-templates as a python package
+        $ pip install -e ntc-templates/[dev]
+        $ 
+        ```
+        
+        #### PyPI
+        
+        ```shell
+        $ pip install ntc_templates
+        $ 
+        ```
+        
+        To include the dev packages:
+        ```
+        $ pip install ntc_templates[dev]
+        $ 
+        ```
+        
+        #### Usage
+        
+        ```python
+        >>> from ntc_templates.parse import parse_output
+        >>> vlan_output = (
+                "VLAN Name                             Status    Ports\n"
+                "---- -------------------------------- --------- -------------------------------\n"
+                "1    default                          active    Gi0/1\n"
+                "10   Management                       active    \n"
+                "50   VLan50                           active    Fa0/1, Fa0/2, Fa0/3, Fa0/4, Fa0/5,\n"
+                "                                                Fa0/6, Fa0/7, Fa0/8\n"
+            )
+        >>> vlan_parsed = parse_output(platform="cisco_ios", command="show vlan", data=vlan_output)
+        >>> vlan_parsed
+        [
+            {
+                'vlan_id': '1',
+                'name': 'default',
+                'status': 'active',
+                'interfaces': ['Gi0/1']
+            },
+            {
+                'vlan_id': '10',
+                'name': 'Management',
+                'status': 'active',
+                'interfaces': []
+            },
+            {
+                'vlan_id': '50',
+                'name': 'VLan50', 'status': 'active',
+                'interfaces': ['Fa0/1', 'Fa0/2', 'Fa0/3', 'Fa0/4', 'Fa0/5', 'Fa0/6', 'Fa0/7', 'Fa0/8']
+            }
+        ]
+        >>> 
+        ```
+        
+        ### Define Custom Templates Directory
+        
+        To use a custom templates directory set the environmental variable `NTC_TEMPLATES_DIR`.
+        
+        **Requirements**
+        1. `index` file needs to be defined with standard structure. [See](#Index-File)
+        2. Each custom template should be defined.
+        
+        To manaully set variable:
+        ```shell
+        export NTC_TEMPLATES_DIR=/path/to/new/location/templates
+        ```
+        
+        To set within your program:
+        ```python
+        import os
+        os.environ["NTC_TEMPLATES_DIR"] = "/path/to/new/templates/location/templates"
+        ```
+        
+        Contributing
+        ------------
+        
+        Pull requests are welcomed and automatically built and tested through TravisCI.
+        
+        ### New Templates
+        To contribute new templates, each new pull request must include the following:
+        
+        - TextFSM template
+        - Modified version of the **index** file
+        - Tests
+          * Raw version of text to be parsed
+          * YAML file containing the expected parsed dictionary
+        
+        #### TextFSM Template
+        
+        TextFSM templates should be placed in the `./templates` directory and should adhere to the following NTC-Templates style.
+        The TextFSM template name should be in the following format:
+        
+        ##### Naming
+        
+        The template should be named using: `{{ vendor_os }}_{{ command_with_underscores }}.textfsm`
+        > Ex: cisco_ios_show_cdp_neighbors.textfsm
+        
+        Note: The vendor name must be valid from the [os_choices](https://github.com/networktocode/ntc-templates/blob/master/tests/test_index_order.py#L59) tests, which is primarily based on [Netmiko](https://github.com/ktbyers/netmiko/tree/master/netmiko) list of supported vendors. New vendors added should adhere to **vendor_os**.
+        > Ex: vmware_nsx
+        
+        ##### Values
+        
+        The capture group names should be in UPPERCASE.
+        
+        An example of the proper format is shown below.
+        
+        ```
+        Value TIME (\d+:\d+:\d+)
+        Value TIMEZONE (\S+)
+        Value DAYWEEK (\w+)
+        Value MONTH (\d+)
+        Value DAY (\d+)
+        Value YEAR (\d+)
+        
+        Start
+          ^${TIME}\s+${TIMEZONE}\s+${DAYWEEK}\s+${DAY}/${MONTH}/${YEAR} -> Record
+          ^. -> Error
+        ```
+        ##### States
+        
+        If the raw output has a heading, the `Start` state should match on the column headings and then transition to another state that will match the device's output table with the capture groups. This helps ensure the regex patterns for the capture groups are attempting to match the correct information, and allows templates to easily add additional States for tables that have different headings. Example:
+        
+        *Raw Output*
+        ```
+        ... omitted
+        Network Next Hop Metric LocPrf Weight Path
+        *> 111.111.111.111/32 112.112.112.112 4294967295 4294967295 65535 1000 1000 1000 i
+        ```
+        
+        *Sample Template*
+        ```
+        Start
+        # Checking for header
+        ^\s*Network\s+Next(?:\s+|-)[Hh]op\s+Metric\s+LocPrf\s+Weight\s+Path\s*$$ -> BGPTable
+        
+        BGPTable
+         ... omitted
+        ```
+        
+        Each **state** should end with `^. -> Error`. This helps to ensure we're accounting for every line within the raw output for the command. This doesn't mean we have to capture all the data as a **Value**, but we do have to account for it. In addition, it is also good to provide an expression to match blank lines, `^\s*$$`
+        
+        An example would be the following raw output:
+        ```
+        NAME: "3640 chassis", DESCR: "3640 chassis"
+        PID: , VID: 0xFF, SN: FF1045C5
+        ```
+        
+        The template would be the following:
+        ```
+        Value NAME (.*)
+        Value DESCRIPTION (.*)
+        
+        Start
+          ^NAME:\s+"${NAME}",\s*DESCR:\s+"${DESCRIPTION}"
+          ^PID:\s*,\s*VID:\s*\S+,\s*SN:\s*\S+
+          ^\s*$$
+          ^. -> Error
+        ```
+        
+        Taking a look at the example template above, you notice that we're using **\s*** and **\s+**. These are the preferred way to match space characters, and should be used over the literal space character. For example, `This\s+is\s+preferred\s*$$` vs `This is not preferred$$`
+        
+        - **\s*** accounts for zero or more spaces (use when the output may or may not have a space between characters)
+        - **\s+** accounts for one or more spaces (use when output will have a space, but could have more than one space)
+        
+        #### Index File
+        
+        The Index file binds the templates to the commands being run. Special care has been taken on ordering, as there is potential for issues. e.g. `show ip route` picking up for `show ip router vrf <vrf-name>`. We have used a combination of ordering, as defined:
+        
+         - OS in alphabetical order
+         - Template name in length order
+         - When length is the same, use alphabetical order of command name
+         - Keep space between OS's
+        
+        Example:
+        
+        ```
+        Template, Hostname, Platform, Command
+        
+        # same os, same length, used alphabetical order of command name
+        arista_eos_show_mlag.textfsm, .*, arista_eos, sh[[ow]] ml[[ag]]
+        arista_eos_show_vlan.textfsm, .*, arista_eos, sh[[ow]] vl[[an]]
+        
+        # os in alphabetical order and space between cisco_asa and arista_eos
+        cisco_asa_dir.textfsm,  .*, cisco_asa, dir
+        
+        # same os, template name length different and space between cisco_asa and cisco_ios
+        cisco_ios_show_capability_feature_routing.textfsm,  .*, cisco_ios, sh[[ow]] cap[[ability]] f[[eature]] r[[outing]]
+        cisco_ios_show_interface_transceiver.textfsm, .*, cisco_ios, sh[[ow]] int[[erface]] trans[[ceiver]]
+        cisco_ios_show_cdp_neighbors_detail.textfsm, .*, cisco_ios, sh[[ow]] c[[dp]] neig[[hbors]] det[[ail]]
+        ```
+        
+        #### Tests
+        Tests will be located in `./tests` with the following hierarchy:
+        - `./tests/{{ vendor_os }}/{{ command_name }}/`
+        
+        The `{{ command_name }}` directory should include the `.raw` file that includes the raw output of the command to be parsed, and the `.yml` file of the returned structured data.
+        ```bash
+        $ ls tests/cisco_ios/show_clock/
+        cisco_ios_show_clock.yml
+        cisco_ios_show_clock.raw
+        $ 
+        ```
+        
+        ##### Raw version of input text
+        
+        The raw text file should contain **only** the output of the CLI command to be parsed. It should **not** contain the CLI command itself.
+        
+        An example of the proper format is shown below:
+        
+        ```bash
+        $ cat tests/cisco_ios/show_clock/cisco_ios_show_clock.raw
+        *18:57:38.347 UTC Mon Oct 19 2015
+        $ 
+        ```
+        
+        ##### YAML file containing expected parsed dictionary
+        
+        The parsed file should match the data that is returned from the `parse_output` function discussed in the beginning. Dictionary keys should be in lowercase.
+        
+        The parsed text file should be placed in a directory in the `./tests` directory with the same name as the template file but replace `.textfsm` file extension with `.yml`. The raw text file and the parsed text file should be in the same directory.
+        **ex. ./tests/cisco_ios/show_clock/**
+        
+        There are available helpers to create the parsed file in the correct format (See _Development Helper Scripts_ below).
+        
+        An example of the proper format is shown below:
+        ```bash
+        $ cat ./tests/cisco_ios/show_clock/cisco_ios_show_clock.yml
+        ---
+        parsed_sample:
+          - time: "18:57:38.347"
+            timezone: "UTC"
+            dayweek: "Mon"
+            month: "Oct"
+            day: "19"
+            year: "2015"
+        $ 
+        ```
+        
+        Multiple `raw` and `parsed` files are supported per directory, and are encouraged, as there are differences depending on version, length, etc. Additional test files and more real life data helps ensure backwards compatibility is maintained as each template is updated and merged into the repo.
+        
+        All YAML files must adhere to the YAML standards defined in the `.yamllint` file in the root directory. Yamllint provides thorough documentation of their configuration settings [here](https://yamllint.readthedocs.io/en/stable/rules.html). 
+        
+        ##### Development Helper Scripts
+        
+        A cli utility is provided to assist with properly building the parsed files. This utility depends on some packages listed in the dev install requirements; see _Install and Usage_ for directions on installing the dev requirements. All arguments that can be passed to the script are mutually exclusive (i.e. you can only pass one argument). The file can be made executable with the `chmod +x development_scripts.py` command. The arguments are:
+        
+          * `-y`: Takes the path to a YAML file and ensures that the file adheres to the .yamllint settings
+          * `-yd`: Takes a glob path to a directory or directories that will ensure all files ending in `.yml` adhere to the .yamllint settings
+          * `-c`: Takes the path to a `.raw` file, and generates the parsed data and saves the results adjacent to the `.raw` file following the defined standards in .yamllint.
+          * `-cd`: Takes a glob path to a directory or directories containing `.raw` files, and creates the appropriate parsed files in the appropriate directory.
+        
+          The `-y` and `-yd` arguments are designed to allow developers to generate the expected parsed file how they want, and ensure that the formatting adheres to the defined standard for this project.
+        
+          The `-c` and `-cd` arguments use `lib.ntc_templates.parse.parse_output()` to generate the parsed data; this means that you can use these arguments to auto-generate the test `.yml` file(s) for new templates; just be sure that the template's parsing behavior meets expectations. In order for the data to be parsed, the template must be placed in `templates/` and the `templates/index` file must be updated to correctly point to the template file(s).
+        
+        ```bash
+        $ ./development_scripts.py -yd tests/cisco_ios/show_mac-address-table
+        tests/cisco_ios/show_mac-address-table/cisco_ios_show_mac-address-table2.yml
+        tests/cisco_ios/show_mac-address-table/cisco_ios_show_mac-address-table3.yml
+        tests/cisco_ios/show_mac-address-table/cisco_ios_show_mac-address-table5.yml
+        tests/cisco_ios/show_mac-address-table/cisco_ios_show_mac-address-table4.yml
+        tests/cisco_ios/show_mac-address-table/cisco_ios_show_mac-address-table.yml
+        $
+        $ ls tests/arista_eos/show_version/
+        arista_eos_show_version.raw
+        $
+        $ ./development_scripts.py -c tests/arista_eos/show_version/arista_eos_show_version.txt
+        $ ls tests/arista_eos/show_version/
+        arista_eos_show_version.raw   arista_eos_show_version.yml
+        $
+        ```
+        
+        ### Updating/Fixing Existing Templates
+        When either fixing a bug within a template or adding additional **Values** to be captured, additional test files should be added to ensure backwards compatibility and that the new data is being parsed correctly.
+        
+        To add additional raw/parsed tests for a command:
+        - Navigate to `./tests/{{ vendor_os }}/{{ command_name }}/`
+        - Create new `.raw` and `.yml` files within the directory, preferrably with a name identifying why the data is unique:
+          * Existing raw: `./tests/cisco_ios/show_version/cisco_ios_show_version.raw`
+          * New raw: `./tests/cisco_ios/show_version/cisco_ios_show_version_stack_platforms.raw`
+          * Existing parsed: `./tests/cisco_ios/show_version/cisco_ios_show_version.yml`
+          * New parsed: `./tests/cisco_ios/show_version/cisco_ios_show_version_stack_platforms.yml`
+        
+        #### Testing
+        You can test your changes locally within your Git branch before submitting a PR. If you do not have **tox** already installed, you can do that using pip or your systems package manager. Tox should be ran inside the **ntc-templates** root directory. The tox file is configured to run against python3.6,python3.7, and python3.8, if none/some of those python versions are unavailable **tox** will skip them. The tox.ini file can be updated with an available Python version.
+        ```bash
+        $ tox
+        GLOB sdist-make: /home/travis/build/networktocode/ntc-templates/setup.py
+        py36 create: /home/travis/build/networktocode/ntc-templates/.tox/py36
+        py36 inst: /home/travis/build/networktocode/ntc-templates/.tox/.tmp/package/1/ntc_templates-1.6.0.zip
+        py36 installed: appdirs==1.4.4,attrs==20.3.0,black==20.8b1,click==7.1.2,dataclasses==0.8,future==0.18.2,importlib-metadata==3.7.0,iniconfig==1.1.1,mypy-extensions==0.4.3,ntc-templates==1.6.0,packaging==20.9,pathspec==0.8.1,pluggy==0.13.1,py==1.10.0,pyparsing==2.4.7,pytest==6.2.2,PyYAML==5.4.1,regex==2020.11.13,ruamel.yaml==0.16.12,ruamel.yaml.clib==0.2.2,six==1.15.0,textfsm==1.1.0,toml==0.10.2,typed-ast==1.4.2,typing-extensions==3.7.4.3,yamllint==1.26.0,zipp==3.4.0
+        py36 run-test-pre: PYTHONHASHSEED='4147443973'
+        py36 run-test: commands[0] | black ./ --diff --check
+        All done! ✨ 🍰 ✨
+        9 files would be left unchanged.
+        py36 run-test: commands[1] | yamllint tests/
+        py36 run-test: commands[2] | pytest -vv
+        ============================= test session starts ==============================
+        platform linux -- Python 3.6.7, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /home/travis/build/networktocode/ntc-templates/.tox/py36/bin/python
+        cachedir: .tox/py36/.pytest_cache
+        rootdir: /home/travis/build/networktocode/ntc-templates
+        collected 1065 items                                                           
+        
+        tests/test_development_scripts.py::test_ensure_spacing_for_multiline_comment PASSED [  0%]
+        tests/test_development_scripts.py::test_ensure_space_after_octothorpe PASSED [  0%]
+        tests/test_development_scripts.py::test_ensure_space_comments PASSED     [  0%]
+        tests/test_development_scripts.py::test_update_yaml_comments PASSED      [  0%]
+        tests/test_development_scripts.py::test_transform_file PASSED            [  0%]
+        tests/test_testcases_exists.py::test_verify_parsed_and_reference_data_exists[tests/yamaha/show_environment] PASSED [ 99%]
+        tests/test_testcases_exists.py::test_verify_parsed_and_reference_data_exists[tests/yamaha/show_ip_route] PASSED [100%]
+        
+        ============================ 1065 passed in 22.59s =============================
+        py37 create: /home/travis/build/networktocode/ntc-templates/.tox/py37
+        SKIPPED: InterpreterNotFound: python3.7
+        py38 create: /home/travis/build/networktocode/ntc-templates/.tox/py38
+        SKIPPED: InterpreterNotFound: python3.8
+        ___________________________________ summary ____________________________________
+          py36: commands succeeded
+        SKIPPED:  py37: InterpreterNotFound: python3.7
+        SKIPPED:  py38: InterpreterNotFound: python3.8
+          congratulations :)
+        The command "tox" exited with 0.
+        
+        
+        Done. Your build exited with 0.
+        $
+        ```
+        
+        Questions
+        ---------
+        
+        For any questions or comments, please feel free to swing by the [networktocode slack channel](https://networktocode.slack.com).
+        
+        Sign up [here](http://slack.networktocode.com/)
+        
+        CHANGELOG
+        ---------
+        
+        Changelog should be generated using [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)
+        
+        FAQ
+        ---
+        
+        From an outsiders view, some design choices, requirements, and testing procedures can seem arbitrary. The following list of FAQ is intended to 
+        help provide context and better guide users and contributors of ntc-templates.
+        
+        _Why is there a requirement to use `Error` in every template?_
+        
+        Ensuring that the textfsm template can account for every line is the only method to ensure that data was not accidentally missed. Take the following example. Initially we account for status to be:
+        
+        `Value STATUS (up|down)`
+        
+        Given the result of:
+        ```
+        Interface                      Status         Protocol Description
+        Gi0/0/1                        admin down     down
+        Gi0/0/2                        up             up       ISP Connection
+        Gi0/0/3                        down           down
+        ```
+        
+        The output would miss the G0/0/1 interface, since the `STATUS` of `admin down` not known. If this was a low percentage use case, it can go 
+        undetected, and result in incorrect information being returned. Instead, by ensuring that we fail fast, an `Error` is raised and hopefully 
+        GitHub Issue is put in. 
+        
+        _Then why isn't `Error` used in all templates?_
+        
+        Initially the controls were not as strong, so many templates were put in until issues like the previous became an issue.
+        
+        _Does the project support requests for additional templates or additional data in an existing template?_
+        
+        We are no longer considering additional template requests at this time. The project has existed for over 5 years (initially within ntc-ansible)
+        and nearly 200 template at this point any additional requests are essentially edge use cases. Meaning, for five years of usage, no one else 
+        has asked for this feature. There is a limited maintainers who primarily use their free time to maintain the project.
+        
+        _Are you open to adding maintainers to the project?_
+        
+        Yes, we would consider giving a proven member of the project and community maintainer rights. Please inquiry emailing info@networktocode.com.
+        
+        _I simply want to add my template to the project, I do not want to add all of these tests and controls, can I just do so?_
+        
+        Short answer no, from an outsiders point of view the contributor requirements may seem overly complex, however features added by engineers 
+        rarely come back to support them. The burden of support is on the maintainers and a certain level of quality assurance is required for that to 
+        happen. That includes updating the index file appropriately and adding proper raw and expected value files.
+        
+        _Why don't you grab all of the data in the template?_
+        
+        There is no intention for ntc-templates to become feature complete, some of the data is less interesting, or can be better understood from 
+        other commands. This is actually an area where the project chose to be loose, as we do not want to over-burden the contributor. If you feel 
+        that the additional data should be added, you are welcome to add the feature, but it would not be considered a bug, and thus not supported by 
+        the maintainers of the this project.
+        
+        _Why does the index order matter?_
+        
+        The "greediness" of the template match ensures that there longest matches first. For example, if `show ip ospf` was above `show ip ospf database`, the `show ip ospf` template would be used in both cases. The additional steps are because of general programmatic hygiene.
+        
+        _Will you accept my template if I create it?_
+        
+        In most cases, yes. However, there are a few edge cases. For example if requesting to add a `show cdp neighbors` when there is already a `show cdp neighbors details` template created. That is additional complexity added to the project with little value.
+        
+        _Why was my issue closed?_
+        
+        The most likely reasons are:
+        
+        * Did not follow the Issue creation template.
+        * Did not provide the data required to act upon the request.
+        * A prolonged time with no response.  
+        
+        _What is meant that this is a parsing project, not a data modeling project?_
+        
+        The project intends to parse, meaning post processing is assumed in order to normalize the data. This project does not intend to solve that 
+        problem set. This is often noted in keys being different between the same command on multiple OS's. This was not intentional as at first there was not strict enforcement. That being said, there is no intention to retrofit this use case for the above stated reasons. This use case is 
+        best handled in post processing.
+        
+        _I have never submitted a Pull Request before, how do I do so?_
+        
+        This is outside the scope of this project, but this [video](https://www.youtube.com/watch?v=rgbCcBNZcdQ) should provide the instructions on 
+        how to do so.
+        
+        _Does this work on windows?_
+        
+        Based on this [PR](https://github.com/networktocode/ntc-templates/pull/672) it should, however this is not a supported option. We are willing 
+        to take in qualified Pull Requests to have the feature, but have no intention of actively supporting.
+        
+        _Can you provide general guidance?_
+        
+        This is best handled via real time communication. Feel free to join our slack community (sign up information above) and reach out on the #networktocode channel. Please be aware of timezones, downtimes, and help is performed based on goodwill and timing, and not guaranteed.
+        
+        
+        # Changelog
+        
+        ## [1.7.0](https://github.com/networktocode/ntc-templates/tree/1.5.0) (2021-03-11)
+        
+        [Full Changelog](https://github.com/networktocode/ntc-templates/compare/v1.6.0...1.7.0)
+        
+        **Implemented enhancements:**
+        
+        - Potential naming inconsistencies between ntc-templates and netmiko for fortinet devices [\#534](https://github.com/networktocode/ntc-templates/issues/534)
+        
+        **Closed issues:**
+        
+        - arista\_eos\_show\_interfaces incomplete [\#887](https://github.com/networktocode/ntc-templates/issues/887)
+        - cisco\_wlc\_ssh\_show\_wlan\_sum update - make PMIP\_MOBILITY optional [\#871](https://github.com/networktocode/ntc-templates/issues/871)
+        - cisco\_nxos\_show\_ip\_route errors out on Route Not Found [\#869](https://github.com/networktocode/ntc-templates/issues/869)
+        - cisco\_ios\_show\_interfaces\_description.textfsm fails to parse [\#866](https://github.com/networktocode/ntc-templates/issues/866)
+        - Having trouble with textfsm [\#858](https://github.com/networktocode/ntc-templates/issues/858)
+        - cisco\_nxos\_show\_ip\_arp\_detail.textfsm fails to parse Age field \(Age results are of form 00:14:15 AND 0.732312\) [\#851](https://github.com/networktocode/ntc-templates/issues/851)
+        - arista\_eos\_show\_interfaces\_status parse failures [\#834](https://github.com/networktocode/ntc-templates/issues/834)
+        - cisco\_ios\_show\_mac-address-table support for pvlans [\#830](https://github.com/networktocode/ntc-templates/issues/830)
+        - Don’t work when parse output of “show fc zone” for Dell s5000 [\#825](https://github.com/networktocode/ntc-templates/issues/825)
+        - update nxos show interface to capture discards [\#819](https://github.com/networktocode/ntc-templates/issues/819)
+        - change key names to match ios template [\#816](https://github.com/networktocode/ntc-templates/issues/816)
+        - cisco\_nxos\_show\_environment return an empty list [\#790](https://github.com/networktocode/ntc-templates/issues/790)
+        - cisco show sip-ua register  status [\#787](https://github.com/networktocode/ntc-templates/issues/787)
+        - Issue with cisco\_ios\_show\_vrf.textfsm template [\#786](https://github.com/networktocode/ntc-templates/issues/786)
+        - version of OS can differ o/p, how to handle such cases [\#782](https://github.com/networktocode/ntc-templates/issues/782)
+        - NXSOS SHOW\_INVENTORY ALL [\#778](https://github.com/networktocode/ntc-templates/issues/778)
+        - ISSUE with show bgp neighboor template IOS XR [\#746](https://github.com/networktocode/ntc-templates/issues/746)
+        
+        **Merged pull requests:**
+        
+        - new alcatel\_sros tmpl, 'show service sdp' [\#886](https://github.com/networktocode/ntc-templates/pull/886) ([h4ndzdatm0ld](https://github.com/h4ndzdatm0ld))
+        - New Template: alcatel\_sros\_show\_router\_rsvp\_interface [\#884](https://github.com/networktocode/ntc-templates/pull/884) ([h4ndzdatm0ld](https://github.com/h4ndzdatm0ld))
+        - \#784-cisco\_asa\_show\_running-config\_all\_crypto\_map.textfsm [\#883](https://github.com/networktocode/ntc-templates/pull/883) ([diepes](https://github.com/diepes))
+        - New template: cisco\_ios\_show\_alert\_counters.textfsm [\#881](https://github.com/networktocode/ntc-templates/pull/881) ([FragmentedPacket](https://github.com/FragmentedPacket))
+        - Bugfix: Media type update for cisco\_ios\_show\_interfaces [\#879](https://github.com/networktocode/ntc-templates/pull/879) ([FragmentedPacket](https://github.com/FragmentedPacket))
+        - new sros template [\#877](https://github.com/networktocode/ntc-templates/pull/877) ([h4ndzdatm0ld](https://github.com/h4ndzdatm0ld))
+        - cisco\_wlc\_ssh\_show\_wlan\_sum update - make PMIP\_MOBILITY optional [\#872](https://github.com/networktocode/ntc-templates/pull/872) ([progala](https://github.com/progala))
+        - Fixs \#869 cisco nxos show ip route not found [\#870](https://github.com/networktocode/ntc-templates/pull/870) ([diepes](https://github.com/diepes))
+        - Fix readme [\#868](https://github.com/networktocode/ntc-templates/pull/868) ([jeffkala](https://github.com/jeffkala))
+        - add test security-policy-match to palo alto [\#867](https://github.com/networktocode/ntc-templates/pull/867) ([jeffkala](https://github.com/jeffkala))
+        - New template: yamaha [\#865](https://github.com/networktocode/ntc-templates/pull/865) ([akira6592](https://github.com/akira6592))
+        - Add Environment Variable Option for Custom Template Location [\#863](https://github.com/networktocode/ntc-templates/pull/863) ([jeffkala](https://github.com/jeffkala))
+        - New Template: hp\_procurve\_show\_port-security [\#862](https://github.com/networktocode/ntc-templates/pull/862) ([adraf82](https://github.com/adraf82))
+        - Adding in/out route-map parsing to cisco ios show ip bgp nei template [\#861](https://github.com/networktocode/ntc-templates/pull/861) ([nnaukwal](https://github.com/nnaukwal))
+        - Fortinet updates [\#860](https://github.com/networktocode/ntc-templates/pull/860) ([refriedjello](https://github.com/refriedjello))
+        - Fixes \#851 and add new template  [\#857](https://github.com/networktocode/ntc-templates/pull/857) ([diepes](https://github.com/diepes))
+        - New Templates: Cisco IOS show vrrp brief and all [\#856](https://github.com/networktocode/ntc-templates/pull/856) ([mjbear](https://github.com/mjbear))
+        - Adding new templates for show \(radius|tacacs\) summary output [\#855](https://github.com/networktocode/ntc-templates/pull/855) ([mjbear](https://github.com/mjbear))
+        - New Template: Cisco WLC show port summary and show stats port summary [\#854](https://github.com/networktocode/ntc-templates/pull/854) ([mjbear](https://github.com/mjbear))
+        - New Template: Cisco WLC show time \(for time and NTP information\) [\#853](https://github.com/networktocode/ntc-templates/pull/853) ([mjbear](https://github.com/mjbear))
+        - New Template - cisco\_ios\_show\_object-group [\#850](https://github.com/networktocode/ntc-templates/pull/850) ([pkomissarov](https://github.com/pkomissarov))
+        - cisco\_nxos\_show\_ip\_bgp\_summary\_vrf update to support 32-bits ASN outputs [\#849](https://github.com/networktocode/ntc-templates/pull/849) ([burningnode](https://github.com/burningnode))
+        - New Template: Cisco WLC show mobility anchor [\#847](https://github.com/networktocode/ntc-templates/pull/847) ([mjbear](https://github.com/mjbear))
+        - New Template: Cisco WLC show redundancy summary and detail [\#846](https://github.com/networktocode/ntc-templates/pull/846) ([mjbear](https://github.com/mjbear))
+        - Fixes \#773 CiscoASA-show\_vpn-sessiondb\_SW\_update [\#845](https://github.com/networktocode/ntc-templates/pull/845) ([diepes](https://github.com/diepes))
+        - Fixes\#811 arista eos show ip route [\#843](https://github.com/networktocode/ntc-templates/pull/843) ([diepes](https://github.com/diepes))
+        - updated template and added test file [\#842](https://github.com/networktocode/ntc-templates/pull/842) ([adraf82](https://github.com/adraf82))
+        - Fix\#784 new:  cisco asa show running all cryprom map [\#840](https://github.com/networktocode/ntc-templates/pull/840) ([diepes](https://github.com/diepes))
+        - Fix\#788 ios show int fc [\#839](https://github.com/networktocode/ntc-templates/pull/839) ([diepes](https://github.com/diepes))
+        - Fixes \#790 - new template cisco\_nxos\_show\_environment.textfsm  [\#838](https://github.com/networktocode/ntc-templates/pull/838) ([diepes](https://github.com/diepes))
+        - Add codeowners file [\#837](https://github.com/networktocode/ntc-templates/pull/837) ([jmcgill298](https://github.com/jmcgill298))
+        - Enhancment: EOS show int status - account for LAG members [\#835](https://github.com/networktocode/ntc-templates/pull/835) ([jmcgill298](https://github.com/jmcgill298))
+        - update Cisco IOS show tacacs template to support parsing of server name in newer configurations [\#833](https://github.com/networktocode/ntc-templates/pull/833) ([anirudhkamath](https://github.com/anirudhkamath))
+        - added fortinet get system arp [\#832](https://github.com/networktocode/ntc-templates/pull/832) ([wmclendon](https://github.com/wmclendon))
+        - Enhancement: Change fortinet\_fortios to fortinet per Netmiko [\#831](https://github.com/networktocode/ntc-templates/pull/831) ([jmcgill298](https://github.com/jmcgill298))
+        - New Template: hp\_procurve\_show\_interfaces\_brief.textfsm [\#829](https://github.com/networktocode/ntc-templates/pull/829) ([adraf82](https://github.com/adraf82))
+        - New template: Vyatta/VyOS BGP summary [\#828](https://github.com/networktocode/ntc-templates/pull/828) ([jpbede](https://github.com/jpbede))
+        - New template: dell\_powerconnect [\#827](https://github.com/networktocode/ntc-templates/pull/827) ([nidebr](https://github.com/nidebr))
+        - Some sros commands [\#824](https://github.com/networktocode/ntc-templates/pull/824) ([kvlangenhove](https://github.com/kvlangenhove))
+        - updated hp\_procurve\_show\_interfaces template for backward compatibility [\#823](https://github.com/networktocode/ntc-templates/pull/823) ([adraf82](https://github.com/adraf82))
+        - New template: arista\_eos\_show\_interfaces\_description [\#822](https://github.com/networktocode/ntc-templates/pull/822) ([rich-day](https://github.com/rich-day))
+        - Bugfix: issues with cisco\_nxos\_show\_ip\_dhcp\_relay\_address [\#821](https://github.com/networktocode/ntc-templates/pull/821) ([wvandeun](https://github.com/wvandeun))
+        - Bugfix: URL ACL property in cisco\_wlc\_ssh\_show\_interface\_detailed [\#820](https://github.com/networktocode/ntc-templates/pull/820) ([wvandeun](https://github.com/wvandeun))
+        - Bugfix: added 'Autostate exclude' to avoid error [\#818](https://github.com/networktocode/ntc-templates/pull/818) ([abaretta](https://github.com/abaretta))
+        - fix unconfigured DHCP issue in cisco\_wlc\_ssh\_show\_interface\_detailed [\#817](https://github.com/networktocode/ntc-templates/pull/817) ([wvandeun](https://github.com/wvandeun))
+        - cisco\_nxos show version - extract serial from "Processor board ID" [\#813](https://github.com/networktocode/ntc-templates/pull/813) ([diepes](https://github.com/diepes))
+        - Bugfix: cisco ios show ip access-list [\#809](https://github.com/networktocode/ntc-templates/pull/809) ([jpobeda](https://github.com/jpobeda))
+        - Bugfix: IOS show lldp neig - fix neighbor name with spaces [\#799](https://github.com/networktocode/ntc-templates/pull/799) ([realvitya](https://github.com/realvitya))
+        
+        ## [v1.6.0](https://github.com/networktocode/ntc-templates/tree/v1.6.0) (2020-10-26)
+        
+        [Full Changelog](https://github.com/networktocode/ntc-templates/compare/v1.5.0...v1.6.0)
+        
+        **Implemented enhancements:**
+        
+        - Creation of a Faq [\#716](https://github.com/networktocode/ntc-templates/issues/716)
+        
+        **Closed issues:**
+        
+        - This is not a data modeling project. So is there any data modeling project can work with this? [\#802](https://github.com/networktocode/ntc-templates/issues/802)
+        - Black 20.b0 breaks tox test [\#794](https://github.com/networktocode/ntc-templates/issues/794)
+        - Unable to Parse show version on IOSv Device [\#780](https://github.com/networktocode/ntc-templates/issues/780)
+        - TXTFSM will not process template even though Regex checker  says line is acceptable for ciena SAOS [\#779](https://github.com/networktocode/ntc-templates/issues/779)
+        - cisco\_nxos\_show\_ip\_bgp\_summary.textfsm doesn't account for dual line bgp when output is too wide [\#766](https://github.com/networktocode/ntc-templates/issues/766)
+        - arista eos show mac address-table is choking on case sensitivity on line Total Mac Addresses for this criterion: 0 [\#764](https://github.com/networktocode/ntc-templates/issues/764)
+        
+        **Merged pull requests:**
+        
+        - Bugfix: ASA show interface - missing case handled for no values for duplex & speed [\#815](https://github.com/networktocode/ntc-templates/pull/815) ([starlightdreamer](https://github.com/starlightdreamer))
+        - Linux arp a [\#814](https://github.com/networktocode/ntc-templates/pull/814) ([jifox](https://github.com/jifox))
+        - add template and tests for cisco\_wlc\_ssh\_show\_interface\_detailed [\#812](https://github.com/networktocode/ntc-templates/pull/812) ([wvandeun](https://github.com/wvandeun))
+        - fix issue in cisco\_wlc\_ssh\_show\_interface\_summary template [\#810](https://github.com/networktocode/ntc-templates/pull/810) ([wvandeun](https://github.com/wvandeun))
+        - Bugfix: cisco\_ios\_show\_running\_partition\_access\_list [\#808](https://github.com/networktocode/ntc-templates/pull/808) ([jpobeda](https://github.com/jpobeda))
+        - Release 1.6.0 [\#807](https://github.com/networktocode/ntc-templates/pull/807) ([jmcgill298](https://github.com/jmcgill298))
+        - changes tests to import from lib [\#806](https://github.com/networktocode/ntc-templates/pull/806) ([jmcgill298](https://github.com/jmcgill298))
+        - modify for show inventory all. [\#804](https://github.com/networktocode/ntc-templates/pull/804) ([yshu95](https://github.com/yshu95))
+        - Change TextFSM Windows failure to a runtime failure \(instead of an import failure\) [\#803](https://github.com/networktocode/ntc-templates/pull/803) ([ktbyers](https://github.com/ktbyers))
+        - Added juniper\_junos\_show\_lldp\_neighbors [\#797](https://github.com/networktocode/ntc-templates/pull/797) ([qduk](https://github.com/qduk))
+        - New Template - hp\_procurve\_show\_interfaces [\#796](https://github.com/networktocode/ntc-templates/pull/796) ([adraf82](https://github.com/adraf82))
+        - Bugfix: Re-formatted development\_scripts.py and tests/test\_testcases\_… [\#795](https://github.com/networktocode/ntc-templates/pull/795) ([mjuenema](https://github.com/mjuenema))
+        - Fix typos in README.md [\#792](https://github.com/networktocode/ntc-templates/pull/792) ([epryan](https://github.com/epryan))
+        - update arista\_eos\_show\_inventory [\#791](https://github.com/networktocode/ntc-templates/pull/791) ([yshu95](https://github.com/yshu95))
+        - Detect hostname on NX-OS platforms [\#789](https://github.com/networktocode/ntc-templates/pull/789) ([Yakuza-UA](https://github.com/Yakuza-UA))
+        - Cisco ASA show access-list command templates update. [\#783](https://github.com/networktocode/ntc-templates/pull/783) ([HideoYukutake](https://github.com/HideoYukutake))
+        - Updates to include capture on single word, no number model number [\#781](https://github.com/networktocode/ntc-templates/pull/781) ([jvanderaa](https://github.com/jvanderaa))
+        - Bugfix: Account for "powered-up" value in the output of nxos show module [\#774](https://github.com/networktocode/ntc-templates/pull/774) ([mtbutler07](https://github.com/mtbutler07))
+        - Dual line support for Cisco NX-OS 'ip bgp summary' command [\#772](https://github.com/networktocode/ntc-templates/pull/772) ([rtkennedy](https://github.com/rtkennedy))
+        - Arista eos show mac address table [\#765](https://github.com/networktocode/ntc-templates/pull/765) ([JoeyG1973](https://github.com/JoeyG1973))
+        - New Template: cisco\_nxos\_show\_ip\_interface [\#761](https://github.com/networktocode/ntc-templates/pull/761) ([network-dave](https://github.com/network-dave))
+        - New Template: cisco\_nxos\_show\_hsrp\_all [\#760](https://github.com/networktocode/ntc-templates/pull/760) ([network-dave](https://github.com/network-dave))
+        - New Template: cisco\_nxos\_show\_license\_usage [\#759](https://github.com/networktocode/ntc-templates/pull/759) ([network-dave](https://github.com/network-dave))
+        - New Template: cisco\_nxos\_show\_interface\_description [\#758](https://github.com/networktocode/ntc-templates/pull/758) ([network-dave](https://github.com/network-dave))
+        - Fixes \#716 [\#753](https://github.com/networktocode/ntc-templates/pull/753) ([itdependsnetworks](https://github.com/itdependsnetworks))
+        
+        ## [v1.5.0](https://github.com/networktocode/ntc-templates/tree/v1.5.0) (2020-06-15)
+        
+        [Full Changelog](https://github.com/networktocode/ntc-templates/compare/v1.4.2...v1.5.0)
+        
+        **Implemented enhancements:**
+        
+        - Broadcom ICOS/Fastpath Support? [\#726](https://github.com/networktocode/ntc-templates/issues/726)
+        
+        **Fixed bugs:**
+        
+        - Cisco IOS show cdp neighbors issue [\#727](https://github.com/networktocode/ntc-templates/issues/727)
+        - Cisco IOS Show Interface Switchport does not parse multi-line VLAN Trunks [\#642](https://github.com/networktocode/ntc-templates/issues/642)
+        - Cisco ASA Show interface does not catch unnamed interfaces [\#627](https://github.com/networktocode/ntc-templates/issues/627)
+        - Fixes missing interfaces on down interfaces [\#734](https://github.com/networktocode/ntc-templates/pull/734) ([jvanderaa](https://github.com/jvanderaa))
+        
+        **Closed issues:**
+        
+        - Cisco ASA "show vpn-sessiondb anyconnect" parser doesn't support IPv6 addresses [\#751](https://github.com/networktocode/ntc-templates/issues/751)
+        - failing testsuite [\#743](https://github.com/networktocode/ntc-templates/issues/743)
+        - I would like to contribute the PR for adding new cisco\_wlc\_ssh\_show\_ap\_image\_all [\#739](https://github.com/networktocode/ntc-templates/issues/739)
+        - Template help for multiple states [\#737](https://github.com/networktocode/ntc-templates/issues/737)
+        - textfsm.parser.TextFSMError: State Error raised. Rule Line: 15. Input Line: show ip arp [\#686](https://github.com/networktocode/ntc-templates/issues/686)
+        - Arista eos - sh ip bgp summ vrf all and sh ip route vrf all template [\#666](https://github.com/networktocode/ntc-templates/issues/666)
+        - Template Creation Help: cisco\_xr\_admin\_show\_environment\_power to get power supply, voltage and current   [\#648](https://github.com/networktocode/ntc-templates/issues/648)
+        - New template: hp\_comware\_display\_interface\_textFSM [\#634](https://github.com/networktocode/ntc-templates/issues/634)
+        - cisco\_asa\_show\_failover\_state [\#546](https://github.com/networktocode/ntc-templates/issues/546)
+        
+        **Merged pull requests:**
+        
+        - Bumping to version 1.5.0 [\#763](https://github.com/networktocode/ntc-templates/pull/763) ([FragmentedPacket](https://github.com/FragmentedPacket))
+        - Arista eos show port channel summary [\#757](https://github.com/networktocode/ntc-templates/pull/757) ([JoeyG1973](https://github.com/JoeyG1973))
+        - Arista eos show mac address table [\#756](https://github.com/networktocode/ntc-templates/pull/756) ([JoeyG1973](https://github.com/JoeyG1973))
+        - Template correction for broadcom\_icos\_show\_mac-address-table [\#754](https://github.com/networktocode/ntc-templates/pull/754) ([alepodj](https://github.com/alepodj))
+        - Fixes \#751 - IPv6 support for Cisco ASA 'show vpn-sessiondb anyconnect' [\#752](https://github.com/networktocode/ntc-templates/pull/752) ([smfeldman](https://github.com/smfeldman))
+        - New Template added support for broadcom\_icos\_show\_vlan\_brief [\#750](https://github.com/networktocode/ntc-templates/pull/750) ([alepodj](https://github.com/alepodj))
+        - New Template added support for broadcom\_icos\_show\_lldp\_remote-device\_all [\#749](https://github.com/networktocode/ntc-templates/pull/749) ([alepodj](https://github.com/alepodj))
+        - New Template added support for broadcom\_icos\_show\_isdp\_neighbors [\#748](https://github.com/networktocode/ntc-templates/pull/748) ([alepodj](https://github.com/alepodj))
+        - Bugfix: Account for totals - cisco\_ios\_show\_processes\_memory\_sorted.textfsm [\#747](https://github.com/networktocode/ntc-templates/pull/747) ([FragmentedPacket](https://github.com/FragmentedPacket))
+        - Enhancement for Cisco IOS show interfaces [\#745](https://github.com/networktocode/ntc-templates/pull/745) ([Yakuza-UA](https://github.com/Yakuza-UA))
+        - Added interfaces to arista\_eos\_show\_vrf template [\#744](https://github.com/networktocode/ntc-templates/pull/744) ([JoeyG1973](https://github.com/JoeyG1973))
+        - Add new template for cisco\_wlc\_ssh\_sh\_ap\_image\_all [\#742](https://github.com/networktocode/ntc-templates/pull/742) ([conorwu1107](https://github.com/conorwu1107))
+        - Update index to handle cisco\_ios show\_ip\_bgp\_all\_summary [\#738](https://github.com/networktocode/ntc-templates/pull/738) ([Niclnx](https://github.com/Niclnx))
+        - Added support for broadcom\_icos command show\_mac-address-table [\#736](https://github.com/networktocode/ntc-templates/pull/736) ([alepodj](https://github.com/alepodj))
+        - BugFix: IOS CDP - Better handling of output [\#735](https://github.com/networktocode/ntc-templates/pull/735) ([jmcgill298](https://github.com/jmcgill298))
+        - New Template support for broadcom\_icos as a new OS and added show\_version command [\#733](https://github.com/networktocode/ntc-templates/pull/733) ([alepodj](https://github.com/alepodj))
+        - New template for ubiquity edgeswitch: show version [\#732](https://github.com/networktocode/ntc-templates/pull/732) ([saaverdo](https://github.com/saaverdo))
+        - New Template for Cisco NX-OS: show forwarding adjacency [\#722](https://github.com/networktocode/ntc-templates/pull/722) ([Yakuza-UA](https://github.com/Yakuza-UA))
+        - BugFix: cisco\_ios\_show\_interfaces\_switchport: Made trunking\_vlans a list, and changed regex [\#671](https://github.com/networktocode/ntc-templates/pull/671) ([FragmentedPacket](https://github.com/FragmentedPacket))
+        
+        
+        
+        \* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
