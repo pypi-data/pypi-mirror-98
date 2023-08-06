@@ -1,0 +1,3 @@
+[console_scripts]
+dcgan=dcgan.__main__:fire_
+
