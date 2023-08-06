@@ -1,0 +1,10 @@
+tamaas/__init__.py,sha256=0-gvTiFKuBv1_oRaujrTHftZcChu2mbOOZmLdelkHyg,2143
+tamaas/_tamaas.cpython-36m-x86_64-linux-gnu.so,sha256=3unruayh7ZNA4awFU6L6LTaAEtJHni8n0NjEkzOvL0A,5045192
+tamaas/compute.py,sha256=K5obmdDHEbJctFXZUJ7QpZynczWCmHeIrP9wtF7xTbQ,905
+tamaas/dumpers/__init__.py,sha256=mJpXHHtkxTh-mRoG9mooTF8C3geP2U135BX2xETD-c4,12093
+tamaas/dumpers/_helper.py,sha256=1c_Y1EEx4yCmwXFqM7wOj_s197quXtgHm8GjQqWobTw,4080
+tamaas/nonlinear_solvers/__init__.py,sha256=vHu5SBqx_tU4q88ONk38ZUJxegsgguwGEsTlL_ytI4Q,5510
+tamaas-2.2.1.dist-info/RECORD,,
+tamaas-2.2.1.dist-info/WHEEL,sha256=tJqVZ5olJaPNwO-UPVTniZ26hTT3uPcs8E8jrAna5TU,110
+tamaas-2.2.1.dist-info/METADATA,sha256=N4EaMrpSzVq1mR2PyuGdfaQbDGTAJ86tQx7yDub6MmE,3843
+tamaas-2.2.1.dist-info/top_level.txt,sha256=PbD86C6GYTaGxmm46x7ppHw5jGvC-tvULaFLGNB7wC0,7
