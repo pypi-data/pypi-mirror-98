@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+ukritlibrary.egg-info/PKG-INFO
+ukritlibrary.egg-info/SOURCES.txt
+ukritlibrary.egg-info/dependency_links.txt
+ukritlibrary.egg-info/top_level.txt
