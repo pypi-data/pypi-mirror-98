@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: socket-for-humans
+Version: 0.0.3
+Summary: A simplified TCP/IP socket setup suitable for many/most lightweight client server programs. The python standard library `socket` module has a relatively steep learning curve. The `socket_for_humans` module will help get most projects up and running quickly by wrapping the Python standard library socket module in an easy to use interface.
+Home-page: https://gitlab.com/koyaanisqatsi.naqoyqatsi1/socket_for_humans
+Author: koyaanisqatsi.naqoyqatsi@pm.me
+Author-email: koyaanisqatsi.naqoyqatsi@pm.me
+License: MIT
+Keywords: networking,TCP/IP,simplified,client,server,socket
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# socket_for_humans
+A simplified TCP/IP socket setup suitable for many/most lightweight client server programs. The python standard library `socket` module has a relatively steep learning curve. The `socket_for_humans` module will help get most projects up and running quickly by wrapping the Python standard library socket module in an easy to use interface.
+
+socket_for_humans provides two types of objects `Server` and `Connection`. The `Server` object is used to passively listen for new connections, while the `Connection` object is used to actively initiate a connection and thereafter, once a connection is established, for sending and receiving on both sides of the socket communications.
+
+By default the send and receive functions take/return `str` rather than `bytes`, which is probably what most users initially want, if you want bytes then use `str_mode=False` in the object constructors.
+
+`socket_for_humans` is the communications module used in the `simple_gossip` python gossip protocol.
+
+## Usage:
+
+Essential usage follows this pattern:
+
+### Example server code:
+```python
+from socket_for_humans import Server
+
+addr = ('127.0.0.1', 12345)
+my_server = Server(addr)
+while True:
+    msg, conn, addr = my_server.get_next()
+    # msg is the msg recieved by the server.
+    # conn is a Connection instance used to continue send and receive with client
+    # addr is the clients address like (ip, port)
+    if msg:
+        # do whatever you need to do with received msg
+        print(msg)
+        conn.send("here is my reply")
+        msg2 = conn.recv()
+        print(msg2)
+        conn.send("here is my further reply, if you really want to know")
+        # continue to use conn to send and receive until the purpose is satisfied.
+        conn.close()
+```
+### Example client code:
+
+```python
+from socket_for_humans import Connection
+
+addr = ('127.0.0.1', 12345)
+my_client = Connection(addr)
+
+msg = "a question to the server"
+print("Client sending: " + msg)
+my_client.send(msg)
+reply = my_client.recv()
+print("Client received: " + reply)
+
+msg2 = "a further question to the server"
+print("Client sending: " + msg2)
+my_client.send(msg2)
+reply2 = my_client.recv()
+print("Client received: " + reply2)
+# continue to use my_client to send and receive until the purpose is satisfied.
+my_client.close()
+```
+
+See these example files for more usage ideas
+
+Run `examples/example_server.py` and `examples/example_client.py` at the same time on same machine to see a 2-way communication on a socket in just a few lines.
+
+Run `examples/example_server_b.py` and `examples/example_client_b.py` at the same time on same machine to see the same example with binary `bytes` data instead of `str` data.
+
+
+
