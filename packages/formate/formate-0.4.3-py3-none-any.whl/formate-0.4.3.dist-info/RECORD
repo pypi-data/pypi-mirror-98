@@ -1,0 +1,17 @@
+formate/config.py,sha256=n41Z4IvTgcwQ2_ouXPk_KCwdkhUMwoPSgAQN23phvio,3847
+formate/ellipses.py,sha256=a6eQy5eNrdhseGCwahQkOL7MTvT0w6HqJtp1uZm5Pmw,3487
+formate/reformat_generics.py,sha256=JpbqB-TCSgoMsvogF5abgnHnMxxBWEksZrkLzSTle1s,9829
+formate/imports.py,sha256=aMLwFW8-w3HswN5WFlo4DJxG9pm2OEdD8zNl4Gk-9gg,3102
+formate/exceptions.py,sha256=dciqeKfdePKVo8T7DWBRdRYVhmgjq3NmBg-UwkU-oyo,1565
+formate/__main__.py,sha256=QStfCqBxCXG7gy0WC6u7Wq795JOcuu1toBYm9oRvcxE,3693
+formate/utils.py,sha256=Spo3BrtbXF2-05XgTt4yzd0EOn52lEHpSFxwla76S68,5231
+formate/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+formate/__init__.py,sha256=amBNN_qt0wQZQd4th1deDZItRny8mPBzlwn8QF4fq98,8574
+formate/classes.py,sha256=r9A--qT_UoObzJnDyHPQnqOStiYsDJe3pOd8FEPikkE,5259
+formate/mini_hooks.py,sha256=7n5_Ms6ng7LXRRNXV3uuLjasNY7iGFqnkr6kAPtIs3s,6349
+formate/dynamic_quotes.py,sha256=MqWi-MFGPlVSZuWLPvyZMSMXpKEw9-HWaqte5fYfeKU,2945
+formate-0.4.3.dist-info/WHEEL,sha256=mp1yIFRKHFTzLFJ4MT815UdzBlT3qnfk1upvWSXPXJU,83
+formate-0.4.3.dist-info/top_level.txt,sha256=rYFCMuHZcCyT3EtGBXacWUQTO05fDn_L5OSek1zgq0M,8
+formate-0.4.3.dist-info/entry_points.txt,sha256=BpTPBjE6iDxws7Y2-QyC7pDDXIHIbwc4ImqUsf3CSeU,466
+formate-0.4.3.dist-info/METADATA,sha256=HCekKrJtKmz57eRLBNCk-7_h-LaL_qNTRMFG6KX4x6I,6100
+formate-0.4.3.dist-info/LICENSE,sha256=TXanB-tJYmHhByFsynyh-UGwh2VdTVVjbZeFz1utSWc,1064
