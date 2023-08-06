@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: dsne
+Version: 0.1.6
+Summary: DSNE algorithms
+Home-page: https://github.com/songtingstone/dsne
+Maintainer: Songting Shi
+Maintainer-email: songtingstone@gmail.com
+License: Apache License, Version 2.0
+Description: # DSNE
+        Visualizing Data Velocity using DSNE. [Preprint](https://arxiv.org/abs/2103.08509). 
+        Python library containing DSNE algorithms. 
+        ![png](./examples/data/Pancreas/scvelo_pancreas_dsne_umap_stream.png)
+        ## Installation
+        
+        ## Requirements
+        
+        - [cblas](http://www.netlib.org/blas/) or [openblas](https://github.com/xianyi/OpenBLAS).
+        Tested version is v0.2.5 and v0.2.6 (not necessary for OSX).
+        
+        From Github:
+        
+        ```
+        git clone https://github.com/songtingstone/dsne
+        cd dsne/
+        make cleanpackage 
+        ```
+        
+        From PyPI:
+        
+        ```
+        pip install dsne
+        ```
+        
+        From conda:
+        
+        ```
+        conda install -c maxibor dsne
+        ```
+        
+        ## Usage
+        
+        Basic usage:
+        
+        ```python
+        from dsne import DSNE
+        W = DSNE(X,V,Y)
+        ```
+        
+        ### Examples
+        
+        - [Simulation with Exact Velocity Embeddings](https://github.com/songtingstone/dsne/examples/exact_simulation.py)
+        - [Simulation with Approximate Velocity Embeddings](https://github.com/songtingstone/dsne/examples/unexact_simulation.py)
+        - [Pancreas](https://github.com/songtingstone/dsne/examples/Pancreas.py) 
+        ## Algorithms
+        
+        ### DSNE 
+        Direction Stochastic Nearnest Neighbor Embedding of Velocity 
+        
+        
+Keywords: DSNE,algorithms,numpy,cython
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
