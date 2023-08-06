@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+secure_password/__init__.py
+secure_password.egg-info/PKG-INFO
+secure_password.egg-info/SOURCES.txt
+secure_password.egg-info/dependency_links.txt
+secure_password.egg-info/top_level.txt
