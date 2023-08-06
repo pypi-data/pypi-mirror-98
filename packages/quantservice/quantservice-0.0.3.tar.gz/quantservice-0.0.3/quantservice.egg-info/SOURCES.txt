@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+db/__init__.py
+db/db.py
+quantservice.egg-info/PKG-INFO
+quantservice.egg-info/SOURCES.txt
+quantservice.egg-info/dependency_links.txt
+quantservice.egg-info/not-zip-safe
+quantservice.egg-info/requires.txt
+quantservice.egg-info/top_level.txt
+tests/__init__.py
