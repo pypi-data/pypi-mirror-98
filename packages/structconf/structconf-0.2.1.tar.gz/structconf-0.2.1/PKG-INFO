@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: structconf
+Version: 0.2.1
+Summary: struct config using yaml
+Home-page: https://github.com/Green-Wood/structconf
+License: MIT
+Author: Wenqi Zhao
+Author-email: 1027572886a@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.4.1,<6.0.0)
+Requires-Dist: pydantic (>=1.8.1,<2.0.0)
+Project-URL: Repository, https://github.com/Green-Wood/structconf
+Description-Content-Type: text/markdown
+
+# StructConf
+
+[![PyPI](https://img.shields.io/pypi/v/structconf?color=blue)](https://pypi.org/project/structconf/)
+
+
+Config your project with yaml and validation
+
+
