@@ -1,0 +1,13 @@
+mult/__init__.py,sha256=m7ILVWUlTGfW642nGIP2iLihGLXXWdK5Pqipr4wIHwI,212
+mult/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mult/master_test.py,sha256=KcYOkKM1VczlKHWMg18pJ2qSRZk4SU7yPkSEMdXm7Bs,631
+mult/test.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mult/outer_env_test/master.py,sha256=gBknRHM3vyJ_ioNh73-z_tuLpSckRWHaVc72mtdeMXw,345
+mult/outer_env_test/slave.py,sha256=7zAH6XnwduKVRjNEUcSvH2Gg4UDz8yl7l1Y3Bkt_fjk,226
+mult/slave_test/slave_test.py,sha256=f6eLZwJ_CFt8w7gVAOVzs7D75ovtxuv_4mICbduLuR4,550
+mult/src/master.py,sha256=vg224UZbjj9bVqGIz_P0RxC1KgDJEpiWhEZWgLJNzkA,8590
+mult/src/slave.py,sha256=f_qdJFCy747GcbfK6ff9gGcDt40RwmkwH0i7p8VB5eU,1068
+mult-1.0.4.dist-info/METADATA,sha256=A5p0oDoeMrxjasYY9zM-W1Rmfon6L9n0Rdl1w2QmhPs,1717
+mult-1.0.4.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+mult-1.0.4.dist-info/top_level.txt,sha256=Cl0fAm6HweLx1Tk2d6yQEtpyFrZInZl6wFmC6U0kGO4,50
+mult-1.0.4.dist-info/RECORD,,
