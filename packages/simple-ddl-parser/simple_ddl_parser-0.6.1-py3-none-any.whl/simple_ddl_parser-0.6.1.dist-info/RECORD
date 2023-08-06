@@ -1,0 +1,10 @@
+simple_ddl_parser/__init__.py,sha256=PlZ02DBlFxZqGA3ombcknwuAF94hedCpYQqqtrYMFX0,113
+simple_ddl_parser/cli.py,sha256=d0TtafUTvnl7YyvxGE-VwvcLVv183_tyxJ9QnMwiHwQ,1959
+simple_ddl_parser/ddl_parser.py,sha256=IrCJsCBNGeGNCUTTNO2YAZPXk3n3HpYl0wPZDFxrp8k,13525
+simple_ddl_parser/output.py,sha256=KLrGb5h3Wf1AC17Ko4CMgqntqrX6Hvm3NNGOJd2z99I,5722
+simple_ddl_parser/parser.py,sha256=9LuKYmFZK4cAzfjDA2meEKUpv9p2FDjilWmrNL4XszI,2590
+simple_ddl_parser-0.6.1.dist-info/entry_points.txt,sha256=BVUrH1edSC-ZdCGef7tDrovA_5NO4Q2UOk51zBXlK4A,50
+simple_ddl_parser-0.6.1.dist-info/LICENSE,sha256=F7Lnfq5TMUS5ic1Ax7_kRc5hB23kqM61CV6ueLQkkW4,1093
+simple_ddl_parser-0.6.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+simple_ddl_parser-0.6.1.dist-info/METADATA,sha256=sd7mHMCr4dm3axadzwYQMfTUPkx3J5QFTc36kvpVpuA,14292
+simple_ddl_parser-0.6.1.dist-info/RECORD,,
