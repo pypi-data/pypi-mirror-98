@@ -1,0 +1,13 @@
+sqlakeyset/__init__.py,sha256=rco4FMl6_XSTy1N8kUha78m3J9gHvZHZjKZGs4MaBmc,569
+sqlakeyset/columns.py,sha256=dv5ufW0OLliHtCPjyFr3cq6QyvF9iRAYo51tN1TY7vw,14269
+sqlakeyset/paging.py,sha256=0xmAaeUVMKYqspGddEUqpiZttSGcduDkGwHFTQtZDnU,9641
+sqlakeyset/results.py,sha256=dzJoBW4pJmsNzlzMTBILXWEOaUhcs1zWdxHByOIvX-I,6997
+sqlakeyset/serial/__init__.py,sha256=Bh45D0ntTWsIm3-11G4pTxNoHDUMaKCvmLfD2o1L68o,291
+sqlakeyset/serial/serial.py,sha256=1sBUKkB1PElqXxrQa_EBWHDif4z2vHuXwFqgbWUiK1c,4271
+sqlakeyset/sqla.py,sha256=_uo8EgIoGENdYX487senijiOpy-l51a7Xt94a07m6ik,192
+sqlakeyset/sqla13.py,sha256=c5--6nsAOXM6pdNJ_GTQaP_4ftlnvx47K0nYIvN5rN8,2163
+sqlakeyset/sqla14.py,sha256=MK1zkdYJ8DsHDiAsXQFmWrt474dp9MLT6JLSfkGtlPM,1975
+sqlakeyset-1.0.1615859905.dist-info/LICENSE,sha256=iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80,1210
+sqlakeyset-1.0.1615859905.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+sqlakeyset-1.0.1615859905.dist-info/METADATA,sha256=5YtfvTUzfBMxrFQnD6cJS47Pqx3BYd2xAYJ_K2FvgLc,7428
+sqlakeyset-1.0.1615859905.dist-info/RECORD,,
