@@ -1,0 +1,4 @@
+numpy
+scipy
+labbox==0.1.22
+jinjaroot>=0.0.2
