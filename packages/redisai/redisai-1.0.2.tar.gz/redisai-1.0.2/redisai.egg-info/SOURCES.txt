@@ -1,0 +1,15 @@
+README.rst
+setup.py
+redisai/__init__.py
+redisai/client.py
+redisai/command_builder.py
+redisai/dag.py
+redisai/pipeline.py
+redisai/postprocessor.py
+redisai/utils.py
+redisai.egg-info/PKG-INFO
+redisai.egg-info/SOURCES.txt
+redisai.egg-info/dependency_links.txt
+redisai.egg-info/requires.txt
+redisai.egg-info/top_level.txt
+test/test.py
