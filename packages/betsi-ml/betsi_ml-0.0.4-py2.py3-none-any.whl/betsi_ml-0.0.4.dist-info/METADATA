@@ -1,0 +1,269 @@
+Metadata-Version: 2.1
+Name: betsi-ml
+Version: 0.0.4
+Summary: Behaviour Extraction for Time-Series Investigation
+Home-page: https://gitlab.com/deepchaos/betsi
+Author: 
+Author-email: 
+License: LICENSE
+Keywords: machine learning, time series, feature extraction
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: tensorflow (>=2.0)
+
+# betsi
+
+[![pipeline status](https://gitlab.com/librespacefoundation/polaris/betsi/badges/master/pipeline.svg)](https://gitlab.com/librespacefoundation/polaris/betsi/commits/master)
+[![coverage report](https://gitlab.com/librespacefoundation/polaris/betsi/badges/master/coverage.svg)](https://gitlab.com/librespacefoundation/polaris/betsi/commits/master)
+
+---
+
+**B**ehaviour **E**xtraction for **T**ime-**S**eries **I**nvestigation using Deep Learning
+
+Deeplearning module for event detection in time series through behavioural extraction.
+
+---
+
+## What is it all about?
+
+Anomalies are any events outside the nominal behaviour of a system. They are
+sometimes characterised by sudden large swings in the values of a particular
+parameter and sometimes are distributed changes across multiple parameters and
+can be catastrophic to the system. Traditionally, anomalies were detected by
+monitoring each parameter, superimposing the graphs for each sub-system and
+finding "out-of-normal" behaviour manually.
+
+This project aims to implement a state of the art model based on the paper _"Time
+Series Segmentation through Automatic Feature Learning"_ by Lee, Wei-Han, et al.
+to automatically detect anomalies without any manual intervention. To do so, the
+project provides tools to train deep-learning models on Tensorflow and run
+through post-processing "prediction" steps which use the condensed
+representations produced by the deep-learning model to detect change in
+behaviour and further on anomalous events.
+
+The project mainly has three steps which ensure good performance of the anomaly
+detection.
+
+ 1. **Preprocessing**: The input timeseries data (resampled version of some continuous
+data) is first normalized and then grouped into sets of `window_size` timesteps
+separated by a `stride` movement in time. What this essentially does is increase
+the amount of data we have and allow us to capture interactions between continuous
+timesteps.
+
+    Consider a case where you have 11 sensors providing readings. If you
+take a `window_size` of 3, readings at time index 1, 2, and 3 for all 11 sensors
+will be stack in one vector.
+That means that you will have 33 columns at every timestep. If your stride
+is 2, your second group (vector) would start at 1+2=3rd timestep (3, 4, 5),
+third group at 5th timestep (5, 6, 7) and so on.
+
+ 1. **Model**: The model we use to create the concise representation is called an
+autoencoder. An autoencoder is a neural network whose inputs and outputs are
+the exact same values but the intermediate layers gradually reduce the amount
+of information. The input data is compressed to the smallest representation
+possible, at the bottleneck layer, that still permits the following layers to
+reproduce the original input with good fidelity.
+It is essentially a model with an encoder (input -> bottleneck layer) which
+"encodes" the data into a smaller representation and a decoder (bottleneck ->
+output) which "decodes" the encoded representation to get the original data.
+
+ 1. **Predictors**: The predictions from the bottleneck layer are then compared across
+multiple rows (groups of timestamps) with the help of a distance (single value)
+using L2 norm (which calculates the square of difference in values). The group of
+distances are then compared against their average to detect events (possible anomaly).
+A key parameter here is the `threshold` or `noise_margin_per` which defines how much
+above the averge the distance needs to be to be called an event. This helps filter
+out random fluctuations in data (since the distance value is not a constant for all
+nominal cases)
+
+---
+
+## Project Structure
+
+``` BASH
+src/
+    betsi/
+        models.py // To build and train the Tensorflow model
+        predictors.py // To predict/detect anomalies based on the output from the Tensorflow model
+        preprocessors.py // To preprocess the input data through normalization and filtering
+tests/
+    test_models.py // Test for models
+    test_predictors.py // Test for predictors
+    test_preprocessors.py // Test for preprocessors
+```
+
+---
+
+## Installation through pip
+
+``` BASH
+pip install betsi-ml
+```
+
+It is recommended that you install the project in a virtual environment as it
+is still under development.
+
+To create a virtual environment and install in it, run:
+
+``` BASH
+python -m venv .venv
+source .venv/bin/activate
+pythom -m pip install betsi-ml
+```
+
+---
+
+## Installation from source
+
+```bash
+# Clone from source
+$ git clone https://gitlab.com/librespacefoundation/polaris/betsi.git
+
+# Switch to the directory
+$ cd betsi
+
+# Create and switch to a virtual environment
+$ python3 -m venv .venv
+$ source .venv/bin/activate
+
+# To install a non-editable version
+(.venv) $ python3 setup.py install
+
+# To install an editable version
+(.venv) $ python3 -m pip install -e .
+```
+
+---
+
+## Usage
+
+### **Preprocessing the input data**
+
+``` PYTHON
+(.venv) $ python3
+>>> from betsi import models, preprocessors, predictors
+
+# To apply preprocessing on data
+# Step 1: Normalize the data
+>>> normalizer, normalized_data = preprocessors.normalize_all_data(data)
+# Step 2: Convert it to columns using fixed stride and window size
+>>> converted_data = preprocessors.convert_to_column(normalized_data, window_size=3, stride=2)
+```
+
+**A few remarks regarding preprocessing**:
+
+_normalizer_ is an instance of `sklearn transformer`. It has an inverse method, `normalizer.inverse_transform`, used to "un-normalize" the data!
+
+_preprocessors_ also has a `convert_from_column` method to undo the change made by `convert_to_column`.
+
+A combination of these two methods can be used to remove the preprocessing from the data (or from the model predictions) as follows:
+
+``` PYTHON
+# To remove preprocessing from data
+>>> normalized_data = preprocessors.convert_from_column(converted_data, window_size=3, stride=2)
+>>> recovered_data = normalizer.inverse_transform(converted_data)
+```
+
+### **Creating the model**
+
+Before we create a model, we need to decide the structure of the auto-encoder, i.e.
+the layer sizes, activations for each layer.
+
+Since the architecture is symmetric and the number of layers (n) are odd (assumed),
+we only need to specify the layer dims for the first `(n+1)/2` layers.
+
+The activation for the last `n-1` layers (barring the first input layer) need to be
+specified. If the activations are not specified, it is assumed to be ReLU for every
+layer.
+
+This is summed up with a simple diagram:
+
+``` PYTHON
+layer_dims[0]
+    o                            o
+    o    o  layer_dims[-1]  o    o
+    o    o       o          o    o
+    o    o       o          o    o
+    o    o                  o    o
+    o activations[0]             o
+                                activations[-1]
+```
+
+You also need to decide on your optimizer (`"adam"` is preferred), the loss
+(`"mean_squared_error"`) and metrics to monitor (`"[MSE]"`)
+
+The python code (assuming you have the `layer_dims` and `activations` variables
+ready, have preprocessed your data to get `converted_data` and have decided on your
+`optimizer`, `loss` and `metrics`) to create and train the model is as follows:
+
+``` PYTHON
+# ae_model = auto_encoder_model
+# en_model = encoder_model
+# de_model = decoder_model
+# Both the encoder and decoder models are extracted from the autoecoder
+# model and need not be trained separately.
+>>> ae_model, en_model, de_model = models.custom_autoencoder(layer_dims, activations=activations)
+# Compile the model for training
+>>> ae_model.compile(optimizer=optimizer, loss=loss, metrics=metrics)
+>>> en_model.compile(optimizer=optimizer, loss=loss, metrics=metrics)
+>>> de_model.compile(optimizer=optimizer, loss=loss, metrics=metrics)
+
+>>> train_data, test_data = train_test_split(
+        converted_data,
+        test_size=0.33, # 33% of data is for testing
+        shuffle=False, # We disable shuffling since order matters (time)
+    )
+
+# You can also play around with the batch_size and epochs and enable
+# early_stopping based on your needs
+>>> history = ae_model.fit(train_data, train_data, batch_size=32, epochs=20)
+
+# To test the model to check if it has overfit, you can run:
+>>> ae_model.evaluate(test_data, test_data, batch_size=32)
+# This will return the test loss and the metrics which can be compared against
+# the training values for the same
+```
+
+### **Predicting anomalies**
+
+Now that we have our trained model and its input data (along with the normalizer,
+window_size and stride to create new input data whernever we want), we can now
+predict anomalies.
+
+``` PYTHON
+# Step 1: Predict the "bottleneck" layer representation for the input data
+>>> data_rep = encoder_model.predict(test_data)
+
+# Step 2: Measure the distance between consecutive timestamps. This will be
+# the metric to detect anomalies. Distance here refers to the L2 norm.
+>>> distance_list = []
+>>> for row_no in range(data_rep.shape[0] - 1):
+>>>     distance_list.append(
+>>>         distance_measure(data_rep[row_no], data_rep[row_no + 1]))
+
+# Step 3: Detect the events. We have a noise_margin_per variable to say
+# how much (in percentage) should the value be above the average to be
+# considered the event. Try playing around with this to find the best value!
+>>> noise_margin_per = 150 # 2.5 x the average ie 150% more than average
+>>> events = get_events(distance_list, threshold=noise_margin_per)
+# events contains all the indices where events occurred
+```
+
+---
+
+## Reference
+
+This project is based on the paper ‘Time Series Segmentation through Automatic Feature Learning’
+by Lee, Wei-Han, et al.
+
+Refer: ArXiv:1801.05394 [Cs, Stat], Jan. 2018. arXiv.org, <http://arxiv.org/abs/1801.05394>
+
+
