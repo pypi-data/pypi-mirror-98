@@ -1,0 +1,10 @@
+README.md
+setup.py
+Moberg_Analytics_HDF5.egg-info/PKG-INFO
+Moberg_Analytics_HDF5.egg-info/SOURCES.txt
+Moberg_Analytics_HDF5.egg-info/dependency_links.txt
+Moberg_Analytics_HDF5.egg-info/requires.txt
+Moberg_Analytics_HDF5.egg-info/top_level.txt
+moberg_analytics_hdf5/__init__.py
+moberg_analytics_hdf5/hdf5_exceptions.py
+moberg_analytics_hdf5/moberg_hdf5.py
