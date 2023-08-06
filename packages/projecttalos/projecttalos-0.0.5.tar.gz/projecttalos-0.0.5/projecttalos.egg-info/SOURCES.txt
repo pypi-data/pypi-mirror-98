@@ -1,0 +1,38 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+__pycache__/setup.cpython-39.pyc
+projecttalos/__init__.py
+projecttalos/data_preprocessing.py
+projecttalos/models.py
+projecttalos.egg-info/PKG-INFO
+projecttalos.egg-info/SOURCES.txt
+projecttalos.egg-info/dependency_links.txt
+projecttalos.egg-info/requires.txt
+projecttalos.egg-info/top_level.txt
+projecttalos/nn_funcs/__init__.py
+projecttalos/nn_funcs/activation_functions.py
+projecttalos/nn_funcs/backward_prop.py
+projecttalos/nn_funcs/forward_prop.py
+projecttalos/nn_funcs/test.py
+test0/images (1).jpg
+test0/images (2).jpg
+test0/images (3).jpg
+test0/images.jpg
+test0/indir (1).jpg
+test0/indir (10).jpg
+test0/indir (2).jpg
+test0/indir.jpg
+test1/images (1).jpg
+test1/images.jpg
+test1/indir (1).jpg
+test1/indir (2).jpg
+test1/indir (3).jpg
+test1/indir (4).jpg
+test1/indir (5).jpg
+test1/indir (6).jpg
+test1/indir (7).jpg
+test1/indir (8).jpg
+test1/indir (9).jpg
+test1/indir.jpg
