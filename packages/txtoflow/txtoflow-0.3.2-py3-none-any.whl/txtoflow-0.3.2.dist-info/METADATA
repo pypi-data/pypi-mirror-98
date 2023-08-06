@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: txtoflow
+Version: 0.3.2
+Summary: Library to generate flowcharts from pseudo code
+Home-page: https://krishkasula.gitlab.io/txtoflow/index.html
+Author: Krishna
+Author-email: krishna.vijay4444@gmail.com
+License: MIT License
+Keywords: automatic flowchart,code2flow,text2flow,text to flowchart,txtoflow
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+Requires-Dist: pygraphviz
+Requires-Dist: sly
+
+.. image:: https://gitlab.com/krishkasula/txtoflow/badges/master/pipeline.svg?style=flat-square
+.. image:: https://img.shields.io/pypi/dm/txtoflow?label=downloads%20%28no%20mirrors%29&style=flat-square
+.. image:: https://img.shields.io/pypi/dw/txtoflow?label=&style=flat-square
+.. image:: https://img.shields.io/pypi/dd/txtoflow?label=&style=flat-square
+
+Tx To Flow
+----------
+
+Translate To Flowchart
+
+* Documentation is available `here <https://krishvk.gitlab.io/txtoflow/index.html>`_
+* `txtoflow <https://gitlab.com/krishkasula/txtoflow>`_ is available on `PyPi <https://pypi.org/project/txtoflow/>`_
+
+Installation
+============
+
+.. code::
+
+    pip install txtoflow
+
