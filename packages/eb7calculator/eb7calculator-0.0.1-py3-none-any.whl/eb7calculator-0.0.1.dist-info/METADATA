@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: eb7calculator
+Version: 0.0.1
+Summary: A simple calculator
+Home-page: https://github.com/birnesh/eb7calculator
+Author: Birnesh Eswaramoorthy
+Author-email: birnesh1996@gmail.com
+License: MIT
+Keywords: python,calc,calculator,cal,simple,basic
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# This is a basic calculator
+It can be used to add , subtract , multiple, divide two integers
+
+## Installation
+```
+pip3 install eb7calculator
+```
+
+## Import
+
+```python
+from eb7calculator import calculator as calc
+
+# or
+
+from eb7calculator.calculator import add, sub, mul, div
+
+```
+
+## usage
+```python
+from eb7calculator import calculator as calc
+
+calc.add(1,2)
+# output:3
+
+calc.sub(2,1)
+# output:1
+
+calc.mul(10,2)
+# outout:20
+
+calc.div(10,5)
+# output:2.0
+```
+
+
