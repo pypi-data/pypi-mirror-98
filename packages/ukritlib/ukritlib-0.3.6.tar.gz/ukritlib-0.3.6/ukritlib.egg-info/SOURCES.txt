@@ -1,0 +1,13 @@
+README.md
+setup.py
+data/__init__.py
+data/_version.py
+data/function1.py
+data/function2.py
+data/tests/__init__.py
+data/tests/test_joke.py
+ukritlib.egg-info/PKG-INFO
+ukritlib.egg-info/SOURCES.txt
+ukritlib.egg-info/dependency_links.txt
+ukritlib.egg-info/not-zip-safe
+ukritlib.egg-info/top_level.txt
