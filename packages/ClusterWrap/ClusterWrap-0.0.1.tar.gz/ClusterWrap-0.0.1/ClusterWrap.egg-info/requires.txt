@@ -1,0 +1,3 @@
+dask
+dask[distributed]
+dask-jobqueue
