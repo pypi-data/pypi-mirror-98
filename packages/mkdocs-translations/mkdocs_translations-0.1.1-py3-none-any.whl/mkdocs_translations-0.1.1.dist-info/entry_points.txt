@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+translations=mkdocs_translations.plugin:Translator
+
