@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: multi-webbing
+Version: 0.1.0
+Summary: A multi-threaded libary for web scraping in python, built upon the python threading and requests modules.
+Home-page: https://github.com/adhardy/Multi-Webbing
+Author: Adam Hardy
+Author-email: adamdhardy@icloud.com
+License: MIT
+Description: UNKNOWN
+Keywords: web-scraping,multithreading,requests
+Platform: UNKNOWN
