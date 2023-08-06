@@ -1,0 +1,9 @@
+README.md
+setup.py
+dall_e/__init__.py
+dall_e/model.py
+paddledalle.egg-info/PKG-INFO
+paddledalle.egg-info/SOURCES.txt
+paddledalle.egg-info/dependency_links.txt
+paddledalle.egg-info/requires.txt
+paddledalle.egg-info/top_level.txt
