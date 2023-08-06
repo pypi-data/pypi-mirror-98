@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+duo_universal/__init__.py
+duo_universal/ca_certs.pem
+duo_universal/client.py
+duo_universal/version.py
+duo_universal.egg-info/PKG-INFO
+duo_universal.egg-info/SOURCES.txt
+duo_universal.egg-info/dependency_links.txt
+duo_universal.egg-info/requires.txt
+duo_universal.egg-info/top_level.txt
