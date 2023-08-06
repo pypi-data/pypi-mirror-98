@@ -1,0 +1,4 @@
+d8s-html
+d8s-strings
+d8s-utility
+importlib-metadata; python_version < '3.8'
