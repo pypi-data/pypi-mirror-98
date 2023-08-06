@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: bokbokbok
+Version: 0.2
+Summary: Custom Losses and Metrics for XGBoost, LightGBM, CatBoost
+Home-page: https://github.com/orchardbirds/bokbokbok
+Author: Daniel Timbrell
+Author-email: dantimbrell@gmail.com
+License: Open Source
+Description: <img src="https://github.com/orchardbirds/bokbokbok/raw/main/docs/img/bokbokbok.png" width="120" align="right">
+        
+        [![PyPi Version](https://img.shields.io/pypi/pyversions/bokbokbok)](#)
+        [![PyPI](https://img.shields.io/pypi/v/bokbokbok)](#)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dm/bokbokbok)](#)
+        
+        
+        # bokbokbok
+        
+        ## Overview
+        
+        **bokbokbok** is a python package that enables you to use Custom Loss Functions and Evaluation Metrics for XGBoost and LightGBM.
+        Main features:
+        
+        - Weighted Cross Entropy
+        - Focal Loss
+        - Squared Log Error
+        - Log Cosh Loss
+        - F1 score
+        
+        ## Installation
+        
+        ```bash
+        pip install bokbokbok
+        ```
+        
+        ## Documentation
+        
+        The documentation can [be found here.](https://orchardbirds.github.io/)
+        
+        ## Contributing
+        
+        To learn more about making a contribution to bokbokbok, please see CONTRIBUTING.md.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: base
+Provides-Extra: all
