@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: LoRaRF
+Version: 1.1.0
+Summary: Python library used for basic transmitting and receiving data using LoRa modem
+Home-page: https://github.com/chandrawi/LoRaRF-Python
+Author: Chandra Wijaya Sentosa
+Author-email: chandra.w.sentosa@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/chandrawi/LoRaRF-Python/issues
+Description: # LoRa-RF Python
+        
+        LoRa-RF Python is a library for basic transmitting and receiving data using LoRa modem. Support configuring frequency, modulation parameter, transmit power, receive gain and other RF parameters on both LoRa and FSK modulation. Also support handling transmit and receive using interrupt signal.
+        The library works with various RF module with Semtech SX1261, SX1262, and SX1268 chip.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System :: Hardware
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
