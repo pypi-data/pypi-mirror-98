@@ -1,0 +1,222 @@
+Metadata-Version: 2.1
+Name: aiohttp-client-cache
+Version: 0.2.1
+Summary: Persistent cache for aiohttp requests
+Home-page: https://github.com/JWCook/aiohttp-client-cache
+Author: Jordan Cook
+License: MIT License
+Keywords: aiohttp,async,asyncio,cache,cache-backends,client,http,persistence,requests,sqlite redis mongodb dynamodb
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: attrs
+Requires-Dist: python-forge
+Provides-Extra: backends
+Requires-Dist: aiosqlite ; extra == 'backends'
+Requires-Dist: boto3 ; extra == 'backends'
+Requires-Dist: motor ; extra == 'backends'
+Requires-Dist: aioredis ; extra == 'backends'
+Provides-Extra: build
+Requires-Dist: coveralls ; extra == 'build'
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: coveralls ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: aiosqlite ; extra == 'dev'
+Requires-Dist: boto3 ; extra == 'dev'
+Requires-Dist: motor ; extra == 'dev'
+Requires-Dist: aioredis ; extra == 'dev'
+Requires-Dist: m2r2 ; extra == 'dev'
+Requires-Dist: Sphinx (~=3.2.1) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinxcontrib-apidoc ; extra == 'dev'
+Requires-Dist: black (==20.8b1) ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest (>=5.0) ; extra == 'dev'
+Requires-Dist: pytest-aiohttp ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: m2r2 ; extra == 'docs'
+Requires-Dist: Sphinx (~=3.2.1) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-apidoc ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: black (==20.8b1) ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: isort ; extra == 'test'
+Requires-Dist: mypy ; extra == 'test'
+Requires-Dist: pre-commit ; extra == 'test'
+Requires-Dist: pytest (>=5.0) ; extra == 'test'
+Requires-Dist: pytest-aiohttp ; extra == 'test'
+Requires-Dist: pytest-asyncio ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# aiohttp-client-cache
+
+[![Build status](https://github.com/JWCook/aiohttp-client-cache/workflows/Build/badge.svg)](https://github.com/JWCook/aiohttp-client-cache/actions)
+[![Documentation Status](https://img.shields.io/readthedocs/aiohttp-client-cache/stable?label=docs)](https://aiohttp-client-cache.readthedocs.io/en/latest/)
+[![Coverage Status](https://img.shields.io/coveralls/github/JWCook/aiohttp-client-cache)](https://coveralls.io/github/JWCook/aiohttp-client-cache?branch=main)
+[![PyPI](https://img.shields.io/pypi/v/aiohttp-client-cache?color=blue)](https://pypi.org/project/aiohttp-client-cache)
+[![PyPI - Python Versions](https://img.shields.io/pypi/pyversions/aiohttp-client-cache)](https://pypi.org/project/aiohttp-client-cache)
+[![PyPI - Format](https://img.shields.io/pypi/format/aiohttp-client-cache?color=blue)](https://pypi.org/project/aiohttp-client-cache)
+
+See full documentation at https://aiohttp-client-cache.readthedocs.io
+
+**aiohttp-client-cache** is an async persistent cache for [aiohttp](https://docs.aiohttp.org)
+requests, based on [requests-cache](https://github.com/reclosedev/requests-cache).
+
+Not to be confused with [aiohttp-cache](https://github.com/cr0hn/aiohttp-cache), which is a cache
+for the aiohttp web server. This package is, as you might guess, specifically for the **aiohttp client**.
+
+## Development Status
+**This is an early work in progress!**
+
+The current state is a working drop-in replacement (or mixin) for `aiohttp.ClientSession`, with
+multiple asynchronous cache backends.
+
+Breaking changes should be expected until a `1.0` release.
+
+## Installation
+Requires python 3.7+
+
+Install the latest stable version with pip:
+```bash
+pip install aiohttp-client-cache
+```
+
+**Note:** You will need additional dependencies depending on which backend you want to use; See
+[Cache Backends](#cache-backends) section below for details.
+To install with extra dependencies for all supported backends:
+```bash
+pip install aiohttp-client-cache[backends]
+```
+
+See [Contributing](https://github.com/JWCook/aiohttp-client-cache/blob/main/README.md)
+for setup info for local development.
+
+## Usage Examples
+See the [examples](https://github.com/JWCook/aiohttp-client-cache/blob/main/examples)
+folder for more detailed usage examples.
+
+Here is a simple example using an endpoint that takes 1 second to fetch.
+After the first request, subsequent requests to the same URL will return near-instantly; so,
+fetching it 10 times will only take ~1 second instead of 10.
+```python
+from aiohttp_client_cache import CachedSession, SQLiteBackend
+
+async with CachedSession(cache=SQLiteBackend()) as session:
+    for i in range(10):
+        await session.get('http://httpbin.org/delay/1')
+```
+
+Here is an example with more customized behavior:
+```python
+cache = SQLiteBackend(
+    cache_name='~/.cache/aiohttp-requests.db',     # For SQLite, this will be used as the filename
+    expire_after=24,                               # By default, cached responses expire in a day
+    expire_after_urls={'*.site.com/static': 24*7}, # Requests with this pattern will expire in a week
+    ignored_params=['auth_token'],                 # Ignore this param when caching responses
+)
+
+async with CachedSession(cache=cache) as session:
+    await session.get('https://site.com/index.html')             # Expires in a day
+    await session.get('https://img.site.com/static/a27bf6.jpg')  # Expires in a week
+```
+See [CacheBackend](https://aiohttp-client-cache.readthedocs.io/en/latest/modules/aiohttp_client_cache.backends.base.html#aiohttp_client_cache.backends.base.CacheBackend)
+for more usage details.
+
+`aiohttp-client-cache` can also be used as a mixin, if you happen have other mixin classes that you
+want to combine with it:
+```python
+from aiohttp import ClientSession
+from aiohttp_client_cache import CacheMixin
+
+class CustomSession(CacheMixin, CustomMixin, ClientSession):
+    pass
+```
+
+## Cache Backends
+Several backends are available. If one isn't specified, a non-persistent in-memory cache will be used.
+
+* `SQLiteBackend`: Uses a [SQLite](https://www.sqlite.org) database
+  (requires [aiosqlite](https://github.com/omnilib/aiosqlite))
+* `RedisBackend`: Uses a [Redis](https://redis.io/) cache
+  (requires [redis-py](https://github.com/andymccurdy/redis-py))
+* `MongoDBBackend`: Uses a [MongoDB](https://www.mongodb.com/) database
+  (requires [motor](https://motor.readthedocs.io))
+
+**Incomplete:**
+* `DynamoDBBackend`: Uses a [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) database
+  (requires [boto3](https://github.com/boto/boto3))
+* `GridFSBackend`: Uses a [MongoDB GridFS](https://docs.mongodb.com/manual/core/gridfs/) database,
+  which enables storage of documents greater than 16MB
+  (requires [pymongo](https://pymongo.readthedocs.io/en/stable/))
+
+You can also provide your own backend by subclassing `aiohttp_client_cache.backends.BaseCache`.
+
+## Expiration
+If you are using the `expire_after` parameter, expired responses are removed from the storage the
+next time the same request is made. If you want to manually purge all expired items, you can use
+`CachedSession.delete_expired_responses`. Example:
+
+```python
+session = CachedSession(expire_after=3)   # Cached responses expire after 3 hours
+await session.remove_expired_responses()  # Remove any responses over 3 hours old
+```
+
+## Conditional Caching
+Caching behavior can be customized by defining various conditions:
+* Response status codes
+* Request HTTP methods
+* Request headers
+* Specific request parameters
+* Custom filter function
+
+See [CacheBackend](https://aiohttp-client-cache.readthedocs.io/en/latest/modules/aiohttp_client_cache.backends.base.html#aiohttp_client_cache.backends.base.CacheBackend)
+docs for details.
+
+## Credits
+Thanks to [Roman Haritonov](https://github.com/reclosedev) and
+[contributors](https://github.com/reclosedev/requests-cache/blob/master/CONTRIBUTORS.rst)
+for the original `requests-cache`!
+
+This project is licensed under the MIT license, with the exception of
+[storage backend code](https://github.com/reclosedev/requests-cache/tree/master/requests_cache/backends/storage)
+adapted from `requests-cache`, which is licensed under the BSD license
+([copy included](https://github.com/JWCook/aiohttp-client-cache/blob/main/requests_cache.md)).
+
+# History
+
+## 0.2.0 (2021-02-28)
+* Refactor SQLite backend to use `aiosqlite` for async cache operations
+* Refactor MongoDB backend to use `motor` for async cache operations
+* Refactor Redis backend to use `aiosqlite` for async cache operations
+* Add integration tests and `docker-compose` for local test servers
+
+## 0.1.0 (2020-11-14)
+* Initial PyPI release
+* First pass at a general refactor and conversion from `requests` to `aiohttp`
+* Basic features are functional, but some backends do not actually operate asynchronously
+
+## requests-cache
+See `requests-cache` [development history](https://github.com/reclosedev/requests-cache/blob/master/HISTORY.rst)
+for details on prior changes.
+
+
