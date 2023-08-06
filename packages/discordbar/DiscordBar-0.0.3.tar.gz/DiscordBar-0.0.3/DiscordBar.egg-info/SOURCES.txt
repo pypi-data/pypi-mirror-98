@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+DiscordBar/__init__.py
+DiscordBar/progressbar.py
+DiscordBar/progressbar_errors.py
+DiscordBar.egg-info/PKG-INFO
+DiscordBar.egg-info/SOURCES.txt
+DiscordBar.egg-info/dependency_links.txt
+DiscordBar.egg-info/not-zip-safe
+DiscordBar.egg-info/top_level.txt
