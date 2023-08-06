@@ -1,0 +1,11 @@
+easyhttp/ClientConnection.py,sha256=esqtVA3kypKl2vUIfJ-3rQeuL_YjbleWSSoMEMLGKlU,1407
+easyhttp/HttpServer.py,sha256=oeligHcfdDoOrvq6DxP-V-65iCUaJbaBUTsXYVcbYVU,3111
+easyhttp/Request.py,sha256=zhngEbKzDs5jh8YI5S8fMxdGRUG-ganZj-eOKo-h23M,998
+easyhttp/RequestParser.py,sha256=C3zgyL-FPsBNWS9ROlIQGFnO7WgW_WNdsTWAVg7D9gU,1866
+easyhttp/Response.py,sha256=ZsxviM3o6VHGdnWbWapO66OE7WjCurdFQczXFs2gXnY,2273
+easyhttp/SocketServer.py,sha256=8DIZRhdYHMA8AhL0Q2W7TiEQe2Sg3kIRsTqGoRDweos,1134
+easyhttp/__init__.py,sha256=tkEl6-OBtbqL0o_yKQjANsF2zYapX0TvKFn7P-8i_RM,27
+easyhttp-0.0.2.dist-info/METADATA,sha256=_tPgxKrO63ROaDBz08BgX9sd19bPIeBqTlBzO00yQbE,557
+easyhttp-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+easyhttp-0.0.2.dist-info/top_level.txt,sha256=hXtOmZbZY_T3tJWgX_q2py0BhG48txcA16eH6ZawTqE,9
+easyhttp-0.0.2.dist-info/RECORD,,
