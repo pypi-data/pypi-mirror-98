@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: pyconductor-grpc
+Version: 0.0.9
+Summary: A GRPC Library for Netflix Conductor
+Home-page: UNKNOWN
+Author: Joseph
+Author-email: joseph.solomon@invitae.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio
+Requires-Dist: protobuf
+
+# pyconductor-grpc
+Python GRPC client for Netflix's Conductor
+
+
+## Usage
+1. Define your work function:
+```python
+def sleep_work_function(sleep_duration: int, sleep_message: str, **kwargs) -> dict:
+    time.sleep(sleep_duration)
+    output_data = {'message': sleep_message}
+    return output_data
+```
+
+2. Work
+```python
+with TaskWorker(
+    task_concurrency=25,
+    task_service=TaskService(),
+    task_type='sleep',
+    work_function=work_function,
+    work_concurrency=10,
+) as worker:
+    worker.work()
+```
+
+
+## Code generation
+```shell
+scripts/generate-code.sh
+```
+
+
+## Notes
+The generated Python message types verify field types when objects are constructed from them. For example:
+```
+>>> from model.task_result_pb2 import TaskResult
+>>> TaskResult(task_id=1)
+TypeError: Cannot set conductor.proto.TaskResult.task_id to 0: 0 has type <class 'int'>, but expected one of: (<class 'bytes'>, <class 'str'>) for field TaskResult.task_id
+>>> TaskResult(task_id='1')
+>>>
+```
+
+
+## Publishing
+To build and upload:
+
+```shell
+pip install --upgrade build twine
+python -m build
+twine upload dist/*
+```
+
+or
+
+```shell
+pipx install build
+pipx install twine
+pyproject-build
+twine upload dist/*
+```
+
+
