@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: opstrat
+Version: 0.0.12
+Summary: Option stategy visualizer
+Home-page: https://github.com/abhijith-git/opstrat
+Author: Abhijith Chandradas
+Author-email: <abhijith.chandradas@gmail.com>
+License: MIT
+Keywords: python,options,finance,opstrat,data visualization,stock market
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+
+opstrat
+=======
+
+opstrat is a Python library for visualizing options.
+
+Latest Version
+--------------
+
+0.0.12
+
+Installation
+------------
+
+Use the package manager `pip <https://pip.pypa.io/en/stable/>`__ to
+install opstrat.
+
+.. code:: bash
+
+   pip install opstrat
+
+Usage
+-----
+
+.. code:: python
+
+   import opstrat
+
+   opstrat.basic.option_plotter() # plots a basic option payoff diagram
+
+Contributing
+------------
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+Content License
+---------------
+
+`MIT <https://choosealicense.com/licenses/mit/>`__
+
+
