@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pydolphin
+Version: 0.1.2
+Summary: a convenient solution to heroku web apps / APIs.
+Home-page: https://github.com/dolphinorg/dolphin
+Author: Dhruv Maaniya (@midnightmadwalk)
+Author-email: midnightmadwalk@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: apscheduler
+
+# pydolphin
+
+a convenient solution to heroku web apps / APIs.
+
+
+# installation.
+
+```text
+pip3 install pydolphin
+
+or 
+
+pip3 install --no-cache git+https://github.com/dolphinorg/pydolphin.git
+```
+
+# basic example.
+```py
+
+import os
+from flask import Flask
+from pydolphin import dolphin
+
+PORT = int(os.environ.get("PORT", 6969))
+
+app = Flask(__name__)
+
+@app.before_first_request
+def dolphin_start():
+    dolphin.swim()
+
+@app.route('/')
+def index():
+    return 'hello'
+
+app.run(host='0.0.0.0', port=PORT)
+```
+
+# note.
+
+=> i am currently learning js and node-js but 
+   if you want to contribute to make dolphin
+   packages for them, 
+   you can contact me t.me/midnightmadwalk.
+=> use it in any python web framework and
+   report bug or contribute. 
+
+
+
