@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+versioneer.py
+src/unavailable_object/__init__.py
+src/unavailable_object/_version.py
+src/unavailable_object.egg-info/PKG-INFO
+src/unavailable_object.egg-info/SOURCES.txt
+src/unavailable_object.egg-info/dependency_links.txt
+src/unavailable_object.egg-info/requires.txt
+src/unavailable_object.egg-info/top_level.txt
