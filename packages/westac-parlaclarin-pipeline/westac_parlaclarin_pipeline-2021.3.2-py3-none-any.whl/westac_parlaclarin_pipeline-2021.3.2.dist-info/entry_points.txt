@@ -1,0 +1,3 @@
+[console_scripts]
+parla_transform=scripts.parla_transform:main
+

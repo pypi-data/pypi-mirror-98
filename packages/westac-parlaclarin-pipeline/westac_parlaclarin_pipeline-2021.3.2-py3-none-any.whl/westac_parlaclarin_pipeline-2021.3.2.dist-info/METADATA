@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: westac-parlaclarin-pipeline
+Version: 2021.3.2
+Summary: Pipeline that transforms Parla-Clarin XML files
+Home-page: https://westac.se
+License: Apache-2.0
+Author: Roger Mähler
+Author-email: roger.mahler@hotmail.com
+Requires-Python: ==3.8.5
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Requires-Dist: Jinja2 (>=2.11.3,<3.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: cookiecutter (>=1.7.2,<2.0.0)
+Requires-Dist: dehyphen (>=0.3.4,<0.4.0)
+Requires-Dist: pygit2 (>=1.5.0,<2.0.0)
+Requires-Dist: snakefmt (>=0.3.1,<0.4.0)
+Requires-Dist: snakemake (==5.26.1)
+Requires-Dist: sparv-pipeline (>=4.0.0,<5.0.0)
+Requires-Dist: torch (>=1.8.0,<2.0.0)
+Requires-Dist: transformers (>=4.3.3,<5.0.0)
+Requires-Dist: untangle (>=1.1.1,<2.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
+Project-URL: Repository, https://github.com/welfare-state-analytics/westac_parlaclarin_pipeline
+Description-Content-Type: text/markdown
+
+# Parla-Clarin Workflow
+
+## Development setup
+
+## Development install
+
+Create a development install using hacky `pip install -e .`:
+
+```bash
+make development_install
+```
+
+For VS Code an alternative is to add `PYTHONPATH=./:$PYTHONPATH` to `.env` and configure a `launch.json` entry:
+
+```
+    {
+        "name": "Python: pytest",
+        "type": "python",
+        "request": "launch",
+        "module": "pytest",
+        "cwd": "${workspaceRoot}",
+        "env": {
+            "PYTHONPATH": "${workspaceRoot}"
+        },
+        "envFile": "${workspaceRoot}/.env",
+        "console": "integratedTerminal"
+    }
+```
