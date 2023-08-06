@@ -1,0 +1,15 @@
+include setup.cfg
+include setup.py
+include trtopicter/__init__.py
+include trtopicter/exceptions.py
+include trtopicter/tokenizer.py
+include trtopicter/trtopicter.py
+include LICENSE.txt
+include README.md
+include trtopicter/detectors/__init__.py
+include trtopicter/detectors/domain_detector.py
+include trtopicter/detectors/language_detector.py
+include trtopicter/stop_words/tr_stop_words
+include trtopicter/models/domain_detector/*.lite
+include trtopicter/models/language/*.ftz
+include trtopicter/*.json
