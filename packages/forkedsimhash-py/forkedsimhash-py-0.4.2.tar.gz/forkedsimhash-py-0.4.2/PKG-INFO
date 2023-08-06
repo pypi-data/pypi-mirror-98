@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: forkedsimhash-py
+Version: 0.4.2
+Summary: Near-Duplicate Detection with Simhash
+Home-page: http://github.com/pdelagrave/simhash-py
+Author: Moz, Inc.
+Author-email: turbo@moz.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
