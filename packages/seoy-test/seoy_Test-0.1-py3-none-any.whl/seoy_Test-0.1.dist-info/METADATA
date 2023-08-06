@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: seoy-Test
+Version: 0.1
+Summary: for explain about pypi deploy
+Home-page: https://github.com/seo-young-kim/pypi_deploy_test
+Author: seoyoung.kim
+Author-email: seoykim996@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/seo-young-kim/pypi_deploy_test/archive/master.zip
+Keywords: pypi deploy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+UNKNOWN
+
+
