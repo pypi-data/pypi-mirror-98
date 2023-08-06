@@ -1,0 +1,11 @@
+matplotlib
+numpy
+setuptools
+
+[docs]
+myst_nb
+sphinx
+jupytext
+
+[test]
+pytest
