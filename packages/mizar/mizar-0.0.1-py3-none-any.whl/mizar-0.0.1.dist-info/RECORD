@@ -1,0 +1,9 @@
+mizar/__init__.py,sha256=hOE0tj75QNG_GIp2g1pCktwvcsEwOFByk2zPOHcEIvg,44
+mizar/api.py,sha256=-T5FWght-RVtGXTU3rZbQrALQ1QOC-1Et1igtvLSH4M,8166
+mizar/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mizar/tests/test_strategies.py,sha256=C_D0_lmW5eW67ADGBtK51cmjvqLawgsMJyGK3-QX15s,35
+mizar-0.0.1.dist-info/LICENSE,sha256=70-XGoJSvzRLB75JGUBJLmR8bqJn1I6YsqbXhdMha-8,1081
+mizar-0.0.1.dist-info/METADATA,sha256=IY5KGjYkZo3Oxr9DIpgUROmOT98NQnU6ZfMcXXv0_-Q,1592
+mizar-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mizar-0.0.1.dist-info/top_level.txt,sha256=7ekyF_2dHuA6BVsspEMYbC8km-cWx1VGIXjUh9K2peE,6
+mizar-0.0.1.dist-info/RECORD,,
