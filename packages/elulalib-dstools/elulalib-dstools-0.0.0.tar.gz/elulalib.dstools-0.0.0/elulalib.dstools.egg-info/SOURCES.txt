@@ -1,0 +1,5 @@
+setup.py
+elulalib.dstools.egg-info/PKG-INFO
+elulalib.dstools.egg-info/SOURCES.txt
+elulalib.dstools.egg-info/dependency_links.txt
+elulalib.dstools.egg-info/top_level.txt
