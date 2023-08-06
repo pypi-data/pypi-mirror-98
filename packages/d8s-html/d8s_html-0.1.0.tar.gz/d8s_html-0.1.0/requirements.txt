@@ -1,0 +1,6 @@
+beautifulsoup4
+democritus-networking
+democritus-urls
+html-to-json
+html2text
+importlib-metadata; python_version < '3.8'
