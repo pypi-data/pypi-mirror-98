@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: vrt-lss-stock
+Version: 3.7.167066
+Summary: Veeroute.LSS Stock
+Home-page: https://docs.veeroute.com/#/lss/stock
+Author: Veeroute Support Team
+Author-email: support@veeroute.com
+License: UNKNOWN
+Description:     Veeroute.LSS Stock API  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Veeroute.LSS Stock
+Platform: UNKNOWN
+Requires-Python: >=3.6
