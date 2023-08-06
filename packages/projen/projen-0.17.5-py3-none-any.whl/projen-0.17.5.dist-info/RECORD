@@ -1,0 +1,17 @@
+projen/__init__.py,sha256=HwtSMwv51Q3bnljeEOZzv9suwqnsI38KlkbJnn-peyE,1454030
+projen/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+projen/_jsii/__init__.py,sha256=uIzCH4BCJAanyOZfOx5tSvivHTOIWLyXfSCbGDODwFY,301
+projen/_jsii/projen@0.17.5.jsii.tgz,sha256=2eNXkZ5785cIF8BcbRPhDjeh7uT7Eu8MpE2rrIQxAB8,3573958
+projen/deps/__init__.py,sha256=3pLMjDeURxTMJTqsuk7qdsksQsgjTOJRjy84Om2p_2s,12749
+projen/github/__init__.py,sha256=hnw0WQ08Vv-bdRJoJgHksWCcq4EIfpQkGoST_v8GsvQ,28933
+projen/java/__init__.py,sha256=CL0xWs9NSGE3ZyUu-AWVtCQkIinAuj2Qqa6PWOzoTbM,80727
+projen/python/__init__.py,sha256=EtToefHnH0rnuRuJKqngXVcMaikBMdFNqDqyfG8w2Xs,102659
+projen/tasks/__init__.py,sha256=Dvfdh332q9G9dfj0VAXIZU7o-vvzA6YZrAX1jW4HySo,39006
+projen/vscode/__init__.py,sha256=n1VDY4TZQzgFr-mzm85Br2VhIbEu_NzPuzsrjh3meQU,25202
+projen/web/__init__.py,sha256=tt3oZVGkXKPCUJ91bw8vfVIv1cHAwaBITi1WkbiH1-g,412301
+projen-0.17.5.data/scripts/projen,sha256=SOmSBpjuIqk0BYni177NMLJ3OmSJhYvYTYKMVC-ociU,208
+projen-0.17.5.dist-info/LICENSE,sha256=hEPSY2lArmXmn8OZ2ENYDJjB8YatxW037DPfMCxA6Gs,11345
+projen-0.17.5.dist-info/METADATA,sha256=kVHy9YUfHYisTKa7T9BQOFRMkxhBicdkmJCQfaFtT2c,21737
+projen-0.17.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+projen-0.17.5.dist-info/top_level.txt,sha256=Ul8VGUArFqejE5BMSked3l6NMBO6gjQEWywhM5gw1zw,7
+projen-0.17.5.dist-info/RECORD,,
