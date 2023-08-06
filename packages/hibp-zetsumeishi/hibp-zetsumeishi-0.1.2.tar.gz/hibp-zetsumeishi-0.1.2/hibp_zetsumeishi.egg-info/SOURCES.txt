@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hibp/__init__.py
+hibp/constants.py
+hibp/hibp.py
+hibp_zetsumeishi.egg-info/PKG-INFO
+hibp_zetsumeishi.egg-info/SOURCES.txt
+hibp_zetsumeishi.egg-info/dependency_links.txt
+hibp_zetsumeishi.egg-info/requires.txt
+hibp_zetsumeishi.egg-info/top_level.txt
