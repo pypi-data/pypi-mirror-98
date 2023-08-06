@@ -1,0 +1,11 @@
+README.md
+setup.py
+myterial/__init__.py
+myterial/codes.py
+myterial/lookup.py
+myterial/utils.py
+myterial.egg-info/PKG-INFO
+myterial.egg-info/SOURCES.txt
+myterial.egg-info/dependency_links.txt
+myterial.egg-info/not-zip-safe
+myterial.egg-info/top_level.txt
