@@ -1,0 +1,6 @@
+[cubicweb.cubes]
+conference = cubicweb_conference
+
+[cubicweb.i18ncube]
+conference = cubicweb_conference.i18n
+
