@@ -1,0 +1,23 @@
+{
+  "ResponseMetadata": {
+    "type": "structure",
+    "members": {
+      "RequestId": {
+        "shape": "String"
+      }
+    }
+  },
+  "Error": {
+    "type": "structure",
+    "members": {
+      "Code": { "shape": "String" },
+      "Details": { "shape": "String" },
+      "Message": { "shape": "String" },
+      "Type": { "shape": "String" }
+    }
+  },
+  "RequestId": { "type": "string" },
+  "String": {
+    "type": "string"
+  }
+}
