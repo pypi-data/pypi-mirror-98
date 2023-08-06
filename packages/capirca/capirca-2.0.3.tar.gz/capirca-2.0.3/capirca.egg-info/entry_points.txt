@@ -1,0 +1,3 @@
+[console_scripts]
+aclgen = capirca.aclgen:entry_point
+
