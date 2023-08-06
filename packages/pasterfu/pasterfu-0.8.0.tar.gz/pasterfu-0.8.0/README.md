@@ -1,0 +1,146 @@
+# Pasterfu
+Python program that opens a link with a command read from a database.
+
+* Link pasterfu with a program to make links from that program open into
+  program of your choice.
+* Make your own rule database defining what link to open in what way
+
+Made especially to use with RSS feed readers like newsboat. Or any other
+program where you might want to open a specific in a manner based on the link
+you are opening.
+
+### Requirements
+
+* Python 3.8 or newer
+* [Pyperclip](https://github.com/asweigart/pyperclip) will be installed when
+  installing pasterfu with pip
+* In Ubuntu `sudo apt install python3`
+* With Windows download and install [Python 3](https://www.python.org/)
+  * You could consider selecting `Add Python to PATH` during install
+
+### Install
+1.  Install [Python 3](https://www.python.org/) - [Requirements][5]
+2.  Run `pip install pasterfu`
+3.  Create your config file rules. [Configuration][6]
+    - For more info check [Wiki Configuration][3]
+    - pasterfu will work with OS default browser even without configs
+
+#### Linux
+You propably need to use a command like:
+
+```
+pip3 install --upgrade pasterfu
+```
+Or:
+
+```
+python3 -m pip install --upgrade pasterfu
+```
+
+#### Windows
+If you installed python without setting up path you need to include path when
+running pip.
+
+```
+py.exe -m pip install --upgrade pasterfu
+```
+
+### Usage
+```
+pasterfu --link LINK
+```
+
+> Replace the "LINK" with the link you wish to open. Check
+[Wiki Usage][4] for more info.
+
+#### Windows
+If you installed python without setting up path you need to include path when
+running pasterfu.
+
+For Python 3.8:
+`%LOCALAPPDATA%\Programs\Python\Python38\Scripts\pasterfu.exe --link LINK`
+
+### Configurations
+To see your current configurations `pasterfu --config`.
+
+Set default browser of your choice `pasterfu --config --edit 0 --input
+"firefox"`
+
+* Default browser will be used if link to be opened has no match in database
+  rules.
+
+> OS default internet browser will be used if no matching key is found.
+>
+> Read more at [Wiki Configuration][3].
+
+### Database
+To see your current rules run `pasterfu --db`
+
+Rules can be added/edited with `pasterfu --db --edit 0 --input
+"https://www.twitch.tv/"`
+
+> If `--edit` is given ID number that doesen't exist yet a new rule will be
+> created.
+
+Adding command valaues into rule: `pasterfu --db --edit 0x0 --input "firefox"`
+
+> Giving `--edit 0x0` means in rule #0 command #0 `--input` "firefox"
+
+> Database file can be found in `~/.config/pasterfu.json`. Or in
+> `%USERPROFILE%\Documents\pasterfu.json` for Windows.
+
+##### Example 1
+Open link using the link argument.
+
+```
+pasterfu -l "https://gitlab.com"
+```
+
+##### Example 2
+Open link piping into stdin.
+
+```
+echo "https://gitlab.com" | pasterfu
+```
+
+##### Example 3
+Make rule to open gitlab pages.
+
+```
+pasterfu -d 0 "https://gitlab.com"
+```
+
+##### Example 4
+Make rule to open rule #1 type links in Firefox:
+
+```
+`pasterfu -de 1x0 -i "firefox"`
+```
+
+##### Example 5
+Set your default browser.
+
+```
+pasterfu -ce 0 "firefox"
+```
+
+##### Example 6
+By using '%clip' you can copy a link with
+[pyperclip](https://github.com/asweigart/pyperclip).
+
+```
+pasterfu -de 1x0 -i "%copy"
+```
+
+### Developing
+TODO list found here [Wiki TODO][2]
+
+Tests can be run with `./run_tests` or `run_tests.bat`. These require `flake8`
+and `pytest`. Both can be found in [PyPI](https://pypi.org).
+
+[1]: https://gitlab.com/noobilanderi/pasterfu/-/wikis/home
+[2]: https://gitlab.com/noobilanderi/pasterfu/-/wikis/TODO
+[3]: https://gitlab.com/noobilanderi/pasterfu/-/wikis/configuration
+[4]: https://gitlab.com/noobilanderi/pasterfu/-/wikis/usage
+[5]: https://gitlab.com/noobilanderi/pasterfu#requirements
+[6]: https://gitlab.com/noobilanderi/pasterfu#configuration

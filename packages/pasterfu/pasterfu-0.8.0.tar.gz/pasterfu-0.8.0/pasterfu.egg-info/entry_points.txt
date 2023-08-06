@@ -1,0 +1,3 @@
+[console_scripts]
+pasterfu = pasterfu.cli:main
+
