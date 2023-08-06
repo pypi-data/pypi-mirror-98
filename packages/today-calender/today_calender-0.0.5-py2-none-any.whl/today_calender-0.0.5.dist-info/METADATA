@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: today-calender
+Version: 0.0.5
+Summary: 基于爬虫的历法查询工具
+Home-page: https://github.com/stellaye/today
+Author: lindaye
+Author-email: 454784911@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# today
+
+基于爬虫的今日干支历法查询工具
+
+# 使用方法
+
+```
+xiaoshengun:~ linda$ td
+辛丑 辛卯 庚申 丙子
+```
+命令行输入: td
+
