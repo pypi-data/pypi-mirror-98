@@ -1,0 +1,8 @@
+python-dateutil<3,>=2.2
+paramiko<3,>=1.10
+sr.comp<2,>=1.2
+reportlab<3.6,>=3.1.44
+requests<3,>=2.5.1
+ruamel.yaml<0.16,>=0.13.0
+simplejson<4,>=3.6
+mido<2,>=1.1
