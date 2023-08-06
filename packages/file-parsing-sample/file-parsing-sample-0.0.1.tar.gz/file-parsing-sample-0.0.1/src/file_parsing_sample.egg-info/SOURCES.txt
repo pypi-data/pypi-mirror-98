@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/file_parsing/__init__.py
+src/file_parsing/simple.py
+src/file_parsing_sample.egg-info/PKG-INFO
+src/file_parsing_sample.egg-info/SOURCES.txt
+src/file_parsing_sample.egg-info/dependency_links.txt
+src/file_parsing_sample.egg-info/top_level.txt
