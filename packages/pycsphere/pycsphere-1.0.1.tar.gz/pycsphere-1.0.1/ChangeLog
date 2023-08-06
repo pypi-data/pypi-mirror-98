@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+v1.0.1
+------
+
+* Fix for logo not displaying correxctly on PyPI
+
+v1.0.0
+------
+
+* Updated README and requirements
+* Updated README
+* Updated documentation for pycsou-sphere
+* Spherical differential operators
+* Convolution operator + zonal Green kernels
+* Class for Fourier-Legendre expansion
+* Class for Spherical Harmonic Transform
+* Modified .gitignore
+* Updated README.rst
+* Routines for spherical meshes
+* Routines for spherical meshes
+* Initial code for spherical point sets
+* Initial commit
