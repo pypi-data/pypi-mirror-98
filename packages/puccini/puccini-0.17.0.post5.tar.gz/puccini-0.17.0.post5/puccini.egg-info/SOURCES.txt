@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+puccini/__init__.py
+puccini/go.py
+puccini/libpuccini.so
+puccini/tosca.py
+puccini.egg-info/PKG-INFO
+puccini.egg-info/SOURCES.txt
+puccini.egg-info/dependency_links.txt
+puccini.egg-info/requires.txt
+puccini.egg-info/top_level.txt

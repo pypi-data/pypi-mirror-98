@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: puccini
+Version: 0.17.0.post5
+Summary: Puccini
+Home-page: https://github.com/tliron/puccini
+Author: Tal Liron
+Author-email: tal.liron@gmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/tliron/puccini/releases
+Description: Puccini
+        =======
+        
+        See `<https://puccini.cloud>`__.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
