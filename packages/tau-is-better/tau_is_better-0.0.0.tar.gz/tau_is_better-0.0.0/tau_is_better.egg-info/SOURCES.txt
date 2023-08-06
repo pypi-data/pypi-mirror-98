@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tau_is_better/__init__.py
+tau_is_better.egg-info/PKG-INFO
+tau_is_better.egg-info/SOURCES.txt
+tau_is_better.egg-info/dependency_links.txt
+tau_is_better.egg-info/not-zip-safe
+tau_is_better.egg-info/top_level.txt
+tau_is_better/python/__init__.py
