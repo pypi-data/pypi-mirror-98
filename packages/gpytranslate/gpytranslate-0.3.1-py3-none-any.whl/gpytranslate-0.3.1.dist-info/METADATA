@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: gpytranslate
+Version: 0.3.1
+Summary: A Python3 library for translating text using Google Translate API.
+Home-page: https://github.com/DavideGalilei/gpytranslate
+Author: Davide Galilei
+Author-email: davidegalilei2018@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+
+# gpytranslate
+A Python3 library for translating text using Google Translate API.
+
+----
+## Features
+
+  - **Dot accessible values**
+  - **Supports emoji**
+  - **Asynchronous**
+  - **Type hinted**
+  - **Free to use**
+  - **Easy**
+
+----
+## Quick Start
+
+### Installation
+Requirements:
+- Python 3.6 or higher.
+
+
+```
+$ python -m pip install gpytranslate
+```
+----
+### Usage
+
+[Example:](https://github.com/DavideGalilei/gpytranslate/blob/master/examples/example.py)
+```
+from gpytranslate import Translator
+import asyncio
+
+
+async def main():
+    tr = Translator()
+    translation = await tr("Ciao come stai? Io bene ahah.", targetlang='en')
+    language = await tr.detect("Ciao come stai? Io bene ahah.")
+    print(f"Translation: {translation.text}\nDetected language: {language}")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+
+Output:
+```
+Translation: Hello how are you? I'm fine, haha.
+Detected language: it
+```
+----
+## Development
+
+Want to contribute? Pull requests are accepted!
+
+----
+## License
+GNU GPLv3
+
+
