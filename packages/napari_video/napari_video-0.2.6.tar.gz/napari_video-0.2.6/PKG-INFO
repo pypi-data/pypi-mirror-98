@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: napari_video
+Version: 0.2.6
+Summary: napari plugin for reading videos.
+Home-page: https://github.com/janclemenslab/napari-video
+Author: Jan Clemens
+Author-email: clemensjan@googlemail.com
