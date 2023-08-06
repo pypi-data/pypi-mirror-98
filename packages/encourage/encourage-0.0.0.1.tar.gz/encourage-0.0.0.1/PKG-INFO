@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: encourage
+Version: 0.0.0.1
+Summary: A command line tool speak beautiful words to you to encourage you 
+Home-page: https://github.com/stellaye/encourage
+Author: lindaye
+Author-email: 454784911@qq.com
+License: MIT
+Description: 
+        Usage : use default cnf path in cnf.py to set ecourage words
+        
+        eg:
+            nickname  linda
+            you are a good girl
+            have a nice day
+        
+        if you above  words to this file ,'linda, you are a good girl / have a nice day 'will be speaked out by encourage speaker.
+        
+        
+        
+Platform: any
