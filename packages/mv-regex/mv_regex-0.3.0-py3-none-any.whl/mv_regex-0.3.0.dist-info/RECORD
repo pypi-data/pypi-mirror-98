@@ -1,0 +1,10 @@
+mv_regex/__init__.py,sha256=j2MzQ7CvTuaAQGGmqeMrahHPGDzAeONNabN3lDdW2hg,6308
+mv_regex/_version.py,sha256=YNd1dEdZGzG2MvXfaTQdmMYCLOQm-rV09_xmC5Hxu5Y,142
+mv_regex/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mv_regex/cli/mv.py,sha256=g89KcOmymcYAHGxoBLENI7Q0LBIOKib3gYg5Ds2m8V8,1851
+mv_regex-0.3.0.dist-info/LICENSE,sha256=T-VugPjkf0PsKJyihdN67Q2mw06X3bCQiF_ElhFW3Fw,1068
+mv_regex-0.3.0.dist-info/METADATA,sha256=ws_xDjonACte106oOMIZfGFDepermJPb6Qtu1RykKJ8,315
+mv_regex-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mv_regex-0.3.0.dist-info/entry_points.txt,sha256=Pl9DB1us3yAhVk89WrXbRB25zFJGrjc7DtQhjzuMPb8,51
+mv_regex-0.3.0.dist-info/top_level.txt,sha256=BICI_RDRvhl-z_EVJHqampABj-FuPpVdYBE0QxIJmr8,9
+mv_regex-0.3.0.dist-info/RECORD,,
