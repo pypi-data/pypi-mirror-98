@@ -1,0 +1,6 @@
+[console_scripts]
+mindconverter = mindinsight.mindconverter.cli:cli_entry
+mindinsight = mindinsight.utils.command:main
+mindoptimizer = mindinsight.optimizer.cli:cli_entry
+mindwizard = mindinsight.wizard.cli:cli_entry
+
