@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+vinzy_imgdata_importer/__init__.py
+vinzy_imgdata_importer.egg-info/PKG-INFO
+vinzy_imgdata_importer.egg-info/SOURCES.txt
+vinzy_imgdata_importer.egg-info/dependency_links.txt
+vinzy_imgdata_importer.egg-info/requires.txt
+vinzy_imgdata_importer.egg-info/top_level.txt
