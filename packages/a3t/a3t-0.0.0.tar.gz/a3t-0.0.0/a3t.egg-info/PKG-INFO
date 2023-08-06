@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: a3t
+Version: 0.0.0
+Summary: Implementation for A3T
+Home-page: https://github.com/ForeverZyh/A3T
+Author: Yuhao Zhang
+Author-email: yuhaoz@cs.wisc.edu
+License: MIT
+Project-URL: Bug Tracker, https://github.com/ForeverZyh/A3T/issues
+Description: A3T is an adversarial training technique that combines the strengths of augmentation and abstraction techniques. The key idea underlying A3T is to decompose the perturbation space into two subsets, one that can be explored using augmentation and one that can be abstracted.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
