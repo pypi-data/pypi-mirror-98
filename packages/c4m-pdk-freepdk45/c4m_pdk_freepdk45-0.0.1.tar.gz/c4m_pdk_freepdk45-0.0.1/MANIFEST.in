@@ -1,0 +1,5 @@
+include c4m/pdk/freepdk45/freepdk45.spi
+include c4m/pdk/freepdk45/freepdk45_nom.spi
+include c4m/pdk/freepdk45/freepdk45_ff.spi
+include c4m/pdk/freepdk45/freepdk45_ss.spi
+

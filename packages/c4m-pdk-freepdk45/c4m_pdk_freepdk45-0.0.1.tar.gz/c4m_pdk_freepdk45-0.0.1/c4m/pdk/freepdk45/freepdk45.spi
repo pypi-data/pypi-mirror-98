@@ -1,0 +1,14 @@
+* Joined FreePDK HSpice model files
+* SPDX-License-Identifier: Apache-2.0
+
+.LIB NOM
+.include "freepdk45_nom.spi"
+.ENDL
+
+.LIB FF
+.include "freepdk45_ff.spi"
+.ENDL
+
+.LIB SS
+.include "freepdk45_ss.spi"
+.ENDL
