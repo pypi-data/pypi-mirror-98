@@ -1,0 +1,3 @@
+[console_scripts]
+pyDeltaRCM = pyDeltaRCM.preprocessor:preprocessor_wrapper
+
