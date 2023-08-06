@@ -1,0 +1,13 @@
+ghapi_conversion/__init__.py,sha256=k0bV_5uDvS-8iMZpGig_eWV6Sa012PLOkvNgi6dgJ5Y,878
+ghapi_conversion/__main__.py,sha256=K4gPAdl_SyslFTVYDMG_AdDsAuDVGsuMZo-gOiIFUes,1920
+ghapi_conversion/utils.py,sha256=P1tQSH75GvvHBrLhxZ3O_7d4JtfBel-2ZBbhI41pL4o,2187
+ghapi_conversion/tests/__init__.py,sha256=HAwrKr6zPbdxWOElSKU0tOY1DppYN9anREIRIn3uPVY,41
+ghapi_conversion/tests/test_cli.py,sha256=3djW-weLKIwaxTJOlWn8IeRTmEsTWxbW7LOPeglZnVs,1502
+ghapi_conversion/tests/test_utils_for_tests.py,sha256=R4KywZ0X3Rcjaqc74CkLoIKl0jdqy5H5d-EVAMbPjt8,1294
+ghapi_conversion/tests/utils_for_tests.py,sha256=kh9rtYdcnKw2aOtADRo02r8LEXdNhc3szxxp1ye0H58,216
+ghapi_conversion-0.0.1.data/data/lib/python3.8/site-packages/ghapi_conversion/_data/logging.yml,sha256=FFBnpznA8KTLpy0qantLZcI8tturaQ6FAb1fzr8vFXs,383
+ghapi_conversion-0.0.1.dist-info/LICENSE.md,sha256=s6L4KT4GP9ZSFkst4XWcRw8kqiIzNe_gY8yjXZVrApI,6446
+ghapi_conversion-0.0.1.dist-info/METADATA,sha256=EIsie8j3iHJ2UvUjc5E7DIldcNc7YmrdVavPXUbm7KM,3982
+ghapi_conversion-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ghapi_conversion-0.0.1.dist-info/top_level.txt,sha256=MaRCUmoam1JMiS2-_0EbzhGFQonOU8-HpSHfaq2zZxM,17
+ghapi_conversion-0.0.1.dist-info/RECORD,,
