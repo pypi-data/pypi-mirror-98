@@ -1,0 +1,8 @@
+ipdb
+pytest
+pytest-asyncio
+pyyaml
+juju
+charm-tools
+charmcraft
+jinja2
