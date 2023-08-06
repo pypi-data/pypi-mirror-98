@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: answer-finder
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: base-processor (==0.0.2)
+Requires-Dist: transformers
+Requires-Dist: torch
+
+UNKNOWN
+
+
