@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: covid-cloud
+Version: 0.0.21
+Summary: DNAstack COVID Cloud CLI Library
+Home-page: UNKNOWN
+Author: Derek, Joseph, Usanthan
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: search-python-client (>=0.1.9)
+Requires-Dist: urllib3 (==1.26.3)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: click (==7.1.2)
+
+UNKNOWN
+
+
