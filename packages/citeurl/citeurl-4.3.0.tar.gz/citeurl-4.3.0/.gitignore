@@ -1,0 +1,8 @@
+*.sh
+*.egg-info/
+**/__pycache__/*
+mkdocs.yml
+docs_md/
+build/
+demo/
+dist/
