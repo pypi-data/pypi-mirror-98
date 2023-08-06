@@ -1,0 +1,9 @@
+{% set resource_name = ms_name %}
+
+{% include 'provider.j2' with context %}
+
+{% include 'local.j2' with context %}
+
+{% include 'rest_api.j2' with context %}
+
+{% include 'lambda.j2' with context %}
