@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nullpom
+Version: 0.0.5
+Summary: test
+Author: tenajima
+Author-email: tenajima@gmail.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lightgbm (>=3.1.1,<4.0.0)
+Requires-Dist: matplotlib (>=3.3.4,<4.0.0)
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
+Requires-Dist: scikit-learn (>=0.24.1,<0.25.0)
