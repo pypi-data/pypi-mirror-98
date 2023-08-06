@@ -1,0 +1,7 @@
+setup.py
+mip_cvxpy/__init__.py
+mip_cvxpy.egg-info/PKG-INFO
+mip_cvxpy.egg-info/SOURCES.txt
+mip_cvxpy.egg-info/dependency_links.txt
+mip_cvxpy.egg-info/requires.txt
+mip_cvxpy.egg-info/top_level.txt

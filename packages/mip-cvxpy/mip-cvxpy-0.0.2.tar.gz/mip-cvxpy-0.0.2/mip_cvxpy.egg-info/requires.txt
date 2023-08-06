@@ -1,0 +1,7 @@
+cvxpy>=1.1.11
+scipy
+mip==1.13.0
+
+[test]
+pytest
+cylp
