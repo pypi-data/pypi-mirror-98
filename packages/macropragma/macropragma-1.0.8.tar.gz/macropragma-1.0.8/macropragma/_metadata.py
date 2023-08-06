@@ -1,0 +1,5 @@
+__version__ = "1.0.8"
+__name__ = "macropragma"
+__author__ = "Jerzy Jamroz"
+__license__ = "LGPL-2.1-only"
+__summary__ = "macropragma"
