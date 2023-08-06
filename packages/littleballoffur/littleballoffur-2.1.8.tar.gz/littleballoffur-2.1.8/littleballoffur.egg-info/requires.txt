@@ -1,0 +1,11 @@
+cmake
+Cython
+networkx
+tqdm
+python-louvain
+scikit-network
+pandas
+numpy
+six
+scipy
+networkit==7.1
