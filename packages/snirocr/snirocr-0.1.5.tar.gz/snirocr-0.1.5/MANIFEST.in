@@ -1,0 +1,6 @@
+include snirocr/first_click.wav
+include snirocr/second_click.wav
+include snirocr/startup.wav
+include snirocr/success.wav
+include snirocr/negativebeep.wav
+include snirocr/Tesseract-OCR.zip
