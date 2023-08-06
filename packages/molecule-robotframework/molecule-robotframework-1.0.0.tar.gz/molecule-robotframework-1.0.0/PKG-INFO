@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: molecule-robotframework
+Version: 1.0.0
+Summary: Robotframework Molecule Plugin :: run molecule tests with Robotframework as verifier
+Home-page: UNKNOWN
+Author: Michael Meffie
+Author-email: mmeffie@sinenomine.net
+License: UNKNOWN
+Description: Robotframework Molecule Plugin :: run molecule tests with Robotframework as verifier
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
