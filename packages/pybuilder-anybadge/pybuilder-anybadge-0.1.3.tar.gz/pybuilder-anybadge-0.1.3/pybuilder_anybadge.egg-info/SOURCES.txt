@@ -1,0 +1,10 @@
+setup.py
+pybuilder_anybadge/__init__.py
+pybuilder_anybadge/task.py
+pybuilder_anybadge.egg-info/PKG-INFO
+pybuilder_anybadge.egg-info/SOURCES.txt
+pybuilder_anybadge.egg-info/dependency_links.txt
+pybuilder_anybadge.egg-info/namespace_packages.txt
+pybuilder_anybadge.egg-info/requires.txt
+pybuilder_anybadge.egg-info/top_level.txt
+pybuilder_anybadge.egg-info/zip-safe
