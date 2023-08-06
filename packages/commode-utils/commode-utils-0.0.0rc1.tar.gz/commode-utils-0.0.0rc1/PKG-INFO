@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: commode-utils
+Version: 0.0.0rc1
+Summary: Set of useful functions and modules for Code Modelling
+Home-page: https://github.com/SpirinEgor/commode-utils
+Author: Egor Spirin
+Author-email: spirin.egor@gmail.com
+License: Apache 2.0
+Download-URL: https://pypi.org/project/commode-utils
+Description: # commode-utils
+        Different functions and modules for helping in Code Modeling
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

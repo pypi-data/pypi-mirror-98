@@ -1,0 +1,9 @@
+README.md
+setup.py
+commode-utils/__init__.py
+commode_utils.egg-info/PKG-INFO
+commode_utils.egg-info/SOURCES.txt
+commode_utils.egg-info/dependency_links.txt
+commode_utils.egg-info/requires.txt
+commode_utils.egg-info/top_level.txt
+tests/__init__.py
