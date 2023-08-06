@@ -1,0 +1,13 @@
+template_python_project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_python_project/__main__.py,sha256=hzGmu-DRiKXm9zdCLROYfe9jBbrwn7w9a8UuvMHcu84,63
+template_python_project/main.py,sha256=ZVk0tj8zQlgaFumtnPmHyuJIyPYDUpqKFKj-4A78Nfo,833
+template_python_project/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_python_project/core/compute.py,sha256=C1GRnouiJ76DZQqtup6s3GpzH6SYii5H6OHCjY8bOI0,111
+template_python_project/logging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_python_project/logging/logger.py,sha256=4oTJTgmCPO0lZzj7Y9kQ8SmP2u_11VQURCJ-z5wjXDk,950
+template_python_project-0.2.1.dist-info/LICENSE,sha256=lPb-xyQM61SGpz6XZtib6iLtZeSP2AWeC1cS4MbOjMs,1066
+template_python_project-0.2.1.dist-info/METADATA,sha256=R4vAkNKoQ9Py-EdFXZJN-6TnG5dMRqKRlgE686C_iuU,1375
+template_python_project-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+template_python_project-0.2.1.dist-info/entry_points.txt,sha256=1tHezwZ4UsqtDhm1C6ID4sVIqvQhysGOCopdIv3T1Zo,98
+template_python_project-0.2.1.dist-info/top_level.txt,sha256=H7MIO3UeIV--tIF2C93Ff9Ff6aWO9OnyP1IB5Sog8mU,24
+template_python_project-0.2.1.dist-info/RECORD,,
