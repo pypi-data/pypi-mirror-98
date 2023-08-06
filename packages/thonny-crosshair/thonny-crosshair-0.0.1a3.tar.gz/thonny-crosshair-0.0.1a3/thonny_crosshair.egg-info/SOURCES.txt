@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+requirements.txt
+setup.py
+thonny_crosshair.egg-info/PKG-INFO
+thonny_crosshair.egg-info/SOURCES.txt
+thonny_crosshair.egg-info/dependency_links.txt
+thonny_crosshair.egg-info/requires.txt
+thonny_crosshair.egg-info/top_level.txt
+thonnycontrib/thonny_crosshair/__init__.py
+thonnycontrib/thonny_crosshair/py.typed
