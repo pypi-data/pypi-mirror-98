@@ -1,0 +1,14 @@
+PyQt5
+numpy
+scipy
+matplotlib
+h5py
+Pillow
+lxml
+pyqtgraph
+
+[SIRT]
+scikit-image
+
+[netCDF]
+netcdf4-python

@@ -1,0 +1,3 @@
+[gui_scripts]
+mantis-xray = mantis_xray.mantis_qt:main
+
