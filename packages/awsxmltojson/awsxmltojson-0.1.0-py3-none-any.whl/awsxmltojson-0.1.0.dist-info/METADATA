@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: awsxmltojson
+Version: 0.1.0
+Summary: Converts XML Responses from AWS API to JSON
+License: MIT
+Author: seveibar
+Author-email: seveibar@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: lxml (>=4.6.2,<5.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
