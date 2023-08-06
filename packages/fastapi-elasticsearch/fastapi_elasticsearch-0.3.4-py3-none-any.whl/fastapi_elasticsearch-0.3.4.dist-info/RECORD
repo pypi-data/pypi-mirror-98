@@ -1,0 +1,7 @@
+fastapi_elasticsearch/__init__.py,sha256=vj9d5wuHPlHyeuU9QRXuYc9wwcxKgz3Pc3SggSZE7ko,83
+fastapi_elasticsearch/api.py,sha256=74iHz411QTd8sGURy1i7syldWsp65AyLRQExt7as27g,13998
+fastapi_elasticsearch/utils.py,sha256=oy0jUKpxYSoQZN9jCT6pLU_VG5RGzB5fmxzTMXwxOcA,635
+fastapi_elasticsearch-0.3.4.dist-info/METADATA,sha256=zapD60Z4POIUOg8S5kdpMkr5TiTV0jtwkv8g62d2M_s,3456
+fastapi_elasticsearch-0.3.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastapi_elasticsearch-0.3.4.dist-info/top_level.txt,sha256=eqbzHQ6eySv5ikZ-718LM-jsW8oxrCI32vWfrqXbgpg,22
+fastapi_elasticsearch-0.3.4.dist-info/RECORD,,
