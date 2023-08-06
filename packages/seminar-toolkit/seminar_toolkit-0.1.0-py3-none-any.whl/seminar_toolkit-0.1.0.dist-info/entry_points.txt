@@ -1,0 +1,3 @@
+[console_scripts]
+seminar=seminar.cli:seminar
+
