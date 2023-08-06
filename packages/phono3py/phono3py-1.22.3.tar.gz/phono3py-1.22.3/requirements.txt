@@ -1,0 +1,5 @@
+numpy
+PyYAML
+matplotlib
+h5py
+phonopy >=2.9.3,<2.10
