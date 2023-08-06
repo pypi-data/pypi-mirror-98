@@ -1,0 +1,3 @@
+[console_scripts]
+ado2hugo = ado2hugo.__main__:main
+
