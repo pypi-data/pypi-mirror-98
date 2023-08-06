@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mindinsight
+Version: 1.1.1
+Summary: mindinsight platform: linux, cpu: aarch64, git version: [sha1]:f53e3ab3, [branch]: (HEAD -> r1.1, origin/r1.1)
+Requires-Dist: Click (>=7.0)
+Requires-Dist: Flask (>=1.1.1)
+Requires-Dist: Flask-Cors (>=3.0.8)
+Requires-Dist: google-pasta (>=0.1.8)
+Requires-Dist: gunicorn (>=19.9.0)
+Requires-Dist: itsdangerous (>=1.1.0)
+Requires-Dist: Jinja2 (>=2.10.1)
+Requires-Dist: MarkupSafe (>=1.1.1)
+Requires-Dist: marshmallow (>=2.19.2)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: pillow (>=6.2.0)
+Requires-Dist: protobuf (>=3.8.0)
+Requires-Dist: psutil (>=5.6.1)
+Requires-Dist: pyyaml (>=5.3.1)
+Requires-Dist: scipy (>=1.5.3)
+Requires-Dist: scikit-learn (>=0.23.1)
+Requires-Dist: six (>=1.12.0)
+Requires-Dist: Werkzeug (>=1.0.0)
+Requires-Dist: pandas (>=1.0.4)
+Requires-Dist: yapf (>=0.30.0)
+Requires-Dist: treelib (>=1.6.1)
+Requires-Dist: grpcio (>=1.27.3)
+
+Home-page: https://www.mindspore.cn
+Author: The MindSpore Authors
+Author-email: contact@mindspore.cn
+License: Apache 2.0
+Download-URL: https://gitee.com/mindspore/mindinsight/tags
+Project-URL: Sources, https://gitee.com/mindspore/mindinsight
+Project-URL: Issue Tracker, https://gitee.com/mindspore/mindinsight/issues
+Description: UNKNOWN
+Keywords: mindinsight
+Platform: linux
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
