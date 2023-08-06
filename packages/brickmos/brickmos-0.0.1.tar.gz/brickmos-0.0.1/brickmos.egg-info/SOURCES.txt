@@ -1,0 +1,11 @@
+README.md
+setup.py
+brickmos/__init__.py
+brickmos/brickify.py
+brickmos/defaults.py
+brickmos.egg-info/PKG-INFO
+brickmos.egg-info/SOURCES.txt
+brickmos.egg-info/dependency_links.txt
+brickmos.egg-info/entry_points.txt
+brickmos.egg-info/requires.txt
+brickmos.egg-info/top_level.txt
