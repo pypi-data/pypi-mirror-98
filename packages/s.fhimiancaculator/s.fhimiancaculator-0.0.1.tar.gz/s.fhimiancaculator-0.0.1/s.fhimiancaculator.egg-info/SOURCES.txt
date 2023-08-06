@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+s.fhimiancaculator.egg-info/PKG-INFO
+s.fhimiancaculator.egg-info/SOURCES.txt
+s.fhimiancaculator.egg-info/dependency_links.txt
+s.fhimiancaculator.egg-info/top_level.txt
+s.fhimiancalculator/__init__.py
