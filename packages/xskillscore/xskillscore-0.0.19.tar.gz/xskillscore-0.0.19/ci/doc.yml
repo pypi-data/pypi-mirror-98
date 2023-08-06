@@ -1,0 +1,24 @@
+name: xskillscore-docs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - bottleneck
+  - doc8
+  - importlib_metadata
+  - ipykernel
+  - ipython
+  - nbsphinx
+  - numpy
+  - pip
+  - properscoring
+  - matplotlib
+  - scipy
+  - sphinx
+  - sphinx_rtd_theme
+  - sphinx-autosummary-accessors
+  - toolz
+  - xarray>=0.16.1
+  - xhistogram>=0.1.2
+  - pip:
+      - -e ..

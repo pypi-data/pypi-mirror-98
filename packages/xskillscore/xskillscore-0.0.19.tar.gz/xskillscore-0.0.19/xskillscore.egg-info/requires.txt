@@ -1,0 +1,11 @@
+bottleneck
+cftime
+dask<=2021.02.0
+numba>=0.52
+numpy
+properscoring
+scikit-learn
+scipy
+toolz
+xarray>=0.16.1
+xhistogram>=0.1.2
