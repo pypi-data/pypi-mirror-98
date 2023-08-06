@@ -1,0 +1,3 @@
+[console_scripts]
+discordproxyserver = discordproxy.server:main
+
