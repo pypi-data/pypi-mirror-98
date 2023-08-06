@@ -1,0 +1,812 @@
+.\" generated with Ronn-NG/v0.8.0
+.\" http://github.com/apjanke/ronn-ng/tree/0.8.0
+.TH "AUTHPROGS" "1" "March 2021" "" ""
+.SH "NAME"
+\fBauthprogs\fR \- SSH command authenticator
+.SH "SYNOPSIS"
+\fBauthprogs \-\-run [options]\fR
+.P
+\fBauthprogs \-\-install_key [options]\fR
+.P
+\fBauthprogs \-\-dump_config [options]\fR
+.P
+\fBauthprogs \-\-help\fR
+.SH "DESCRIPTION"
+\fBauthprogs\fR is an SSH command authenticator\. It is invoked on an ssh server and decides if the command requested by the ssh client should be run or rejected based on logic in the \fBauthprogs\fR configuration file\.
+.P
+Passwordless SSH using ssh identities or pubkeys can enable all sorts of wonderful automation, for example running unattended batch jobs, slurping down backups, or pushing out code\. Unfortunately a key, once trusted, is allowed by default to run anything on that system, not just the small set of commands you actually need\. If the key is compromised, you are at risk of a security breach\. This could be catastrophic, for example if the access is to the root account\.
+.P
+Authprogs is run on the SSH server and compares the requested command against the \fBauthprogs\fR configuration file/files\. This enables \fBauthprogs\fR to make intelligent decisions based on things such as the command itself, the SSH key that was used, the client IP, and such\.
+.P
+\fBauthprogs\fR is enabled by using the \fBcommand=\fR option in the \fBauthorized_keys\fR file\.
+.SH "KEY INSTALLATION"
+You can install your ssh identities/pubkeys manually, or allow \fBauthprogs\fR to do the work for you\.
+.SH "MANUAL KEY INSTALLATION"
+You need to set up your \fB~/\.ssh/authorized_keys\fR file to force invocation of \fBauthprogs\fR for the key or keys you wish to protect\.
+.P
+A line of an unrestricted \fBauthorized_key\fR entry might look like this:
+.IP "" 4
+.nf
+ssh\-rsa AAAAxxxxx\|\.\|\.\|\.xxxxx user@example\.com
+.fi
+.IP "" 0
+.P
+When setting up this key to use \fBauthprogs\fR, you add a \fBcommand=\fR option to the very beginning of that line that points to the location where authprogs lives\. For example if \fBauthprogs\fR is in \fB/usr/bin/authprogs\fR, you would use this:
+.IP "" 4
+.nf
+command="/usr/bin/authprogs \-\-run" ssh\-rsa AAAAxxxxx\|\.\|\.\|\.xxxxx user@example\.com
+.fi
+.IP "" 0
+.P
+You must include \fB\-\-run\fR to let \fBauthprogs\fR know it is running in SSH command mode\.
+.P
+Authprogs has other command line options you may wish to include as well, for example
+.IP "" 4
+.nf
+command="/usr/bin/authprogs \-\-keyname=backups \-\-run" ssh\-rsa AAAA\|\.\|\.\|\.xxxxx user@example\.com
+.fi
+.IP "" 0
+.P
+Lastly, if you wish, ssh offers a number of other helpful restrictions you may wish to include that are separate from authprogs\. These can be appended right after (or before) the command="" section if you wish\.
+.IP "" 4
+.nf
+command="/usr/bin/authprogs \-\-run",no\-port\-forwarding,no\-pty ssh\-rsa AAAA\|\.\|\.\|\.xxxxx user@example\.com
+.fi
+.IP "" 0
+.P
+See the sshd(8) man page for more information about allowed \fBauthorized_keys\fR configuration options\.
+.SH "AUTOMATED KEY INSTALLATION"
+Authprogs is capable of adding your key to your \fBauthorized_keys\fR file (\fB~/\.ssh/authorized_keys\fR by default) programmatically\. It also disables ssh port forwarding by default for this key (a sensible default for most batch jobs\.)
+.P
+authprogs will refuse to install a key that is already present in the \fBauthorized_keys\fR file\.
+.P
+For example the following
+.IP "" 4
+.nf
+authprogs \-\-install_key /path/to/backups_key\.pub \-\-keyname=backups
+.fi
+.IP "" 0
+.P
+would cause the following line to be added to your \fB~/\.ssh/authorized_keys\fR file:
+.IP "" 4
+.nf
+command="/usr/bin/authprogs \-\-keyname backups \-\-run",no\-port\-forwarding ssh\-rsa AAAA\|\.\|\.\|\.xxxxx user@example\.com
+.fi
+.IP "" 0
+.SH "RUN MODE OPTIONS"
+Authprogs can run in several modes, depending on which of these command line switches you provide\.
+.TP
+\fB\-\-run\fR
+Act in run mode, as from an \fBauthorized_keys\fR file\.
+.TP
+\fB\-\-install_key filename\fR
+Install the key contained in the named file into your \fBauthorized_keys\fR file\.
+.TP
+\fB\-\-dump_config\fR
+Dump the configuration in a python\-style view\. Helpful only for debugging\.
+.TP
+\fB\-\-silent\fR
+Do not inform the user if their command has been rejected\. Default is to let them know it was rejected to prevent confusion\.
+.TP
+\fB\-\-help\fR
+Show help information
+.SH "OTHER OPTIONS"
+The following options may apply to multiple run modes, as appropriate\.
+.TP
+\fB\-\-keyname key_name\fR
+This option \'names\' the key, for help in crafting your rules\. Since an account may have multiple keys allowed, this helps us differentiate which one was used so we can make sensible choices\.
+.IP
+In run mode, this specifies which name is used when matching in the configuration, e\.g\.
+.IP "" 4
+.nf
+  command="/usr/bin/authprogs \-\-keyname backups \-\-run" \|\.\|\.\|\.
+.fi
+.IP "" 0
+.IP
+In key installation mode, this adds the \fB\-\-keyname\fR option to the \fBauthorized_keys\fR entry\.
+.IP
+\fBkey_name\fR may contain no whitespace\.
+.TP
+\fB\-\-configfile\fR
+Specifies the \fBauthprogs\fR configuration file to read\. Defaults to \fB~/\.ssh/authprogs\.yaml\fR\.
+.IP
+In key installation mode, this adds the \fB\-\-configfile\fR option to the \fBauthorized_keys\fR entry\.
+.TP
+\fB\-\-configdir\fR
+Specifies the \fBauthprogs\fR configuration, in which multiple configuration files can be found\. Defaults to \fB~/\.ssh/authprogs\.d\fR if present\.
+.IP
+Files in the configuration directory are read as rules in filename order\. See CONFIGURATION for more info\.
+.SH "LIMITATIONS"
+Commands are executed via fork/exec, and are not processed through the shell\. This means you cannot have multiple commands separated by semicolons, pipelines, redirections, backticks, shell builtins, wildcards, variables, etc\.
+.P
+Also, you cannot have spaces in any arguments your command runs\. This is because the SSH server takes the command that was specified by the client and squashes it into the \fBSSH_ORIGINAL_COMMAND\fR variable\. By doing this it makes it impossible for us to know what spaces in \fBSSH_ORIGINAL_COMMAND\fR were between arguments and which were part of arguments\.
+.P
+Here are some commands that would not work through \fBauthprogs\fR:
+.IP "\[ci]" 4
+\fBssh host "rm /tmp/foo; touch /tmp/success"\fR
+.IP "\[ci]" 4
+\fBssh host "rm /tmp/*\.html"\fR
+.IP "\[ci]" 4
+\fBssh host "cut \-d: \-f 1 /etc/passwd > /tmp/users"\fR
+.IP "\[ci]" 4
+\fBssh host "touch \'/tmp/file with spaces\'"\fR
+.IP "\[ci]" 4
+\fBssh host "for file in /tmp/*\.html; do w3m \-dump $file > $file\.txt; done"\fR
+.IP "" 0
+.P
+You can work around these limitations by writing a shell script that does what you need and calling that from \fBauthprogs\fR, rather than attempting to run complicated command lines via ssh directly\.
+.SH "CONFIGURATION FILES"
+authprogs rules are maintained in one or more configuration files in YAML format\.
+.P
+The rules allow you to decide whether the client\'s command should be run based on criteria such as the command itself, the client IP address, and ssh key in use\.
+.P
+Rules can be read from a single file (\fB~/\.ssh/authprogs\.yaml\fR by default) or by putting files in a configuration directory (\fB~/\.ssh/authprogs\.d\fR)\. The configuration directory method is most useful when you want to be able to easily add or remove rules without manually editing a single configuration file, such as when installing rules via your configuration tool of choice\.
+.P
+All the \fBauthprogs\fR configuration files are concatenated together into one large yaml document which is then processed\. The files are concatenated in the following order:
+.IP "\[ci]" 4
+\fB~/\.ssh/authprogs\.yaml\fR, if present
+.IP "\[ci]" 4
+files in \fB~/\.ssh/authprogs\.d/\fR directory, in asciibetical order
+.IP "" 0
+.P
+Dotfiles contained in a configuration directory are ignored\. The configuration directory is not recursed; only those files directly contained are processed\.
+.P
+Each rule in the configuration file/files is tested in order and once a match is found, processing stops and the command is run\.
+.P
+Rules are made of rule selection options (e\.g\. client IP address) and subrules (e\.g\. a list of allowed commands)\. All pieces must match for the command to be run\.
+.P
+The general format of a rule is as follows:
+.IP "" 4
+.nf
+# First rule
+\-
+  # Selection options
+  #
+  # All must match or we stop processing this rule\.
+  selection_option_1: value
+  selection_option_2: value
+
+  # The allow block, aka subrules
+  #
+  # This lets us group a bunch of possible commands
+  # into one rule\. Otherwise we\'d need a bunch of
+  # rules where you repeat selection options\.
+
+  allow:
+    \-
+      rule_type: value
+      rule_param_1: value
+      rule_param_2: value
+    \-
+      rule_type: value2
+      rule_param_1: value
+      rule_param_2: value
+
+# Next rule
+\-
+  selection_option_3: value
+\|\.\|\.\|\.
+.fi
+.IP "" 0
+.P
+Some of the keys take single arguments, while others may take lists\. See the definition of each to understand the values it accepts\.
+.SH "RULE SELECTION OPTIONS"
+These configuration options apply to the entire rule, and help you limit under what conditions the rule matches\.
+.IP "\[ci]" 4
+from: This is a single value or list of values that define what SSH client IP addresses are allowed to match this rule\. The client IP address is gleaned by environment variables set by the SSH server\. Any from value may be an IP address or a CIDR network\.
+.IP "" 0
+.P
+Examples:
+.IP "" 4
+.nf
+\-
+  from: 192\.168\.1\.5
+  \|\.\|\.\|\.
+
+\-
+  from: [192\.168\.0\.1, 10\.0\.0\.3]
+  \|\.\|\.\|\.
+
+\-
+  from:
+    \- 192\.168\.0\.0/24
+    \- 10\.10\.0\.3
+  \|\.\|\.\|\.
+.fi
+.IP "" 0
+.IP "\[ci]" 4
+keynames: This is a single value or list of values that define which SSH pubkeys are allowed to match this rule\. The keyname is specified by the \fB\-\-keyname foo\fR parameter in the authprogs command line in the entry in \fBauthorized_keys\fR\.
+.IP "" 0
+.P
+Examples:
+.IP "" 4
+.nf
+\-
+  keynames: backups
+  \|\.\|\.\|\.
+
+\-
+  keynames: [repo_push, repo_pull]
+  \|\.\|\.\|\.
+
+\-
+  keynames:
+    \- repo_push
+    \- repo_pull
+  \|\.\|\.\|\.
+.fi
+.IP "" 0
+.SH "ALLOW SUBRULE SECTION"
+The allow section of a rule is a single subrule or list of subrules\.
+.P
+Subrules can be simple, for example the explicit command match, or be more program\-aware such as scp support\. You specify which kind of subrule you want with the \fBrule_type\fR option:
+.IP "" 4
+.nf
+\-
+  allow:
+    \-
+      rule_type: command
+      command: /bin/touch /tmp/timestamp
+    \-
+      command: /bin/rm /tmp/bar
+    \-
+      rule_type: scp
+      allow_upload: true
+\|\.\|\.\|\.
+.fi
+.IP "" 0
+.P
+See the separate subrules sections below for how to craft each type\.
+.SH "COMMAND SUBRULES"
+This section applies if \fBrule_type\fR is set to \fBcommand\fR or is not present at all\.
+.P
+The command requested by the client is compared to the command listed in the rule\. (Spaces are squashed together\.) If it matches, then the command is run\.
+.P
+Note that the command must be \fIexactly\fR the same; \fBauthprogs\fR is not aware of arguments supported by a command, so it cannot realise that \fB"ls \-la"\fR and \fB"ls \-a \-l"\fR and \fB"ls \-al"\fR and \fB"ls \-l \-a"\fR are all the same\. You can list multiple commands to allow you to accept variants of a command if necessary\.
+.P
+The simplest configuration looks like this:
+.IP "" 4
+.nf
+\-
+  allow:
+    command: /bin/true
+.fi
+.IP "" 0
+.P
+Or you can provide a list of commands:
+.IP "" 4
+.nf
+\-
+  allow:
+    \- command: /bin/true
+    \- command: /bin/false
+.fi
+.IP "" 0
+.P
+A number of optional settings can tweak how command matching is performed\.
+.IP "\[ci]" 4
+\fBallow_trailing_args: true\fR: This setting allows you to specify a partial command that will match as long as the command requested by the client is the same or longer\. This allows you to avoid listing every variant of a command that the client may wish to run\.
+.IP
+Examples:
+.IP "" 4
+.nf
+\-
+  allow:
+    \-
+      command: /bin/echo
+      allow_trailing_args: true
+    \-
+      command: /bin/ls
+      allow_trailing_args: true
+    \-
+      command: /bin/rm \-i
+      allow_trailing_args: true
+.fi
+.IP "" 0
+
+.IP "\[ci]" 4
+\fBpcre_match: true\fR: Compare the command using pcre regular expressions, rather than doing an explicit match character by character\. The regex is \fInot\fR anchored at the beginning nor end of the string, so if you wish to anchor it is your responsibility to do so\.
+.IP
+Caution: never underestimate the sneakiness of an adversary who may find a way to match your regex and still do something nasty\.
+.IP
+Examples:
+.IP "" 4
+.nf
+\-
+  allow:
+    \-
+      # Touch the foo file, allowing any
+      # optional command line params
+      # before the filename
+
+      command: ^touch\e\es+(\-\e\eS+\e\es+)*foo$
+      pcre_match: true
+    \-
+      # attempt to allow rm of files in /var/tmp
+      # but actually would fail to catch malicious
+      # commands e\.g\. /var/tmp/\.\./\.\./etc/passwd
+      #
+      # As I said, be careful with pcre matching!!!
+
+      command: ^/bin/rm\e\es+(\-\e\eS+\e\es+)*/var/tmp/\e\eS*$
+      pcre_match: true
+.fi
+.IP "" 0
+
+.IP "" 0
+.SH "RSYNC SUBRULES"
+authprogs has special support for rsync file transfer\. You are not required to use this \- you could use a simple command subrules to match explicit rsync commands \- but using an rsync\-specific subrule offers you greater flexibility\.
+.P
+Rsync support is in beta, so please raise any bugs found\. Supporting the full set of rsync command line options is a moving target\.
+.P
+To specify rsync mode, use \fBrule_type: rsync\fR\.
+.P
+The rsync options are as follows\.
+.IP "\[ci]" 4
+\fBrule_type: rsync\fR: This indicates that this is an rsync subrule\.
+.IP "\[ci]" 4
+\fBallow_upload: false|true\fR: Allow files to be uploaded to the ssh server\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_download: false|true\fR: Allow files to be downloaded from the ssh server\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_archive: false|true\fR: Allow file archive, i\.e\. the options that are set when using \fB\-a\fR or \fB\-\-archive\fR\. This is used to simplify \fBauthprogs\fR configuration files\. Specifying this and negating one of he associated options (e\.g\. \fBallow_recursive: false\fR) is considered an error\. Defaults to false\.
+.IP "\[ci]" 4
+\fBpaths\fR: a list of explicit files/directories that are allowed to match\. Files specified by the client will be resolved via \fBrealpath\fR to avoid any symlink trickery, so members of \fBpaths\fR must be the real paths\.
+.IP
+WARNING: specifying a directory in \fBpaths\fR would allow rsync to act on any files therein at potentially infinite depth, e\.g\. when \fBallow_recursive\fR is set, or the client uses \fB\-\-files\-from\fR\. If you want to restrict to specific files you must name them explicitly\.
+.IP
+See RSYNC SYMLINK SUPPORT for potential limitations to \fBpaths\fR\.
+.IP "\[ci]" 4
+\fBpath_startswith\fR: a list of pathname prefixes that are allowed to match\. Files specified by the client will be resolved via \fBrealpath\fR and if they start with the name provided then they will be allowed\.
+.IP
+This is a simple prefix match\. For example if you had
+.IP "" 4
+.nf
+  path_startswith: [ /tmp ]
+.fi
+.IP "" 0
+.IP
+then it would match all of the following
+.IP "" 4
+.nf
+  /tmp
+  /tmp/
+  /tmpfiles      # may not be what you meant!
+  /tmp/foo\.txt
+  /tmp/dir1/dir2/bar\.txt
+.fi
+.IP "" 0
+.IP
+If you want it to match only a directory (and any infinite subdirectories) be sure to include a trailing slash, e\.g\. \fB/tmp/\fR
+.IP
+See RSYNC SYMLINK SUPPORT for potential limitations to \fBpaths\fR\.
+.IP "\[ci]" 4
+\fBallow_acls: false|true\fR: Allow syncing of file ACLs\. (\fB\-\-acls\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_checksum: true|false\fR: Allow checksum method for identifying files that need syncing\. (\fB\-c\fR / \fB\-\-checksum\fR) Defaults to true\.
+.IP "\[ci]" 4
+\fBallow_debug: true|false\fR: Allow fine\-grained debug verbosity\. (\fB\-\-debug FLAGS\fR)\. No support for sanity checking the debug flags that are specified\. Defaults to true\.
+.IP "\[ci]" 4
+\fBallow_delete: false|true\fR: Allow any of the delete options\. (\fB\-\-del\fR \fB\-\-delete\fR \fB\-\-delete\-after\fR \fB\-\-delete\-before\fR \fB\-\-delete\-delay\fR \fB\-\-delete\-during\fR \fB\-\-delete\-excluded\fR \fB\-\-delete\-missing\-args\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_devices: false|true\fR: Allow syncing of device files\. (\fB\-\-devices\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_group: false|true\fR: Allow group change\. (\fB\-g \-\-group\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_info: true|false\fR: Allow fine\-grained info verbosity\. (\fB\-info FLAGS\fR)\. No support for sanity checking the info flags that are specified\. Defaults to true\.
+.IP "\[ci]" 4
+\fBallow_links: false|true\fR: Allow copying symlinks as symlinks\. (\fB\-l \-\-links\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_group: false|true\fR: Allow ownership change\. (\fB\-o \-\-owner\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_perms: false|true\fR: Allow perms change\. (\fB\-p \-\-perms\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_recursive: false|true\fR: Allow recursive sync\. (\fB\-r \-\-recursive\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_specials: false|true\fR: Allow syncing of special files, e\.g\. fifos\. (\fB\-\-specials\fR)\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_times: true|false\fR: Allow setting synced file times\. (\fB\-t \-\-times\fR)\. Defaults to true\.
+.IP "\[ci]" 4
+\fBallow_verbose: true|false|#\fR: Allow verbose output\. (\fB\-v \-\-verbose\fR)\. Rsync allows multiple \-v options, so this option accepts true (allow any verbosity), false (deny any verbosity), or a number which indicates the maximum number of \fB\-v\fR option that are allowed, e\.g\. \fB2\fR would allow \fB\-v\fR or \fB\-vv\fR but not \fB\-vvv\fR\. Defaults to true\.
+.IP "" 0
+.SS "RSYNC COMMAND LINE OPTIONS"
+Not all rsync options are currently implemented in \fBauthprogs\fR\.
+.P
+If an option is listed as "\fInot implemented\fR" then there are two possibilities in how \fBauthprogs\fR will behave:
+.IP "" 4
+.nf
+* if the option is no actually sent on the remote command line then
+  `authprogs` is blissfully unaware and the command will succeed\.
+  Many options are actually client\-side only\. We have not thoroughly
+  investigated every single option yet\.
+
+* if the option is sent on the remote command line then `authprogs`
+  will fail\.
+.fi
+.IP "" 0
+.P
+Here is the list of rsync options and their current \fBauthprogs\fR support status:
+.IP "" 4
+.nf
+rsync client arg             authprogs support
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-             \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+
+    \-\-append                   <not implemented>
+    \-\-append\-verify            <not implemented>
+    \-\-backup\-dir               <not implemented>
+    \-\-bwlimit                  <not implemented>
+    \-\-checksum\-seed            <not implemented>
+    \-\-chown                  converted to \-\-usermap and \-\-groupmap
+    \-\-compare\-dest             <not implemented>
+    \-\-compress\-level           <not implemented>
+    \-\-contimeout               <not implemented>
+    \-\-copy\-dest                <not implemented>
+    \-\-copy\-unsafe\-links        <not implemented>
+    \-\-debug                  allow_debug
+    \-\-del                    allow_delete
+    \-\-delay\-updates            <not implemented>
+    \-\-delete                 allow_delete
+    \-\-delete\-after           allow_delete
+    \-\-delete\-before          allow_delete
+    \-\-delete\-delay           allow_delete
+    \-\-delete\-during          allow_delete
+    \-\-delete\-excluded        allow_delete
+    \-\-delete\-missing\-args    allow_delete
+    \-\-devices                allow_devices
+    \-\-existing                 <not implemented>
+    \-\-fake\-super               <not implemented>
+    \-\-files\-from               <not implemented>
+    \-\-force                    <not implemented>
+    \-\-groupmap                 <not implemented>
+    \-\-iconv                    <not implemented>
+    \-\-ignore\-errors            <not implemented>
+    \-\-ignore\-existing          <not implemented>
+    \-\-ignore\-missing\-args      <not implemented>
+    \-\-info                   allow_info
+    \-\-inplace                  <not implemented>
+    \-\-link\-dest                <not implemented>
+    \-\-list\-only                <not implemented>
+    \-\-log\-file                 <not implemented>
+    \-\-log\-file\-format          <not implemented>
+    \-\-max\-delete               <not implemented>
+    \-\-max\-size                 <not implemented>
+    \-\-min\-size                 <not implemented>
+    \-\-new\-compress             <not implemented>
+    \-\-no\-XXXXX                 <not implemented> (negating options, e\.g\. \-\-no\-r)
+    \-\-numeric\-ids              <not implemented>
+    \-\-only\-write\-batch         <not implemented>
+    \-\-outbuf                   <not implemented>
+    \-\-partial                  <not implemented>
+    \-\-partial\-dir              <not implemented>
+    \-\-preallocate              <not implemented>
+    \-\-protocol                 <not implemented>
+    \-\-read\-batch               <not implemented>
+    \-\-remove\-sent\-files        <not implemented> # deprecated version of remove\-source\-files
+    \-\-remove\-source\-files      <not implemented>
+    \-\-safe\-links               <not implemented>
+    \-\-size\-only                <not implemented>
+    \-\-skip\-compress            <not implemented>
+    \-\-specials               allow_specials
+    \-\-stats                    <not implemented>
+    \-\-stop\-at                  <not implemented>
+    \-\-suffix                   <not implemented>
+    \-\-super                    <not implemented>
+    \-\-time\-limit               <not implemented>
+    \-\-timeout                  <not implemented>
+    \-\-usermap                  <not implemented>
+    \-\-write\-batch              <not implemented>
+\-0, \-\-from0                    <not implemented>
+\-@, \-\-modify\-window            <not implemented>
+\-A, \-\-acls                   allow_acls
+\-B, \-\-block\-size               <not implemented>
+\-C, \-\-cvs\-exclude              <not implemented>
+\-D                           allow_devices and allow_specials
+\-E, \-\-executability            <not implemented>
+\-H, \-\-hard\-links               <not implemented>
+\-I, \-\-ignore\-times             <not implemented>
+\-J, \-\-omit\-link\-times          <not implemented>
+\-K, \-\-keep\-dirlinks            <not implemented>
+\-L, \-\-copy\-links               <not implemented>
+\-O, \-\-omit\-dir\-times           <not implemented>
+\-P                           Same as \-\-partial \-\-progress
+\-R, \-\-relative                 <not implemented>
+\-S, \-\-sparse                   <not implemented>
+\-T, \-\-temp\-dir                 <not implemented>
+\-W, \-\-whole\-file               <not implemented>
+\-X, \-\-xattrs                   <not implemented>
+\-a, \-\-archive                Same as \-rlptgoD; See those options
+    \-\-progress                 <not implemented>
+\-b, \-\-backup                   <not implemented>
+\-c, \-\-checksum               allow_checksum
+\-d, \-\-dirs                     <not implemented>
+\-f, \-\-filter                   <not implemented>
+\-g, \-\-group                  allow_group
+\-i, \-\-itemize\-changes          <not implemented>
+\-k, \-\-copy\-dirlinks            <not implemented>
+\-l, \-\-links                  allow_links
+\-m, \-\-prune\-empty\-dirs         <not implemented>
+\-n, \-\-dry\-run                  <not implemented>
+\-o, \-\-owner                  allow_owner
+\-p, \-\-perms                  allow_perms
+\-r, \-\-recursive              allow_recursive
+\-s, \-\-protect\-args             <not implemented>
+\-t, \-\-times                  allow_times
+\-u, \-\-update                   <not implemented>
+\-v, \-\-verbose                allow_verbose
+\-x, \-\-one\-file\-system          <not implemented>
+\-y, \-\-fuzzy                    <not implemented>
+\-z, \-\-compress                 <not implemented>
+    \-\-checksum\-choice=STR      <not implemented>
+    \-\-exclude\-from             <not implemented>
+    \-\-exclude                  <not implemented>
+    \-\-include\-from             <not implemented>
+    \-\-include                  <not implemented>
+    \-\-rsync\-path               <not implemented>
+    \-\-out\-format               <not implemented>
+.fi
+.IP "" 0
+.P
+The following are server\-side only options that are supported
+.IP "" 4
+.nf
+\-e, \-\-rsh=COMMAND            Value ignored (indicates protocol feature support)
+\-\-sender                     When present means download from server,
+                             when absent means upload to server\.
+\-\-server                     Always present on server
+.fi
+.IP "" 0
+.P
+The following rsync client options are only relevant to daemon mode (i\.e\. rsync daemon listening on TCP directly without SSH) or do not end up on the server command line and are thus re not taken into consideration when determining if the command is or is not allowed:
+.IP "" 4
+.nf
+    \-\-address               Client\-only option
+    \-\-chmod                 Client\-only option
+                               (Permissions are indicated via rsync
+                                protocol, not command line flags\.)
+    \-\-blocking\-io           Client\-only option
+    \-\-daemon                Daemon\-only option
+    \-\-msgs2stderr           Client\-only option
+    \-\-munge\-links           Client\-only option
+    \-\-no\-motd               Client\-only option
+    \-\-noatime               Client\-only option
+    \-\-password\-file         Daemon\-only option
+    \-\-port                  Client\-only option
+    \-\-sockopts              Daemon\-only option
+    \-\-version               Client\-only option
+\-4, \-\-ipv4                  Client\-only option
+\-6, \-\-ipv6                  Client\-only option
+\-8, \-\-8\-bit\-output          Client\-only option
+\-F                          Client\-only option (see \-\-filter)
+\-M, \-\-remote\-option=OPTION  Client\-only option
+\-h, \-\-human\-readable        Client\-only option
+\-q, \-\-quiet                 Client\-only option
+.fi
+.IP "" 0
+.SS "RSYNC BINARY PATH"
+Rsync must be at an official path to prevent a user\'s environment from choosing one of their programs over the official one\. Official paths are
+.IP "" 4
+.nf
+* /usr/bin/rsync
+* /usr/local/bin/rsync
+.fi
+.IP "" 0
+.P
+A user who specifies \-\-rsync\-path with a different value, or who has an rsync program earlier in their $PATH will be denied\.
+.SS "RSYNC SYMLINK SUPPORT"
+Rsync has multiple ways of handling symlinks depending on command line parameters and what component(s) of a path are symlinks\.
+.P
+If you are using \fBpaths\fR or \fBpaths_startswith\fR to limit what files may be uploaded/downloaded then its your responsibility to assure that symlink games are not used to exceed the desired restrictions\.
+.P
+For example if the file \fB/tmp/me\.txt\fR is a symlink to \fB/home/wbagg/me\.txt\fR and you had
+.IP "" 4
+.nf
+\- rule\e_type: rsync
+    allow_upload: true
+    paths:
+        \- /tmp/me\.txt
+.fi
+.IP "" 0
+.P
+then if the user ran
+.IP "" 4
+.nf
+rsync /some/local/file remote:/tmp/me\.txt
+.fi
+.IP "" 0
+.P
+then rather than updating the file at \fB/home/wbagg\.me\.txt\fR, the symlink at \fB/tmp/me\.txt\fR would be replaced with a normal file\.
+.P
+A future update to \fBauthprogs\fR may attempt to handle symlinks by calling \fBos\.path\.realpath\fR prior to doing comparisons\.
+.SS "RSYNC PATHNAME GOTCHA"
+Say you wanted to restrict uploads to just the file \fB/tmp/foo\.txt\fR, you\'d use the following rsync subrule::
+.IP "" 4
+.nf
+\- rule\e_type: rsync
+  allow_upload: true
+  paths:
+    \- /tmp/foo\.txt
+.fi
+.IP "" 0
+.P
+From an end\-user perspective both of these commands would seem to be allowed from the client machine because they\'d create a file on the remote named \fB/tmp/foo\.txt\fR:
+.IP "" 4
+.nf
+$ rsync foo\.txt remote:/tmp/foo\.txt  # provide full target filename
+$ rsync foo\.txt remote:/tmp          # imply source name for target
+.fi
+.IP "" 0
+.P
+However you\'ll find that only the first one works! This is because \fBauthprogs\fR on the server side sees literally just \fB/tmp\fR in the second case\.
+.P
+Thus if you wanted to restrict uploads to just the file \fB/tmp/foo\.txt\fR then on the client side you \fBmust\fR run the first (explicit filename) rsync command\.
+.SS "RSYNC SUBRULE KNOWN AND POSSIBLE BUGS"
+.IP "\[ci]" 4
+If uploading to a file that does not yet exist when you\'ve set \fBpaths\fR this will fail\. Adding a new \fBallow_create\fR option is the most likely solution here, but not yet implemented\.
+.IP "\[ci]" 4
+No investigation of the rsync options \-\-include / \-\-exclude / \-\-files\-from has yet been performed \- may affect path matching security\.
+.IP "\[ci]" 4
+Though we do expand file globs and check each individual path that is returned, we do not explicitly use these resolved files when calling rsync\. (Reason: it\'s possible we exceed the allowed size of a command line with globs that return many files\.) As such if rsync\'s glob and \fBshutils\.glob\fR have different behaviour we may have false positives or negatives\.
+.IP "\[ci]" 4
+When \fBallow_download\fR is disabled client should not be able to get file contents\. However since rsync transfers checksums as part of its protocol it is possible that information about server file contents could be gleaned by comparing checksums to possible content checksums when doing uploads\.
+.IP "" 0
+.SH "SCP SUBRULES"
+authprogs has special support for scp file transfer\. You are not required to use this \- you could use a simple command subrules to match explicit scp commands \- but using an scp\-specific subrule offers you greater flexibility\.
+.P
+To specify scp mode, use \fBrule_type: scp\fR\.
+.P
+The scp options are as follows\.
+.IP "\[ci]" 4
+\fBrule_type: scp\fR: This indicates that this is an scp subrule\.
+.IP "\[ci]" 4
+\fBallow_upload: false|true\fR: Allow files to be uploaded to the ssh server\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_download: false|true\fR: Allow files to be downloaded from the ssh server\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_recursive: false|true\fR: Allow recursive (\-r) file up/download\. Defaults to false\.
+.IP "\[ci]" 4
+\fBallow_recursion: false|true\fR: Deprecated version of \fBallow_recursive\fR\. will be removed in 1\.0 release\.
+.IP "\[ci]" 4
+\fBallow_permissions: true|false\fR: Allow scp to get/set the permissions of the file/files being transferred\. Defaults to false\.
+.IP "\[ci]" 4
+\fBpaths\fR: The paths option allows you to specify which file or files are allowed to be transferred\. If this is not specified then transfers are not restricted based on filename\.
+.IP
+Examples:
+.IP "" 4
+.nf
+\-
+  allow:
+    \- rule_type: scp
+      allow_download: true
+      paths:
+        \- /etc/group
+        \- /etc/passwd
+    \- rule_type: scp
+      allow_upload: true
+      paths: [/tmp/file1, /tmp/file2]
+.fi
+.IP "" 0
+
+.IP "" 0
+.SH "EXAMPLES"
+Here is a sample configuration file with multiple rules, going from simple to more complex\.
+.P
+Note that this config can be spread around between the \fB~/\.ssh/authprogs\.yaml\fR and \fB~/\.ssh/authprogs\.d\fR directory\.
+.IP "" 4
+.nf
+# All files should start with an initial solo dash \-
+# remember, we\'re being concatenated with all other
+# files!
+
+# Simple commands, no IP restrictions\.
+\-
+  allow:
+    \- command: /bin/tar czvf /backups/www\.tgz /var/www/
+    \- command: /usr/bin/touch /var/www/\.backups\.complete
+
+# Similar, but with IP restrictions
+\-
+  from: [192\.168\.0\.10, 192\.168\.0\.15, 172\.16\.3\.3]
+  allow:
+    \- command: git \-\-git\-dir=/var/repos/foo/\.git pull
+    \- command: sudo /etc/init\.d/apache2 restart
+
+# Some more complicated subrules
+\-
+  # All of these \'allows\' have the same \'from\' restrictions
+  from:
+    \- 10\.1\.1\.20
+    \- 10\.1\.1\.21
+    \- 10\.1\.1\.22
+    \- 10\.1\.1\.23
+  allow:
+    # Allow unrestricted ls
+    \- command: /bin/ls
+      allow_trailing_args: true
+
+    # Allow any \'service apache2 (start|stop)\' commands via sudo
+    \- command: sudo service apache2
+      allow_trailing_args:true
+
+    # How about a regex? Allow wget of any https url, outputting
+    #  to /tmp/latest
+    \- command: ^/usr/bin/wget\e\es+https://\e\eS+\e\es+\-O\e\es+/tmp/latest$
+      pcre_match: true
+
+    # Allow some specific file uploads
+    \- rule_type: scp
+      allow_upload: true
+      paths:
+        \- /srv/backups/host1\.tgz
+        \- /srv/backups/host2\.tgz
+        \- /srv/backups/host3\.tgz
+
+    # Allow rsync to upload everything, deny any download
+    \- rule_type: rsync
+      allow_upload: true
+
+    # Allow rsync to recursively sync /tmp/foo/ to the server
+    # in archive mode (\-a, or any subset of \-logptrD)
+    # but do not allow download
+    \- rule_type: rsync
+      allow_upload: true
+      allow_recursive: true
+      allow_archive: true
+      paths:
+        \- /tmp/foo
+
+    # Allow rsync to write some specific files and any individual
+    #   files under /data/lhc/ directory, such as /data/lhc/foo
+    #   or /data/lhc/subdir/foo\.
+    #
+    # Disallow download (explicitly listed) or recursive
+    #    upload (default false)\.
+    \- rule_type: rsync
+      allow_upload: true
+      allow_download: false
+      paths:
+        \- /srv/htdocs/index\.html
+        \- /srv/htdocs/status\.html
+      path_startswith:
+        \- /data/lhc/
+.fi
+.IP "" 0
+.SH "TROUBLESHOOTING"
+\fB\-\-dump_config\fR is your friend\. If your yaml config isn\'t parsing, consider \fB\-\-dump_config \-\-logfile=/dev/tty\fR for more debug output to find the error\.
+.SH "FILES"
+.IP "\[ci]" 4
+\fB~/\.ssh/authorized_keys\fR: The default place your key should be installed and configured to call \fBauthprogs\fR\. The actual location can differ if your administrator has changed it\.
+.IP "\[ci]" 4
+\fB~/\.ssh/authprogs\.yaml\fR: Default \fBauthprogs\fR configuration file\. Override with \-\-configfile\.
+.IP "\[ci]" 4
+\fB~/\.ssh/authprogs\.d\fR: Default \fBauthprogs\fR configuration directory\. Override with \-\-configdir\.
+.IP "" 0
+.SH "ENVIRONMENT"
+authprogs uses the following environment variables that are set by the sshd(8) binary:
+.IP "\[ci]" 4
+\fBSSH_CONNECTION\fR: This is used to determine the client IP address\.
+.IP "\[ci]" 4
+\fBSSH_CLIENT\fR: This is used to determine the client IP address if SSH_CONNECTION was not present\.
+.IP "\[ci]" 4
+\fBSSH_ORIGINAL_COMMAND\fR: The (squashed) original SSH command that was issued by the client\.
+.IP "" 0
+.P
+authprogs sets the following environment variables for use by the authenticated process
+.IP "\[ci]" 4
+\fBAUTHPROGS_KEYNAME\fR: the value of the \-\-keyname command line\. Will be set to an empty string if no \-\-keyname was set\.
+.IP "" 0
+.SH "EXIT STATUS"
+On unexpected error or rejecting the command \fBauthprogs\fR will exit 126\.
+.P
+If the command was accepted then it returns the exit code of the command that was run\.
+.P
+Note that if you\'re invoking ssh via another tool that program may provide a different exit status and provide a misleading error message when \fBauthprogs\fR returns a failure, For example \fBrsync\fR will exit 12 and assume a "protocol problem" rather than a rejection on the server side\.
+.SH "LOGGING AND DEBUGGING"
+If a \fB\-\-logfile\fR is specified then it will be opened in append mode and a line about each command that is attempted to be run will be written to it\. The line itself is in the form of a python dictionary\.
+.P
+If \fBauthprogs\fR is run with \fB\-\-debug\fR, then this logfile will get increased debugging information, including the configuration, rule matching status as they are checked, etc\.
+.SH "HISTORY"
+A perl version of \fBauthprogs\fR was originally published at https://www\.hackinglinuxexposed\.com/articles/20030115\.html in 2003\. This is a complete rewrite in python, with a more extensible configuration, and avoiding some of the limitations of the former\.
+.SH "SEE ALSO"
+ssh(1), sshd(8), scp(1)\.
+.SH "AUTHOR"
+Bri Hatch \fI\%mailto:bri@ifokr\.org\fR
