@@ -1,0 +1,11 @@
+airflow/providers/odbc/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/odbc/hooks/__init__.py,sha256=9hdXHABrVpkbpjZgUft39kOFL2xSGeG4GEua0Hmelus,785
+airflow/providers/odbc/hooks/odbc.py,sha256=1Kl1M6eOeKwv3_YwR7GsCkggLKlncQBcygbfJApmDF0,8101
+airflow/providers/odbc/utils/__init__.py,sha256=mlJxuZLkd5x-iq2SBwD3mvRQpt3YR7wjz_nceyF1IaI,787
+airflow/providers/odbc/utils/helpers.py,sha256=l5MY-CpRn_4Wco2qv7fgMaJnI0VwXby2Li6FClpVmRo,7065
+apache_airflow_backport_providers_odbc-2021.3.17.dist-info/LICENSE,sha256=gXPVwptPlW1TJ4HSuG5OMPg-a3h43OGMkZRR1rpwfJA,10850
+apache_airflow_backport_providers_odbc-2021.3.17.dist-info/METADATA,sha256=qVcWhOjOw94UCTLXocwPY0TnjyTuhHiw_ASv602za-0,13889
+apache_airflow_backport_providers_odbc-2021.3.17.dist-info/NOTICE,sha256=irN1W_XwjRh8XRlHEhVpRCSY7NZfQgGdnEfjFvGrxK4,240
+apache_airflow_backport_providers_odbc-2021.3.17.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+apache_airflow_backport_providers_odbc-2021.3.17.dist-info/top_level.txt,sha256=OeMVH5md7fr2QQWpnZoOWWxWO-0WH1IP70lpTVwopPg,8
+apache_airflow_backport_providers_odbc-2021.3.17.dist-info/RECORD,,
