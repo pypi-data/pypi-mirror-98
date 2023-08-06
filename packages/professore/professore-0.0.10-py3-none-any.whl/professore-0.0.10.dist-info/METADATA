@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: professore
+Version: 0.0.10
+Summary: List url link, script tags, reponse headers
+Home-page: https://github.com/null011/scripts
+Author: Noe Macias
+Author-email: notnull011@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/null011/scripts/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+# Install
+
+```bash
+pip install .
+```
+
+### Upgrade
+
+```bash
+pip install -U .
+```
+
+# Usage
+
+```bash
+usage: professor.py [-h] -u URL [-c] [-d DOWNLOAD]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u URL, --url URL     Url
+  -c, --code            Print tags innter text
+  -d DOWNLOAD, --download DOWNLOAD
+                        Download remote libs, must be a path
+```
+
+Scan
+
+```bash
+professore --url https://github.com
+```
+
+Show `<link>` and `<script>` tags html
+
+```bash
+professore --url https://github.com --code
+```
+
+Download remote links
+
+> File url link is used as filename, replacing `/` with `#`
+
+```bash
+professore --url https://github.com --download /tmp/github
+```
+
+
