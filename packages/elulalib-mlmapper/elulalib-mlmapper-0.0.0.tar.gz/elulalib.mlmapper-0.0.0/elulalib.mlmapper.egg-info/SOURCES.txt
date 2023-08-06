@@ -1,0 +1,5 @@
+setup.py
+elulalib.mlmapper.egg-info/PKG-INFO
+elulalib.mlmapper.egg-info/SOURCES.txt
+elulalib.mlmapper.egg-info/dependency_links.txt
+elulalib.mlmapper.egg-info/top_level.txt
