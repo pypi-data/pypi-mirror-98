@@ -1,0 +1,13 @@
+fordev/__about__.py,sha256=jeDURzWUbG0IOaIa9-uriWz4atqmu-HVnmxlrU5h8mw,280
+fordev/__init__.py,sha256=JBOp6oNrBDKkEAzKHiwyCgqkEZNwCPC6T6PlYlTYiO0,1675
+fordev/consts.py,sha256=Jl98bD7n1nL2gvA1MwcM6rw3k31XqC_ISoUxdUsMXGM,6495
+fordev/core.py,sha256=76h3_jjHIcJ3Zt-gMGU1n9JlTPMVTElMGsc-OVSYZSY,3165
+fordev/filters.py,sha256=OwO2t1UfP1YNmLMDiBrxpryGEBq7Bv7ROHNOUlhkkyM,4273
+fordev/generators.py,sha256=eVIlqW7ZuO9eDVAj-zR7gIFc6BENqEsRoJapuGu5klQ,20325
+fordev/utils.py,sha256=qrktJNNrIiQ2HhGlCJyffTTZwarAwFWdNu8_ow1Uxtc,2807
+fordev/validators.py,sha256=MeRuEb3qijIUwkPcyoPYw6vL_a8QLBs2alRyLmp335Y,11318
+fordev-1.0.1.dist-info/LICENSE,sha256=i_SXRQABjeC55JJD_jxteBx0_dGReBoc3jbqw_NH2BM,1155
+fordev-1.0.1.dist-info/METADATA,sha256=ucBAVtCWAK059CF1BHEZVmHFjrAejOqtZgQSL_ql9iU,9603
+fordev-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fordev-1.0.1.dist-info/top_level.txt,sha256=QgCPaOvVQ-4tCRqe_87Zvywr-jvM2xjvzfhdVmdZv9c,7
+fordev-1.0.1.dist-info/RECORD,,
