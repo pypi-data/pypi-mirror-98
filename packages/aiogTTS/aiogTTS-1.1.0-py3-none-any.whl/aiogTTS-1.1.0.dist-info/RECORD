@@ -1,0 +1,15 @@
+aiogtts/__init__.py,sha256=9hZ_omWBXrdnGcCTjzto5WjktIERh_HfViK2Jhm-LhQ,78
+aiogtts/lang.py,sha256=4HJt1Usq0ZEpVIhzWnEOSi9KbBDRALZ3l4t3lCvLG4o,2574
+aiogtts/langs.py,sha256=8zCx84R4ZL5cDZHQbJgOJrtfdKRg5JmjS3yupWm7QFk,1288
+aiogtts/tts.py,sha256=YkoTXhHlyhAq_WR2RxBse62rJbYubTE7nULcN2WROOI,11427
+aiogtts/utils.py,sha256=n145Ii1DERFJxktnH00akiEaAq9N37kz_XnG7LPhCvk,3010
+aiogtts/tokenizer/__init__.py,sha256=MUXWXfRsXZsKsIF9-XzZMXzO7JM2izm7xLL18MQivM4,78
+aiogtts/tokenizer/core.py,sha256=vq736j5nOkoAdoaLtc6jE8tis4A1RsMHlngSVAGGa64,10655
+aiogtts/tokenizer/pre_processors.py,sha256=pumWc2f6uTjKBmkqDf6o27kfNoqR5SUoS-hiHNSZNg0,1508
+aiogtts/tokenizer/symbols.py,sha256=pvQPHrK6tBB6_dhkv8Zv7TtcZ8tpoj8-SumSRHPsg_g,273
+aiogtts/tokenizer/tokenizer_cases.py,sha256=ov_IUKhJfH04FtWMQhARf49ggDMgtyQMpy3iUp1-yHE,1838
+aiogTTS-1.1.0.dist-info/LICENSE,sha256=OSNPrdf7xewwE3v4s3shsq5emWR1tiN-Tne3zMEEjDQ,1067
+aiogTTS-1.1.0.dist-info/METADATA,sha256=8hN205wPbTQbE3jX5ctHEJ0QH6CQHcsCzvGxMsQzRjI,2298
+aiogTTS-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aiogTTS-1.1.0.dist-info/top_level.txt,sha256=_ZjIhtxQ7nqb7aHfEL8DImEZM1nm441W9NffmWObag4,26
+aiogTTS-1.1.0.dist-info/RECORD,,
