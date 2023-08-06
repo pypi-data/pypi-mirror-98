@@ -1,0 +1,17 @@
+django_ssh/__init__.py,sha256=_I6u_ypA9MUiJ4dDVroZDyxwTC2skm7zm7Q2pYNbos8,49
+django_ssh/admin.py,sha256=wuiU_s6b5N9UwM9loyyXxgxJjeXinrlkJOhja7VMOMQ,84
+django_ssh/apps.py,sha256=Y8s3Kuq2OcVbpfD3CdtYRKRgi_xYMGRw6OBKU79bQUg,84
+django_ssh/forms.py,sha256=RQwwm5KwS4ngeuisVLNQ0lHcEDPr3-o39yuJPssRfAg,1090
+django_ssh/models.py,sha256=g04pa9kEV2cjSpa7h2zpX_CmwT5hPukS6CJQkvWVSd8,2951
+django_ssh/urls.py,sha256=gMBqqezbNLTPAU2sTD-9CVrrd0FePLCPUuUbJmzmX5o,1005
+django_ssh/version.py,sha256=gJSVJT9Ya5-j8bmyPWU0BUO6N7jvj3WMuaghcPHzSQw,1279
+django_ssh/views.py,sha256=889alBfEsGQ3dMpVcrz7NkELKeRNYoOkQtzd_1Sb60s,2607
+django_ssh/migrations/0001_initial.py,sha256=x7DVK1yaWr5ADeWzYzhBKwyrKtyOEPLOfRLdgbFb33M,985
+django_ssh/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ssh/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_ssh/tests/test_basic.py,sha256=tw-x_aR9nsNlw6F9jkRyu41-emOwSE0-CRZXtj1C4p8,4926
+django_ssh-0.2.3.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+django_ssh-0.2.3.dist-info/METADATA,sha256=OW8FfY00xNtqooK0dCiKKgMJrLewiaBfPULl_TSSb8w,1155
+django_ssh-0.2.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_ssh-0.2.3.dist-info/top_level.txt,sha256=rQa-YjkbtyavG7d-3b4XwTULlv4aa6h7h_vi0pD26Xg,11
+django_ssh-0.2.3.dist-info/RECORD,,
