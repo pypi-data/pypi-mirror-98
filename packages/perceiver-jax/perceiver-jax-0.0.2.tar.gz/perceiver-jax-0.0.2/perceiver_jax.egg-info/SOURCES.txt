@@ -1,0 +1,9 @@
+README.md
+setup.py
+perceiver_jax/__init__.py
+perceiver_jax/perceiver_jax.py
+perceiver_jax.egg-info/PKG-INFO
+perceiver_jax.egg-info/SOURCES.txt
+perceiver_jax.egg-info/dependency_links.txt
+perceiver_jax.egg-info/requires.txt
+perceiver_jax.egg-info/top_level.txt
