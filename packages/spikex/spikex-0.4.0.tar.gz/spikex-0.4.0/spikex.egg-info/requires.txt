@@ -1,0 +1,12 @@
+cyac
+ftfy
+gensim
+jsonschema
+memory-profiler
+python-igraph
+regex
+smart-open
+spacy>2.3
+typer
+wasabi
+yarl

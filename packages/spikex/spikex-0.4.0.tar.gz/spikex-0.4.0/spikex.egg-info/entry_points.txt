@@ -1,0 +1,3 @@
+[console_scripts]
+spikex = spikex.__main__:main
+
