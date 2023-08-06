@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: ip-address
+Version: 1.4.0
+Summary: A tracker that gets your public IP address
+Home-page: https://github.com/dewittethomas/ip_address
+License: MIT
+Keywords: ip address ip-address public vpn dns ipv4 ipv6 isp location
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+
+# ip-address
+
+[![npm](https://img.shields.io/pypi/v/ip-address.svg)](https://pypi.org/project/ip-address/)
+
+This repository gets your public IP address
+
+## Installation
+
+Run the following to install:
+
+```console
+pip install ip-address
+```
+
+## Usage
+
+### Get
+
+```python
+get()
+```
+
+Demo:
+
+```python
+import ip_address as ip
+
+address = ip.get()
+```
+
+# License
+[MIT](https://github.com/dewittethomas/ip-address/blob/master/LICENSE)
+
