@@ -1,0 +1,13 @@
+deephyper
+
+[dev]
+twine
+
+[docs]
+Sphinx>=1.8.2
+sphinx_rtd_theme
+
+[tests]
+pytest
+codecov
+pytest-cov

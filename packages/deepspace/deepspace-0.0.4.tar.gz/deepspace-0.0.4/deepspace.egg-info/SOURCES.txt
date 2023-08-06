@@ -1,0 +1,15 @@
+README.md
+setup.py
+deepspace/__init__.py
+deepspace/__version__.py
+deepspace.egg-info/PKG-INFO
+deepspace.egg-info/SOURCES.txt
+deepspace.egg-info/dependency_links.txt
+deepspace.egg-info/requires.txt
+deepspace.egg-info/top_level.txt
+deepspace/sequence/__init__.py
+deepspace/tabular/__init__.py
+deepspace/tabular/dense_skipco.py
+deepspace/tabular/feed_forward.py
+deepspace/tabular/one_layer.py
+deepspace/tabular/supervised_reg_auto_encoder.py
