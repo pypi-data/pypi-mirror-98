@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qrookDB
+Version: 1.2.0
+Summary: tiny ORM for SQL-databases
+Home-page: https://gitlab.com/qrook/db
+Author: Kurush
+Author-email: ze17@ya.ru
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
