@@ -1,0 +1,11 @@
+dpt_module_loader/__init__.py,sha256=qPnTZt2odXM4-RDpzRS7k-xjjt6FATooZznj5ghi70A,847
+dpt_module_loader/class_loader.py,sha256=Y1X6oVU4zKxYhmkOV4lxpiBOupXt67drik2RF-cbSNE,9152
+dpt_module_loader/loader.py,sha256=UnB2NAVsbzZNBQkRmHDr-2woD98zXi2202vFOwJGUb4,12588
+dpt_module_loader/named_class_loader.py,sha256=nKMzKOWHI8hinTMQ70SzX5OFTK31Yv8pFiPxPQHF518,7093
+dpt_module_loader-1.0.5.data/data/docs/LICENSE,sha256=FpcH_bJlHNskutzZJ7yoi0KmVCPKJmjfnGqMlx3QNoc,15869
+dpt_module_loader-1.0.5.data/data/docs/README,sha256=AgQuDtXyHb1BMJTM3_8FX7t-rs__uFbIQukiMVU-sIo,1405
+dpt_module_loader-1.0.5.dist-info/LICENSE,sha256=FpcH_bJlHNskutzZJ7yoi0KmVCPKJmjfnGqMlx3QNoc,15869
+dpt_module_loader-1.0.5.dist-info/METADATA,sha256=hqi54TV3hVEh025NAlwQmMhP55Ih73HGeZQygFOWcLk,736
+dpt_module_loader-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dpt_module_loader-1.0.5.dist-info/top_level.txt,sha256=3KDp9WCQciHuHloNgBxJn95dSOWkV971WTxD3kmo0IQ,18
+dpt_module_loader-1.0.5.dist-info/RECORD,,
