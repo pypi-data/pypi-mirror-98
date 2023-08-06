@@ -1,0 +1,3 @@
+[console_scripts]
+ropoma = robinhood_portfolio_manager:main
+
