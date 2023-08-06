@@ -1,0 +1,15 @@
+qe_tools/__init__.py,sha256=-2oRHzQ9dwUf7vBTXMqaczgR6U_iv2RqgFWumYNnqKY,233
+qe_tools/_constants.py,sha256=T7U9CxY6N3p9SBq3DuTudiN9HE1UD_aVCpZMdE5Db9E,1340
+qe_tools/_qe_version.py,sha256=6FxyNOj25rEZ5pev__1T9p66V6LwUXhJclMi7ABhDwI,1864
+qe_tools/exceptions.py,sha256=JezD4C6zUKgSCaA0cjKxwObRcqisREYKYy3fQr9-A1M,348
+qe_tools/converters/__init__.py,sha256=fcBi7ILWLlwSiMV4-MklLVOXxyybMmqyiLZPWfOY_hA,116
+qe_tools/converters/_structure.py,sha256=fL2K-qPZK4JHMygZC5_QMRO5bTLZP2YKIn9S5RJNgfY,7378
+qe_tools/parsers/__init__.py,sha256=kO6yAOQIyOJheEJNa7hiWHyISdw8qU5gJKxTHlR0xio,137
+qe_tools/parsers/_cp_input.py,sha256=m-sONFnctg004yDmlgQ8qn-HC5dNViXHVH1cO-No84E,1068
+qe_tools/parsers/_input_base.py,sha256=DmkScANg_Pct9w-9yFdcSzMIzSbmX-M_AcsSPUOVidQ,52548
+qe_tools/parsers/_pw_input.py,sha256=4PNxQC9yH_4RX2WmEi3nfziZDlUpKrKef_nQch6LFeo,10440
+qe_tools-2.0.0rc2.dist-info/LICENSE,sha256=vM6V4N7kPphi4tSQgBEREajTpkNN-cRKiDrpFOObdgs,1067
+qe_tools-2.0.0rc2.dist-info/METADATA,sha256=j80rAKinHzyrFX-ZNeOGg8R5iWB_93GACw8WUB_hPMc,1486
+qe_tools-2.0.0rc2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+qe_tools-2.0.0rc2.dist-info/top_level.txt,sha256=7-TwzKQPxvmuCQQG3ws3gB6yzoHroh38esBB1vYAyq4,9
+qe_tools-2.0.0rc2.dist-info/RECORD,,
