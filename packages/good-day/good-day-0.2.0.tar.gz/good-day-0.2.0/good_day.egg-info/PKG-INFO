@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: good-day
+Version: 0.2.0
+Summary: Module that makes you a good day
+Home-page: https://github.com/markgzhou/good-day-gterminal
+Author: Guanlong (Mark) Zhou
+Author-email: markgzhou@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: good day,good,day
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
