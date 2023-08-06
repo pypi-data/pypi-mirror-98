@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: p-yt-erm
+Version: 0.5b8
+Summary: Easy to use youtube music streamer command line tool written in python3
+Home-page: https://gitlab.com/mocchapi/pyterminal/
+Author: Anne & Lynice
+Maintainer: Alex Technically
+Maintainer-email: alexa@nicolor.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: python-vlc
+Requires-Dist: pafy
+Requires-Dist: pypresence
+Requires-Dist: feedparser
+Requires-Dist: youtube-search-python
+Requires-Dist: youtube-dl
+
+Currently out of date, run `pYTerm --help` for latest args
+# pYTerm 0.4
+
+pYTerm is a simple command line youtube music player using python 3. This is still currently under heavy development and
+features are subject to being changed and things being added. Bugs *will* happen.
+---
+
+## Requirements
+
+* VLC media player installed
+* All libraries from `requirements.txt` if using the source code instead of the pip package.
+* Patience
+
+---
+
+## Playback controls
+
+```text
+Controls: [v]olume,[s]kip,[prev]ious,[p]ause,[m]ove,[t]imestamp,[g]oto,[e]xit
+```
+
+When in the player is active you can control it via typing in the command letters above to do the function shown with
+them. A few examples are below.
+
+In this example the volume is changed by entering `v <volume percent wanted>`
+
+```text
+Controls: [v]olume,[s]kip,[prev]ious,[p]ause,[m]ove,[t]imestamp,[g]oto,[e]xit
+playing [1/1] "STAR SHOPPING (Instrumental)" by Theolonius Kelly - Topic [02:11]
+v 75
+```
+
+In this example the player head is moved by entering `m <± seconds to move>`
+
+```text
+Controls: [v]olume,[s]kip,[prev]ious,[p]ause,[m]ove,[t]imestamp,[g]oto,[e]xit
+playing [1/1] "STAR SHOPPING (Instrumental)" by Theolonius Kelly - Topic [02:11]
+m -10
+```
+
+---
+
+## pYTerm command line
+
+For all the info in this section you can use pYTerm -h to view it offline.
+
+```text
+usage: pYTerm.py [-h] [--version] [-v VOLUME] [-l] [-s] [-a] [-p PLAYLIST] [-rp RICHPRESENCE] [-ni] [-as] [--verbose] [-vl] [--fr] ...
+
+Play youtube audio from the commandline / écouter l'audio des vidéos youtube sur la ligne de commande
+
+positional arguments:
+  songs                 name of the song you want to play / nom de la chanson à jouer tu veux jouer
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             prints version / version imprimé
+  -v VOLUME, --volume VOLUME
+                        starts with <value> volume / le programme démarrer avec un niveau de volume <value>
+  -l, --loop            enable playlist looping
+  -s, --shuffle         enable playlist shuffling
+  -a, --autoplay        enable automatically playing recommended songs based on the playlist
+  -p PLAYLIST, --playlist PLAYLIST
+                        use playlist file / utiliser une playlist à partir d'un fichier
+  -rp RICHPRESENCE, --richpresence RICHPRESENCE
+                        either False to disable RP, True or a rich presence ID string to enable
+  -ni, --noinput        disables player controls / désactiver les contrôles
+  -as, --audiostream    forces the use of audio streams, reduces bandwith and might increase quality at the cost of stability
+  --verbose             enable verbose logging
+  -vl, --vlclogs        enable vlc logging
+  --fr                  enable french output / activer mode français
+
+```
+
+---
+
+## Using pYTerm as a library
+
+**ALL LIBRARY FUNCTIONS AND CLASSES ARE STILL UNDER DEVELOPMENT AND MAY NOT WORK OR BEHAVIORS MAY CHANGE.**
+
+pYTerm is able to be imported as a library how you would with any other python library:
+
+```python
+#!/usr/bin/python3
+from src import pYTerm
+```
+
+The next thing to do is to make a player object, and you are ready to use the methods ~~when they are working~~.
+
+```python
+
+from src.pYTerm import pYTerm
+
+# Initializes a player object from the player class.
+player = pYTerm.player(richPresenceID=True,  # -rp argument (can be a boolean or RPC ID
+                       quiet=False,  # Whether the player will output to the console (also disables user input)
+                       debug=False,  # Whether pYTerm logs will be printed
+                       vlclogs=False,  # Whether VLC logs will be printed
+                       forceaudiostream=True,
+                       # Forces the use of audio streams, reduces bandwidth and might increase quality at the cost of stability
+                       wait=True,
+                       # If true it will halt the program if go() gets run if false it will run in a thread and continue the program
+                       allowInput=True,  # Whether or not user input will be accepted
+                       songs=None,  #
+                       playlistFile=None,
+                       shuffle=False,
+                       loop=False,
+                       volume=100,
+                       fr=False,
+                       autoplay=False,
+                       keepAlive=False)
+
+player.playSong("Benz Truck lil peep")  # Not functional at the moment.
+# This should play a song using pYTerm the only arg needed is the search query
+# for the song or the link to the song.
+
+player.pause()  # Should work
+player.unpause()  # Should work
+player.togglepause()  # Should work
+# These three methods should pause, unpause, or toggle pause for the player.
+
+player.go()  # Unknown status
+# go runs the main playlist and must be called if you want playlist functionality;
+# like keeping track of the songs, being able to use next() and previous(), using the loop option in the class init, and stuff like autoplay.
+
+```
+
+---
+
+
