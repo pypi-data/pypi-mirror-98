@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# service vars
+export SERVICE_NAME="iris-stage"
+export PID_DIR="/tmp"
+
+python3 -m iris_stage stop
