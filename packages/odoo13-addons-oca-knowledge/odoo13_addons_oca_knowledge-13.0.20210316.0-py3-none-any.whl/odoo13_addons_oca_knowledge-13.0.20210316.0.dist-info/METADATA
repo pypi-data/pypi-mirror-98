@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-knowledge
+Version: 13.0.20210316.0
+Summary: Meta package for oca-knowledge Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo13-addon-document-page
+Requires-Dist: odoo13-addon-document-page-approval
+Requires-Dist: odoo13-addon-document-page-group
+Requires-Dist: odoo13-addon-document-page-portal
+Requires-Dist: odoo13-addon-document-page-project
+Requires-Dist: odoo13-addon-document-page-reference
+Requires-Dist: odoo13-addon-document-url
+Requires-Dist: odoo13-addon-knowledge
+
+UNKNOWN
+
+
