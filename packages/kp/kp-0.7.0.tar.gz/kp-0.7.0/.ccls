@@ -1,0 +1,27 @@
+
+%clang
+
+-fdeclspec
+-fms-extensions
+-Wall
+-Wextra
+-std=c++17
+
+%h -x
+%h c++-header
+
+-DDEBUG=1
+-DKOMPUTE_INCLUDE_FOR_SYNTAX
+
+-I/usr/include/python3.6/
+-I./python/pybind11/include/
+-I./external/Vulkan-Headers/include/
+-I./external/googletest/googletest/include/
+-I./external/glslang/
+-I./external/spdlog/include/
+-I./external/fmt/include/
+-I./src/include/
+-I./single_include/
+-I./vk_ndk_wrapper_include/
+-I./test/compiled_shaders_include/
+
