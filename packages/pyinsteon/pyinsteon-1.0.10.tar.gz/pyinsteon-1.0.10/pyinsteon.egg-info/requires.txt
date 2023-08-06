@@ -1,0 +1,7 @@
+pyserial
+pyserial-asyncio>=0.5
+aiohttp
+pypubsub
+aiofiles
+async_generator
+pyyaml
