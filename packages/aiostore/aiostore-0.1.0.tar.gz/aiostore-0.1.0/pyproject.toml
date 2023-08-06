@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "aiostore"
+version = "0.1.0"
+description = "Async abstraction layer for interchangeable file and object storage backends."
+authors = ["Oscar Linderoth <oscar@upsidedev.se>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aiofiles = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+ipdb = "^0.13.4"
+ipython = "^7.20.0"
+flake8 = "^3.8.4"
+pyflakes = "^2.2.0"
+black = "^20.8b1"
+pytest = "^6.2.2"
+pytest-asyncio = "^0.14.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
