@@ -1,0 +1,9 @@
+README.md
+setup.py
+epijinn/__init__.py
+epijinn/version.py
+epijinn.egg-info/PKG-INFO
+epijinn.egg-info/SOURCES.txt
+epijinn.egg-info/dependency_links.txt
+epijinn.egg-info/requires.txt
+epijinn.egg-info/top_level.txt
