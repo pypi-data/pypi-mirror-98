@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+demo/__init__.py
+demo/highlight_elements.py
+demo/make_elements_blink.py
+tests/__init__.py
+tests/test_webelement_highlighter.py
+webelement_highlighter/__init__.py
+webelement_highlighter.egg-info/PKG-INFO
+webelement_highlighter.egg-info/SOURCES.txt
+webelement_highlighter.egg-info/dependency_links.txt
+webelement_highlighter.egg-info/top_level.txt
