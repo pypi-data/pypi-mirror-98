@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: iceportal
+Version: 1.0.1
+Summary: Python client for getting data from the ICE Portal.
+Home-page: https://github.com/fabaff/python-iceportal
+Author: Fabian Affolter
+Author-email: fabian@affolter-engineering.ch
+License: MIT
+Download-URL: https://github.com/fabaff/python-iceportal/releases
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: aiohttp (<4,>=3.7.4)
+Requires-Dist: async-timeout (<4)
+
+ICE Portal
+==========
+
+Python Client for getting the data from the `ICE portal <https://iceportal.de>`_
+on ICE connections in Germany and partially in Switzerland.
+
+This module is not official, developed, supported or endorsed by
+`Deutsche Bahn <https://deutsche-bahn.de/>`_.
+
+Installation
+------------
+
+The module is available from the `Python Package Index <https://pypi.python.org/pypi>`_.
+
+.. code:: bash
+
+    $ pip3 install iceportal
+
+Usage
+-----
+
+The file ``example.py`` contains an example about how to use this module.
+
+Currently available information:
+
+- ID of the train
+- The next stop
+- The arrival track in the next station
+- The arrival time for the next station
+
+
+Development
+-----------
+
+For development is recommended to use a ``venv``.
+
+.. code:: bash
+
+    $ python3 -m venv .
+    $ source bin/activate
+    $ python3 setup.py develop
+
+License
+-------
+
+``iceportal`` is licensed under MIT, for more details check LICENSE.
+
+
