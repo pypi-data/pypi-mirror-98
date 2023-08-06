@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: bitdotio
+Version: 1.0.0b1
+Summary: bit.io Python SDK
+Home-page: https://bit.io/
+Author: bit.io
+Author-email: python@bit.io
+License: UNKNOWN
+Description:     bit.io Python SDK  # noqa: E501
+            
+Keywords: bit.io,Database,bit.io Python SDK
+Platform: UNKNOWN
