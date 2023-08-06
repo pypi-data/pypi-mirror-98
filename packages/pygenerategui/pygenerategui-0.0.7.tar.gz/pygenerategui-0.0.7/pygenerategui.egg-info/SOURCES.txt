@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pygenerategui/__init__.py
+pygenerategui/gui_component.py
+pygenerategui/pggui_app.py
+pygenerategui.egg-info/PKG-INFO
+pygenerategui.egg-info/SOURCES.txt
+pygenerategui.egg-info/dependency_links.txt
+pygenerategui.egg-info/top_level.txt
