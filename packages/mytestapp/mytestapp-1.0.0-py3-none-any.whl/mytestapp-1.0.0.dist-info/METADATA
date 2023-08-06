@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mytestapp
+Version: 1.0.0
+Summary: Demo Package for GfG Article.
+Home-page: https://github.com/neilbaldwin
+Author: Neil Baldwin
+Author-email: neil.baldwin@mac.com
+License: MIT
+Keywords: geeksforgeeks gfg article python package vibhu4agarwal
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: mytestapp (==1.0.0)
+
+Sample package demo
+
+
