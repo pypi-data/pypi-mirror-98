@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.behavior.gallery">
+
+  <browser:viewlet
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      name="collective.behavior.gallery.gallery"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      class=".gallery.GalleryViewlet"
+      permission="zope.Public"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      />
+
+  <browser:viewlet
+      for="..behaviors.folderish_gallery.IFolderishGallery"
+      name="collective.behavior.gallery.files"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
+      class=".gallery.FilesViewlet"
+      permission="zope.Public"
+      layer="..interfaces.ICollectiveBehaviorGalleryLayer"
+      />
+
+</configure>
