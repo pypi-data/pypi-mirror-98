@@ -1,0 +1,7 @@
+numpy
+
+[test]
+pytest
+pytest-cov
+pytest-mock
+hypothesis
