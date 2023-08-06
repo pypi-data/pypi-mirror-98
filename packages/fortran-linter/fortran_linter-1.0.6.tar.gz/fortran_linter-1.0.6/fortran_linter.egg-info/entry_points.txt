@@ -1,0 +1,3 @@
+[console_scripts]
+fortran-linter = fortran_linter.cli:main
+
