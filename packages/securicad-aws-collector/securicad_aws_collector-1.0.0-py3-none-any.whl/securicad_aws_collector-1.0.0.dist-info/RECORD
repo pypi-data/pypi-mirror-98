@@ -1,0 +1,15 @@
+securicad/aws_collector/__init__.py,sha256=NC9H3JJ-cKfCKULY5QQJHVw2LgNeP6sfN4QtTv0PxXI,12301
+securicad/aws_collector/__main__.py,sha256=U32BXwkXHuSw0aIs-Hhh6YyY9M_Xyc3dLFGpj3Bg7Tk,720
+securicad/aws_collector/account_collector.py,sha256=7bixdVmn7A5ZB1Yllc_lYGAXYE09vxt6WCv1nm84F_A,14793
+securicad/aws_collector/exceptions.py,sha256=ls03p3twUhw4muwltn_SBJdTrZgJ1SaOdnwU6VSnIvU,934
+securicad/aws_collector/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+securicad/aws_collector/region_collector.py,sha256=2rDkP2t56tp5vczguHMEI6UnpDJxcCmsnHUz7hqijlU,27014
+securicad/aws_collector/schemas.py,sha256=VPrlK6_PmkUiAbNU8JF5Sa4TYQhJ246fal70Rkp2rhU,4724
+securicad/aws_collector/utils.py,sha256=lBLbzcwwCkIR8lx_E_Tm8LD0zWuq3y3q6sJvaD_yJl4,7334
+securicad_aws_collector-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+securicad_aws_collector-1.0.0.dist-info/METADATA,sha256=rKy637TukwaWLff0rUgD9P3Sf-Y2eVDHBR_0pWQejwk,5634
+securicad_aws_collector-1.0.0.dist-info/NOTICE,sha256=V7BD26TgMM365fh-kY2kturBF-w9wv9ySJNOZwz24XY,179
+securicad_aws_collector-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+securicad_aws_collector-1.0.0.dist-info/entry_points.txt,sha256=D1PQZ-_7Rj3GOUA1jerYNj48f7uR5z4vFFzOXwiH-RA,73
+securicad_aws_collector-1.0.0.dist-info/top_level.txt,sha256=fPldXKC85WHS6MG5pZvlD1r1hqFu86dvOsOzzMQ1yFE,10
+securicad_aws_collector-1.0.0.dist-info/RECORD,,
