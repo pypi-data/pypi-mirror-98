@@ -1,0 +1,10 @@
+
+[:python_version < "3.0"]
+requests[security]>=2.20
+
+[:python_version > "3.0"]
+pyjwt>=1.7.1
+
+[:python_version >= "3.0"]
+requests>=2.20
+pandas>=1.1.3
