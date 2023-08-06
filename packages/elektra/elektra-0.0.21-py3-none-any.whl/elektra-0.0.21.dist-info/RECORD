@@ -1,0 +1,9 @@
+elektra/__init__.py,sha256=DG3vb4BsqHB7VH2qV8ODUJkjle54rdl3zB7Q1Zfa4rE,158
+elektra/elektra.py,sha256=Z_pqoXZZ2ISluvOTh41kCxFbGphWT8KMkvS2MM37EJQ,21311
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=FZFIAs-R12konScKPmIGOiDetPhg6UWJZzhnXK7Dum4,1251
+elektra-0.0.21.dist-info/LICENSE,sha256=qZBP92mAjNUiWo8EN4oea3PmqdYGSRcdcnAaL_WzxvY,1074
+elektra-0.0.21.dist-info/METADATA,sha256=vC9_hvLVHWaVMseUZDG2p5b92RjKsRq8_5A9k0yZRjU,5219
+elektra-0.0.21.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+elektra-0.0.21.dist-info/top_level.txt,sha256=c3ZV0qzAU16v4ZieeKrbhsFFtqv3aeuKc4ooO_7K6NU,14
+elektra-0.0.21.dist-info/RECORD,,
