@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: rosey-stats
+Version: 1.2021.3.21
+Summary: Stats package for Python
+Home-page: https://github.com/arose13/rosey-stats
+Author: Stephen Rose
+Author-email: me@stephenro.se
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
