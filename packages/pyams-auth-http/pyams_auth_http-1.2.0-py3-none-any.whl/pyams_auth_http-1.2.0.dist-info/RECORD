@@ -1,0 +1,16 @@
+pyams_auth_http/__init__.py,sha256=LVG1X3g55htFR7_ZveyfZjI902cQBq9Wyu0b3UKfvAQ,895
+pyams_auth_http/include.py,sha256=BUzy4kIAGFgQ0kuIySbNG7p2DJ5TIy_RVOlL7IR-wic,785
+pyams_auth_http/plugin.py,sha256=gVtRM_UipAeOBpvGAlPN-07z6PtYwJDRwPM9BagC_hk,3101
+pyams_auth_http/doctests/README.rst,sha256=CaIoz0blBScsN8lLR1g37G3tZgqdqK3fHpNwg4ACYP8,7300
+pyams_auth_http/locales/pyams_auth_http.pot,sha256=dTel2gQm-JgFQ7Kk0eJ3iZNvfg94b-tA4pUDhWkU1-Y,613
+pyams_auth_http/locales/fr/LC_MESSAGES/pyams_auth_http.mo,sha256=mZyfU20Yo2ccUOpd_OY339bTjJRUqN2-usiSxqL59-8,459
+pyams_auth_http/locales/fr/LC_MESSAGES/pyams_auth_http.po,sha256=vp_TWrJBsttVIwh-_hVmx2oxvJPcFaML098gF7nOHSg,490
+pyams_auth_http/tests/__init__.py,sha256=IpbeYtTzxTU6eZ5lonPi1zH7U5XXXTxSOOMHOMCYv8s,804
+pyams_auth_http/tests/test_utilsdocs.py,sha256=NvCuin24jQC80cBX9gLOZi6dk3IASqdN8g3pfKnmljg,1833
+pyams_auth_http/tests/test_utilsdocstrings.py,sha256=REkJP3phAAcpzuyw_EgBt4oi01ERR3cd18TvajcQNV8,1870
+pyams_auth_http-1.2.0.dist-info/LICENSE,sha256=9JLFlvU3lMx1ANbaylwY0_yOeQFkVRhm624EuLQhuwM,2191
+pyams_auth_http-1.2.0.dist-info/METADATA,sha256=3bXxnrl4MtwIm9KlqXsxIdog48g-GYWfo7DsqqbZ00g,2044
+pyams_auth_http-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyams_auth_http-1.2.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyams_auth_http-1.2.0.dist-info/top_level.txt,sha256=fq2IjfDi6plRglAZOg9P_KwXme_GZLPOKipOna5D5Gk,16
+pyams_auth_http-1.2.0.dist-info/RECORD,,
