@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sshtk
+Version: 0.2.0
+Summary: ssh toolkit
+Home-page: http://pypi.python.org/pypi/sshtk/
+Author: Zhun Shi, Jie Zhu
+Author-email: shizhun@genomics.cn, zhujie@genomics.cn
+License: GPL3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pexpect
+Requires-Dist: pyotp
+Requires-Dist: setuptools
+
+UNKNOWN
+
+
