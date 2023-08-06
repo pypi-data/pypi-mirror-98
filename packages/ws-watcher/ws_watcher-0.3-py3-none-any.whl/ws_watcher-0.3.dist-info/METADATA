@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ws-watcher
+Version: 0.3
+Summary: Minimalistic file watcher and websocket server to work with ws_livereload.js
+Home-page: https://github.com/SergeiMinaev/ws_watcher
+Author: Sergei Minaev
+Author-email: i@zenux.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: asyncio
+Requires-Dist: inotify
+
+Not ready yet.
+
+Branching model:\
+`dev` - Default branch.Fresh and unstable. Preferred branch to work with as a developer.\
+`current` - current stable code. Preferred branch to work with as a user.
+
+
