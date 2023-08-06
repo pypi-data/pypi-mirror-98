@@ -1,0 +1,9 @@
+README.md
+setup.py
+PyWaMG/PyWaMG.py
+PyWaMG/__init__.py
+PyWaMG.egg-info/PKG-INFO
+PyWaMG.egg-info/SOURCES.txt
+PyWaMG.egg-info/dependency_links.txt
+PyWaMG.egg-info/requires.txt
+PyWaMG.egg-info/top_level.txt

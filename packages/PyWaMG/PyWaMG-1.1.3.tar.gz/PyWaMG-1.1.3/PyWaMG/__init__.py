@@ -1,0 +1,1 @@
+from PyWaMG.PyWaMG import send_txt,send_txt_to_group,send_file,send_file_to_group,send_media_file,send_media_file_to_group,wa_close,wa_login
