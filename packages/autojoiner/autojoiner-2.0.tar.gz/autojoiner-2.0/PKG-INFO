@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: autojoiner
+Version: 2.0
+Summary: UNKNOWN
+Home-page: https://github.com/rishi255/autojoin-v2
+Author: Rishikesh Rachchh
+Author-email: rishikeshrachchh@gmail.com
+License: MIT
+Description: # autojoin-v2
+        
+        A tool in Python to automate the joining of Zoom or Cisco Webex meetings at scheduled times.
+        
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
