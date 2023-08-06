@@ -1,0 +1,3 @@
+[console_scripts]
+pysmms = pysmms.pysmms:app
+
