@@ -1,0 +1,12 @@
+face_dect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+face_dect/config_mask.py,sha256=nVDRJ9opS5rm-fLC19-raYZQK5K5efo15hxpyXkA8mI,1884
+face_dect/config_notmask.py,sha256=-GrI3LpJUIfVDUHjVXnxonPM6I20h01PCdA0jYennfc,1709
+face_dect/example_face_dect.py,sha256=0pofWCX87QMtvvNkDvlpocgPrd6Ngbho7hBsHGN-xrU,6945
+face_dect/setup.py,sha256=GFN3VzwY06_-AK-Wix4PwxblBkXB8MJizQQRCvy1_mw,699
+face_dect/test.py,sha256=INyMQUkHurfyPwDRMUKsDAqqAC91yzztACBcHx2nSXQ,195
+face_dect/Models/CBAM_Face_attention_Resnet_notmaskV3.py,sha256=fOrV9B5iHrzlZsLSvsEX8wOHS1zgBBgtNsyMhpb7cYk,12588
+My_face_recognize_ID_Sakura-0.1.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+My_face_recognize_ID_Sakura-0.1.0.dist-info/METADATA,sha256=Ial_ipBAuMEt2nQ1nXUWHZhJnLY3_JcBkaCAPDiy6U4,1125
+My_face_recognize_ID_Sakura-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+My_face_recognize_ID_Sakura-0.1.0.dist-info/top_level.txt,sha256=X-bqHswJvLAWgaAqa-fuFlxtshT7PEKxqsrPI1MBM38,10
+My_face_recognize_ID_Sakura-0.1.0.dist-info/RECORD,,
