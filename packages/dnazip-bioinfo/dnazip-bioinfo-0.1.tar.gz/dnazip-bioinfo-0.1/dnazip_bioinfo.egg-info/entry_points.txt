@@ -1,0 +1,3 @@
+[gui_scripts]
+dnazip = dnazip.main:main
+
