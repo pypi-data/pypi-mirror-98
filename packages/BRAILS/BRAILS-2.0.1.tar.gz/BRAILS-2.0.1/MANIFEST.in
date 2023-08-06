@@ -1,0 +1,25 @@
+include README.md
+include LICENSE
+include *.md
+include requirements.txt
+include brails/modules/Foundation_Classification/csail_segmentation_tool/csail_seg/data/color150.mat
+include brails/modules/Foundation_Classification/csail_segmentation_tool/csail_seg/config/*.yaml
+
+exclude test
+exclude deploy
+exclude data
+exclude docs
+exclude activatePython
+exclude docs-docsify-dont-delete
+exclude GoogleAPIKey
+exclude makedoc
+exclude src
+exclude tmp
+exclude notebooks
+exclude brails/CityBuilder-backup.py
+
+
+
+global-exclude __pycache__ *.py[cod]
+global-exclude *.so *.dylib
+
