@@ -1,0 +1,14 @@
+-extends 'layout.haml'
+
+
+-block title -> =title()
+
+
+-block head
+
+    %link rel="stylesheet" href="{| 'app.css'|asset |}"
+
+
+-block body
+
+    %script src="{| 'app.js'|asset |}"
