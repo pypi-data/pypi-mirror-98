@@ -1,0 +1,3 @@
+[console_scripts]
+repols = repols.cli:cli
+
