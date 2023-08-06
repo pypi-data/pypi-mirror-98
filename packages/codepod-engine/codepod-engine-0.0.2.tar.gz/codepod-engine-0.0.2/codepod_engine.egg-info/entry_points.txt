@@ -1,0 +1,3 @@
+[console_scripts]
+codepod-engine = codepod.console:run
+
