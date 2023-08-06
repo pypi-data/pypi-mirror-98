@@ -1,0 +1,12 @@
+
+[lf]
+nxp_lf
+
+[ls]
+nxp_ls
+
+[pb]
+nxp_pb
+
+[pp]
+nxp_pp

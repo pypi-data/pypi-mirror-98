@@ -1,0 +1,3 @@
+[console_scripts]
+nxp_lite_tools = nxp_lite_tools:main
+
