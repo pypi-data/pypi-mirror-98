@@ -1,0 +1,32 @@
+numpy>=1.13.3
+pydantic>=1.7.3
+
+[:python_version < "3.5"]
+typing
+
+[:python_version < "3.7"]
+dataclasses
+
+[:python_version < "3.8"]
+typing-extensions
+
+[convert]
+pandas
+uproot>=4.0.4
+requests
+
+[dev]
+pytest>=4.6
+pre-commit
+mypy
+uhi
+
+[docs]
+recommonmark>=0.5.0
+Sphinx>=3.0.0
+sphinx_copybutton
+sphinx_rtd_theme>=0.5.0
+sphinx-jsonschema
+
+[test]
+pytest>=4.6
