@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: aiodown
+Version: 1.0.0
+Summary: A fully async file downloader
+Home-page: https://github.com/AmanoTeam/aiodown
+Author: AmanoTeam
+Author-email: contact@amanoteam.com
+License: MIT
+Download-URL: https://github.com/AmanoTeam/aiodown/releases/latest
+Description: # aiodown
+        
+        > An `asyncio-based` file downloader made in `Python 3` using [httpx](//github.com/encode/httpx).
+        
+        ## Requirements
+        
+        - Python 3.8 or higher.
+        - httpx 0.14 or higher.
+        
+        ## Installation
+        
+        **NOTE:** If `python3` is "not a recognized command" try using `python` instead.<br>
+        <br>
+        `python3 -m pip install git+https://github.com/AmanoTeam/aiodown`<br>
+        
+        ## What's left to do?
+        
+        - Write the API Documentation.
+        - Show some examples.
+        
+        ## License
+        
+        MIT © 2021 [AmanoTeam](//github.com/AmanoTeam)
+Keywords: python downloader async asyncio httpx
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Internet
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
