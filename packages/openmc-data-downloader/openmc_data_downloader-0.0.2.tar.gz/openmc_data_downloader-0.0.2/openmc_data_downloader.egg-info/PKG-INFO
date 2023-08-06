@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: openmc-data-downloader
+Version: 0.0.2
+Summary: A tool for selectively downloading h5 files for specified isotopes / elements from your libraries of choice
+Home-page: https://github.com/openmc-data-storage/openmc_data_downloader
+Author: Jonathan Shimwell
+Author-email: mail@jshimwell.com
+License: UNKNOWN
+Description: # openmc_data_downloader
+        Download cross section h5 files for use in OpenMC 
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
