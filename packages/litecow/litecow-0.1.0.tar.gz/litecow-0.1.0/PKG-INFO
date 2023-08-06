@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: litecow
+Version: 0.1.0
+Summary: 
+Author: Striveworks
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: server-cpu
+Provides-Extra: server-gpu
+Requires-Dist: boto3 (>=1.11.14,<2.0.0); extra == "server-gpu" or extra == "server-cpu"
+Requires-Dist: grpcio (>=1.33.2,<2.0.0)
+Requires-Dist: numpy (>=1.17.4,<2.0.0)
+Requires-Dist: onnxruntime (>=1.7.0,<2.0.0); extra == "server-cpu"
+Requires-Dist: onnxruntime-gpu (>=1.7.0,<2.0.0); extra == "server-gpu"
+Requires-Dist: protobuf
