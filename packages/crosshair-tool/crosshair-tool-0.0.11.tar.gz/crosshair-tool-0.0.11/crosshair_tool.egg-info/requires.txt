@@ -1,0 +1,15 @@
+forbiddenfruit
+typing-inspect
+z3-solver==4.8.9.0
+
+[dev]
+black==20.8b1
+codecov
+coverage
+flake8
+icontract
+mypy>=0.800
+numpy
+pydocstyle==5.1.1
+pytest
+wheel
