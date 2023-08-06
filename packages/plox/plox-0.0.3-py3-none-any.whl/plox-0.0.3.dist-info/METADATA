@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: plox
+Version: 0.0.3
+Summary: Context manager for matplotlib figures
+Home-page: https://github.com/numpde/plox
+Author: RA
+Author-email: numpde@null.net
+License: UNKNOWN
+Keywords: development matplotlib figure context
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+
+Context manager for matplotlib figures.
+
+Example:
+
+```python
+from plox import Plox, rcParam
+from pathlib import Path
+
+# https://matplotlib.org/tutorials/introductory/customizing.html
+style = {
+    rcParam.Legend.fontsize: "large",
+    rcParam.Xtick.labelsize: "large",
+    rcParam.Ytick.labelsize: "large",
+}
+
+with Plox(style) as px:
+    px.a.plot([1, 2, 3], [4, 3, 5], 'o--')
+    px.f.savefig(Path(__file__).with_suffix('.png'))
+    px.show()
+```
+
+
