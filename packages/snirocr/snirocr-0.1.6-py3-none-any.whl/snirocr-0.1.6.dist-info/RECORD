@@ -1,0 +1,11 @@
+snirocr/Tesseract-OCR.zip,sha256=2DrqbCaiRrif_Wq08JetOJNmeXuTYerWV2GsAICfPHY,87086475
+snirocr/__init__.py,sha256=jmPTYE6XV-fcBZ2WJZhwA9esTX2NL5puAQFwmIiFEvg,7614
+snirocr/first_click.wav,sha256=avlvYuQcnu5tT4lQBnJVmuk5riIHkuYEHbZ5ogYa1jE,366884
+snirocr/negativebeep.wav,sha256=8i597yB1EOehaKK9kIMTOfggxVj5Ij7Yid45td7ZLL8,37100
+snirocr/second_click.wav,sha256=uTL1AJD2O99KxBv7pWr8roUOXs3ZTNw6HTfP8m-auNQ,352548
+snirocr/startup.wav,sha256=WB6Q4aYCAi3VS6NhDZJe-3CgDoOy0vCFQlEHC7FPPkU,561796
+snirocr/success.wav,sha256=f0CHThTXwRJKWFAeP_GvkwYymc5iI-9tV8Jq_u5Z_QQ,647522
+snirocr-0.1.6.dist-info/METADATA,sha256=34u_rILRs1LrKeoYeBOSWpiwZ-4u7_sWhePSGEEfznk,848
+snirocr-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+snirocr-0.1.6.dist-info/top_level.txt,sha256=EQcLJBTw8-g1GECW1oX-P53Z51zDDzVKUblzgsBMoPA,8
+snirocr-0.1.6.dist-info/RECORD,,

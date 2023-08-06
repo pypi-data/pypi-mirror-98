@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: snirocr
+Version: 0.1.6
+Summary: automatic ocr
+Home-page: UNKNOWN
+Author: snir dekel
+Author-email: snirdekel101@gmail.com
+License: MIT
+Keywords: optical computer vision
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: keyboard
+Requires-Dist: pytesseract
+Requires-Dist: pyperclip
+Requires-Dist: Pillow
+Requires-Dist: playsound
+Requires-Dist: pypiwin32
+Requires-Dist: pyautogui
+Requires-Dist: mega.py
+Requires-Dist: pyscreenshot
+
+press the ctrl button two times, it will create a rectangle in the area you chose and ocr the image-the text will be copied to your clipboard
+
+
