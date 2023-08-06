@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/qbabel/__init__.py
+src/qbabel.egg-info/PKG-INFO
+src/qbabel.egg-info/SOURCES.txt
+src/qbabel.egg-info/dependency_links.txt
+src/qbabel.egg-info/top_level.txt
