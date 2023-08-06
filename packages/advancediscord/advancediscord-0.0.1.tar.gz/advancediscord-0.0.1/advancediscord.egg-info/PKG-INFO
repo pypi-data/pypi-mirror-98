@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: advancediscord
+Version: 0.0.1
+Summary: An advanced library for discord.py
+Home-page: UNKNOWN
+Author: Chihiro
+Author-email: stamatecoss@yahoo.com
+License: MIT
+Description: UNKNOWN
+Keywords: advancediscord
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

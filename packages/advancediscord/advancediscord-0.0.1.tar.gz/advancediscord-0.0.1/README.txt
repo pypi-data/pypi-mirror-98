@@ -1,0 +1,1 @@
+This is an advanced discord module library. All copyrights to Chihiro#7105.

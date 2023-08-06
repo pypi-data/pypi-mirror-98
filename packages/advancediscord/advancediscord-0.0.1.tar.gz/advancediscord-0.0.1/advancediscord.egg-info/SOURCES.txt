@@ -1,0 +1,6 @@
+README.txt
+setup.py
+advancediscord.egg-info/PKG-INFO
+advancediscord.egg-info/SOURCES.txt
+advancediscord.egg-info/dependency_links.txt
+advancediscord.egg-info/top_level.txt
