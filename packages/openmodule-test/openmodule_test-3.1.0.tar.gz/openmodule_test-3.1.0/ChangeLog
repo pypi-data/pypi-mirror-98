@@ -1,0 +1,135 @@
+CHANGES
+=======
+
+v3.1.0
+------
+
+* pinned sentry version, since the sentry-shipper only supports 0.7 style messages
+* some cleanup /refactor
+* fixes an issue which prevented a database from beeing migrated multiple times within one process
+* fixes a bug in the sqlite test mixin
+* make Database callable and expire on commit can be optionally passed, added testcase for this
+* fixed tags for schema
+* typos
+
+v3.0.5
+------
+
+* test case fix + readme
+* bug fix + tags for paths
+* sort components by name + index title
+* Schema file in interrupt test mixin + doc string bug
+* bug fix decorator
+* Rpc + message schemas
+* implemented simple, non-recurrent access checks
+* removed duplicate code from unittests
+* implemented a stricter recurrence check, removed logical errors from testcases
+
+v3.0.4
+------
+
+* schema creation
+* added missing \_\_init\_\_ file, and removed unnecessary dict key in a unittest [skip ci]
+
+v3.0.3
+------
+
+* always change the current vehicle, regardless of vehicle id change
+
+v3.0.2
+------
+
+* interrupts thread based
+* moved interrupt
+* InterruptMixin not inheriting TestCase
+* interrupt test mixin
+* readme coding standard
+* presence utils adaption to changed vehicle id
+* adapted docs for the public git
+* readme
+
+v3.0.1
+------
+
+* gateway is now optional for backedn access check and do not allow a recurrence with no start timestamp
+
+v3.0.0
+------
+
+* gateway in Access optional
+* BackendTestMixin user needs USER\_PREFIX
+* fixed test case
+* requests-mock in test requirements
+* requests in requirements
+* removed print
+* api mocker timeout + testcases
+* assert correct exceptions in test\_database
+* merge from feature/backend
+* test database get methods
+* access datetime are no converted to unix timestamp and an access with empty string recurrence is now valid
+* fixed htmlcov path in ci again
+* fixed htmlcov path in ci
+* change tox report back+
+* models in separater directory
+
+v2.0.1
+------
+
+* updates a testcase for new minimal-required config keys. better method for getting free for proto = tcp://, since we had some collisions lately
+* last will added in case the service does not shutdown properly
+* base config in OpenModuleCoreTestMixin
+
+v2.0.0
+------
+
+* fixes a race condition in a testcase
+* ci file fix
+* ci test for releasing both packages
+* stash
+* stash
+* backend filter not as a decorator, fixes a incorrect import in the testcase
+* pep8 [skip ci]
+* user prefix
+* some refactoring
+* added other categorys
+* rpc server filter now for channel/type
+* merge request refactoring
+* fixes a but in the presence listener
+* cleanup and testcase fixes
+* blub
+* added config access model and changed access request names
+* fix for presence testcase, one is sill broken tough
+* backend init fix
+* api + presence rework + presence testcases
+* all testcases running local + tox
+* database shutdown behaviour
+* a little bit of coverage + default alembic path for sql mixin
+* backend + all backend testcases running
+* testing missing line in matching utils
+* vehicle testcase fixed
+* some test improvements
+* merge last commit from openmodule\_test
+* moved openmodule test sources into openmodule
+* multiple filter test case
+* added matching utils, some test and debug environment improvements
+* Update test-requirements.txt
+
+v1.0.5
+------
+
+* fixes a race condition in the ConnectionStatusWithCoreTestCase
+* ConnectionStatus only bool flag
+* event dispatcher, connection status listener, and core refactored to use the event dispatcher
+* yaml loading, and testcases
+
+v1.0.4
+------
+
+* openmodule core, and tests
+* graceful shutdown
+* init / shutdown
+* zmq context terminated excepted over everything
+* health utils, and changes for new clean startup / shutdown
+* more testcases and logging plus sentry added
+* improves testcases, ignores zmq errors during shutdown [skip ci]
+* fixed typo
