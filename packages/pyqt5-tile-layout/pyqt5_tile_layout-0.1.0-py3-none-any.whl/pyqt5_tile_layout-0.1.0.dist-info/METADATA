@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyqt5-tile-layout
+Version: 0.1.0
+Summary: A tile layout for PyQt5
+Home-page: https://github.com/arnaudframmery/qt-tile-layout
+Author: Arnaud Frammery
+Author-email: arnaud.frammery@gmail.com
+License: GPL3
+Platform: UNKNOWN
+Requires-Dist: PyQt5
+
+See the github project README for examples and documentation: https://github.com/arnaudframmery/qt-tile-layout
+
+
