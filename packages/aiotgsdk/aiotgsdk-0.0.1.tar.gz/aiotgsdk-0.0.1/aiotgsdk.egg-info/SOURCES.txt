@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiotgsdk/__init__.py
+aiotgsdk/__version__.py
+aiotgsdk.egg-info/PKG-INFO
+aiotgsdk.egg-info/SOURCES.txt
+aiotgsdk.egg-info/dependency_links.txt
+aiotgsdk.egg-info/top_level.txt
