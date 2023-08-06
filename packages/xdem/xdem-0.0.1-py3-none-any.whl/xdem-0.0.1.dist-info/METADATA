@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: xdem
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: The GlacioHack Team
+License: BSD-3
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: rasterio
+Requires-Dist: geopandas
+Requires-Dist: pyproj
+Requires-Dist: tqdm
+Requires-Dist: geoutils
+Provides-Extra: opencv
+Requires-Dist: opencv ; extra == 'opencv'
+Provides-Extra: pdal
+Requires-Dist: pdal ; extra == 'pdal'
+Provides-Extra: richdem
+Requires-Dist: richdem ; extra == 'richdem'
+Provides-Extra: rioxarray
+Requires-Dist: rioxarray ; extra == 'rioxarray'
+
+UNKNOWN
+
+

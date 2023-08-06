@@ -1,0 +1,12 @@
+xdem/__init__.py,sha256=yv9LaAsimScW5Rnaw0hBGwy0ZoHJlK4ZLtcIP6rZyew,111
+xdem/coreg.py,sha256=wl1d5NpTmoHLJDZYRcjfSk6EXBFZGqaIJ8RKegnNk5g,43257
+xdem/dem.py,sha256=nYQXwAjIzLtQ-vrP48nup_qzlkZo-xiiq1xGmLxCwv8,9922
+xdem/examples.py,sha256=wv5EIFm3sKyDorKHXibWS2_Mgh3qHcHQeJmH9Q6hKa0,3429
+xdem/spatial_tools.py,sha256=4Ocp_kHNXwwRC_0dOcafXWUVOjOpoYE0HcirUpBvrvs,6765
+xdem/spstats.py,sha256=ZIBIz5bClWSsx7Pjm3m2TK4xH7YYEh8kKGH6MdXyrc4,27703
+xdem/version.py,sha256=aEqUz95Q0FjcOvKeBAAdxyEeUH9d0xEgdBjmtNVtDwI,42
+xdem-0.0.1.dist-info/LICENSE,sha256=gPOu7s6g4ueLPnNNDXNuKx2DQNtyMoPlGb5y4LDEscU,1067
+xdem-0.0.1.dist-info/METADATA,sha256=MjOcgZ7b5qd2uByvAPsjH0OC6XPL4gWZ8kjR5VLkqKY,579
+xdem-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xdem-0.0.1.dist-info/top_level.txt,sha256=OuHN5RNUdb4cKHwTvacIKkKrOwGTnqNvh0Q8Wak2eFU,5
+xdem-0.0.1.dist-info/RECORD,,
