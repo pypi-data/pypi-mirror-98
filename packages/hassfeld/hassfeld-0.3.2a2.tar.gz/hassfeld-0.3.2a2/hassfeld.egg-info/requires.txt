@@ -1,0 +1,4 @@
+aiohttp
+async_upnp_client>=0.15.0
+requests
+xmltodict
