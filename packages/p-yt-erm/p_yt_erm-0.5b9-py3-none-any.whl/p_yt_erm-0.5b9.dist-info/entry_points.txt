@@ -1,0 +1,3 @@
+[console_scripts]
+pYTerm = pYTerm.pYTerm:commandline
+
