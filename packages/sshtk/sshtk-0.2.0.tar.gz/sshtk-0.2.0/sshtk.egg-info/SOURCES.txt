@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/sshtk.py
+sshtk.egg-info/PKG-INFO
+sshtk.egg-info/SOURCES.txt
+sshtk.egg-info/dependency_links.txt
+sshtk.egg-info/not-zip-safe
+sshtk.egg-info/requires.txt
+sshtk.egg-info/top_level.txt
