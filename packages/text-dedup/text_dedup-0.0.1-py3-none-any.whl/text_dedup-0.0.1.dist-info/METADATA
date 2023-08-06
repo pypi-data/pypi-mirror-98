@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: text-dedup
+Version: 0.0.1
+Summary: 
+License: MIT
+Author: Chenghao Mou
+Author-email: mouchenghao@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: alive-progress (>=1.6.2,<2.0.0)
+Requires-Dist: pandas (>=1.2.3,<2.0.0)
+Requires-Dist: pytest (>=6.2.2,<7.0.0)
+Requires-Dist: strsimpy (>=0.2.0,<0.3.0)
