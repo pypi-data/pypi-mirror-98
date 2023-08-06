@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: teo-files
+Version: 0.3
+Summary: MAKE FILE OPERATIONS WITH PYTHON
+Home-page: https://github.com/TeoDev1611/teo-files
+Author: Mateo Hurtado
+Author-email: teodev1611@gmail.com
+License: MIT
+Description: # What is this ? 🧐
+        
+        ![File Image](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Text-x-generic.svg/1024px-Text-x-generic.svg.png)
+        
+        A library for make many operations for files Move Delete Name Filter ETC
+        
+        ## Instalation 
+        
+        ![Python Logo](https://1000logos.net/wp-content/uploads/2020/08/Python-Logo.png)
+        
+        `pip install teo-files`
+        
+        `py -m pip install teo-files`
+        
+        ## Contribute
+        
+        1.- Make a fork
+        
+        2.- Use the dev branch
+        
+        3.- Write the changelog
+        
+        4.- Make the pull request with the description
+        
+        5.- Accepted the pull request and add New Release
+        
+        ## Credits
+        
+        Made with :heart: in Ecuador by TeoDev1611
+        
+        
+Keywords: python,file,system,copy,delete,os,file,py-files
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
