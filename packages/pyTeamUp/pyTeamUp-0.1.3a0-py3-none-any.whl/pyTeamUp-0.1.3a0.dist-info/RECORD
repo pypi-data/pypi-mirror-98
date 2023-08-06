@@ -1,0 +1,12 @@
+pyteamup/Calendar.py,sha256=64J0eFkwNb21QRLcNPswyWdK7N6l220NRfup_HIA-7I,9430
+pyteamup/Event.py,sha256=HpptLrCtvfEf_ZhfkmM4lG0Ulrknfu6QOOxcJYI0GTI,14345
+pyteamup/SubCalendar.py,sha256=oc3336oZ3IeoA_zFKb5GXpHckJ_4R6OWNHsFc4xivb4,108
+pyteamup/__init__.py,sha256=9nEK8KUi133ccyNzTOnKJ8CHQfVInSS1hCjOvSFj-gY,231
+pyteamup/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyteamup/utils/constants.py,sha256=dber4ZzP6uuITjYG8rHdUIyU-ki3WGH_PnpPN3jJWt0,227
+pyteamup/utils/utilities.py,sha256=GmSBjjsCpwrdq334Y_HXH6KekgFhHMVQtpbDHJkDOsE,1556
+pyTeamUp-0.1.3a0.dist-info/LICENSE,sha256=DEwHzDNtyO-gZW2QS7FQ6mzF8tkbVPIK8EDYqh7Ik8k,1088
+pyTeamUp-0.1.3a0.dist-info/METADATA,sha256=qgQ-QK2FMJt7F5XH07Dg4q0UrEGdw8UVCj13XAX1htk,4699
+pyTeamUp-0.1.3a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyTeamUp-0.1.3a0.dist-info/top_level.txt,sha256=kDElOYpyozLoGpQgYfn8nVmboVJiyNq19lRBU0-akJk,9
+pyTeamUp-0.1.3a0.dist-info/RECORD,,
