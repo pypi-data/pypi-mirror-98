@@ -1,0 +1,14 @@
+d2s/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+d2s/__main__.py,sha256=fg-W7yZesBWYbYRmIDZ4ywKGR0DSTASB8B_iRbjqaLk,26331
+d2s/generate_metadata.py,sha256=xZHhrl9ycykQZz-es03Wm-Oh1hmL3ViUM2fFNgueCxo,15014
+d2s/sparql_operations.py,sha256=wKB3vyu5m5zKssOd7tnGSC7aWf_V8xia4OTYqDzV2NU,7530
+d2s/utils.py,sha256=gKoS35hMHePe9o61ubokBsmIfiPdc0S1tJmJ-rw4M-w,8581
+d2s/templates/process-dataset.yml,sha256=RklLEcZH2abaXuQWE6nO-8DpV6Zn0_yoNfdFthDisHI,3749
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_d2s.py,sha256=TuMSZXhibFHM6-Y-R7IIz7RaLWNHZPpyH8GXyk-5ezs,298
+d2s-0.3.1.dist-info/LICENSE,sha256=WmxErtD-V78fBKgWvw42TkIXScXE6DtnZZ61yzkMO-E,1071
+d2s-0.3.1.dist-info/METADATA,sha256=etv0SB7OAIXecNly1rxZscHHVFAlp2S_c5nKLh2LAp0,7526
+d2s-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+d2s-0.3.1.dist-info/entry_points.txt,sha256=KHInZfNqMUgXuhmBU8911E3YcTMQUPtLyJpiwzuIZNI,42
+d2s-0.3.1.dist-info/top_level.txt,sha256=QvCYQxyKYM7ij-6ohB4LEbfUXAXr9SasejhDcWgGb5o,10
+d2s-0.3.1.dist-info/RECORD,,
