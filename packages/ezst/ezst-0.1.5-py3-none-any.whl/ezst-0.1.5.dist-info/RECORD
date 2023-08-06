@@ -1,0 +1,11 @@
+ezst/__init__.py,sha256=IzejCp-oH-fBS6KMPZUoloKHTDhP1f6el7VGHv5_Lfw,83
+ezst/data.py,sha256=YZSSTFVs9Oqc29pQXO6dXN_ycGXswT2y6ug-6qU348k,598
+ezst/test.py,sha256=amExj4xekd4eXzWMIZbXf9ahnPY_WYJkQtQ_zIx66is,50
+ezst/ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezst/ai/cnn.py,sha256=ns6oVxBK8po_Z7jn9Z45eJJ1t0qxtGW5Pzl9nMea4d4,514
+ezst/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ezst/data/cats_dogs.py,sha256=j8AhbzfxntcpfFfaO0_B5u1SRq0Db8r8WwO7rwEZFuc,880
+ezst-0.1.5.dist-info/METADATA,sha256=X_OmCs6b1Y_R4_8FofMJ3gYE1jJknMD-giLv9noakuI,820
+ezst-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ezst-0.1.5.dist-info/top_level.txt,sha256=iqg9aIY9KFKQFsQQYp3N_LpaJ_FmBxcb31tXYMSou7Y,5
+ezst-0.1.5.dist-info/RECORD,,
