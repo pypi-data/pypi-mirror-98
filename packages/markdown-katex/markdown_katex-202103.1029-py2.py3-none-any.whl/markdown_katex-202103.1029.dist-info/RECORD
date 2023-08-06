@@ -1,0 +1,15 @@
+markdown_katex/__init__.py,sha256=zYf0Kx-Q_PEG6SpdPY2qumsaJ1g_evgnca3Avfv8-oA,1829
+markdown_katex/__main__.py,sha256=DDV01uLtiqBDi72_Wj54KqFJaZPqdyCWVcRFt0aEL2g,1890
+markdown_katex/extension.py,sha256=WICr07B8nyQUTb45lZ86UnrtR3-McY9w1ioQqzyeaJQ,9559
+markdown_katex/html.py,sha256=JfE7DK-zlR9chwTiEtp9P3h5r19wPbfVbXxIHJVazgE,1171
+markdown_katex/wrapper.py,sha256=S4jJGIrc_-MRWsq414eoFcFFbK_X27JmtLXUFmxF5RA,9396
+markdown_katex/bin/katex_v0.13.0_node10_x86_64-Darwin,sha256=KH00QPphJUTwSOET4K60A6jHYr56wwqFut69mt7j5-o,45935682
+markdown_katex/bin/katex_v0.13.0_node10_x86_64-Linux,sha256=hbQ3k2mg2AyQu43MFVx4Z6jdPIQsmIe2EvPA9U1vjBc,44612514
+markdown_katex/bin/katex_v0.13.0_node12_x86_64-Windows.exe,sha256=bT6nG7Ctb-RhjYgfwtWxp8o-sbXfpuS_uJIfBc3EdFE,46779844
+markdown_katex-202103.1029.dist-info/LICENSE,sha256=X_UAkT6DcX4vKUw4x5yasBu5fah5Sz8zca04jCU1eYU,1127
+markdown_katex-202103.1029.dist-info/METADATA,sha256=_7ESnNOYEHtK-LjkJ-0Dbp_-_j5ba0FKtO29FfCDivA,11538
+markdown_katex-202103.1029.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+markdown_katex-202103.1029.dist-info/entry_points.txt,sha256=KMiYSLu9Gj-T_Wdq8NLDB02dtcV9RgRMFAdIGpRnpwY,80
+markdown_katex-202103.1029.dist-info/top_level.txt,sha256=DflPZ-ip-JrPZP0Rj7N6j9MkRRz40JUfK67MQFXezi4,15
+markdown_katex-202103.1029.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+markdown_katex-202103.1029.dist-info/RECORD,,
