@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+vpype_gcode/__init__.py
+vpype_gcode/bundled_configs.toml
+vpype_gcode/gwrite.py
+vpype_gcode.egg-info/PKG-INFO
+vpype_gcode.egg-info/SOURCES.txt
+vpype_gcode.egg-info/dependency_links.txt
+vpype_gcode.egg-info/entry_points.txt
+vpype_gcode.egg-info/requires.txt
+vpype_gcode.egg-info/top_level.txt

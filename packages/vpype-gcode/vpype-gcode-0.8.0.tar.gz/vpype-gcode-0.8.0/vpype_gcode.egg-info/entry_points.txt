@@ -1,0 +1,4 @@
+
+            [vpype.plugins]
+            gwrite=vpype_gcode.gwrite:gwrite
+        
