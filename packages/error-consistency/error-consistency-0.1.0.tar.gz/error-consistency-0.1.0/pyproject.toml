@@ -1,0 +1,38 @@
+[tool.black]
+line-length = 100
+
+[tool.isort]
+profile = 'black'
+src_paths = ['error_consistency', 'tests']
+skip_gitignore = false
+line_length = 100
+atomic = true
+sections = ['FUTURE', 'STDLIB', 'THIRDPARTY', 'LOCALFOLDER', 'FIRSTPARTY']
+known_local_folder = ['error_consistency']
+
+[tool.poetry]
+name = "error-consistency"
+version = "0.1.0"
+description = ""
+authors = ["Derek M Berger <dmberger.dev@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.9"
+numpy = "^1.19.5"
+scikit-learn = "^0.24.1"
+typing-extensions = "^3.7.4"
+pandas = "^1.2.1"
+tqdm = "^4.56.0"
+numba = "^0.52.0"
+sphinx-rtd-theme = "^0.5.1"
+matplotlib = "^3.3.4"
+seaborn = "^0.11.1"
+ray = {extras = ["tune"], version = "^1.2.0"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+Sphinx = "^3.4.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
