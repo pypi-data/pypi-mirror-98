@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+is_number/__init__.py
+is_number/_version.py
+is_number/is_float.py
+is_number/is_number.py
+is_number.egg-info/PKG-INFO
+is_number.egg-info/SOURCES.txt
+is_number.egg-info/dependency_links.txt
+is_number.egg-info/top_level.txt
