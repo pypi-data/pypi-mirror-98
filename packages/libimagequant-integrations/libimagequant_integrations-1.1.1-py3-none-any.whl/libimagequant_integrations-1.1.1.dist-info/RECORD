@@ -1,0 +1,14 @@
+libimagequant_integrations/PIL.py,sha256=ZXwKa_tLQnGiDLRB8dHo_ZfKahjbo61TiEm2G4qWCHM,792
+libimagequant_integrations/PyQt5.py,sha256=GJYw86o5hzC08gknHilqLpxZO5q6aa59XvIYrjW-Cig,440
+libimagequant_integrations/PyQt6.py,sha256=BKqaQu7FSo3aOa6d4olcQuCe_QZVwHy8m_YrYXX8ttw,440
+libimagequant_integrations/PySide2.py,sha256=rsAkyGPxd9NqdqFkU7r1dpUPrDvfw-JZTE4MQfpKTZU,455
+libimagequant_integrations/PySide6.py,sha256=1cDt64GDc7IPDDoaFAb4GJ_LLQghTPJ9YAI2Bi1vodc,455
+libimagequant_integrations/_Qt.py,sha256=A63eu8HsuOZ0-lLpFprjvlAsgnDgl9xt-Sx5lPl3x_I,930
+libimagequant_integrations/__init__.py,sha256=o7IwfZYcCAszjp0nYAdvVfhT1zmGDraabIpGk3xj2Ps,48
+libimagequant_integrations/png.py,sha256=vD3ISzWcHkLMkmE8Zb45aJTktEYeewj25PvpZk-onDs,855
+libimagequant_integrations/skimage.py,sha256=jWEu3ycQ4N072N25NXkip3D5l7VmmkWUKaD8TyZvqk8,759
+libimagequant_integrations-1.1.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+libimagequant_integrations-1.1.1.dist-info/METADATA,sha256=Nba4jiVj2zxwH_jgrn8y8-9vxPnAWRM_XBMb8Xoetx0,3879
+libimagequant_integrations-1.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+libimagequant_integrations-1.1.1.dist-info/top_level.txt,sha256=Nw63u5_92kLYMU6aSBCu4PIZD9ezI_7MCWX3S_AW2OU,27
+libimagequant_integrations-1.1.1.dist-info/RECORD,,
