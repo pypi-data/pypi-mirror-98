@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ukrit
+Version: 0.0.1
+Summary: Some description
+Home-page: https://github.com/username/repo.git
+Author: username
+Author-email: ukrit.fb@gmail.com
+License: MIT
+Description: # UKRIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown

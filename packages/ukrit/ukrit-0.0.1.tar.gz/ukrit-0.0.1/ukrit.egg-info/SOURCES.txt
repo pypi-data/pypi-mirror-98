@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+library/__init__.py
+library/myfunction.py
+library/version.py
+tests/__init__.py
+tests/test_myfunction.py
+ukrit.egg-info/PKG-INFO
+ukrit.egg-info/SOURCES.txt
+ukrit.egg-info/dependency_links.txt
+ukrit.egg-info/requires.txt
+ukrit.egg-info/top_level.txt
