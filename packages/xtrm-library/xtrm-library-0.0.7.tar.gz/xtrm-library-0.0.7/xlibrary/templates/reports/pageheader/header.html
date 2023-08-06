@@ -1,0 +1,14 @@
+<title>{{reporttitle}}</title>
+
+{% load report_tags %}
+
+<div style="text-align:right;">
+  Page <pdf:pagenumber> of <pdf:pagecount>
+</div>
+<div class="fc1-1" style="font-size:18px;text-align:center; font-weight: bold;">{{companyname|title}}&nbsp;</div>
+<div class="fc1-1" style="font-size:16px;text-align:center; font-weight: bold;">{{reporttitle|title}}&nbsp;</div>
+<div class="fc1-1" style="font-size:14px;text-align:center; font-weight: bold;">{{period}}&nbsp;</div>
+
+<div id="filter_content">{% include "reports/pageheader/filters.html" %}</div>
+
+<div id="column_header_content">{% include "reports/pageheader/column_header.html" %}</div>

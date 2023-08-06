@@ -1,0 +1,8 @@
+recursive-include xlibrary/templates *
+recursive-include xlibrary/templatetags *
+recursive-include xlibrary/static *
+recursive-include xlibrary/blueprints *
+include *.j2
+include *.txt
+include *.md
+include *.ini
