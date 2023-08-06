@@ -1,0 +1,2 @@
+class NotReadableMessage(Exception):
+    pass
