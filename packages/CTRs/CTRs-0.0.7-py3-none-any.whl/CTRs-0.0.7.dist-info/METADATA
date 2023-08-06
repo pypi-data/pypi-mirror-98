@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: CTRs
+Version: 0.0.7
+Summary: A package for CTR prediction
+Home-page: https://github.com/TimJLS/CTRs
+Author: Tim Su
+Author-email: omg80827@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/TimJLS/CTRs/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow (>=2)
+
+# CTRs
+
+Developing a package for self use of fields that related to advertising click predictions(CTR prediction)
+
+
