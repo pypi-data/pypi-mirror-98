@@ -1,0 +1,5 @@
+doreah>=1.6.11
+emoji
+send2trash
+tabulate
+unidecode
