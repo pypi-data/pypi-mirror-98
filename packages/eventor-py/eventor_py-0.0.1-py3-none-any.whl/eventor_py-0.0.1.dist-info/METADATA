@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: eventor-py
+Version: 0.0.1
+Summary: Python 3 api wrapper for eventor
+Home-page: UNKNOWN
+Author: William Grunder
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: urllib3 (==1.26.3)
+
+UNKNOWN
+
+

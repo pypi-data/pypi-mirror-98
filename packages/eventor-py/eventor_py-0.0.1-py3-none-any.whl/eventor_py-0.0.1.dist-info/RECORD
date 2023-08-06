@@ -1,0 +1,9 @@
+eventor_py/__init__.py,sha256=5dFOaIdveD2oBMgV_N9AbKp5GiE459xxRd3JADIWcE8,11534
+tests/__init__.py,sha256=GYNXBtqsBGZB3acm1Dlmt43Zst-Z97xDU_d0uhOV_R4,805
+tests/test.py,sha256=zLxaOPL5rVHQIqOjPont1g8lZfrwlH_a4qdMEQHBUno,1502
+tests/testParse.py,sha256=5hSEG6I7wMKwm1zEjoXTU3wni3UkbLJcrp2AlRIhE_M,531
+tests/test_parse_files.py,sha256=Z9vv4VHoM699_YEZNILGA7BcbohElh-1OB2ddYata9Q,726
+eventor_py-0.0.1.dist-info/METADATA,sha256=S0ZryjKv0-WpWTGQNE8njTCksdw5wL9glhNoellUp0Q,371
+eventor_py-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+eventor_py-0.0.1.dist-info/top_level.txt,sha256=WpmnlJIyp12avg2lSk5Z-QiJOWt_vwMnbEzr7fs5Kls,17
+eventor_py-0.0.1.dist-info/RECORD,,
