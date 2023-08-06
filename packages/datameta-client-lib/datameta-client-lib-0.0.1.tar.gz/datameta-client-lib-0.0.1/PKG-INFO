@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: datameta-client-lib
+Version: 0.0.1
+Summary: DataMeta
+Home-page: UNKNOWN
+Author: DataMeta Dev Team
+Author-email: leon.kuchenbecker@uni-tuebingen.de
+License: UNKNOWN
+Description:     DataMeta  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,DataMeta
+Platform: UNKNOWN
+Requires-Python: >=3.6
