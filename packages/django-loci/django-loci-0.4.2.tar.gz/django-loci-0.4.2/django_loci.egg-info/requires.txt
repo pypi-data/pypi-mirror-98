@@ -1,0 +1,6 @@
+Pillow<=8.1.0,>=6.2.0
+channels<2.5.0,>=2.3.0
+django-leaflet<0.28,>=0.23
+django<3.2,>=2.2
+geopy~=2.0.0
+openwisp-utils<0.8,>=0.6.0
