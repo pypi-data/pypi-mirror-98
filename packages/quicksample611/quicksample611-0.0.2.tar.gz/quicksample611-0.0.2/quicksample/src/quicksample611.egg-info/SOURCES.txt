@@ -1,0 +1,7 @@
+README.md
+setup.py
+quicksample/src/quicksample.py
+quicksample/src/quicksample611.egg-info/PKG-INFO
+quicksample/src/quicksample611.egg-info/SOURCES.txt
+quicksample/src/quicksample611.egg-info/dependency_links.txt
+quicksample/src/quicksample611.egg-info/top_level.txt
