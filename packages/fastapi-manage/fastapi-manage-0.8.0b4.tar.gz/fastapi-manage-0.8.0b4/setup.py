@@ -1,0 +1,52 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['fastapi_manage']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Jinja2>=2.11.2',
+ 'PyMySQL>=0.9.3',
+ 'SQLAlchemy>=1.3.20',
+ 'alembic>=1.5.6',
+ 'asgi-ratelimit>=0.4.0',
+ 'bcrypt>=3.2.0',
+ 'celery>=5.0.5',
+ 'configobj>=5.0.6',
+ 'cryptography>=3.3.2,<3.4.0',
+ 'fastapi>=0.62.0',
+ 'gunicorn>=20.0.4',
+ 'itsdangerous>=1.1.0',
+ 'loguru>=0.5.3',
+ 'python-dotenv>=0.15.0',
+ 'python-jose>=3.2.0',
+ 'python-multipart>=0.0.5',
+ 'requests>=2.25.1',
+ 'typer>=0.3.2',
+ 'uvicorn>=0.11.8']
+
+entry_points = \
+{'console_scripts': ['fastapi-manage = fastapi_manage.main:app']}
+
+setup_kwargs = {
+    'name': 'fastapi-manage',
+    'version': '0.8.0b4',
+    'description': 'FastAPI template generation, database version management tools',
+    'long_description': '# fastapi_manage\n\n#### Project description\nfastapi的模板生成，数据库版本管理项目。  \nFastAPI template generation, database version management tools.  \nJust like Django.  \n\nfastapi+sqlalchemy  \n\n#### Installation\n```shell\npip install fastapi-manage\n```\n\n#### Usage\n##### startproject\nCreates a fastapi project directory structure for the given project name in the\ncurrent directory or optionally in the given directory.\n```shell\nfastapi-manage startproject yourproject\n```\n\n##### makemigrations\nCreates new migration(s) for project.\n```shell\ncd ./yourproject\npython manage.py makemigrations\n```\n\n##### migrate\nUpdates database schema. Manages both apps with migrations and those without.\n```shell\ncd ./yourproject\npython manage.py migrate\n```\n\n##### runserver\nStart a Web server\n```shell\ncd ./yourproject\npython mange.py runserver\n```\nOptions:  \n-h, --host\u3000\u3000\u3000\u3000\u3000[default:127.0.0.1]  \n-p, --port\u3000\u3000\u3000\u3000\u3000[default:8000]  \n-w, --workers\u3000\u3000\u3000[default:1]  \n--reload\u3000\u3000\u3000\u3000\u3000\u3000auto-reloader  \n\n### 项目详细使用说明\n\n![image-20210312104602483](C:\\Users\\8201260\\AppData\\Roaming\\Typora\\typora-user-images\\image-20210312104602483.png)\n\n#### 1. alembic  & alembic.ini\n\n数据库版本管理工具自动生成的目录，对数据库做的变更都会在这个文件夹里的versions记录，这里面的配置由fastapi-manage自动完成\n\n#### 2. api  存放接口逻辑\n\n- api_v1  版本控制\n  - endpoints  存放接口逻辑的包\n    - user.py 存放user相关的接口\n  - api.py  存放路由\n\n- \\_\\_init_\\_.py\n\n- common.py\n\n> 用来存放一些接口会调用到的通用方法\n\n#### 3. core  项目配置中心\n\n> 项目的配置中心，如数据库配置，时区，密码强度，日志等级，jwt过期时间等等\n\n#### 4. db  数据库相关\n\n- base.py \t\t   文件里保存着所有需要被识别的模型信息， 基类，模型对象\n- base_class.py  存放数据库模型的基类, 之后的模型都应该继承这个类，包含了常用四字段， id, create_at, update_at, deleted\n- init_db.py         存放对数据库的初始化操作，如初始数据等。\n- session.py        对数据库引擎的配置，会话工厂的创建\n\n#### 5.libs  其他包\n\n- dependencies.py    Utils对象的位置\n- pagination.py          分页器的位置\n- security.py              安全组件, 有 jwt的生成，密码哈希， 密码验证的方法\n\n#### 6.middleware 中间件\n\n- authentication.py        验证中间件 在传入请求前对请求做验证\n- auto_db_session.py    数据库会话管理中间件  会话延迟加载, 负责将会话对象注入request对象，而Utils继承request对象\n- rate_limit.py                限流中间件\n\n#### 7.models  数据库模型\n\n- \\_\\_init_\\_.py \n\n- user.py             # 存放用户相关的模型\n\n- machine.py      # 存放机台相关的模型\n\n- etc...\n\n  > 每个模型都需要在\\_\\_init_\\_.py中注册\n  >\n  > 注册例子:``` from .user import User```\n  >\n  > 导入例子: ```  import models; models.User```\n\n#### 8.schemas  序列化器\n\n- _\\_init_\\_.py \n\n- user.py        # 用户相关的序列化器\n\n  > 跟models一致，但是不强制，可以直接在_\\_init_\\_中注册类对象\n  >\n  > 注册后的导入方式: ```  import schemas; schemas.User```\n\n#### 9.tasks  异步任务\n\n- config.py   # celery的配置项\n- tasks.py    # 默认创建， 用于存放任务，可自行修改，修改后在config.py中的include引用即可\n\n#### 10.test  测试目录\n\n> 放置测试用例\n\n#### 11.main.py\n\n> 项目从这里启动, 里面可配置中间件, 版本号, 文档路径等\n\n#### 12.manage.py \n\n> 项目管理器\n\n#### 13. README.md\n\n\n\n#### 14. 框架详解\n\n- 接口例子：\n\n/api/endpoints/user.py\n\n```python\nfrom fastapi import APIRouter, Depends\n\nimport models\nimport schemas\nfrom libs import security\nfrom libs.dependencies import Utils\n\nrouter = APIRouter()  # 定义当前文件里的app对象\n\n@router.post(\'user\', summary=\'创建用户\')  # 第一个参数是url path, summary是接口的概要\ndef create_user(*, utils:Utils(True, \'admin\') = Depends(),\n               user: schemas.UserCreate):\n    session = utils.db.session  # 获取会话 需要加载数据库会话管理中间件\n    hashed_pwd = security.get_password_hash(user.password)  # 获取密码哈希值\n    user_dict = user.dict(exclude={\'password\'})  # 排除password\n    user_dict.update({\'hashed_password\': hashed_pwd})\n    user_obj = models.User(**user_dict)  # 创建一个User对象\n    session.add(user_obj)  # 添加对象\n    session.commit()  # 提交事务\n    obj = session.flush(user_obj)  # 刷新对象\n    # session.close()  由数据库会话管理中间件自动归还, 未开启时需要手动关闭会话\n    return obj\n```\n\n/schemas/user.py  (部分源码)\n\n```python\nfrom pydantic import BaseModel\n\n\n# 序列化器\nclass UserCreate(BaseModel):\n    userid: str\n    username: Optional[str] = \'\'\n    email: Optional[str] = \'\'\n    is_active: Optional[bool] = True\n    is_staff: Optional[bool] = False\n```\n\ntip: 获取数据库会话的另一种方式\n\n```python\nfrom fastapi import Depends\n\nfrom api.common import get_session\n\n@router.get(\'/user\', summary=\'获取所有用户\')\ndef get_all_user(session: Session = Depends(get_session)):\n    session.query(xxxx)\n    # session.close()  无需调用, 由get_session在接口调用完成后触发close\n```\n\n/api/common.py  (部分源码)\n\n```python\ndef get_session() -> Generator:\n    db = SessionFactory()\n    try:\n        yield db\n    finally:\n        db.close()\n```\n\n- **配置中心：**\n\ncore/config.py  (部分源码)\n\n> ```\n> PROJECT_NAME: str = "test-project"  # 项目名称\n> \n> LOG_LEVEL: str = \'DEBUG\'  # TRACE, INFO, SUCCESS, WARNING, ERROR, CRITICAL ...  # 日志等级\n> \n> API_V1_STR: str = "/api/v1"  # 接口版本控制，http://localhost/api/v1/xxx\n> \n> SECRET_KEY: str = "jymxRSTcLK7Y0AJrYVT12BGQ7HO7IvhXx5HM5_z55Xo"  # 密钥，每个项目会单独生成一个随机密钥, 可用于jwt的加解密\n> SALT_ROUNDS: int = 4  # 加盐次数, 决定密码哈希值的强度\n> \n> # JWT过期时间 单位: 分钟\n> ACCESS_TOKEN_EXPIRES_MINUTES: int = 30\n> \n> # 时区设置\n> TIMEZONE: str = \'Asia/Shanghai\'\n> \n> # 分页器, 用到分页器时需要配置\n> PAGE_QUERY_PARAM: str = \'\'\n> PAGE_SIZE_QUERY_PARAM: str = \'\'\n> \n> # 跨域配置 默认允许全部\n> BACKEND_CORS_ORIGINS: List = ["*"]\n> \n> # mysql数据库的配置， 其他关系型数据库也可直接修改此处，然后选择该数据库的引擎即可\n> MYSQL_USER: str = "test_user"\n> MYSQL_PASS: str = "123456"\n> MYSQL_HOST: str = "127.0.0.1"\n> MYSQL_DB: str = "test_db"\n> MYSQL_PORT: str = "3306"\n> SQLALCHEMY_DATABASE_URI: str = f"mysql+pymysql://{MYSQL_USER}:{MYSQL_PASS}@{MYSQL_HOST}:{MYSQL_PORT}/{MYSQL_DB}"\n> \n> # Redis配置， 需要使用到时配置\n> REDIS_STORAGE_HOST: str = \'127.0.0.1\'\n> REDIS_STORAGE_PORT: str = \'6379\'\n> REDIS_STORAGE_PASS: str = \'\'\n> REDIS_STORAGE = f"redis://{REDIS_STORAGE_HOST}:{REDIS_STORAGE_PORT}/?password={REDIS_STORAGE_PASS}"\n> \n> # 限流中间件后端\n> RATE_LIMIT_REDIS_BACKEND_HOST: str = \'localhost\'\n> RATE_LIMIT_REDIS_BACKEND_PORT: str = \'6379\'\n> RATE_LIMIT_REDIS_BACKEND_DB: str = \'12\'\n> RATE_LIMIT_REDIS_BACKEND_PASS: str = \'Aa1234\'\n> \n> # Celery 中间人和后端的配置，主要用在异步任务\n> CELERY_BROKER: str = \'redis://:Aa1234@127.0.0.1:6379/7\'\n> CELERY_BACKEND: str = \'redis://:Aa1234@127.0.0.1:6379/8\'\n> \n> \n> class Config:\n>     case_sensitive = True\n> ```\n\n- **异步任务：**\n\ntasks/config.py  部分源码\n\n```python\n# 默认include自动生成的tasks.py文件， 如果有新增的py文件，创建后，在这边添加引用即可。\ninclude = [\'tasks.tasks\']\n```\n\ntasks.py\n\n```python\nfrom . import app\n\n\n@app.task()\ndef say_hello(name: str) -> None:\n    print(\'hello world\')\n```\n\n异步任务的调用\n\n```python\nfrom tasks.tasks import say_hello\n\nsay_hello.delay(\'xiaoming\')  # 即可将任务添加到消息队列中，等待celery去处理\n# 可达到异步执行的效果，在不要求消息强一致性，又是较耗时的操作时，考虑使用，需要考虑消息的可靠性，重复消费，顺序消费等问题。\n```\n\n- **主文件：**\n\nmain.py   (部分源码)\n\n```python\napp = FastAPI(\n    title=settings.PROJECT_NAME,\n    openapi_url=f\'{settings.API_V1_STR}/openapi.json\',\n    docs_url=\'/docs\',\n    redoc_url=\'/redoc\',\n) # 文档地址配置等\n\n# 中间件的加载\napp.add_middleware(BearerAuthenticationMiddleware)  # 认证中间件\napp.add_middleware(DBSessionMiddleware)  # 自动数据库会话管理中间件\nif settings.BACKEND_CORS_ORIGINS:  # 跨域中间件\n    app.add_middleware(\n        CORSMiddleware,\n        allow_origins=settings.BACKEND_CORS_ORIGINS,\n        allow_credentials=True,  # 允许携带验证信息，如cookies之类的\n        allow_methods=["*"],  # 跨域-允许所有方法\n        allow_headers=["*"],  # 跨域-允许所有请求头\n    )\n \n# log配置\nlogger.remove(handler_id=None)\nlogger.add(sink=f\'logs/{settings.PROJECT_NAME}-{{time:YYYY-MM-DD}}.log\',\n           format="{time:YYYY-MM-DD HH:mm:ss}-{level}-{name}:{function}:{line}-{level}-{message}",  # 日志格式\n           level=settings.LOG_LEVEL,\n           enqueue=True,\n           diagnose=True,  # 显示详细的错误，可能会泄漏敏感数据\n           retention="10 days",  # 清理几天前的日志\n           rotation="24h",  # log文件在记录24小时后，就会新建一个新的文件来记录\n           encoding=\'utf-8\',\n           # compression=\'zip\'  # 启用压缩\n           )\n\n\'\'\' 开启diagnose后的异常显示：\nFile "test.py", line 4, in func\n    return a / b\n           │   └ 0\n           └ 5\n\'\'\'\n\n# 启动事件\n@app.on_event(\'startup\')\nasync def startup_event():\n    print(\'startup_event\')\n\n\n# 版本选择\n# app.include_router(api_router)\n# V1\napp.include_router(api_router, prefix=settings.API_V1_STR)\n\n```\n\n#### 15. 项目例子\n\n1. 安装框架\n\n   ```shell\n   pip install fastapi-manage\n   ```\n\n2. 生成项目\n\n   ```shell\n   fastapi-manage startproject t-project\n   cd ./t-project\n   ```\n\n3. 项目的初始配置\n\n   - config的配置\n\n4. 数据库模型的构建\n\n   - 编写models\n   - 生成迁移版本\n   - 应用数据库迁移\n\n5. 接口编写\n\n   - 设置路由\n   - 编写序列化器\n   - 编写业务逻辑\n\n\n\n**restful风格接口**  get post put delete ...\n\n假设需要设计一个用户管理系统\n\n- **数据库设计**\n  - 用户基础信息表 (user)\n    - userid, username, gender, birthday, mobile, email, etc...\n  - 部门信息表(department)\n    - name, tel, func, staff, ...\n  - 用户拓展信息表(user_extra)\n    - client_id, client_name, device_name, device_id, ...\n\n\n\n- **接口设计**\n  - 登陆模块\n    - 用户登陆  --> post\t\t->  def login()\t-> username, password\n  - 用户模块\n    - 用户注册  **-->** post  **->** def create_user()\t**->**  UserInfo   ->  User\n    - 修改用户  **-->** put    **->** def update_user()   **->**  UserInfo  ->  User\n    - 查询用户  **-->** get     **->** def get_user()/get_users()     **->** userid /  None-> User/Users\n    - 删除用户  **-->** delete  **->** def delete_user()   **->**  userid    -> None',
+    'author': 'lewei_huang',
+    'author_email': 'auxpd96@163.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://gitee.com/LeanDe/fastapi-manage',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'entry_points': entry_points,
+    'python_requires': '>=3.6',
+}
+
+
+setup(**setup_kwargs)
