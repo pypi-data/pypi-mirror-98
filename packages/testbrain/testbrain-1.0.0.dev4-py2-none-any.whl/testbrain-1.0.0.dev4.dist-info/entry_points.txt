@@ -1,0 +1,3 @@
+[console_scripts]
+testbrain = testbrain.__main__:cli
+

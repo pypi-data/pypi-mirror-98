@@ -1,0 +1,7 @@
+#!python
+# -*- coding: utf-8 -*-
+from testbrain.core.app import cli
+
+
+if __name__ == '__main__':
+    cli()
