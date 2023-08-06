@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: qsense
+Version: 0.1.0
+Summary: qsense is a useful library / command line tool for qliksense
+Home-page: https://gitlab.com/matteo.redaelli/qsense
+Author: Matteo Redaelli
+Author-email: matteo.redaelli@gmail.com
+License: GPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: fire
+Requires-Dist: qsapi
+Requires-Dist: requests
+Requires-Dist: requests-ntlm
+
+# qsense
+
+qsense is an useful library and command line for qliksense
+
+## installation
+
+pip install qsense
+
+## Useful commands
+
+- export_remove_old_apps
+
+
