@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+pkg/__init__.py
+rikaard_test_package_3.egg-info/PKG-INFO
+rikaard_test_package_3.egg-info/SOURCES.txt
+rikaard_test_package_3.egg-info/dependency_links.txt
+rikaard_test_package_3.egg-info/top_level.txt
