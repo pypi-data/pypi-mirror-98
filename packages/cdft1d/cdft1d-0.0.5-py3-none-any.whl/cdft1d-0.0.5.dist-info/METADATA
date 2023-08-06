@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cdft1d
+Version: 0.0.5
+Summary: Classical density functional theory code
+Home-page: UNKNOWN
+Author: Marat Valiev and Gennady Chuev
+Author-email: marat.valiev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: scipy (>=1.6.1)
+Requires-Dist: numpy (>=1.20.1)
+Requires-Dist: matplotlib (>=3.3.4)
+Requires-Dist: click
+
+UNKNOWN
+
+
