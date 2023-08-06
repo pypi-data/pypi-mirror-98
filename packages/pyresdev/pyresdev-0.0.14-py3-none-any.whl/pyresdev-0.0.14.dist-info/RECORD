@@ -1,0 +1,13 @@
+pyresdev/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+pyresdev/processing/__init__.py,sha256=ibbeYcToS52p318tuxs2u_7Mn5bw42UKsw9pTMobyG8,80
+pyresdev/processing/processing.py,sha256=E2bK0NT5eb58VdTt8SRyjFvFVYKSjISvRJj0VHDc6b0,6541
+pyresdev/utils/__init__.py,sha256=n1GpzKoIycJ_gQ7eb6w-5iqaOiCFHXKTTCR-s3h1v0w,224
+pyresdev/utils/_aws_tools.py,sha256=bhq7NVdWIJkXsHfHmRTz0vcDk5htsiXtZ7DSzYMWzvU,694
+pyresdev/utils/_developer_utils.py,sha256=Uu5EgCQykqENizxFJt6vJl-kLshdtFvzRO5LfJ5kHBw,17082
+pyresdev/utils/_memory_reduction.py,sha256=XHiQ7WkJP2jH6r0oTttAw5PWPx5fWme968baZx8Rna0,2832
+pyresdev/utils/_processing_tools.py,sha256=fCdT6gIL1ufeNFrGveAk8SHvpBfKi4KUw6q7CxXx6Bs,2564
+pyresdev-0.0.14.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyresdev-0.0.14.dist-info/METADATA,sha256=Mrhxt3NTYabnbmUPLRm7jHyOCsTeoeC6-hpdN22ErYo,475
+pyresdev-0.0.14.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pyresdev-0.0.14.dist-info/top_level.txt,sha256=Z8NxapJS3_B4wR8Chi6Whz9KyWIfkEowezEZBHd1I9c,9
+pyresdev-0.0.14.dist-info/RECORD,,
