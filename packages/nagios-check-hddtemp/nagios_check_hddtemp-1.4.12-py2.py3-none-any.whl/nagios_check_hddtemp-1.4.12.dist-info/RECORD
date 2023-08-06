@@ -1,0 +1,10 @@
+nagios_check_hddtemp-1.4.12.data/data/share/doc/nagios-check-hddtemp/AUTHORS,sha256=1qBiQSoQ96bhlH8162YhKQnZXkXh4tl9vJSDzfZ2SSo,109
+nagios_check_hddtemp-1.4.12.data/data/share/doc/nagios-check-hddtemp/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+nagios_check_hddtemp-1.4.12.data/data/share/doc/nagios-check-hddtemp/README.rst,sha256=sGYoTCcEOzn7t1uw2sGo02CD2AfQaCAOIyCBUks3Gxg,3671
+nagios_check_hddtemp-1.4.12.data/scripts/check_hddtemp.py,sha256=L5EhQK9oBHrd3ecZbgTpm8P1nd6lG9wmOr8rcshoNYo,15173
+nagios_check_hddtemp-1.4.12.dist-info/AUTHORS,sha256=1qBiQSoQ96bhlH8162YhKQnZXkXh4tl9vJSDzfZ2SSo,109
+nagios_check_hddtemp-1.4.12.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+nagios_check_hddtemp-1.4.12.dist-info/METADATA,sha256=SDo0wLJZIvHgZWxugWwabUSnQgWt6N-qhLL01W2j1aE,7877
+nagios_check_hddtemp-1.4.12.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+nagios_check_hddtemp-1.4.12.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+nagios_check_hddtemp-1.4.12.dist-info/RECORD,,
