@@ -1,0 +1,5 @@
+python-consul==1.1.0
+redis>=3.5.3
+
+[:python_version == "3.6"]
+dataclasses==0.7
