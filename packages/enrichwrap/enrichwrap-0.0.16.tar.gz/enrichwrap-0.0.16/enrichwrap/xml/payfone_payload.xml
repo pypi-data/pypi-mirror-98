@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<application  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xmlns="https://www.sas.com/sfm/eop"
+              xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="PayFone payload mappings">
+        <message messageType="payfone" subType="verify" mapperId="PayfoneVerify">
+            <fields>
+                <field name="requestId" default="ABC0881973286793">
+                    <srcField name="app_id"/>
+                </field>
+                <!--maybe not required. Assume for now...-->
+                <!-- TODO where to find consent info in Axcess info? Do we assume everyone is notCollected for now.. -->
+                <!-- options: optedIn - The end user has provided consent for the collection of their personal data.
+                              optedOut - The end user has refused to allow collection of their personal data.
+                              notCollected - No attempt has been made to obtain consent from the end user.
+                              unknown - The status of consent collection is unknown.
+                -->
+                <field name="consentStatus" default="notCollected">
+                    <!--<srcField name="/merchantId"/>-->
+                </field>
+                <!--Either phoneNumber OR payfone Alias required-->
+                <!--TODO: This is a temporary phone #, until I know which field from Axcess to use-->
+                <!--TODO: Also missing first digit in phone #. Guessing 1 for now-->
+                <field name="phoneNumber" default="unknown">
+                    <srcField name="app_num1_number">
+                        <groovy>
+                            <![CDATA[
+                                    if (value!=null && value.trim().length()==10) {
+                                        value = value.trim();
+                                    return value;
+                                    }
+                                ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="firstName">
+                    <srcField name="app_first_name"/>
+                </field>
+                <field name="lastName">
+                    <srcField name="app_last_name"/>
+                </field>
+                <field name="address">
+                    <srcField name="app_address1"/>
+                </field>
+                <field name="extendedAddress">
+                    <srcField name="app_address2">
+                        <groovy>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="city">
+                    <srcField name="app_city"/>
+                </field>
+                <field name="region">
+                    <srcField name="app_state"/>
+                </field>
+                <field name="postalCode">
+                    <srcField name="app_postal_code"/>
+                </field>
+                <field name="dob">
+                    <srcField name="app_dob"/>
+                </field>
+                <field name="ssn">
+                    <srcField name="app_id1_doc_number"/>
+                </field>
+                <field name="emailAddress">
+                    <srcField name="app_email"/>
+                </field>
+                <field name="details" default='true'/>
+                <field name="trustScore" default='false'/>
+            </fields>
+        </message>
+        <message messageType="payfone" subType="trust" mapperId="PayfoneTrust">
+            <fields>
+                <field name="requestId" default="ABC0881973286793">
+                    <srcField name="app_id"/>
+                </field>
+                <field name="consentStatus" default="unknown">
+                    <!--<srcField name="/merchantId"/>-->
+                </field>
+                <!--TODO: see above TODO about phoneNumber-->
+                <field name="phoneNumber" default="">
+                    <srcField name="app_num1_number">
+                        <groovy>
+                            <![CDATA[
+                                if (value!=null && value.trim().length()==10) {
+                                    value = value.trim();
+                                return value;
+                                }
+                            ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="details" default='true'/>
+            </fields>
+        </message>
+        <message messageType="payfone" subType="mobileauthByRedirect" mapperId="PayFonemobileauthByRedirect">
+            <fields>
+                <field name="RequestId" default="ABC0881973286793">
+                    <srcField name="app_id_hashed"/>
+                </field>
+                <!--TODO: unsure what this is-->
+                <!--definition: The URL of the client server that will be called back by the phone, providing the VFP for the result call.-->
+                <field name="FinalTargetUrl" default="http://www.sas.com">
+                    <!--<srcField name="/merchantId"/>-->
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

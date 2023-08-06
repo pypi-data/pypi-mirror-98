@@ -1,0 +1,578 @@
+<?xml version="1.0"?>
+<!-- The sample mapping is for the Common to SFM -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <messages name="Common to SFM">
+        <message messageType="common" subType="toSFM" mapperId="commonToSFM">
+            <fields>
+
+                <!-- Value is being truncated to 40 characters to line up with SFM contstraints when used in the  dee_entity_id_2 field -->
+                <field name="_1_app_id">
+                    <srcField name="app_id">
+                        <groovy>
+                            <![CDATA[
+                                  return (value != null && value.length() > 40)? value.substring(0, 40) : value;
+                         ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="dee_entity_id_2">
+                    <srcField name="app_id"/>
+                </field>
+
+                <field name="_1_app_source">
+                    <srcField name="app_source"/>
+                </field>
+
+                <field name="_1_app_campaignid">
+                    <srcField name="app_campaignid"/>
+                </field>
+
+                <field name="_1_storemodeindicator">
+                    <srcField name="app_storemodeindicator">
+                        <groovy>
+                            <![CDATA[
+                      return (value == 'true' ? 1 : 0);
+                      ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_ip_address">
+                    <srcField name="app_ip_address"/>
+                </field>
+
+                <field name="_1_app_channel">
+                    <srcField name="app_channel"/>
+                </field>
+
+                <field name="_1_app_recv_branch">
+                    <srcField name="app_recv_branch"/>
+                </field>
+
+                <field name="_1_app_recv_brand">
+                    <srcField name="app_recv_brand"/>
+                </field>
+
+                <field name="_1_app_store_location">
+                    <srcField name="app_store_location"/>
+                </field>
+
+                <field name="_1_app_first_name">
+                    <srcField name="app_first_name"/>
+                </field>
+
+                <field name="_1_app_last_name">
+                    <srcField name="app_last_name"/>
+                </field>
+
+                <field name="_1_app_dob">
+                    <srcField name="app_dob">
+                        <groovy>
+                            return (value != null)? value.replaceAll("-", "") : null;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_id1_doc_type">
+                    <srcField name="app_id1_doc_type"/>
+                </field>
+
+                <field name="_1_app_id1_doc_number">
+                    <srcField name="app_id1_doc_number"/>
+                </field>
+
+                <field name="_1_app_id1_expiration">
+                    <srcField name="app_id1_expiration">
+                        <groovy>
+                            return (value != null)? value.replaceAll("-", "") : null;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_id2_doc_type">
+                    <srcField name="app_id2_doc_type"/>
+                </field>
+
+                <field name="_1_app_id2_doc_number">
+                    <srcField name="app_id2_doc_number">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_id2_state">
+                    <srcField name="app_id2_state"/>
+                </field>
+
+                <field name="_1_app_state">
+                    <srcField name="app_state"/>
+                </field>
+
+                <field name="_1_app_city">
+                    <srcField name="app_city"/>
+                </field>
+
+                <field name="_1_app_address1">
+                    <srcField name="app_address1">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 64)? value.substring(0, 64) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_address2">
+                    <srcField name="app_address2"/>
+                </field>
+
+                <field name="_1_app_postal_code">
+                    <srcField name="app_postal_code"/>
+                </field>
+
+                <field name="_1_app_num1_type">
+                    <srcField name="app_num1_type"/>
+                </field>
+
+                <field name="_1_app_num1_number">
+                    <srcField name="app_num1_number"/>
+                </field>
+
+                <field name="_1_app_num1_ext">
+                    <srcField name="app_num1_ext"/>
+                </field>
+
+                <field name="_1_app_num2_type">
+                    <srcField name="app_num2_type"/>
+                </field>
+
+                <field name="_1_app_num2_number">
+                    <srcField name="app_num2_number"/>
+                </field>
+
+                <field name="_1_app_num2_ext">
+                    <srcField name="app_num2_ext"/>
+                </field>
+
+                <field name="_1_app_email_type">
+                    <srcField name="app_email_type"/>
+                </field>
+
+                <field name="_1_app_email">
+                    <srcField name="app_email"/>
+                </field>
+
+                <field name="_1_app_months_at_addr">
+                    <srcField name="app_months_at_addr"/>
+                </field>
+
+                <field name="_1_app_owns_residence">
+                    <srcField name="app_owns_residence"/>
+                </field>
+
+                <field name="_1_app_spouse_first_name">
+                    <srcField name="app_spouse_first_name"/>
+                </field>
+
+                <field name="_1_app_spouse_last_name">
+                    <srcField name="app_spouse_last_name"/>
+                </field>
+
+                <field name="_1_app_spouse_email">
+                    <srcField name="app_spouse_email"/>
+                </field>
+
+                <field name="_1_app_spouse_number">
+                    <srcField name="app_spouse_number"/>
+                </field>
+
+                <field name="_1_app_emp_type">
+                    <srcField name="app_emp_type"/>
+                </field>
+
+                <field name="_1_app_emp_hire_date">
+                    <srcField name="app_emp_hire_date">
+                        <groovy>
+                            return (value != null)? value.replaceAll("-", "") : null;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_emp_witholding">
+                    <srcField name="app_emp_witholding"/>
+                </field>
+
+                <field name="_1_app_emp_title">
+                    <srcField name="app_emp_title">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 24)? value.substring(0, 24) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_emp_pmt_freq">
+                    <srcField name="app_emp_pmt_freq">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 8)? value.substring(0, 8) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_emp_pmt_method">
+                    <srcField name="app_emp_pmt_method"/>
+                </field>
+
+                <field name="_1_app_emp_pmt_gross">
+                    <srcField name="app_emp_pmt_gross"/>
+                </field>
+
+                <field name="_1_app_emp_pmt_net">
+                    <srcField name="app_emp_pmt_net"/>
+                </field>
+
+                <field name="_1_app_emp_pmt_next_date">
+                    <srcField name="app_emp_pmt_next_date">
+                        <groovy>
+                            return (value != null)? value.replaceAll("-", "") : null;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_emp_pmt_day">
+                    <srcField name="app_emp_pmt_day">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 3)? value.substring(0, 3) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_emp_shift_type">
+                    <srcField name="app_emp_shift_type"/>
+                </field>
+
+                <field name="_1_app_emp_name">
+                    <srcField name="app_emp_name">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 64)? value.substring(0, 64) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <!-- <field name="rua_30byte_string_001"> <srcField name="app_emp_name"> <groovy> <![CDATA[ return (value != null && value.length() > 64)? value.substring(0, 64) : value; ]]> </groovy> </srcField> </field> -->
+
+                <field name="_1_app_account_type">
+                    <srcField name="app_account_type"/>
+                </field>
+
+                <field name="_1_app_account_routing">
+                    <srcField name="app_account_routing"/>
+                </field>
+
+                <field name="_1_app_account_num">
+                    <srcField name="app_account_num"/>
+                </field>
+
+                <field name="_1_app_account_holder_fullnm">
+                    <srcField name="app_account_holder_fullnm"/>
+                </field>
+
+                <field name="_1_app_account_balance">
+                    <srcField name="app_account_balance"/>
+                </field>
+
+                <field name="_1_app_account_open_dt">
+                    <srcField name="app_account_open_dt">
+                        <groovy>
+                            <![CDATA[
+                               if (value) {
+                                   long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'yyyy-MM-dd')/1000.0/86400+1.0;
+                                   return '' +  since1960;
+                               } else {
+                                   return null;
+                               }
+                           ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_loan_amt">
+                    <srcField name="app_loan_amt"/>
+                </field>
+
+                <field name="_1_app_loan_disb_type">
+                    <srcField name="app_loan_disb_type"/>
+                </field>
+
+                <field name="_1_app_can_share_info">
+                    <srcField name="app_can_share_info"/>
+                </field>
+
+                <field name="_1_app_sms_opt_in">
+                    <srcField name="app_sms_opt_in"/>
+                </field>
+
+                <field name="_1_app_opt_out">
+                    <srcField name="app_opt_out"/>
+                </field>
+
+                <!--TODO: what to fill the blank? <field name=" "> <srcField name="app_iovation"/> </field> -->
+
+                <field name="_1_app_arbitration_consent">
+                    <srcField name="app_arbitration_consent"/>
+                </field>
+
+                <field name="_1_app_electronic_consent">
+                    <srcField name="app_electronic_consent"/>
+                </field>
+
+                <field name="_1_app_url">
+                    <srcField name="app_url"/>
+                </field>
+
+                <field name="_1_app_la_status">
+                    <srcField name="app_la_status"/>
+                </field>
+
+                <field name="_1_app_status">
+                    <srcField name="app_status">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 8)? value.substring(0, 8) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_created_datetime">
+                    <srcField name="app_created_datetime">
+                        <groovy>
+                            return (value == null || value.trim().length() == 0)? "" : "" + com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value)/1000.0;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_modified_datetime">
+                    <srcField name="app_modified_datetime">
+                        <groovy>
+                            return (value == null || value.trim().length() == 0)? "" : "" + com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value)/1000.0;
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_attempt">
+                    <srcField name="app_attempt"/>
+                </field>
+
+                <field name="_1_app_email_sent">
+                    <srcField name="app_email_sent"/>
+                </field>
+
+                <field name="_1_app_first_loandate">
+                    <srcField name="app_firstloandate">
+                        <groovy>
+                            <![CDATA[
+                                 if (value != 'NA') {
+                                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMddyyyy')/1000.0/86400+1.0;
+                                     return '' +  since1960;
+                                 } else {
+                                     return null;
+                                 }
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="_1_app_last_loandate">
+                    <srcField name="app_lastloandate">
+                        <groovy>
+                            <![CDATA[
+                                 if (value != 'NA') {
+                                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MMddyyyy')/1000.0/86400+1.0;
+                                     return '' +  since1960;
+                                 } else {
+                                     return null;
+                                 }
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+                <field name="smh_msg_version" default="06.01.00"/>
+
+                <field name="smh_tran_type" default="TRX"/>
+
+                <field name="smh_cust_type" default="I"/>
+
+                <field name="smh_acct_type" default="NA"/>
+
+                <field name="smh_authenticate_mtd" default="NA"/>
+
+                <field name="smh_channel_type" default="O"/>
+
+                <field name="smh_activity_type" default="NM"/>
+
+                <field name="smh_activity_detail1" default="DMX"/>
+
+                <field name="smh_activity_detail2" default="DEE"/>
+
+                <field name="smh_activity_detail3" default="DUA"/>
+
+                <field name="smh_resp_req" default="1"/>
+
+                <field name="smh_source" default="DG01">
+                    <srcField name="smhSource"/>
+                </field>
+
+                <field name="smh_multi_org_name">
+                    <srcField name="multiOrgName"/>
+                </field>
+
+                <!-- Identity -->
+                <field name="_1_id_producttype" default="NA">
+                    <srcField name="id_producttype">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 8)? value.substring(0, 8) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_amount">
+                    <srcField name="id_amount"/>
+                </field>
+                <field name="_1_id_credit_tu_vantagescore">
+                    <srcField name="id_credit_tu_vantagescore"/>
+                </field>
+                <field name="_1_id_credit_tu_infiledate">
+                    <srcField name="id_credit_tu_infiledate">
+                        <groovy>
+                            <![CDATA[
+                                 if (value) {
+                                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'yyyyMMdd')/1000.0/86400+1.0;
+                                     return '' +  since1960;
+                                 } else {
+                                     return null;
+                                 }
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_acct_opendate">
+                    <srcField name="id_credit_acct_opendate">
+                        <groovy>
+                            <![CDATA[
+                                 if (value) {
+                                     long since1960 = com.sas.finance.fraud.ol.utils.DateTimeParsingUtil.parseTimestamp(value, 'MM-dd-yyyy')/1000.0/86400+1.0;
+                                     return '' +  since1960;
+                                 } else {
+                                     return null;
+                                 }
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_acct_holdername">
+                    <srcField name="id_credit_acct_holdername">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_ccc">
+                    <srcField name="id_credit_cbb_checkcashingcount"/>
+                </field>
+                <field name="_1_id_credit_cbb_banknames">
+                    <srcField name="id_credit_cbb_banknames">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_score">
+                    <srcField name="id_credit_cbb_score"/>
+                </field>
+                <field name="_1_id_credit_cbb_bankaccounts">
+                    <srcField name="id_credit_cbb_bankaccounts">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_bankrisklevel">
+                    <srcField name="id_credit_cbb_bankrisklevel">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_dsfs">
+                    <srcField name="id_credit_cbb_dayssincefirstseen">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_dsls">
+                    <srcField name="id_credit_cbb_dayssincelastseen">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_idtheft">
+                    <srcField name="id_credit_cbb_idtheft">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_tu_fva">
+                    <srcField name="id_credit_tu_fraudvictimalert">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_1_id_credit_cbb_prepaidcard">
+                    <srcField name="id_credit_cbb_prepaidcard">
+                        <groovy>
+                            <![CDATA[
+                             return (value != null && value.length() > 80)? value.substring(0, 80) : value;
+                             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+
+            </fields>
+        </message>
+    </messages>
+</application>

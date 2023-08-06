@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <!-- For Axcess account opening, the init call is not needed, keep it around just in case. -->
+    <messages name="BioCatch init mappings">
+        <message messageType="BioCatch" subType="init" mapperId="bioinit">
+            <fields>
+                <!-- Mandatory Parameters -->
+                <field name="customerID" default="1234567890abcdef">
+                    <srcField name="/customerID"/>
+                </field>
+
+                <field name="customerSessionID">
+                    <srcField name="/customerSessionID"/>
+                </field>
+
+                <field name="uuid" default="no_uuid">
+                    <srcField name="/uuid"/>
+                </field>
+
+                <field name="action" default="init"/>
+
+                <field name="activityType" default="LOGIN">
+                    <srcField name="/activityType"/>
+                </field>
+
+                <!-- TODO: is any recommended and optional parameters applicable here.? -->
+            </fields>
+        </message>
+    </messages>
+</application>

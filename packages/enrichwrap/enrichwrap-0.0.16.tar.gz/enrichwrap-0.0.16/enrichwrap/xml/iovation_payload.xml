@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+
+    <!-- Depends on incoming data, we may not need this mapping. -->
+    <messages name="Iovation payload mappings">
+        <message messageType="Iovation" subType="payload" mapperId="iovPayload">
+            <fields>
+                <!-- Mandatory Parameters -->
+                <field name="accountCode">
+                    <srcField name="/app_email"/>
+                </field>
+
+                <field name="type" default="application">
+                    <srcField name="/Iovation/type"/>
+                </field>
+
+                <field name="statedIp">
+                    <srcField name="/app_ip_address"/>
+                </field>
+
+                <field name="blackbox" default="">
+                    <srcField name="/app_iovation"/>
+                </field>
+
+                <field name="transactionInsight" default="">
+                    <srcField name="/app_id">
+                        <groovy>
+                            return (value==null || value.trim().length()==0)? "{}" : "{\"eventId\":\"" + value + "\"}";
+                        </groovy>
+                    </srcField>
+                </field>
+            </fields>
+        </message>
+        <message messageType="Iovation" subType="payload" mapperId="loginAuthPayload">
+            <fields>
+                <!-- Mandatory Parameters -->
+                <field name="accountCode">
+                    <srcField name="/app_email"/>
+                </field>
+
+                <field name="type" default="login">
+                    <srcField name="/Iovation/type"/>
+                </field>
+
+                <field name="statedIp">
+                    <srcField name="/app_ip_address"/>
+                </field>
+
+                <field name="blackbox" default="">
+                    <srcField name="/app_iovation"/>
+                </field>
+
+                <field name="transactionInsight" default="">
+                    <srcField name="/app_email">
+                        <groovy>
+                            return (value==null || value.trim().length()==0)? "{}" : "{\"eventId\":\"" + value + "\"}";
+                        </groovy>
+                    </srcField>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>

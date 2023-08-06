@@ -1,0 +1,532 @@
+<?xml version="1.0"?>
+<!-- The sample mapping is for the BioCatch response -->
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://www.sas.com/sfm/eop" xsi:schemaLocation="http://www.sas.com/sfm/eop mapping.xsd">
+    <messages name="BioCatch">
+        <message messageType="Biocatch" subType="toOde" mapperId="biocatchRespToOde">
+            <fields>
+                <field name="_6_customwhitelistdevice">
+                    <srcField name="/genuineDevice/genuineDevice/customWhitelistDevice">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_previouslyusedpi">
+                    <srcField name="/genuineFactors/highDataFamiliarity/previouslyUsedPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_nodelaytoinputpi">
+                    <srcField name="/genuineFactors/highDataFamiliarity/noDelayToInputPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_fluidtypingpi">
+                    <srcField name="/genuineFactors/highDataFamiliarity/fluidTypingPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_consistentip">
+                    <srcField name="/genuineFactors/genuineLocation/consistentIp">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_consistentdevice">
+                    <srcField name="/genuineFactors/genuineDevice/consistentDevice">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_timezonemismatch">
+                    <srcField name="/riskFactors/riskyLocation/timeZoneMismatch">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskyip">
+                    <srcField name="/riskFactors/riskyLocation/riskyIp">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_fasttraveler">
+                    <srcField name="/riskFactors/riskyLocation/fastTraveler">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_recentlinkedip">
+                    <srcField name="/riskFactors/riskyLinking/recentLinkedIp">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_recentlinkeddevice">
+                    <srcField name="/riskFactors/riskyLinking/recentLinkedDevice">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskyelementsinteraction">
+                    <srcField name="/riskFactors/riskyEvent/riskyElementsInteraction">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskyamount">
+                    <srcField name="/riskFactors/riskyEvent/riskyAmount">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_recentprofilesettingschange">
+                    <srcField name="/riskFactors/riskyEvent/recentProfileSettingsChange">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_recentpaymentsettingschange">
+                    <srcField name="/riskFactors/riskyEvent/recentPaymentSettingsChange">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_recentriskydevice">
+                    <srcField name="/riskFactors/riskyDevice/recentRiskyDevice">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_rarecoresanomaly">
+                    <srcField name="/riskFactors/riskyDevice/rareCoresAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_rarecores">
+                    <srcField name="/riskFactors/riskyDevice/rareCores">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_newdeviceconsistentip">
+                    <srcField name="/riskFactors/riskyDevice/newDeviceConsistentIp">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_newdevice">
+                    <srcField name="/riskFactors/riskyDevice/newDevice">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_devicechangeanomaly">
+                    <srcField name="/riskFactors/riskyDevice/deviceChangeAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_newasn">
+                    <srcField name="/riskFactors/networkAnomaly/newAsn">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_ipmismatchanomaly">
+                    <srcField name="/riskFactors/networkAnomaly/ipMismatchAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_segmentedtypingpi">
+                    <srcField name="/riskFactors/lowDataFamiliarity/segmentedTypingPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskyimport">
+                    <srcField name="/riskFactors/lowDataFamiliarity/riskyImport">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_lowfamiliaritycontactdetail">
+                    <srcField name="/riskFactors/lowDataFamiliarity/lowFamiliarityWithContactDetails">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_longdelaytoinputpi">
+                    <srcField name="/riskFactors/lowDataFamiliarity/longDelayToInputPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_importpidata">
+                    <srcField name="/riskFactors/lowDataFamiliarity/importPiData">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_importdata">
+                    <srcField name="/riskFactors/lowDataFamiliarity/importData">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_excessivedeletingpi">
+                    <srcField name="/riskFactors/lowDataFamiliarity/excessiveDeletingPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_newuser">
+                    <srcField name="/riskFactors/immatureProfile/newUser">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_developertools">
+                    <srcField name="/riskFactors/expertUser/developerTools">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_apptoggleapplication">
+                    <srcField name="/riskFactors/expertUser/appToggle">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_advancedkeycombo">
+                    <srcField name="/riskFactors/expertUser/advancedKeyCombo">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskykeycombo">
+                    <srcField name="/riskFactors/criminalBehavior/riskyKeyCombo">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskyimportexport">
+                    <srcField name="/riskFactors/criminalBehavior/riskyImportExport">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_riskybrowser">
+                    <srcField name="/riskFactors/criminalBehavior/riskyBrowser">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_nonhumanmousebehavior">
+                    <srcField name="/riskFactors/criminalBehavior/nonHumanMouseBehavior">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_importexportpi">
+                    <srcField name="/riskFactors/criminalBehavior/importExportPi">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_exportdata">
+                    <srcField name="/riskFactors/criminalBehavior/exportData">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_concurrentsessions">
+                    <srcField name="/riskFactors/criminalBehavior/concurrentSessions">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_rarebrowser">
+                    <srcField name="/riskFactors/browserAnomaly/rareBrowser">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>>
+                </field>
+                <field name="_6_newbrowser">
+                    <srcField name="/riskFactors/browserAnomaly/newBrowser">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_raretypingpatternsanomaly">
+                    <srcField name="/riskFactors/behaviorAnomaly/rareTypingPatternsAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_privatebrowsinganomaly">
+                    <srcField name="/riskFactors/behaviorAnomaly/privateBrowsingAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_loginimportanomaly">
+                    <srcField name="/riskFactors/behaviorAnomaly/loginImportAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_keymouseanomaly">
+                    <srcField name="/riskFactors/behaviorAnomaly/keyMouseAnomaly">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_policyid">
+                    <srcField name="/policyId"/>
+                </field>
+                <field name="_6_policyaction">
+                    <srcField name="/policyAction"/>
+                </field>
+                <field name="_6_isrecentrat">
+                    <srcField name="/isRecentRat">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_ismobilerat">
+                    <srcField name="/isMobileRat">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_isemulator">
+                    <srcField name="/isEmulator">
+                        <groovy>
+                            <![CDATA[
+                    return (value == 'true' ? 1 : 0);
+                    ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_bcstatus">
+                    <srcField name="/bcStatus">
+                        <groovy>
+                            <![CDATA[
+             return (value != null && value.length() > 16)? value.substring(0, 16) : value;
+             ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_customersessionid">
+                    <srcField name="/customerSessionId"/>
+                </field>
+                <field name="_6_ip">
+                    <srcField name="/ip"/>
+                </field>
+                <field name="_6_ipgeoasn">
+                    <srcField name="/ipGeoASN"/>
+                </field>
+                <field name="_6_ipgeocity">
+                    <srcField name="/ipGeoCity"/>
+                </field>
+                <field name="_6_ipgeocountry">
+                    <srcField name="/ipGeoCountry"/>
+                </field>
+                <field name="_6_ipgeolatitude">
+                    <srcField name="/ipGeoLatitude"/>
+                </field>
+                <field name="_6_ipgeolongitude">
+                    <srcField name="/ipGeoLongitude"/>
+                </field>
+                <field name="_6_isbot">
+                    <srcField name="/isBot">
+                        <groovy>
+                            <![CDATA[
+                     return (value == 'true' ? 1 : 0);
+                     ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_israt">
+                    <srcField name="/isRat">
+                        <groovy>
+                            <![CDATA[
+                     return (value == 'true' ? 1 : 0);
+                     ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_issupported">
+                    <srcField name="/isSupported">
+                        <groovy>
+                            <![CDATA[
+                     return (value == 'true' ? 1 : 0);
+                     ]]>
+                        </groovy>
+                    </srcField>
+                </field>
+                <field name="_6_max30dayscore">
+                    <srcField name="/max30DayScore"/>
+                </field>
+                <field name="_6_platform">
+                    <srcField name="/platform"/>
+                </field>
+                <field name="_6_score">
+                    <srcField name="/score"/>
+                </field>
+            </fields>
+        </message>
+    </messages>
+</application>
