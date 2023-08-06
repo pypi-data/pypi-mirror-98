@@ -1,0 +1,1871 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>modules.helpers package &mdash; Buildnis 0.2.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Index" href="genindex.html" />
+    <link rel="prev" title="modules.builds package" href="modules.builds.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5DB1DE" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/buildnis.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis">GitHub Project Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/buildnis/">PyPI (pip) Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://buildnis.readthedocs.io/">Documentation at Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues/new/choose">Report a Bug or a Feature Request</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues">Issue Tracker at GitHub</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installation and Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#using-a-virtual-environment">Using a Virtual Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#virtualenv-setup">Virtualenv Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#pipenv-setup">Pipenv Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#installation-of-buildnis">Installation of Buildnis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pip">Installation using Pip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pipenv">Installation using Pipenv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#no-package-installation">No Package Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line Arguments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-help-text">Show Help Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-version">Show Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#main-argument-the-project-configuration">Main Argument - The Project Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#build-stages">Build Stages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#output-and-script-paths">Output and Script Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#logging-options">Logging Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stages.html">Build Stages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Customizing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="supported_configs.html">Supported Configurations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-oses">Supported OSes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-c-compilers">Supported C++ Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#mac-os-x">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-fortran-compilers">Supported Fortran Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id4">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id7">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id9">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-interpreters">Supported Interpreters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id11">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id12">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id15">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-documentation-tools">Supported Documentation Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id18">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id19">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id22">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-build-tools">Supported Build Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customizing.html">Customizing Buildnis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending Buildnis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developing Buildnis</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="dev_index.html">Developer Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="modules.config.html">modules.config package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.build_config">modules.config.build_config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.check">modules.config.check module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config">modules.config.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_dir_json">modules.config.config_dir_json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_files">modules.config.config_files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_values">modules.config.config_values module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.configure_build">modules.config.configure_build module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host">modules.config.host module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_linux">modules.config.host_linux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_osx">modules.config.host_osx module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_windows">modules.config.host_windows module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.json_base_class">modules.config.json_base_class module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.module">modules.config.module module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.project_dependency">modules.config.project_dependency module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.builds.html">modules.builds package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.builds.html#module-buildnis.modules.builds">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">modules.helpers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.commandline">modules.helpers.commandline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.commandline_arguments">modules.helpers.commandline_arguments module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.config_parser">modules.helpers.config_parser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.execute">modules.helpers.execute module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.file_compare">modules.helpers.file_compare module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.files">modules.helpers.files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.json">modules.helpers.json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.logging">modules.helpers.logging module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.placeholder_regex">modules.helpers.placeholder_regex module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers.web">modules.helpers.web module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.helpers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Indices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Python Module Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Buildnis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="dev_index.html">Developer Reference</a> &raquo;</li>
+        
+      <li>modules.helpers package</li>
+    
+    
+
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="genindex.html" class="btn btn-neutral float-right" title="Index" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="modules.builds.html" class="btn btn-neutral float-left" title="modules.builds package" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modules-helpers-package">
+<h1>modules.helpers package<a class="headerlink" href="#modules-helpers-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-buildnis.modules.helpers.commandline">
+<span id="modules-helpers-commandline-module"></span><h2>modules.helpers.commandline module<a class="headerlink" href="#module-buildnis.modules.helpers.commandline" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.helpers.commandline.checkCmdLineArgs">
+<code class="sig-name descname"><span class="pre">checkCmdLineArgs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cmd_line_parser</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">argparse.ArgumentParser</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmdline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a><a class="headerlink" href="#buildnis.modules.helpers.commandline.checkCmdLineArgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets all needed attributes to a default value if they aren’t present.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cmd_line_parser</strong> (<em>argparse.ArgumentParser</em>) – the <cite>argparse.ArgumentParser</cite>
+instance to use</p></li>
+<li><p><strong>cmdline_args</strong> (<em>object</em>) – the object returned by <cite>cmd_line_parser.parse_args</cite></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the checked and filled <cite>CommandlineArguments</cite> instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments">CommandlineArguments</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.commandline.parseCommandLine">
+<code class="sig-name descname"><span class="pre">parseCommandLine</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a><a class="headerlink" href="#buildnis.modules.helpers.commandline.parseCommandLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the command line arguments.</p>
+<p>Parses the command line arguments, exits the program if an illegal argument
+has been given.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>arguments</strong> – the command line arguments passed to the program</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An <cite>CommandlineArguments</cite> instance containing the command line arguments as
+attributes.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.commandline_arguments">
+<span id="modules-helpers-commandline-arguments-module"></span><h2>modules.helpers.commandline_arguments module<a class="headerlink" href="#module-buildnis.modules.helpers.commandline_arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">CommandlineArguments</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Holds information about the command line arguments passed to the program.</p>
+<p>Its attributes are the possible command line arguments of the program.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.project_config_file">
+<code class="sig-name descname"><span class="pre">project_config_file</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.project_config_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>the path to the project config file to
+use</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.conf_dir">
+<code class="sig-name descname"><span class="pre">conf_dir</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.conf_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>the path to the directory to write generated
+configurations to</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.conf_scripts_dir">
+<code class="sig-name descname"><span class="pre">conf_scripts_dir</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.conf_scripts_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>the path to the directory to search for additional
+build tool configure scripts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.log_file">
+<code class="sig-name descname"><span class="pre">log_file</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.log_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>the path to the log file to write.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.log_level">
+<code class="sig-name descname"><span class="pre">log_level</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.log_level" title="Permalink to this definition">¶</a></dt>
+<dd><p>the minimum log level</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_configure">
+<code class="sig-name descname"><span class="pre">do_configure</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_configure" title="Permalink to this definition">¶</a></dt>
+<dd><p>run only  the configure phase of the build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_build">
+<code class="sig-name descname"><span class="pre">do_build</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_build" title="Permalink to this definition">¶</a></dt>
+<dd><p>run only the build phase of the build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.build_targets">
+<code class="sig-name descname"><span class="pre">build_targets</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.build_targets" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of build targets that should be build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_install">
+<code class="sig-name descname"><span class="pre">do_install</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_install" title="Permalink to this definition">¶</a></dt>
+<dd><p>only run the install phase of the build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.install_targets">
+<code class="sig-name descname"><span class="pre">install_targets</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.install_targets" title="Permalink to this definition">¶</a></dt>
+<dd><p>the list of targets to install</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_clean">
+<code class="sig-name descname"><span class="pre">do_clean</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete all files generated by the build phase</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_distclean">
+<code class="sig-name descname"><span class="pre">do_distclean</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_distclean" title="Permalink to this definition">¶</a></dt>
+<dd><p>delete all generated files (build and configuration)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_check_what_to_do">
+<code class="sig-name descname"><span class="pre">do_check_what_to_do</span></code><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_check_what_to_do" title="Permalink to this definition">¶</a></dt>
+<dd><p>do everything that has not been done yet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.checkTargetArgs">
+<code class="sig-name descname"><span class="pre">checkTargetArgs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.checkTargetArgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks the list stored in the attribute with the given name and
+flattens it to a single list if it contains another list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – the name of the attribute to check the stored list of</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.doAppendTarget">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">doAppendTarget</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_targets</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.doAppendTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Appends a target to the list of targets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tmp_targets</strong> (<em>List</em>) – the list of targets to append</p></li>
+<li><p><strong>target</strong> (<em>object</em>) – the target to check if it is a list or a single element.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.flattenList">
+<code class="sig-name descname"><span class="pre">flattenList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmp_targets</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.flattenList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flattens the given list to a single list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – The attribute’s name, the list to flatten.</p></li>
+<li><p><strong>tmp_targets</strong> (<em>List</em>) – Where to sore the flattened list.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.commandline_arguments.CommandlineArguments.initAttribs">
+<code class="sig-name descname"><span class="pre">initAttribs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.initAttribs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes all attributes to default values if not set from the
+command-line, that means, that attribute isn’t an attribute of <cite>src</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>src</strong> (<em>object</em>) – The object holding the parsed command-line arguments.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.commandline_arguments.deleteConfigs">
+<code class="sig-name descname"><span class="pre">deleteConfigs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">logging.Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_generated_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_generated_dirs</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.deleteConfigs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes all configuration files and directories.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commandline_args</strong> (<em>object</em>) – Command line argument object instance</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em>) – The logger to use and stop</p></li>
+<li><p><strong>list_of_generated_files</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of files to delete</p></li>
+<li><p><strong>list_of_generated_dirs</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of directories to delete.
+Attention: each directory must be empty!</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.commandline_arguments.deleteLogfiles">
+<code class="sig-name descname"><span class="pre">deleteLogfiles</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.deleteLogfiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the log file, if one has been configured from the command-line.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>commandline_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><em>CommandlineArguments</em></a>) – Instance holding the command-line
+arguments, to check, if a log file has been used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.commandline_arguments.doDistClean">
+<code class="sig-name descname"><span class="pre">doDistClean</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">logging.Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_generated_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_generated_dirs</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.doDistClean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper: if argument <cite>distclean</cite> is set, delete all generated files.</p>
+<p>WARNING: Shuts down the logging mechanism, no more logging after this function!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commandline_args</strong> (<em>object</em>) – Command line argument object instance</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em>) – The logger to use and stop</p></li>
+<li><p><strong>list_of_generated_files</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of files to delete</p></li>
+<li><p><strong>list_of_generated_dirs</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of directories to delete.
+Attention: each directory must be empty!</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.commandline_arguments.setupLogger">
+<code class="sig-name descname"><span class="pre">setupLogger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">logging.Logger</span><a class="headerlink" href="#buildnis.modules.helpers.commandline_arguments.setupLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the logger.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>commandline_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><em>CommandlineArguments</em></a>) – The object holding the command line
+arguments.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The commandline object instance to use.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.config_parser">
+<span id="modules-helpers-config-parser-module"></span><h2>modules.helpers.config_parser module<a class="headerlink" href="#module-buildnis.modules.helpers.config_parser" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.helpers.config_parser.expandItem">
+<code class="sig-name descname"><span class="pre">expandItem</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">object</span><a class="headerlink" href="#buildnis.modules.helpers.config_parser.expandItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the given item, if it contains a placeholder, that placeholder
+is expanded. If the item doesn’t contain a placeholder, the item’s
+unaltered string is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item</strong> (<em>str</em>) – The item to parse and expand its placeholder</p></li>
+<li><p><strong>parents</strong> (<em>List</em><em>[</em><em>object</em><em>]</em>) – The parents of the item to search for
+the placeholder’s content.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The expanded string if the item contained a placeholder, the</dt><dd><p>original string else. If the placeholder points to another
+object that is not a string, this object is returned.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.config_parser.getPlaceholder">
+<code class="sig-name descname"><span class="pre">getPlaceholder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent_to_use_id</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">placeholder</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">object</span><a class="headerlink" href="#buildnis.modules.helpers.config_parser.getPlaceholder" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Returns the expanded placeholder. Searches for the attribute with name</dt><dd><p><cite>placeholder</cite> or the value of the key <cite>placeholder</cite> in the parent.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>parents</strong> (<em>List</em><em>[</em><em>object</em><em>]</em>) – The list of parents to search the expansion in.</p></li>
+<li><p><strong>parent_to_use_id</strong> (<em>int</em>) – The id of the parent in the list, to use for the
+replacement.</p></li>
+<li><p><strong>placeholder</strong> (<em>str</em>) – The string to replace with an element of the same name</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – if the replacement of the placeholder from the parent element throws
+    an exception.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The replacement for the placeholder.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.config_parser.parseConfigElement">
+<code class="sig-name descname"><span class="pre">parseConfigElement</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">object</span><a class="headerlink" href="#buildnis.modules.helpers.config_parser.parseConfigElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the given config element and replaces placeholders.
+Placeholders are strings of the form <cite>${PLACEHOLDER}</cite>, with start with a
+dollar sign followed by an opening curly brace and end with a curly brace.
+The string between the two curly braces is changed against it’s value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<em>object</em>) – The configuration element to parse and expand.</p></li>
+<li><p><strong>parent</strong> (<em>List</em><em>[</em><em>object</em><em>]</em><em>, </em><em>optional</em>) – The parent and the parent’s parent and it’s</p></li>
+<li><p><strong>as a list</strong> (<em>parent</em>) – </p></li>
+<li><p><strong>with the parent as first element. Defaults to None.</strong> (<em>starting</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The parsed and expanded object.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.config_parser.parseList">
+<code class="sig-name descname"><span class="pre">parseList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">element</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">local_parents</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#buildnis.modules.helpers.config_parser.parseList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the items of a list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>element</strong> (<em>List</em><em>[</em><em>object</em><em>]</em>) – The list to parse</p></li>
+<li><p><strong>local_parents</strong> (<em>List</em><em>[</em><em>object</em><em>]</em>) – The list of parents</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The parsed and, if applicable, expanded, list of items.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[object]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.execute">
+<span id="modules-helpers-execute-module"></span><h2>modules.helpers.execute module<a class="headerlink" href="#module-buildnis.modules.helpers.execute" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.helpers.execute.EnvArgs">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">EnvArgs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">FilePath</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_source</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.execute.EnvArgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>Class to hold the arguments needed for the environment script of a command to
+run.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.EnvArgs.script">
+<code class="sig-name descname"><span class="pre">script</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.EnvArgs.script" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the environment script to run or source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.EnvArgs.args">
+<code class="sig-name descname"><span class="pre">args</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.EnvArgs.args" title="Permalink to this definition">¶</a></dt>
+<dd><p>The arguments to pass to the environment script.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.EnvArgs.do_source">
+<code class="sig-name descname"><span class="pre">do_source</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.EnvArgs.do_source" title="Permalink to this definition">¶</a></dt>
+<dd><p>If this is true, the environment script is sourced in the
+current command interpreter and not executed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id0">
+<code class="sig-name descname"><span class="pre">args</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id1">
+<code class="sig-name descname"><span class="pre">do_source</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id2">
+<code class="sig-name descname"><span class="pre">script</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="buildnis.modules.helpers.execute.ExeArgs">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ExeArgs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exe</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">FilePath</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.execute.ExeArgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>Class to hold the arguments needed to run a command.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.ExeArgs.exe">
+<code class="sig-name descname"><span class="pre">exe</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.ExeArgs.exe" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the executable to call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.ExeArgs.args">
+<code class="sig-name descname"><span class="pre">args</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.ExeArgs.args" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of arguments to pass to the executable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id3">
+<code class="sig-name descname"><span class="pre">args</span></code><em class="property"><span class="pre">:</span> <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id4">
+<code class="sig-name descname"><span class="pre">exe</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="buildnis.modules.helpers.execute.ExecuteException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-name descname"><span class="pre">ExecuteException</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.ExecuteException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The Exception is thrown if the execution of the given commandline fails.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="buildnis.modules.helpers.execute.RunRegex">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">RunRegex</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">regex</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.execute.RunRegex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>Class to hold a regex tuple to parse a command output with.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.RunRegex.regex">
+<code class="sig-name descname"><span class="pre">regex</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.RunRegex.regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>The actual regex to use for parsing the output of the command.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.execute.RunRegex.group">
+<code class="sig-name descname"><span class="pre">group</span></code><a class="headerlink" href="#buildnis.modules.helpers.execute.RunRegex.group" title="Permalink to this definition">¶</a></dt>
+<dd><p>The match group of the regex to use for the result.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id5">
+<code class="sig-name descname"><span class="pre">group</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id6">
+<code class="sig-name descname"><span class="pre">regex</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.execute.doesExecutableWork">
+<code class="sig-name descname"><span class="pre">doesExecutableWork</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exe_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.ExeArgs" title="buildnis.modules.helpers.execute.ExeArgs"><span class="pre">buildnis.modules.helpers.execute.ExeArgs</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_regex</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.RunRegex" title="buildnis.modules.helpers.execute.RunRegex"><span class="pre">buildnis.modules.helpers.execute.RunRegex</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">env_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.EnvArgs" title="buildnis.modules.helpers.execute.EnvArgs"><span class="pre">buildnis.modules.helpers.execute.EnvArgs</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">EnvArgs(script='',</span> <span class="pre">args=None,</span> <span class="pre">do_source=False)</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.execute.doesExecutableWork" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the given command line works.</p>
+<p>Tries to run the command with the given arguments (see <cite>runCommand</cite>) and
+parses the output of the program, tries to match the given regex <cite>check_regex</cite>
+in the output (<cite>stdout</cite> and <cite>stderr</cite>) of the command. If the match group
+<cite>regex_group</cite> (defaults to 0, the whole regex) is found in the output, the
+function returns the matched string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>exe_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.execute.ExeArgs" title="buildnis.modules.helpers.execute.ExeArgs"><em>ExeArgs</em></a>) – The name of the executable or path to the executable
+to call and the arguments to pass to the executable.</p></li>
+<li><p><strong>env_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.execute.EnvArgs" title="buildnis.modules.helpers.execute.EnvArgs"><em>EnvArgs</em></a>) – The arguments needed for the environment script, if
+applicable. Holds the command to call the environment script
+in <cite>env_args.script</cite>, the arguments to call the environment
+script with in <cite>env_args.args</cite> and if the environment script
+has to be sourced instead of running it,
+<cite>env_args.do_source</cite> ir <cite>True</cite>.</p></li>
+<li><p><strong>env_args</strong> – (EnvArgs): The arguments needed to setup the environment for the
+executable, if applicable. Defaults to (“”, None, False).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.execute.ExecuteException" title="buildnis.modules.helpers.execute.ExecuteException"><strong>ExecuteException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>the matched string if the regex matches the output, the empty string</dt><dd><p>’’ otherwise.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.execute.runCommand">
+<code class="sig-name descname"><span class="pre">runCommand</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exe_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.ExeArgs" title="buildnis.modules.helpers.execute.ExeArgs"><span class="pre">buildnis.modules.helpers.execute.ExeArgs</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">env_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.EnvArgs" title="buildnis.modules.helpers.execute.EnvArgs"><span class="pre">buildnis.modules.helpers.execute.EnvArgs</span></a></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">EnvArgs(script='',</span> <span class="pre">args=None,</span> <span class="pre">do_source=False)</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="modules.config.html#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.helpers.execute.runCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the given command with the given arguments.</p>
+<p>The argument <cite>exe_args.exe</cite> is the executable’s name or path, needed arguments can
+be passed in the list <cite>exe_args.args</cite>.
+In <cite>env_args</cite> the command to set up an environment can be given, with
+needed arguments to this environment script in the list <cite>env_args.args</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>exe_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.execute.ExeArgs" title="buildnis.modules.helpers.execute.ExeArgs"><em>ExeArgs</em></a>) – The name of the executable or path to the executable
+to call and the arguments to pass to the executable.</p></li>
+<li><p><strong>env_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.execute.EnvArgs" title="buildnis.modules.helpers.execute.EnvArgs"><em>EnvArgs</em></a>) – The arguments needed for the environment script, if
+applicable. Holds the command to call the environment script
+in <cite>env_args.script</cite>, the arguments to call the environment
+script with in <cite>env_args.args</cite> and if the environment script
+has to be sourced instead of running it,
+<cite>env_args.do_source</cite> ir <cite>True</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.execute.ExecuteException" title="buildnis.modules.helpers.execute.ExecuteException"><strong>ExecuteException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The output of the executed command as tuple (stdout, stderr)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="modules.config.html#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.execute.setEnv">
+<code class="sig-name descname"><span class="pre">setEnv</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">exe_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.ExeArgs" title="buildnis.modules.helpers.execute.ExeArgs"><span class="pre">buildnis.modules.helpers.execute.ExeArgs</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">env_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.execute.EnvArgs" title="buildnis.modules.helpers.execute.EnvArgs"><span class="pre">buildnis.modules.helpers.execute.EnvArgs</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">exe_args_real</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">env_args_real</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cmd_line_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.execute.setEnv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up the command line arguments for the environment script.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>exe_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.execute.ExeArgs" title="buildnis.modules.helpers.execute.ExeArgs"><em>ExeArgs</em></a>) – The object holding the needed arguments for the executable
+itself.</p></li>
+<li><p><strong>env_args</strong> (<a class="reference internal" href="#buildnis.modules.helpers.execute.EnvArgs" title="buildnis.modules.helpers.execute.EnvArgs"><em>EnvArgs</em></a>) – The object holding the needed arguments to set the
+environment for the executable.</p></li>
+<li><p><strong>exe_args_real</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The real list of executable arguments to use.</p></li>
+<li><p><strong>env_args_real</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The real list of environment arguments to use.</p></li>
+<li><p><strong>cmd_line_args</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of arguments to pass to the command
+interpreter.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.file_compare">
+<span id="modules-helpers-file-compare-module"></span><h2>modules.helpers.file_compare module<a class="headerlink" href="#module-buildnis.modules.helpers.file_compare" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">FileCompare</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Holds information about a file to compare it to another version of itself
+to see if something has changed.</p>
+<dl class="simple">
+<dt>Does the following to steps:</dt><dd><ul class="simple">
+<li><p>compares the file sizes, if they are the same</p></li>
+<li><p>compares the Blake2 hashes of both files</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.path">
+<code class="sig-name descname"><span class="pre">path</span></code><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>path to the file as string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.path_obj">
+<code class="sig-name descname"><span class="pre">path_obj</span></code><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.path_obj" title="Permalink to this definition">¶</a></dt>
+<dd><p>the <cite>Path</cite> object of the file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>pathlib.Path</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.size">
+<code class="sig-name descname"><span class="pre">size</span></code><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.size" title="Permalink to this definition">¶</a></dt>
+<dd><p>the size of the file in bytes (symlinks don’t have a
+meaningful size)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.hash">
+<code class="sig-name descname"><span class="pre">hash</span></code><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>the BLAKE2 hash of the file’s contend as a hex string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.isSame">
+<code class="sig-name descname"><span class="pre">isSame</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.isSame" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns true if <cite>self</cite> ‘is’ the same as the given file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.generateHash">
+<code class="sig-name descname"><span class="pre">generateHash</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.generateHash" title="Permalink to this definition">¶</a></dt>
+<dd><p>generates the hash of the file, saves it in
+<cite>hash</cite> and returns it</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id7">
+<code class="sig-name descname"><span class="pre">generateHash</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rehashes the file, saves and returns the hash as hex string.</p>
+<p>The hash replaces the old one in the attribute <cite>hash</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The hash of the file with path <cite>path</cite> as hex string.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.hasChanged">
+<code class="sig-name descname"><span class="pre">hasChanged</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">not_exist_is_excp</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.hasChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the stored file has changed on disk since taking the last
+checksum.</p>
+<p>If the file has changed (another file size or checksum) or it doesn’t
+exist any more, <cite>True</cite> is returned. If the file still has the same
+checksum as the stored one, <cite>False</cite> is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>not_exist_is_excp</strong> (<em>bool</em><em>, </em><em>optional</em>) – Should an exception be raised if
+the file doesn’t exist anymore? Defaults to
+False.</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something went wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True</cite>, if the file has changed since calculating the checksum,</dt><dd><p><cite>False</cite> else.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id8">
+<code class="sig-name descname"><span class="pre">isSame</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_exist_is_excp</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#id8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether <cite>self</cite> and the file with path <cite>file</cite> are the same.</p>
+<p>Problem: a symlink to the file and the file itself are NOT the same using
+this.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> (<em>FilePath</em>) – path to the file to check</p></li>
+<li><p><strong>not_exist_is_excp</strong> (<em>bool</em>) – if this is <cite>True</cite> an exception is raised
+if <cite>file</cite> does not exist. If this is <cite>False</cite>, <cite>False</cite> is
+returned - the files data is not the same. Default: <cite>False</cite></p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True</cite>, if the file is the same</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.helpers.file_compare.FileCompare.isSameFile">
+<code class="sig-name descname"><span class="pre">isSameFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.helpers.file_compare.FileCompare" title="buildnis.modules.helpers.file_compare.FileCompare"><span class="pre">buildnis.modules.helpers.file_compare.FileCompare</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.file_compare.FileCompare.isSameFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether two <cite>FileComare</cite> instances hold the same file content.</p>
+<p>Compares <cite>self</cite> against another FileCompare instance, comparing file size
+and hash.</p>
+<p>Returns <cite>True</cite> if both files have the same content.</p>
+<p>Attention: does NOT compare the filenames, only file size and hash of the
+files are compared.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#buildnis.modules.helpers.file_compare.FileCompare" title="buildnis.modules.helpers.file_compare.FileCompare"><em>FileCompare</em></a>) – the instance to compare <cite>self</cite> to</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something doesn’t work out well ….</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True</cite>, if both instances have the same filesize and hash.</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.file_compare.areHashesSame">
+<code class="sig-name descname"><span class="pre">areHashesSame</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file1</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file2</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">not_exist_is_excp</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.file_compare.areHashesSame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares the BLAKE2 hashes of the given files.</p>
+<p>Returns <cite>True</cite> if the contents of both files are the same (have the same hash).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file1</strong> (<em>FilePath</em>) – first file to compare</p></li>
+<li><p><strong>file2</strong> (<em>FilePath</em>) – second file to compare</p></li>
+<li><p><strong>not_exist_is_excp</strong> (<em>bool</em>) – if this is <cite>True</cite> an exception is raised
+if a file does not exist. If this is <cite>False</cite>, <cite>False</cite> is
+returned - the files hashes are not the same. Default: <cite>False</cite></p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True</cite>, if both files’ content have the same BLAKE2 hash value.</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.files">
+<span id="modules-helpers-files-module"></span><h2>modules.helpers.files module<a class="headerlink" href="#module-buildnis.modules.helpers.files" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="buildnis.modules.helpers.files.FileCompareException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-name descname"><span class="pre">FileCompareException</span></code><a class="headerlink" href="#buildnis.modules.helpers.files.FileCompareException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.BuildnisException</span></code></p>
+<p>Exception raised if a given file path can’t be accessed or read to
+generate the hash.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.checkIfExists">
+<code class="sig-name descname"><span class="pre">checkIfExists</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.files.checkIfExists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if the given file exists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>FilePath</em>) – Path to the file to test</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something went wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True`</cite>, if the file exists</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.checkIfIsDir">
+<code class="sig-name descname"><span class="pre">checkIfIsDir</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.files.checkIfIsDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if the given file exists and is a directory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>directory</strong> (<em>FilePath</em>) – Path to the directory to test</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something went wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True`</cite>, if the file exists and is a directory</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.checkIfIsFile">
+<code class="sig-name descname"><span class="pre">checkIfIsFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.files.checkIfIsFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if the given file exists and is a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> (<em>FilePath</em>) – Path to the file to test</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something went wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True`</cite>, if the file exists and is a file</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.checkIfIsLink">
+<code class="sig-name descname"><span class="pre">checkIfIsLink</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#buildnis.modules.helpers.files.checkIfIsLink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if the given file exists and is a symlink.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>link</strong> (<em>FilePath</em>) – Path to the file to test</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something went wrong</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt><cite>True`</cite>, if the file exists and is a symlink</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.deleteDirs">
+<code class="sig-name descname"><span class="pre">deleteDirs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">logging.Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_dirs</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.files.deleteDirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes all directories in the given list of directories.</p>
+<p>Attention: directory has to be empty!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>logger</strong> (<em>logging.Logger</em>) – The logger instance to use for logging.</p></li>
+<li><p><strong>list_of_dirs</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of directories to delete. As a list of
+paths to the directories to delete.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.deleteFiles">
+<code class="sig-name descname"><span class="pre">deleteFiles</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_of_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.files.deleteFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes all files in the given list of files to delete.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>logger</strong> (<em>[</em><em>type</em><em>]</em>) – The logger instance to use for logging.</p></li>
+<li><p><strong>list_of_files</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of files to delete. As a list of file
+paths to the files to delete.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.hashFile">
+<code class="sig-name descname"><span class="pre">hashFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.files.hashFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a BLAKE2 hash of the file with the given path.</p>
+<p>Returns the hash as a hex string.
+If something goes wrong, it returns an <cite>FileCompareException</cite> instance.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>file</strong> (<em>FilePath</em>) – the file to return the BLAKE2 hash of</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>the hex hash of the file’s contend</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.makeDirIfNotExists">
+<code class="sig-name descname"><span class="pre">makeDirIfNotExists</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directory</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.files.makeDirIfNotExists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the directory <cite>directory</cite> if it doesn’t exist yet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>directory</strong> (<em>FilePath</em>) – the directory to create</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.files.returnExistingFile">
+<code class="sig-name descname"><span class="pre">returnExistingFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_list</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.files.returnExistingFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the first existing path in the list of given paths, and <cite>“”</cite>
+the empty string, if none of the paths points to an existing file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.helpers.files.FileCompareException" title="buildnis.modules.helpers.files.FileCompareException"><strong>FileCompareException</strong></a> – if something goes wrong</p>
+</dd>
+<dt class="field-even">Parameters</dt>
+<dd class="field-even"><p><strong>file_list</strong> (<em>List</em><em>[</em><em>FilePath</em><em>]</em>) – The list of file paths to check for existence.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The first of the given file paths that exists as a file, the</dt><dd><p>empty string (<cite>“”</cite>) if none exists.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.json">
+<span id="modules-helpers-json-module"></span><h2>modules.helpers.json module<a class="headerlink" href="#module-buildnis.modules.helpers.json" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.checkConfigName">
+<code class="sig-name descname"><span class="pre">checkConfigName</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_file_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.checkConfigName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the name of the JSON configuration file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em>) – The path of the JSOn file to check.</p></li>
+<li><p><strong>conf_file_name</strong> (<em>str</em>) – The configuration name of the JSON file.</p></li>
+<li><p><strong>ret_val</strong> (<em>object</em>) – The deserialized JSON file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.checkConfigVersion">
+<code class="sig-name descname"><span class="pre">checkConfigVersion</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.checkConfigVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the version of the JSON configuration file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em>) – The path to the JSON file.</p></li>
+<li><p><strong>ret_val</strong> (<em>object</em>) – The deserialized JSON configuration.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.getJSONDict">
+<code class="sig-name descname"><span class="pre">getJSONDict</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><a class="headerlink" href="#buildnis.modules.helpers.json.getJSONDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary suitable to pass to <cite>json.dump(s)</cite>.</p>
+<p>Attention: only works with simple classes obtained from <cite>json.load(s)</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>src</strong> (<em>object</em>) – The class to serialize.</p></li>
+<li><p><strong>to_ignore</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of attribute names to ignore.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The dictionary suitable to pass to <cite>json.dump(s)</cite>.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.parseItem">
+<code class="sig-name descname"><span class="pre">parseItem</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.parseItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses an item of <cite>src</cite>’s dictionary of attributes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>src</strong> (<em>object</em>) – The object to serialize.</p></li>
+<li><p><strong>to_ignore</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of attributes to ignore and not serialize.</p></li>
+<li><p><strong>ret_val</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>object</em><em>]</em>) – The dictionary to return, the serialized object
+src.</p></li>
+<li><p><strong>item</strong> (<em>object</em>) – The current item to serialize.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.parseList">
+<code class="sig-name descname"><span class="pre">parseList</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ret_val</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.parseList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the elements of a list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>src</strong> (<em>object</em>) – The object to serialize.</p></li>
+<li><p><strong>ret_val</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>object</em><em>]</em>) – The dictionary to return, the serialized object
+src.</p></li>
+<li><p><strong>item</strong> (<em>object</em>) – The current item to serialize.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.readJSON">
+<code class="sig-name descname"><span class="pre">readJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_file_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">object</span><a class="headerlink" href="#buildnis.modules.helpers.json.readJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the JSON from the given file and saves it to a class object with
+the JSON elements as attributes.</p>
+<p>If an error occurs, the program is exited with an error message!
+The JSON must have an element <cite>file_version</cite> that has a value of at least
+<cite>CFG_VERSION</cite>, if not, the program is exited with an error message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em>) – The path to the JSON file to read.</p></li>
+<li><p><strong>file_text</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the JSON configuration file for
+logging proposes. Defaults to “”, which will be logged as
+‘a’, like in “Writing _a_ JSON configuration file …”.</p></li>
+<li><p><strong>conf_file_name</strong> (<em>str</em><em>, </em><em>optional</em>) – The string that has to be the value of
+<cite>file_name</cite> in the JSON file, if not, the program exits.
+Defaults to “”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A class instance with the JSON elements as attributes.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.setFileCompare">
+<code class="sig-name descname"><span class="pre">setFileCompare</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">src</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.setFileCompare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the attributes of the <cite>FileCompare</cite> instance in the JSON dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>src</strong> (<em>object</em>) – The object to serialize.</p></li>
+<li><p><strong>ret_val</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>object</em><em>]</em>) – The dictionary to return, the serialized object
+src.</p></li>
+<li><p><strong>item</strong> (<em>object</em>) – The current item to serialize.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.setOrigFile">
+<code class="sig-name descname"><span class="pre">setOrigFile</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.setOrigFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the <cite>FileCompare</cite> instance <cite>orig_file</cite> to the original JSON configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em>) – The path to the JSON configuration file.</p></li>
+<li><p><strong>ret_val</strong> (<em>object</em>) – The deserialized JSON file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.json.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_text</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conf_file_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.json.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the information contained in the dictionary <cite>json_dict</cite> as JSON.</p>
+<p>If an error occurs, the program is exited with an error message!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_dict</strong> (<em>Dict</em>) – The JSON serializeable dict to generate the JSON of</p></li>
+<li><p><strong>json_path</strong> (<em>FilePath</em>) – Path to the JSON file to write</p></li>
+<li><p><strong>file_text</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the JSON configuration file for
+logging proposes. Defaults to “”, which will be logged as
+‘a’, like in “Writing _a_ JSON configuration file …”.</p></li>
+<li><p><strong>conf_file_name</strong> (<em>str</em><em>, </em><em>optional</em>) – The string that has to be the value of
+<cite>file_name</cite> in the JSON file, if not, the program exits.
+Defaults to “”.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.logging">
+<span id="modules-helpers-logging-module"></span><h2>modules.helpers.logging module<a class="headerlink" href="#module-buildnis.modules.helpers.logging" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.helpers.logging.getProgramLogger">
+<code class="sig-name descname"><span class="pre">getProgramLogger</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logfile</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">logging.Logger</span><a class="headerlink" href="#buildnis.modules.helpers.logging.getProgramLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the logger to use for the program.</p>
+<p>Always logs <cite>DEBUG</cite>, <cite>INFO</cite> and <cite>WARNING</cite> to <cite>stdout</cite>,
+<cite>ERROR</cite> and <cite>CRITICAL</cite> go to <cite>stderr</cite>. If a <cite>logfile</cite> is given, everything
+is logged to this file too.
+<cite>level</cite> is the minimum log level to actually output messages.</p>
+<p>When you want to use this logger, simply call</p>
+<blockquote>
+<div><p>my_logger = modules.helpers.logging.getProgramLogger()</p>
+<p>my_logger.info (“Info level log”)
+my_logger.error (“Error level log”)</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>level</strong> (<em>int</em>) – minimumm log level to output</p></li>
+<li><p><strong>logfile</strong> (<em>FilePath</em>) – if this is not <cite>None</cite> or the empty string
+<cite>“”</cite>, log to this file too.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the <cite>logging.Logger</cite> instance to use to log</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.placeholder_regex">
+<span id="modules-helpers-placeholder-regex-module"></span><h2>modules.helpers.placeholder_regex module<a class="headerlink" href="#module-buildnis.modules.helpers.placeholder_regex" title="Permalink to this headline">¶</a></h2>
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.current_date_regex">
+<code class="sig-name descname"><span class="pre">current_date_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(DATE)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.current_date_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${DATE}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.current_day_regex">
+<code class="sig-name descname"><span class="pre">current_day_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(DAY)}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.current_day_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${DAY}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.current_month_regex">
+<code class="sig-name descname"><span class="pre">current_month_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(MONTH)}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.current_month_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${MONTH}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.current_time_regex">
+<code class="sig-name descname"><span class="pre">current_time_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(TIME)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.current_time_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${TIME}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.current_year_regex">
+<code class="sig-name descname"><span class="pre">current_year_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(YEAR)}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.current_year_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${YEAR}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.host_cpu_arch_regex">
+<code class="sig-name descname"><span class="pre">host_cpu_arch_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(HOST_CPU_ARCH)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.host_cpu_arch_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${HOST_CPU_ARCH}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.host_name_regex">
+<code class="sig-name descname"><span class="pre">host_name_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(HOST_NAME)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.host_name_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${HOST_NAME}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.host_num_cores_regex">
+<code class="sig-name descname"><span class="pre">host_num_cores_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(HOST_NUM_CORES)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.host_num_cores_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${HOST_NUM_CORES}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.host_num_log_cores_regex">
+<code class="sig-name descname"><span class="pre">host_num_log_cores_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(HOST_NUM_LOG_CORES)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.host_num_log_cores_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${HOST_NUM_LOG_CORES}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.host_os_regex">
+<code class="sig-name descname"><span class="pre">host_os_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(HOST_OS)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.host_os_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${HOST_OS}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.os_name_linux_regex">
+<code class="sig-name descname"><span class="pre">os_name_linux_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(OS_NAME_LINUX)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.os_name_linux_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${OS_NAME_LINUX}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.os_name_osx_regex">
+<code class="sig-name descname"><span class="pre">os_name_osx_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(OS_NAME_OSX)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.os_name_osx_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${OS_NAME_OSX}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.os_name_windows_regex">
+<code class="sig-name descname"><span class="pre">os_name_windows_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(OS_NAME_WINDOWS)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.os_name_windows_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${OS_NAME_WINDOWS}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.placeholder_regex">
+<code class="sig-name descname"><span class="pre">placeholder_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(.*)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.placeholder_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find general placefolders, of the form <cite>${STRING}</cite>, where string
+is to be substituted for a value of another configuration item.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_author_regex">
+<code class="sig-name descname"><span class="pre">project_author_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_AUTHOR)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_author_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_AUTHOR}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_cfg_dir_regex">
+<code class="sig-name descname"><span class="pre">project_cfg_dir_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_CONFIG_DIR_PATH)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_cfg_dir_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_CONFIG_DIR_PATH}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_company_regex">
+<code class="sig-name descname"><span class="pre">project_company_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_COMPANY)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_company_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_COMPANY}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_copyright_info_regex">
+<code class="sig-name descname"><span class="pre">project_copyright_info_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_COPYRIGHT_INFO)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_copyright_info_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_COPYRIGHT_INFO}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_email_regex">
+<code class="sig-name descname"><span class="pre">project_email_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_EMAIL)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_email_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_EMAIL}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_name_regex">
+<code class="sig-name descname"><span class="pre">project_name_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_NAME)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_name_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_NAME}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_root_regex">
+<code class="sig-name descname"><span class="pre">project_root_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_ROOT)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_root_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_ROOT}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_version_regex">
+<code class="sig-name descname"><span class="pre">project_version_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_VERSION)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_version_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_VERSION}</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.helpers.placeholder_regex.project_web_url_regex">
+<code class="sig-name descname"><span class="pre">project_web_url_regex</span></code><em class="property"> <span class="pre">=</span> <span class="pre">re.compile('\\$\\{(PROJECT_WEB_URL)\\}')</span></em><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.project_web_url_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Regex to find the placeholder <cite>${PROJECT_WEB_URL}</cite>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.placeholder_regex.replaceConstants">
+<code class="sig-name descname"><span class="pre">replaceConstants</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.replaceConstants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces all known constants defined in <cite>config_values.py</cite> in the given string.</p>
+<p>These are placeholders like <cite>${PROJECT_ROOT}</cite>, <cite>${PROJECT_NAME}</cite>, …</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>item</strong> (<em>str</em>) – The string to parse for known constants.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The substitution if a placeholder has been found, the unaltered</dt><dd><p>string else.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.placeholder_regex.replaceDateTimeConstants">
+<code class="sig-name descname"><span class="pre">replaceDateTimeConstants</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.replaceDateTimeConstants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces date and time placeholders with the current date and/or time.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ret_val</strong> (<em>str</em>) – The string to parse.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The replaced date and or time if a match has been found, the original</dt><dd><p>string <cite>ret_val</cite> else.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.placeholder_regex.replaceHostConstants">
+<code class="sig-name descname"><span class="pre">replaceHostConstants</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.replaceHostConstants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces host placeholders with the corresponding values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ret_val</strong> (<em>str</em>) – The string to parse.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The replaced values if a match has been found, the original</dt><dd><p>string <cite>ret_val</cite> else.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.placeholder_regex.replaceProjectConstants">
+<code class="sig-name descname"><span class="pre">replaceProjectConstants</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ret_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#buildnis.modules.helpers.placeholder_regex.replaceProjectConstants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces all project constant placeholders.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ret_val</strong> (<em>str</em>) – The string to parse for placeholders.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>If a project placeholder has been found, the replaced value, the original</dt><dd><p>string <cite>ret_val</cite> else.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers.web">
+<span id="modules-helpers-web-module"></span><h2>modules.helpers.web module<a class="headerlink" href="#module-buildnis.modules.helpers.web" title="Permalink to this headline">¶</a></h2>
+<dl class="py exception">
+<dt id="buildnis.modules.helpers.web.WebException">
+<em class="property"><span class="pre">exception</span> </em><code class="sig-name descname"><span class="pre">WebException</span></code><a class="headerlink" href="#buildnis.modules.helpers.web.WebException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Exception that is raised from functions in this module.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.helpers.web.doDownload">
+<code class="sig-name descname"><span class="pre">doDownload</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_proxy</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.helpers.web.doDownload" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download data from the given URL to the given path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>url</strong> (<em>str</em>) – The URL to download from</p></li>
+<li><p><strong>to</strong> (<em>str</em><em>, </em><em>optional</em>) – The path to save the download to. Defaults to “”.</p></li>
+<li><p><strong>use_proxy</strong> (<em>bool</em><em>, </em><em>optional</em>) – Should a proxy be used. Defaults to False.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.helpers">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-buildnis.modules.helpers" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="genindex.html" class="btn btn-neutral float-right" title="Index" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="modules.builds.html" class="btn btn-neutral float-left" title="modules.builds package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">
+        Last updated on 13.03.2021.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

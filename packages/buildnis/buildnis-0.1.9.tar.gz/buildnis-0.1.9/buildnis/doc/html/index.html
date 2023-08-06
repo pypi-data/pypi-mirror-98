@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Welcome to Buildnis’ documentation! &mdash; Buildnis 0.2.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation and Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5DB1DE" >
+          
+
+          
+            <a href="#">
+          
+
+          
+            
+            <img src="_static/buildnis.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis">GitHub Project Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/buildnis/">PyPI (pip) Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://buildnis.readthedocs.io/">Documentation at Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues/new/choose">Report a Bug or a Feature Request</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues">Issue Tracker at GitHub</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installation and Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#using-a-virtual-environment">Using a Virtual Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#virtualenv-setup">Virtualenv Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#pipenv-setup">Pipenv Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#installation-of-buildnis">Installation of Buildnis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pip">Installation using Pip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pipenv">Installation using Pipenv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#no-package-installation">No Package Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line Arguments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-help-text">Show Help Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-version">Show Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#main-argument-the-project-configuration">Main Argument - The Project Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#build-stages">Build Stages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#output-and-script-paths">Output and Script Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#logging-options">Logging Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stages.html">Build Stages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Customizing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="supported_configs.html">Supported Configurations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-oses">Supported OSes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-c-compilers">Supported C++ Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#mac-os-x">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-fortran-compilers">Supported Fortran Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id4">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id7">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id9">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-interpreters">Supported Interpreters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id11">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id12">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id15">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-documentation-tools">Supported Documentation Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id18">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id19">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id22">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-build-tools">Supported Build Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customizing.html">Customizing Buildnis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending Buildnis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developing Buildnis</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev_index.html">Developer Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules.config.html">modules.config package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.build_config">modules.config.build_config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.check">modules.config.check module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config">modules.config.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_dir_json">modules.config.config_dir_json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_files">modules.config.config_files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_values">modules.config.config_values module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.configure_build">modules.config.configure_build module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host">modules.config.host module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_linux">modules.config.host_linux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_osx">modules.config.host_osx module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_windows">modules.config.host_windows module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.json_base_class">modules.config.json_base_class module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.module">modules.config.module module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.project_dependency">modules.config.project_dependency module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.builds.html">modules.builds package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.builds.html#module-buildnis.modules.builds">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.helpers.html">modules.helpers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.commandline">modules.helpers.commandline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.commandline_arguments">modules.helpers.commandline_arguments module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.config_parser">modules.helpers.config_parser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.execute">modules.helpers.execute module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.file_compare">modules.helpers.file_compare module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.files">modules.helpers.files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.json">modules.helpers.json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.logging">modules.helpers.logging module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.placeholder_regex">modules.helpers.placeholder_regex module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.web">modules.helpers.web module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Indices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Python Module Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Buildnis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Welcome to Buildnis’ documentation!</li>
+    
+    
+
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="usage.html" class="btn btn-neutral float-right" title="Installation and Usage" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-buildnis-documentation">
+<h1>Welcome to Buildnis’ documentation!<a class="headerlink" href="#welcome-to-buildnis-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Buildnis is a distributed, platform independent build system that can handle C++20 and
+Fortran modules and is flexible enough to build any language and handle (almost ;)
+any build step imaginable. It is written in Python and needs a Python interpreter, at
+least version 3.9.</p>
+<p>The main goal is to have a build system with only the minimum needed configuration and specially
+user interaction to build software on all supported OSes (Linux, Mac OS X and Windows - alphabetically).
+The list of currently automatically supported compilers and build tools can be found at the chapter <a class="reference internal" href="supported_configs.html#supported-configs"><span class="std std-ref">Supported Configurations</span></a>.
+How to customize Buildnis for your needs can be found at <a class="reference internal" href="customizing.html#customizing-buildnis"><span class="std std-ref">Customizing Buildnis</span></a>,
+how to extend it, that means adding other OSes or CPU architectures or stuff that need changes in the Python code of
+Buildnis itself, can be found in the chapter <a class="reference internal" href="extending.html#extending-buildnis"><span class="std std-ref">Extending Buildnis</span></a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+<p>To get you started, short how-tos to get Buildnis up and running:</p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Installation and Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#using-a-virtual-environment">Using a Virtual Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#virtualenv-setup">Virtualenv Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#pipenv-setup">Pipenv Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#installation-of-buildnis">Installation of Buildnis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pip">Installation using Pip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pipenv">Installation using Pipenv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#no-package-installation">No Package Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line Arguments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-help-text">Show Help Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-version">Show Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#main-argument-the-project-configuration">Main Argument - The Project Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#build-stages">Build Stages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#output-and-script-paths">Output and Script Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#logging-options">Logging Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stages.html">Build Stages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="usage.html" class="btn btn-neutral float-right" title="Installation and Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">
+        Last updated on 13.03.2021.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

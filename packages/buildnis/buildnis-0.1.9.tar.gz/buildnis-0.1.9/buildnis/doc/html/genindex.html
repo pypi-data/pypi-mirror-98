@@ -1,0 +1,1220 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Index &mdash; Buildnis 0.2.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5DB1DE" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/buildnis.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis">GitHub Project Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/buildnis/">PyPI (pip) Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://buildnis.readthedocs.io/">Documentation at Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues/new/choose">Report a Bug or a Feature Request</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues">Issue Tracker at GitHub</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installation and Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#using-a-virtual-environment">Using a Virtual Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#virtualenv-setup">Virtualenv Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#pipenv-setup">Pipenv Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#installation-of-buildnis">Installation of Buildnis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pip">Installation using Pip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pipenv">Installation using Pipenv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#no-package-installation">No Package Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line Arguments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-help-text">Show Help Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-version">Show Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#main-argument-the-project-configuration">Main Argument - The Project Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#build-stages">Build Stages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#output-and-script-paths">Output and Script Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#logging-options">Logging Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stages.html">Build Stages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Customizing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="supported_configs.html">Supported Configurations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-oses">Supported OSes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-c-compilers">Supported C++ Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#mac-os-x">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-fortran-compilers">Supported Fortran Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id4">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id7">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id9">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-interpreters">Supported Interpreters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id11">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id12">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id15">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-documentation-tools">Supported Documentation Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id18">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id19">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id22">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-build-tools">Supported Build Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customizing.html">Customizing Buildnis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending Buildnis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developing Buildnis</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev_index.html">Developer Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules.config.html">modules.config package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.build_config">modules.config.build_config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.check">modules.config.check module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config">modules.config.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_dir_json">modules.config.config_dir_json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_files">modules.config.config_files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.config_values">modules.config.config_values module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.configure_build">modules.config.configure_build module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host">modules.config.host module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_linux">modules.config.host_linux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_osx">modules.config.host_osx module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.host_windows">modules.config.host_windows module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.json_base_class">modules.config.json_base_class module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.module">modules.config.module module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config.project_dependency">modules.config.project_dependency module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.config.html#module-buildnis.modules.config">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.builds.html">modules.builds package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.builds.html#module-buildnis.modules.builds">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.helpers.html">modules.helpers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.commandline">modules.helpers.commandline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.commandline_arguments">modules.helpers.commandline_arguments module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.config_parser">modules.helpers.config_parser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.execute">modules.helpers.execute module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.file_compare">modules.helpers.file_compare module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.files">modules.helpers.files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.json">modules.helpers.json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.logging">modules.helpers.logging module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.placeholder_regex">modules.helpers.placeholder_regex module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.web">modules.helpers.web module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Indices</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Python Module Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Buildnis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Index</li>
+    
+    
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.addAttributesIfNotExist">addAttributesIfNotExist() (JSONBaseClass method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.arch">arch (Check attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.Arch">Arch (in module buildnis.modules.config)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.areHashesSame">areHashesSame() (in module buildnis.modules.helpers.file_compare)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.EnvArgs.args">args (EnvArgs attribute)</a>, <a href="modules.helpers.html#id0">[1]</a>
+
+      <ul>
+        <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.ExeArgs.args">(ExeArgs attribute)</a>, <a href="modules.helpers.html#id3">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.build_targets">build_targets (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.build_tool_cfgs">build_tool_cfgs (Check attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigFiles.build_tools_Cfg">build_tools_Cfg (ConfigFiles attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigFiles.build_tools_cfg">build_tools_cfg (ConfigFiles attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.build_config.BuildCfg">BuildCfg (class in buildnis.modules.config.build_config)</a>
+</li>
+      <li>
+    buildnis.modules.builds
+
+      <ul>
+        <li><a href="modules.builds.html#module-buildnis.modules.builds">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.build_config
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.build_config">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.check
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.check">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.config
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.config_dir_json
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config_dir_json">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.config_files
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config_files">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.config_values
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config_values">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.configure_build
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.configure_build">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.host
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.host_linux
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host_linux">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.host_osx
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host_osx">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    buildnis.modules.config.host_windows
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host_windows">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.json_base_class
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.json_base_class">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.module
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.module">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.config.project_dependency
+
+      <ul>
+        <li><a href="modules.config.html#module-buildnis.modules.config.project_dependency">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.commandline
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.commandline">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.commandline_arguments
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.commandline_arguments">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.config_parser
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.config_parser">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.execute
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.execute">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.file_compare
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.file_compare">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.files
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.files">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.json
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.json">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.logging
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.logging">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.placeholder_regex
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.placeholder_regex">module</a>
+</li>
+      </ul></li>
+      <li>
+    buildnis.modules.helpers.web
+
+      <ul>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.web">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.config_dir_json.ConfigDirJson.cfg_path">cfg_path (ConfigDirJson attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check">Check (class in buildnis.modules.config.check)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline.checkCmdLineArgs">checkCmdLineArgs() (in module buildnis.modules.helpers.commandline)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.checkConfigName">checkConfigName() (in module buildnis.modules.helpers.json)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.checkConfigVersion">checkConfigVersion() (in module buildnis.modules.helpers.json)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.checkDependencies">checkDependencies() (Config method)</a>
+
+      <ul>
+        <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.checkDependencies">(ProjectDependency method)</a>, <a href="modules.config.html#id30">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.checkIfExists">checkIfExists() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.checkIfIsDir">checkIfIsDir() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.checkIfIsFile">checkIfIsFile() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.checkIfIsLink">checkIfIsLink() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.checkTargetArgs">checkTargetArgs() (CommandlineArguments method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.checkVersions">checkVersions() (Check method)</a>, <a href="modules.config.html#id2">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.CmdOutput">CmdOutput (class in buildnis.modules.config)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.collectLinuxConfig">collectLinuxConfig() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.collectLinuxCpuGpuRam">collectLinuxCpuGpuRam() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.collectOSXConfig">collectOSXConfig() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.collectWinCpuGpuRam">collectWinCpuGpuRam() (Host method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.collectWindowsConfig">collectWindowsConfig() (Host method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments">CommandlineArguments (class in buildnis.modules.helpers.commandline_arguments)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.conf_dir">conf_dir (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.conf_scripts_dir">conf_scripts_dir (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config">Config (class in buildnis.modules.config.config)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.config_path">config_path (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_dir_json.ConfigDirJson">ConfigDirJson (class in buildnis.modules.config.config_dir_json)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigFiles">ConfigFiles (class in buildnis.modules.config.config_files)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigTuple">ConfigTuple (class in buildnis.modules.config.config_files)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.configure_build.configureBuild">configureBuild() (in module buildnis.modules.config.configure_build)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.ConfigVersion">ConfigVersion (class in buildnis.modules.config)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.connectInTarget">connectInTarget() (Config method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.connectModulesBuildTools">connectModulesBuildTools() (Config method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.current_date_regex">current_date_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.current_day_regex">current_day_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.current_month_regex">current_month_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.current_time_regex">current_time_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.current_year_regex">current_year_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.deleteConfigs">deleteConfigs() (in module buildnis.modules.helpers.commandline_arguments)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.deleteDirs">deleteDirs() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.deleteFiles">deleteFiles() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.deleteLogfiles">deleteLogfiles() (in module buildnis.modules.helpers.commandline_arguments)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.dependencies">dependencies (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_build">do_build (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_check_what_to_do">do_check_what_to_do (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_clean">do_clean (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_configure">do_configure (CommandlineArguments attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_distclean">do_distclean (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.do_install">do_install (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.EnvArgs.do_source">do_source (EnvArgs attribute)</a>, <a href="modules.helpers.html#id1">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.doAppendTarget">doAppendTarget() (CommandlineArguments static method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.doDistClean">doDistClean() (in module buildnis.modules.helpers.commandline_arguments)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.web.doDownload">doDownload() (in module buildnis.modules.helpers.web)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.doesExecutableWork">doesExecutableWork() (in module buildnis.modules.helpers.execute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.download_dir">download_dir (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.download_url">download_url (ProjectDependency attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.EnvArgs">EnvArgs (class in buildnis.modules.helpers.execute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.CmdOutput.err_out">err_out (CmdOutput attribute)</a>, <a href="modules.config.html#id34">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.ExeArgs.exe">exe (ExeArgs attribute)</a>, <a href="modules.helpers.html#id4">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.ExeArgs">ExeArgs (class in buildnis.modules.helpers.execute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.executable_argument">executable_argument (ProjectDependency attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.executable_check_regex">executable_check_regex (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.ExecuteException">ExecuteException</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigTuple.exists">exists (ConfigTuple attribute)</a>, <a href="modules.config.html#id8">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.expandAllPlaceholders">expandAllPlaceholders() (Config method)</a>
+
+      <ul>
+        <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.expandAllPlaceholders">(JSONBaseClass method)</a>, <a href="modules.config.html#id20">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.config_parser.expandItem">expandItem() (in module buildnis.modules.helpers.config_parser)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.config_dir_json.ConfigDirJson.file_name">file_name (ConfigDirJson attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare">FileCompare (class in buildnis.modules.helpers.file_compare)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.FileCompareException">FileCompareException</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.FilePath">FilePath (in module buildnis.modules.config)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.flattenList">flattenList() (CommandlineArguments method)</a>
+</li>
+      <li><a href="modules.config.html#id0">fromReadJSON() (BuildCfg class method)</a>
+
+      <ul>
+        <li><a href="modules.config.html#buildnis.modules.config.build_config.BuildCfg.fromReadJSON">(BuildCfg method)</a>
+</li>
+        <li><a href="modules.config.html#id26">(ModuleCfg class method)</a>
+</li>
+        <li><a href="modules.config.html#buildnis.modules.config.module.ModuleCfg.fromReadJSON">(ModuleCfg method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.generateHash">generateHash() (FileCompare method)</a>, <a href="modules.helpers.html#id7">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getCPU">getCPU() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.GetCPUInfo">GetCPUInfo() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_windows.getCPUInfo">getCPUInfo() (in module buildnis.modules.config.host_windows)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_windows.getCPUName">getCPUName() (in module buildnis.modules.config.host_windows)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getCPUNameLinux">getCPUNameLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getCPUNameOSX">getCPUNameOSX() (in module buildnis.modules.config.host_osx)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getGPU">getGPU() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_windows.getGPUInfo">getGPUInfo() (in module buildnis.modules.config.host_windows)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getGPULspci">getGPULspci() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getGPUNamesLinux">getGPUNamesLinux() (Host method)</a>
+
+      <ul>
+        <li><a href="modules.config.html#buildnis.modules.config.host_linux.getGPUNamesLinux">(in module buildnis.modules.config.host_linux)</a>
+</li>
+      </ul></li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getGPUNamesSbinLinux">getGPUNamesSbinLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getGPUSbinLspci">getGPUSbinLspci() (Host method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.getJSONDict">getJSONDict() (in module buildnis.modules.helpers.json)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getL2CacheLinux">getL2CacheLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getL2CacheOSX">getL2CacheOSX() (in module buildnis.modules.config.host_osx)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getL3CacheLinux">getL3CacheLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getL3CacheOSX">getL3CacheOSX() (in module buildnis.modules.config.host_osx)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_windows.getMemInfo">getMemInfo() (in module buildnis.modules.config.host_windows)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getNumCoresLinux">getNumCoresLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getNumCoresOSX">getNumCoresOSX() (in module buildnis.modules.config.host_osx)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getNumLogCoresLinux">getNumLogCoresLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getNumLogCoresOSX">getNumLogCoresOSX() (in module buildnis.modules.config.host_osx)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getOSInfo">getOSInfo() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getOSMajVers">getOSMajVers() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getOSName">getOSName() (in module buildnis.modules.config.host_osx)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getOSVer">getOSVer() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.config_parser.getPlaceholder">getPlaceholder() (in module buildnis.modules.helpers.config_parser)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.logging.getProgramLogger">getProgramLogger() (in module buildnis.modules.helpers.logging)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host.getRAM">getRAM() (Host method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_linux.getRAMSizeLinux">getRAMSizeLinux() (in module buildnis.modules.config.host_linux)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host_osx.getRAMSizeOSX">getRAMSizeOSX() (in module buildnis.modules.config.host_osx)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.RunRegex.group">group (RunRegex attribute)</a>, <a href="modules.helpers.html#id5">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.hasChanged">hasChanged() (FileCompare method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.hasConfigChangedOnDisk">hasConfigChangedOnDisk() (JSONBaseClass method)</a>, <a href="modules.config.html#id21">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.hash">hash (FileCompare attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.hashFile">hashFile() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.Host">Host (class in buildnis.modules.config.host)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigFiles.host_cfg">host_cfg (ConfigFiles attribute)</a>, <a href="modules.config.html#id5">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.HOST_CPU_ARCH">HOST_CPU_ARCH (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.host_cpu_arch_regex">host_cpu_arch_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.HOST_NAME">HOST_NAME (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.host_name_regex">host_name_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.HOST_NUM_CORES">HOST_NUM_CORES (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.host_num_cores_regex">host_num_cores_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.HOST_NUM_LOG_CORES">HOST_NUM_LOG_CORES (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.host_num_log_cores_regex">host_num_log_cores_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.HOST_OS">HOST_OS (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.host_os_regex">host_os_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.configure_build.ifConfigureDeleteProjectJSON">ifConfigureDeleteProjectJSON() (in module buildnis.modules.config.configure_build)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.build_config.BuildCfg.initAttribs">initAttribs() (BuildCfg method)</a>
+
+      <ul>
+        <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.initAttribs">(CommandlineArguments method)</a>
+</li>
+      </ul></li>
+      <li><a href="modules.config.html#buildnis.modules.config.build_config.BuildCfg.initStages">initStages() (BuildCfg method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.install_arguments">install_arguments (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.install_cmd">install_cmd (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.install_targets">install_targets (CommandlineArguments attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.installDep">installDep() (ProjectDependency method)</a>, <a href="modules.config.html#id31">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.is_checked">is_checked (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.isBuildToolCfgOK">isBuildToolCfgOK() (Check method)</a>, <a href="modules.config.html#id3">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.isDependencyFulfilled">isDependencyFulfilled() (ProjectDependency method)</a>, <a href="modules.config.html#id32">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.isExecuteableDep">isExecuteableDep() (ProjectDependency method)</a>, <a href="modules.config.html#id33">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.isSame">isSame() (FileCompare method)</a>, <a href="modules.helpers.html#id8">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.isSameFile">isSameFile() (FileCompare method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass">JSONBaseClass (class in buildnis.modules.config.json_base_class)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.log_file">log_file (CommandlineArguments attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.log_level">log_level (CommandlineArguments attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.ConfigVersion.major">major (ConfigVersion attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.makeDirIfNotExists">makeDirIfNotExists() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.ConfigVersion.minor">minor (ConfigVersion attribute)</a>
+</li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="modules.builds.html#module-buildnis.modules.builds">buildnis.modules.builds</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config">buildnis.modules.config</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.build_config">buildnis.modules.config.build_config</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.check">buildnis.modules.config.check</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config">buildnis.modules.config.config</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config_dir_json">buildnis.modules.config.config_dir_json</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config_files">buildnis.modules.config.config_files</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.config_values">buildnis.modules.config.config_values</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.configure_build">buildnis.modules.config.configure_build</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host">buildnis.modules.config.host</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host_linux">buildnis.modules.config.host_linux</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host_osx">buildnis.modules.config.host_osx</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.host_windows">buildnis.modules.config.host_windows</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.json_base_class">buildnis.modules.config.json_base_class</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.module">buildnis.modules.config.module</a>
+</li>
+        <li><a href="modules.config.html#module-buildnis.modules.config.project_dependency">buildnis.modules.config.project_dependency</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers">buildnis.modules.helpers</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.commandline">buildnis.modules.helpers.commandline</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.commandline_arguments">buildnis.modules.helpers.commandline_arguments</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.config_parser">buildnis.modules.helpers.config_parser</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.execute">buildnis.modules.helpers.execute</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.file_compare">buildnis.modules.helpers.file_compare</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.files">buildnis.modules.helpers.files</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.json">buildnis.modules.helpers.json</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.logging">buildnis.modules.helpers.logging</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.placeholder_regex">buildnis.modules.helpers.placeholder_regex</a>
+</li>
+        <li><a href="modules.helpers.html#module-buildnis.modules.helpers.web">buildnis.modules.helpers.web</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.module.ModuleCfg">ModuleCfg (class in buildnis.modules.config.module)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.name">name (ProjectDependency attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.ok_if_executable">ok_if_executable (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.ok_if_exists">ok_if_exists (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.os_name">os_name (Check attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.os_name_linux_regex">os_name_linux_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.os_name_osx_regex">os_name_osx_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.os_name_windows_regex">os_name_windows_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.OSName">OSName (in module buildnis.modules.config)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.parseBuildCfgs">parseBuildCfgs() (Config method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline.parseCommandLine">parseCommandLine() (in module buildnis.modules.helpers.commandline)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.config_parser.parseConfigElement">parseConfigElement() (in module buildnis.modules.helpers.config_parser)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.parseItem">parseItem() (in module buildnis.modules.helpers.json)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.config_parser.parseList">parseList() (in module buildnis.modules.helpers.config_parser)</a>
+
+      <ul>
+        <li><a href="modules.helpers.html#buildnis.modules.helpers.json.parseList">(in module buildnis.modules.helpers.json)</a>
+</li>
+      </ul></li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.parseModuleCfgs">parseModuleCfgs() (Config method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigTuple.path">path (ConfigTuple attribute)</a>, <a href="modules.config.html#id9">[1]</a>
+
+      <ul>
+        <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.path">(FileCompare attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.path_obj">path_obj (FileCompare attribute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.placeholder_regex">placeholder_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.host.printHostInfo">printHostInfo() (in module buildnis.modules.config.host)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_AUTHOR">PROJECT_AUTHOR (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_author_regex">project_author_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigFiles.project_cfg">project_cfg (ConfigFiles attribute)</a>, <a href="modules.config.html#id6">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_cfg_dir_regex">project_cfg_dir_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_COMPANY">PROJECT_COMPANY (in module buildnis.modules.config.config_values)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_company_regex">project_company_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_CONFIG_DIR_PATH">PROJECT_CONFIG_DIR_PATH (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments.project_config_file">project_config_file (CommandlineArguments attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_COPYRIGHT_INFO">PROJECT_COPYRIGHT_INFO (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_copyright_info_regex">project_copyright_info_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_files.ConfigFiles.project_dep_cfg">project_dep_cfg (ConfigFiles attribute)</a>, <a href="modules.config.html#id7">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_EMAIL">PROJECT_EMAIL (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_email_regex">project_email_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_NAME">PROJECT_NAME (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_name_regex">project_name_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_ROOT">PROJECT_ROOT (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_root_regex">project_root_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_VERSION">PROJECT_VERSION (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_version_regex">project_version_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config_values.PROJECT_WEB_URL">PROJECT_WEB_URL (in module buildnis.modules.config.config_values)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.project_web_url_regex">project_web_url_regex (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency">ProjectDependency (class in buildnis.modules.config.project_dependency)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.readConfigsJSON">readConfigsJSON() (Config method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.readJSON">readJSON() (in module buildnis.modules.helpers.json)</a>
+
+      <ul>
+        <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.readJSON">(JSONBaseClass method)</a>, <a href="modules.config.html#id24">[1]</a>
+</li>
+      </ul></li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.RunRegex.regex">regex (RunRegex attribute)</a>, <a href="modules.helpers.html#id6">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.replaceConstants">replaceConstants() (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.replaceDateTimeConstants">replaceDateTimeConstants() (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.replaceHostConstants">replaceHostConstants() (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.placeholder_regex.replaceProjectConstants">replaceProjectConstants() (in module buildnis.modules.helpers.placeholder_regex)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.reReadIfChangedOnDisk">reReadIfChangedOnDisk() (JSONBaseClass method)</a>, <a href="modules.config.html#id22">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.files.returnExistingFile">returnExistingFile() (in module buildnis.modules.helpers.files)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.reWriteIfChangedOnDisk">reWriteIfChangedOnDisk() (JSONBaseClass method)</a>, <a href="modules.config.html#id23">[1]</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.runCommand">runCommand() (in module buildnis.modules.helpers.execute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.RunRegex">RunRegex (class in buildnis.modules.helpers.execute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.runScript">runScript() (Check method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.runScriptsInDir">runScriptsInDir() (Check method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.EnvArgs.script">script (EnvArgs attribute)</a>, <a href="modules.helpers.html#id2">[1]</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.check.Check.searchBuildTool">searchBuildTool() (Check method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.searchBuildTools">searchBuildTools() (Config method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.searchInStage">searchInStage() (Config method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.setBuildToolCfgPath">setBuildToolCfgPath() (Config method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.execute.setEnv">setEnv() (in module buildnis.modules.helpers.execute)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.setFileCompare">setFileCompare() (in module buildnis.modules.helpers.json)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.setHostConfigPath">setHostConfigPath() (Config method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.json.setOrigFile">setOrigFile() (in module buildnis.modules.helpers.json)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.setProjDepCfgPath">setProjDepCfgPath() (Config method)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.config.Config.setProjectConstants">setProjectConstants() (Config method)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.setupLogger">setupLogger() (in module buildnis.modules.helpers.commandline_arguments)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.configure_build.setupProjectCfg">setupProjectCfg() (in module buildnis.modules.config.configure_build)</a>
+</li>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.file_compare.FileCompare.size">size (FileCompare attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.CmdOutput.std_out">std_out (CmdOutput attribute)</a>, <a href="modules.config.html#id35">[1]</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.helpers.html#buildnis.modules.helpers.web.WebException">WebException</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.website_url">website_url (ProjectDependency attribute)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.configure_build.writeBuildTools">writeBuildTools() (in module buildnis.modules.config.configure_build)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.configure_build.writeHostCfg">writeHostCfg() (in module buildnis.modules.config.configure_build)</a>
+</li>
+      <li><a href="modules.config.html#buildnis.modules.config.build_config.BuildCfg.writeJSON">writeJSON() (BuildCfg method)</a>, <a href="modules.config.html#id1">[1]</a>
+
+      <ul>
+        <li><a href="modules.config.html#buildnis.modules.config.config.Config.writeJSON">(Config method)</a>
+</li>
+        <li><a href="modules.config.html#buildnis.modules.config.config_dir_json.ConfigDirJson.writeJSON">(ConfigDirJson method)</a>, <a href="modules.config.html#id4">[1]</a>
+</li>
+        <li><a href="modules.helpers.html#buildnis.modules.helpers.json.writeJSON">(in module buildnis.modules.helpers.json)</a>
+</li>
+        <li><a href="modules.config.html#buildnis.modules.config.json_base_class.JSONBaseClass.writeJSON">(JSONBaseClass method)</a>, <a href="modules.config.html#id25">[1]</a>
+</li>
+        <li><a href="modules.config.html#buildnis.modules.config.module.ModuleCfg.writeJSON">(ModuleCfg method)</a>, <a href="modules.config.html#id27">[1]</a>
+</li>
+        <li><a href="modules.config.html#buildnis.modules.config.project_dependency.ProjectDependency.writeJSON">(ProjectDependency method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules.config.html#buildnis.modules.config.configure_build.writeProjectJSON">writeProjectJSON() (in module buildnis.modules.config.configure_build)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">
+        Last updated on 13.03.2021.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

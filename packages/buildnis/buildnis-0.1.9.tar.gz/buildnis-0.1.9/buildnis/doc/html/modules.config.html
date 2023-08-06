@@ -1,0 +1,2248 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>modules.config package &mdash; Buildnis 0.2.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="modules.builds package" href="modules.builds.html" />
+    <link rel="prev" title="Developer Reference" href="dev_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #5DB1DE" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/buildnis.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Links</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis">GitHub Project Page</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://pypi.org/project/buildnis/">PyPI (pip) Package</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://buildnis.readthedocs.io/">Documentation at Read the Docs</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues/new/choose">Report a Bug or a Feature Request</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/Release-Candidate/Buildnis/issues">Issue Tracker at GitHub</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Installation and Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Installation and Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#using-a-virtual-environment">Using a Virtual Environment</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#virtualenv-setup">Virtualenv Setup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#pipenv-setup">Pipenv Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#installation-of-buildnis">Installation of Buildnis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pip">Installation using Pip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#installation-using-pipenv">Installation using Pipenv</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#no-package-installation">No Package Installation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="commandline.html">Command Line Arguments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-help-text">Show Help Text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#show-version">Show Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#main-argument-the-project-configuration">Main Argument - The Project Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#build-stages">Build Stages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#output-and-script-paths">Output and Script Paths</a></li>
+<li class="toctree-l2"><a class="reference internal" href="commandline.html#logging-options">Logging Options</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stages.html">Build Stages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Customizing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="supported_configs.html">Supported Configurations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-oses">Supported OSes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-c-compilers">Supported C++ Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#linux">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#mac-os-x">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-fortran-compilers">Supported Fortran Compilers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id4">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id7">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id9">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-interpreters">Supported Interpreters</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id11">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id12">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id15">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-documentation-tools">Supported Documentation Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id18">Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id19">Mac OS X</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supported_configs.html#id22">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="supported_configs.html#supported-build-tools">Supported Build Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="customizing.html">Customizing Buildnis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="extending.html">Extending Buildnis</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developing Buildnis</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="dev_index.html">Developer Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">modules.config package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.build_config">modules.config.build_config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.check">modules.config.check module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.config">modules.config.config module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.config_dir_json">modules.config.config_dir_json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.config_files">modules.config.config_files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.config_values">modules.config.config_values module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.configure_build">modules.config.configure_build module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.host">modules.config.host module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.host_linux">modules.config.host_linux module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.host_osx">modules.config.host_osx module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.host_windows">modules.config.host_windows module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.json_base_class">modules.config.json_base_class module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.module">modules.config.module module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config.project_dependency">modules.config.project_dependency module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-buildnis.modules.config">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.builds.html">modules.builds package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.builds.html#module-buildnis.modules.builds">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="modules.helpers.html">modules.helpers package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.commandline">modules.helpers.commandline module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.commandline_arguments">modules.helpers.commandline_arguments module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.config_parser">modules.helpers.config_parser module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.execute">modules.helpers.execute module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.file_compare">modules.helpers.file_compare module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.files">modules.helpers.files module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.json">modules.helpers.json module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.logging">modules.helpers.logging module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.placeholder_regex">modules.helpers.placeholder_regex module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers.web">modules.helpers.web module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="modules.helpers.html#module-buildnis.modules.helpers">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Indices</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="py-modindex.html">Python Module Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Buildnis</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="dev_index.html">Developer Reference</a> &raquo;</li>
+        
+      <li>modules.config package</li>
+    
+    
+
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="modules.builds.html" class="btn btn-neutral float-right" title="modules.builds package" accesskey="n">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+      
+      
+        <a href="dev_index.html" class="btn btn-neutral float-left" title="Developer Reference" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="modules-config-package">
+<h1>modules.config package<a class="headerlink" href="#modules-config-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-buildnis.modules.config.build_config">
+<span id="modules-config-build-config-module"></span><h2>modules.config.build_config module<a class="headerlink" href="#module-buildnis.modules.config.build_config" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.build_config.BuildCfg">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">BuildCfg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">build_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_json</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.build_config.BuildCfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Holds a build tool configuration read from a JSON build tool
+configuration file.</p>
+<dl class="py method">
+<dt id="buildnis.modules.config.build_config.BuildCfg.fromReadJSON">
+<code class="sig-name descname"><span class="pre">fromReadJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.build_config.BuildCfg.fromReadJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the <cite>SimpleNamespace</cite> instance read from a JSON
+file to a BuildCfg instance to use.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.build_config.BuildCfg.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.build_config.BuildCfg.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the configuration to file (not used, because it is
+part of the project configuration JSON file).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id0">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">fromReadJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.build_config.BuildCfg" title="buildnis.modules.config.build_config.BuildCfg"><span class="pre">buildnis.modules.config.build_config.BuildCfg</span></a><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a <cite>SimpleNamespace</cite> instance load from a JSON build tools
+configuration file to a BuildCfg instance to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>instance</strong> (<em>object</em>) – The <cite>Simplenamespace</cite> instance to convert.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The data of the given object as a <cite>BuildCfg</cite> instance.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.build_config.BuildCfg" title="buildnis.modules.config.build_config.BuildCfg">BuildCfg</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.build_config.BuildCfg.initAttribs">
+<code class="sig-name descname"><span class="pre">initAttribs</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.build_config.BuildCfg.initAttribs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes the attributes that the build configuration object must have.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.build_config.BuildCfg.initStages">
+<code class="sig-name descname"><span class="pre">initStages</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.build_config.BuildCfg.initStages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets all needed attributes of a stage.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id1">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the generated config to disk.</p>
+<p>Not used, because it is part of the project configuration file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>str</em><em>, </em><em>optional</em>) – The path to the JSON file to write to.
+Defaults to “”, this uses the saved path.</p></li>
+<li><p><strong>to_ignore</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of attributes to ignore</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.check">
+<span id="modules-config-check-module"></span><h2>modules.config.check module<a class="headerlink" href="#module-buildnis.modules.config.check" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.check.Check">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Check</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">os_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arch</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">do_check</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.check.Check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Checks if all build tools are present.</p>
+<p>Runs all build tool script_paths in <cite>configure_script_paths</cite> in the subdirectory
+with the name of the OS passed to the constructor.</p>
+<p>Each build tool configuration (item of build_tool_cfgs) has the following
+attributes:</p>
+<ul class="simple">
+<li><p><cite>name</cite>                The name of the build tool</p></li>
+<li><p><cite>name_long</cite>           The full name of the build tool</p></li>
+<li><p><cite>version</cite>             The version of the build tool, gathered from its output</p></li>
+<li><p><cite>version_arg</cite>         The argument to call the build tool with to get the version</p></li>
+<li><dl class="simple">
+<dt><cite>version_regex</cite>       The regex to parse the output of <cite>version_arg</cite> to get</dt><dd><p><cite>version</cite></p>
+</dd>
+</dl>
+</li>
+<li><p><cite>build_tool_exe</cite>      The executable’s file name</p></li>
+<li><p><cite>install_path</cite>        The path to the executable</p></li>
+<li><p><cite>env_script</cite>          The environment script to call before using the executable</p></li>
+<li><p><cite>env_script_arg</cite>      The argument to call the environment script with</p></li>
+<li><dl class="simple">
+<dt><cite>is_checked</cite>          Has the executable been run and the version output been</dt><dd><p>parsed?</p>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.check.Check.os_name">
+<code class="sig-name descname"><span class="pre">os_name</span></code><a class="headerlink" href="#buildnis.modules.config.check.Check.os_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>the OS we are building for</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>OSName</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.check.Check.arch">
+<code class="sig-name descname"><span class="pre">arch</span></code><a class="headerlink" href="#buildnis.modules.config.check.Check.arch" title="Permalink to this definition">¶</a></dt>
+<dd><p>the CPU architecture we are building for</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Arch</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.check.Check.build_tool_cfgs">
+<code class="sig-name descname"><span class="pre">build_tool_cfgs</span></code><a class="headerlink" href="#buildnis.modules.config.check.Check.build_tool_cfgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>the list of build tool configurations returned from
+the script_paths in <cite>configure_script_paths/OS</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.check.Check.isBuildToolCfgOK">
+<code class="sig-name descname"><span class="pre">isBuildToolCfgOK</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.check.Check.isBuildToolCfgOK" title="Permalink to this definition">¶</a></dt>
+<dd><p>checks if the build tool config has the minimum
+needed attributes</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.check.Check.checkVersions">
+<code class="sig-name descname"><span class="pre">checkVersions</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.check.Check.checkVersions" title="Permalink to this definition">¶</a></dt>
+<dd><p>runs all build tools with the version argument, to check
+if the executable works</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id2">
+<code class="sig-name descname"><span class="pre">checkVersions</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs all configured build tools with the ‘show version’ argument.</p>
+<p>To check, if the configured build tools exist and are working, try to
+execute each with the argument to get the version string of the build
+tool.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id3">
+<code class="sig-name descname"><span class="pre">isBuildToolCfgOK</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the given object has all the needed attributes of a build
+tool configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cfg</strong> (<em>obj</em>) – the object to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>True, if <cite>cfg</cite> has all needed attributes</dt><dd><p>False else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.check.Check.runScript">
+<code class="sig-name descname"><span class="pre">runScript</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.check.Check.runScript" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the script at the given path and saves it’s output.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>script_path</strong> (<em>pathlib.Path</em>) – The path to the script to run.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.check.Check.runScriptsInDir">
+<code class="sig-name descname"><span class="pre">runScriptsInDir</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">working_dir</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.check.Check.runScriptsInDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs all build tool config scripts in the given path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>working_dir</strong> (<em>pathlib.Path</em>) – The path in which to run the build tool scripts.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.check.Check.searchBuildTool">
+<code class="sig-name descname"><span class="pre">searchBuildTool</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">object</span><a class="headerlink" href="#buildnis.modules.config.check.Check.searchBuildTool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for a build tool with the given name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – The name of the build tool to search for.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>The build tool object with the given name on success, <cite>None</cite> if not</dt><dd><p>found or another error occurred.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>object</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.config">
+<span id="modules-config-config-module"></span><h2>modules.config.config module<a class="headerlink" href="#module-buildnis.modules.config.config" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.config.Config">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Config</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">project_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.config.Config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Loads all JSON configurations.</p>
+<p>Parses the project’s JSON configuration, all module JSON configurations and
+all build tool JSON configurations.</p>
+<p>Attributes:
+config_path (FilePath): the path to the project’s main JSON configuration.
+project_cfg_dir (FilePath): The directory part of <cite>config_path</cite>
+project_cfg (obj): the project’s JSON configuration stored in a Python class.
+module_cfgs (Dict[FilePath, Any]) the module JSON configurations</p>
+<blockquote>
+<div><p>(mentioned in project_cfg)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>build_cfgs (Dict[FilePath, Any]) the build JSON configurations</dt><dd><p>(mentioned in the module JSONs)</p>
+</dd>
+</dl>
+<p>_logger (logging.Logger): the logger to use</p>
+<p>Methods:
+parseModuleCfgs: Parses the module JSON configurations setup in the project</p>
+<blockquote>
+<div><p>JSON</p>
+</div></blockquote>
+<dl class="simple">
+<dt>parseBuildCfgs: Parses the build JSON configurations setup in the module</dt><dd><p>JSONs</p>
+</dd>
+</dl>
+<p>setHostConfigPath: Sets the path to the generated host config file
+setBuildToolCfgPath: Sets the path to the generated build tool config file
+setProjDepCfgPath: Sets the path to the generated project dependency config file
+getProjCfgDict: Get the project configuration as a JSON sequenceable dict</p>
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.checkDependencies">
+<code class="sig-name descname"><span class="pre">checkDependencies</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">force_check</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.checkDependencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls the <cite>checkDependencies</cite> method of the project dependency
+configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>force_check</strong> (<em>bool</em><em>, </em><em>optional</em>) – if this is <cite>True</cite>, check the
+dependency even if it has been checked before - if
+<cite>is_checked</cite> is <cite>True</cite>. Defaults to False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.connectInTarget">
+<code class="sig-name descname"><span class="pre">connectInTarget</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.connectInTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects the build configuration with the given target.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>target</strong> (<em>object</em>) – The target to search the build config for and connect it.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.connectModulesBuildTools">
+<code class="sig-name descname"><span class="pre">connectModulesBuildTools</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.connectModulesBuildTools" title="Permalink to this definition">¶</a></dt>
+<dd><p>For each target in each module: search for the build tool and put it
+into this module’s target.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.expandAllPlaceholders">
+<code class="sig-name descname"><span class="pre">expandAllPlaceholders</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.expandAllPlaceholders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Goes through all configurations and replaces placeholders in their
+elements. A Placeholder is a string like <cite>${PLACEHOLDER}</cite>, a dollar
+sign followed by a curly opening brace, the string to replace and the
+closing curly brace.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parents</strong> (<em>List</em><em>[</em><em>object</em><em>]</em><em>, </em><em>optional</em>) – The list of parent objects.
+Defaults to None.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.parseBuildCfgs">
+<code class="sig-name descname"><span class="pre">parseBuildCfgs</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.parseBuildCfgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the build JSON configurations.</p>
+<p>Parses all JSON build configurations in <cite>./build_conf</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.parseModuleCfgs">
+<code class="sig-name descname"><span class="pre">parseModuleCfgs</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.parseModuleCfgs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the module JSON configurations.</p>
+<p>Parses and stores all module JSON configurations configured in the
+project’s setup stored in self.project_cfg. Stores the configurations
+in module_cfgs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.readConfigsJSON">
+<code class="sig-name descname"><span class="pre">readConfigsJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.readConfigsJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads all module and build configurations from their JSON files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.searchBuildTools">
+<code class="sig-name descname"><span class="pre">searchBuildTools</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">build_tool_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.check.Check" title="buildnis.modules.config.check.Check"><span class="pre">buildnis.modules.config.check.Check</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.searchBuildTools" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for a build tool in all found build tools.
+Connects it with a build configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>build_tool_cfg</strong> (<a class="reference internal" href="#buildnis.modules.config.check.Check" title="buildnis.modules.config.check.Check"><em>Check</em></a>) – The build tools config to search for build tools.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.searchInStage">
+<code class="sig-name descname"><span class="pre">searchInStage</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">build_tool_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.check.Check" title="buildnis.modules.config.check.Check"><span class="pre">buildnis.modules.config.check.Check</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.searchInStage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for a build tool configured in a stage of a build configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>build_tool_cfg</strong> (<a class="reference internal" href="#buildnis.modules.config.check.Check" title="buildnis.modules.config.check.Check"><em>Check</em></a>) – The build tool configuration to search in.</p></li>
+<li><p><strong>stage</strong> (<em>object</em>) – The stage containing the build tool name to search for.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.setBuildToolCfgPath">
+<code class="sig-name descname"><span class="pre">setBuildToolCfgPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.setBuildToolCfgPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the path to the generated build tools config JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>FilePath</em>) – the path to the build tools config file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.setHostConfigPath">
+<code class="sig-name descname"><span class="pre">setHostConfigPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.setHostConfigPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the path to the generated host config JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>FilePath</em>) – the path to the host config file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.setProjDepCfgPath">
+<code class="sig-name descname"><span class="pre">setProjDepCfgPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.setProjDepCfgPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the path to the generated project dependency config JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>FilePath</em>) – the path to the project dependency config file.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.setProjectConstants">
+<code class="sig-name descname"><span class="pre">setProjectConstants</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.setProjectConstants" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the global project constants to be replaced by placeholders.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config.Config.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.config.Config.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the project’s config to a JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em><em>, </em><em>optional</em>) – The path to the JSON file to write to.
+Defaults to “”, this uses the saved path.</p></li>
+<li><p><strong>to_ignore</strong> (<em>list</em><em>, </em><em>optional</em>) – List of attributes to ignore, to not save to
+disk. Defaults to [“project_dep_cfg”].</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.config_dir_json">
+<span id="modules-config-config-dir-json-module"></span><h2>modules.config.config_dir_json module<a class="headerlink" href="#module-buildnis.modules.config.config_dir_json" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.config_dir_json.ConfigDirJson">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ConfigDirJson</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">working_dir</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.config_dir_json.ConfigDirJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Class to handle the configuration of the directory all generated
+configuration files are written to.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_dir_json.ConfigDirJson.file_name">
+<code class="sig-name descname"><span class="pre">file_name</span></code><a class="headerlink" href="#buildnis.modules.config.config_dir_json.ConfigDirJson.file_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path to the JSON configuration file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_dir_json.ConfigDirJson.cfg_path">
+<code class="sig-name descname"><span class="pre">cfg_path</span></code><a class="headerlink" href="#buildnis.modules.config.config_dir_json.ConfigDirJson.cfg_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The directory to save generated configurations to</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.config_dir_json.ConfigDirJson.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.config_dir_json.ConfigDirJson.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the configuration directory configuration to a JSON
+file with path <cite>file_name</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id4">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the path to the project config directory to a JSON file with
+the given path <cite>json_path</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>json_path</strong> (<em>str</em><em>, </em><em>optional</em>) – <dl class="simple">
+<dt>The path to the JSON file to write to.</dt><dd><p>Defaults to “”, this uses the saved path.</p>
+</dd>
+</dl>
+<p>to_ignore (List[str]): The list of attributes to ignore</p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.config_files">
+<span id="modules-config-config-files-module"></span><h2>modules.config.config_files module<a class="headerlink" href="#module-buildnis.modules.config.config_files" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.config_files.ConfigFiles">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ConfigFiles</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">ConfigTuple</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">build_tools_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">ConfigTuple</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_dep_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">ConfigTuple</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">project_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">ConfigTuple</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigFiles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>Holds the path and state of all JSON configuration files.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigFiles.host_cfg">
+<code class="sig-name descname"><span class="pre">host_cfg</span></code><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigFiles.host_cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>The host configuration, the path to the host
+configuration JSON file and its status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple">ConfigTuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigFiles.build_tools_Cfg">
+<code class="sig-name descname"><span class="pre">build_tools_Cfg</span></code><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigFiles.build_tools_Cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build tools configuration JSON file path and
+its status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple">ConfigTuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigFiles.project_dep_cfg">
+<code class="sig-name descname"><span class="pre">project_dep_cfg</span></code><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigFiles.project_dep_cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>The project dependency configuration JSON file
+path and its status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple">ConfigTuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigFiles.project_cfg">
+<code class="sig-name descname"><span class="pre">project_cfg</span></code><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigFiles.project_cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>THe project configuration JSON file path and its
+status.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple">ConfigTuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigFiles.build_tools_cfg">
+<code class="sig-name descname"><span class="pre">build_tools_cfg</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">buildnis.modules.config.config_files.ConfigTuple</span></a></em><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigFiles.build_tools_cfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id5">
+<code class="sig-name descname"><span class="pre">host_cfg</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">buildnis.modules.config.config_files.ConfigTuple</span></a></em><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id6">
+<code class="sig-name descname"><span class="pre">project_cfg</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">buildnis.modules.config.config_files.ConfigTuple</span></a></em><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id7">
+<code class="sig-name descname"><span class="pre">project_dep_cfg</span></code><em class="property"><span class="pre">:</span> <a class="reference internal" href="#buildnis.modules.config.config_files.ConfigTuple" title="buildnis.modules.config.config_files.ConfigTuple"><span class="pre">buildnis.modules.config.config_files.ConfigTuple</span></a></em><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="buildnis.modules.config.config_files.ConfigTuple">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ConfigTuple</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">FilePath</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exists</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigTuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>Class to hold the path of a file and a <cite>bool</cite> that is <cite>True</cite> if the file
+already exists.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigTuple.path">
+<code class="sig-name descname"><span class="pre">path</span></code><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigTuple.path" title="Permalink to this definition">¶</a></dt>
+<dd><p>The path of the file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.config_files.ConfigTuple.exists">
+<code class="sig-name descname"><span class="pre">exists</span></code><a class="headerlink" href="#buildnis.modules.config.config_files.ConfigTuple.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p><cite>True`if the file already exists on disk, `False</cite> otherwise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id8">
+<code class="sig-name descname"><span class="pre">exists</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#id8" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id9">
+<code class="sig-name descname"><span class="pre">path</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#id9" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.config_values">
+<span id="modules-config-config-values-module"></span><h2>modules.config.config_values module<a class="headerlink" href="#module-buildnis.modules.config.config_values" title="Permalink to this headline">¶</a></h2>
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.HOST_CPU_ARCH">
+<code class="sig-name descname"><span class="pre">HOST_CPU_ARCH</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.HOST_CPU_ARCH" title="Permalink to this definition">¶</a></dt>
+<dd><p>The host’s CPU architecture, like <cite>x64</cite> or <cite>x86</cite>.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.HOST_NAME">
+<code class="sig-name descname"><span class="pre">HOST_NAME</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">'localhost'</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.HOST_NAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>The host’s name.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.HOST_NUM_CORES">
+<code class="sig-name descname"><span class="pre">HOST_NUM_CORES</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.HOST_NUM_CORES" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of physical cores of the host’s CPU.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.HOST_NUM_LOG_CORES">
+<code class="sig-name descname"><span class="pre">HOST_NUM_LOG_CORES</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.HOST_NUM_LOG_CORES" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of logical cores (including Hyperthreading) cores of this host’s CPU.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.HOST_OS">
+<code class="sig-name descname"><span class="pre">HOST_OS</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.HOST_OS" title="Permalink to this definition">¶</a></dt>
+<dd><p>The OS we are running on.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_AUTHOR">
+<code class="sig-name descname"><span class="pre">PROJECT_AUTHOR</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_AUTHOR" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project author’s name(s).</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_COMPANY">
+<code class="sig-name descname"><span class="pre">PROJECT_COMPANY</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_COMPANY" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project company’s name.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_CONFIG_DIR_PATH">
+<code class="sig-name descname"><span class="pre">PROJECT_CONFIG_DIR_PATH</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_CONFIG_DIR_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>The config path of the build project, the argument of <cite>–generated-conf-dir</cite>
+on the command line.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_COPYRIGHT_INFO">
+<code class="sig-name descname"><span class="pre">PROJECT_COPYRIGHT_INFO</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_COPYRIGHT_INFO" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project’s copyright info string.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_EMAIL">
+<code class="sig-name descname"><span class="pre">PROJECT_EMAIL</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_EMAIL" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project’s email address.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_NAME">
+<code class="sig-name descname"><span class="pre">PROJECT_NAME</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">'Build</span> <span class="pre">Project'</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_NAME" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project’s name.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_ROOT">
+<code class="sig-name descname"><span class="pre">PROJECT_ROOT</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">'./'</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_ROOT" title="Permalink to this definition">¶</a></dt>
+<dd><p>The root directory of the project, the directory <cite>project_config.json</cite> is
+located in.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_VERSION">
+<code class="sig-name descname"><span class="pre">PROJECT_VERSION</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project’s name.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="buildnis.modules.config.config_values.PROJECT_WEB_URL">
+<code class="sig-name descname"><span class="pre">PROJECT_WEB_URL</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><em class="property"> <span class="pre">=</span> <span class="pre">''</span></em><a class="headerlink" href="#buildnis.modules.config.config_values.PROJECT_WEB_URL" title="Permalink to this definition">¶</a></dt>
+<dd><p>The build project’s web URL.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.configure_build">
+<span id="modules-config-configure-build-module"></span><h2>modules.config.configure_build module<a class="headerlink" href="#module-buildnis.modules.config.configure_build" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.config.configure_build.configureBuild">
+<code class="sig-name descname"><span class="pre">configureBuild</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">logging.Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_dir_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_dir_json.ConfigDirJson" title="buildnis.modules.config.config_dir_json.ConfigDirJson"><span class="pre">buildnis.modules.config.config_dir_json.ConfigDirJson</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.host.Host" title="buildnis.modules.config.host.Host"><span class="pre">buildnis.modules.config.host.Host</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_cfg_filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_config_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><span class="pre">buildnis.modules.config.config_files.ConfigFiles</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.configure_build.configureBuild" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configures the build.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commandline_args</strong> (<a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><em>CommandlineArguments</em></a>) – The object holding the command line
+arguments.</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em>) – The logger instance to use.</p></li>
+<li><p><strong>config_dir_config</strong> (<a class="reference internal" href="#buildnis.modules.config.config_dir_json.ConfigDirJson" title="buildnis.modules.config.config_dir_json.ConfigDirJson"><em>ConfigDirJson</em></a>) – The object holding the path to the directory,
+all generated JSON files are written to.</p></li>
+<li><p><strong>host_cfg</strong> (<a class="reference internal" href="#buildnis.modules.config.host.Host" title="buildnis.modules.config.host.Host"><em>Host</em></a>) – The host configuration instance.</p></li>
+<li><p><strong>host_cfg_filename</strong> (<em>FilePath</em>) – Path to the host configuration JSON file to write.</p></li>
+<li><p><strong>json_config_files</strong> (<a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><em>ConfigFiles</em></a>) – Holds paths to all JSON configuration files to
+write.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.configure_build.ifConfigureDeleteProjectJSON">
+<code class="sig-name descname"><span class="pre">ifConfigureDeleteProjectJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">logging.Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_config_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><span class="pre">buildnis.modules.config.config_files.ConfigFiles</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.configure_build.ifConfigureDeleteProjectJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deletes the project configuration JSON if it exists and <cite>–configure</cite> has been
+called.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commandline_args</strong> (<a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><em>CommandlineArguments</em></a>) – The object holding the command line
+arguments</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em>) – THe logger to use.</p></li>
+<li><p><strong>json_config_files</strong> (<a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><em>ConfigFiles</em></a>) – The path to the project configuration JSON and
+whether it exists.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.configure_build.setupProjectCfg">
+<code class="sig-name descname"><span class="pre">setupProjectCfg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_config_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><span class="pre">buildnis.modules.config.config_files.ConfigFiles</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.config.Config" title="buildnis.modules.config.config.Config"><span class="pre">buildnis.modules.config.config.Config</span></a><a class="headerlink" href="#buildnis.modules.config.configure_build.setupProjectCfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets up the project configuration, including the project dependency
+configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commandline_args</strong> (<a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><em>CommandlineArguments</em></a>) – The object holding all command line
+arguments.</p></li>
+<li><p><strong>json_config_files</strong> (<a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><em>ConfigFiles</em></a>) – Holds the path to the project configuration
+JSON file’s path.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The project config containing all values</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.config.Config" title="buildnis.modules.config.config.Config">Config</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.configure_build.writeBuildTools">
+<code class="sig-name descname"><span class="pre">writeBuildTools</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">commandline_args</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><span class="pre">buildnis.modules.helpers.commandline_arguments.CommandlineArguments</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">logging.Logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.host.Host" title="buildnis.modules.config.host.Host"><span class="pre">buildnis.modules.config.host.Host</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_config_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><span class="pre">buildnis.modules.config.config_files.ConfigFiles</span></a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.check.Check" title="buildnis.modules.config.check.Check"><span class="pre">buildnis.modules.config.check.Check</span></a><a class="headerlink" href="#buildnis.modules.config.configure_build.writeBuildTools" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the build tools configuration to disk.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>commandline_args</strong> (<a class="reference internal" href="modules.helpers.html#buildnis.modules.helpers.commandline_arguments.CommandlineArguments" title="buildnis.modules.helpers.commandline_arguments.CommandlineArguments"><em>CommandlineArguments</em></a>) – The object holding all command line
+arguments.</p></li>
+<li><p><strong>logger</strong> (<em>logging.Logger</em>) – The logger to use.</p></li>
+<li><p><strong>host_cfg</strong> (<a class="reference internal" href="#buildnis.modules.config.host.Host" title="buildnis.modules.config.host.Host"><em>Host</em></a>) – The host configuration instance.</p></li>
+<li><p><strong>json_config_files</strong> (<a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><em>ConfigFiles</em></a>) – Holds the Path to the build tools JSON
+configuration path, the path to write to.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The build tools configuration object to use.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.check.Check" title="buildnis.modules.config.check.Check">Check</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.configure_build.writeHostCfg">
+<code class="sig-name descname"><span class="pre">writeHostCfg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.host.Host" title="buildnis.modules.config.host.Host"><span class="pre">buildnis.modules.config.host.Host</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">host_cfg_filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.configure_build.writeHostCfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the host configuration JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host_cfg</strong> (<a class="reference internal" href="#buildnis.modules.config.host.Host" title="buildnis.modules.config.host.Host"><em>Host</em></a>) – The host configuration to save.</p></li>
+<li><p><strong>host_cfg_filename</strong> (<em>FilePath</em>) – The path of the JSON file to write to.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.configure_build.writeProjectJSON">
+<code class="sig-name descname"><span class="pre">writeProjectJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host_cfg_filename</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_config_files</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><span class="pre">buildnis.modules.config.config_files.ConfigFiles</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">cfg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#buildnis.modules.config.config.Config" title="buildnis.modules.config.config.Config"><span class="pre">buildnis.modules.config.config.Config</span></a></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.configure_build.writeProjectJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the project configuration JSON to disk.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host_cfg_filename</strong> (<em>FilePath</em>) – Path to the host configuration.</p></li>
+<li><p><strong>json_config_files</strong> (<a class="reference internal" href="#buildnis.modules.config.config_files.ConfigFiles" title="buildnis.modules.config.config_files.ConfigFiles"><em>ConfigFiles</em></a>) – The object holding the path to the project
+configuration JSON to write.</p></li>
+<li><p><strong>cfg</strong> (<a class="reference internal" href="#buildnis.modules.config.config.Config" title="buildnis.modules.config.config.Config"><em>Config</em></a>) – The project configuration instance to write to disk.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.host">
+<span id="modules-config-host-module"></span><h2>modules.config.host module<a class="headerlink" href="#module-buildnis.modules.config.host" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.host.Host">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">Host</span></code><a class="headerlink" href="#buildnis.modules.config.host.Host" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Holds all information about the host this is running on.</p>
+<p>Stores hostname, OS, OS version, CPU architecture, RAM, CPU name, …</p>
+<dl>
+<dt>Attributes</dt><dd><p>host_name (str):      This host’s name
+os (str):             The OS this is running on (like “Windows”, “Linux”)
+os_vers_major (str):  Major version of the OS (like “10” for Windows 10)
+os_vers (str):        Excact version string
+cpu_arch (str):       CPU architecture, like “x64” or “x86”
+cpu (str):            The detailed name of the CPU
+file_name (str):      The JSON identifier of the host config file, part</p>
+<blockquote>
+<div><p>of the file name</p>
+</div></blockquote>
+<p>level2_cache (int):   Size of the CPU’s level 2 cache, in bytes
+level3_cache (int):   Size of the CPU’s level 3 cache, in bytes
+num_cores (int):      The number of physical cores
+num_logical_cores (int): The number of logical, ‘virtual’ cores
+ram_total (int):      Amount of physical RAM in bytes
+gpu List[str]:        The list of names of all GPUs
+python_version (str): The version of this host’s Python interpreter
+json_path(str):       The path to the written JSON host config file</p>
+</dd>
+<dt>Methods</dt><dd><dl class="simple">
+<dt>collectWindowsConfig: adds information, that has to be collected in a</dt><dd><p>Windows specific way</p>
+</dd>
+<dt>collectLinuxConfig: adds information, that has to be collected in a</dt><dd><p>Linux specific way</p>
+</dd>
+<dt>collectOSXConfig:   adds information, that has to be collected in a</dt><dd><p>Mac OS X specific way</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.GetCPUInfo">
+<code class="sig-name descname"><span class="pre">GetCPUInfo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.GetCPUInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CPU info, like cache sizes, number of cores.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.collectLinuxConfig">
+<code class="sig-name descname"><span class="pre">collectLinuxConfig</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.collectLinuxConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect information about the hardware we’re running on on Linux.</p>
+<p>Calls the following commands:</p>
+<p>cat /etc/os-release
+NAME=”Red Hat Enterprise Linux”
+VERSION=”8.3 (Ootpa)”</p>
+<p>grep “model name” /proc/cpuinfo <a href="#id10"><span class="problematic" id="id11">|</span></a>uniq|cut -d’:’ -f2
+getconf -a|grep LEVEL2_CACHE_SIZE|awk ‘{print $2}’
+getconf -a|grep LEVEL3_CACHE_SIZE|awk ‘{print $2}’
+grep “cpu cores” /proc/cpuinfo <a href="#id12"><span class="problematic" id="id13">|</span></a>uniq|cut -d’:’ -f2
+grep “siblings” /proc/cpuinfo <a href="#id14"><span class="problematic" id="id15">|</span></a>uniq <a href="#id16"><span class="problematic" id="id17">|</span></a>cut -d’:’ -f2
+free -b|grep “Mem:”<a href="#id18"><span class="problematic" id="id19">|</span></a>awk ‘{print $2}’
+grep “DISTRIB_DESCRIPTION” /etc/lsb-release
+lspci|grep VGA|cut -f3 -d’:’</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.collectLinuxCpuGpuRam">
+<code class="sig-name descname"><span class="pre">collectLinuxCpuGpuRam</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.host.Host.collectLinuxCpuGpuRam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects information about this host’s CPU, GPU, and so on on Linux.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.collectOSXConfig">
+<code class="sig-name descname"><span class="pre">collectOSXConfig</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.collectOSXConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect information about the hardware we’re running on on MacOS X.</p>
+<p>Using this commands:
+sysctl -n hw.memsize
+sysctl -n hw.physicalcpu
+sysctl -n hw.logicalcpu
+sysctl -n hw.l2cachesize
+sysctl -n hw.l3cachesize
+sysctl -n machdep.cpu.brand_string
+sw_vers -productVersion</p>
+<p>TODO get GPU info: system_profiler SPDisplaysDataType</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.collectWinCpuGpuRam">
+<code class="sig-name descname"><span class="pre">collectWinCpuGpuRam</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.host.Host.collectWinCpuGpuRam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects the Windows CPU, GPU and RAM size information.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.collectWindowsConfig">
+<code class="sig-name descname"><span class="pre">collectWindowsConfig</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.collectWindowsConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect information about the hardware we’re running on on Windows.</p>
+<p>Calls these commands and parses their outputs:</p>
+<dl class="simple">
+<dt>wmic cpu get L2CacheSize,L3CacheSize,NumberOfLogicalProcessors,</dt><dd><p>NumberOfCores,Name</p>
+</dd>
+</dl>
+<p>wmic memorychip get capacity
+wmic path win32_VideoController get name</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getCPU">
+<code class="sig-name descname"><span class="pre">getCPU</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getCPU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CPU name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getGPU">
+<code class="sig-name descname"><span class="pre">getGPU</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getGPU" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the GPU name list.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getGPULspci">
+<code class="sig-name descname"><span class="pre">getGPULspci</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getGPULspci" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the GPU names using <cite>/sbin/lspci</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getGPUNamesLinux">
+<code class="sig-name descname"><span class="pre">getGPUNamesLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getGPUNamesLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the list of GPU names.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getGPUSbinLspci">
+<code class="sig-name descname"><span class="pre">getGPUSbinLspci</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getGPUSbinLspci" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the GPU names using <cite>lspci</cite>.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getOSInfo">
+<code class="sig-name descname"><span class="pre">getOSInfo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getOSInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets Info about the OS, like Name, CPU architecture, and similar.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.host.Host.getRAM">
+<code class="sig-name descname"><span class="pre">getRAM</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.Host.getRAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the RAM size.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host.printHostInfo">
+<code class="sig-name descname"><span class="pre">printHostInfo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.host.printHostInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>To test the collection of the host’s information, print all to stdout.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.host_linux">
+<span id="modules-config-host-linux-module"></span><h2>modules.config.host_linux module<a class="headerlink" href="#module-buildnis.modules.config.host_linux" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getCPUNameLinux">
+<code class="sig-name descname"><span class="pre">getCPUNameLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getCPUNameLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the CPU’s name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getGPUNamesLinux">
+<code class="sig-name descname"><span class="pre">getGPUNamesLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getGPUNamesLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the names of the GPUs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getGPUNamesSbinLinux">
+<code class="sig-name descname"><span class="pre">getGPUNamesSbinLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getGPUNamesSbinLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the names of the GPUs, using <cite>/sbin/lspci</cite> because some distributions
+don’t have <cite>lspci</cite> in <cite>/usr/bin</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getL2CacheLinux">
+<code class="sig-name descname"><span class="pre">getL2CacheLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getL2CacheLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the size of the CPU’s level 2 cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getL3CacheLinux">
+<code class="sig-name descname"><span class="pre">getL3CacheLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getL3CacheLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the size of the CPU’s level 3 cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getNumCoresLinux">
+<code class="sig-name descname"><span class="pre">getNumCoresLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getNumCoresLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of physical cores.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getNumLogCoresLinux">
+<code class="sig-name descname"><span class="pre">getNumLogCoresLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getNumLogCoresLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of logical cores, including the hyperthreading.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getOSMajVers">
+<code class="sig-name descname"><span class="pre">getOSMajVers</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getOSMajVers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the major OS version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getOSVer">
+<code class="sig-name descname"><span class="pre">getOSVer</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getOSVer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the minor OS version.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_linux.getRAMSizeLinux">
+<code class="sig-name descname"><span class="pre">getRAMSizeLinux</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_linux.getRAMSizeLinux" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the RAM size in bytes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.host_osx">
+<span id="modules-config-host-osx-module"></span><h2>modules.config.host_osx module<a class="headerlink" href="#module-buildnis.modules.config.host_osx" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getCPUNameOSX">
+<code class="sig-name descname"><span class="pre">getCPUNameOSX</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getCPUNameOSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the CPU name.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getL2CacheOSX">
+<code class="sig-name descname"><span class="pre">getL2CacheOSX</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getL2CacheOSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the size of the CPU’s level 2 cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getL3CacheOSX">
+<code class="sig-name descname"><span class="pre">getL3CacheOSX</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getL3CacheOSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the size of the CPU’s level 3 cache.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getNumCoresOSX">
+<code class="sig-name descname"><span class="pre">getNumCoresOSX</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getNumCoresOSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of physical cores.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getNumLogCoresOSX">
+<code class="sig-name descname"><span class="pre">getNumLogCoresOSX</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getNumLogCoresOSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of logical cores, including hyperthreading.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getOSName">
+<code class="sig-name descname"><span class="pre">getOSName</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getOSName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the OS version of OS X.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_osx.getRAMSizeOSX">
+<code class="sig-name descname"><span class="pre">getRAMSizeOSX</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_osx.getRAMSizeOSX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the RAM size in bytes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.host_windows">
+<span id="modules-config-host-windows-module"></span><h2>modules.config.host_windows module<a class="headerlink" href="#module-buildnis.modules.config.host_windows" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="buildnis.modules.config.host_windows.getCPUInfo">
+<code class="sig-name descname"><span class="pre">getCPUInfo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_windows.getCPUInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets CPU info using <cite>wmic</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_windows.getCPUName">
+<code class="sig-name descname"><span class="pre">getCPUName</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_windows.getCPUName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CPU name using <cite>wmic</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_windows.getGPUInfo">
+<code class="sig-name descname"><span class="pre">getGPUInfo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_windows.getGPUInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the GPU names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="buildnis.modules.config.host_windows.getMemInfo">
+<code class="sig-name descname"><span class="pre">getMemInfo</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput"><span class="pre">buildnis.modules.config.CmdOutput</span></a><a class="headerlink" href="#buildnis.modules.config.host_windows.getMemInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the RAM size in bytes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>The output of the command, as a <cite>CmdOutput</cite> instance containing</dt><dd><p><cite>stdout</cite> and <cite>stderr</cite> as attributes.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#buildnis.modules.config.CmdOutput" title="buildnis.modules.config.CmdOutput">CmdOutput</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.json_base_class">
+<span id="modules-config-json-base-class-module"></span><h2>modules.config.json_base_class module<a class="headerlink" href="#module-buildnis.modules.config.json_base_class" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">JSONBaseClass</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_file_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config_name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base class for all objects that read and/or write JSON configuration
+files.
+Holds the values of the JSON file in it’S attributes (all except
+<cite>_logger</cite>, the <cite>loggin.Logger</cite> instance).</p>
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.hasConfigChangedOnDisk">
+<code class="sig-name descname"><span class="pre">hasConfigChangedOnDisk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.hasConfigChangedOnDisk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if the JSON configuration has
+changed since the time the checksum has been
+calculated.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.expandAllPlaceholders">
+<code class="sig-name descname"><span class="pre">expandAllPlaceholders</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.expandAllPlaceholders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces all placeholders (like <cite>${PLACEHOLDER}</cite>)
+in the instance’s attribute values.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.readJSON">
+<code class="sig-name descname"><span class="pre">readJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.readJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the JSON config file and saves the values to attributes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.reReadIfChangedOnDisk">
+<code class="sig-name descname"><span class="pre">reReadIfChangedOnDisk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.reReadIfChangedOnDisk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the original read file has changed on
+disk, and if yes, rereads the file from disk.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the attributes and their values to the JSON file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.reWriteIfChangedOnDisk">
+<code class="sig-name descname"><span class="pre">reWriteIfChangedOnDisk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.reWriteIfChangedOnDisk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the original read file has changed on
+disk, and if yes, rereads the file from disk
+and rewrites it to the generated JSON’s file
+path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.json_base_class.JSONBaseClass.addAttributesIfNotExist">
+<code class="sig-name descname"><span class="pre">addAttributesIfNotExist</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attributes</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.json_base_class.JSONBaseClass.addAttributesIfNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds each attribute in the given dictionary of attributes.</p>
+<p>The key of the dictionary is the attribute’s name, the value the
+deault value to set the attribute to, if it didn’t exist.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>attributes</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>object</em><em>]</em>) – The dictionary of attributes and
+default values</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id20">
+<code class="sig-name descname"><span class="pre">expandAllPlaceholders</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parents</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">object</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id20" title="Permalink to this definition">¶</a></dt>
+<dd><p>Goes through all configurations and replaces placeholders in their
+elements. A Placeholder is a string like <cite>${PLACEHOLDER}</cite>, a dollar
+sign followed by a curly opening brace, the string to replace and the
+closing curly brace.</p>
+<p>See also: <cite>modules.helpers.config_parser.parseConfigElement</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>parents</strong> (<em>List</em><em>[</em><em>object</em><em>]</em>) – The hierarchical list of parent objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id21">
+<code class="sig-name descname"><span class="pre">hasConfigChangedOnDisk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#id21" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <cite>True</cite> if the JSON file has been changed since the time the
+checksum has been calculated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl>
+<dt><cite>True</cite> if the original JSON file has changed since the time</dt><dd><blockquote>
+<div><p>the file’s checksum has been saved.</p>
+</div></blockquote>
+<p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id22">
+<code class="sig-name descname"><span class="pre">reReadIfChangedOnDisk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id22" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the JSON configuration file has been changed since the
+time the checksum has been calculated, if yes, it is reread from disk.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id23">
+<code class="sig-name descname"><span class="pre">reWriteIfChangedOnDisk</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id23" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the JSON configuration file has been changed since the
+time the checksum has been calculated, if yes, it is reread from disk
+and the generated JSON file is written to it’s file path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id24">
+<code class="sig-name descname"><span class="pre">readJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id24" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a JSON file and puts it’s items into attributes of this object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>json_path</strong> (<em>FilePath</em>) – The path of the JSON file to load.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id25">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id25" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the class instance to the JSON file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em>) – The path to the file to write the JSON to</p></li>
+<li><p><strong>to_ignore</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of attributes to ignore</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.module">
+<span id="modules-config-module-module"></span><h2>modules.config.module module<a class="headerlink" href="#module-buildnis.modules.config.module" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.module.ModuleCfg">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ModuleCfg</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">module_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">load_json</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.module.ModuleCfg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Holds a single module configuration read from a JSON module
+configuration file.</p>
+<dl class="py method">
+<dt id="buildnis.modules.config.module.ModuleCfg.fromReadJSON">
+<code class="sig-name descname"><span class="pre">fromReadJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.module.ModuleCfg.fromReadJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the <cite>SimpleNamespace</cite> instance read from a JSON
+file  to a ModuleCfg instance to use.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.module.ModuleCfg.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.module.ModuleCfg.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the configuration to file (not used, because it is
+part of the project configuration JSON file).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id26">
+<em class="property"><span class="pre">classmethod</span> </em><code class="sig-name descname"><span class="pre">fromReadJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">instance</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#buildnis.modules.config.module.ModuleCfg" title="buildnis.modules.config.module.ModuleCfg"><span class="pre">buildnis.modules.config.module.ModuleCfg</span></a><a class="headerlink" href="#id26" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a <cite>SimpleNamespace</cite> instance load from a JSON module
+configuration file to a ModuleCfg instance to use.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>instance</strong> (<em>object</em>) – The <cite>Simplenamespace</cite> instance to convert.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The data of the given object as a <cite>ModuleCfg</cite> instance.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#buildnis.modules.config.module.ModuleCfg" title="buildnis.modules.config.module.ModuleCfg">ModuleCfg</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id27">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id27" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the generated config to disk.</p>
+<p>Not used, because it is part of the project configuration file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em><em>, </em><em>optional</em>) – The path to the JSON file to write to.
+Defaults to “”, this uses the saved path.</p></li>
+<li><p><strong>to_ignore</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of attributes to ignore.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config.project_dependency">
+<span id="modules-config-project-dependency-module"></span><h2>modules.config.project_dependency module<a class="headerlink" href="#module-buildnis.modules.config.project_dependency" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ProjectDependency</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dependency_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#buildnis.modules.config.json_base_class.JSONBaseClass" title="buildnis.modules.config.json_base_class.JSONBaseClass"><code class="xref py py-class docutils literal notranslate"><span class="pre">buildnis.modules.config.json_base_class.JSONBaseClass</span></code></a></p>
+<p>Parses the project dependency configuration file and checks the
+dependencies.</p>
+<p>Parses the project dependency JSON file and saves the config file to
+<cite>dependency_cfg</cite>. Checks the dependencies and tries to download and
+install missing dependencies. Writes the altered configuration to the JSON
+file.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.config_path">
+<code class="sig-name descname"><span class="pre">config_path</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.config_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the project dependency JSON file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.dependencies">
+<code class="sig-name descname"><span class="pre">dependencies</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.dependencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>The list of dependencies</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[object]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt>
+<code class="sig-name descname"><span class="pre">Dependency</span> <span class="pre">object</span> <span class="pre">attributes</span></code></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>the dependency’s name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.website_url">
+<code class="sig-name descname"><span class="pre">website_url</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.website_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>website to get information about the dependency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.download_url">
+<code class="sig-name descname"><span class="pre">download_url</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.download_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>website to download the dependency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.download_dir">
+<code class="sig-name descname"><span class="pre">download_dir</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.download_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>path to the directory to download the dependency to</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.install_cmd">
+<code class="sig-name descname"><span class="pre">install_cmd</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.install_cmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>command line to call to install the dependency</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.install_arguments">
+<code class="sig-name descname"><span class="pre">install_arguments</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.install_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>arguments to pass to the install command</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>List[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.ok_if_exists">
+<code class="sig-name descname"><span class="pre">ok_if_exists</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.ok_if_exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this file exists, the dependency has been
+successfully installed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.ok_if_executable">
+<code class="sig-name descname"><span class="pre">ok_if_executable</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.ok_if_executable" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this file is executable, the dependency
+has been successfully installed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>FilePath</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.executable_argument">
+<code class="sig-name descname"><span class="pre">executable_argument</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.executable_argument" title="Permalink to this definition">¶</a></dt>
+<dd><p>the argument to call <cite>ok_if_executable</cite> with
+to test it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.executable_check_regex">
+<code class="sig-name descname"><span class="pre">executable_check_regex</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.executable_check_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>the regex to parse the output of
+<cite>ok_if_executable</cite> with. If a match is
+found,  the dependency has been
+successfully installed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.is_checked">
+<code class="sig-name descname"><span class="pre">is_checked</span></code><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.is_checked" title="Permalink to this definition">¶</a></dt>
+<dd><p>if this is true, the dependency has been successfully
+installed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.checkDependencies">
+<code class="sig-name descname"><span class="pre">checkDependencies</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.checkDependencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks all dependencies in the list of dependencies
+<cite>dependencies</cite>, if the dependency is installed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.isDependencyFulfilled">
+<code class="sig-name descname"><span class="pre">isDependencyFulfilled</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.isDependencyFulfilled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <a href="#id28"><span class="problematic" id="id29">`</span></a>True`if the dependency has been
+installed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.installDep">
+<code class="sig-name descname"><span class="pre">installDep</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.installDep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Installs the given dependency.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.isExecuteableDep">
+<code class="sig-name descname"><span class="pre">isExecuteableDep</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.isExecuteableDep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks, if the given dependency’s executable works,
+that is, returns the expected string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id30">
+<code class="sig-name descname"><span class="pre">checkDependencies</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">force_check</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id30" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs all configured dependency checks.</p>
+<p>Checks for each dependency if the configured file exists or the
+configured executable works. If not, it tries to download and/or install
+the dependency and tries again.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>force_check</strong> (<em>bool</em><em>, </em><em>optional</em>) – if this is <cite>True</cite>, check the
+dependency even if it has been checked before - if
+<cite>is_checked</cite> is <cite>True</cite>. Defaults to False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id31">
+<code class="sig-name descname"><span class="pre">installDep</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dep</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#id31" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download and/or install the given dependency.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dep</strong> (<em>object</em>) – the dependency to install or download</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id32">
+<code class="sig-name descname"><span class="pre">isDependencyFulfilled</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dep</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#id32" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if the given dependency is installed.</p>
+<p>Checks if the configured path exist or the configured executable works.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dep</strong> (<em>object</em>) – the dependency object to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl class="simple">
+<dt><cite>True</cite>, if the dependency has been found</dt><dd><p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="id33">
+<code class="sig-name descname"><span class="pre">isExecuteableDep</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dep</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">object</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#id33" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute the dependency, if that works, returns <cite>True</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>dep</strong> (<em>object</em>) – the dependency to run</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><dl>
+<dt><cite>True</cite> if the executable has been running OK and returns the</dt><dd><blockquote>
+<div><p>configured string.</p>
+</div></blockquote>
+<p><cite>False</cite> else</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="buildnis.modules.config.project_dependency.ProjectDependency.writeJSON">
+<code class="sig-name descname"><span class="pre">writeJSON</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_ignore</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#buildnis.modules.config.project_dependency.ProjectDependency.writeJSON" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the generated dependency configuration to disk.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>json_path</strong> (<em>FilePath</em><em>, </em><em>optional</em>) – The path to the JSON file to write to.
+Defaults to “”, this uses the saved path.</p></li>
+<li><p><strong>to_ignore</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – The list of attributes to ignore.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-buildnis.modules.config">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-buildnis.modules.config" title="Permalink to this headline">¶</a></h2>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.Arch">
+<code class="sig-name descname"><span class="pre">Arch</span></code><a class="headerlink" href="#buildnis.modules.config.Arch" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="buildnis.modules.config.CmdOutput">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">CmdOutput</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">std_out</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">err_out</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.CmdOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>The return type of executed commands.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.CmdOutput.std_out">
+<code class="sig-name descname"><span class="pre">std_out</span></code><a class="headerlink" href="#buildnis.modules.config.CmdOutput.std_out" title="Permalink to this definition">¶</a></dt>
+<dd><p>the <cite>stdout</cite> output of the executed command</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.CmdOutput.err_out">
+<code class="sig-name descname"><span class="pre">err_out</span></code><a class="headerlink" href="#buildnis.modules.config.CmdOutput.err_out" title="Permalink to this definition">¶</a></dt>
+<dd><p>the <cite>stderr</cite> output of the executed command</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id34">
+<code class="sig-name descname"><span class="pre">err_out</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#id34" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="id35">
+<code class="sig-name descname"><span class="pre">std_out</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#id35" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="buildnis.modules.config.ConfigVersion">
+<em class="property"><span class="pre">class</span> </em><code class="sig-name descname"><span class="pre">ConfigVersion</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">major</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#buildnis.modules.config.ConfigVersion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></p>
+<p>The version of a JSON configuration file.</p>
+<dl class="py attribute">
+<dt id="buildnis.modules.config.ConfigVersion.major">
+<code class="sig-name descname"><span class="pre">major</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#buildnis.modules.config.ConfigVersion.major" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.ConfigVersion.minor">
+<code class="sig-name descname"><span class="pre">minor</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#buildnis.modules.config.ConfigVersion.minor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.FilePath">
+<code class="sig-name descname"><span class="pre">FilePath</span></code><a class="headerlink" href="#buildnis.modules.config.FilePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="buildnis.modules.config.OSName">
+<code class="sig-name descname"><span class="pre">OSName</span></code><a class="headerlink" href="#buildnis.modules.config.OSName" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="modules.builds.html" class="btn btn-neutral float-right" title="modules.builds package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="dev_index.html" class="btn btn-neutral float-left" title="Developer Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+      <span class="lastupdated">
+        Last updated on 13.03.2021.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
