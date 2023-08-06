@@ -1,0 +1,15 @@
+openclean_metanome/__init__.py,sha256=lEXT5nlDNMByK8Vq4qsLjvsK8kuaDb6Ziuemwc704P0,213
+openclean_metanome/config.py,sha256=5uBzsFOucKZbTFhgW_gkhSNEMKrUwJr9H9bgVgXd30Q,2450
+openclean_metanome/converter.py,sha256=2FCl40sDvUhaxn7BaJrQgCDTri4ln8q1645R63KN4uQ,2217
+openclean_metanome/download.py,sha256=6aM3Z2A7RQn_s6EgAY-Et53RFyh0NrpgUGSraMe3fS8,1577
+openclean_metanome/tests.py,sha256=mNy27qXMcaB7cYvnYo3e95ETDoXbkc7CA7j09XJdQ5k,1120
+openclean_metanome/version.py,sha256=qtihQKLL3eYD9DrLaxPg-x_UIrF8gKSH0EtSPIoz6Fk,307
+openclean_metanome/algorithm/__init__.py,sha256=14nYI7iCRg3YlpaaWbInhqaT1-Kv7E0DT-vOr_PxOV0,275
+openclean_metanome/algorithm/base.py,sha256=l6lYL64Ftj2GMPIC8rUqMxuhNDcgC798jqEIrWfX9Sg,3271
+openclean_metanome/algorithm/hyfd.py,sha256=kTb7bfpZWDXwNmMM1AAAKEU4A3Bxv-s1d4NDI3vHFTc,8481
+openclean_metanome/algorithm/hyucc.py,sha256=VC3YaeZgfyGKpG564L-WLx061P_21tdwNcxs0YvMPb8,8026
+openclean_metanome-0.1.0.dist-info/LICENSE,sha256=83Gj4d-Gq1ib-pcqJGNDTQEo2f2Zj0xCuqkxvP1jm5I,1525
+openclean_metanome-0.1.0.dist-info/METADATA,sha256=qBXsNRl_U-bwkhddU5EHt0WK-aSKs42FSacrT3KR_vk,5337
+openclean_metanome-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openclean_metanome-0.1.0.dist-info/top_level.txt,sha256=qoM3kCG4OYLJUTAbDmfFAiVpOhsXe6R_EkkQU4ISJ9g,19
+openclean_metanome-0.1.0.dist-info/RECORD,,
