@@ -1,0 +1,2 @@
+class JNEException(Exception):
+    pass
