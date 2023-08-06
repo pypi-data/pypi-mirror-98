@@ -1,0 +1,10 @@
+README.md
+setup.py
+eigentools/__init__.py
+eigentools/criticalfinder.py
+eigentools/eigenproblem.py
+eigentools/tools.py
+eigentools.egg-info/PKG-INFO
+eigentools.egg-info/SOURCES.txt
+eigentools.egg-info/dependency_links.txt
+eigentools.egg-info/top_level.txt
