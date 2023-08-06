@@ -1,0 +1,10 @@
+README.md
+setup.py
+mkdocs_replace_markdown/__init__.py
+mkdocs_replace_markdown/plugin.py
+mkdocs_replace_markdown.egg-info/PKG-INFO
+mkdocs_replace_markdown.egg-info/SOURCES.txt
+mkdocs_replace_markdown.egg-info/dependency_links.txt
+mkdocs_replace_markdown.egg-info/entry_points.txt
+mkdocs_replace_markdown.egg-info/requires.txt
+mkdocs_replace_markdown.egg-info/top_level.txt
