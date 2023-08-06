@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: py-scanpackages
+Version: 1.1.2
+Summary: A dpkg-scanpackages alternative, written in Python!
+Home-page: https://github.com/Monotrix/py-scanpackages
+Author: Monotrix
+Author-email: ajaidan0@gmail.com
+License: ML-1.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# py-scanpackages
+py-scanpackages is a simple dpkg-scanpackages alternative, written entirely in Python!
+
+# Installation
+To install, run ``python -m pip install py-scanpackages``.
+
+# NOTE:
+Depends on ``ar`` (which is included in ``binutils``) to extract debs.
+Also requires additional setup (see [here](https://github.com/monotrix/blob/main/LZMA.md))
+
