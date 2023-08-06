@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        {% if use_local_assets %}
+            <link rel="stylesheet" href="bootstrap.min.css">
+            <link rel="stylesheet" href="jquery.dataTables.min.css">
+        {% else %}
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.3/dist/united/bootstrap.min.css" integrity="sha256-jLJ6kQp64g1OLUcK1qzi+wtVdV/LPu0dtGTJP7sZcZA=" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+        {% endif %}
+        <style>
+            .card {margin-bottom: 10px;}
+            .align-right { text-align: right;}
+        </style>
+
+        <title>{{ report.network.code }} {{ report.year }} - Annual delivery report</title>
+    </head>
+    <body>
+        {% if use_plotly %}
+            <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+            {% if use_local_assets %}
+                <script src="plotly-latest.min.js"></script>
+            {% else %}
+                <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            {% endif %}
+        {% endif %}
+        <div class="container">
+            <div class="jumbotron text-center">
+                {% if use_local_assets %}
+                    <img class="img-fluid" src="resif_logo.png">
+                {% else %}
+                    <img class="img-fluid" src="http://ws.resif.fr/resifws/timeseriesplot/1/static/images/logoresif.png">
+                {% endif %}
+                <br />
+                <h1>{{ report.network.code }} {{ report.year }} - Annual delivery report</h1>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">List of stations</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Open</th>
+                                <th scope="col">Close</th>
+                                <th scope="col" class="align-right">Latitude</th>
+                                <th scope="col" class="align-right">Longitude</th>
+                                <th scope="col" class="align-right">Elevation</th>
+                                <th scope="col">Active channels in {{ report.year }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for station in report.stations %}
+                                <tr>
+                                    <th scope="row">{{ station.code }}</th>
+                                    <td>{{ station.date_start }}</td>
+                                    <td>{{ 'Still active' if station.is_still_active else (station.date_end or 'Not available') }}</td>
+                                    <td class="align-right">{{ station.latitude }}</td>
+                                    <td class="align-right">{{ station.longitude }}</td>
+                                    <td class="align-right">{{ station.elevation }}</td>
+                                    <td>
+                                        {% for channel_group_code in station.grouped_active_channels(report.year).keys() %}
+                                            {{ channel_group_code }}{% if not loop.last %}, {% endif %}
+                                        {% endfor %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            {% if map_stations is defined %}
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Map of active stations in {{ report.year }} for {{ report.network.code }}</h2>
+                    </div>
+                    <div class="card-body">
+                        {{ map_stations }}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if plot_availability_network is defined %}
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Availability of stations</h2>
+                    </div>
+                    <div class="card-body">
+                        {{ plot_availability_network }}
+                    </div>
+                </div>
+            {% endif %}
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Yearly evolution of data send for {{ report.network.code }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if plot_data_send_yearly is defined %}
+                        {{ plot_data_send_yearly }}
+                    {% endif %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Year</th>
+                                <th scope="col" class="align-right">Seedlink ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Dataselect ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Station ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Total ({{ unit if unit else 'Bytes' }})</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% set has_data = False %}
+                            {% for year in range(report.network.year_start, report.year + 1) %}
+
+                                {% set send_seedlink = report.network.data_send_seedlink(year=year, unit=unit) %}
+                                {% set send_dataselect = report.network.data_send_dataselect(year=year, unit=unit) %}
+                                {% set send_station = report.network.data_send_station(year=year, unit=unit) %}
+
+                                {% if has_data or send_seedlink or send_dataselect or send_station %}
+                                    {% set has_data = True %}
+                                    <tr>
+                                        <th scope="row">{{ year }}</th>
+                                        {% if unit %}
+                                            <td class="align-right">{{ '%.2f'|format(send_seedlink) if send_seedlink != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ '%.2f'|format(send_dataselect) if send_dataselect != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ '%.2f'|format(send_station) if send_station != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ '%.2f'|format((send_seedlink or 0) + (send_dataselect or 0) + (send_station or 0)) }}</td>
+                                        {% else %}
+                                            <td class="align-right">{{ send_seedlink if send_seedlink != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ send_dataselect if send_dataselect != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ send_station if send_station != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ (send_seedlink or 0) + (send_dataselect or 0) + (send_station or 0) }}</td>
+                                        {% endif %}
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Monthly evolution of data send in {{ report.year }} for {{ report.network.code }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if plot_data_send_monthly is defined %}
+                        {{ plot_data_send_monthly }}
+                    {% endif %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Month</th>
+                                <th scope="col" class="align-right">Seedlink ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Dataselect ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Station ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Total ({{ unit if unit else 'Bytes' }})</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for month in range(1, 13) %}
+                                {% set send_seedlink = report.network.data_send_seedlink(year=report.year, month=month, unit=unit) %}
+                                {% set send_dataselect = report.network.data_send_dataselect(year=report.year, month=month, unit=unit) %}
+                                {% set send_station = report.network.data_send_station(year=report.year, month=month, unit=unit) %}
+                                <tr>
+                                    <th scope="row">{{ month }}</th>
+                                    {% if unit %}
+                                        <td class="align-right">{{ '%.2f'|format(send_seedlink) if send_seedlink != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ '%.2f'|format(send_dataselect) if send_dataselect != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ '%.2f'|format(send_station) if send_station != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ '%.2f'|format((send_seedlink or 0) + (send_dataselect or 0) + (send_station or 0)) }}</td>
+                                    {% else %}
+                                        <td class="align-right">{{ send_seedlink if send_seedlink != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ send_dataselect if send_dataselect != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ send_station if send_station != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ (send_seedlink or 0) + (send_dataselect or 0) + (send_station or 0) }}</td>
+                                    {% endif %}
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+{#
+=== DISABLED START ====
+            {% if report.network.code == 'FR' %}
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Data send for each networks in {{ report.year }}</h2>
+                </div>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Network</th>
+                                <th scope="col">Seedlink ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col">Dataselect ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col">Station ({{ unit if unit else 'Bytes' }})</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item_network in report.networks %}
+                                {% set send_seedlink = item_network.data_send_seedlink(year=report.year, unit=unit) %}
+                                {% set send_dataselect = item_network.data_send_dataselect(year=report.year, unit=unit) %}
+                                {% set send_station = item_network.data_send_station(year=report.year, unit=unit) %}
+
+                                {% if send_seedlink or send_dataselect or send_station %}
+                                    <tr>
+                                        <th scope="row">{{ item_network.code }}</th>
+                                        {% if unit %}
+                                            <td>{{ '%.2f'|format(send_seedlink) if send_seedlink != None else 'Not available' }}</td>
+                                            <td>{{ '%.2f'|format(send_dataselect) if send_dataselect != None else 'Not available' }}</td>
+                                            <td>{{ '%.2f'|format(send_station) if send_station != None else 'Not available' }}</td>
+                                        {% else %}
+                                            <td>{{ send_seedlink if send_seedlink != None else 'Not available' }}</td>
+                                            <td>{{ send_dataselect if send_dataselect != None else 'Not available' }}</td>
+                                            <td>{{ send_station if send_station != None else 'Not available' }}</td>
+                                        {% endif %}
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+=== DISABLED END ====
+#}
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Yearly evolution of data stored for {{ report.network.code }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if plot_data_stored_yearly is defined %}
+                        {{ plot_data_stored_yearly }}
+                    {% endif %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Year</th>
+                                <th scope="col" class="align-right">Validated ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Non-validated ({{ unit if unit else 'Bytes' }})</th>
+                                <th scope="col" class="align-right">Total ({{ unit if unit else 'Bytes' }})</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% set has_data = False %}
+                            {% for year in range(report.network.year_start, report.year + 1) %}
+
+                                {% set stored_validated = report.network.data_stored_validated(year=year, unit=unit) %}
+                                {% set stored_buffer = report.network.data_stored_buffer(year=year, unit=unit) %}
+
+                                {% if has_data or stored_validated or stored_buffer %}
+                                    {% set has_data = True %}
+                                    <tr>
+                                        <th scope="row">{{ year }}</th>
+                                        {% if unit %}
+                                            <td class="align-right">{{ '%.2f'|format(stored_validated) if stored_validated != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ '%.2f'|format(stored_buffer) if stored_buffer != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ '%.2f'|format((stored_buffer or 0) + (stored_validated or 0)) }}</td>
+                                        {% else %}
+                                            <td class="align-right">{{ stored_validated if stored_validated != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ stored_buffer if stored_buffer != None else 'Not available' }}</td>
+                                            <td class="align-right">{{ (stored_buffer or 0) + (stored_validated or 0) }}</td>
+                                        {% endif %}
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Yearly evolution of requests for {{ report.network.code }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if plot_requests_yearly is defined %}
+                        {{ plot_requests_yearly }}
+                    {% endif %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Year</th>
+                                <th scope="col" class="align-right">Station</th>
+                                <th scope="col" class="align-right">Dataselect</th>
+                                <th scope="col" class="align-right">Seedlink</th>
+                                <th scope="col" class="align-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% set has_data = False %}
+                            {% for year in range(report.network.year_start, report.year + 1) %}
+
+                                {% set requests_seedlink = report.network.requests_seedlink(year=year) %}
+                                {% set requests_dataselect = report.network.requests_dataselect(year=year) %}
+                                {% set requests_station = report.network.requests_station(year=year) %}
+
+                                {% if has_data or requests_seedlink or requests_dataselect or requests_station %}
+                                    {% set has_data = True %}
+                                    <tr>
+                                        <th scope="row">{{ year }}</th>
+                                        <td class="align-right">{{ requests_station if requests_station != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ requests_dataselect if requests_dataselect != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ requests_seedlink if requests_seedlink != None else 'Not available' }}</td>
+                                        <td class="align-right">{{ (requests_station or 0) + (requests_dataselect or 0) + (requests_seedlink or 0) }}</td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Monthly evolution of requests in {{ report.year }} for {{ report.network.code }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if plot_requests_monthly is defined %}
+                        {{ plot_requests_monthly }}
+                    {% endif %}
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Month</th>
+                                <th scope="col" class="align-right">Station</th>
+                                <th scope="col" class="align-right">Dataselect</th>
+                                <th scope="col" class="align-right">Seedlink</th>
+                                <th scope="col" class="align-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for month in range(1, 13) %}
+                                {% set requests_seedlink = report.network.requests_seedlink(year=report.year, month=month) %}
+                                {% set requests_dataselect = report.network.requests_dataselect(year=report.year, month=month) %}
+                                {% set requests_station = report.network.requests_station(year=report.year, month=month) %}
+                                <tr>
+                                    <th scope="row">{{ month }}</th>
+                                    <td class="align-right">{{ requests_station if requests_station != None else 'Not available' }}</td>
+                                    <td class="align-right">{{ requests_dataselect if requests_dataselect != None else 'Not available' }}</td>
+                                    <td class="align-right">{{ requests_seedlink if requests_seedlink != None else 'Not available' }}</td>
+                                    <td class="align-right">{{ (requests_station or 0) + (requests_dataselect or 0) + (requests_seedlink or 0) }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Repartition of clients by country querying {{ report.network.code }} in {{ report.year }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if map_clients_by_country is defined %}
+                        {{ map_clients_by_country }}
+                    {% endif %}
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Country</th>
+                                <th scope="col" class="align-right">Seedlink</th>
+                                <th scope="col" class="align-right">Dataselect</th>
+                                <th scope="col" class="align-right">Station</th>
+                                <th scope="col" class="align-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% set clients_all = report.network.clients_by_country(year=report.year) or {} %}
+                            {% set clients_seedlink = report.network.clients_seedlink_by_country(year=report.year) or {} %}
+                            {% set clients_dataselect = report.network.clients_dataselect_by_country(year=report.year) or {} %}
+                            {% set clients_station = report.network.clients_station_by_country(year=report.year) or {} %}
+
+                            {% for country_code, country_total in clients_all.items() %}
+                                {% set country_seedlink = clients_seedlink.get(country_code) %}
+                                {% set country_dataselect = clients_dataselect.get(country_code) %}
+                                {% set country_station = clients_station.get(country_code) %}
+
+                                {% if country_seedlink or country_dataselect or country_station %}
+                                    <tr>
+                                        <th scope="row">{{ country_code }}</th>
+                                        <td class="align-right">{{ country_seedlink if country_seedlink else 'Not available' }}</td>
+                                        <td class="align-right">{{ country_dataselect if country_dataselect else 'Not available' }}</td>
+                                        <td class="align-right">{{ country_station if country_station else 'Not available' }}</td>
+                                        <td class="align-right">{{ (country_seedlink or 0) + (country_dataselect or 0) + (country_station or 0) }}</td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Repartition of requests by country querying {{ report.network.code }} in {{ report.year }}</h2>
+                </div>
+                <div class="card-body">
+                    {% if map_requests_by_country is defined %}
+                        {{ map_requests_by_country }}
+                    {% endif %}
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Country</th>
+                                <th scope="col" class="align-right">Seedlink</th>
+                                <th scope="col" class="align-right">Dataselect</th>
+                                <th scope="col" class="align-right">Station</th>
+                                <th scope="col" class="align-right">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% set requests_all = report.network.requests_by_country(year=report.year) or {} %}
+                            {% set requests_seedlink = report.network.requests_seedlink_by_country(year=report.year) or {} %}
+                            {% set requests_dataselect = report.network.requests_dataselect_by_country(year=report.year) or {} %}
+                            {% set requests_station = report.network.requests_station_by_country(year=report.year) or {} %}
+
+                            {% for country_code, country_total in requests_all.items() %}
+                                {% set country_seedlink = requests_seedlink.get(country_code) %}
+                                {% set country_dataselect = requests_dataselect.get(country_code) %}
+                                {% set country_station = requests_station.get(country_code) %}
+
+                                {% if country_seedlink or country_dataselect or country_station %}
+                                    <tr>
+                                        <th scope="row">{{ country_code }}</th>
+                                        <td class="align-right">{{ country_seedlink if country_seedlink else 'Not available' }}</td>
+                                        <td class="align-right">{{ country_dataselect if country_dataselect else 'Not available' }}</td>
+                                        <td class="align-right">{{ country_station if country_station else 'Not available' }}</td>
+                                        <td class="align-right">{{ (country_seedlink or 0) + (country_dataselect or 0) + (country_station or 0) }}</td>
+                                    </tr>
+                                {% endif %}
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load Bootstrap JavaScript -->
+        {% if use_local_assets %}
+            <script src="jquery-3.5.1.slim.min.js"></script>
+            <script src="bootstrap.bundle.min.js"></script>
+            <script src="jquery.dataTables.min.js"></script>
+        {% else %}
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+            <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+        {% endif %}
+        <script type="text/javascript" charset="utf8">
+            $(document).ready(function() {
+                $('.table').DataTable({
+                    "paging": false,
+                    "searching": false,
+                    "info": false
+                });
+            });
+        </script>
+    </body>
+    <footer class="container">
+        Generated with <a href="https://pypi.org/project/resif-delivery-stats-plotter/">resif-delivery-stats-plotter</a> version {{ version }} on {{ today }}
+    </footer>
+</html>

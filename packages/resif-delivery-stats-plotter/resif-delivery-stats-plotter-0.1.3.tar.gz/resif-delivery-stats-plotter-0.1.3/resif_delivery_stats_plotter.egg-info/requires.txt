@@ -1,0 +1,15 @@
+click
+click-log
+obspy
+requests-cache
+ordered_enum
+arrow
+DateTimeRange
+jinja2
+pint
+matplotlib
+pandas
+iso3166
+staticmap
+geopandas
+descartes

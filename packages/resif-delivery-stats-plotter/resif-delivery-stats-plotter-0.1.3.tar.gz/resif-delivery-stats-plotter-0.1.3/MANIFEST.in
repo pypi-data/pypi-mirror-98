@@ -1,0 +1,4 @@
+include README.rst
+include LICENSE.txt
+include resif_delivery_stats_plotter/assets/*
+include resif_delivery_stats_plotter/templates/*
