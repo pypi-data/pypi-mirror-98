@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+.circleci/config.yml
+.vscode/settings.json
+src/example_pkg/__init__.py
+src/example_pkg_mashi.egg-info/PKG-INFO
+src/example_pkg_mashi.egg-info/SOURCES.txt
+src/example_pkg_mashi.egg-info/dependency_links.txt
+src/example_pkg_mashi.egg-info/top_level.txt
