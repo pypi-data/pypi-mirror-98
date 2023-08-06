@@ -1,0 +1,8 @@
+setup.py
+enrichwrap/__init__.py
+enrichwrap/text.py
+enrichwrap.egg-info/PKG-INFO
+enrichwrap.egg-info/SOURCES.txt
+enrichwrap.egg-info/dependency_links.txt
+enrichwrap.egg-info/not-zip-safe
+enrichwrap.egg-info/top_level.txt
