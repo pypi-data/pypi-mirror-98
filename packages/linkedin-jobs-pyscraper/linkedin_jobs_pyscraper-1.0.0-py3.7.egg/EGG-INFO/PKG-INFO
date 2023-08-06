@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: linkedin-jobs-pyscraper
+Version: 1.0.0
+Summary: Scrape public jobs postings from LinkedIn in native python without selenium or any headless browser.
+Home-page: https://github.com/shahrukhx01/linkedin-jobs-pyscraper
+Author: Shahrukh Khan
+Author-email: sk28671@gmail.com
+License: UNKNOWN
+Description: # Linkedin Jobs PyScraper
+        
+        ## Install Package from Pypi
+        1. Install it using pip.
+        ```bash
+        pip install linkedin-jobs-pyscraper
+        ```
+        ## Example Usage
+        2. Use it in your code
+        ```python
+        from linkedin_jobs_pyscraper.models.search.searcher import Searcher
+        from linkedin_jobs_pyscraper.models.filters import filters
+        from linkedin_jobs_pyscraper.linkedin_jobs_scraper import LinkedInJobsPyScraper
+        
+        ## create searach query with configurations
+        searcher = Searcher(
+            search_pages_per_search_term = 4,
+            search_terms = ['data analyst', 'data scientist'],
+            batch_size = 5,
+            output_filepath = 'out.csv',
+            location = 'Germany'
+            )
+        
+        search_filter = filters.Filters(
+            experience= filters.ExperienceLevelFilters.INTERNSHIP,
+            job_type= filters.TypeFilters.INTERNSHIP,
+            relevance= filters.RelevanceFilters.RECENT,
+            time= filters.TimeFilters.MONTH
+            )
+        scraper = LinkedInJobsPyScraper(searcher= searcher, filters=search_filter) 
+        scraper.start()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
