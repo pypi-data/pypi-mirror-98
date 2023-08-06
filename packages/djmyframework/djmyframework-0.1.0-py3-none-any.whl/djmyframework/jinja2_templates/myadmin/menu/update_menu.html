@@ -1,0 +1,23 @@
+{% extends "framework/base.html" %}
+{#{% load i18n %}#}
+{% block header %}
+    <title>{{ _('APP菜单模型 列表') }}</title>
+{% endblock %}
+
+
+{% block content %}
+    <br>
+    <form action="" method="POST" class=" pane">
+        {{ csrf_input }}
+        <div class="form-group">
+            <label>{{ _('选择APP') }} </label>
+            <select class="select2" name="app_name_list" multiple style="width: 500px">
+                {% for app_name,alias in data.items() %}
+                    <option value="{{ app_name }}">{{ alias }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">确定</button>
+    </form>
+
+{% endblock %}
