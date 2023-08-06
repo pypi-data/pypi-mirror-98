@@ -1,0 +1,10 @@
+or_datasets/__init__.py,sha256=IJZT7Dirup3DF9AIzkCbDNTVX_NWcrDKS08jrfXbNSg,81
+or_datasets/_version.py,sha256=ifObdtxMVEWaQDDvUKnrcxmMWEMV9T6BL1h3nVQPp_M,24
+or_datasets/bunch.py,sha256=JGJJIQkAAhFTyxPqrohFLkdhSToRlZM2CUjImjXXJ98,534
+or_datasets/linerlib.py,sha256=hcAlEcsYK85Rl2CXAkMmcm16edwA90yWOphU0hJa9YU,12526
+or_datasets/vrp_rep.py,sha256=BXHHVy-rh7xQ5k1PpCZ6KZBKSISq4aef489bJwnhp9Y,7790
+or_datasets-0.0.2.dist-info/LICENSE,sha256=Y3a0-zDxqdM7_cX4DHyb81jUzv63lVds5Zl3cKr_cBg,1063
+or_datasets-0.0.2.dist-info/METADATA,sha256=1Nt8SdPmH6lr6JU9kMyaeOI-fxGKKBGaQIHSPkfW74A,1765
+or_datasets-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+or_datasets-0.0.2.dist-info/top_level.txt,sha256=d399b8Lyz6gclK5kvRmy3ipMmukl2eL7-9wLbFVxNJk,12
+or_datasets-0.0.2.dist-info/RECORD,,
