@@ -1,0 +1,13 @@
+pyworksio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyworksio/authentication/__init__.py,sha256=BCL62SrujPj3v3KhED_C8n5MYH4eYHSAM-6to25uf3I,40
+pyworksio/cache/__init__.py,sha256=BCL62SrujPj3v3KhED_C8n5MYH4eYHSAM-6to25uf3I,40
+pyworksio/events/__init__.py,sha256=BCL62SrujPj3v3KhED_C8n5MYH4eYHSAM-6to25uf3I,40
+pyworksio/mailer/__init__.py,sha256=yo-ePvCKn35sS18Jqz2Sqp2KDaFgjwl8PAs8FLS1BMs,26
+pyworksio/mailer/mailer.py,sha256=E2QVpz-3HlFaDQCzyd3egdBXoInWtmtZ1uSc4gmderg,100
+pyworksio/mailer/minifier.py,sha256=wQy9LRuhSgPuZGQjCNKanscwyw1XMaAo5zsa8KQeoEE,816
+pyworksio/notification/__init__.py,sha256=BCL62SrujPj3v3KhED_C8n5MYH4eYHSAM-6to25uf3I,40
+pyworksio/storage/__init__.py,sha256=BCL62SrujPj3v3KhED_C8n5MYH4eYHSAM-6to25uf3I,40
+pyworksio-0.1.0a2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyworksio-0.1.0a2.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+pyworksio-0.1.0a2.dist-info/METADATA,sha256=43hRP74TAlUTk1zQD-aUBx3AJCtwb6x1U8ha4XFknL8,425
+pyworksio-0.1.0a2.dist-info/RECORD,,
