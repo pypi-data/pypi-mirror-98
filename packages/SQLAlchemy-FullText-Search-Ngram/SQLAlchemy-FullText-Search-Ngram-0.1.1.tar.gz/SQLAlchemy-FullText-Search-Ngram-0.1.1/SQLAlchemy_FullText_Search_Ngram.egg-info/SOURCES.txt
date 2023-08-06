@@ -1,0 +1,10 @@
+README.rst
+setup.py
+SQLAlchemy_FullText_Search_Ngram.egg-info/PKG-INFO
+SQLAlchemy_FullText_Search_Ngram.egg-info/SOURCES.txt
+SQLAlchemy_FullText_Search_Ngram.egg-info/dependency_links.txt
+SQLAlchemy_FullText_Search_Ngram.egg-info/not-zip-safe
+SQLAlchemy_FullText_Search_Ngram.egg-info/requires.txt
+SQLAlchemy_FullText_Search_Ngram.egg-info/top_level.txt
+sqlalchemy_fulltext/__init__.py
+sqlalchemy_fulltext/modes.py
