@@ -1,0 +1,11 @@
+README.md
+setup.py
+discordmongo/__init__.py
+discordmongo/exceptions.py
+discordmongo/mongo.py
+discordmongopy.egg-info/PKG-INFO
+discordmongopy.egg-info/SOURCES.txt
+discordmongopy.egg-info/dependency_links.txt
+discordmongopy.egg-info/entry_points.txt
+discordmongopy.egg-info/requires.txt
+discordmongopy.egg-info/top_level.txt
