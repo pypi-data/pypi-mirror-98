@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: filecontroller
+Version: 1.1
+Summary: FileController - The best user-friendly file manager
+Home-page: UNKNOWN
+Author: Alex M.
+License: MIT
+Project-URL: Source Code, https://github.com/alex-mst/filecontroller_public
+Project-URL: Documentation, https://alex-mst.github.io/filecontroller/
+Project-URL: Contact, https://discord.gg/HvdN9P85PP
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# FileController
+
+FileController is a Python 3 project that can make file management in Python easier than ever. It includes all
+basic file commands (read, write, delete, create) and even more powerful tools. The project is still in
+development with even more features coming out, but for now it has only the basic file commands + zip management.
+
+## Installation
+
+To install the file:
+1. Open up CMD and type 'pip install filecontroller'
+2. Open up any python project
+3. Import the file like this: 'from filecontroller import fileController'
+4. Give it a reference name: 'your_reference_name = fileController()'
+5. You can now use it by typing 'your_reference_name.' and see all the available options
+
+### Usage
+
+Here is an example code to read a file:
+```
+from filecontroller import fileController
+file = fileController()
+
+file.readFile('test_file.txt')
+```
+
+
+You can find a link of the full documentation here: https://alex-mst.github.io/filecontroller/
+
