@@ -1,0 +1,5 @@
+pandas
+patool
+termcolor
+biopython
+wget
