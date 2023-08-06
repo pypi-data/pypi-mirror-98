@@ -1,0 +1,11 @@
+humiologging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+humiologging/formatters.py,sha256=P5dy7Sj94RiuE6u6etC__dYoCfLAhL_62PxNTrRyTjQ,1703
+humiologging/utils.py,sha256=ySWpsJai1Pf6F8nN9qB0OgBapDFWLcdxK8AtIULVogE,1007
+humiologging/handlers/__init__.py,sha256=ERmmOxz_9mUkIuccNbzUa5Y6gVLLVDdyc4cCxbCCUbY,20
+humiologging/handlers/base.py,sha256=ZLigOBa4rOTd1JPHiEYI4fIbLCbIWwGHAVMDPdQPRwU,2084
+humiologging/handlers/django.py,sha256=hv8swLCLaMpcxtAOH2VMueWrJ6lZGVEmlaFYK4Sdeuc,159
+humiologging-1.0.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+humiologging-1.0.1.dist-info/METADATA,sha256=ma1JtY9N0MVnCcQMFkauweVZqPK-XvJt-LltpesFvQQ,3580
+humiologging-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+humiologging-1.0.1.dist-info/top_level.txt,sha256=tseV1mO3LAMge0L1EJotttkqD3ZcH8BsfUNYt9M5A5Q,13
+humiologging-1.0.1.dist-info/RECORD,,
