@@ -1,0 +1,3 @@
+[console_scripts]
+mv_regex = mv_regex.cli.mv:main
+
