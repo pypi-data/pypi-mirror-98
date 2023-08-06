@@ -1,0 +1,47 @@
+Metadata-Version: 1.2
+Name: chainsaddiction
+Version: 0.1
+Summary: Discrete time, finit state space, stationary Hidden Markov Model.
+Home-page: https://gitlab.rrz.uni-hamburg.de/bal7668/chainsaddiction
+Author: Michael Blaß
+Author-email: mblass@posteo.net
+License: BSD 3-Clause License
+Project-URL: Source code, https://gitlab.rrz.uni-hamburg.de/bal7668/chainsaddiction
+Project-URL: Bug Tracker, https://gitlab.rrz.uni-hamburg.de/bal7668/chainsaddiction/-/issues
+Description: # ChainsAddiction
+        
+        ChainsAddiction is a tool for simple training discrete-time Hidden Markov
+        Models. It is written in `C` and features a `numpy`-based Python extension
+        module.
+        
+        ## Installation
+        Clone this repository, change to its root directory and issue
+        
+            pip install .
+        
+        ## Working with the C API
+        
+        ## Working with the Python interpreter
+        Calling Chains_addiction from `Python` is simple as pie. You just need to import
+        it:
+        
+            import chains_addiction as ca
+            ca.hmm_poisson_fit_em(x, m, init_means, init_tpm, int_sd, max_iter=1000, tol=1e-5)
+        
+        ## Notes
+        - Currently only Poisson-distributed HMM are implemented.
+        - ChainsAddiction does not support Python 2. Specifically, it requires `Python >= 3.5` and `numpy >= 1.16`.
+Keywords: music,analysis,hmm
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
