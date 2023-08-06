@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: unavailable-object
+Version: 0.0.2
+Summary: Optional Object
+Home-page: https://github.com/moi90/unavailable-object
+Author: Simon-Martin Schroeder
+Author-email: martin.schroeder@nerdluecht.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: black ; extra == 'tests'
+
+# Unavailable Object
+
+A placeholder object for optional dependencies.
+
+## Usage
+
+```python
+from unavailable_object import UnavailableObject
+
+try:
+    import optional_module
+except ImportError:
+        optional_module = UnavailableObject("optional_module")
+```
+
+## Type Checking
+To not disturb the type checker, the alternative definition of `optional_object` should be guarded by `if not TYPE_CHECKING`
+and type annotations put in quotes:
+
+```python
+from typing import TYPE_CHECKING
+from unavailable_object import UnavailableObject
+
+try:
+    import optional_module
+except ImportError:
+    if not TYPE_CHECKING:
+        optional_module = UnavailableObject("optional_module")
+
+def foo(arg: "optional_module.SomeType") -> None:
+    pass
+```
+
+
