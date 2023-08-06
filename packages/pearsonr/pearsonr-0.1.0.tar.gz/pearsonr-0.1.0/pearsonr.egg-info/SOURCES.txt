@@ -1,0 +1,9 @@
+setup.py
+pearsonr/__init__.py
+pearsonr/beta.py
+pearsonr/main.py
+pearsonr.egg-info/PKG-INFO
+pearsonr.egg-info/SOURCES.txt
+pearsonr.egg-info/dependency_links.txt
+pearsonr.egg-info/not-zip-safe
+pearsonr.egg-info/top_level.txt
