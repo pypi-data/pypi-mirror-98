@@ -1,0 +1,9 @@
+README.md
+setup.py
+sipri/__init__.py
+sipri/api.py
+sipri.egg-info/PKG-INFO
+sipri.egg-info/SOURCES.txt
+sipri.egg-info/dependency_links.txt
+sipri.egg-info/requires.txt
+sipri.egg-info/top_level.txt
