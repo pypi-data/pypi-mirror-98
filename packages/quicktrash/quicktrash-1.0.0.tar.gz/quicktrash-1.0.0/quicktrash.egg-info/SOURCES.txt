@@ -1,0 +1,9 @@
+setup.py
+quicktrash/__init__.py
+quicktrash/__main__.py
+quicktrash/recycle.py
+quicktrash.egg-info/PKG-INFO
+quicktrash.egg-info/SOURCES.txt
+quicktrash.egg-info/dependency_links.txt
+quicktrash.egg-info/requires.txt
+quicktrash.egg-info/top_level.txt
