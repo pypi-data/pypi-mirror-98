@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+src/PyTechnicalIndicators/__init__.py
+src/PyTechnicalIndicators.egg-info/PKG-INFO
+src/PyTechnicalIndicators.egg-info/SOURCES.txt
+src/PyTechnicalIndicators.egg-info/dependency_links.txt
+src/PyTechnicalIndicators.egg-info/top_level.txt
