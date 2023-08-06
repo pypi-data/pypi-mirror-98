@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ysignals
+Version: 0.0.1rc0
+Summary: Yahoo Signals
+Home-page: UNKNOWN
+Author: Jordi Villar
+Author-email: jrdi.villar@gmail.com
+License: Apache License
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: docopt
+Provides-Extra: test
+Requires-Dist: pytest (==5.1.2) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.7.1) ; extra == 'test'
+Requires-Dist: pytest-flake8 (==1.0.6) ; extra == 'test'
+Requires-Dist: pytest-mypy (==0.4.0) ; extra == 'test'
+Requires-Dist: pydocstyle (==4.0.1) ; extra == 'test'
+Requires-Dist: pep8-naming (==0.8.1) ; extra == 'test'
+Requires-Dist: pytest-docstyle (==2.0.0) ; extra == 'test'
+Requires-Dist: flake8 (==3.8.1) ; extra == 'test'
+
+# ysignals
+
+## Install
+
+```
+pip install -U git+http://github.com/jrdi/ysignals.git@master#egg=ysignals
+```
+
+## Usage
+
+```python
+from pathlib import Path
+
+from ysignals.data import yahoo
+from ysignals.features import RSI
+
+db_dir = Path('db')
+
+yahoo.download_data(db_dir)
+
+features_generators = [
+    RSI(num_days=5, interval=10)
+]
+
+train, test, live, feature_names = yahoo.get_data(db_dir, features_generators=features_generators)
+```
+
+

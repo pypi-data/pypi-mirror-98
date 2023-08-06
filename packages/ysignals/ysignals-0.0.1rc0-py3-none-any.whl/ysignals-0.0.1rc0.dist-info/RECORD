@@ -1,0 +1,13 @@
+ysignals/__about__.py,sha256=V1S6bGCh5WV2XI91IkvmhXC6y_04h8q8jG1_o9xyW5o,240
+ysignals/__init__.py,sha256=i8BJ9yIZ6ipE9gFWIvePqiD0M073DdASbTYkZOM66mY,43
+ysignals/__main__.py,sha256=AiKld8gzlgVIPs_lDsQtdahKTSIa7ad3kgrgtLt-Iwg,1308
+ysignals/features.py,sha256=cnxl4XCYsGKSlKw3FXrOrNXfu1NTBkpwl5KPyY_ml7E,3357
+ysignals/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ysignals/data/yahoo.py,sha256=2STFoODe_lMa3c56irIlSRntATcevRryj4SaMlXsm78,6773
+ysignals-0.0.1rc0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ysignals-0.0.1rc0.dist-info/METADATA,sha256=vBQeEGH3XjsyE-rD7DWjONroVAT62J1e5TwnsVoC4DU,1745
+ysignals-0.0.1rc0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ysignals-0.0.1rc0.dist-info/entry_points.txt,sha256=4ryLFacGjUiMGmQkA5PMz4eSDUwt-bbEbJGe5mEpxKU,53
+ysignals-0.0.1rc0.dist-info/top_level.txt,sha256=uSOn5hhZw4bzMikanv2biCwDQDRdtI46gmwfr6EcPOc,9
+ysignals-0.0.1rc0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ysignals-0.0.1rc0.dist-info/RECORD,,
