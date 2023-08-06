@@ -1,0 +1,6 @@
+README.rst
+setup.py
+kiki_turtle.egg-info/PKG-INFO
+kiki_turtle.egg-info/SOURCES.txt
+kiki_turtle.egg-info/dependency_links.txt
+kiki_turtle.egg-info/top_level.txt
