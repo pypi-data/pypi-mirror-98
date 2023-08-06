@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+uni_rank.egg-info/PKG-INFO
+uni_rank.egg-info/SOURCES.txt
+uni_rank.egg-info/dependency_links.txt
+uni_rank.egg-info/not-zip-safe
+uni_rank.egg-info/requires.txt
+uni_rank.egg-info/top_level.txt
+unirank/__init__.py
+unirank/rank/__init__.py
+unirank/rank/usa_rank.py
+unirank/rank/useragents.txt
