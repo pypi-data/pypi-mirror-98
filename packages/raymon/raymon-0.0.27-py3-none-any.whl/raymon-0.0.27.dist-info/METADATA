@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: raymon
+Version: 0.0.27
+Summary: Python package for data logging and monitoring.
+Home-page: https://raymon.ai
+Author: Raymon.ai
+Author-email: hello@raymon.ai
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Requires-Dist: msgpack (==1.0.0)
+Requires-Dist: pendulum
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: Pillow
+
+# Raymon Logging Library
+![Build](https://github.com/raymon-ai/raymon/workflows/test-build-deploy/badge.svg)
+![Coverage](https://raw.githubusercontent.com/raymon-ai/raymon/master/coverage.svg)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+<a href="https://github.com/raymon-ai/raymon/blob/master/LICENSE.md"><img alt="License" src="https://img.shields.io/github/license/raymon-ai/raymon"></a>
+<a href="https://pypi.org/project/raymon/"><img alt="PyPI" src="https://img.shields.io/pypi/v/raymon"></a>
+
+## What?
+[Raymon.ai](http://raymon.ai) is a monitoring and troubleshooting platform for Machine Learning based systems. This repository contains the code for the logging library used to integrate [Raymon.ai](http://raymon.ai) in your system.
+
+## How?
+TODO
+
