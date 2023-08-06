@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: FFEAT
+Version: 0.0.0
+Summary: Framework for Evolutionary Algorithms in Torch
+Home-page: https://github.com/PatrikValkovic/FEAT
+Author: Patrik Valkovic
+License: GNU LGPLv3
+Download-URL: https://github.com/PatrikValkovic/FEAT/archive/v0.0.0.tar.gz
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: torch
+
+# WORK IN PROGRESS
+
+
