@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/newton_polynomial/__init__.py
+src/newton_polynomial.egg-info/PKG-INFO
+src/newton_polynomial.egg-info/SOURCES.txt
+src/newton_polynomial.egg-info/dependency_links.txt
+src/newton_polynomial.egg-info/requires.txt
+src/newton_polynomial.egg-info/top_level.txt
