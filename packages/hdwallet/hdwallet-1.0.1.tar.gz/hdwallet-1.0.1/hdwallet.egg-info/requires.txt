@@ -1,0 +1,12 @@
+ecdsa<1,>=0.13
+mnemonic<1,>=0.19
+pysha3<2,>=1.0.2
+base58<3,>=2.0.1
+
+[docs]
+sphinx<4,>=3.5.1
+sphinx-rtd-theme<1,>=0.5.1
+
+[tests]
+pytest<7,>=6.2.2
+pytest-cov<3,>=2.11.1
