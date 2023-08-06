@@ -1,0 +1,10 @@
+redata/__init__.py,sha256=i7cIe5VS0lVhCdtWu52_EhKHRNYieVymLmy29yQM1ZY,45
+redata/commons/__init__.py,sha256=xSiFhSQRqHZ3Ckr5mcHF48HuSyV0Xp7_nW4PYj57Exo,23
+redata/commons/git_info.py,sha256=bfagn6Abqgvlk-GvyT4cxbtRbJ-gM2E-bUjeDDb50q0,1635
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_git_info.py,sha256=c8HJB-9WOrz4dGp89OHWLBh7O2BarBuKEC0qO6UDmCY,599
+redata-0.1.0.dist-info/LICENSE,sha256=bL3SJx5N_UuP-s8rSHY7-5feDtoEP0IGCAWEeehV4W8,1135
+redata-0.1.0.dist-info/METADATA,sha256=FwvxeDoDCuWkCTIwRDighKe4mVKUH0O6plwpQa6BlYY,2081
+redata-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+redata-0.1.0.dist-info/top_level.txt,sha256=jzWu1HANl1gaahKaKZ1cK7CjEUIUXhCaQyyW1RmfsIc,13
+redata-0.1.0.dist-info/RECORD,,
