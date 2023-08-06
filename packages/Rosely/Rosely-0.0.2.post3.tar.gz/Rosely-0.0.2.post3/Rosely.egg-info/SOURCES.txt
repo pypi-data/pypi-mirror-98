@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+environment.yml
+setup.py
+Rosely.egg-info/PKG-INFO
+Rosely.egg-info/SOURCES.txt
+Rosely.egg-info/dependency_links.txt
+Rosely.egg-info/requires.txt
+Rosely.egg-info/top_level.txt
+example/docs_test.ipynb
+example/test_data.csv
+example/tutorial.ipynb
+example/.ipynb_checkpoints/docs_test-checkpoint.ipynb
+example/.ipynb_checkpoints/tutorial-checkpoint.ipynb
+rosely/__init__.py
+rosely/windrose.py
