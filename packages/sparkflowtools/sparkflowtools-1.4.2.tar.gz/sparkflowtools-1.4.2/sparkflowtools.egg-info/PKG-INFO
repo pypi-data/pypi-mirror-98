@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: sparkflowtools
+Version: 1.4.2
+Summary: AWS API tools for SparkFlow
+Home-page: https://github.com/adaros92/sparkflow-awstools
+License: MIT
+Description: # sparkflow-awstools
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
