@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: smqtk-descriptors
+Version: 0.15.0
+Summary: Algorithms, data structures and utilities around computing descriptor vectors from data.
+Home-page: https://github.com/Kitware/SMQTK-Descriptors
+Author: Kitware, Inc.
+Author-email: smqtk-developers@kitware.com
+License: BSD 3-Clause
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: smqtk-core
+Requires-Dist: smqtk-dataprovider
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Provides-Extra: ci
+Requires-Dist: flake8 ; extra == 'ci'
+Requires-Dist: flake8-mutable ; extra == 'ci'
+Requires-Dist: mypy ; extra == 'ci'
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-argparse ; extra == 'docs'
+Requires-Dist: sphinx-prompt ; extra == 'docs'
+Requires-Dist: livereload ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# SMQTK - Descriptors
+
+## Intent
+This package aims to provide interfaces for algorithms and data structures
+around computing descriptor vectors from input data.
+
+This package also includes a utility function that can map an arbitrary
+function to some set of input iterables, not unlike the python `map`, except
+that this version is parallelized across threads or processes. This function
+also does not block and may be used for parallelized stream processing.
+
+## Documentation
+You can build the sphinx documentation locally for the most up-to-date
+reference:
+```bash
+# Install dependencies
+pip install -r requirements.txt
+# Navigate to the documentation root.
+cd docs
+# Build the docs.
+make html
+# Open in your favorite browser!
+firefox _build/html/index.html
+```
+
+
