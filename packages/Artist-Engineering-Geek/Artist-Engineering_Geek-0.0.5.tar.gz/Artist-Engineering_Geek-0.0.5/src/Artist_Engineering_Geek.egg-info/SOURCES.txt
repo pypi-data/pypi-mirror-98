@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+src/Artist/__init__.py
+src/Artist/dataset.py
+src/Artist/general_trainer.py
+src/Artist/progressive_trainer.py
+src/Artist_Engineering_Geek.egg-info/PKG-INFO
+src/Artist_Engineering_Geek.egg-info/SOURCES.txt
+src/Artist_Engineering_Geek.egg-info/dependency_links.txt
+src/Artist_Engineering_Geek.egg-info/top_level.txt
