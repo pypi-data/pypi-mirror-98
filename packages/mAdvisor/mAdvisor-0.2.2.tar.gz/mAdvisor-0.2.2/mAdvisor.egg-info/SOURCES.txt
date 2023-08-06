@@ -1,0 +1,10 @@
+README.md
+setup.py
+mAdvisor/AutoML.py
+mAdvisor/__init__.py
+mAdvisor/version.py
+mAdvisor.egg-info/PKG-INFO
+mAdvisor.egg-info/SOURCES.txt
+mAdvisor.egg-info/dependency_links.txt
+mAdvisor.egg-info/requires.txt
+mAdvisor.egg-info/top_level.txt
