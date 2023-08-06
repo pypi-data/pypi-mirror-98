@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: zowie-utils
+Version: 0.9
+Summary: Zowie python commons
+Home-page: https://github.com/chatbotizeteam/python-commons
+Author: zowie-dev
+Author-email: lukasz.kazmierczak@zowie.ai
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
