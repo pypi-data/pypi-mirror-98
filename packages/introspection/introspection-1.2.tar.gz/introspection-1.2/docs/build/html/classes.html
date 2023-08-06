@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions related to classes &#8212; Introspection documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/nightsky.css" type="text/css" />
+    <link id="pygments_dark_css" media="(prefers-color-scheme: dark)" rel="stylesheet" type="text/css" href="_static/pygments_dark.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/theme_switcher.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.svg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Functions related to dundermethods" href="dundermethods.html" />
+    <link rel="prev" title="The call stack" href="call_stack.html" /> 
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-introspection.classes">
+<span id="functions-related-to-classes"></span><h1>Functions related to classes<a class="headerlink" href="#module-introspection.classes" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="introspection.get_subclasses">
+<span id="introspection.classes.get_subclasses"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">get_subclasses</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_abstract</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.get_subclasses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects all subclasses of the given class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cls</strong> – A base class</p></li>
+<li><p><strong>include_abstract</strong> – Whether abstract base classes should be included</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A set of all subclasses</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="introspection.get_attributes">
+<span id="introspection.classes.get_attributes"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">get_attributes</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_weakref</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.get_attributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a dictionary of all of <code class="docutils literal notranslate"><span class="pre">obj</span></code>’s attributes. This includes
+attributes stored in the object’s <code class="docutils literal notranslate"><span class="pre">__dict__</span></code> as well as in <code class="docutils literal notranslate"><span class="pre">__slots__</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>obj</strong> – The object whose attributes will be returned</p></li>
+<li><p><strong>include_weakref</strong> – Whether the value of the <code class="docutils literal notranslate"><span class="pre">__weakref__</span></code> slot should be included in the result</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dict of <code class="docutils literal notranslate"><span class="pre">{attr_name:</span> <span class="pre">attr_value}</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="introspection.safe_is_subclass">
+<span id="introspection.classes.safe_is_subclass"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">safe_is_subclass</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">subclass</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">superclass</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.safe_is_subclass" title="Permalink to this definition">¶</a></dt>
+<dd><p>A clone of <a class="reference external" href="https://docs.python.org/3/library/functions.html#issubclass" title="(in Python v3.9)"><code class="xref py py-func docutils literal notranslate"><span class="pre">issubclass()</span></code></a> that returns <code class="docutils literal notranslate"><span class="pre">False</span></code> instead of throwing a <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.9)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a>.</p>
+<div class="versionadded">
+<p><span class="versionmodified added">New in version 1.2.</span></p>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="introspection.iter_slots">
+<span id="introspection.classes.iter_slots"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">iter_slots</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.iter_slots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Iterates over all <code class="docutils literal notranslate"><span class="pre">__slots__</span></code> of the given class, yielding
+<code class="docutils literal notranslate"><span class="pre">(slot_name,</span> <span class="pre">slot_descriptor)</span></code> tuples.</p>
+<p>If a slot name is used more than once, <em>all</em> of them will be
+yielded in the order they appear in the class’s MRO.</p>
+<p>Note that this function relies on the class-level <code class="docutils literal notranslate"><span class="pre">__slots__</span></code>
+attribute - deleting or altering this attribute in any way may
+yield incorrect results.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cls</strong> – The class whose slots to yield</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>An iterator yielding <code class="docutils literal notranslate"><span class="pre">(slot_name,</span> <span class="pre">slot_descriptor)</span></code> tuples</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="introspection.get_slot_names">
+<span id="introspection.classes.get_slot_names"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">get_slot_names</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.get_slot_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects all of the given class’s <code class="docutils literal notranslate"><span class="pre">__slots__</span></code>, returning a
+set of slot names.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cls</strong> – The class whose slots to collect</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A set containing the names of all slots</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="introspection.get_slot_counts">
+<span id="introspection.classes.get_slot_counts"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">get_slot_counts</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.get_slot_counts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects all of the given class’s <code class="docutils literal notranslate"><span class="pre">__slots__</span></code>, returning a
+dict of the form <code class="docutils literal notranslate"><span class="pre">{slot_name:</span> <span class="pre">count}</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cls</strong> – The class whose slots to collect</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A <a class="reference external" href="https://docs.python.org/3/library/collections.html#collections.Counter" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">collections.Counter</span></code></a> counting the number of occurrences of each slot</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="introspection.get_slots">
+<span id="introspection.classes.get_slots"></span><code class="sig-prename descclassname"><span class="pre">introspection.</span></code><code class="sig-name descname"><span class="pre">get_slots</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cls</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#introspection.get_slots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collects all of the given class’s <code class="docutils literal notranslate"><span class="pre">__slots__</span></code>, returning a
+dict of the form <code class="docutils literal notranslate"><span class="pre">{slot_name:</span> <span class="pre">slot_descriptor}</span></code>.</p>
+<p>If a slot name is used more than once, only the descriptor
+that shadows all other descriptors of the same name is returned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cls</strong> – The class whose slots to collect</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dict mapping slot names to descriptors</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script><div id="theme-switcher"></div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    </div>
+  </body>
+</html>
