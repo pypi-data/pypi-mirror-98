@@ -1,0 +1,11 @@
+Click>=7.0
+numpy<=1.19.3
+pillow
+matplotlib
+opencv-python>=4.0
+openslide-python==1.1.2
+pyyaml
+pandas
+glymur
+scikit-learn==0.23.2
+scikit-image>=0.17
