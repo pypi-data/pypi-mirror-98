@@ -1,0 +1,362 @@
+Metadata-Version: 2.1
+Name: whatlies
+Version: 0.6.3
+Summary: Tools to help uncover `whatlies` in word embeddings.
+Home-page: https://rasahq.github.io/whatlies/
+Author: Vincent D. Warmerdam
+License: UNKNOWN
+Project-URL: Documentation, https://rasahq.github.io/whatlies/
+Project-URL: Source Code, https://github.com/RasaHQ/whatlies/
+Project-URL: Issue Tracker, https://github.com/RasaHQ/whatlies/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn (>=0.24.0)
+Requires-Dist: altair (>=4.0.1)
+Requires-Dist: matplotlib (>=3.2.0)
+Requires-Dist: bpemb (>=0.3.0)
+Requires-Dist: gensim (>=3.8.3)
+Provides-Extra: all
+Requires-Dist: tensorflow (>=2.3.0) ; extra == 'all'
+Requires-Dist: tensorflow-text (>=2.3.0) ; extra == 'all'
+Requires-Dist: tensorflow-hub (>=0.8.0) ; extra == 'all'
+Requires-Dist: transformers (>=4.3.0) ; extra == 'all'
+Requires-Dist: sense2vec (>=1.0.2) ; extra == 'all'
+Requires-Dist: spacy (>=3.0.1) ; extra == 'all'
+Requires-Dist: spacy-lookups-data (>=0.3.2) ; extra == 'all'
+Requires-Dist: sentence-transformers (>=0.3.8) ; extra == 'all'
+Requires-Dist: fasttext (>=0.9.1) ; extra == 'all'
+Requires-Dist: umap-learn (>=0.4.0) ; extra == 'all'
+Provides-Extra: base
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'base'
+Requires-Dist: altair (>=4.0.1) ; extra == 'base'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'base'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'base'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'base'
+Provides-Extra: dev
+Requires-Dist: mkdocs (==1.1) ; extra == 'dev'
+Requires-Dist: mkdocs-material (==4.6.3) ; extra == 'dev'
+Requires-Dist: mkdocstrings (==0.8.0) ; extra == 'dev'
+Requires-Dist: jupyterlab (>=0.35.4) ; extra == 'dev'
+Requires-Dist: nbstripout (>=0.3.7) ; extra == 'dev'
+Requires-Dist: nbval (>=0.9.5) ; extra == 'dev'
+Requires-Dist: torch (>=1.6.0) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.6.0) ; extra == 'dev'
+Requires-Dist: pytest (>=4.0.2) ; extra == 'dev'
+Requires-Dist: black (>=19.3b0) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.2.0) ; extra == 'dev'
+Requires-Dist: tensorflow (>=2.3.0) ; extra == 'dev'
+Requires-Dist: tensorflow-text (>=2.3.0) ; extra == 'dev'
+Requires-Dist: tensorflow-hub (>=0.8.0) ; extra == 'dev'
+Requires-Dist: transformers (>=4.3.0) ; extra == 'dev'
+Requires-Dist: sense2vec (>=1.0.2) ; extra == 'dev'
+Requires-Dist: spacy (>=3.0.1) ; extra == 'dev'
+Requires-Dist: spacy-lookups-data (>=0.3.2) ; extra == 'dev'
+Requires-Dist: sentence-transformers (>=0.3.8) ; extra == 'dev'
+Requires-Dist: fasttext (>=0.9.1) ; extra == 'dev'
+Requires-Dist: umap-learn (>=0.4.0) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mkdocs (==1.1) ; extra == 'docs'
+Requires-Dist: mkdocs-material (==4.6.3) ; extra == 'docs'
+Requires-Dist: mkdocstrings (==0.8.0) ; extra == 'docs'
+Requires-Dist: jupyterlab (>=0.35.4) ; extra == 'docs'
+Requires-Dist: nbstripout (>=0.3.7) ; extra == 'docs'
+Requires-Dist: nbval (>=0.9.5) ; extra == 'docs'
+Provides-Extra: rasa
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'rasa'
+Requires-Dist: altair (>=4.0.1) ; extra == 'rasa'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'rasa'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'rasa'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'rasa'
+Requires-Dist: rasa (>=2.3.0) ; extra == 'rasa'
+Provides-Extra: sense2vec
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'sense2vec'
+Requires-Dist: altair (>=4.0.1) ; extra == 'sense2vec'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'sense2vec'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'sense2vec'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'sense2vec'
+Requires-Dist: sense2vec (>=1.0.2) ; extra == 'sense2vec'
+Requires-Dist: spacy (>=3.0.1) ; extra == 'sense2vec'
+Requires-Dist: spacy-lookups-data (>=0.3.2) ; extra == 'sense2vec'
+Provides-Extra: sentence_tfm
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'sentence_tfm'
+Requires-Dist: altair (>=4.0.1) ; extra == 'sentence_tfm'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'sentence_tfm'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'sentence_tfm'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'sentence_tfm'
+Requires-Dist: sentence-transformers (>=0.3.8) ; extra == 'sentence_tfm'
+Provides-Extra: spacy
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'spacy'
+Requires-Dist: altair (>=4.0.1) ; extra == 'spacy'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'spacy'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'spacy'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'spacy'
+Requires-Dist: spacy (>=3.0.1) ; extra == 'spacy'
+Requires-Dist: spacy-lookups-data (>=0.3.2) ; extra == 'spacy'
+Provides-Extra: test
+Requires-Dist: torch (>=1.6.0) ; extra == 'test'
+Requires-Dist: flake8 (>=3.6.0) ; extra == 'test'
+Requires-Dist: pytest (>=4.0.2) ; extra == 'test'
+Requires-Dist: black (>=19.3b0) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'test'
+Requires-Dist: nbval (>=0.9.5) ; extra == 'test'
+Requires-Dist: pre-commit (>=2.2.0) ; extra == 'test'
+Provides-Extra: tfhub
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'tfhub'
+Requires-Dist: altair (>=4.0.1) ; extra == 'tfhub'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'tfhub'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'tfhub'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'tfhub'
+Requires-Dist: tensorflow (>=2.3.0) ; extra == 'tfhub'
+Requires-Dist: tensorflow-text (>=2.3.0) ; extra == 'tfhub'
+Requires-Dist: tensorflow-hub (>=0.8.0) ; extra == 'tfhub'
+Provides-Extra: transformers
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'transformers'
+Requires-Dist: altair (>=4.0.1) ; extra == 'transformers'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'transformers'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'transformers'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'transformers'
+Requires-Dist: transformers (>=4.3.0) ; extra == 'transformers'
+Provides-Extra: umap
+Requires-Dist: scikit-learn (>=0.24.0) ; extra == 'umap'
+Requires-Dist: altair (>=4.0.1) ; extra == 'umap'
+Requires-Dist: matplotlib (>=3.2.0) ; extra == 'umap'
+Requires-Dist: bpemb (>=0.3.0) ; extra == 'umap'
+Requires-Dist: gensim (>=3.8.3) ; extra == 'umap'
+Requires-Dist: umap-learn (>=0.4.0) ; extra == 'umap'
+
+![](https://img.shields.io/pypi/v/whatlies)
+![](https://img.shields.io/pypi/pyversions/whatlies)
+![](https://img.shields.io/github/license/rasahq/whatlies)
+[![Downloads](https://pepy.tech/badge/whatlies)](https://pepy.tech/project/whatlies)
+
+<img src="docs/logo.png" width=255 height=255 align="right">
+
+# whatlies
+
+A library that tries to help you to understand (note the pun).
+
+> "What lies in word embeddings?"
+
+This small library offers tools to make visualisation easier of both
+word embeddings as well as operations on them.
+
+Feedback is welcome.
+
+<img src="docs/square-logo.svg" width=200 height=200 align="right">
+
+## Produced
+
+This project was initiated at [Rasa](https://rasa.com) as a by-product of
+our efforts in the developer advocacy and research teams. It's an open source project
+and community contributions are very welcome!
+
+## Features
+
+This library has tools to help you understand what lies in word embeddings. This includes:
+
+- simple tools to create (interactive) visualisations
+- an api for vector arithmetic that you can visualise
+- support for many dimensionality reduction techniques like pca, umap and tsne
+- support for many language backends including spaCy, fasttext, tfhub, huggingface and bpemb
+- lightweight scikit-learn featurizer support for all these backends
+
+## Installation
+
+You can install the package via pip;
+
+```bash
+pip install whatlies
+```
+
+This will install the base dependencies. Depending on the
+transformers and language backends that you'll be using you
+may want to install more. Here's all the possible installation
+settings you could go for.
+
+```bash
+pip install whatlies[tfhub]
+pip install whatlies[transformers]
+```
+
+If you want it all you can also install via;
+
+```bash
+pip install whatlies[all]
+```
+
+Note that this will install dependencies but it
+**will not** install all the language models you might
+want to visualise. For example, you might still
+need to manually download spaCy models if you intend
+to use that backend.
+
+## Getting Started
+
+For a quick overview, check out our introductory video on
+[youtube](https://www.youtube.com/watch?v=FwkwC7IJWO0&list=PL75e0qA87dlG-za8eLI6t0_Pbxafk-cxb&index=9&t=0s). More
+in depth getting started guides can be found on the [documentation page](https://rasahq.github.io/whatlies/).
+
+## Examples
+
+The idea is that you can load embeddings from a language backend
+and use mathematical operations on it.
+
+```python
+from whatlies import EmbeddingSet
+from whatlies.language import SpacyLanguage
+
+lang = SpacyLanguage("en_core_web_md")
+words = ["cat", "dog", "fish", "kitten", "man", "woman",
+         "king", "queen", "doctor", "nurse"]
+
+emb = EmbeddingSet(*[lang[w] for w in words])
+emb.plot_interactive(x_axis=emb["man"], y_axis=emb["woman"])
+```
+
+![](docs/gif-zero.gif)
+
+You can even do fancy operations. Like projecting onto and away
+from vector embeddings! You can perform these on embeddings as
+well as sets of embeddings.  In the example below we attempt
+to filter away gender bias using linear algebra operations.
+
+```python
+orig_chart = emb.plot_interactive('man', 'woman')
+
+new_ts = emb | (emb['king'] - emb['queen'])
+new_chart = new_ts.plot_interactive('man', 'woman')
+```
+
+![](docs/gif-one.gif)
+
+There's also things like **pca** and **umap**.
+
+```python
+from whatlies.transformers import Pca, Umap
+
+orig_chart = emb.plot_interactive('man', 'woman')
+pca_plot = emb.transform(Pca(2)).plot_interactive()
+umap_plot = emb.transform(Umap(2)).plot_interactive()
+
+pca_plot | umap_plot
+```
+
+![](docs/gif-two.gif)
+
+## Scikit-Learn Support
+
+Every language backend in this video is available as a scikit-learn featurizer as well.
+
+```python
+import numpy as np
+from whatlies.language import BytePairLanguage
+from sklearn.pipeline import Pipeline
+from sklearn.linear_model import LogisticRegression
+
+pipe = Pipeline([
+    ("embed", BytePairLanguage("en")),
+    ("model", LogisticRegression())
+])
+
+X = [
+    "i really like this post",
+    "thanks for that comment",
+    "i enjoy this friendly forum",
+    "this is a bad post",
+    "i dislike this article",
+    "this is not well written"
+]
+
+y = np.array([1, 1, 1, 0, 0, 0])
+
+pipe.fit(X, y)
+```
+
+## Documentation
+
+To learn more and for a getting started guide, check out the [documentation](https://rasahq.github.io/whatlies/).
+
+## Similar Projects
+
+There are some similar projects out and we figured it fair to mention and compare them here.
+
+<details>
+  <summary><b>Julia Bazińska & Piotr Migdal Web App</b></summary>
+    <p>The original inspiration for this project came from <a href="https://lamyiowce.github.io/word2viz/">this web app</a>
+    and <a href="https://www.youtube.com/watch?v=AGgCqpouKSs">this pydata talk</a>. It is a web app that takes a
+    while to load but it is really fun to play with. The goal of this project is to make it easier to make similar
+    charts from jupyter using different language backends.</p>
+</details>
+
+<details>
+    <summary><b>Tensorflow Projector</b></summary>
+    <p>From google there's the <a href="https://projector.tensorflow.org/">tensorflow projector project</a>. It offers
+    highly interactive 3d visualisations as well as some transformations via tensorboard.</p>
+    <ul>
+    <li>The tensorflow projector will create projections in tensorboard, which you can also load
+    into jupyter notebook but whatlies makes visualisations directly.</li>
+    <li>The tensorflow projector supports interactive 3d visuals, which whatlies currently doesn't.</li>
+    <li>Whatlies offers lego bricks that you can chain together to get a visualisation started. This
+    also means that you're more flexible when it comes to transforming data before visualising it.</li>
+    </ul>
+</details>
+
+<details>
+    <summary><b>Parallax</b></summary>
+    <p>From Uber AI Labs there's <a href="https://github.com/uber-research/parallax">parallax</a> which is described
+    in a paper <a href="https://arxiv.org/abs/1905.12099">here</a>. There's a common mindset in the two tools;
+    the goal is to use arbitrary user defined projections to understand embedding spaces better.
+    That said, some differences that are worth to mention.</p>
+    <ul>
+    <li>It relies on bokeh as a visualisation backend and offers a lot of visualisation types
+    (like radar plots). Whatlies uses altair and tries to stick to simple scatter charts.
+    Altair can export interactive html/svg but it will not scale as well if you've drawing
+    many points at the same time.</li>
+    <li>Parallax is meant to be run as a stand-alone app from the command line while Whatlies is
+    meant to be run from the jupyter notebook.</li>
+    <li>Parallax gives a full user interface while Whatlies offers lego bricks that you can chain
+    together to get a visualisation started.</li>
+    <li>Whatlies relies on language backends (like spaCy, huggingface) to fetch word embeddings.
+    Parallax allows you to instead fetch raw files on disk.</li>
+    <li>Parallax has been around for a while, Whatlies is more new and therefore more experimental.</li>
+    </ul>
+</details>
+
+## Local Development
+
+If you want to develop locally you can start by running this command.
+
+```bash
+make develop
+```
+
+### Documentation
+
+This is generated via
+
+```
+make docs
+```
+
+### Citation
+Please use the following citation when you found `whatlies` helpful for any of your work (find the `whatlies` paper [here](http://arxiv.org/abs/2009.02113)):
+```
+@misc{Warmerdam2020whatlies,
+	Archiveprefix = {arXiv},
+	Author = {Vincent D. Warmerdam and Thomas Kober and Rachael Tatman},
+	Eprint = {2009.02113},
+	Primaryclass = {cs.CL},
+	Title = {Going Beyond T-SNE: Exposing \texttt{whatlies} in Text Embeddings},
+	Year = {2020}
+}
+```
+
+
