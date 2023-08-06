@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: smqtk-core
+Version: 0.16.0
+Summary: Python toolkit for pluggable algorithms and data structures for multimedia-based machine learning
+Home-page: https://gitlab.kitware.com/smqtk/smqtk-core
+Author: Kitware, Inc.
+Author-email: smqtk-developers@kitware.com
+License: BSD 3-Clause
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: ci
+Requires-Dist: flake8 ; extra == 'ci'
+Requires-Dist: flake8-mutable ; extra == 'ci'
+Requires-Dist: mypy ; extra == 'ci'
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-argparse ; extra == 'docs'
+Requires-Dist: sphinx-prompt ; extra == 'docs'
+Requires-Dist: livereload ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# SMQTK - Core
+
+## Intent
+Provide the basic underpinnings for developing interfaces that have built-in
+implementation discovery and factory construction from configuration.
+
+## Documentation
+You can build the sphinx documentation locally for the most up-to-date
+reference:
+```bash
+# Install dependencies
+pip install -r requirements.txt
+# Navigate to the documentation root.
+cd docs
+# Build the docs.
+make html
+# Open in your favorite browser!
+firefox _build/html/index.html
+```
+
+
