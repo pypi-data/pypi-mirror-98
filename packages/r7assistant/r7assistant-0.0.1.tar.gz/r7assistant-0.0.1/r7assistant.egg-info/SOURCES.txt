@@ -1,0 +1,11 @@
+README.md
+setup.py
+r7assistant/__init__.py
+r7assistant/assistant.py
+r7assistant/microphone.py
+r7assistant/recognizer.py
+r7assistant.egg-info/PKG-INFO
+r7assistant.egg-info/SOURCES.txt
+r7assistant.egg-info/dependency_links.txt
+r7assistant.egg-info/requires.txt
+r7assistant.egg-info/top_level.txt

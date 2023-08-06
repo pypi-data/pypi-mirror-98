@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: r7assistant
+Version: 0.0.1
+Summary: A set of utilities for creating simple voice assistants
+Home-page: https://github.com/kononovarseniy/r7assistant
+Author: Arseniy Kononov
+Author-email: a.kononov1@g.nsu.ru
+License: UNKNOWN
+Description: # r7assistant
+        
+        A set of utilities for creating simple voice assistants
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
