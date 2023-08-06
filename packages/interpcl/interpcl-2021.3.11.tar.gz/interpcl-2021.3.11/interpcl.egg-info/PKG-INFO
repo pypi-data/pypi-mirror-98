@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: interpcl
+Version: 2021.3.11
+Summary: interpolate angular power spectra
+Home-page: https://github.com/ntessore/interpcl
+Maintainer: Nicolas Tessore
+Maintainer-email: n.tessore@ucl.ac.uk
+License: MIT
+Project-URL: Documentation, https://cltools.readthedocs.io/interpcl/
+Description: 
+        interpcl
+        ========
+        
+        **interpolate angular power spectra**
+        
+        A very small package that does interpolation of angular power spectra for random
+        fields on the sphere.
+        
+        Install with pip:
+        
+            pip install interpcl
+        
+        Then import into your code:
+        
+            from interpcl import interpcl
+        
+        For more information, see the [documentation].
+        
+        Functionality is absolutely minimal at this point. Please open an issue on
+        GitHub if you want to see added functionality.
+        
+        [documentation]: https://cltools.readthedocs.io/interpcl/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+interpcl.py
+pyproject.toml
+setup.cfg
+setup.py
+interpcl.egg-info/PKG-INFO
+interpcl.egg-info/SOURCES.txt
+interpcl.egg-info/dependency_links.txt
+interpcl.egg-info/requires.txt
+interpcl.egg-info/top_level.txt
