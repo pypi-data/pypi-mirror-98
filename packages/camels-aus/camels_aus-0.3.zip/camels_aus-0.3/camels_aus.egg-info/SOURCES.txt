@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+camels_aus/__init__.py
+camels_aus/_version.py
+camels_aus/conventions.py
+camels_aus/read.py
+camels_aus/repository.py
+camels_aus.egg-info/PKG-INFO
+camels_aus.egg-info/SOURCES.txt
+camels_aus.egg-info/dependency_links.txt
+camels_aus.egg-info/requires.txt
+camels_aus.egg-info/top_level.txt
