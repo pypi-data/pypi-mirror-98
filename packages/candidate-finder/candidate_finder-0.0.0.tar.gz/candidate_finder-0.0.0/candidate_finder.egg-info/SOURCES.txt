@@ -1,0 +1,7 @@
+setup.py
+candidate_finder/__init__.py
+candidate_finder/core.py
+candidate_finder.egg-info/PKG-INFO
+candidate_finder.egg-info/SOURCES.txt
+candidate_finder.egg-info/dependency_links.txt
+candidate_finder.egg-info/top_level.txt
