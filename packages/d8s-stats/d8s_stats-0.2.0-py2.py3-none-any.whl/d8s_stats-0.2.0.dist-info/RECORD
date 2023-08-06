@@ -1,0 +1,10 @@
+d8s_stats/__init__.py,sha256=_IeZe9ftrsR0P-_Jf77fwF4HOhcwuGaNq_MsaCQEw7Q,621
+d8s_stats/stats.py,sha256=0ftNKjBwHtWLeo5gjABWAfFHWad9ssyKvYttR2kVciI,3024
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_stats.py,sha256=9-SbAdq_yS1tguqf3jmAUciqM_M0xi8RQi4CC732Qgc,1881
+d8s_stats-0.2.0.dist-info/LICENSE,sha256=LToReddXuMs3sUB6ilIJ52DQkrqFvwOqU5lQ9l2x6Zg,1073
+d8s_stats-0.2.0.dist-info/METADATA,sha256=viQPOCDn-_OlH7k3rf-NMTQ1bpUZqPd-3I9OSPdvNF4,1834
+d8s_stats-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+d8s_stats-0.2.0.dist-info/top_level.txt,sha256=y1lSyU1XkW7e7Bv5236Y46hHEM2_zKZQSMHfzNc_gYk,16
+d8s_stats-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+d8s_stats-0.2.0.dist-info/RECORD,,
