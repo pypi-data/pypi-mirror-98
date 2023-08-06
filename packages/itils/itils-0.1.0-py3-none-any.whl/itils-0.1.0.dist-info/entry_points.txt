@@ -1,0 +1,3 @@
+[console_scripts]
+itils=itils.cli:console_scripts_main
+

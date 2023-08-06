@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: itils
+Version: 0.1.0
+Summary: A Python CLI for transforming images.
+Home-page: https://github.com/joaopalmeiro/itils
+License: MIT
+Keywords: image,imaging,cli
+Author: João Palmeiro
+Author-email: joaommpalmeiro@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Requires-Dist: Wand (>=0.6.6,<0.7.0)
+Requires-Dist: halo (>=0.0.31,<0.0.32)
+Requires-Dist: importlib-metadata (>=3.0,<4.0); python_version < "3.8"
+Requires-Dist: plac (>=1.3.2,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/joaopalmeiro/itils/issues
+Project-URL: Repository, https://github.com/joaopalmeiro/itils
+Project-URL: Twitter, https://twitter.com/joaompalmeiro
+Description-Content-Type: text/markdown
+
+# itils
+
+[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+A Python CLI for transforming images.
+
+Powered by [plac](https://github.com/ialbert/plac) (CLI), [Wand](https://github.com/emcconville/wand) (images), and [halo](https://github.com/ManrajGrover/halo) (spinners).
+
+## Usage
+
+### Interactive mode
+
+```text
+itils -i
+```
+
+Run `quit` to close `itils`.
+
+### `gslide` subcommand
+
+<!-- poetry run itils gslide -h | pbcopy -->
+
+```text
+usage: itils gslide [-h] [-r PCT] input_img
+
+Resize an image to be smaller than 25 megapixels for Google Slides.
+The image can be resized using an explicit percentage as well.
+
+positional arguments:
+  input_img             The path to the image to be transformed.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -r PCT, --resize PCT  The (explicit) percentage value (e.g., 70) to scale
+                        both width and height. Values less than 100 reduce the
+                        image size.
+```
+
+## Development
+
+1. `poetry install`
+2. `poetry shell`
+
+## Notes
+
+- `convert image.png -resize 70% smaller_image.png` ([documentation](http://www.imagemagick.org/script/convert.php)).
+- ["Improve Windows Support"](https://github.com/manrajgrover/halo/issues/5) (open) issue (halo).
+
