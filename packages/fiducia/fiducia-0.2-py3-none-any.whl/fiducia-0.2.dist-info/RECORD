@@ -1,0 +1,17 @@
+fiducia/__init__.py,sha256=st3cj7J9kE5F1-RCFnJ0rP0KaTeHAjnCRtlImF7SKvc,121
+fiducia/cspline.py,sha256=CFtMDxA2xGgLrOc-dR2hQNeB1dPcEC8scvBDkBR1fYM,25982
+fiducia/error.py,sha256=SqU1Qbrz2WYs07Cyo_DFLvjPuzbu6dla-v-mBjf23Wg,24263
+fiducia/loader.py,sha256=r3Dm6ypmwhQ0zYyzfK5TMzWoYp0vmTzZRzLavHth6KM,13832
+fiducia/main.py,sha256=fuGFyI6zv41dzxY-oa7iIdaw0i_9-t_o_LsSIXZ9OIU,29115
+fiducia/misc.py,sha256=nb5auJea0ZogpYGLLnPK5KMntDu5FsN1-UKa-EIhxss,3969
+fiducia/pltDefaults.py,sha256=z9eRYNe9tW0AoVphv3G_aBs8m3n9uLgJ-gV0HTBGaeI,6829
+fiducia/rawProcess.py,sha256=RwDW9aACoZ5sqOG6N0YzzzTP1OBd5iFFT7gbba23_Q8,52846
+fiducia/response.py,sha256=mKt9FEb4VMGhzv8s7B0m9gep2szBbtVlXFlKOwsq3TE,3094
+fiducia/stats.py,sha256=zX5iD5K0N_92d_BLbFW9Oxi7YKujuNwO1FslNrKibzk,12483
+fiducia/visualization.py,sha256=FddJ-rEnlcU5K3eodZz6wzflBQ-oiwVJyYo0_Wo3Acg,9425
+fiducia-0.2.dist-info/LICENSE.md,sha256=ZHW70M9Tag7RFOVG8l1F7357C2qzIZDt0BA2i93Qe6I,2238
+fiducia-0.2.dist-info/METADATA,sha256=yZdJpyjYtPqPe3m7pEhOsaM_7_2HmvVcQUNNWlcZoLs,261
+fiducia-0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fiducia-0.2.dist-info/top_level.txt,sha256=W5Aq5YAhhvJJPKcvAJMiSxBigBdYx-5a1roBn6CuKHc,8
+fiducia-0.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fiducia-0.2.dist-info/RECORD,,
