@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+codeoptimist.yaml.egg-info/PKG-INFO
+codeoptimist.yaml.egg-info/SOURCES.txt
+codeoptimist.yaml.egg-info/dependency_links.txt
+codeoptimist.yaml.egg-info/not-zip-safe
+codeoptimist.yaml.egg-info/top_level.txt
+codeoptimist/yaml/__init__.py
+codeoptimist/yaml/main.py
