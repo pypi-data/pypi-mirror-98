@@ -1,0 +1,3 @@
+[console_scripts]
+gen_doc = gen_doc.commands:main
+
