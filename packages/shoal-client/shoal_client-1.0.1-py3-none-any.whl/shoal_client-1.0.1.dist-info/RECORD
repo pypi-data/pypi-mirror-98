@@ -1,0 +1,9 @@
+shoal_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shoal_client/__version__.py,sha256=_ZEXZ9OcLtIJ-gPvOkMv1OKAzml7W1MzZe1jHAUZeBE,18
+shoal_client/config.py,sha256=2zLbZ3-RyTj2NDqsW1O9JTTvMPfQxfwG6KWlvf37PWc,3484
+shoal_client-1.0.1.data/data/share/shoal-client/shoal_client.conf,sha256=0liP_CZoMKxUAFXF4asTPYnuib2pDY1SiEYZBiIZBXc,609
+shoal_client-1.0.1.data/scripts/shoal-client,sha256=pvQrakO8S3IGodOr5jMD4Ebg2KlW1D1bjYXnhto5KTk,16437
+shoal_client-1.0.1.dist-info/METADATA,sha256=jMeyT7m4PZY3Ux9VXDTty-QfVRrPdc8Sjcdgc5JvGZo,4148
+shoal_client-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shoal_client-1.0.1.dist-info/top_level.txt,sha256=v5PNuTLlxdM4ch2m9khcgDA7PlO4fNfLNN6LHOOnFWk,13
+shoal_client-1.0.1.dist-info/RECORD,,
