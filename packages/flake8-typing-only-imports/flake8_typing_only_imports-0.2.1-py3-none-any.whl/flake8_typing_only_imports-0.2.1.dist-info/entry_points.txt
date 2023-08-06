@@ -1,0 +1,3 @@
+[flake8.extension]
+TYO100=flake8_typing_only_imports:Plugin
+
