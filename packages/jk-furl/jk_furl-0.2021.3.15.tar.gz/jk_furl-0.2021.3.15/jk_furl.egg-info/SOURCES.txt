@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+README.rst
+setup.py
+jk_furl/__init__.py
+jk_furl/url_mgmt.py
+jk_furl.egg-info/PKG-INFO
+jk_furl.egg-info/SOURCES.txt
+jk_furl.egg-info/dependency_links.txt
+jk_furl.egg-info/not-zip-safe
+jk_furl.egg-info/requires.txt
+jk_furl.egg-info/top_level.txt
