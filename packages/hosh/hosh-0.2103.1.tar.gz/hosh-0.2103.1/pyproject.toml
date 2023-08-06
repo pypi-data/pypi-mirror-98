@@ -1,0 +1,18 @@
+[build-system]
+requires = ["maturin>=0.10,<0.11"]
+build-backend = "maturin"
+
+#[tool.poetry]
+#name = "hosh"
+#version = "0.2103.1"
+#description = "Fast cryptographic hash (127-bit blake3) and operators"
+#authors = ["davips <dpsabc@gmail.com>"]
+#license = "GPL"
+#readme = 'README.md'
+#
+#[tool.poetry.dependencies]
+#python = "^3.8"
+#blake3 = "^0.1.8"
+#
+#[tool.poetry.dev-dependencies]
+#autoreadme = "^0.2102.20"
