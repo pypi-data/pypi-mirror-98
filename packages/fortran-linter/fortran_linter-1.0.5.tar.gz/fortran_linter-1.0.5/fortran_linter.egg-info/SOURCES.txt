@@ -1,0 +1,13 @@
+MANIFEST.in
+Readme.md
+pyproject.toml
+setup.cfg
+setup.py
+fortran_linter/__init__.py
+fortran_linter/cli.py
+fortran_linter/main.py
+fortran_linter.egg-info/PKG-INFO
+fortran_linter.egg-info/SOURCES.txt
+fortran_linter.egg-info/dependency_links.txt
+fortran_linter.egg-info/entry_points.txt
+fortran_linter.egg-info/top_level.txt
