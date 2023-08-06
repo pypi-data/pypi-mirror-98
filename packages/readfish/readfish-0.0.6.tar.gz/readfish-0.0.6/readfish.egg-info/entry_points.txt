@@ -1,0 +1,9 @@
+[console_scripts]
+readfish = ru.cli:main
+ru_generators = ru.ru_gen:main
+ru_iteralign = ru.iteralign:main
+ru_iteralign_centrifuge = ru.iteralign_centrifuge:main
+ru_summarise_fq = ru.summarise_fq:main
+ru_unblock_all = ru.unblock_all:main
+ru_validate = ru.validate:main
+
