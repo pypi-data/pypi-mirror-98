@@ -1,0 +1,2 @@
+include genocide.service
+recursive-include docs *

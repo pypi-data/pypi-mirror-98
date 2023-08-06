@@ -1,0 +1,31 @@
+#!/usr/bin/env python3 
+# This file is placed in the Public Domain.
+
+import time
+
+from op import cfg, format, j
+from op.csl import Shell, exec, sys
+from op.dbs import last
+from op.utl import privileges
+
+from gcd.tbl import tbl
+
+def cprint(txt):
+    sys.stdout.write(txt + "\n")
+    sys.stdout.flush()
+
+def main():
+    cfg.wd = "/var/lib/genocide"
+    privileges("genocide")
+    cprint("GENOCIDE started at %s" % time.ctime(time.time()))
+    last(cfg)
+    cprint(format(cfg))
+    s = Shell(tbl)
+    s.scandir(j(cfg.wd, "mod"))
+    s.start()
+    s.init("irc")
+    s.init(cfg.mods)
+    cprint("loaded %s" % ",".join(s.modnames))
+    s.wait()
+
+exec(main)

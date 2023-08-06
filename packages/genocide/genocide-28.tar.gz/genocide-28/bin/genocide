@@ -1,0 +1,15 @@
+#!/usr/bin/env python3 
+# This file is placed in the Public Domain.
+
+from op import cfg, j
+from op.csl import Shell, exec, os, sys
+
+from gcd.tbl import tbl
+
+def main():
+    cfg.pkgs = "op,op.cmd,gcd"
+    cfg.wd = "/var/lig/genocide"
+    s = Shell(tbl)
+    s.cmd(" ".join(sys.argv[1:]))
+
+exec(main)
