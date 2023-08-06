@@ -1,0 +1,3 @@
+[console_scripts]
+anime-dl=anime_dl.main:main
+
