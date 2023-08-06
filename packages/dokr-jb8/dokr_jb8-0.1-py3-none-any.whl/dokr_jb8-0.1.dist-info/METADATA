@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dokr-jb8
+Version: 0.1
+Summary: A Docker and AWS Utility Package
+Home-page: https://github.com/jbeatty88/dokr
+Author: Josh Beatty
+Author-email: joshuabeatty88@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
