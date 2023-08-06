@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: startflask
+Version: 0.8
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Sashito Mizuki
+Author-email: sashito.mizuki@gmail.com
+License: MIT
+Description: # Starter-Flask
+        ## _Build Flask Project Faster_
+        
+        **Starter-Flask** allows you to create python flask app simply and quickly.
+        The project is pretty straight-forward. With a single line, a basic app will be up and running.
+        
+        *Built with [Click](https://click.palletsprojects.com/en/7.x/) package.*
+        ## Getting Started
+        First, create a virtual environment.
+        ```sh
+        virtualenv venv
+        source venv/bin/activate
+        // or venv\Scripts\activate for Windows
+        ```
+        Then, install *starter-flask*.
+        ```sh
+        pip install starter-flask
+        ```
+        The command **starter-flask** is now available. Create your project like so :
+        ```sh
+         starter-flask -p <your_project_name>
+        ```
+        Finally, jump into your fresh new folder and run it.
+        ```sh
+         cd <your_project_name> && flask run
+        ```
+        ## Features
+        - Flask
+        - Flask-Blueprint
+        - Flask-Login
+        - Flask-Migrate
+        - Flask-SQLAlchemy
+        - psycopg2-binary
+        - gunicorn
+        
+        As you can see the project is PostgreSQL oriented. Feel free to install the database's adapter of your choice.
+        ## Project Layout
+        The project tries to follow [Application Factories](https://flask.palletsprojects.com/en/1.1.x/patterns/appfactories/) best practices. It comes with project layout following factory's guideline and blueprint views. 
+        
+        
+        ## Future Improvements
+        - Possibility to add new blueprint with cli
+        - Redis & Celery supports
+        - Possibility to create an API oriented project
+        - ... feel free to email ideas
+Keywords: Flask,startflask,flask start
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
