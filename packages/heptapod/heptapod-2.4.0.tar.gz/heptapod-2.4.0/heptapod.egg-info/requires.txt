@@ -1,0 +1,9 @@
+Mercurial>=5.2
+hg-evolve>=10.1.0
+hg-git>=0.9.0
+hg-loggingmod
+hg-configexpress~=0.4.0
+dulwich
+requests
+requests_unixsocket==0.2.0
+attrs~=20.3.0
