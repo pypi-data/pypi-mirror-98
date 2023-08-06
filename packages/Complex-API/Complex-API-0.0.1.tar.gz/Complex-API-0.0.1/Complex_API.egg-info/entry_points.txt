@@ -1,0 +1,3 @@
+[console_scripts]
+Complex_API = Complex_API.complex_api:main
+
