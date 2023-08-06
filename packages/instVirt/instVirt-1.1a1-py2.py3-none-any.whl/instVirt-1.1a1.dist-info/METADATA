@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: instVirt
+Version: 1.1a1
+Summary: instVirt, este projeto constroi um instrutor virtual para auxílio em
+Home-page: https://github.com/asl-sl/instVirt
+License: UNKNOWN
+Author: Leonardo de Araújo Lima
+Author-email: leonardo@asl-sl.com.br
+Description-Content-Type: text/x-rst
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+**============
+Instrutor virtual
+============**
+Aplicativo para auxílio 
+*****************
+em sala de aula.
+Este se aplica ao curso de capacitação em ciência da computação.
+**Academia do software livre**
+Até o momento temos dez etapas para o curso, divididas em quatro disciplinas.
+
+
+
+Autor(Leonardo de Araújo Lima).
+
+(leonardo@asl-sl.com.br).
+

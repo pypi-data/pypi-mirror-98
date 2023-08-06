@@ -1,0 +1,18 @@
+Tecnologia da informação - 03
+Estrutura de ambientes do sistema operacional.
+Userland.
+Ambientes.
+
+Texto.
+USERSPACE.
+USERLAND.
+Dispositivo de terminal.
+    /dev/ttyX
+    Interpretador de comandos.
+    Login.
+    ~/.profile
+    (bash).
+    ~/.bashrc
+    
+Gráfico.
+Aplicativos.

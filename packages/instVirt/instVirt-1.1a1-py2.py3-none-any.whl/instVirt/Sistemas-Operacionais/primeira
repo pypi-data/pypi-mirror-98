@@ -1,0 +1,99 @@
+Sistemas operacionais - 01
+Introdução.
+Conceituação:
+Entende-se por sistema.
+Um conjunto, ou ainda; o coletivo para programas de computador.
+Esse por sua vez podem interagir uns com os outros ou ainda com o operador.
+Existem basicamente dois tipos de programas:
+    Os Pré-compilados ou seja em formato bytecode.
+    Os scripts ou como são também conhecidos aplicações em alto nível.
+Nível - Administrador.
+
+1 Conceitos:
+Software x hardware - humanware.
+
+2 O administrador de sistemas.
+
+3 Competências do analista de sistemas.
+
+4 Administrador de sistemas.
+
+5 Tarefas necessitam permissões de administrador.
+Tarefas fundamentais.
+Administração do hardwaare.
+Firmware, drivers, utilitários.
+    Ferramentas.
+    É necessário algum conhecimento sobre a parte física do
+    sistema computacional, ou seja o seu hardware.
+    O controle do dito hardware, será analizado primeiramente pelo
+    bus clock, ou seja frequÊncia, latência ou ainda modo de comunicação.
+    Os mais conecidos são:
+    USB.
+    PCI
+    PCI-express
+    
+        Identificando.
+        lspci (essa é uma forma de se obter uma lista dos 
+        dispositivos conectados a esse barramento(bus clock).
+        lsusb (essa é uma form de se visualizar uma lista dos dispositivos
+        conectados a esse barramento(bus clock).
+        Configurando.
+        insmod
+        lsmod
+        modprobe
+        insmod
+        depmod
+
+Administração do software.
+Gerenciamento de componentes.
+    Ferramentas.
+        apt-key
+        apt
+        apt-get
+        apt-cache
+
+Gerenciamento de midias.
+    Ferramentas.
+        mount
+        umount
+        fsck
+
+7 Gerenciamento de serviços do sistema.
+    Ferramentas.
+        dmesg
+        journctl
+        systemctl
+    
+8 Administração de usuários.
+Controle de permissões e propriedades.
+    Ferramentas.
+        chown
+        chmod
+    
+Gerenciamento de contas de usuários e grupos.
+    Ferramentas.
+        who
+        whoami
+        id
+        groups
+        useradd
+        adduser
+        usermod
+        groupmod
+    
+Software:
+    Definição.
+    Conceito.
+
+Human-ware.
+Abstração.
+    Alto nível.
+    Baixo nível.
+
+9 Sistema operacional.
+
+10 Sistema computacional.
+
+Resumo:
+
+Conclusão:

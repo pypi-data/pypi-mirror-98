@@ -1,0 +1,51 @@
+Sistemas operacionais - 02
+
+Usuários:
+Identificando:
+    id
+    groups
+    whoami.
+    who.
+Criando:
+    adduser.
+    useradd.
+Modificando:
+    usermod.
+    groupmod.
+    
+Permissões.
+    usuário/grupo.
+    chmod.
+    r (ler).
+    w (escrever).
+    x (executar).
+Propriedades.
+    chown.
+    Grupos.
+
+Hardware:
+    definição.
+    conceito.
+dispositivos(componentes).
+    Firmware.
+    Drivers.
+    
+Periféricos.
+    Firmware.
+    Drivers.
+Identificando:
+    lspci.
+    lsusb.
+Software:
+    Tipos de arquivo.
+Arquivos de dados.
+        PDU/SDU.
+Arquivos do sistema.
+    Executáveis(bytecode).
+Níveis de execução.
+    Bibliotecas:
+    Estáticas.
+    Dinâmicas.
+
+Interpretadores.
+    Scripts.

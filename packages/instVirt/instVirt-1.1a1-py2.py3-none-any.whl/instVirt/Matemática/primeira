@@ -1,0 +1,82 @@
+Matemática - 01
+Introdução.
+
+1 Numerais.
+    cardinais - valor absoluto.
+Os numerais cardinais são usados na
+representação de valores inteiros, como pontos em um 
+plano, ou ainda dados numéricos, fracionários.
+Esses podem ser entendidos como:
+    pontos, variáveis escalares.
+
+1.1 Ordinais.
+Os numerais ordenais, representam valores em ordem ou ainda
+membros de um conjunto ou matriz.
+Esse podem ser entendidos como:
+    variáveis lineares, posição dentro do conjunto.
+
+2 Representação.
+($ - escalares). 
+@ - lineares).
+
+3 Bases matemáticas.
+As bases matemáticas simbolizam quantos elementos temos
+na representação de valores, o número de dígitos usados na unidade.
+Através das bases matemáticas podemos mensurar ou ainda dimensionar
+grandezas e valores.
+As bases mais conhecidas são a decimal, a binária e a hexadecimal.
+    Conjuntos.
+    Análise numérica.
+De acordo com a base matemática tendo - se a visão 
+da grandeza dos valores a serem representados.
+
+    Posição.
+O posicionamento dos dígitos na representação de 
+um valor define a dimensão ou grandeza do 
+valor a ser representado.
+
+4 Escalares $.
+
+5 Lineares @.
+
+6 Operações fundamentais.
+Operadores:
+Adição.
++
+Subtração.
+-
+Multiplicação.
+*
+Divisão.
+/
+
+7 Operadores lógicos:
+>(maior) - saída.
+<(menor) - entrada.
+<> - diferente.
+= atribuição.
+== comparação.
+=! - diferente.
+>>
+| enviar (redirecionar).
+& anexar.
+&& anexar imediatamente.
+and
+or
+
+8 Hierarquia de resolução:
+{} 1
+() 2
+[] 3
+1 2 3
+{ ( [] ) }
+
+9 lógica
+
+10 expressões, funções e equações.
+
+Resumo:
+
+Conclusão:
+
+Obs:
