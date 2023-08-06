@@ -1,0 +1,14 @@
+twisted
+pandas
+numpy
+scipy
+pyserial
+xlsxwriter
+pyasn1
+autobahn
+pylint
+SimpleCV
+opencv-python
+requests
+bcrypt
+crccheck
