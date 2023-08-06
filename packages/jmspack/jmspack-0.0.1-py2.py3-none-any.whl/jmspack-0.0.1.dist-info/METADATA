@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jmspack
+Version: 0.0.1
+Summary: James Data Science package
+Home-page: https://github.com/jameshtwose/jmspack
+Author: James Twose
+Author-email: contact@jamestwose.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Requires-Dist: seaborn (>=0.11.0)
+Requires-Dist: statsmodels (>=0.12.0)
+Requires-Dist: scikit-learn (>=0.23.0)
+Requires-Dist: requests (>=2.24.0)
+Requires-Dist: jupyter (>=1.0.0)
+
+UNKNOWN
+
+
