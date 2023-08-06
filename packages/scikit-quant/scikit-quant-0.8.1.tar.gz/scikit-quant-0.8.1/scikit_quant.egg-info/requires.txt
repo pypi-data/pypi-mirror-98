@@ -1,0 +1,7 @@
+SQCommon==0.3.2
+SQImFil==0.3.7
+SQSnobFit==0.4.5
+Py-BOBYQA>=1.1
+
+[NOMAD]
+SQNomad==0.2.1
