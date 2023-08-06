@@ -1,0 +1,6 @@
+cocotb
+cocotb-bus
+
+[test]
+pytest
+cocotb-test
