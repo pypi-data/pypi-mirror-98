@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/pyfreedompro/__init__.py
+src/pyfreedompro/functions.py
+src/pyfreedompro.egg-info/PKG-INFO
+src/pyfreedompro.egg-info/SOURCES.txt
+src/pyfreedompro.egg-info/dependency_links.txt
+src/pyfreedompro.egg-info/top_level.txt
