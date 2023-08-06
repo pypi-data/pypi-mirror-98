@@ -1,0 +1,16 @@
+LICENSE,sha256=YiL99kco2RvveX-uHGEPl3N99n_QcCa3qD1mElL9reY,34282
+gordo_client/__init__.py,sha256=DhteHHu9xX3xDQeVav3mhwMjEvPnR06Bo0FjUVsV7Kg,497
+gordo_client/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gordo_client/cli/client.py,sha256=ty9-t8gjlpNXoeNtZ6YGOVmU-xUNtIfnrdL-GKkCavc,8248
+gordo_client/cli/custom_types.py,sha256=yBlw_P6c6jErgrsnXsMQb6Ma6mfjPyz62eLDuPQ-smY,1318
+gordo_client/client.py,sha256=eAGbRiEJsuVsr97j-8aMUCbVIVRms2Wy4gY0FppjJto,24115
+gordo_client/dataframe.py,sha256=NIysETom72gGyghpKtCPOYFecuGUwK1o6pb7ZeReXBc,5471
+gordo_client/forwarders.py,sha256=cyxrqbt71IJO2jFRq68r9XnqQM2P7PA3YVQmdb3oQPc,8600
+gordo_client/io.py,sha256=KawWUVOMnPqIub9hGfsTt1T1RypLw7iWr03asN1RK-o,2510
+gordo_client/schemas.py,sha256=ox7tp1ZgVWBOkmkaz0IScJ-2fozmh6u_Kaax50kp5Kc,1769
+gordo_client/utils.py,sha256=3_x-fbTQt-fOA8CFfkPVdBXhBoKwxFfvyq-dzrrX-CQ,2703
+gordo_client-3.0.1.dist-info/entry_points.txt,sha256=7RFsbTmjxqibiaeAOUHH6P7UEb_hkENjEIDShFVXF4k,69
+gordo_client-3.0.1.dist-info/LICENSE,sha256=YiL99kco2RvveX-uHGEPl3N99n_QcCa3qD1mElL9reY,34282
+gordo_client-3.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gordo_client-3.0.1.dist-info/METADATA,sha256=5uf9s0uCuu9IfG4XlzByzmad3r1fYIXA3W8tJBPQipo,5070
+gordo_client-3.0.1.dist-info/RECORD,,
