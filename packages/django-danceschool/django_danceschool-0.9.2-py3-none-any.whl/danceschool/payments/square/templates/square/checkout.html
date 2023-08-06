@@ -1,0 +1,212 @@
+{% load cms_tags sekizai_tags i18n %}
+
+{% trans "An unknown error has occurred. Please try again, or notify us if you continue to have an issue." as unknown_error %}
+{% url "customizeGiftCertificate" as certificate_url %}
+
+<div id="error_payment"></div>
+
+{# These div elements are the placeholder elements that are replaced by the SqPaymentForm's iframes. #}
+<div class="card my-4 door-payment-section">
+  <h6 class="card-header">
+  {% trans "Pay Now with Square" %}
+  </h6>
+  <div class="card-body">
+    <div id="card-container">
+      {# After the SqPaymentForm generates a card nonce, *this* form POSTs the generated card nonce to your application's server. #}
+      <form id="nonce-form" novalidate action="{% url 'processSquarePayment' %}" method="post">
+        {% csrf_token %}
+        {# Whenever a nonce is generated, it's assigned as the value of this hidden input field. #}
+        <input type="hidden" id="card-nonce" name="nonce">
+        {% if user.is_authenticated %}
+          <input type="hidden" name="user_id" value="{{ user.id }}">
+        {% endif %}
+        {% if invoice %}
+          <input type="hidden" name="invoice_id" value="{{ invoice.id }}">
+          {% if invoice.email %}
+          <input type="hidden" name="customerEmail" value="{{ invoice.email }}">
+          {% endif %}
+        {% elif allow_amount_entry %}
+          <input type="hidden" name="transaction_type" value="{{ transaction_type }}">
+          <label>{% trans "Enter Amount" %}</label>
+          <input class="sq-input full-width" id="id_amount" name="amount" type="number" value="{{ instance.defaultAmount }}" />
+          <label>{% trans "Enter Email" %}</label>
+          <input class="sq-input full-width" id="id_email" type="email" name="customerEmail">
+          <label>{% trans "Enter Card Details" %}</label>
+        {% endif %}
+        {% if transaction_type == "Gift Certificate" and certificate_url %}
+          <input type="hidden" name="successUrl" value="{{ certificate_url }}">
+          <input type="hidden" name="addSessionInfo" value="True">
+        {% else %}
+          <input type="hidden" name="successUrl" value="{% page_url instance.successPage.id %}">
+        {% endif %}
+      </form>
+
+      {# This is the div in which Square places the iframe with everything it needs to create a card nonce. #}
+      <div id="form-container">
+          <div id="sq-card-number"></div>
+          <div class="third" id="sq-expiration-date"></div>
+          <div class="third" id="sq-cvv"></div>
+          <div class="third" id="sq-postal-code"></div>
+          <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">{% trans 'Pay Now' %}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% addtoblock "js" %}
+    <script type="text/javascript" src="https://js.squareup.com/v2/paymentform"></script>
+{% endaddtoblock %}
+{% addtoblock "js" %}
+    <script>
+
+    var applicationId = '{{ squareApplicationId }}'; // <-- Add your application's ID here
+
+    if (applicationId == '') {
+      alert('You need to provide a value for the applicationId variable.');
+    }
+
+    {# Initializes the payment form.  See the Square documentation for descriptions of each parameter. #}
+    var paymentForm = new SqPaymentForm({
+      applicationId: applicationId,
+      inputClass: 'sq-input',
+      inputStyles: [
+        {
+          fontSize: '15px'
+        }
+      ],
+      cardNumber: {
+        elementId: 'sq-card-number',
+        placeholder: '•••• •••• •••• ••••'
+      },
+      cvv: {
+        elementId: 'sq-cvv',
+        placeholder: 'CVV'
+      },
+      expirationDate: {
+        elementId: 'sq-expiration-date',
+        placeholder: 'MM/YY'
+      },
+      postalCode: {
+        elementId: 'sq-postal-code',
+        placeholder: 'Postal Code',
+      },
+      callbacks: {
+
+        cardNonceResponseReceived: function(errors, nonce, cardData) {
+          if (errors) {
+            var message = '';
+            errors.forEach(function(error) {
+              message += error.message + ' ';
+            });
+            $('#error_payment').html('<div class="alert alert-danger"><strong>ERROR:</strong> ' + 
+              message + '</div>');
+
+          // No errors occurred. Extract the card nonce.
+          } else {
+            $('#error_payment').html();
+            document.getElementById('card-nonce').value = nonce;
+            document.getElementById('nonce-form').submit();
+          }
+        },
+
+        unsupportedBrowserDetected: function() {
+            var message = '{% trans "Your browser does not support Square checkout.  Please use another browser." %}';
+            $('#error_payment').html('<div class="alert alert-danger"><strong>ERROR:</strong> ' + 
+              message + '</div>');
+        },
+      }
+    });
+
+    {# This function is called when a buyer clicks the Submit button on the webpage to charge their card. #}
+    function onGetCardNonce(event) {
+      event.preventDefault();
+      paymentForm.requestCardNonce();
+    }
+    </script>
+{% endaddtoblock %}
+
+{% addtoblock "css" %}
+    <style type="text/css">
+      #card-container {
+        width: 380px;
+        margin: 0 auto;
+      }
+
+      #card-container label {
+        display: block;
+        font-weight: 500;
+        margin: 2em 0 0 0;
+      }
+
+      .full-width {
+        float: left;
+        width: 100%;
+        margin-bottom: 1em;
+      }
+
+      .third {
+        float: left;
+        width: calc((100% - 32px) / 3);
+        padding: 0;
+        margin: 0 16px 16px 0;
+      }
+
+      .third:last-of-type {
+        margin-right: 0;
+      }
+
+      /* Define how SqPaymentForm iframes should look */
+      .sq-input {
+        height: 56px;
+        box-sizing: border-box;
+        border: 1px solid #E0E2E3;
+        background-color: white;
+        border-radius: 6px;
+        display: inline-block;
+        -webkit-transition: border-color .2s ease-in-out;
+          -moz-transition: border-color .2s ease-in-out;
+            -ms-transition: border-color .2s ease-in-out;
+                transition: border-color .2s ease-in-out;
+      }
+
+      /* Define how SqPaymentForm iframes should look when they have focus */
+      .sq-input--focus {
+        border: 1px solid #4A90E2;
+      }
+
+      /* Define how SqPaymentForm iframes should look when they contain invalid values */
+      .sq-input--error {
+        border: 1px solid #E02F2F;
+      }
+
+      #sq-card-number {
+        margin-bottom: 16px;
+      }
+
+      /* Customize the "Pay with Credit Card" button */
+      .button-credit-card {
+        width: 100%;
+        height: 56px;
+        margin-top: 10px;
+        background: #4A90E2;
+        border-radius: 6px;
+        cursor: pointer;
+        display: block;
+        color: #FFFFFF;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-align: center;
+        -webkit-transition: background .2s ease-in-out;
+          -moz-transition: background .2s ease-in-out;
+            -ms-transition: background .2s ease-in-out;
+                transition: background .2s ease-in-out;
+      }
+
+      .button-credit-card:hover {
+        background-color: #4281CB;
+      }
+
+    </style>
+{% endaddtoblock %}

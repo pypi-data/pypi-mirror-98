@@ -1,0 +1,25 @@
+{% if firstName %}Hi {{ firstName }},{% else %}Hello,{% endif %}
+
+Thank you for registering with {{ businessName }}!  We have received and processed your registration for the following:
+
+{% for item in itemList %}
+{% if item.eventRegistration %}{{ item.eventRegistration.event.title}}, begins {{ item.eventRegistration.event.start|date:"l, F jS, g:i A" }}{% else %}{{ item.description }}{% endif %}{% endfor %}
+
+Total, Net of Discounts: {{ currencySymbol }}{{ total|floatformat:2 }}{% if taxes %}
+Taxes: {{ currencySymbol }}{{ taxes|floatformat:2 }}{% endif %}{% if adjustments %}
+Adjustments/Refunds: {{ currencySymbol }}{{ adjustments|floatformat:2 }}{% endif %}
+
+{% if thisPaymentAmount %}This Payment Amount: {{ currencySymbol }}{{ thisPaymentAmount|floatformat:2 }}
+{% endif %}Total Amount paid: {{ currencySymbol }}{{ amountPaid|floatformat:2 }}
+Outstanding balance: {{ currencySymbol }}{{ outstandingBalance|floatformat:2 }}
+View Invoice/Make Payments: {{ url }}{% if registrationComments %}Your comments:
+{{ registrationComments }}
+
+{% endif %}{% if registrationHowHeardAboutUs %}
+How you heard about us:
+{{ registrationHowHeardAboutUs }}
+
+{% endif %}Thanks again, and we look forward to seeing you soon!
+
+Sincerely,
+{{ businessName }}
