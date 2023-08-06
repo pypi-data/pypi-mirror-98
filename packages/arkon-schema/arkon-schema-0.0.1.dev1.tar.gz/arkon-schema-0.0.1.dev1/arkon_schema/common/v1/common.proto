@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+import "google/protobuf/any.proto";
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+package arkon_schema.common.v1;
+
+option java_outer_classname = "CommonProtos";
+option java_package = "dev.arkon.v1";
+option go_package = "github.com/arkonproj/arkon-schema/arkon_schema/common/v1/;common";
+
+message ArkonMessage {
+  string application_name = 1;
+  string flow_execution_id = 2;
+  string task_execution_id = 3;
+  google.protobuf.Timestamp message_timestamp = 4;
+  google.protobuf.Any data = 5;
+}
+
+message InfoResponse {
+  string version = 1;
+}
+
+service ArkonService {
+  rpc Info (google.protobuf.Empty) returns (InfoResponse);
+  rpc Process (ArkonMessage) returns (ArkonMessage); // https://grpc.io/docs/languages/python/basics/#simple-rpc
+  rpc ProcessResponseStream (ArkonMessage) returns (stream ArkonMessage); // https://grpc.io/docs/languages/python/basics/#response-streaming-rpc
+  rpc ProcessRequestStream (stream ArkonMessage) returns (ArkonMessage); // https://grpc.io/docs/languages/python/basics/#response-streaming-rpc
+  rpc ProcessBidi (stream ArkonMessage) returns (stream ArkonMessage); // https://grpc.io/docs/languages/python/basics/#bidirectional-streaming-rpc
+}
