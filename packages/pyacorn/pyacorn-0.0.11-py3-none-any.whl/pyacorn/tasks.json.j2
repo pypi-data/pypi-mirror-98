@@ -1,0 +1,97 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "acorn-test",
+            "type": "shell",
+            "command": "python3 -m unittest discover -c tests",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            },
+            "group": "test"
+        },
+        {
+            "label": "acorn-package",
+            "type": "shell",
+            "command": "python3 ${workspaceFolder}/setup.py sdist bdist_wheel",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-run",
+            "type": "shell",
+            "command": "python3 -m {{ project }} --debug run",
+            "options": {
+                "env": {
+                    "DEMO_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-mq",
+            "type": "shell",
+            "command": "python3 -m {{ project }} mq",
+            "options": {
+                "env": {
+                    "DEMO_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-shell",
+            "type": "shell",
+            "command": "python3 -m {{ project }} shell",
+            "options": {
+                "env": {
+                    "DEMO_SETTINGS": "${workspaceFolder}/{{ project }}.cfg"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-setup",
+            "type": "shell",
+            "command": "python3 -m {{ project }} setup",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        },
+        {
+            "label": "acorn-registeradmin",
+            "type": "shell",
+            "command": "python3 -m {{ project }} setup",
+            "problemMatcher": [],
+            "presentation": {
+              "reveal": "always"
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "acorn-username",
+            "type": "promptString",
+            "description": "Enter the new admin username"
+        },
+        {
+            "id": "acorn-password",
+            "type": "promptString",
+            "description": "Enter the new admin password",
+            "password": true
+        }
+    ]
+}
