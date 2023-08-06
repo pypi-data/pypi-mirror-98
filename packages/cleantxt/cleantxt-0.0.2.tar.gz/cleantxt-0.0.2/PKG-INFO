@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cleantxt
+Version: 0.0.2
+Summary: cleaning text from noise for nlp tasks
+Home-page: https://github.com/jemiaymen/cleantxt
+Author: Aymen Jemi
+Author-email: jemiaymen@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/jemiaymen/cleantxt/issues
+Description: # cleantxt
+        python setup.py sdist bdist_wheel
+        twine check dist/*
+        twine upload dist/*
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
