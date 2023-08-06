@@ -1,0 +1,4 @@
+pydecidim
+pydecidim/api
+pydecidim/model
+pydecidim/tests
