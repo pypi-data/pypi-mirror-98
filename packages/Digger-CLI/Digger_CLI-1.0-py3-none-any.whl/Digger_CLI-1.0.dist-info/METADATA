@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: Digger-CLI
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: colorama (==0.4.3)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: environs (==9.0.0)
+Requires-Dist: halo (==0.0.30)
+Requires-Dist: idna (==2.10)
+Requires-Dist: Jinja2 (==2.11.2)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: log-symbols (==0.0.14)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: marshmallow (==3.9.0)
+Requires-Dist: oyaml (==1.0)
+Requires-Dist: prompt-toolkit (==1.0.14)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: Pygments (==2.7.1)
+Requires-Dist: PyInquirer (==1.0.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: python-dotenv (==0.15.0)
+Requires-Dist: PyYAML (==5.3.1)
+Requires-Dist: regex (==2020.10.15)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: rsa (==4.5)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: spinners (==0.0.24)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: urllib3 (==1.25.11)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: boto3 (==1.17.11)
+
+UNKNOWN
+
+
