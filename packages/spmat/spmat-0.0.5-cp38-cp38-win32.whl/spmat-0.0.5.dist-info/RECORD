@@ -1,0 +1,11 @@
+spmat/__about__.py,sha256=mDYj9khtT6S_Zj1RfZyciED0iuPCn_uYYmLpG_EVyOE,446
+spmat/__init__.py,sha256=2dpHz7moZa6hR3MIh9Mn35ZExEuzOgnkAL82vuKKRtQ,49
+spmat/dlmat.py,sha256=0kmwIsJSdVS4SaiGPrsSb-IQkGB4lLT2dA1QqDZeyjw,10443
+spmat/linalg.c,sha256=jgL-XuMxdzpPSo9Npk4wajEtkgFIbBlD2-BJuHFzI2k,940409
+spmat/linalg.cp38-win32.pyd,sha256=98hcHhaM0dWmJdu2jSQt5Ef9ZAplDZlYH7MvpV0oqWE,135680
+spmat/utils.py,sha256=7sl0fxBUIPYQYoNYQpaW5ux2eND_jYqXEKHpGQ7TQeI,1341
+spmat-0.0.5.dist-info/LICENSE,sha256=9RIKDO55JPuUstc0H3WbYJw2gSPGMfpLUXUOJCK4yQU,1345
+spmat-0.0.5.dist-info/METADATA,sha256=aFIPeKAFzViyHpgWqpuWyBpDrXGllAl96wxgDPMubQw,1173
+spmat-0.0.5.dist-info/WHEEL,sha256=_iQIYqodxlIIeRSKaaUx61MUqAflFno6m3IasYrHq0k,96
+spmat-0.0.5.dist-info/top_level.txt,sha256=_gG75V86FOxG9Rf9kCBKWOxg2-WxlUrqo2Dog0rPUmM,6
+spmat-0.0.5.dist-info/RECORD,,
