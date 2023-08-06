@@ -1,0 +1,12 @@
+whey/__init__.py,sha256=GLWS_NtcUH_9Fx_W_waIqCwdyyGRlC0vsF05vk-6sb0,2700
+whey/__main__.py,sha256=fasDXkAcPy2Rd61RNbroMotW8BHgalaG_oGou1MndsQ,3358
+whey/builder.py,sha256=KmoEA9reew42xRieefxeO4YxIN7XRPIz9u8VszxA_1Y,20215
+whey/config.py,sha256=UWNVdG42SV0dDScwZbbWHa_l7XaqYASr6_yDPxLBz7g,32155
+whey/foreman.py,sha256=_dQW1kTMmIKWXvPXUhDj3-tOJKlYErZPnqlYh1FXQUM,3897
+whey/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whey-0.0.4.dist-info/LICENSE,sha256=TXanB-tJYmHhByFsynyh-UGwh2VdTVVjbZeFz1utSWc,1064
+whey-0.0.4.dist-info/METADATA,sha256=OeiIqCHn76yW2W4baUny4UZjNFwa4QfkbpvyXnIpdY0,7685
+whey-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+whey-0.0.4.dist-info/entry_points.txt,sha256=_jNWYYT9G4olFBLKDbfXCLEHiSA_S1l3W3CH6e1okeY,139
+whey-0.0.4.dist-info/top_level.txt,sha256=zP1v-BbQVaZP9EITcNcbxc2yoeCor6YrabtS3QeB8Aw,5
+whey-0.0.4.dist-info/RECORD,,
