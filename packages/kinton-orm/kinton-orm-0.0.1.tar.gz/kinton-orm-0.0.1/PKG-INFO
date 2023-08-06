@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: kinton-orm
+Version: 0.0.1
+Summary: async python orm
+Home-page: https://github.com/pity7736/kinton-orm
+Author: Julián Cortés
+Author-email: julian.cortes77@pm.me
+License: UNKNOWN
+Description: Kinton ORM
+        ==========
+        
+        Kinton is an asynchronous ORM for Python. It's very early stage of development.
+        It's just for learning, a hobby.
+        
+        Suggestions and ideas are welcome!
+        
+Keywords: async orm postgres database
+Platform: UNKNOWN
+Requires-Python: >=3.7
