@@ -1,0 +1,3 @@
+[console_scripts]
+asciify = toascii.cli:main
+
