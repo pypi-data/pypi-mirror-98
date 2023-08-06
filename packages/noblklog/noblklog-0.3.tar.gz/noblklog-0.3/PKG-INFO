@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: noblklog
+Version: 0.3
+Summary: Non-blocking asyncio handlers for Python logging.
+Home-page: https://github.com/wagnerflo/noblklog
+Author: Florian Wagner
+Author-email: florian@wagner-flo.net
+License: UNKNOWN
+Description: # noblklog
+        
+        Keep using the [logging](https://docs.python.org/3/library/logging.html)
+        you're accustomed to, without having to fear it blocking your
+        [asyncio](https://docs.python.org/3/library/asyncio.html) event loop.
+        
+        ```python
+        import asyncio
+        import logging
+        import noblklog
+        
+        logging.basicConfig(
+            level=logging.INFO,
+            handlers=[
+                noblklog.AsyncStreamHandler(),
+            ],
+        )
+        log = logging.getLogger(None)
+        
+        log.info('It is logging synchronously outside an event loop! Magic!')
+        
+        async def main():
+            log.info('And asynchronously inside an event loop! Even more magic!')
+        
+        asyncio.run(main())
+        ```
+        
+        For more details see the [documentation](https://noblklog.readthedocs.io).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
