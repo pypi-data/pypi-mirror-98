@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: py2k
+Version: 1.7.0
+Summary: High level Python API for writing to Kafka
+Home-page: https://github.com/AbsaOSS/py2k.git
+Author: Daniel Wertheimer
+Author-email: daniel.wertheimer@absa.africa
+License: Apache Software license
+Description: # Py2k
+        
+        A high level Python to Kafka API with Schema Registry compatibility and automatic avro schema creation.
+        
+        - Free software: Apache2 license
+        
+        ## Contributing
+        
+        Please see the [Contribution Guide](.github/CONTRIBUTING.md) for more information.
+        
+        ## Usage
+        
+        ### Minimal Example
+        
+        ```python
+        from py2k.models import DynamicKafkaModel
+        from py2k.writer import KafkaWriter
+        
+        # assuming we have a pandas DataFrame, df
+        serialized_df = DynamicKafkaModel(df=df,model_name='test_model').from_pandas()
+        
+        writer = KafkaWriter(
+            topic="topic_name",
+            schema_registry_config=schema_registry_config,
+            producer_config=producer_config
+        )
+        
+        writer.write(serialized_df)
+        ```
+        
+        Please see the examples/ folder for additional examples
+        
+        ## Features
+        
+        - Schema Registry Integration
+        - Automatic Avro Serialization from pandas DataFrames
+        - Automatic Avro Schema generation from pandas DataFrames and Pydantic objects
+        
+        ## License
+        
+            Copyright 2021 ABSA Group Limited
+        
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+        
+                http://www.apache.org/licenses/LICENSE-2.0
+        
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+        
+        
+        # History
+        
+        ## 1.7.0 (2021-03-11)
+        
+         - Minor API change for easier dynamic creation of KafkaModels from a pandas DataFrame
+        
+        ## 1.6.0 (2021-03-01)
+        
+        - First commit on Github.
+        
+Keywords: py2k
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
