@@ -1,0 +1,9 @@
+pytest_mpi/__init__.py,sha256=6kE174X490CFpOHZdcc4pPK9OyQgdswTZy-yUkoiU6Q,7945
+pytest_mpi/_helpers.py,sha256=4NOvywlaVeSDqXmCpystT-ecndiKPdpIXtSL3EPkqZE,355
+pytest_mpi/_version.py,sha256=efdXOfigqPYm8Rpv18MRkLYZtNmpTGcsxyxsWsDtFng,495
+pytest_mpi-0.5.dist-info/LICENSE.txt,sha256=s-CRdwbbCw_l4LnETklopaOCPLrZqvQMuxjqtGm3RZ4,1501
+pytest_mpi-0.5.dist-info/METADATA,sha256=usDFuT-0FO2ArzYcam884bvSGWs8XDqkzEtYQqwc0bs,1749
+pytest_mpi-0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pytest_mpi-0.5.dist-info/entry_points.txt,sha256=fvQ5Pj8pvtMq7HMpFvmepZE9QH3Ih2HMH680birj1i8,36
+pytest_mpi-0.5.dist-info/top_level.txt,sha256=Z5UKahtMF6yko9OhkSqyFSua67OKGrjL2XPO3vRdzoA,11
+pytest_mpi-0.5.dist-info/RECORD,,
