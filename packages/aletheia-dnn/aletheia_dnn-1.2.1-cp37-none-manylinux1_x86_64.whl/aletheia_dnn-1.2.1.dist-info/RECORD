@@ -1,0 +1,10 @@
+aletheia/__init__.cpython-37m-x86_64-linux-gnu.so,sha256=SIdVtHCEv6ljKshLb_Dx7Y0QNnoMrwBgYaUCsg3kRlw,31208
+aletheia/aletheia.cpython-37m-x86_64-linux-gnu.so,sha256=dhaDdgCspqphU5oHirH9S3hFiGkJSdaWUHNFwQLWlqo,1032632
+aletheia/flatten.cpython-37m-x86_64-linux-gnu.so,sha256=nNsSFjaL9jSEHWMDf1RkixeH6YybaNZJ2LJ31x4Lfa8,146344
+aletheia/merge.cpython-37m-x86_64-linux-gnu.so,sha256=Hy1ZRNh-xPExUHkbAdBenKiYx2UeReEZYyH_JxqlSxk,999768
+aletheia/prune.cpython-37m-x86_64-linux-gnu.so,sha256=HjoYUzHI-E35jcqbHTelhERDAg8qy6Y0561oouiPaCU,270216
+aletheia_dnn-1.2.1.dist-info/LICENSE,sha256=Yi6Z7US3ygfeP3GRJ0UjeVmQpYkh9NB9_gEUQ664R4w,1516
+aletheia_dnn-1.2.1.dist-info/METADATA,sha256=4JVkeASarS2ReebXCvQxZKnYOPP-qQksb1pRyVRSGaM,895
+aletheia_dnn-1.2.1.dist-info/WHEEL,sha256=YuK2D4GEfn5egRtpxwtNXqS6oo6NJGt_NUlX8IjB65k,109
+aletheia_dnn-1.2.1.dist-info/top_level.txt,sha256=FET9FwOvIT5gLgJ3NOkKC90IS3vFNyUDzqvKaiS6jhM,9
+aletheia_dnn-1.2.1.dist-info/RECORD,,
