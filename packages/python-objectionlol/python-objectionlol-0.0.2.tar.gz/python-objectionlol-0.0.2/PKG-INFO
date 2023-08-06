@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-objectionlol
+Version: 0.0.2
+Summary: python wrapper for objection.lol
+Home-page: https://gitlab.com/LeNya/python-objectionlol
+Author: LёNya
+License: WTFPL-2
+Description: # python-objectionlol
+        simple objection.lol wrapper
+        
+Keywords: wrapper objectionlol objection.lol python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: License :: Public Domain
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
