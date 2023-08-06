@@ -1,0 +1,9 @@
+setup.py
+data_connectors/__init__.py
+data_connectors/reader.py
+data_connectors/writer.py
+data_connectors_qna.egg-info/PKG-INFO
+data_connectors_qna.egg-info/SOURCES.txt
+data_connectors_qna.egg-info/dependency_links.txt
+data_connectors_qna.egg-info/requires.txt
+data_connectors_qna.egg-info/top_level.txt
