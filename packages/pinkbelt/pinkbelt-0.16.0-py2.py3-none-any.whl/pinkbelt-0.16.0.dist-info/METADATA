@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pinkbelt
+Version: 0.16.0
+Summary: Opinionated Product Development
+Home-page: http://github.com/Almad/pink-belt
+Author: Lukas Linhart
+Author-email: bugs@almad.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Environment :: Console
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: six
+Requires-Dist: click
+Requires-Dist: requests
+Requires-Dist: PyGithub
+Requires-Dist: slacker (>=0.6.2)
+Requires-Dist: pyopenssl
+Requires-Dist: ndg-httpsclient
+Requires-Dist: pyasn1
+Requires-Dist: twine
+
+
+Pink Belt: Opinionated Product Development
+==========================================
+
+Integrates useful GitHub workflow with Trello, Hipchat and Circle CI.
+
+Please visit `the Pink Belt documentation <http://pink-belt.readthedocs.org/en/latest/>`_ for more details.
+
+
